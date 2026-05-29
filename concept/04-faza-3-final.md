@@ -62,9 +62,10 @@ Mechanika:
 **Model: HYBRYDA z inwersją moralną.**
 
 - **Fakty historyczne są STAŁE** niezależnie od wyniku: zburzenie zamku krzyżackiego, ideologia stojąca za buntem, wojna 13-letnia (1454-1466), II pokój toruński (1466). Gra nie tworzy fikcji alternatywnej na poziomie faktów.
-- **Scenka końcowa PRZESUWA CIĘŻAR NARRACJI** wg wyniku zliczenia listów — ten sam koniec faktograficzny, inny ton/akcent emocjonalny:
-  - **Przewaga listów u Bażyńskiego (TR)** → krzyżacy zmiażdżeni, wynoszą się; triumf mieszczan rozegrany dosadnie.
-  - **Przewaga listów u Albrechta (Krzyżacy)** → krzyżacy odchodzą z godnością / opór trwał dłużej; gorzki ton.
+- **Scenka końcowa PRZESUWA CIĘŻAR NARRACJI** wg wyniku zliczenia listów — ten sam koniec faktograficzny, inne *kto wychodzi na swoje*:
+  - **Droga A — zwycięstwo mieszczan (przewaga listów u Bażyńskiego):** krzyżacy są **pokonani** — grani jako ci, którzy czują się przegrani, ustępują, wynoszą się z miasta. Triumf TR rozegrany dosadnie.
+  - **Droga B — zwycięstwo krzyżaków (przewaga listów u Albrechta):** **kompromitacja mieszczan** — krzyżacy wygrywają **oskarżeniami**: obnażają bunt jako kontrowersyjny, niszczą narrację „dobrego/moralnego" powstania, pokazują działania TR (Nieszawa, cła, egoizm patrycjatu) jako interesowne. Nie militarne zwycięstwo, lecz **dyskredytacja**.
+- **OTWARTE [do decyzji Oskara]:** czy Droga B nie **wybiela** Zakonu zbytnio? Rozważana alternatywa: niezależnie od wyniku scenka **przedstawia OBIE perspektywy** (racje i winy obu stron), a wynik tylko przesuwa, której głos brzmi mocniej — zamiast czynić jedną stronę „słuszną". Do rozstrzygnięcia.
 - **WYMOWA MORALNA (filar tonalny):** to **mieszczanie/kupcy (TR) są tu „źli"** — ich zwycięstwo to **„świat zmienia się na gorsze"**, nie jednoznaczny triumf. Patrz `lore/fakty-vs-fabula.md`. Seedowane wcześniej: kontr-perspektywa piekarza w Z5 („bunt szkodzi rzemiosłu"). Plot twist Jordan = Bażyński ma więc gorzki smak: „bohater", do którego prowadziliśmy graczy, jest przywódcą strony, która pcha świat w dół.
 - **Reżyseria:** scenka ma być **bardzo dosadna i emocjonalna**, intensywność proporcjonalna do liczby dostarczonych listów (przewagi). Im wyraźniejszy wynik, tym mocniejsze odegranie.
 - **Remis** → wciąż otwarte (sugestia: kliffhanger + meta-żart *„a jak się to potoczyło, dowiecie się z wiki"*).

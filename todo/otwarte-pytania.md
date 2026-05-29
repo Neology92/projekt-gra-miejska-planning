@@ -62,8 +62,8 @@ Pytania pogrupowane wg pliku, w którym są dyskutowane szerzej.
 40. **Identyfikator grupy** - cech, kolor, oba?
 41. **Komunikacja awaryjna** - SMS, telefon, aplikacja?
 42. **Plotki: 3 vs 5** w jednej kopercie?
-43. **Plotki: różne per klasa** czy wspólne?
-44. **Plotki: wszystkie prawdziwe** czy są dezinformacje?
+43. ~~Plotki: różne per klasa~~ ROZSTRZYGNIĘTE [2026-05-29]: **odwrócone wg klasy** — kurierzy TR dostają krytykę TR, kurierzy Zakonu krytykę Zakonu (Pule A/B w `lore/plotki-i-pogloski.md`). Neutralne/forshadow wspólne.
+44. **Plotki: wszystkie prawdziwe** czy są dezinformacje? (Pule A/B ugruntowane faktami; osobne fałszywe tropy — otwarte.)
 
 ## Rekwizyty i produkcja
 
