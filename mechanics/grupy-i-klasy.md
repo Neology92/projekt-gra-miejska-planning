@@ -1,25 +1,31 @@
 # Mechanika - grupy i klasy
 
-## Skala gry
+## Skala gry — ROZSTRZYGNIĘTE [2026-05-29]
 
-- **Cel**: ~12 grup × ~4 osoby = ~48 graczy total.
-- **Min**: 6 grup × 3 osoby = 18 graczy (gra wciąż działa, ale mniej grup w finale).
-- **Max**: 16 grup × 5 osób = 80 graczy (logistyka MG zaczyna szwankować).
+- **10 grup × ~4 osoby = ~40 graczy**, podział **5+5**. Ostateczna liczba ustalana **w dniu gry**.
 
 ## Podział na klasy
 
-- **Tajna Rada (TR)**: ~6 grup
-- **Krzyżacy**: ~6 grup
+- **Tajna Rada (TR)**: 5 grup
+- **Krzyżacy**: 5 grup
 - **Podział losowy** lub **świadomy**?
   - Losowy: szybciej, mniej kontroli.
   - Świadomy: można zbalansować doświadczenie (mieszać "ekspertów" i "noviciuszy").
+
+## Dywersyfikacja zestawów w F2B
+
+W obrębie każdej klasy różne grupy dostają różne zagadki opcjonalne (rozproszenie po mieście + odciążenie rekwizytów):
+- **TR (5):** wszyscy Z3 + {1×Z4, 2×Z5, 2×Z6}.
+- **Krzyżacy (5):** wszyscy Z3Z + {2×Z8, 1×Z9, 2×Z10}.
+
+Tabele i mechanika „klucza do finału" — `concept/03-faza-2b-asynchroniczne.md`.
 
 ## Klasy niejawne na starcie
 
 - **Wszyscy myślą że są tym samym** - kurierami.
 - Klasa ujawnia się **stopniowo**:
   - F1: nic (wszyscy widzą się jako kurierzy).
-  - F2A: dla TR, Jordan wprowadza w fabułę mieszczan; dla krzyżaków - inna ścieżka (do rozpisania w `concept/05-tor-krzyzakow.md`).
+  - F2A: dla TR, Jordan wprowadza w fabułę mieszczan; dla krzyżaków — spotkanie z Jordanem to **infiltracja (Z3Z)**, nie sojusz (patrz `concept/05-tor-krzyzakow.md`).
   - F2B: różne zagadki, różne perspektywy → grupy zaczynają rozumieć "po której stronie są".
   - F3: ujawnione w pełni (decyzja "do kogo dostarczyć list").
 
@@ -58,7 +64,7 @@
 
 ## Otwarte pytania
 
-1. **Liczba grup** - 12 to docelowo, ale ile faktycznie zgłosi się?
+1. ~~Liczba grup~~ ROZSTRZYGNIĘTE: **10 (5+5)**, finalnie w dniu gry.
 2. **Liczba osób w grupie** - 4 standard, ale jeśli ktoś chce w 3 lub 5?
 3. **Skład grupy** - sami się dobierają czy losowo?
 4. **Kiedy klasa się ujawnia** (wariant A/B/C powyżej)?

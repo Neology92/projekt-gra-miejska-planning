@@ -16,15 +16,16 @@
 - **Ujawnienie plot twistu** — Jordan = Bażyński. Te grupy które zostawiły list u Jordana = wiedziały lub miały szczęście; te które dostarczyły komturowi = zdrada (świadoma lub nie).
 - **Aktorski element** — scenka pod zamkiem to **moment teatralny**, kulminacja kilkugodzinnego doświadczenia.
 
-## Zagadka 7 — Sklejenie
+## Zagadki finałowe — Z7 (mieszczanie) i Z11 (krzyżacy)
 
-- Po fazie 2B grupa wraca do MG (lub do Jordana? — decyzja) z **podsumowaniem zebranych informacji**.
-- MG wręcza ostateczną kopertę z zagadką 7:
-  - **Wymaga zestawienia** danych z Z3 (lista nazwisk - na której NIE MA Jordana, bo Jordan to pseudonim) + Z4 (TR obraduje w Piccolo, gdzie jest Jordan) + ew. innych.
-  - **Rozwiązanie**: Jordan = Jan Bażyński, przywódca TR.
-- Po rozwiązaniu: grupa wie do kogo realnie mogą dostarczyć list i ma **finalną decyzję**.
+Oba tory mają osobny finał, oba to **szyfry** rozwiązywane z **kluczy zebranych w 2B**.
 
-Szczegóły: `puzzles/zagadka-finalowa.md` (do napisania).
+- **Wejście (mechanika klucza):** każda grupa przychodzi z **kluczem z zagadki obowiązkowej (Z3 / Z3Z)** + **kluczem z jednej zagadki opcjonalnej** (Z4/5/6 lub Z8/9/10). Klucze są **wymienialne** — szyfr da się rozwiązać z dowolnej dopuszczonej pary (patrz `concept/03-faza-2b-asynchroniczne.md`). Klucz/rekwizyt może być przekazywany przez MG.
+- **Z7 (mieszczanie)** — sklejenie prowadzi do wniosku **Jordan = Jan Bażyński** (lista nazwisk z Z3 NIE zawiera „Jordana", bo to pseudonim; reszta kluczy wskazuje, że człowiek z Piccolo to przywódca TR). Po rozwiązaniu grupa wie, do kogo realnie dostarczyć list.
+- **Z11 (krzyżacy)** — analogiczny szyfr; treść/plot twist krzyżaków **do rozpisania** (patrz `concept/05-tor-krzyzakow.md`, plot twist otwarty).
+- Po rozwiązaniu: **finalna decyzja** — komu dostarczyć list (Bażyński / Albrecht). Wybór wolny dla obu klas.
+
+Szczegóły: `puzzles/zagadka-finalowa.md` (do napisania — obejmie Z7 i Z11).
 
 ## Decyzja: Bażyński czy Albrecht?
 

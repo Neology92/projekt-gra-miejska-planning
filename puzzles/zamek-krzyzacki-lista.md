@@ -1,13 +1,14 @@
-# Zagadka 3 - Zamek krzyżacki: lista nazwisk TR
+# Zagadka 3 / 3Z - Infiltracja siedziby przeciwnika
 
-**Status**: szkicowe.
+**Status**: szkicowe. Z3 = obowiązkowa dla TR (infiltracja zamku). **Z3Z** = lustro dla krzyżaków (infiltracja Piccolo) — sekcja niżej.
 
 ## Cel narracyjny
 
 Grupa dowiaduje się, że Zakon ma **listę nazwisk Tajnej Rady**. Wnioski:
 - Lista jest u komtura Albrechta (na mieście).
 - Jeśli ją zdobędą - wiedzą **kto jest w TR** - i znajdą faktycznego adresata listu.
-- **Sztuczka**: na liście NIE MA "Jordana", bo to pseudonim Bażyńskiego. Dopiero zestawienie z Z4 (TR obraduje w Piccolo = lokalu Jordana) prowadzi do plot twistu w Z7.
+- **Sztuczka**: na liście NIE MA "Jordana", bo to pseudonim Bażyńskiego. Dopiero zestawienie z wiedzą z F2A (człowiek z Piccolo = przywódca TR) + kluczem z zagadki opcjonalnej prowadzi do plot twistu w Z7.
+- **Output**: lista nazwisk = **klucz do finału Z7** (przez MG).
 
 ## Miejsce - ruiny zamku krzyżackiego
 
@@ -46,6 +47,16 @@ Grupa dowiaduje się, że Zakon ma **listę nazwisk Tajnej Rady**. Wnioski:
   - **Wydobyć listę** - przez podstęp, odwrócenie uwagi, kradzież.
 - Lista to **fizyczny rekwizyt**: pergaminowa kartka z nazwiskami członków TR (autentyczni patrycjusze z 1454 - patrz `lore/postaci.md` i wiki `tajna-rada.js`).
 
+## Z3Z — wersja krzyżacka (infiltracja Piccolo)
+
+Lustro Z3 dla toru krzyżaków (obowiązkowa, wszystkie 5 grup krzyżackich).
+
+- **Miejsce**: Piccolo (siedziba TR, gdzie urzęduje Jordan/Piotr).
+- **Zadania**: ukraść „zaopatrzenie" (w praktyce: odebrać kupony na obiad i je zjeść), **wyciągnąć od Jordana godzinę buntu (20:00)**, ew. ukraść rekwizyt (koło deszyfrujące — do decyzji).
+- **Output**: **klucz do finału Z11** + godzina finału.
+- **Obsada**: ten sam Jordan/Piotr co dla TR — różni się tylko **framing w kopercie** (sojusznik ↔ cel infiltracji). Jeden aktor obsługuje oba tory.
+- Mechanika „kradzieży/infiltracji" — do rozpisania (analogicznie do podebrania listy Albrechtowi w Z3).
+
 ## Trudność - balans
 
 - Jeśli **zbyt łatwe** → wszystkie grupy zdobywają listę → brak dramaturgii.
@@ -58,7 +69,8 @@ Grupa dowiaduje się, że Zakon ma **listę nazwisk Tajnej Rady**. Wnioski:
 1. **Wariant mechaniki** (A/B/C/D lub mix)?
 2. **Komtur Albrecht = Zosia** (obsada zamknięta). Otwarte: jak rozpoznawalna (kostium)? Wędruje czy stacjonarna?
 3. **Kradzież listy** - mechanika fizyczna (np. komtur trzyma listę "luźno" i jest momentem gdzie się odwraca) czy abstrakcyjna (gracz mówi "kradnę" i MG ocenia czy się udało)?
-4. **Co jeśli grupa nie zdobędzie listy** ale rozwiąże zagadkę Z3? Mają częściowy postęp - mogą wnioskować "ktoś z TR jest w lokalu kupieckim" (Z4) i intuicją trafić na Jordana w F3.
+4. **Co jeśli grupa nie zdobędzie listy** ale rozwiąże zagadkę Z3? Mają częściowy postęp - z wiedzy z F2A (człowiek z Piccolo = TR) mogą intuicją trafić na Jordana w F3.
+5. **Z3Z**: mechanika kradzieży zaopatrzenia + czy kraść koło deszyfrujące; jak Jordan/Piotr „przecieka" godzinę 20:00 grupom infiltrującym.
 
 ## Co autor może zrobić sam vs gdzie pomocy
 

@@ -1,10 +1,13 @@
-# Zagadka polichromii w Biedronce
+# Zagadka polichromii w Biedronce — Z10
 
 **Status**: szkicowe. Mechanika jasna, treść do doboru.
 
-## Tor: **krzyżacy**
+## Numeracja: **Z10** (tor krzyżaków, opcjonalna, 2 grupy)
 
-Zagadka **weryfikuje** czy grupa jest "godna" - patrz mechanika weryfikacji w `concept/03-faza-2b-asynchroniczne.md`.
+- Lustro **Z6** (anioły, tor mieszczan). Patrz `concept/03-faza-2b-asynchroniczne.md`, `puzzles/00-master-list.md`.
+- Tylko dla krzyżaków (TR ma w tym miejscu Z6 — anioły, inne miejsce).
+- Output: **wymienialny „klucz" do finału Z11** (przez MG) + weryfikacja „godności" dla Zakonu.
+- Mechanika weryfikacji — `concept/03-faza-2b-asynchroniczne.md`.
 
 ## Miejsce
 
@@ -16,8 +19,8 @@ Zagadka **weryfikuje** czy grupa jest "godna" - patrz mechanika weryfikacji w `c
 
 1. Grupa dostaje **kartę** z reprodukcjami konkretnych elementów polichromii.
 2. Idzie do kamienicy, odnajduje te elementy **in real life**.
-3. Wśród elementów są **potwory bestiariusza krzyżackiego** (smoki, bazyliszki, gryfy, lwy, demony - charakterystyczne dla średniowiecznych malowideł zakonnych).
-4. Grupa **identyfikuje konkretne potwory** = weryfikacja "rozpoznajemy heraldykę i symbolikę zakonu" = znak lojalności krzyżackiej.
+3. Wśród elementów są **potwory** (smoki, bazyliszki, gryfy, lwy, demony - charakterystyczne dla średniowiecznych malowideł).
+4. Grupa **wskazuje, które potwory są „prawdziwe"** wg rekwizytu **„Bestiariusz Krzyżowca"** (karta-manuskrypt z listą/ilustracjami autentycznych bestii Zakonu) = weryfikacja lojalności krzyżackiej + klucz do finału.
 
 ## Co weryfikuje?
 
@@ -47,7 +50,7 @@ Zagadka **weryfikuje** czy grupa jest "godna" - patrz mechanika weryfikacji w `c
 1. **Co konkretnie jest w polichromiach Biedronki?** - WYMAGA RESEARCHU (autor + agent).
 2. **Karta z reprodukcjami** - jak ją zaprojektować? Stylizowane na manuskrypt? Ksero z literatury?
 3. **Jak weryfikuje MG/NPC** że grupa "rozpoznała"? Słowna deklaracja? Karta z odpowiedziami?
-4. **Czy ta zagadka jest tylko dla krzyżaków**, czy TR też przez nią przechodzi z innym wynikiem?
+4. ~~Czy tylko dla krzyżaków~~ ROZSTRZYGNIĘTE [2026-05-29]: **tylko krzyżacy** (Z10). TR mają w tym miejscu zestawu Z6 (anioły). Polichromie ≠ anioły, inne miejsca.
 
 ## Co autor może zrobić sam vs gdzie pomocy
 

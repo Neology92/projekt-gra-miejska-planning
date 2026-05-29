@@ -7,7 +7,7 @@ Pytania pogrupowane wg pliku, w którym są dyskutowane szerzej.
 ## STRATEGICZNE (wpływają na wszystko - najpierw rozstrzygnij te)
 
 1. **Tytuł gry** - finalna nazwa.
-2. ~~Skala~~ ROZSTRZYGNIĘTE [2026-05-29]: **~11 grup × 4 osoby (~44 osób)**; ostateczna liczba grup ustalana **w dniu gry**. Implikacja: ~6 grup krzyżackich / ~5 TR (lub odwrotnie). Jordan (1 aktor) = wąskie gardło F2A — wymaga harmonogramu slotów wejść. Produkcja skalowana do ~11 grup.
+2. ~~Skala~~ ROZSTRZYGNIĘTE [2026-05-29]: **10 grup × 4 osoby (~40 osób), podział 5+5** (5 TR + 5 krzyżackich); ostateczna liczba ustalana **w dniu gry**. Jordan (1 aktor) obsługuje oba tory — wymaga rozłożenia grup w czasie. Produkcja skalowana do 10 grup.
 3. **Data rozgrywki** - kiedy (deadline planowania)?
 4. **Klasy** - kiedy się ujawniają (F1/F2A/F2B/F3)? Patrz `mechanics/grupy-i-klasy.md` warianty A/B/C.
 5. ~~Tor krzyżacki~~ ROZSTRZYGNIĘTE [2026-05-29]: **pełna symetria** — osobny zestaw 4 zagadek F2B dla krzyżaków + własny plot twist + osobne rekwizyty (~2x pracy nad F2B). Zastrzeżenie obsadowe: symetria dotyczy **treści**, nie aktorów — krzyżacy NIE mają żywego NPC (tylko 2 aktorzy), więc ich kontakt i plot twist grają przez **papier/rekwizyt**. Patrz `concept/05-tor-krzyzakow.md`.
@@ -17,7 +17,7 @@ Pytania pogrupowane wg pliku, w którym są dyskutowane szerzej.
 ## STRUKTURALNE (kształtują strukturę gry)
 
 8. **F1 trasa Z1** - 5-7 miejsc, które konkretne? CZĘŚCIOWO ROZSTRZYGNIĘTE [2026-05-29]: **NIE jedna wspólna trasa — różne trasy per grupa** (rozproszenie grup po mieście). Szczegółowy dobór miejsc i mapowanie symboli **odłożone na koniec prac**; realizacją zajmie się **prawdopodobnie Piotr**, nie Oskar.
-9. **F2B** - które 2 zagadki obowiązkowe? Czy "wybierz 2 z 4"? (Po sync: plik `03-faza-2b` sugeruje **Z3 + Z4**; board sugeruje **Z3 + Z6** — patrz #63.)
+9. ~~F2B — które obowiązkowe / wybierz 2 z 4~~ ROZSTRZYGNIĘTE [2026-05-29]: **model dywersyfikacji**, nie „wybierz 2 z 4". Obowiązkowa: **Z3 (TR) / Z3Z (krzyżacy)** + **1 opcjonalna** per grupa (5+5; tabele w `concept/03-faza-2b-asynchroniczne.md`). Bramkowanie finału: Z3/Z3Z + 1 opcjonalna (klucz wymienialny).
 10. **Wybór formy "trzy rzeczy do zestawienia"** w Z2 (`puzzles/droga-do-jordana.md`).
 11. **Wybór formy testu Jordana** (1-5 propozycji w `puzzles/test-jordana.md`).
 12. **Wariant mechaniki Z3** (A/B/C/D w `puzzles/zamek-krzyzacki-lista.md`).
@@ -32,13 +32,15 @@ Pytania pogrupowane wg pliku, w którym są dyskutowane szerzej.
 18. **Z1: konkretne mapowanie symboli ↔ obiekty** (autorska kreatywka).
 19. **Z2: trzy rzeczy do zestawienia** - jakie konkretnie?
 20. **Z2b: treść testu Jordana** (formuła + konkret).
-21. **Z3: mechanika terenowa przy zamku** (treść zagadki).
-22. **Z4: zagadka prowadząca do Piccolo** (TR w siedzibach kupieckich) - kompletnie nierozpisana.
-23. **Z5: zagadka Związku Pruskiego + wątek piekarza** (papier, bez NPC) - kompletnie nierozpisana.
-24. **Z6: zagadka „pogłębienie info o TR"** (nowa z boardu) - kompletnie nierozpisana, brak nawet zarysu mechaniki.
-25. **Z7: zagadka finałowa** (sklejenie Jordan=Bażyński) - kompletnie nierozpisana.
-26. **Polichromie Biedronka** - jakie konkretne motywy (wymaga researchu osobistego).
-27. **Kalimba** - używamy czy nie? Jeśli tak, gdzie? Czy zmieniamy instrument?
+21. **Z3 / Z3Z: mechanika infiltracji** (zamek / Piccolo) — treść do rozpisania; co jest „kluczem" wyjściowym; mechanika podebrania (Z3) / kradzieży zaopatrzenia (Z3Z); co jeśli złapani.
+22. **Z4 / Z8: melodia (kalimba)** — treść melodii i mechanika rozpoznania/odtworzenia; co jest kluczem do finału.
+23. **Z5 / Z9: sensoryczna z piernikiem** — mechanika sensoryczna; jaki klucz wypluwa.
+24. **Z6: anioły** — które anioły na Starówce, jakie atrybuty/rekwizyty, mechanika (wymaga researchu/wizyty).
+25. **Z7 / Z11: finałowe szyfry** — konkretny szyfr; jak klucze z 2B wchodzą; sklejenie Jordan=Bażyński (Z7) i plot twist krzyżaków (Z11, otwarty).
+26. **Z10 / Polichromie Biedronka** - jakie konkretne potwory, treść „Bestiariusza Krzyżowca" (wymaga researchu osobistego).
+27. ~~Kalimba: używamy?~~ ROZSTRZYGNIĘTE [2026-05-29]: **tak** — Z4 (melodia flisaka) + Z8 (melodia zakonu). Decyzja o instrumencie (anachronizm) — patrz `lore/fakty-vs-fabula.md`, `puzzles/kalimba.md`.
+27a. **„Opowieść skazanego" (bonus)** — mechanika trójkątnych puzzli (dwustronne), treść dwóch wersji informacji; niski priorytet.
+27b. **Mechanika „klucza" 2B→finał** — czy klucz to item fizyczny / hasło / fragment szyfru? Czy wszystkie wymienialne 1:1?
 
 ## NPCs i aktorzy
 
@@ -89,10 +91,10 @@ Pytania pogrupowane wg pliku, w którym są dyskutowane szerzej.
 
 ## Rozbieżności board (Whimsical) vs pliki .md
 
-60. ~~Numeracja zagadek F2B — board ≠ pliki.~~ ROZSTRZYGNIĘTE [2026-05-29]: **pełny sync z boardem**. Obowiązuje: Z3 = Zamek/lista nazwisk, Z4 = TR w siedzibach kupieckich (Piccolo), Z5 = Związek Pruski + wątek piekarza, Z6 = Pogłębienie info o TR (nowa). Osobna „perspektywa rzemieślnika (piekarza)" zniknęła — wątek wszedł w Z5.
-61. **„Zagadka nr 5" dubluje się na boardzie**: raz "Związek Pruski", raz mindmap "sensoryczna z piernikiem". Który pomysł zostaje pod Z5 (lub czy „piernik" idzie do Z6)?
-62. **„melodia flisaka"** (nienumerowana zagadka na boardzie) — czy to miejsce dla **kalimby** (dotąd placeholder „brak miejsca w fabule")? Patrz `puzzles/kalimba.md`.
-63. **Które zagadki bramkują finał (Z7)?** Board: „np. 3 i 6, albo wszystkich"; plik `03-faza-2b`: Z3 + Z4. (Powiązane z #9.)
+60. ~~Numeracja zagadek F2B — board ≠ pliki.~~ ROZSTRZYGNIĘTE [2026-05-29, v2]: **kanon ustalony** (zastępuje wcześniejszy sync). TR: **Z3** infiltracja zamku, **Z4** melodia flisaka (kalimba), **Z5** sensoryczna z piernikiem, **Z6** anioły. Krzyżacy (lustra): **Z3Z** infiltracja Piccolo, **Z8** melodia zakonu, **Z9** sensoryczna, **Z10** polichromie/Bestiariusz. Finały: **Z7** (TR), **Z11** (krzyżacy). „TR w Piccolo / Związek Pruski / pogłębienie TR" = **tylko tło fabularne do kopert**, nie mechanika. Patrz `puzzles/00-master-list.md`.
+61. ~~„Zagadka nr 5" dubluje się~~ ROZSTRZYGNIĘTE [2026-05-29]: Z5 = **sensoryczna z piernikiem** (mechanika); „Związek Pruski / piekarz" = opcjonalne tło do koperty.
+62. ~~„melodia flisaka" = kalimba?~~ ROZSTRZYGNIĘTE [2026-05-29]: **tak** — Z4 melodia flisaka i Z8 melodia zakonu używają **kalimby**. Patrz `puzzles/kalimba.md`.
+63. ~~Które zagadki bramkują finał~~ ROZSTRZYGNIĘTE [2026-05-29]: **Z3/Z3Z (obowiązkowa) + 1 opcjonalna**, klucz wymienialny przez MG. Patrz `concept/03-faza-2b-asynchroniczne.md`.
 
 ---
 

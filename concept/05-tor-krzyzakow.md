@@ -7,7 +7,23 @@
 - **Poziom symetrii: PEŁNA SYMETRIA.** Krzyżacy dostają **osobny zestaw 4 zagadek F2B** (nie lustro TR), **własny plot twist** i **osobne rekwizyty**. Szacowany nakład: ~2x pracy nad F2B.
 - **Ograniczenie obsadowe (twarde):** tylko 2 aktorów (Piotr = Jordan/Bażyński, Zosia = Albrecht). **Krzyżacy NIE mają żywego NPC** jako analogu Jordana. Ich kontakt z „Zakonem" i plot twist grają **wyłącznie przez papier/rekwizyt** (list, podrzucona wiadomość, karta). To unieważnia warianty „brat zakonny / donosiciel jako żywy NPC" z sekcji 2 niżej — zostają jako postaci **na papierze**.
 - **Architektura rozdzielenia:** F1 + F2A **wspólne** dla wszystkich ~11 grup (wszyscy idą do Jordana). Tor TR vs krzyżacy **rozdziela się dopiero w F2B** przez treść kopert — bo jeden Jordan nie może obsłużyć dwóch równoległych F2A, a Albrechta nie wolno ujawnić w 2A (za wcześnie).
-- **Skala:** ~11 grup × 4 → ok. **5-6 grup krzyżackich**.
+- **Skala:** 10 grup, podział 5+5 → **5 grup krzyżackich**.
+
+## Struktura potwierdzona [2026-05-29] (board + ustalenia autora)
+
+Numeracja kanoniczna — patrz `puzzles/00-master-list.md` i `concept/03-faza-2b-asynchroniczne.md`.
+
+- **Do Z2 identycznie** z torem TR (szlak symboli Z1 → „kto kłamie?" Z2 → Piccolo).
+- **Rozdział po Z2.** Krzyżacka zagadka obowiązkowa to **Z3Z — infiltracja Piccolo** (siedziby TR): kradzież zaopatrzenia (kupony na obiad → zjeść), wyciągnięcie **godziny buntu (20:00)** od Jordana, ew. kradzież koła deszyfrującego. Lustro Z3 (mieszczanie infiltrują zamek). Ten sam aktor Jordan/Piotr — różnica we framingu koperty.
+- **Zagadki opcjonalne (lustra TR):**
+  - **Z8 — melodia zakonu** (kalimba) ← lustro Z4 (melodia flisaka).
+  - **Z9 — sensoryczna z piernikiem** ← lustro Z5.
+  - **Z10 — polichromie w „Biedronce" + „Bestiariusz Krzyżowca"** (wskazanie prawdziwych potworów) ← lustro Z6 (anioły).
+- **Dywersyfikacja (5 grup):** wszyscy Z3Z + {**2×Z8, 1×Z9, 2×Z10**}.
+- **Finał: Z11** (szyfr) — lustro Z7. Klucz z Z3Z + 1 opcjonalnej (wymienialny, przez MG).
+- **Plot twist krzyżaków: WCIĄŻ OTWARTY** — do wymyślenia przez Oskara (osobna sesja twórcza). Propozycje-zalążki w sekcji 4 niżej.
+
+> Sekcje 1-6 poniżej to **wcześniejszy materiał roboczy**. Część jest już rozstrzygnięta wyżej (np. brak żywego NPC — sekcja 2 nieaktualna; mapa/szyfrownik — patrz `mechanics/mapy-i-szyfrownik.md`). Zostawione dla kontekstu i jako rezerwuar pomysłów do plot twistu.
 
 ## Co wiemy
 

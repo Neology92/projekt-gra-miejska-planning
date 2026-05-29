@@ -12,7 +12,7 @@ Brak finalnej decyzji. Nawiązuje do wiki *Acta Thoruniensia 1454*. Propozycje d
 
 ## Format
 
-- **Grupy**: **~11 grup × ~4 osoby (~44 osób)** [decyzja 2026-05-29]; ostateczna liczba grup ustalana **w dniu gry**. Implikacja: ~5-6 grup krzyżackich / ~5-6 TR. Jeden Jordan (Piotr) = wąskie gardło F2A → potrzebny harmonogram slotów wejść. Patrz `mechanics/grupy-i-klasy.md`.
+- **Grupy**: **10 grup × ~4 osoby (~40 osób), podział 5+5** [decyzja 2026-05-29] — 5 grup TR + 5 krzyżackich; ostateczna liczba ustalana **w dniu gry**. Jeden Jordan (Piotr) obsługuje oba tory (sojusznik dla TR, cel infiltracji dla krzyżaków) → przy 10 grupach potrzebny harmonogram slotów / rozłożenie w czasie. Patrz `mechanics/grupy-i-klasy.md`.
 - **Podział na klasy**: dwie klasy **niejawne dla graczy na starcie**:
   - **Tajna Rada (TR)** — pracują (nieświadomie) dla mieszczan
   - **Krzyżacy** — pracują (nieświadomie) dla Zakonu
@@ -46,19 +46,23 @@ Szczegóły: `concept/01-faza-1-kurierzy.md`.
 - Spotkanie z Jordanem: posiłek, dialog, **test zaufania** (jedna z zagadek).
 - Gracze dowiadują się **wprost o buncie** (po wcześniejszym forshadowingu plotkami z koperty MG).
 - **Niejawne**: Jordan to w grze pseudonim Jana Bażyńskiego, przewodniczącego Tajnej Rady — ujawnione dopiero w finale.
+- **Krzyżacy** docierają do Piccolo tak samo (Z2), ale ich spotkanie z Jordanem to **infiltracja (Z3Z)**, nie sojusznicza rozmowa — kradną zaopatrzenie i wyciągają godzinę buntu. Ten sam aktor (Piotr), inny framing w kopercie.
 
 Szczegóły: `concept/02-faza-2a-jordan.md`.
 
-### Faza 2B — Cztery zagadki asynchroniczne
+### Faza 2B — Zagadki asynchroniczne (dywersyfikowane)
 
-- Po opuszczeniu Jordana grupa dostaje **4 zagadki równolegle**: zagadki 3, 4, 5, 6.
-  - **2 obowiązkowe** + **2 opcjonalne** (które są które — do decyzji).
-- Każda zagadka leakuje fragment informacji o **Tajnej Radzie** lub **Krzyżakach**:
-  - Z. 3 — Zamek krzyżacki: zakon ma listę nazwisk TR (rozwiązanie = zdobycie listy, kradzież komturowi Albrechtowi).
-  - Z. 4 — Tajna Rada obraduje w siedzibach kupieckich (Piccolo).
-  - Z. 5 — Związek Pruski działa wbrew rzemieślnikom — wątek piekarza (kontr-perspektywa: bunt szkodzi rzemiosłu) + szerszy kontekst polityczny.
-  - Z. 6 — Pogłębienie info o Tajnej Radzie (nowa zagadka z boardu, placeholder).
+- **Rozdział torów następuje zaraz po Z2.** Każda klasa zaczyna od zagadki **obowiązkowej** (infiltracja siedziby przeciwnika), potem **jedna opcjonalna**, potem finał.
+  - **Z3 (TR)** — infiltracja zamku krzyżackiego: zdobycie listy nazwisk TR (kradzież komturowi Albrechtowi, aktor Zosia).
+  - **Z3Z (krzyżacy)** — infiltracja Piccolo (siedziby TR): kradzież zaopatrzenia + wyciągnięcie godziny buntu od Jordana.
+- **Dywersyfikacja (5+5):** różne grupy dostają różne zestawy, by rozproszyć je po mieście i odciążyć rekwizyty:
+  - TR: wszyscy Z3 + {1×Z4 melodia(kalimba), 2×Z5 sensoryczna, 2×Z6 anioły}.
+  - Krzyżacy: wszyscy Z3Z + {2×Z8 melodia(kalimba), 1×Z9 sensoryczna, 2×Z10 polichromie/Bestiariusz}.
+- **Mechanika klucza:** każda zagadka opcjonalna wypluwa **wymienialny „klucz"** (przez MG) do finałowego szyfru → finał = klucz z Z3/Z3Z + dowolny 1 opcjonalny.
+- **Bonus opcjonalny:** „Opowieść skazanego" (puzzle z trójkątów) — gdy grupa świetna; niski priorytet.
 - **Faza 2B = etap weryfikacji** kurierów (przez papier + MG; obserwacja tam, gdzie i tak są aktorzy).
+
+Szczegóły i tabele dywersyfikacji: `concept/03-faza-2b-asynchroniczne.md`.
 
 Szczegóły: `concept/03-faza-2b-asynchroniczne.md`.
 

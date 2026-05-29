@@ -7,7 +7,7 @@
 **Zanim cokolwiek piszesz, podejmij te decyzje** - inaczej każda zagadka będzie zatkana czekaniem na input.
 
 1. ~~Ile MG?~~ ROZSTRZYGNIĘTE: **1 MG = Oskar** (`mechanics/koperty-mg.md`).
-2. ~~Skala gry~~ ROZSTRZYGNIĘTE: **~11 grup × 4 (~44 os.)**, ostateczna liczba w dniu gry.
+2. ~~Skala gry~~ ROZSTRZYGNIĘTE: **10 grup × 4 (~40 os.), 5+5**, ostateczna liczba w dniu gry.
 3. **Klasy ujawnione kiedy?** (wariant A/B/C w `mechanics/grupy-i-klasy.md`)
 4. **Mapa + szyfrownik: wspólne czy osobne per klasa?** (`mechanics/mapy-i-szyfrownik.md`)
 5. **Lokal Jordana** - który? Mam zgodę?
@@ -31,14 +31,15 @@ Kolejność prac na zagadkach (priorytetowa):
 
 **Bez tego nie ma gry.** Najwyższy priorytet.
 
-### Krok 2: Z3 Lista nazwisk + Z4 TR w Piccolo (obowiązkowe w F2B)
+### Krok 2: Z3 (infiltracja zamku) + Z3Z (infiltracja Piccolo) — obowiązkowe w F2B
 
 - [ ] Wariant mechaniki Z3 (A/B/C/D) - `puzzles/zamek-krzyzacki-lista.md`
 - [ ] Treść listy (autentyczne nazwiska z wiki `tajna-rada.js`)
-- [ ] Mechanika "kradzieży" komturowi Albrechtowi
-- [ ] Treść Z4 (wskazówka prowadząca do Jordana = Piccolo)
+- [ ] Mechanika "kradzieży" listy komturowi Albrechtowi (Z3)
+- [ ] Mechanika Z3Z (kradzież zaopatrzenia + przeciek godziny 20:00 + ew. koło deszyfrujące)
+- [ ] Zdefiniowanie „klucza" wyjściowego z Z3 i Z3Z do finału
 
-**Bez Z3 i Z4 finał nie ma sensu.**
+**Bez Z3/Z3Z finał nie ma sensu.**
 
 ### Krok 3: Z2 Droga do Jordana + Z2b Test zaufania (przejście F1→F2A)
 
@@ -46,11 +47,12 @@ Kolejność prac na zagadkach (priorytetowa):
 - [ ] Wybór formy testu Jordana - `puzzles/test-jordana.md`
 - [ ] Napisanie konkretu testu
 
-### Krok 4: Z7 Finałowa
+### Krok 4: Z7 + Z11 Finałowe (szyfry)
 
-- [ ] Spis informacji z Z3+Z4+ew. innych potrzebnych do sklejenia "Jordan = Bażyński"
-- [ ] Mechanika rozwiązania (logiczna układanka? zestawienie kart?)
-- [ ] Treść koperty K8
+- [ ] Mechanika szyfru Z7 (mieszczanie) zasilanego kluczami z Z3 + 1 opcjonalnej → "Jordan = Bażyński"
+- [ ] Mechanika szyfru Z11 (krzyżacy) + plot twist krzyżaków (otwarty)
+- [ ] Zapewnienie, że klucze opcjonalne są **wymienialne** (każda dopuszczona para rozwiązuje szyfr)
+- [ ] Treść koperty finałowej
 
 ### Krok 5: Plotki i forshadowing
 
@@ -58,17 +60,21 @@ Kolejność prac na zagadkach (priorytetowa):
 - [ ] Przypisanie do kopert K1-K7
 - [ ] Tagging (NCM/F2A/F2B/F3)
 
-### Krok 6: Z5 i Z6 (opcjonalne w F2B)
+### Krok 6: Zagadki opcjonalne F2B (mieszczanie i lustra krzyżackie)
 
-- [ ] Z5 Związek Pruski + wątek piekarza - treść (papier, bez NPC), miejsce
-- [ ] Z6 Pogłębienie info o TR - treść, miejsce (nowa, placeholder z boardu)
+- [ ] Z4 melodia flisaka + Z8 melodia zakonu (kalimba) - treść melodii, mechanika kodu
+- [ ] Z5 + Z9 sensoryczna z piernikiem - mechanika sensoryczna, miejsce
+- [ ] Z6 anioły (Starówka) - które anioły, jakie atrybuty (research/wizyta)
+- [ ] Z10 polichromie + Bestiariusz Krzyżowca - research treści (osobista wizyta)
+- [ ] Każda zagadka: zdefiniować wymienialny „klucz" do finału
 
-### Krok 7: Tor krzyżacki
+### Krok 7: Tor krzyżacki — domknięcie
 
-- [ ] Decyzja czy symetryczny czy uproszczony
-- [ ] Rozpisanie analogów zagadek (lub lustro)
-- [ ] Polichromie - research treści (osobista wizyta)
-- [ ] Decyzja o kalimbie
+- [x] Decyzja: **pełna symetria** (2026-05-29)
+- [ ] **Plot twist krzyżaków** (otwarty — kreatywka Oskara)
+- [ ] Treść Z3Z, Z8, Z9, Z10, Z11
+- [ ] Decyzja o instrumencie (kalimba vs XV-wieczny)
+- [ ] Bonus „Opowieść skazanego" (niski priorytet)
 
 ## Faza C - produkcja rekwizytów (TY + ewentualnie pomoc, ~5-15h)
 

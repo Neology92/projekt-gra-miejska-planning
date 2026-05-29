@@ -1,6 +1,10 @@
-# Zagadka kalimbowa - placeholder
+# Zagadka kalimbowa
 
-**Status**: 🔴 brak miejsca w fabule. Pomysł autora oderwany od reszty.
+**Status**: 🟡 **miejsce w fabule potwierdzone** [2026-05-29]. Kalimba = rekwizyt dwóch zagadek lustrzanych:
+- **Z4 — melodia flisaka** (tor mieszczan, opcjonalna, 1 grupa).
+- **Z8 — melodia zakonu** (tor krzyżaków, opcjonalna, 2 grupy).
+
+Razem 3 grupy → wystarczy 1-2 egz. kalimby (grupy rozłożone w czasie). Każda z zagadek musi wypluć **wymienialny „klucz"** do finału (Z7/Z11). Treść melodii i mechanika kodu — do rozpisania. Decyzja o instrumencie (anachronizm) wciąż otwarta — patrz niżej.
 
 ## Pomysł autora (cytat skondensowany)
 
@@ -15,10 +19,11 @@
 5. **Spisują numery** pręcików → kod liczbowy.
 6. Kod podają jako hasło w innej zagadce.
 
-## Problem: brak miejsca w fabule
+## Problem: anachronizm (miejsce w fabule już jest)
 
+- Miejsce fabularne **rozstrzygnięte** (Z4/Z8) — pozostaje tylko kwestia anachronizmu.
 - **Kalimba nie jest historyczna dla Torunia 1454** - to instrument afrykański, znany w Europie od XIX w.
-- Autor jest świadomy nagięcia - pyta "jak to wpiąć fabularnie".
+- Do decyzji: zostawić kalimbę (świadomy anachronizm) czy podmienić na instrument XV-wieczny (wariant B niżej). Patrz `lore/fakty-vs-fabula.md`.
 
 ## Propozycje wpięcia
 
@@ -44,20 +49,18 @@
 - Krzyżacy mają wątek **bardziej "tajemniczy"** - kalimba jako element ezoteryczny zakonu.
 - Naciągane, ale daje pretekst.
 
-## Kiedy w grze?
+## Kiedy w grze? — ROZSTRZYGNIĘTE
 
-Brak decyzji. Możliwe miejsca:
-- W jednej z opcjonalnych zagadek F2B (Z5 lub Z6).
-- **Trop z boardu**: nienumerowana zagadka „melodia flisaka" — możliwe naturalne miejsce dla kalimby (patrz `todo/otwarte-pytania.md` #62).
-- W teście u Jordana (mniej prawdopodobne - test ma być krótki).
-- W zagadce krzyżackiej (jeśli D).
+- **Z4 — melodia flisaka** (mieszczanie, opcjonalna).
+- **Z8 — melodia zakonu** (krzyżacy, opcjonalna). Wariant D (kalimba jako ezoteryczny element zakonu) ładnie pasuje tu fabularnie.
 
 ## Otwarte pytania
 
-1. **Czy w ogóle używać kalimby?** Czy jest pomysł lub po prostu "mam kalimbę i chciałbym ją wykorzystać"?
-2. **Jeśli tak, to gdzie?**
-3. **Czy zmieniamy na historyczny instrument** (B)?
-4. **Treść motywu muzycznego** - sztampowa melodia czy coś tematycznego (np. melodia z `kuchnia-pierniki.js` / hymn cechowy)?
+1. ~~Czy używać kalimby~~ ROZSTRZYGNIĘTE: **tak** (Z4 + Z8).
+2. ~~Gdzie~~ ROZSTRZYGNIĘTE: Z4 (melodia flisaka) + Z8 (melodia zakonu).
+3. **Czy zmieniamy na historyczny instrument** (B) — wciąż otwarte (anachronizm).
+4. **Treść melodii** — dwie różne (flisak vs zakon)? Coś tematycznego (np. melodia z `kuchnia-pierniki.js` / hymn cechowy / legenda flisaka)?
+5. **Co jest „kluczem" wyjściowym** (kod liczbowy z pręcików → fragment szyfru do finału)?
 
 ## Co autor może zrobić sam vs gdzie pomocy
 
