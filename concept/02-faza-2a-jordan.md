@@ -55,8 +55,9 @@ Szczegóły: `puzzles/test-jordana.md`.
 ## Otwarte pytania
 
 1. **Jak Jordan rozróżnia TR od krzyżaków?** Czy gra obie klasy w ten sam sposób, oferuje to samo? Czy daje inne instrukcje?
-   - Wariant: Jordan nie wie kto przed nim stoi → daje **te same testy** → grupa pokazuje swoją lojalność dopiero w decyzjach fazy 2B/3.
-   - Wariant: krzyżacy mają **innego NPC** (np. komtur Albrecht z chochlą = inny rekwizyt) → wtedy faza 2A jest podzielona.
+   - Wariant: Jordan (Piotr) nie wie kto przed nim stoi → daje **te same testy** → grupa pokazuje swoją lojalność dopiero w decyzjach fazy 2B/3.
+   - Wariant (w ramach 2 aktorów): TR spotyka **Jordana (Piotr)**, a krzyżacy **Albrechta (Zosia)** — wtedy F2A jest podzielona, ale wciąż mieści się w obsadzie. Decyzja Oskara.
+   - ⚠️ Nieaktualny jest wariant z **dodatkowym** NPC dla krzyżaków — aktorów jest tylko dwóch.
 2. **Lokalizacja Jordana**: konkretny lokal w Toruniu (Picollo? Hochla? Pierogarnia?). Wymaga researchu i konsultacji z właścicielem lokalu (czy zgodzi się gościć grupy).
 3. **Język spotkania**: Jordan mówi współczesną polszczyzną czy stylizowaną?
 4. **Posiłek**: gracze go zjedzą = czas trwania spotkania ~15-20 min (nie 5). Zaplanować logistykę MG — kolejne grupy mogą czekać.

@@ -68,7 +68,7 @@ Każda koperta zawiera **5 elementów**:
 
 ## Otwarte pytania
 
-1. **Ilu MG?** (1 vs 2 vs 3)
+1. ~~Ilu MG?~~ ROZSTRZYGNIĘTE [2026-05-29]: **1 MG = Oskar**. ⚠️ Konsekwencja: 1 MG na ~12 grup to wąskie gardło — kluczowy staje się **slot/timing** wizyt (patrz #3) i być może rozłożenie kopert tak, by nie wymagały częstych powrotów do MG.
 2. **Lokalizacja MG** w fazie 1, 2A, 2B, 3 - konkretne miejsca?
 3. **Czas trwania** każdej wizyty u MG (przyjąć max 5 min na grupę żeby się nie kolejkowali).
 4. **Logistyka pieczętowania kopert** - kto to robi przed grą? Ile czasu?

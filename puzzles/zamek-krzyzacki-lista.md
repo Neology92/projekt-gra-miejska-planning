@@ -23,11 +23,10 @@ Grupa dowiaduje się, że Zakon ma **listę nazwisk Tajnej Rady**. Wnioski:
 - Grupa znajduje określone symbole / liczby.
 - Zestawia w hasło/szyfr → odpowiedź.
 
-### Wariant B: zagadka z NPC
+### Wariant B: zagadka z NPC — ⚠️ niedostępny
 
-- NPC **brat zakonny** (lub strażnik) jest w pobliżu.
-- Daje grupie zagadkę (np. o historii Zakonu).
-- Po rozwiązaniu - przekazuje informację o liście.
+- Wymagałby żywego **brata zakonnego/strażnika** przy zamku — **nie ma na to obsady** (tylko 2 aktorzy: Piotr i Zosia, oboje zajęci gdzie indziej).
+- Jeśli ktoś żywy ma być przy zamku w Z3, to **tylko Albrecht (Zosia)** — patrz sekcja "Po rozwiązaniu" niżej. Inaczej Z3 idzie wariantem A/C/D (papier/teren).
 
 ### Wariant C: znaleziony rekwizyt
 
@@ -41,7 +40,7 @@ Grupa dowiaduje się, że Zakon ma **listę nazwisk Tajnej Rady**. Wnioski:
 
 ## Po rozwiązaniu - kontakt z komturem Albrechtem
 
-- **Komtur Albrecht** to NPC (aktor) krążący po mieście (lokalizacja stała? wędrowny?).
+- **Komtur Albrecht** to aktor (**Zosia**) krążący po mieście (lokalizacja stała? wędrowny?).
 - Grupa musi:
   - Znaleźć go.
   - **Wydobyć listę** - przez podstęp, odwrócenie uwagi, kradzież.
@@ -57,7 +56,7 @@ Grupa dowiaduje się, że Zakon ma **listę nazwisk Tajnej Rady**. Wnioski:
 ## Otwarte pytania
 
 1. **Wariant mechaniki** (A/B/C/D lub mix)?
-2. **Komtur Albrecht - aktor**. Kto? Jak rozpoznawalny (kostium)? Wędruje czy stacjonarny?
+2. **Komtur Albrecht = Zosia** (obsada zamknięta). Otwarte: jak rozpoznawalna (kostium)? Wędruje czy stacjonarna?
 3. **Kradzież listy** - mechanika fizyczna (np. komtur trzyma listę "luźno" i jest momentem gdzie się odwraca) czy abstrakcyjna (gracz mówi "kradnę" i MG ocenia czy się udało)?
 4. **Co jeśli grupa nie zdobędzie listy** ale rozwiąże zagadkę Z3? Mają częściowy postęp - mogą wnioskować "ktoś z TR jest w lokalu kupieckim" (Z5) i intuicją trafić na Jordana w F3.
 
