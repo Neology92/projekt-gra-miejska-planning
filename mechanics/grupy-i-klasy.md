@@ -47,13 +47,15 @@ Tabele i mechanika „klucza do finału" — `concept/03-faza-2b-asynchroniczne.
 - **Kolor / symbol** (każda grupa nosi opaskę/szarfę).
 - **Hasło** (przy raportach u MG, dla weryfikacji).
 
-## Brief klas - kiedy ujawnia się?
+## Brief klas - kiedy ujawnia się? — ROZSTRZYGNIĘTE [2026-05-29]
 
-- **Wariant A: nie ujawnia się explicit** - gracze odkrywają w trakcie.
-- **Wariant B: ujawnia się w F2A** (Jordan mówi TR "wy jesteście naszymi", krzyżakom analog z ich strony).
-- **Wariant C: ujawnia się w F3** (dopiero finałowa decyzja pokazuje co kto naprawdę robił).
+**Klasa ujawnia się po rozwiązaniu Z2.**
 
-**Sugestia: B** - daje fabularnym graczom satysfakcję świadomej decyzji, ale zachowuje misterium do F2A.
+- Już z **plotek (F1)** gracze powinni wychwycić, że w mieście jest spór: **Zakon Krzyżacki vs Tajna Rada Związku Pruskiego**.
+- **Po Z2** gracz dowiaduje się, po której stronie jest **odbiorca jego listu** → dla kogo pracuje (TR czy Zakon).
+- **Spotkanie Albrechta / Jordana** w pełni rozjaśnia sytuację:
+  - **Jordan** jest wciąż **incognito** — NIE wiadomo, że to Jan Bażyński (to plot twist Z7).
+  - **Albrecht** od razu znany jako komtur, ale **nie przyjmie żadnej wiadomości bez udowodnienia, że nadawcy są godnymi krzyżakami** → stąd **F2B = weryfikacja jako napęd fabularny** (i brama do finału po stronie krzyżackiej, patrz `concept/05-tor-krzyzakow.md`).
 
 ## Synchronizacja grup
 

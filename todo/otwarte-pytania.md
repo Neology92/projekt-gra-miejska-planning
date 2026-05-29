@@ -9,8 +9,8 @@ Pytania pogrupowane wg pliku, w którym są dyskutowane szerzej.
 1. **Tytuł gry** - finalna nazwa.
 2. ~~Skala~~ ROZSTRZYGNIĘTE [2026-05-29]: **10 grup × 4 osoby (~40 osób), podział 5+5** (5 TR + 5 krzyżackich); ostateczna liczba ustalana **w dniu gry**. Jordan (1 aktor) obsługuje oba tory — wymaga rozłożenia grup w czasie. Produkcja skalowana do 10 grup.
 3. **Data rozgrywki** - kiedy (deadline planowania)?
-4. **Klasy** - kiedy się ujawniają (F1/F2A/F2B/F3)? Patrz `mechanics/grupy-i-klasy.md` warianty A/B/C.
-5. ~~Tor krzyżacki~~ ROZSTRZYGNIĘTE [2026-05-29]: **pełna symetria** — osobny zestaw 4 zagadek F2B dla krzyżaków + własny plot twist + osobne rekwizyty (~2x pracy nad F2B). Zastrzeżenie obsadowe: symetria dotyczy **treści**, nie aktorów — krzyżacy NIE mają żywego NPC (tylko 2 aktorzy), więc ich kontakt i plot twist grają przez **papier/rekwizyt**. Patrz `concept/05-tor-krzyzakow.md`.
+4. ~~Klasy — kiedy się ujawniają~~ ROZSTRZYGNIĘTE [2026-05-29]: **po Z2** (gracz poznaje stronę odbiorcy listu); plotki F1 sygnalizują spór Zakon vs TR; spotkanie Albrechta/Jordana domyka (Jordan wciąż incognito; Albrecht żąda dowodu godności → F2B = weryfikacja). Patrz `mechanics/grupy-i-klasy.md`.
+5. ~~Tor krzyżacki~~ ROZSTRZYGNIĘTE [2026-05-29]: **symetria TREŚCI** — osobny zestaw zagadek F2B (Z3Z, Z8-Z11) + osobne rekwizyty. Zastrzeżenie obsadowe: symetria dotyczy treści, nie aktorów — krzyżacy NIE mają żywego NPC (poza Albrechtem/Zosią), kontakt gra przez papier. **DO ROZSTRZYGNIĘCIA [otwarte]: czy krzyżacy potrzebują własnego plot twistu (jak Jordan=Bażyński), czy rolę „bramy do finału" pełni duma Albrechta** (żąda dowodu godności → F2B weryfikacja). Zalążki twistu + opcja „bez twistu" — patrz `concept/05-tor-krzyzakow.md`.
 6. **Mapa + szyfrownik** - wspólne czy osobne per klasa?
 7. ~~Ilu MG~~ ROZSTRZYGNIĘTE [2026-05-29]: **1 MG = Oskar**.
 
