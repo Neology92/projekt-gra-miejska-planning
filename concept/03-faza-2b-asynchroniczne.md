@@ -24,11 +24,11 @@ Rozwiązać przynajmniej 2 z 4 zagadek (3, 4, 5, 6). Każda dorzuca fragment uk�
 
 Szczegóły: `puzzles/zamek-krzyzacki-lista.md`.
 
-### Zagadka 4 — Perspektywa mieśnika piekarza
+### Zagadka 4 — Perspektywa rzemieślnika-piekarza
 
-- **Miejsce**: do wyboru (gdzieś przy cechu rzeźniczym/piekarskim — wiki `cechy-rzemieslnicze.js`).
-- **Mechanika**: rozmowa z NPC (mieśnikiem) + zagadka logiczna o cenach/wadze/towarach.
-- **Konsekwencja narracyjna**: mieśnik daje **kontr-perspektywę** — bunt jest dla niego niesprzyjający (np. burzy handel, blokuje dostawy z zamku). Ujawnia że **nie wszyscy mieszczanie kibicują TR**.
+- **Miejsce**: do wyboru (gdzieś przy cechu piekarskim — wiki `cechy-rzemieslnicze.js`).
+- **Mechanika (PAPIER, bez aktora)**: karta/świadectwo rzemieślnika-piekarza (skarga, cennik, notatka) + zagadka logiczna o cenach/wadze/towarach.
+- **Konsekwencja narracyjna**: rzemieślnik-piekarz daje **kontr-perspektywę** — bunt jest dla niego niesprzyjający (np. burzy handel, blokuje dostawy z zamku). Ujawnia że **nie wszyscy mieszczanie kibicują TR**.
 - **Rola w finałowej decyzji**: gracz może uznać że TR działa nie zawsze "w interesie miasta" → opcja oddania listu krzyżakom staje się obronna.
 
 ### Zagadka 5 — Tajna Rada w siedzibach kupieckich
@@ -48,7 +48,7 @@ Szczegóły: `puzzles/zamek-krzyzacki-lista.md`.
 **Decyzja Oskara**. Sugestia logiczna:
 
 - **Obowiązkowe** (przy obu wymagana finałowa wiedza): **Z3** (lista nazwisk - prowadzi do Albrechta jako celu) i **Z5** (Jordan = TR - prowadzi do Bażyńskiego jako celu). Bez nich nie wiadomo do kogo dostarczyć list.
-- **Opcjonalne** (poszerzają obraz, ale nie blokują): **Z4** (perspektywa mieśnika) i **Z6** (Związek Pruski) — dorzucają motyw etyczny i kontekst polityczny.
+- **Opcjonalne** (poszerzają obraz, ale nie blokują): **Z4** (perspektywa rzemieślnika-piekarza) i **Z6** (Związek Pruski) — dorzucają motyw etyczny i kontekst polityczny.
 
 Alternatywa: obowiązkowe Z3 i Z6 (informacje o obu stronach), opcjonalne Z4 i Z5 (smaczki).
 
@@ -56,8 +56,8 @@ Alternatywa: obowiązkowe Z3 i Z6 (informacje o obu stronach), opcjonalne Z4 i Z
 
 ## Mechanika "weryfikacji"
 
-Faza 2B z perspektywy NPC = etap obserwacji czy kurierzy są godni zaufania.
-- Każda zagadka ma **NPC obserwatora** który raportuje do MG/Jordana/Albrechta.
+Faza 2B = etap obserwacji czy kurierzy są godni zaufania.
+- Brak żywych obserwatorów (limit obsady) — weryfikacja idzie przez **papier + MG**: poprawność/dyskrecja rozwiązania raportowana do MG przy oddawaniu koperty (ew. obserwacja przez jednego z 2 aktorów tam, gdzie i tak są: Jordan/Piotr, Albrecht/Zosia).
 - Jeśli grupa **wykonuje zagadkę dobrze + dyskretnie** = punkty zaufania.
 - W finale punkty zaufania mogą wpływać na to czy list jest **przyjmowany** (przeciwnik wie że to przekręt).
 
@@ -65,7 +65,7 @@ Faza 2B z perspektywy NPC = etap obserwacji czy kurierzy są godni zaufania.
 
 ## Co już wiemy / decyzje
 
-- Z3 wymaga **aktora grającego komtura Albrechta** na mieście.
+- Z3 wymaga **aktora grającego komtura Albrechta** na mieście — to **Zosia** (jeden z 2 dostępnych aktorów).
 - Z3 i polichromie w Biedronce (patrz `puzzles/polichromie-biedronka.md`) - osobne czy powiązane?
   - Z opisu autora: polichromie to **weryfikacja krzyżaków** (zagadka dla **toru krzyżackiego**), nie dla TR. Czyli wchodzi w `concept/05-tor-krzyzakow.md`.
 
@@ -75,7 +75,7 @@ Faza 2B z perspektywy NPC = etap obserwacji czy kurierzy są godni zaufania.
 2. **Czy zagadki są wspólne dla obu klas, czy każda klasa ma swój zestaw 4?**
    - Wariant A: te same 4 zagadki, oba tory na nich pracują (różne wnioski).
    - Wariant B: każda klasa ma swój zestaw 4 (8 zagadek total) — więcej pracy do przygotowania.
-3. **Komtur Albrecht jako NPC na mieście** — kto go gra? Aktor? Jeden ze znajomych?
+3. ~~Komtur Albrecht jako NPC na mieście — kto go gra?~~ ROZSTRZYGNIĘTE: **Zosia**.
 4. **Mechanika "podebrania listy"** — fizyczne czy abstrakcyjne (np. odgadnięcie hasła)? Komtur się broni? Co jeśli grupa zostanie złapana?
 5. **Kolejność zagadek** — losowa, czy MG kieruje grupy żeby się nie tłoczyły?
 6. **Czas trwania fazy 2B** — ~60-90 min na grupę?

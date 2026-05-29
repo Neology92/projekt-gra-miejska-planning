@@ -9,10 +9,18 @@
 
 ## Gdzie się pojawiają
 
-- **W kopertach MG** - jako "podsłuchane na ulicy" lub "wiadomości z gospody".
-- **Od NPC** w terenie - krótkie zdania rzucone niezobowiązująco.
-- **Na rekwizytach** - np. fragment listu znaleziony pod ławką, anonimowy bilet.
-- **W spotkaniu z Jordanem** (F2A) - test zaufania może wykorzystywać konkret z plotki.
+**Wszystko idzie w kopertach** (nie ma żywych NPC do rzucania plotek — limit obsady). Plotki to **tekst w kopertach MG**, podany jako opis fabularny:
+- jako "podsłuchane na ulicy" / "wiadomości z gospody",
+- na dołączonych rekwizytach (fragment listu, anonimowy bilet) — ale fizycznie w kopercie,
+- konkret z plotki może wracać w spotkaniu z Jordanem (F2A, test zaufania) — Jordan (Piotr) to jeden z 2 aktorów, więc to wyjątek "na żywo".
+
+## Opisy atmosferyczne (z boardu) — flavour w kopertach
+
+To **opisy fabularne** budujące klimat miasta-w-napięciu, wpisywane w koperty (nie są "trybem dostarczania", tylko treścią narracyjną):
+
+- *Niespokojne rozmowy pomiędzy mieszkańcami; wypominanie komuś czegoś* (wątek rzemieślnika → łączy się z Z4, perspektywa rzemieślnika-piekarza).
+- *Pijane okrzyki zdradzające informacje.*
+- *Wzrok lokalnych spode łba.*
 
 ## Plotki konkretne - propozycje
 
@@ -36,7 +44,7 @@
 
 ### Plotki "anti-buntowe"
 
-10. *"Mieśnik piekarz mówi że jak będzie wojna - chleb podrożeje dwa razy. Wszystkim szkodzi, nie tylko zamkowi."*
+10. *"Rzemieślnik-piekarz mówi że jak będzie wojna - chleb podrożeje dwa razy. Wszystkim szkodzi, nie tylko zamkowi."*
 11. *"Niektórzy mówią że Bażyński sprzedał miasto Polakom. Za co - nikt nie wie."*
 
 ### Plotki historyczne (smaczki)

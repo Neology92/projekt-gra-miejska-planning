@@ -19,6 +19,15 @@ Brak finalnej decyzji. Nawiązuje do wiki *Acta Thoruniensia 1454*. Propozycje d
 - Połowa grup do każdej klasy. Na początku **wszyscy myślą że są tym samym** — kurierami przekazującymi list do "pośrednika".
 - **Czas rozgrywki**: ~kilka godzin (do doprecyzowania). Finał o **20:00** — ósmym biciu dzwonu.
 
+### Obsada — twarde ograniczenie produkcyjne
+
+- **Tylko 2 aktorów NPC + 1 MG.** Reszta "postaci" istnieje **wyłącznie na papierze** (karty, listy, rekwizyty, treść w kopertach) — nie ma żywych aktorów dla nich.
+- **Obsada (zamknięta):** Jordan/Bażyński = **Piotr** (Aktor A), komtur Albrecht = **Zosia** (Aktor B), MG = **Oskar**.
+- Dwaj aktorzy są wymuszeni przez finał (jednoczesne starcie Bażyński vs Albrecht), więc innych obsad nie ma.
+  - Bonus: Jordana i Bażyńskiego gra **ta sama osoba (Piotr)** → fizycznie wzmacnia plot twist (Jordan = Bażyński) w finale.
+- **MG (Oskar)** = logistyka, koperty, raporty, zliczanie. Nie jest postacią fabularną.
+- Konsekwencje: rzemieślnik-piekarz (Z4), brat zakonny/strażnik (Z3), Tileman, pośrednik, "obserwatorzy" weryfikacji — **wszyscy na papierze**, nie aktorsko.
+
 ## Trzy fazy
 
 ### Faza 1 — Kurierzy (wprowadzenie)
@@ -46,7 +55,7 @@ Szczegóły: `concept/02-faza-2a-jordan.md`.
   - **2 obowiązkowe** + **2 opcjonalne** (które są które — do decyzji).
 - Każda zagadka leakuje fragment informacji o **Tajnej Radzie** lub **Krzyżakach**:
   - Z. 3 — Zamek krzyżacki: zakon ma listę nazwisk TR (rozwiązanie = zdobycie listy, kradzież komturowi Albrechtowi).
-  - Z. 4 — Perspektywa mieśnika piekarza: rzeźnik/piekarz uważa że bunt mu szkodzi.
+  - Z. 4 — Perspektywa rzemieślnika-piekarza: piekarz uważa że bunt mu szkodzi.
   - Z. 5 — Tajna Rada obraduje w siedzibach kupieckich (Piccolo).
   - Z. 6 — Działania Związku Pruskiego w cieniu.
 - **Faza 2B = etap weryfikacji** kurierów przez NPC (Jordan, inni).
@@ -73,9 +82,10 @@ Szczegóły: `concept/04-faza-3-final.md`.
 
 ## Logistyka — Mistrz Gry (MG)
 
-- MG przemieszcza się po mieście.
+- **Jeden MG (Oskar)** przemieszcza się po mieście (patrz ograniczenie obsadowe wyżej).
 - Grupa odwiedza MG → raportuje → dostaje kolejną kopertę z briefem i wskazówkami.
 - Każda koperta = porcja narracji + warunki kolejnego etapu.
+- MG nie odgrywa postaci — wszystkie postacie poza dwoma aktorami (Jordan/Bażyński, Albrecht) podawane są **na papierze w kopertach**.
 
 Szczegóły: `mechanics/koperty-mg.md`.
 

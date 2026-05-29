@@ -55,9 +55,9 @@ Wszystkie z wiki (`przewodnik-miejsc-gry.js`):
 
 ## Punkty kandydaci na zagadki F2B
 
-### Z4 (mieśnik piekarz)
+### Z4 (rzemieślnik-piekarz)
 
-- Cechy rzemieślnicze - okolice **dawnych jatek** lub **piekarni cechowych**.
+- Cechy rzemieślnicze - okolice **piekarni cechowych**.
 - Wiki `src/pages/cechy-rzemieslnicze.js` ma kontekst.
 - Konkretny adres TBD.
 

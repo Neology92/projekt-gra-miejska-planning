@@ -6,19 +6,60 @@ To **projekt-rodzeństwo** dla `B:/Dev/projekt_gra-miejska/` (wiki *Acta Thoruni
 
 Dlaczego osobny katalog: żeby planowanie gry nie zaśmiecało wiki (ta ma być czystą bazą wiedzy historycznej + zalążkiem materiałów dla gry), a jednocześnie żeby agent pracujący nad planowaniem miał własną przestrzeń z dedykowanym kontekstem.
 
-## Stosunek do projektu siostrzanego
+## Stosunek do projektu siostrzanego (wiki)
 
-`B:/Dev/projekt_gra-miejska/` to **źródło prawdy historycznej** — kiedy potrzebujesz:
+`B:/Dev/projekt_gra-miejska/` to **wiki *Acta Thoruniensia 1454*** — pojedynczy plik `index.html` (SPA, ~4830 linii) + treść rozbita na moduły w `src/pages/*.js`. To **źródło prawdy historycznej dla wszystkich faktów w grze.**
 
-- weryfikacji imion, dat, miejsc → tam
-- listy 45 miejsc na grę → `src/pages/przewodnik-miejsc-gry.js`
-- 10 gotowych scenariuszy questowych (do adaptacji) → `src/pages/scenariusze-questow.js`
-- postaci historycznych (Bażyński, Tileman vom Wege, Albrecht Kalb, Erlichshausen) → osobne strony w `src/pages/`
-- legend (Jordan z chochlą, Krzywa Wieża, flisak) → `src/pages/legenda-*.js`
-- kontekst donosicieli / korespondencji → `src/pages/donosiciele-1454.js`, `cytaty-korespondencji.js`
-- karnawał i dzień św. Doroty → `src/pages/karnawal-1454.js`
+**Zasada:** zanim zaproponujesz w planning fakt, postać, datę, miejsce — najpierw sprawdź w wiki. Jeśli autor (Oskar) podaje imię/datę — zweryfikuj przed użyciem (raz już była pomyłka: "Jan Obrzyński" zamiast "Jan Bażyński"). Gdy proponujesz nowe miejsce — sprawdź czy jest na liście 45 punktów w `przewodnik-miejsc-gry.js`. Nagięcia historii są dopuszczalne, ale **świadome** — patrz `lore/fakty-vs-fabula.md`.
 
-**Zasada:** zanim zaproponujesz historyczny fakt, sprawdź w wiki czy się zgadza. Zanim zaproponujesz miejsce, sprawdź na liście 45 punktów. Naginanie rzeczywistości pod fabułę jest OK, ale autor (Oskar) musi świadomie zdecydować *gdzie* naginamy — patrz `lore/fakty-vs-fabula.md`.
+**Konwencja wiki**: fakty (kolor `--rubrum`, czerwień) oddzielone od legend (`--legenda`, fiolet) i kwestii spornych (`--disputed`, żółć). Linki wewnętrzne `#/<slug>`.
+
+### Mapa plików w wiki (`B:/Dev/projekt_gra-miejska/src/pages/`)
+
+**Postacie historyczne**:
+- `jan-bazynski.js`, `tileman-vom-wege.js` — przywódcy buntu
+- `albrecht-kalb.js` — komtur toruński (przeciwnik)
+- `ludwig-erlichshausen.js` — Wielki Mistrz krzyżacki
+- `henryk-plauen.js`, `mikolaj-rynska.js`, `kopernik-senior.js` — kontekst
+
+**Wydarzenia**:
+- `bunt-1454.js` — główne wydarzenie
+- `akt-wypowiedzenia.js`, `akt-inkorporacji.js` — dokumenty
+- `grunwald-1410.js`, `wojna-13letnia.js`, `bitwa-chojnice.js`, `bitwa-swiecino.js`, `bitwa-zalew.js` — bitwy
+- `wyrok-wiedenski.js`, `proces-wiedenski.js`, `nieszawa-konflikt.js`, `kryzys-1430-1440.js` — kontekst polityczny
+- `i-pokoj-torunski.js`, `ii-pokoj-torunski.js` — traktaty pokojowe
+
+**Instytucje**:
+- `tajna-rada.js` (lista członków — dla Z3), `zwiazek-pruski.js`, `zwiazek-jaszczurczy.js`
+- `bractwo-jerzego.js`, `patrycjat-torunski.js`, `cechy-rzemieslnicze.js`
+
+**Miejsca w Toruniu** (czytaj **najpierw** `przewodnik-miejsc-gry.js` — lista 45 punktów z dostępnością):
+- `ratusz-staromiejski.js`, `dwor-artusa.js`, `dwor-bractwa-jerzego.js`
+- `zamek-krzyzacki.js`, `gdanisko.js` — finał gry
+- `kosciol-mariacki.js`, `kosciol-jakuba.js`, `katedra-janow.js` — świątynie
+- `krzywa-wieza.js`, `kamienica-pod-gwiazda.js`, `kamienica-modry-fartuch.js`, `dom-kopernika.js`
+- `brama-mostowa.js`, `brama-zeglarska.js`, `brama-klasztorna.js`, `baszty-podmurna.js`
+- `aleja-gmerkow.js`, `bulwar-filadelfijski.js`
+
+**Życie codzienne / kontekst kulturowy**:
+- `karnawal-1454.js` — **kluczowe**, gra dzieje się w czasie karnawału
+- `kuchnia-pierniki.js` — dla F2A (posiłek u Jordana)
+- `zycie-religijne.js`, `kobiety-torun.js`, `handel-hanza.js`
+- `cytaty-korespondencji.js`, `donosiciele-1454.js` (autentyczne nazwiska szpiegów Zakonu)
+
+**Legendy** (oddzielone od faktów):
+- `legenda-jordan.js` — **kluczowe dla F2A** (Jordan z chochlą)
+- `legenda-krzywa-wieza.js`, `legenda-flisak.js`
+
+**Anachronizmy** (oznaczone osobno — uwaga przy stylizacji):
+- `fontanna-flisaka.js` (1914), `fontanna-cosmopolis.js`, `pomnik-kopernika` (1853), `aniol-jonasz.js`
+
+**Scenariusze do adaptacji**:
+- `scenariusze-questow.js` — **10 gotowych wątków questowych z osią czasu 3-8 II 1454** (duża pomoc przy projektowaniu zagadek)
+- `przewodnik-miejsc-gry.js` — 45 miejsc z "haczykami" (charakterystycznymi detalami do zagadek)
+
+**Źródła naukowe**:
+- `gsta-berlin.js`, `archiwum-torun.js`, `dlugosz.js`, `historiografia.js`
 
 ## Tablica Whimsical (źródło wizualne)
 

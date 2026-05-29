@@ -2,10 +2,26 @@
 
 **Konwencja**: ★ = postać historyczna (link do wiki), ☆ = fikcyjna (autorska).
 
-## NPCs aktywnie obecni w grze
+## Obsada — twarde ograniczenie
+
+**Tylko 2 aktorów NPC + 1 MG. Reszta postaci = na papierze** (karty, listy, rekwizyty w kopertach).
+
+| Rola | Kto | Obecność |
+|------|-----|----------|
+| **Jordan / Jan Bażyński** | **Piotr** (Aktor A — gra obie role, to plot twist) | F2A (jako Jordan) + finał (ujawnia się jako Bażyński) |
+| **Komtur Albrecht Kalb** | **Zosia** (Aktor B) | krąży w F2B (Z3) + finał |
+| **MG** | **Oskar** (autor), nie postać | cała gra (logistyka) |
+| Rzemieślnik-piekarz, Tileman, pośrednik, brat zakonny, donosiciele, obserwatorzy | **papier** | karty/listy/rekwizyty |
+
+Obsada aktorów i MG = **wyznaczone osoby** (casting zamknięty, nie planujemy go).
+
+Dlaczego akurat ci dwaj aktorzy: finał = jednoczesne starcie Bażyński vs Albrecht → przy limicie 2 aktorów te role są wymuszone, na innych nie ma obsady.
+
+## NPCs aktywnie obecni w grze (= 2 aktorzy)
 
 ### ★ Jan Bażyński (Hans von Baysen) - lider Tajnej Rady
 
+- **Aktor**: **Piotr** (gra też Jordana — to ta sama osoba, w tym sedno twistu).
 - **Wiki**: `src/pages/jan-bazynski.js`
 - **Historyczność**: przewodniczący Tajnej Rady Związku Pruskiego, twórca aktu wypowiedzenia posłuszeństwa.
 - **W grze**: ukryty pod pseudonimem **Jordan, kucharz**. Plot twist w F3.
@@ -16,6 +32,7 @@
 
 ### ★ Komtur Albrecht Kalb - przeciwnik
 
+- **Aktor**: **Zosia**.
 - **Wiki**: `src/pages/albrecht-kalb.js`
 - **Historyczność**: komtur toruński, dowódca obrony zamku przed mieszczanami w lutym 1454.
 - **W grze**: NPC na mieście (faza F2B i F3). Nosi przy sobie **listę nazwisk TR**.
@@ -28,27 +45,28 @@
 
 - **Wiki**: `src/pages/tileman-vom-wege.js`
 - **Historyczność**: drugi kluczowy przywódca buntu, obok Bażyńskiego.
-- **W grze**: **opcjonalna** postać. Może pojawić się w Z6 (Związek Pruski) lub jako wzmianka w plotkach.
+- **W grze (PAPIER, nie aktor)**: wyłącznie jako nazwisko/wzmianka — w plotkach lub na materiałach Z6 (Związek Pruski). Brak żywej obsady.
 - **Funkcja narracyjna**: pokazuje że bunt nie jest dziełem jednej osoby.
 
 ### ☆ Jordan, kucharz - pseudonim Bażyńskiego
 
+- **Aktor**: **Piotr** (ten sam co Bażyński — twist).
 - **Pochodzenie**: legenda XIX-wieczna, najwcześniejsza wzmianka 1520 (rachunek budowlany).
 - **Wiki**: `src/pages/legenda-jordan.js` (jeśli istnieje - sprawdzić)
 - **W grze (autorska fikcja)**: Jordan = pseudonim Bażyńskiego. Plot twist F3.
 - **Cecha rozpoznawcza**: **chochla** (atrybut wskazany w Z2 - "znajdźcie osobę z chochlą o imieniu Jordan").
 - **Lokalizacja**: lokal gastronomiczny (Picollo / "Gospoda Pod Chochlą" / inny - patrz `puzzles/droga-do-jordana.md`).
 
-### ☆ Mieśnik piekarz (lub rzeźnik) - kontr-narracja
+### ☆ Rzemieślnik-piekarz - kontr-narracja
 
-- **W grze**: NPC w Z4 (perspektywa anti-buntownicza).
+- **W grze (PAPIER, nie aktor)**: Z4 podawana jako **karta/list/świadectwo** (np. skarga rzemieślnika-piekarza, cennik, notatka) — bez żywego NPC.
 - **Funkcja**: pokazuje że nie wszyscy mieszczanie kibicują TR. Bunt to też straty (handel, dostawy).
-- **Tło**: realne - cech rzeźniczy/piekarski był ważnym graczem ekonomicznym; cechy wiki `cechy-rzemieslnicze.js`.
+- **Tło**: realne - cech piekarski był ważnym graczem ekonomicznym; cechy wiki `cechy-rzemieslnicze.js`.
 
-### ☆ MG / animatorzy
+### ☆ MG = Oskar
 
-- Postaci niewidzialne fabularnie - "głos narratora", "łącznik".
-- Mogą być stylizowani na **kupców** / **zakonników** / **strażników miejskich** dla immersji.
+- Niewidzialny fabularnie - "głos narratora", "łącznik", logistyka i zliczanie.
+- **Nie odgrywa postaci** i nie jest stylizowany na konkretną figurę — przy limicie obsady cała narracja postaci idzie na papierze w kopertach.
 
 ## NPCs wzmiankowani (nie aktywni w grze)
 
@@ -78,8 +96,6 @@ Autor wymienił błędne / niepewne imiona:
 
 ## Otwarte pytania
 
-1. **Kto gra Jordana** (aktor potrzebny na 2-3h spotkań)?
-2. **Kto gra Albrechta** (aktor mobilny, krążący po mieście)?
-3. **Kto gra Tilemana** jeśli decydujemy go włączyć?
-4. **Mieśnik piekarz** - aktor czy nagranie? (Zagadka Z4 może działać z nagraniem, ale aktor immersyjniejszy.)
-5. **Stylizacja kostiumów** - autentyczne XV-wieczne (drogie) czy "sugestywne" (płaszcz + krzyż = krzyżak)?
+1. **Stylizacja kostiumów 2 aktorów** - autentyczne XV-wieczne (drogie) czy "sugestywne" (chochla = Jordan/Piotr; płaszcz + krzyż = Albrecht/Zosia)?
+
+> ROZSTRZYGNIĘTE [2026-05-29]: obsada zamknięta — **MG = Oskar**, **Jordan/Bażyński = Piotr**, **Albrecht = Zosia**. Tylko ci **2 aktorzy + MG**; rzemieślnik-piekarz, Tileman, brat zakonny, pośrednik, obserwatorzy = **papier**. Casting nie jest już pytaniem otwartym.

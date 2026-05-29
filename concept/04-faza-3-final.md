@@ -36,7 +36,7 @@ Po dostarczeniu list jest **fizycznie zliczony** przy danej stronie.
 
 ### Co napędza decyzję?
 
-- Plotki z fazy 1 + perspektywa mieśnika z Z4 → argumenty etyczne *za* i *przeciw* TR.
+- Plotki z fazy 1 + perspektywa rzemieślnika-piekarza z Z4 → argumenty etyczne *za* i *przeciw* TR.
 - Plot twist (Jordan = Bażyński) → poczucie zdrady jeśli grupa "zorientowała się za późno" i już wcześniej decydowała przeciw TR.
 - **Polityczna sympatia** gracza — czy się utożsamia z mieszczanami czy z porządkiem zakonnym.
 
@@ -49,9 +49,9 @@ Po dostarczeniu list jest **fizycznie zliczony** przy danej stronie.
 Mechanika:
 1. **20:00**, wszystkie grupy zbierają się przy ruinach zamku.
 2. **8. uderzenie dzwonu** (rekwizyt: dzwon ręczny lub nagranie — **nie Tuba Dei**, ten dzwon to dopiero 1500).
-3. MG / aktor odczytuje **wynik zliczenia listów** — przewaga jednej ze stron.
+3. MG (Oskar) odczytuje **wynik zliczenia listów** — przewaga jednej ze stron.
 4. **Scenka aktorska**:
-   - **Bażyński** (aktor) i **Albrecht** (aktor) konfrontują się.
+   - **Bażyński** (Piotr) i **Albrecht** (Zosia) konfrontują się.
    - Treść scenki zależy od wyniku — różne warianty zakończenia.
    - W tle: tłum graczy jako "lud Torunia".
 5. **Epilog**: krótki kontekst — jak naprawdę skończył się bunt (kapitulacja zamku 7-8 II, wojna 13-letnia 1454-1466, II pokój toruński 1466). Można wskazać że gracze "byli przy tym".
@@ -66,7 +66,7 @@ Mechanika:
 
 - Finał o **20:00**, 8. bicie dzwonu — wybrane.
 - Lokalizacja: **ruiny zamku krzyżackiego** (Przedzamcze 3, Gdanisko obok).
-- Element aktorski — wymaga zaplanowania **kto gra Bażyńskiego, kto Albrechta**.
+- Element aktorski — obsada zamknięta: **Bażyński = Piotr**, **Albrecht = Zosia**, MG = Oskar.
 - **Nie używać nazwy "Tuba Dei"** dla dzwonu (anachronizm — Tuba Dei od 1500).
 
 ## Otwarte pytania
