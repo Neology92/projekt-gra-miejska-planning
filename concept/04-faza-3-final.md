@@ -42,7 +42,7 @@ Po dostarczeniu list jest **fizycznie zliczony** przy danej stronie.
 
 ## Tor krzyżaków — symetria
 
-- Krzyżacy też dostarczają — pewnie tu mają **wprost** instrukcję "do komtura Albrechta", ale w trakcie mogą się dowiedzieć że istnieje TR i mogliby przekazać list **TR** żeby przekazać dezinformację? — patrz `todo/otwarte-pytania.md`.
+- Krzyżacy mają **wolny wybór** [decyzja 2026-05-29]: domyślnie instrukcja „do komtura Albrechta", ale mogą dostarczyć list **Bażyńskiemu** (zdrada/zmiana strony). Symetrycznie do TR. Liczenie nie rozróżnia klasy — tylko stronę odbioru.
 
 ## Zliczanie i finał
 
@@ -56,11 +56,17 @@ Mechanika:
    - W tle: tłum graczy jako "lud Torunia".
 5. **Epilog**: krótki kontekst — jak naprawdę skończył się bunt (kapitulacja zamku 7-8 II, wojna 13-letnia 1454-1466, II pokój toruński 1466). Można wskazać że gracze "byli przy tym".
 
-## Warianty zakończenia scenki (sugestia)
+## Zakończenie — decyzja [2026-05-29]
 
-- **Przewaga TR** → Albrecht uznaje porażkę, zamek pada, miasto przechodzi w ręce mieszczan. Triumf TR.
-- **Przewaga Krzyżaków** → Albrecht zatrzymuje bunt, TR aresztowana. **Alternatywna historia** — uwaga, autor musi zdecydować czy gra dopuszcza fikcję alternatywną czy "i tak musi być po historycznemu" (bo wojna 13-letnia ma określony przebieg).
-- **Remis** → niepewność, scena urywa się na kliffhanger, narrator zamyka *"a tego, jak się to potoczyło, dowiecie się z wiki"* (meta-żart).
+**Model: HYBRYDA z inwersją moralną.**
+
+- **Fakty historyczne są STAŁE** niezależnie od wyniku: zburzenie zamku krzyżackiego, ideologia stojąca za buntem, wojna 13-letnia (1454-1466), II pokój toruński (1466). Gra nie tworzy fikcji alternatywnej na poziomie faktów.
+- **Scenka końcowa PRZESUWA CIĘŻAR NARRACJI** wg wyniku zliczenia listów — ten sam koniec faktograficzny, inny ton/akcent emocjonalny:
+  - **Przewaga listów u Bażyńskiego (TR)** → krzyżacy zmiażdżeni, wynoszą się; triumf mieszczan rozegrany dosadnie.
+  - **Przewaga listów u Albrechta (Krzyżacy)** → krzyżacy odchodzą z godnością / opór trwał dłużej; gorzki ton.
+- **WYMOWA MORALNA (filar tonalny):** to **mieszczanie/kupcy (TR) są tu „źli"** — ich zwycięstwo to **„świat zmienia się na gorsze"**, nie jednoznaczny triumf. Patrz `lore/fakty-vs-fabula.md`. Seedowane wcześniej: kontr-perspektywa piekarza w Z5 („bunt szkodzi rzemiosłu"). Plot twist Jordan = Bażyński ma więc gorzki smak: „bohater", do którego prowadziliśmy graczy, jest przywódcą strony, która pcha świat w dół.
+- **Reżyseria:** scenka ma być **bardzo dosadna i emocjonalna**, intensywność proporcjonalna do liczby dostarczonych listów (przewagi). Im wyraźniejszy wynik, tym mocniejsze odegranie.
+- **Remis** → wciąż otwarte (sugestia: kliffhanger + meta-żart *„a jak się to potoczyło, dowiecie się z wiki"*).
 
 ## Co już wiemy / decyzje
 
@@ -73,7 +79,7 @@ Mechanika:
 
 1. **Jaki dźwięk dzwonu?** Rekwizyt? Nagranie? Realny dzwon (kościół Jakuba ma dzwon ratuszowy?)
 2. **Aktorska scenka — kto gra?** Oskar + znajomy? Animatorzy z większą wprawą?
-3. **Czy zakończenie ma być historyczne (TR wygrywa, zamek pada)** czy **uzależnione od decyzji graczy** (alternatywna historia)?
+3. ~~Czy zakończenie historyczne czy alternatywne~~ ROZSTRZYGNIĘTE [2026-05-29]: **hybryda** — fakty stałe, scenka przesuwa ciężar emocjonalny wg wyniku; wymowa moralna: TR/kupcy „źli" (patrz sekcja „Zakończenie — decyzja").
 4. **Co z grupami które nie zdążą rozwiązać Z7** → dostarczają na ślepo? Mają jakiś hint od MG?
 5. **Skala zliczania** — proste (liczba listów) czy ważone (np. punkty zaufania z Z2B mnożą wagę listu)?
 6. **Po finale** — wspólne piwo? Ognisko? Zamknięcie gry musi mieć **rytuał pożegnalny** żeby gracze nie odpłynęli "no i koniec, idziemy".

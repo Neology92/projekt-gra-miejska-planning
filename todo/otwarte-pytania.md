@@ -22,10 +22,10 @@ Pytania pogrupowane wg pliku, w którym są dyskutowane szerzej.
 11. **Wybór formy testu Jordana** (1-5 propozycji w `puzzles/test-jordana.md`).
 12. **Wariant mechaniki Z3** (A/B/C/D w `puzzles/zamek-krzyzacki-lista.md`).
 13. **Mechanika "kradzieży listy"** komturowi - fizyczna czy abstrakcyjna?
-14. **Finałowa zliczanka** - prosta czy ważona (`mechanics/finalowe-glosowanie.md`)?
-15. **Co jeśli grupa nie dostarczy** - warianty 1/2/3 (`mechanics/finalowe-glosowanie.md`).
-16. **Zakończenie gry** - historyczne (TR wygrywa) czy zależne od głosów (alt history)?
-17. **Krzyżacy w finale** - mogą "zdradzić" (dostarczyć TR) czy zobowiązani?
+14. ~~Finałowa zliczanka~~ ROZSTRZYGNIĘTE [2026-05-29]: **prosta, 1 grupa = 1 głos** (`mechanics/finalowe-glosowanie.md`).
+15. **Co jeśli grupa nie dostarczy** - warianty 1/2/3 (`mechanics/finalowe-glosowanie.md`). — wciąż otwarte.
+16. ~~Zakończenie gry~~ ROZSTRZYGNIĘTE [2026-05-29]: **hybryda** — fakty historyczne stałe, scenka przesuwa ciężar emocjonalny wg wyniku; **wymowa moralna: TR/kupcy „źli", bunt = świat na gorsze** (`concept/04-faza-3-final.md`).
+17. ~~Krzyżacy w finale~~ ROZSTRZYGNIĘTE [2026-05-29]: **wolny wybór** — każda grupa może dostarczyć dowolnej stronie.
 
 ## ZAGADKI - treść
 

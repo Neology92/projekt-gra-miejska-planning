@@ -4,6 +4,12 @@
 
 W finale (F3) zliczamy: ile listów trafiło do **Bażyńskiego** (przez Jordana), ile do **komtura Albrechta**. Przewaga = wynik gry.
 
+## Decyzje [2026-05-29]
+
+- **Liczenie: PROSTE — 1 grupa = 1 głos.** Bez mnożników. Uzasadnienie: jeden MG (Oskar) + ~11 grup w oknie finałowym → ważone liczenie na żywo jest nierealne. Liczymy fizyczne listy.
+- **Krzyżacy: WOLNY WYBÓR.** Każda grupa — TR i krzyżacka — może dostarczyć list dowolnej stronie (Bażyński albo Albrecht). Spójne z decyzją o pełnej symetrii torów. Klasa zmienia tylko narrację („co jest zdradą"), nie mechanikę zliczania. Wynik = czysto: liczba listów u Bażyńskiego vs u Albrechta.
+- Wciąż otwarte: mechanika fizyczna (A/B/C) i „co jeśli nie dostarczą" (1/2/3) — patrz niżej.
+
 ## Podstawowa wersja (prosta)
 
 - 1 grupa = 1 głos.
@@ -62,11 +68,11 @@ W finale (F3) zliczamy: ile listów trafiło do **Bażyńskiego** (przez Jordana
 
 ## Otwarte pytania
 
-1. **Prosta czy ważona mechanika** głosów?
-2. **Mechanika fizyczna** (A/B/C)?
-3. **Co jeśli niedostarczyli** (warianty 1/2/3)?
-4. **Czy krzyżacy są zobowiązani dostarczyć Albrechtowi**, czy mogą "zdradzić" (dostarczyć Bażyńskiemu)?
-5. **Remis** - co wtedy? Trzeci wariant scenki? Improwizacja?
+1. ~~Prosta czy ważona~~ ROZSTRZYGNIĘTE [2026-05-29]: **prosta, 1 grupa = 1 głos**.
+2. **Mechanika fizyczna** (A/B/C)? — wciąż otwarte.
+3. **Co jeśli niedostarczyli** (warianty 1/2/3)? — wciąż otwarte (sugestia: wariant 1).
+4. ~~Czy krzyżacy zobowiązani~~ ROZSTRZYGNIĘTE [2026-05-29]: **wolny wybór** — mogą dostarczyć dowolnej stronie.
+5. **Remis** - co wtedy? Trzeci wariant scenki? Improwizacja? — wciąż otwarte.
 
 ## Co autor może zrobić sam vs gdzie pomocy
 

@@ -2,6 +2,18 @@
 
 **Zasada**: każde nagięcie historii powinno być **świadomą decyzją autora**, udokumentowane tutaj. Wiki (`projekt_gra-miejska/`) to **źródło prawdy historycznej**, gra dopuszcza fikcję - ale fikcja musi być rozpoznawalna.
 
+## Wymowa moralna — decyzja interpretacyjna [2026-05-29]
+
+To nie jest naginka faktów, lecz **świadoma decyzja tonalna** o tym, jak gra *interpretuje* prawdziwe wydarzenia:
+
+- **TR / mieszczanie / kupcy są w grze stroną „złą".** Ich zwycięstwo (historyczne — zamek pada) jest pokazane jako **„świat zmienia się na gorsze"**, a nie jednoznaczny triumf wolności.
+- **Fakty zostają twarde** (zburzenie zamku, wojna 13-letnia, II pokój toruński) — naginamy **wymowę/sympatię**, nie przebieg.
+- **Konsekwencje dla treści:**
+  - Plot twist Jordan = Bażyński ma **gorzki smak** — „bohater" prowadzący graczy okazuje się przywódcą strony pchającej świat w dół.
+  - Kontr-perspektywa **piekarza w Z5** („bunt szkodzi rzemiosłu") to seed tej wymowy — nie poboczny wątek, lecz zapowiedź morału.
+  - Plotki/forshadowing powinny **dwuznacznie** malować TR (nie czysto heroicznie).
+- **Finał:** scenka dosadna, emocjonalna, ciężar przesuwany wg liczby listów — patrz `concept/04-faza-3-final.md`.
+
 ## Naginane elementy
 
 ### 1. ☆ Jordan = Jan Bażyński (pseudonim)
@@ -67,7 +79,7 @@ Przykład zły (gdyby był): "Bażyński miał magiczny pierścień" → totalna
 
 ## Otwarte pytania
 
-1. **Czy gra ma "alternative history" w finale** (jeśli krzyżacy wygrywają w głosowaniu) czy zawsze idzie po historycznym scenariuszu?
+1. ~~Czy gra ma "alternative history" w finale~~ ROZSTRZYGNIĘTE [2026-05-29]: **nie na poziomie faktów** — fakty stałe, zmienia się tylko ciężar emocjonalny scenki wg wyniku (hybryda). Patrz „Wymowa moralna" wyżej i `concept/04-faza-3-final.md`.
 2. **Czy są inne naginki które autor planuje?** (lista do uzupełnienia w trakcie pracy).
 
 ## Co autor może zrobić sam vs gdzie pomocy

@@ -102,3 +102,8 @@ Szczegóły: `mechanics/mapy-i-szyfrownik.md`.
 - **Twarda historia** dla: dat, miejsc, postaci, kontekstu politycznego (Związek Pruski, wyrok wiedeński, inkorporacja).
 - **Naginamy** dla: powiązania Jordan ↔ Bażyński (czysta fikcja gry), pewnych ułatwień narracyjnych dla klarowności fabuły.
 - Każde nagięcie ma być **świadomą decyzją** — `lore/fakty-vs-fabula.md`.
+
+## Wymowa moralna (filar tonalny) [2026-05-29]
+
+- **TR / mieszczanie / kupcy = strona „zła".** Zwycięstwo buntu pokazane jako **„świat zmienia się na gorsze"**, nie jednoznaczny triumf. Fakty historyczne stałe, naginamy sympatię.
+- Skutek dla treści: plot twist Jordan = Bażyński ma gorzki smak; kontr-perspektywa piekarza (Z5) to seed morału; plotki malują TR dwuznacznie; finałowa scenka dosadna i emocjonalna wg wyniku. Patrz `lore/fakty-vs-fabula.md`, `concept/04-faza-3-final.md`.
