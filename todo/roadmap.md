@@ -1,0 +1,137 @@
+# Roadmap - co dalej w jakiej kolejności
+
+**Cel**: doprowadzić grę do stanu gotowości do rozegrania. Nie wiemy jeszcze na kiedy - data rozgrywki TBD.
+
+## Faza A - decyzje strategiczne (TY, ~2-3h skupionej pracy)
+
+**Zanim cokolwiek piszesz, podejmij te decyzje** - inaczej każda zagadka będzie zatkana czekaniem na input.
+
+1. **Ile MG?** (1 vs 2) - patrz `mechanics/koperty-mg.md`
+2. **Skala gry** - cel ile grup, ile osób (real, nie cel)?
+3. **Klasy ujawnione kiedy?** (wariant A/B/C w `mechanics/grupy-i-klasy.md`)
+4. **Mapa + szyfrownik: wspólne czy osobne per klasa?** (`mechanics/mapy-i-szyfrownik.md`)
+5. **Lokal Jordana** - który? Mam zgodę?
+6. **Aktorzy** - kto gra Jordana, Albrechta, ewentualnie Tilemana? Mieśnika?
+7. **Mechanika finałowa** - prosta czy ważona? (`mechanics/finalowe-glosowanie.md`)
+8. **Tor krzyżacki** - symetryczny czy "lustro TR" (uproszczony)?
+
+**Decyzje zapisuj** w odpowiednich plikach (zastępując "otwarte pytania" rozstrzygnięciami) lub bezpośrednio w `otwarte-pytania.md` jako "ROZSTRZYGNIĘTE [data]: ...".
+
+## Faza B - dopracowanie zagadek (TY + agent, ~10-20h)
+
+Kolejność prac na zagadkach (priorytetowa):
+
+### Krok 1: Z1 Szlak symboli (mechanika centralna)
+
+- [ ] Wybór 5-7 miejsc terenowych z 45 kandydatów (`puzzles/szlak-symboli.md`)
+- [ ] Stworzenie mapowania obiekt → symbol (kreatywna, autor)
+- [ ] Projekt mapy graficznej (autor / grafik)
+- [ ] Projekt szyfrownika (autor / grafik)
+- [ ] Testowe przejście trasy (osobiście, sprawdzenie czasów)
+
+**Bez tego nie ma gry.** Najwyższy priorytet.
+
+### Krok 2: Z3 Lista nazwisk + Z5 TR w Piccolo (obowiązkowe w F2B)
+
+- [ ] Wariant mechaniki Z3 (A/B/C/D) - `puzzles/zamek-krzyzacki-lista.md`
+- [ ] Treść listy (autentyczne nazwiska z wiki `tajna-rada.js`)
+- [ ] Mechanika "kradzieży" komturowi Albrechtowi
+- [ ] Treść Z5 (wskazówka prowadząca do Jordana = Piccolo)
+
+**Bez Z3 i Z5 finał nie ma sensu.**
+
+### Krok 3: Z2 Droga do Jordana + Z2b Test zaufania (przejście F1→F2A)
+
+- [ ] Forma "trzech rzeczy do zestawienia" - `puzzles/droga-do-jordana.md`
+- [ ] Wybór formy testu Jordana - `puzzles/test-jordana.md`
+- [ ] Napisanie konkretu testu
+
+### Krok 4: Z7 Finałowa
+
+- [ ] Spis informacji z Z3+Z5+ew. innych potrzebnych do sklejenia "Jordan = Bażyński"
+- [ ] Mechanika rozwiązania (logiczna układanka? zestawienie kart?)
+- [ ] Treść koperty K8
+
+### Krok 5: Plotki i forshadowing
+
+- [ ] Stworzenie ~10-15 plotek (z propozycji w `lore/plotki-i-pogloski.md`)
+- [ ] Przypisanie do kopert K1-K7
+- [ ] Tagging (NCM/F2A/F2B/F3)
+
+### Krok 6: Z4 i Z6 (opcjonalne w F2B)
+
+- [ ] Z4 Mieśnik piekarz - treść, NPC, miejsce
+- [ ] Z6 Związek Pruski - treść, miejsce
+
+### Krok 7: Tor krzyżacki
+
+- [ ] Decyzja czy symetryczny czy uproszczony
+- [ ] Rozpisanie analogów zagadek (lub lustro)
+- [ ] Polichromie - research treści (osobista wizyta)
+- [ ] Decyzja o kalimbie
+
+## Faza C - produkcja rekwizytów (TY + ewentualnie pomoc, ~5-15h)
+
+- [ ] **Drukowanie kopert** (~96 sztuk, posortowane)
+- [ ] **Pieczętowanie** wosk + pieczęć
+- [ ] **Listy zapieczętowane** (~12 sztuk, jeden per grupa)
+- [ ] **Mapy** (12-48 sztuk zależnie od decyzji)
+- [ ] **Szyfrowniki** (12-48 sztuk)
+- [ ] **Karta polichromii** (dla krzyżaków, jeśli tor jest)
+- [ ] **Rekwizyt chochli** Jordana
+- [ ] **Pergamin z listą TR** (Z3 - jeden)
+- [ ] **Kostiumy NPCs** (Jordan, Albrecht, mieśnik, opc. Tileman)
+- [ ] **Dzwon / nagranie** na finał
+- [ ] **Pudełka / NPCs do zliczania głosów**
+
+## Faza D - testy (TY + 4-6 znajomych, ~2-3h)
+
+- [ ] **Playtest minimum 1 zagadki** z 4 nowymi osobami - F1 + F2A
+- [ ] **Iteracja** - co nie zadziałało
+- [ ] **Playtest pełnej trasy** (przynajmniej F1+F2A+1xF2B+F3) z 1 grupą
+- [ ] **Wyciągnięcie wniosków** - corrigenda przed dniem rozgrywki
+
+## Faza E - dzień rozgrywki
+
+- [ ] Brief animatorów / MG (rano)
+- [ ] Setup punktów - rekwizyty na miejscach
+- [ ] Rozdanie kopert startowych
+- [ ] **Gra** (~kilka godzin)
+- [ ] Debriefing po finale (piwo / ognisko / co tam)
+
+## Priorytety czasowe - na czym najpierw
+
+1. **Faza A (decyzje)** - bez tego nic nie ruszy. Daj sobie weekend.
+2. **Z1 (szlak symboli)** - bez tego nie ma gry. Zacznij ASAP po Fazie A.
+3. **Z3 + Z5** - kolejny krytyczny pakiet.
+4. **Pozostałe zagadki TR + plotki** - rozpisz w spokoju.
+5. **Tor krzyżacki** - dopiero gdy tor TR jest **kompletny i przetestowany**.
+6. **Produkcja** - dopiero gdy treść finalna.
+7. **Testy** - obowiązkowe przed dniem rozgrywki, nawet jeśli "wszystko jest pewne".
+
+## Realistyczna estymacja
+
+**Minimum aby ruszyło**: ~30-40h pracy autora + 5-10h pomocy zewnętrznej (grafika, druk, aktorzy).
+
+**Z buforem na powtórki, iteracje, change requests**: ~60-80h pracy autora.
+
+**Czas kalendarzowy** (przy 5h/tyg): 3-4 miesiące.
+**Czas kalendarzowy** (przy 15h/tyg): 4-6 tygodni.
+
+## W co agent może realnie pomóc (a w co nie)
+
+### Może (i to znacznie odciąży):
+- Research historyczny - sprawdzenie postaci, dat, miejsc z wiki.
+- Wybór miejsc terenowych spośród 45 kandydatów.
+- Generowanie wariantów do wyboru (3-5 opcji dla każdego elementu).
+- Redakcja tekstów które już napiszesz.
+- Wykrywanie nieświadomych anachronizmów.
+- Kalkulacje (czasów, liczb).
+- Spisanie decyzji w plikach (zastępowanie "otwarte pytania" rozstrzygnięciami).
+
+### Nie powinien (zostaw sobie):
+- Kreatywne wymyślanie zagadek (treść mechaniki, plot twisty).
+- Charakterystyka NPC (głos, gesty, motywacje).
+- Stylizacja językowa (twoje pióro).
+- Decyzje strategiczne (one są twoje).
+- Casting aktorów, negocjacje z lokalami, logistyka praktyczna.
