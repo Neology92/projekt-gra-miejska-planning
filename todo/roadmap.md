@@ -70,8 +70,8 @@ Kolejność prac na zagadkach (priorytetowa):
 
 ### Krok 7: Tor krzyżacki — domknięcie
 
-- [x] Decyzja: **pełna symetria** (2026-05-29)
-- [ ] **Plot twist krzyżaków** (otwarty — kreatywka Oskara)
+- [x] Decyzja: **symetria treści** (2026-05-29)
+- [x] **Plot twist krzyżaków: BRAK** (2026-05-29) — brama = duma Albrechta + weryfikacja F2B
 - [ ] Treść Z3Z, Z8, Z9, Z10, Z11
 - [ ] Decyzja o instrumencie (kalimba vs XV-wieczny)
 - [ ] Bonus „Opowieść skazanego" (niski priorytet)

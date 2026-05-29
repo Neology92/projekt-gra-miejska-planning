@@ -21,7 +21,7 @@ Numeracja kanoniczna — patrz `puzzles/00-master-list.md` i `concept/03-faza-2b
   - **Z10 — polichromie w „Biedronce" + „Bestiariusz Krzyżowca"** (wskazanie prawdziwych potworów) ← lustro Z6 (anioły).
 - **Dywersyfikacja (5 grup):** wszyscy Z3Z + {**2×Z8, 1×Z9, 2×Z10**}.
 - **Finał: Z11** (szyfr) — lustro Z7. Klucz z Z3Z + 1 opcjonalnej (wymienialny, przez MG).
-- **Plot twist krzyżaków: WCIĄŻ OTWARTY** — do wymyślenia przez Oskara (osobna sesja twórcza). Propozycje-zalążki w sekcji 4 niżej.
+- **Plot twist krzyżaków: BRAK** [decyzja 2026-05-29]. Krzyżacy **nie mają** twistu w stylu Jordan=Bażyński. Uzasadnienie: twist mieszczan pełni funkcję **bramkującą** (musisz odkryć tożsamość Jordana, żeby wiedzieć komu oddać list); żaden rozważany twist krzyżacki (kret w TR / pęknięcie w Zakonie / linia jaszczurcza) niczego nie bramkuje — byłby ozdobą, nie zamkiem. **Bramą krzyżaków jest duma Albrechta** (jawny komtur żąda dowodu godności) + **weryfikacja w F2B**. Asymetria funkcjonalnie spójna: brama epistemiczna (mieszczanie) vs społeczna (krzyżacy). Odrzucone zalążki — sekcja 4 niżej (zostawione jako materiał na tło fabularne kopert).
 
 > Sekcje 1-6 poniżej to **wcześniejszy materiał roboczy**. Część jest już rozstrzygnięta wyżej (np. brak żywego NPC — sekcja 2 nieaktualna; mapa/szyfrownik — patrz `mechanics/mapy-i-szyfrownik.md`). Zostawione dla kontekstu i jako rezerwuar pomysłów do plot twistu.
 
@@ -58,7 +58,9 @@ Numeracja kanoniczna — patrz `puzzles/00-master-list.md` i `concept/03-faza-2b
 - Czy oddzielny zestaw (więcej do przygotowania, ale dramaturgicznie czystsze)?
 - Każda zagadka powinna leakować coś o **TR / mieszczanach** — analogicznie do tego jak TR leakuje o Krzyżakach.
 
-### 4. Plot twist krzyżaków
+### 4. Plot twist krzyżaków — ❌ ODRZUCONY (brak twistu)
+
+> **Decyzja [2026-05-29]: krzyżacy NIE mają plot twistu.** Brama = duma Albrechta + weryfikacja F2B (patrz „Struktura potwierdzona" wyżej). Poniższe propozycje zachowane wyłącznie jako **rezerwuar tła fabularnego do kopert** (donosy N.N. z `donosiciele-1454.js`, list Albrechta o rokowaniach z `albrecht-kalb.js`, linia jaszczurcza) — nie jako mechanika bramkująca.
 
 - TR ma plot twist Jordan = Bażyński.
 - Co jest plot twistem dla krzyżaków?

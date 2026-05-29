@@ -22,7 +22,7 @@ Oba tory mają osobny finał, oba to **szyfry** rozwiązywane z **kluczy zebrany
 
 - **Wejście (mechanika klucza):** każda grupa przychodzi z **kluczem z zagadki obowiązkowej (Z3 / Z3Z)** + **kluczem z jednej zagadki opcjonalnej** (Z4/5/6 lub Z8/9/10). Klucze są **wymienialne** — szyfr da się rozwiązać z dowolnej dopuszczonej pary (patrz `concept/03-faza-2b-asynchroniczne.md`). Klucz/rekwizyt może być przekazywany przez MG.
 - **Z7 (mieszczanie)** — sklejenie prowadzi do wniosku **Jordan = Jan Bażyński** (lista nazwisk z Z3 NIE zawiera „Jordana", bo to pseudonim; reszta kluczy wskazuje, że człowiek z Piccolo to przywódca TR). Po rozwiązaniu grupa wie, do kogo realnie dostarczyć list.
-- **Z11 (krzyżacy)** — analogiczny szyfr; treść/plot twist krzyżaków **do rozpisania** (patrz `concept/05-tor-krzyzakow.md`, plot twist otwarty).
+- **Z11 (krzyżacy)** — analogiczny szyfr, ale **bez plot twistu tożsamości** [decyzja 2026-05-29]. Albrecht jest jawny; bramą jest **dowód godności** (weryfikacja z F2B) — Albrecht nie przyjmie listu od „niegodnych". Treść szyfru do rozpisania. Patrz `concept/05-tor-krzyzakow.md`.
 - Po rozwiązaniu: **finalna decyzja** — komu dostarczyć list (Bażyński / Albrecht). Wybór wolny dla obu klas.
 
 Szczegóły: `puzzles/zagadka-finalowa.md` (do napisania — obejmie Z7 i Z11).
