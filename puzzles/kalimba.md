@@ -47,7 +47,8 @@
 ## Kiedy w grze?
 
 Brak decyzji. Możliwe miejsca:
-- W jednej z 4 zagadek F2B (np. opcjonalna Z4 lub Z6).
+- W jednej z opcjonalnych zagadek F2B (Z5 lub Z6).
+- **Trop z boardu**: nienumerowana zagadka „melodia flisaka" — możliwe naturalne miejsce dla kalimby (patrz `todo/otwarte-pytania.md` #62).
 - W teście u Jordana (mniej prawdopodobne - test ma być krótki).
 - W zagadce krzyżackiej (jeśli D).
 

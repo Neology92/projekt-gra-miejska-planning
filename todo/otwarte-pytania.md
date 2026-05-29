@@ -17,7 +17,7 @@ Pytania pogrupowane wg pliku, w którym są dyskutowane szerzej.
 ## STRUKTURALNE (kształtują strukturę gry)
 
 8. **F1 trasa Z1** - 5-7 miejsc, które konkretne?
-9. **F2B** - które 2 zagadki obowiązkowe? Czy "wybierz 2 z 4"? (⚠️ board sugeruje **Z3 + Z6**, plik `03-faza-2b` sugeruje **Z3 + Z5** — patrz #60.)
+9. **F2B** - które 2 zagadki obowiązkowe? Czy "wybierz 2 z 4"? (Po sync: plik `03-faza-2b` sugeruje **Z3 + Z4**; board sugeruje **Z3 + Z6** — patrz #63.)
 10. **Wybór formy "trzy rzeczy do zestawienia"** w Z2 (`puzzles/droga-do-jordana.md`).
 11. **Wybór formy testu Jordana** (1-5 propozycji w `puzzles/test-jordana.md`).
 12. **Wariant mechaniki Z3** (A/B/C/D w `puzzles/zamek-krzyzacki-lista.md`).
@@ -33,9 +33,9 @@ Pytania pogrupowane wg pliku, w którym są dyskutowane szerzej.
 19. **Z2: trzy rzeczy do zestawienia** - jakie konkretnie?
 20. **Z2b: treść testu Jordana** (formuła + konkret).
 21. **Z3: mechanika terenowa przy zamku** (treść zagadki).
-22. **Z4: zagadka rzemieślnika (piekarza)** (papier, bez NPC) - kompletnie nierozpisana.
-23. **Z5: zagadka prowadząca do Piccolo** - kompletnie nierozpisana.
-24. **Z6: zagadka Związku Pruskiego** - kompletnie nierozpisana.
+22. **Z4: zagadka prowadząca do Piccolo** (TR w siedzibach kupieckich) - kompletnie nierozpisana.
+23. **Z5: zagadka Związku Pruskiego + wątek piekarza** (papier, bez NPC) - kompletnie nierozpisana.
+24. **Z6: zagadka „pogłębienie info o TR"** (nowa z boardu) - kompletnie nierozpisana, brak nawet zarysu mechaniki.
 25. **Z7: zagadka finałowa** (sklejenie Jordan=Bażyński) - kompletnie nierozpisana.
 26. **Polichromie Biedronka** - jakie konkretne motywy (wymaga researchu osobistego).
 27. **Kalimba** - używamy czy nie? Jeśli tak, gdzie? Czy zmieniamy instrument?
@@ -89,14 +89,10 @@ Pytania pogrupowane wg pliku, w którym są dyskutowane szerzej.
 
 ## Rozbieżności board (Whimsical) vs pliki .md
 
-60. **Numeracja zagadek F2B — board ≠ pliki.** Trzeba ustalić która wersja obowiązuje i zsynchronizować:
-    - "TR w siedzibach kupieckich (Piccolo)": board = **Z4**, pliki = **Z5**.
-    - "Związek Pruski": board = **Z5**, pliki = **Z6**.
-    - "Perspektywa rzemieślnika (piekarza)": pliki = osobna **Z4**; board scala ją w Z5 (Związek Pruski).
-    - "Pogłębienie info o TR": board = **Z6**; w plikach brak takiej osobnej zagadki.
-61. **„Zagadka nr 5" dubluje się na boardzie**: raz "Związek Pruski", raz mindmap "sensoryczna z piernikiem". Który pomysł zostaje pod Z5?
-62. **„melodia flisaka"** (nienumerowana zagadka na boardzie) — czy to miejsce dla **kalimby** (dotąd placeholder „brak miejsca w fabule")?
-63. **Które zagadki bramkują finał (Z7)?** Board: „np. 3 i 6, albo wszystkich"; plik `03-faza-2b`: Z3 + Z5. (Powiązane z #9.)
+60. ~~Numeracja zagadek F2B — board ≠ pliki.~~ ROZSTRZYGNIĘTE [2026-05-29]: **pełny sync z boardem**. Obowiązuje: Z3 = Zamek/lista nazwisk, Z4 = TR w siedzibach kupieckich (Piccolo), Z5 = Związek Pruski + wątek piekarza, Z6 = Pogłębienie info o TR (nowa). Osobna „perspektywa rzemieślnika (piekarza)" zniknęła — wątek wszedł w Z5.
+61. **„Zagadka nr 5" dubluje się na boardzie**: raz "Związek Pruski", raz mindmap "sensoryczna z piernikiem". Który pomysł zostaje pod Z5 (lub czy „piernik" idzie do Z6)?
+62. **„melodia flisaka"** (nienumerowana zagadka na boardzie) — czy to miejsce dla **kalimby** (dotąd placeholder „brak miejsca w fabule")? Patrz `puzzles/kalimba.md`.
+63. **Które zagadki bramkują finał (Z7)?** Board: „np. 3 i 6, albo wszystkich"; plik `03-faza-2b`: Z3 + Z4. (Powiązane z #9.)
 
 ---
 

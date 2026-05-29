@@ -7,7 +7,7 @@
 Grupa dowiaduje się, że Zakon ma **listę nazwisk Tajnej Rady**. Wnioski:
 - Lista jest u komtura Albrechta (na mieście).
 - Jeśli ją zdobędą - wiedzą **kto jest w TR** - i znajdą faktycznego adresata listu.
-- **Sztuczka**: na liście NIE MA "Jordana", bo to pseudonim Bażyńskiego. Dopiero zestawienie z Z5 (TR obraduje w Piccolo = lokalu Jordana) prowadzi do plot twistu w Z7.
+- **Sztuczka**: na liście NIE MA "Jordana", bo to pseudonim Bażyńskiego. Dopiero zestawienie z Z4 (TR obraduje w Piccolo = lokalu Jordana) prowadzi do plot twistu w Z7.
 
 ## Miejsce - ruiny zamku krzyżackiego
 
@@ -58,7 +58,7 @@ Grupa dowiaduje się, że Zakon ma **listę nazwisk Tajnej Rady**. Wnioski:
 1. **Wariant mechaniki** (A/B/C/D lub mix)?
 2. **Komtur Albrecht = Zosia** (obsada zamknięta). Otwarte: jak rozpoznawalna (kostium)? Wędruje czy stacjonarna?
 3. **Kradzież listy** - mechanika fizyczna (np. komtur trzyma listę "luźno" i jest momentem gdzie się odwraca) czy abstrakcyjna (gracz mówi "kradnę" i MG ocenia czy się udało)?
-4. **Co jeśli grupa nie zdobędzie listy** ale rozwiąże zagadkę Z3? Mają częściowy postęp - mogą wnioskować "ktoś z TR jest w lokalu kupieckim" (Z5) i intuicją trafić na Jordana w F3.
+4. **Co jeśli grupa nie zdobędzie listy** ale rozwiąże zagadkę Z3? Mają częściowy postęp - mogą wnioskować "ktoś z TR jest w lokalu kupieckim" (Z4) i intuicją trafić na Jordana w F3.
 
 ## Co autor może zrobić sam vs gdzie pomocy
 

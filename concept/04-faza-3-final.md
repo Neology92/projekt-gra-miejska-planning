@@ -20,7 +20,7 @@
 
 - Po fazie 2B grupa wraca do MG (lub do Jordana? — decyzja) z **podsumowaniem zebranych informacji**.
 - MG wręcza ostateczną kopertę z zagadką 7:
-  - **Wymaga zestawienia** danych z Z3 (lista nazwisk - na której NIE MA Jordana, bo Jordan to pseudonim) + Z5 (TR obraduje w Piccolo, gdzie jest Jordan) + ew. innych.
+  - **Wymaga zestawienia** danych z Z3 (lista nazwisk - na której NIE MA Jordana, bo Jordan to pseudonim) + Z4 (TR obraduje w Piccolo, gdzie jest Jordan) + ew. innych.
   - **Rozwiązanie**: Jordan = Jan Bażyński, przywódca TR.
 - Po rozwiązaniu: grupa wie do kogo realnie mogą dostarczyć list i ma **finalną decyzję**.
 
@@ -36,7 +36,7 @@ Po dostarczeniu list jest **fizycznie zliczony** przy danej stronie.
 
 ### Co napędza decyzję?
 
-- Plotki z fazy 1 + perspektywa rzemieślnika (piekarza) z Z4 → argumenty etyczne *za* i *przeciw* TR.
+- Plotki z fazy 1 + perspektywa rzemieślnika (piekarza) z Z5 → argumenty etyczne *za* i *przeciw* TR.
 - Plot twist (Jordan = Bażyński) → poczucie zdrady jeśli grupa "zorientowała się za późno" i już wcześniej decydowała przeciw TR.
 - **Polityczna sympatia** gracza — czy się utożsamia z mieszczanami czy z porządkiem zakonnym.
 

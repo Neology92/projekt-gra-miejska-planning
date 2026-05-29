@@ -45,7 +45,7 @@ Dlaczego akurat ci dwaj aktorzy: finał = jednoczesne starcie Bażyński vs Albr
 
 - **Wiki**: `src/pages/tileman-vom-wege.js`
 - **Historyczność**: drugi kluczowy przywódca buntu, obok Bażyńskiego.
-- **W grze (PAPIER, nie aktor)**: wyłącznie jako nazwisko/wzmianka — w plotkach lub na materiałach Z6 (Związek Pruski). Brak żywej obsady.
+- **W grze (PAPIER, nie aktor)**: wyłącznie jako nazwisko/wzmianka — w plotkach, na materiałach Z5 (Związek Pruski) lub Z6 (pogłębienie info o TR). Brak żywej obsady.
 - **Funkcja narracyjna**: pokazuje że bunt nie jest dziełem jednej osoby.
 
 ### ☆ Jordan, kucharz - pseudonim Bażyńskiego
@@ -59,7 +59,7 @@ Dlaczego akurat ci dwaj aktorzy: finał = jednoczesne starcie Bażyński vs Albr
 
 ### ☆ Rzemieślnik (piekarz) - kontr-narracja
 
-- **W grze (PAPIER, nie aktor)**: Z4 podawana jako **karta/list/świadectwo** (np. skarga piekarza, cennik, notatka) — bez żywego NPC.
+- **W grze (PAPIER, nie aktor)**: wątek piekarza wchodzi w **Z5** (Związek Pruski działa wbrew rzemieślnikom) jako **karta/list/świadectwo** (np. skarga piekarza, cennik, notatka) — bez żywego NPC.
 - **Funkcja**: pokazuje że nie wszyscy mieszczanie kibicują TR. Bunt to też straty (handel, dostawy).
 - **Tło**: realne - cech piekarski był ważnym graczem ekonomicznym; cechy wiki `cechy-rzemieslnicze.js`.
 
@@ -74,13 +74,13 @@ Dlaczego akurat ci dwaj aktorzy: finał = jednoczesne starcie Bażyński vs Albr
 
 - **Wiki**: `src/pages/ludwig-erlichshausen.js`
 - **Funkcja**: wzmiankowany w fabule jako "powaga w Malborku". Nie pojawia się fizycznie.
-- **Wykorzystanie**: w plotkach F1 ("przyjdzie pomoc z Malborka"), w Z6 (Związek Pruski w opozycji do niego).
+- **Wykorzystanie**: w plotkach F1 ("przyjdzie pomoc z Malborka"), w Z5 (Związek Pruski w opozycji do niego).
 
 ### ★ Donosiciele 1454 - autentyczni
 
 - **Wiki**: `src/pages/donosiciele-1454.js`
 - **Nazwiska autentyczne**: Peter Sleszer, Jacob Scolim, Hans Bischoff (z korespondencji OBA).
-- **Wykorzystanie**: w Z6 lub na liście nazwisk TR (jako "ujawnieni szpiedzy").
+- **Wykorzystanie**: w Z5/Z6 lub na liście nazwisk TR (jako "ujawnieni szpiedzy").
 
 ### ★ Pozostali członkowie TR
 

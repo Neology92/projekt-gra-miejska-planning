@@ -31,14 +31,14 @@ Kolejność prac na zagadkach (priorytetowa):
 
 **Bez tego nie ma gry.** Najwyższy priorytet.
 
-### Krok 2: Z3 Lista nazwisk + Z5 TR w Piccolo (obowiązkowe w F2B)
+### Krok 2: Z3 Lista nazwisk + Z4 TR w Piccolo (obowiązkowe w F2B)
 
 - [ ] Wariant mechaniki Z3 (A/B/C/D) - `puzzles/zamek-krzyzacki-lista.md`
 - [ ] Treść listy (autentyczne nazwiska z wiki `tajna-rada.js`)
 - [ ] Mechanika "kradzieży" komturowi Albrechtowi
-- [ ] Treść Z5 (wskazówka prowadząca do Jordana = Piccolo)
+- [ ] Treść Z4 (wskazówka prowadząca do Jordana = Piccolo)
 
-**Bez Z3 i Z5 finał nie ma sensu.**
+**Bez Z3 i Z4 finał nie ma sensu.**
 
 ### Krok 3: Z2 Droga do Jordana + Z2b Test zaufania (przejście F1→F2A)
 
@@ -48,7 +48,7 @@ Kolejność prac na zagadkach (priorytetowa):
 
 ### Krok 4: Z7 Finałowa
 
-- [ ] Spis informacji z Z3+Z5+ew. innych potrzebnych do sklejenia "Jordan = Bażyński"
+- [ ] Spis informacji z Z3+Z4+ew. innych potrzebnych do sklejenia "Jordan = Bażyński"
 - [ ] Mechanika rozwiązania (logiczna układanka? zestawienie kart?)
 - [ ] Treść koperty K8
 
@@ -58,10 +58,10 @@ Kolejność prac na zagadkach (priorytetowa):
 - [ ] Przypisanie do kopert K1-K7
 - [ ] Tagging (NCM/F2A/F2B/F3)
 
-### Krok 6: Z4 i Z6 (opcjonalne w F2B)
+### Krok 6: Z5 i Z6 (opcjonalne w F2B)
 
-- [ ] Z4 Rzemieślnik (piekarz) - treść (papier, bez NPC), miejsce
-- [ ] Z6 Związek Pruski - treść, miejsce
+- [ ] Z5 Związek Pruski + wątek piekarza - treść (papier, bez NPC), miejsce
+- [ ] Z6 Pogłębienie info o TR - treść, miejsce (nowa, placeholder z boardu)
 
 ### Krok 7: Tor krzyżacki
 
@@ -103,7 +103,7 @@ Kolejność prac na zagadkach (priorytetowa):
 
 1. **Faza A (decyzje)** - bez tego nic nie ruszy. Daj sobie weekend.
 2. **Z1 (szlak symboli)** - bez tego nie ma gry. Zacznij ASAP po Fazie A.
-3. **Z3 + Z5** - kolejny krytyczny pakiet.
+3. **Z3 + Z4** - kolejny krytyczny pakiet.
 4. **Pozostałe zagadki TR + plotki** - rozpisz w spokoju.
 5. **Tor krzyżacki** - dopiero gdy tor TR jest **kompletny i przetestowany**.
 6. **Produkcja** - dopiero gdy treść finalna.

@@ -55,23 +55,23 @@ Wszystkie z wiki (`przewodnik-miejsc-gry.js`):
 
 ## Punkty kandydaci na zagadki F2B
 
-### Z4 — rzemieślnik (piekarz)
-
-- Cechy rzemieślnicze - okolice **piekarni cechowych**.
-- Wiki `src/pages/cechy-rzemieslnicze.js` ma kontekst.
-- Konkretny adres TBD.
-
-### Z5 (TR w siedzibach kupieckich)
+### Z4 — TR w siedzibach kupieckich (Piccolo)
 
 - **Dwór Artusa** (Rynek 6) - siedziba Bractwa św. Jerzego, miejsce II pokoju toruńskiego.
 - **Kamienica Bażyńskiego** - Rynek Staromiejski 16.
 - **Picollo / Hochla** - jeśli używamy współczesnego lokalu.
 
-### Z6 (Związek Pruski)
+### Z5 — Związek Pruski + wątek piekarza
 
-- **Ratusz Staromiejski** - miejsce redakcji Absagebriefu.
+- **Ratusz Staromiejski** - miejsce redakcji Absagebriefu (kontekst Związku Pruskiego, akt wypowiedzenia).
+- **Cechy rzemieślnicze / piekarnie cechowe** - źródło wątku piekarza. Wiki `src/pages/cechy-rzemieslnicze.js`.
 - **Dwór Artusa** - późniejszy II pokój 1466.
-- Kandydaci do połączenia z motywem aktu wypowiedzenia.
+- Konkretny adres TBD.
+
+### Z6 — Pogłębienie info o TR (nowa, placeholder)
+
+- Lokalizacja do wyboru — można powiązać z **kamienicą Bażyńskiego** / **Dworem Artusa** (głębszy wątek Tajnej Rady).
+- TBD.
 
 ## Punkty na finał (F3)
 

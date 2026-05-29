@@ -1,6 +1,6 @@
 # Faza 2B — Cztery zagadki asynchroniczne
 
-**Status**: szkielet jest. Treści konkretnych zagadek 4-6 do rozpisania.
+**Status**: szkielet jest, numeracja zsynchronizowana z boardem (Z3 Zamek, Z4 Piccolo, Z5 Związek Pruski+piekarz, Z6 pogłębienie TR). Treści zagadek 4-6 do rozpisania (Z6 to świeży placeholder).
 
 ## Cel fazy (z perspektywy gracza)
 
@@ -24,33 +24,36 @@ Rozwiązać przynajmniej 2 z 4 zagadek (3, 4, 5, 6). Każda dorzuca fragment uk�
 
 Szczegóły: `puzzles/zamek-krzyzacki-lista.md`.
 
-### Zagadka 4 — Perspektywa rzemieślnika (piekarza)
-
-- **Miejsce**: do wyboru (gdzieś przy cechu piekarskim — wiki `cechy-rzemieslnicze.js`).
-- **Mechanika (PAPIER, bez aktora)**: karta/świadectwo piekarza (skarga, cennik, notatka) + zagadka logiczna o cenach/wadze/towarach.
-- **Konsekwencja narracyjna**: piekarz (jako rzemieślnik) daje **kontr-perspektywę** — bunt jest dla niego niesprzyjający (np. burzy handel, blokuje dostawy z zamku). Ujawnia że **nie wszyscy mieszczanie kibicują TR**.
-- **Rola w finałowej decyzji**: gracz może uznać że TR działa nie zawsze "w interesie miasta" → opcja oddania listu krzyżakom staje się obronna.
-
-### Zagadka 5 — Tajna Rada w siedzibach kupieckich
+### Zagadka 4 — Tajna Rada w siedzibach kupieckich (Piccolo)
 
 - **Miejsce**: powiązane z Piccolo / Dworem Artusa / kamienicą Bażyńskiego (Rynek Staromiejski 16).
 - **Mechanika**: do rozpisania (znalezienie znaku, dekodowanie korespondencji).
 - **Konsekwencja narracyjna**: gracz dowiaduje się że TR obraduje w lokalach kupieckich → wskazówka że w Piccolo jest członek TR (czyli Jordan!). Gracz może (ale nie musi) skleić Jordan = TR.
 
-### Zagadka 6 — Związek Pruski działa w cieniu
+### Zagadka 5 — Związek Pruski działa wbrew rzemieślnikom (wątek piekarza)
 
-- **Miejsce**: do wyboru — może powiązane z Aktem Wypowiedzenia / Ratuszem.
+- **Miejsce**: do wyboru — może powiązane z Aktem Wypowiedzenia / Ratuszem lub cechem piekarskim (wiki `cechy-rzemieslnicze.js`).
+- **Mechanika (PAPIER, bez aktora)**: do rozpisania; źródłem informacji jest **rzemieślnik (piekarz)** — karta/świadectwo (skarga, cennik, notatka) + ew. zagadka logiczna o cenach/wadze/towarach.
+- **Konsekwencja narracyjna** (dwa sploty):
+  - **szerszy kontekst polityczny** — Związek Pruski (nie tylko TR) stoi za buntem; jest sojusz z Polską → to uzasadnia akcję;
+  - **kontr-perspektywa** — piekarz twierdzi, że bunt/Związek działa wbrew rzemieślnikom (burzy handel, blokuje dostawy z zamku) → **nie wszyscy mieszczanie kibicują TR**.
+- **Rola w finałowej decyzji**: motyw etyczny — gracz może uznać że TR/Związek nie zawsze działa „w interesie miasta" → opcja oddania listu krzyżakom staje się obronna.
+- *(Na boardzie pod „Z5" jest też zdublowany pomysł „sensoryczna z piernikiem" — który wariant zostaje, patrz `todo/otwarte-pytania.md` #61.)*
+
+### Zagadka 6 — Pogłębienie info o Tajnej Radzie
+
+- **Status**: NOWA (z boardu), **placeholder** — treść do wymyślenia przez Oskara.
+- **Cel narracyjny (zarys z boardu)**: dosypać szczegółów o strukturze/działaniu Tajnej Rady (kto, jak, gdzie) — pogłębienie wątku z Z4.
 - **Mechanika**: do rozpisania.
-- **Konsekwencja narracyjna**: gracz dowiaduje się o **szerszym kontekście politycznym** — Związek Pruski (nie tylko TR) stoi za buntem; jest sojusz z Polską. To uzasadnia akcję.
 
 ## 2 obowiązkowe + 2 opcjonalne — które?
 
 **Decyzja Oskara**. Sugestia logiczna:
 
-- **Obowiązkowe** (przy obu wymagana finałowa wiedza): **Z3** (lista nazwisk - prowadzi do Albrechta jako celu) i **Z5** (Jordan = TR - prowadzi do Bażyńskiego jako celu). Bez nich nie wiadomo do kogo dostarczyć list.
-- **Opcjonalne** (poszerzają obraz, ale nie blokują): **Z4** (perspektywa rzemieślnika (piekarza)) i **Z6** (Związek Pruski) — dorzucają motyw etyczny i kontekst polityczny.
+- **Obowiązkowe** (przy obu wymagana finałowa wiedza): **Z3** (lista nazwisk - prowadzi do Albrechta jako celu) i **Z4** (Jordan = TR w Piccolo - prowadzi do Bażyńskiego jako celu). Bez nich nie wiadomo do kogo dostarczyć list.
+- **Opcjonalne** (poszerzają obraz, ale nie blokują): **Z5** (Związek Pruski + wątek piekarza) i **Z6** (pogłębienie info o TR) — dorzucają motyw etyczny, kontekst polityczny i szczegóły o Radzie.
 
-Alternatywa: obowiązkowe Z3 i Z6 (informacje o obu stronach), opcjonalne Z4 i Z5 (smaczki).
+Alternatywa (wg boardu): finał bramkowany przez **Z3 i Z6** — patrz `todo/otwarte-pytania.md` #9/#63.
 
 **Otwarte**: można też zrobić **wybór 2 z 4** zamiast "te są obowiązkowe" → wtedy każda grupa rozwiązuje inne, w finale wymieniają się wiedzą. Ryzyko: niektóre grupy mogą skończyć z luką informacyjną i nie wiedzieć do kogo dostarczyć.
 

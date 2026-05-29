@@ -18,7 +18,7 @@
 
 To **opisy fabularne** budujące klimat miasta-w-napięciu, wpisywane w koperty (nie są "trybem dostarczania", tylko treścią narracyjną):
 
-- *Niespokojne rozmowy pomiędzy mieszkańcami; wypominanie komuś czegoś* (wątek rzemieślnika → łączy się z Z4, perspektywa rzemieślnika (piekarza)).
+- *Niespokojne rozmowy pomiędzy mieszkańcami; wypominanie komuś czegoś* (wątek rzemieślnika → łączy się z Z5, perspektywa rzemieślnika (piekarza) w Związku Pruskim).
 - *Pijane okrzyki zdradzające informacje.*
 - *Wzrok lokalnych spode łba.*
 
