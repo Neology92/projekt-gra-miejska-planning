@@ -1,6 +1,13 @@
-# Tor krzyżaków — placeholder
+# Tor krzyżaków
 
-**Status**: 🔴 **Kompletnie nierozpisany**. Tylko zalążki w głowie autora. Wymaga warsztatu twórczego.
+**Status**: 🟡 **Decyzje ramowe podjęte, treść do rozpisania.** Warsztat twórczy nadal przed nami.
+
+## Decyzje ramowe [2026-05-29]
+
+- **Poziom symetrii: PEŁNA SYMETRIA.** Krzyżacy dostają **osobny zestaw 4 zagadek F2B** (nie lustro TR), **własny plot twist** i **osobne rekwizyty**. Szacowany nakład: ~2x pracy nad F2B.
+- **Ograniczenie obsadowe (twarde):** tylko 2 aktorów (Piotr = Jordan/Bażyński, Zosia = Albrecht). **Krzyżacy NIE mają żywego NPC** jako analogu Jordana. Ich kontakt z „Zakonem" i plot twist grają **wyłącznie przez papier/rekwizyt** (list, podrzucona wiadomość, karta). To unieważnia warianty „brat zakonny / donosiciel jako żywy NPC" z sekcji 2 niżej — zostają jako postaci **na papierze**.
+- **Architektura rozdzielenia:** F1 + F2A **wspólne** dla wszystkich ~11 grup (wszyscy idą do Jordana). Tor TR vs krzyżacy **rozdziela się dopiero w F2B** przez treść kopert — bo jeden Jordan nie może obsłużyć dwóch równoległych F2A, a Albrechta nie wolno ujawnić w 2A (za wcześnie).
+- **Skala:** ~11 grup × 4 → ok. **5-6 grup krzyżackich**.
 
 ## Co wiemy
 

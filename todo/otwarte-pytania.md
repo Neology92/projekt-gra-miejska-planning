@@ -7,10 +7,10 @@ Pytania pogrupowane wg pliku, w którym są dyskutowane szerzej.
 ## STRATEGICZNE (wpływają na wszystko - najpierw rozstrzygnij te)
 
 1. **Tytuł gry** - finalna nazwa.
-2. **Skala** - ile grup, ile osób (realnie)?
+2. ~~Skala~~ ROZSTRZYGNIĘTE [2026-05-29]: **~11 grup × 4 osoby (~44 osób)**; ostateczna liczba grup ustalana **w dniu gry**. Implikacja: ~6 grup krzyżackich / ~5 TR (lub odwrotnie). Jordan (1 aktor) = wąskie gardło F2A — wymaga harmonogramu slotów wejść. Produkcja skalowana do ~11 grup.
 3. **Data rozgrywki** - kiedy (deadline planowania)?
 4. **Klasy** - kiedy się ujawniają (F1/F2A/F2B/F3)? Patrz `mechanics/grupy-i-klasy.md` warianty A/B/C.
-5. **Tor krzyżacki** - symetryczny do TR czy uproszczony (lustro)?
+5. ~~Tor krzyżacki~~ ROZSTRZYGNIĘTE [2026-05-29]: **pełna symetria** — osobny zestaw 4 zagadek F2B dla krzyżaków + własny plot twist + osobne rekwizyty (~2x pracy nad F2B). Zastrzeżenie obsadowe: symetria dotyczy **treści**, nie aktorów — krzyżacy NIE mają żywego NPC (tylko 2 aktorzy), więc ich kontakt i plot twist grają przez **papier/rekwizyt**. Patrz `concept/05-tor-krzyzakow.md`.
 6. **Mapa + szyfrownik** - wspólne czy osobne per klasa?
 7. ~~Ilu MG~~ ROZSTRZYGNIĘTE [2026-05-29]: **1 MG = Oskar**.
 

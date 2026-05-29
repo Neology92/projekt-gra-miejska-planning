@@ -7,13 +7,13 @@
 **Zanim cokolwiek piszesz, podejmij te decyzje** - inaczej każda zagadka będzie zatkana czekaniem na input.
 
 1. ~~Ile MG?~~ ROZSTRZYGNIĘTE: **1 MG = Oskar** (`mechanics/koperty-mg.md`).
-2. **Skala gry** - cel ile grup, ile osób (real, nie cel)?
+2. ~~Skala gry~~ ROZSTRZYGNIĘTE: **~11 grup × 4 (~44 os.)**, ostateczna liczba w dniu gry.
 3. **Klasy ujawnione kiedy?** (wariant A/B/C w `mechanics/grupy-i-klasy.md`)
 4. **Mapa + szyfrownik: wspólne czy osobne per klasa?** (`mechanics/mapy-i-szyfrownik.md`)
 5. **Lokal Jordana** - który? Mam zgodę?
 6. ~~Aktorzy - kto gra?~~ ROZSTRZYGNIĘTE: **2 aktorów + MG**, obsada zamknięta (Jordan/Bażyński = **Piotr**, Albrecht = **Zosia**, MG = **Oskar**). Reszta postaci na papierze.
 7. **Mechanika finałowa** - prosta czy ważona? (`mechanics/finalowe-glosowanie.md`)
-8. **Tor krzyżacki** - symetryczny czy "lustro TR" (uproszczony)?
+8. ~~Tor krzyżacki~~ ROZSTRZYGNIĘTE: **pełna symetria** (osobny zestaw zagadek + plot twist + rekwizyty; treść, nie obsada). Patrz `concept/05-tor-krzyzakow.md`.
 
 **Decyzje zapisuj** w odpowiednich plikach (zastępując "otwarte pytania" rozstrzygnięciami) lub bezpośrednio w `otwarte-pytania.md` jako "ROZSTRZYGNIĘTE [data]: ...".
 

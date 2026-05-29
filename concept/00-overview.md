@@ -12,7 +12,7 @@ Brak finalnej decyzji. Nawiązuje do wiki *Acta Thoruniensia 1454*. Propozycje d
 
 ## Format
 
-- **Grupy**: docelowo ~12 grup × ~4 osoby (do potwierdzenia liczbą zapisanych — patrz `mechanics/grupy-i-klasy.md`).
+- **Grupy**: **~11 grup × ~4 osoby (~44 osób)** [decyzja 2026-05-29]; ostateczna liczba grup ustalana **w dniu gry**. Implikacja: ~5-6 grup krzyżackich / ~5-6 TR. Jeden Jordan (Piotr) = wąskie gardło F2A → potrzebny harmonogram slotów wejść. Patrz `mechanics/grupy-i-klasy.md`.
 - **Podział na klasy**: dwie klasy **niejawne dla graczy na starcie**:
   - **Tajna Rada (TR)** — pracują (nieświadomie) dla mieszczan
   - **Krzyżacy** — pracują (nieświadomie) dla Zakonu
@@ -76,7 +76,7 @@ Szczegóły: `concept/04-faza-3-final.md`.
 ## Dwa tory: TR vs Krzyżacy
 
 - **Tor mieszczan (TR)** — w miarę rozpisany w fazach 1, 2A, 2B, 3.
-- **Tor krzyżaków** — kompletnie do rozpisania. Symetryczny do toru TR, z punktami wspólnymi (mijają się na tych samych miejscach). Patrz `concept/05-tor-krzyzakow.md`.
+- **Tor krzyżaków** — **pełna symetria** [decyzja 2026-05-29]: osobny zestaw 4 zagadek F2B + własny plot twist + osobne rekwizyty. Symetria treści, **nie obsady** — krzyżacy nie mają żywego NPC, ich kontakt gra przez papier. Rozdzielenie od TR dopiero w F2B (F1+F2A wspólne). Patrz `concept/05-tor-krzyzakow.md`.
 
 **Otwarte pytanie**: czy krzyżacy dowiadują się że Jordan = Bażyński? Czy ich finałową decyzją jest dostarczyć list **swojej stronie** (komturowi) czy próbować **zdezinformować** TR (oddać list pseudonimowi)? — patrz `todo/otwarte-pytania.md`.
 
