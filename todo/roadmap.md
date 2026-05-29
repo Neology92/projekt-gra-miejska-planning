@@ -6,12 +6,12 @@
 
 **Zanim cokolwiek piszesz, podejmij te decyzje** - inaczej każda zagadka będzie zatkana czekaniem na input.
 
-1. **Ile MG?** (1 vs 2) - patrz `mechanics/koperty-mg.md`
+1. ~~Ile MG?~~ ROZSTRZYGNIĘTE: **1 MG = Oskar** (`mechanics/koperty-mg.md`).
 2. **Skala gry** - cel ile grup, ile osób (real, nie cel)?
 3. **Klasy ujawnione kiedy?** (wariant A/B/C w `mechanics/grupy-i-klasy.md`)
 4. **Mapa + szyfrownik: wspólne czy osobne per klasa?** (`mechanics/mapy-i-szyfrownik.md`)
 5. **Lokal Jordana** - który? Mam zgodę?
-6. **Aktorzy** - kto gra Jordana, Albrechta, ewentualnie Tilemana? Mieśnika?
+6. ~~Aktorzy - kto gra?~~ ROZSTRZYGNIĘTE: **2 aktorów + MG**, obsada zamknięta (Jordan/Bażyński = **Piotr**, Albrecht = **Zosia**, MG = **Oskar**). Reszta postaci na papierze.
 7. **Mechanika finałowa** - prosta czy ważona? (`mechanics/finalowe-glosowanie.md`)
 8. **Tor krzyżacki** - symetryczny czy "lustro TR" (uproszczony)?
 
@@ -60,7 +60,7 @@ Kolejność prac na zagadkach (priorytetowa):
 
 ### Krok 6: Z4 i Z6 (opcjonalne w F2B)
 
-- [ ] Z4 Mieśnik piekarz - treść, NPC, miejsce
+- [ ] Z4 Rzemieślnik-piekarz - treść (papier, bez NPC), miejsce
 - [ ] Z6 Związek Pruski - treść, miejsce
 
 ### Krok 7: Tor krzyżacki
@@ -80,7 +80,7 @@ Kolejność prac na zagadkach (priorytetowa):
 - [ ] **Karta polichromii** (dla krzyżaków, jeśli tor jest)
 - [ ] **Rekwizyt chochli** Jordana
 - [ ] **Pergamin z listą TR** (Z3 - jeden)
-- [ ] **Kostiumy NPCs** (Jordan, Albrecht, mieśnik, opc. Tileman)
+- [ ] **Kostiumy 2 aktorów** (Jordan/Piotr — chochla; Albrecht/Zosia — płaszcz + krzyż)
 - [ ] **Dzwon / nagranie** na finał
 - [ ] **Pudełka / NPCs do zliczania głosów**
 
@@ -134,4 +134,4 @@ Kolejność prac na zagadkach (priorytetowa):
 - Charakterystyka NPC (głos, gesty, motywacje).
 - Stylizacja językowa (twoje pióro).
 - Decyzje strategiczne (one są twoje).
-- Casting aktorów, negocjacje z lokalami, logistyka praktyczna.
+- Negocjacje z lokalami, logistyka praktyczna (casting już zamknięty).
