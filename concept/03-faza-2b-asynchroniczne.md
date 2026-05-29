@@ -24,11 +24,11 @@ Rozwiązać przynajmniej 2 z 4 zagadek (3, 4, 5, 6). Każda dorzuca fragment uk�
 
 Szczegóły: `puzzles/zamek-krzyzacki-lista.md`.
 
-### Zagadka 4 — Perspektywa rzemieślnika-piekarza
+### Zagadka 4 — Perspektywa rzemieślnika (piekarza)
 
 - **Miejsce**: do wyboru (gdzieś przy cechu piekarskim — wiki `cechy-rzemieslnicze.js`).
-- **Mechanika (PAPIER, bez aktora)**: karta/świadectwo rzemieślnika-piekarza (skarga, cennik, notatka) + zagadka logiczna o cenach/wadze/towarach.
-- **Konsekwencja narracyjna**: rzemieślnik-piekarz daje **kontr-perspektywę** — bunt jest dla niego niesprzyjający (np. burzy handel, blokuje dostawy z zamku). Ujawnia że **nie wszyscy mieszczanie kibicują TR**.
+- **Mechanika (PAPIER, bez aktora)**: karta/świadectwo piekarza (skarga, cennik, notatka) + zagadka logiczna o cenach/wadze/towarach.
+- **Konsekwencja narracyjna**: piekarz (jako rzemieślnik) daje **kontr-perspektywę** — bunt jest dla niego niesprzyjający (np. burzy handel, blokuje dostawy z zamku). Ujawnia że **nie wszyscy mieszczanie kibicują TR**.
 - **Rola w finałowej decyzji**: gracz może uznać że TR działa nie zawsze "w interesie miasta" → opcja oddania listu krzyżakom staje się obronna.
 
 ### Zagadka 5 — Tajna Rada w siedzibach kupieckich
@@ -48,7 +48,7 @@ Szczegóły: `puzzles/zamek-krzyzacki-lista.md`.
 **Decyzja Oskara**. Sugestia logiczna:
 
 - **Obowiązkowe** (przy obu wymagana finałowa wiedza): **Z3** (lista nazwisk - prowadzi do Albrechta jako celu) i **Z5** (Jordan = TR - prowadzi do Bażyńskiego jako celu). Bez nich nie wiadomo do kogo dostarczyć list.
-- **Opcjonalne** (poszerzają obraz, ale nie blokują): **Z4** (perspektywa rzemieślnika-piekarza) i **Z6** (Związek Pruski) — dorzucają motyw etyczny i kontekst polityczny.
+- **Opcjonalne** (poszerzają obraz, ale nie blokują): **Z4** (perspektywa rzemieślnika (piekarza)) i **Z6** (Związek Pruski) — dorzucają motyw etyczny i kontekst polityczny.
 
 Alternatywa: obowiązkowe Z3 i Z6 (informacje o obu stronach), opcjonalne Z4 i Z5 (smaczki).
 

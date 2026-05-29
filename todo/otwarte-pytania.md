@@ -33,7 +33,7 @@ Pytania pogrupowane wg pliku, w którym są dyskutowane szerzej.
 19. **Z2: trzy rzeczy do zestawienia** - jakie konkretnie?
 20. **Z2b: treść testu Jordana** (formuła + konkret).
 21. **Z3: mechanika terenowa przy zamku** (treść zagadki).
-22. **Z4: zagadka rzemieślnika-piekarza** (papier, bez NPC) - kompletnie nierozpisana.
+22. **Z4: zagadka rzemieślnika (piekarza)** (papier, bez NPC) - kompletnie nierozpisana.
 23. **Z5: zagadka prowadząca do Piccolo** - kompletnie nierozpisana.
 24. **Z6: zagadka Związku Pruskiego** - kompletnie nierozpisana.
 25. **Z7: zagadka finałowa** (sklejenie Jordan=Bażyński) - kompletnie nierozpisana.
@@ -42,7 +42,7 @@ Pytania pogrupowane wg pliku, w którym są dyskutowane szerzej.
 
 ## NPCs i aktorzy
 
-> ROZSTRZYGNIĘTE [2026-05-29]: **tylko 2 aktorów + MG, obsada zamknięta** — Jordan/Bażyński = **Piotr**, Albrecht = **Zosia**, MG = **Oskar**. Reszta postaci (rzemieślnik-piekarz, Tileman, pośrednik, brat zakonny, obserwatorzy) = **na papierze**. Pytania 28-31 (casting) i 32 (stylizacja MG) — nieaktualne.
+> ROZSTRZYGNIĘTE [2026-05-29]: **tylko 2 aktorów + MG, obsada zamknięta** — Jordan/Bażyński = **Piotr**, Albrecht = **Zosia**, MG = **Oskar**. Reszta postaci (rzemieślnik (piekarz), Tileman, pośrednik, brat zakonny, obserwatorzy) = **na papierze**. Pytania 28-31 (casting) i 32 (stylizacja MG) — nieaktualne.
 
 33. **Kostiumy 2 aktorów** - autentyczne XV-wieczne (drogie) czy "sugestywne" (chochla = Jordan; płaszcz + krzyż = Albrecht)?
 
@@ -92,7 +92,7 @@ Pytania pogrupowane wg pliku, w którym są dyskutowane szerzej.
 60. **Numeracja zagadek F2B — board ≠ pliki.** Trzeba ustalić która wersja obowiązuje i zsynchronizować:
     - "TR w siedzibach kupieckich (Piccolo)": board = **Z4**, pliki = **Z5**.
     - "Związek Pruski": board = **Z5**, pliki = **Z6**.
-    - "Perspektywa rzemieślnika-piekarza": pliki = osobna **Z4**; board scala ją w Z5 (Związek Pruski).
+    - "Perspektywa rzemieślnika (piekarza)": pliki = osobna **Z4**; board scala ją w Z5 (Związek Pruski).
     - "Pogłębienie info o TR": board = **Z6**; w plikach brak takiej osobnej zagadki.
 61. **„Zagadka nr 5" dubluje się na boardzie**: raz "Związek Pruski", raz mindmap "sensoryczna z piernikiem". Który pomysł zostaje pod Z5?
 62. **„melodia flisaka"** (nienumerowana zagadka na boardzie) — czy to miejsce dla **kalimby** (dotąd placeholder „brak miejsca w fabule")?

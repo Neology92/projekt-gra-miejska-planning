@@ -11,7 +11,7 @@
 | **Jordan / Jan Bażyński** | **Piotr** (Aktor A — gra obie role, to plot twist) | F2A (jako Jordan) + finał (ujawnia się jako Bażyński) |
 | **Komtur Albrecht Kalb** | **Zosia** (Aktor B) | krąży w F2B (Z3) + finał |
 | **MG** | **Oskar** (autor), nie postać | cała gra (logistyka) |
-| Rzemieślnik-piekarz, Tileman, pośrednik, brat zakonny, donosiciele, obserwatorzy | **papier** | karty/listy/rekwizyty |
+| Rzemieślnik (piekarz), Tileman, pośrednik, brat zakonny, donosiciele, obserwatorzy | **papier** | karty/listy/rekwizyty |
 
 Obsada aktorów i MG = **wyznaczone osoby** (casting zamknięty, nie planujemy go).
 
@@ -57,9 +57,9 @@ Dlaczego akurat ci dwaj aktorzy: finał = jednoczesne starcie Bażyński vs Albr
 - **Cecha rozpoznawcza**: **chochla** (atrybut wskazany w Z2 - "znajdźcie osobę z chochlą o imieniu Jordan").
 - **Lokalizacja**: lokal gastronomiczny (Picollo / "Gospoda Pod Chochlą" / inny - patrz `puzzles/droga-do-jordana.md`).
 
-### ☆ Rzemieślnik-piekarz - kontr-narracja
+### ☆ Rzemieślnik (piekarz) - kontr-narracja
 
-- **W grze (PAPIER, nie aktor)**: Z4 podawana jako **karta/list/świadectwo** (np. skarga rzemieślnika-piekarza, cennik, notatka) — bez żywego NPC.
+- **W grze (PAPIER, nie aktor)**: Z4 podawana jako **karta/list/świadectwo** (np. skarga piekarza, cennik, notatka) — bez żywego NPC.
 - **Funkcja**: pokazuje że nie wszyscy mieszczanie kibicują TR. Bunt to też straty (handel, dostawy).
 - **Tło**: realne - cech piekarski był ważnym graczem ekonomicznym; cechy wiki `cechy-rzemieslnicze.js`.
 
@@ -98,4 +98,4 @@ Autor wymienił błędne / niepewne imiona:
 
 1. **Stylizacja kostiumów 2 aktorów** - autentyczne XV-wieczne (drogie) czy "sugestywne" (chochla = Jordan/Piotr; płaszcz + krzyż = Albrecht/Zosia)?
 
-> ROZSTRZYGNIĘTE [2026-05-29]: obsada zamknięta — **MG = Oskar**, **Jordan/Bażyński = Piotr**, **Albrecht = Zosia**. Tylko ci **2 aktorzy + MG**; rzemieślnik-piekarz, Tileman, brat zakonny, pośrednik, obserwatorzy = **papier**. Casting nie jest już pytaniem otwartym.
+> ROZSTRZYGNIĘTE [2026-05-29]: obsada zamknięta — **MG = Oskar**, **Jordan/Bażyński = Piotr**, **Albrecht = Zosia**. Tylko ci **2 aktorzy + MG**; rzemieślnik (piekarz), Tileman, brat zakonny, pośrednik, obserwatorzy = **papier**. Casting nie jest już pytaniem otwartym.

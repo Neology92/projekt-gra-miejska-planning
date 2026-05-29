@@ -18,7 +18,7 @@
 
 To **opisy fabularne** budujące klimat miasta-w-napięciu, wpisywane w koperty (nie są "trybem dostarczania", tylko treścią narracyjną):
 
-- *Niespokojne rozmowy pomiędzy mieszkańcami; wypominanie komuś czegoś* (wątek rzemieślnika → łączy się z Z4, perspektywa rzemieślnika-piekarza).
+- *Niespokojne rozmowy pomiędzy mieszkańcami; wypominanie komuś czegoś* (wątek rzemieślnika → łączy się z Z4, perspektywa rzemieślnika (piekarza)).
 - *Pijane okrzyki zdradzające informacje.*
 - *Wzrok lokalnych spode łba.*
 
@@ -44,7 +44,7 @@ To **opisy fabularne** budujące klimat miasta-w-napięciu, wpisywane w koperty 
 
 ### Plotki "anti-buntowe"
 
-10. *"Rzemieślnik-piekarz mówi że jak będzie wojna - chleb podrożeje dwa razy. Wszystkim szkodzi, nie tylko zamkowi."*
+10. *"Piekarz mówi że jak będzie wojna - chleb podrożeje dwa razy. Wszystkim szkodzi, nie tylko zamkowi."*
 11. *"Niektórzy mówią że Bażyński sprzedał miasto Polakom. Za co - nikt nie wie."*
 
 ### Plotki historyczne (smaczki)

@@ -36,7 +36,7 @@ Po dostarczeniu list jest **fizycznie zliczony** przy danej stronie.
 
 ### Co napędza decyzję?
 
-- Plotki z fazy 1 + perspektywa rzemieślnika-piekarza z Z4 → argumenty etyczne *za* i *przeciw* TR.
+- Plotki z fazy 1 + perspektywa rzemieślnika (piekarza) z Z4 → argumenty etyczne *za* i *przeciw* TR.
 - Plot twist (Jordan = Bażyński) → poczucie zdrady jeśli grupa "zorientowała się za późno" i już wcześniej decydowała przeciw TR.
 - **Polityczna sympatia** gracza — czy się utożsamia z mieszczanami czy z porządkiem zakonnym.
 

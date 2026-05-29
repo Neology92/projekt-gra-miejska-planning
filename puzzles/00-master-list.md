@@ -8,7 +8,7 @@ Stan zagadek - co gotowe, co szkicowe, co placeholder.
 | 2 | Droga do Jordana | koniec F1 / F2A | TR (krzyżacy mają analog) | szkicowe | `droga-do-jordana.md` |
 | 2b | Test zaufania Jordana | F2A | TR | placeholder | `test-jordana.md` |
 | 3 | Zamek krzyżacki - lista nazwisk | F2B | TR (analog dla krzyżaków?) | szkicowe | `zamek-krzyzacki-lista.md` |
-| 4 | Perspektywa rzemieślnika-piekarza | F2B | TR | placeholder | `rzemieslnik-piekarz.md` (do utworzenia) |
+| 4 | Perspektywa rzemieślnika (piekarza) | F2B | TR | placeholder | `rzemieslnik-piekarz.md` (do utworzenia) |
 | 5 | TR w siedzibach kupieckich | F2B | TR | placeholder | `tr-piccolo.md` (do utworzenia) |
 | 6 | Związek Pruski | F2B | TR | placeholder | `zwiazek-pruski.md` (do utworzenia) |
 | 7 | Finałowa - Jordan = Bażyński | F3 | wspólne (TR ma sklejenie, krzyżacy też?) | szkicowe | `zagadka-finalowa.md` (do utworzenia) |

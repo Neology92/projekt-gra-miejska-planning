@@ -45,7 +45,7 @@ Grupa przychodzi do MG z odpowiedzią. MG potwierdza i daje **kolejną kopertę*
 - **Pierwsze plotki/forshadowing** (do `lore/plotki-i-pogloski.md`):
   - "Słyszałem niespokojne rozmowy w gospodzie..."
   - "Pijani krzyczeli wczoraj że..."
-  - "Rzemieślnik-piekarz narzekał że..."
+  - "Piekarz narzekał że..."
   - **3-5 plotek**, każda z fragmencikiem informacji.
 - **Zagadka 2** prowadząca do Jordana (patrz `02-faza-2a-jordan.md`).
 

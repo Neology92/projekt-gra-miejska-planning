@@ -55,7 +55,7 @@ Wszystkie z wiki (`przewodnik-miejsc-gry.js`):
 
 ## Punkty kandydaci na zagadki F2B
 
-### Z4 (rzemieślnik-piekarz)
+### Z4 — rzemieślnik (piekarz)
 
 - Cechy rzemieślnicze - okolice **piekarni cechowych**.
 - Wiki `src/pages/cechy-rzemieslnicze.js` ma kontekst.

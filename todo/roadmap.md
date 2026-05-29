@@ -60,7 +60,7 @@ Kolejność prac na zagadkach (priorytetowa):
 
 ### Krok 6: Z4 i Z6 (opcjonalne w F2B)
 
-- [ ] Z4 Rzemieślnik-piekarz - treść (papier, bez NPC), miejsce
+- [ ] Z4 Rzemieślnik (piekarz) - treść (papier, bez NPC), miejsce
 - [ ] Z6 Związek Pruski - treść, miejsce
 
 ### Krok 7: Tor krzyżacki
