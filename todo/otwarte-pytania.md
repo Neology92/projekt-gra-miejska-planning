@@ -16,7 +16,7 @@ Pytania pogrupowane wg pliku, w którym są dyskutowane szerzej.
 
 ## STRUKTURALNE (kształtują strukturę gry)
 
-8. **F1 trasa Z1** - 5-7 miejsc, które konkretne?
+8. **F1 trasa Z1** - 5-7 miejsc, które konkretne? CZĘŚCIOWO ROZSTRZYGNIĘTE [2026-05-29]: **NIE jedna wspólna trasa — różne trasy per grupa** (rozproszenie grup po mieście). Szczegółowy dobór miejsc i mapowanie symboli **odłożone na koniec prac**; realizacją zajmie się **prawdopodobnie Piotr**, nie Oskar.
 9. **F2B** - które 2 zagadki obowiązkowe? Czy "wybierz 2 z 4"? (Po sync: plik `03-faza-2b` sugeruje **Z3 + Z4**; board sugeruje **Z3 + Z6** — patrz #63.)
 10. **Wybór formy "trzy rzeczy do zestawienia"** w Z2 (`puzzles/droga-do-jordana.md`).
 11. **Wybór formy testu Jordana** (1-5 propozycji w `puzzles/test-jordana.md`).
