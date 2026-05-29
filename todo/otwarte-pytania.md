@@ -12,12 +12,12 @@ Pytania pogrupowane wg pliku, w którym są dyskutowane szerzej.
 4. **Klasy** - kiedy się ujawniają (F1/F2A/F2B/F3)? Patrz `mechanics/grupy-i-klasy.md` warianty A/B/C.
 5. **Tor krzyżacki** - symetryczny do TR czy uproszczony (lustro)?
 6. **Mapa + szyfrownik** - wspólne czy osobne per klasa?
-7. **Ilu MG** (1 vs 2 vs 3)?
+7. ~~Ilu MG~~ ROZSTRZYGNIĘTE [2026-05-29]: **1 MG = Oskar**.
 
 ## STRUKTURALNE (kształtują strukturę gry)
 
 8. **F1 trasa Z1** - 5-7 miejsc, które konkretne?
-9. **F2B** - które 2 zagadki obowiązkowe? Czy "wybierz 2 z 4"?
+9. **F2B** - które 2 zagadki obowiązkowe? Czy "wybierz 2 z 4"? (⚠️ board sugeruje **Z3 + Z6**, plik `03-faza-2b` sugeruje **Z3 + Z5** — patrz #60.)
 10. **Wybór formy "trzy rzeczy do zestawienia"** w Z2 (`puzzles/droga-do-jordana.md`).
 11. **Wybór formy testu Jordana** (1-5 propozycji w `puzzles/test-jordana.md`).
 12. **Wariant mechaniki Z3** (A/B/C/D w `puzzles/zamek-krzyzacki-lista.md`).
@@ -33,7 +33,7 @@ Pytania pogrupowane wg pliku, w którym są dyskutowane szerzej.
 19. **Z2: trzy rzeczy do zestawienia** - jakie konkretnie?
 20. **Z2b: treść testu Jordana** (formuła + konkret).
 21. **Z3: mechanika terenowa przy zamku** (treść zagadki).
-22. **Z4: zagadka mieśnika** - kompletnie nierozpisana.
+22. **Z4: zagadka rzemieślnika-piekarza** (papier, bez NPC) - kompletnie nierozpisana.
 23. **Z5: zagadka prowadząca do Piccolo** - kompletnie nierozpisana.
 24. **Z6: zagadka Związku Pruskiego** - kompletnie nierozpisana.
 25. **Z7: zagadka finałowa** (sklejenie Jordan=Bażyński) - kompletnie nierozpisana.
