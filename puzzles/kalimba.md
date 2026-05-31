@@ -56,21 +56,24 @@ Razem 3 grupy → wystarczy 1-2 egz. kalimby (grupy rozłożone w czasie). Każd
 
 ## Z8 — notatki autora [2026-06-01]
 
-### Melodia
+### Melodia i co koduje
 - Sekwencja pręcików: **6 · 2 · 1 · 4 · 5 · 4**
+- Co to znaczy: **6.2.1454 = 6 lutego 1454** — data buntu toruńskiego. Melodia zakodowuje datę własnej klęski Zakonu.
 - Na kopercie / karcie gracza: **pierwszy dźwięk zaznaczyć** (wyróżnienie graficzne, żeby wiedzieli skąd zacząć).
 
 ### Szyfrogram + klucz
 - Kod z kalimby (621454) wchodzi jako wejście do **szyfrogramu**.
-- **Klucz szyfru = motto krzyżaków** (do ustalenia przez autora — np. „Helfen Wehren Heilen" lub łacińskie motto zakonu).
-- Narzędzie do odszyfrowania: **potencjalnie koło deszyfrujące** (cipher wheel, drukowane).
-- Do rozkminienia: **jak dokładnie przedstawić zagadkę szyfru dla krzyżaków** — czy koło jest rekwizytem w kopercie, czy trzeba je zdobyć osobno, czy hasło wydaje MG?
+- **Klucz szyfru = motto krzyżaków**: „**Helfen, Hilfen und Wehren**" (wg autora; fonetycznie bliskie „Helfen, Heilen und Wehren" — historyczne motto Zakonu Krzyżackiego).
+- Szyfr: **Cezara** (przesunięcie liter wg klucza z motta) — koło mieści się na **A4**.
+- Opcjonalnie: **drugie koło, 3-warstwowe** z symbolem pomiędzy warstwami (bardziej rozbudowane; do rozważenia).
+- Rekwizyt: koło deszyfrujące **w kopercie Z8** (prawdopodobnie; ostateczna decyzja TBD).
 
 ### TODO (do przygotowania)
-- [ ] Wybrać konkretne motto krzyżaków jako klucz szyfru
-- [ ] Zaprojektować szyfrogram (jakie litery wychodzą z 621454 + klucz)
-- [ ] Zaprojektować koło deszyfrujące — **przygotować do wydruku** (A4 / A5, dwie warstwy, kółko + strzałka)
-- [ ] Rozkminić mechanikę prezentacji szyfru dla krzyżaków (czy koło jest w kopercie Z8, czy zdobywane osobno)
+- [ ] Obliczyć co wychodzi z 621454 + klucz „Helfen Hilfen und Wehren" (jakie litery/słowo jest wynikiem)
+- [ ] Zaprojektować koło Cezara — **wydruk A4**, dwie warstwy obrotowe (zewnętrzna + wewnętrzna tarcza)
+- [ ] Opcjonalnie: **3-kołowa wersja z symbolem** między kołami — zdecydować czy warta nakładu
+- [ ] ~~Rozkminić czy koło w kopercie~~ → **prawdopodobnie w kopercie Z8** (ostateczna decyzja po playtestach)
+- [ ] Rozkminić dokładną mechanikę prezentacji szyfru: jak gracze rozumieją co mają zrobić (instrukcja na kopercie? NPC?)
 
 ## Otwarte pytania
 
@@ -78,7 +81,8 @@ Razem 3 grupy → wystarczy 1-2 egz. kalimby (grupy rozłożone w czasie). Każd
 2. ~~Gdzie~~ ROZSTRZYGNIĘTE: Z4 (melodia flisaka) + Z8 (melodia zakonu).
 3. **Czy zmieniamy na historyczny instrument** (B) — wciąż otwarte (anachronizm).
 4. **Treść melodii Z4 (flisak)** — do ustalenia (Z8 = 621454 ustalona).
-5. ~~Co jest „kluczem" wyjściowym Z8~~ → **szyfrogram** (motto krzyżaków jako klucz, koło deszyfrujące jako rekwizyt).
+5. ~~Co jest „kluczem" wyjściowym Z8~~ → szyfrogram (621454 + klucz Cezara z motta → koło deszyfrujące w kopercie).
+6. **Wynik szyfru** — co wychodzi po odkodowaniu 621454 kluczem motta? Wymaga obliczenia.
 
 ## Co autor może zrobić sam vs gdzie pomocy
 
