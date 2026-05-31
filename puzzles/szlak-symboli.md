@@ -1,68 +1,91 @@
 # Zagadka 1 - Szlak symboli
 
-**Status**: mechanika OK, miejsca + szyfrownik do doboru.
+**Status** [2026-05-31]: **mechanika docelowa ustalona** (łańcuch + abstrakcyjne glify na mapie + dekodowanie = rozpoznanie realnego obiektu + szyfrownik obiekt→następny glif + legenda do autouzupełnienia). **Trasa prototypu** (4 kroki, tor TR) — propozycja niżej. Format „wyniku dla MG" — do potwierdzenia (patrz Otwarte pytania #2).
 
-## Mechanika
+## Mechanika (docelowa)
 
-1. Każdy gracz dostaje na start: **mapę z symbolami** + **szyfrownik** (tabela: obiekt terenowy → symbol).
-2. **Pierwsza koperta** zawiera wskazówkę do pierwszego symbolu na mapie.
-3. Cykl:
-   - Grupa identyfikuje symbol na mapie → idzie na to miejsce.
-   - W terenie znajduje **konkretny obiekt** (np. pomnik, detal architektoniczny, rzeźba).
-   - W szyfrowniku sprawdza: obiekt → **nowy symbol** na mapie.
-   - Idą do nowego symbolu na mapie. Powtarzają.
-4. Po `N` krokach (3-5? do decyzji) grupa **spisała sekwencję symboli/obiektów** = odpowiedź dla MG.
+**Kluczowa zasada:** na mapie są **wyłącznie abstrakcyjne glify** (np. słońce, drzewo, świnka — arbitralne znaki, które **NIE zdradzają**, co jest w terenie). Grupa nawiguje po pozycji glifu i nie wie z góry, co tam zastanie. „Zdekodowanie" miejsca = **rozpoznanie realnego obiektu** (osiołek to po prostu osiołek).
 
-## Pierwotny przykład autora (do rekonstrukcji)
+1. Każda grupa dostaje: **mapę z abstrakcyjnymi glifami** + pustą **legendę do autouzupełnienia** (glif → ____) + **szyfrownik**.
+2. **K1** podaje **pierwszy glif**.
+3. Cykl — **łańcuch, odkrywanie po kolei** [decyzja 2026-05-31]:
+   - Grupa idzie do pozycji glifu na mapie.
+   - W terenie **rozpoznaje realny obiekt** i potwierdza go w szyfrowniku (szyfrownik ma **więcej obiektów niż 4** — z dystraktorami — więc trzeba rozpoznać właściwy, a nie tylko odczytać).
+   - Wpisuje rozpoznany obiekt do **legendy** przy danym glifie.
+   - Szyfrownik przy tym obiekcie wskazuje **następny glif** → grupa tam idzie. Powtarza.
+4. Po **4 krokach** [decyzja 2026-05-31] grupa ma sekwencję = odpowiedź dla MG.
 
-> Słońce (mapa) → osiołek (teren) → szyfrownik: osiołek → drzewo → idą do drzewa → Kopernik (teren) → szyfrownik: Kopernik → astrolabium → idą do astrolabium → świnka (teren) → ...
+**Self-correction:** dystraktory w szyfrowniku **nie mają „następnego glifu"** (ślepy zaułek) → błędne rozpoznanie samo się demaskuje.
+**Awaryjnie** (łańcuch zablokowany): MG daje hint telefoniczny / potwierdza glif — patrz `mechanics/koperty-mg.md`.
 
-Czyli **mapa zawiera symbol abstrakcyjny** (słońce, drzewo, świnka), a **teren zawiera obiekt konkretny** (osiołek, Kopernik), szyfrownik je łączy.
+> Glify są **arbitralne/kosmetyczne** — można użyć dowolnych znaków; ważne tylko, że nie zdradzają obiektu. Nie ma „logiki pairingu symbol↔miejsce" do wymyślania.
 
-## Dobór miejsc - kandydaci z wiki
+## Trasa prototypu (propozycja — tor TR, 4 kroki)
 
-Z listy 45 miejsc na grę (wiki `przewodnik-miejsc-gry.js`), kandydaci na obiekty terenowe:
+Zwarta wokół Rynku (szybka do dry-runu), wszystkie punkty 24/7 z ulicy.
 
-| Miejsce | Cecha do rozpoznania | Sugerowany symbol mapy |
-|---------|---------------------|------------------------|
-| Pomnik Kopernika (Rynek) | postać z astrolabium | gwiazda / astrolabium |
-| Fontanna Flisaka (8 żab) | flisak z fletem, 8 żab | flet / żaba |
-| Osiołek miejski | dawny pręgierz | słońce / promień |
-| Pomnik psa Filusia | mały kundel z melonikiem | pies / melonik |
-| Aniół „Jonasz" (Ratusz) | anioł na parapecie | skrzydło |
-| Krzywa Wieża | pochyła wieża | wieża pochyła |
-| Kamienica Pod Gwiazdą (Rynek 35) | pozłacana gwiazda + 1697 | gwiazda |
-| Dwór Artusa | herb anioła klęczącego | tarcza |
-| Biedronka (Rynek z polichromiami) | polichromie | biedronka |
-| Dom Kopernika | dom z herbem patrycjuszowskim | księga / globus |
+| Krok | Glif na mapie (abstrakcyjny) | Teren — rozpoznany obiekt | Szyfrownik: obiekt → następny glif |
+|---|---|---|---|
+| 1 (start z K1) | słońce | **osiołek** (żelazny grzbiet pręgierza, Rynek/Żeglarska) | → drzewo |
+| 2 | drzewo | **Pomnik Kopernika** (wąsik z 2003, delfin w studzience) | → świnka |
+| 3 | świnka | **pies Filuś** (kundel z melonikiem prof. Filutka) | → księżyc |
+| 4 (koniec) | księżyc | **Kamienica Pod Gwiazdą**, Rynek 35 (złota gwiazda, 1697) | → KONIEC → MG |
 
-Wybór: ~6-10 obiektów dla 5-6 kroków szlaku.
+### Szyfrownik — szkic struktury
 
-## Szyfrownik - struktura
+Każdy wiersz: **realny obiekt — opis/haczyk do rozpoznania — następny glif**. 4 trafne + dystraktory.
 
-Lista mapowań **obiekt terenowy → kolejny symbol mapy**. Może być:
+| Obiekt | Opis (haczyk) | Następny glif |
+|---|---|---|
+| osiołek | żelazny grzbiet dawnego pręgierza, sadzano na nim karnych żołnierzy | drzewo |
+| Pomnik Kopernika | uczony z brązu; wąsik dostrzeżony w renowacji 2003; delfin w studzience cokołu | świnka |
+| pies Filuś | brązowy kundel pilnujący melonika i parasola | księżyc |
+| Kamienica Pod Gwiazdą | pozłacana gwiazda na żółtej barokowej fasadzie, data 1697 | KONIEC |
+| Fontanna Flisaka | flisak ze skrzypcami, 8 żab (dystraktor) | — |
+| Pomnik smoka | ceramiczny *draco volans* nad Strugą (dystraktor) | — |
+| Pomnik Przekupki | kobieta z gęsią i koszem jaj (dystraktor) | — |
 
-- **Lista tekstowa** (najprostsze): "osiołek → drzewo" w tabeli.
-- **Schemat graficzny** (ładniejsze): ikony połączone strzałkami.
-- **Stylizowane na manuskrypt** (zgodne z estetyką wiki): pergamin, kaligrafia.
+### Legenda mapy (do autouzupełnienia przez grupę)
 
-## Wariant dla obu klas
+```
+słońce = __________     świnka = __________
+drzewo = __________     księżyc = __________
+```
 
-Dwie opcje:
-- **A: ten sam szlak** - obie klasy spotykają się na trasie. Wymaga że na końcu znajdują **tego samego pośrednika** (ale w wariancie szykowanym przez autora: pośrednika nie ma).
-- **B: różne szlaki** - TR ma jeden, krzyżacy inny. Więcej miejsc do doboru, ale separacja czysta.
+(grupa wpisuje rozpoznany obiekt)
 
-**Sugestia**: **B**, bo separuje klasy. Można użyć tego samego szyfrownika, ale **różny start** w pierwszej kopercie i ~3 różnych obiektów po drodze.
+## Dobór miejsc - pełna pula kandydatów z wiki
+
+Z listy 45 miejsc (`przewodnik-miejsc-gry.js`); świadomie **omijamy** miejsca zarezerwowane pod inne zagadki: Biedronka/polichromie (Z10), anioły (Z6), zamek/Gdanisko (Z3/finał). Fontanna Flisaka tylko jako dystraktor (motyw flisaka wykorzysta Z4).
+
+| Miejsce | Cecha do rozpoznania |
+|---------|---------------------|
+| Osiołek (Rynek/Żeglarska) | żelazny grzbiet pręgierza |
+| Pomnik Kopernika (Rynek) | wąsik, delfin w studzience |
+| Pies Filuś (wylot Chełmińskiej) | kundel z melonikiem |
+| Kamienica Pod Gwiazdą (Rynek 35) | złota gwiazda + 1697 |
+| Krzywa Wieża | pochylona baszta, „test sumienia" |
+| Łuk Cezara (Piekary 37) | Michał Archanioł z trąbką, szczątek torów |
+| Dwór Artusa (Rynek 6) | herb klęczącego anioła, daty 1311/1891 |
+| Pomnik Przekupki / Piernikarki (Nowe Miasto) | gęś i kosz jaj / kosz pierników |
+
+Podmiany dla większego „chodzenia" / dryfu ku Piccolo (NE): Krzywa Wieża, Łuk Cezara, Dwór Artusa, Przekupka/Piernikarka.
+
+## Wariant dla obu klas / dyspersja grup
+
+- **Prototyp:** 1 łańcuch (tor TR).
+- **Pełna gra** [otwarte]: „różne trasy per grupa" dla rozproszenia (decyzja 2026-05-29). Model: wspólna mapa (wiele glifów) + wspólny szyfrownik, **różny pierwszy glif per grupa** → różne łańcuchy. Domknięcie przy skalowaniu do MVP.
 
 ## Otwarte pytania
 
-1. **Ile kroków szlaku?** 3 = za szybko, 7 = za długo. Optimum: **5**?
-2. **Co jest "odpowiedzią" dla MG?** Sekwencja symboli? Pierwsze litery obiektów? Hasło ukryte w trasie?
-3. **Co jeśli grupa się pomyli i pójdzie w złe miejsce?** Mają mechanizm "powrotu" - czy losowanie nowej koperty?
-4. **Mapa fizyczna - kto ją projektuje?** Stylizowana na XV w. (pergamin, ręczne rysunki) wymaga grafika. Może być uproszczona (czysty rysunek + symbole) - łatwiej.
-5. **Szyfrownik - jeden na grupę czy jeden na osobę?** Wygodniej osobny (każdy może patrzeć), ale kosztuje 48 kopii zamiast 12.
+1. ~~Ile kroków szlaku?~~ ROZSTRZYGNIĘTE [2026-05-31]: **4**.
+2. **Co jest odpowiedzią dla MG?** — domyślnie **(a) 4 rozpoznane obiekty w kolejności** (dowodzi poprawnego dekodowania; same glify da się odczytać z mapy). Do potwierdzenia/zmiany: (b) 4 glify w kolejności, (c) wypełniona legenda (pary glif→obiekt).
+3. ~~Mapa: ikony czy abstrakcja?~~ ROZSTRZYGNIĘTE [2026-05-31]: **abstrakcyjne glify** + legenda do autouzupełnienia; rozpoznawane są realne obiekty.
+4. **Ostateczny dobór 4 miejsc** — propozycja wyżej, do akceptacji/podmiany.
+5. **Dyspersja per grupa w pełnej grze** — model różnych łańcuchów, do MVP.
+6. **Mapa fizyczna**: na prototyp funkcjonalny mock (rzut starówki + glify + legenda); finalna stylizacja manuskryptowa → po dry-runie.
 
 ## Co autor może zrobić sam vs gdzie pomocy
 
-- **Sam**: dobór symboli + miejsc, projekt graficzny mapy i szyfrownika, dobór "kreatywnego" mapowania (czemu Kopernik → astrolabium a nie księga).
-- **Z pomocą agenta**: weryfikacja czy obiekt terenowy faktycznie istnieje (link do wiki), propozycje alternatyw, redakcja tekstu wskazówek.
+- **Sam**: ostateczny dobór miejsc, dobór dystraktorów, projekt graficzny mapy/szyfrownika, jakie glify (kosmetyka).
+- **Z pomocą agenta**: weryfikacja istnienia obiektu (wiki), opisy/haczyki do szyfrownika, alternatywy miejsc, redakcja, kalkulacja czasu trasy.

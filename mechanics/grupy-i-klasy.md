@@ -41,11 +41,24 @@ Tabele i mechanika „klucza do finału" — `concept/03-faza-2b-asynchroniczne.
 - **Skład**: znajomi się zapisują razem? Czy autor miesza losowo?
 - **Wymagania**: wiek, kondycja (gra to kilka godzin chodzenia), telefon (komunikacja awaryjna).
 
-## Identyfikatory grup
+## Identyfikatory grup — ROZSTRZYGNIĘTE [2026-05-31]: KOLORY
 
-- **Nazwa cechu** (historyczne cechy toruńskie - rzeźnicy, piekarze, kupcy, browary - wiki `cechy-rzemieslnicze.js`).
-- **Kolor / symbol** (każda grupa nosi opaskę/szarfę).
-- **Hasło** (przy raportach u MG, dla weryfikacji).
+Każda grupa = **jeden kolor** (opaska/szarfa). 10 kolorów dobranych pod **maksymalną rozróżnialność z dystansu**; **przydział do klas losowy** — kolor NIE zdradza TR vs krzyżacy.
+
+| # | Kolor | Hex |
+|---|---|---|
+| 1 | Czerwony | `#E6194B` |
+| 2 | Pomarańczowy | `#F58231` |
+| 3 | Żółty | `#FFE119` |
+| 4 | Zielony | `#3CB44B` |
+| 5 | Turkusowy | `#42D4F4` |
+| 6 | Niebieski | `#4363D8` |
+| 7 | Fioletowy | `#911EB4` |
+| 8 | Różowy (magenta) | `#F032E6` |
+| 9 | Brązowy | `#9A6324` |
+| 10 | Czarny | `#2B2B2B` |
+
+Hex przydatny przy druku opasek i identyfikacji u MG (arkusz śledzenia per kolor). **Prototyp:** 1 grupa = 1 kolor.
 
 ## Brief klas - kiedy ujawnia się? — ROZSTRZYGNIĘTE [2026-05-29]
 

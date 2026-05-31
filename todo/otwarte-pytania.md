@@ -16,7 +16,7 @@ Pytania pogrupowane wg pliku, w którym są dyskutowane szerzej.
 
 ## STRUKTURALNE (kształtują strukturę gry)
 
-8. **F1 trasa Z1** - 5-7 miejsc, które konkretne? CZĘŚCIOWO ROZSTRZYGNIĘTE [2026-05-29]: **NIE jedna wspólna trasa — różne trasy per grupa** (rozproszenie grup po mieście). Szczegółowy dobór miejsc i mapowanie symboli **odłożone na koniec prac**; realizacją zajmie się **prawdopodobnie Piotr**, nie Oskar.
+8. **F1 trasa Z1** — AKTUALIZACJA [2026-05-31]: **mechanika docelowa ustalona** (łańcuch + abstrakcyjne glify na mapie + szyfrownik obiekt→następny glif + legenda do autouzupełnienia; **4 kroki**). **Prototyp:** 1 łańcuch (tor TR), propozycja 4 miejsc w `puzzles/szlak-symboli.md`. **Pełna gra:** różne trasy per grupa (dyspersja) — model różnych pierwszych glifów, do MVP. Wcześniej [2026-05-29]: realizacją miał się zająć Piotr.
 9. ~~F2B — które obowiązkowe / wybierz 2 z 4~~ ROZSTRZYGNIĘTE [2026-05-29]: **model dywersyfikacji**, nie „wybierz 2 z 4". Obowiązkowa: **Z3 (TR) / Z3Z (krzyżacy)** + **1 opcjonalna** per grupa (5+5; tabele w `concept/03-faza-2b-asynchroniczne.md`). Bramkowanie finału: Z3/Z3Z + 1 opcjonalna (klucz wymienialny).
 10. **Wybór formy "trzy rzeczy do zestawienia"** w Z2 (`puzzles/droga-do-jordana.md`).
 11. **Wybór formy testu Jordana** (1-5 propozycji w `puzzles/test-jordana.md`).
@@ -59,7 +59,7 @@ Pytania pogrupowane wg pliku, w którym są dyskutowane szerzej.
 ## Logistyka i komunikacja
 
 39. **Sposób zapisu graczy** - formularz, Telegram, FB?
-40. **Identyfikator grupy** - cech, kolor, oba?
+40. ~~Identyfikator grupy~~ ROZSTRZYGNIĘTE [2026-05-31]: **kolor** (10 kolorów, opaska/szarfa; przydział losowy, nie zdradza klasy). Patrz `mechanics/grupy-i-klasy.md`.
 41. **Komunikacja awaryjna** - SMS, telefon, aplikacja?
 42. **Plotki: 3 vs 5** w jednej kopercie?
 43. ~~Plotki: różne per klasa~~ ROZSTRZYGNIĘTE [2026-05-29]: **odwrócone wg klasy** — kurierzy TR dostają krytykę TR, kurierzy Zakonu krytykę Zakonu (Pule A/B w `lore/plotki-i-pogloski.md`). Neutralne/forshadow wspólne.
