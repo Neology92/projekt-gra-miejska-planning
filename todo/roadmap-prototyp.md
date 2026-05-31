@@ -5,20 +5,21 @@
 
 ## 🔴 Stan i priorytet [2026-05-31]
 
-**PRIORYTET TERAZ → Zadanie Z1-ART: domknięcie Z1 na artefakty (opcja A).** Do wykonania w nowej sesji (bez tego kontekstu):
+**Z1-ART: drafty gotowe [2026-05-31]** — czekają na review Oskara. Artefakty:
+- **Mock mapy** → `mapa-z1-podglad.html` (rzut Starówki + Nowego Miasta, **9 glifów** = 4 łańcuch + 5 dystraktorów, pusta legenda). Funkcjonalny, nie finalny.
+- **Karta szyfrownika** → `puzzles/szlak-symboli.md` (9 wierszy: 4 trafne + 5 dystraktorów bez „następnego glifu").
+- **Treść startu w K1** → `puzzles/szlak-symboli.md`, sekcja „Treść startu w K1".
+- Format „wyniku dla MG" **rozstrzygnięty: (a) 4 obiekty w kolejności**.
 
-- **Mock mapy** — funkcjonalny rzut Starówki + **4 abstrakcyjne glify** (słońce, drzewo, świnka, księżyc) w pozycjach 4 przystanków + **pusta legenda** do autouzupełnienia (glif → ____). Graficznie funkcjonalnie, nie finalnie.
-- **Karta szyfrownika** — 4 trafne obiekty (opis/haczyk + następny glif) + dystraktory (bez „następnego glifu").
-- **Treść startu w K1** — pierwszy glif (słońce) + zasada łańcucha + co raportować MG.
-- **Spec źródłowy:** `puzzles/szlak-symboli.md` (mechanika, reguły generowania tras, trasa prototypu, szyfrownik). Otwarte przy realizacji: format „wyniku dla MG" (domyślnie 4 obiekty w kolejności), ostateczny dobór miejsc, ew. zachodni przystanek dla równiejszych legów.
+**2 decyzje Oskara do domknięcia Z1** (`puzzles/szlak-symboli.md`, Otwarte pytania): (#4) ostateczny dobór 4 miejsc + 5 dystraktorów (propozycja do podmiany); (#8) przeciek szyfrownika — zostawić opcję A (samokorekta) czy przejść na opcję B (fałszywe tropy).
+
+**PRIORYTET TERAZ → opcja B: fabularny rdzeń F1→F2A** (K1, K2, Z2 + skrypt Jordana/Z2b). Wymaga inputu Oskara: forma „trzech rzeczy" w Z2 + forma testu Jordana.
 
 **Zablokowane decyzje (gotowe do użycia):**
 - **Zakres:** pionowy wycinek, ścieżka **TR + Z4**; poziom = **docelowe rozwiązania** (mock tylko do testu). Sekcja 0.
 - **Z1:** łańcuch + abstrakcyjne glify na mapie + szyfrownik obiekt→następny glif + legenda do autouzupełnienia; **4 kroki**; kończy u **MG na Rynku Staromiejskim** (Piccolo dopiero w Z2). Reguły tras + trasa w `puzzles/szlak-symboli.md`.
 - **Identyfikatory grup:** 10 kolorów (`mechanics/grupy-i-klasy.md`).
 - **Lokal Jordana:** Piccolo (ul. Prosta 20). **Z7:** Vigenère, krótki klucz. **Z3:** żywy Albrecht (Zosia) + karta choreografii kradzieży. **Dostarczenie listu:** osobiste (mock: stół prawa=Bażyński / lewa=Albrecht).
-
-**Po Z1-ART (kolejny krok):** opcja B — fabularny rdzeń **F1→F2A** (K1, K2, Z2 + skrypt Jordana/Z2b). Wymaga inputu Oskara: forma „trzech rzeczy" w Z2 + forma testu Jordana.
 
 ---
 

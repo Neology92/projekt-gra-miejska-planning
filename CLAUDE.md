@@ -152,7 +152,7 @@ Te punkty są **niezmienne** i mają pokrycie w wiki:
 
 ## Status na start (2026-05-29)
 
-> **🔴 AKTUALNY PRIORYTET [2026-05-31]:** budowa **prototypu pojedynczej ścieżki** (tor TR + Z4). Następny krok: **Z1 — artefakty** (funkcjonalny mock mapy + karta szyfrownika + treść startu w K1). Pełny plan, stan prac i lista decyzji: **`todo/roadmap-prototyp.md`**.
+> **🔴 AKTUALNY PRIORYTET [2026-05-31]:** budowa **prototypu pojedynczej ścieżki** (tor TR + Z4). **Z1 — artefakty: drafty gotowe** (mock mapy `mapa-z1-podglad.html` + szyfrownik 9 glifów + treść startu w K1), czekają na review Oskara. Następny krok: **opcja B — fabularny rdzeń F1→F2A**. Pełny plan, stan prac i lista decyzji: **`todo/roadmap-prototyp.md`**.
 
 - ✅ Faza 1 — szkielet ma sens, szlak symboli wymaga konkretnego doboru miejsc i przygotowania szyfrownika
 - ✅ Faza 2A (Jordan) — szkielet jest, treść spotkania do dopisania

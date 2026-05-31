@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Z1 — funkcjonalny mock mapy szlaku symboli</title>
+<style>
+  :root {
+    --bg: #f4f2ee;
+    --card: #ffffff;
+    --ink: #1d1b18;
+    --muted: #6b6660;
+    --line: #d9d4cc;
+    --parch: #efe7d6;
+    --parch2: #e6dcc6;
+    --water: #cfe0e6;
+    --radius: 12px;
+    --shadow: 0 1px 2px rgba(0,0,0,.06), 0 8px 24px rgba(0,0,0,.06);
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font: 15px/1.5 "Segoe UI", system-ui, -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    padding: clamp(16px, 4vw, 48px);
+  }
+  header { max-width: 980px; margin: 0 auto 20px; }
+  h1 { font-size: clamp(1.3rem, 1rem + 1.8vw, 1.9rem); margin: 0 0 6px; letter-spacing: -.02em; }
+  .sub { color: var(--muted); margin: 0; max-width: 70ch; }
+  .wrap { max-width: 980px; margin: 0 auto; }
+  .badge {
+    display: inline-block; font-size: .72rem; text-transform: uppercase; letter-spacing: .07em;
+    background: #f0e3c8; color: #7a5d1d; border: 1px solid #e0cda0;
+    padding: 3px 9px; border-radius: 999px; margin-bottom: 12px; font-weight: 600;
+  }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow);
+    padding: clamp(14px, 3vw, 26px); margin-bottom: 22px;
+  }
+  h2 {
+    font-size: .82rem; text-transform: uppercase; letter-spacing: .08em;
+    color: var(--muted); margin: 0 0 14px; font-weight: 600;
+  }
+  svg { width: 100%; height: auto; display: block; border-radius: 8px; }
+  .glyph-circle { fill: #fff; stroke: #b9a87f; stroke-width: 2; }
+  .glyph-em { font-size: 24px; text-anchor: middle; dominant-baseline: central; }
+  .glyph-code { font: 600 11px "Segoe UI", sans-serif; fill: var(--muted); text-anchor: middle; }
+  .area-label { font: 600 13px "Segoe UI", sans-serif; fill: #8a7c5f; text-anchor: middle; letter-spacing: .04em; }
+  .water-label { font: 600 14px "Segoe UI", sans-serif; fill: #5d8190; text-anchor: middle; letter-spacing: .18em; }
+  .compass { font: 700 13px "Segoe UI", sans-serif; fill: var(--muted); text-anchor: middle; }
+
+  /* legenda */
+  .legend-grid {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 10px 24px;
+  }
+  .legend-row { display: flex; align-items: center; gap: 10px; }
+  .legend-em { font-size: 22px; width: 30px; text-align: center; }
+  .legend-name { width: 70px; color: var(--muted); font-size: .85rem; }
+  .legend-line { flex: 1; border-bottom: 1.5px dotted #b9a87f; height: 1.2em; }
+
+  .note { color: var(--muted); font-size: .9rem; margin: 10px 0 0; }
+  ol.steps { margin: 0; padding-left: 1.2em; }
+  ol.steps li { margin: 4px 0; }
+  code { background: #f0ece3; padding: 1px 5px; border-radius: 5px; font-size: .9em; }
+
+  @media print {
+    body { background: #fff; padding: 0; }
+    .card { box-shadow: none; break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<header class="wrap">
+  <span class="badge">Funkcjonalny mock — nie finalna grafika</span>
+  <h1>Z1 · Szlak symboli — podgląd mapy</h1>
+  <p class="sub">Schematyczny rzut Starówki i Nowego Miasta z <strong>9 glifami</strong> (4 z łańcucha + 5 dystraktorów — na mapie gracza <strong>nieodróżnialne</strong>). Pozycje orientacyjne, do weryfikacji w terenie. Symbole są arbitralne; finalna grafika i kaligrafia → osobno, po dry-runie.</p>
+</header>
+
+<div class="wrap">
+  <div class="card">
+    <h2>Mapa (mock)</h2>
+    <svg viewBox="0 0 900 620" role="img" aria-label="Schematyczna mapa Torunia ze szlakiem symboli">
+      <!-- tlo: ladowy obszar -->
+      <rect x="0" y="0" width="900" height="620" fill="#f7f3ea"/>
+
+      <!-- Wisla (poludnie/dol) -->
+      <rect x="0" y="548" width="900" height="72" fill="var(--water)"/>
+      <path d="M0,548 q40,10 80,0 t80,0 t80,0 t80,0 t80,0 t80,0 t80,0 t80,0 t80,0 t80,0 t80,0"
+            fill="none" stroke="#aecad4" stroke-width="2"/>
+      <text x="450" y="592" class="water-label">W I S Ł A</text>
+
+      <!-- Stare Miasto -->
+      <rect x="70" y="120" width="430" height="420" rx="14" fill="var(--parch)" stroke="#d8c9a6" stroke-width="1.5"/>
+      <!-- Rynek Staromiejski -->
+      <rect x="250" y="270" width="160" height="130" rx="6" fill="var(--parch2)" stroke="#cdbc94" stroke-width="1.5"/>
+      <text x="330" y="338" class="area-label">Rynek</text>
+      <text x="330" y="356" class="area-label">Staromiejski</text>
+      <text x="180" y="150" class="area-label">STARE MIASTO</text>
+
+      <!-- ulica laczaca (Szeroka / Krolowej Jadwigi) -->
+      <rect x="500" y="300" width="70" height="34" fill="#ece3d0"/>
+      <text x="535" y="294" class="area-label" font-size="10">ul. Szeroka</text>
+
+      <!-- Nowe Miasto -->
+      <rect x="570" y="150" width="280" height="320" rx="14" fill="var(--parch)" stroke="#d8c9a6" stroke-width="1.5"/>
+      <!-- Rynek Nowomiejski -->
+      <rect x="650" y="245" width="150" height="120" rx="6" fill="var(--parch2)" stroke="#cdbc94" stroke-width="1.5"/>
+      <text x="725" y="312" class="area-label">Rynek</text>
+      <text x="725" y="330" class="area-label">Nowomiejski</text>
+      <text x="710" y="178" class="area-label">NOWE MIASTO</text>
+
+      <!-- kompas -->
+      <g transform="translate(840,80)">
+        <line x1="0" y1="18" x2="0" y2="-12" stroke="#9b8d6e" stroke-width="2"/>
+        <path d="M0,-18 L5,-6 L-5,-6 Z" fill="#9b8d6e"/>
+        <text x="0" y="34" class="compass">N</text>
+      </g>
+
+      <!-- ===== GLIFY (9) — markery identyczne, bez nazw obiektow ===== -->
+      <!-- 4 z lancucha -->
+      <g transform="translate(700,268)">
+        <circle r="21" class="glyph-circle"/><text class="glyph-em">☀</text>
+        <text y="36" class="glyph-code">A</text>
+      </g>
+      <g transform="translate(372,386)">
+        <circle r="21" class="glyph-circle"/><text class="glyph-em">🌳</text>
+        <text y="36" class="glyph-code">B</text>
+      </g>
+      <g transform="translate(438,470)">
+        <circle r="21" class="glyph-circle"/><text class="glyph-em">🐷</text>
+        <text y="36" class="glyph-code">C</text>
+      </g>
+      <g transform="translate(322,318)">
+        <circle r="21" class="glyph-circle"/><text class="glyph-em">🌙</text>
+        <text y="36" class="glyph-code">D</text>
+      </g>
+      <!-- 5 dystraktorow -->
+      <g transform="translate(160,500)">
+        <circle r="21" class="glyph-circle"/><text class="glyph-em">🔑</text>
+        <text y="36" class="glyph-code">E</text>
+      </g>
+      <g transform="translate(250,238)">
+        <circle r="21" class="glyph-circle"/><text class="glyph-em">⚓</text>
+        <text y="36" class="glyph-code">F</text>
+      </g>
+      <g transform="translate(120,330)">
+        <circle r="21" class="glyph-circle"/><text class="glyph-em">👑</text>
+        <text y="36" class="glyph-code">G</text>
+      </g>
+      <g transform="translate(760,318)">
+        <circle r="21" class="glyph-circle"/><text class="glyph-em">🏺</text>
+        <text y="36" class="glyph-code">H</text>
+      </g>
+      <g transform="translate(418,300)">
+        <circle r="21" class="glyph-circle"/><text class="glyph-em">🔨</text>
+        <text y="36" class="glyph-code">I</text>
+      </g>
+    </svg>
+    <p class="note">Markery A–I (literki tylko porządkowe dla MG/druku — na finalnej mapie gracza mogą zniknąć). <strong>Żaden marker nie zdradza, czy jest na trasie.</strong> Tylko 4 z 9 prowadzą łańcuch; trzeba dojść i rozpoznać obiekt.</p>
+  </div>
+
+  <div class="card">
+    <h2>Legenda — do autouzupełnienia przez grupę</h2>
+    <div class="legend-grid">
+      <div class="legend-row"><span class="legend-em">☀</span><span class="legend-name">słońce</span><span class="legend-line"></span></div>
+      <div class="legend-row"><span class="legend-em">🔑</span><span class="legend-name">klucz</span><span class="legend-line"></span></div>
+      <div class="legend-row"><span class="legend-em">🌳</span><span class="legend-name">drzewo</span><span class="legend-line"></span></div>
+      <div class="legend-row"><span class="legend-em">⚓</span><span class="legend-name">kotwica</span><span class="legend-line"></span></div>
+      <div class="legend-row"><span class="legend-em">🐷</span><span class="legend-name">świnka</span><span class="legend-line"></span></div>
+      <div class="legend-row"><span class="legend-em">👑</span><span class="legend-name">korona</span><span class="legend-line"></span></div>
+      <div class="legend-row"><span class="legend-em">🌙</span><span class="legend-name">księżyc</span><span class="legend-line"></span></div>
+      <div class="legend-row"><span class="legend-em">🏺</span><span class="legend-name">dzban</span><span class="legend-line"></span></div>
+      <div class="legend-row"><span class="legend-em">🔨</span><span class="legend-name">młot</span><span class="legend-line"></span></div>
+    </div>
+    <p class="note">9 pól, ale na swojej trasie wypełnicie 4. Reszta zostaje pusta (albo zapełnia się, gdy zabłądzicie do dystraktora). To celowe — nie wiecie z góry, które 4 są wasze.</p>
+  </div>
+
+  <div class="card">
+    <h2>Jak iść (skrót zasady z K1)</h2>
+    <ol class="steps">
+      <li>Start: <strong>☀ słońce</strong> (z koperty K1). Znajdźcie ten glif na mapie i idźcie tam.</li>
+      <li>Na miejscu rozpoznajcie <strong>realny obiekt</strong> i odszukajcie go w <strong>szyfrowniku</strong>.</li>
+      <li>Szyfrownik przy właściwym obiekcie wskaże <strong>następny glif</strong> → idźcie do niego.</li>
+      <li>Ślepy zaułek (obiekt bez „następnego glifu") = pomyłka → wróćcie do ostatniego pewnego znaku.</li>
+      <li>Po <strong>4 krokach</strong> zameldujcie MG <strong>4 rozpoznane obiekty w kolejności</strong> → dostajecie K2.</li>
+    </ol>
+    <p class="note">Klucz autora/MG (glif → obiekt) i szyfrownik z dystraktorami: <code>puzzles/szlak-symboli.md</code>.</p>
+  </div>
+</div>
+</body>
+</html>

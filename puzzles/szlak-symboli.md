@@ -1,12 +1,14 @@
 # Zagadka 1 - Szlak symboli
 
-**Status** [2026-05-31]: **mechanika docelowa ustalona** (łańcuch + abstrakcyjne glify na mapie + dekodowanie = rozpoznanie realnego obiektu + szyfrownik obiekt→następny glif + legenda do autouzupełnienia). **Trasa prototypu** (4 kroki, tor TR) — propozycja niżej. Format „wyniku dla MG" — do potwierdzenia (patrz Otwarte pytania #2).
+**Status** [2026-05-31]: **mechanika docelowa ustalona** (łańcuch + abstrakcyjne glify na mapie + dekodowanie = rozpoznanie realnego obiektu + szyfrownik obiekt→następny glif + legenda do autouzupełnienia). **Mapa: 9 glifów** (4 z łańcucha + 5 dystraktorów) [decyzja 2026-05-31], żeby trasy nie dało się odczytać z samej mapy bez chodzenia. **Odpowiedź dla MG: (a) 4 rozpoznane obiekty w kolejności** [decyzja 2026-05-31]. **Trasa prototypu** (4 kroki, tor TR) + **funkcjonalny mock mapy** (`mapa-z1-podglad.html`) — niżej.
 
 ## Mechanika (docelowa)
 
 **Kluczowa zasada:** na mapie są **wyłącznie abstrakcyjne glify** (np. słońce, drzewo, świnka — arbitralne znaki, które **NIE zdradzają**, co jest w terenie). Grupa nawiguje po pozycji glifu i nie wie z góry, co tam zastanie. „Zdekodowanie" miejsca = **rozpoznanie realnego obiektu** (osiołek to po prostu osiołek).
 
-1. Każda grupa dostaje: **mapę z abstrakcyjnymi glifami** + pustą **legendę do autouzupełnienia** (glif → ____) + **szyfrownik**.
+**Więcej glifów niż kroków** [decyzja 2026-05-31]: mapa pokazuje **9 glifów** — 4 należące do łańcucha + **5 glifów-dystraktorów** w miejscach poza trasą. Glify-dystraktory wyglądają identycznie jak prawidłowe (żadnego oznaczenia). Dzięki temu z samej mapy **nie da się odgadnąć trasy** — trzeba iść, rozpoznać obiekt i sprawdzić w szyfrowniku, który glif jest następny. (Uwaga o pozostałym, mniejszym przecieku — w szyfrowniku, nie na mapie — patrz Otwarte pytania #8.)
+
+1. Każda grupa dostaje: **mapę z 9 abstrakcyjnymi glifami** (4 z łańcucha + 5 dystraktorów) + pustą **legendę do autouzupełnienia** (glif → ____) + **szyfrownik**.
 2. **K1** podaje **pierwszy glif**.
 3. Cykl — **łańcuch, odkrywanie po kolei** [decyzja 2026-05-31]:
    - Grupa idzie do pozycji glifu na mapie.
@@ -49,11 +51,31 @@ Jednokierunkowy sweep **Nowe Miasto → centrum**, kończący na **Rynku Staromi
 
 **Sprawdzenie reguły #2 ✓:** start → P1 → P2 → P3 → P4(=MG) ≈ 2,5 + 3,5 + 1,5 + 1,5 ≈ **~9-10 min** (w budżecie 12 ±2). Legi 2-4 są krótkie, bo trzy ostatnie przystanki leżą na Rynku Staromiejskim — grupa „zbiega się" na MG. Brak zawrotek; jednokierunkowy sweep E → centrum.
 
-> Chcesz równiejsze ~3-min legi? Można dorzucić zachodni przystanek (np. **Łuk Cezara**, Piekary 37 — Michał Archanioł z trąbką) między Pod Gwiazdą a Kopernikiem, kosztem drobnego „bouncu" na zachód (~+3 min, wciąż w budżecie).
+> Chcesz równiejsze ~3-min legi? Można dorzucić zachodni przystanek (np. **Łuk Cezara**, Piekary 37 — Michał Archanioł z trąbką) między Pod Gwiazdą a Kopernikiem, kosztem drobnego „bouncu" na zachód (~+3 min, wciąż w budżecie). *(W prototypie Łuk Cezara jest już użyty jako glif-dystraktor — patrz niżej.)*
+
+### Glify na mapie — referencja autora/MG (NIE na mapie gracza)
+
+9 glifów: **4 z łańcucha** + **5 dystraktorów**. Na mapie gracza widać tylko symbole (bez tej tabeli) — gracz nie wie, które są „prawdziwe". Glify są **arbitralne/kosmetyczne** — Oskar może podmienić symbole dowolnie; tu propozycja.
+
+| Glif | Pozycja na mapie | Obiekt w terenie | Rola |
+|---|---|---|---|
+| ☀ słońce | Rynek Nowomiejski | **Pomnik Piernikarki** | łańcuch — **start (z K1)** |
+| 🌳 drzewo | Rynek Staromiejski 35 | **Kamienica Pod Gwiazdą** | łańcuch — krok 2 |
+| 🐷 świnka | Rynek / zbieg z Żeglarską | **osiołek** (pręgierz) | łańcuch — krok 3 |
+| 🌙 księżyc | Rynek Staromiejski (przy Ratuszu) | **Pomnik Kopernika** | łańcuch — krok 4 → KONIEC |
+| 🔑 klucz | ul. Pod Krzywą Wieżą (SW, mury) | **Krzywa Wieża** | dystraktor |
+| ⚓ kotwica | wylot ul. Chełmińskiej (NW Rynku) | **pies Filuś** | dystraktor |
+| 👑 korona | ul. Piekary 37 (W) | **Łuk Cezara** | dystraktor |
+| 🏺 dzban | Rynek Nowomiejski (przy Modrym Fartuchu) | **Pomnik Przekupki** | dystraktor |
+| 🔨 młot | Rynek Staromiejski 6 (naprzeciw Ratusza) | **Dwór Artusa** | dystraktor |
+
+**Dobór dystraktorów = propozycja do podmiany** (to Twój wybór — `Co autor może zrobić sam`). Wszystkie 24/7 z ulicy, rozpoznawalne, **świadomie pominięto Fontannę Flisaka** (motyw flisaka rezerwujemy dla Z4 — żeby nie primować gracza przed czasem).
 
 ### Szyfrownik — szkic struktury
 
 Każdy wiersz: **realny obiekt — opis/haczyk do rozpoznania — następny glif**. 4 trafne + dystraktory (bez „następnego glifu" = ślepy zaułek).
+
+9 wierszy = 9 glifów na mapie (4 łańcuch + 5 dystraktorów). Kolejność wierszy w karcie warto **wymieszać** (nie grupować łańcucha na górze).
 
 | Obiekt | Opis (haczyk) | Następny glif |
 |---|---|---|
@@ -62,17 +84,42 @@ Każdy wiersz: **realny obiekt — opis/haczyk do rozpoznania — następny glif
 | osiołek | żelazny grzbiet dawnego pręgierza, sadzano na nim karnych żołnierzy | księżyc |
 | Pomnik Kopernika | uczony z brązu; wąsik dostrzeżony w renowacji 2003; delfin w studzience cokołu | KONIEC |
 | Krzywa Wieża | pochylona baszta, „test sumienia" (dystraktor) | — |
-| Pomnik Przekupki | kobieta z gęsią, kosz jaj, waga (dystraktor) | — |
-| pies Filuś | kundel z melonikiem prof. Filutka (dystraktor) | — |
+| Pomnik Przekupki | kobieta z gęsią, kosz jaj, waga u stóp (dystraktor) | — |
+| pies Filuś | kundel z melonikiem prof. Filutka, pilnuje parasola (dystraktor) | — |
+| Łuk Cezara | szczątek torów tramwajowych pod sklepieniem, Michał Archanioł z trąbką na attyce (dystraktor) | — |
+| Dwór Artusa | czerwona neorenesansowa fasada, złote daty 1311 i 1891 na wieżyczkach (dystraktor) | — |
 
 ### Legenda mapy (do autouzupełnienia przez grupę)
 
+Wszystkie **9 glifów** — grupa wpisuje obiekt po rozpoznaniu w terenie. Na swojej trasie wypełni 4 (łańcuch); resztę zostawi pustą lub wypełni, jeśli zabłądzi do dystraktora. To, że glifów jest 9 a kroków 4, jest **celowe** — gracz nie wie, które 4 są jego.
+
 ```
-słońce = __________     świnka = __________
-drzewo = __________     księżyc = __________
+☀ słońce  = __________     🔑 klucz   = __________
+🌳 drzewo  = __________     ⚓ kotwica = __________
+🐷 świnka  = __________     👑 korona  = __________
+🌙 księżyc = __________     🏺 dzban   = __________
+                            🔨 młot    = __________
 ```
 
-(grupa wpisuje rozpoznany obiekt)
+(grupa wpisuje rozpoznany obiekt; start łańcucha = ☀ słońce, z K1)
+
+## Treść startu w K1 — segment Z1 (draft)
+
+To **fragment koperty K1 dotyczący szlaku** (pierwszy glif + zasada łańcucha + co raportować MG). Pełna K1 (brief fabularny + groźba/motywacja) powstaje osobno — blok 1C roadmapy. Stylizacja językowa do dopracowania (Twoje pióro); poniżej wersja funkcjonalna w tonie.
+
+> Pośrednik nie ufa nikomu, kto trafia do niego prosto. Pójdziecie **po znakach**.
+>
+> Macie **mapę** i **szyfrownik**. Na mapie naniesiono znaki — ale znak nie zdradza, co przy nim stoi. To trzeba **zobaczyć na własne oczy**.
+>
+> Zaczynacie od znaku **☀ słońca**. Znajdźcie go na mapie i idźcie tam.
+> - Na miejscu rozpoznajcie, **co naprawdę** stoi przy tym znaku, i odszukajcie ten obiekt w szyfrowniku.
+> - Szyfrownik przy właściwym obiekcie wskaże **następny znak**. Idźcie do niego — i tak krok po kroku.
+> - Jeśli obiekt nie wskazuje dalej (ślepy zaułek), pomyliliście miejsce — wróćcie do ostatniego pewnego znaku.
+> - Rozpoznane obiekty wpisujcie do **legendy** na mapie.
+>
+> Po **czterech** znakach traficie tam, gdzie kręci się nasz człowiek. Zamelduje­cie mu **cztery rozpoznane miejsca — w kolejności, w jakiej je odkryliście**. To wasza przepustka dalej.
+
+**Co raportuje grupa do MG:** 4 rozpoznane obiekty w kolejności (np. *„Piernikarka — Pod Gwiazdą — osiołek — Kopernik"*). MG weryfikuje wg wzorca w `mechanics/koperty-mg.md` i wydaje K2.
 
 ## Dobór miejsc - pełna pula kandydatów z wiki
 
@@ -99,12 +146,15 @@ Podmiany dla większego „chodzenia" / dryfu ku Piccolo (NE): Krzywa Wieża, Ł
 ## Otwarte pytania
 
 1. ~~Ile kroków szlaku?~~ ROZSTRZYGNIĘTE [2026-05-31]: **4**.
-2. **Co jest odpowiedzią dla MG?** — domyślnie **(a) 4 rozpoznane obiekty w kolejności** (dowodzi poprawnego dekodowania; same glify da się odczytać z mapy). Do potwierdzenia/zmiany: (b) 4 glify w kolejności, (c) wypełniona legenda (pary glif→obiekt).
+2. ~~Co jest odpowiedzią dla MG?~~ ROZSTRZYGNIĘTE [2026-05-31]: **(a) 4 rozpoznane obiekty w kolejności** (dowodzi przejścia w terenie — same glify da się odczytać z mapy, obiekty nie).
 3. ~~Mapa: ikony czy abstrakcja?~~ ROZSTRZYGNIĘTE [2026-05-31]: **abstrakcyjne glify** + legenda do autouzupełnienia; rozpoznawane są realne obiekty.
 4. **Ostateczny dobór 4 miejsc** — propozycja wyżej, do akceptacji/podmiany.
 5. **Dyspersja per grupa w pełnej grze** — model różnych łańcuchów, do MVP.
 6. **Mapa fizyczna**: na prototyp funkcjonalny mock (rzut starówki + glify + legenda); finalna stylizacja manuskryptowa → po dry-runie.
 7. ~~Przeprojektowanie trasy pod regułę #2~~ ROZSTRZYGNIĘTE [2026-05-31]: trasa kończy **na Rynku Staromiejskim (MG)**, nie przy Piccolo — sweep Nowe Miasto → centrum, ~9-10 min, w budżecie. Piccolo to dopiero Z2/F2A (po K2). Napięcie „start+koniec na NE" zniknęło.
+8. **Przeciek w szyfrowniku — Twoja decyzja** [2026-05-31]. Dodanie glifów-dystraktorów na mapie domyka odczyt **z mapy**, ale zostaje mniejszy przeciek: w szyfrowniku wiersze łańcucha **mają** „następny glif", a dystraktory **nie mają** — więc grupa czytająca całą kartę może wytypować **zbiór** 4 obiektów łańcucha bez chodzenia. **Kolejności i tak nie da się z tego odczytać** (szyfrownik jest „obiekt→glif", nie „glif→obiekt"; bez chodzenia nie wiesz, który obiekt stoi przy którym glifie), a MG i tak weryfikuje raport — więc w praktyce exploit jest słaby. To **trade-off**, nie błąd: brak „następnego glifu" u dystraktorów to właśnie to, co daje **samokorektę w terenie** (ślepy zaułek demaskuje pomyłkę).
+   - **Opcja A (obecna, domyślna):** zostaw jak jest — pełna samokorekta, drobny przeciek zbioru, niwelowany przez kolejność + weryfikację MG.
+   - **Opcja B (fałszywe tropy):** dystraktory też dostają „następny glif", ale prowadzą w **pętlę/ślepy zaułek po dojściu** → karta wygląda jednolicie, zbioru nie da się wytypować. Koszt: samokorekta przesuwa się o jeden krok (poznajesz pomyłkę dopiero na miejscu następnego glifu) + więcej szumu w terenie. **To zmiana mechaniki — Twój wybór.**
 
 ## Co autor może zrobić sam vs gdzie pomocy
 
