@@ -56,13 +56,13 @@ Dlaczego akurat ci dwaj aktorzy: finał = jednoczesne starcie Bażyński vs Albr
 - **W grze (autorska fikcja)**: Jordan = pseudonim Bażyńskiego. Plot twist F3.
 - **Cecha rozpoznawcza**: **chochla** (atrybut wskazany w Z2 - "znajdźcie osobę z chochlą o imieniu Jordan").
 - **Lokalizacja**: lokal gastronomiczny (Picollo / "Gospoda Pod Chochlą" / inny - patrz `puzzles/droga-do-jordana.md`).
-- **Angielska wersja twistu** (dla materiałów gracza): Jordan = **Jan Bażyński** (w materiałach EN: "Hans von Baysen" lub "Jan Bażyński" — do ustalenia która forma dla obcojęzycznych graczy).
+- **Angielska wersja twistu** (dla materiałów gracza): Jordan = **Hans von Baysen** [ustalone 2026-06-01] — w materiałach EN używamy formy niemieckiej (rozpoznawalna, prusko-hanzeatycka), nie polskiej „Jan Bażyński".
 
 ### Twist fabularny per frakcja [2026-06-01]
 
 | Frakcja | Twist | Status |
 |---------|-------|--------|
-| Mieszczanie (TR) | Jordan = **Jan Bażyński** (sojusznik okazuje się przywódcą buntu) | ✅ ustalony |
+| Mieszczanie (TR) | Jordan = **Hans von Baysen** (= Jan Bażyński; sojusznik okazuje się przywódcą buntu). Materiały EN: forma niemiecka. | ✅ ustalony |
 | Krzyżacy | ??? | ❌ TBD |
 
 ### ☆ Rzemieślnik (piekarz) - kontr-narracja
