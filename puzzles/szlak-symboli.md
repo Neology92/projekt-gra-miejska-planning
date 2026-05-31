@@ -20,9 +20,28 @@
 
 > Glify są **arbitralne/kosmetyczne** — można użyć dowolnych znaków; ważne tylko, że nie zdradzają obiektu. Nie ma „logiki pairingu symbol↔miejsce" do wymyślania.
 
+## Reguły generowania tras (Z1) [2026-05-31]
+
+Reguły dla **każdej** trasy (per grupa). Każda nowa trasa musi je spełniać.
+
+1. **4 przystanki** (4 kroki) z rozpoznawalnym obiektem-haczykiem.
+2. **Budżet marszu: 12 ±2 min**, liczony jako PEŁNY łańcuch:
+   **punkt startu → przyst. 1 → 2 → 3 → 4 → Piccolo**.
+   Wliczone: dotarcie na pierwszy przystanek **oraz** dotarcie do Piccolo (wejście w F2A).
+3. **Punkt startu (do obliczeń): Rynek Nowomiejski** (przybliżenie wystarczające do kalkulacji).
+4. **Koniec łańcucha prowadzi do Piccolo** (ul. Prosta 20). Przystanek 4 nie musi być blisko Piccolo, ale leg „4 → Piccolo" wlicza się w budżet.
+5. **Tempo do kalkulacji:** ~80 m/min (spacer z rozglądaniem) + narzut na zakręty ~1,3×. Stąd: ~3 min ≈ ~240 m w terenie; **12 min ≈ ~900-960 m** całego łańcucha (5 legów).
+6. **Bez dużych zawrotek** — łańcuch ma płynąć w jedną stronę / zwartą pętlą; żadnych powrotów przez ten sam punkt (inaczej budżet pęka).
+7. **Omijać miejsca zarezerwowane** pod inne zagadki: Biedronka/polichromie (Z10), anioły (Z6), zamek/Gdanisko (Z3/finał); Fontanna Flisaka tylko jako dystraktor (motyw Z4).
+8. **Dyspersja:** różne grupy = różne łańcuchy (różny pierwszy glif / inne przystanki), by się nie tłoczyły.
+
 ## Trasa prototypu (propozycja — tor TR, 4 kroki, rozsiana ~12 min)
 
-Rozsiana po Starym i Nowym Mieście; dryf **SW → centrum → NE** (ku Piccolo), legi po ~3 min marszu. Wszystkie punkty 24/7 z ulicy. **Dystanse orientacyjne — zweryfikuj/dostrój w terenie; mogę podmienić punkty, by trafić w równe ~3 min.**
+Rozsiana po Starym i Nowym Mieście; dryf **SW → centrum → NE** (ku Piccolo). Wszystkie punkty 24/7 z ulicy. **Dystanse orientacyjne — zweryfikuj w terenie.**
+
+> ⚠ **NIE spełnia reguły #2** (sprawdzenie 2026-05-31). Szacunek pełnego łańcucha (start Rynek Nowomiejski → 4 przyst. → Piccolo): **~28 min** wobec budżetu 12 ±2. Przyczyny strukturalne: (1) **Krzywa Wieża to daleki SW** — leg `start → Krzywa Wieża` sam ~11 min; (2) **Przekupka wraca na Rynek Nowomiejski = punkt startu** (zawrotka, łamie regułę #6). **Do przeprojektowania** — patrz „otwarte pytania" #7.
+>
+> Szac. legów (tempo 80 m/min, ×1,3): start→KrzywaWieża ~11 · →Kopernik ~4,5 · →Piernikarka ~5,5 · →Przekupka ~2,5 · →Piccolo ~4,5.
 
 | Krok | Glif (mapa) | Teren — rozpoznany obiekt | Marsz do nast. | Szyfrownik: obiekt → następny glif |
 |---|---|---|---|---|
@@ -86,6 +105,7 @@ Podmiany dla większego „chodzenia" / dryfu ku Piccolo (NE): Krzywa Wieża, Ł
 4. **Ostateczny dobór 4 miejsc** — propozycja wyżej, do akceptacji/podmiany.
 5. **Dyspersja per grupa w pełnej grze** — model różnych łańcuchów, do MVP.
 6. **Mapa fizyczna**: na prototyp funkcjonalny mock (rzut starówki + glify + legenda); finalna stylizacja manuskryptowa → po dry-runie.
+7. **Przeprojektowanie trasy pod regułę #2** — aktualna ~28 min (nie mieści się). Napięcie: start (Rynek Nowomiejski) i Piccolo są na NE, a rozsiane ikoniczne haczyki (Kopernik, osiołek, Krzywa Wieża) są w centrum/zach. Starówki (~480 m = ~6 min w jedną stronę). Do decyzji: (A) start na Rynek Staromiejski; (B) trasa wschodnia/Nowe Miasto; (C) większy budżet.
 
 ## Co autor może zrobić sam vs gdzie pomocy
 
