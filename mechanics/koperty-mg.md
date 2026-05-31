@@ -34,6 +34,12 @@ Każda koperta zawiera **5 elementów**:
 4. **Plotki / forshadowing** (opcjonalnie - kolorowe smaczki, podpowiedzi do późniejszych zagadek)
 5. **Co po rozwiązaniu** (gdzie wrócić - punkt MG, godzina)
 
+### Zasada nadrzędna: każde zadanie uzasadnione fabularnie
+
+**Każde zadanie w grze musi mieć powód w świecie gry, podany w kopercie.** Gracz nie „rozwiązuje zagadkę" — *pomaga piekarzowi*, *udowadnia, że jest swój*, *wykrada listę komturowi*. Cel: pogłębić immersję i **zminimalizować poczucie bezsensu** wykonywanych czynności. Brief (element 1) ma odpowiedzieć: **kto** tego chce, **dlaczego akurat my** (gracze), **co z tego wyniknie**. Dotyczy **całej gry**, nie tylko F2B.
+
+> Wzorzec [2026-05-31]: Z5/Z9 — piekarz, któremu pomieszały się składniki, + ukryty test „jestem swój" (znajomość przepisu jako hasło wiarygodności). Patrz `puzzles/zagadka-sensoryczna.md`.
+
 ### Numeracja kopert
 
 - **K1** - startowa, wszystkie grupy dostają.

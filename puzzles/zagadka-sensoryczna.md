@@ -1,6 +1,6 @@
 # Zagadka 5 / 9 — Sensoryczna ze składnikami piernika
 
-**Status**: szkicowe. Z5 = opcjonalna dla TR (mieszczanie). **Z9** = lustro dla krzyżaków (ta sama mechanika, inny framing koperty). Mechanika rozszerzona przez Oskara [2026-05-31]: nie tylko zapach — **wielokanałowo** (zapach, dźwięk, faktura, waga) + **dedukcja z przepisu**.
+**Status**: szkicowe. Z5 = opcjonalna dla TR (mieszczanie). **Z9** = lustro dla krzyżaków (ta sama mechanika, inny framing koperty). Mechanika rozszerzona przez Oskara [2026-05-31]: nie tylko zapach — **wielokanałowo** (zapach, dźwięk, faktura, waga) + **dedukcja z przepisu**. Oprawa fabularna [2026-05-31]: piekarz-zleceniodawca + ukryty test wiarygodności + ironia wspólnego „hasła" obu frakcji.
 
 ## Pomysł
 
@@ -109,13 +109,38 @@ Ta sama mechanika i rekwizyty (1 grupa krzyżacka — patrz `concept/03-faza-2b-
 5. **Model klucza (A / B / B′)** — patrz „Klucz do finału".
 6. **Czy MG zdradza liczbę błędów?** Sugestia: nie (tylko „nie wyszło").
 7. ~~Zgodność składników z wiki~~ ZWERYFIKOWANE [2026-05-31] vs `kuchnia-pierniki.js`: mąka żytnia + miód + cynamon, gałka muszkatołowa, goździki, kardamon, imbir, pieprz; pszenica obecna w mieście (biały chleb), ale piernik = żyto.
+8. **Uzasadnienie krzyżackie (Z9): wariant (1), (2) czy (3)** — patrz „Uwaga historyczna". Wpływa na tekst koperty Z9.
 
-## Tło fabularne do koperty (opcjonalnie)
+## Oprawa fabularna (zleceniodawca + test wiarygodności)
 
-- Legenda `legenda-piernikarz.js` (Piernikarz Bogumił) — gotowy haczyk narracyjny dla framing koperty Z5 (piekarnia miejska).
-- Pomnik Piernikarki jest już przystankiem w `szlak-symboli.md` (symbol „świnka") — można domknąć motyw piernika klamrą fabularną między Z1 a Z5.
+**Zleceniodawca**: fikcyjny **piekarz/cukiernik** miejski. Pomieszały mu się składniki — prosi kurierów o **rozpoznanie i podpisanie słoiczków**, żeby mógł upiec pierniki. Daje to naturalny, „życiowy" powód grzebania w przyprawach (anty-bezsens — patrz zasada nadrzędna w `mechanics/koperty-mg.md`).
+
+**Dlaczego to działa jako test**: znajomość przepisu na piernik to w F2B **ukryty test wiarygodności** — rodzaj hasła „jestem swój". Kto zna skład, należy do kręgu. Ironia: **obie frakcje** mają ten sam test, ale z innego powodu:
+
+- **Kurierzy Tajnej Rady (mieszczanie)** — piernik to **duma i towar eksportowy Torunia** (wiki: eksport do Lubeki, Brugii, Nowogrodu; cech piernikarski „o niemieckim składzie"). Znajomość przepisu = oczywista wiedza toruńskiego mieszczaństwa/kupiectwa. **Mocne, wprost z wiki.**
+- **Krzyżacy** — uzasadnienie do wyboru (patrz „Uwaga historyczna"); każdy wariant utrzymuje pointę.
+
+**Pointa dla uważnych**: obie wrogie frakcje mają **to samo „hasło bezpieczeństwa"** (piernik), nie wiedząc o tym. Nigdzie w grze się to nie spotyka — to **smaczek do rozmów po grze** (gracze i tak mają potem dużo czasu). Nie trzeba tego ujawniać; działa jako easter egg.
+
+### ⚠️ Uwaga historyczna (świadome nagięcie — decyzja Oskara)
+
+Uzasadnienie krzyżackie „to Krzyżacy sprowadzili przyprawy" **nie ma pokrycia w wiki — a częściowo jest odwrotnie**:
+- Wiki (`kuchnia-pierniki.js`, `handel-hanza.js`): korzenie (pieprz, cynamon, gałka, imbir, kardamon) szły **przez Hanzę z Italii i Wenecji, przez kontor w Brugii** — a Toruń **sam był członkiem Hanzy**. „Sprowadzali przyprawy" kupcy hanzeatyccy, nie Zakon.
+- Rola Zakonu w handlu to głównie **cło funtowe (Pfundzoll)** i monopol bursztynowy — czyli **obciążenie**, jedno z ekonomicznych zarzewi buntu 1454. Zakon ten handel *opodatkowywał*, nie „dawał".
+
+Pointy nie trzeba porzucać — trzeba **świadomie wybrać** framing (zgodnie z `lore/fakty-vs-fabula.md`). Trzy bezpieczniejsze wersje uzasadnienia krzyżackiego, każda utrzymuje ironię wspólnego hasła:
+
+1. **Wspólne dziedzictwo niemiecko-pruskie** — piernik to wytwór niemiecko-hanzeatycki („cech o niemieckim składzie"); krzyżacki rycerz zna go jako element **tej samej kultury**, z której wyrasta. Najczystsze historycznie.
+2. **Pod zwierzchnictwem Zakonu** — Toruń i cały pruski handel, w którym kwitł piernik, rozwijał się **w czasach krzyżackiego panowania nad Prusami** (XIV–XV w.). „Za naszych rządów to się rodziło" — duma zwierzchnika, nie roszczenie o sprowadzanie towaru.
+3. **In-character przechwałka (zostaw jak chciałeś)** — koperta krzyżacka *twierdzi* z dumą „to my daliśmy wam te korzenie", i jest to **celowo zawyżona propaganda Zakonu**. Bonus-ironia: Zakon chwali się handlem, który w rzeczywistości głównie *obkładał cłem*. Świadome, podszyte autoironią nagięcie.
+
+> Rekomendacja: **(1)** jeśli chcesz czysto historycznie; **(3)** jeśli lubisz, gdy samo nagięcie jest żartem dla świadomych.
+
+### Haczyki narracyjne (rekwizyty/miejsca)
+- Legenda `legenda-piernikarz.js` (Piernikarz Bogumił) — gotowa postać/motyw pod zleceniodawcę-piekarza.
+- Pomnik Piernikarki jest już przystankiem w `szlak-symboli.md` (symbol „świnka") — klamra motywu piernika Z1 ↔ Z5.
 
 ## Podział pracy
 
-- **Oskar**: wariant dwóch mąk (I/II), dobór dystraktorów, model klucza (A/B/B′), treść przepisu + framing koperty (Z5 vs Z9), kwestia MG („pierniki nie wyszły…").
-- **Agent** (zrobione): weryfikacja składników i niuansu mąk vs wiki, mapa kanałów sensorycznych. **Do zrobienia gdy Oskar zdecyduje kierunek**: propozycje par „mylących" dystraktorów, draft przepisu z proporcjami, karty rozpiski i tekstu koperty.
+- **Oskar**: wariant dwóch mąk (I/II), dobór dystraktorów, model klucza (A/B/B′), uzasadnienie krzyżackie (1/2/3), kwestia MG („pierniki nie wyszły…").
+- **Agent** (zrobione): weryfikacja składników i niuansu mąk vs wiki, mapa kanałów sensorycznych, oprawa fabularna + flaga historyczna uzasadnienia krzyżackiego. **Do zrobienia gdy Oskar zdecyduje kierunek**: draft tekstu kopert Z5 i Z9 (piekarz + test wiarygodności), przepis z proporcjami, karta rozpiski, pary „mylących" dystraktorów.
