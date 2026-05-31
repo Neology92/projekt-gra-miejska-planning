@@ -26,31 +26,30 @@ Reguły dla **każdej** trasy (per grupa). Każda nowa trasa musi je spełniać.
 
 1. **4 przystanki** (4 kroki) z rozpoznawalnym obiektem-haczykiem.
 2. **Budżet marszu: 12 ±2 min**, liczony jako PEŁNY łańcuch:
-   **punkt startu → przyst. 1 → 2 → 3 → 4 → Piccolo**.
-   Wliczone: dotarcie na pierwszy przystanek **oraz** dotarcie do Piccolo (wejście w F2A).
+   **punkt startu → przyst. 1 → 2 → 3 → 4 → MG na Rynku Staromiejskim**.
+   Wliczone: dotarcie na pierwszy przystanek **oraz** dojście do MG (gdzie grupa raportuje wynik Z1 i dostaje K2).
 3. **Punkt startu (do obliczeń): Rynek Nowomiejski** (przybliżenie wystarczające do kalkulacji).
-4. **Koniec łańcucha prowadzi do Piccolo** (ul. Prosta 20). Przystanek 4 nie musi być blisko Piccolo, ale leg „4 → Piccolo" wlicza się w budżet.
+4. **Koniec łańcucha = Rynek Staromiejski**, bo tam **kręci się MG** (przyjmuje raport Z1, wydaje K2). Przystanek 4 powinien być na/przy Rynku Staromiejskim. **Piccolo NIE wlicza się do budżetu Z1** — dojście do Jordana jest częścią Z2/F2A (już po K2).
 5. **Tempo do kalkulacji:** ~80 m/min (spacer z rozglądaniem) + narzut na zakręty ~1,3×. Stąd: ~3 min ≈ ~240 m w terenie; **12 min ≈ ~900-960 m** całego łańcucha (5 legów).
 6. **Bez dużych zawrotek** — łańcuch ma płynąć w jedną stronę / zwartą pętlą; żadnych powrotów przez ten sam punkt (inaczej budżet pęka).
 7. **Omijać miejsca zarezerwowane** pod inne zagadki: Biedronka/polichromie (Z10), anioły (Z6), zamek/Gdanisko (Z3/finał); Fontanna Flisaka tylko jako dystraktor (motyw Z4).
 8. **Dyspersja:** różne grupy = różne łańcuchy (różny pierwszy glif / inne przystanki), by się nie tłoczyły.
 
-## Trasa prototypu (propozycja — tor TR, 4 kroki, rozsiana ~12 min)
+## Trasa prototypu (propozycja — tor TR, 4 kroki)
 
-Rozsiana po Starym i Nowym Mieście; dryf **SW → centrum → NE** (ku Piccolo). Wszystkie punkty 24/7 z ulicy. **Dystanse orientacyjne — zweryfikuj w terenie.**
-
-> ⚠ **NIE spełnia reguły #2** (sprawdzenie 2026-05-31). Szacunek pełnego łańcucha (start Rynek Nowomiejski → 4 przyst. → Piccolo): **~28 min** wobec budżetu 12 ±2. Przyczyny strukturalne: (1) **Krzywa Wieża to daleki SW** — leg `start → Krzywa Wieża` sam ~11 min; (2) **Przekupka wraca na Rynek Nowomiejski = punkt startu** (zawrotka, łamie regułę #6). **Do przeprojektowania** — patrz „otwarte pytania" #7.
->
-> Szac. legów (tempo 80 m/min, ×1,3): start→KrzywaWieża ~11 · →Kopernik ~4,5 · →Piernikarka ~5,5 · →Przekupka ~2,5 · →Piccolo ~4,5.
+Jednokierunkowy sweep **Nowe Miasto → centrum**, kończący na **Rynku Staromiejskim — tam kręci się MG** (przyjmuje raport Z1, wydaje K2). Wszystkie punkty 24/7 z ulicy. Dystanse orientacyjne — zweryfikuj w terenie.
 
 | Krok | Glif (mapa) | Teren — rozpoznany obiekt | Marsz do nast. | Szyfrownik: obiekt → następny glif |
 |---|---|---|---|---|
-| 1 (start z K1) | słońce | **Krzywa Wieża** (pochylona baszta, „test sumienia") | ~3-4 min → | → drzewo |
-| 2 | drzewo | **Pomnik Kopernika**, Rynek (wąsik z 2003, delfin w studzience) | ~3-4 min → | → świnka |
-| 3 | świnka | **Pomnik Piernikarki** (kosz pierników, piesek szarpie suknię) | ~2-3 min → | → księżyc |
-| 4 (koniec) | księżyc | **Pomnik Przekupki**, Rynek Nowomiejski (gęś, kosz jaj, waga) | — | → KONIEC → MG |
+| start (calc) | — | *Rynek Nowomiejski* (punkt odniesienia) | ~2,5 min → | — |
+| 1 (z K1: słońce) | słońce | **Pomnik Piernikarki** (kosz pierników, piesek szarpie suknię) | ~3,5 min → | → drzewo |
+| 2 | drzewo | **Kamienica Pod Gwiazdą**, Rynek 35 (złota gwiazda, 1697) | ~1,5 min → | → świnka |
+| 3 | świnka | **osiołek** (żelazny grzbiet pręgierza, Rynek/Żeglarska) | ~1,5 min → | → księżyc |
+| 4 (koniec) | księżyc | **Pomnik Kopernika**, Rynek (wąsik 2003, delfin w studzience) | ~0 (MG tu) | → KONIEC → MG |
 
-Kończy na Rynku Nowomiejskim (NE) — blisko Piccolo (ul. Prosta), więc K2/Z2 płynnie prowadzi do Jordana.
+**Sprawdzenie reguły #2 ✓:** start → P1 → P2 → P3 → P4(=MG) ≈ 2,5 + 3,5 + 1,5 + 1,5 ≈ **~9-10 min** (w budżecie 12 ±2). Legi 2-4 są krótkie, bo trzy ostatnie przystanki leżą na Rynku Staromiejskim — grupa „zbiega się" na MG. Brak zawrotek; jednokierunkowy sweep E → centrum.
+
+> Chcesz równiejsze ~3-min legi? Można dorzucić zachodni przystanek (np. **Łuk Cezara**, Piekary 37 — Michał Archanioł z trąbką) między Pod Gwiazdą a Kopernikiem, kosztem drobnego „bouncu" na zachód (~+3 min, wciąż w budżecie).
 
 ### Szyfrownik — szkic struktury
 
@@ -58,13 +57,13 @@ Każdy wiersz: **realny obiekt — opis/haczyk do rozpoznania — następny glif
 
 | Obiekt | Opis (haczyk) | Następny glif |
 |---|---|---|
-| Krzywa Wieża | baszta odchylona 146 cm od pionu; plecami do muru „utrzymają się tylko czyści sumieniem" | drzewo |
-| Pomnik Kopernika | uczony z brązu; wąsik dostrzeżony w renowacji 2003; delfin w studzience cokołu | świnka |
-| Pomnik Piernikarki | brązowa kobieta z koszem pierników, mały piesek szarpie suknię | księżyc |
-| Pomnik Przekupki | kobieta z gęsią w ramionach, kosz jaj, waga u stóp (ławka) | KONIEC |
-| osiołek | żelazny grzbiet dawnego pręgierza (dystraktor) | — |
+| Pomnik Piernikarki | brązowa kobieta z koszem pierników, mały piesek szarpie suknię | drzewo |
+| Kamienica Pod Gwiazdą | pozłacana gwiazda na żółtej barokowej fasadzie, data 1697 | świnka |
+| osiołek | żelazny grzbiet dawnego pręgierza, sadzano na nim karnych żołnierzy | księżyc |
+| Pomnik Kopernika | uczony z brązu; wąsik dostrzeżony w renowacji 2003; delfin w studzience cokołu | KONIEC |
+| Krzywa Wieża | pochylona baszta, „test sumienia" (dystraktor) | — |
+| Pomnik Przekupki | kobieta z gęsią, kosz jaj, waga (dystraktor) | — |
 | pies Filuś | kundel z melonikiem prof. Filutka (dystraktor) | — |
-| Pomnik smoka | ceramiczny *draco volans* nad Strugą (dystraktor) | — |
 
 ### Legenda mapy (do autouzupełnienia przez grupę)
 
@@ -105,7 +104,7 @@ Podmiany dla większego „chodzenia" / dryfu ku Piccolo (NE): Krzywa Wieża, Ł
 4. **Ostateczny dobór 4 miejsc** — propozycja wyżej, do akceptacji/podmiany.
 5. **Dyspersja per grupa w pełnej grze** — model różnych łańcuchów, do MVP.
 6. **Mapa fizyczna**: na prototyp funkcjonalny mock (rzut starówki + glify + legenda); finalna stylizacja manuskryptowa → po dry-runie.
-7. **Przeprojektowanie trasy pod regułę #2** — aktualna ~28 min (nie mieści się). Napięcie: start (Rynek Nowomiejski) i Piccolo są na NE, a rozsiane ikoniczne haczyki (Kopernik, osiołek, Krzywa Wieża) są w centrum/zach. Starówki (~480 m = ~6 min w jedną stronę). Do decyzji: (A) start na Rynek Staromiejski; (B) trasa wschodnia/Nowe Miasto; (C) większy budżet.
+7. ~~Przeprojektowanie trasy pod regułę #2~~ ROZSTRZYGNIĘTE [2026-05-31]: trasa kończy **na Rynku Staromiejskim (MG)**, nie przy Piccolo — sweep Nowe Miasto → centrum, ~9-10 min, w budżecie. Piccolo to dopiero Z2/F2A (po K2). Napięcie „start+koniec na NE" zniknęło.
 
 ## Co autor może zrobić sam vs gdzie pomocy
 
