@@ -10,9 +10,9 @@
 - **Glify (mapa)** — wyłącznie **abstrakcyjne** znaki (△ ○ □ ◇ …), które mówią TYLKO *gdzie iść* i **NIE zdradzają**, co tam jest. Grupa nawiguje po pozycji glifu, nie wie z góry, co zastanie.
 - **Piktogramy detali (deszyfrownik)** — **obrazkowe** symbole *co wypatrzeć* w terenie (np. 🎩 melonik, ⭐ gwiazda, 🐬 delfin). Deszyfrownik **nie podaje nazw miejsc** [decyzja 2026-05-31] — grupa sama łączy piktogram z tym, co widzi (więcej główkowania). Format wiersza: **piktogram detalu → następny glif**.
 
-**Więcej glifów niż kroków** [decyzja 2026-05-31]: mapa pokazuje **9 glifów** — 4 z łańcucha + **5 dystraktorów** poza trasą, wizualnie identycznych. Z samej mapy **nie da się odgadnąć trasy** — trzeba iść, wypatrzeć detal i z deszyfrownika odczytać następny glif. (Spójność mapa↔deszyfrownik to wystarczające zabezpieczenie — uzasadnienie i odrzucony „przeciek zbioru" w Otwartych pytaniach #8.)
+**Więcej glifów niż kroków** [decyzja 2026-05-31]: mapa pokazuje **9 glifów** — 4 z łańcucha + **5 dystraktorów** poza trasą, wizualnie identycznych. Z samej mapy **nie da się odgadnąć trasy** — trzeba iść, wypatrzeć detal i z deszyfrownika odczytać następny glif. (Deszyfrownik też nie zdradza łańcucha, bo dystraktory prowadzą w fałszywe tropy zamiast „ślepych zaułków" — patrz Otwarte pytania #8.)
 
-1. Każda grupa dostaje: **mapę z 9 abstrakcyjnymi glifami** + pustą **legendę** (glif → ____) + **deszyfrownik** (9 piktogramów detali → następny glif / „ślepy zaułek").
+1. Każda grupa dostaje: **mapę z 9 abstrakcyjnymi glifami** + pustą **legendę** (glif → ____) + **deszyfrownik** (9 piktogramów detali → następny glif; **każdy wskazuje glif z mapy**, bez „ślepych zaułków").
 2. **K1** podaje **pierwszy glif** (△).
 3. Cykl — **łańcuch, odkrywanie po kolei**:
    - Grupa idzie do pozycji glifu na mapie.
@@ -21,8 +21,8 @@
    - Piktogram tego detalu wskazuje **następny glif** → grupa tam idzie. Powtarza.
 4. Po **4 krokach** grupa ma sekwencję 4 miejsc = odpowiedź dla MG.
 
-**Self-correction:** detale dystraktorów w deszyfrowniku **prowadzą w „ślepy zaułek"** (brak następnego glifu) → błędne miejsce samo się demaskuje.
-**Awaryjnie** (łańcuch zablokowany): MG daje hint telefoniczny / potwierdza glif — patrz `mechanics/koperty-mg.md`.
+**Self-correction (fałszywe tropy)** [decyzja 2026-05-31]: dystraktory NIE mają „ślepych zaułków" — ich detale też wskazują prawdziwy glif, ale prowadzą w **zamkniętą pętlę** (`⬡→☆→✕→∿→⊙→⬡`, rozłączną z łańcuchem `△→○→□→◇`). Dzięki temu deszyfrownik jest jednolity i nie zdradza łańcucha. **Błąd demaskuje się pośrednio:** łańcuch ma **dokładnie 4 kroki** i kończy się przy kontakcie (KONIEC) → brak KONIEC / krążenie / powrót do już odwiedzonego (wpisanego w legendzie) znaku = zboczyłeś, wróć do ostatniego pewnego glifu.
+**Awaryjnie** (zbłąkanie / blokada): MG daje hint telefoniczny / potwierdza glif — patrz `mechanics/koperty-mg.md`.
 
 > Glify są **arbitralne/kosmetyczne** (geometryczne lub gmerki) — ważne tylko, że nie zdradzają miejsca. Piktogramy detali są **obrazkowe** — mają naprowadzać na realny detal. Pełne mapowanie (glif↔detal↔miejsce) w `z1-szlak-spec.md`.
 
@@ -61,7 +61,7 @@ Jednokierunkowy sweep **Nowe Miasto → centrum**, kończący na **Rynku Staromi
 
 Pełna tabela 9 znaków (glif ↔ detal ↔ miejsce ↔ haczyk ↔ następny glif ↔ rola), zawartość deszyfrownika gracza, legenda i klucz MG: **`puzzles/z1-szlak-spec.md`**. Tam też granica spoilera (kto co widzi) i checklista spójności do generowania.
 
-Skrót łańcucha (4 kroki): **△ Piernikarka [🍪] → ○ Pod Gwiazdą [⭐] → □ osiołek [🫏] → ◇ Kopernik [🐬] → KONIEC (MG)**. Pozostałe 5 glifów = dystraktory (detale → ślepy zaułek). **Dobór miejsc/dystraktorów/detali = propozycja do podmiany** (Twój wybór); świadomie pominięto Fontannę Flisaka (motyw → Z4).
+Skrót łańcucha (4 kroki): **△ Piernikarka [🍪] → ○ Pod Gwiazdą [⭐] → □ osiołek [🫏] → ◇ Kopernik [🐬] → KONIEC (MG)**. Pozostałe 5 glifów = dystraktory, których detale prowadzą w **fałszywe tropy = zamkniętą pętlę** `⬡→☆→✕→∿→⊙→⬡` (rozłączną z łańcuchem). **Dobór miejsc/dystraktorów/detali = propozycja do podmiany** (Twój wybór); świadomie pominięto Fontannę Flisaka (motyw → Z4).
 
 ## Treść startu w K1 — segment Z1 (draft)
 
@@ -74,7 +74,7 @@ To **fragment koperty K1 dotyczący szlaku** (pierwszy glif + zasada łańcucha 
 > Zaczynacie od znaku **△ trójkąta**. Znajdźcie go na mapie i idźcie tam.
 > - Na miejscu **wypatrzcie detal** pasujący do jednego z obrazków w deszyfrowniku (melonik? gwiazda? delfin?).
 > - Ten obrazek wskaże **następny znak** na mapie. Idźcie do niego — i tak krok po kroku.
-> - Obrazek prowadzący w **ślepy zaułek** = pomyłka miejsca; wróćcie do ostatniego pewnego znaku.
+> - **Strzeżcie się fałszywych tropów.** Wasz łańcuch ma **dokładnie cztery kroki** i kończy się tam, gdzie czeka nasz człowiek. Jeśli błądzicie w kółko albo wracacie do znaku już odwiedzonego — zboczyliście; wróćcie do ostatniego pewnego znaku.
 > - Rozpoznane miejsca wpisujcie do **legendy** na mapie.
 >
 > Po **czterech** znakach traficie tam, gdzie kręci się nasz człowiek. Zamelduje­cie mu **cztery rozpoznane miejsca — w kolejności, w jakiej je odkryliście**. To wasza przepustka dalej.
@@ -112,7 +112,7 @@ Podmiany dla większego „chodzenia" / dryfu ku Piccolo (NE): Krzywa Wieża, Ł
 5. **Dyspersja per grupa w pełnej grze** — model różnych łańcuchów, do MVP.
 6. **Mapa fizyczna**: na prototyp funkcjonalny mock (rzut starówki + glify + legenda); finalna stylizacja manuskryptowa → po dry-runie.
 7. ~~Przeprojektowanie trasy pod regułę #2~~ ROZSTRZYGNIĘTE [2026-05-31]: trasa kończy **na Rynku Staromiejskim (MG)**, nie przy Piccolo — sweep Nowe Miasto → centrum, ~9-10 min, w budżecie. Piccolo to dopiero Z2/F2A (po K2). Napięcie „start+koniec na NE" zniknęło.
-8. ~~Przeciek w deszyfrowniku~~ ROZSTRZYGNIĘTE [2026-05-31]: **opcja A** — spójność mapa↔deszyfrownik wystarcza. Czytając kartę da się wytypować **zbiór** 4 detali łańcucha (wiersze z następnym glifem), ale trzeba je zinterpretować i powiązać z miejscami, a **kolejności** i tak nie odczytasz (karta jest „detal→glif", nie odwrotnie) — MG weryfikuje kolejność → bez chodzenia nie zdasz. Brak następnego glifu u dystraktorów = **samokorekta w terenie**. Format „piktogram zamiast nazwy" dodatkowo zaciemnia przeciek. Opcję B (fałszywe tropy) odrzucono: pogarsza UX (błąd → długa pętla zamiast natychmiastowego ślepego zaułka). Pełne uzasadnienie: `z1-szlak-spec.md`.
+8. ~~Przeciek w deszyfrowniku~~ ROZSTRZYGNIĘTE [2026-05-31]: **opcja B (fałszywe tropy)**. Dystraktory NIE mają „ślepych zaułków" — ich detale też wskazują prawdziwy glif z mapy, tworząc **zamkniętą pętlę** `⬡→☆→✕→∿→⊙→⬡` (rozłączną z łańcuchem). Karta jest jednolita → **zbiór 4 nie wycieka**, trasy nie da się odczytać bez chodzenia. Koszt: brak natychmiastowej samokorekty — błąd wpuszcza w pętlę; demaskuje się przez „4 kroki / powrót do odwiedzonego znaku / hint MG". (Opcja A — ślepe zaułki — dawała natychmiastową samokorektę, ale karta zdradzała zbiór; Oskar wybrał B.) Pełne uzasadnienie: `z1-szlak-spec.md`.
 
 ## Co autor może zrobić sam vs gdzie pomocy
 

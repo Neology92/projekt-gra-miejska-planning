@@ -10,7 +10,7 @@
 - **Mock mapy + deszyfrownik** → `prototype/mapa-z1-podglad.html` (9 abstrakcyjnych glifów na mapie + deszyfrownik „piktogram detalu → następny glif", bez nazw + klucz MG). Funkcjonalny, nie finalny.
 - **Treść startu w K1** → `puzzles/szlak-symboli.md`, sekcja „Treść startu w K1".
 - **Mechanika dwuwarstwowa** [decyzja 2026-05-31]: glify = *gdzie* (abstrakcyjne), piktogramy detali = *co wypatrzeć* (deszyfrownik bez nazw → więcej główkowania).
-- Format „wyniku dla MG" **rozstrzygnięty: (a) 4 miejsca w kolejności**. Przeciek deszyfrownika: **opcja A** (zamknięte).
+- Format „wyniku dla MG" **rozstrzygnięty: (a) 4 miejsca w kolejności**. Przeciek deszyfrownika: **opcja B — fałszywe tropy** (dystraktory → pętla glifów `⬡→☆→✕→∿→⊙→⬡`, bez „ślepych zaułków"; karta nie zdradza łańcucha) [decyzja 2026-05-31].
 
 **Decyzje Oskara do domknięcia Z1** (`z1-szlak-spec.md`, „Otwarte"): ostateczny dobór 4 miejsc + 5 dystraktorów + piktogramów detali (propozycja do podmiany); zestaw glifów (geometryczny placeholder vs gmerki); rozwiązać kolizję glif ☆ vs detal ⭐.
 
