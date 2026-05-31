@@ -12,11 +12,11 @@ Numeracja kanoniczna [2026-05-29] po scaleniu z boardem. Tory **mieszczan** i **
 | **3** | Infiltracja zamku krzyżackiego — lista nazwisk TR (obowiązkowa TR) | F2B | mieszczanie | szkicowe | `zamek-krzyzacki-lista.md` |
 | **3Z** | Infiltracja Piccolo — kradzież zaopatrzenia + godzina buntu (obowiązkowa krzyżacy) | F2B | krzyżacy | szkicowe | `zamek-krzyzacki-lista.md` (sekcja) / do wydzielenia |
 | 4 | Melodia flisaka (kalimba) | F2B | mieszczanie (opc.) | placeholder | `kalimba.md` |
-| 5 | Sensoryczna ze składnikami piernika (słoiczki: zapach/dźwięk/faktura/waga + dedukcja z przepisu, dwie mąki) | F2B | mieszczanie (opc.) | szkicowe (mechanika OK; wariant mąk + model klucza do decyzji) | `zagadka-sensoryczna.md` |
+| 5 | Sensoryczna ze składnikami piernika (słoiczki: słuch/węch/waga + dedukcja z przepisu, dwie mąki) | F2B | mieszczanie (opc.) | szkicowe+ (rdzeń + draft tekstów: przepis, karta rozpiski, dystraktory, koperta Z5) | `zagadka-sensoryczna.md` |
 | 6 | Anioły (rozmieszczone po Starówce) | F2B | mieszczanie (opc.) | placeholder (nowa) | `zagadka-anioly.md` (do utworzenia) |
 | 7 | Finałowa — szyfr (sklejenie Jordan = Bażyński) | F3 | mieszczanie | szkicowe | `zagadka-finalowa.md` (do utworzenia) |
 | 8 | Melodia zakonu (kalimba) — lustro Z4 | F2B | krzyżacy (opc.) | placeholder | `kalimba.md` |
-| 9 | Sensoryczna z piernikiem — lustro Z5 | F2B | krzyżacy (opc.) | szkicowe (mechanika = Z5, inny framing koperty) | `zagadka-sensoryczna.md` |
+| 9 | Sensoryczna z piernikiem — lustro Z5 | F2B | krzyżacy (opc.) | szkicowe+ (mechanika = Z5; koperta Z9 draft, uzasadnienie 1+2) | `zagadka-sensoryczna.md` |
 | 10 | Polichromie w „Biedronce" + Bestiariusz Krzyżowca — lustro Z6 | F2B | krzyżacy (opc.) | szkicowe (mechanika jasna, treść do doboru) | `polichromie-biedronka.md` |
 | 11 | Finałowa — szyfr (krzyżacy) | F3 | krzyżacy | placeholder | `zagadka-finalowa.md` (sekcja) |
 | bonus | „Opowieść skazanego" (puzzle z trójkątów, dwustronne) | F2B | oba (opcjonalna, gdy grupa świetna) | placeholder, niski priorytet | `bonus-opowiesc-skazanego.md` (do utworzenia) |

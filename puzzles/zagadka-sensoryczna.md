@@ -1,6 +1,15 @@
 # Zagadka 5 / 9 — Sensoryczna ze składnikami piernika
 
-**Status**: szkicowe (rdzeń decyzji zamknięty). Z5 = opcjonalna dla TR (mieszczanie). **Z9** = lustro dla krzyżaków (ta sama mechanika, inny framing koperty). Mechanika rozszerzona przez Oskara [2026-05-31]: nie tylko zapach — **wielokanałowo** (zapach, dźwięk, faktura, waga) + **dedukcja z przepisu**. Oprawa fabularna [2026-05-31]: piekarz-zleceniodawca + ukryty test wiarygodności + ironia wspólnego „hasła" obu frakcji. **Decyzje [2026-05-31]:** wariant mąk = **(I) rye-dominant**, model finału = **(A) karta rozpiski → pierniki + koperta**.
+**Status**: szkicowe → **rdzeń + draft tekstów gotowy** [2026-05-31]. Z5 = opcjonalna dla TR (mieszczanie). **Z9** = lustro dla krzyżaków (ta sama mechanika, inny framing koperty).
+
+**Decyzje Oskara [2026-05-31]:**
+- Kanały rozpoznania: **słuch (potrząsanie), węch, ważenie w dłoni** (ciężar + wyczucie konsystencji przez potrząsanie). **Bez smaku, bez otwierania słoików.**
+- Wariant mąk = **(I) rye-dominant** (więcej żytniej → cięższy słoiczek = żytnia).
+- Model finału = **(A)**: karta rozpiski → MG sprawdza → pierniki + koperta z kluczem.
+- Uzasadnienie krzyżackie (Z9) = **wariant (1) wspólne dziedzictwo niemiecko-hanzeatyckie, z wplecionym (2) „za panowania Zakonu nad Prusami to kwitło"**.
+- Oprawa: piekarz-zleceniodawca + ukryty test wiarygodności (znajomość przepisu = „jestem swój") + ironia wspólnego „hasła" obu frakcji (easter egg porozgrywkowy).
+
+→ Konkretne teksty (przepis, karta rozpiski, dystraktory, koperty Z5/Z9): sekcja **„Draft do produkcji"** na końcu.
 
 ## Pomysł
 
@@ -21,7 +30,7 @@ MG zabiera słoiczki, odchodzi na bok („idzie upiec"), po chwili wraca:
 
 ## Mechanika
 
-1. **Słoiczki**: N nieprzezroczystych/zaklejonych pojemników oznaczonych **literami** (A, B, C…), wolno je **wąchać, potrząsać, ważyć w dłoni** (porównawczo), ew. dotykać zawartości.
+1. **Słoiczki**: N nieprzezroczystych, **zamkniętych** pojemników oznaczonych **literami** (A, B, C…). Wolno **wąchać, potrząsać, ważyć w dłoni** (porównawczo). **Nie wolno otwierać** (in-fiction: korzeń się zwietrzy; produkcyjnie: brak bałaganu i kontaktu z zawartością). Konsystencję gracz czyta pośrednio — przez dźwięk i ciężar.
 2. **Etykiety (nazwy)**: kartoniki z nazwami składników — **więcej nazw niż słoiczków** (utrudnienie). Nie da się przypisać „każda nazwa po kolei"; część nazw to dystraktory bez pokrycia.
 3. **Przepis** (rekwizyt): lista składników z **proporcjami**. Pełni dwie role: (a) mówi, czego się spodziewać w słoiczkach, (b) **rozstrzyga przypadki nierozróżnialne zmysłami** — np. „więcej mąki żytniej niż pszennej" → cięższy słoiczek to żytnia.
 4. **Karta rozpiski**: gracze wpisują mapowanie litera→nazwa i oddają MG.
@@ -80,7 +89,7 @@ Loop u MG (rola „piekarza"): MG bierze kartę → „idzie upiec" → **źle**
 
 ## Lustro krzyżackie (Z9)
 
-Ta sama mechanika i rekwizyty (1 grupa krzyżacka — patrz `concept/03-faza-2b-asynchroniczne.md`). Różni się **tylko framing w kopercie** (np. „zaopatrzenie kuchni zamkowej" zamiast „piekarni miejskiej"). Jeden zestaw słoiczków obsługuje Z5 (2 grupy) + Z9 (1 grupa) → 1–2 komplety wystarczą.
+Ta sama mechanika i rekwizyty (1 grupa krzyżacka — patrz `concept/03-faza-2b-asynchroniczne.md`). Różni się **tylko framing w kopercie**: zleceniodawca = brat-kucharz obsługujący komturię (kuchnia zamkowa), a test „jesteś swój" oparty na **uzasadnieniu (1)+(2)** — piernik jako sztuka niemiecko-hanzeatycka, która „kwitła odkąd Zakon trzyma Prusy". Jeden zestaw słoiczków obsługuje Z5 (2 grupy) + Z9 (1 grupa) → 1–2 komplety wystarczą. Tekst: sekcja „Draft do produkcji".
 
 ## Rekwizyty
 
@@ -101,14 +110,15 @@ Ta sama mechanika i rekwizyty (1 grupa krzyżacka — patrz `concept/03-faza-2b-
 
 ## Otwarte pytania
 
-1. **Ile słoiczków, ile nazw** (N i ile dystraktorów)? Sugestia: 6–7 słoiczków + 9–10 nazw.
-2. **Które kanały dopuszczamy** (zapach zawsze; smak? — higiena; dotyk zawartości? — wtedy słoik otwierany).
+1. **Ile słoiczków, ile nazw** — draft proponuje **7 słoiczków + 11 nazw** (4 dystraktory). Do potwierdzenia/zmiany przez Oskara.
+2. ~~Które kanały~~ ROZSTRZYGNIĘTE [2026-05-31]: **słuch + węch + ważenie w dłoni**; bez smaku, bez otwierania słoików.
 3. ~~Wariant dwóch mąk~~ ROZSTRZYGNIĘTE [2026-05-31]: **(I) rye-dominant** (więcej żytniej = cięższy słoiczek).
-4. **Strategia dystraktorów** (myląca vs anachroniczna vs miks).
+4. **Strategia dystraktorów** — draft: **miks** (myląco-zmysłowe + 1 kanoniczna-nieobecna + 1 anachroniczna). Do potwierdzenia.
 5. ~~Model klucza~~ ROZSTRZYGNIĘTE [2026-05-31]: **(A)** — karta rozpiski bramkuje, nagroda = pierniki + koperta z kluczem.
 6. **Czy MG zdradza liczbę błędów?** Sugestia: nie (tylko „nie wyszło").
 7. ~~Zgodność składników z wiki~~ ZWERYFIKOWANE [2026-05-31] vs `kuchnia-pierniki.js`: mąka żytnia + miód + cynamon, gałka muszkatołowa, goździki, kardamon, imbir, pieprz; pszenica obecna w mieście (biały chleb), ale piernik = żyto.
-8. **Uzasadnienie krzyżackie (Z9): wariant (1), (2) czy (3)** — patrz „Uwaga historyczna". Wpływa na tekst koperty Z9.
+8. ~~Uzasadnienie krzyżackie~~ ROZSTRZYGNIĘTE [2026-05-31]: **(1) + wplecione (2)** — patrz koperta Z9 w drafcie.
+9. **Jaki konkretnie klucz do finału** jest w kopercie (item/fragment szyfru)? — zależy od `mechanics/finalowe-glosowanie.md` / Z7; placeholder w drafcie.
 
 ## Oprawa fabularna (zleceniodawca + test wiarygodności)
 
@@ -133,7 +143,7 @@ Pointy nie trzeba porzucać — trzeba **świadomie wybrać** framing (zgodnie z
 2. **Pod zwierzchnictwem Zakonu** — Toruń i cały pruski handel, w którym kwitł piernik, rozwijał się **w czasach krzyżackiego panowania nad Prusami** (XIV–XV w.). „Za naszych rządów to się rodziło" — duma zwierzchnika, nie roszczenie o sprowadzanie towaru.
 3. **In-character przechwałka (zostaw jak chciałeś)** — koperta krzyżacka *twierdzi* z dumą „to my daliśmy wam te korzenie", i jest to **celowo zawyżona propaganda Zakonu**. Bonus-ironia: Zakon chwali się handlem, który w rzeczywistości głównie *obkładał cłem*. Świadome, podszyte autoironią nagięcie.
 
-> Rekomendacja: **(1)** jeśli chcesz czysto historycznie; **(3)** jeśli lubisz, gdy samo nagięcie jest żartem dla świadomych.
+> **WYBRANO [2026-05-31]: (1) z wplecionym (2).** Piernik jako wspólna sztuka niemiecko-hanzeatycka, która „kwitła, odkąd Zakon trzyma Prusy". Bez fałszywego twierdzenia „my sprowadziliśmy korzenie". Realizacja w kopercie Z9 (draft).
 
 ### Haczyki narracyjne (rekwizyty/miejsca)
 - Legenda `legenda-piernikarz.js` (Piernikarz Bogumił) — gotowa postać/motyw pod zleceniodawcę-piekarza.
@@ -141,5 +151,91 @@ Pointy nie trzeba porzucać — trzeba **świadomie wybrać** framing (zgodnie z
 
 ## Podział pracy
 
-- **Oskar**: wariant dwóch mąk (I/II), dobór dystraktorów, model klucza (A/B/B′), uzasadnienie krzyżackie (1/2/3), kwestia MG („pierniki nie wyszły…").
-- **Agent** (zrobione): weryfikacja składników i niuansu mąk vs wiki, mapa kanałów sensorycznych, oprawa fabularna + flaga historyczna uzasadnienia krzyżackiego. **Do zrobienia gdy Oskar zdecyduje kierunek**: draft tekstu kopert Z5 i Z9 (piekarz + test wiarygodności), przepis z proporcjami, karta rozpiski, pary „mylących" dystraktorów.
+- **Oskar (decyzje — zrobione)**: mechanika wielokanałowa, kanały, wariant mąk (I), model finału (A), uzasadnienie krzyżackie (1+2), spięcie z fabułą (piekarz + test wiarygodności + ironia).
+- **Oskar (do dobicia)**: akceptacja/korekta draftu (liczba słoiczków, dystraktory, brzmienie kopert), wpisanie realnego klucza do finału, casting „piekarza"/„brata-kucharza", wybór formy przypraw przy zakupie.
+- **Agent (zrobione)**: weryfikacja składników i niuansu mąk vs wiki, mapa kanałów, oprawa fabularna, **draft do produkcji** (przepis, karta rozpiski, dystraktory, koperty Z5/Z9).
+
+---
+
+## Draft do produkcji (materiał do modyfikacji przez Oskara)
+
+> To propozycja tekstów i konkretów „pod druk". Wszystko edytowalne — celem jest dać Ci punkt startu, nie wersję ostateczną.
+
+### Zestaw słoiczków (propozycja: 7)
+
+| Słój | Zawartość | Forma (pod kanały) | Sygnały rozpoznawcze |
+|---|---|---|---|
+| A | **mąka żytnia** | pełniej napełniony (cięższy!) | bezwonna, cisza, **wyraźnie ciężka** |
+| B | **mąka pszenna** | mniej napełniony (lżejszy) | bezwonna, cisza, lżejsza |
+| C | **miód** | szczelnie zamknięty | **chlupot**, ciężar, słodko-woskowy zapach |
+| D | **goździki** | całe | **grzechot twardych pąków**, bardzo mocny zapach |
+| E | **cynamon** | mielony | cisza/szelest pyłu, mocny słodko-korzenny zapach |
+| F | **imbir** | mielony lub kawałki | zapach ostro-korzenny |
+| G | **pieprz** | ziarna | **grzechot kuleczek**, ostry zapach |
+
+*(Skalowalne: chcesz 8–9 słoików — dołóż gałkę muszkatołową i/lub kardamon jako prawdziwe i przesuń je z listy dystraktorów.)*
+
+### Karta przepisu (rekwizyt funkcyjny — in-fiction)
+
+> **Przepis Mistrza [Bogumiła] na pierniki toruńskie**
+> — Mąki żytniej: **trzy miary** (gruba podstawa ciasta)
+> — Mąki pszennej: **miara jedna** (dla gładkości)
+> — Miodu przaśnego: ile ciasto przyjmie (na związanie)
+> — Korzeni utłuczonych: **cynamonu, goździków, imbiru, pieprzu**
+> — *(skórka, woda różana — wedle zasobu spiżarni)*
+
+Przepis robi dwie rzeczy: (a) **3 miary żytniej : 1 pszennej** → „czego więcej w cieście, tego ciężej w słoju" rozstrzyga A vs B; (b) **wymienia dozwolone korzenie** → nazwy spoza listy (gałka, ziele angielskie, papryka…) gracz odrzuca. *Świadomy efekt:* znajomość/uważne czytanie przepisu = przejście testu „jesteś swój".
+> Wariant trudniejszy (opcja): przepis podaje tylko proporcje mąk + „korzenie wedle sztuki" (bez nazw) → pełna identyfikacja zmysłowa, dystraktory odrzucane węchem/historią. Domyślnie zostaje wersja z nazwami (łagodniejsza, mocniej spina motyw „znaj przepis").
+
+### Karta rozpiski (do wypełnienia przez graczy)
+
+```
+PIEKARZ MUSI WIEDZIEĆ, CO JEST W KTÓRYM SŁOJU.
+Wpiszcie nazwę przy każdej literze. Uwaga: nazw jest więcej niż słojów —
+nie każda pasuje. Słojów nie otwierać.
+
+  A: ____________________
+  B: ____________________
+  C: ____________________
+  D: ____________________
+  E: ____________________
+  F: ____________________
+  G: ____________________
+```
+
+### Dystraktory (nazwy bez słoika) — propozycja 4
+
+| Nazwa-pułapka | Typ | Dlaczego myli |
+|---|---|---|
+| **gałka muszkatołowa** | kanoniczna, ale nieobecna | jest w prawdziwym pierniku → kusi „przecież pasuje"; ale nie ma jej w tym przepisie ani w słojach. Nagradza czytanie przepisu. |
+| **ziele angielskie** | myląco-zmysłowa | zapach blisko goździków, ziarna jak pieprz → łatwo pomylić z D lub G. |
+| **kolendra** | myląco-zmysłowa | nasiona grzechoczą jak pieprz; nuta cytrusowo-korzenna myli. |
+| **papryka mielona** | anachronizm (smaczek) | Nowy Świat, XVI w. — odrzucalna i węchem/kolorem, i historią (`lore/fakty-vs-fabula.md`). |
+
+→ 7 słojów + 7 prawdziwych nazw + 4 dystraktory = **11 kartoników z nazwami**.
+
+### Koperta Z5 — mieszczanie / Tajna Rada (draft)
+
+> **Brief.** Mistrz [Bogumił], piernikarz z [zaułka przy Rynku], śle do was pilną prośbę. Jutro karnawałowa uczta, zamówiono u niego pierniki dla starszyzny — a czeladnik, gamoń, pościerał napisy ze słojów i poprzestawiał korzenie. Bogumił nie wstawi do pieca tego, czego nie jest pewien: jeden zły korzeń psuje całą partię. *„Każdy tutejszy pozna te wonie z zamkniętymi oczami — jeśliście stąd, pomożecie mi w mig."*
+>
+> **Cel.** Rozpoznać zawartość każdego słoja i podpisać go właściwą nazwą na karcie. Kartę oddać piekarzowi.
+>
+> **Wskazówka.** Słoje wolno **ważyć w dłoni, potrząsać i wąchać — otwierać nie wolno** (korzeń zwietrzeje). Trzymajcie się **przepisu**: część podsuniętych wam nazw w piernik toruński nie wchodzi wcale. A gdy dwa proszki milczą jednako i nic nie pachną — niech rozsądzi **przepis**: *czego w cieście więcej, tego i w słoju ciężej.*
+>
+> **Plotka / foreshadowing.** [hak do finału lub kolorowy smaczek — do wpisania]
+>
+> **Co po rozwiązaniu.** Gdy pierniki wyjdą, Bogumił odda wam zapłatę i list, co czynić dalej. [punkt MG, godzina]
+
+### Koperta Z9 — krzyżacy (draft, uzasadnienie 1+2)
+
+> **Brief.** Brat [kucharz komturii] potrzebuje pewnej ręki. Korzenie przyszły z kupieckiego składu bez opisów, a stół komtura nie tknie potrawy, której mistrz nie rozezna. *„Piernik to nasza, niemiecka sztuka — kwitnie tu, w Prusach, odkąd Zakon te ziemie trzyma. Kto naszego ducha, ten korzenie zna."* Pokażcie zatem, żeście nie z przypadku.
+>
+> **Cel.** Rozpoznać zawartość każdego słoja i podpisać go właściwą nazwą na karcie. Kartę oddać bratu-kucharzowi.
+>
+> **Wskazówka.** Słoje wolno **ważyć w dłoni, potrząsać i wąchać — otwierać nie wolno**. Trzymajcie się **przepisu**: nie każda podsunięta nazwa należy do piernika. A gdy dwa proszki jednako milczą — *czego w cieście więcej, tego i w słoju ciężej.*
+>
+> **Plotka / foreshadowing.** [hak — np. cień ironii, że to „ta sama sztuka" co u mieszczan; do decyzji, czy w ogóle sygnalizować]
+>
+> **Co po rozwiązaniu.** Gdy mistrz uzna pierniki za udane, dostaniecie strawę i dalsze rozkazy. [punkt MG, godzina]
+
+> **Ironia (nieujawniana w grze):** obie koperty wymagają **tej samej wiedzy** (przepis na piernik) jako dowodu „jesteś swój". Frakcje nigdy się o tym nie dowiedzą w trakcie — easter egg do rozmów po grze.
