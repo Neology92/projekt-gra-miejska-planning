@@ -222,9 +222,9 @@ nie każda pasuje. Słojów nie otwierać.
 >
 > **Wskazówka.** Słoje wolno **ważyć w dłoni, potrząsać i wąchać — otwierać nie wolno** (korzeń zwietrzeje). Trzymajcie się **przepisu**: część podsuniętych wam nazw w piernik toruński nie wchodzi wcale. A gdy dwa proszki milczą jednako i nic nie pachną — niech rozsądzi **przepis**: *czego w cieście więcej, tego i w słoju ciężej.*
 >
-> **Plotka / foreshadowing.** [hak do finału lub kolorowy smaczek — do wpisania]
+> **Plotka / foreshadowing.** → *hak do finału — treść powstanie razem z realnym kluczem; patrz `puzzles/zagadka-finalowa.md` (Z7, do utworzenia) i `mechanics/finalowe-glosowanie.md`; otwarte pyt. #9.*
 >
-> **Co po rozwiązaniu.** Gdy pierniki wyjdą, Bogumił odda wam zapłatę i list, co czynić dalej. [punkt MG, godzina]
+> **Co po rozwiązaniu.** Gdy pierniki wyjdą, Bogumił odda wam zapłatę i list, co czynić dalej. [punkt MG, godzina] — *klucz do finału w kopercie: patrz `mechanics/finalowe-glosowanie.md` (pyt. #9).*
 
 ### Koperta Z9 — krzyżacy (draft, uzasadnienie 1+2)
 
@@ -234,8 +234,8 @@ nie każda pasuje. Słojów nie otwierać.
 >
 > **Wskazówka.** Słoje wolno **ważyć w dłoni, potrząsać i wąchać — otwierać nie wolno**. Trzymajcie się **przepisu**: nie każda podsunięta nazwa należy do piernika. A gdy dwa proszki jednako milczą — *czego w cieście więcej, tego i w słoju ciężej.*
 >
-> **Plotka / foreshadowing.** [hak — np. cień ironii, że to „ta sama sztuka" co u mieszczan; do decyzji, czy w ogóle sygnalizować]
+> **Plotka / foreshadowing.** → *hak do finału — treść powstanie razem z realnym kluczem; patrz `puzzles/zagadka-finalowa.md` (Z11/Z7, do utworzenia) i `mechanics/finalowe-glosowanie.md`; otwarte pyt. #9. (Ewentualny „cień ironii", że to ta sama sztuka co u mieszczan — do decyzji tam.)*
 >
-> **Co po rozwiązaniu.** Gdy mistrz uzna pierniki za udane, dostaniecie strawę i dalsze rozkazy. [punkt MG, godzina]
+> **Co po rozwiązaniu.** Gdy mistrz uzna pierniki za udane, dostaniecie strawę i dalsze rozkazy. [punkt MG, godzina] — *klucz do finału w kopercie: patrz `mechanics/finalowe-glosowanie.md` (pyt. #9).*
 
 > **Ironia (nieujawniana w grze):** obie koperty wymagają **tej samej wiedzy** (przepis na piernik) jako dowodu „jesteś swój". Frakcje nigdy się o tym nie dowiedzą w trakcie — easter egg do rozmów po grze.
