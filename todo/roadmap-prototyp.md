@@ -3,6 +3,25 @@
 > Dokument-sprint. Widok długofalowy całej gry (3–4 mies.) → `todo/roadmap.md`.
 > Ten plik celuje w **jeden milestone**: kompletny, przechodni **zestaw wydruków dla JEDNEJ ścieżki**, gotowy do druku i dry-runu na papierze. Pełne **MVP** (oba tory, 11 zagadek, produkcja na ~40 osób) to **następny** milestone.
 
+## 🔴 Stan i priorytet [2026-05-31]
+
+**PRIORYTET TERAZ → Zadanie Z1-ART: domknięcie Z1 na artefakty (opcja A).** Do wykonania w nowej sesji (bez tego kontekstu):
+
+- **Mock mapy** — funkcjonalny rzut Starówki + **4 abstrakcyjne glify** (słońce, drzewo, świnka, księżyc) w pozycjach 4 przystanków + **pusta legenda** do autouzupełnienia (glif → ____). Graficznie funkcjonalnie, nie finalnie.
+- **Karta szyfrownika** — 4 trafne obiekty (opis/haczyk + następny glif) + dystraktory (bez „następnego glifu").
+- **Treść startu w K1** — pierwszy glif (słońce) + zasada łańcucha + co raportować MG.
+- **Spec źródłowy:** `puzzles/szlak-symboli.md` (mechanika, reguły generowania tras, trasa prototypu, szyfrownik). Otwarte przy realizacji: format „wyniku dla MG" (domyślnie 4 obiekty w kolejności), ostateczny dobór miejsc, ew. zachodni przystanek dla równiejszych legów.
+
+**Zablokowane decyzje (gotowe do użycia):**
+- **Zakres:** pionowy wycinek, ścieżka **TR + Z4**; poziom = **docelowe rozwiązania** (mock tylko do testu). Sekcja 0.
+- **Z1:** łańcuch + abstrakcyjne glify na mapie + szyfrownik obiekt→następny glif + legenda do autouzupełnienia; **4 kroki**; kończy u **MG na Rynku Staromiejskim** (Piccolo dopiero w Z2). Reguły tras + trasa w `puzzles/szlak-symboli.md`.
+- **Identyfikatory grup:** 10 kolorów (`mechanics/grupy-i-klasy.md`).
+- **Lokal Jordana:** Piccolo (ul. Prosta 20). **Z7:** Vigenère, krótki klucz. **Z3:** żywy Albrecht (Zosia) + karta choreografii kradzieży. **Dostarczenie listu:** osobiste (mock: stół prawa=Bażyński / lewa=Albrecht).
+
+**Po Z1-ART (kolejny krok):** opcja B — fabularny rdzeń **F1→F2A** (K1, K2, Z2 + skrypt Jordana/Z2b). Wymaga inputu Oskara: forma „trzech rzeczy" w Z2 + forma testu Jordana.
+
+---
+
 ## 0. Cel i definicja „gotowe"
 
 - **Cel sprintu:** stos wydruków pozwalający przejść grę **end-to-end po jednej ścieżce** i wyłapać dziury w łańcuchu (fabuła → zagadka → klucz → następny etap → finał).
