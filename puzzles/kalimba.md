@@ -61,19 +61,22 @@ Razem 3 grupy → wystarczy 1-2 egz. kalimby (grupy rozłożone w czasie). Każd
 - Co to znaczy: **6.2.1454 = 6 lutego 1454** — data buntu toruńskiego. Melodia zakodowuje datę własnej klęski Zakonu.
 - Na kopercie / karcie gracza: **pierwszy dźwięk zaznaczyć** (wyróżnienie graficzne, żeby wiedzieli skąd zacząć).
 
-### Szyfrogram + klucz
-- Kod z kalimby (621454) wchodzi jako wejście do **szyfrogramu**.
-- **Klucz szyfru = motto krzyżaków**: „**Helfen, Hilfen und Wehren**" (wg autora; fonetycznie bliskie „Helfen, Heilen und Wehren" — historyczne motto Zakonu Krzyżackiego).
-- Szyfr: **Cezara** (przesunięcie liter wg klucza z motta) — koło mieści się na **A4**.
-- Opcjonalnie: **drugie koło, 3-warstwowe** z symbolem pomiędzy warstwami (bardziej rozbudowane; do rozważenia).
-- Rekwizyt: koło deszyfrujące **w kopercie Z8** (prawdopodobnie; ostateczna decyzja TBD).
+### Szyfrogram + klucz (osobny element, niezależny od melodii)
+
+Melodia → 621454 → data **6.2.1454** — to jest wynik sam w sobie, nie wejście do szyfru.
+
+Szyfr Cezara to **osobna zagadka** (lub drugi etap Z8):
+- **Szyfrogram** = jakaś wiadomość zaszyfrowana szyfrem Cezara.
+- **Klucz = motto krzyżaków**: „**Helfen, Hilfen und Wehren**" (wg autora).
+- Rekwizyt: **koło deszyfrujące** (Caesar wheel) — **wydruk A4**, dwie warstwy obrotowe.
+- Opcjonalnie: **3-kołowa wersja z symbolem** między kołami.
+- Koło **prawdopodobnie w kopercie Z8** (ostateczna decyzja TBD).
 
 ### TODO (do przygotowania)
-- [ ] Obliczyć co wychodzi z 621454 + klucz „Helfen Hilfen und Wehren" (jakie litery/słowo jest wynikiem)
-- [ ] Zaprojektować koło Cezara — **wydruk A4**, dwie warstwy obrotowe (zewnętrzna + wewnętrzna tarcza)
+- [ ] Ustalić **co jest treścią szyfrogramu** (co jest zaszyfrowane mottem) — decyzja autora
+- [ ] Zaprojektować koło Cezara — **wydruk A4**, dwie warstwy obrotowe
 - [ ] Opcjonalnie: **3-kołowa wersja z symbolem** między kołami — zdecydować czy warta nakładu
-- [ ] ~~Rozkminić czy koło w kopercie~~ → **prawdopodobnie w kopercie Z8** (ostateczna decyzja po playtestach)
-- [ ] Rozkminić dokładną mechanikę prezentacji szyfru: jak gracze rozumieją co mają zrobić (instrukcja na kopercie? NPC?)
+- [ ] Rozkminić dokładną mechanikę: czy kalimba i szyfrogram to jeden etap Z8, czy dwa osobne
 
 ## Otwarte pytania
 
@@ -81,8 +84,8 @@ Razem 3 grupy → wystarczy 1-2 egz. kalimby (grupy rozłożone w czasie). Każd
 2. ~~Gdzie~~ ROZSTRZYGNIĘTE: Z4 (melodia flisaka) + Z8 (melodia zakonu).
 3. **Czy zmieniamy na historyczny instrument** (B) — wciąż otwarte (anachronizm).
 4. **Treść melodii Z4 (flisak)** — do ustalenia (Z8 = 621454 ustalona).
-5. ~~Co jest „kluczem" wyjściowym Z8~~ → szyfrogram (621454 + klucz Cezara z motta → koło deszyfrujące w kopercie).
-6. **Wynik szyfru** — co wychodzi po odkodowaniu 621454 kluczem motta? Wymaga obliczenia.
+5. **Co jest treścią szyfrogramu** (co szyfrujemy mottem krzyżaków) — do decyzji autora.
+6. **Czy kalimba i szyfrogram to jeden ciąg Z8** czy dwie osobne zagadki?
 
 ## Co autor może zrobić sam vs gdzie pomocy
 
