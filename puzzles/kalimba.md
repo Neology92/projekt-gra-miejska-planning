@@ -54,13 +54,31 @@ Razem 3 grupy → wystarczy 1-2 egz. kalimby (grupy rozłożone w czasie). Każd
 - **Z4 — melodia flisaka** (mieszczanie, opcjonalna).
 - **Z8 — melodia zakonu** (krzyżacy, opcjonalna). Wariant D (kalimba jako ezoteryczny element zakonu) ładnie pasuje tu fabularnie.
 
+## Z8 — notatki autora [2026-06-01]
+
+### Melodia
+- Sekwencja pręcików: **6 · 2 · 1 · 4 · 5 · 4**
+- Na kopercie / karcie gracza: **pierwszy dźwięk zaznaczyć** (wyróżnienie graficzne, żeby wiedzieli skąd zacząć).
+
+### Szyfrogram + klucz
+- Kod z kalimby (621454) wchodzi jako wejście do **szyfrogramu**.
+- **Klucz szyfru = motto krzyżaków** (do ustalenia przez autora — np. „Helfen Wehren Heilen" lub łacińskie motto zakonu).
+- Narzędzie do odszyfrowania: **potencjalnie koło deszyfrujące** (cipher wheel, drukowane).
+- Do rozkminienia: **jak dokładnie przedstawić zagadkę szyfru dla krzyżaków** — czy koło jest rekwizytem w kopercie, czy trzeba je zdobyć osobno, czy hasło wydaje MG?
+
+### TODO (do przygotowania)
+- [ ] Wybrać konkretne motto krzyżaków jako klucz szyfru
+- [ ] Zaprojektować szyfrogram (jakie litery wychodzą z 621454 + klucz)
+- [ ] Zaprojektować koło deszyfrujące — **przygotować do wydruku** (A4 / A5, dwie warstwy, kółko + strzałka)
+- [ ] Rozkminić mechanikę prezentacji szyfru dla krzyżaków (czy koło jest w kopercie Z8, czy zdobywane osobno)
+
 ## Otwarte pytania
 
 1. ~~Czy używać kalimby~~ ROZSTRZYGNIĘTE: **tak** (Z4 + Z8).
 2. ~~Gdzie~~ ROZSTRZYGNIĘTE: Z4 (melodia flisaka) + Z8 (melodia zakonu).
 3. **Czy zmieniamy na historyczny instrument** (B) — wciąż otwarte (anachronizm).
-4. **Treść melodii** — dwie różne (flisak vs zakon)? Coś tematycznego (np. melodia z `kuchnia-pierniki.js` / hymn cechowy / legenda flisaka)?
-5. **Co jest „kluczem" wyjściowym** (kod liczbowy z pręcików → fragment szyfru do finału)?
+4. **Treść melodii Z4 (flisak)** — do ustalenia (Z8 = 621454 ustalona).
+5. ~~Co jest „kluczem" wyjściowym Z8~~ → **szyfrogram** (motto krzyżaków jako klucz, koło deszyfrujące jako rekwizyt).
 
 ## Co autor może zrobić sam vs gdzie pomocy
 
