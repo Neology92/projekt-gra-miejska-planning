@@ -27,7 +27,7 @@ Cięcie = priorytet. Te rzeczy są **albo zablokowane zewnętrznie** (teren, lud
 | Produkcja w ilościach (10–40 kopii, wosk, pieczętowanie) | prototyp = **1 egzemplarz** | po playteście |
 | Stylizacja graficzna manuskryptowa (mapa, szyfrownik, koperty) | funkcjonalny wydruk wystarcza do dry-runu | MVP |
 | Zgoda właściciela lokalu Jordana | negocjacja zewnętrzna; prototyp używa nazwy-zaślepki | równolegle, poza zegarem |
-| Zakup kalimby + nagranie dzwonu | rekwizyt; prototyp używa **drukowanego diagramu** kalimby | przed playtestem |
+| Nagranie/rekwizyt dzwonu finałowego | rekwizyt dnia gry; prototyp papierowy go nie potrzebuje (kalimba JUŻ jest — Z4 używa fizycznego instrumentu) | przed dniem gry |
 | Scenka aktorska finału (Bażyński vs Albrecht, warianty wyniku) | wymaga 2 aktorów + zbiórki grup — nietestowalna solo na papierze | przed dniem gry |
 | Rozstrzygnięcia „remis / co jeśli nie dostarczą / punkty zaufania ważone" | prototyp bierze **najprostszy wariant** (1 grupa = 1 głos, niedostarczenie = brak głosu) | MVP |
 | Kostiumy, lokalizacje MG, harmonogram fal, formularz zapisów | logistyka dnia gry | przed dniem gry |
@@ -55,12 +55,13 @@ To jest **cała** lista do wyprodukowania dla jednej ścieżki. ~20 pozycji.
 - [ ] **Mapa Torunia z symbolami** (1 trasa, wersja funkcjonalna).
 - [ ] **Szyfrownik** (obiekt terenowy → następny symbol).
 - [ ] **Pergamin z listą nazwisk TR** (Z3, klucz; nazwiska z wiki `tajna-rada.js` — research mój).
-- [ ] **Diagram kalimby z numeracją pręcików + zapis melodii** (Z4).
-- [ ] **Arkusz szyfru Z7 + materiał deszyfrujący** (koło/tabela — zależnie od systemu, który podasz).
+- [ ] **Zapis melodii Z4 + mapa numeracji pręcików** (kalimba fizyczna już jest; karta = referencja: nuty/sekwencja → numery pręcików → kod liczbowy).
+- [ ] **Arkusz szyfru Z7 + materiał deszyfrujący** — szyfr **Vigenère, krótki klucz** (sekwencja przesunięć co znak; klucz = kod z kalimby, ~3–4 liczby powtarzane). Materiał: **tabula recta / koło** + czytelna instrukcja deszyfrowania.
 - [ ] **Etykiety dla mechaniki dostarczenia** (np. „Do Bażyńskiego" / „Do Albrechta" — wariant pudełek).
 
-### C. Skrypt aktora (1)
+### C. Skrypty/karty aktorów (2)
 - [ ] **Skrypt Jordana (Piotr):** dialog F2A (info o buncie + godzina 20:00) + treść testu zaufania Z2b + wręczenie K3.
+- [ ] **Karta gry Albrechta (Zosia) — Z3:** choreografia „okna na kradzież listy" (telegrafowane obroty: najpierw ciało, potem głowa → gracze mają czas na reakcję) + reakcje gdy grupa złapana / gdy się uda + jak trzyma listę „luźno".
 
 ### D. Dokumenty operacyjne MG (3)
 - [ ] **Arkusz śledzenia MG:** grupa → która koperta następna, hasła/identyfikator, klucze do wymiany, odpowiedzi-wzorce per etap.
@@ -90,8 +91,8 @@ To jest **cała** lista do wyprodukowania dla jednej ścieżki. ~20 pozycji.
 
 | # | Blok | Twój input (decyzje/mechanika) | Mój output (drafty) | Twój czas | Mój czas |
 |---|---|---|---|---|---|
-| 2A | **Model „klucza" + Z3 + Z4** | Co fizycznie jest kluczem z Z3 (lista nazwisk) i z Z4 (kod liczbowy); wariant mechaniki Z3 (A/C/D — bez żywego NPC poza Albrechtem); treść melodii Z4 i zasada kod→klucz | K3 + K-Z3 + K-Z4, pergamin z nazwiskami TR (research), diagram kalimby + melodia, definicja kluczy | ~1–1,5 h | ~1,5 h |
-| 2B | **Z7 finał (najtrudniejsze spięcie)** | Jaki szyfr; **jak klucze Z3+Z4 sklejają wniosek „Jordan = Bażyński"**; co widzi gracz po rozwiązaniu | K8 (Z7): arkusz szyfru + materiał deszyfrujący + KF (instrukcje finału, dostarczenie listu) | ~45 min–1 h | ~1,5 h |
+| 2A | **Model „klucza" + Z3 + Z4** | Z3 = **żywy Albrecht (Zosia)** + choreografia okna na kradzież listy (telegrafowane obroty); melodia Z4 → **sekwencja pręcików = krótki klucz Vigenère** (~3–4 liczby). **Model klucza:** Z3 daje **szyfrogram** (zamknięta wiadomość), Z4 daje **klucz** → spójne z „wymienialnym kluczem" | K3 + K-Z3 + K-Z4, pergamin z nazwiskami TR (research), karta gry Albrechta, zapis melodii + mapa pręcików, definicja kluczy | ~1–1,5 h | ~1,5 h |
+| 2B | **Z7 finał (najtrudniejsze spięcie)** | Szyfr = **Vigenère, krótki klucz** (zablokowane); szyfrogram = wiadomość ujawniająca „Jordan = Bażyński", klucz = sekwencja z kalimby (Z4); długość klucza vs trudność w terenie; co widzi gracz po rozwiązaniu | K8 (Z7): arkusz szyfru + materiał deszyfrujący + KF (instrukcje finału, dostarczenie listu) | ~45 min–1 h | ~1,5 h |
 | 2C | **Montaż + dokumenty MG** | Review arkusza MG i instrukcji; akceptacja listy przedmiotów | arkusz śledzenia MG, instrukcja MG, lista przedmiotów (prototyp vs MVP), kompilacja stosu do druku | ~45 min | ~2 h |
 | 2D | **Pass spójności + dry-run na papierze** | Przejdź ścieżkę czytając artefakty po kolei — czy każdy etap daje klucz, którego potrzebuje następny? Czy odpowiedzi się zgadzają? | korekty wyłapanych dziur | ~45 min | ~30 min |
 
@@ -101,7 +102,10 @@ To jest **cała** lista do wyprodukowania dla jednej ścieżki. ~20 pozycji.
 
 ## 5. Ścieżka krytyczna i ryzyka
 
-- **Najtrudniejszy węzeł: Z7 + model klucza (blok 2B/2A).** Szyfr finałowy musi **mechanicznie** przyjąć klucz z Z3 (lista nazwisk, w której NIE ma „Jordana") + klucz z Z4 (kod) i wypluć wniosek „Jordan = Bażyński". Jeśli to nie domyka się czysto — kaskaduje na Z3, Z4, K3.
+- **Najtrudniejszy węzeł: Z7 + model klucza (blok 2B/2A).** Model: **Z3 daje szyfrogram** (zamknięta wiadomość ujawniająca „Jordan = Bażyński"; lista nazwisk z Z3 NIE zawiera „Jordana" — to kontekst, nie klucz) + **Z4 daje klucz** = sekwencja z kalimby. Szyfr **zablokowany: Vigenère z krótkim kluczem** (~3–4 liczby, powtarzane) — cała melodia ma sens mechaniczny.
+  - **Ryzyko trudności w terenie:** Vigenère łamie się ręcznie wolniej niż Cezar. Mitygacja: **krótki klucz + czytelna tabula recta/koło + jasna instrukcja**. Dry-run ma to **zmierzyć** (ile minut na złamanie) — to jeden z głównych celów prototypu.
+  - **Anachronizm** (~1553) — świadoma decyzja, jak kalimba → zapisać w `lore/fakty-vs-fabula.md`.
+  - Jeśli spięcie nie domyka się czysto — kaskaduje na Z3, Z4, K3. Walidujemy ręcznie (przejście liczbowe) przed finalizacją kopert.
   → **Mitygacja:** projektujemy klucz+Z7 jako **jeden moduł**, walidujemy ręcznie (przejście liczbowe) zanim sfinalizujemy koperty.
 - **Z1 to największy pojedynczy kawałek** (blok 1B). Jeśli zabraknie czasu — patrz „rdzeń minimalny" niżej (stub Z1, reszta łańcucha pełna).
 - **Twój czas jest wąskim gardłem, nie mój.** Sprint działa, jeśli decyzje per blok wpadają **na bieżąco**; każda zwłoka w inpucie blokuje mój draft. Najlepiej: krótka sesja decyzyjna → ja drafuję → Ty robisz review następnego bloku.
