@@ -56,7 +56,7 @@ Szczegóły: `concept/02-faza-2a-jordan.md`.
   - **Z3 (TR)** — infiltracja zamku krzyżackiego: zdobycie listy nazwisk TR (kradzież komturowi Albrechtowi, aktor Zosia).
   - **Z3Z (krzyżacy)** — infiltracja Piccolo (siedziby TR): kradzież zaopatrzenia + wyciągnięcie godziny buntu od Jordana.
 - **Dywersyfikacja (5+5):** różne grupy dostają różne zestawy, by rozproszyć je po mieście i odciążyć rekwizyty:
-  - TR: wszyscy Z3 + {1×Z4 melodia(kalimba), 2×Z5 sensoryczna, 2×Z6 anioły}.
+  - TR: wszyscy Z3 + {1×Z4 melodia(kalimba), 2×Z5 sensoryczna, 2×Z6 herby hanzeatyckie (Aleja Gmerków)}.
   - Krzyżacy: wszyscy Z3Z + {2×Z8 melodia(kalimba), 1×Z9 sensoryczna, 2×Z10 polichromie/Bestiariusz}.
 - **Mechanika klucza:** każda zagadka opcjonalna wypluwa **wymienialny „klucz"** (przez MG) do finałowego szyfru → finał = klucz z Z3/Z3Z + dowolny 1 opcjonalny.
 - **Bonus opcjonalny:** „Opowieść skazanego" (puzzle z trójkątów) — gdy grupa świetna; niski priorytet.

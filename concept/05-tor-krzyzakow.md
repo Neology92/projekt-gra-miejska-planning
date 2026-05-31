@@ -18,7 +18,7 @@ Numeracja kanoniczna — patrz `puzzles/00-master-list.md` i `concept/03-faza-2b
 - **Zagadki opcjonalne (lustra TR):**
   - **Z8 — melodia zakonu** (kalimba) ← lustro Z4 (melodia flisaka).
   - **Z9 — sensoryczna z piernikiem** ← lustro Z5.
-  - **Z10 — polichromie w „Biedronce" + „Bestiariusz Krzyżowca"** (wskazanie prawdziwych potworów) ← lustro Z6 (anioły).
+  - **Z10 — polichromie w „Biedronce" + „Bestiariusz Krzyżowca"** (wskazanie prawdziwych potworów) ← lustro Z6 (herby hanzeatyckie, ul. Królowej Jadwigi).
 - **Dywersyfikacja (5 grup):** wszyscy Z3Z + {**2×Z8, 1×Z9, 2×Z10**}.
 - **Finał: Z11** (szyfr) — lustro Z7. Klucz z Z3Z + 1 opcjonalnej (wymienialny, przez MG).
 - **Plot twist krzyżaków: BRAK** [decyzja 2026-05-29]. Krzyżacy **nie mają** twistu w stylu Jordan=Bażyński. Uzasadnienie: twist mieszczan pełni funkcję **bramkującą** (musisz odkryć tożsamość Jordana, żeby wiedzieć komu oddać list); żaden rozważany twist krzyżacki (kret w TR / pęknięcie w Zakonie / linia jaszczurcza) niczego nie bramkuje — byłby ozdobą, nie zamkiem. **Bramą krzyżaków jest duma Albrechta** (jawny komtur żąda dowodu godności) + **weryfikacja w F2B**. Asymetria funkcjonalnie spójna: brama epistemiczna (mieszczanie) vs społeczna (krzyżacy). Odrzucone zalążki — sekcja 4 niżej (zostawione jako materiał na tło fabularne kopert).

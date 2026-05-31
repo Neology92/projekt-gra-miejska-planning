@@ -64,7 +64,7 @@ Kolejność prac na zagadkach (priorytetowa):
 
 - [ ] Z4 melodia flisaka + Z8 melodia zakonu (kalimba) - treść melodii, mechanika kodu
 - [ ] Z5 + Z9 sensoryczna z piernikiem - mechanika sensoryczna, miejsce
-- [ ] Z6 anioły (Starówka) - które anioły, jakie atrybuty (research/wizyta)
+- [ ] Z6 herby hanzeatyckie (ul. Królowej Jadwigi) - wizyta + spis herbów w bruku i na latarniach; dobór 5 dystraktorów
 - [ ] Z10 polichromie + Bestiariusz Krzyżowca - research treści (osobista wizyta)
 - [ ] Każda zagadka: zdefiniować wymienialny „klucz" do finału
 

@@ -38,7 +38,7 @@ Reguły dla **każdej** trasy (per grupa). Każda nowa trasa musi je spełniać.
 4. **Koniec łańcucha = Rynek Staromiejski**, bo tam **kręci się MG** (przyjmuje raport Z1, wydaje K2). Przystanek 4 powinien być na/przy Rynku Staromiejskim. **Piccolo NIE wlicza się do budżetu Z1** — dojście do Jordana jest częścią Z2/F2A (już po K2).
 5. **Tempo do kalkulacji:** ~80 m/min (spacer z rozglądaniem) + narzut na zakręty ~1,3×. Stąd: ~3 min ≈ ~240 m w terenie; **12 min ≈ ~900-960 m** całego łańcucha (5 legów).
 6. **Bez dużych zawrotek** — łańcuch ma płynąć w jedną stronę / zwartą pętlą; żadnych powrotów przez ten sam punkt (inaczej budżet pęka).
-7. **Omijać miejsca zarezerwowane** pod inne zagadki: Biedronka/polichromie (Z10), anioły (Z6), zamek/Gdanisko (Z3/finał); Fontanna Flisaka tylko jako dystraktor (motyw Z4).
+7. **Omijać miejsca zarezerwowane** pod inne zagadki: Biedronka/polichromie (Z10), herby/Aleja Gmerków (Z6), zamek/Gdanisko (Z3/finał); Fontanna Flisaka tylko jako dystraktor (motyw Z4).
 8. **Dyspersja:** różne grupy = różne łańcuchy (różny pierwszy glif / inne przystanki), by się nie tłoczyły.
 
 ## Trasa prototypu (propozycja — tor TR, 4 kroki)
@@ -83,7 +83,7 @@ To **fragment koperty K1 dotyczący szlaku** (pierwszy glif + zasada łańcucha 
 
 ## Dobór miejsc - pełna pula kandydatów z wiki
 
-Z listy 45 miejsc (`przewodnik-miejsc-gry.js`); świadomie **omijamy** miejsca zarezerwowane pod inne zagadki: Biedronka/polichromie (Z10), anioły (Z6), zamek/Gdanisko (Z3/finał). Fontanna Flisaka tylko jako dystraktor (motyw flisaka wykorzysta Z4).
+Z listy 45 miejsc (`przewodnik-miejsc-gry.js`); świadomie **omijamy** miejsca zarezerwowane pod inne zagadki: Biedronka/polichromie (Z10), herby/Aleja Gmerków (Z6), zamek/Gdanisko (Z3/finał). Fontanna Flisaka tylko jako dystraktor (motyw flisaka wykorzysta Z4).
 
 | Miejsce | Cecha do rozpoznania |
 |---------|---------------------|

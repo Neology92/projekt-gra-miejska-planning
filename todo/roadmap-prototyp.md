@@ -44,7 +44,7 @@ Cięcie = priorytet. Te rzeczy są **albo zablokowane zewnętrznie** (teren, lud
 | Pozycja | Dlaczego poza sprintem | Kiedy |
 |---|---|---|
 | Cały tor krzyżacki (Z3Z, Z8, Z9, Z10, Z11) | druga połowa gry; prototyp testuje jeden tor | MVP |
-| Pozostałe opcjonalne TR (Z5 piernik, Z6 anioły) | Z6 wymaga wizyty/researchu w terenie; jedna opcjonalna wystarcza do walidacji | MVP / po wizji lokalnej |
+| Pozostałe opcjonalne TR (Z5 piernik, Z6 herby hanzeatyckie) | Z6 wymaga wizyty na ul. Królowej Jadwigi (spis herbów w terenie); jedna opcjonalna wystarcza do walidacji | MVP / po wizji lokalnej |
 | Dywersyfikacja 5+5 (tabele przydziału zestawów) | prototyp = 1 zestaw, nie 10 grup | MVP |
 | Produkcja w ilościach (10–40 kopii, wosk, pieczętowanie) | prototyp = **1 egzemplarz** | po playteście |
 | Stylizacja graficzna manuskryptowa (mapa, szyfrownik, koperty) | funkcjonalny wydruk wystarcza do dry-runu | MVP |

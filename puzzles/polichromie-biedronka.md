@@ -4,8 +4,8 @@
 
 ## Numeracja: **Z10** (tor krzyżaków, opcjonalna, 2 grupy)
 
-- Lustro **Z6** (anioły, tor mieszczan). Patrz `concept/03-faza-2b-asynchroniczne.md`, `puzzles/00-master-list.md`.
-- Tylko dla krzyżaków (TR ma w tym miejscu Z6 — anioły, inne miejsce).
+- Lustro **Z6** (herby hanzeatyckie, ul. Królowej Jadwigi, tor mieszczan). Patrz `concept/03-faza-2b-asynchroniczne.md`, `puzzles/herby-aleja.md`.
+- Tylko dla krzyżaków (TR ma w tym miejscu Z6 — herby na Aleji Gmerków, inne miejsce).
 - Output: **wymienialny „klucz" do finału Z11** (przez MG) + weryfikacja „godności" dla Zakonu.
 - Mechanika weryfikacji — `concept/03-faza-2b-asynchroniczne.md`.
 
@@ -50,7 +50,7 @@
 1. **Co konkretnie jest w polichromiach Biedronki?** - WYMAGA RESEARCHU (autor + agent).
 2. **Karta z reprodukcjami** - jak ją zaprojektować? Stylizowane na manuskrypt? Ksero z literatury?
 3. **Jak weryfikuje MG/NPC** że grupa "rozpoznała"? Słowna deklaracja? Karta z odpowiedziami?
-4. ~~Czy tylko dla krzyżaków~~ ROZSTRZYGNIĘTE [2026-05-29]: **tylko krzyżacy** (Z10). TR mają w tym miejscu zestawu Z6 (anioły). Polichromie ≠ anioły, inne miejsca.
+4. ~~Czy tylko dla krzyżaków~~ ROZSTRZYGNIĘTE [2026-05-29]: **tylko krzyżacy** (Z10). TR mają w tym miejscu zestawu Z6 (herby hanzeatyckie, Aleja Gmerków). Polichromie ≠ herby, inne miejsca.
 
 ## Co autor może zrobić sam vs gdzie pomocy
 

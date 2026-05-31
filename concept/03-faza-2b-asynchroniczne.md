@@ -53,14 +53,14 @@ Mechaniki w większości do rozpisania (kreatywka Oskara). Tu zarys + rekwizyt +
 ### Tor mieszczan
 - **Z4 — melodia flisaka** — rekwizyt: **kalimba** (odtworzenie/rozpoznanie melodii). Patrz `puzzles/kalimba.md`.
 - **Z5 — sensoryczna z piernikiem** — rekwizyt: **pomoce sensoryczne** (zapach/smak/dotyk piernika). Opcjonalne tło do koperty: Związek Pruski wbrew rzemieślnikom / kontr-perspektywa piekarza (seed inwersji moralnej — patrz `lore/fakty-vs-fabula.md`).
-- **Z6 — anioły** — oparta na **aniołach rozmieszczonych po Starówce** (prawdop. sprawdzenie, jakie atrybuty/rekwizyty mają konkretne anioły → dalej). **Nie w Biedronce.** Mechanika do rozpisania.
+- **Z6 — herby hanzeatyckie** — ul. Królowej Jadwigi (Aleja Gmerków Hanzeatyckich). Karta z 8 herbami/miastami → idź na aleję → znajdź 3, które faktycznie są w bruku/na latarniach → te 3 = klucz. Reszta to dystraktory (wiarygodne miasta Hanzy nieobecne na tej alei). Analogia mechaniczna: Z6 : herby = Z10 : polichromie. Patrz `puzzles/herby-aleja.md`.
 
 ### Tor krzyżaków (lustra)
 - **Z8 — melodia zakonu** — rekwizyt: **kalimba** (lustro Z4).
 - **Z9 — sensoryczna z piernikiem** — rekwizyt: **sensoryczne** (lustro Z5).
 - **Z10 — polichromie w „Biedronce"** — znalezienie sylwetek potworów na polichromiach i wskazanie prawdziwych w **„Bestiariuszu Krzyżowca"** (lustro Z6). Patrz `puzzles/polichromie-biedronka.md`.
 
-> **Uwaga:** dopiski z boardu („TR obraduje w Piccolo", „pogłębienie info o Radzie", „Związek Pruski wbrew rzemieślnikom") to **tylko sugestie tła fabularnego do kopert** po rozwiązaniu zagadek — nie mechanika. Realne mechaniki: Z4=melodia, Z5=sensoryczna, Z6=anioły.
+> **Uwaga:** dopiski z boardu („TR obraduje w Piccolo", „pogłębienie info o Radzie", „Związek Pruski wbrew rzemieślnikom") to **tylko sugestie tła fabularnego do kopert** po rozwiązaniu zagadek — nie mechanika. Realne mechaniki: Z4=melodia, Z5=sensoryczna, Z6=herby hanzeatyckie.
 
 ## Kluczowa mechanika: 2B → finał (wymienialny „klucz")
 
@@ -95,4 +95,4 @@ Faza 2B = etap obserwacji czy kurierzy są godni zaufania.
 3. Czy **Z3Z** kradnie też koło deszyfrujące (rekwizyt do finału)?
 4. Mechanika „podebrania listy" Albrechtowi (Z3) — fizyczna vs abstrakcyjna; co jeśli grupa zostanie złapana?
 5. Czas trwania 2B na grupę (~60-90 min?).
-6. Mechanika Z6 (anioły) — które anioły na Starówce, jakie atrybuty (wymaga researchu/wizyty).
+6. ~~Mechanika Z6 (anioły)~~ → **ZMIANA [2026-06-01]**: Z6 = herby hanzeatyckie na Aleji Gmerków. Wymaga wizyty na ul. Królowej Jadwigi i spisu herbów w bruku/na latarniach. Patrz `puzzles/herby-aleja.md`.

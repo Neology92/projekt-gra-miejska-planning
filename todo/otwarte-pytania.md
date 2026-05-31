@@ -19,7 +19,7 @@ Pytania pogrupowane wg pliku, w którym są dyskutowane szerzej.
 8. **F1 trasa Z1** — AKTUALIZACJA [2026-05-31]: **mechanika docelowa ustalona** (łańcuch + abstrakcyjne glify na mapie + szyfrownik obiekt→następny glif + legenda do autouzupełnienia; **4 kroki**). **Prototyp:** 1 łańcuch (tor TR), propozycja 4 miejsc w `puzzles/szlak-symboli.md`. **Pełna gra:** różne trasy per grupa (dyspersja) — model różnych pierwszych glifów, do MVP. Wcześniej [2026-05-29]: realizacją miał się zająć Piotr.
 9. ~~F2B — które obowiązkowe / wybierz 2 z 4~~ ROZSTRZYGNIĘTE [2026-05-29]: **model dywersyfikacji**, nie „wybierz 2 z 4". Obowiązkowa: **Z3 (TR) / Z3Z (krzyżacy)** + **1 opcjonalna** per grupa (5+5; tabele w `concept/03-faza-2b-asynchroniczne.md`). Bramkowanie finału: Z3/Z3Z + 1 opcjonalna (klucz wymienialny).
 10. **Wybór formy "trzy rzeczy do zestawienia"** w Z2 (`puzzles/droga-do-jordana.md`).
-11. **Wybór formy testu Jordana** (1-5 propozycji w `puzzles/test-jordana.md`).
+11. ~~Wybór formy testu Jordana~~ ROZSTRZYGNIĘTE [2026-05-31]: **hasło (imię „Jordan" w K2 wersja TR) + weryfikacja koloru opaski (5 kolorów TR)**. Jordan pasywnie weryfikuje frakcję, nie testuje charakteru. Krzyżacy nie znają imienia → nie dostają K3. Patrz `puzzles/test-jordana.md`.
 12. **Wariant mechaniki Z3** (A/B/C/D w `puzzles/zamek-krzyzacki-lista.md`).
 13. **Mechanika "kradzieży listy"** komturowi - fizyczna czy abstrakcyjna?
 14. ~~Finałowa zliczanka~~ ROZSTRZYGNIĘTE [2026-05-29]: **prosta, 1 grupa = 1 głos** (`mechanics/finalowe-glosowanie.md`).
@@ -35,7 +35,7 @@ Pytania pogrupowane wg pliku, w którym są dyskutowane szerzej.
 21. **Z3 / Z3Z: mechanika infiltracji** (zamek / Piccolo) — treść do rozpisania; co jest „kluczem" wyjściowym; mechanika podebrania (Z3) / kradzieży zaopatrzenia (Z3Z); co jeśli złapani.
 22. **Z4 / Z8: melodia (kalimba)** — treść melodii i mechanika rozpoznania/odtworzenia; co jest kluczem do finału.
 23. **Z5 / Z9: sensoryczna z piernikiem** — mechanika sensoryczna; jaki klucz wypluwa.
-24. **Z6: anioły** — które anioły na Starówce, jakie atrybuty/rekwizyty, mechanika (wymaga researchu/wizyty).
+24. **Z6: herby hanzeatyckie** — które herby faktycznie są na Aleji Gmerków (ul. Królowej Jadwigi), ile łącznie (bruk + latarnie), dobór 5 dystraktorów. **WYMAGA WIZYTY** + spisu herbów. Patrz `puzzles/herby-aleja.md`.
 25. **Z7 / Z11: finałowe szyfry** — konkretny szyfr; jak klucze z 2B wchodzą; sklejenie Jordan=Bażyński (Z7) i plot twist krzyżaków (Z11, otwarty).
 26. **Z10 / Polichromie Biedronka** - jakie konkretne potwory, treść „Bestiariusza Krzyżowca" (wymaga researchu osobistego).
 27. ~~Kalimba: używamy?~~ ROZSTRZYGNIĘTE [2026-05-29]: **tak** — Z4 (melodia flisaka) + Z8 (melodia zakonu). Decyzja o instrumencie (anachronizm) — patrz `lore/fakty-vs-fabula.md`, `puzzles/kalimba.md`.
@@ -91,7 +91,7 @@ Pytania pogrupowane wg pliku, w którym są dyskutowane szerzej.
 
 ## Rozbieżności board (Whimsical) vs pliki .md
 
-60. ~~Numeracja zagadek F2B — board ≠ pliki.~~ ROZSTRZYGNIĘTE [2026-05-29, v2]: **kanon ustalony** (zastępuje wcześniejszy sync). TR: **Z3** infiltracja zamku, **Z4** melodia flisaka (kalimba), **Z5** sensoryczna z piernikiem, **Z6** anioły. Krzyżacy (lustra): **Z3Z** infiltracja Piccolo, **Z8** melodia zakonu, **Z9** sensoryczna, **Z10** polichromie/Bestiariusz. Finały: **Z7** (TR), **Z11** (krzyżacy). „TR w Piccolo / Związek Pruski / pogłębienie TR" = **tylko tło fabularne do kopert**, nie mechanika. Patrz `puzzles/00-master-list.md`.
+60. ~~Numeracja zagadek F2B — board ≠ pliki.~~ ROZSTRZYGNIĘTE [2026-05-29, v2]: **kanon ustalony** (zastępuje wcześniejszy sync). TR: **Z3** infiltracja zamku, **Z4** melodia flisaka (kalimba), **Z5** sensoryczna z piernikiem, **Z6** herby hanzeatyckie (Aleja Gmerków, ul. Królowej Jadwigi) [zmiana 2026-06-01: było „anioły"]. Krzyżacy (lustra): **Z3Z** infiltracja Piccolo, **Z8** melodia zakonu, **Z9** sensoryczna, **Z10** polichromie/Bestiariusz. Finały: **Z7** (TR), **Z11** (krzyżacy). „TR w Piccolo / Związek Pruski / pogłębienie TR" = **tylko tło fabularne do kopert**, nie mechanika. Patrz `puzzles/00-master-list.md`.
 61. ~~„Zagadka nr 5" dubluje się~~ ROZSTRZYGNIĘTE [2026-05-29]: Z5 = **sensoryczna z piernikiem** (mechanika); „Związek Pruski / piekarz" = opcjonalne tło do koperty.
 62. ~~„melodia flisaka" = kalimba?~~ ROZSTRZYGNIĘTE [2026-05-29]: **tak** — Z4 melodia flisaka i Z8 melodia zakonu używają **kalimby**. Patrz `puzzles/kalimba.md`.
 63. ~~Które zagadki bramkują finał~~ ROZSTRZYGNIĘTE [2026-05-29]: **Z3/Z3Z (obowiązkowa) + 1 opcjonalna**, klucz wymienialny przez MG. Patrz `concept/03-faza-2b-asynchroniczne.md`.
