@@ -8,7 +8,8 @@
 - **Cel sprintu:** stos wydruków pozwalający przejść grę **end-to-end po jednej ścieżce** i wyłapać dziury w łańcuchu (fabuła → zagadka → klucz → następny etap → finał).
 - **Wybrana ścieżka:** tor **TR**, zestaw **Z3 (obowiązkowa) + Z4 (kalimba, opcjonalna)**.
   Łańcuch: `K1 → Z1 (1 trasa) → K2 → Z2 → Jordan/Z2b → K3 → Z3 → Z4 → Z7 → KF (mechanika dostarczenia listu)`.
-- **„Gotowe do druku" = funkcjonalne, nie finalne graficznie.** Treść kompletna, układ czytelny, łańcuch domknięty. Stylizacja manuskryptowa (pergamin, kaligrafia, UnifrakturMaguntia) → **deferred do MVP**.
+- **Poziom = DOCELOWE rozwiązania dla jednej ścieżki**, nie wersje-zaślepki. Mechanika, teksty, szyfr, trasa = takie jak w finalnej grze. **Mockowanie** (ręczne wydruki, prowizoryczne rekwizyty) służy tylko fizycznemu testowi — nie jest kompromisem projektowym.
+- **„Gotowe" = treść/projekt kompletny i docelowy; oprawa graficzna może poczekać.** Łańcuch domknięty. Finalna stylizacja manuskryptowa (pergamin, kaligrafia, UnifrakturMaguntia) i druk produkcyjny → osobno, po dry-runie.
 - **Model pracy (ustalony):** Ty podajesz **mechanikę + konkretny system + spięcie z fabułą** → ja porządkuję, robię drafty, finalizuję **docelowe teksty w kopertach** → Ty zatwierdzasz/korygujesz.
   - Twój czas = **wąskie gardło** (decyzje + input + review).
   - Mój czas = produkcja draftów, interleaved/asynchronicznie — nie liczy się do Twojego kalendarza.
@@ -57,7 +58,7 @@ To jest **cała** lista do wyprodukowania dla jednej ścieżki. ~20 pozycji.
 - [ ] **Pergamin z listą nazwisk TR** (Z3, klucz; nazwiska z wiki `tajna-rada.js` — research mój).
 - [ ] **Zapis melodii Z4 + mapa numeracji pręcików** (kalimba fizyczna już jest; karta = referencja: nuty/sekwencja → numery pręcików → kod liczbowy).
 - [ ] **Arkusz szyfru Z7 + materiał deszyfrujący** — szyfr **Vigenère, krótki klucz** (sekwencja przesunięć co znak; klucz = kod z kalimby, ~3–4 liczby powtarzane). Materiał: **tabula recta / koło** + czytelna instrukcja deszyfrowania.
-- [ ] **Etykiety dla mechaniki dostarczenia** (np. „Do Bażyńskiego" / „Do Albrechta" — wariant pudełek).
+- [ ] **Mechanika dostarczenia = osobiste przekazanie aktorowi** (Bażyński/Piotr i Albrecht/Zosia przy stole finałowym; gracz wręcza list wybranej stronie). Mock testowy: list na prawą (Bażyński) / lewą (Albrecht) stronę stołu.
 
 ### C. Skrypty/karty aktorów (2)
 - [ ] **Skrypt Jordana (Piotr):** dialog F2A (info o buncie + godzina 20:00) + treść testu zaufania Z2b + wręczenie K3.
@@ -76,7 +77,7 @@ To jest **cała** lista do wyprodukowania dla jednej ścieżki. ~20 pozycji.
 
 | # | Blok | Twój input (decyzje/mechanika) | Mój output (drafty) | Twój czas | Mój czas |
 |---|---|---|---|---|---|
-| 1A | **Mikro-decyzje odblokowujące** | Zatwierdź najprostsze warianty (mam rekomendacje): lokal = „Gospoda Pod Chochlą" (stub), identyfikator = 1 cech, groźba = narracyjna, dostarczenie = pudełka, niedostarczenie = brak głosu | spis decyzji w plikach | ~30 min | ~15 min |
+| 1A | **Mikro-decyzje odblokowujące** | ✅ Rozstrzygnięte [2026-05-31]: lokal = **Piccolo** (realny, NE od Rynku, serwuje posiłki); identyfikator grupy = **docelowo nazwa cechu** (prototyp: 1 grupa = 1 cech, np. Cech Kupców); dostarczenie listu = **osobiste przekazanie aktorowi** (mock testowy: list na stół, prawa = Bażyński / lewa = Albrecht); groźba = narracyjna; niedostarczenie = brak głosu | spis decyzji w plikach | ~10 min | ~10 min |
 | 1B | **Z1 szlak symboli (rdzeń)** | Ile kroków (rekom. 5); wybór 5 miejsc z mojej listy 45; „kreatywne" mapowanie obiekt→symbol (czemu Kopernik→astrolabium) | tabela trasy + mapa (funkcjonalna) + szyfrownik + start w K1 + wzorzec „odpowiedzi" dla MG | ~1–1,5 h | ~1,5 h |
 | 1C | **K1 + K2 (F1)** | Ton groźby; które plotki z Puli A (3–5); forma „trzech rzeczy" w Z2 (system, nie tekst) | docelowe teksty K1, K2, list-rekwizyt, wiadomość pośrednika, Z2 | ~1 h | ~1,5 h |
 | 1D | **Z2b test Jordana + skrypt F2A** | Wybór formy testu (1–5 z `test-jordana.md`) + intencja (co sprawdza); zarys dialogu Jordana | treść testu + skrypt aktora (Piotr): dialog, bunt, 20:00, wręczenie K3 | ~45 min | ~1 h |
@@ -109,18 +110,17 @@ To jest **cała** lista do wyprodukowania dla jednej ścieżki. ~20 pozycji.
   → **Mitygacja:** projektujemy klucz+Z7 jako **jeden moduł**, walidujemy ręcznie (przejście liczbowe) zanim sfinalizujemy koperty.
 - **Z1 to największy pojedynczy kawałek** (blok 1B). Jeśli zabraknie czasu — patrz „rdzeń minimalny" niżej (stub Z1, reszta łańcucha pełna).
 - **Twój czas jest wąskim gardłem, nie mój.** Sprint działa, jeśli decyzje per blok wpadają **na bieżąco**; każda zwłoka w inpucie blokuje mój draft. Najlepiej: krótka sesja decyzyjna → ja drafuję → Ty robisz review następnego bloku.
-- **Lokal / kalimba / wosk biegną RÓWNOLEGLE, poza zegarem sprintu** — to telefony/zakupy, nie praca przy biurku. Nie wliczam ich w 2 dni.
+- **Poziom docelowy (nie placeholder) = więcej iteracji review per komponent.** Estymaty są realne dla JEDNEJ ścieżki, ale napięte; bufor czasowy to **skrócenie ścieżki** (sekcja 6), nie obniżenie jakości.
+- **Uzgodnienie z Piccolo / wosk-pieczęć / druk biegną RÓWNOLEGLE, poza zegarem sprintu** — to telefony/zakupy/produkcja, nie praca przy biurku. Nie wliczam ich w 2 dni. (Kalimbę już masz.)
 
 ---
 
 ## 6. Rdzeń minimalny (jeśli czas mocno goni)
 
-Gdyby z 2 dni zostało realnie ~1 dzień, **przechodni łańcuch fabularny** ma priorytet nad mechaniką szlaku:
-1. **Z1 → stub** („idź do punktu X i wróć") — tracimy test mechaniki mapy, zachowujemy resztę.
-2. Pełne: K1, K2, Z2, skrypt Jordana, K3, **model klucza + Z3 + Z4 + Z7**, KF.
-3. Dokumenty MG w wersji skróconej (sam arkusz śledzenia + lista przedmiotów; instrukcja MG jako bullet-points).
-
-To wciąż daje **przechodni prototyp do dry-runu** — tyle że bez walidacji samego szlaku symboli.
+Skoro chcemy **docelowe rozwiązania, nie zaślepki** — gdy zabraknie czasu, **skracamy ścieżkę**, a nie upraszczamy komponenty. Każdy dostarczony fragment jest finalny.
+1. **Priorytet 1 (sesja 1):** domknięty łańcuch `K1 → Z1 (1 trasa) → K2 → Z2 → Jordan/Z2b → K3` na docelowym poziomie — samodzielnie testowalny kawałek (start → wręczenie F2B).
+2. **Priorytet 2 (sesja 2):** `Z3 → Z4 → Z7 → KF` + dokumenty MG.
+3. Cięcie = **mniej etapów w pełni gotowych**, nie te same etapy „na pół gwizdka".
 
 ---
 

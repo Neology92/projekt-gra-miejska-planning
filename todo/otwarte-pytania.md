@@ -50,7 +50,7 @@ Pytania pogrupowane wg pliku, w którym są dyskutowane szerzej.
 
 ## Lokalizacje
 
-34. **Lokal Jordana** - konkretny, z zgodą właściciela.
+34. ~~Lokal Jordana~~ ROZSTRZYGNIĘTE [2026-05-31]: **Piccolo** (realny lokal, północno-wschodnia część Starego Miasta od Rynku; tam wydawane posiłki dla graczy). Formalna zgoda/sloty — logistyka równolegle, poza zegarem sprintu. Stylizacja nazwy w fikcji (Piccolo vs nazwa historyczna) — wciąż otwarte (#51).
 35. **Miejsce startowe** (brief wspólny, dla wszystkich grup).
 36. **Lokalizacje MG** w fazach 1, 2A, 2B, 3.
 37. **Komtur Albrecht** - stały punkt czy wędruje?
