@@ -12,7 +12,7 @@ Numeracja kanoniczna [2026-05-29] po scaleniu z boardem. Tory **mieszczan** i **
 | **3** | Infiltracja zamku krzyżackiego — lista nazwisk TR (obowiązkowa TR) | F2B | mieszczanie | szkicowe | `zamek-krzyzacki-lista.md` |
 | **3Z** | Infiltracja Piccolo — kradzież zaopatrzenia + godzina buntu (obowiązkowa krzyżacy) | F2B | krzyżacy | szkicowe | `zamek-krzyzacki-lista.md` (sekcja) / do wydzielenia |
 | 4 | Melodia flisaka (kalimba) | F2B | mieszczanie (opc.) | placeholder | `kalimba.md` |
-| 5 | Sensoryczna z piernikiem (przypisanie etykiet do słoiczków z przyprawami) | F2B | mieszczanie (opc.) | szkicowe (mechanika OK; dobór przypraw + model klucza do decyzji) | `zagadka-sensoryczna.md` |
+| 5 | Sensoryczna ze składnikami piernika (słoiczki: zapach/dźwięk/faktura/waga + dedukcja z przepisu, dwie mąki) | F2B | mieszczanie (opc.) | szkicowe (mechanika OK; wariant mąk + model klucza do decyzji) | `zagadka-sensoryczna.md` |
 | 6 | Anioły (rozmieszczone po Starówce) | F2B | mieszczanie (opc.) | placeholder (nowa) | `zagadka-anioly.md` (do utworzenia) |
 | 7 | Finałowa — szyfr (sklejenie Jordan = Bażyński) | F3 | mieszczanie | szkicowe | `zagadka-finalowa.md` (do utworzenia) |
 | 8 | Melodia zakonu (kalimba) — lustro Z4 | F2B | krzyżacy (opc.) | placeholder | `kalimba.md` |
