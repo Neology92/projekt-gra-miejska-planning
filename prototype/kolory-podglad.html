@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Podgląd palety — 10 kolorów grup</title>
+<style>
+  :root {
+    --bg: #f4f2ee;
+    --card: #ffffff;
+    --ink: #1d1b18;
+    --muted: #6b6660;
+    --line: #d9d4cc;
+    --radius: 12px;
+    --shadow: 0 1px 2px rgba(0,0,0,.06), 0 8px 24px rgba(0,0,0,.06);
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font: 15px/1.5 "Segoe UI", system-ui, -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    padding: clamp(16px, 4vw, 48px);
+  }
+  header { max-width: 1100px; margin: 0 auto 28px; }
+  h1 { font-size: clamp(1.4rem, 1rem + 2vw, 2.1rem); margin: 0 0 6px; letter-spacing: -.02em; }
+  .sub { color: var(--muted); margin: 0; }
+  .wrap { max-width: 1100px; margin: 0 auto; }
+
+  h2 {
+    font-size: .82rem; text-transform: uppercase; letter-spacing: .08em;
+    color: var(--muted); margin: 36px 0 14px; font-weight: 600;
+  }
+
+  /* ---- 1. Duże próbki w siatce ---- */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 14px;
+  }
+  .swatch {
+    background: var(--card); border-radius: var(--radius);
+    overflow: hidden; box-shadow: var(--shadow); border: 1px solid var(--line);
+  }
+  .swatch .fill { height: 110px; display: flex; align-items: flex-end; padding: 8px; }
+  .swatch .num {
+    font-weight: 700; font-size: 1.1rem;
+    width: 28px; height: 28px; border-radius: 50%;
+    display: grid; place-items: center;
+    background: rgba(255,255,255,.85); color: #111;
+  }
+  .swatch .meta { padding: 10px 12px 12px; }
+  .swatch .name { font-weight: 600; }
+  .swatch .hex { color: var(--muted); font-family: ui-monospace, "Cascadia Code", Consolas, monospace; font-size: .85rem; }
+
+  /* ---- 2. Pasek obok siebie (test sąsiedztwa) ---- */
+  .strip { display: flex; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
+  .strip > div { flex: 1; height: 80px; display: grid; place-items: center; font-weight: 700; }
+
+  /* ---- 3. Małe kropki (markery w terenie) ---- */
+  .dots { display: flex; flex-wrap: wrap; gap: 18px; align-items: center; }
+  .dots .d { display: flex; flex-direction: column; align-items: center; gap: 6px; }
+  .dots .dot { width: 26px; height: 26px; border-radius: 50%; box-shadow: 0 1px 3px rgba(0,0,0,.25); }
+  .dots small { color: var(--muted); font-size: .72rem; }
+
+  /* ---- 4. Skala szarości (druk B&W / daltonizm jasności) ---- */
+  .gray { display: flex; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
+  .gray > div { flex: 1; height: 64px; display: grid; place-items: center; font-weight: 700; font-size: .8rem; }
+
+  /* ---- 5. Tekst na kolorze ---- */
+  .texts { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px,1fr)); gap: 10px; }
+  .texts .t { border-radius: 10px; padding: 12px 14px; box-shadow: var(--shadow); }
+  .texts .t .line-dark { color: #111; font-weight: 600; }
+  .texts .t .line-light { color: #fff; font-weight: 600; }
+
+  footer { max-width: 1100px; margin: 40px auto 0; color: var(--muted); font-size: .85rem; }
+  .toggle { margin-top: 8px; }
+  .toggle label { cursor: pointer; user-select: none; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Podgląd palety — 10 kolorów grup</h1>
+  <p class="sub">Sprawdź odróżnialność na kilka sposobów: duże próbki, sąsiedztwo, małe markery, skala szarości i czytelność etykiet.</p>
+</header>
+
+<div class="wrap">
+
+  <h2>1 · Duże próbki</h2>
+  <div class="grid" id="grid"></div>
+
+  <h2>2 · Wszystkie obok siebie (najtrudniejszy test sąsiedztwa)</h2>
+  <div class="strip" id="strip"></div>
+
+  <h2>3 · Małe markery — jak kropki/pinezki w terenie</h2>
+  <div class="dots" id="dots"></div>
+
+  <h2>4 · Skala szarości — test na druk czarno-biały i jasność</h2>
+  <p class="sub" style="margin:-8px 0 12px">Jeśli dwa pola mają tu podobny odcień szarości, będą trudne do rozróżnienia dla osób z daltonizmem i przy druku B&amp;W.</p>
+  <div class="gray" id="gray"></div>
+
+  <h2>5 · Czytelność etykiety na kolorze</h2>
+  <p class="sub" style="margin:-8px 0 12px">Pokazuje, czy na danym tle lepszy jest tekst czarny czy biały.</p>
+  <div class="texts" id="texts"></div>
+
+</div>
+
+<footer>
+  Plik roboczy — otwórz w przeglądarce. Edytuj tablicę <code>COLORS</code> w źródle, żeby podmienić wartości.
+</footer>
+
+<script>
+  const COLORS = [
+    { n: 1,  name: "Czerwony",          hex: "#E6194B" },
+    { n: 2,  name: "Pomarańczowy",      hex: "#F58231" },
+    { n: 3,  name: "Żółty",             hex: "#FFE119" },
+    { n: 4,  name: "Zielony",           hex: "#3CB44B" },
+    { n: 5,  name: "Turkusowy",         hex: "#42D4F4" },
+    { n: 6,  name: "Niebieski",         hex: "#4363D8" },
+    { n: 7,  name: "Fioletowy",         hex: "#911EB4" },
+    { n: 8,  name: "Różowy (magenta)",  hex: "#F032E6" },
+    { n: 9,  name: "Brązowy",           hex: "#9A6324" },
+    { n: 10, name: "Czarny",            hex: "#2B2B2B" },
+  ];
+
+  // luminancja względna (sRGB) -> próg na tekst czarny/biały
+  function luminance(hex) {
+    const c = hex.replace('#','');
+    const r = parseInt(c.substr(0,2),16)/255;
+    const g = parseInt(c.substr(2,2),16)/255;
+    const b = parseInt(c.substr(4,2),16)/255;
+    const lin = v => v <= 0.03928 ? v/12.92 : Math.pow((v+0.055)/1.055, 2.4);
+    return 0.2126*lin(r) + 0.7152*lin(g) + 0.0722*lin(b);
+  }
+  const textOn = hex => luminance(hex) > 0.45 ? "#111" : "#fff";
+
+  // 1. duże próbki
+  document.getElementById('grid').innerHTML = COLORS.map(c => `
+    <div class="swatch">
+      <div class="fill" style="background:${c.hex}">
+        <span class="num">${c.n}</span>
+      </div>
+      <div class="meta">
+        <div class="name">${c.name}</div>
+        <div class="hex">${c.hex.toUpperCase()}</div>
+      </div>
+    </div>`).join('');
+
+  // 2. pasek
+  document.getElementById('strip').innerHTML = COLORS.map(c =>
+    `<div style="background:${c.hex};color:${textOn(c.hex)}">${c.n}</div>`).join('');
+
+  // 3. kropki
+  document.getElementById('dots').innerHTML = COLORS.map(c => `
+    <div class="d">
+      <div class="dot" style="background:${c.hex}"></div>
+      <small>${c.n} · ${c.name}</small>
+    </div>`).join('');
+
+  // 4. skala szarości
+  document.getElementById('gray').innerHTML = COLORS.map(c => {
+    const g = Math.round(luminance(c.hex) ** (1/2.2) * 255); // przybliżona jasność do oka
+    const gh = `rgb(${g},${g},${g})`;
+    return `<div style="background:${gh};color:${g>120?'#111':'#fff'}">${c.n}</div>`;
+  }).join('');
+
+  // 5. tekst na kolorze
+  document.getElementById('texts').innerHTML = COLORS.map(c => `
+    <div class="t" style="background:${c.hex}">
+      <div class="${luminance(c.hex)>0.45?'line-dark':'line-light'}">${c.n} · ${c.name}</div>
+      <div style="color:${textOn(c.hex)};opacity:.85;font-size:.8rem">Grupa ${c.n}</div>
+    </div>`).join('');
+</script>
+</body>
+</html>

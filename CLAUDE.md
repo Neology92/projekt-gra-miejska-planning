@@ -148,11 +148,12 @@ Te punkty są **niezmienne** i mają pokrycie w wiki:
 - **Każda większa zmiana** w tym repo → commit (`feat:`, `fix:`, `docs:`, `chore:`).
 - **Nie deployujemy** tego projektu — to czysto planistyczny katalog. Wiki ma osobny deploy do Netlify.
 - **Plany dalekosiężne** w `todo/roadmap.md`, decyzje czekające na input — w `todo/otwarte-pytania.md`.
+- **Generowane artefakty wizualne** (obrazki, PDF-y, wydruki, mocki HTML mapy/kart/kopert) → podfolder **`prototype/`** (dla milestone'u prototypu pojedynczej ścieżki). Przy skalowaniu do MVP → analogicznie **`mvp/`**. Pliki planistyczne (.md) zostają w `concept/`, `puzzles/`, `mechanics/` itd.
 - **Język i diakrytyka**: pełna polszczyzna z diakrytykami.
 
 ## Status na start (2026-05-29)
 
-> **🔴 AKTUALNY PRIORYTET [2026-05-31]:** budowa **prototypu pojedynczej ścieżki** (tor TR + Z4). **Z1 — artefakty: drafty gotowe** (mock mapy `mapa-z1-podglad.html` + szyfrownik 9 glifów + treść startu w K1), czekają na review Oskara. Następny krok: **opcja B — fabularny rdzeń F1→F2A**. Pełny plan, stan prac i lista decyzji: **`todo/roadmap-prototyp.md`**.
+> **🔴 AKTUALNY PRIORYTET [2026-05-31]:** budowa **prototypu pojedynczej ścieżki** (tor TR + Z4). **Z1 — artefakty: drafty gotowe** — dane kanoniczne `puzzles/z1-szlak-spec.md` + mock `prototype/mapa-z1-podglad.html` (mapa 9 glifów + deszyfrownik „detal → glif", bez nazw) + treść startu w K1; czekają na review Oskara. Następny krok: **opcja B — fabularny rdzeń F1→F2A**. Pełny plan, stan prac i lista decyzji: **`todo/roadmap-prototyp.md`**.
 
 - ✅ Faza 1 — szkielet ma sens, szlak symboli wymaga konkretnego doboru miejsc i przygotowania szyfrownika
 - ✅ Faza 2A (Jordan) — szkielet jest, treść spotkania do dopisania

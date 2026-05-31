@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Z1 — funkcjonalny mock: mapa + deszyfrownik</title>
+<style>
+  :root {
+    --bg: #f4f2ee;
+    --card: #ffffff;
+    --ink: #1d1b18;
+    --muted: #6b6660;
+    --line: #d9d4cc;
+    --parch: #efe7d6;
+    --parch2: #e6dcc6;
+    --water: #cfe0e6;
+    --radius: 12px;
+    --shadow: 0 1px 2px rgba(0,0,0,.06), 0 8px 24px rgba(0,0,0,.06);
+    --mark: "Segoe UI Symbol", "Segoe UI", system-ui, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font: 15px/1.5 "Segoe UI", system-ui, -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    padding: clamp(16px, 4vw, 48px);
+  }
+  header { max-width: 980px; margin: 0 auto 20px; }
+  h1 { font-size: clamp(1.3rem, 1rem + 1.8vw, 1.9rem); margin: 0 0 6px; letter-spacing: -.02em; }
+  .sub { color: var(--muted); margin: 0 0 6px; max-width: 74ch; }
+  .wrap { max-width: 980px; margin: 0 auto; }
+  .badge {
+    display: inline-block; font-size: .72rem; text-transform: uppercase; letter-spacing: .07em;
+    background: #f0e3c8; color: #7a5d1d; border: 1px solid #e0cda0;
+    padding: 3px 9px; border-radius: 999px; margin-bottom: 12px; font-weight: 600;
+  }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow);
+    padding: clamp(14px, 3vw, 26px); margin-bottom: 22px;
+  }
+  h2 {
+    font-size: .82rem; text-transform: uppercase; letter-spacing: .08em;
+    color: var(--muted); margin: 0 0 14px; font-weight: 600;
+  }
+  svg { width: 100%; height: auto; display: block; border-radius: 8px; }
+  .glyph-circle { fill: #fff; stroke: #b9a87f; stroke-width: 2; }
+  .glyph-mark { font-family: var(--mark); font-size: 23px; fill: #2a2620; text-anchor: middle; dominant-baseline: central; }
+  .glyph-code { font: 600 11px "Segoe UI", sans-serif; fill: var(--muted); text-anchor: middle; }
+  .area-label { font: 600 13px "Segoe UI", sans-serif; fill: #8a7c5f; text-anchor: middle; letter-spacing: .04em; }
+  .water-label { font: 600 14px "Segoe UI", sans-serif; fill: #5d8190; text-anchor: middle; letter-spacing: .18em; }
+  .compass { font: 700 13px "Segoe UI", sans-serif; fill: var(--muted); text-anchor: middle; }
+
+  /* legenda */
+  .legend-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 10px 24px; }
+  .legend-row { display: flex; align-items: center; gap: 10px; }
+  .legend-mark { font-family: var(--mark); font-size: 20px; width: 26px; text-align: center; }
+  .legend-name { width: 76px; color: var(--muted); font-size: .85rem; }
+  .legend-line { flex: 1; border-bottom: 1.5px dotted #b9a87f; height: 1.2em; }
+
+  .note { color: var(--muted); font-size: .9rem; margin: 10px 0 0; }
+  ol.steps { margin: 0; padding-left: 1.2em; }
+  ol.steps li { margin: 5px 0; }
+  code { background: #f0ece3; padding: 1px 5px; border-radius: 5px; font-size: .9em; }
+
+  /* deszyfrownik (karta gracza) */
+  .cipher { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 12px; }
+  .cipher li {
+    display: flex; align-items: center; justify-content: space-between; gap: 12px;
+    border: 1px solid var(--line); border-radius: 10px; padding: 12px 16px; background: #fcfbf8;
+  }
+  .cipher .detail { font-size: 30px; line-height: 1; }
+  .chip {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: #eef3ec; border: 1px solid #cdddc4; border-radius: 999px;
+    padding: 5px 13px; font-size: .92rem; font-weight: 600;
+  }
+  .chip .m { font-family: var(--mark); font-size: 1.25rem; }
+  .chip.dead { background: #f6f2ec; border-color: var(--line); color: #b3a892; font-weight: 500; font-size: .8rem; }
+  .chip.koniec { background: #e4efdd; border-color: #bcd6ad; color: #46622f; }
+
+  /* klucz MG */
+  .key-card { border-color: #e3b9b0; background: #fbf3f1; }
+  .key-card h2 { color: #9a4b3c; }
+  .key-table { width: 100%; border-collapse: collapse; font-size: .92rem; margin-top: 4px; }
+  .key-table th, .key-table td { text-align: left; padding: 7px 10px; border-bottom: 1px solid #eccfc8; vertical-align: top; }
+  .key-table th { color: #9a4b3c; font-weight: 600; font-size: .78rem; text-transform: uppercase; letter-spacing: .05em; }
+  .key-table .m { font-family: var(--mark); font-size: 19px; }
+  .key-table .d { font-size: 20px; }
+  .key-table tr.chain td { background: #fdf8f7; }
+
+  @media print {
+    body { background: #fff; padding: 0; }
+    .card { box-shadow: none; break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<header class="wrap">
+  <span class="badge">Funkcjonalny mock — nie finalna grafika · prototype/</span>
+  <h1>Z1 · Szlak symboli — mapa + deszyfrownik</h1>
+  <p class="sub"><strong>Dwie warstwy znaków.</strong> (1) Na mapie — <strong>9 abstrakcyjnych glifów</strong> (gdzie iść; nie zdradzają, co tam jest; 4 z łańcucha + 5 dystraktorów, nieodróżnialne). (2) W deszyfrowniku — <strong>piktogramy detali</strong> (co wypatrzeć w terenie). Grupa sama łączy piktogram z tym, co widzi — deszyfrownik <strong>nie podaje nazw</strong>.</p>
+  <p class="sub">Glify abstrakcyjne — finalnie można je zastąpić np. <strong>gmerkami</strong> (toruńskie znaki kupieckie). Piktogramy detali i pozycje — propozycja do podmiany, zweryfikuj w terenie.</p>
+</header>
+
+<div class="wrap">
+  <div class="card">
+    <h2>Mapa (mock) — tylko glify, bez nazw</h2>
+    <svg viewBox="0 0 900 620" role="img" aria-label="Schematyczna mapa Torunia ze szlakiem znaków">
+      <rect x="0" y="0" width="900" height="620" fill="#f7f3ea"/>
+
+      <!-- Wisla -->
+      <rect x="0" y="548" width="900" height="72" fill="var(--water)"/>
+      <path d="M0,548 q40,10 80,0 t80,0 t80,0 t80,0 t80,0 t80,0 t80,0 t80,0 t80,0 t80,0 t80,0"
+            fill="none" stroke="#aecad4" stroke-width="2"/>
+      <text x="450" y="592" class="water-label">W I S Ł A</text>
+
+      <!-- Stare Miasto -->
+      <rect x="70" y="120" width="430" height="420" rx="14" fill="var(--parch)" stroke="#d8c9a6" stroke-width="1.5"/>
+      <rect x="250" y="270" width="160" height="130" rx="6" fill="var(--parch2)" stroke="#cdbc94" stroke-width="1.5"/>
+      <text x="330" y="338" class="area-label">Rynek</text>
+      <text x="330" y="356" class="area-label">Staromiejski</text>
+      <text x="180" y="150" class="area-label">STARE MIASTO</text>
+
+      <!-- ulica laczaca -->
+      <rect x="500" y="300" width="70" height="34" fill="#ece3d0"/>
+      <text x="535" y="294" class="area-label" font-size="10">ul. Szeroka</text>
+
+      <!-- Nowe Miasto -->
+      <rect x="570" y="150" width="280" height="320" rx="14" fill="var(--parch)" stroke="#d8c9a6" stroke-width="1.5"/>
+      <rect x="650" y="245" width="150" height="120" rx="6" fill="var(--parch2)" stroke="#cdbc94" stroke-width="1.5"/>
+      <text x="725" y="312" class="area-label">Rynek</text>
+      <text x="725" y="330" class="area-label">Nowomiejski</text>
+      <text x="710" y="178" class="area-label">NOWE MIASTO</text>
+
+      <!-- kompas -->
+      <g transform="translate(840,80)">
+        <line x1="0" y1="18" x2="0" y2="-12" stroke="#9b8d6e" stroke-width="2"/>
+        <path d="M0,-18 L5,-6 L-5,-6 Z" fill="#9b8d6e"/>
+        <text x="0" y="34" class="compass">N</text>
+      </g>
+
+      <!-- ===== 9 GLIFOW — markery identyczne, bez nazw obiektow ===== -->
+      <g transform="translate(700,268)"><circle r="21" class="glyph-circle"/><text class="glyph-mark">△</text><text y="36" class="glyph-code">A</text></g>
+      <g transform="translate(372,386)"><circle r="21" class="glyph-circle"/><text class="glyph-mark">○</text><text y="36" class="glyph-code">B</text></g>
+      <g transform="translate(438,470)"><circle r="21" class="glyph-circle"/><text class="glyph-mark">□</text><text y="36" class="glyph-code">C</text></g>
+      <g transform="translate(322,318)"><circle r="21" class="glyph-circle"/><text class="glyph-mark">◇</text><text y="36" class="glyph-code">D</text></g>
+      <g transform="translate(160,500)"><circle r="21" class="glyph-circle"/><text class="glyph-mark">⬡</text><text y="36" class="glyph-code">E</text></g>
+      <g transform="translate(250,238)"><circle r="21" class="glyph-circle"/><text class="glyph-mark">☆</text><text y="36" class="glyph-code">F</text></g>
+      <g transform="translate(120,330)"><circle r="21" class="glyph-circle"/><text class="glyph-mark">✕</text><text y="36" class="glyph-code">G</text></g>
+      <g transform="translate(760,318)"><circle r="21" class="glyph-circle"/><text class="glyph-mark">∿</text><text y="36" class="glyph-code">H</text></g>
+      <g transform="translate(418,300)"><circle r="21" class="glyph-circle"/><text class="glyph-mark">⊙</text><text y="36" class="glyph-code">I</text></g>
+    </svg>
+    <p class="note">Markery A–I (porządkowe dla MG/druku — na finalnej mapie gracza mogą zniknąć). <strong>Żaden glif nie zdradza, czy jest na trasie.</strong> Start łańcucha = <strong>△</strong> (z koperty K1).</p>
+  </div>
+
+  <div class="card">
+    <h2>Deszyfrownik — karta gracza (detal w terenie → następny glif)</h2>
+    <ul class="cipher">
+      <li><span class="detail" title="wieża">🗼</span><span class="to"><span class="chip dead">ślepy zaułek</span></span></li>
+      <li><span class="detail" title="piernik">🍪</span><span class="to">→ <span class="chip"><span class="m">○</span></span></span></li>
+      <li><span class="detail" title="herb">🛡️</span><span class="to"><span class="chip dead">ślepy zaułek</span></span></li>
+      <li><span class="detail" title="osioł">🫏</span><span class="to">→ <span class="chip"><span class="m">◇</span></span></span></li>
+      <li><span class="detail" title="waga">⚖️</span><span class="to"><span class="chip dead">ślepy zaułek</span></span></li>
+      <li><span class="detail" title="gwiazda">⭐</span><span class="to">→ <span class="chip"><span class="m">□</span></span></span></li>
+      <li><span class="detail" title="melonik">🎩</span><span class="to"><span class="chip dead">ślepy zaułek</span></span></li>
+      <li><span class="detail" title="delfin">🐬</span><span class="to"><span class="chip koniec">★ KONIEC → MG</span></span></li>
+      <li><span class="detail" title="trąbka">🎺</span><span class="to"><span class="chip dead">ślepy zaułek</span></span></li>
+    </ul>
+    <p class="note">Idziesz do glifu na mapie → w terenie wypatrujesz <strong>detal pasujący do jednego z piktogramów</strong> → ten piktogram wskazuje następny glif. <strong>„Ślepy zaułek"</strong> = pomyłka miejsca, wróć do ostatniego pewnego glifu. Kolejność wierszy celowo wymieszana, nazw celowo brak.</p>
+  </div>
+
+  <div class="card">
+    <h2>Legenda glifów — do autouzupełnienia przez grupę</h2>
+    <div class="legend-grid">
+      <div class="legend-row"><span class="legend-mark">△</span><span class="legend-name">trójkąt</span><span class="legend-line"></span></div>
+      <div class="legend-row"><span class="legend-mark">⬡</span><span class="legend-name">heksagon</span><span class="legend-line"></span></div>
+      <div class="legend-row"><span class="legend-mark">○</span><span class="legend-name">okrąg</span><span class="legend-line"></span></div>
+      <div class="legend-row"><span class="legend-mark">☆</span><span class="legend-name">gwiazda</span><span class="legend-line"></span></div>
+      <div class="legend-row"><span class="legend-mark">□</span><span class="legend-name">kwadrat</span><span class="legend-line"></span></div>
+      <div class="legend-row"><span class="legend-mark">✕</span><span class="legend-name">iks</span><span class="legend-line"></span></div>
+      <div class="legend-row"><span class="legend-mark">◇</span><span class="legend-name">romb</span><span class="legend-line"></span></div>
+      <div class="legend-row"><span class="legend-mark">∿</span><span class="legend-name">fala</span><span class="legend-line"></span></div>
+      <div class="legend-row"><span class="legend-mark">⊙</span><span class="legend-name">tarcza</span><span class="legend-line"></span></div>
+    </div>
+    <p class="note">9 pól, ale na swojej trasie wypełnicie 4. Reszta zostaje pusta. To celowe — nie wiecie z góry, które 4 glify są wasze.</p>
+  </div>
+
+  <div class="card">
+    <h2>Jak iść (skrót zasady z K1)</h2>
+    <ol class="steps">
+      <li>Start: <strong>△ trójkąt</strong> (z koperty K1). Znajdźcie ten glif na mapie i idźcie tam.</li>
+      <li>W terenie <strong>wypatrzcie detal</strong> pasujący do jednego z piktogramów w deszyfrowniku (np. melonik, gwiazda, delfin…).</li>
+      <li>Ten piktogram wskazuje <strong>następny glif</strong> → idźcie do niego na mapie.</li>
+      <li>Detal prowadzący w <strong>„ślepy zaułek"</strong> = pomyłka miejsca → wróćcie do ostatniego pewnego glifu.</li>
+      <li>Po <strong>4 krokach</strong> zameldujcie MG <strong>4 rozpoznane miejsca w kolejności</strong> → dostajecie K2.</li>
+    </ol>
+  </div>
+
+  <div class="card key-card">
+    <h2>⚠ Klucz MG — zasłoń przed graczem (usuń przed drukiem dla gracza)</h2>
+    <p class="note" style="margin-top:0">Łańcuch: <strong>△ → ○ → □ → ◇ → KONIEC</strong> = Piernikarka → Pod Gwiazdą → osiołek → Kopernik (<strong>to raport dla MG, w tej kolejności</strong>).</p>
+    <table class="key-table">
+      <tr><th>Glif (mapa)</th><th>Detal (deszyfr.)</th><th>Miejsce / obiekt</th><th>Rola</th></tr>
+      <tr class="chain"><td><span class="m">△</span> trójkąt</td><td><span class="d">🍪</span> piernik</td><td>Pomnik Piernikarki (Rynek Nowomiejski)</td><td>łańcuch 1 — START</td></tr>
+      <tr class="chain"><td><span class="m">○</span> okrąg</td><td><span class="d">⭐</span> gwiazda</td><td>Kamienica Pod Gwiazdą (Rynek 35)</td><td>łańcuch 2</td></tr>
+      <tr class="chain"><td><span class="m">□</span> kwadrat</td><td><span class="d">🫏</span> osioł</td><td>osiołek / pręgierz (zbieg z Żeglarską)</td><td>łańcuch 3</td></tr>
+      <tr class="chain"><td><span class="m">◇</span> romb</td><td><span class="d">🐬</span> delfin</td><td>Pomnik Kopernika (delfin w studzience cokołu)</td><td>łańcuch 4 → KONIEC</td></tr>
+      <tr><td><span class="m">⬡</span> heksagon</td><td><span class="d">🗼</span> wieża</td><td>Krzywa Wieża</td><td>dystraktor</td></tr>
+      <tr><td><span class="m">☆</span> gwiazda*</td><td><span class="d">🎩</span> melonik</td><td>pies Filuś (melonik prof. Filutka)</td><td>dystraktor</td></tr>
+      <tr><td><span class="m">✕</span> iks</td><td><span class="d">🎺</span> trąbka</td><td>Łuk Cezara (Archanioł z trąbką)</td><td>dystraktor</td></tr>
+      <tr><td><span class="m">∿</span> fala</td><td><span class="d">⚖️</span> waga</td><td>Pomnik Przekupki (waga u stóp)</td><td>dystraktor</td></tr>
+      <tr><td><span class="m">⊙</span> tarcza</td><td><span class="d">🛡️</span> herb</td><td>Dwór Artusa (herb na szczycie)</td><td>dystraktor</td></tr>
+    </table>
+    <p class="note">* Uwaga: glif mapy „☆ gwiazda" (miejsce Filusia) i piktogram detalu „⭐ gwiazda" (Pod Gwiazdą) to dwie różne warstwy — jeśli myli, podmień jeden z nich. Dane kanoniczne: <code>puzzles/z1-szlak-spec.md</code>. Mapowanie glif→pozycja: A=△, B=○, C=□, D=◇, E=⬡, F=☆, G=✕, H=∿, I=⊙.</p>
+  </div>
+</div>
+</body>
+</html>

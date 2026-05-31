@@ -6,12 +6,13 @@
 ## 🔴 Stan i priorytet [2026-05-31]
 
 **Z1-ART: drafty gotowe [2026-05-31]** — czekają na review Oskara. Artefakty:
-- **Mock mapy** → `mapa-z1-podglad.html` (rzut Starówki + Nowego Miasta, **9 glifów** = 4 łańcuch + 5 dystraktorów, pusta legenda). Funkcjonalny, nie finalny.
-- **Karta szyfrownika** → `puzzles/szlak-symboli.md` (9 wierszy: 4 trafne + 5 dystraktorów bez „następnego glifu").
+- **Dane kanoniczne** → `puzzles/z1-szlak-spec.md` (jedno źródło prawdy: glif↔detal↔miejsce, deszyfrownik, legenda, klucz MG, checklista generacji).
+- **Mock mapy + deszyfrownik** → `prototype/mapa-z1-podglad.html` (9 abstrakcyjnych glifów na mapie + deszyfrownik „piktogram detalu → następny glif", bez nazw + klucz MG). Funkcjonalny, nie finalny.
 - **Treść startu w K1** → `puzzles/szlak-symboli.md`, sekcja „Treść startu w K1".
-- Format „wyniku dla MG" **rozstrzygnięty: (a) 4 obiekty w kolejności**.
+- **Mechanika dwuwarstwowa** [decyzja 2026-05-31]: glify = *gdzie* (abstrakcyjne), piktogramy detali = *co wypatrzeć* (deszyfrownik bez nazw → więcej główkowania).
+- Format „wyniku dla MG" **rozstrzygnięty: (a) 4 miejsca w kolejności**. Przeciek deszyfrownika: **opcja A** (zamknięte).
 
-**2 decyzje Oskara do domknięcia Z1** (`puzzles/szlak-symboli.md`, Otwarte pytania): (#4) ostateczny dobór 4 miejsc + 5 dystraktorów (propozycja do podmiany); (#8) przeciek szyfrownika — zostawić opcję A (samokorekta) czy przejść na opcję B (fałszywe tropy).
+**Decyzje Oskara do domknięcia Z1** (`z1-szlak-spec.md`, „Otwarte"): ostateczny dobór 4 miejsc + 5 dystraktorów + piktogramów detali (propozycja do podmiany); zestaw glifów (geometryczny placeholder vs gmerki); rozwiązać kolizję glif ☆ vs detal ⭐.
 
 **PRIORYTET TERAZ → opcja B: fabularny rdzeń F1→F2A** (K1, K2, Z2 + skrypt Jordana/Z2b). Wymaga inputu Oskara: forma „trzech rzeczy" w Z2 + forma testu Jordana.
 
