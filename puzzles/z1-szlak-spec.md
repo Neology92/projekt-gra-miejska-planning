@@ -2,7 +2,7 @@
 
 > **To jest jedyne źródło prawdy dla generowania artefaktów Z1.** Mapa (`prototype/mapa-z1-podglad.html`), karta deszyfrownika, treść startu w K1 i legenda **muszą zgadzać się z tym plikiem**. Gdy coś zmieniasz (miejsce, glif, detal, kolejność) — zmieniasz **tutaj**, a potem propagujesz do mapy/deszyfrownika/K1.
 >
-> Rationale projektowy, reguły tras, kalkulacja czasu → `puzzles/szlak-symboli.md`.
+> Rationale projektowy, reguły tras, kalkulacja czasu → `puzzles/szlak-symboli.md`. Cechy/piktogramy miejsc (rosnący katalog) → `puzzles/ikonografia-miejsc.md`.
 
 ## Dwie warstwy znaków
 
@@ -15,7 +15,7 @@ Obie warstwy są **arbitralne** — można podmienić, ale podmiana = propagacja
 ## Łańcuch (4 kroki)
 
 ```
-START (K1) → △ glif → [detal 🍪] → ○ glif → [detal ⭐] → □ glif → [detal 🫏] → ◇ glif → [detal 🐬] → KONIEC (MG)
+START (K1) → △ glif → [detal 🍪] → ○ glif → [detal ⭐] → □ glif → [detal 🫏] → ◇ glif → [detal 🌐] → KONIEC (MG)
               Piernikarka            Pod Gwiazdą           osiołek               Kopernik
 ```
 
@@ -28,7 +28,7 @@ Mechanika kroku: idź do **glifu** na mapie → w terenie wypatrz **detal** pasu
 | △ trójkąt | 🍪 piernik | Rynek Nowomiejski | **Pomnik Piernikarki** | kosz pierników (brązowa kobieta, piesek szarpie suknię) | ○ okrąg | łańcuch 1 — **START (z K1)** |
 | ○ okrąg | ⭐ gwiazda | Rynek Staromiejski 35 | **Kamienica Pod Gwiazdą** | pozłacana gwiazda na szczycie żółtej barokowej fasady (data 1697) | □ kwadrat | łańcuch 2 |
 | □ kwadrat | 🫏 osioł | Rynek / zbieg z ul. Żeglarską | **osiołek** (pręgierz) | żelazny grzbiet osiołka-pręgierza | ◇ romb | łańcuch 3 |
-| ◇ romb | 🐬 delfin | Rynek Staromiejski (przy Ratuszu) | **Pomnik Kopernika** | głowa delfina w studzience u podstawy cokołu | **KONIEC → MG** | łańcuch 4 |
+| ◇ romb | 🌐 astrolabium | Rynek Staromiejski (przy Ratuszu) | **Pomnik Kopernika** | instrument astronomiczny (sfera armilarna / astrolabium) w dłoni posągu — **⚠ zweryfikuj na zdjęciu** (wiki opisuje tylko wąsik i delfina w studzience) | **KONIEC → MG** | łańcuch 4 |
 | ⬡ heksagon | 🗼 wieża | ul. Pod Krzywą Wieżą (SW, mury) | **Krzywa Wieża** | przechylona baszta murów miejskich | ☆ gwiazda | fałszywy trop ↻ |
 | ☆ gwiazda | 🎩 melonik | wylot ul. Chełmińskiej (NW Rynku) | **pies Filuś** | melonik prof. Filutka w pyszczku kundelka | ✕ iks | fałszywy trop ↻ |
 | ✕ iks | 🎺 trąbka | ul. Piekary 37 (W) | **Łuk Cezara** | Michał Archanioł z trąbką na attyce (+ szczątek torów pod sklepieniem) | ∿ fala | fałszywy trop ↻ |
@@ -59,7 +59,7 @@ Wszystkie 9 miejsc: 24/7 z ulicy. Haczyki zweryfikowane z wiki (`przewodnik-miej
 ```
 🗼 → ☆ gwiazda        🍪 → ○ okrąg          🛡️ → ⬡ heksagon
 🫏 → ◇ romb            ⚖️ → ⊙ tarcza         ⭐ → □ kwadrat
-🎩 → ✕ iks             🐬 → KONIEC → MG       🎺 → ∿ fala
+🎩 → ✕ iks             🌐 → KONIEC → MG       🎺 → ∿ fala
 ```
 
 (Na karcie gracza glify pokazujemy samym znakiem, bez nazwy — nazwy tu tylko dla czytelności.)

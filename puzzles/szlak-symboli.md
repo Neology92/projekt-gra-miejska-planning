@@ -8,7 +8,7 @@
 
 **Dwie warstwy znaków:**
 - **Glify (mapa)** — wyłącznie **abstrakcyjne** znaki (△ ○ □ ◇ …), które mówią TYLKO *gdzie iść* i **NIE zdradzają**, co tam jest. Grupa nawiguje po pozycji glifu, nie wie z góry, co zastanie.
-- **Piktogramy detali (deszyfrownik)** — **obrazkowe** symbole *co wypatrzeć* w terenie (np. 🎩 melonik, ⭐ gwiazda, 🐬 delfin). Deszyfrownik **nie podaje nazw miejsc** [decyzja 2026-05-31] — grupa sama łączy piktogram z tym, co widzi (więcej główkowania). Format wiersza: **piktogram detalu → następny glif**.
+- **Piktogramy detali (deszyfrownik)** — **obrazkowe** symbole *co wypatrzeć* w terenie (np. 🎩 melonik, ⭐ gwiazda, 🌐 astrolabium). Deszyfrownik **nie podaje nazw miejsc** [decyzja 2026-05-31] — grupa sama łączy piktogram z tym, co widzi (więcej główkowania). Format wiersza: **piktogram detalu → następny glif**. Cechy/piktogramy → `ikonografia-miejsc.md`.
 
 **Więcej glifów niż kroków** [decyzja 2026-05-31]: mapa pokazuje **9 glifów** — 4 z łańcucha + **5 dystraktorów** poza trasą, wizualnie identycznych. Z samej mapy **nie da się odgadnąć trasy** — trzeba iść, wypatrzeć detal i z deszyfrownika odczytać następny glif. (Deszyfrownik też nie zdradza łańcucha, bo dystraktory prowadzą w fałszywe tropy zamiast „ślepych zaułków" — patrz Otwarte pytania #8.)
 
@@ -51,7 +51,7 @@ Jednokierunkowy sweep **Nowe Miasto → centrum**, kończący na **Rynku Staromi
 | 1 (z K1) | △ trójkąt | **Pomnik Piernikarki** | 🍪 piernik | ~3,5 min → | → ○ okrąg |
 | 2 | ○ okrąg | **Kamienica Pod Gwiazdą**, Rynek 35 | ⭐ gwiazda (1697) | ~1,5 min → | → □ kwadrat |
 | 3 | □ kwadrat | **osiołek**, Rynek/Żeglarska | 🫏 osioł (grzbiet pręgierza) | ~1,5 min → | → ◇ romb |
-| 4 (koniec) | ◇ romb | **Pomnik Kopernika**, Rynek | 🐬 delfin (w studzience) | ~0 (MG tu) | → KONIEC → MG |
+| 4 (koniec) | ◇ romb | **Pomnik Kopernika**, Rynek | 🌐 astrolabium (sfera w dłoni — ⚠ zweryfikuj) | ~0 (MG tu) | → KONIEC → MG |
 
 **Sprawdzenie reguły #2 ✓:** start → P1 → P2 → P3 → P4(=MG) ≈ 2,5 + 3,5 + 1,5 + 1,5 ≈ **~9-10 min** (w budżecie 12 ±2). Legi 2-4 są krótkie, bo trzy ostatnie przystanki leżą na Rynku Staromiejskim — grupa „zbiega się" na MG. Brak zawrotek; jednokierunkowy sweep E → centrum.
 
@@ -59,9 +59,9 @@ Jednokierunkowy sweep **Nowe Miasto → centrum**, kończący na **Rynku Staromi
 
 ### Glify, detale, deszyfrownik, legenda → dane kanoniczne w spec
 
-Pełna tabela 9 znaków (glif ↔ detal ↔ miejsce ↔ haczyk ↔ następny glif ↔ rola), zawartość deszyfrownika gracza, legenda i klucz MG: **`puzzles/z1-szlak-spec.md`**. Tam też granica spoilera (kto co widzi) i checklista spójności do generowania.
+Pełna tabela 9 znaków (glif ↔ detal ↔ miejsce ↔ haczyk ↔ następny glif ↔ rola), zawartość deszyfrownika gracza, legenda i klucz MG: **`puzzles/z1-szlak-spec.md`**. Tam też granica spoilera (kto co widzi) i checklista spójności. Cechy/piktogramy miejsc (rosnący katalog) → **`puzzles/ikonografia-miejsc.md`**.
 
-Skrót łańcucha (4 kroki): **△ Piernikarka [🍪] → ○ Pod Gwiazdą [⭐] → □ osiołek [🫏] → ◇ Kopernik [🐬] → KONIEC (MG)**. Pozostałe 5 glifów = dystraktory, których detale prowadzą w **fałszywe tropy = zamkniętą pętlę** `⬡→☆→✕→∿→⊙→⬡` (rozłączną z łańcuchem). **Dobór miejsc/dystraktorów/detali = propozycja do podmiany** (Twój wybór); świadomie pominięto Fontannę Flisaka (motyw → Z4).
+Skrót łańcucha (4 kroki): **△ Piernikarka [🍪] → ○ Pod Gwiazdą [⭐] → □ osiołek [🫏] → ◇ Kopernik [🌐] → KONIEC (MG)**. Pozostałe 5 glifów = dystraktory, których detale prowadzą w **fałszywe tropy = zamkniętą pętlę** `⬡→☆→✕→∿→⊙→⬡` (rozłączną z łańcuchem). **Dobór miejsc/dystraktorów/detali = propozycja do podmiany** (Twój wybór); świadomie pominięto Fontannę Flisaka (motyw → Z4).
 
 ## Treść startu w K1 — segment Z1 (draft)
 
@@ -72,7 +72,7 @@ To **fragment koperty K1 dotyczący szlaku** (pierwszy glif + zasada łańcucha 
 > Macie **mapę** ze znakami i **deszyfrownik**. Znak na mapie mówi tylko *gdzie* — nie zdradza, co tam zastaniecie. To trzeba **zobaczyć na własne oczy**.
 >
 > Zaczynacie od znaku **△ trójkąta**. Znajdźcie go na mapie i idźcie tam.
-> - Na miejscu **wypatrzcie detal** pasujący do jednego z obrazków w deszyfrowniku (melonik? gwiazda? delfin?).
+> - Na miejscu **wypatrzcie detal** pasujący do jednego z obrazków w deszyfrowniku (melonik? gwiazda? astrolabium?).
 > - Ten obrazek wskaże **następny znak** na mapie. Idźcie do niego — i tak krok po kroku.
 > - **Strzeżcie się fałszywych tropów.** Wasz łańcuch ma **dokładnie cztery kroki** i kończy się tam, gdzie czeka nasz człowiek. Jeśli błądzicie w kółko albo wracacie do znaku już odwiedzonego — zboczyliście; wróćcie do ostatniego pewnego znaku.
 > - Rozpoznane miejsca wpisujcie do **legendy** na mapie.
