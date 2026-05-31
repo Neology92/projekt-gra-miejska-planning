@@ -1,6 +1,6 @@
 # Zagadka 5 / 9 — Sensoryczna ze składnikami piernika
 
-**Status**: szkicowe. Z5 = opcjonalna dla TR (mieszczanie). **Z9** = lustro dla krzyżaków (ta sama mechanika, inny framing koperty). Mechanika rozszerzona przez Oskara [2026-05-31]: nie tylko zapach — **wielokanałowo** (zapach, dźwięk, faktura, waga) + **dedukcja z przepisu**. Oprawa fabularna [2026-05-31]: piekarz-zleceniodawca + ukryty test wiarygodności + ironia wspólnego „hasła" obu frakcji.
+**Status**: szkicowe (rdzeń decyzji zamknięty). Z5 = opcjonalna dla TR (mieszczanie). **Z9** = lustro dla krzyżaków (ta sama mechanika, inny framing koperty). Mechanika rozszerzona przez Oskara [2026-05-31]: nie tylko zapach — **wielokanałowo** (zapach, dźwięk, faktura, waga) + **dedukcja z przepisu**. Oprawa fabularna [2026-05-31]: piekarz-zleceniodawca + ukryty test wiarygodności + ironia wspólnego „hasła" obu frakcji. **Decyzje [2026-05-31]:** wariant mąk = **(I) rye-dominant**, model finału = **(A) karta rozpiski → pierniki + koperta**.
 
 ## Pomysł
 
@@ -62,22 +62,21 @@ Pomysł Oskara: **dwa słoiki z mąką** (żytnia i pszenna) są praktycznie **n
 
 To zamienia martwy punkt sensoryczny (dwa identyczne proszki) w **mostek dedukcyjny**: zmysły mówią „te dwa są takie same i ciężkie/lekkie", przepis mówi „żytniej jest więcej", logika łączy → cięższy = żytnia.
 
-**Niuans historyczny (z wiki — do świadomej decyzji):** wiki mówi wprost, że piernik toruński używał **mąki żytniej, NIE pszennej**. Obie mąki były w Toruniu 1454 (żyto = chleb codzienny; pszenica = biały chleb patrycjatu), więc oba słoiki są autentyczne *jako składniki dostępne*. Ale „przepis na piernik z dużą ilością pszennej" byłby lekkim nagięciem. Dwa czyste warianty:
+**Niuans historyczny (z wiki):** wiki mówi wprost, że piernik toruński używał **mąki żytniej, NIE pszennej**. Obie mąki były w Toruniu 1454 (żyto = chleb codzienny; pszenica = biały chleb patrycjatu), więc oba słoiki są autentyczne *jako składniki dostępne*.
 
-- **(I) Rye-dominant (wierne):** przepis = dużo żytniej, pszenna tylko jako mniejszy/poboczny dodatek → „więcej żytniej" = cięższy słoiczek = żytnia. Najbliżej wiki.
-- **(II) Pszenna jako pułapka:** przepis na piernik mówi „mąka żytnia" (bez pszennej); pszenna to słoiczek-dystraktor z piekarni, którego **nie wpisuje się** do piernika. Dedukcja: piernik = żyto, więc lekki/obcy proszek to pszenna, której tu nie chcesz. Historycznie najczystsze.
+**ROZSTRZYGNIĘTE [2026-05-31]: wariant (I) rye-dominant.** Przepis = **dużo mąki żytniej, pszenna jako mniejszy dodatek** → „więcej żytniej" = cięższy słoiczek = żytnia. Najbliżej wiki. Lekkie nagięcie (pszenna w piernikowym przepisie jako poboczny dodatek) jest świadome i drobne.
+
+> Odrzucone: (II) pszenna jako czysty słoiczek-pułapka (przepis tylko żytni). Działa historycznie najczyściej, ale Oskar wybrał (I) — gra na „więcej żytniej = cięższy", nie na odrzuceniu pszennej.
 
 > **Uwaga produkcyjna (waga):** różnica gęstości żyta i pszenicy przy **równej objętości** jest zbyt subtelna, by na niej polegać w terenie. „Wyraźnie cięższy" zrób przez **ilość** (słoiczek żytniej napełniony pełniej / dosypana masa), nie licząc na samą gęstość. Wtedy „cięższy = więcej w przepisie" jest spójne i wyczuwalne dłonią.
 
-## Klucz do finału (otwarte — wymaga decyzji)
+## Klucz do finału — ROZSTRZYGNIĘTE [2026-05-31]: model (A)
 
-Każda opcjonalna zagadka 2B musi wypluwać **wymienialny klucz** do finału (`mechanics/finalowe-glosowanie.md`, model jak w Z4 kalimbie: szyfrogram + klucz). Modele:
+**Model (A) — koperta = nagroda.** Gracze wypełniają **kartę rozpiski** (litera→składnik) i oddają MG. Poprawne rozpisanie **bramkuje** wydanie nagrody; klucz/fragment do finału jest *w* kopercie, którą MG wręcza razem z piernikami. Bramkowanie = sama dyskryminacja sensoryczna + dedukcja z przepisu (dwie mąki). Prosto, zgodne z opisanym przez Oskara loopem.
 
-- **(A) Koperta = nagroda.** Poprawne rozpisanie **bramkuje** wydanie koperty; klucz/fragment jest *w* kopercie. Prosto, zgodne z opisanym loopem. Bramkowanie = sama dyskryminacja sensoryczna + dedukcja z przepisu.
-- **(B) Rozpiska = klucz.** Każdy składnik ma przypisaną liczbę/literę; **poprawne mapowanie czytane po kolei tworzy sekwencję** = klucz (np. krótki klucz Vigenère do Z7, jak sekwencja pręcików w kalimbie). Element pracuje podwójnie, ale trudniejszy i mniej wybaczający.
-- **(B′) Przepis niesie klucz.** Skoro przepis i tak jest rekwizytem — kolejność/proporcje składników w przepisie mogą **kodować** sekwencję klucza (elegancko spina dedukcję z outputem).
+Loop u MG (rola „piekarza"): MG bierze kartę → „idzie upiec" → **źle**: „pierniki nie wyszły, coś jest nie tak" (poprawiają) / **dobrze**: przynosi **pierniki + kopertę** (z kluczem do finału).
 
-> Domyślnie **(A)**. **(B/B′)** jako upgrade — decyzja Oskara.
+> Odrzucone (zapis na wszelki wypadek): (B) rozpiska jako sekwencja-klucz Vigenère, (B′) przepis kodujący klucz — za trudne/mniej wybaczające jak na opcjonalną zagadkę.
 
 ## Lustro krzyżackie (Z9)
 
@@ -104,9 +103,9 @@ Ta sama mechanika i rekwizyty (1 grupa krzyżacka — patrz `concept/03-faza-2b-
 
 1. **Ile słoiczków, ile nazw** (N i ile dystraktorów)? Sugestia: 6–7 słoiczków + 9–10 nazw.
 2. **Które kanały dopuszczamy** (zapach zawsze; smak? — higiena; dotyk zawartości? — wtedy słoik otwierany).
-3. **Wariant dwóch mąk: (I) rye-dominant czy (II) pszenna-pułapka** — patrz „Dwie mąki".
+3. ~~Wariant dwóch mąk~~ ROZSTRZYGNIĘTE [2026-05-31]: **(I) rye-dominant** (więcej żytniej = cięższy słoiczek).
 4. **Strategia dystraktorów** (myląca vs anachroniczna vs miks).
-5. **Model klucza (A / B / B′)** — patrz „Klucz do finału".
+5. ~~Model klucza~~ ROZSTRZYGNIĘTE [2026-05-31]: **(A)** — karta rozpiski bramkuje, nagroda = pierniki + koperta z kluczem.
 6. **Czy MG zdradza liczbę błędów?** Sugestia: nie (tylko „nie wyszło").
 7. ~~Zgodność składników z wiki~~ ZWERYFIKOWANE [2026-05-31] vs `kuchnia-pierniki.js`: mąka żytnia + miód + cynamon, gałka muszkatołowa, goździki, kardamon, imbir, pieprz; pszenica obecna w mieście (biały chleb), ale piernik = żyto.
 8. **Uzasadnienie krzyżackie (Z9): wariant (1), (2) czy (3)** — patrz „Uwaga historyczna". Wpływa na tekst koperty Z9.
