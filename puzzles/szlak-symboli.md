@@ -20,30 +20,32 @@
 
 > Glify są **arbitralne/kosmetyczne** — można użyć dowolnych znaków; ważne tylko, że nie zdradzają obiektu. Nie ma „logiki pairingu symbol↔miejsce" do wymyślania.
 
-## Trasa prototypu (propozycja — tor TR, 4 kroki)
+## Trasa prototypu (propozycja — tor TR, 4 kroki, rozsiana ~12 min)
 
-Zwarta wokół Rynku (szybka do dry-runu), wszystkie punkty 24/7 z ulicy.
+Rozsiana po Starym i Nowym Mieście; dryf **SW → centrum → NE** (ku Piccolo), legi po ~3 min marszu. Wszystkie punkty 24/7 z ulicy. **Dystanse orientacyjne — zweryfikuj/dostrój w terenie; mogę podmienić punkty, by trafić w równe ~3 min.**
 
-| Krok | Glif na mapie (abstrakcyjny) | Teren — rozpoznany obiekt | Szyfrownik: obiekt → następny glif |
-|---|---|---|---|
-| 1 (start z K1) | słońce | **osiołek** (żelazny grzbiet pręgierza, Rynek/Żeglarska) | → drzewo |
-| 2 | drzewo | **Pomnik Kopernika** (wąsik z 2003, delfin w studzience) | → świnka |
-| 3 | świnka | **pies Filuś** (kundel z melonikiem prof. Filutka) | → księżyc |
-| 4 (koniec) | księżyc | **Kamienica Pod Gwiazdą**, Rynek 35 (złota gwiazda, 1697) | → KONIEC → MG |
+| Krok | Glif (mapa) | Teren — rozpoznany obiekt | Marsz do nast. | Szyfrownik: obiekt → następny glif |
+|---|---|---|---|---|
+| 1 (start z K1) | słońce | **Krzywa Wieża** (pochylona baszta, „test sumienia") | ~3-4 min → | → drzewo |
+| 2 | drzewo | **Pomnik Kopernika**, Rynek (wąsik z 2003, delfin w studzience) | ~3-4 min → | → świnka |
+| 3 | świnka | **Pomnik Piernikarki** (kosz pierników, piesek szarpie suknię) | ~2-3 min → | → księżyc |
+| 4 (koniec) | księżyc | **Pomnik Przekupki**, Rynek Nowomiejski (gęś, kosz jaj, waga) | — | → KONIEC → MG |
+
+Kończy na Rynku Nowomiejskim (NE) — blisko Piccolo (ul. Prosta), więc K2/Z2 płynnie prowadzi do Jordana.
 
 ### Szyfrownik — szkic struktury
 
-Każdy wiersz: **realny obiekt — opis/haczyk do rozpoznania — następny glif**. 4 trafne + dystraktory.
+Każdy wiersz: **realny obiekt — opis/haczyk do rozpoznania — następny glif**. 4 trafne + dystraktory (bez „następnego glifu" = ślepy zaułek).
 
 | Obiekt | Opis (haczyk) | Następny glif |
 |---|---|---|
-| osiołek | żelazny grzbiet dawnego pręgierza, sadzano na nim karnych żołnierzy | drzewo |
+| Krzywa Wieża | baszta odchylona 146 cm od pionu; plecami do muru „utrzymają się tylko czyści sumieniem" | drzewo |
 | Pomnik Kopernika | uczony z brązu; wąsik dostrzeżony w renowacji 2003; delfin w studzience cokołu | świnka |
-| pies Filuś | brązowy kundel pilnujący melonika i parasola | księżyc |
-| Kamienica Pod Gwiazdą | pozłacana gwiazda na żółtej barokowej fasadzie, data 1697 | KONIEC |
-| Fontanna Flisaka | flisak ze skrzypcami, 8 żab (dystraktor) | — |
+| Pomnik Piernikarki | brązowa kobieta z koszem pierników, mały piesek szarpie suknię | księżyc |
+| Pomnik Przekupki | kobieta z gęsią w ramionach, kosz jaj, waga u stóp (ławka) | KONIEC |
+| osiołek | żelazny grzbiet dawnego pręgierza (dystraktor) | — |
+| pies Filuś | kundel z melonikiem prof. Filutka (dystraktor) | — |
 | Pomnik smoka | ceramiczny *draco volans* nad Strugą (dystraktor) | — |
-| Pomnik Przekupki | kobieta z gęsią i koszem jaj (dystraktor) | — |
 
 ### Legenda mapy (do autouzupełnienia przez grupę)
 
