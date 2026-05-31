@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Astrolabium">
+  <title>Astrolabium</title>
+  <!-- zawieszka (kółko + tron) -->
+  <circle cx="32" cy="5" r="3" fill="#efe0b8" stroke="#8a6516" stroke-width="2"/>
+  <path d="M29.5 8.5 L34.5 8.5 L33.5 14 L30.5 14 Z" fill="#efe0b8" stroke="#8a6516" stroke-width="2" stroke-linejoin="round"/>
+  <!-- tarcza (mater) -->
+  <circle cx="32" cy="37" r="23" fill="#efe0b8" stroke="#8a6516" stroke-width="2.6"/>
+  <!-- pierścień graduacji -->
+  <circle cx="32" cy="37" r="19.5" fill="none" stroke="#8a6516" stroke-width="3" stroke-dasharray="0.1 3.25" stroke-linecap="round"/>
+  <!-- osie N-S, E-W -->
+  <g stroke="#8a6516" stroke-width="1.6">
+    <line x1="32" y1="15.5" x2="32" y2="58.5"/>
+    <line x1="10.5" y1="37" x2="53.5" y2="37"/>
+  </g>
+  <!-- ekliptyka: okrąg mimośrodowy (rete) -->
+  <circle cx="32" cy="30.5" r="10.5" fill="none" stroke="#8a6516" stroke-width="2"/>
+  <!-- alidada / linijka celownicza -->
+  <line x1="15" y1="49" x2="49" y2="25" stroke="#5c4310" stroke-width="3" stroke-linecap="round"/>
+  <!-- oś środkowa (gwóźdź) -->
+  <circle cx="32" cy="37" r="2.4" fill="#5c4310"/>
+</svg>

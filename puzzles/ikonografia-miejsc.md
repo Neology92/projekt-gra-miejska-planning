@@ -9,7 +9,7 @@
 ## Zasady
 
 - **Cecha musi być realnie widoczna z ulicy** (24/7) i jednoznaczna — gracz ma ją wypatrzeć i dopasować do piktogramu.
-- **Piktogram jest placeholderem** (emoji) — finalne ikony do zaprojektowania graficznie. Kolumna „Piktogram" mówi, **co** ma przedstawiać.
+- **Piktogram:** część miejsc ma już **wektor** (`prototype/icons/*.svg`) — patrz „Ikony wektorowe" niżej; reszta to **emoji-placeholdery** (finalne ikony do dorobienia). Kolumna „Piktogram" mówi, **co** ma przedstawiać.
 - **Glif vs detal to dwie warstwy** (patrz `z1-szlak-spec.md`): glif = abstrakcyjny znak nawigacyjny na mapie; detal/piktogram = obrazek „co wypatrzeć". Tu opisujemy **detale**.
 - **Weryfikacja:** „✓ wiki" = cecha potwierdzona w `przewodnik-miejsc-gry.js`; „⚠ teren" = wymaga sprawdzenia na miejscu/zdjęciu.
 
@@ -17,15 +17,24 @@
 
 | Miejsce | Lokalizacja | Cecha wizualna (haczyk) | Piktogram (placeholder) | Rola w Z1 | Weryfikacja |
 |---|---|---|---|---|---|
-| **Pomnik Piernikarki** | Rynek Nowomiejski | kosz toruńskich pierników; piesek szarpie suknię | 🍪 piernik | łańcuch (△) | ✓ wiki #35 |
+| **Pomnik Piernikarki** | Rynek Nowomiejski | kosz toruńskich pierników; piesek szarpie suknię | **piernik** (serce piernikowe) — wektor `prototype/icons/piernik.svg` | łańcuch (△) | ✓ wiki #35 |
 | **Kamienica Pod Gwiazdą** | Rynek Staromiejski 35 | pozłacana **gwiazda** na szczycie żółtej barokowej fasady (data 1697) | ⭐ gwiazda | łańcuch (○) | ✓ wiki #7 |
 | **osiołek** (dawny pręgierz) | Rynek / zbieg z ul. Żeglarską | żelazny **grzbiet osiołka** (replika pręgierza) | 🫏 osioł | łańcuch (□) | ✓ wiki #3 |
-| **Pomnik Kopernika** | Rynek Staromiejski (przy Ratuszu) | **instrument astronomiczny** (sfera armilarna / astrolabium) trzymany przez posąg astronoma | 🌐 astrolabium | łańcuch (◇, KONIEC) | ⚠ teren — wiki opisuje tylko wąsik (2003) i delfina w studzience; **co trzyma posąg — zweryfikuj na zdjęciu** |
+| **Pomnik Kopernika** | Rynek Staromiejski (przy Ratuszu) | **instrument astronomiczny** (sfera armilarna / astrolabium) trzymany przez posąg astronoma | **astrolabium** — wektor `prototype/icons/astrolabium.svg` | łańcuch (◇, KONIEC) | ⚠ teren — wiki opisuje tylko wąsik (2003) i delfina w studzience; **co trzyma posąg — zweryfikuj na zdjęciu** |
 | **Krzywa Wieża** | ul. Pod Krzywą Wieżą 1 | wyraźnie **przechylona baszta** murów miejskich | 🗼 wieża | dystraktor (⬡) | ✓ wiki #17 |
 | **pies Filuś** | wylot ul. Chełmińskiej (Rynek Star.) | **melonik** prof. Filutka w pyszczku kundelka | 🎩 melonik | dystraktor (☆) | ✓ wiki #4 |
 | **Łuk Cezara** | ul. Piekary 37 | Michał Archanioł z **trąbką** na attyce (+ szczątek torów tramwajowych pod sklepieniem) | 🎺 trąbka | dystraktor (✕) | ✓ wiki #10 |
 | **Pomnik Przekupki** | Rynek Nowomiejski (przy Modrym Fartuchu) | **waga** u stóp siedzącej przekupki (gęś, kosz jaj) | ⚖️ waga | dystraktor (∿) | ✓ wiki #34 |
 | **Dwór Artusa** | Rynek Staromiejski 6 | **herb Torunia** (klęczący anioł) na szczycie czerwonej fasady; złote daty 1311 / 1891 | 🛡️ herb | dystraktor (⊙) | ✓ wiki #8 |
+
+## Ikony wektorowe (gotowe)
+
+Pełnoprawne SVG (nie emoji), użyte w `prototype/mapa-z1-podglad.html`:
+
+- `prototype/icons/piernik.svg` — toruńskie **serce piernikowe** (brąz + kropkowany lukier).
+- `prototype/icons/astrolabium.svg` — **astrolabium** (tarcza z graduacją, ekliptyka, alidada, zawieszka).
+
+Pozostałe 7 detali to na razie emoji (🫏 ⭐ 🗼 🎩 🎺 ⚖️ 🛡️) — do zwektoryzowania w tym samym stylu, gdy ścieżka będzie zatwierdzona.
 
 ## Cechy alternatywne (zapas — gdyby trzeba podmienić piktogram)
 
