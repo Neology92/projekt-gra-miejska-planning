@@ -42,7 +42,39 @@
 | Budżety graniczne G4/G10 | ✅ **odległości znośne** | flagi budżetu zdjęte; rozsuw powrotu do MG = bonus |
 | Nogi krótkie/nawrotne | ⚠️ **constraint**: dwa przystanki łańcucha NIE w zasięgu wzroku bez podchodzenia | dotyczy `G7 C04→C07 ~50m`; audyt par śródłańcuchowych w klastrze Rynku |
 
-**🔴 REBALANS WYMUSZONY (pending — decyzja o briefingu należy do Oskara):** trzy kroki łańcucha padły — **G2 P1**, **G5 P2** (oba `N03`), **G7 P1** (`S06`) — plus **G7 P2→P3** trywialne (wzrok). Pula pewnych „tanich N" skurczyła się z 6 do **5** (`N01 N02 N04 N05 N06`), a grup NM-startowych jest 6 → nie domyka się przy jednym briefingu NE bez przesunięć. Warianty w `todo/otwarte-pytania.md` / niżej w §Ryzyka.
+### REBALANS v2 — PROPOZYCJA (pending akceptacji Oskara)
+
+**Rozstrzygnięcia, na których stoi:** budżet poluzowany [Oskar] → **głębokie starty od Wisły wracają** (powód wykluczenia był tylko budżetowy); briefing **zostaje** na Rynku Nowomiejskim; reguła wzroku = **tylko śródłańcuchowo** (P1→P2, P2→P3); P3→P4 (zbieg u MG) zwolniony.
+
+**Dźwignie:** (1) `G7` → start `S01` Brama Mostowa (ostrołuk pewny; w górę Mostowej = realna noga „do środka"). (2) `G2` ← `N06` jako P1 (ogon `N04→N05→C01` wymusza N-start) — **cede-and-swap**: `G6` schodzi na głęboki start `S02` Brama Klasztorna, uwalnia `N06`. (3) `G8/G9/G10` przereorganizowane tak, by ciasne pary trafiły na P3→P4 (zwolnione).
+
+| Grupa | P1 | P2 | P3 | P4 (→MG) | start |
+|---|---|---|---|---|---|
+| G1 | N01 | N02 | N06 | C04 | NM (bez zmian) |
+| G2 | **N06** | N04 | N05 | C01 | NM (P1 ← N06) |
+| G3 | N02 | N01 | C03 | C06 | NM (bez zmian) |
+| G4 | N04 | N06 | C09 | C02 | NM (bez zmian) |
+| G5 | N05 | **C04** | C08 | C07 | NM (P2 ← C04, było N03) |
+| G6 | **S02** | C08 | C04 | C06 | **głęboki SW (Br. Klasztorna)** — przeprojektowany |
+| G7 | **S01** | C09 | C06 | C07 | **głęboki S (Br. Mostowa)** — przeprojektowany |
+| G8 | C09 | C01 | C07 | C06 | głęboki SE — reorder (ciasna C01-C02 → P3P4? nie; patrz flagi) |
+| G9 | C02 | C06 | C01 | C07 | głęboki SE — reorder |
+| G10 | C03 | C07 | C02 | C08 | głęboki NW — reorder |
+
+**Pass disjointness:** P1 {N01·N06·N02·N04·N05·S02·S01·C09·C02·C03} ✓ · P2 {N02·N04·N01·N06·C04·C08·C09·C01·C06·C07} ✓ · P3 {N06·N05·C03·C09·C08·C04·C06·C07·C01·C02} ✓ — wszystkie 10/10 parami różne. P4 zbieg: C06×3 (G3,G6,G8), C07×3 (G5,G7,G9) — 3-krotny podział spotu MG (było 2×).
+
+**Wszystkie detale łańcuchowe pewne** (zero `N03`/`S06`). Trzy ciasne pary `C04-C07 / C04-C01 / C01-C02` **nie występują śródłańcuchowo**.
+
+**🟡 FLAGI do eyeballa na draft-mapie (pary cross-square ~80–150 m — prawdopodobnie realny marsz, ale Ty znasz sightline):**
+- G2 `N04→N05` (oba Rynek Nowomiejski — apteka vs kościół, mogą być intervisible)
+- G8 `C01→C07` · G9 `C02→C06`, `C06→C01` · G10 `C03→C07`, `C07→C02`
+
+> Po akceptacji: regeneracja 10 kart (pętle dystraktorów + deszyfrowniki) + bazowa mapa, na której domykamy 🟡 flagi wzrokowo.
+
+---
+
+#### (poprzednia diagnoza — zachowana)
+**🔴 REBALANS WYMUSZONY:** trzy kroki łańcucha padły — **G2 P1**, **G5 P2** (oba `N03`), **G7 P1** (`S06`) — plus **G7 P2→P3** trywialne (wzrok). Pula pewnych „tanich N" skurczyła się z 6 do **5** (`N01 N02 N04 N05 N06`), a grup NM-startowych jest 6 → przy jednym briefingu NE domyka się dopiero po przywróceniu głębokich startów od Wisły (poluzowany budżet).
 
 ---
 
