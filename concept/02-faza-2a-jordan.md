@@ -36,13 +36,13 @@ Skrypt szkicowy (do rozpisania przez Oskara):
 5. **Test zaufania** (zagadka w spotkaniu): Jordan zadaje pytanie/zagadkę żeby sprawdzić czy są godni zaufania. Treść do wymyślenia.
 6. **Pożegnanie**: Jordan wręcza **kopertę z fazą 2B** — listę 4 zagadek (z których 2 obowiązkowe, 2 opcjonalne).
 
-## Test zaufania — co wybrać
+## Test zaufania — ROZSTRZYGNIĘTE [2026-05-31]
 
-Propozycje formy (do wyboru przez Oskara):
-- **Pytanie o motyw historyczny**: znajomość kontekstu (ale to wymaga researchu od graczy → ryzykowne, mogą nie wiedzieć).
-- **Symbol/szyfr**: dopasowanie elementu z szyfrownika do czegoś co Jordan trzyma.
-- **Wybór etyczny**: dylemat fabularny, w którym Jordan obserwuje odpowiedź i ocenia.
-- **Gest/słowo**: hasło ustalone w jednej z plotek z fazy 1 (jeśli gracz słuchał).
+**Mechanizm dwustopniowy (pasywny):**
+1. Hasło = imię „Jordan" — tylko K2 wersja TR je zawiera; krzyżacy nie znają.
+2. Weryfikacja koloru opaski lidera (5 kolorów TR vs 5 krzyżackich).
+
+Jordan **nie zadaje aktywnego testu** — samo pojawienie się z imieniem + właściwym kolorem wystarczy. Następnie wyraża prośbę o dowiedzenie wiarygodności w czynie → szczegóły w K3. Krzyżacy nigdy tu nie trafiają — mają Albrechta/Zosię.
 
 Szczegóły: `puzzles/test-jordana.md`.
 
@@ -54,10 +54,7 @@ Szczegóły: `puzzles/test-jordana.md`.
 
 ## Otwarte pytania
 
-1. **Jak Jordan rozróżnia TR od krzyżaków?** Czy gra obie klasy w ten sam sposób, oferuje to samo? Czy daje inne instrukcje?
-   - Wariant: Jordan (Piotr) nie wie kto przed nim stoi → daje **te same testy** → grupa pokazuje swoją lojalność dopiero w decyzjach fazy 2B/3.
-   - Wariant (w ramach 2 aktorów): TR spotyka **Jordana (Piotr)**, a krzyżacy **Albrechta (Zosia)** — wtedy F2A jest podzielona, ale wciąż mieści się w obsadzie. Decyzja Oskara.
-   - ⚠️ Nieaktualny jest wariant z **dodatkowym** NPC dla krzyżaków — aktorów jest tylko dwóch.
+1. ~~Jak Jordan rozróżnia TR od krzyżaków?~~ ROZSTRZYGNIĘTE [2026-05-31]: **hasło (imię „Jordan") + kolor opaski**. TR ma imię w K2; krzyżacy nie — trafiają do Albrechta/Zosi. Piotr gra tylko Jordana (TR).
 2. **Lokalizacja Jordana**: konkretny lokal w Toruniu (Picollo? Hochla? Pierogarnia?). Wymaga researchu i konsultacji z właścicielem lokalu (czy zgodzi się gościć grupy).
 3. **Język spotkania**: Jordan mówi współczesną polszczyzną czy stylizowaną?
 4. **Posiłek**: gracze go zjedzą = czas trwania spotkania ~15-20 min (nie 5). Zaplanować logistykę MG — kolejne grupy mogą czekać.

@@ -60,6 +60,13 @@ Każda grupa = **jeden kolor** (opaska/szarfa). 10 kolorów dobranych pod **maks
 
 Hex przydatny przy druku opasek i identyfikacji u MG (arkusz śledzenia per kolor). **Prototyp:** 1 grupa = 1 kolor.
 
+**Forma fizyczna opaski:** pasek papieru sklejony w bransoletkę — **nosi tylko lider grupy**. Reszta drużyny nie musi mieć identyfikatora; MG identyfikuje grupę po opasce lidera.
+
+**Produkcja (self-made):**
+- 1 arkusz A4 z 10 kolorowymi paskami → druk + wycięcie nożyczkami
+- Na końcu każdego paska kawałek taśmy samoprzylepnej; **zewnętrzna strona taśmy zabezpieczona** (np. papierek silikonowy lub złożona taśma) → można wrzucić do koperty startowej bez ryzyka sklejenia
+- W **K1 (kopercie startowej)** dołączona krótka instrukcja: *lider zakłada opaskę i nosi do końca gry*
+
 ## Brief klas - kiedy ujawnia się? — ROZSTRZYGNIĘTE [2026-05-29]
 
 **Klasa ujawnia się po rozwiązaniu Z2.**

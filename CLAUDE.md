@@ -149,7 +149,8 @@ Te punkty są **niezmienne** i mają pokrycie w wiki:
 - **Nie deployujemy** tego projektu — to czysto planistyczny katalog. Wiki ma osobny deploy do Netlify.
 - **Plany dalekosiężne** w `todo/roadmap.md`, decyzje czekające na input — w `todo/otwarte-pytania.md`.
 - **Generowane artefakty wizualne** (obrazki, PDF-y, wydruki, mocki HTML mapy/kart/kopert) → podfolder **`prototype/`** (dla milestone'u prototypu pojedynczej ścieżki). Przy skalowaniu do MVP → analogicznie **`mvp/`**. Pliki planistyczne (.md) zostają w `concept/`, `puzzles/`, `mechanics/` itd.
-- **Język i diakrytyka**: pełna polszczyzna z diakrytykami.
+- **Język planowania**: polska robocza — pliki .md, decyzje, notatki, komentarze agenta.
+- **Język materiałów gracza**: **ANGIELSKI** — wszystkie artefakty w `prototype/` i `mvp/` przeznaczone dla graczy (koperty, rekwizyty, skrypty NPC, mapy, karty) **muszą być po angielsku**. Gracze nie mówią po polsku. Dokumenty MG (arkusz śledzenia, instrukcja MG) — angielski, bo MG też może pracować z angielskim. Jedyny wyjątek: nazwy własne toruńskie pozostają w oryginale (Rynek Staromiejski, Piccolo itp.).
 
 ## Status na start (2026-05-29)
 

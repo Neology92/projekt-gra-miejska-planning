@@ -11,13 +11,14 @@ Po wizycie u MG (koniec F1) grupa dostaje kopertę z:
 4. Atrybut: **chochla**. Imię: **Jordan**.
 5. Lokal: **Picollo** (lub inny - do decyzji, patrz niżej).
 
-## Formy "trzy rzeczy do zestawienia" - propozycje
+## Forma „trzech rzeczy do zestawienia" — USTALONA [2026-05-31]
 
-- **Trójkąt skojarzeń**: 3 podpowiedzi prowadzą do jednego pojęcia.
-  - Np. "kuchnia" + "wieża" + "1454" → kucharz w wieży (Jordan).
-- **Trzy rebusy** które razem dają jedno hasło.
-- **Trzy daty** które trzeba ułożyć w kolejność, dając kod miejsca.
-- **Trzy postaci** - jedna z nich pasuje do schematu (proces eliminacji).
+**Zagadka Einsteina** — 4 osoby × 3 cechy (robi Piotr). Szczegóły do przekazania przez Piotra.
+
+Placeholder w K2: `[TU: zagadka Piotra — wkleić po otrzymaniu]`
+
+~~Wcześniejsze propozycje (nieaktualne):~~
+~~- Trójkąt skojarzeń, Trzy rebusy, Trzy daty, Trzy postaci (eliminacja)~~
 
 ## Lokal - decyzja
 

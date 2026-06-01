@@ -1,10 +1,25 @@
 # Zagadka 2b - Test zaufania u Jordana
 
-**Status**: placeholder. Treść do wymyślenia.
+**Status**: ROZSTRZYGNIĘTE [2026-05-31] — mechanizm ustalony.
+
+## Mechanizm weryfikacji — ROZSTRZYGNIĘTY [2026-05-31]
+
+**Dwustopniowy, pasywny:**
+
+1. **Hasło = imię**: grupa musi podać imię „Jordan" — tylko TR dostają to imię (w K2). Krzyżacy nie znają imienia → nie wchodzą na ścieżkę Jordana → nie dostają K3.
+2. **Weryfikacja koloru opaski lidera**: Jordan sprawdza czy kolor opaski należy do puli 5 kolorów TR. Backup na wypadek gdyby hasło jakoś wyciekło.
+
+**Treść interakcji (skrypt Jordana):**
+- Reaguje na imię.
+- Daje krótki brief narracyjny (bunt, godzina finału).
+- **Wyraża prośbę o dowiedzenie wiarygodności** — szczegóły w kopercie (K3).
+- Wręcza K3.
+
+**Konsekwencja:** test NIE jest blokujący dramaturgicznie (grupa albo ma imię albo nie). Krzyżacy mają osobną ścieżkę (Albrecht/Zosia) i nigdy nie trafiają do Jordana.
+
+---
 
 ## Cel
-
-Jordan testuje czy kurierzy są godni zaufania, **zanim** przekaże im dostęp do dalszej części misji (kopertę z Fazą 2B).
 
 ## Funkcja w narracji
 

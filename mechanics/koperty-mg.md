@@ -63,7 +63,7 @@ Każda koperta zawiera **5 elementów**:
 
 ## Komunikacja MG ↔ grupy
 
-- **Hasło / kod grupy**: każda grupa ma identyfikator (np. nazwa cechu, kolor) → MG identyfikuje przy raporcie.
+- **Hasło / kod grupy**: każda grupa ma identyfikator — kolor opaski lidera (pasek papieru sklejony w bransoletkę) → MG identyfikuje przy raporcie bez pytania o nazwę.
 - **Telefon** dla awarii: numer MG na karcie startowej, gdy grupa utknie.
 
 ## Awaryjne sytuacje
