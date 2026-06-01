@@ -40,6 +40,15 @@ Każda koperta zawiera **5 elementów**:
 
 > Wzorzec [2026-05-31]: Z5/Z9 — piekarz, któremu pomieszały się składniki, + ukryty test „jestem swój" (znajomość przepisu jako hasło wiarygodności). Patrz `puzzles/zagadka-sensoryczna.md`.
 
+### Zasada nadrzędna #2: koperta = SCENA, nie zawsze wiadomość [decyzja Oskara 2026-06-02]
+
+**Domyślnie koperta to SCENA/AKCJA napotkana w świecie gry — nie wiadomość od nadawcy.** Cel: immersja jak w tabletop RPG — coś *się dzieje*, grupa *bierze w tym udział*, narracja jest soczysta i wciągająca, a nie sztywnym listem od zleceniodawcy. Gracze fizycznie dostają kopertę od MG (meta-interakcja, jak rozdanie karty), ale **treść opisuje zdarzenie**, nie nadawcę.
+
+- **Wiadomość z nadawcą = WYJĄTEK, nie reguła.** Dopuszczalna gdy ktoś realnie pisze do grupy: K1 (zleceniodawca), K2 (slip „— R."), K3 (Jordan zleca Z3). Poza tym — scena.
+- **Senderless scene** rozwiązuje problem nośnika: koperta bez nadawcy nie wymaga uzasadnienia „kto ją dał" — to materializacja tego, co grupa widzi/odkrywa. Wzorce: **K-Z3b** (olśnienie: „to była lista") i **K-Z4** (znalezisko: martwy flisak nad Wisłą).
+- **Komponuje się z dwoma rejestrami (niżej), nie zastępuje ich.** Scena = narracja z głów (kursywa) + ewentualne słowa świata (roman: napis, zapis, cytat NPC).
+- **Opcjonalne zagadki (Z4/Z5/Z6) = sceny przechwycenia krzyżackiego listu** — każda inną drogą; po rozwiązaniu MG wydaje przechwycony list (K8/Z7). To fabularny powód, czemu opcjonalna „daje szyfrogram". Patrz `concept/03-faza-2b-asynchroniczne.md`, `concept/04-faza-3-final.md`.
+
 ### Konwencja głosu — dwa rejestry [decyzja Oskara 2026-06-01]
 
 Koperta łączy **dwa rejestry**, rozróżniane **typograficznie**:

@@ -14,6 +14,8 @@ You are Jordan. A cook. A man with a ladle. You are *not* Jan Bażyński — not
 
 You are waiting at Piccolo. You have food ready. You are calm, watchful, and deliberate. You do not trust strangers easily. You trust these ones — but you will still check.
 
+**One physical detail — keep it quiet, don't point at it:** you have a bad leg. A stiff knee, an old ache — you favour it when you stand, when you cross the room. Nothing dramatic, no limp played for laughs. Just a man whose body is not what it was. *(Don't explain it. It is a thread the sharp ones may pull at the very end — see planning notes.)*
+
 **Props you should have:**
 - [ ] A ladle (visible — this is how they find you)
 - [ ] K3 envelopes (one per group, sorted by color)
@@ -102,6 +104,8 @@ That's it. They leave.
 ## PLANNING NOTES (nie dla gracza/aktora)
 
 **Kluczowe:** Jordan NIE ujawnia że jest Bażyńskim. Plot twist dopiero w finale (Z7 + KF). Piotr gra prostego pośrednika, nie przywódcę.
+
+**Klamra C2 — kulawa noga [decyzja Oskara 2026-06-02]:** Jordan lekko kuleje (sztywne kolano, „stary ból"). Kanon: Jan Bażyński = „kulawy bazyliszek", reumatyzm (`CLAUDE.md` faktografia, wiki `jan-bazynski.js`). Funkcja: subtelny **forshadow tożsamości** — uważny gracz, gdy w finale pada „Jordan = Bażyński", przypomni sobie kulawą nogę i plotkę o kulejącym Bażyńskim (zasiana w K2). Nagroda za uważność, NIE spalenie twistu: detal grany cicho, większość nie zauważy z wyprzedzeniem. Piotr ma go nie podkreślać.
 
 **Posiłek:** jeśli Piccolo współpracuje, gracze dostają coś prostego przy stole — to element doświadczeniowy, ale nie blokujący (Jordan może działać bez posiłku jeśli logistycznie nie wychodzi).
 

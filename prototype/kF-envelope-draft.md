@@ -43,7 +43,9 @@ That is the last thing we ask.
 
 *This is what we were carrying. This is where it ends.*
 
-*The sealed letter — in the bag since this morning, unread, unbroken. We kept it safe through the whole city, through everything today.*
+*The pipes have gone quiet. The carnival is burning itself out, the masks are coming off all over the city — and ours with them. No more faces to wear. Just us, and the choice.*
+
+*The sealed letter — in the bag since this morning, unread, unbroken. And it will stay that way. Whatever words are folded inside it, we will never know them. We were only ever the hands that carried it; tonight we are the hands that hand it on.*
 
 *The eighth bell. The ruins. A choice.*
 
@@ -61,4 +63,7 @@ That is the last thing we ask.
 - **Podpis „— J."** = Jordan/Bażyński. Po odkryciu tożsamości = semantycznie gęste — gracz wie, kto to napisał.
 - **Rekwizyt:** list zapieczętowany (noszony całą grę) = to jest to, co oddają. Koperta tego nie tłumaczy mechanicznie — gracze to rozumieją z kontekstu.
 - **Wersja krzyżacka (MVP):** inne KF. Do napisania przy MVP. Nie kopiować 1:1.
+- **Klamra A3 — list nieotwarty (payoff) [2026-06-02]:** „unread, unbroken. And it will stay that way… we will never know them." Domyka motyw z K1 („forbidden to read") — gracze oddają zapieczętowany list, nigdy nie poznają treści. Wymowa: byli ślepym narzędziem; liczy się komu oddali, nie co niosło.
+- **Klamra A2 — maski spadają (domknięcie) [2026-06-02]:** „the masks are coming off all over the city — and ours with them." Karnawał (maski = przebrania całej gry, K1→K2→K3) kończy się w finale; maski spadają = prawda się ujawnia (Jordan=Bażyński). Spina motyw przebrania z rewelacją tożsamości.
+- **Lekki touch „hands":** „the hands that carried… the hands that hand it on" — echo groźby z K1 („answer with their hands"), bez rozwijania w pełną klamrę (A4 nieaktywne). Domyka sprawczość: te same ręce teraz wybierają.
 - **Dwa rejestry:** otwarcie i zamknięcie = *kursywa* (narracja z głów); ciało wiadomości = roman.

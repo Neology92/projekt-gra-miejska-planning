@@ -13,13 +13,15 @@
 
 *Four marks walked, four names given — and in return, this. We had hoped to find our contact waiting. Instead: an envelope, and a scrap of paper folded inside it.*
 
+*The carnival is louder here, and stranger. Carts roll toward the square that the men swear are loaded with fireworks "for the feast" — but the crates ride heavy, and the men guarding them are not laughing. Under the masks and the music, the whole city feels wound tight, like a string before it snaps.*
+
 ---
 
 **Messengers,**
 
 Your contact is gone.
 
-He left this note *(enclosed)* and nothing more. We do not know if he fled, was taken, or simply decided the risk was too great. What we know is that the letter still needs to reach its recipient before tonight.
+He left this note *(enclosed)* and nothing more. We do not know if he fled, was taken, or simply decided the risk was too great — though a contact who vanishes the same night the city arms itself is rarely a contact who chose to leave. What we know is that the letter still needs to reach its recipient before tonight.
 
 You will have to find the way yourselves.
 
@@ -42,6 +44,10 @@ Before you do — you were on the streets of this city today. So were other peop
 *Whispered at the inn:*
 
 > *"They say Bażyński is handing Prussia to the king in Kraków. Swapping one master for another."*
+
+*An old woman, shaking her head:*
+
+> *"Bażyński? His leg's gone stiff on him again — the great man can barely cross a room. And that's who means to bring down armoured knights."*
 
 *An old man at the gate:*
 
@@ -98,6 +104,7 @@ Find the way. — R.
 - A6 — bread prices, bunt costs the poor (accessible, F3)
 - A7 — Bażyński giving Prussia to Poland (F3, inkorporacja)
 - A8 — Bażyński will walk away with all of Prussia (strong F3 forshadow; spoilery? tak, celowo)
+- **NOWA [2026-06-02] — kulawy Bażyński (klamra C2):** „his leg's gone stiff… can barely cross a room." Podwójna funkcja: (a) Pula A — słaby/dwuznaczny przywódca; (b) **forshadow tożsamości** — Jordan też kuleje (skrypt Piotra). Uważny gracz łączy w finale (Jordan=Bażyński). Świadomie **bez** wzmianki o tavernie/lokalu — żeby NIE spalić twistu przed wizytą u Jordana (kulającego w Piccolo). Pokrycie: Bażyński „kulawy bazyliszek", reumatyzm (`jan-bazynski.js`).
 
 **Wiadomość pośrednika:** lakoniczna, tylko inicjał (nie wiadomo kto to R. — niepotrzebna wiedza). Mechanika: gracze dostają ją jako „dowód" że pośrednik istniał, ale uciekł.
 
@@ -112,5 +119,11 @@ Find the way. — R.
 **Wersja Krzyżacy:** inne K2 (Pula B zamiast A; Z2 prowadzi do Albrechta, nie Jordana). Do napisania przy skalowaniu do MVP.
 
 **Ton:** plot twist (pośrednik zniknął) podany sucho, bez dramatyzmu — bardziej straszny tak niż z fanfarami.
+
+**Pass atmosferyczny [2026-06-02]:**
+- **Klamra A1 (R. → martwy flisak w Z4):** wzmocniono cień „was taken" („a contact who vanishes the same night the city arms itself is rarely a contact who chose to leave"). Payoff w K-Z4: R. = martwy boatman nad Wisłą, zginął strzegąc przechwyconej dyspozycji. Nie zdradzać tu — tylko zasiać.
+- **Klamra B3 (broń „na fajerwerki"):** „carts… loaded with fireworks 'for the feast' — but the crates ride heavy" → proch do dział wnoszony pod osłoną zapustów. Forshadow szturmu/finału. Pokrycie: `karnawal-1454.js` (broń/proch „na turniej/fajerwerki").
+- **Eskalacja napięcia:** K1 = „miasto nie wie, że ma się bać"; K2 = „wound tight, like a string before it snaps" — napięcie rośnie w godzinach (oś 6 II, jeden wieczór).
+- **Maski (kontynuacja A2):** „under the masks and the music" — utrzymuje motyw przebrania zasiany w K1, wiodący do K3.
 
 **Dwa rejestry [2026-06-01]:** dorzucone *otwarcie* i *zamknięcie* = kursywa (narracja z głów); main note + slip R. = roman (wiadomości z nadawcą — slip przeniesiony z kursywy na roman dla spójności klucza). Wiadomości **nieruszone treściowo**, tylko oprawa + format. ⚠ **Plotki (overheard)** = przytoczone słowa świata → docelowo roman; zostawione kursywą do passu stylizacyjnego (nie rozszerzam scope). Klucz: kursywa=głowa, roman=słowa świata (`mechanics/koperty-mg.md`).

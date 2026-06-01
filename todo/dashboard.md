@@ -37,9 +37,9 @@
 ✅ K2 — po Z1 ................. draft gotowy (Z2 Einsteina wpisana: Jordan/Piccolo/chochla; plotki Puli A; slip R.)  [prototype/k2-envelope-draft.md]
 ✅ K3 — od Jordana ............ draft gotowy (brief F2B + Z3 zwiad; K-Z3b osobno)         [prototype/k3-envelope-draft.md]
 ✅ K-Z3b — ujawnienie kradzieży  draft gotowy (dwuetapowa; narracja + cytat Albrechta)   [prototype/kZ3b-envelope-draft.md]
-🟡 K-Z4 — melodia/kalimba ..... draft gotowy (piszczałka flisacka — ⚠️ instrument do wyboru Oskara)  [prototype/kZ4-envelope-draft.md]
-🟡 K8 — Z7 finałowy szyfr ..... szyfrogram gotowy (Cezar+7; „OHUZ CVU IHFZLU PZ QVYKHU AOL JVVR"); koperta do draftu  [prototype/z7-szyfrogram-draft.md]
-🟡 KF — finał ................. draft gotowy (Przedzamcze, ósme bicie, wolny wybór strony)  [prototype/kF-envelope-draft.md]
+🟡 K-Z4 — melodia/kalimba ..... draft v2 (SCENA: martwy flisak=R. nad Wisłą, melodia=kod; instrument zatwierdzony)  [prototype/kZ4-envelope-draft.md]
+🟡 K8 — Z7 finałowy szyfr ..... szyfrogram + uniwersalna rama narracyjna (przechwycony list, method-agnostic)  [prototype/z7-szyfrogram-draft.md]
+🟡 KF — finał ................. draft gotowy (Przedzamcze, ósme bicie, wolny wybór; list nieotwarty, maski spadają)  [prototype/kF-envelope-draft.md]
 ```
 
 ## B. Rekwizyty drukowane (8)
@@ -88,6 +88,7 @@
 ```
 
 ✅ Zamknięte: K2 plotki · Z2 zagadka (Oskar) · Z3 mechanika (dwuetapowa) · Jordan skrypt · Albrecht karta · Z7 szyfrogram
+✅ Rewizja narracyjna [2026-06-02]: koperta=scena (nie wiadomość) · oś czasu = wieczór 6 II (św. Doroty/karnawał) · klamry A1 flisak=R. / A2 maski→przebranie / A3 list nieotwarty / B1-B3 / C2 kulawy Jordan · pass atmosferyczny K1/K2/K3/KF · brief inwersji Z5 (MVP). Filozofia: `mechanics/koperty-mg.md §Zasada nadrzędna #2`
 
 ## 🔄 Czeka na zewnątrz
 

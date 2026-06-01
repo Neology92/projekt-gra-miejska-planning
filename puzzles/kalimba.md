@@ -45,6 +45,15 @@ Rekwizyt = kalimba, ale **koperta nazywa instrument z epoki**. Dobór konkretneg
 - **Z4 — melodia flisaka** (mieszczanie, opcjonalna).
 - **Z8 — melodia zakonu** (krzyżacy, opcjonalna). Wariant D (kalimba jako ezoteryczny element zakonu) ładnie pasuje tu fabularnie.
 
+## Framing fabularny Z4 — SCENA, nie wiadomość [decyzja Oskara 2026-06-02]
+
+Koperta Z4 (K-Z4) **nie jest wiadomością od Jordana** — Jordan jest poza tym, zlecił tylko Z3. K-Z4 = **scena znaleziska nad Wisłą**: grupa trafia na ciało **R.** (zaginiony pośrednik z K2 = flisak rzeczny). R. przejął krzyżacką dyspozycję, przypłacił życiem, a dostęp do niej ukrył za melodią-kluczem. Odtworzenie melodii → kod `621454` → MG wydaje przechwycony list (K8/Z7). To realizuje:
+- **opcjonalna = droga przechwycenia listu** (`concept/03`),
+- **koperta = scena, nie wiadomość** (`mechanics/koperty-mg.md §Zasada nadrzędna #2`),
+- **klamra flisak = R.** (echo `legenda-flisak.js` — muzyk znad Wisły).
+
+Pełny tekst i notatki: `prototype/kZ4-envelope-draft.md`. Kod `621454` pozostaje **wyłącznie bramką MG** — w fikcji nikt nie czyta daty.
+
 ## Melodie — co grają (per tor)
 
 > **DECYZJA [2026-06-01]: Z4 = ta sama melodia i ten sam kod co Z8 (`621454`).** Nie rozdrabniamy — identyczna mechanika, identyczne liczby, **różni tylko oprawa fabularna** (flisak vs zakon) + instrument narracyjny (patrz wyżej). Jedno nagranie/jedna melodia obsługuje oba tory.

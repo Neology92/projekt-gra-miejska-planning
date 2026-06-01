@@ -1,11 +1,13 @@
-# K-Z4 — The Piper's Code (draft)
+# K-Z4 — The Boatman by the River (draft)
 
 > **Language:** English (player-facing). Planning notes in Polish below.
-> **Instrument narracyjny: ✅ zamknięte** — „iron-tongue instrument" (lamellofon, bez nazwy własnej). Rekwizyt fizyczny = kalimba.
-> **Status:** draft [2026-06-01] — awaiting Oskar's review.
-> **Contents of physical envelope:** this note + kalimba instrument.
-> **Trigger:** MG hands to group after they complete Z3 (castle scene with Albrecht) and report back. This is the optional Z4 brief.
-> **Canon:** `puzzles/kalimba.md`.
+> **Status:** draft [2026-06-02, v2 — przeramowane na scenę] — awaiting Oskar's review. **Instrument ZATWIERDZONY [2026-06-02, Oskar]: generyczny, nienazwany „iron-tongue instrument" (rekwizyt = kalimba), bez nazwy w fikcji.** Treść gotowa do review aktorskiego.
+> **Voice:** senderless scene — narrator **from inside the couriers' heads** (what they find, what they piece together). NOT a message from Jordan. Wzorzec = K-Z3b. *(Game-wide envelope convention — `mechanics/koperty-mg.md`.)*
+> **Typography:** narration = *italic (light)* = inside the head; words of the world (the scrap they find, its written words) = roman.
+> **Trigger:** MG hands to group after Z3 (they bring back the stolen list). This is the optional Z4 brief.
+> **Props handed with it (meta, like dealing a card):** the instrument — a small iron-tongue instrument, tongues marked with numbers. MG plays the tune for them (or a recording), they play it back.
+> **Instrument:** lamellofon, no proper name — „iron-tongue instrument". Physical prop = kalimba. (Patrz `puzzles/kalimba.md`.)
+> **Canon:** `puzzles/kalimba.md`. Klamra **flisak = R.** [decyzja Oskara 2026-06-02].
 
 ---
 
@@ -13,45 +15,38 @@
 
 ---
 
-*The castle's names are in our hands. We came back to say so — and found another envelope waiting. Jordan again. What now.*
+*The list is safe. We were sent on, down toward the water — the wharves below the walls, where the river men work. Carnival noise everywhere: pipes, a drum, somebody singing off-key. And then, in the cold mud at the river's edge, we find him.*
 
 ---
 
-**Messengers,**
+*A boatman. Dead — not long. The river men say he washed up in the night and no one has come for him. There is something familiar in the worn coat, the ink-stained fingers. Then it lands on us, cold as the water:*
 
-You have done what I needed. The list is taken.
+*we have seen those fingers before. This is **R.** — the contact who was never where he should have been. The one who left us a scrap and a single letter, and then vanished. He did not flee the city. He never got the chance.*
 
-Before I give you the last thing — there is one more thing you can do.
+*Tucked inside his coat, against the damp: a small instrument, the kind a river man keeps for the long hours on the water — and, folded with it, a scrap of paper in his hand. The same hand as the note he left us.*
 
-A man who worked the river docks below the city walls carried messages for us this past winter, hidden in the tunes he piped to pass the time. He is gone now. Before he went, he left this behind.
+It is not a message. It is a tune — notes set down one after another, and beneath them, his last words:
 
-*(Enclosed: his instrument — a small iron-tongue instrument, the kind a river man carries in his coat. Each tongue is marked with a number.)*
+> *They took the dispatch off me. I could not keep it — so I hid it where only our own would think to look. Play my tune true and you will have the number that opens the way to it. Play it as I taught the river, note for note.*
 
-He left word:
+*So R. caught a Teutonic dispatch on the water — and it cost him. Before the end he stowed it somewhere safe and locked the way to it behind the only thing that was ever truly his: his tune.*
 
-> *"Play back the tune. Write the numbers as you go. What comes out is a date — and a man who knows that date is a man I trust."*
+*No one will hear us, not tonight — the whole city is piping and drumming itself hoarse. One more tune by the river is nothing. Play it. Play it true.*
 
-**Listen to the tune. Then play it back**, note by note. As you play, write down each number in sequence.
-
-When you finish, you will have **six numbers**. That is the code.
-
-Bring me the code. I will give you the last thing you need before tonight.
-
-— J.
-
----
-
-*A river man's tune. Six numbers from a dead man's instrument. We hold it — small, iron tongues worn smooth from years in a working coat. We listen first. Then we play.*
+*Listen to how it goes. Then play it back on his instrument, note by note, and write down each number as it sounds. When it is done we will have **six numbers** — the number R. died keeping. Carry it back, and we will be handed what he hid.*
 
 ---
 
 ## PLANNING NOTES (nie dla gracza)
 
-- **Instrument narracyjny: ✅ WYBRANO [2026-06-01]** = **lamellofon (bez nazwy własnej)**. W tekście gracza: *"a small iron-tongue instrument"* — opisuje mechanizm (wibrujące metalowe języczki), nie nazywa konkretnego instrumentu. Kalimba IS lamellofonem → brak anachronizmu tekstowego. Lamellofony istniały w XV w. w Europie (drumla/Maultrommel), tylko nie w formie wielojęzczkowej. Rekwizyt fizyczny = kalimba (bez zmian). Meta-wyjaśnienie (że chodzi o kalimbę) → kartka autorska (`lore/meta-kartki-autorskie.md`, zadanie na PÓŹNIEJ).
-- **Kod = `621454`** — 6.2.1454, data buntu. Gracze nie wiedzą z góry, co to znaczy; odczytują liczby → podają MG → MG potwierdza. Sens daty jako daty odkryją (jeśli) po finale.
-- **BRAK szyfru w tej kopercie.** Mechanika: usłysz → zagraj → spisz liczby → podaj. Koło/Cezar/klucz = finał (Z7). Patrz `kalimba.md §Kiedy w grze`.
-- **Kto gra melodię:** MG (Oskar) gra na kalimbie lub odtwarza nagranie gdy grupa przychodzi. Koperta tego nie opisuje — to info dla MG (patrz `prototype/mg-runsheet.md §Z4`).
-- **Cytat bosmana** (roman w środku kursywowej narracji) — dozwolone wyjątkowo: to przytoczone słowa z przeszłości, nie wiadomość z czynnym nadawcą. Spójne z konwencją roman = słowa świata.
-- **Podpis „— J."** = Jordan, jak w K3.
-- **Po oddaniu `621454`:** MG daje K8 (szyfrogram Z7). Koperta tego nie wspomina — meta-info.
-- **Dwa rejestry:** otwarcie i zamknięcie = *kursywa* (narracja z głów); ciało (wiadomość + cytat) = roman. Klucz: kursywa=głowa, roman=słowa świata (`mechanics/koperty-mg.md`).
+- **Przeramowanie [decyzja Oskara 2026-06-02]:** koperta NIE jest wiadomością od Jordana. Jordan jest poza tym — zlecił tylko Z3. K-Z4 = **scena napotkana w świecie** (znalezisko nad Wisłą), wzorzec senderless jak K-Z3b. Realizuje nową zasadę: koperty to sceny, nie wiadomości (`mechanics/koperty-mg.md`).
+- **Klamra A1 — flisak = R. [ZATWIERDZONA]:** martwy boatman = zaginiony pośrednik „R." z K2 („fled, was taken, or simply decided…" → odpowiedź: was taken / zginął). Domyka wątek „co się stało z R.". Echo legendy flisaka (`legenda-flisak.js` — muzyk znad Wisły, gra prowadzi). Jego instrument + melodia = ostatni kod.
+- **Spięcie melodia → przechwycony list:** R. przejął krzyżacką dyspozycję na rzece, ukrył ją, a dostęp/lokalizację zamknął za melodią. Liczby `621454` = „number that opens the way to it". Gracze podają kod MG → MG wydaje K8 (przechwycony list). **To fabularny powód, czemu opcjonalna „daje szyfrogram"** — zgodne z `concept/03`.
+- **Inwarianta [advisor + kanon]:** kod `621454` = **wyłącznie bramka MG**; w fikcji nikt nie „czyta daty". Znaczenie 6.2.1454 = meta-reveal po grze (`kalimba.md`).
+- **Klamra B1 — muzyka karnawału = osłona:** „the whole city is piping and drumming" → granie melodii nie wzbudza podejrzeń. Funkcja + atmosfera. Pokrycie: `karnawal-1454.js` (pochody z muzyką: trąby, kornety, bębny).
+- **BRAK szyfru tutaj.** Mechanika: usłysz → zagraj → spisz liczby → podaj. Koło/Cezar/klucz = finał (Z7). Patrz `kalimba.md §Kiedy w grze`.
+- **Kto gra melodię:** MG (Oskar) gra na instrumencie lub odtwarza nagranie, gdy grupa przychodzi — w fikcji „melodia, którą R. grywał na rzece". Info dla MG: `prototype/mg-runsheet.md §Z4`.
+- **Nośnik znaleziska:** instrument wręcza fizycznie MG (meta, jak rozdanie karty — wzorzec K-Z3b). W fikcji „znaleźli go przy R.". Scrap z melodią = część koperty (roman).
+- **Dwa rejestry:** narracja z głów = *kursywa*; pisane słowa R. (scrap) = roman.
+- **Lokalizacja terenowa:** nabrzeże Wisły / Bulwar Filadelfijski (river men, wharves). Do potwierdzenia w mg-runsheet gdzie dokładnie grupa „znajduje" scenę.
+- **Wersja Krzyżacy (MVP):** Z8 lustro — inny framing (nie R., nie flisak). NIE kopiować 1:1.

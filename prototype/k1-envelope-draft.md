@@ -12,9 +12,11 @@
 
 *The wax gives under your thumb — no seal any of us knows. Inside: a single sheet of instructions, and folded beneath it, heavier, the thing itself. The letter we are paid to carry, and forbidden to read.*
 
+*Outside, the city does not know to be afraid. It is Saint Dorothy's day, the last gasp of carnival before the fast — pipes and drums in the streets, masks on half the faces we pass, a child handing out paper roses as if roses grew in February. Good cover, a day like this. A man can wear another face and no one looks twice.*
+
 ---
 
-**Toruń, 3rd of February, the Year of Our Lord 1454**
+**Toruń, 6th of February, the Year of Our Lord 1454**
 
 **Messengers,**
 
@@ -62,6 +64,9 @@ After that, you will receive your next instructions.
 - **Groźba**: "With their hands" — fizyczna, medievalna, bez ozdobników. Celowo krótka.
 - **Plot twist K2** (pośrednika nie ma) jest *zasiany* w K1 ("Your original contact is not where he was meant to be") — ale nie wyjaśniony. Grupa to odczuje dopiero przy MG po Z1.
 - **"Eighth bell"** = godz. 20:30, ósme bicie zegara ratuszowego. Nie nazywamy Tuba Dei (anachronizm).
+- **Data 6 II [decyzja Oskara 2026-06-02]:** cała gra = jeden wieczór 6 lutego (św. Doroty, karnawał). Zmieniono z „3rd of February" → „6th of February" dla spójności z finałem (noc buntu). Zgodne z `concept/00-overview.md` (data fikcji = 6 II).
+- **Klamra A2 (maski → „wear another face"):** otwarcie zasiewa karnawał + maski („a man can wear another face and no one looks twice") → payoff w K3, gdzie Jordan każe „wear another face" przy Albrechcie. Pokrycie: `karnawal-1454.js` (maski = osłona konspiracji). Setup atmosferyczny + uzasadnienie mechaniki przebrania.
+- **Klamra B2 (św. Dorota — róże w zimie):** „a child handing out paper roses as if roses grew in February" — legenda św. Doroty (róże/jabłka z raju zimą), jej dzień = 6 II. Smaczek atmosferyczny.
 - **Rekwizyt w kopercie:** list zapieczętowany (noszą całą grę), mapa (9 glifów, bez nazw), karta deszyfrownika (9 piktogramów → następny glif).
 - **Wersja TR / wersja Krzyżacy**: K1 jest WSPÓLNA dla obu torów (nie zdradza frakcji). Podział następuje dopiero w K2.
 - Ton: rzeczowy, lekko zagrażający — ani epicki, ani przygodowy. Zleceniodawca nie jest wrogiem, ale nie jest przyjacielem.

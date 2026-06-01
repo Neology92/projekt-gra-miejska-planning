@@ -28,7 +28,7 @@ He is a proud man. He walks **outside the castle walls** as if the city were alr
 
 **Your task:** get close to him. Talk to him. But do it as someone he wants to talk to.
 
-**Wear another face.** You are not couriers and you are **never, ever of the Council** — say that and you are dead. You are townsfolk who smell which way the wind blows: little people, eager to please the Order, who have *heard things* about those plotting against it. He feeds on that. Offer him a whiff of a name, a rumour, a hint that you know who schemes — and let him talk. **Draw him out. See what he lets slip.**
+**Wear another face** — the carnival lends you one for free. Half the city is masked tonight; one more set of strangers eager to talk means nothing. You are not couriers and you are **never, ever of the Council** — say that and you are dead. You are townsfolk who smell which way the wind blows: little people, eager to please the Order, who have *heard things* about those plotting against it. He feeds on that. Offer him a whiff of a name, a rumour, a hint that you know who schemes — and let him talk. **Draw him out. See what he lets slip.**
 
 Flatter him. Let him boast. A proud man with something to hide always shows more than he means to.
 
@@ -56,4 +56,5 @@ Burn nothing. Trust no one in a Teutonic mantle. — J.
 - **„Eighth bell" / godzina:** świadomie NIE powtarzana tu (jest w skrypcie Jordana ustnie + w KF). K3 trzyma fokus na zadaniu Z3.
 - **Wersja Krzyżacy (MVP):** lustro = infiltracja Piccolo (Z3Z), inny cel/framing. NIE kopiować 1:1 — patrz `zamek-krzyzacki-lista.md` §Z3Z.
 - **Imię „Albrecht" bez nazwiska** w tekście gracza — wystarcza; „Kalb" w kanonie. Period-styling później.
+- **Klamra A2 — payoff masek [2026-06-02]:** „the carnival lends you one for free… half the city is masked tonight" domyka setup z K1/K2 (maski karnawału). Mechanika przebrania (udawanie donosicieli przy Albrechcie) zyskuje uzasadnienie w świecie gry — karnawał czyni ją naturalną, nie podejrzaną. Pokrycie: `karnawal-1454.js`.
 - **Dwa rejestry [2026-06-01]:** *otwarcie* (złamanie pieczęci poza Piccolo) + *zamknięcie* (grupa przyjmuje rolę zwiadowców-donosicieli) = kursywa, narracja z głów; nagłówek + „Messengers…" + podpis „— J." = roman (wiadomość Jordana, podpis przeniesiony z kursywy na roman). Klucz: kursywa=głowa, roman=słowa świata (`mechanics/koperty-mg.md`).

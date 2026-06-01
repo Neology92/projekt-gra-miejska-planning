@@ -131,6 +131,25 @@ Ta sama mechanika i rekwizyty (1 grupa krzyżacka — patrz `concept/03-faza-2b-
 
 **Pointa dla uważnych**: obie wrogie frakcje mają **to samo „hasło bezpieczeństwa"** (piernik), nie wiedząc o tym. Nigdzie w grze się to nie spotyka — to **smaczek do rozmów po grze** (gracze i tak mają potem dużo czasu). Nie trzeba tego ujawniać; działa jako easter egg.
 
+### Inwersja moralna — pogłębienie perspektywy piekarza [brief Oskara 2026-06-02, MVP]
+
+> **Status:** wytyczne do koperty Z5 (tor mieszczan). Z5 nie jest w prototypie — to materiał MVP. Brief, nie finalny tekst.
+
+Koperta Z5 ma nieść — obok zlecenia (rozpoznaj składniki) — **głos sceptyka wobec buntu**, z perspektywy drobnego rzemieślnika. To realizacja filaru tonalnego „TR/kupcy = źli" (`lore/fakty-vs-fabula.md`, `concept/00-overview.md §Wymowa moralna`). Wymowa: **„rewolucja wysokich sfer"** — bunt otwiera wielkim kupcom rynki i zysk, a drobnemu rzemieślnikowi grozi katastrofą. *Bogaci znów będą bogaci, biedni znów biedni.*
+
+**Konkrety z pokryciem w wiki (można użyć wprost):**
+- **Bunt = interes, nie ideały.** Wiki mówi to dosłownie: „mieszczanie Torunia nie byli idealistami walczącymi o wolność — byli ludźmi interesu" (`nieszawa-konflikt.js`). Główny cel to **likwidacja Nieszawy** = zniszczenie konkurencji handlowej + utrzymanie **prawa składu** (przejezdni muszą wystawiać towar w Toruniu) — to korzyść **wielkich kupców/pośredników**, nie piekarza.
+- **Rada = patrycjat, nie rzemiosło.** Rada Miejska zdominowana przez patrycjat; cechy od dawna żądały większego udziału i regulacji cen monopolowych narzucanych przez Radę (`cechy-rzemieslnicze.js`). Argument piekarza: „po buncie i tak rządzić będą oni, ceny ustali Rada — nie my."
+- **Wojna jako koszt dla małych.** Bunt → wojna trzynastoletnia (1454–66) → drożyzna, kontrybucje, blokady handlu. „Bunt panów, a płaci go piekarz i przekupka" (plotka A6, `handel-hanza.js`).
+
+**Kierunek Oskara (do dopracowania — oznaczyć jako interpretację, nie cytat z wiki):**
+- Rzemieślnik **straci stabilny rynek** — państwo zakonne (a lokalnie komturia/zamek) było pewnym, stałym odbiorcą; jego upadek = utrata klienta. *(Uwaga: załoga zamku mała ~30 braci — argument mocniejszy jako „cały rynek zakonny w Prusach", nie sam toruński zamek. Do zważenia przy pisaniu.)*
+- W zamęcie wojny **trzeba będzie zbywać towar taniej** (psujący się chleb/pierniki) albo **ograniczyć produkcję** (drożejące, blokowane surowce: korzenie z Hanzy, miód) → mniejszy zarobek. *(Plauzyjne, ale spekulatywne — zweryfikować/oznaczyć przy finalnym tekście.)*
+
+**⚠️ NIUANS HISTORYCZNY — nie pomylić (krytyczne):** wiki mówi wprost, że **cechy MASOWO poparły bunt** — ludwisarze obsługiwali działa, rzeźnicy wystawili oddziały, sukiennicy kredytowali wojnę (`cechy-rzemieslnicze.js`). Głos anty-buntowy w Z5 **nie może** brzmieć „rzemiosło było przeciw". To **mniejszościowy, gorzki głos jednego piekarza** — sceptyka, który widzi interes wielkich tam, gdzie reszta miasta daje się ponieść entuzjazmowi. Napięcia cech↔patrycjat były realne i wróciły po wojnie (reforma ustroju 1523), ale w 1454 wspólny wróg je wygaszał. Framing: „ja jeden tu trzeźwy", nie „my rzemieślnicy przeciw buntowi".
+
+---
+
 ### ⚠️ Uwaga historyczna (świadome nagięcie — decyzja Oskara)
 
 Uzasadnienie krzyżackie „to Krzyżacy sprowadzili przyprawy" **nie ma pokrycia w wiki — a częściowo jest odwrotnie**:

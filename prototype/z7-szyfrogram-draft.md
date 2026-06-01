@@ -13,6 +13,10 @@
 
 ---
 
+*Whatever road brought it into our hands, here it is — a letter the Order never meant any of us to read. A dispatch from the castle, taken on its way to Marienburg, never delivered. And the heading is the same hand, the same proud script, as the list of names we carry. The two belong together.*
+
+---
+
 **OLSMLU, OPSMLU BUK DLOYLU!**
 
 *To the Hochmeister at Marienburg. In haste — and for your eyes alone.*
@@ -33,6 +37,10 @@ OHUZ  CVU  IHFZLU  PZ  QVYKHU  AOL  JVVR
 
 ---
 
+*The Order's own word locks it — but we hold their word too, headed across the list of names. Set the one against the other.*
+
+---
+
 ## HOW TO READ IT (player aid — decryption)
 
 You have seen this script before — it is the same hand that headed the list of names you took. Compare the two headers, word by word, letter by letter. The punctuation marks the word boundaries. Each letter has moved the same number of steps along the alphabet — find that number, then apply it to the message below.
@@ -44,6 +52,8 @@ You have seen this script before — it is the same hand that headed the list of
 ## PLANNING NOTES (nie dla gracza)
 
 **Szyfr: Cezar, shift +7 [DECYZJA Oskara 2026-06-01]:** przesunięcie odkrywane przez porównanie nagłówka Z7 z jawnym nagłówkiem Z3 — brak rekwizytu (koła). Motto z interpunkcją: `HELFEN, HILFEN UND WEHREN!`. Zaszyfrowane motto (nagłówek Z7): `OLSMLU, OPSMLU BUK DLOYLU!`. Ciphertext ciała (round-trip ✓): `OHUZ CVU IHFZLU PZ QVYKHU AOL JVVR`. ~~Cezar +3 (wariant A) — porzucony.~~ ~~Cezar +21 (stary model liczenia liter) — archiwalny.~~ ~~Vigenère — archiwalny.~~
+
+**Rama narracyjna UNIWERSALNA [decyzja Oskara 2026-06-02]:** dodano otwarcie i domknięcie *kursywą* (z głów) — „Whatever road brought it into our hands… a letter the Order never meant any of us to read." **Method-agnostic**: K8 = ten sam przechwycony list niezależnie którą opcjonalną (Z4/Z5/Z6) grupa zrobiła. Realizuje „uniwersalna treść Z7" + zasadę koperta=scena (`mechanics/koperty-mg.md §Zasada nadrzędna #2`). Domknięcie kieruje do mechaniki: „we hold their word too, headed across the list of names. Set the one against the other" (porównanie nagłówków). Szyfr i sam dispatch — **nietknięte**.
 
 **Szyfrowany tylko rdzeń (41 liter), ramka jawna** — żeby praca w terenie była wykonalna. Ramka (zwrot „To the Hochmeister…", podpis Komtura) buduje klimat i kontekst bez kosztu deszyfrowania.
 
