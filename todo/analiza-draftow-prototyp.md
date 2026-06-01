@@ -6,6 +6,17 @@
 
 ---
 
+## STATUS DECYZJI OSKARA [2026-06-02]
+
+- **0.1 (defekt PDF):** ✅ naprawione — re-render z poprawionego motta (OLPSLU=HEILEN+7), zweryfikowane.
+- **1.1 (ton/inwersja):** ✅ WPROWADZIĆ wariant (b) — śmierć R. „za grę wielkich" jako nośnik goryczy. Mechanizm: tor TR → TR/narada źli; tor krzyżacki → Zakon zły.
+- **1.2 (lokalizacja K-Z4):** ✅ scena **czysto opisowa/narracyjna** — bez MG nad Wisłą, gracze czytają opis (nie fizyczne miejsce).
+- **1.3 (melodia):** 🔄 kierunek = **metafizyczny/abstrakcyjny** (melodia słyszalna „niedaleko flisaka", bez fizycznego grajka) + próba spięcia z **Fontanną Flisaka**. Warianty do wyboru → sekcja na końcu pliku „§ Spięcie melodii z fontanną".
+- **1.4 (trudność finału):** ✅ ZOSTAW, testujemy (a). Korekta założenia: gra ~2h (18:15→20:30) z posiłkiem, nie 4h. Z7 bez odchudzania.
+- **1.5 / 1.6 / 3.x:** do rozpatrzenia przez Oskara (jeszcze nie adresowane).
+
+---
+
 ## 0. DEFEKT TECHNICZNY (nie design — do naprawy)
 
 **0.1 — PDF z7 nieaktualny względem poprawionego motta.**
@@ -109,3 +120,31 @@
 2. **Krzywa trudności końcówki** (1.4 + 1.5 + 3.2) — finał piętrzy najtrudniejsze + najsubtelniejsze (szyfr + 3-wątkowy splice) na 4. godzinie. Warto świadomie zdecydować, czy to nagroda dla najlepszych (reszta łapie twist w scence), czy odchudzić.
 
 Reszta to dostrajanie, nie przebudowa.
+
+---
+
+## § SPIĘCIE MELODII Z FONTANNĄ FLISAKA (1.3 — propozycje do wyboru)
+
+**Research (wiki):** `Fontanna Flisaka` — figura flisaka grającego na **skrzypcach** + **8 żab** (brąz, 1914, Georg Wolf, dziś przy SW narożniku Ratusza, Rynek Staromiejski). Inspirowana `legenda-flisak.js`: flisak grą zwabił żaby do Wisły (zapis XIX w., motyw ludowy „muzyk znad rzeki, którego gra prowadzi").
+
+**Trzy napięcia do obejścia:**
+1. **Anachronizm** — fontanna 1914, gra 1454. W fikcji NIE może istnieć jako „fontanna".
+2. **Lokalizacja** — fontanna na Rynku; R. (flisak) ginie nad Wisłą. Dwa różne miejsca.
+3. **Instrument** — legenda/figura = skrzypce; nasz rekwizyt = lamellofon. Rozwiązanie: melodia „ta sama" niezależnie od instrumentu (flisak grał ją na swoim, wy odtwarzacie na swoim) — nie akcentować instrumentu flisaka.
+
+**Mocna zbieżność tematyczna (czemu to w ogóle działa):** flisak-grajek znad Wisły, którego MUZYKA prowadzi/zwabia (legenda) ↔ R.-flisak, którego melodia jest kluczem. Plus: **8 żab ↔ 8. bicie dzwonu** (finał 20:30) — potencjalna klamra liczbowa.
+
+### Warianty (do wyboru — różnią się tym, czy fontanna jest TERENOWA czy META)
+
+**A — Mit znad wody (fontanna = meta-echo, NIE w fikcji).** Melodia R. to stara pieśń rzeczna, „którą znają wszyscy flisacy". Gracze słyszą ją **metafizycznie** — niesioną znad Wisły, jakby sama rzeka/legenda grała (brak fizycznego grajka — R. martwy). Fontanna NIE pojawia się w fikcji; gra świadomie nawiązuje (to ten flisak, którego miasto później uczci) → most w kartce autorskiej po grze.
+  - ✅ Najczystsze historycznie, w pełni metafizyczne/abstrakcyjne (zgodne z Twoim „abstrakcyjne, słyszalne niedaleko"). ❌ Fontanna tylko jako meta — jeśli chcesz mocniejszego, namacalnego połączenia, to za mało.
+
+**B — Figura flisaka jako terenowy punkt (gracze idą pod fontannę).** Z4 dzieje się przy figurze flisaka na Rynku. Tam gracze „słyszą"/odtwarzają melodię. Fikcja nie nazywa „fontanny" — mówi o „miejscu flisaka / figurze grajka znad wody". Most metafizyczny: R. zginął nad Wisłą, ale jego melodia „wraca" przy wizerunku flisaka.
+  - ✅ Namacalne, 8 żab widoczne (→ klamra 8. bicie), silne połączenie z fontanną. ❌ Anachronizm w kadrze (choć nienazwany), miesza Wisłę z Rynkiem, **kłóci się z Twoją decyzją 1.2** („scena opisowa, bez fizycznej lokalizacji") — chyba że Z4 świadomie dostaje punkt terenowy.
+
+**C — Hybryda: melodia metafizyczna (jak A) + klamra 8 żab → 8. bicie.** Melodia abstrakcyjna znad wody (A), ale flisak staje się **motywem spinającym całą grę**: jego melodia daje datę (`621454`), a jego legenda (8 żab) cicho zapowiada godzinę finału (8. bicie, 20:30). Fontanna = meta + smaczek liczbowy.
+  - ✅ Flisak jako klamra początek↔koniec, metafizyczne, fontanna obecna przez 8 żab. ❌ „8 żab → 8 bicie" subtelne/ezoteryczne — może umknąć albo wyglądać przypadkowo.
+
+**Rekomendacja:** **A lub C** (zgodne z Twoim „metafizyczne/abstrakcyjne" + decyzją 1.2 o opisowości). B tylko jeśli świadomie dajesz Z4 punkt terenowy na Rynku (łamie 1.2). Instrument flisaka (skrzypce) — nie akcentować, melodia jest ponad instrumentem.
+
+- [ ] Wybór: A / B / C / inne. Klamra 8 żab→8 bicie: tak / nie.
