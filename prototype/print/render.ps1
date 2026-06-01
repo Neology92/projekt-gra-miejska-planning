@@ -24,6 +24,12 @@ $jobs = @{
   'z7-przechwycony-list.html' = 'z7-przechwycony-list.pdf'
   'z3-z7-klucz-mg.html'       = 'z3-z7-klucz-mg.pdf'
   'k1.html'                   = 'k1.pdf'
+  'k2.html'                   = 'k2.pdf'
+  'k2-slip.html'              = 'k2-slip.pdf'
+  'k3.html'                   = 'k3.pdf'
+  'kZ3b.html'                 = 'kZ3b.pdf'
+  'kZ4.html'                  = 'kZ4.pdf'
+  'kF.html'                   = 'kF.pdf'
 }
 
 foreach ($in in $jobs.Keys) {
