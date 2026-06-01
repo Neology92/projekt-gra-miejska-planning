@@ -1,7 +1,7 @@
 # Z7 — Finałowy szyfrogram (spec kanoniczny)
 
 > **Rola pliku:** jedno źródło prawdy dla **szyfrogramu Z7** — przechwyconego listu krzyżackiego, którego odszyfrowanie ujawnia twist „Jordan = Bażyński". Szyfr, klucz, plaintext, ciphertext, mechanika, weryfikacja MG, ryzyka.
-> **Status:** 🟡 **W REWIZJI [2026-06-01]** — mechanika klucza zmieniona: **porównanie nagłówków** (nie liczenie liter motta). Dwie wersje testowe: A (shift +3) i B (shift +7, kandydat). §0 = kanon nowej mechaniki; §3 archiwalne Vigenère; §4 zaktualizowane. Prop gracza → `prototype/z7-szyfrogram-draft.md`.
+> **Status:** 🟡 **W REWIZJI [2026-06-01]** — mechanika klucza zmieniona: **porównanie nagłówków** (nie liczenie liter motta). Dwie wersje testowe: A (shift +3) i B (shift +7, kandydat). §0 = kanon nowej mechaniki; §4 zaktualizowane. Prop gracza → `prototype/z7-szyfrogram-draft.md`.
 > **Powiązania:** klucz z nagłówka listy Z3 → `z3-lista-tr-spec.md`, `prototype/pergamin-lista-tr-draft.md`. Rekwizyt gracza (EN) → `prototype/z7-szyfrogram-draft.md`. Lustro krzyżackie (Z8/Z11) → `kalimba.md`, `concept/04-faza-3-final.md` (kanon modelu).
 
 ---
@@ -32,8 +32,6 @@ Zmiana modelu klucza — **nadrzędna wobec poprzedniego §0 (liczba liter motta
 > 🗄️ **Backup modelu „liczba liter motta (shift +21)"** [poprzedni §0, 2026-06-01 wieczór]: ciphertext `EJMYVI OCZ XJJF DN CVIN QJI WVTNZI OCZDM XCVDMHVI`, instrukcja „policz litery motta (21) = przesunięcie". Zastąpiony mechaniką nagłówkową. *(Uwaga: ciphertext koduje POPRZEDNI plaintext „JORDAN THE COOK IS HANS VON BAYSEN THEIR CHAIRMAN" sprzed skrócenia [2026-06-01]; nieaktualizowany bo backup deep-archive.)*
 
 > 🗄️ **Backup poprzedniego plaintextu** [sprzed skrócenia, 2026-06-01]: `JORDAN THE COOK IS HANS VON BAYSEN THEIR CHAIRMAN` (41 liter, Jordan na początku), ciphertext +7 `QVYKHU AOL JVVR PZ OHUZ CVU IHFZLU AOLPY JOHPYTHU`. Skrócony i odwrócony (Jordan → koniec jako zaskoczenie) decyzją Oskara.
->
-> 🗄️ **Backup pełnej wersji Vigenère** → `prototype/z7-szyfrogram-vigenere-backup.md`.
 
 ---
 
@@ -47,20 +45,7 @@ Zmiana modelu klucza — **nadrzędna wobec poprzedniego §0 (liczba liter motta
 
 ---
 
-## 2. [ARCHIWALNE] Warianty klucza Vigenère — zastąpione przez §0
-
-> Ta sekcja dotyczyła wariantów klucza Vigenère (pełne motto vs skrót) — nieaktualna od przejścia na Cezar z mechaniką nagłówkową. Pozostawiona dla dokumentacji decyzji. Szyfr i mechanika klucza → §0.
-
-| [ARCHIWALNE] Wariant | Klucz (litery) | Za | Przeciw |
-|---|---|---|---|
-| **Pełne motto** | `HELFENHILFENUNDWEHREN` (21) | wierne motto z nagłówka | dłuższy ciąg do wyrównania |
-| **Skrót** | `HELFEN` (6) | krótszy | trzeba zasygnalizować „tylko pierwsze słowo" |
-
-> ~~DECYZJA Oskara [2026-06-01]: pełne motto~~ — nieaktualne (Vigenère porzucone). Patrz §0: mechanika nagłówkowa, dwie wersje A (+3) i B (+7).
-
----
-
-## 3. Plaintext i ciphertext ← aktualne w §0; poniżej archiwum Vigenère
+## 3. Plaintext i ciphertext ← aktualne w §0
 
 > **Cezar Ver. A (shift +3) i Ver. B (shift +7) — ciphertexty i zaszyfrowane motta → §0** (autorytatywne, round-trip ✓).
 
@@ -70,18 +55,6 @@ Zmiana modelu klucza — **nadrzędna wobec poprzedniego §0 (liczba liter motta
 HANS VON BAYSEN IS JORDAN THE COOK
 ```
 litery: `HANSVONBAYSENISJORDANTHECOOK` (28 liter)
-
-**[ARCHIWALNE] Vigenère — wariant PEŁNE MOTTO (`HELFENHILFENUNDWEHREN`):**
-```
-QSCIE AAPPH SBEVV DEUJZ BUFLD WRUBS JMEWU DEVTR R
-```
-
-**[ARCHIWALNE] Vigenère — wariant SKRÓT (`HELFEN`):**
-```
-QSCIE AALPH SBRMD MEAZZ ZSFNF WPSXU LMCHL NPVXF R
-```
-
-> Vigenère zweryfikowane skryptem; porzucone (za trudne w terenie + anachronizm). Backup: `prototype/z7-szyfrogram-vigenere-backup.md`.
 
 ---
 
@@ -125,7 +98,7 @@ Szyfrogram = **dyspozycja komtura toruńskiego Albrechta Kalba do Malborka**, pr
 ## 8. Otwarte pytania (do Oskara)
 
 1. ✅ **Treść plaintextu — ZATWIERDZONA [2026-06-01]:** „HANS VON BAYSEN IS JORDAN THE COOK" (Oskar zaakceptował). Ciphertext Cezara +7 policzony i zamknięty (§0).
-2. ✅ **Szyfr = Cezar, shift +7** — rozstrzygnięte [2026-06-01]. ✅ **Mechanika klucza = porównanie nagłówków** (Z3 jawny ↔ Z7 zaszyfrowany, ten sam font, ta sama interpunkcja) — rozstrzygnięte [sesja z Piotrem]. (Vigenère + model liczenia liter + shift +3 — porzucone, backup `prototype/z7-szyfrogram-vigenere-backup.md` i §0.)
+2. ✅ **Szyfr = Cezar, shift +7** — rozstrzygnięte [2026-06-01]. ✅ **Mechanika klucza = porównanie nagłówków** (Z3 jawny ↔ Z7 zaszyfrowany, ten sam font, ta sama interpunkcja) — rozstrzygnięte [sesja z Piotrem]. (Vigenère + model liczenia liter + shift +3 — porzucone; szczegóły w §0.)
 3. **Czy „Hans von Baysen" jest na liście Z3** (plant) — rekomendacja: tak (patrz `z3-lista-tr-spec.md` Decyzja #2; zależność rozwiązana — Jordan zostaje kucharzem).
 4. **Czy ramka listu jawna** (tylko rdzeń szyfrowany) — rekomendacja: tak (playability). Alternatywa: cały list szyfrowany (trudniej).
 5. ✅ **Anachronizm — ROZSTRZYGNIĘTE [2026-06-01]: Cezar minimalny/żaden** (porzucono Vigenère). `lore/fakty-vs-fabula.md` poz. 7.
@@ -142,6 +115,6 @@ Szyfrogram = **dyspozycja komtura toruńskiego Albrechta Kalba do Malborka**, pr
 - ✅ Ciphertexty (Ver. A shift+3 i Ver. B shift+7) — policzone, round-trip ✓. → §0.
 - ✅ Treść plaintextu — **ZATWIERDZONA [2026-06-01]:** „HANS VON BAYSEN IS JORDAN THE COOK".
 - ✅ Kradzież listy Z3 **obligatoryjna** → brak twardego stopu [2026-06-01].
-- ✅ Anachronizm — Cezar minimalny; backup Vigenère → `prototype/z7-szyfrogram-vigenere-backup.md`.
+- ✅ Anachronizm — Cezar minimalny (Vigenère porzucony).
 - ✅ Przesunięcie — **shift +7** [DECYZJA Oskara 2026-06-01]. Backup +3 → §0.
 - ⬜ KF (instrukcje finału, dostarczenie listu) — następny element łańcucha.

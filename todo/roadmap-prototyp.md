@@ -88,7 +88,7 @@ To jest **cała** lista do wyprodukowania dla jednej ścieżki. ~20 pozycji.
 - [ ] **Szyfrownik** (obiekt terenowy → następny symbol).
 - [ ] **Pergamin z listą nazwisk TR** (Z3, klucz; nazwiska z wiki `tajna-rada.js` — research mój).
 - [ ] **Zapis melodii Z4 + mapa numeracji pręcików** (kalimba fizyczna już jest; karta = referencja: nuty/sekwencja → numery pręcików → kod liczbowy).
-- [ ] **Arkusz szyfru Z7 + materiał deszyfrujący** — szyfr **Cezara shift+7** (klucz = porównanie nagłówka Z7 z mottem Z3 — ten sam font, ta sama interpunkcja; brak koła; NIE kalimba). Prop gracza gotowy → `prototype/z7-szyfrogram-draft.md`. *(Backup Vigenère → `prototype/z7-szyfrogram-vigenere-backup.md`.)*
+- [ ] **Arkusz szyfru Z7 + materiał deszyfrujący** — szyfr **Cezara shift+7** (klucz = porównanie nagłówka Z7 z mottem Z3 — ten sam font, ta sama interpunkcja; brak koła; NIE kalimba). Prop gracza gotowy → `prototype/z7-szyfrogram-draft.md`.
 - [ ] **Mechanika dostarczenia = osobiste przekazanie aktorowi** (Bażyński/Piotr i Albrecht/Zosia przy stole finałowym; gracz wręcza list wybranej stronie). Mock testowy: list na prawą (Bażyński) / lewą (Albrecht) stronę stołu.
 
 ### C. Skrypty/karty aktorów (2)
@@ -147,7 +147,7 @@ Zadania zgłoszone przez Oskara po domknięciu rdzenia Z3↔Z7. Każde z funkcj�
 
 - **Węzeł: Z7 + model klucza (blok 2B/2A).** Model [zaktualizowany 2026-06-01, sesja z Piotrem]: **klucz = porównanie nagłówków** (Z3 jawny `HELFEN, HEILEN UND WEHREN!` ↔ Z7 zaszyfrowany shift+7 w tym samym foncie) → Cezar shift+7. **Szyfrogram** wydaje **MG po opcjonalnej (Z4/5/6)**. Brak koła. Kalimba = prosta zagadka melodia→liczby. Patrz `z7-szyfr-spec.md §0`.
   - **Ryzyko trudności w terenie:** dry-run mierzy czy gracze samodzielnie połączą oba nagłówki + minuty na odszyfrowanie. Mitygacja: interpunkcja lokuje słowa, granice słów w szyfrogramie pozwalają uzupełnić pomyłki.
-  - **Anachronizm: minimalny** — Cezar znany od starożytności (inaczej niż Vigenère ~1553). Backup Vigenère → `prototype/z7-szyfrogram-vigenere-backup.md`.
+  - **Anachronizm: minimalny** — Cezar znany od starożytności (inaczej niż Vigenère ~1553).
   - Jeśli spięcie nie domyka się czysto — kaskaduje na Z3, Z4, K3. Walidujemy ręcznie (przejście liczbowe) przed finalizacją kopert.
   → **Mitygacja:** projektujemy klucz+Z7 jako **jeden moduł**, walidujemy ręcznie (przejście liczbowe) zanim sfinalizujemy koperty.
 - **Z1 to największy pojedynczy kawałek** (blok 1B). Jeśli zabraknie czasu — patrz „rdzeń minimalny" niżej (stub Z1, reszta łańcucha pełna).

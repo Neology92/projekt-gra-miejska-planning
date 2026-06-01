@@ -2,7 +2,7 @@
 
 > **Language:** English (player-facing). Planning notes in Polish below.
 > 🟢 **ZAKTUALIZOWANO — MECHANIKA NAGŁÓWKOWA + SHIFT +7 [2026-06-01]:** szyfr = Cezar shift+7, klucz = porównanie nagłówków (nie liczenie liter), brak koła. Prop poniżej = **wersja finalna (shift +7)**. Backup shift+3 → `puzzles/z7-szyfr-spec.md §0`.
-> 🗄️ Backup Vigenère → `prototype/z7-szyfrogram-vigenere-backup.md`. Backup modelu +21 → `puzzles/z7-szyfr-spec.md §0`.
+> 🗄️ Backup modelu +21 → `puzzles/z7-szyfr-spec.md §0`.
 > **Status:** draft [2026-06-01] — Canon → `puzzles/z7-szyfr-spec.md`.
 > **What it is:** an intercepted letter from the Komtur of Thorn to Marienburg, carried in envelope **K8**. Its enciphered core reveals the twist.
 > **Key:** the Order's motto appears in a distinctive script at the top of this letter — the SAME script (and punctuation) as the motto heading the Z3 names list the group already carries. Compare the two headers letter by letter to find the shift. No extra tool needed.
