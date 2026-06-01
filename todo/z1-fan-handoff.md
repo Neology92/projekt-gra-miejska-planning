@@ -44,7 +44,7 @@
 2. **Domknąć macierz v2:** dla par `R2.1` oznaczonych „za ciasne" — rozbić (wstawić przystanek pośredni z zapasu), **ponownie sprawdzić rozłączność P1–P3**. Jeśli `S02` kaszownik ✗ (R2.2) → `G6` dostaje inny głęboki start (kandydat `S04` kotwica/Bulwar).
 3. **Przeliczyć `z1-glify-globalne.md`:** pula użytych kodów się zmienia — **`S02` wchodzi do łańcucha (G6), `S06` wypada, `N03` tylko dystraktor**; `S04`/`W01` mogą dojść jako dystraktory. Zaktualizować listę 20→? kodów + pozycje.
 4. **Regeneracja 10 kart** (§Ścieżki) na łańcuchach v2 — **fan subagenty (sonnet, 1 ścieżka/agent):** pętla 5 dystraktorów (zamknięta, rozłączna z łańcuchem), deszyfrownik 9 wierszy (detal→kod, bez ślepych zaułków), klucz MG, budżet od briefingu. **AUDYT: stare pętle dystraktorów (v1) odwołują się do `N03`/`S06` — `N03` może zostać jako martwy dystraktor (nieszkodliwy), `S06` ikona wycofana → zastąpić.**
-5. **Bazowa mapa SVG** (glify wg `z1-glify-globalne.md`) → **10 widoków per ścieżka** (wzór `prototype/mapa-z1-podglad.html`). Na mapie domknąć wzrokowo pary `R2.1`. Mapa = wejście kolejnego dry-runu.
+5. ✅ **Mapy Leaflet zbudowane** (`prototype/z1-map/`) — Leaflet + kafelki CARTO light_nolabels, 19 glifów SVG, 10 widoków `?view=G1..G10`, inset Rynku. **Krok następny: kalibracja FROZEN_CENTER/FROZEN_ZOOM przez tune.html, potem `pwsh render-map.ps1`**. Na wyrenderowanej mapie domknąć wzrokowo pary `R2.1`. Mapa = wejście kolejnego dry-runu.
 6. **Decyzje wiszące:** `flisak` ikona = skrzypce (alt: żaba — swap trywialny); render glifu placeholder vs gmerk (gmerki = Z6).
 
 ## Stan ikon (prototype/icons/) — 23 SVG

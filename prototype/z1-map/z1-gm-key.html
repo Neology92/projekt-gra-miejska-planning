@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Z1 — GM Key</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  @page { size: A4 landscape; margin: 14mm 12mm; }
+
+  body {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 11px;
+    color: #1a1008;
+    background: #faf6ef;
+    margin: 0; padding: 16px 18px;
+  }
+
+  h1 {
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: .06em;
+    margin: 0 0 4px 0;
+    color: #2a1f0e;
+  }
+
+  .subtitle {
+    font-size: 9px;
+    color: #7a6a54;
+    margin-bottom: 14px;
+    letter-spacing: .04em;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  th {
+    font-size: 8.5px;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+    color: #7a6a54;
+    padding: 4px 8px;
+    border-bottom: 1.5px solid #2a1f0e;
+    text-align: left;
+  }
+
+  td {
+    padding: 5px 8px;
+    border-bottom: 1px solid #d8cdb8;
+    vertical-align: middle;
+  }
+
+  tr:nth-child(even) td { background: #f3ede0; }
+
+  .code {
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    font-size: 12px;
+    color: #2a1f0e;
+    white-space: nowrap;
+  }
+
+  .glyph-cell {
+    width: 40px;
+    text-align: center;
+  }
+
+  .glyph-cell svg {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .place { font-size: 10.5px; }
+
+  .zone {
+    font-size: 9px;
+    color: #7a6a54;
+    font-style: italic;
+  }
+
+  .coords {
+    font-family: 'Courier New', monospace;
+    font-size: 8.5px;
+    color: #4a3a28;
+  }
+
+  .groups-header {
+    font-size: 8.5px;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+    color: #7a6a54;
+    margin-top: 18px;
+    margin-bottom: 6px;
+  }
+
+  .groups-table { width: 100%; }
+
+  .groups-table td {
+    font-family: 'Courier New', monospace;
+    font-size: 9px;
+    padding: 3px 6px;
+    border-bottom: 1px solid #d8cdb8;
+  }
+
+  .groups-table td:first-child {
+    font-weight: bold;
+    width: 28px;
+    color: #2a1f0e;
+  }
+
+  .inset-mark {
+    display: inline-block;
+    width: 6px; height: 6px;
+    background: #8b0000;
+    border-radius: 50%;
+    margin-right: 2px;
+    vertical-align: middle;
+  }
+
+  .footer {
+    margin-top: 12px;
+    font-size: 8px;
+    color: #9a8870;
+    border-top: 1px solid #d8cdb8;
+    padding-top: 6px;
+  }
+</style>
+</head>
+<body>
+
+<h1>Z1 · GM Key — Navigation Glyph Reference</h1>
+<div class="subtitle">
+  <span class="inset-mark"></span> = Rynek Staromiejski cluster (shown in inset only) ·
+  All 10 maps share identical glyph–location assignments
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Code</th>
+      <th>Glyph</th>
+      <th>Name</th>
+      <th>Coordinates</th>
+      <th>Zone</th>
+    </tr>
+  </thead>
+  <tbody id="glyph-rows"></tbody>
+</table>
+
+<div class="groups-header">Groups (9 active codes per card)</div>
+<table class="groups-table">
+  <tbody id="group-rows"></tbody>
+</table>
+
+<div class="footer">
+  Glyph alphabet: geometric figures only — no shape echoes the detail icons in prototype/icons/.
+  Chain vs distractor distinction is NOT visible on player maps (identical pin style, §map.md 8).
+  Inset codes: C01 C02 C03 C04 C06 C07 D01 — rendered at Rynek Staromiejski zoom, not on main map.
+</div>
+
+<script src="z1-map-data.js"></script>
+<script>
+(function () {
+  const ZONES = {
+    N01:'NE', N02:'NE', N03:'NE', N04:'NE', N05:'NE', N06:'NE',
+    C01:'C',  C02:'C',  C03:'C',  C04:'C',  C06:'C',  C07:'C',
+    C08:'C',  C09:'C/SE',
+    S01:'S',  S02:'S',  S04:'S',
+    W01:'W',  D01:'C-SW',
+  };
+
+  const INSET = new Set(Z1_INSET_CODES);
+
+  const ORDER = ['N01','N02','N03','N04','N05','N06',
+                 'C01','C02','C03','C04','C06','C07','C08','C09',
+                 'S01','S02','S04','W01','D01'];
+
+  const tbody = document.getElementById('glyph-rows');
+  ORDER.forEach(code => {
+    const p = Z1_PLACES[code];
+    if (!p) return;
+
+    const tr = document.createElement('tr');
+
+    // Code
+    const tdCode = document.createElement('td');
+    const codeSpan = document.createElement('span');
+    codeSpan.className = 'code';
+    if (INSET.has(code)) {
+      const dot = document.createElement('span');
+      dot.className = 'inset-mark';
+      tdCode.appendChild(dot);
+    }
+    codeSpan.textContent = code;
+    tdCode.appendChild(codeSpan);
+    tr.appendChild(tdCode);
+
+    // Glyph
+    const tdGlyph = document.createElement('td');
+    tdGlyph.className = 'glyph-cell';
+    // Build glyph SVG via DOMParser (image/svg+xml) to avoid innerHTML with external strings
+    const svgNS = 'http://www.w3.org/2000/svg';
+    const svgEl = document.createElementNS(svgNS, 'svg');
+    svgEl.setAttribute('viewBox', '0 0 32 32');
+    svgEl.setAttribute('width', '32');
+    svgEl.setAttribute('height', '32');
+    const parser = new DOMParser();
+    const parsed = parser.parseFromString(
+      '<svg xmlns="' + svgNS + '">' + Z1_GLYPHS[code] + '</svg>',
+      'image/svg+xml'
+    );
+    Array.from(parsed.documentElement.childNodes).forEach(n => {
+      svgEl.appendChild(document.importNode(n, true));
+    });
+    tdGlyph.appendChild(svgEl);
+    tr.appendChild(tdGlyph);
+
+    // Name
+    const tdName = document.createElement('td');
+    tdName.className = 'place';
+    tdName.textContent = p.name;
+    tr.appendChild(tdName);
+
+    // Coords
+    const tdCoords = document.createElement('td');
+    tdCoords.className = 'coords';
+    tdCoords.textContent = p.coords[0].toFixed(4) + ', ' + p.coords[1].toFixed(4);
+    tr.appendChild(tdCoords);
+
+    // Zone
+    const tdZone = document.createElement('td');
+    tdZone.className = 'zone';
+    tdZone.textContent = ZONES[code] || '—';
+    tr.appendChild(tdZone);
+
+    tbody.appendChild(tr);
+  });
+
+  // Groups table
+  const gbody = document.getElementById('group-rows');
+  Object.keys(Z1_GROUPS).sort().forEach(gid => {
+    const codes = Z1_GROUPS[gid];
+    const tr = document.createElement('tr');
+    const tdId = document.createElement('td');
+    tdId.textContent = gid;
+    tr.appendChild(tdId);
+    const tdCodes = document.createElement('td');
+    tdCodes.textContent = codes.join('  ');
+    tr.appendChild(tdCodes);
+    gbody.appendChild(tr);
+  });
+}());
+</script>
+</body>
+</html>

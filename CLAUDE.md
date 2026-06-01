@@ -157,7 +157,7 @@ Te punkty są **niezmienne** i mają pokrycie w wiki:
 
 > **🟡 STAN [2026-06-01]:** Dwa równoległe wątki:
 > - **Prototyp (1 ścieżka TR):** K1/K2/K3/K-Z3b/Z7/skrypt Jordana/karta Albrechta — **drafty gotowe**, czekają na review Oskara + aktorów. Brakuje: **K-Z4** (czeka: instrument narracyjny Z4 — decyzja Oskara), **KF**, **arkusz MG**, **instrukcja MG**. Pełny dashboard: `todo/dashboard.md`.
-> - **Z1 dyspersja (10 grup, MVP):** po dry-run R1 + REBALANS v2. Czeka: dry-run **runda 2** (Oskar weryfikuje sightline 6 par + `S02` — `puzzles/z1-dry-run-sheet.md §RUNDA 2`). Zrzut stanu: `todo/z1-fan-handoff.md`.
+> - **Z1 dyspersja (10 grup, MVP):** po dry-run R1 + REBALANS v2. **Mapy Leaflet zbudowane** (`prototype/z1-map/`). Czeka: dry-run **runda 2** (Oskar weryfikuje sightline 6 par + `S02` — `puzzles/z1-dry-run-sheet.md §RUNDA 2`), potem **kalibracja FROZEN_CENTER/FROZEN_ZOOM** (tune.html) + render. Zrzut stanu: `todo/z1-fan-handoff.md`.
 
 - ✅ Faza 1 — mechanika Z1 ustalona; spec kompletna (`puzzles/z1-szlak-spec.md`); prototyp mock istnieje
 - ✅ Faza 2A (Jordan) — zagadka Z2 + skrypt Jordana zdraftowane

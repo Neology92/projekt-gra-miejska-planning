@@ -20,7 +20,9 @@
 
 ## 2. Tabela kanoniczna: kod → glif → pozycja → strefa
 
-> Pozycje w układzie bazowej mapy **viewBox 900×620** (zgodnym z `prototype/mapa-z1-podglad.html`: Stare Miasto x70–500 / y120–540, Rynek Staromiejski ~330,335; Nowe Miasto x570–850 / y150–470, Rynek Nowomiejski ~725,305; Wisła y548–620; Piekary/zachód x<150). Markery r≈21, min. odstęp ~45 px. Pozycje **schematyczne, plausible** — finalna kartografia na etapie mapy, ale przypisanie kod→glif jest **zamrożone tutaj**.
+> ⚠️ **Kolumny `x`/`y` (viewBox 900×620) — ZDEPRECJONOWANE [2026-06-01].** Były artefaktem odrzuconego schematycznego mocka `prototype/mapa-z1-podglad.html`. Produkcyjne pozycje geograficzne origin z `tools/places-manifest.json` w projekcie siostrzanym (kolumna `coords [lat, lng]`); implementacja w `prototype/z1-map/z1-map-data.js`. Wiersze tabeli poniżej **zostają** jako referencja kod→glif→miejsce — nie kasujemy (zasada backupów wariantów).
+>
+> Pozycje w układzie bazowej mapy **viewBox 900×620** (zgodnym z `prototype/mapa-z1-podglad.html`: Stare Miasto x70–500 / y120–540, Rynek Staromiejski ~330,335; Nowe Miasto x570–850 / y150–470, Rynek Nowomiejski ~725,305; Wisła y548–620; Piekary/zachód x<150). Markery r≈21, min. odstęp ~45 px. Pozycje **schematyczne, plausible** — przypisanie kod→glif **zamrożone**; pozycje x/y nieaktualne.
 
 | Kod | Glif (placeholder) | Opis figury (do SVG) | x | y | Strefa | Miejsce |
 |---|---|---|---|---|---|---|
