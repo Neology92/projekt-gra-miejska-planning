@@ -1,8 +1,8 @@
 # K-Z4 — The Piper's Code (draft)
 
 > **Language:** English (player-facing). Planning notes in Polish below.
-> **⚠️ INSTRUMENT NARRACYJNY** = "river piper's whistle" / piszczałka flisacka — propozycja; do potwierdzenia przez Oskara. Alternatywy z `kalimba.md`: fujarka flisacka, fletnia. Podmiana = find-replace jednej frazy w tekście gracza. Rekwizyt fizyczny = kalimba (bez zmian).
-> **Status:** draft [2026-06-01] — awaiting Oskar's review (instrument choice + fabular framing).
+> **Instrument narracyjny: ✅ zamknięte** — „iron-tongue instrument" (lamellofon, bez nazwy własnej). Rekwizyt fizyczny = kalimba.
+> **Status:** draft [2026-06-01] — awaiting Oskar's review.
 > **Contents of physical envelope:** this note + kalimba instrument.
 > **Trigger:** MG hands to group after they complete Z3 (castle scene with Albrecht) and report back. This is the optional Z4 brief.
 > **Canon:** `puzzles/kalimba.md`.
@@ -31,7 +31,7 @@ He left word:
 
 > *"Play back the tune. Write the numbers as you go. What comes out is a date — and a man who knows that date is a man I trust."*
 
-**Listen to the tune. Then play it back**, note by note, on the whistle. As you play, write down each number in sequence.
+**Listen to the tune. Then play it back**, note by note. As you play, write down each number in sequence.
 
 When you finish, you will have **six numbers**. That is the code.
 
