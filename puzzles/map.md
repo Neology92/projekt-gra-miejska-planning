@@ -44,7 +44,7 @@ Kolumny: **Kod** (= glif, stały) · **Detal** (piktogram, stały) · **Miejsce*
 | `N03` | fartuch (modry) | **Gospoda Pod Modrym Fartuchem** (Rynek Nowomiejski 8) | nazwa-godło „modry fartuch"; gotyk+barok | ✗ **teren 2026-06-01: BRAK widocznego fartucha/szyldu** — detal niewypatrzalny | **DYS-only** (martwy wiersz; NIE w łańcuchu) |
 | `N04` | lew (złoty) | **Apteka Pod Złotym Lwem** (Rynek Nowomiejski 13) | pozłacana rzeźba lwa **nad wejściem (drzwiami)** | ✓#13 + ✓ **teren 2026-06-01** (widoczny; godziny apteki nieistotne) | Ł |
 | `N05` | bazylika (łuki przyporowe) | **Kościół św. Jakuba** (Rynek Nowomiejski) | gotyk bazylikowy; łuki przyporowe; nawa główna wyższa | ✓#36 + ✓ **teren 2026-06-01** (łuki + bryła kościoła rozpoznawalne) | Ł |
-| `N06` | szafa (z szufladami) | **Teatr Baj Pomorski** (Piernikarska 9) | fasada jak drewniana szafa z szufladami + duży zegar | ✓#43 | Ł |
+| `N06` | szafa (z szufladami) | **Teatr Baj Pomorski** (Piernikarska 9) | fasada jak drewniana szafa: drzwi + szuflady + falisty gzyms (zegar wycofany z ikony 2026-06-01) | ✓#43 | Ł |
 
 ### Strefa C — Rynek Staromiejski i serce (kandydaci na STOP-4 u MG)
 

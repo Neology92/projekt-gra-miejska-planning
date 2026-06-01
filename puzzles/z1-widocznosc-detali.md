@@ -15,15 +15,17 @@
 
 > Te detale niosą rozwiązanie. Priorytet weryfikacji. Kolejność: grupowo po strefach.
 
-### Strefa NE — Nowe Miasto
+### Strefa NE — Nowe Miasto ✅ ZATWIERDZONA [Oskar, 2026-06-01]
+
+> Wszystkie 5 detali wypatrzalne. Pozostaje strefa C (8) + S (S02).
 
 | Kod | Miejsce | Detal (co wypatrzeć) | Gdzie szukać | Ikona | Dotąd | Werdykt |
 |---|---|---|---|---|---|---|
-| `N01` | Pomnik Piernikarki (Garbary / Kr. Jadwigi) | piernik-serce w koszu; piesek szarpie suknię | u stóp figury | `piernik.svg` | wiki #35 | |
-| `N02` | Pomnik Przekupki (Rynek Nowomiejski) | gęś u stóp (chwytliwsza niż waga) | u stóp figury | `ges.svg` | wiki #34 | |
+| `N01` | Pomnik Piernikarki (Garbary / Kr. Jadwigi) | piernik-serce w koszu; piesek szarpie suknię | u stóp figury | `piernik.svg` | wiki #35 | ✅ (R2) |
+| `N02` | Pomnik Przekupki (Rynek Nowomiejski) | gęś u stóp (chwytliwsza niż waga) | u stóp figury | `ges.svg` | wiki #34 | ✅ (R2) |
 | `N04` | Apteka Pod Złotym Lwem (Rynek Nowom. 13) | pozłacany lew **nad drzwiami** | nad wejściem | `lew.svg` | **teren ✓** | ✅ (R1) |
 | `N05` | Kościół św. Jakuba (Rynek Nowomiejski) | łuki przyporowe; nawa gł. wyższa | bryła z ulicy | `bazylika-luki.svg` | **teren ✓** | ✅ (R1) |
-| `N06` | Teatr Baj Pomorski (Piernikarska 9) | fasada-szafa z szufladami + zegar | cała fasada | `szafa.svg` | wiki #43 | |
+| `N06` | Teatr Baj Pomorski (Piernikarska 9) | fasada-szafa z szufladami (drzwi + szuflady) | cała fasada | `szafa.svg` | wiki #43 | ✅ (R2) |
 
 ### Strefa C — Rynek Staromiejski i serce
 
