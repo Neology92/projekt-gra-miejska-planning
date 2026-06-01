@@ -147,6 +147,8 @@ When group reports the solution (HANS VON BAYSEN IS JORDAN THE COOK, or equivale
 3. **Direct (key only):** *"The shift is 7 — every letter has moved 7 steps forward. Apply that backwards to the ciphertext."* *(Only if < 30 min to 20:30)*
 4. **Emergency (full answer):** *"It reads: HANS VON BAYSEN IS JORDAN THE COOK. Who does that make Jordan?"* *(Only if group will miss the finale without this)*
 
+**If they DECODED it but seem unmoved (don't feel the twist):** the meaning is split across three threads they must connect themselves — nudge, don't spell out. Ask: *"Who were you sent to deliver that letter to, from the very start?"* (→ the chairman, from K2). Then: *"Look at the top of the names list you took — what does it say beside the first name?"* (→ "they call him chairman"). Let them join it: the chairman = Hans von Baysen = the cook who fed you. *(This is the §1.5 splice safety net — only if the decode landed flat.)*
+
 ---
 
 ## EMERGENCY PROTOCOLS

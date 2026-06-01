@@ -13,7 +13,12 @@
 - **1.2 (lokalizacja K-Z4):** ✅ scena **czysto opisowa/narracyjna** — bez MG nad Wisłą, gracze czytają opis (nie fizyczne miejsce).
 - **1.3 (melodia):** 🔄 kierunek = **metafizyczny/abstrakcyjny** (melodia słyszalna „niedaleko flisaka", bez fizycznego grajka) + próba spięcia z **Fontanną Flisaka**. Warianty do wyboru → sekcja na końcu pliku „§ Spięcie melodii z fontanną".
 - **1.4 (trudność finału):** ✅ ZOSTAW, testujemy (a). Korekta założenia: gra ~2h (18:15→20:30) z posiłkiem, nie 4h. Z7 bez odchudzania.
-- **1.5 / 1.6 / 3.x:** do rozpatrzenia przez Oskara (jeszcze nie adresowane).
+- **1.5 (splice za subtelny):** ✅ (a)+(c) — zostaw subtelny + **safety net w drabince hintów MG** (krok „jeśli odszyfrowali, ale twist nie wybrzmiał — przypomnij cel z K2 + «chairman» z listy"). Wdrożone w `mg-runsheet.md §Z7`.
+- **1.6 (ton za mroczny):** ✅ zostaw mrok — kontrast daje **karnawał** (smaczki B w K1/K2: muzyka, róże św. Doroty, „fajerwerki"); sztuczna lekkość byłaby nie-w-tonie i kłóciła się z gorzkim finałem (TR=źli). Świadoma decyzja.
+- **3.1 (kalimba/Z2 za proste):** ✅ zostaw — świadomy **rytm trudności**: K1/Z1 (łatwe wejście) → Z2 (lekka logika, transfer do Jordana) → Z3 (napięcie, kradzież) → Z4 (oddech sensoryczno-muzyczny) → Z7 (szczyt). Kalimba = wytchnienie po Z3, nie wyzwanie. Z2 = brama narracyjna, nie ma być trudna.
+- **3.2 (Z3 / łańcuch finału przekomplikowane):** ✅ zostaw, **monitoruj w dry-run.** Z3 = dwustopniowy reveal (zwiad→kradzież) — złożoność niesie sedno dramaturgii, 2 aktorów wymusza i tak finał; brak taniej alternatywy bez utraty twistu. Łańcuch finału (4-5 warstw) ryzykowny, ale gra ~2h (nie 4h) + drabinka hintów łagodzi — decyzja: testuj na żywo, tnij dopiero jeśli dry-run pokaże przeciążenie.
+
+> Te cztery rozstrzygnięte na **automode** (rozsądny call, do Twojej korekty). Większość = „zostaw świadomie"; jedyna zmiana mechaniczna = safety net 1.5.
 
 ---
 
