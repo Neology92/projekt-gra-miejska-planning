@@ -39,8 +39,8 @@ Kolumny: **Kod** (= glif, stały) · **Detal** (piktogram, stały) · **Miejsce*
 
 | Kod | Detal | Miejsce | Haczyk | Źródło | Rola |
 |---|---|---|---|---|---|
-| `N01` | piernik (serce) | **Pomnik Piernikarki** (zbieg M. Garbarów / Kr. Jadwigi) | kosz pierników; piesek szarpie suknię | ✓#35 | Ł · ikona ✓ `piernik.svg` |
-| `N02` | gęś | **Pomnik Przekupki** (Rynek Nowomiejski, przy Modrym Fartuchu) | gęś u stóp (chwytliwsza niż waga); waga; kosz jaj | ✓#34 | Ł · ikona `ges.svg` (było `waga.svg` — zapas) |
+| `N01` | piernik (serce) | **Pomnik Piernikarki** (zbieg M. Garbarów / Kr. Jadwigi) | kosz pierników; piesek szarpie suknię | ✓#35 | Ł · ikona ✓ `n01-piernikarka.svg` |
+| `N02` | gęś | **Pomnik Przekupki** (Rynek Nowomiejski, przy Modrym Fartuchu) | gęś u stóp (chwytliwsza niż waga); waga; kosz jaj | ✓#34 | Ł · ikona `n02-przekupka.svg` (było `n02-przekupka-zapas-waga.svg` — zapas) |
 | `N03` | fartuch (modry) | **Gospoda Pod Modrym Fartuchem** (Rynek Nowomiejski 8) | nazwa-godło „modry fartuch"; gotyk+barok | ✗ **teren 2026-06-01: BRAK widocznego fartucha/szyldu** — detal niewypatrzalny | **DYS-only** (martwy wiersz; NIE w łańcuchu) |
 | `N04` | lew (złoty) | **Apteka Pod Złotym Lwem** (Rynek Nowomiejski 13) | pozłacana rzeźba lwa **nad wejściem (drzwiami)** | ✓#13 + ✓ **teren 2026-06-01** (widoczny; godziny apteki nieistotne) | Ł |
 | `N05` | bazylika (łuki przyporowe) | **Kościół św. Jakuba** (Rynek Nowomiejski) | gotyk bazylikowy; łuki przyporowe; nawa główna wyższa | ✓#36 + ✓ **teren 2026-06-01** (łuki + bryła kościoła rozpoznawalne) | Ł |
@@ -50,7 +50,7 @@ Kolumny: **Kod** (= glif, stały) · **Detal** (piktogram, stały) · **Miejsce*
 
 | Kod | Detal | Miejsce | Haczyk | Źródło | Rola |
 |---|---|---|---|---|---|
-| `C01` | **astrolabium** (instrument w dłoni posągu) | **Pomnik Kopernika** (SE róg Ratusza) | astrolabium / sfera armilarna trzymane przez posąg | ✓ **MUST-HAVE [autor, 2026-06-01]** — posąg trzyma instrument; fakt potwierdzony przez autora (wiki #1 go nie wymienia, ale jest). Ikona: `astrolabium.svg`. Zapas: `delfin.svg` (delfin w studzience) | Ł · S4 |
+| `C01` | **astrolabium** (instrument w dłoni posągu) | **Pomnik Kopernika** (SE róg Ratusza) | astrolabium / sfera armilarna trzymane przez posąg | ✓ **MUST-HAVE [autor, 2026-06-01]** — posąg trzyma instrument; fakt potwierdzony przez autora (wiki #1 go nie wymienia, ale jest). Ikona: `c01-kopernik.svg`. Zapas: `c01-kopernik-zapas-delfin.svg` (delfin w studzience) | Ł · S4 |
 | `C02` | osioł | **Osiołek** (zbieg z ul. Żeglarską) | ostra metalowa krawędź grzbietu (pręgierz) | ✓#3 | Ł · S4 |
 | `C03` | melonik | **Pies Filuś** (wylot ul. Chełmińskiej) | melonik prof. Filutka w pyszczku kundelka | ✓#4 | Ł · S4 |
 | `C04` | wieża bez hełmu | **Ratusz Staromiejski** (Rynek 1) | brak hełmu/korony wieży (Szwedzi 1703); zegar 24-kt cyfry | ✓#5 | Ł · S4 |
@@ -64,12 +64,12 @@ Kolumny: **Kod** (= glif, stały) · **Detal** (piktogram, stały) · **Miejsce*
 
 | Kod | Detal | Miejsce | Haczyk | Źródło | Rola |
 |---|---|---|---|---|---|
-| `S01` | brama (**ostrołuk ze szpicem**) | **Brama Mostowa** (ul. Mostowa, od Wisły) | gotycki **ostrołuk przejazdu** (+ tablice powodziowe na ościeżu); narożniki zaokrąglone z zewnątrz | ✓#18 + ✓ **teren 2026-06-01** (ostrołuk wypatrzalny; „zaokrąglone narożniki" za subtelne) — ikona `brama-ostroluk.svg` | Ł |
+| `S01` | brama (**ostrołuk ze szpicem**) | **Brama Mostowa** (ul. Mostowa, od Wisły) | gotycki **ostrołuk przejazdu** (+ tablice powodziowe na ościeżu); narożniki zaokrąglone z zewnątrz | ✓#18 + ✓ **teren 2026-06-01** (ostrołuk wypatrzalny; „zaokrąglone narożniki" za subtelne) — ikona `s01-brama-mostowa.svg` | Ł |
 | `S02` | kaszownik (otwory nad bramą) | **Brama Klasztorna** (ul. Ducha Świętego) | gotycki ostrołuk + machikuła z otworami ponad przejazdem — **od zewnątrz (Bulwar Filadelfijski)**; kaszownik widoczny z dołu ale trudny do ikonizacji → ikona = brama trapezowa + dwa łuki + 5 otworów nad przejazdem [ikon przebudowana 2026-06-01] | ✓#19 + ⚠ waypoint = strona zewnętrzna (Bulwar), nie ul. Ducha Świętego | Ł |
 | `S03` | brama-łuk (Via Regia) | **Brama Żeglarska** (ul. Żeglarska, od Wisły) | początek Via Regia / Droga Królewska | ✓#20 (⚠ mało wyróżniający detal) | D |
 | `S04` | kotwica | **Kotwica na Bulwarze** (Bulwar Filadelfijski) | duża kotwica (Szkoła Marynarki Wojennej) | ✓#30 | Ł |
 | `S05` | baszta | **Baszty** (Monstrancja / Koci Łeb / Gołębnik) | nazwane baszty murów wzdłuż Podmurnej | ✓#21 (wiele obiektów) | D |
-| `S06` | wąska uliczka z łukami | **Ulica Ciasna** (Podmurna–Mostowa) | 3 m szer.; łuki odporowe między spichlerzami | ✗ **teren 2026-06-01: łuki odporowe NIECZYTELNE dla gracza** (detal filmowy, nie nawigacyjny) | **poza łańcuchem** (ikona `waska-uliczka-luki.svg` wycofana z użycia) |
+| `S06` | wąska uliczka z łukami | **Ulica Ciasna** (Podmurna–Mostowa) | 3 m szer.; łuki odporowe między spichlerzami | ✗ **teren 2026-06-01: łuki odporowe NIECZYTELNE dla gracza** (detal filmowy, nie nawigacyjny) | **poza łańcuchem** (ikona `s06-ulica-ciasna.svg` wycofana z użycia) |
 
 ### Strefa W — Piekary / Rabiańska (typowe podejście od zachodu)
 
@@ -84,7 +84,7 @@ Kolumny: **Kod** (= glif, stały) · **Detal** (piktogram, stały) · **Miejsce*
 
 | Kod | Detal | Miejsce | Haczyk | Źródło | Rola |
 |---|---|---|---|---|---|
-| `F01` | orbity (układ heliocentryczny) | **Fontanna Cosmopolis** (Skwer Broniewicza) | dysze na orbitach 6 planet; tekst De revolutionibus | ✓#40 | START-only (⚠ zweryfikować 12±2) · ikona: rezerwa `astrolabium.svg` |
+| `F01` | orbity (układ heliocentryczny) | **Fontanna Cosmopolis** (Skwer Broniewicza) | dysze na orbitach 6 planet; tekst De revolutionibus | ✓#40 | START-only (⚠ zweryfikować 12±2) · ikona: rezerwa `c01-kopernik.svg` |
 | `F02` | orbita planetoidy | **Pomnik planetoidy Toruń** (Skwer Broniewicza) | aluminiowa orbita + bryła | ✓#41 | START-only |
 | `F03` | kopuła / zbiornik gazu | **Planetarium** (Franciszkańska) | dawny XIX-w. zbiornik gazu | ✓#42 | START-only |
 
@@ -140,13 +140,14 @@ Dystraktory (5/ścieżka, zamknięta pętla rozłączna z łańcuchem) — dobie
 
 ## 7. Kontrakt stylu ikon (wektor)
 
-Wszystkie ikony detali = SVG w stylu `prototype/icons/piernik.svg` + `astrolabium.svg`:
+Wszystkie ikony detali = SVG w stylu `prototype/icons/n01-piernikarka.svg` + `c01-kopernik.svg`:
 
 - `viewBox="0 0 64 64"`, `role="img"`, `aria-label`, `<title>`.
 - Paleta brąz/beż: wypełnienia `#a86c38` / `#efe0b8`; obrysy `#6e4824` / `#8a6516` / `#5c4310`; podświetlenie `#c08a52`; jasny akcent `#fdf3e3`.
 - `stroke-width` ~2.4–3; `stroke-linejoin`/`linecap="round"`; `stroke-dasharray` na ornament (jak lukier/graduacja).
-- Jeden czytelny obiekt, sylwetkowy, bez tekstu. Plik: `prototype/icons/<detal>.svg`.
-- **Gotowe (13 SVG):** `piernik.svg` (`N01`), `astrolabium.svg` (`C01` Kopernik — instrument w dłoni), `delfin.svg` (zapas dla `C01`), oraz 10 detali łańcuchowych wzorców: `melonik` `gwiazda` `osiol` `brama-zaokraglona` `kaszownik` `zegar-jedna-wskazowka` `trabka` `worek-zboza` `kosciol-bez-wiezy` `herb-tarcza`. Reszta (detale tylko-dystraktorowe) — do wygenerowania dla unii użytych miejsc po zamrożeniu tras.
+- Jeden czytelny obiekt, sylwetkowy, bez tekstu.
+- **Nazwa pliku = kod + miejsce** [konwencja Oskara, 2026-06-01]: `prototype/icons/<kod>-<miejsce>.svg` (np. `s02-brama-klasztorna.svg`, `c04-ratusz.svg`). Nazwa oddaje **miejsce, które ikona symbolizuje**, nie to, co narysowane. Kod kanoniczny zostaje w `<title>` SVG. Zapasy: sufiks `-zapas-<wariant>` (np. `n02-przekupka-zapas-waga.svg`).
+- **Stan ikon (23 + 1 zmyłka):** wszystkie miejsca puli mają ikonę. Pełny przegląd wzrokowy → `prototype/icons-contact-sheet.html` (uporządkowany wg stref, podpisy miejsce-first). `brama-zaokraglona.svg` = zmyłka bez miejsca (nieczytelna, tylko dystraktor).
 
 ## 8. Checklista spójności (per ścieżka, przed złożeniem)
 

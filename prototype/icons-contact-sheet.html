@@ -3,65 +3,75 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Z1 — arkusz kontaktowy ikon detali (22)</title>
+<title>Z1 — arkusz kontaktowy ikon (wg miejsc)</title>
 <style>
-  :root { --bg:#f4f2ee; --card:#fff; --ink:#1d1b18; --muted:#6b6660; --line:#d9d4cc; --new:#e4efdd; --newln:#bcd6ad; }
+  :root { --bg:#f4f2ee; --card:#fff; --ink:#1d1b18; --muted:#6b6660; --line:#d9d4cc; --ok:#e4efdd; --okln:#bcd6ad; }
   * { box-sizing:border-box; }
   body { margin:0; font:15px/1.5 "Segoe UI",system-ui,sans-serif; background:var(--bg); color:var(--ink); padding:clamp(16px,4vw,40px); }
-  header { max-width:1000px; margin:0 auto 22px; }
+  header { max-width:1040px; margin:0 auto 22px; }
   h1 { font-size:1.5rem; margin:0 0 6px; letter-spacing:-.02em; }
-  .sub { color:var(--muted); margin:0; max-width:72ch; }
+  .sub { color:var(--muted); margin:0; max-width:74ch; }
   .badge { display:inline-block; font-size:.72rem; text-transform:uppercase; letter-spacing:.07em; background:#f0e3c8; color:#7a5d1d; border:1px solid #e0cda0; padding:3px 9px; border-radius:999px; margin-bottom:12px; font-weight:600; }
-  .grid { max-width:1000px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fill,minmax(150px,1fr)); gap:16px; }
+  .grid { max-width:1040px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fill,minmax(160px,1fr)); gap:16px; }
   figure { margin:0; background:var(--card); border:1px solid var(--line); border-radius:12px; padding:16px 12px 12px; text-align:center; box-shadow:0 1px 2px rgba(0,0,0,.05); }
-  figure.new { background:var(--new); border-color:var(--newln); }
-  figure img { width:72px; height:72px; display:block; margin:0 auto 10px; }
-  figcaption { font-size:.82rem; }
-  figcaption .code { color:var(--muted); font-size:.74rem; display:block; margin-top:2px; }
-  figcaption .tag { display:inline-block; font-size:.64rem; text-transform:uppercase; letter-spacing:.05em; color:#46622f; font-weight:700; }
-  .section { max-width:1000px; margin:30px auto 8px; font-size:.82rem; text-transform:uppercase; letter-spacing:.08em; color:var(--muted); font-weight:600; }
+  figure.chain { background:var(--ok); border-color:var(--okln); }
+  figure img { width:76px; height:76px; display:block; margin:0 auto 10px; }
+  figcaption { font-size:.86rem; font-weight:600; }
+  figcaption .code { color:var(--muted); font-size:.74rem; display:block; margin-top:3px; font-weight:400; }
+  figcaption .file { color:#9a8; font-size:.66rem; display:block; margin-top:2px; font-family:ui-monospace,monospace; font-weight:400; }
+  figcaption .tag { display:inline-block; font-size:.62rem; text-transform:uppercase; letter-spacing:.05em; color:#46622f; font-weight:700; }
+  .section { max-width:1040px; margin:30px auto 8px; font-size:.82rem; text-transform:uppercase; letter-spacing:.08em; color:var(--muted); font-weight:600; }
 </style>
 </head>
 <body>
 <header>
   <span class="badge">prototype/icons · ocena wzrokowa</span>
-  <h1>Z1 · Ikony detali — arkusz kontaktowy (22)</h1>
-  <p class="sub">Wszystkie piktogramy „co wypatrzeć w terenie" w jednym miejscu — sprawdzenie spójności stylu (§7 <code>map.md</code>: viewBox 64, brąz/beż, stroke 2.4–3). <strong>Zielone = 9 nowych</strong> (ta sesja). Detal jest osobną warstwą od glifu nawigacyjnego (glify = abstrakcyjne figury, patrz <code>z1-glify-globalne.md</code>).</p>
+  <h1>Z1 · Ikony detali — arkusz kontaktowy (wg miejsc)</h1>
+  <p class="sub">Każdy piktogram „co wypatrzeć w terenie", nazwany <strong>kodem + miejscem</strong> (nie tym, co na grafice). Podpis = miejsce; mniejsza linia = kod kanoniczny i nazwa pliku. <strong>Zielone = łańcuchowe</strong> (15, krytyczne). Detal jest osobną warstwą od glifu nawigacyjnego (<code>z1-glify-globalne.md</code>).</p>
 </header>
 
-<div class="section">Nowe (ta sesja) — 9</div>
+<div class="section">Strefa NE — Nowe Miasto (łańcuchowe ✅)</div>
 <div class="grid">
-  <figure class="new"><img src="icons/waga.svg" alt="waga"><figcaption>waga <span class="tag">nowa</span><span class="code">N02 · Przekupka</span></figcaption></figure>
-  <figure class="new"><img src="icons/lew.svg" alt="lew"><figcaption>lew <span class="tag">✓ teren</span><span class="code">N04 · Apteka Lew (nad drzwiami)</span></figcaption></figure>
-  <figure class="new"><img src="icons/bazylika-luki.svg" alt="bazylika-luki"><figcaption>bazylika / łuki <span class="tag">✓ teren</span><span class="code">N05 · Kościół Jakuba</span></figcaption></figure>
-  <figure class="new"><img src="icons/szafa.svg" alt="szafa"><figcaption>szafa <span class="tag">nowa</span><span class="code">N06 · Baj Pomorski</span></figcaption></figure>
-  <figure class="new"><img src="icons/wieza-bez-helmu.svg" alt="wieza-bez-helmu"><figcaption>wieża bez hełmu <span class="tag">nowa</span><span class="code">C04 · Ratusz</span></figcaption></figure>
-  <figure class="new"><img src="icons/kotwica.svg" alt="kotwica"><figcaption>kotwica <span class="tag">nowa</span><span class="code">S04 · Bulwar</span></figcaption></figure>
-  <figure class="new"><img src="icons/brama-ostroluk.svg" alt="brama-ostroluk"><figcaption>brama ostrołuk <span class="tag">✓ teren</span><span class="code">S01 · Br. Mostowa (NOWA)</span></figcaption></figure>
-  <figure class="new"><img src="icons/flisak.svg" alt="flisak"><figcaption>flisak <span class="tag">nowa</span><span class="code">D01 · dystr. (skrzypce/żaba?)</span></figcaption></figure>
+  <figure class="chain"><img src="icons/n01-piernikarka.svg" alt="Piernikarka"><figcaption>Piernikarka <span class="tag">✅</span><span class="code">N01 · piernik</span><span class="file">n01-piernikarka.svg</span></figcaption></figure>
+  <figure class="chain"><img src="icons/n02-przekupka.svg" alt="Przekupka"><figcaption>Przekupka <span class="tag">✅</span><span class="code">N02 · gęś</span><span class="file">n02-przekupka.svg</span></figcaption></figure>
+  <figure class="chain"><img src="icons/n04-apteka-lew.svg" alt="Apteka Lew"><figcaption>Apteka Pod Lwem <span class="tag">✅ teren</span><span class="code">N04 · lew nad drzwiami</span><span class="file">n04-apteka-lew.svg</span></figcaption></figure>
+  <figure class="chain"><img src="icons/n05-kosciol-jakuba.svg" alt="Kościół Jakuba"><figcaption>Kościół św. Jakuba <span class="tag">✅ teren</span><span class="code">N05 · bazylika / łuki</span><span class="file">n05-kosciol-jakuba.svg</span></figcaption></figure>
+  <figure class="chain"><img src="icons/n06-baj-pomorski.svg" alt="Baj Pomorski"><figcaption>Baj Pomorski <span class="tag">✅</span><span class="code">N06 · fasada-szafa</span><span class="file">n06-baj-pomorski.svg</span></figcaption></figure>
 </div>
 
-<div class="section" style="color:#9a4b3c">Wycofane / odpadły po dry-runie</div>
+<div class="section">Strefa C — Rynek Staromiejski (łańcuchowe ✅)</div>
 <div class="grid">
-  <figure style="opacity:.5; border-style:dashed"><img src="icons/fartuch.svg" alt="fartuch"><figcaption>fartuch <span class="code" style="color:#9a4b3c">N03 ✗ brak godła w terenie → poza łańcuchem</span></figcaption></figure>
-  <figure style="opacity:.5; border-style:dashed"><img src="icons/waska-uliczka-luki.svg" alt="waska-uliczka-luki"><figcaption>wąska uliczka <span class="code" style="color:#9a4b3c">S06 ✗ nieczytelna → zastąpiona ostrołukiem</span></figcaption></figure>
+  <figure class="chain"><img src="icons/c01-kopernik.svg" alt="Kopernik"><figcaption>Pomnik Kopernika <span class="tag">✅</span><span class="code">C01 · astrolabium</span><span class="file">c01-kopernik.svg</span></figcaption></figure>
+  <figure class="chain"><img src="icons/c02-osiolek.svg" alt="Osiołek"><figcaption>Osiołek <span class="tag">✅</span><span class="code">C02 · osioł / pręgierz</span><span class="file">c02-osiolek.svg</span></figcaption></figure>
+  <figure class="chain"><img src="icons/c03-pies-filus.svg" alt="Pies Filuś"><figcaption>Pies Filuś <span class="tag">✅</span><span class="code">C03 · melonik</span><span class="file">c03-pies-filus.svg</span></figcaption></figure>
+  <figure class="chain"><img src="icons/c04-ratusz.svg" alt="Ratusz"><figcaption>Ratusz Staromiejski <span class="tag">✅ ✕C09</span><span class="code">C04 · wieża bez hełmu</span><span class="file">c04-ratusz.svg</span></figcaption></figure>
+  <figure class="chain"><img src="icons/c06-pod-gwiazda.svg" alt="Pod Gwiazdą"><figcaption>Kamienica Pod Gwiazdą <span class="tag">✅</span><span class="code">C06 · gwiazda</span><span class="file">c06-pod-gwiazda.svg</span></figcaption></figure>
+  <figure class="chain"><img src="icons/c07-dwor-artusa.svg" alt="Dwór Artusa"><figcaption>Dwór Artusa <span class="tag">✅</span><span class="code">C07 · herb / tarcza</span><span class="file">c07-dwor-artusa.svg</span></figcaption></figure>
+  <figure class="chain"><img src="icons/c08-kosciol-nmp.svg" alt="Kościół NMP"><figcaption>Kościół NMP <span class="tag">✅ ✕N05</span><span class="code">C08 · kościół bez wieży</span><span class="file">c08-kosciol-nmp.svg</span></figcaption></figure>
+  <figure class="chain"><img src="icons/c09-katedra-janow.svg" alt="Katedra Janów"><figcaption>Katedra św. Janów <span class="tag">✅ ✕C04</span><span class="code">C09 · zegar 1 wskazówka</span><span class="file">c09-katedra-janow.svg</span></figcaption></figure>
 </div>
 
-<div class="section">Gotowe wcześniej — 13</div>
+<div class="section">Strefa S — Wisła / bramy (łańcuchowe ✅)</div>
 <div class="grid">
-  <figure><img src="icons/piernik.svg" alt="piernik"><figcaption>piernik<span class="code">N01 · Piernikarka</span></figcaption></figure>
-  <figure><img src="icons/astrolabium.svg" alt="astrolabium"><figcaption>astrolabium<span class="code">C01 · Kopernik</span></figcaption></figure>
-  <figure><img src="icons/delfin.svg" alt="delfin"><figcaption>delfin<span class="code">zapas C01</span></figcaption></figure>
-  <figure><img src="icons/melonik.svg" alt="melonik"><figcaption>melonik<span class="code">C03 · Filuś</span></figcaption></figure>
-  <figure><img src="icons/gwiazda.svg" alt="gwiazda"><figcaption>gwiazda<span class="code">C06 · Pod Gwiazdą</span></figcaption></figure>
-  <figure><img src="icons/osiol.svg" alt="osiol"><figcaption>osioł<span class="code">C02 · Osiołek</span></figcaption></figure>
-  <figure><img src="icons/herb-tarcza.svg" alt="herb-tarcza"><figcaption>herb / tarcza<span class="code">C07 · Dwór Artusa</span></figcaption></figure>
-  <figure><img src="icons/kosciol-bez-wiezy.svg" alt="kosciol-bez-wiezy"><figcaption>kościół bez wieży<span class="code">C08 · NMP</span></figcaption></figure>
-  <figure><img src="icons/zegar-jedna-wskazowka.svg" alt="zegar"><figcaption>zegar 1 wskazówka<span class="code">C09 · Katedra</span></figcaption></figure>
-  <figure><img src="icons/brama-zaokraglona.svg" alt="brama"><figcaption>brama zaokrąglona<span class="code">S01 · Br. Mostowa</span></figcaption></figure>
-  <figure><img src="icons/kaszownik.svg" alt="kaszownik"><figcaption>kaszownik<span class="code">S02 · Br. Klasztorna</span></figcaption></figure>
-  <figure><img src="icons/trabka.svg" alt="trabka"><figcaption>trąbka<span class="code">W01 · Łuk Cezara</span></figcaption></figure>
-  <figure><img src="icons/worek-zboza.svg" alt="worek-zboza"><figcaption>worek zboża<span class="code">W02 · (nieużyty Z1)</span></figcaption></figure>
+  <figure class="chain"><img src="icons/s01-brama-mostowa.svg" alt="Brama Mostowa"><figcaption>Brama Mostowa <span class="tag">✅ teren</span><span class="code">S01 · ostrołuk + krenelaż</span><span class="file">s01-brama-mostowa.svg</span></figcaption></figure>
+  <figure class="chain"><img src="icons/s02-brama-klasztorna.svg" alt="Brama Klasztorna"><figcaption>Brama Klasztorna <span class="tag">⚠️ od Bulwaru</span><span class="code">S02 · brama + kaszownik</span><span class="file">s02-brama-klasztorna.svg</span></figcaption></figure>
+</div>
+
+<div class="section">Dystraktory (zmyłki — nie łańcuchowe)</div>
+<div class="grid">
+  <figure><img src="icons/n03-modry-fartuch.svg" alt="Modry Fartuch"><figcaption>Pod Modrym Fartuchem <span class="code">N03 · fartuch (brak godła w terenie)</span><span class="file">n03-modry-fartuch.svg</span></figcaption></figure>
+  <figure><img src="icons/s04-kotwica-bulwar.svg" alt="Bulwar"><figcaption>Kotwica na Bulwarze <span class="code">S04 · kotwica</span><span class="file">s04-kotwica-bulwar.svg</span></figcaption></figure>
+  <figure><img src="icons/w01-luk-cezara.svg" alt="Łuk Cezara"><figcaption>Łuk Cezara <span class="code">W01 · trąbka herolda</span><span class="file">w01-luk-cezara.svg</span></figcaption></figure>
+  <figure><img src="icons/d01-fontanna-flisaka.svg" alt="Fontanna Flisaka"><figcaption>Fontanna Flisaka <span class="code">D01 · flisak / skrzypce</span><span class="file">d01-fontanna-flisaka.svg</span></figcaption></figure>
+</div>
+
+<div class="section">Zapasy / nieużyte / wycofane</div>
+<div class="grid">
+  <figure style="opacity:.6"><img src="icons/n02-przekupka-zapas-waga.svg" alt="waga"><figcaption>Przekupka — wariant <span class="code">zapas N02 · waga (zastąpiona gęsią)</span><span class="file">n02-przekupka-zapas-waga.svg</span></figcaption></figure>
+  <figure style="opacity:.6"><img src="icons/c01-kopernik-zapas-delfin.svg" alt="delfin"><figcaption>Kopernik — wariant <span class="code">zapas C01 · delfin</span><span class="file">c01-kopernik-zapas-delfin.svg</span></figcaption></figure>
+  <figure style="opacity:.6"><img src="icons/w02-spichlerz.svg" alt="Spichlerz"><figcaption>Spichlerz <span class="code">W02 · worek zboża (nieużyty Z1)</span><span class="file">w02-spichlerz.svg</span></figcaption></figure>
+  <figure style="opacity:.5; border-style:dashed"><img src="icons/s06-ulica-ciasna.svg" alt="Ulica Ciasna"><figcaption>Ulica Ciasna <span class="code" style="color:#9a4b3c">S06 ✗ łuki nieczytelne w terenie</span><span class="file">s06-ulica-ciasna.svg</span></figcaption></figure>
+  <figure style="opacity:.5; border-style:dashed"><img src="icons/brama-zaokraglona.svg" alt="zmyłka"><figcaption>(zmyłka bez miejsca) <span class="code" style="color:#9a4b3c">nieczytelna → tylko jako dystraktor</span><span class="file">brama-zaokraglona.svg</span></figcaption></figure>
 </div>
 </body>
 </html>

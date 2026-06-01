@@ -16,7 +16,7 @@
 | `N05` bazylika/łuki (Kościół Jakuba) | ✅ łuki + bryła rozpoznawalne → **pewny** |
 | `N03` fartuch (Modry Fartuch) | ❌ **brak widocznego godła** → wypada z łańcuchów (DYS-only) |
 | `S06` Ulica Ciasna | ❌ łuki odporowe **nieczytelne** → wypada z łańcucha |
-| Brama Mostowa `S01` | ✅ **ostrołuk przejazdu** wypatrzalny → piktogram = `brama-ostroluk.svg` |
+| Brama Mostowa `S01` | ✅ **ostrołuk przejazdu** wypatrzalny → piktogram = `s01-brama-mostowa.svg` |
 | Budżety graniczne G4/G10 | ✅ odległości znośne; rozsuw powrotu do MG „nawet pasuje" |
 | Reguła wzroku | ✅ **tylko śródłańcuchowo** (P1→P2, P2→P3); P3→P4 u MG zwolniony |
 
@@ -150,7 +150,7 @@ Dotąd `S02` był tylko dystraktorem; w v2 jest **startem G6**. Detal = **kaszow
 | R2.1 para 4 (C06→C01) | ❌ za blisko | G9 P2→P3 wymaga rozbicia |
 | R2.1 para 5 (C03→C07) | ✅ OK | G10 P1→P2 bez zmian |
 | R2.1 para 6 (C07→C02) | ❌ za blisko | G10 P2→P3 wymaga rozbicia |
-| R2.2 S02 kaszownik | ⚠️ widziano z dołu (stojąc w bramie), ikona kaszownika trudna do zwizualizowania → **zmiana detalu na bramę** (prostokąt + gotycki łuk) od strony Bulwaru; `kaszownik.svg` przebudowany [2026-06-01] | S02 zostaje w łańcuchach; waypoint = od strony zewnętrznej (Bulwar Filadelfijski); `brama-zaokraglona.svg` → dystraktor only |
+| R2.2 S02 kaszownik | ⚠️ widziano z dołu (stojąc w bramie), ikona kaszownika trudna do zwizualizowania → **zmiana detalu na bramę** (prostokąt + gotycki łuk) od strony Bulwaru; `s02-brama-klasztorna.svg` przebudowany [2026-06-01] | S02 zostaje w łańcuchach; waypoint = od strony zewnętrznej (Bulwar Filadelfijski); `brama-zaokraglona.svg` → dystraktor only |
 | R2.3 nogi S01/S02 | ⏳ niezmierzone | poluzowany budżet — nie blokuje; zmierzyć przed playtestem |
 
 > Po R2: następna sesja domyka macierz v2 (rozbicie par „za ciasnych"), regeneruje 10 kart (pętle dystraktorów + deszyfrowniki) i buduje mapy.

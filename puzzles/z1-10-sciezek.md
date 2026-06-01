@@ -38,7 +38,7 @@
 | `N05` bazylika/łuki | ✅ łuki + bryła kościoła rozpoznawalne | pewny — G2 P3 / G5 P1 / G6 P2 odblokowane |
 | `N03` fartuch | ❌ **brak widocznego godła/fartucha** | **wypada z łańcuchów** (G2 P1, G5 P2) → DYS-only |
 | `S06` Ulica Ciasna | ❌ łuki odporowe **nieczytelne** dla gracza | **wypada z łańcucha** (G7 P1); ikona wycofana |
-| Brama Mostowa `S01` | ✅ **ostrołuk przejazdu** wypatrzalny (lepszy niż „zaokr. narożniki") | piktogram poprawiony → `brama-ostroluk.svg` |
+| Brama Mostowa `S01` | ✅ **ostrołuk przejazdu** wypatrzalny (lepszy niż „zaokr. narożniki") | piktogram poprawiony → `s01-brama-mostowa.svg` |
 | Budżety graniczne G4/G10 | ✅ **odległości znośne** | flagi budżetu zdjęte; rozsuw powrotu do MG = bonus |
 | Nogi krótkie/nawrotne | ⚠️ **constraint**: dwa przystanki łańcucha NIE w zasięgu wzroku bez podchodzenia | dotyczy `G7 C04→C07 ~50m`; audyt par śródłańcuchowych w klastrze Rynku |
 
@@ -50,7 +50,7 @@ Broken w v2: G8 P2→P3 (`C01→C07` ❌) · G9 P1→P2 (`C02→C06` ❌) + P2�
 
 Swappy: G3.P1 `N02`→`C02` · G8.P3 `C07`→`N01` · G9.P1 `C02`→`N02` · G9.P3 `C01`→`S02` · G10.P3 `C02`→`N04`.
 
-**Detal S02:** kaszownik zbyt trudny do ikonizacji → **brama prostokątna (gotycki łuk) od strony Bulwaru**; `kaszownik.svg` przebudowany [2026-06-01].
+**Detal S02:** kaszownik zbyt trudny do ikonizacji → **brama prostokątna (gotycki łuk) od strony Bulwaru**; `s02-brama-klasztorna.svg` przebudowany [2026-06-01].
 
 | Grupa | P1 | P2 | P3 | P4 (→MG) | start |
 |---|---|---|---|---|---|
@@ -210,13 +210,14 @@ Ikony zbyt podobne/jednoznaczne **nie mogą współwystąpić na jednej karcie**
 2. **🟠 Budżety G4 (~14,6) i G10 (~15) liczone optymistycznie** (~80 m/min, **bez czasu na odczyt detali**). Z realnym czasem obserwacji prawdopodobnie **już >15 min**. Kontyngencja swapu podana przez subagentów (G4: weryfikacja `N06`→`C09`; G10: pomiar Chełmińskiej briefing→`C03`) **nie jest opcjonalna** — orkiestrator domyka po pomiarze. To nie „granica", to prawdopodobne przekroczenie.
 3. **🟡 Krótkie/nawrotne nogi:** G7 `C04`→`C07` ~50 m (trywializacja kroku); G4 `C09`→`C02` ~180 m w górę Żeglarskiej (K1 nie zdradza powrotu).
 
-## Ikony do wygenerowania (unia faktycznie użytych detali)
+## Ikony (unia faktycznie użytych detali)
 
-✅ **WSZYSTKIE 22 GOTOWE** [2026-06-01] — `prototype/icons/`, §7. Arkusz kontaktowy: `prototype/icons-contact-sheet.html`.
-- Wcześniejsze 13: `piernik` `astrolabium` `delfin` `melonik` `gwiazda` `osiol` `brama-zaokraglona` `kaszownik` `zegar-jedna-wskazowka` `trabka` `worek-zboza` `kosciol-bez-wiezy` `herb-tarcza`.
-- Nowe 9 (ta sesja): `waga`(N02) · `lew`(N04) · `fartuch`(N03 — narysowana mimo `⚠`; dry-run weryfikuje *widoczność*, nie rysowalność) · `bazylika-luki`(N05) · `szafa`(N06) · `wieza-bez-helmu`(C04) · `kotwica`(S04) · `waska-uliczka-luki`(S06) · `flisak`(D01 — rysunek = skrzypce; **flaga**: żaba jako prostsza sylwetka, swap trywialny).
+✅ **WSZYSTKIE GOTOWE** [2026-06-01] — `prototype/icons/`, nazwa = **kod + miejsce** (`map.md §7`). Pełny przegląd: `prototype/icons-contact-sheet.html` (wg stref, podpisy miejsce-first).
+- **Łańcuchowe (15):** `n01-piernikarka` `n02-przekupka` `n04-apteka-lew` `n05-kosciol-jakuba` `n06-baj-pomorski` · `c01-kopernik` `c02-osiolek` `c03-pies-filus` `c04-ratusz` `c06-pod-gwiazda` `c07-dwor-artusa` `c08-kosciol-nmp` `c09-katedra-janow` · `s01-brama-mostowa` `s02-brama-klasztorna`.
+- **Dystraktory (4):** `n03-modry-fartuch` `s04-kotwica-bulwar` `w01-luk-cezara` `d01-fontanna-flisaka`.
+- **Zapasy / nieużyte / wycofane:** `n02-przekupka-zapas-waga` · `c01-kopernik-zapas-delfin` · `w02-spichlerz` (nieużyty) · `s06-ulica-ciasna` (wycofana) · `brama-zaokraglona` (zmyłka bez miejsca).
 
-> Niewykorzystane (NIE generować): `aniol` `baszta` `brama-luk` `dwa-szczyty` `schodkowy-szczyt`. Pula dystraktorów zbiegła się do W01/S01/S02/S04/D01 + miejsc N/C.
+> Niewykorzystane (NIE generować): `aniol` `baszta` `brama-luk` `dwa-szczyty` `schodkowy-szczyt`.
 
 ## Następne kroki
 1. ✅ Decyzja G2 = opcja (i) [Oskar 2026-06-01].

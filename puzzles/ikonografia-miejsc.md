@@ -17,10 +17,10 @@
 
 | Miejsce | Lokalizacja | Cecha wizualna (haczyk) | Piktogram (placeholder) | Rola w Z1 | Weryfikacja |
 |---|---|---|---|---|---|
-| **Pomnik Piernikarki** | Rynek Nowomiejski | kosz toruńskich pierników; piesek szarpie suknię | **piernik** (serce piernikowe) — wektor `prototype/icons/piernik.svg` | łańcuch (△) | ✓ wiki #35 |
+| **Pomnik Piernikarki** | Rynek Nowomiejski | kosz toruńskich pierników; piesek szarpie suknię | **piernik** (serce piernikowe) — wektor `prototype/icons/n01-piernikarka.svg` | łańcuch (△) | ✓ wiki #35 |
 | **Kamienica Pod Gwiazdą** | Rynek Staromiejski 35 | pozłacana **gwiazda** na szczycie żółtej barokowej fasady (data 1697) | ⭐ gwiazda | łańcuch (○) | ✓ wiki #7 |
 | **osiołek** (dawny pręgierz) | Rynek / zbieg z ul. Żeglarską | żelazny **grzbiet osiołka** (replika pręgierza) | 🫏 osioł | łańcuch (□) | ✓ wiki #3 |
-| **Pomnik Kopernika** | Rynek Staromiejski (przy Ratuszu) | **astrolabium / sfera armilarna** trzymane przez posąg astronoma | **astrolabium** — wektor `prototype/icons/astrolabium.svg` | łańcuch (◇, KONIEC) | ✓ **FAKT [autor, 2026-06-01]** — posąg trzyma instrument (must-have); wiki #1 wymienia tylko wąsik i delfina, ale instrument jest |
+| **Pomnik Kopernika** | Rynek Staromiejski (przy Ratuszu) | **astrolabium / sfera armilarna** trzymane przez posąg astronoma | **astrolabium** — wektor `prototype/icons/c01-kopernik.svg` | łańcuch (◇, KONIEC) | ✓ **FAKT [autor, 2026-06-01]** — posąg trzyma instrument (must-have); wiki #1 wymienia tylko wąsik i delfina, ale instrument jest |
 | **Krzywa Wieża** | ul. Pod Krzywą Wieżą 1 | wyraźnie **przechylona baszta** murów miejskich | 🗼 wieża | dystraktor (⬡) | ✓ wiki #17 |
 | **pies Filuś** | wylot ul. Chełmińskiej (Rynek Star.) | **melonik** prof. Filutka w pyszczku kundelka | 🎩 melonik | dystraktor (☆) | ✓ wiki #4 |
 | **Łuk Cezara** | ul. Piekary 37 | Michał Archanioł z **trąbką** na attyce (+ szczątek torów tramwajowych pod sklepieniem) | 🎺 trąbka | dystraktor (✕) | ✓ wiki #10 |
@@ -31,8 +31,8 @@
 
 Pełnoprawne SVG (nie emoji), użyte w `prototype/mapa-z1-podglad.html`:
 
-- `prototype/icons/piernik.svg` — toruńskie **serce piernikowe** (brąz + kropkowany lukier).
-- `prototype/icons/astrolabium.svg` — **astrolabium** (tarcza z graduacją, ekliptyka, alidada, zawieszka).
+- `prototype/icons/n01-piernikarka.svg` — toruńskie **serce piernikowe** (brąz + kropkowany lukier).
+- `prototype/icons/c01-kopernik.svg` — **astrolabium** (tarcza z graduacją, ekliptyka, alidada, zawieszka).
 
 Pozostałe 7 detali to na razie emoji (🫏 ⭐ 🗼 🎩 🎺 ⚖️ 🛡️) — do zwektoryzowania w tym samym stylu, gdy ścieżka będzie zatwierdzona.
 

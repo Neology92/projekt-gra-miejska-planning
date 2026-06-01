@@ -14,7 +14,7 @@
 
 `N01 N02 N03 N04 N05 N06` · `C01 C02 C03 C04 C06 C07 C08 C09` · `S01 S02 S04` · `W01` · `D01`
 
-> **Zmiana v3 [2026-06-01]:** `S06` usunięte z puli (ikona `waska-uliczka-luki.svg` wycofana; detal nieczytelny w terenie). `N03` pozostaje w puli jako **martwy dystraktor** (ikona `fartuch.svg` narysowana, ale detal niewypatrzalny → wiersze dystraktora nieszkodliwe). Pula: 19 kodów (było 20).
+> **Zmiana v3 [2026-06-01]:** `S06` usunięte z puli (ikona `s06-ulica-ciasna.svg` wycofana; detal nieczytelny w terenie). `N03` pozostaje w puli jako **martwy dystraktor** (ikona `n03-modry-fartuch.svg` narysowana, ale detal niewypatrzalny → wiersze dystraktora nieszkodliwe). Pula: 19 kodów (było 20).
 
 **Nieużyte (NIE renderować na bazowej mapie):** `C05` anioł, `S03` Żeglarska, `S05` baszty, `S06` Ulica Ciasna (wycofana), `W02 W03 W04`, `D02`, `F01 F02 F03`.
 
