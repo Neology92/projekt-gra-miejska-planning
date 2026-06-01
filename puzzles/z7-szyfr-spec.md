@@ -12,7 +12,7 @@ Zmiana modelu klucza — **nadrzędna wobec poprzedniego §0 (liczba liter motta
 
 1. **Szyfr = Cezar, OBA tory** — bez zmian.
 2. **Klucz = odkryty przez PORÓWNANIE NAGŁÓWKÓW** (nie przez liczenie liter):
-   - Nagłówek **Z3** (pergamin listy): motto Zakonu w **charakterystycznym foncie** (np. Fraktur/kursywa) — **jawne**: „HELFEN, HILFEN UND WEHREN!"
+   - Nagłówek **Z3** (pergamin listy): motto Zakonu w **charakterystycznym foncie** (np. Fraktur/kursywa) — **jawne**: „HELFEN, HEILEN UND WEHREN!"
    - Nagłówek **Z7** (przechwycony list): **to samo motto, TEN SAM FONT, zaszyfrowane Cezarem** — interpunkcja (przecinek, wykrzyknik) w tych samych pozycjach co w Z3, więc gracz natychmiast widzi odpowiadające sobie słowa.
    - **Mechanika odkrycia:** gracz kładzie oba dokumenty obok siebie, porównuje litera po literze → H→K, E→H, L→O, F→I… → każda litera przesunięta o tę samą wartość → odkrywa przesunięcie **bez liczenia liter, bez wzoru, bez rekwizytu**.
    - **Brak koła — świadoma decyzja:** koło Cezara byłoby zbyt silną wskazówką. Gracz odkrywa i stosuje przesunięcie ołówkiem/palcem na papierze lub po prostu licząc w głowie/na dłoni.
@@ -23,7 +23,7 @@ Zmiana modelu klucza — **nadrzędna wobec poprzedniego §0 (liczba liter motta
 
 **Shift = 7** — niestandardowy, mniej oczywisty niż klasyczny Cezar +3, ciekawsze odkrycie w terenie:
 
-- Zaszyfrowane motto (nagłówek Z7, ten sam font co Z3): `OLSMLU, OPSMLU BUK DLOYLU!`
+- Zaszyfrowane motto (nagłówek Z7, ten sam font co Z3): `OLSMLU, OLPSLU BUK DLOYLU!`
 - Zaszyfrowane ciało (układ spacji jak w plaintexcie): `OHUZ CVU IHFZLU PZ QVYKHU AOL JVVR`
 - Deszyfrowanie: cofnij każdą literę o **7** (= naprzód o 19). A↔H na palcach lub ołówkiem na papierze.
 
@@ -40,7 +40,7 @@ Zmiana modelu klucza — **nadrzędna wobec poprzedniego §0 (liczba liter motta
 ## 1. Model — ⚠ mechanika klucza → §0; reszta aktualna
 
 - **Szyfr:** Cezar, oba tory (patrz §0).
-- **Klucz = odkryty przez porównanie nagłówków** (patrz §0): Z3 nosi motto jawne, Z7 to samo motto zaszyfrowane — **ten sam charakterystyczny font** sygnalizuje związek. Interpunkcja (przecinek, wykrzyknik): `HELFEN, HILFEN UND WEHREN!`.
+- **Klucz = odkryty przez porównanie nagłówków** (patrz §0): Z3 nosi motto jawne, Z7 to samo motto zaszyfrowane — **ten sam charakterystyczny font** sygnalizuje związek. Interpunkcja (przecinek, wykrzyknik): `HELFEN, HEILEN UND WEHREN!`.
 - **Szyfrogram Z7 = przechwycony list krzyżacki** (dostarczony w kopercie K8). Nagłówek = **to samo motto, ten sam font co Z3, ALE ZASZYFROWANE CEZAREM** — gracz widzi niezrozumiały ciąg w miejscu, gdzie Z3 ma znane motto. Tylko **rdzeń wiadomości jest zaszyfrowany**; ramka listu (zwrot, podpis) jawna — żeby gracz deszyfrował ~41 liter, nie całość.
 - **Po odszyfrowaniu:** ujawnienie tożsamości Jordana → wejście w finał (KF).
 - **Co gracz musi mieć naraz:** pergamin Z3 (z jawnym mottem w nagłówku, niesiony od F2B) **+** szyfrogram Z7 (K8). Font nagłówka łączy oba.
@@ -137,7 +137,7 @@ Szyfrogram = **dyspozycja komtura toruńskiego Albrechta Kalba do Malborka**, pr
 
 - ✅ Szyfr — **Cezar, oba tory** [2026-06-01].
 - ✅ Mechanika klucza — **porównanie nagłówków** (Z3 jawny ↔ Z7 zaszyfrowany, ten sam font + ta sama interpunkcja) [2026-06-01, sesja z Piotrem].
-- ✅ Interpunkcja motta: `HELFEN, HILFEN UND WEHREN!` (przecinek + wykrzyknik) — oba dokumenty.
+- ✅ Interpunkcja motta: `HELFEN, HEILEN UND WEHREN!` (przecinek + wykrzyknik) — oba dokumenty.
 - ✅ Brak rekwizytu (koła) — świadoma decyzja.
 - ✅ Ciphertexty (Ver. A shift+3 i Ver. B shift+7) — policzone, round-trip ✓. → §0.
 - ✅ Treść plaintextu — **ZATWIERDZONA [2026-06-01]:** „HANS VON BAYSEN IS JORDAN THE COOK".

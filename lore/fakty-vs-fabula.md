@@ -58,7 +58,7 @@ To nie jest naginka faktów, lecz **świadoma decyzja tonalna** o tym, jak gra *
 > **Zmiana [2026-06-01]:** mechanika klucza = **porównanie nagłówków** (nie liczenie liter motta). Szyfr = Cezar shift +7. Brak rekwizytu (koła).
 
 - **Anachronizm: minimalny/żaden.** Szyfr przesuwny (Cezara) znany od starożytności; szyfry podstawieniowe były w XV-wiecznej dyplomacji w użyciu. Vigenère (~1553) wymagałby naginki — Cezar nie.
-- **Mechanika**: przechwycony „list krzyżacki" (Z7) zaszyfrowany Cezarem; klucz = **przesunięcie odkryte przez porównanie nagłówka Z7 z mottem Z3** — oba dokumenty noszą motto `HELFEN, HILFEN UND WEHREN!` w tym samym charakterystycznym foncie; Z7 ma je zaszyfrowane (shift +7). Gracz porównuje → odkrywa przesunięcie = 7. Bez koła, bez liczenia.
+- **Mechanika**: przechwycony „list krzyżacki" (Z7) zaszyfrowany Cezarem; klucz = **przesunięcie odkryte przez porównanie nagłówka Z7 z mottem Z3** — oba dokumenty noszą motto `HELFEN, HEILEN UND WEHREN!` w tym samym charakterystycznym foncie; Z7 ma je zaszyfrowane (shift +7). Gracz porównuje → odkrywa przesunięcie = 7. Bez koła, bez liczenia.
 - **Uzasadnienie**: godło wroga jako klucz do obu zakończeń (TR: szyfrogram→twist; Krzyżacy: szyfrogram→parole). Pokrycie fabularne: Zakon realnie szyfrował korespondencję (`donosiciele-1454.js`).
 - **Świadome decyzje [2026-06-01]** (Oskar + sesja z Piotrem). Szczegóły: `puzzles/z7-szyfr-spec.md §0`.
 

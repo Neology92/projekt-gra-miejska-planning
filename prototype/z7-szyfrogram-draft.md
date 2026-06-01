@@ -17,7 +17,7 @@
 
 ---
 
-**OLSMLU, OPSMLU BUK DLOYLU!**
+**OLSMLU, OLPSLU BUK DLOYLU!**
 
 *To the Hochmeister at Marienburg. In haste — and for your eyes alone.*
 
@@ -51,7 +51,7 @@ You have seen this script before — it is the same hand that headed the list of
 
 ## PLANNING NOTES (nie dla gracza)
 
-**Szyfr: Cezar, shift +7 [DECYZJA Oskara 2026-06-01]:** przesunięcie odkrywane przez porównanie nagłówka Z7 z jawnym nagłówkiem Z3 — brak rekwizytu (koła). Motto z interpunkcją: `HELFEN, HILFEN UND WEHREN!`. Zaszyfrowane motto (nagłówek Z7): `OLSMLU, OPSMLU BUK DLOYLU!`. Ciphertext ciała (round-trip ✓): `OHUZ CVU IHFZLU PZ QVYKHU AOL JVVR`. ~~Cezar +3 (wariant A) — porzucony.~~ ~~Cezar +21 (stary model liczenia liter) — archiwalny.~~ ~~Vigenère — archiwalny.~~
+**Szyfr: Cezar, shift +7 [DECYZJA Oskara 2026-06-01]:** przesunięcie odkrywane przez porównanie nagłówka Z7 z jawnym nagłówkiem Z3 — brak rekwizytu (koła). Motto z interpunkcją: `HELFEN, HEILEN UND WEHREN!`. Zaszyfrowane motto (nagłówek Z7): `OLSMLU, OLPSLU BUK DLOYLU!`. Ciphertext ciała (round-trip ✓): `OHUZ CVU IHFZLU PZ QVYKHU AOL JVVR`. ~~Cezar +3 (wariant A) — porzucony.~~ ~~Cezar +21 (stary model liczenia liter) — archiwalny.~~ ~~Vigenère — archiwalny.~~
 
 **Rama narracyjna UNIWERSALNA [decyzja Oskara 2026-06-02]:** dodano otwarcie i domknięcie *kursywą* (z głów) — „Whatever road brought it into our hands… a letter the Order never meant any of us to read." **Method-agnostic**: K8 = ten sam przechwycony list niezależnie którą opcjonalną (Z4/Z5/Z6) grupa zrobiła. Realizuje „uniwersalna treść Z7" + zasadę koperta=scena (`mechanics/koperty-mg.md §Zasada nadrzędna #2`). Domknięcie kieruje do mechaniki: „we hold their word too, headed across the list of names. Set the one against the other" (porównanie nagłówków). Szyfr i sam dispatch — **nietknięte**.
 

@@ -24,7 +24,7 @@ Oba tory mają osobny finał, oba to **szyfry** rozwiązywane z elementów zebra
 
 Dwa składniki: **klucz** (z zagadki obowiązkowej) + **szyfrogram** (z opcjonalnej). To **odwrócenie** wcześniejszego Modelu B (było: Z3=szyfrogram, Z4=klucz) — patrz `puzzles/z3-lista-tr-spec.md` Decyzja #1.
 
-- **KLUCZ szyfru = ODKRYTY PRZEZ PORÓWNANIE NAGŁÓWKÓW** (oba tory). Motto `HELFEN, HILFEN UND WEHREN!` w charakterystycznym foncie łączy oba dokumenty wizualnie. **Asymetria pozyskania:**
+- **KLUCZ szyfru = ODKRYTY PRZEZ PORÓWNANIE NAGŁÓWKÓW** (oba tory). Motto `HELFEN, HEILEN UND WEHREN!` w charakterystycznym foncie łączy oba dokumenty wizualnie. **Asymetria pozyskania:**
   - **Mieszczanie** — jawne motto **wykradzione** w Z3 (lista TR z infiltracji Albrechta). Zdobywasz sekret wroga.
   - **Krzyżacy** — motto **znane** (przynależność do Zakonu = godność). Porównują swoje motto z zaszyfrowanym nagłówkiem Z11.
 - **SZYFROGRAM = z jednej zagadki opcjonalnej**, wydawany **przez MG** przy oddaniu rozwiązania opcjonalnej (Z4/5/6 dla TR; Z8/9/10 dla krzyżaków). **Wymienialny** — każda opcjonalna daje (równoważny) szyfrogram.

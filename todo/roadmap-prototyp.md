@@ -145,7 +145,7 @@ Zadania zgłoszone przez Oskara po domknięciu rdzenia Z3↔Z7. Każde z funkcj�
 
 ## 5. Ścieżka krytyczna i ryzyka
 
-- **Węzeł: Z7 + model klucza (blok 2B/2A).** Model [zaktualizowany 2026-06-01, sesja z Piotrem]: **klucz = porównanie nagłówków** (Z3 jawny `HELFEN, HILFEN UND WEHREN!` ↔ Z7 zaszyfrowany shift+7 w tym samym foncie) → Cezar shift+7. **Szyfrogram** wydaje **MG po opcjonalnej (Z4/5/6)**. Brak koła. Kalimba = prosta zagadka melodia→liczby. Patrz `z7-szyfr-spec.md §0`.
+- **Węzeł: Z7 + model klucza (blok 2B/2A).** Model [zaktualizowany 2026-06-01, sesja z Piotrem]: **klucz = porównanie nagłówków** (Z3 jawny `HELFEN, HEILEN UND WEHREN!` ↔ Z7 zaszyfrowany shift+7 w tym samym foncie) → Cezar shift+7. **Szyfrogram** wydaje **MG po opcjonalnej (Z4/5/6)**. Brak koła. Kalimba = prosta zagadka melodia→liczby. Patrz `z7-szyfr-spec.md §0`.
   - **Ryzyko trudności w terenie:** dry-run mierzy czy gracze samodzielnie połączą oba nagłówki + minuty na odszyfrowanie. Mitygacja: interpunkcja lokuje słowa, granice słów w szyfrogramie pozwalają uzupełnić pomyłki.
   - **Anachronizm: minimalny** — Cezar znany od starożytności (inaczej niż Vigenère ~1553). Backup Vigenère → `prototype/z7-szyfrogram-vigenere-backup.md`.
   - Jeśli spięcie nie domyka się czysto — kaskaduje na Z3, Z4, K3. Walidujemy ręcznie (przejście liczbowe) przed finalizacją kopert.

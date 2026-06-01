@@ -76,7 +76,7 @@ Oskar przesądził model (nadrzędny wobec starszych zapisów „klucz z kalimby
 
 > **AKTUALIZACJA [2026-06-01, sesja z Piotrem]: mechanika klucza = porównanie nagłówków** (nie „liczba liter motta"). Szczegóły → `puzzles/z7-szyfr-spec.md §0`.
 
-- **Klucz = odkryty przez PORÓWNANIE NAGŁÓWKÓW:** Z3 nosi motto `HELFEN, HILFEN UND WEHREN!` w **charakterystycznym foncie**; Z7 (przechwycony list) ma **to samo motto, ten sam font, zaszyfrowane Cezarem shift +7**. Gracz porównuje → odkrywa przesunięcie. Brak rekwizytu (koła).
+- **Klucz = odkryty przez PORÓWNANIE NAGŁÓWKÓW:** Z3 nosi motto `HELFEN, HEILEN UND WEHREN!` w **charakterystycznym foncie**; Z7 (przechwycony list) ma **to samo motto, ten sam font, zaszyfrowane Cezarem shift +7**. Gracz porównuje → odkrywa przesunięcie. Brak rekwizytu (koła).
 - **Pergamin Z3 nosi motto w nagłówku w charakterystycznym foncie** — identycznym z fontem nagłówka Z7. To wizualny sygnał połączenia obu dokumentów.
 - **Szyfrogram = przechwycony list krzyżacki**, wydawany przez **MG** po rozwiązaniu jednej opcjonalnej (Z4/Z5/Z6). Nagłówek Z7 = **to samo motto w tym samym foncie, ale zaszyfrowane** = sygnał „tu jest klucz, porównaj z Z3".
 - Odszyfrowanie → **ujawnienie „Jordan = Hans von Baysen"** (twist).
@@ -119,7 +119,7 @@ To pytanie o **integralność twistu** — i jest już rozstrzygalne, bo w repo 
 
 - **Co grupa zdobywa w Z3:** fizyczny pergamin (rekwizyt) wykradziony Albrechtowi (Zosia) — lista nazwisk z **mottem w nagłówku** (= klucz szyfru).
 - **Co grupa z nim robi:** szyfrogram (przechwycony list) dostaje od **MG po rozwiązaniu jednej opcjonalnej** (Z4/5/6); **porównuje nagłówki** (Z3 jawny ↔ Z7 ten sam font zaszyfrowany) → odkrywa shift +7 → odszyfrowuje „Jordan = Hans von Baysen".
-- **Klucz:** porównanie nagłówków w charakterystycznym foncie — `HELFEN, HILFEN UND WEHREN!` (Z3) vs zaszyfrowany odpowiednik w Z7. Patrz `puzzles/z7-szyfr-spec.md §0`.
+- **Klucz:** porównanie nagłówków w charakterystycznym foncie — `HELFEN, HEILEN UND WEHREN!` (Z3) vs zaszyfrowany odpowiednik w Z7. Patrz `puzzles/z7-szyfr-spec.md §0`.
 - **Weryfikacja MG:** grupa podaje odszyfrowaną treść (ujawnienie twistu) — wzorzec i pełny tekst w `puzzles/z7-szyfr-spec.md`.
 
 ---
