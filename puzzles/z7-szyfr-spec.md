@@ -24,12 +24,14 @@ Zmiana modelu klucza — **nadrzędna wobec poprzedniego §0 (liczba liter motta
 **Shift = 7** — niestandardowy, mniej oczywisty niż klasyczny Cezar +3, ciekawsze odkrycie w terenie:
 
 - Zaszyfrowane motto (nagłówek Z7, ten sam font co Z3): `OLSMLU, OPSMLU BUK DLOYLU!`
-- Zaszyfrowane ciało (układ spacji jak w plaintexcie): `QVYKHU AOL JVVR PZ OHUZ CVU IHFZLU AOLPY JOHPYTHU`
+- Zaszyfrowane ciało (układ spacji jak w plaintexcie): `OHUZ CVU IHFZLU PZ QVYKHU AOL JVVR`
 - Deszyfrowanie: cofnij każdą literę o **7** (= naprzód o 19). A↔H na palcach lub ołówkiem na papierze.
 
-> 🗄️ **Backup shift +3** (klasyczny Cezar, łatwiejszy — porzucony; ryzyko że znający historię rozpoznają bez odkrywania): motto `KHOIHQ, KLOIHQ XQG ZHKUHQ!`, ciało `MRUGDQ WKH FRRN LV KDQV YRQ EDBVHQ WKHLU FKDLUPDQ`.
+> 🗄️ **Backup shift +3** (klasyczny Cezar, łatwiejszy — porzucony; ryzyko że znający historię rozpoznają bez odkrywania): motto `KHOIHQ, KLOIHQ XQG ZHKUHQ!`, ciało `KDQV YRQ EDBVHQ LV MRUGDQ WKH FRRN`.
 
-> 🗄️ **Backup modelu „liczba liter motta (shift +21)"** [poprzedni §0, 2026-06-01 wieczór]: ciphertext `EJMYVI OCZ XJJF DN CVIN QJI WVTNZI OCZDM XCVDMHVI`, instrukcja „policz litery motta (21) = przesunięcie". Zastąpiony mechaniką nagłówkową.
+> 🗄️ **Backup modelu „liczba liter motta (shift +21)"** [poprzedni §0, 2026-06-01 wieczór]: ciphertext `EJMYVI OCZ XJJF DN CVIN QJI WVTNZI OCZDM XCVDMHVI`, instrukcja „policz litery motta (21) = przesunięcie". Zastąpiony mechaniką nagłówkową. *(Uwaga: ciphertext koduje POPRZEDNI plaintext „JORDAN THE COOK IS HANS VON BAYSEN THEIR CHAIRMAN" sprzed skrócenia [2026-06-01]; nieaktualizowany bo backup deep-archive.)*
+
+> 🗄️ **Backup poprzedniego plaintextu** [sprzed skrócenia, 2026-06-01]: `JORDAN THE COOK IS HANS VON BAYSEN THEIR CHAIRMAN` (41 liter, Jordan na początku), ciphertext +7 `QVYKHU AOL JVVR PZ OHUZ CVU IHFZLU AOLPY JOHPYTHU`. Skrócony i odwrócony (Jordan → koniec jako zaskoczenie) decyzją Oskara.
 >
 > 🗄️ **Backup pełnej wersji Vigenère** → `prototype/z7-szyfrogram-vigenere-backup.md`.
 
@@ -62,12 +64,12 @@ Zmiana modelu klucza — **nadrzędna wobec poprzedniego §0 (liczba liter motta
 
 > **Cezar Ver. A (shift +3) i Ver. B (shift +7) — ciphertexty i zaszyfrowane motta → §0** (autorytatywne, round-trip ✓).
 
-**Plaintext — ZATWIERDZONY [2026-06-01]:**
+**Plaintext — ZATWIERDZONY [2026-06-01, skrócony — Jordan na końcu jako zaskoczenie]:**
 
 ```
-JORDAN THE COOK IS HANS VON BAYSEN THEIR CHAIRMAN
+HANS VON BAYSEN IS JORDAN THE COOK
 ```
-litery: `JORDANTHECOOKISHANSVONBAYSENTHEIRCHAIRMAN` (41 liter)
+litery: `HANSVONBAYSENISJORDANTHECOOK` (28 liter)
 
 **[ARCHIWALNE] Vigenère — wariant PEŁNE MOTTO (`HELFENHILFENUNDWEHREN`):**
 ```
@@ -95,9 +97,9 @@ Brak rekwizytu (koła/tabeli) — świadoma decyzja (koło byłoby zbyt silną w
 
 ## 5. Weryfikacja MG
 
-- **Oczekiwana odpowiedź grupy:** odczytana treść = „JORDAN THE COOK IS HANS VON BAYSEN THEIR CHAIRMAN" (lub sens: *Jordan = Hans von Baysen, przywódca TR*).
+- **Oczekiwana odpowiedź grupy:** odczytana treść = „HANS VON BAYSEN IS JORDAN THE COOK" (lub sens: *Jordan = Hans von Baysen, przywódca TR*).
 - **Co to odblokowuje:** wejście w finał KF — grupa wie teraz, **kim naprawdę jest sojusznik z Piccolo**, i z tą wiedzą podejmuje decyzję o dostarczeniu listu.
-- **Format odpowiedzi:** szyfrogram zachowuje granice słów (układ jak w zdaniu), więc gracz odczyta naturalnie rozdzielone słowa → `JORDAN THE COOK IS HANS VON BAYSEN THEIR CHAIRMAN`. **MG akceptuje sens** (Jordan = Hans von Baysen, przewodniczący TR) — drobne pomyłki literowe nie blokują, bo granice słów pozwalają je uzupełnić domysłem.
+- **Format odpowiedzi:** szyfrogram zachowuje granice słów (układ jak w zdaniu), więc gracz odczyta naturalnie rozdzielone słowa → `HANS VON BAYSEN IS JORDAN THE COOK`. **MG akceptuje sens** (Jordan = Hans von Baysen, przewodniczący TR) — drobne pomyłki literowe nie blokują, bo granice słów pozwalają je uzupełnić domysłem.
 - **Hint awaryjny (jeśli utkną):** wskaż, że **to samo motto** widnieje na pergaminie Z3 i na liście — „nagłówek, który się powtarza, to klucz".
 
 ---
@@ -121,7 +123,7 @@ Szyfrogram = **dyspozycja komtura toruńskiego Albrechta Kalba do Malborka**, pr
 
 ## 8. Otwarte pytania (do Oskara)
 
-1. ✅ **Treść plaintextu — ZATWIERDZONA [2026-06-01]:** „JORDAN THE COOK IS HANS VON BAYSEN THEIR CHAIRMAN" (Oskar zaakceptował). Ciphertext Cezara +7 policzony i zamknięty (§0).
+1. ✅ **Treść plaintextu — ZATWIERDZONA [2026-06-01]:** „HANS VON BAYSEN IS JORDAN THE COOK" (Oskar zaakceptował). Ciphertext Cezara +7 policzony i zamknięty (§0).
 2. ✅ **Szyfr = Cezar, shift +7** — rozstrzygnięte [2026-06-01]. ✅ **Mechanika klucza = porównanie nagłówków** (Z3 jawny ↔ Z7 zaszyfrowany, ten sam font, ta sama interpunkcja) — rozstrzygnięte [sesja z Piotrem]. (Vigenère + model liczenia liter + shift +3 — porzucone, backup `prototype/z7-szyfrogram-vigenere-backup.md` i §0.)
 3. **Czy „Hans von Baysen" jest na liście Z3** (plant) — rekomendacja: tak (patrz `z3-lista-tr-spec.md` Decyzja #2; zależność rozwiązana — Jordan zostaje kucharzem).
 4. **Czy ramka listu jawna** (tylko rdzeń szyfrowany) — rekomendacja: tak (playability). Alternatywa: cały list szyfrowany (trudniej).
@@ -137,7 +139,7 @@ Szyfrogram = **dyspozycja komtura toruńskiego Albrechta Kalba do Malborka**, pr
 - ✅ Interpunkcja motta: `HELFEN, HILFEN UND WEHREN!` (przecinek + wykrzyknik) — oba dokumenty.
 - ✅ Brak rekwizytu (koła) — świadoma decyzja.
 - ✅ Ciphertexty (Ver. A shift+3 i Ver. B shift+7) — policzone, round-trip ✓. → §0.
-- ✅ Treść plaintextu — **ZATWIERDZONA [2026-06-01]:** „JORDAN THE COOK IS HANS VON BAYSEN THEIR CHAIRMAN".
+- ✅ Treść plaintextu — **ZATWIERDZONA [2026-06-01]:** „HANS VON BAYSEN IS JORDAN THE COOK".
 - ✅ Kradzież listy Z3 **obligatoryjna** → brak twardego stopu [2026-06-01].
 - ✅ Anachronizm — Cezar minimalny; backup Vigenère → `prototype/z7-szyfrogram-vigenere-backup.md`.
 - ✅ Przesunięcie — **shift +7** [DECYZJA Oskara 2026-06-01]. Backup +3 → §0.

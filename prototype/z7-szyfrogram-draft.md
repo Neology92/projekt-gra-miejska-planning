@@ -22,7 +22,7 @@ You pressed me to learn the head of their secret council — the one who hides h
 ---
 
 ```
-QVYKHU  AOL  JVVR  PZ  OHUZ  CVU  IHFZLU  AOLPY  JOHPYTHU
+OHUZ  CVU  IHFZLU  PZ  QVYKHU  AOL  JVVR
 ```
 
 ---
@@ -37,17 +37,17 @@ QVYKHU  AOL  JVVR  PZ  OHUZ  CVU  IHFZLU  AOLPY  JOHPYTHU
 
 You have seen this script before — it is the same hand that headed the list of names you took. Compare the two headers, word by word, letter by letter. The punctuation marks the word boundaries. Each letter has moved the same number of steps along the alphabet — find that number, then apply it to the message below.
 
-*(Decrypted, the message reads: JORDAN THE COOK IS HANS VON BAYSEN THEIR CHAIRMAN — do NOT print this line on the player copy.)*
+*(Decrypted, the message reads: HANS VON BAYSEN IS JORDAN THE COOK — do NOT print this line on the player copy.)*
 
 ---
 
 ## PLANNING NOTES (nie dla gracza)
 
-**Szyfr: Cezar, shift +7 [DECYZJA Oskara 2026-06-01]:** przesunięcie odkrywane przez porównanie nagłówka Z7 z jawnym nagłówkiem Z3 — brak rekwizytu (koła). Motto z interpunkcją: `HELFEN, HILFEN UND WEHREN!`. Zaszyfrowane motto (nagłówek Z7): `OLSMLU, OPSMLU BUK DLOYLU!`. Ciphertext ciała (round-trip ✓): `QVYKHU AOL JVVR PZ OHUZ CVU IHFZLU AOLPY JOHPYTHU`. ~~Cezar +3 (wariant A) — porzucony.~~ ~~Cezar +21 (stary model liczenia liter) — archiwalny.~~ ~~Vigenère — archiwalny.~~
+**Szyfr: Cezar, shift +7 [DECYZJA Oskara 2026-06-01]:** przesunięcie odkrywane przez porównanie nagłówka Z7 z jawnym nagłówkiem Z3 — brak rekwizytu (koła). Motto z interpunkcją: `HELFEN, HILFEN UND WEHREN!`. Zaszyfrowane motto (nagłówek Z7): `OLSMLU, OPSMLU BUK DLOYLU!`. Ciphertext ciała (round-trip ✓): `OHUZ CVU IHFZLU PZ QVYKHU AOL JVVR`. ~~Cezar +3 (wariant A) — porzucony.~~ ~~Cezar +21 (stary model liczenia liter) — archiwalny.~~ ~~Vigenère — archiwalny.~~
 
 **Szyfrowany tylko rdzeń (41 liter), ramka jawna** — żeby praca w terenie była wykonalna. Ramka (zwrot „To the Hochmeister…", podpis Komtura) buduje klimat i kontekst bez kosztu deszyfrowania.
 
-**Układ spacji = jak w odszyfrowanym zdaniu** [decyzja Oskara 2026-06-01]: szyfrogram zachowuje **granice słów identyczne z plaintextem** (`QVYKHU AOL JVVR PZ OHUZ CVU IHFZLU AOLPY JOHPYTHU` → 6-3-4-2-4-3-6-5-8), NIE grupy po 5. Rationale: (a) Cezar i tak łatwo złamać; (b) jak gracz pomyli literę, granice słów pozwalają **uzupełnić ją domysłem** (np. „QVYKH_" → QVYKHU); (c) równe kolumny są ładne, ale w trudnej zagadce terenowej **mylące**. Czytelność > czystość kryptograficzna.
+**Układ spacji = jak w odszyfrowanym zdaniu** [decyzja Oskara 2026-06-01]: szyfrogram zachowuje **granice słów identyczne z plaintextem** (`OHUZ CVU IHFZLU PZ QVYKHU AOL JVVR` → 4-3-6-2-6-3-4), NIE grupy po 5. Rationale: (a) Cezar i tak łatwo złamać; (b) jak gracz pomyli literę, granice słów pozwalają **uzupełnić ją domysłem** (np. „QVYKH_" → QVYKHU); (c) równe kolumny są ładne, ale w trudnej zagadce terenowej **mylące**. Czytelność > czystość kryptograficzna.
 
 **Fabuła:** to dyspozycja Albrechta Kalba (komtur toruński) do Malborka — wróg, którego grupa okradła z listy w Z3, sam zdradza tożsamość Jordana. Pokrycie: `donosiciele-1454.js` (komtur raportował do Malborka „spisek Rady z Bażyńskim").
 
@@ -55,6 +55,6 @@ You have seen this script before — it is the same hand that headed the list of
 
 **Płatność:** plaintext „…HANS VON BAYSEN…" domyka się z plantem na liście Z3 — gracz wraca i widzi, że kucharz był na szczycie listy gończej Zakonu.
 
-**Plaintext ZATWIERDZONY [2026-06-01]:** „JORDAN THE COOK IS HANS VON BAYSEN THEIR CHAIRMAN". Szyfr = Cezar +7. Brak rekwizytu (koła). Anachronizm minimalny.
+**Plaintext ZATWIERDZONY [2026-06-01, skrócony — Jordan na końcu jako zaskoczenie]:** „HANS VON BAYSEN IS JORDAN THE COOK" (28 liter). Szyfr = Cezar +7. Brak rekwizytu (koła). Anachronizm minimalny. *(Poprzedni, dłuższy: „JORDAN THE COOK IS HANS VON BAYSEN THEIR CHAIRMAN" — backup w `puzzles/z7-szyfr-spec.md §0`.)*
 
 **Stylizacja:** finalny list — pergamin, Fraktur, łac./niem. zwroty, pieczęć komtura. Bez koła Cezara — świadoma decyzja. Po dry-runie.

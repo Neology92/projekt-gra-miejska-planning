@@ -28,7 +28,7 @@ Dwa składniki: **klucz** (z zagadki obowiązkowej) + **szyfrogram** (z opcjonal
   - **Mieszczanie** — jawne motto **wykradzione** w Z3 (lista TR z infiltracji Albrechta). Zdobywasz sekret wroga.
   - **Krzyżacy** — motto **znane** (przynależność do Zakonu = godność). Porównują swoje motto z zaszyfrowanym nagłówkiem Z11.
 - **SZYFROGRAM = z jednej zagadki opcjonalnej**, wydawany **przez MG** przy oddaniu rozwiązania opcjonalnej (Z4/5/6 dla TR; Z8/9/10 dla krzyżaków). **Wymienialny** — każda opcjonalna daje (równoważny) szyfrogram.
-- **Typ szyfru: Cezar shift +7 — OBA tory** [decyzja 2026-06-01]. **Klucz = przesunięcie odkryte przez porównanie nagłówków**: nagłówek Z7/Z11 = to samo motto w tym samym foncie co Z3, ALE zaszyfrowane — gracz porównuje litera po literze → odkrywa shift = 7. Brak rekwizytu (koła — zbyt silna wskazówka). Szyfrogram Z7 (mieszczanie): `QVYKHU AOL JVVR PZ OHUZ CVU IHFZLU AOLPY JOHPYTHU`. Patrz `puzzles/z7-szyfr-spec.md §0`.
+- **Typ szyfru: Cezar shift +7 — OBA tory** [decyzja 2026-06-01]. **Klucz = przesunięcie odkryte przez porównanie nagłówków**: nagłówek Z7/Z11 = to samo motto w tym samym foncie co Z3, ALE zaszyfrowane — gracz porównuje litera po literze → odkrywa shift = 7. Brak rekwizytu (koła — zbyt silna wskazówka). Szyfrogram Z7 (mieszczanie): `OHUZ CVU IHFZLU PZ QVYKHU AOL JVVR` (= „HANS VON BAYSEN IS JORDAN THE COOK"; skrócony, Jordan na końcu = zaskoczenie). Patrz `puzzles/z7-szyfr-spec.md §0`.
 
 ### Wynik odszyfrowania (per tor)
 
