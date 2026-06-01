@@ -69,16 +69,18 @@ const Z1_GROUPS = {
 // Rynek Staromiejski cluster → rendered in inset only
 const Z1_INSET_CODES = ['C01','C02','C03','C04','C06','C07','D01'];
 
-// Inset bounding box (SW, NE) — tight around actual cluster points + minimal margin
-// Cluster lat 53.0101–53.0111, lng 18.6040–18.6053 → zoom ~17 in inset
-const Z1_INSET_SW = [53.0099, 18.6038];
-const Z1_INSET_NE = [53.0113, 18.6056];
+// Inset bounding box (SW, NE) — WHOLE Rynek Staromiejski + a ring of context,
+// not just the cluster. Wide enough to read the market square; the main map is
+// zoomed out to fit both towns, so the inset is what separates the dense pins.
+const Z1_INSET_SW = [53.0097, 18.6034];
+const Z1_INSET_NE = [53.0115, 18.6058];
 
-// FROZEN view — calibrate via z1-map-tune.html, then paste values here
-// Target: whole Stare + Nowe Miasto with ~5% margin; zoom as high as fits
-// Keep zoom near an integer for sharp CARTO tiles
-const FROZEN_CENTER = [53.010287, 18.607986];
-const FROZEN_ZOOM   = 17.00;
+// FROZEN view — fixed center/zoom shared by ALL group maps (same place = same
+// pixel on every map; positional consistency is a hard rule). Must fit the UNION
+// of all 19 places + 2 landmarks on the narrow map column with margin.
+// Union: lat 53.0076–53.0127, lng 18.6020–18.6126. Calibrate in map-tune.html.
+const FROZEN_CENTER = [53.0102, 18.6073];
+const FROZEN_ZOOM   = 16.4;
 
 // START marker (Rynek Nowomiejski briefing point)
 const START_COORDS = [53.0114, 18.6107];
@@ -103,6 +105,7 @@ const Z1_LANDMARKS = {
   },
 };
 
-// Tile URL (CARTO light — no labels = no place name leaks)
-const TILE_URL = 'https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png';
+// Tile URL — CARTO Voyager (no labels): legible streets/blocks/water for field
+// navigation, still name-free (no spoilers). light_nolabels was too pale to read.
+const TILE_URL = 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}{r}.png';
 const TILE_ATTR = '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> · © <a href="https://carto.com/attributions">CARTO</a>';

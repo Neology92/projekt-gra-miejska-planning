@@ -5,9 +5,10 @@
 :root {
   --sheet-w:  1170px;   /* A4 landscape width  @ ~100 dpi */
   --sheet-h:   827px;   /* A4 landscape height @ ~100 dpi */
-  --rail-w:    372px;   /* right rail width                */
-  --inset-h:   338px;   /* Rynek inset box height in rail  */
-  --inset-cap:  26px;   /* inset caption strip height      */
+  --rail-w:    300px;   /* right rail width (legend / notes only) */
+  --inset-w:   330px;   /* Rynek inset overlay width              */
+  --inset-h:   300px;   /* Rynek inset overlay height             */
+  --inset-cap:  26px;   /* inset caption strip height             */
 
   --ink:       #2a1f0e;
   --ink-soft:  #7a6a54;
@@ -56,12 +57,17 @@ html, body {
   flex-direction: column;
 }
 
-/* ---- Inset (Rynek detail) --------------------------------------------- */
+/* ---- Inset (Rynek detail) — overlay on the map, bottom-left ------------ */
 
-#rail-inset-wrap {
-  flex: 0 0 var(--inset-h);
+#map-inset-overlay {
+  position: absolute;
+  bottom: 14px; left: 14px;
+  width: var(--inset-w);
   height: var(--inset-h);
-  border-bottom: 1.5px solid var(--ink);
+  z-index: 500;
+  background: var(--paper);
+  border: 1.5px solid var(--ink);
+  box-shadow: 2px 2px 7px rgba(0,0,0,.28);
   display: flex;
   flex-direction: column;
 }

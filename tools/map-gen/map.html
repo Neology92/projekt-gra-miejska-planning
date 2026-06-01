@@ -20,6 +20,12 @@
   <div id="map-col">
     <div id="map-main"></div>
 
+    <!-- Rynek inset detail — overlay near the dashed rectangle it magnifies -->
+    <div id="map-inset-overlay">
+      <div id="map-inset"></div>
+      <div id="inset-caption">Rynek Staromiejski &middot; detail</div>
+    </div>
+
     <!-- North arrow -->
     <svg id="north-arrow" viewBox="0 0 32 44" xmlns="http://www.w3.org/2000/svg">
       <polygon points="16,4 22,22 16,18 10,22" fill="#2a1f0e"/>
@@ -32,16 +38,8 @@
     <div id="attribution"></div>
   </div>
 
-  <!-- ============ RIGHT: rail ============ -->
+  <!-- ============ RIGHT: rail (fill-in legend only) ============ -->
   <div id="rail">
-
-    <!-- Rynek inset detail -->
-    <div id="rail-inset-wrap">
-      <div id="map-inset"></div>
-      <div id="inset-caption">Rynek Staromiejski &middot; detail</div>
-    </div>
-
-    <!-- Fill-in legend -->
     <div id="rail-legend">
       <div id="legend-head">
         <div id="legend-title">KEY</div>
@@ -49,7 +47,6 @@
       </div>
       <div id="legend-rows"></div>
     </div>
-
   </div>
 
 </div>
