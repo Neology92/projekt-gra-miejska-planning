@@ -57,14 +57,14 @@ Theming: **podmieniony cukiernik** → miejsce „spożywcze" (Cukiernia) staje 
 
 #### Wersja themingowa (Jordan / Piccolo / chochla) — tor TR
 
-> Zmiana wobec fundamentu: Cukiernia → **Piccolo**, jej produkt pierniki → **gorąca strawa** (wydawana chochlą), Ulrich → **Jordan**; Kuźnia – produkt podkowy → **chochle** (metal, kucharz kupuje u kowala). Reszta identyczna.
+> Zmiana wobec fundamentu: Cukiernia → **Piccolo**, jej produkt pierniki → **gorąca strawa** (wydawana chochlą), Ulrich → **Jordan**; Kuźnia – produkt podkowy → **metalowe przedmioty** (kucharz kupuje u kowala). Reszta identyczna.
 
 **Polecenie:** Te trzy osoby poszły dziś rano na miasto i każda coś kupiła. Wskaż, kto co kupił oraz gdzie pracują.
 
 **Miejsca (i co tam wytwarzają):**
 - Stary Młyn – chleb
 - **Piccolo – gorąca strawa** *(kuchnia; wydawana chochlą)*
-- Kuźnia – chochle
+- Kuźnia – metalowe przedmioty
 
 **Imiona:** Kordian, Lambert, **Jordan**
 **Zakupy:** jedzenie, chochla, sukno
@@ -77,7 +77,7 @@ Theming: **podmieniony cukiernik** → miejsce „spożywcze" (Cukiernia) staje 
 **Rozwiązanie (jednoznaczne ✓):**
 | Osoba | Pracuje | Kupił(a) |
 |---|---|---|
-| Kordian | Kuźnia (chochle) | sukno |
+| Kordian | Kuźnia (metalowe przedmioty) | sukno |
 | Lambert | Stary Młyn (chleb) | jedzenie (strawa — z Piccolo) |
 | **Jordan** | **Piccolo (strawa)** | chochla (od Kordiana) |
 
