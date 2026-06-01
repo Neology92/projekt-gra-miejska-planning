@@ -15,14 +15,80 @@ Po wizycie u MG (koniec F1) grupa dostaje kopertę z:
 
 Koperta K2 (slip pośrednika R.) niesie **silny trop**: list ma trafić do **głowy Rady / chairmana**, w jego własne ręce — *bez zdradzania, kim chairman jest*. To ustawia cel kuriera na początku gry. Funkcja: w finale (Z7 „HANS VON BAYSEN IS JORDAN THE COOK") gracz sam spina, że chairman z K2 = Hans von Baysen z listy Z3 („they call him chairman") = poznany Jordan-kucharz. Anty-prowadzenie-za-rączkę. Pełny łańcuch i zależności → `prototype/k2-envelope-draft.md`, `puzzles/z7-szyfr-spec.md §5`. **Ironia:** zagadka Z2 prowadzi ich do „następnego kontaktu" (Jordan) — a to właśnie do niego (jako chairmana) mieli zanieść list. Nie wiedzą tego aż do finału.
 
-## Forma „trzech rzeczy do zestawienia" — USTALONA [2026-05-31]
+## Treść zagadki Z2 — OTRZYMANA [2026-06-01, od Oskara]
 
-**Zagadka Einsteina** — 4 osoby × 3 cechy (robi Piotr). Szczegóły do przekazania przez Piotra.
+> Zagadka logiczna (typ Einsteina). **Rdzeń logiczny wspólny dla obu frakcji**; konkretne postacie/miejsca różnią się per frakcja (theming). Poniżej wersja-wzorzec Oskara. Zastępuje stary placeholder „4 osoby × 3 cechy (Piotr)".
 
-Placeholder w K2: `[TU: zagadka Piotra — wkleić po otrzymaniu]`
+**Polecenie:** Te trzy osoby poszły dziś rano na miasto i każda coś kupiła. Wskaż, kto co kupił oraz gdzie pracują.
 
-~~Wcześniejsze propozycje (nieaktualne):~~
-~~- Trójkąt skojarzeń, Trzy rebusy, Trzy daty, Trzy postaci (eliminacja)~~
+**Miejsca (i co wytwarzają):** Stary Młyn — chleby · Cukiernia — pierniki · Kuźnia — podkowy
+**Imiona:** Kordian, Lambert, Ulrich
+**Zakupy:** jedzenie, podkowa, sukno
+
+**Pogłoski (prawdziwe):**
+1. Lambert mógł zjeść coś u siebie, ale poszedł kupić jedzenie gdzieś indziej.
+2. Ulrich zrobił zakupy u osoby, która kupiła sukno.
+3. Młynarz zarzeka się, że nie kupił nic od Kordiana.
+
+### Weryfikacja (agent) — rozwiązanie JEDNOZNACZNE ✓
+
+| Osoba | Pracuje | Kupił(a) |
+|---|---|---|
+| **Kordian** | Kuźnia (podkowy) | sukno |
+| **Lambert** | Stary Młyn (chleby) | jedzenie (pierniki — od Ulricha) |
+| **Ulrich** | Cukiernia (pierniki) | podkowa (od Kordiana) |
+
+**Łańcuch dedukcji (wszystkie 3 pogłoski są nośne — bez którejkolwiek brak jednoznaczności):**
+- P1 ⇒ Lambert kupił **jedzenie**, pracuje w miejscu „spożywczym" (Młyn lub Cukiernia).
+- Sukno: nie Lambert (jedzenie), nie Ulrich (P2 ⇒ Ulrich kupił *u* nabywcy sukna, więc sam nim nie jest) ⇒ **Kordian = sukno**. Reszta: Ulrich = podkowa.
+- P2 ⇒ Ulrich kupił podkowę u Kordiana ⇒ Kordian sprzedaje podkowy ⇒ **Kordian = Kuźnia**.
+- P3 ⇒ jedyny nabywca czegokolwiek od Kordiana to Ulrich (podkowa). Młynarz ≠ ten nabywca ⇒ młynarz ≠ Ulrich ⇒ **Ulrich = Cukiernia, Lambert = Młyn (młynarz)**.
+- P1 domknięte: Lambert (młynarz, piecze chleb) kupił jedzenie *gdzie indziej* = pierniki u Ulricha. ✓
+- **Alternatywa** (Lambert=Cukiernia, Ulrich=Młyn) ginie wyłącznie przez P3 → dlatego P3 jest konieczna.
+
+### Detale konstrukcyjne do ZACHOWANIA przy themingu
+- **„Sukno" = jedyny zakup nieprodukowany w żadnym z 3 miejsc** — to silnik P2 (nabywca sukna identyfikowany jako *sprzedawca własnego wyrobu*; sukno przyszło „z zewnątrz"). Themingując, zachowaj jeden zakup-spoza-trójki.
+- Wszystkie 3 pogłoski muszą zostać — każda konieczna do jednoznaczności.
+- (drobne) „Kordian" to imię literackie XIX w. (Słowacki) → anachronizm dla 1454; przy period-accurate themingu podmień. Lambert/Ulrich OK germańsko.
+
+### ✅ Most do „Jordan + Piccolo + chochla" — ROZSTRZYGNIĘTY [2026-06-01, decyzja Oskara]
+
+Theming: **podmieniony cukiernik** → miejsce „spożywcze" (Cukiernia) staje się **Piccolo**, a osoba tam pracująca to **Jordan** (kucharz, atrybut **chochla**). Struktura logiczna i zdania-pogłoski **nietknięte** (izomorfizm ⇒ jednoznaczność zachowana). Wynik = „Jordan pracuje w Piccolo" → gracz idzie tam i rozpoznaje kontakt po **chochli**. Fundament (Kordian/Lambert/Ulrich, Cukiernia) zostaje wyżej jako baza; wersja themingowa niżej.
+
+#### Wersja themingowa (Jordan / Piccolo / chochla) — tor TR
+
+> Zmiana wobec fundamentu **tylko**: Cukiernia → **Piccolo**, jej produkt pierniki → **gorąca strawa** (wydawana chochlą), Ulrich → **Jordan**. Reszta identyczna.
+
+**Polecenie:** Te trzy osoby poszły dziś rano na miasto i każda coś kupiła. Wskaż, kto co kupił oraz gdzie pracują.
+
+**Miejsca (i co tam wytwarzają):**
+- Stary Młyn – chleb
+- **Piccolo – gorąca strawa** *(kuchnia; wydawana chochlą)*
+- Kuźnia – podkowy
+
+**Imiona:** Kordian, Lambert, **Jordan**
+**Zakupy:** jedzenie, podkowa, sukno
+
+**Pogłoski (prawdziwe):**
+1. Lambert mógł zjeść coś u siebie, ale poszedł kupić jedzenie gdzieś indziej.
+2. Jordan zrobił zakupy u osoby, która kupiła sukno.
+3. Młynarz zarzeka się, że nie kupił nic od Kordiana.
+
+**Rozwiązanie (jednoznaczne ✓):**
+| Osoba | Pracuje | Kupił(a) |
+|---|---|---|
+| Kordian | Kuźnia (podkowy) | sukno |
+| Lambert | Stary Młyn (chleb) | jedzenie (strawa — z Piccolo) |
+| **Jordan** | **Piccolo (strawa)** | podkowa (od Kordiana) |
+
+**Wyjście = imię + miejsce + atrybut:** rozwiązanie mówi, że **Jordan pracuje w Piccolo**. Gracz idzie do Piccolo i rozpoznaje kontakt — **kucharza z chochlą** = Jordan. Imię (z zagadki) + miejsce (z dedukcji) + atrybut (chochla = narzędzie kucharza w Piccolo, sygnał rozpoznawczy na miejscu, spójny z hasłem-testem „imię Jordan").
+
+**Drobne do ewentualnej decyzji (zostawiam Tobie):**
+- „Jordan kupił podkowę" — kucharz kupujący podkowę jest neutralny (sprawunek przy okazji). Jeśli wolisz spójniejszy przedmiot, można zamienić produkt **Kuźni** na np. **kocioł / nóż kuchenny** (kucharz kupuje sprzęt od kowala) — jedyna sensowna podmiana „concrete object", logika zostaje.
+- „Piccolo" anachroniczne wobec 1454 (CLAUDE.md) — użyte zgodnie z Twoją trójką jako realna nazwa lokalu docelowego; w fikcji opisane jako kuchnia/gospoda.
+- **Theming krzyżacki:** ten wzorzec prowadzi do Jordana/Piccolo (TR). Krzyżacy idą do Albrechta — ich Z2 potrzebuje innego celu (inne imię/miejsce), **ta sama struktura logiczna**.
+
+> Stare propozycje formy (nieaktualne): trójkąt skojarzeń, trzy rebusy, trzy daty, trzy postaci.
 
 ## Lokal - decyzja
 

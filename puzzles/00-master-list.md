@@ -7,7 +7,7 @@ Numeracja kanoniczna [2026-05-29] po scaleniu z boardem. Tory **mieszczan** i **
 | # | Zagadka | Faza | Tor | Status | Plik |
 |---|---------|------|-----|--------|------|
 | 1 | Szlak symboli | F1 | wspólne | szkicowe (mechanika OK, miejsca + szyfrownik do doboru; różne trasy per grupa) | `szlak-symboli.md` |
-| 2 | Droga do Jordana („kto kłamie?" → Piccolo + chochla + Jordan) | koniec F1 / F2A | wspólne | szkicowe | `droga-do-jordana.md` |
+| 2 | Droga do Jordana (logiczna „kto co kupił + gdzie pracuje" → Piccolo + chochla + Jordan) | koniec F1 / F2A | wspólne | szkicowe+ (treść otrzymana + zweryfikowana jednoznaczność [2026-06-01]; theming per frakcja + most do Jordan/Piccolo otwarte) | `droga-do-jordana.md` |
 | 2b | Test zaufania Jordana | F2A | TR (u Jordana) | placeholder | `test-jordana.md` |
 | **3** | Infiltracja zamku krzyżackiego — lista nazwisk TR (obowiązkowa TR) | F2B | mieszczanie | szkicowe | `zamek-krzyzacki-lista.md` |
 | **3Z** | Infiltracja Piccolo — kradzież zaopatrzenia + godzina buntu (obowiązkowa krzyżacy) | F2B | krzyżacy | szkicowe | `zamek-krzyzacki-lista.md` (sekcja) / do wydzielenia |

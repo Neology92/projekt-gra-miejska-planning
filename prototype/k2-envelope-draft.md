@@ -47,11 +47,24 @@ Before you do — you were on the streets of this city today. So were other peop
 
 Now. Find your next contact.
 
-**[Z2 — PUZZLE ENCLOSED]**
+**[Z2 — THE MORNING ERRANDS]**
 
-*[PLACEHOLDER: Piotr's Einstein puzzle — 4 people × 3 attributes — insert here when received]*
+Three people went into town this morning, and each bought one thing. Work out who bought what — and where each of them works.
 
-The answer will give you a name and a place. Go there.
+*Where they work, and what is made there:*
+- The Old Mill — bread
+- Piccolo — hot food *(a kitchen — ladled out)*
+- The Smithy — horseshoes
+
+*The three:* Kordian · Lambert · Jordan
+*What was bought:* food · a horseshoe · cloth
+
+*Overheard this morning — all of it true:*
+1. Lambert could have eaten at his own place, yet he went to buy his food elsewhere.
+2. Jordan bought from the one who bought cloth.
+3. The miller swears he bought nothing from Kordian.
+
+Once you have placed Jordan, you will know where he works. Go there — and ask for him by name.
 
 ---
 
@@ -81,7 +94,9 @@ The answer will give you a name and a place. Go there.
 
 > ⚠ **Wersja Krzyżacy:** ich K2 prowadzi do Albrechta (nie chairmana TR) — trop celu musi być inny (parole/hasło do komtura, nie „chairman Rady"). Do napisania przy MVP. NIE kopiować tropu TR 1:1.
 
-**Z2 placeholder:** zagadka Piotra (Einstein 4×3) — wynik musi dać `imię: Jordan` + `miejsce: Piccolo`. Instrukcja Z2 celowo lakoniczna ("The answer will give you a name and a place") — żeby gracze skupili się na rozwiązaniu, nie na meta-wiedzy.
+**Z2 — wpisana wersja themingowa [2026-06-01]:** zagadka logiczna 3 osoby × {miejsce pracy, zakup}, rdzeń Oskara z nałożoną trójką **Jordan / Piccolo / chochla**. Rozwiązanie jednoznaczne (dowód: `puzzles/droga-do-jordana.md`). Wynik = **Jordan pracuje w Piccolo** → gracz idzie tam, pyta o Jordana (imię = jednocześnie hasło-test wejścia, patrz `concept/02-faza-2a-jordan.md`), rozpoznaje go po **chochli**. „ladled out / ask for him by name" niesie atrybut + hasło bez meta-gadania.
+- **Imiona prowizoryczne** (Kordian/Lambert/Jordan): „Kordian" anachroniczny (XIX w.); do podmiany przy period-themingu. Tylko **Jordan** jest kanoniczny (kontakt TR).
+- **Wersja krzyżacka:** inne K2 — Z2 prowadzi do **Albrechta**, nie Jordana/Piccolo; ta sama struktura logiczna, inny cel (imię/miejsce). Do napisania przy MVP. NIE kopiować 1:1.
 
 **Wersja Krzyżacy:** inne K2 (Pula B zamiast A; Z2 prowadzi do Albrechta, nie Jordana). Do napisania przy skalowaniu do MVP.
 
