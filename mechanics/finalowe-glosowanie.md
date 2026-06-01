@@ -13,7 +13,7 @@ W finale (F3) zliczamy: ile listów trafiło do **Bażyńskiego** (przez Jordana
 ## Podstawowa wersja (prosta)
 
 - 1 grupa = 1 głos.
-- Każda grupa **dostarcza list** do jednej ze stron przed 20:00.
+- Każda grupa **dostarcza list** do jednej ze stron przed 20:30.
 - **Zliczanie**: kto dostarczył gdzie. Większość wygrywa.
 
 ## Wariant rozszerzony (ważony)
@@ -61,7 +61,7 @@ W finale (F3) zliczamy: ile listów trafiło do **Bażyńskiego** (przez Jordana
 
 ## Komunikacja wyniku
 
-- W scenie finałowej (pod zamkiem, 20:00):
+- W scenie finałowej (pod zamkiem, 20:30):
   - MG / narrator ogłasza zliczone głosy.
   - Aktor-Bażyński i aktor-Albrecht odgrywają scenkę zgodnie z wynikiem.
   - **Wariant epilogu** zależny od wyniku (patrz `concept/04-faza-3-final.md`).

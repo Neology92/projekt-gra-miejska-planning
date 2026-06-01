@@ -51,7 +51,7 @@
 🟡 Szyfrownik (deszyfrownik) .. w tym samym mocku — czeka na dobór piktogramów
 🟡 Pergamin z listą nazwisk TR  research gotowy + draft (EN); klucz=Decyzja#1  [prototype/pergamin-lista-tr-draft.md · puzzles/z3-lista-tr-spec.md]
 ⬜ Zapis melodii Z4 + pręciki . karta referencyjna: nuty → numery pręcików → kod
-🟡 Arkusz szyfru Z7 ........... Cezar +21 (=liczba liter motta z nagł. Z3); ciphertext gotowy + koło Cezara  [prototype/z7-szyfrogram-draft.md]
+🟡 Arkusz szyfru Z7 ........... Cezar +7 (nagłówki w tym samym foncie; Z3 jawny ↔ Z7 zaszyfrowane; brak koła)  [prototype/z7-szyfrogram-draft.md]
 ⬜ Mechanika dostarczenia ..... mock: list na prawą (Bażyński) / lewą (Albrecht) stronę stołu
 ```
 
@@ -117,7 +117,7 @@ Z2 — zagadka Einsteina (4 osoby × 3 cechy) → robi Piotr → wynik: imię �
               │  Z3 infiltr. zamku (obowiązkowa)     │         │  Z3Z infiltr. Piccolo (obowiązkowa)  │
               │  + 1 opcjonalna:                     │         │  + 1 opcjonalna:                      │
               │     Z4 kalimba / Z5 piernik / Z6 herby│         │     Z8 kalimba / Z9 piernik / Z10 polichr.
-              │  Z7 finał (Cezar+21, „Jordan=Bażyń.")│         │  Z11 finał (BRAK twistu, duma Albrechta)
+              │  Z7 finał (Cezar+7, „Jordan=Bażyń.") │         │  Z11 finał (BRAK twistu, duma Albrechta)
               └──────────────────┬───────────────────┘         └──────────────────┬───────────────────┘
                                  │                                                  │
                                  └───────────────▶  FINAŁ wspólny (KF)  ◀───────────┘
@@ -131,7 +131,7 @@ Z2 — zagadka Einsteina (4 osoby × 3 cechy) → robi Piotr → wynik: imię �
 ```
 ⬜ K2-K (wersja krzyżacka) ...... Pula B plotek (krytyka Zakonu) + Z2 → Albrecht
 ⬜ Skrypt Albrechta (Zosia) F2A . spotkanie krzyżaków + żądanie dowodu godności
-⬜ Z3Z — infiltracja Piccolo .... lustro Z3: kradzież „zaopatrzenia" + wyciągnięcie godziny 20:00
+⬜ Z3Z — infiltracja Piccolo .... lustro Z3: kradzież „zaopatrzenia" + wyciągnięcie godziny 20:30
 ⬜ Z8 — melodia zakonu .......... lustro Z4 (kalimba)
 ⬜ Z9 — sensoryczna piernik ..... lustro Z5
 ⬜ Z10 — polichromie Biedronka .. 🚶 Bestiariusz Krzyżowca (wymaga researchu na miejscu)
@@ -200,5 +200,5 @@ MVP        ██░░░░░░░░░░░░░░░░░░  ~10%   
 
 ```
 ► Domknięcie bloku 1 (F1→F2A): review Oskara K2 + skrypt Jordana + dobór miejsc Z1
-► Potem DZIEŃ 2: Z3 + Z4 + Z7 + KF jako JEDEN moduł (szyfr Cezara +21, klucz=motto z listy Z3)
+► Potem DZIEŃ 2: Z3 + Z4 + Z7 + KF jako JEDEN moduł (szyfr Cezara+7, klucz=porównanie nagłówków)
 ```

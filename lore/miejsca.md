@@ -10,7 +10,7 @@
 - **Wiki**: `src/pages/zamek-krzyzacki.js`, `src/pages/gdanisko.js`.
 - **W grze**:
   - F2B (Z3) - lista nazwisk TR, zagadka terenowa.
-  - F3 - finał o 20:00, scenka aktorska.
+  - F3 - finał o 20:30, scenka aktorska.
 - **Dostępność**: 24/7 z zewnątrz.
 
 ### Lokal Jordana

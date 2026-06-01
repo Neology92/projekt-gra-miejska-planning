@@ -1,11 +1,11 @@
 # Prop — Z7 Intercepted Teutonic Dispatch (cipher) — draft
 
 > **Language:** English (player-facing). Planning notes in Polish below.
-> 🟢 **ZAKTUALIZOWANO na CEZAR +21 [2026-06-01 wieczór]:** szyfr = Cezar, przesunięcie = liczba liter motta (21). Ciphertext i instrukcja poniżej — już Cezar. Treść listu (ramka + plaintext) bez zmian.
-> 🗄️ **Backup poprzedniej wersji Vigenère** (z pełną tabula recta) → `prototype/z7-szyfrogram-vigenere-backup.md` — gdybyśmy wrócili do Vigenère.
+> 🟢 **ZAKTUALIZOWANO — MECHANIKA NAGŁÓWKOWA + SHIFT +7 [2026-06-01]:** szyfr = Cezar shift+7, klucz = porównanie nagłówków (nie liczenie liter), brak koła. Prop poniżej = **wersja finalna (shift +7)**. Backup shift+3 → `puzzles/z7-szyfr-spec.md §0`.
+> 🗄️ Backup Vigenère → `prototype/z7-szyfrogram-vigenere-backup.md`. Backup modelu +21 → `puzzles/z7-szyfr-spec.md §0`.
 > **Status:** draft [2026-06-01] — Canon → `puzzles/z7-szyfr-spec.md`.
 > **What it is:** an intercepted letter from the Komtur of Thorn to Marienburg, carried in envelope **K8**. Its enciphered core reveals the twist.
-> **Key:** the Order's motto in the CAPS header — the SAME motto that heads the Z3 names list the group already carries. **Count its letters** (`HELFENHILFENUNDWEHREN` = 21) — that number is the Caesar shift. The repeated motto is the clue.
+> **Key:** the Order's motto appears in a distinctive script at the top of this letter — the SAME script (and punctuation) as the motto heading the Z3 names list the group already carries. Compare the two headers letter by letter to find the shift. No extra tool needed.
 
 ---
 
@@ -13,7 +13,7 @@
 
 ---
 
-**HELFEN · HILFEN · UND · WEHREN**
+**OLSMLU, OPSMLU BUK DLOYLU!**
 
 *To the Hochmeister at Marienburg. In haste — and for your eyes alone.*
 
@@ -22,7 +22,7 @@ You pressed me to learn the head of their secret council — the one who hides h
 ---
 
 ```
-EJMYVI  OCZ  XJJF  DN  CVIN  QJI  WVTNZI  OCZDM  XCVDMHVI
+QVYKHU  AOL  JVVR  PZ  OHUZ  CVU  IHFZLU  AOLPY  JOHPYTHU
 ```
 
 ---
@@ -35,14 +35,7 @@ EJMYVI  OCZ  XJJF  DN  CVIN  QJI  WVTNZI  OCZDM  XCVDMHVI
 
 ## HOW TO READ IT (player aid — decryption)
 
-You have seen this motto before — it heads the list of names you took. **The motto is the key — count its letters.**
-
-1. Count the letters of the motto in the header: `HELFENHILFENUNDWEHREN` = **21**.
-2. On the cipher wheel, that is your shift: **step each cipher letter back by 21** (the wheel loops — back 21 is the same as forward 5).
-3. Do it letter by letter across the message.
-4. Read all the true letters in order.
-
-> Cipher wheel (two discs, A4) → separate print. **TODO:** design the wheel prop (outer ring A–Z, inner ring A–Z, set to shift 21).
+You have seen this script before — it is the same hand that headed the list of names you took. Compare the two headers, word by word, letter by letter. The punctuation marks the word boundaries. Each letter has moved the same number of steps along the alphabet — find that number, then apply it to the message below.
 
 *(Decrypted, the message reads: JORDAN THE COOK IS HANS VON BAYSEN THEIR CHAIRMAN — do NOT print this line on the player copy.)*
 
@@ -50,18 +43,18 @@ You have seen this motto before — it heads the list of names you took. **The m
 
 ## PLANNING NOTES (nie dla gracza)
 
-**Klucz [DECYZJA Oskara 2026-06-01 wieczór: Cezar +21]:** szyfr **Cezara**, przesunięcie = **liczba liter motta** = 21 (`HELFENHILFENUNDWEHREN`). Ciphertext (zweryfikowany round-trip): `EJMYV IOCZX JJFDN CVINQ JIWVT NZIOC ZDMXC VDMHV I`. ~~Wcześniejszy Vigenère `QSCIE…` — archiwalny.~~
+**Szyfr: Cezar, shift +7 [DECYZJA Oskara 2026-06-01]:** przesunięcie odkrywane przez porównanie nagłówka Z7 z jawnym nagłówkiem Z3 — brak rekwizytu (koła). Motto z interpunkcją: `HELFEN, HILFEN UND WEHREN!`. Zaszyfrowane motto (nagłówek Z7): `OLSMLU, OPSMLU BUK DLOYLU!`. Ciphertext ciała (round-trip ✓): `QVYKHU AOL JVVR PZ OHUZ CVU IHFZLU AOLPY JOHPYTHU`. ~~Cezar +3 (wariant A) — porzucony.~~ ~~Cezar +21 (stary model liczenia liter) — archiwalny.~~ ~~Vigenère — archiwalny.~~
 
 **Szyfrowany tylko rdzeń (41 liter), ramka jawna** — żeby praca w terenie była wykonalna. Ramka (zwrot „To the Hochmeister…", podpis Komtura) buduje klimat i kontekst bez kosztu deszyfrowania.
 
-**Układ spacji = jak w odszyfrowanym zdaniu** [decyzja Oskara 2026-06-01]: szyfrogram zachowuje **granice słów identyczne z plaintextem** (`EJMYVI OCZ XJJF DN CVIN QJI WVTNZI OCZDM XCVDMHVI` → 6-3-4-2-4-3-6-5-8), NIE grupy po 5. Rationale: (a) Cezar i tak łatwo złamać — ukrywanie granic nie chroni nic istotnego; (b) jak gracz pomyli pojedynczą literę, granice słów pozwalają **uzupełnić ją domysłem** (np. „JORDA_" → JORDAN); (c) równe kolumny są ładne, ale w już trudnej zagadce terenowej **mylące**. Czytelność > czystość kryptograficzna.
+**Układ spacji = jak w odszyfrowanym zdaniu** [decyzja Oskara 2026-06-01]: szyfrogram zachowuje **granice słów identyczne z plaintextem** (`QVYKHU AOL JVVR PZ OHUZ CVU IHFZLU AOLPY JOHPYTHU` → 6-3-4-2-4-3-6-5-8), NIE grupy po 5. Rationale: (a) Cezar i tak łatwo złamać; (b) jak gracz pomyli literę, granice słów pozwalają **uzupełnić ją domysłem** (np. „QVYKH_" → QVYKHU); (c) równe kolumny są ładne, ale w trudnej zagadce terenowej **mylące**. Czytelność > czystość kryptograficzna.
 
 **Fabuła:** to dyspozycja Albrechta Kalba (komtur toruński) do Malborka — wróg, którego grupa okradła z listy w Z3, sam zdradza tożsamość Jordana. Pokrycie: `donosiciele-1454.js` (komtur raportował do Malborka „spisek Rady z Bażyńskim").
 
-**Link do Z3:** nagłówek-motto MUSI być identyczny z nagłówkiem pergaminu Z3 (`prototype/pergamin-lista-tr-draft.md`). Powtórzenie = wskazówka, że to klucz.
+**Link do Z3:** nagłówek Z7 MUSI używać **tego samego charakterystycznego fontu** co nagłówek pergaminu Z3 (`prototype/pergamin-lista-tr-draft.md`). Font + identyczna interpunkcja (przecinek, wykrzyknik) = sygnał wizualny, że oba nagłówki są związane — to cały hint.
 
-**Płatność:** plaintext „…HANS VON BAYSEN…" domyka się z plantem na liście Z3 (jeśli „Hans von Baysen" tam jest — gracz wraca i widzi, że kucharz był na szczycie listy gończej Zakonu).
+**Płatność:** plaintext „…HANS VON BAYSEN…" domyka się z plantem na liście Z3 — gracz wraca i widzi, że kucharz był na szczycie listy gończej Zakonu.
 
-**Plaintext ZATWIERDZONY [2026-06-01]:** „JORDAN THE COOK IS HANS VON BAYSEN THEIR CHAIRMAN" (Oskar). Klucz/szyfr ustalone (Cezar +21), ciphertext zamknięty. Anachronizm Cezara minimalny (szyfr przesuwny znany w starożytności) — w przeciwieństwie do Vigenère nie wymaga noty w `fakty-vs-fabula.md`.
+**Plaintext ZATWIERDZONY [2026-06-01]:** „JORDAN THE COOK IS HANS VON BAYSEN THEIR CHAIRMAN". Szyfr = Cezar +7. Brak rekwizytu (koła). Anachronizm minimalny.
 
-**Stylizacja:** finalny list — pergamin, Fraktur, łac./niem. zwroty, pieczęć komtura; **koło Cezara** (dwie tarcze A–Z) jako osobny **A4** do druku. Po dry-runie.
+**Stylizacja:** finalny list — pergamin, Fraktur, łac./niem. zwroty, pieczęć komtura. Bez koła Cezara — świadoma decyzja. Po dry-runie.

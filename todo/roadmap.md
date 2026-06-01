@@ -36,7 +36,7 @@ Kolejność prac na zagadkach (priorytetowa):
 - [ ] Wariant mechaniki Z3 (A/B/C/D) - `puzzles/zamek-krzyzacki-lista.md`
 - [ ] Treść listy (autentyczne nazwiska z wiki `tajna-rada.js`)
 - [ ] Mechanika "kradzieży" listy komturowi Albrechtowi (Z3)
-- [ ] Mechanika Z3Z (kradzież zaopatrzenia + przeciek godziny 20:00 + ew. koło deszyfrujące)
+- [ ] Mechanika Z3Z (kradzież zaopatrzenia + przeciek godziny 20:30 + ew. koło deszyfrujące)
 - [ ] Zdefiniowanie „klucza" wyjściowego z Z3 i Z3Z do finału
 
 **Bez Z3/Z3Z finał nie ma sensu.**

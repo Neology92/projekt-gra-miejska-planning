@@ -6,7 +6,7 @@
 
 1. Rozwiązać **zagadkę 7** = sklejenie wniosków z faz 2A i 2B.
 2. **Zdecydować komu dostarczyć list**: Janowi Bażyńskiemu (Tajna Rada) czy komturowi Albrechtowi (Krzyżacy).
-3. Dotrzeć pod ruiny zamku krzyżackiego **na ósme bicie dzwonu (20:00)**.
+3. Dotrzeć pod ruiny zamku krzyżackiego **na ósme bicie dzwonu (20:30)**.
 4. Obejrzeć **scenkę finałową** — starcie Bażyński vs Albrecht, z wynikiem zależnym od zliczonych listów.
 
 ## Cel fazy (z perspektywy projektu)
@@ -24,11 +24,11 @@ Oba tory mają osobny finał, oba to **szyfry** rozwiązywane z elementów zebra
 
 Dwa składniki: **klucz** (z zagadki obowiązkowej) + **szyfrogram** (z opcjonalnej). To **odwrócenie** wcześniejszego Modelu B (było: Z3=szyfrogram, Z4=klucz) — patrz `puzzles/z3-lista-tr-spec.md` Decyzja #1.
 
-- **KLUCZ szyfru = MOTTO ZAKONU** (oba tory, to samo motto — „Helfen, Hilfen und Wehren"). **Asymetria pozyskania:**
-  - **Mieszczanie** — motto **wykradzione** w Z3 (wraz z listą TR, z infiltracji Albrechta). Zdobywasz sekret wroga.
-  - **Krzyżacy** — motto **znane** (przynależność do Zakonu = godność). Ta sama informacja, druga droga.
-- **SZYFROGRAM = z jednej zagadki opcjonalnej**, wydawany **przez MG** przy oddaniu rozwiązania opcjonalnej (Z4/5/6 dla TR; Z8/9/10 dla krzyżaków). **Wymienialny** — każda opcjonalna daje (równoważny) szyfrogram, a klucz (motto) jest wspólny → „klucz z Z3/Z3Z + dowolna 1 opcjonalna" rozwiązuje finał.
-- **Typ szyfru: Cezar — OBA tory** [decyzja 2026-06-01]. **Klucz = przesunięcie o liczbę liter motta**: „Helfen, Hilfen und Wehren" = `HELFENHILFENUNDWEHREN` = **21 liter → shift 21** (≡ −5). Fabularnie: „policz litery godła Zakonu". Prostsze koło A4 (dwie tarcze), szybsze w terenie. Szyfrogram Z7 (mieszczanie) **policzony i zweryfikowany** (`EJMYV IOCZX JJFDN…`). Rekwizyt: **koło Cezara A4** w kopercie finałowej. Patrz `puzzles/z7-szyfr-spec.md §0`.
+- **KLUCZ szyfru = ODKRYTY PRZEZ PORÓWNANIE NAGŁÓWKÓW** (oba tory). Motto `HELFEN, HILFEN UND WEHREN!` w charakterystycznym foncie łączy oba dokumenty wizualnie. **Asymetria pozyskania:**
+  - **Mieszczanie** — jawne motto **wykradzione** w Z3 (lista TR z infiltracji Albrechta). Zdobywasz sekret wroga.
+  - **Krzyżacy** — motto **znane** (przynależność do Zakonu = godność). Porównują swoje motto z zaszyfrowanym nagłówkiem Z11.
+- **SZYFROGRAM = z jednej zagadki opcjonalnej**, wydawany **przez MG** przy oddaniu rozwiązania opcjonalnej (Z4/5/6 dla TR; Z8/9/10 dla krzyżaków). **Wymienialny** — każda opcjonalna daje (równoważny) szyfrogram.
+- **Typ szyfru: Cezar shift +7 — OBA tory** [decyzja 2026-06-01]. **Klucz = przesunięcie odkryte przez porównanie nagłówków**: nagłówek Z7/Z11 = to samo motto w tym samym foncie co Z3, ALE zaszyfrowane — gracz porównuje litera po literze → odkrywa shift = 7. Brak rekwizytu (koła — zbyt silna wskazówka). Szyfrogram Z7 (mieszczanie): `QVYKHU AOL JVVR PZ OHUZ CVU IHFZLU AOLPY JOHPYTHU`. Patrz `puzzles/z7-szyfr-spec.md §0`.
 
 ### Wynik odszyfrowania (per tor)
 
@@ -41,7 +41,7 @@ Dwa składniki: **klucz** (z zagadki obowiązkowej) + **szyfrogram** (z opcjonal
     - B2. `OBEDIENT UNTO MARIENBURG` (posłuszeństwo Malborkowi; 21 liter)
     - C1. `THE KEEP STILL STANDS` (wojskowe, oblężenie; 18 liter)
     - C2. challenge–response `ACRE` ↔ `MARIENBURG` (4/10 liter)
-    - Po wyborze: policzyć ciphertext Cezara +21 (jak Z7). Materiał gracza = EN.
+    - Po wyborze: policzyć ciphertext Cezara shift+7 (jak Z7; patrz `z7-szyfr-spec.md §0`). Materiał gracza = EN.
 - Po rozwiązaniu: **finalna decyzja** — komu dostarczyć list (Baysen / Albrecht). Wybór wolny dla obu klas.
 
 Szczegóły: `puzzles/zagadka-finalowa.md` (do napisania — obejmie Z7 i Z11).
@@ -67,7 +67,7 @@ Po dostarczeniu list jest **fizycznie zliczony** przy danej stronie.
 ## Zliczanie i finał
 
 Mechanika:
-1. **20:00**, wszystkie grupy zbierają się przy ruinach zamku.
+1. **20:30**, wszystkie grupy zbierają się przy ruinach zamku.
 2. **8. uderzenie dzwonu** (rekwizyt: dzwon ręczny lub nagranie — **nie Tuba Dei**, ten dzwon to dopiero 1500).
 3. MG (Oskar) odczytuje **wynik zliczenia listów** — przewaga jednej ze stron.
 4. **Scenka aktorska**:
@@ -91,7 +91,7 @@ Mechanika:
 
 ## Co już wiemy / decyzje
 
-- Finał o **20:00**, 8. bicie dzwonu — wybrane.
+- Finał o **20:30**, 8. bicie dzwonu — wybrane.
 - Lokalizacja: **ruiny zamku krzyżackiego** (Przedzamcze 3, Gdanisko obok).
 - Element aktorski — obsada zamknięta: **Bażyński = Piotr**, **Albrecht = Zosia**, MG = Oskar.
 - **Nie używać nazwy "Tuba Dei"** dla dzwonu (anachronizm — Tuba Dei od 1500).

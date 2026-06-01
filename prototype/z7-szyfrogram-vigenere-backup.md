@@ -1,7 +1,7 @@
 # 🗄️ BACKUP — wersja VIGENÈRE (archiwalna)
 
 > **To jest BACKUP odrzuconego wariantu Vigenère** [zachowany 2026-06-01].
-> **Bieżący model gry = Cezar +21** (`puzzles/z7-szyfr-spec.md §0`, `prototype/z7-szyfrogram-draft.md`).
+> **Bieżący model gry = Cezar shift+7, mechanika nagłówkowa** (`puzzles/z7-szyfr-spec.md §0`, `prototype/z7-szyfrogram-draft.md`). [Nota: w momencie zapisu backupu aktualny był +21; od sesji z Piotrem 2026-06-01 zmieniono na shift+7 z porównaniem nagłówków.]
 > Ten plik zachowano **na wypadek powrotu do Vigenère** — zawiera pełny prop, **oba ciphertexty Vigenère** (pełne motto + skrót `HELFEN`) oraz **kompletną tabula recta** (deszyfrator Vigenère), których aktywny draft już nie nosi.
 > Źródło: stan `git HEAD` (commit `6419ea7`) sprzed zmiany na Cezara. **Nie używać do druku bez świadomej decyzji o powrocie do Vigenère.**
 >

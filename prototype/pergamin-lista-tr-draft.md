@@ -12,9 +12,9 @@
 
 ---
 
-*[Header — the motto line below is the CIPHER KEY for Z7. It MUST appear here verbatim and again as the CAPS header of the Z7 intercepted letter — the repetition is how the player learns it is the keyword. Final stylization (Fraktur, Latin/German) later.]*
+*[Header — the motto line below is the DISCOVERY KEY for Z7. It MUST use the SAME DISTINCTIVE FONT (e.g. Fraktur/Gothic) as the encrypted motto header in Z7. The punctuation (comma, exclamation mark) must match exactly — that is how the player visually links the two documents and compares letter by letter to find the shift. Final stylization later.]*
 
-**HELFEN · HILFEN · UND · WEHREN**
+**HELFEN, HILFEN UND WEHREN!**
 
 **By the hand of the Komtur of Thorn — for the eyes of the Order alone.**
 
@@ -55,7 +55,7 @@
 
 **Brak miast poza Toruniem:** świadomie — wiki nie podaje nazwisk delegatów Gdańska/Elbląga/Chełmna. „Others… whose names we have not yet bought" pokrywa tę lukę fabularnie, bez zgadywania nazwisk.
 
-**Klucz = motto w nagłówku** [rozstrzygnięte 2026-06-01, akt. wieczór: Cezar]: pergamin nosi „HELFEN · HILFEN · UND · WEHREN" jako nagłówek — gracz **liczy jego litery (21) = przesunięcie Cezara** do szyfrogramu Z7 (`HELFENHILFENUNDWEHREN` = 21 liter). **Nie ma żadnej mechaniki oznaczeń w nazwiskach** — klucz jest jawny w nagłówku; powtórzenie tego samego motta w nagłówku Z7 (CAPS) sygnalizuje graczowi, że to klucz. Pełna mechanika i tekst → `puzzles/z7-szyfr-spec.md §0`.
+**Klucz = porównanie nagłówków** [rozstrzygnięte 2026-06-01, sesja z Piotrem]: pergamin nosi `HELFEN, HILFEN UND WEHREN!` jako nagłówek w **charakterystycznym foncie** (np. Fraktur). Nagłówek Z7 (przechwycony list) nosi **to samo motto, ten sam font, zaszyfrowane Cezarem shift +7**. Gracz porównuje litera po literze — interpunkcja (przecinek, wykrzyknik) wskazuje odpowiadające słowa → odkrywa przesunięcie. Brak rekwizytu (koła). **Nie ma żadnej mechaniki oznaczeń w nazwiskach**. Pełna mechanika → `puzzles/z7-szyfr-spec.md §0`.
 
 **Opcjonalna sekcja „znani informatorzy"** (Decyzja #4): gdyby Oskar chciał donosicieli (Sleszer, Scolim, Bischoff) — jako ODDZIELNY blok („friends who serve us"), nie wmieszani w członków TR. Domyślnie pominięte.
 

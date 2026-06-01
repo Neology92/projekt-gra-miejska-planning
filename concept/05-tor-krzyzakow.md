@@ -14,7 +14,7 @@
 Numeracja kanoniczna — patrz `puzzles/00-master-list.md` i `concept/03-faza-2b-asynchroniczne.md`.
 
 - **Do Z2 identycznie** z torem TR (szlak symboli Z1 → „kto kłamie?" Z2 → Piccolo).
-- **Rozdział po Z2.** Krzyżacka zagadka obowiązkowa to **Z3Z — infiltracja Piccolo** (siedziby TR): kradzież zaopatrzenia (kupony na obiad → zjeść), wyciągnięcie **godziny buntu (20:00)** od Jordana, ew. kradzież koła deszyfrującego. Lustro Z3 (mieszczanie infiltrują zamek). Ten sam aktor Jordan/Piotr — różnica we framingu koperty.
+- **Rozdział po Z2.** Krzyżacka zagadka obowiązkowa to **Z3Z — infiltracja Piccolo** (siedziby TR): kradzież zaopatrzenia (kupony na obiad → zjeść), wyciągnięcie **godziny buntu (20:30)** od Jordana, ew. kradzież koła deszyfrującego. Lustro Z3 (mieszczanie infiltrują zamek). Ten sam aktor Jordan/Piotr — różnica we framingu koperty.
 - **Zagadki opcjonalne (lustra TR):**
   - **Z8 — melodia zakonu** (kalimba) ← lustro Z4 (melodia flisaka).
   - **Z9 — sensoryczna z piernikiem** ← lustro Z5.

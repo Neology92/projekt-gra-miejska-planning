@@ -3,7 +3,7 @@
 **Status**: szkicowe. Z3 = obowiązkowa dla TR (infiltracja zamku). **Z3Z** = lustro dla krzyżaków (infiltracja Piccolo) — sekcja niżej.
 
 > **Treść listy nazwisk TR + uzasadnienie fabularne + pułapki historyczne → `z3-lista-tr-spec.md`** (research kanoniczny). Rekwizyt gracza (EN) → `prototype/pergamin-lista-tr-draft.md`.
-> ✅ **Model klucza rozstrzygnięty [2026-06-01, akt. wieczór]:** lista nazwisk = **kontekst**; **klucz = motto Zakonu w nagłówku listy** („HELFEN HILFEN UND WEHREN") → szyfr **Cezara, przesunięcie = liczba liter motta (21)**; twist „Jordan=Bażyński" niesie **osobny szyfrogram Z7** (przechwycony list, wydawany przez MG po opcjonalnej Z4/5/6). Kalimba = prosta zagadka melodia→liczby, nie zasila klucza. Szczegóły → `z3-lista-tr-spec.md §4` + `z7-szyfr-spec.md §0`.
+> ✅ **Model klucza rozstrzygnięty [2026-06-01, akt. sesja z Piotrem]:** lista nazwisk = **kontekst**; **klucz = porównanie nagłówków** (`HELFEN, HILFEN UND WEHREN!` w Z3 jawne ↔ zaszyfrowane Cezarem shift+7 w Z7) — gracz odkrywa przesunięcie przez porównanie, bez rekwizytu; twist „Jordan=Bażyński" niesie **osobny szyfrogram Z7** (przechwycony list, wydawany przez MG po opcjonalnej Z4/5/6). Kalimba = prosta zagadka melodia→liczby, nie zasila klucza. Szczegóły → `z3-lista-tr-spec.md §4` + `z7-szyfr-spec.md §0`.
 
 ## Cel narracyjny
 
@@ -11,7 +11,7 @@ Grupa dowiaduje się, że Zakon ma **listę nazwisk Tajnej Rady**. Wnioski:
 - Lista jest u komtura Albrechta (na mieście).
 - Jeśli ją zdobędą - wiedzą **kto jest w TR** - i znajdą faktycznego adresata listu.
 - **Sztuczka**: na liście NIE MA „Jordana" (to pseudonim Bażyńskiego); może być za to „Hans von Baysen" jako jeden z członków TR — **plant pod twist** (patrz `z3-lista-tr-spec.md` Decyzja #2). Twist „Jordan = Bażyński" ujawnia **dopiero odszyfrowany szyfrogram Z7** (klucz = motto z nagłówka tej listy). ⚠ *Nieaktualne wcześniejsze założenie, że gracze poznają „człowiek z Piccolo = przywódca TR" już w F2A — F2A trzyma Jordana jako kucharza (concept/02, test-jordana, 2026-05-31).*
-- **Output** [rozstrzygnięte 2026-06-01]: lista nazwisk = **kontekst** (kto jest w TR), a jej **nagłówek niesie motto Zakonu = klucz Cezara** (przesunięcie = liczba liter motta, 21) do finałowego szyfrogramu Z7. Twist „Jordan=Bażyński" ujawnia osobny przechwycony list (Z7, wydawany przez MG po opcjonalnej), nie sama lista. Kalimba (Z4) nie zasila klucza. → `z3-lista-tr-spec.md §4`, `z7-szyfr-spec.md §0`.
+- **Output** [rozstrzygnięte 2026-06-01]: lista nazwisk = **kontekst** (kto jest w TR), a jej **nagłówek niesie motto Zakonu w charakterystycznym foncie** — porównanie z zaszyfrowanym nagłówkiem Z7 (ten sam font, Cezar shift+7) odkrywa przesunięcie → klucz do szyfrogramu Z7. Twist „Jordan=Bażyński" ujawnia osobny przechwycony list (Z7, wydawany przez MG po opcjonalnej), nie sama lista. Kalimba (Z4) nie zasila klucza. → `z3-lista-tr-spec.md §4`, `z7-szyfr-spec.md §0`.
 
 ## Miejsce - ruiny zamku krzyżackiego
 
@@ -55,7 +55,7 @@ Grupa dowiaduje się, że Zakon ma **listę nazwisk Tajnej Rady**. Wnioski:
 Lustro Z3 dla toru krzyżaków (obowiązkowa, wszystkie 5 grup krzyżackich).
 
 - **Miejsce**: Piccolo (siedziba TR, gdzie urzęduje Jordan/Piotr).
-- **Zadania**: ukraść „zaopatrzenie" (w praktyce: odebrać kupony na obiad i je zjeść), **wyciągnąć od Jordana godzinę buntu (20:00)**, ew. ukraść rekwizyt (koło deszyfrujące — do decyzji).
+- **Zadania**: ukraść „zaopatrzenie" (w praktyce: odebrać kupony na obiad i je zjeść), **wyciągnąć od Jordana godzinę buntu (20:30)**, ew. ukraść rekwizyt (koło deszyfrujące — do decyzji).
 - **Output**: **klucz do finału Z11** + godzina finału.
 - **Obsada**: ten sam Jordan/Piotr co dla TR — różni się tylko **framing w kopercie** (sojusznik ↔ cel infiltracji). Jeden aktor obsługuje oba tory.
 - Mechanika „kradzieży/infiltracji" — do rozpisania (analogicznie do podebrania listy Albrechtowi w Z3).
@@ -73,7 +73,7 @@ Kradzież listy jest **OBLIGATORYJNA** — **każda** grupa mieszczan MUSI zdoby
 2. **Komtur Albrecht = Zosia** (obsada zamknięta). Otwarte: jak rozpoznawalna (kostium)? Wędruje czy stacjonarna?
 3. **Kradzież listy** - mechanika fizyczna (np. komtur trzyma listę "luźno" i jest momentem gdzie się odwraca) czy abstrakcyjna (gracz mówi "kradnę" i MG ocenia czy się udało)?
 4. ~~Co jeśli grupa nie zdobędzie listy?~~ — ✅ **ROZSTRZYGNIĘTE [2026-06-01]: kradzież listy jest OBLIGATORYJNA dla każdej grupy mieszczan.** Nie ma ścieżki „nie zdobył" — kradzież projektujemy tak, by każda grupa ją wykonała. Tym samym znika twardy stop dla Z7 (klucz = motto z nagłówka listy jest zawsze dostępny). Patrz „Trudność — balans" niżej + karta choreografii Albrechta.
-5. **Z3Z**: mechanika kradzieży zaopatrzenia + czy kraść koło deszyfrujące; jak Jordan/Piotr „przecieka" godzinę 20:00 grupom infiltrującym.
+5. **Z3Z**: mechanika kradzieży zaopatrzenia + czy kraść koło deszyfrujące; jak Jordan/Piotr „przecieka" godzinę 20:30 grupom infiltrującym.
 
 ## Co autor może zrobić sam vs gdzie pomocy
 

@@ -34,7 +34,7 @@ To nie jest naginka faktów, lecz **świadoma decyzja tonalna** o tym, jak gra *
 - **Anachronizm**: nazwa współczesna, włoska. W XV w. - **niemożliwe**.
 - **Mitigacja**: stylizować na "Gospoda Pod Chochlą" / "U Jordana".
 
-### 4. ☆ Dzwon o 20:00
+### 4. ☆ Dzwon o 20:30
 
 - **Sytuacja**: dzwon **Tuba Dei** z katedry Św. Janów to **dopiero 1500** (46 lat po buncie). W 1454 inny dzwon ratuszowy.
 - **Mitigacja**: można odtworzyć dźwięk dzwonu (rekwizyt, nagranie, ręczny dzwon), ale **NIE używać nazwy "Tuba Dei"** w narracji. Mówić "dzwon ratuszowy", "ósme bicie".
@@ -54,12 +54,12 @@ To nie jest naginka faktów, lecz **świadoma decyzja tonalna** o tym, jak gra *
 
 ### 7. ☆ Szyfr Cezara w finale (Z7 mieszczanie / Z11 krzyżacy)
 
-> **Zmiana [2026-06-01 wieczór]:** szyfr finałowy = **Cezar, oba tory** (wcześniej rozważany Vigenère, odrzucony jako za trudny w terenie + anachroniczny).
+> **Zmiana [2026-06-01]:** mechanika klucza = **porównanie nagłówków** (nie liczenie liter motta). Szyfr = Cezar shift +7. Brak rekwizytu (koła).
 
-- **Anachronizm: minimalny/żaden.** Szyfr przesuwny (Cezara) znany od starożytności; szyfry podstawieniowe były w XV-wiecznej dyplomacji w użyciu. W przeciwieństwie do Vigenère (~1553) nie wymaga naginki epoki.
-- **Mechanika**: przechwycony „list krzyżacki" (Z7) zaszyfrowany Cezarem; klucz = **liczba liter motta Zakonu** „Helfen, Hilfen und Wehren" (= 21) z nagłówka listy nazwisk Z3.
-- **Uzasadnienie**: spójna mechanika finału — godło wroga jako klucz do obu zakończeń (TR: szyfrogram→twist; Krzyżacy: szyfrogram→parole) + pokrycie fabularne (Zakon realnie szyfrował i przechwytywał korespondencję — donosy OBA, `donosiciele-1454.js`).
-- **Świadoma decyzja [2026-06-01]** (Oskar). Szczegóły: `puzzles/z7-szyfr-spec.md §0`.
+- **Anachronizm: minimalny/żaden.** Szyfr przesuwny (Cezara) znany od starożytności; szyfry podstawieniowe były w XV-wiecznej dyplomacji w użyciu. Vigenère (~1553) wymagałby naginki — Cezar nie.
+- **Mechanika**: przechwycony „list krzyżacki" (Z7) zaszyfrowany Cezarem; klucz = **przesunięcie odkryte przez porównanie nagłówka Z7 z mottem Z3** — oba dokumenty noszą motto `HELFEN, HILFEN UND WEHREN!` w tym samym charakterystycznym foncie; Z7 ma je zaszyfrowane (shift +7). Gracz porównuje → odkrywa przesunięcie = 7. Bez koła, bez liczenia.
+- **Uzasadnienie**: godło wroga jako klucz do obu zakończeń (TR: szyfrogram→twist; Krzyżacy: szyfrogram→parole). Pokrycie fabularne: Zakon realnie szyfrował korespondencję (`donosiciele-1454.js`).
+- **Świadome decyzje [2026-06-01]** (Oskar + sesja z Piotrem). Szczegóły: `puzzles/z7-szyfr-spec.md §0`.
 
 ## NIE naginamy (twarda historia)
 

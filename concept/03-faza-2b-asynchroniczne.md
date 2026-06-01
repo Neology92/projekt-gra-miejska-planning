@@ -42,7 +42,7 @@ Rozdział torów następuje **zaraz po Z2**. Każda klasa infiltruje siedzibę s
 
 ### Z3Z (krzyżacy) — Infiltracja Piccolo (siedziby TR)
 - Lustrzany analog Z3: krzyżacy infiltrują **Piccolo** (siedziba TR, gdzie urzęduje Jordan/Piotr).
-- Zadania: ukraść „zaopatrzenie" (w praktyce: odebrać kupony na obiad i je zjeść), **wyciągnąć od Jordana godzinę buntu (20:00)**, ew. ukraść rekwizyt (koło deszyfrujące? — do decyzji).
+- Zadania: ukraść „zaopatrzenie" (w praktyce: odebrać kupony na obiad i je zjeść), **wyciągnąć od Jordana godzinę buntu (20:30)**, ew. ukraść rekwizyt (koło deszyfrujące? — do decyzji).
 - Output: **klucz do finału Z11** + godzina finału.
 - **Uwaga obsadowa**: ten sam Jordan/Piotr obsługuje oba tory; różnica to **framing w kopercie** (sojusznik ↔ cel infiltracji), nie osobny aktor.
 
@@ -70,7 +70,7 @@ Finałowy szyfr (Z7/Z11) = **klucz (motto Zakonu) + szyfrogram**. Rozdział źr�
 - **Szyfrogram = z jednej zagadki opcjonalnej** (Z4/Z5/Z6, Z8/Z9/Z10), **wydawany przez MG** przy oddaniu rozwiązania opcjonalnej. **Wymienialny** — każda opcjonalna daje (równoważny) szyfrogram.
 - Finał rozwiązywalny z: **motto z Z3/Z3Z + szyfrogram z dowolnej 1 opcjonalnej** → różne zestawy per grupa działają.
 
-> **Odwrócenie wcześniejszego Modelu B** (było: Z3=szyfrogram, Z4=klucz). Teraz Z3=klucz/motto, opcjonalne=szyfrogram. Wymienialność zachowana, bo klucz jest wspólny. Pełny model + typ szyfru (**Cezar +21**, oba tory) → `concept/04-faza-3-final.md`, `puzzles/z7-szyfr-spec.md §0`.
+> **Odwrócenie wcześniejszego Modelu B** (było: Z3=szyfrogram, Z4=klucz). Teraz Z3=klucz/nagłówek, opcjonalne=szyfrogram. Wymienialność zachowana, bo klucz jest wspólny. Pełny model + typ szyfru (**Cezar shift+7**, oba tory; porównanie nagłówków) → `concept/04-faza-3-final.md`, `puzzles/z7-szyfr-spec.md §0`.
 
 To rozstrzyga wcześniejsze pytanie „które zagadki bramkują finał" (#9/#63): **Z3/Z3Z + 1 opcjonalna**.
 

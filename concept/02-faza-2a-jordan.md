@@ -11,7 +11,7 @@ Znaleźć kucharza Jordana, dowiedzieć się od niego co tak naprawdę dzieje si
 - **Reset narracyjny**: po szoku że pośrednika nie ma, gracze dostają nowy kierunek.
 - **Pogłębienie immersji**: realna postać NPC + posiłek (zmysłowe doświadczenie).
 - **Test zaufania**: Jordan nie ufa kurierom — sprawdza ich, zanim cokolwiek przekaże. Daje to **drugi powód** dlaczego graczy spotykają zagadki w fazie 2B (= weryfikacja).
-- **Forshadowing finału**: gracze dowiadują się że jest bunt + dowiadują się o godzinie finału (20:00 = ósme bicie dzwonu).
+- **Forshadowing finału**: gracze dowiadują się że jest bunt + dowiadują się o godzinie finału (20:30 = ósme bicie dzwonu).
 - **Plot twist w grze** (Jordan = Bażyński) — *nie ujawnia się tu*, dopiero w fazie 3.
 
 ## Zagadka 2 — Droga do Jordana

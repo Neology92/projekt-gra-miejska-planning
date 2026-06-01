@@ -1,90 +1,95 @@
 # Z7 — Finałowy szyfrogram (spec kanoniczny)
 
 > **Rola pliku:** jedno źródło prawdy dla **szyfrogramu Z7** — przechwyconego listu krzyżackiego, którego odszyfrowanie ujawnia twist „Jordan = Bażyński". Szyfr, klucz, plaintext, ciphertext, mechanika, weryfikacja MG, ryzyka.
-> **Status:** 🔴 **W REWIZJI [2026-06-01 wieczór]** — decyzja autora: **OBA tory na szyfrze CEZARA** (nie Vigenère). Ciphertext Vigenère (§3) i mechanika tabula recta (§4) **NIEAKTUALNE** — do przeliczenia na Cezara po ustaleniu reguły „motto → przesunięcie". Reszta (klucz=motto z nagłówka Z3, plaintext, uzasadnienie, dystrybucja przez MG) — aktualna.
+> **Status:** 🟡 **W REWIZJI [2026-06-01]** — mechanika klucza zmieniona: **porównanie nagłówków** (nie liczenie liter motta). Dwie wersje testowe: A (shift +3) i B (shift +7, kandydat). §0 = kanon nowej mechaniki; §3 archiwalne Vigenère; §4 zaktualizowane. Prop gracza → `prototype/z7-szyfrogram-draft.md`.
 > **Powiązania:** klucz z nagłówka listy Z3 → `z3-lista-tr-spec.md`, `prototype/pergamin-lista-tr-draft.md`. Rekwizyt gracza (EN) → `prototype/z7-szyfrogram-draft.md`. Lustro krzyżackie (Z8/Z11) → `kalimba.md`, `concept/04-faza-3-final.md` (kanon modelu).
 
 ---
 
-## 0. REWIZJA 2026-06-01 — Cezar zamiast Vigenère (oba tory)
+## 0. MECHANIKA NAGŁÓWKOWA [2026-06-01, po sesji z Piotrem]
 
-Decyzje autora z tej sesji, **nadrzędne wobec §1–§4 poniżej**:
+Zmiana modelu klucza — **nadrzędna wobec poprzedniego §0 (liczba liter motta)**:
 
-1. **Szyfr = Cezar, OBA tory** (mieszczanie Z7 i krzyżacy Z11). Wcześniej: TR=Vigenère, krzyżacy=Cezar — ujednolicone na Cezara (prostsze w terenie).
-2. ✅ **Klucz = przesunięcie o LICZBĘ LITER motta** [decyzja 2026-06-01]. Motto „Helfen, Hilfen und Wehren" → `HELFENHILFENUNDWEHREN` = **21 liter** → **shift = 21** (≡ cofnięcie o 5, bo 21 = 26−5). Fabularnie klucz = „policz litery godła Zakonu".
-3. **Dystrybucja:** szyfrogram (przechwycony list) wydaje **MG** po rozwiązaniu **jednej opcjonalnej** — mieszczanie po Z4/Z5/Z6, krzyżacy po Z8/Z9/Z10. Treść/plaintext bez zmian.
-4. **Rekwizyt:** koło Cezara A4 (dwie tarcze), zamiast tabula recta Vigenère.
+1. **Szyfr = Cezar, OBA tory** — bez zmian.
+2. **Klucz = odkryty przez PORÓWNANIE NAGŁÓWKÓW** (nie przez liczenie liter):
+   - Nagłówek **Z3** (pergamin listy): motto Zakonu w **charakterystycznym foncie** (np. Fraktur/kursywa) — **jawne**: „HELFEN, HILFEN UND WEHREN!"
+   - Nagłówek **Z7** (przechwycony list): **to samo motto, TEN SAM FONT, zaszyfrowane Cezarem** — interpunkcja (przecinek, wykrzyknik) w tych samych pozycjach co w Z3, więc gracz natychmiast widzi odpowiadające sobie słowa.
+   - **Mechanika odkrycia:** gracz kładzie oba dokumenty obok siebie, porównuje litera po literze → H→K, E→H, L→O, F→I… → każda litera przesunięta o tę samą wartość → odkrywa przesunięcie **bez liczenia liter, bez wzoru, bez rekwizytu**.
+   - **Brak koła — świadoma decyzja:** koło Cezara byłoby zbyt silną wskazówką. Gracz odkrywa i stosuje przesunięcie ołówkiem/palcem na papierze lub po prostu licząc w głowie/na dłoni.
+3. **Dystrybucja** — bez zmian: szyfrogram wydaje MG po jednej opcjonalnej (Z4/Z5/Z6 mieszczanie, Z8/Z9/Z10 krzyżacy). Plaintext bez zmian.
+5. **Układ spacji** — bez zmian: zachowuje granice słów plaintextu (nie grupy po 5).
 
-### Ciphertext Cezara (shift 21) — POLICZONY i zweryfikowany round-trip [2026-06-01]
+### Wybrane przesunięcie: shift +7 ✅ [DECYZJA Oskara 2026-06-01]
 
-- **Plaintext:** `JORDAN THE COOK IS HANS VON BAYSEN THEIR CHAIRMAN` (41 liter)
-- **Ciphertext (szyfrowanie +21), układ spacji = jak w zdaniu:** `EJMYVI OCZ XJJF DN CVIN QJI WVTNZI OCZDM XCVDMHVI` (wzór długości 6-3-4-2-4-3-6-5-8)
-- **Deszyfrowanie gracza:** cofnij każdą literę o **21** (równoważnie: przesuń o **+5**). Koło ustawione tak, że E→J, J→O, M→R… → `JORDAN…`.
+**Shift = 7** — niestandardowy, mniej oczywisty niż klasyczny Cezar +3, ciekawsze odkrycie w terenie:
 
-**Układ spacji — decyzja Oskara [2026-06-01]:** szyfrogram **zachowuje granice słów plaintextu**, NIE grupuje po 5. Powód: Cezar łamie się łatwo (ukrywanie granic nic nie chroni), a granice słów pozwalają graczowi **uzupełnić pomyłkową literę domysłem** w już trudnej zagadce terenowej. Równe kolumny ładne, ale mylące. *(Wariant „grupy po 5" — wcześniejszy, porzucony.)*
+- Zaszyfrowane motto (nagłówek Z7, ten sam font co Z3): `OLSMLU, OPSMLU BUK DLOYLU!`
+- Zaszyfrowane ciało (układ spacji jak w plaintexcie): `QVYKHU AOL JVVR PZ OHUZ CVU IHFZLU AOLPY JOHPYTHU`
+- Deszyfrowanie: cofnij każdą literę o **7** (= naprzód o 19). A↔H na palcach lub ołówkiem na papierze.
 
-→ §3 (ciphertext Vigenère) i §4 (tabula recta) niżej — **archiwalne**, zastąpione powyższym. Prop gracza → `prototype/z7-szyfrogram-draft.md` (ciphertext zaktualizowany).
+> 🗄️ **Backup shift +3** (klasyczny Cezar, łatwiejszy — porzucony; ryzyko że znający historię rozpoznają bez odkrywania): motto `KHOIHQ, KLOIHQ XQG ZHKUHQ!`, ciało `MRUGDQ WKH FRRN LV KDQV YRQ EDBVHQ WKHLU FKDLUPDQ`.
 
-> 🗄️ **Backup pełnej wersji Vigenère** (prop + oba ciphertexty + **kompletna tabula recta**) → `prototype/z7-szyfrogram-vigenere-backup.md`. Zachowany na wypadek powrotu do Vigenère.
-
----
-
-## 1. Model (rozstrzygnięty 2026-06-01) — ⚠ §1 ZASTĄPIONY przez §0 (Cezar, oba tory)
-
-- **Szyfr:** ~~Vigenère, alfabet 26-literowy A–Z (tabula recta)~~ → **Cezar** (patrz §0). *(Anachronizm Cezara mniejszy — szyfr przesuwny znany w starożytności.)*
-- **Klucz = motto Zakonu** z **nagłówka listy nazwisk Z3** (ten sam motto-nagłówek pojawia się na obu dokumentach — to sygnał, że to słowo-klucz).
-  - Motto: „**Helfen, Hilfen und Wehren**" → litery: `HELFENHILFENUNDWEHREN`.
-- **Szyfrogram Z7 = przechwycony list krzyżacki** (dostarczony w kopercie K8). Nagłówek = **to samo motto, CAPS**. Tylko **rdzeń wiadomości jest zaszyfrowany**; ramka listu (zwrot, podpis) jawna — żeby gracz deszyfrował ~41 liter, nie całość.
-- **Po odszyfrowaniu:** ujawnienie tożsamości Jordana → wejście w finał (KF).
-- **Co gracz musi mieć naraz:** pergamin Z3 (klucz w nagłówku, niesiony od F2B) **+** szyfrogram Z7 (K8). Motto łączy oba.
-
----
-
-## 2. Klucz — dwa warianty (wybór Oskara)
-
-| Wariant | Klucz (litery) | Za | Przeciw |
-|---|---|---|---|
-| **Pełne motto (domyślny)** | `HELFENHILFENUNDWEHREN` (21) | wierne „motto z nagłówka = klucz"; nagłówek pokazuje całe motto → brak dwuznaczności | dłuższy ciąg do wyrównania nad szyfrogramem |
-| **Skrót** | `HELFEN` (6) | krótszy = łatwiej trzymać pozycję (mitygacja z roadmapy) | nagłówek pokazuje całe motto — trzeba graczowi zasygnalizować „użyj pierwszego słowa" |
-
-> Liczba **operacji deszyfrowania jest taka sama** w obu (1 odczyt z tabula recta na literę szyfrogramu) — długość klucza wpływa tylko na łatwość trzymania wyrównania.
+> 🗄️ **Backup modelu „liczba liter motta (shift +21)"** [poprzedni §0, 2026-06-01 wieczór]: ciphertext `EJMYVI OCZ XJJF DN CVIN QJI WVTNZI OCZDM XCVDMHVI`, instrukcja „policz litery motta (21) = przesunięcie". Zastąpiony mechaniką nagłówkową.
 >
-> ✅ **DECYZJA Oskara [2026-06-01]: pełne motto** `HELFENHILFENUNDWEHREN` (skrót odrzucony). Cały szyfrogram używa tego klucza.
+> 🗄️ **Backup pełnej wersji Vigenère** → `prototype/z7-szyfrogram-vigenere-backup.md`.
 
 ---
 
-## 3. Plaintext i ciphertext (ZWERYFIKOWANE round-trip)
+## 1. Model — ⚠ mechanika klucza → §0; reszta aktualna
 
-**Plaintext (jawna treść po odszyfrowaniu, EN, do akceptacji Oskara):**
+- **Szyfr:** Cezar, oba tory (patrz §0).
+- **Klucz = odkryty przez porównanie nagłówków** (patrz §0): Z3 nosi motto jawne, Z7 to samo motto zaszyfrowane — **ten sam charakterystyczny font** sygnalizuje związek. Interpunkcja (przecinek, wykrzyknik): `HELFEN, HILFEN UND WEHREN!`.
+- **Szyfrogram Z7 = przechwycony list krzyżacki** (dostarczony w kopercie K8). Nagłówek = **to samo motto, ten sam font co Z3, ALE ZASZYFROWANE CEZAREM** — gracz widzi niezrozumiały ciąg w miejscu, gdzie Z3 ma znane motto. Tylko **rdzeń wiadomości jest zaszyfrowany**; ramka listu (zwrot, podpis) jawna — żeby gracz deszyfrował ~41 liter, nie całość.
+- **Po odszyfrowaniu:** ujawnienie tożsamości Jordana → wejście w finał (KF).
+- **Co gracz musi mieć naraz:** pergamin Z3 (z jawnym mottem w nagłówku, niesiony od F2B) **+** szyfrogram Z7 (K8). Font nagłówka łączy oba.
+
+---
+
+## 2. [ARCHIWALNE] Warianty klucza Vigenère — zastąpione przez §0
+
+> Ta sekcja dotyczyła wariantów klucza Vigenère (pełne motto vs skrót) — nieaktualna od przejścia na Cezar z mechaniką nagłówkową. Pozostawiona dla dokumentacji decyzji. Szyfr i mechanika klucza → §0.
+
+| [ARCHIWALNE] Wariant | Klucz (litery) | Za | Przeciw |
+|---|---|---|---|
+| **Pełne motto** | `HELFENHILFENUNDWEHREN` (21) | wierne motto z nagłówka | dłuższy ciąg do wyrównania |
+| **Skrót** | `HELFEN` (6) | krótszy | trzeba zasygnalizować „tylko pierwsze słowo" |
+
+> ~~DECYZJA Oskara [2026-06-01]: pełne motto~~ — nieaktualne (Vigenère porzucone). Patrz §0: mechanika nagłówkowa, dwie wersje A (+3) i B (+7).
+
+---
+
+## 3. Plaintext i ciphertext ← aktualne w §0; poniżej archiwum Vigenère
+
+> **Cezar Ver. A (shift +3) i Ver. B (shift +7) — ciphertexty i zaszyfrowane motta → §0** (autorytatywne, round-trip ✓).
+
+**Plaintext — ZATWIERDZONY [2026-06-01]:**
 
 ```
 JORDAN THE COOK IS HANS VON BAYSEN THEIR CHAIRMAN
 ```
 litery: `JORDANTHECOOKISHANSVONBAYSENTHEIRCHAIRMAN` (41 liter)
 
-**Ciphertext — wariant PEŁNE MOTTO (`HELFENHILFENUNDWEHREN`):**
+**[ARCHIWALNE] Vigenère — wariant PEŁNE MOTTO (`HELFENHILFENUNDWEHREN`):**
 ```
 QSCIE AAPPH SBEVV DEUJZ BUFLD WRUBS JMEWU DEVTR R
 ```
 
-**Ciphertext — wariant SKRÓT (`HELFEN`):**
+**[ARCHIWALNE] Vigenère — wariant SKRÓT (`HELFEN`):**
 ```
 QSCIE AALPH SBRMD MEAZZ ZSFNF WPSXU LMCHL NPVXF R
 ```
 
-> Oba policzone skryptem i zweryfikowane: odszyfrowanie kluczem = dokładnie plaintext powyżej. Grupowanie po 5 liter = konwencja kryptograficzna (ukrywa granice słów). Jeśli Oskar zmieni treść plaintextu — przeliczam ciphertext na nowo (sekundy).
+> Vigenère zweryfikowane skryptem; porzucone (za trudne w terenie + anachronizm). Backup: `prototype/z7-szyfrogram-vigenere-backup.md`.
 
 ---
 
-## 4. Mechanika gracza (deszyfrowanie tabula recta)
+## 4. Mechanika gracza (deszyfrowanie kołem Cezara bez rekwizytu)
 
-1. Wypisz klucz (motto) nad szyfrogramem, **powtarzając w kółko**: `H E L F E N H I L F E N U N D W E H R E N H E L F E N …`
-2. Dla każdej litery szyfrogramu: wejdź w **wiersz** tabula recta oznaczony **literą klucza** nad nią.
-3. Znajdź w tym wierszu **literę szyfrogramu**.
-4. Litera na **szczycie tej kolumny** = litera jawna (plaintext).
-5. Odczytaj całość → treść ujawniająca twist.
+1. **Odkryj przesunięcie:** połóż Z3 (pergamin listy) i Z7 (przechwycony list) obok siebie. Oba mają nagłówek z mottem w tym samym charakterystycznym foncie — Z3 jawny, Z7 zaszyfrowany. Przecinek i wykrzyknik są w tych samych miejscach → gracz od razu widzi, które słowo Z7 odpowiada któremu słowu Z3. Porównuje pierwszą literę: nagłówek Z3 zaczyna się na `H`, nagłówek Z7 na `K` (Ver. A) lub `O` (Ver. B). Sprawdza kolejne litery — stałe przesunięcie potwierdza.
+2. **Odszyfruj ciało:** cofnij każdą literę szyfrogramu o odkrytą wartość. Można liczyć na palcach, ołówkiem na boku papieru, lub w głowie (alfabet A–Z jest cykliczny: po Z wraca A).
+3. **Odczytaj:** litery jawne w kolejności dają plaintext. Układ spacji jak w zdaniu — pomyłka w jednej literze jest naprawialna domysłem ze słowa.
 
-Tabula recta (materiał do druku) → `prototype/z7-szyfrogram-draft.md` (appendix). Finalny **A4** + stylizacja → po dry-runie.
+Brak rekwizytu (koła/tabeli) — świadoma decyzja (koło byłoby zbyt silną wskazówką). Prop gracza (szyfrogram) → `prototype/z7-szyfrogram-draft.md`.
 
 ---
 
@@ -107,17 +112,17 @@ Szyfrogram = **dyspozycja komtura toruńskiego Albrechta Kalba do Malborka**, pr
 
 ## 7. Ryzyka i co mierzy dry-run
 
-- **Trudność w terenie:** Cezar (jedno przesunięcie) łamie się **szybciej** niż Vigenère — zmiana obniża ryzyko. Mitygacja dalej: **krótki rdzeń (41 liter)** + **jawna ramka listu** + **czytelne koło Cezara** + jasna instrukcja. **Dry-run i tak mierzy minuty na odszyfrowanie.**
+- **Trudność w terenie:** Cezar bez rekwizytu (koła) — gracze sami odkrywają przesunięcie przez porównanie. **Dry-run mierzy: (a) czy gracze samodzielnie połączą oba nagłówki jako klucz, (b) minuty na odszyfrowanie ciała.** Mitygacje: krótki rdzeń (41 liter) + jawna ramka listu + przecinek/wykrzyknik jako lokatory słów w nagłówku.
+- **Shift +7 — wybrany [2026-06-01].** Mniej oczywisty niż klasyczny +3; ciekawsze odkrycie. Backup +3 → §0.
 - **Anachronizm:** Cezar (szyfr przesuwny) znany od starożytności — **minimalny/żaden** (inaczej niż Vigenère ~1553). Patrz `lore/fakty-vs-fabula.md` poz. 7.
-- **Reguła klucza:** przesunięcie = **liczba liter motta (21)**. Jednoznaczne — brak wariantów pełne/skrót.
-- **✅ POJEDYNCZY PUNKT AWARII — ROZWIĄZANY [2026-06-01].** Klucz (motto) żyje tylko w nagłówku kradzionej listy Z3 → kradzież była węzłem krytycznym. **Decyzja Oskara: kradzież listy jest OBLIGATORYJNA dla każdej grupy mieszczan** (gwarantowana — projektowana tak, by każda grupa się udała; patrz `zamek-krzyzacki-lista.md` „Trudność — balans"). Brak ścieżki „nie zdobył" → brak twardego stopu. **Wymóg projektowy:** karta choreografii Albrechta musi dawać powtarzalne, niezawodne okno (nie jednostrzałowe).
+- **✅ POJEDYNCZY PUNKT AWARII — ROZWIĄZANY [2026-06-01].** Klucz (nagłówek Z3) żyje tylko w kradzionej liście → kradzież była węzłem krytycznym. **Decyzja Oskara: kradzież OBLIGATORYJNA** (gwarantowana dla każdej grupy mieszczan; patrz `zamek-krzyzacki-lista.md`). Brak ścieżki „nie zdobył" → brak twardego stopu.
 
 ---
 
 ## 8. Otwarte pytania (do Oskara)
 
-1. ✅ **Treść plaintextu — ZATWIERDZONA [2026-06-01]:** „JORDAN THE COOK IS HANS VON BAYSEN THEIR CHAIRMAN" (Oskar zaakceptował). Ciphertext Cezara +21 policzony i zamknięty (§0).
-2. ✅ **Klucz — ROZSTRZYGNIĘTE [2026-06-01]: Cezar, przesunięcie = liczba liter motta (21)**. (Vigenère + warianty pełne/skrót — porzucone, backup `prototype/z7-szyfrogram-vigenere-backup.md`.)
+1. ✅ **Treść plaintextu — ZATWIERDZONA [2026-06-01]:** „JORDAN THE COOK IS HANS VON BAYSEN THEIR CHAIRMAN" (Oskar zaakceptował). Ciphertext Cezara +7 policzony i zamknięty (§0).
+2. ✅ **Szyfr = Cezar, shift +7** — rozstrzygnięte [2026-06-01]. ✅ **Mechanika klucza = porównanie nagłówków** (Z3 jawny ↔ Z7 zaszyfrowany, ten sam font, ta sama interpunkcja) — rozstrzygnięte [sesja z Piotrem]. (Vigenère + model liczenia liter + shift +3 — porzucone, backup `prototype/z7-szyfrogram-vigenere-backup.md` i §0.)
 3. **Czy „Hans von Baysen" jest na liście Z3** (plant) — rekomendacja: tak (patrz `z3-lista-tr-spec.md` Decyzja #2; zależność rozwiązana — Jordan zostaje kucharzem).
 4. **Czy ramka listu jawna** (tylko rdzeń szyfrowany) — rekomendacja: tak (playability). Alternatywa: cały list szyfrowany (trudniej).
 5. ✅ **Anachronizm — ROZSTRZYGNIĘTE [2026-06-01]: Cezar minimalny/żaden** (porzucono Vigenère). `lore/fakty-vs-fabula.md` poz. 7.
@@ -127,12 +132,13 @@ Szyfrogram = **dyspozycja komtura toruńskiego Albrechta Kalba do Malborka**, pr
 
 ## 9. Status
 
-- ✅ Model klucza (motto z nagłówka Z3) — rozstrzygnięty.
-- ✅ Szyfr — **Cezar, przesunięcie = liczba liter motta (21)** [2026-06-01 wieczór]. Oba tory.
-- ✅ Ciphertext Cezara — policzony, round-trip ✓ (skrypt). `EJMYV IOCZX JJFDN…` (§0).
+- ✅ Szyfr — **Cezar, oba tory** [2026-06-01].
+- ✅ Mechanika klucza — **porównanie nagłówków** (Z3 jawny ↔ Z7 zaszyfrowany, ten sam font + ta sama interpunkcja) [2026-06-01, sesja z Piotrem].
+- ✅ Interpunkcja motta: `HELFEN, HILFEN UND WEHREN!` (przecinek + wykrzyknik) — oba dokumenty.
+- ✅ Brak rekwizytu (koła) — świadoma decyzja.
+- ✅ Ciphertexty (Ver. A shift+3 i Ver. B shift+7) — policzone, round-trip ✓. → §0.
+- ✅ Treść plaintextu — **ZATWIERDZONA [2026-06-01]:** „JORDAN THE COOK IS HANS VON BAYSEN THEIR CHAIRMAN".
 - ✅ Kradzież listy Z3 **obligatoryjna** → brak twardego stopu [2026-06-01].
 - ✅ Anachronizm — Cezar minimalny; backup Vigenère → `prototype/z7-szyfrogram-vigenere-backup.md`.
-- ✅ Prop (EN) + koło Cezara → `prototype/z7-szyfrogram-draft.md`.
-- ✅ Treść plaintextu — **ZATWIERDZONA [2026-06-01]:** „JORDAN THE COOK IS HANS VON BAYSEN THEIR CHAIRMAN". Ciphertext zamknięty.
-- ⬜ Koło Cezara (rekwizyt A4, dwie tarcze) — do zaprojektowania (TODO w drafcie).
+- ✅ Przesunięcie — **shift +7** [DECYZJA Oskara 2026-06-01]. Backup +3 → §0.
 - ⬜ KF (instrukcje finału, dostarczenie listu) — następny element łańcucha.

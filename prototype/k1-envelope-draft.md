@@ -53,7 +53,7 @@ After that, you will receive your next instructions.
 
 - **Groźba**: "With their hands" — fizyczna, medievalna, bez ozdobników. Celowo krótka.
 - **Plot twist K2** (pośrednika nie ma) jest *zasiany* w K1 ("Your original contact is not where he was meant to be") — ale nie wyjaśniony. Grupa to odczuje dopiero przy MG po Z1.
-- **"Eighth bell"** = godz. 20:00, ósme bicie zegara ratuszowego. Nie nazywamy Tuba Dei (anachronizm).
+- **"Eighth bell"** = godz. 20:30, ósme bicie zegara ratuszowego. Nie nazywamy Tuba Dei (anachronizm).
 - **Rekwizyt w kopercie:** list zapieczętowany (noszą całą grę), mapa (9 glifów, bez nazw), karta deszyfrownika (9 piktogramów → następny glif).
 - **Wersja TR / wersja Krzyżacy**: K1 jest WSPÓLNA dla obu torów (nie zdradza frakcji). Podział następuje dopiero w K2.
 - Ton: rzeczowy, lekko zagrażający — ani epicki, ani przygodowy. Zleceniodawca nie jest wrogiem, ale nie jest przyjacielem.
