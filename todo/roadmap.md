@@ -76,6 +76,23 @@ Kolejność prac na zagadkach (priorytetowa):
 - [ ] Decyzja o instrumencie (kalimba vs XV-wieczny)
 - [ ] Bonus „Opowieść skazanego" (niski priorytet)
 
+## Brama spójności meta ↔ treść (MUST-HAVE przed zatwierdzeniem projektu)
+
+> ⚠️ **Wymagane przed produkcją/drukiem i ostatecznym zatwierdzeniem.** Gdy MVP jest gotowe i **wszystkie koperty** mają finalną treść — puścić agenta **weryfikującego spójność** całej gotowej-do-rozgrywki treści (koperty, skrypty NPC, rekwizyty, mapy, szyfrownik) z **meta-kartkami** (`prototype/meta-cards/` + surowiec `lore/meta-kartki/`).
+
+**Po co:** meta-kartki opisują „co naprawdę było" — jeśli rozjadą się z faktyczną treścią kopert, kartka kłamie o własnej grze. Drafty meta powstały, **zanim** część kopert była finalna → ryzyko stałych odwołań do porzuconych decyzji.
+
+**Przykład realnego byka [złapany 2026-06-02]:** karty Z4/Z8 mówiły o „raftsman's pipe / cloister psaltery", a `puzzles/kalimba.md` pkt 5 **rozstrzygnął [2026-06-01]**, że instrument **nie ma nazwy własnej** — w tekście tylko opis ogólny („a small iron-tongue instrument" / lamellofon). To dokładnie typ rozjazdu, który ta brama ma wyłapywać systemowo.
+
+**Zakres skanu (checklist dla agenta):**
+- [ ] Każda meta-kartka vs finalna treść swojej koperty: nazwy instrumentów, miejsc, postaci, dat, rekwizytów — czy zgodne?
+- [ ] Czy meta-kartka nie odwołuje się do **porzuconych** wariantów (sprawdź „otwarte pytania → ROZSTRZYGNIĘTE" w `puzzles/*`, `mechanics/*`, `concept/*` i `lore/fakty-vs-fabula.md`).
+- [ ] **Re-audyt bramkowania spoilerów** na finalnych kopertach: czy kartka N nie zdradza treści koperty N+1 ani finału (model w `prototype/meta-cards/README.md`).
+- [ ] Spójność EN: terminologia, nazwy własne toruńskie zachowane w oryginale.
+- [ ] Lista rozbieżności → poprawki w meta-kartkach (źródło prawdy = finalna treść gry, nie odwrotnie).
+
+**Kiedy:** po Fazie B (treść kompletna), przed Fazą C (druk) — żeby nie drukować kartek z nieaktualną treścią.
+
 ## Faza C - produkcja rekwizytów (TY + ewentualnie pomoc, ~5-15h)
 
 - [ ] **Drukowanie kopert** (~96 sztuk, posortowane)

@@ -7,7 +7,7 @@
 
 ## W skrócie
 
-Trzymaliście w rękach kalimbę — instrument afrykański z XIX w. — opisaną w kopercie jako piszczałka flisacka. Melodia, którą zagraliście, koduje datę 6 lutego 1454: dzień, gdy mieszczanie toruńscy zażądali poddania zamku krzyżackiego. Legenda o flisaku i żabach jest XIX-wiecznym podaniem; fontanna przy Ratuszu, którą kojarzycie, powstała w 1914 r. — 460 lat po opisywanych wydarzeniach.
+Trzymaliście w rękach kalimbę — instrument afrykański z XIX w. — opisaną w kopercie **bez nazwy własnej**, tylko jako „mały instrument o metalowych języczkach" (decyzja: opis ogólny, nie nazwa z epoki — `puzzles/kalimba.md` pkt 5). Melodia, którą zagraliście, koduje datę 6 lutego 1454: dzień, gdy mieszczanie toruńscy zażądali poddania zamku krzyżackiego. Legenda o flisaku i żabach jest XIX-wiecznym podaniem; fontanna przy Ratuszu, którą kojarzycie, powstała w 1914 r. — 460 lat po opisywanych wydarzeniach.
 
 ---
 
@@ -43,7 +43,7 @@ Toruń nawiedziła plaga żab. Burmistrz obiecał córkę i pół majątku temu,
 
 Kalimba (zwana też mbira lub sanza) to **lamellofon** — instrument afrykański, w którym metalowe lub bambusowe języczki przytwierdzone do pudła rezonansowego wprawiane są w drganie kciukami. W Europie instrument pojawia się dopiero w XIX w., wraz z europejską ekspansją kolonialną w Afryce subsaharyjskiej.
 
-W kopercie Z4 instrument opisany był jako piszczałka flisacka lub fujarka — instrument faktycznie znany nad Wisłą w XV w. Opis w kopercie to celowa warstwa narracyjna, chroniąca anachronizm przed rozgrywką. Mechanika (metalowe języczki z liczbami) działała dokładnie tak samo — zmienił się tylko opis w tekście.
+W kopercie Z4 instrument **nie ma nazwy własnej** — opisany jest ogólnie jako „mały instrument o metalowych języczkach" (ang. *a small iron-tongue instrument*). To celowa warstwa narracyjna, chroniąca anachronizm przed rozgrywką. **Decyzja [2026-06-01, `puzzles/kalimba.md` pkt 5]:** porzucono wcześniejszy pomysł nazywania go instrumentem z epoki (piszczałka/fujarka) — opisujemy mechanizm (metalowe języczki), nie nazwę, więc w tekście nie pada żaden anachronizm. Mechanika (języczki z liczbami) bez zmian.
 
 **Decyzja autora:** rekwizyt fizyczny = kalimba (działa najlepiej mechanicznie; żaden historyczny instrument nie daje tak precyzyjnego mapowania nuta→liczba). Anachronizm schowany pod warstwą fabularną; ujawniony tutaj, po rozgrywce. `(wiki: warstwa-anachronizmy.js; puzzles/kalimba.md; fakty-vs-fabula.md poz. 2)`
 
@@ -57,7 +57,7 @@ Fontanna przy Ratuszu Staromiejskim, inspirująca scenografię zagadki, to dzie�
 
 ## CIEKAWOSTKI POSZERZAJĄCE
 
-- **Symetria torów:** tę samą melodię i ten sam kod (`621454`) grała jednocześnie — w innym miejscu miasta — grupa grająca tor krzyżaków (Z8 — „melodia zakonu"). Tam instrument opisano jako psałterion lub dzwonki klasztorne, nie piszczałkę. Jedna kalimba, dwa światy — jeśli spotkacie drugą grupę po grze, możecie porównać, co słyszeliście.
+- **Symetria torów:** tę samą melodię i ten sam kod (`621454`) grała jednocześnie — w innym miejscu miasta — grupa grająca tor krzyżaków (Z8 — „melodia zakonu"). Tam instrument opisano analogicznie — ogólnie, bez nazwy własnej (klimat zakonny zamiast wiślanego). Jedna kalimba, dwa światy — jeśli spotkacie drugą grupę po grze, możecie porównać, co słyszeliście.
 
 - **Data jako podwójny sens:** 6 II 1454 to dla mieszczan data zwycięskiego żądania, dla Zakonu — data własnej klęski. Ten sam kod, czytany z perspektywy każdego toru, znaczy coś innego emocjonalnie.
 

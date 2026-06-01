@@ -3,13 +3,13 @@
 
 **Koperta:** Z8 · **Zadanie:** Melodia zakonu · **Tor:** krzyżacy (Zakon Krzyżacki)
 
-> **Lustro Z4.** Baza faktyczna tej kartki jest wspólna z kartką `miasto-4-Z4.md` (tor mieszczan). Ten sam instrument, ta sama melodia, ten sam kod. Różni się: instrument-przykrywka (psałterion / dzwonki klasztorne zamiast piszczałki), frakcja i perspektywa emocjonalna. Sekcje FAKT i ANACHRONIZM (kalimba) są tożsame — poniżej zaznaczono, gdzie pojawia się różnica torów.
+> **Lustro Z4.** Baza faktyczna tej kartki jest wspólna z kartką `miasto-4-Z4.md` (tor mieszczan). Ten sam instrument, ta sama melodia, ten sam kod. Różni się: **klimat opisu** (zakonny zamiast wiślanego — ale w obu wypadkach bez nazwy własnej, patrz niżej), frakcja i perspektywa emocjonalna. Sekcje FAKT i ANACHRONIZM (kalimba) są tożsame — poniżej zaznaczono, gdzie pojawia się różnica torów.
 
 ---
 
 ## W skrócie
 
-Trzymaliście w rękach kalimbę — instrument afrykański z XIX w. — opisaną w kopercie jako psałterion lub dzwonki klasztorne zakonu. Melodia, którą zagraliście, koduje datę 6 lutego 1454: dzień, gdy mieszczanie toruńscy zażądali poddania zamku krzyżackiego — i dzień, w którym Zakon zaczął przegrywać wojnę o Prusy. Dla waszej frakcji ten sam kod to data klęski, nie triumfu.
+Trzymaliście w rękach kalimbę — instrument afrykański z XIX w. — opisaną w kopercie **bez nazwy własnej**, w klimacie zakonnym (decyzja: opis ogólny, nie nazwa z epoki — `puzzles/kalimba.md` pkt 5). Melodia, którą zagraliście, koduje datę 6 lutego 1454: dzień, gdy mieszczanie toruńscy zażądali poddania zamku krzyżackiego — i dzień, w którym Zakon zaczął przegrywać wojnę o Prusy. Dla waszej frakcji ten sam kod to data klęski, nie triumfu.
 
 ---
 
@@ -53,9 +53,9 @@ W narracji waszego toru instrument grał w klimacie zakonnym — psalmodia, skry
 
 Kalimba (zwana też mbira lub sanza) to **lamellofon** — instrument afrykański, w którym metalowe języczki przytwierdzone do pudła rezonansowego wprawiane są w drganie kciukami. W Europie instrument pojawia się dopiero w XIX w., wraz z europejską ekspansją kolonialną w Afryce subsaharyjskiej.
 
-W kopercie Z8 instrument opisany był jako **psałterion lub dzwonki klasztorne** — instrumenty znane w praktyce liturgicznej i muzycznej XV-wiecznej Europy (psałterion to strunowy instrument szarpany, cytrzany kuzyn; dzwonki klasztorne/chime bars to perkusja pielęgnowana w zakonach). Opis w kopercie to celowa warstwa narracyjna, chroniąca anachronizm przed rozgrywką. Mechanika (metalowe języczki z liczbami) działała tak samo — zmienił się tylko opis.
+W kopercie Z8 instrument **nie ma nazwy własnej** — opisany jest ogólnie jako „mały instrument o metalowych języczkach" w klimacie zakonnym. To celowa warstwa narracyjna, chroniąca anachronizm przed rozgrywką. **Decyzja [2026-06-01, `puzzles/kalimba.md` pkt 5]:** porzucono wcześniejszy pomysł nazywania go instrumentem z epoki (psałterion/dzwonki) — opisujemy mechanizm (metalowe języczki), nie nazwę, więc w tekście nie pada żaden anachronizm. Mechanika bez zmian.
 
-**Różnica między torami:** Z4 (flisak) = piszczałka/fujarka, klimat wiślany, ludowy. Z8 (zakon) = psałterion/dzwonki, klimat sakralny, ezoteryczny. Jeden instrument fizyczny, dwa opisy fabularne, jedna melodia.
+**Różnica między torami:** Z4 (flisak) = klimat wiślany, ludowy. Z8 (zakon) = klimat sakralny, ezoteryczny. Oba opisy **ogólne** (bez nazwy z epoki) — jeden instrument fizyczny, dwie oprawy emocjonalne, jedna melodia.
 
 **Decyzja autora:** rekwizyt fizyczny = kalimba (działa najlepiej mechanicznie; żaden historyczny instrument nie daje tak precyzyjnego mapowania nuta→liczba). Anachronizm schowany pod warstwą fabularną; ujawniony tutaj, po rozgrywce. `(wiki: warstwa-anachronizmy.js; puzzles/kalimba.md; fakty-vs-fabula.md poz. 2)`
 
