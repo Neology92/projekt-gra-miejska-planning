@@ -154,7 +154,7 @@ Te punkty są **niezmienne** i mają pokrycie w wiki:
 
 ## Status na start (2026-05-29)
 
-> **🔴 AKTUALNY PRIORYTET [2026-05-31]:** budowa **prototypu pojedynczej ścieżki** (tor TR + Z4). **Z1 — artefakty: drafty gotowe** — dane kanoniczne `puzzles/z1-szlak-spec.md` + mock `prototype/mapa-z1-podglad.html` (mapa 9 glifów + deszyfrownik „detal → glif", bez nazw) + treść startu w K1; czekają na review Oskara. Następny krok: **opcja B — fabularny rdzeń F1→F2A**. Pełny plan, stan prac i lista decyzji: **`todo/roadmap-prototyp.md`**.
+> **🔴 AKTUALNY PRIORYTET [2026-06-01]:** **Z1 dyspersja — 10 ścieżek „szlaku symboli".** Po dry-run runda 1 + **REBALANS v2** (7 z 10 łańcuchów przebudowane; głębokie starty od Wisły wróciły po poluzowaniu budżetu). **START dla nowej sesji: `todo/z1-fan-handoff.md`** (kompletny zrzut stanu + TODO). Czeka na: dry-run **runda 2** (Oskar weryfikuje sightline 6 par + `S02` — `puzzles/z1-dry-run-sheet.md §RUNDA 2`), potem regeneracja 10 kart + budowa map. Szerszy plan prototypu: `todo/roadmap-prototyp.md`.
 
 - ✅ Faza 1 — szkielet ma sens, szlak symboli wymaga konkretnego doboru miejsc i przygotowania szyfrownika
 - ✅ Faza 2A (Jordan) — szkielet jest, treść spotkania do dopisania

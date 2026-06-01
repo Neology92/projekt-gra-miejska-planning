@@ -80,6 +80,8 @@
 
 ## Ścieżki (łańcuch · pętla dystraktorów · deszyfrownik · klucz MG)
 
+> ⚠️ **STALE (v1) — NIE UŻYWAĆ łańcuchów poniżej.** Po dry-runie runda 1 obowiązuje **macierz REBALANS v2 powyżej** (7 z 10 łańcuchów zmienione: G2/G5/G6/G7/G8/G9/G10). Karty poniżej (pętle dystraktorów + deszyfrowniki) są **do regeneracji** na łańcuchach v2 w następnej sesji. Zachowane jako referencja formatu i źródło pętli dystraktorów do recyklingu.
+
 > Format deszyfrownika: `detal [kod] → następny kod`. 4 wiersze łańcucha + 5 dystraktorów (zamknięta pętla). Klucz MG = 4 miejsca po kolei.
 
 ### G1 — N-start, długa noga finałowa

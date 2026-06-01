@@ -8,7 +8,23 @@
 
 ---
 
-## PRIORYTET 1 — detale `⚠` w łańcuchach (krytyczne: bust = ścieżka pada)
+## ✅ WYNIKI RUNDY 1 (2026-06-01) — ROZSTRZYGNIĘTE
+
+| Check | Werdykt |
+|---|---|
+| `N04` lew (Apteka) | ✅ widoczny **nad drzwiami**; godziny apteki nieistotne → **pewny** |
+| `N05` bazylika/łuki (Kościół Jakuba) | ✅ łuki + bryła rozpoznawalne → **pewny** |
+| `N03` fartuch (Modry Fartuch) | ❌ **brak widocznego godła** → wypada z łańcuchów (DYS-only) |
+| `S06` Ulica Ciasna | ❌ łuki odporowe **nieczytelne** → wypada z łańcucha |
+| Brama Mostowa `S01` | ✅ **ostrołuk przejazdu** wypatrzalny → piktogram = `brama-ostroluk.svg` |
+| Budżety graniczne G4/G10 | ✅ odległości znośne; rozsuw powrotu do MG „nawet pasuje" |
+| Reguła wzroku | ✅ **tylko śródłańcuchowo** (P1→P2, P2→P3); P3→P4 u MG zwolniony |
+
+> Sekcje PRIORYTET 1–3 niżej to **runda 1 (zrobiona)** — zostawione jako zapis. **Aktualne do sprawdzenia → `## RUNDA 2` na końcu pliku.**
+
+---
+
+## PRIORYTET 1 — detale `⚠` w łańcuchach (krytyczne: bust = ścieżka pada) [RUNDA 1 — zrobione]
 
 > Krok łańcucha z **niewypatrzalnym** detalem jest **nierozwiązywalny** (nie „trudny"). Jeśli detal nie jest widoczny z ulicy w porze gry → krok trzeba przenieść do dystraktorów, a do łańcucha wstawić detal pewny.
 
@@ -88,3 +104,53 @@ Plan zakładał ~700 m / ~8,5 min, ale to mogło być przeszacowane.
 | G7 `C04`→`C07` | trywialny? | | |
 
 > Po dry-runie: wynik wraca do `z1-10-sciezek.md` (aktualizacja budżetów + rozstrzygnięcie ryzyka G2), potem domykamy mapy 3 ścieżek kontyngentnych (G2/G4/G10). Pozostałe 7 ścieżek i ich mapy są niezależne od wyniku.
+
+---
+
+# RUNDA 2 — do sprawdzenia (po REBALANSIE v2)
+
+> Kontekst: runda 1 zmusiła przebudowę 7 z 10 łańcuchów → **macierz REBALANS v2** (`z1-10-sciezek.md` §REBALANS v2). Wprowadziła głębokie starty od Wisły (`S01`, `S02`) i przereorganizowała grupy Rynku. Runda 2 weryfikuje **to, co nowe**: 6 par „cross-square" (sightline), nowy krok `S02`, i nowe nogi. **Wszystkie detale łańcuchowe są pewne** (z rundy 1 / wiki) — tu chodzi głównie o **wzrok i odległość**, nie o istnienie detalu.
+
+## R2.1 🔴 Sightline — 6 par cross-square (reguła: NIE w zasięgu wzroku bez podchodzenia)
+
+> Stań przy **A**, spójrz w stronę **B**: czy widać lokalizację B na tyle, że grupa **nie musi nawigować** (idzie „na to, co widzi")? Jeśli TAK → para za ciasna, trzeba rozbić (wstawić przystanek pośredni). Jeśli trzeba realnie iść (zza rogu / przez plac, nie wprost) → OK. Dystans orientacyjny ~80–150 m.
+
+| Para | A → B | Grupa / pozycja | Widać bez podchodzenia? | Werdykt |
+|---|---|---|---|---|
+| 1 | Apteka Lew `N04` → Kościół Jakuba `N05` | G2 P2→P3 (oba Rynek Nowomiejski) | | |
+| 2 | Kopernik `C01` → Dwór Artusa `C07` | G8 P2→P3 | | |
+| 3 | Osiołek `C02` → Pod Gwiazdą `C06` | G9 P1→P2 | | |
+| 4 | Pod Gwiazdą `C06` → Kopernik `C01` | G9 P2→P3 | | |
+| 5 | Filuś `C03` → Dwór Artusa `C07` | G10 P1→P2 | | |
+| 6 | Dwór Artusa `C07` → Osiołek `C02` | G10 P2→P3 | | |
+
+> Jeśli któraś „za ciasna" — zapisz, w następnej sesji rozbijemy (mamy zapas pozycji; rozłączność domknę ponownie). Te pary i tak domkniemy wzrokowo na **draft-mapie** — ten check to przyspiesza.
+
+## R2.2 🟠 `S02` Brama Klasztorna — kaszownik (NOWY krok łańcucha, G6 P1)
+
+Dotąd `S02` był tylko dystraktorem; w v2 jest **startem G6**. Detal = **kaszownik** (otwór w środkowej ostrołukowej wnęce, wiki #19).
+- [ ] Czy kaszownik jest **wypatrzalny z poziomu ulicy** (gracz rozpozna „otwór w łuku", nie znając historii)? __________
+- **Werdykt:** WIDAĆ / WARUNKOWO / NIE → __________ (jeśli NIE — G6 dostanie inny głęboki start; kandydat: `S04` kotwica/Bulwar)
+
+## R2.3 🟡 Nowe nogi (budżet/rozsuw — nie blokada przy poluzowanym budżecie)
+
+| Noga | Co mierzę | m / min | Uwaga |
+|---|---|---|---|
+| briefing → `S01` Br. Mostowa | głęboki start G7 | | w górę Mostowej = wejście „do środka" |
+| briefing → `S02` Br. Klasztorna | głęboki start G6 | | przez Ducha Świętego |
+| G7 `S01`→`C09` (Br. Mostowa → Katedra Janów) | lateralna noga nad Wisłą | | czy czytelna jako „w stronę miasta", czy myli? |
+
+## Tabela zbiorcza R2
+
+| Element | Wynik | Decyzja/flaga |
+|---|---|---|
+| R2.1 para 1 (N04→N05) | | |
+| R2.1 para 2 (C01→C07) | | |
+| R2.1 para 3 (C02→C06) | | |
+| R2.1 para 4 (C06→C01) | | |
+| R2.1 para 5 (C03→C07) | | |
+| R2.1 para 6 (C07→C02) | | |
+| R2.2 S02 kaszownik | | |
+| R2.3 nogi S01/S02 | | |
+
+> Po R2: następna sesja domyka macierz v2 (rozbicie par „za ciasnych"), regeneruje 10 kart (pętle dystraktorów + deszyfrowniki) i buduje mapy.
