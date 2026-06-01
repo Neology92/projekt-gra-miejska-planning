@@ -82,7 +82,7 @@ Z | Z A B C D E F G H I J K L M N O P Q R S T U V W X Y
 
 ## PLANNING NOTES (nie dla gracza)
 
-**Klucz domyślny w propie:** pełne motto `HELFENHILFENUNDWEHREN` → ciphertext `QSCIE AAPPH SBEVV DEUJZ BUFLD WRUBS JMEWU DEVTR R`. Wariant skrót `HELFEN` (inny ciphertext) → `z7-szyfr-spec.md §3`.
+**Klucz [DECYZJA Oskara 2026-06-01: pełne motto]:** `HELFENHILFENUNDWEHREN` → ciphertext `QSCIE AAPPH SBEVV DEUJZ BUFLD WRUBS JMEWU DEVTR R`. Skrót `HELFEN` odrzucony.
 
 **Szyfrowany tylko rdzeń (41 liter), ramka jawna** — żeby praca w terenie była wykonalna. Ramka (zwrot „To the Hochmeister…", podpis Komtura) buduje klimat i kontekst bez kosztu deszyfrowania.
 

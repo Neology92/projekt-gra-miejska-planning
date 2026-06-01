@@ -60,20 +60,19 @@ Lustro Z3 dla toru krzyżaków (obowiązkowa, wszystkie 5 grup krzyżackich).
 - **Obsada**: ten sam Jordan/Piotr co dla TR — różni się tylko **framing w kopercie** (sojusznik ↔ cel infiltracji). Jeden aktor obsługuje oba tory.
 - Mechanika „kradzieży/infiltracji" — do rozpisania (analogicznie do podebrania listy Albrechtowi w Z3).
 
-## Trudność - balans
+## Trudność - balans — ZAKTUALIZOWANE [2026-06-01]
 
-- Jeśli **zbyt łatwe** → wszystkie grupy zdobywają listę → brak dramaturgii.
-- Jeśli **zbyt trudne** → tylko 1-2 grupy zdobywają → reszta nie wie do kogo dostarczyć w F3.
+Kradzież listy jest **OBLIGATORYJNA** — **każda** grupa mieszczan MUSI zdobyć listę (jej nagłówek niesie klucz Vigenère do Z7). Stary balans („zbyt łatwe → wszystkie zdobywają → brak dramaturgii") **już nie obowiązuje**: celem jest, by **wszystkie** grupy zdobyły.
 
-**Sugestia**: zagadka **rozwiązywalna dla większości**, ale "kradzież listy" wymaga **kreatywności** - kto trafi na Albrechta i zdoła odwrócić uwagę, ten ma listę.
+- **Dramaturgia z wyniku → na przeżycie:** napięcie tkwi w samym momencie napadu (jak odwrócić uwagę Albrechta), nie w binarnym „uda się / nie uda".
+- **Wymóg projektowy (karta choreografii Albrechta/Zosi):** komtur musi dawać **powtarzalne / niezawodne okno** — „odsłania się" wielokrotnie lub wystarczająco długo, by każda grupa złapała moment (ew. MG asystuje). **Nigdy jednostrzałowe okno**, które grupa może bezpowrotnie przegapić.
 
 ## Otwarte pytania
 
 1. **Wariant mechaniki** (A/B/C/D lub mix)?
 2. **Komtur Albrecht = Zosia** (obsada zamknięta). Otwarte: jak rozpoznawalna (kostium)? Wędruje czy stacjonarna?
 3. **Kradzież listy** - mechanika fizyczna (np. komtur trzyma listę "luźno" i jest momentem gdzie się odwraca) czy abstrakcyjna (gracz mówi "kradnę" i MG ocenia czy się udało)?
-4. **Co jeśli grupa nie zdobędzie listy** ale rozwiąże zagadkę Z3? Mają częściowy postęp - z wiedzy z F2A (człowiek z Piccolo = TR) mogą intuicją trafić na Jordana w F3.
-   - 🔴 **PODBITE przez nowy model klucza [2026-06-01]:** odkąd **klucz Vigenère = motto z nagłówka tej listy**, brak listy = **brak klucza = Z7 nierozwiązywalne (twardy stop)**, nie tylko utrata kontekstu. To zmienia Q4 z miękkiego fallbacku w twardą blokadę. Warianty fallbacku → `z7-szyfr-spec.md §8.6`. **Decyzja Oskara.**
+4. ~~Co jeśli grupa nie zdobędzie listy?~~ — ✅ **ROZSTRZYGNIĘTE [2026-06-01]: kradzież listy jest OBLIGATORYJNA dla każdej grupy mieszczan.** Nie ma ścieżki „nie zdobył" — kradzież projektujemy tak, by każda grupa ją wykonała. Tym samym znika twardy stop dla Z7 (klucz = motto z nagłówka listy jest zawsze dostępny). Patrz „Trudność — balans" niżej + karta choreografii Albrechta.
 5. **Z3Z**: mechanika kradzieży zaopatrzenia + czy kraść koło deszyfrujące; jak Jordan/Piotr „przecieka" godzinę 20:00 grupom infiltrującym.
 
 ## Co autor może zrobić sam vs gdzie pomocy

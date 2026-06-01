@@ -52,6 +52,13 @@ To nie jest naginka faktów, lecz **świadoma decyzja tonalna** o tym, jak gra *
 - **Naginka (dramatyczna)**: w grze "miasto się bawi" jednocześnie ze spiskiem. W rzeczywistości - karnawał był, ale po 3 II (blokada bram) atmosfera mogła być już napięta.
 - **Uzasadnienie**: kontrast karnawału i spisku to dobre tło narracyjne.
 
+### 7. ☆ Szyfr Vigenère w Z7 (finałowy szyfrogram)
+
+- **Anachronizm**: szyfr Vigenère spopularyzowany ~1553 (Bellaso / Vigenère) — ~100 lat po 1454. W praktyce krzyżackiej XV w. — niemożliwe.
+- **Naginka**: przechwycony „list krzyżacki" (Z7) zaszyfrowany szyfrem Vigenère; klucz = motto Zakonu „Helfen, Hilfen und Wehren" z nagłówka listy nazwisk Z3.
+- **Uzasadnienie**: spójna, satysfakcjonująca mechanika finału (godło wroga jako klucz do obu zakończeń — TR: Vigenère→twist, Krzyżacy: Cezara→parole) + pokrycie fabularne (Zakon realnie szyfrował i przechwytywał korespondencję — donosy OBA, `donosiciele-1454.js`). Mechanika > ścisłość epoki, jak kalimba.
+- **Świadoma decyzja [2026-06-01]** (potwierdzona przez Oskara). Szczegóły: `puzzles/z7-szyfr-spec.md`.
+
 ## NIE naginamy (twarda historia)
 
 - **Data buntu**: 6 II 1454 - twardo.
@@ -75,7 +82,7 @@ Przykład zły (gdyby był): "Bażyński miał magiczny pierścień" → totalna
 - **Nie zmieniamy wyniku buntu** - kapitulacja zamku 7-8 II była, wojna 13-letnia nastąpiła, miasto wygrało.
 - **Nie zmieniamy postaci** (Bażyński nie staje się "Janem Obrzyńskim" - błąd autora poprawiony).
 - **Nie wprowadzamy postaci nieistniejących** jako głównych (NPC mogą być fikcyjni, ale **nie kluczowi** - kluczowi są historyczni).
-- **Nie używamy anachronizmów bez świadomości** (Tuba Dei, kalimba, Picollo - oznaczone tu jako świadome decyzje lub do zmiany).
+- **Nie używamy anachronizmów bez świadomości** (Tuba Dei, kalimba, Picollo, szyfr Vigenère - oznaczone tu jako świadome decyzje lub do zmiany).
 
 ## Otwarte pytania
 

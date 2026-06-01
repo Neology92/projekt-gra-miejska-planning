@@ -24,7 +24,9 @@
 | **Pełne motto (domyślny)** | `HELFENHILFENUNDWEHREN` (21) | wierne „motto z nagłówka = klucz"; nagłówek pokazuje całe motto → brak dwuznaczności | dłuższy ciąg do wyrównania nad szyfrogramem |
 | **Skrót** | `HELFEN` (6) | krótszy = łatwiej trzymać pozycję (mitygacja z roadmapy) | nagłówek pokazuje całe motto — trzeba graczowi zasygnalizować „użyj pierwszego słowa" |
 
-> Liczba **operacji deszyfrowania jest taka sama** w obu (1 odczyt z tabula recta na literę szyfrogramu) — długość klucza wpływa tylko na łatwość trzymania wyrównania. **Domyślny = pełne motto** (wierne i bez dwuznaczności nagłówka). Skrót tylko jeśli dry-run pokaże, że pełne motto za bardzo myli — wtedy nagłówek Z7 trzeba wyróżnić na „HELFEN".
+> Liczba **operacji deszyfrowania jest taka sama** w obu (1 odczyt z tabula recta na literę szyfrogramu) — długość klucza wpływa tylko na łatwość trzymania wyrównania.
+>
+> ✅ **DECYZJA Oskara [2026-06-01]: pełne motto** `HELFENHILFENUNDWEHREN` (skrót odrzucony). Cały szyfrogram używa tego klucza.
 
 ---
 
@@ -83,27 +85,30 @@ Szyfrogram = **dyspozycja komtura toruńskiego Albrechta Kalba do Malborka**, pr
 ## 7. Ryzyka i co mierzy dry-run
 
 - **Trudność w terenie:** Vigenère łamie się ręcznie wolniej niż Cezar. Mitygacja: **krótki rdzeń (41 liter)** + **jawna ramka listu** (szyfrowany tylko sekret) + **czytelna tabula recta** + jasna instrukcja. **Dry-run ma zmierzyć minuty na odszyfrowanie** — to jeden z głównych celów prototypu.
-- **Anachronizm:** szyfr Vigenère spopularyzowany ~1553 (Bellaso/Vigenère) — ~100 lat po 1454. Świadoma decyzja, jak kalimba. **Do zapisania w `lore/fakty-vs-fabula.md`.**
+- **Anachronizm:** szyfr Vigenère spopularyzowany ~1553 (Bellaso/Vigenère) — ~100 lat po 1454. ✅ **Świadoma decyzja [2026-06-01], zapisana w `lore/fakty-vs-fabula.md` (poz. 7).**
 - **Dwuznaczność klucza:** jeśli pełne motto myli (gdzie zacząć/zapętlić) — przejść na `HELFEN` i wyróżnić to słowo w nagłówku Z7. Decyzja po dry-runie.
-- **🔴 POJEDYNCZY PUNKT AWARII (klucz = kradziony pergamin).** Klucz (motto) żyje **tylko** w nagłówku listy Z3, a listę grupa **kradnie** Albrechtowi — i kradzież z założenia **nie zawsze się udaje** (`zamek-krzyzacki-lista.md` balansuje przeciw „tylko 1–2 grupy zdobywają"). W starym modelu klucz szedł z Z4 (osobne źródło) → brak listy kosztował tylko kontekst. **Teraz klucz i lista to ten sam obiekt: nieudana kradzież → brak motta → Z7 nierozwiązywalne (twardy stop).** Skonsolidowaliśmy klucz twistu na najbardziej zawodnym węźle łańcucha. **Fallback = decyzja Oskara** (patrz §8.6) — dry-run to wychwyci, ale lepiej rozstrzygnąć wcześniej.
+- **✅ POJEDYNCZY PUNKT AWARII — ROZWIĄZANY [2026-06-01].** Klucz (motto) żyje tylko w nagłówku kradzionej listy Z3 → kradzież była węzłem krytycznym. **Decyzja Oskara: kradzież listy jest OBLIGATORYJNA dla każdej grupy mieszczan** (gwarantowana — projektowana tak, by każda grupa się udała; patrz `zamek-krzyzacki-lista.md` „Trudność — balans"). Brak ścieżki „nie zdobył" → brak twardego stopu. **Wymóg projektowy:** karta choreografii Albrechta musi dawać powtarzalne, niezawodne okno (nie jednostrzałowe).
 
 ---
 
 ## 8. Otwarte pytania (do Oskara)
 
 1. **Treść plaintextu** — akceptacja „JORDAN THE COOK IS HANS VON BAYSEN THEIR CHAIRMAN" czy własna wersja (przeliczę ciphertext).
-2. **Wariant klucza** — pełne motto (domyślny) czy skrót `HELFEN`.
+2. ✅ **Wariant klucza — ROZSTRZYGNIĘTE [2026-06-01]: pełne motto** `HELFENHILFENUNDWEHREN` (skrót odrzucony).
 3. **Czy „Hans von Baysen" jest na liście Z3** (plant) — rekomendacja: tak (patrz `z3-lista-tr-spec.md` Decyzja #2; zależność rozwiązana — Jordan zostaje kucharzem).
 4. **Czy ramka listu jawna** (tylko rdzeń szyfrowany) — rekomendacja: tak (playability). Alternatywa: cały list szyfrowany (trudniej).
-5. **Anachronizm Vigenère** — potwierdzić świadomą zgodę + zapis w `fakty-vs-fabula.md`.
-6. **🔴 Fallback przy nieudanej kradzieży pergaminu Z3** (patrz §7) — łączy się z istniejącym Q4 w `zamek-krzyzacki-lista.md`. Skoro klucz = motto z kradzionej listy, brak kradzieży = Z7 nierozwiązywalne. Warianty do wyboru: (a) MG podaje motto jako hint po nieudanej próbie; (b) ścieżka częściowego zaliczenia; (c) kradzież Z3 **gwarantowana** (zawsze się udaje, dramaturgia idzie gdzie indziej); (d) drugie, niezależne źródło motta. **Decyzja Oskara.**
+5. ✅ **Anachronizm Vigenère — ROZSTRZYGNIĘTE [2026-06-01]: świadomy**, zapisany w `lore/fakty-vs-fabula.md` (poz. 7).
+6. ✅ **Fallback przy nieudanej kradzieży — ROZSTRZYGNIĘTE [2026-06-01]: kradzież OBLIGATORYJNA** (wariant c — gwarantowana; każda grupa mieszczan zdobywa listę → brak twardego stopu). Szczegóły → `zamek-krzyzacki-lista.md`.
 
 ---
 
 ## 9. Status
 
 - ✅ Model klucza (motto z nagłówka Z3) — rozstrzygnięty.
-- ✅ Ciphertext (oba warianty) — policzony i zweryfikowany.
-- 🟡 Treść plaintextu + wybór klucza — czeka na Oskara.
-- 🟡 Prop (EN) + tabula recta → `prototype/z7-szyfrogram-draft.md`.
+- ✅ Wariant klucza — **pełne motto** `HELFENHILFENUNDWEHREN` [2026-06-01].
+- ✅ Ciphertext (pełne motto) — policzony, round-trip ✓, odszyfrowany ręcznie z tabula recta ✓.
+- ✅ Kradzież listy Z3 **obligatoryjna** → brak twardego stopu [2026-06-01].
+- ✅ Anachronizm Vigenère — świadomy, zapisany w `lore/fakty-vs-fabula.md` poz. 7 [2026-06-01].
+- ✅ Prop (EN) + tabula recta → `prototype/z7-szyfrogram-draft.md`.
+- 🟡 Treść plaintextu — sens „Jordan=Bażyński" ustalony; **sformułowanie do akceptacji Oskara** (przy zmianie przeliczam ciphertext).
 - ⬜ KF (instrukcje finału, dostarczenie listu) — następny element łańcucha.
