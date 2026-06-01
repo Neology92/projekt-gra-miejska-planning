@@ -77,12 +77,13 @@ Hex przydatny przy druku opasek i identyfikacji u MG (arkusz śledzenia per kolo
   - **Jordan** jest wciąż **incognito** — NIE wiadomo, że to Jan Bażyński (to plot twist Z7).
   - **Albrecht** od razu znany jako komtur, ale **nie przyjmie żadnej wiadomości bez udowodnienia, że nadawcy są godnymi krzyżakami** → stąd **F2B = weryfikacja jako napęd fabularny** (i brama do finału po stronie krzyżackiej, patrz `concept/05-tor-krzyzakow.md`).
 
-## Synchronizacja grup
+## Synchronizacja grup — ZAKTUALIZOWANE [2026-06-01]: BEZ FAL
 
-- Grupy nie ruszają **wszystkie naraz** - falami (np. co 5 min) żeby się nie tłoczyły przy MG.
-- **Pierwsza fala**: 4 grupy (~16 osób).
-- **Druga fala** po 5 min.
-- **Trzecia fala** po 10 min.
+- **Decyzja Oskara [2026-06-01]:** brak startu falami. **Wszystkie grupy ruszają równolegle**, każda we własnym tempie.
+- Rozproszenie w terenie i przy MG zapewnia więc NIE czas startu, lecz: **różne trasy Z1 per grupa** (rozłączność pozycyjna kroków 1–3 — `puzzles/map.md` §5), **zdyspergowane punkty startu** (różne strefy N/E/S/W) i naturalna zmienność tempa.
+- Konsekwencja dla Z1: zbieg 10 grup na kroku 4 przy Rynku Staromiejskim (raport u MG) nie jest rozkładany odgórnie — MG obsługuje ewentualną krótką kolejkę; napięcie „9 obiektów stop-4 vs 10 grup" do domknięcia (`map.md` §5).
+
+> (Wcześniej: start falami co 5 min — 4/4/2 grupy. Zniesione decyzją 2026-06-01.)
 
 ## Otwarte pytania
 

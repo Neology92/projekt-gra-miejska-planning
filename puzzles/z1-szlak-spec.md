@@ -28,7 +28,7 @@ Mechanika kroku: idź do **glifu** na mapie → w terenie wypatrz **detal** pasu
 | △ trójkąt | 🍪 piernik | Rynek Nowomiejski | **Pomnik Piernikarki** | kosz pierników (brązowa kobieta, piesek szarpie suknię) | ○ okrąg | łańcuch 1 — **START (z K1)** |
 | ○ okrąg | ⭐ gwiazda | Rynek Staromiejski 35 | **Kamienica Pod Gwiazdą** | pozłacana gwiazda na szczycie żółtej barokowej fasady (data 1697) | □ kwadrat | łańcuch 2 |
 | □ kwadrat | 🫏 osioł | Rynek / zbieg z ul. Żeglarską | **osiołek** (pręgierz) | żelazny grzbiet osiołka-pręgierza | ◇ romb | łańcuch 3 |
-| ◇ romb | 🌐 astrolabium | Rynek Staromiejski (przy Ratuszu) | **Pomnik Kopernika** | instrument astronomiczny (sfera armilarna / astrolabium) w dłoni posągu — **⚠ zweryfikuj na zdjęciu** (wiki opisuje tylko wąsik i delfina w studzience) | **KONIEC → MG** | łańcuch 4 |
+| ◇ romb | 🌐 astrolabium | Rynek Staromiejski (przy Ratuszu) | **Pomnik Kopernika** | **astrolabium / sfera armilarna w dłoni posągu — FAKT [autor, 2026-06-01], must-have** (wiki #1 wymienia tylko wąsik i delfina, ale posąg trzyma instrument) | **KONIEC → MG** | łańcuch 4 |
 | ⬡ heksagon | 🗼 wieża | ul. Pod Krzywą Wieżą (SW, mury) | **Krzywa Wieża** | przechylona baszta murów miejskich | ☆ gwiazda | fałszywy trop ↻ |
 | ☆ gwiazda | 🎩 melonik | wylot ul. Chełmińskiej (NW Rynku) | **pies Filuś** | melonik prof. Filutka w pyszczku kundelka | ✕ iks | fałszywy trop ↻ |
 | ✕ iks | 🎺 trąbka | ul. Piekary 37 (W) | **Łuk Cezara** | Michał Archanioł z trąbką na attyce (+ szczątek torów pod sklepieniem) | ∿ fala | fałszywy trop ↻ |

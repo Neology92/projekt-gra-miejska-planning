@@ -50,7 +50,7 @@ Kolumny: **Kod** (= glif, stały) · **Detal** (piktogram, stały) · **Miejsce*
 
 | Kod | Detal | Miejsce | Haczyk | Źródło | Rola |
 |---|---|---|---|---|---|
-| `C01` | **delfin** (głowa w studzience cokołu) | **Pomnik Kopernika** (SE róg Ratusza) | głowa delfina w studzience; wąsik (2003) | ✓#1 (delfin ✓). **Instrument/astrolabium w dłoni = ⚠ niepotwierdzone — NIE używać jako detalu** | Ł · S4 |
+| `C01` | **astrolabium** (instrument w dłoni posągu) | **Pomnik Kopernika** (SE róg Ratusza) | astrolabium / sfera armilarna trzymane przez posąg | ✓ **MUST-HAVE [autor, 2026-06-01]** — posąg trzyma instrument; fakt potwierdzony przez autora (wiki #1 go nie wymienia, ale jest). Ikona: `astrolabium.svg`. Zapas: `delfin.svg` (delfin w studzience) | Ł · S4 |
 | `C02` | osioł | **Osiołek** (zbieg z ul. Żeglarską) | ostra metalowa krawędź grzbietu (pręgierz) | ✓#3 | Ł · S4 |
 | `C03` | melonik | **Pies Filuś** (wylot ul. Chełmińskiej) | melonik prof. Filutka w pyszczku kundelka | ✓#4 | Ł · S4 |
 | `C04` | wieża bez hełmu | **Ratusz Staromiejski** (Rynek 1) | brak hełmu/korony wieży (Szwedzi 1703); zegar 24-kt cyfry | ✓#5 | Ł · S4 |
@@ -108,9 +108,10 @@ Kolumny: **Kod** (= glif, stały) · **Detal** (piktogram, stały) · **Miejsce*
 ## 5. Reguła przydziału dla 10 grup (DYSPERSJA)
 
 1. **Rozłączność pozycyjna [decyzja Oskara 2026-06-01]:** żadne miejsce nie może wystąpić **na tej samej pozycji kroku** u dwóch grup. (To samo miejsce jako krok 2 u jednej i krok 3 u drugiej — OK; jako krok 3 u obu — NIE.) Egzekwowane **twardo dla kroków 1–3** przez orkiestratora na poziomie szkieletów.
-   - **Krok 4 = zbieg u MG:** wszystkie łańcuchy kończą przy Rynku Staromiejskim (tam kręci się MG). Kandydatów S4 jest **9** (`C01–C09`) — dla 10 grup to napięcie: część grup może dzielić obiekt stop-4. **Łagodzone startem falami co 5 min** (`grupy-i-klasy.md`) → zbieg rozłożony w czasie. Do domknięcia przy fanie do 10.
+   - **Krok 4 = zbieg u MG:** wszystkie łańcuchy kończą przy Rynku Staromiejskim (tam kręci się MG). Kandydatów S4 jest **9** (`C01–C09`) — dla 10 grup napięcie: jedna para grup musi dzielić obiekt stop-4. **BEZ startu falami [decyzja Oskara 2026-06-01: wszyscy ruszają równolegle, każdy w swoim tempie]** — zbieg przy MG NIE jest rozkładany czasowo odgórnie; rozprasza go tylko **zróżnicowana długość tras + własne tempo grup**. Do domknięcia przy fanie do 10: albo rozszerzyć pulę S4 (np. `C09` Katedra jako 10. endpoint), albo świadomie dopuścić jedną dzieloną parę stop-4 (to i tak strefa raportu u MG → najmniej kolizyjne miejsce).
 2. **Skrajne strefy startu:** rozsiewać pierwsze przystanki po N/E/S/W, by grupy nie ruszały z jednego punktu.
 3. **Budżet 12±2 min** liczony jako pełny łańcuch start → P1→P2→P3→P4(=MG); bez zawrotek; jednokierunkowy sweep ku Rynkowi Staromiejskiemu.
+   - **[Nauka z EX-1/2/3, 2026-06-01]** Reguła „start = Rynek Nowomiejski" (`szlak-symboli.md` #3) pasuje TYLKO do grup startujących z NE (jak prototyp). Dla grup S/W liczenie od Rynku Nowomiejskiego daje ~19–24 min (traverz przez całe miasto). **Budżet liczymy od ZDYSPERGOWANEGO fizycznego startu każdej grupy — blisko jej pierwszego glifu**; wiążące jest, by sam łańcuch P1→P4 mieścił się w ~12±2. Przy braku startu falami zdyspergowane starty są podwójnie korzystne: dają natychmiastowe rozproszenie przestrzenne w t=0. → Otwarta decyzja logistyczna: jeden briefing vs starty rozproszone (patrz `z1-sciezki-wzorcowe.md`, „Wnioski").
 4. **Strefa W-far (F01–F03)** tylko jako pierwszy glif i **z weryfikacją budżetu** (skraj zachodni — ryzyko przekroczenia 12±2).
 
 ## 5a. Szkielety 3 ścieżek wzorcowych (ten etap — skraje E / S / W)
@@ -144,7 +145,7 @@ Wszystkie ikony detali = SVG w stylu `prototype/icons/piernik.svg` + `astrolabiu
 - Paleta brąz/beż: wypełnienia `#a86c38` / `#efe0b8`; obrysy `#6e4824` / `#8a6516` / `#5c4310`; podświetlenie `#c08a52`; jasny akcent `#fdf3e3`.
 - `stroke-width` ~2.4–3; `stroke-linejoin`/`linecap="round"`; `stroke-dasharray` na ornament (jak lukier/graduacja).
 - Jeden czytelny obiekt, sylwetkowy, bez tekstu. Plik: `prototype/icons/<detal>.svg`.
-- **Gotowe:** `piernik.svg` (`N01`), `astrolabium.svg` (rezerwa: strefa kosmiczna `F01`). Reszta — do wygenerowania dla unii użytych miejsc.
+- **Gotowe (13 SVG):** `piernik.svg` (`N01`), `astrolabium.svg` (`C01` Kopernik — instrument w dłoni), `delfin.svg` (zapas dla `C01`), oraz 10 detali łańcuchowych wzorców: `melonik` `gwiazda` `osiol` `brama-zaokraglona` `kaszownik` `zegar-jedna-wskazowka` `trabka` `worek-zboza` `kosciol-bez-wiezy` `herb-tarcza`. Reszta (detale tylko-dystraktorowe) — do wygenerowania dla unii użytych miejsc po zamrożeniu tras.
 
 ## 8. Checklista spójności (per ścieżka, przed złożeniem)
 

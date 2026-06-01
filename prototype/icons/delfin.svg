@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Delfin — studzienka cokołu pomnika Kopernika">
+  <title>Delfin (studzienka pomnika Kopernika)</title>
+  <!-- ciało delfina wygięte w łuk, z wyraźnym dziobem -->
+  <path d="M6 27 C 8 23 12 22 16 23 C 28 17 44 19 52 30 C 55 34 57 32 59 29 C 58 40 49 46 38 46 C 24 46 12 39 9 28 C 8 28 7 28 6 27 Z"
+        fill="#a86c38" stroke="#6e4824" stroke-width="2.6" stroke-linejoin="round"/>
+  <!-- dziób (ostre zwężenie pyska) -->
+  <path d="M6 27 C 4 25 4 22 7 21 C 9 22 10 24 11 26" fill="#a86c38" stroke="#6e4824" stroke-width="2.4" stroke-linejoin="round"/>
+  <!-- płetwa grzbietowa (jeden czysty łuk) -->
+  <path d="M30 19 C 33 12 39 11 41 13 C 37 15 35 18 35 22 Z"
+        fill="#a86c38" stroke="#6e4824" stroke-width="2.4" stroke-linejoin="round"/>
+  <!-- płetwa brzuszna -->
+  <path d="M24 44 C 23 51 27 55 30 55 C 28 51 28 47 29 45 Z"
+        fill="#a86c38" stroke="#6e4824" stroke-width="2.4" stroke-linejoin="round"/>
+  <!-- oko -->
+  <circle cx="16" cy="27" r="2.2" fill="#5c4310"/>
+  <!-- podświetlenie grzbietu -->
+  <path d="M18 24 C 28 20 40 22 48 30" fill="none" stroke="#c08a52" stroke-width="2.2" stroke-linecap="round"/>
+</svg>

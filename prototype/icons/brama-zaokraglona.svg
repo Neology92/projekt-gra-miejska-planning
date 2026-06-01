@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Brama miejska z zaokrąglonymi narożnikami — Brama Mostowa">
+  <title>Brama Mostowa (zaokrąglone narożniki)</title>
+  <!-- korpus bramy z mocno ZAOKRĄGLONYMI górnymi narożnikami -->
+  <path d="M12 57 L12 24 C 12 13 21 7 32 7 C 43 7 52 13 52 24 L52 57 Z"
+        fill="#a86c38" stroke="#6e4824" stroke-width="2.6" stroke-linejoin="round"/>
+  <!-- blanki / krawędź dolna baza -->
+  <path d="M9 57 L55 57" fill="none" stroke="#6e4824" stroke-width="2.6" stroke-linecap="round"/>
+  <!-- przejazd bramny (półokrągły) -->
+  <path d="M24 57 L24 40 C 24 35 28 32 32 32 C 36 32 40 35 40 40 L40 57"
+        fill="#5c4310" stroke="#6e4824" stroke-width="2.4" stroke-linejoin="round"/>
+  <!-- okienka strzelnicze -->
+  <g fill="#5c4310">
+    <rect x="19" y="20" width="4" height="8" rx="2"/>
+    <rect x="41" y="20" width="4" height="8" rx="2"/>
+  </g>
+  <!-- podświetlenie krawędzi -->
+  <path d="M16 24 C 16 16 22 11 30 10" fill="none" stroke="#c08a52" stroke-width="2.3" stroke-linecap="round"/>
+</svg>

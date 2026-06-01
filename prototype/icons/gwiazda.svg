@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Gwiazda godłowa — Kamienica Pod Gwiazdą">
+  <title>Gwiazda (Kamienica Pod Gwiazdą)</title>
+  <!-- pięcioramienna gwiazda -->
+  <path d="M32 6 L40 24 L59 26 L45 39 L49 58 L32 48 L15 58 L19 39 L5 26 L24 24 Z"
+        fill="#a86c38" stroke="#6e4824" stroke-width="2.6" stroke-linejoin="round"/>
+  <!-- wewnętrzny ornament (połysk) -->
+  <path d="M32 16 L36 25 L46 26 L38 33 L41 43 L32 38 L23 43 L26 33 L18 26 L28 25 Z"
+        fill="none" stroke="#fdf3e3" stroke-width="2.3" stroke-linejoin="round"/>
+  <!-- akcent na środku -->
+  <circle cx="32" cy="31" r="3" fill="#5c4310"/>
+</svg>

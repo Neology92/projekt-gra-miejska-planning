@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Trąbka herolda — Michał Archanioł grający na trąbce, Łuk Cezara">
+  <title>Trąbka (Łuk Cezara)</title>
+  <!-- prosta rura o stałej szerokości -->
+  <path d="M8 30 L40 30 L40 37 L8 37 C 5 37 5 30 8 30 Z"
+        fill="#a86c38" stroke="#6e4824" stroke-width="2.6" stroke-linejoin="round"/>
+  <!-- nagłe rozszerzenie: czara w ostatniej części -->
+  <path d="M40 24 C 52 24 58 28 58 33.5 C 58 39 52 43 40 43 Z"
+        fill="#a86c38" stroke="#6e4824" stroke-width="2.6" stroke-linejoin="round"/>
+  <!-- obręcz czary -->
+  <path d="M40 24 L40 43" fill="none" stroke="#5c4310" stroke-width="2.6" stroke-linecap="round"/>
+  <!-- ustnik (gałka na wąskim końcu) -->
+  <circle cx="7" cy="33.5" r="3.4" fill="#5c4310"/>
+  <!-- podświetlenie wzdłuż rury -->
+  <path d="M12 33.5 L36 33.5" fill="none" stroke="#c08a52" stroke-width="2.2" stroke-linecap="round"/>
+</svg>

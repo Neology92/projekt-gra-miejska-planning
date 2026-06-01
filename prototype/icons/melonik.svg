@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Melonik — kapelusz bowler profesora Filutka">
+  <title>Melonik (kapelusz bowler)</title>
+  <!-- rondo -->
+  <path d="M8 45 C 8 41 18 39 32 39 C 46 39 56 41 56 45 C 56 49 46 51 32 51 C 18 51 8 49 8 45 Z"
+        fill="#a86c38" stroke="#6e4824" stroke-width="2.6" stroke-linejoin="round"/>
+  <!-- kopuła (główka) -->
+  <path d="M17 44 C 16 28 21 18 32 18 C 43 18 48 28 47 44 Z"
+        fill="#a86c38" stroke="#6e4824" stroke-width="2.6" stroke-linejoin="round"/>
+  <!-- wstążka u podstawy kopuły -->
+  <path d="M17 41 C 24 44 40 44 47 41" fill="none" stroke="#5c4310" stroke-width="3" stroke-linecap="round"/>
+  <!-- podświetlenie na kopule -->
+  <path d="M24 38 C 22 30 24 23 30 21" fill="none" stroke="#c08a52" stroke-width="2.4" stroke-linecap="round"/>
+</svg>

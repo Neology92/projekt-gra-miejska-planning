@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Związany worek zboża — opaski okienne spichlerza manierystycznego">
+  <title>Worek zboża (spichlerz)</title>
+  <!-- korpus worka -->
+  <path d="M16 57 C 12 42 13 28 21 20 L43 20 C 51 28 52 42 48 57 Z"
+        fill="#a86c38" stroke="#6e4824" stroke-width="2.6" stroke-linejoin="round"/>
+  <!-- baza -->
+  <path d="M13 57 L51 57" fill="none" stroke="#6e4824" stroke-width="2.6" stroke-linecap="round"/>
+  <!-- przewiązanie (sznur) -->
+  <path d="M21 20 C 26 17 38 17 43 20" fill="none" stroke="#5c4310" stroke-width="3" stroke-linecap="round"/>
+  <!-- zebrana górka worka nad wiązaniem -->
+  <path d="M23 19 C 24 11 27 8 28 13 C 29 8 31 7 32 12 C 33 7 35 8 36 13 C 37 8 40 11 41 19"
+        fill="#a86c38" stroke="#6e4824" stroke-width="2.4" stroke-linejoin="round"/>
+  <!-- podświetlenie -->
+  <path d="M20 50 C 18 40 19 30 24 24" fill="none" stroke="#c08a52" stroke-width="2.3" stroke-linecap="round"/>
+</svg>

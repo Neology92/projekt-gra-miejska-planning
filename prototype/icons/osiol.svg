@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Osiołek pręgierzowy z ostrą krawędzią grzbietu — toruński osiołek">
+  <title>Osiołek (toruński pręgierz)</title>
+  <!-- KORPUS: pełny, beczkowaty tułów; górna krawędź to jedna ostra grań (szczyt w środku) -->
+  <path d="M11 44 L11 34 C 11 32 13 31 15 31 L30 28 L33 21 L36 28 L48 31 C 51 31 53 32 53 35 L53 44 Z"
+        fill="#a86c38" stroke="#6e4824" stroke-width="2.6" stroke-linejoin="round"/>
+  <!-- GŁOWA z pyskiem na lewym końcu -->
+  <path d="M11 36 C 5 36 3 39 3 42 C 3 45 6 46 9 45 L13 44 L13 35 Z"
+        fill="#a86c38" stroke="#6e4824" stroke-width="2.6" stroke-linejoin="round"/>
+  <!-- dwa krótkie uszy nad głową -->
+  <path d="M9 33 C 8 27 9 24 11 24 C 13 25 13 30 12 34 M14 33 C 14 27 15 24 17 25 C 18 27 17 31 16 35"
+        fill="none" stroke="#6e4824" stroke-width="2.4" stroke-linecap="round"/>
+  <!-- cztery nogi: dwie wyraźne pary -->
+  <g stroke="#6e4824" stroke-width="3" stroke-linecap="round">
+    <line x1="17" y1="44" x2="16" y2="57"/>
+    <line x1="23" y1="44" x2="24" y2="57"/>
+    <line x1="42" y1="44" x2="41" y2="57"/>
+    <line x1="48" y1="44" x2="49" y2="57"/>
+  </g>
+  <!-- OSTRA grań grzbietu (ciemny akcent wzdłuż całej góry, ze szczytem) -->
+  <path d="M13 33 L30 28 L33 21 L36 28 L51 33" fill="none" stroke="#5c4310" stroke-width="2.6" stroke-linejoin="round"/>
+  <!-- oko -->
+  <circle cx="8" cy="40" r="1.8" fill="#5c4310"/>
+</svg>

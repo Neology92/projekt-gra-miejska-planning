@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Tarcza herbowa — herb Torunia, Dwór Artusa">
+  <title>Tarcza herbowa (Dwór Artusa)</title>
+  <!-- tarcza heraldyczna (typu hiszpańskiego, zaokrąglony spód) -->
+  <path d="M11 9 L53 9 L53 32 C 53 47 44 54 32 59 C 20 54 11 47 11 32 Z"
+        fill="#a86c38" stroke="#6e4824" stroke-width="2.6" stroke-linejoin="round"/>
+  <!-- wewnętrzny podział (głowica + krokiew) -->
+  <path d="M11 26 L53 26" fill="none" stroke="#5c4310" stroke-width="2.6" stroke-linecap="round"/>
+  <path d="M11 26 L32 40 L53 26" fill="none" stroke="#5c4310" stroke-width="2.6" stroke-linejoin="round"/>
+  <!-- obwódka wewnętrzna (jasny ornament) -->
+  <path d="M16 13 L48 13 L48 31 C 48 43 41 49 32 53 C 23 49 16 43 16 31 Z"
+        fill="none" stroke="#fdf3e3" stroke-width="2.2" stroke-linejoin="round"/>
+</svg>

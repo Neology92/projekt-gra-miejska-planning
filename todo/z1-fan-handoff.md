@@ -1,0 +1,39 @@
+# HANDOFF — Z1 dyspersja do 10 grup (start tutaj)
+
+> **Dla nowego agenta orkiestrującego.** Stan na 2026-06-01. Zadanie ciągłe: wygenerować **10 ścieżek Z1** (po jednej na grupę kolorową) z zamrożonego rejestru, spójnych i przechodnich. Etap „rejestr + 3 wzorcowe" **zrobiony**; przed fanem ×10 jest **1 blokująca decyzja Oskara** (niżej).
+
+## Przeczytaj w tej kolejności
+1. `puzzles/map.md` — **ZAMROŻONY rejestr** (kod ↔ stały glif ↔ stały detal ↔ haczyk ↔ rola; reguła rozłączności pozycyjnej; wykluczenia; kontrakt stylu ikon). Jedyne źródło prawdy dla glifów/detali.
+2. `puzzles/z1-sciezki-wzorcowe.md` — **3 zwalidowane wzorce** (EX-1, EX-2', EX-3') + pass spójności + Wnioski (#1–#4) + aneks (zarzucony model rozproszony).
+3. `puzzles/z1-szlak-spec.md` — mechanika Z1 (dwie warstwy, łańcuch 4 + pętla dystraktorów, deszyfrownik detal→glif, klucz MG, granica spoilera).
+4. `puzzles/szlak-symboli.md` — reguły tras + budżet. `mechanics/grupy-i-klasy.md` — 10 kolorów + **bez fal**.
+
+## Zamrożone decyzje (NIE renegocjuj bez Oskara)
+- **Model:** briefing = **Rynek Nowomiejski**; **sweep NE→SW**; P4 (KONIEC) u **MG na Rynku Staromiejskim**; budżet **12±2 min** od Rynku Nowomiejskiego.
+- **Bez fal:** wszystkie grupy ruszają równolegle, własne tempo. Dyspersja stoi na różnych trasach + rozłączności pozycyjnej.
+- **Rozłączność pozycyjna:** żadne miejsce na tej samej pozycji kroku u dwóch grup (twardo kroki 1–3; krok 4 = zbieg u MG).
+- **`C01` Kopernik = astrolabium** (must-have fakt; ikona `astrolabium.svg`). **1 miejsce = 1 glif = 1 detal** globalnie.
+- **Subagenty odpalać na `model: "sonnet"`** [decyzja 2026-06-01].
+- **Język:** planowanie .md = PL; artefakty gracza = EN (nazwy toruńskie zostają).
+
+## 🔴 BLOKUJE FAN: rozstrzygnij z Oskarem (Wniosek #1)
+Briefing na Rynku Nowomiejskim daje tylko **6 tanich miejsc na P1** (`N01–N06`). 3 wzorce już je wyczerpały na P1+P2. Dla 10 grup twarda rozłączność pozycyjna P1/P2 jest **niewykonalna**. Opcje (do wyboru Oskara — to konflikt jego własnych preferencji: „jeden briefing na Rynku Nowomiejskim" vs „twarda rozłączność"):
+- (a) **Poluzuj rozłączność** — różne tylko P2/P3; P1 może się powtarzać (lekki zbieg na P1).
+- (b) **Briefing między Rynkami** (Szeroka/Kr. Jadwigi) — podwaja pulę tanich P1, pełna rozłączność wraca (zmiana decyzji o briefingu).
+- (c) **Dłuższe pierwsze legi** dla części grup (P1 dalej, budżet do ~14–15 min).
+**Nie fanuj do 10, dopóki to nie jest rozstrzygnięte.**
+
+## Otwarte (mniejsze)
+- **#2 słabe detale:** `N03` Modry Fartuch (tylko nazwa — Oskar: zostaw + teren), `N05` bazylika (→ piktogram łuków przyporowych + teren), `N04` lew (godziny apteki, nie 24/7 — OK tylko jeśli gra w godz. otwarcia).
+- **#3 stop-4:** 9 obiektów (`C01–C09`) vs 10 grup → default: dorzuć `C09` Katedrę jako 10. endpoint (albo 1 dzielona para).
+- **#4 EX-3' budżet** ~13–14 min: jeśli dry-run > 14, swap P2 na `W04`.
+
+## Procedura fanu (po rozstrzygnięciu #1)
+1. **Orkiestrator (inline) ustala 10 szkieletów** (4 kody/ścieżka) — gwarantuje rozłączność pozycyjną wg wybranej reguły. NIE zrównoleglać tego kroku.
+2. **Fan: subagenty (sonnet), 1 ścieżka/agent** — każdy z zamrożonego rejestru buduje: walidację budżetu od Rynku Nowomiejskiego, 5 dystraktorów = zamknięta pętla rozłączna z łańcuchem, deszyfrownik 9 wierszy (detal→glif, bez ślepych zaułków), legendę, klucz MG, ⚠ flagi. Zwraca strukturę, NIE pisze plików.
+3. **Orkiestrator: pass spójności** (rozłączność, „następny glif" istnieje, pętle rozłączne) + montaż.
+4. **Ikony:** dowektoryzuj unię detali dystraktorowych (styl: `map.md` §7; istnieje 13 SVG). Tylko unia faktycznie użytych miejsc.
+5. **Mapy HTML per ścieżka** (wzór: `prototype/mapa-z1-podglad.html`) — po zatwierdzeniu tras.
+
+## Stan ikon
+13 SVG w `prototype/icons/`: `piernik` `astrolabium`(=C01) `delfin`(zapas) + `melonik` `gwiazda` `osiol` `brama-zaokraglona` `kaszownik` `zegar-jedna-wskazowka` `trabka` `worek-zboza` `kosciol-bez-wiezy` `herb-tarcza`. Do zrobienia (dystraktory): `waga` `lew` `aniol` `kotwica` `baszta` `brama-luk` `ulica-luki` `dwa-szczyty` `schodkowy-szczyt` `flisak` `wieza-bez-helmu`.
