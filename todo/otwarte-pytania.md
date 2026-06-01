@@ -20,8 +20,8 @@ Pytania pogrupowane wg pliku, w którym są dyskutowane szerzej.
 9. ~~F2B — które obowiązkowe / wybierz 2 z 4~~ ROZSTRZYGNIĘTE [2026-05-29]: **model dywersyfikacji**, nie „wybierz 2 z 4". Obowiązkowa: **Z3 (TR) / Z3Z (krzyżacy)** + **1 opcjonalna** per grupa (5+5; tabele w `concept/03-faza-2b-asynchroniczne.md`). Bramkowanie finału: Z3/Z3Z + 1 opcjonalna (klucz wymienialny).
 10. **Wybór formy "trzy rzeczy do zestawienia"** w Z2 (`puzzles/droga-do-jordana.md`).
 11. ~~Wybór formy testu Jordana~~ ROZSTRZYGNIĘTE [2026-05-31]: **hasło (imię „Jordan" w K2 wersja TR) + weryfikacja koloru opaski (5 kolorów TR)**. Jordan pasywnie weryfikuje frakcję, nie testuje charakteru. Krzyżacy nie znają imienia → nie dostają K3. Patrz `puzzles/test-jordana.md`.
-12. **Wariant mechaniki Z3** (A/B/C/D w `puzzles/zamek-krzyzacki-lista.md`).
-13. **Mechanika "kradzieży listy"** komturowi - fizyczna czy abstrakcyjna?
+12. ~~Wariant mechaniki Z3 (A/B/C/D)~~ ROZSTRZYGNIĘTE [2026-06-01]: **rozmowa-zwiad + kradzież fizyczna**, dwuetapowa koperta (K3 zwiad → K-Z3b ujawnienie kradzieży). Pretekst zwiadu = **fałszywi donosiciele** (wariant A; Albrecht sam wyciąga listę). Bez zagadki na murach. Patrz `puzzles/zamek-krzyzacki-lista.md` „Struktura Z3".
+13. ~~Mechanika „kradzieży listy" - fizyczna czy abstrakcyjna?~~ ROZSTRZYGNIĘTE [2026-06-01]: **fizyczna** — Albrecht chodzi przewidywalnym schematem, lista leży fizycznie, powtarzalne okno + reset/loop. Zwiad NIE bramkuje (bramką jest kradzież). Karta choreografii Albrechta → `prototype/albrecht-actor-card-draft.md`.
 14. ~~Finałowa zliczanka~~ ROZSTRZYGNIĘTE [2026-05-29]: **prosta, 1 grupa = 1 głos** (`mechanics/finalowe-glosowanie.md`).
 15. **Co jeśli grupa nie dostarczy** - warianty 1/2/3 (`mechanics/finalowe-glosowanie.md`). — wciąż otwarte.
 16. ~~Zakończenie gry~~ ROZSTRZYGNIĘTE [2026-05-29]: **hybryda** — fakty historyczne stałe, scenka przesuwa ciężar emocjonalny wg wyniku; **wymowa moralna: TR/kupcy „źli", bunt = świat na gorsze** (`concept/04-faza-3-final.md`).

@@ -3,6 +3,16 @@
 > Dokument-sprint. Widok długofalowy całej gry (3–4 mies.) → `todo/roadmap.md`.
 > Ten plik celuje w **jeden milestone**: kompletny, przechodni **zestaw wydruków dla JEDNEJ ścieżki**, gotowy do druku i dry-runu na papierze. Pełne **MVP** (oba tory, 11 zagadek, produkcja na ~40 osób) to **następny** milestone.
 
+## ✅ Z3 domknięte fabularnie [2026-06-01]
+
+Struktura Z3 rozstrzygnięta (Oskar) i zdraftowana: **dwuetapowa koperta + rozmowa-zwiad (fałszywi donosiciele) + choreografowana kradzież listy**. Artefakty:
+- `prototype/k3-envelope-draft.md` — koperta od Jordana (framing ZWIAD, cel kradzieży ukryty).
+- `prototype/kZ3b-envelope-draft.md` — koperta ujawniająca cel (UKRADNIJ LISTĘ).
+- `prototype/albrecht-actor-card-draft.md` — **scenariusz aktorski Zosi** (komtur Albrecht): kontekst postaci + telegrafowany cykl okna kradzieży + reset/loop + reakcje (życzenie Oskara: konkretne wytyczne dla aktorów).
+- Kanon + zamknięte otwarte #1/#3 → `puzzles/zamek-krzyzacki-lista.md`; globalne #12/#13 → `todo/otwarte-pytania.md`.
+
+**Otwarte po Z3:** nośnik K-Z3b (zamek Otwarte #4) · **melodia Z4 (kalimba flisaka)** — wciąż TBD · KF (finał) + system oznaczania kopert w `mechanics/koperty-mg.md` — gotowe do draftu (niezależne).
+
 ## 🔴 Stan i priorytet [2026-05-31]
 
 **Z1-ART: drafty gotowe [2026-05-31]** — czekają na review Oskara. Artefakty:

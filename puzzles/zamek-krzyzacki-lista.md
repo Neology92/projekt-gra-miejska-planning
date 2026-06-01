@@ -5,6 +5,35 @@
 > **Treść listy nazwisk TR + uzasadnienie fabularne + pułapki historyczne → `z3-lista-tr-spec.md`** (research kanoniczny). Rekwizyt gracza (EN) → `prototype/pergamin-lista-tr-draft.md`.
 > ✅ **Model klucza rozstrzygnięty [2026-06-01, akt. sesja z Piotrem]:** lista nazwisk = **kontekst**; **klucz = porównanie nagłówków** (`HELFEN, HILFEN UND WEHREN!` w Z3 jawne ↔ zaszyfrowane Cezarem shift+7 w Z7) — gracz odkrywa przesunięcie przez porównanie, bez rekwizytu; twist „Jordan=Bażyński" niesie **osobny szyfrogram Z7** (przechwycony list, wydawany przez MG po opcjonalnej Z4/5/6). Kalimba = prosta zagadka melodia→liczby, nie zasila klucza. Szczegóły → `z3-lista-tr-spec.md §4` + `z7-szyfr-spec.md §0`.
 
+## ✅ Struktura Z3 — ROZSTRZYGNIĘTA [2026-06-01, decyzja Oskara]
+
+Dwuetapowa koperta + rozmowa-zwiad + choreografowana kradzież. Zamyka otwarte #1 (wariant mechaniki) i #3 (kradzież fizyczna). Warianty A–D niżej = **historyczne** (zachowane dla kontekstu); wybrana realizacja to „sama kradzież + rozmowa-zwiad", **bez** zagadki terenowej na murach.
+
+**1. K3 (wręcza Jordan w Piccolo) — framing ZWIAD, cel kradzieży UKRYTY.**
+- Nagłówek wielkimi: **INFILTRACJA ZAMKU**.
+- Polecenie: komtur Albrecht bywa **przed murami** (do ruin nie wchodzimy — biletowane), czuje się pewnie w mieście. Nawiążcie z nim kontakt, **nie zdradźcie, że jesteście z Tajnej Rady**, wyciągnijcie z niego ile się da.
+- **Pretekst = fałszywi donosiciele [wariant A, wybór Oskara 2026-06-01]:** gracze udają miastowych łasych na łaskę Zakonu, którzy „wiedzą o knujących przeciw Zakonowi". Albrecht, łasy na donos, **sam wyciąga spis** (listę TR), by sprawdzić/dopisać nazwisko → lista ląduje na widoku z jego własnej inicjatywy. Pokrycie: `donosiciele-1454.js` (realna siatka donosicieli Zakonu). Domyka `zasada-uzasadnienie-fabularne`: Albrecht ma i pokazuje listę z własnego powodu.
+- Jordan NIE ujawnia, że chodzi o kradzież — gracze sądzą, że to tylko zwiad/rozmowa.
+
+**2. Spotkanie z Albrechtem (Zosia, przed murami) → wręcza K-Z3b.**
+- Krótka, lekko mockująca rozmowa. Albrecht (biorąc graczy za donosicieli) daje im **drugą kopertę (K-Z3b)**.
+
+**3. K-Z3b — UJAWNIENIE prawdziwego celu: UKRADNIJ LISTĘ.**
+- Rys fabularny: podczas rozmowy dostrzegliście listę nazwisk → orientujecie się, że to spis Tajnej Rady, rzecz bezcenna → możecie ją wykraść, więc to zrobicie.
+- Ostrzeżenie: bardzo uważać na Albrechta, konsekwencje ogromne, jeśli złapani.
+
+**4. Kradzież = fizyczne, choreografowane okno [#3 rozstrzygnięte: fizyczna].**
+- Po wręczeniu K-Z3b Albrecht chodzi **przewidywalnym schematem** (przystaje, patrzy, odwraca się) — jak NPC w grze. Gracz wyłapuje **okno** na podebranie listy (leży fizycznie).
+- W schemacie MUSI być też faza, gdy Albrecht patrzy **wprost na listę** (okno zamknięte — widać, że ktoś by kradł). Okno **powtarzalne, nigdy jednostrzałowe**.
+- **Loop:** po kradzieży i ucieczce grupy Albrecht **resetuje** — kładzie kolejny egzemplarz listy dla następnej grupy.
+- Wszystko → **karta choreografii Albrechta (Zosia)**: `prototype/albrecht-actor-card-draft.md`.
+
+> **Zwiad NIE jest bramką mechaniczną** [świadoma decyzja, zasada „element musi bramkować"]: rozmowa to pretekst, by zbliżyć gracza do Albrechta i uzasadnić wręczenie K-Z3b + ekspozycję listy. **Bramką jest kradzież** (lista = nagłówek z kluczem Cezara do Z7). Nie ma „rozwiązania rozmowy".
+
+**Artefakty:** `prototype/k3-envelope-draft.md` (zwiad) · `prototype/kZ3b-envelope-draft.md` (ujawnienie kradzieży) · `prototype/albrecht-actor-card-draft.md` (choreografia) · lista = `prototype/pergamin-lista-tr-draft.md`.
+
+---
+
 ## Cel narracyjny
 
 Grupa dowiaduje się, że Zakon ma **listę nazwisk Tajnej Rady**. Wnioski:
@@ -69,9 +98,13 @@ Kradzież listy jest **OBLIGATORYJNA** — **każda** grupa mieszczan MUSI zdoby
 
 ## Otwarte pytania
 
-1. **Wariant mechaniki** (A/B/C/D lub mix)?
-2. **Komtur Albrecht = Zosia** (obsada zamknięta). Otwarte: jak rozpoznawalna (kostium)? Wędruje czy stacjonarna?
-3. **Kradzież listy** - mechanika fizyczna (np. komtur trzyma listę "luźno" i jest momentem gdzie się odwraca) czy abstrakcyjna (gracz mówi "kradnę" i MG ocenia czy się udało)?
+1. ~~**Wariant mechaniki** (A/B/C/D lub mix)?~~ ✅ **ROZSTRZYGNIĘTE [2026-06-01]:** ani A/B/C/D — **rozmowa-zwiad (fałszywi donosiciele, wariant A pretekstu) + kradzież fizyczna**, bez zagadki terenowej na murach. Patrz „Struktura Z3" na górze.
+2. **Komtur Albrecht = Zosia** (obsada zamknięta). Otwarte: jak rozpoznawalna (kostium — pyt. globalne #33)? **Lokalizacja: przed murami zamku** (nie wewnątrz — biletowane); stacjonarna/półstacjonarna w swoim punkcie. Reszta → karta choreografii.
+3. ~~**Kradzież listy** - fizyczna czy abstrakcyjna?~~ ✅ **ROZSTRZYGNIĘTE [2026-06-01]: fizyczna** — komtur chodzi przewidywalnym schematem, lista leży fizycznie, powtarzalne okno + reset/loop. Patrz „Struktura Z3" pkt 4 + karta choreografii.
+4. **Nośnik K-Z3b — DECYZJA OSKARA, load-bearing** (dotyka wording K3): **gdzie gracz otwiera kopertę ujawniającą kradzież?** To rozstrzyga dwa sprzężone problemy naraz (geometria flow + dziura logiczna). Dwie opcje:
+   - **(a) Albrecht wręcza, gracz otwiera o krok dalej i wraca** (obecny draft, wierny życzeniu „komtur wręcza kopertę"). **Koszt:** (1) dziura logiczna — wróg wręcza rozkaz Rady (zamiatana: brak podpisu, treść = głos Rady); (2) beat „odejdź–przeczytaj–wróć" (złagodzony: Albrecht nie odgania, karta STEP 2).
+   - **(b) Jordan daje K-Z3b zapieczętowaną w Piccolo** („otworzyć przy komturze"); Albrecht wręcza tylko **rekwizyt-sygnał** (token/„zapłata dla informatora"). **Zysk:** znika dziura logiczna (rozkaz jest Rady) i znika beat powrotu (gracz otwiera PRZY komturze, kradnie w tym samym momencie). **Koszt:** K3 trzeba przepisać („he will put something in your hand… open it clear of him" → „Jordan da ci drugą, zapieczętowaną — otwórz, gdy staniesz przed komturem"); Albrecht wręcza token, nie sam rozkaz.
+   - Draft idzie domyślnie **(a)**; karta Albrechta i K-Z3b oznaczają oba warianty. Rekomendacja (advisor): **(b) czystsze** — ale (a) wierniejsze pierwotnemu obrazowi Oskara. Patrz noty w `prototype/kZ3b-envelope-draft.md` i `prototype/k3-envelope-draft.md`.
 4. ~~Co jeśli grupa nie zdobędzie listy?~~ — ✅ **ROZSTRZYGNIĘTE [2026-06-01]: kradzież listy jest OBLIGATORYJNA dla każdej grupy mieszczan.** Nie ma ścieżki „nie zdobył" — kradzież projektujemy tak, by każda grupa ją wykonała. Tym samym znika twardy stop dla Z7 (klucz = motto z nagłówka listy jest zawsze dostępny). Patrz „Trudność — balans" niżej + karta choreografii Albrechta.
 5. **Z3Z**: mechanika kradzieży zaopatrzenia + czy kraść koło deszyfrujące; jak Jordan/Piotr „przecieka" godzinę 20:30 grupom infiltrującym.
 
