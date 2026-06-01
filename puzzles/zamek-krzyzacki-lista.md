@@ -73,6 +73,7 @@ Lustro Z3 dla toru krzyżaków (obowiązkowa, wszystkie 5 grup krzyżackich).
 2. **Komtur Albrecht = Zosia** (obsada zamknięta). Otwarte: jak rozpoznawalna (kostium)? Wędruje czy stacjonarna?
 3. **Kradzież listy** - mechanika fizyczna (np. komtur trzyma listę "luźno" i jest momentem gdzie się odwraca) czy abstrakcyjna (gracz mówi "kradnę" i MG ocenia czy się udało)?
 4. **Co jeśli grupa nie zdobędzie listy** ale rozwiąże zagadkę Z3? Mają częściowy postęp - z wiedzy z F2A (człowiek z Piccolo = TR) mogą intuicją trafić na Jordana w F3.
+   - 🔴 **PODBITE przez nowy model klucza [2026-06-01]:** odkąd **klucz Vigenère = motto z nagłówka tej listy**, brak listy = **brak klucza = Z7 nierozwiązywalne (twardy stop)**, nie tylko utrata kontekstu. To zmienia Q4 z miękkiego fallbacku w twardą blokadę. Warianty fallbacku → `z7-szyfr-spec.md §8.6`. **Decyzja Oskara.**
 5. **Z3Z**: mechanika kradzieży zaopatrzenia + czy kraść koło deszyfrujące; jak Jordan/Piotr „przecieka" godzinę 20:00 grupom infiltrującym.
 
 ## Co autor może zrobić sam vs gdzie pomocy
