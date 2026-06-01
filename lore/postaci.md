@@ -63,7 +63,7 @@ Dlaczego akurat ci dwaj aktorzy: finał = jednoczesne starcie Bażyński vs Albr
 | Frakcja | Twist | Status |
 |---------|-------|--------|
 | Mieszczanie (TR) | Jordan = **Hans von Baysen** (= Jan Bażyński; sojusznik okazuje się przywódcą buntu). Materiały EN: forma niemiecka. | ✅ ustalony |
-| Krzyżacy | ??? | ❌ TBD |
+| Krzyżacy | **BRAK twistu** [ustalone 2026-06-01] — asymetria celowa. Brama krzyżaków = duma Albrechta + weryfikacja F2B, nie zwrot tożsamości. Uzasadnienie: `concept/05-tor-krzyzakow.md`. | ✅ ustalony |
 
 ### ☆ Rzemieślnik (piekarz) - kontr-narracja
 
