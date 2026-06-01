@@ -50,7 +50,7 @@
 ### Kontrola rozłączności alfabetu (glif ↔ detal)
 - Brak glifu w kształcie: serca, gwiazdy, tarczy/herbu, okręgu z pierścieniem, kotwicy, zwierzęcia, kapelusza, zegara, wagi, trąbki, bramy, worka, kościoła. ✓
 - 20 figur parami rozróżnialnych w skali markera r21 (trójkąty różnią się kierunkiem; wieloboki liczbą boków; reszta to kreski/siatki/kropki). ✓
-- Mock `mapa-z1-podglad.html` używał 9 znaków, w tym `☆` (kolidujący z detalem „gwiazda"/`C06`) — **wycofany**; tu `C06` = `∿` fala, brak kolizji. ✓
+- Mock `mapa-z1-podglad.html` pierwotnie używał `☆` dla Filusia (kolizja z detalem „⭐ gwiazda"/Pod Gwiazdą) — **ujednolicono do `∧`** (jak C03 w systemie kanonicznym). `C06` = `∿` fala. Brak kolizji. ✓
 
 ## 3. Spójność pozycji na 10 mapach
 Każda z 10 map renderuje **te same 20 pozycji jako tło** (lub tylko swoje 9 — decyzja na etapie mapy), ale **glif danego kodu zawsze w tym samym miejscu i tej samej figurze**. Grupa widzi 9 świecących; pozostałe albo nieobecne, albo wyszarzone — *nie wolno* by układ zdradzał, które 4 to łańcuch (markery nieodróżnialne, `map.md §8`).

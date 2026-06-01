@@ -20,9 +20,9 @@ Struktura Z3 rozstrzygnięta (Oskar) i zdraftowana: **dwuetapowa koperta + rozmo
 - **Mock mapy + deszyfrownik** → `prototype/mapa-z1-podglad.html` (9 abstrakcyjnych glifów na mapie + deszyfrownik „piktogram detalu → następny glif", bez nazw + klucz MG). Funkcjonalny, nie finalny.
 - **Treść startu w K1** → `puzzles/szlak-symboli.md`, sekcja „Treść startu w K1".
 - **Mechanika dwuwarstwowa** [decyzja 2026-05-31]: glify = *gdzie* (abstrakcyjne), piktogramy detali = *co wypatrzeć* (deszyfrownik bez nazw → więcej główkowania).
-- Format „wyniku dla MG" **rozstrzygnięty: (a) 4 miejsca w kolejności**. Przeciek deszyfrownika: **opcja B — fałszywe tropy** (dystraktory → pętla glifów `⬡→☆→✕→∿→⊙→⬡`, bez „ślepych zaułków"; karta nie zdradza łańcucha) [decyzja 2026-05-31].
+- Format „wyniku dla MG" **rozstrzygnięty: (a) 4 miejsca w kolejności**. Przeciek deszyfrownika: **opcja B — fałszywe tropy** (dystraktory → pętla glifów `⬡→∧→✕→∿→⊙→⬡`, bez „ślepych zaułków"; karta nie zdradza łańcucha) [decyzja 2026-05-31].
 
-**Decyzje Oskara do domknięcia Z1** (`z1-szlak-spec.md`, „Otwarte"): ostateczny dobór 4 miejsc + 5 dystraktorów + piktogramów detali (propozycja do podmiany); zestaw glifów (geometryczny placeholder vs gmerki); rozwiązać kolizję glif ☆ vs detal ⭐.
+**Decyzje Oskara do domknięcia Z1** (`z1-szlak-spec.md`, „Otwarte"): ostateczny dobór 4 miejsc + 5 dystraktorów + piktogramów detali (propozycja do podmiany); zestaw glifów (geometryczny placeholder vs gmerki). (Kolizja glif-gwiazda↔detal-gwiazda rozwiązana [2026-06-02]: Filuś = ∧ szewron.)
 
 **PRIORYTET TERAZ → opcja B: fabularny rdzeń F1→F2A** (K1, K2, Z2 + skrypt Jordana/Z2b). Wymaga inputu Oskara: forma „trzech rzeczy" w Z2 + forma testu Jordana.
 

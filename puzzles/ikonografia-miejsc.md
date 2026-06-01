@@ -22,7 +22,7 @@
 | **osiołek** (dawny pręgierz) | Rynek / zbieg z ul. Żeglarską | żelazny **grzbiet osiołka** (replika pręgierza) | 🫏 osioł | łańcuch (□) | ✓ wiki #3 |
 | **Pomnik Kopernika** | Rynek Staromiejski (przy Ratuszu) | **astrolabium / sfera armilarna** trzymane przez posąg astronoma | **astrolabium** — wektor `prototype/icons/c01-kopernik.svg` | łańcuch (◇, KONIEC) | ✓ **FAKT [autor, 2026-06-01]** — posąg trzyma instrument (must-have); wiki #1 wymienia tylko wąsik i delfina, ale instrument jest |
 | **Krzywa Wieża** | ul. Pod Krzywą Wieżą 1 | wyraźnie **przechylona baszta** murów miejskich | 🗼 wieża | dystraktor (⬡) | ✓ wiki #17 |
-| **pies Filuś** | wylot ul. Chełmińskiej (Rynek Star.) | **melonik** prof. Filutka w pyszczku kundelka | 🎩 melonik | dystraktor (☆) | ✓ wiki #4 |
+| **pies Filuś** | wylot ul. Chełmińskiej (Rynek Star.) | **melonik** prof. Filutka w pyszczku kundelka | 🎩 melonik | dystraktor (∧) | ✓ wiki #4 |
 | **Łuk Cezara** | ul. Piekary 37 | Michał Archanioł z **trąbką** na attyce (+ szczątek torów tramwajowych pod sklepieniem) | 🎺 trąbka | dystraktor (✕) | ✓ wiki #10 |
 | **Pomnik Przekupki** | Rynek Nowomiejski (przy Modrym Fartuchu) | **waga** u stóp siedzącej przekupki (gęś, kosz jaj) | ⚖️ waga | dystraktor (∿) | ✓ wiki #34 |
 | **Dwór Artusa** | Rynek Staromiejski 6 | **herb Torunia** (klęczący anioł) na szczycie czerwonej fasady; złote daty 1311 / 1891 | 🛡️ herb | dystraktor (⊙) | ✓ wiki #8 |
@@ -48,7 +48,7 @@ Pozostałe 7 detali to na razie emoji (🫏 ⭐ 🗼 🎩 🎺 ⚖️ 🛡️) �
 - **Przekupka:** **gęś** w ramionach · kosz jaj · ławka obok.
 - **Dwór Artusa:** złote **daty 1311/1891** · czerwona neorenesansowa fasada · nawiązanie do okrągłego stołu.
 
-> Kolizja do rozwiązania: detal **⭐ gwiazda** (Pod Gwiazdą) i glif mapy **☆ gwiazda** (miejsce Filusia) — patrz `z1-szlak-spec.md`. Jeśli mylące, podmień glif Filusia albo detal/piktogram.
+> Kolizja rozwiązana [2026-06-02]: glif Filusia = **∧ szewron** (ujednolicony z systemem kanonicznym C03). Detal **⭐ gwiazda** (Pod Gwiazdą) to inna warstwa — brak kolizji.
 
 ## Do dorobienia (później)
 

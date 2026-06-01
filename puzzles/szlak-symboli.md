@@ -21,7 +21,7 @@
    - Piktogram tego detalu wskazuje **następny glif** → grupa tam idzie. Powtarza.
 4. Po **4 krokach** grupa ma sekwencję 4 miejsc = odpowiedź dla MG.
 
-**Self-correction (fałszywe tropy)** [decyzja 2026-05-31]: dystraktory NIE mają „ślepych zaułków" — ich detale też wskazują prawdziwy glif, ale prowadzą w **zamkniętą pętlę** (`⬡→☆→✕→∿→⊙→⬡`, rozłączną z łańcuchem `△→○→□→◇`). Dzięki temu deszyfrownik jest jednolity i nie zdradza łańcucha. **Błąd demaskuje się pośrednio:** łańcuch ma **dokładnie 4 kroki** i kończy się przy kontakcie (KONIEC) → brak KONIEC / krążenie / powrót do już odwiedzonego (wpisanego w legendzie) znaku = zboczyłeś, wróć do ostatniego pewnego glifu.
+**Self-correction (fałszywe tropy)** [decyzja 2026-05-31]: dystraktory NIE mają „ślepych zaułków" — ich detale też wskazują prawdziwy glif, ale prowadzą w **zamkniętą pętlę** (`⬡→∧→✕→∿→⊙→⬡`, rozłączną z łańcuchem `△→○→□→◇`). Dzięki temu deszyfrownik jest jednolity i nie zdradza łańcucha. **Błąd demaskuje się pośrednio:** łańcuch ma **dokładnie 4 kroki** i kończy się przy kontakcie (KONIEC) → brak KONIEC / krążenie / powrót do już odwiedzonego (wpisanego w legendzie) znaku = zboczyłeś, wróć do ostatniego pewnego glifu.
 **Awaryjnie** (zbłąkanie / blokada): MG daje hint telefoniczny / potwierdza glif — patrz `mechanics/koperty-mg.md`.
 
 > Glify są **arbitralne/kosmetyczne** (geometryczne lub gmerki) — ważne tylko, że nie zdradzają miejsca. Piktogramy detali są **obrazkowe** — mają naprowadzać na realny detal. Pełne mapowanie (glif↔detal↔miejsce) w `z1-szlak-spec.md`.
@@ -127,7 +127,7 @@ Podmiany dla większego „chodzenia" / dryfu ku Piccolo (NE): Krzywa Wieża, Ł
 5. **Dyspersja per grupa w pełnej grze** — model różnych łańcuchów, do MVP.
 6. **Mapa fizyczna**: na prototyp funkcjonalny mock (rzut starówki + glify + legenda); finalna stylizacja manuskryptowa → po dry-runie.
 7. ~~Przeprojektowanie trasy pod regułę #2~~ ROZSTRZYGNIĘTE [2026-05-31]: trasa kończy **na Rynku Staromiejskim (MG)**, nie przy Piccolo — sweep Nowe Miasto → centrum, ~9-10 min, w budżecie. Piccolo to dopiero Z2/F2A (po K2). Napięcie „start+koniec na NE" zniknęło.
-8. ~~Przeciek w deszyfrowniku~~ ROZSTRZYGNIĘTE [2026-05-31]: **opcja B (fałszywe tropy)**. Dystraktory NIE mają „ślepych zaułków" — ich detale też wskazują prawdziwy glif z mapy, tworząc **zamkniętą pętlę** `⬡→☆→✕→∿→⊙→⬡` (rozłączną z łańcuchem). Karta jest jednolita → **zbiór 4 nie wycieka**, trasy nie da się odczytać bez chodzenia. Koszt: brak natychmiastowej samokorekty — błąd wpuszcza w pętlę; demaskuje się przez „4 kroki / powrót do odwiedzonego znaku / hint MG". (Opcja A — ślepe zaułki — dawała natychmiastową samokorektę, ale karta zdradzała zbiór; Oskar wybrał B.) Pełne uzasadnienie: `z1-szlak-spec.md`.
+8. ~~Przeciek w deszyfrowniku~~ ROZSTRZYGNIĘTE [2026-05-31]: **opcja B (fałszywe tropy)**. Dystraktory NIE mają „ślepych zaułków" — ich detale też wskazują prawdziwy glif z mapy, tworząc **zamkniętą pętlę** `⬡→∧→✕→∿→⊙→⬡` (rozłączną z łańcuchem). Karta jest jednolita → **zbiór 4 nie wycieka**, trasy nie da się odczytać bez chodzenia. Koszt: brak natychmiastowej samokorekty — błąd wpuszcza w pętlę; demaskuje się przez „4 kroki / powrót do odwiedzonego znaku / hint MG". (Opcja A — ślepe zaułki — dawała natychmiastową samokorektę, ale karta zdradzała zbiór; Oskar wybrał B.) Pełne uzasadnienie: `z1-szlak-spec.md`.
 
 ## Co autor może zrobić sam vs gdzie pomocy
 

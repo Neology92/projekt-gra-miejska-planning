@@ -13,7 +13,7 @@
 ## Dwie warstwy znaków
 
 1. **Glify (mapa)** — 9 prostych, **abstrakcyjnych** znaków, które mówią TYLKO *gdzie iść* i **nie zdradzają**, co tam jest. Na mapie nieodróżnialne (4 z łańcucha + 5 dystraktorów). Finalnie można je zastąpić **gmerkami** (toruńskie znaki kupieckie — zob. Aleja Gmerków).
-   - Zestaw prototypowy: `△ trójkąt · ○ okrąg · □ kwadrat · ◇ romb · ⬡ heksagon · ☆ gwiazda · ✕ iks · ∿ fala · ⊙ tarcza`
+   - Zestaw prototypowy: `△ trójkąt · ○ okrąg · □ kwadrat · ◇ romb · ⬡ heksagon · ∧ szewron · ✕ iks · ∿ fala · ⊙ tarcza`
 2. **Piktogramy detali (deszyfrownik)** — **obrazkowe** symbole *co wypatrzeć* w terenie (np. 🎩 = melonik pieska Filusia). Grupa sama łączy piktogram z tym, co widzi — deszyfrownik **nie podaje nazw miejsc** (więcej główkowania).
 
 Obie warstwy są **arbitralne** — można podmienić, ale podmiana = propagacja **wszędzie** (mapa + deszyfrownik + legenda + K1).
@@ -35,17 +35,17 @@ Mechanika kroku: idź do **glifu** na mapie → w terenie wypatrz **detal** pasu
 | ○ okrąg | ⭐ gwiazda | Rynek Staromiejski 35 | **Kamienica Pod Gwiazdą** | pozłacana gwiazda na szczycie żółtej barokowej fasady (data 1697) | □ kwadrat | łańcuch 2 |
 | □ kwadrat | 🫏 osioł | Rynek / zbieg z ul. Żeglarską | **osiołek** (pręgierz) | żelazny grzbiet osiołka-pręgierza | ◇ romb | łańcuch 3 |
 | ◇ romb | 🌐 astrolabium | Rynek Staromiejski (przy Ratuszu) | **Pomnik Kopernika** | **astrolabium / sfera armilarna w dłoni posągu — FAKT [autor, 2026-06-01], must-have** (wiki #1 wymienia tylko wąsik i delfina, ale posąg trzyma instrument) | **KONIEC → MG** | łańcuch 4 |
-| ⬡ heksagon | 🗼 wieża | ul. Pod Krzywą Wieżą (SW, mury) | **Krzywa Wieża** | przechylona baszta murów miejskich | ☆ gwiazda | fałszywy trop ↻ |
-| ☆ gwiazda | 🎩 melonik | wylot ul. Chełmińskiej (NW Rynku) | **pies Filuś** | melonik prof. Filutka w pyszczku kundelka | ✕ iks | fałszywy trop ↻ |
+| ⬡ heksagon | 🗼 wieża | ul. Pod Krzywą Wieżą (SW, mury) | **Krzywa Wieża** | przechylona baszta murów miejskich | ∧ szewron | fałszywy trop ↻ |
+| ∧ szewron | 🎩 melonik | wylot ul. Chełmińskiej (NW Rynku) | **pies Filuś** | melonik prof. Filutka w pyszczku kundelka | ✕ iks | fałszywy trop ↻ |
 | ✕ iks | 🎺 trąbka | ul. Piekary 37 (W) | **Łuk Cezara** | Michał Archanioł z trąbką na attyce (+ szczątek torów pod sklepieniem) | ∿ fala | fałszywy trop ↻ |
 | ∿ fala | ⚖️ waga | Rynek Nowomiejski (przy Modrym Fartuchu) | **Pomnik Przekupki** | waga u stóp siedzącej przekupki (gęś, kosz jaj) | ⊙ tarcza | fałszywy trop ↻ |
 | ⊙ tarcza | 🛡️ herb | Rynek Staromiejski 6 (naprzeciw Ratusza) | **Dwór Artusa** | herb Torunia na szczycie czerwonej fasady (daty 1311 / 1891) | ⬡ heksagon | fałszywy trop ↻ |
 
-> **Fałszywe tropy = zamknięta pętla** ⬡→☆→✕→∿→⊙→⬡, **rozłączna** z łańcuchem △→○→□→◇. Dzięki temu (a) deszyfrownik wygląda jednolicie (każdy wiersz prowadzi do glifu — nie da się wytypować łańcucha z karty), (b) zbłąkana grupa krąży wśród dystraktorów, **nie zalicza przypadkiem finału** i nie wpada na łańcuch. Koszt: samokorekta nie jest natychmiastowa — patrz „Przeciek / samokorekta" niżej.
+> **Fałszywe tropy = zamknięta pętla** ⬡→∧→✕→∿→⊙→⬡, **rozłączna** z łańcuchem △→○→□→◇. Dzięki temu (a) deszyfrownik wygląda jednolicie (każdy wiersz prowadzi do glifu — nie da się wytypować łańcucha z karty), (b) zbłąkana grupa krąży wśród dystraktorów, **nie zalicza przypadkiem finału** i nie wpada na łańcuch. Koszt: samokorekta nie jest natychmiastowa — patrz „Przeciek / samokorekta" niżej.
 
 Wszystkie 9 miejsc: 24/7 z ulicy. Haczyki zweryfikowane z wiki (`przewodnik-miejsc-gry.js`).
 
-> ⚠ **Kolizja warstw:** glif mapy „☆ gwiazda" (miejsce Filusia) i piktogram detalu „⭐ gwiazda" (Pod Gwiazdą) to dwa różne znaki w dwóch różnych warstwach. Jeśli przy generacji finalnej będzie mylić — podmień jeden z nich (np. glif Filusia na inny kształt).
+> ✅ **Kolizja rozwiązana [2026-06-02]:** glif Filusia = **∧ szewron** (ujednolicony z systemem kanonicznym — C03 = ∧ w `z1-glify-globalne.md`, i z `map-data.js`). Piktogram detalu „⭐ gwiazda" (Pod Gwiazdą) to inna warstwa — brak kolizji.
 
 ## Granica spoilera — kto co widzi
 
@@ -63,7 +63,7 @@ Wszystkie 9 miejsc: 24/7 z ulicy. Haczyki zweryfikowane z wiki (`przewodnik-miej
 9 wierszy, każdy: **piktogram detalu → następny glif**. **Brak „ślepych zaułków"** [decyzja 2026-05-31] — dystraktory też wskazują prawdziwy glif z mapy (fałszywy trop), żeby karta była jednolita i nie zdradzała łańcucha. Jedyny wyróżnik to wiersz kończący (KONIEC). **Bez nazw miejsc, bez opisów** — grupa łączy piktogram z obserwacją. **Kolejność wierszy wymieszana.**
 
 ```
-🗼 → ☆ gwiazda        🍪 → ○ okrąg          🛡️ → ⬡ heksagon
+🗼 → ∧ szewron        🍪 → ○ okrąg          🛡️ → ⬡ heksagon
 🫏 → ◇ romb            ⚖️ → ⊙ tarcza         ⭐ → □ kwadrat
 🎩 → ✕ iks             🌐 → KONIEC → MG       🎺 → ∿ fala
 ```
@@ -74,7 +74,7 @@ Wszystkie 9 miejsc: 24/7 z ulicy. Haczyki zweryfikowane z wiki (`przewodnik-miej
 
 ```
 △ trójkąt = ______   ⬡ heksagon = ______   □ kwadrat = ______
-○ okrąg   = ______   ☆ gwiazda  = ______   ✕ iks     = ______
+○ okrąg   = ______   ∧ szewron  = ______   ✕ iks     = ______
 ◇ romb    = ______   ∿ fala     = ______   ⊙ tarcza  = ______
 ```
 
@@ -98,7 +98,7 @@ Wszystkie 9 wierszy deszyfrownika wskazują **prawdziwy glif z mapy** → **kart
 ## Checklista spójności (przed finalną generacją)
 
 - [ ] Mapa pokazuje **dokładnie 9 glifów** z tabeli, na właściwych pozycjach, **bez nazw i bez detali**, markery nieodróżnialne.
-- [ ] Deszyfrownik ma **9 wierszy** = 9 piktogramów detali; **wszystkie wskazują glif z mapy**. 4 to łańcuch (△→○→□→◇→KONIEC), 5 to fałszywe tropy = **pętla** ⬡→☆→✕→∿→⊙→⬡. **Bez nazw, bez „ślepych zaułków".**
+- [ ] Deszyfrownik ma **9 wierszy** = 9 piktogramów detali; **wszystkie wskazują glif z mapy**. 4 to łańcuch (△→○→□→◇→KONIEC), 5 to fałszywe tropy = **pętla** ⬡→∧→✕→∿→⊙→⬡. **Bez nazw, bez „ślepych zaułków".**
 - [ ] Każdy „następny glif" w deszyfrowniku **istnieje na mapie**; pętla dystraktorów jest **rozłączna** z łańcuchem (nie wpada na △/○/□/◇).
 - [ ] Każdy detal jest **realnie wypatrzalny** w danym miejscu (haczyk w kolumnie tabeli).
 - [ ] K1: start = **△**; zasada glif→detal→glif; raport = **4 miejsca w kolejności**.
@@ -110,5 +110,5 @@ Wszystkie 9 wierszy deszyfrownika wskazują **prawdziwy glif z mapy** → **kart
 
 - **Dobór 4 miejsc + 5 dystraktorów** — propozycja powyżej, do podmiany (Twój wybór). Świadomie pominięto Fontannę Flisaka (motyw flisaka → Z4).
 - **Zestaw glifów** — geometryczny placeholder; rozważ gmerki (klimat XV w.).
-- **Dobór piktogramów detali** — propozycja; sprawdź, czy każdy jest jednoznaczny w terenie i nie myli z innym miejscem. Rozwiąż kolizję ☆/⭐ (wyżej).
+- **Dobór piktogramów detali** — propozycja; sprawdź, czy każdy jest jednoznaczny w terenie i nie myli z innym miejscem. (Kolizja glif↔detal „gwiazda" rozwiązana: Filuś = ∧ szewron.)
 - **Pozycje na mapie** — schematyczne; zweryfikuj dystanse/widoczność podczas dry-runu.
