@@ -76,8 +76,8 @@ const Z1_INSET_NE = [53.0114, 18.6058];
 // FROZEN view — calibrate via z1-map-tune.html, then paste values here
 // Target: whole Stare + Nowe Miasto with ~5% margin; zoom as high as fits
 // Keep zoom near an integer for sharp CARTO tiles
-const FROZEN_CENTER = [53.0097, 18.6073];
-const FROZEN_ZOOM   = 15.5; // PLACEHOLDER — update after tune.html session
+const FROZEN_CENTER = [53.010501, 18.608244];
+const FROZEN_ZOOM   = 16.80;
 
 // START marker (Rynek Nowomiejski briefing point)
 const START_COORDS = [53.0114, 18.6107];
