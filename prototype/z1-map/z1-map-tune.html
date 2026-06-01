@@ -36,14 +36,14 @@
 
 <script>
 (function () {
-  // --- pin builder (same as z1-map.html) ---
+  // --- pin builder (handles both puzzle codes and landmark ids) ---
   function makePin(code) {
-    const glyph = Z1_GLYPHS[code];
+    const glyph = Z1_GLYPHS[code] || (Z1_LANDMARKS[code] && Z1_LANDMARKS[code].glyph);
     // z1-map-data.js glyph strings come from our own static data — safe innerHTML via Leaflet divIcon
     const pinSvg = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 44" width="32" height="44">'
       + '<path d="M16,42 C10,34 4,26 4,16 A12,12 0 1,1 28,16 C28,26 22,34 16,42Z"'
       + ' fill="#faf0d8" stroke="#2a1f0e" stroke-width="1.4"/>'
-      + '<svg x="4" y="4" width="24" height="24" viewBox="0 0 32 32">' + glyph + '</svg>'
+      + '<svg x="6" y="6" width="20" height="20" viewBox="0 0 32 32">' + glyph + '</svg>'
       + '</svg>';
     return L.divIcon({
       className: 'z1-pin',
@@ -64,12 +64,23 @@
 
   L.tileLayer(TILE_URL, { detectRetina: true, maxZoom: 19 }).addTo(map);
 
-  // All 19 pins
+  // All 19 puzzle pins
   Object.keys(Z1_PLACES).forEach(code => {
     const place = Z1_PLACES[code];
     L.marker(place.coords, {
       icon: makePin(code),
       title: code + ' · ' + place.name,
+      interactive: false,
+      keyboard: false,
+    }).addTo(map);
+  });
+
+  // Fixed landmarks (L01 Piccolo, L02 Zamek Krzyżacki)
+  Object.keys(Z1_LANDMARKS).forEach(lid => {
+    const lm = Z1_LANDMARKS[lid];
+    L.marker(lm.coords, {
+      icon: makePin(lid),
+      title: lid + ' · ' + lm.name,
       interactive: false,
       keyboard: false,
     }).addTo(map);

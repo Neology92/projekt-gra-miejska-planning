@@ -82,6 +82,26 @@ const FROZEN_ZOOM   = 15.5; // PLACEHOLDER — update after tune.html session
 // START marker (Rynek Nowomiejski briefing point)
 const START_COORDS = [53.0114, 18.6107];
 
+// Fixed landmarks — always rendered on all 10 maps (option A: same pin style, own glyph)
+// Players learn their meaning from envelope info, not map labels
+const Z1_LANDMARKS = {
+  L01: {
+    coords: [53.0127, 18.6081],
+    name: 'Piccolo',
+    // ≡ three horizontal parallels (distinct from S04's two verticals)
+    glyph: '<line x1="4" y1="11" x2="28" y2="11" stroke="#2a1f0e" stroke-width="2.4" stroke-linecap="round"/>'
+         + '<line x1="4" y1="16" x2="28" y2="16" stroke="#2a1f0e" stroke-width="2.4" stroke-linecap="round"/>'
+         + '<line x1="4" y1="21" x2="28" y2="21" stroke="#2a1f0e" stroke-width="2.4" stroke-linecap="round"/>',
+  },
+  L02: {
+    coords: [53.0095, 18.6101],
+    name: 'Zamek Krzyżacki',
+    // ∞ lemniscate/infinity — no overlap with existing alphabet or detail icons
+    glyph: '<path d="M16,16 C13,10 4,10 4,16 C4,22 13,22 16,16 C19,10 28,10 28,16 C28,22 19,22 16,16Z"'
+         + ' fill="none" stroke="#2a1f0e" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>',
+  },
+};
+
 // Tile URL (CARTO light — no labels = no place name leaks)
 const TILE_URL = 'https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png';
 const TILE_ATTR = '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> · © <a href="https://carto.com/attributions">CARTO</a>';

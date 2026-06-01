@@ -64,13 +64,13 @@
     }
   }
 
-  // --- pin builder ---
+  // --- pin builder (handles both puzzle codes and landmark ids) ---
   function makePin(code) {
-    const glyph = Z1_GLYPHS[code];
+    const glyph = Z1_GLYPHS[code] || (Z1_LANDMARKS[code] && Z1_LANDMARKS[code].glyph);
     const pinSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 44" width="32" height="44">
       <path d="M16,42 C10,34 4,26 4,16 A12,12 0 1,1 28,16 C28,26 22,34 16,42Z"
             fill="#faf0d8" stroke="#2a1f0e" stroke-width="1.4"/>
-      <svg x="4" y="4" width="24" height="24" viewBox="0 0 32 32">${glyph}</svg>
+      <svg x="6" y="6" width="20" height="20" viewBox="0 0 32 32">${glyph}</svg>
     </svg>`;
     return L.divIcon({
       className: 'z1-pin',
@@ -125,6 +125,13 @@
     const place = Z1_PLACES[code];
     if (!place) return;
     L.marker(place.coords, { icon: makePin(code), interactive: false, keyboard: false })
+      .addTo(mapMain);
+  });
+
+  // Fixed landmarks — always shown on all maps (same pin style, own glyph)
+  Object.keys(Z1_LANDMARKS).forEach(lid => {
+    const lm = Z1_LANDMARKS[lid];
+    L.marker(lm.coords, { icon: makePin(lid), interactive: false, keyboard: false })
       .addTo(mapMain);
   });
 

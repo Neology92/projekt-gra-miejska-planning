@@ -148,6 +148,14 @@
   <tbody id="glyph-rows"></tbody>
 </table>
 
+<div class="groups-header">Fixed landmarks (all 10 maps · players learn meaning from envelope info)</div>
+<table>
+  <thead>
+    <tr><th>Code</th><th>Glyph</th><th>Name</th><th>Coordinates</th><th>Note</th></tr>
+  </thead>
+  <tbody id="landmark-rows"></tbody>
+</table>
+
 <div class="groups-header">Groups (9 active codes per card)</div>
 <table class="groups-table">
   <tbody id="group-rows"></tbody>
@@ -157,6 +165,7 @@
   Glyph alphabet: geometric figures only — no shape echoes the detail icons in prototype/icons/.
   Chain vs distractor distinction is NOT visible on player maps (identical pin style, §map.md 8).
   Inset codes: C01 C02 C03 C04 C06 C07 D01 — rendered at Rynek Staromiejski zoom, not on main map.
+  Landmarks (L01 L02): always shown on all maps, same pin style as puzzle codes.
 </div>
 
 <script src="z1-map-data.js"></script>
@@ -235,6 +244,54 @@
     tr.appendChild(tdZone);
 
     tbody.appendChild(tr);
+  });
+
+  // Landmarks table
+  const lbody = document.getElementById('landmark-rows');
+  const svgNS2 = 'http://www.w3.org/2000/svg';
+  const parser2 = new DOMParser();
+  Object.keys(Z1_LANDMARKS).forEach(lid => {
+    const lm = Z1_LANDMARKS[lid];
+    const tr = document.createElement('tr');
+
+    const tdCode = document.createElement('td');
+    const cs = document.createElement('span');
+    cs.className = 'code';
+    cs.textContent = lid;
+    tdCode.appendChild(cs);
+    tr.appendChild(tdCode);
+
+    const tdGlyph = document.createElement('td');
+    tdGlyph.className = 'glyph-cell';
+    const svgEl = document.createElementNS(svgNS2, 'svg');
+    svgEl.setAttribute('viewBox', '0 0 32 32');
+    svgEl.setAttribute('width', '32');
+    svgEl.setAttribute('height', '32');
+    const parsed = parser2.parseFromString(
+      '<svg xmlns="' + svgNS2 + '">' + lm.glyph + '</svg>', 'image/svg+xml'
+    );
+    Array.from(parsed.documentElement.childNodes).forEach(n => {
+      svgEl.appendChild(document.importNode(n, true));
+    });
+    tdGlyph.appendChild(svgEl);
+    tr.appendChild(tdGlyph);
+
+    const tdName = document.createElement('td');
+    tdName.className = 'place';
+    tdName.textContent = lm.name;
+    tr.appendChild(tdName);
+
+    const tdCoords = document.createElement('td');
+    tdCoords.className = 'coords';
+    tdCoords.textContent = lm.coords[0].toFixed(4) + ', ' + lm.coords[1].toFixed(4);
+    tr.appendChild(tdCoords);
+
+    const tdNote = document.createElement('td');
+    tdNote.className = 'zone';
+    tdNote.textContent = 'always visible · envelope info';
+    tr.appendChild(tdNote);
+
+    lbody.appendChild(tr);
   });
 
   // Groups table
