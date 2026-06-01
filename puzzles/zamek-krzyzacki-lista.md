@@ -2,13 +2,16 @@
 
 **Status**: szkicowe. Z3 = obowiązkowa dla TR (infiltracja zamku). **Z3Z** = lustro dla krzyżaków (infiltracja Piccolo) — sekcja niżej.
 
+> **Treść listy nazwisk TR + uzasadnienie fabularne + pułapki historyczne → `z3-lista-tr-spec.md`** (research kanoniczny). Rekwizyt gracza (EN) → `prototype/pergamin-lista-tr-draft.md`.
+> ✅ **Model klucza rozstrzygnięty [2026-06-01]:** lista nazwisk = **kontekst**; **klucz Vigenère = motto Zakonu w nagłówku listy** („HELFEN HILFEN UND WEHREN"); twist „Jordan=Bażyński" niesie **osobny szyfrogram Z7** (przechwycony list krzyżacki z tym samym mottem). Kalimba (Z4) nie zasila Z7. Szczegóły → `z3-lista-tr-spec.md §4` + `z7-szyfr-spec.md`.
+
 ## Cel narracyjny
 
 Grupa dowiaduje się, że Zakon ma **listę nazwisk Tajnej Rady**. Wnioski:
 - Lista jest u komtura Albrechta (na mieście).
 - Jeśli ją zdobędą - wiedzą **kto jest w TR** - i znajdą faktycznego adresata listu.
-- **Sztuczka**: na liście NIE MA "Jordana", bo to pseudonim Bażyńskiego. Dopiero zestawienie z wiedzą z F2A (człowiek z Piccolo = przywódca TR) + kluczem z zagadki opcjonalnej prowadzi do plot twistu w Z7.
-- **Output**: lista nazwisk = **klucz do finału Z7** (przez MG).
+- **Sztuczka**: na liście NIE MA „Jordana" (to pseudonim Bażyńskiego); może być za to „Hans von Baysen" jako jeden z członków TR — **plant pod twist** (patrz `z3-lista-tr-spec.md` Decyzja #2). Twist „Jordan = Bażyński" ujawnia **dopiero odszyfrowany szyfrogram Z7** (klucz = motto z nagłówka tej listy). ⚠ *Nieaktualne wcześniejsze założenie, że gracze poznają „człowiek z Piccolo = przywódca TR" już w F2A — F2A trzyma Jordana jako kucharza (concept/02, test-jordana, 2026-05-31).*
+- **Output** [rozstrzygnięte 2026-06-01]: lista nazwisk = **kontekst** (kto jest w TR), a jej **nagłówek niesie motto Zakonu = klucz Vigenère** do finałowego szyfrogramu Z7. Twist „Jordan=Bażyński" ujawnia osobny przechwycony list (Z7), nie sama lista. Kalimba (Z4) nie zasila Z7. → `z3-lista-tr-spec.md §4`, `z7-szyfr-spec.md`.
 
 ## Miejsce - ruiny zamku krzyżackiego
 
