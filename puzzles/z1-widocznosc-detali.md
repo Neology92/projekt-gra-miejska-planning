@@ -27,18 +27,24 @@
 | `N05` | Kościół św. Jakuba (Rynek Nowomiejski) | łuki przyporowe; nawa gł. wyższa | bryła z ulicy | `bazylika-luki.svg` | **teren ✓** | ✅ (R1) |
 | `N06` | Teatr Baj Pomorski (Piernikarska 9) | fasada-szafa z szufladami (drzwi + szuflady) | cała fasada | `szafa.svg` | wiki #43 | ✅ (R2) |
 
-### Strefa C — Rynek Staromiejski i serce
+### Strefa C — Rynek Staromiejski i serce ✅ ZATWIERDZONA z zastrzeżeniami [Oskar, 2026-06-01]
+
+> **Zastrzeżenia (constrainty ikon — anti-pair na karcie, patrz `z1-10-sciezek.md §Constrainty ikon`):**
+> - `C04` Ratusz ✕ `C09` Katedra — sylwetki wieża/zegar zbyt podobne → nie na jednej karcie.
+> - `C08` NMP ✕ `N05` Jakub — sylwetki kościół/łuki zbyt podobne → nie na jednej karcie.
+>
+> Konsekwencja: G5 przebudowany (`C08`→`C02`); tabela wykluczeń dla dystraktorów w `z1-10-sciezek.md`.
 
 | Kod | Miejsce | Detal (co wypatrzeć) | Gdzie szukać | Ikona | Dotąd | Werdykt |
 |---|---|---|---|---|---|---|
-| `C01` | Pomnik Kopernika (SE róg Ratusza) | astrolabium / sfera w dłoni posągu | w rękach figury | `astrolabium.svg` | autor ✓ | |
-| `C02` | Osiołek (zbieg z Żeglarską) | metalowy grzbiet (pręgierz) | rzeźba osła | `osiol.svg` | wiki #3 | |
-| `C03` | Pies Filuś (wylot Chełmińskiej) | melonik w pyszczku kundelka | mała rzeźba | `melonik.svg` | wiki #4 | |
-| `C04` | Ratusz Staromiejski (Rynek 1) | wieża **bez hełmu**; zegar 24-godz. | wieża | `wieza-bez-helmu.svg` | wiki #5 | |
-| `C06` | Kamienica Pod Gwiazdą (Rynek 35) | pozłacana gwiazda + data 1697 | żółta fasada | `gwiazda.svg` | wiki #7 | |
-| `C07` | Dwór Artusa (Rynek 6) | herb Torunia + daty 1311/1891 | szczyt fasady | `herb-tarcza.svg` | wiki #8 | |
-| `C08` | Kościół NMP / pofranciszkański (NW róg) | brak wieży; 3 ośmioboczne wieżyczki | bryła | `kosciol-bez-wiezy.svg` | wiki #38 | |
-| `C09` | Katedra św. Janów (Żeglarska 16) | zegar z **jedną wskazówką** | wieża zegarowa | `zegar-jedna-wskazowka.svg` | wiki #39 | |
+| `C01` | Pomnik Kopernika (SE róg Ratusza) | astrolabium / sfera w dłoni posągu | w rękach figury | `astrolabium.svg` | autor ✓ | ✅ |
+| `C02` | Osiołek (zbieg z Żeglarską) | metalowy grzbiet (pręgierz) | rzeźba osła | `osiol.svg` | wiki #3 | ✅ |
+| `C03` | Pies Filuś (wylot Chełmińskiej) | melonik w pyszczku kundelka | mała rzeźba | `melonik.svg` | wiki #4 | ✅ |
+| `C04` | Ratusz Staromiejski (Rynek 1) | wieża **bez hełmu**; zegar 24-godz. | wieża | `wieza-bez-helmu.svg` | wiki #5 | ✅ ✕`C09` |
+| `C06` | Kamienica Pod Gwiazdą (Rynek 35) | pozłacana gwiazda + data 1697 | żółta fasada | `gwiazda.svg` | wiki #7 | ✅ |
+| `C07` | Dwór Artusa (Rynek 6) | herb Torunia + daty 1311/1891 | szczyt fasady | `herb-tarcza.svg` | wiki #8 | ✅ |
+| `C08` | Kościół NMP / pofranciszkański (NW róg) | brak wieży; 3 ośmioboczne wieżyczki | bryła | `kosciol-bez-wiezy.svg` | wiki #38 | ✅ ✕`N05` |
+| `C09` | Katedra św. Janów (Żeglarska 16) | zegar z **jedną wskazówką** | wieża zegarowa | `zegar-jedna-wskazowka.svg` | wiki #39 | ✅ ✕`C04` |
 
 ### Strefa S — Wisła / bramy
 

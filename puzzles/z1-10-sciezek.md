@@ -58,18 +58,35 @@ Swappy: G3.P1 `N02`→`C02` · G8.P3 `C07`→`N01` · G9.P1 `C02`→`N02` · G9.
 | G2 | N06 | N04 | N05 | C01 | NM |
 | G3 | **C02** | N01 | C03 | C06 | NM (P1 ← C02) |
 | G4 | N04 | N06 | C09 | C02 | NM |
-| G5 | N05 | C04 | C08 | C07 | NM |
+| G5 | N05 | C04 | **C02** | C07 | NM (P3 C08→C02: constraint ikon) |
 | G6 | S02 | C08 | C04 | C06 | głęboki SW (Br. Klasztorna) |
 | G7 | S01 | C09 | C06 | C07 | głęboki S (Br. Mostowa) |
 | G8 | C09 | C01 | **N01** | C06 | głęboki SE (P3 ← N01) |
 | G9 | **N02** | C06 | **S02** | C07 | NM-start (P1 ← N02, P3 ← S02) |
 | G10 | C03 | C07 | **N04** | C08 | głęboki NW (P3 ← N04) |
 
-**Pass disjointness v3:** P1 {N01·N06·C02·N04·N05·S02·S01·C09·N02·C03} ✓ · P2 {N02·N04·N01·N06·C04·C08·C09·C01·C06·C07} ✓ · P3 {N06·N05·C03·C09·C08·C04·C06·N01·S02·N04} ✓ — 10/10 parami różne w każdej kolumnie.
+**Pass disjointness v3.1:** P1 {N01·N06·C02·N04·N05·S02·S01·C09·N02·C03} ✓ · P2 {N02·N04·N01·N06·C04·C08·C09·C01·C06·C07} ✓ · P3 {N06·N05·C03·C09·**C02**·C04·C06·N01·S02·N04} ✓ — 10/10 parami różne w każdej kolumnie (G5 P3: C08→C02).
 
-**Brak par klastra śródłańcuchowo** — wszystkie {C01,C02,C06,C07} sąsiadują tylko z non-klastrem w P1→P2 i P2→P3. P3→P4 zwolniony (para sprawdzona: C03→C07 = G10, potwierdzono R2.1 ✅).
+**Brak par klastra śródłańcuchowo** — wszystkie {C01,C02,C06,C07} sąsiadują tylko z non-klastrem w P1→P2 i P2→P3. P3→P4 zwolniony.
 
-> Następny krok: regeneracja 10 kart (§Ścieżki poniżej) na łańcuchach v3 — pętle dystraktorów + deszyfrowniki.
+**🟡 FLAGA sightline (nowa w v3.1):** `G5 C04→C02` (Ratusz → Osiołek, P2→P3). Para niesprawdzona w R2.1 (klaster testowany był {C01,C02,C06,C07} wzajemnie; C04 poza nim). Osiołek stoi przy Ratuszu od str. Żeglarskiej → **możliwe intervisible**. Do weryfikacji na draft-mapie / przy okazji strefy C. Jeśli ciasne → G5 P3 dostaje głęboki kod (S04/W01).
+
+### 🔒 Constrainty ikon na karcie [Oskar, 2026-06-01] — anti-pair w obrębie deszyfrownika
+
+Ikony zbyt podobne/jednoznaczne **nie mogą współwystąpić na jednej karcie** (9 glifów = 4 łańcuch + 5 dystraktorów). Dotyczy łańcucha **i** pętli dystraktorów:
+
+| Para zakazana | Powód |
+|---|---|
+| `C04` (Ratusz — wieża bez hełmu) ✕ `C09` (Katedra — zegar/wieża) | obie sylwetki = wieża z zegarem; nierozróżnialne |
+| `C08` (NMP — kościół bez wieży) ✕ `N05` (Jakub — bazylika/łuki) | obie sylwetki = bryła kościoła z łukami; nierozróżnialne |
+
+**Tabela wykluczeń dla regeneracji dystraktorów** (jeśli łańcuch grupy zawiera X → pętla NIE może zawierać Y):
+- łańcuch ma `C04` (G1,G5,G6) → dystraktory **bez `C09`**
+- łańcuch ma `C09` (G4,G7,G8) → dystraktory **bez `C04`**
+- łańcuch ma `C08` (G6,G10) → dystraktory **bez `N05`**
+- łańcuch ma `N05` (G2,G5) → dystraktory **bez `C08`**
+
+> Następny krok: regeneracja 10 kart (§Ścieżki poniżej) na łańcuchach v3.1 — pętle dystraktorów (respektują tabelę wykluczeń) + deszyfrowniki.
 
 ---
 
