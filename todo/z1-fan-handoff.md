@@ -16,12 +16,11 @@
 - **Subagenty odpalać na `model: "sonnet"`** [decyzja 2026-06-01].
 - **Język:** planowanie .md = PL; artefakty gracza = EN (nazwy toruńskie zostają).
 
-## 🔴 BLOKUJE FAN: rozstrzygnij z Oskarem (Wniosek #1)
-Briefing na Rynku Nowomiejskim daje tylko **6 tanich miejsc na P1** (`N01–N06`). 3 wzorce już je wyczerpały na P1+P2. Dla 10 grup twarda rozłączność pozycyjna P1/P2 jest **niewykonalna**. Opcje (do wyboru Oskara — to konflikt jego własnych preferencji: „jeden briefing na Rynku Nowomiejskim" vs „twarda rozłączność"):
-- (a) **Poluzuj rozłączność** — różne tylko P2/P3; P1 może się powtarzać (lekki zbieg na P1).
-- (b) **Briefing między Rynkami** (Szeroka/Kr. Jadwigi) — podwaja pulę tanich P1, pełna rozłączność wraca (zmiana decyzji o briefingu).
-- (c) **Dłuższe pierwsze legi** dla części grup (P1 dalej, budżet do ~14–15 min).
-**Nie fanuj do 10, dopóki to nie jest rozstrzygnięte.**
+## ✅ BLOKADA #1 ROZSTRZYGNIĘTA [Oskar 2026-06-01 → opcja (c)]
+Wybór: **(c) dłuższe pierwsze legi**. Briefing zostaje na Rynku Nowomiejskim, twarda rozłączność P1–P3 **zostaje**, pula P1 rośnie przez głębsze starty (budżet do ~15 min dla grup głębokich). Zapisane w `puzzles/map.md §5.1, §5.3`.
+
+## ✅ FAN WYKONANY → wynik: `puzzles/z1-10-sciezek.md`
+10 szkieletów ułożonych inline (`puzzles/z1-szkielety-10.md`), fan ×10 (sonnet), pass spójności + montaż zrobione. Wszystkie 10 łańcuchów w budżecie (graniczne G4 ~14,6 i G10 ~15 — prawdopodobnie >15 z czasem odczytu, swap obowiązkowy po pomiarze). G1 skorygowane 2× (P3 `S06`→`N03`→finalnie `N06`; reguła „pewne detale→łańcuch, niepewne→dystraktor"). **Następny krok: DECYZJA OSKARA — krucha G2 (3/4 kroków łańcucha z `⚠` detalem) + czy rebalansować wg reguły (patrz `z1-10-sciezek.md` §Ryzyka globalne); pula pewnych miejsc ciasna ~11/30 slotów).** Potem dry-run terenowy, tabela kod→gmerk, 9 ikon, mapy HTML.
 
 ## Otwarte (mniejsze)
 - **#2 słabe detale:** `N03` Modry Fartuch (tylko nazwa — Oskar: zostaw + teren), `N05` bazylika (→ piktogram łuków przyporowych + teren), `N04` lew (godziny apteki, nie 24/7 — OK tylko jeśli gra w godz. otwarcia).
