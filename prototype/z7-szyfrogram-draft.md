@@ -17,7 +17,7 @@
 
 *To the Hochmeister at Marienburg. In haste — and for your eyes alone.*
 
-You pressed me to learn the head of their secret council — the one who hides himself among them. I have it. I will not trust the plain words to any road. I set it down by our word, as we agreed:
+What you asked of me, I have. I will not trust it to any road in plain words — too many hands lie between here and Marienburg. I set it down by our word, as we agreed:
 
 ---
 
@@ -54,6 +54,12 @@ You have seen this script before — it is the same hand that headed the list of
 **Link do Z3:** nagłówek Z7 MUSI używać **tego samego charakterystycznego fontu** co nagłówek pergaminu Z3 (`prototype/pergamin-lista-tr-draft.md`). Font + identyczna interpunkcja (przecinek, wykrzyknik) = sygnał wizualny, że oba nagłówki są związane — to cały hint.
 
 **Płatność:** plaintext „…HANS VON BAYSEN…" domyka się z plantem na liście Z3 — gracz wraca i widzi, że kucharz był na szczycie listy gończej Zakonu.
+
+**List ODCHUDZONY [2026-06-01, decyzja Oskara — anty-prowadzenie-za-rączkę]:** ciało listu NIE zapowiada już, *jaki rodzaj* informacji niesie szyfrogram. Usunięto „You pressed me to learn the head of their secret council — the one who hides himself among them" → zostało lakoniczne „What you asked of me, I have…". Gracz odszyfrowuje zdanie **na zimno**, bez ramki mówiącej „to tożsamość głowy Rady". Sens skleja sam, dopiero po zestawieniu trzech wątków:
+- **K2 (trop celu):** „dostarcz list **chairmanowi** Rady, w jego własne ręce" — zasiane na początku.
+- **Pergamin Z3:** wpis #1 „Hans von Baysen — *they call him chairman*".
+- **Z7 (ten szyfr):** „HANS VON BAYSEN IS JORDAN THE COOK".
+→ chairman, do którego mieli zanieść list = Hans von Baysen = Jordan-kucharz. Splice w pełni z materiałów gracza. **Warunek konieczny:** pergamin Z3 musi zachować frazę „they call him chairman" przy wpisie #1 (nośnik znaczenia po odchudzeniu listu).
 
 **Plaintext ZATWIERDZONY [2026-06-01, skrócony — Jordan na końcu jako zaskoczenie]:** „HANS VON BAYSEN IS JORDAN THE COOK" (28 liter). Szyfr = Cezar +7. Brak rekwizytu (koła). Anachronizm minimalny. *(Poprzedni, dłuższy: „JORDAN THE COOK IS HANS VON BAYSEN THEIR CHAIRMAN" — backup w `puzzles/z7-szyfr-spec.md §0`.)*
 

@@ -11,6 +11,10 @@ Po wizycie u MG (koniec F1) grupa dostaje kopertę z:
 4. Atrybut: **chochla**. Imię: **Jordan**.
 5. Lokal: **Picollo** (lub inny - do decyzji, patrz niżej).
 
+## Trop celu kuriera — zasiany w K2 [2026-06-01, decyzja Oskara]
+
+Koperta K2 (slip pośrednika R.) niesie **silny trop**: list ma trafić do **głowy Rady / chairmana**, w jego własne ręce — *bez zdradzania, kim chairman jest*. To ustawia cel kuriera na początku gry. Funkcja: w finale (Z7 „HANS VON BAYSEN IS JORDAN THE COOK") gracz sam spina, że chairman z K2 = Hans von Baysen z listy Z3 („they call him chairman") = poznany Jordan-kucharz. Anty-prowadzenie-za-rączkę. Pełny łańcuch i zależności → `prototype/k2-envelope-draft.md`, `puzzles/z7-szyfr-spec.md §5`. **Ironia:** zagadka Z2 prowadzi ich do „następnego kontaktu" (Jordan) — a to właśnie do niego (jako chairmana) mieli zanieść list. Nie wiedzą tego aż do finału.
+
 ## Forma „trzech rzeczy do zestawienia" — USTALONA [2026-05-31]
 
 **Zagadka Einsteina** — 4 osoby × 3 cechy (robi Piotr). Szczegóły do przekazania przez Piotra.

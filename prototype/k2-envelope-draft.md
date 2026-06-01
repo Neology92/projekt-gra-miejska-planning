@@ -60,8 +60,9 @@ The answer will give you a name and a place. Go there.
 ---
 
 *I cannot be there. Too dangerous now.*
-*Deliver it yourselves. Find the way.*
-*— R.*
+*And it was never mine to keep — I was only ever to pass it on.*
+*This letter is for the head of their Council. Their chairman. Into his own hand, and no other's.*
+*Find the way. — R.*
 
 ---
 
@@ -75,6 +76,10 @@ The answer will give you a name and a place. Go there.
 - A8 — Bażyński will walk away with all of Prussia (strong F3 forshadow; spoilery? tak, celowo)
 
 **Wiadomość pośrednika:** lakoniczna, tylko inicjał (nie wiadomo kto to R. — niepotrzebna wiedza). Mechanika: gracze dostają ją jako „dowód" że pośrednik istniał, ale uciekł.
+
+**TROP CELU — „dostarcz chairmanowi" [2026-06-01, decyzja Oskara]:** slip R. zasiewa **silny trop**, że list ma trafić do **głowy Rady / chairmana**, w jego własne ręce. To ustawia cel kuriera na początku gry — **bez zdradzania, kim chairman jest**. Funkcja: w finale, gdy Z7 odszyfruje „HANS VON BAYSEN IS JORDAN THE COOK", gracz sam spina wątki: chairman z K2 = Hans von Baysen z listy Z3 (wpis #1 „they call him chairman") = Jordan-kucharz, którego poznali. Splice player-derived, anty-prowadzenie-za-rączkę. Dlatego list Z7 **został odchudzony** (nie zapowiada już rodzaju informacji) — ciężar znaczenia niosą trzy wątki: ten trop + „chairman" przy wpisie #1 Z3 + sam szyfr. Patrz `prototype/z7-szyfrogram-draft.md` (nota „List ODCHUDZONY") i `puzzles/z7-szyfr-spec.md`.
+
+> ⚠ **Wersja Krzyżacy:** ich K2 prowadzi do Albrechta (nie chairmana TR) — trop celu musi być inny (parole/hasło do komtura, nie „chairman Rady"). Do napisania przy MVP. NIE kopiować tropu TR 1:1.
 
 **Z2 placeholder:** zagadka Piotra (Einstein 4×3) — wynik musi dać `imię: Jordan` + `miejsce: Piccolo`. Instrukcja Z2 celowo lakoniczna ("The answer will give you a name and a place") — żeby gracze skupili się na rozwiązaniu, nie na meta-wiedzy.
 

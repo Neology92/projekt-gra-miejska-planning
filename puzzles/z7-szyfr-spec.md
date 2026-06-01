@@ -100,7 +100,8 @@ Brak rekwizytu (koła/tabeli) — świadoma decyzja (koło byłoby zbyt silną w
 - **Oczekiwana odpowiedź grupy:** odczytana treść = „HANS VON BAYSEN IS JORDAN THE COOK" (lub sens: *Jordan = Hans von Baysen, przywódca TR*).
 - **Co to odblokowuje:** wejście w finał KF — grupa wie teraz, **kim naprawdę jest sojusznik z Piccolo**, i z tą wiedzą podejmuje decyzję o dostarczeniu listu.
 - **Format odpowiedzi:** szyfrogram zachowuje granice słów (układ jak w zdaniu), więc gracz odczyta naturalnie rozdzielone słowa → `HANS VON BAYSEN IS JORDAN THE COOK`. **MG akceptuje sens** (Jordan = Hans von Baysen, przewodniczący TR) — drobne pomyłki literowe nie blokują, bo granice słów pozwalają je uzupełnić domysłem.
-- **Hint awaryjny (jeśli utkną):** wskaż, że **to samo motto** widnieje na pergaminie Z3 i na liście — „nagłówek, który się powtarza, to klucz".
+- **List odchudzony — splice gracza [2026-06-01]:** przechwycony list **NIE zapowiada**, jaki rodzaj informacji niesie szyfrogram (usunięto „learn the head of their secret council…" → zostało lakoniczne „What you asked of me, I have…"). Gracz odszyfrowuje zdanie **na zimno** i sam spina sens z **trzech wątków**: (1) trop z **K2** („dostarcz list **chairmanowi** Rady, w jego własne ręce"), (2) wpis #1 **pergaminu Z3** („Hans von Baysen — *they call him chairman*"), (3) ten szyfr („HANS VON BAYSEN IS JORDAN THE COOK"). → chairman = Hans von Baysen = Jordan-kucharz. Anty-prowadzenie-za-rączkę (`zasada-uzasadnienie-fabularne`). **Zależność twarda:** pergamin Z3 musi zachować frazę „they call him chairman" przy wpisie #1, a K2 — trop o chairmanie; bez nich odszyfrowane zdanie wisi bez kontekstu.
+- **Hint awaryjny (jeśli utkną):** wskaż, że **to samo motto** widnieje na pergaminie Z3 i na liście — „nagłówek, który się powtarza, to klucz". Jeśli odszyfrowali, ale nie rozumieją sensu → odeślij do **listy nazwisk** (kto na niej jest „chairman?") i do tego, **komu mieli zanieść list** (K2).
 
 ---
 
