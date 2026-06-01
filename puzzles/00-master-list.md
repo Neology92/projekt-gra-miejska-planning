@@ -11,11 +11,11 @@ Numeracja kanoniczna [2026-05-29] po scaleniu z boardem. Tory **mieszczan** i **
 | 2b | Test zaufania Jordana | F2A | TR (u Jordana) | placeholder | `test-jordana.md` |
 | **3** | Infiltracja zamku krzyżackiego — lista nazwisk TR (obowiązkowa TR) | F2B | mieszczanie | szkicowe | `zamek-krzyzacki-lista.md` |
 | **3Z** | Infiltracja Piccolo — kradzież zaopatrzenia + godzina buntu (obowiązkowa krzyżacy) | F2B | krzyżacy | szkicowe | `zamek-krzyzacki-lista.md` (sekcja) / do wydzielenia |
-| 4 | Melodia flisaka (kalimba) | F2B | mieszczanie (opc.) | placeholder | `kalimba.md` |
+| 4 | Melodia flisaka (kalimba) | F2B | mieszczanie (opc.) | szkicowe+ (rdzeń zamknięty: kod `621454` = Z8, rekwizyt fizyczny gotowy; oprawa fabularna + instrument narracyjny do tekstu koperty) | `kalimba.md` |
 | 5 | Sensoryczna ze składnikami piernika (słoiczki: słuch/węch/waga + dedukcja z przepisu, dwie mąki) | F2B | mieszczanie (opc.) | szkicowe+ (rdzeń + draft tekstów: przepis, karta rozpiski, dystraktory, koperta Z5) | `zagadka-sensoryczna.md` |
 | 6 | Herby hanzeatyckie — znajdź 3 z 8 na Aleji Gmerków (ul. Królowej Jadwigi) | F2B | mieszczanie (opc.) | szkicowe (mechanika jasna, lista herbów do weryfikacji w terenie) | `herby-aleja.md` |
 | 7 | Finałowa — szyfr (sklejenie Jordan = Bażyński) | F3 | mieszczanie | szkicowe | `zagadka-finalowa.md` (do utworzenia) |
-| 8 | Melodia zakonu (kalimba) — lustro Z4 | F2B | krzyżacy (opc.) | placeholder | `kalimba.md` |
+| 8 | Melodia zakonu (kalimba) — lustro Z4 | F2B | krzyżacy (opc.) | szkicowe+ (rdzeń zamknięty: melodia/kod `621454`, rekwizyt fizyczny gotowy; oprawa fabularna + instrument narracyjny do tekstu koperty) | `kalimba.md` |
 | 9 | Sensoryczna z piernikiem — lustro Z5 | F2B | krzyżacy (opc.) | szkicowe+ (mechanika = Z5; koperta Z9 draft, uzasadnienie 1+2) | `zagadka-sensoryczna.md` |
 | 10 | Polichromie w „Biedronce" + Bestiariusz Krzyżowca — lustro Z6 | F2B | krzyżacy (opc.) | szkicowe (mechanika jasna, treść do doboru) | `polichromie-biedronka.md` |
 | 11 | Finałowa — szyfr (krzyżacy) | F3 | krzyżacy | placeholder | `zagadka-finalowa.md` (sekcja) |

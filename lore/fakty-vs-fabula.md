@@ -23,11 +23,12 @@ To nie jest naginka faktów, lecz **świadoma decyzja tonalna** o tym, jak gra *
 - **Dlaczego**: tworzy plot twist w F3, łączy legendę z faktem.
 - **Ryzyko**: gracze (jeśli sprawdzą wiki) zauważą że Jordan to legenda, Bażyński to fakt - mogą uznać że łączenie jest naciągane. **Naginka świadoma, fabularnie uzasadniona.**
 
-### 2. ☆ Zagadka kalimbowa (jeśli zostanie)
+### 2. ☆ Zagadka kalimbowa — ROZSTRZYGNIĘTE [2026-06-01]
 
 - **Anachronizm**: kalimba to instrument afrykański, znany w Europie od XIX w. W 1454 w Toruniu - **niemożliwe**.
-- **Naginka**: użycie współczesnego instrumentu w grze "historycznej".
-- **Mitigacja**: zmienić na instrument XV-wieczny (fletnia Pana, gęśle, dzwonki). Patrz `puzzles/kalimba.md` wariant B.
+- **Decyzja**: **rekwizyt fizyczny = kalimba** (zostaje — najlepiej działa mechanicznie), ale **opis fabularny w kopercie nazywa instrument historyczny** (Z4 flisak → piszczałka/fujarka; Z8 zakon → psałterion/dzwonki). Anachronizm schowany pod warstwą narracyjną, niejawny dla gracza w trakcie gry.
+- **Ujawnienie**: meta-wyjaśnienie („to była kalimba, instrument afrykański") trafi do osobnej **kartki autorskiej** dołączanej do koperty — patrz `lore/meta-kartki-autorskie.md`. Czyli naginka zostaje udokumentowana wprost graczowi, ale dopiero po fakcie/poza rozgrywką.
+- Patrz `puzzles/kalimba.md §Instrument narracyjny`.
 
 ### 3. ☆ Nazwa lokalu "Picollo" (jeśli używamy)
 

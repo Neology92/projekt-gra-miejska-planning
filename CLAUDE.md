@@ -102,7 +102,8 @@ projekt_gra-miejska-planning/
 │   ├── postaci.md
 │   ├── miejsca.md
 │   ├── plotki-i-pogloski.md
-│   └── fakty-vs-fabula.md
+│   ├── fakty-vs-fabula.md
+│   └── meta-kartki-autorskie.md  ← akumulator: kartki „od autora" (fakt/legenda/fabuła) do kopert; zadanie na PÓŹNIEJ
 └── todo/
     ├── roadmap.md             ← co dalej, w jakiej kolejności
     └── otwarte-pytania.md     ← decyzje czekające na input
