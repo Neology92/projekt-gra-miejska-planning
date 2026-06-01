@@ -6,7 +6,7 @@
   --sheet-w:  1170px;   /* A4 landscape width  @ ~100 dpi */
   --sheet-h:   827px;   /* A4 landscape height @ ~100 dpi */
   --rail-w:    300px;   /* right rail width (legend / notes only) */
-  --inset-w:   330px;   /* Rynek inset overlay width              */
+  --inset-w:   290px;   /* Rynek inset overlay width (clears S01 to its left) */
   --inset-h:   300px;   /* Rynek inset overlay height             */
   --inset-cap:  26px;   /* inset caption strip height             */
 
@@ -61,7 +61,7 @@ html, body {
 
 #map-inset-overlay {
   position: absolute;
-  bottom: 14px; left: 14px;
+  bottom: 14px; right: 14px;   /* over the Wisła (only pin-free area) */
   width: var(--inset-w);
   height: var(--inset-h);
   z-index: 500;

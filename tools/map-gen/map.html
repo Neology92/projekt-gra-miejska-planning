@@ -138,6 +138,24 @@
   addPins(mapMain, mainCodes, Z1_PLACES);
   addPins(mapMain, landmarkIds, Z1_LANDMARKS);
 
+  // --- Connector: dashed leader from the marked Rynek rectangle to the inset
+  //     overlay box. Drawn in MAP coords (via the overlay's screen position) so
+  //     it stays correct if FROZEN_CENTER/ZOOM change. ---
+  (function drawConnector() {
+    const overlay = document.getElementById('map-inset-overlay');
+    const mainEl  = document.getElementById('map-main');
+    if (!overlay || !mainEl) return;
+    const o = overlay.getBoundingClientRect();
+    const m = mainEl.getBoundingClientRect();
+    const corner = L.point(o.left - m.left, o.top - m.top); // inset top-left, map px
+    const cornerLatLng = mapMain.containerPointToLatLng(corner);
+    const rectCenter = L.latLng((Z1_INSET_SW[0] + Z1_INSET_NE[0]) / 2,
+                                (Z1_INSET_SW[1] + Z1_INSET_NE[1]) / 2);
+    L.polyline([rectCenter, cornerLatLng],
+      { color: '#2a1f0e', weight: 1.2, dashArray: '5,4', opacity: .8, interactive: false })
+      .addTo(mapMain);
+  }());
+
   // --- INSET MAP ---
   const mapInset = L.map('map-inset', {
     zoomControl: false, scrollWheelZoom: false, doubleClickZoom: false,
