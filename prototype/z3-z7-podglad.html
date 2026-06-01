@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Z3 + Z7 — funkcjonalny mock: lista nazwisk + przechwycony list</title>
+<style>
+  :root {
+    --bg: #f4f2ee;
+    --ink: #1d1b18;
+    --muted: #6b6660;
+    --line: #d9d4cc;
+    --parch: #f3ead6;
+    --parch-edge: #d8c9a6;
+    --parch-ink: #2b2114;
+    --radius: 12px;
+    --shadow: 0 1px 2px rgba(0,0,0,.06), 0 8px 24px rgba(0,0,0,.06);
+    --mono: "Cascadia Code", "Consolas", "Courier New", monospace;
+    --serif: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font: 15px/1.55 "Segoe UI", system-ui, -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    padding: clamp(16px, 4vw, 48px);
+  }
+  .wrap { max-width: 880px; margin: 0 auto; }
+  header { max-width: 880px; margin: 0 auto 22px; }
+  h1 { font-size: clamp(1.3rem, 1rem + 1.8vw, 1.9rem); margin: 0 0 6px; letter-spacing: -.02em; }
+  .sub { color: var(--muted); margin: 0 0 8px; max-width: 76ch; }
+  .badge {
+    display: inline-block; font-size: .72rem; text-transform: uppercase; letter-spacing: .07em;
+    background: #f0e3c8; color: #7a5d1d; border: 1px solid #e0cda0;
+    padding: 3px 9px; border-radius: 999px; margin-bottom: 12px; font-weight: 600;
+  }
+  .verify-box {
+    background: #eef3ec; border: 1px solid #cdddc4; border-radius: 10px;
+    padding: 12px 16px; margin: 12px 0 0; color: #38502c; font-size: .92rem;
+  }
+  .verify-box strong { color: #2c401f; }
+
+  /* ---- arkusz-rekwizyt (pergamin) ---- */
+  .sheet {
+    background:
+      radial-gradient(120% 80% at 50% 0%, #f8f1e2 0%, var(--parch) 55%, #ece0c6 100%);
+    border: 1px solid var(--parch-edge);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: clamp(20px, 4vw, 40px);
+    margin-bottom: 24px;
+    color: var(--parch-ink);
+  }
+  .sheet-tag {
+    font: 600 .72rem/1 "Segoe UI", sans-serif; text-transform: uppercase; letter-spacing: .08em;
+    color: #8a6d36; margin: 0 0 4px;
+  }
+  .sheet-tag .en { color: #9a7a3f; font-weight: 500; text-transform: none; letter-spacing: 0; }
+
+  /* nagłówek-motto = KLUCZ. Ten sam font na obu arkuszach. Czytelny mono (NIE Fraktur — patrz nota). */
+  .motto {
+    font-family: var(--mono);
+    font-weight: 700;
+    font-size: clamp(1.05rem, .8rem + 1.3vw, 1.5rem);
+    letter-spacing: .12em;
+    text-align: center;
+    color: #3a2a12;
+    background: #efe3c8;
+    border: 1.5px solid #cdb784;
+    border-radius: 8px;
+    padding: 14px 10px;
+    margin: 6px 0 20px;
+    white-space: nowrap;
+    overflow-x: auto;
+  }
+
+  .frame { font-family: var(--serif); font-size: 1.02rem; line-height: 1.6; }
+  .frame .lead { font-style: italic; color: #4a3b22; margin: 0 0 14px; }
+  .frame p { margin: 0 0 14px; }
+  .seal { font-style: italic; color: #5a4a2c; margin-top: 18px; }
+
+  /* lista nazwisk */
+  ol.names { font-family: var(--serif); font-size: 1.02rem; margin: 0; padding-left: 1.4em; }
+  ol.names li { margin: 8px 0; }
+  ol.names li .nm { font-weight: 700; }
+  ol.names li i { color: #574627; }
+  .names-foot { font-family: var(--serif); font-style: italic; color: #574627; margin: 16px 0 0; }
+  .order-head { font-family: var(--serif); font-weight: 700; margin: 0 0 4px; }
+  .order-sub { font-family: var(--serif); font-style: italic; color: #4a3b22; margin: 0 0 18px; }
+
+  /* ciało szyfrogramu = powierzchnia pracy gracza */
+  .cipher-body {
+    font-family: var(--mono);
+    font-size: clamp(1rem, .85rem + .8vw, 1.35rem);
+    font-weight: 700;
+    letter-spacing: .18em;
+    text-align: center;
+    color: #2b2114;
+    background: #f8f1e0;
+    border: 1.5px dashed #c9b176;
+    border-radius: 8px;
+    padding: 20px 12px;
+    margin: 18px 0;
+    word-spacing: .5em;
+    line-height: 1.9;
+    overflow-x: auto;
+  }
+
+  /* ---- karta MG (czerwona, zasłonić / usunąć przed drukiem dla gracza) ---- */
+  .key-card {
+    border: 1px solid #e3b9b0; background: #fbf3f1; border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: clamp(16px, 3vw, 26px); margin-bottom: 24px;
+  }
+  .key-card h2 { color: #9a4b3c; font-size: .9rem; text-transform: uppercase; letter-spacing: .06em; margin: 0 0 12px; }
+  .key-card h3 { color: #9a4b3c; font-size: .82rem; text-transform: uppercase; letter-spacing: .05em; margin: 18px 0 6px; }
+  .key-card p { margin: 8px 0; }
+  .align {
+    font-family: var(--mono); font-size: clamp(.85rem, .7rem + .7vw, 1.05rem);
+    background: #fdf6f4; border: 1px solid #eccfc8; border-radius: 8px;
+    padding: 14px 16px; margin: 6px 0; white-space: pre; overflow-x: auto; line-height: 1.7;
+    color: #5a2a22;
+  }
+  .answer { font-weight: 700; color: #7a2e22; }
+  code { background: #f3e3df; padding: 1px 6px; border-radius: 5px; font-family: var(--mono); font-size: .9em; }
+  .note { color: var(--muted); font-size: .9rem; margin: 10px 0 0; }
+  .key-card .note { color: #97675f; }
+  ul.tight { margin: 6px 0; padding-left: 1.2em; }
+  ul.tight li { margin: 4px 0; }
+
+  @media print {
+    body { background: #fff; padding: 0; }
+    .sheet, .key-card { box-shadow: none; break-inside: avoid; }
+    .screen-only { display: none; }
+    .sheet { break-after: page; border-color: #bbb; }
+    .key-card { break-before: page; }
+  }
+</style>
+</head>
+<body>
+
+<header class="wrap screen-only">
+  <span class="badge">Funkcjonalny mock — nie finalna grafika · prototype/</span>
+  <h1>Z3 + Z7 · Lista nazwisk &amp; przechwycony list — do weryfikacji zagadki</h1>
+  <p class="sub"><strong>Dwa rekwizyty gracza</strong> (treść po angielsku — gracze nie mówią po polsku; rusztowanie i notki MG po polsku). <strong>Arkusz 1</strong> = pergamin z listą TR, który grupa kradnie Albrechtowi w Z3 (niesie go do finału). <strong>Arkusz 2</strong> = przechwycony list krzyżacki (koperta K8), wydawany przez MG po jednej opcjonalnej (Z4/5/6).</p>
+  <p class="sub"><strong>Mechanika klucza (kanon §0):</strong> oba arkusze noszą <strong>to samo motto Zakonu w tym samym foncie</strong> — na liście (Arkusz 1) <strong>jawne</strong> (<code>HELFEN, HILFEN UND WEHREN!</code>), na przechwyconym liście (Arkusz 2) <strong>zaszyfrowane Cezarem +7</strong> (<code>OLSMLU, OPSMLU BUK DLOYLU!</code>). Gracz kładzie oba obok siebie, porównuje litera-po-literze (przecinek i wykrzyknik lokują słowa) → odkrywa przesunięcie <strong>bez koła, bez wzoru</strong> → odszyfrowuje ciało listu.</p>
+  <div class="verify-box">
+    <strong>Jak zweryfikować zagadkę (dla Ciebie):</strong> zostaw oba nagłówki obok siebie i sprawdź, czy da się „na oko" zobaczyć stałe przesunięcie (H↔O, E↔L, L↔S…). Potem cofnij ciało listu o 7 i sprawdź, czy wychodzi zdanie. Gotowy klucz + wyrównanie liter masz w czerwonej karcie MG na dole — <strong>najpierw spróbuj bez niej</strong>, tak jak gracz.
+  </div>
+  <p class="sub" style="margin-top:12px"><strong>Font:</strong> celowo czytelny monospace (NIE Fraktur). Mechanika wymaga tylko, by <em>oba nagłówki miały TEN SAM font</em> — nie żeby był blackletterem. Fraktur/UnifrakturMaguntia utrudniałby porównanie litera-po-literze i jest odłożony na po dry-runie (decyzja stylizacji, nie treści). To <strong>pytanie do Ciebie</strong> — patrz notka na końcu.</p>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ ARKUSZ 1 — Z3 PERGAMIN (lista nazwisk) ============ -->
+  <div class="sheet">
+    <p class="sheet-tag">Arkusz 1 · rekwizyt gracza (Z3) <span class="en">— Order's intelligence list of the Secret Council</span></p>
+
+    <div class="motto">HELFEN, HILFEN UND WEHREN!</div>
+
+    <p class="order-head">By the hand of the Komtur of Thorn — for the eyes of the Order alone.</p>
+    <p class="order-sub">Those who gather in secret against us. Names gathered from faithful friends within the walls.</p>
+
+    <ol class="names">
+      <li><span class="nm">Hans von Baysen</span> — <i>they call him chairman. Meets the others where the Old Town council sits. Where he lodges by day, we have not learned.</i></li>
+      <li><span class="nm">Tileman vom Wege</span> — burgomaster of the Old Town. <i>Speaks for the council at the gate.</i></li>
+      <li><span class="nm">Rutger von Birken</span> — sent to Kraków. <i>Carries their words to the king.</i></li>
+      <li><span class="nm">Johann Huxer</span> — of the old burgomaster house. <i>Was among the founders, fourteen years past.</i></li>
+      <li><span class="nm">Hermann Rusop</span> — of the old burgomaster house. <i>The same.</i></li>
+      <li><span class="nm">Gabriel von Baysen</span> — <i>brother to the chairman. Bound to the league.</i></li>
+      <li><span class="nm">— von Hutten</span> — <i>given name not known to us. Seen entering after the eighth bell.</i></li>
+      <li><span class="nm">A Watzenrode</span> — <i>which of the house, uncertain.</i></li>
+      <li><span class="nm">— von Datteln</span> — <i>reported by one friend only; not yet confirmed.</i></li>
+      <li><span class="nm">— von Allen</span> — <i>of the house at the square. Presence doubtful.</i></li>
+    </ol>
+
+    <p class="names-foot">Others sit with them whose names we have not yet bought.</p>
+  </div>
+
+  <!-- ============ ARKUSZ 2 — Z7 PRZECHWYCONY LIST (szyfrogram) ============ -->
+  <div class="sheet">
+    <p class="sheet-tag">Arkusz 2 · rekwizyt gracza (Z7, koperta K8) <span class="en">— intercepted dispatch, Komtur of Thorn → Marienburg</span></p>
+
+    <div class="motto">OLSMLU, OPSMLU BUK DLOYLU!</div>
+
+    <div class="frame">
+      <p class="lead">To the Hochmeister at Marienburg. In haste — and for your eyes alone.</p>
+      <p>You pressed me to learn the head of their secret council — the one who hides himself among them. I have it. I will not trust the plain words to any road. I set it down by our word, as we agreed:</p>
+    </div>
+
+    <div class="cipher-body">QVYKHU AOL JVVR PZ OHUZ CVU IHFZLU AOLPY JOHPYTHU</div>
+
+    <div class="frame">
+      <p class="lead">Read it, then burn it. If this falls into the wrong hands before you, our word still keeps it shut.</p>
+      <p class="seal">— by the hand of the Komtur of Thorn</p>
+    </div>
+  </div>
+
+  <!-- ============ KARTA MG ============ -->
+  <div class="key-card">
+    <h2>⚠ Klucz MG — zasłoń / usuń przed drukiem dla gracza</h2>
+
+    <h3>Klucz: Cezar, przesunięcie +7</h3>
+    <p>Szyfrowano <strong>w przód o 7</strong> (A→H). Gracz <strong>cofa o 7</strong> (= naprzód o 19), licząc na palcach / ołówkiem na boku. <strong>Brak koła</strong> — świadoma decyzja (koło byłoby zbyt silną wskazówką).</p>
+
+    <h3>Wyrównanie nagłówków (to odkrywa gracz — porównanie obu arkuszy)</h3>
+    <div class="align">Z3 jawny:   HELFEN, HILFEN UND WEHREN!
+Z7 szyfr:   OLSMLU, OPSMLU BUK DLOYLU!
+            └ każda litera przesunięta o +7 (H→O, E→L, L→S, F→M …) ┘</div>
+
+    <h3>Odszyfrowanie ciała listu</h3>
+    <div class="align">szyfr:  QVYKHU AOL JVVR PZ OHUZ CVU IHFZLU AOLPY JOHPYTHU
+jawny:  JORDAN THE COOK IS HANS VON BAYSEN THEIR CHAIRMAN</div>
+    <p class="answer">Pełne rozwiązanie: „JORDAN THE COOK IS HANS VON BAYSEN THEIR CHAIRMAN" (Jordan = Hans von Baysen, przewodniczący Tajnej Rady).</p>
+    <p>MG <strong>akceptuje sens</strong> (Jordan = Hans von Baysen, głowa TR) — granice słów w szyfrogramie pozwalają uzupełnić pomyłkową literę domysłem, więc drobne błędy nie blokują.</p>
+
+    <h3>Spięcie z listą (Arkusz 1)</h3>
+    <p>Wpis #1 pergaminu, <strong>Hans von Baysen</strong>, to <strong>plant</strong>. Gracz zna sojusznika z Piccolo tylko jako „Jordan" (pseudonim) → nazwisko na liście czyta się jak kolejny radny. Po złamaniu Z7 wraca do listy i widzi: <em>kucharz był #1 na liście gończej Zakonu od początku</em>. „Where he lodges by day, we have not learned" = Zakon nie skojarzył go z kuchnią. Payoff retroaktywny.</p>
+
+    <h3>Hint awaryjny (tylko jeśli grupa utknie)</h3>
+    <p><em>„To samo motto wieńczy oba dokumenty — nagłówek, który się powtarza, to klucz. Połóżcie je obok siebie."</em> <strong>Nie</strong> podawaj liczby 7 — niech odkryją z porównania.</p>
+
+    <h3>Pomocnicza tabela Cezara +7 (dla MG)</h3>
+    <div class="align">jawny:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+szyfr:  H I J K L M N O P Q R S T U V W X Y Z A B C D E F G</div>
+
+    <p class="note">Dane kanoniczne: <code>puzzles/z7-szyfr-spec.md §0</code> · <code>puzzles/z3-lista-tr-spec.md</code>. Drafty źródłowe: <code>prototype/z7-szyfrogram-draft.md</code>, <code>prototype/pergamin-lista-tr-draft.md</code>. Szyfr zweryfikowany ręcznie (round-trip ✓).</p>
+  </div>
+
+  <!-- ============ NOTKI / OTWARTE PYTANIA (tylko ekran) ============ -->
+  <div class="key-card screen-only" style="border-color:#cdb784; background:#fbf6ea;">
+    <h2 style="color:#8a6d36;">Notki do Ciebie — dwie decyzje przed finalizacją</h2>
+    <ul class="tight">
+      <li><strong>(1) Podpowiedź metody na kopii gracza.</strong> Draft Z7 miał na kopii gracza sekcję „HOW TO READ IT", która wprost tłumaczyła metodę (porównaj nagłówki, każda litera przesunięta o tyle samo). <strong>Tu jej nie ma</strong> — spec §0/§5 chce odkrycia <em>bez podpowiedzi</em>, a metoda = hint awaryjny u MG. Jeśli wolisz lekkie rusztowanie na papierze gracza (gra terenowa, brak MG przy stole) — powiedz, dorzucę dyskretną wskazówkę in-world.</li>
+      <li><strong>(2) Font nagłówka.</strong> Tu czytelny monospace, by dało się zweryfikować porównanie litera-po-literze. Fraktur/UnifrakturMaguntia = kandydat na stylizację <em>po dry-runie</em>, ALE może utrudnić odczyt liter (czyli samą zagadkę). Sugeruję: przejdź zagadkę na tym foncie; jeśli porównanie działa płynnie, dopiero wtedy testuj Fraktur. Decyzja Twoja.</li>
+    </ul>
+    <p class="note">Reszta otwartych decyzji Z3: liczba/forma niepełnych wpisów (obecnie 10) · opcjonalna sekcja „znani informatorzy" (domyślnie pominięta) — <code>puzzles/z3-lista-tr-spec.md</code> Decyzje #3/#4.</p>
+  </div>
+
+</div>
+</body>
+</html>
