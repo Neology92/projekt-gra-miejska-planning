@@ -40,15 +40,19 @@ Każda koperta zawiera **5 elementów**:
 
 > Wzorzec [2026-05-31]: Z5/Z9 — piekarz, któremu pomieszały się składniki, + ukryty test „jestem swój" (znajomość przepisu jako hasło wiarygodności). Patrz `puzzles/zagadka-sensoryczna.md`.
 
-### Konwencja głosu — narrator z głów kurierów [decyzja Oskara 2026-06-01]
+### Konwencja głosu — dwa rejestry [decyzja Oskara 2026-06-01]
 
-Koperty pisane są jako **narracja z perspektywy kurierów**: co widzą, co myślą, jakie wnioski się nasuwają — „narrator z ich głów". **Nie** jako rozkazy/instrukcje od nadawcy (Rady, Jordana). Dozwolone **wtrącenia wypowiedzianych kwestii NPC** (cytat w cudzysłowie, spójny z kartą danego aktora).
+Koperta łączy **dwa rejestry**, rozróżniane **typograficznie**:
 
-- **Po co:** immersja + rozwiązuje problem nośnika — skoro koperta nie ma nadawcy, nie trzeba uzasadniać, kto fizycznie ją podał.
+1. **Narracja z głów kurierów** — *kursywa (light)*. Co grupa widzi, myśli, jaki wniosek się nasuwa („narrator z ich głów"). Tu przemycamy mechanikę jako **rozumowanie grupy** („on odwraca się tak samo za każdym razem… czekaj na obrót"), nie imperatyw z zewnątrz.
+2. **Wiadomości z nadawcą** — tekst **prosty (roman)**, z podpisem/nadawcą (zleceniodawca, „— R.", „— J."). Fizyczny dokument, który grupa czyta. Tu też **wypowiedziane kwestie NPC** (cytaty w cudzysłowie) — słowa świata, więc roman.
+
+> **Klucz nadrzędny:** ***kursywa = wewnątrz głowy; roman = słowa świata*** (napisana wiadomość albo wypowiedź NPC).
+
+- **Hybryda, nie „albo/albo":** koperta-wiadomość (np. K1 list zleceniodawcy) dostaje **oprawę narracyjną** (otwarcie/zamknięcie z głów) — **nie jest przepisywana, tylko rozszerzana**. Koperta bez nadawcy (np. K-Z3b) bywa w całości rejestrem narracyjnym, z cytatem NPC roman w środku.
 - **Wręczenie koperty przez NPC** (np. Albrecht wręcza K-Z3b) = **meta-interakcja poza światem gry** (jak rozdanie karty). W fikcji nikt jej nie „daje".
-- **Polecenia/mechanika przemycane jako rozumowanie grupy** („on odwraca się tak samo za każdym razem… czekaj na obrót"), nie jako imperatyw z zewnątrz.
-- **Wzorzec:** `prototype/kZ3b-envelope-draft.md` (v2).
-- ⚠ **Retrofit:** K1/K2/K3 zdraftowano wcześniej w trybie **list-rozkaz od nadawcy** (zleceniodawca/„— R."/„— J."). Do decyzji Oskara, czy przepisać je na tę konwencję, czy zostają (mają jawnego nadawcę-list, więc tryb listu jest tam obronny). Patrz `todo/otwarte-pytania.md`.
+- **Po co narracja:** immersja + rozwiązuje problem nośnika — koperta bez nadawcy nie wymaga uzasadnienia, kto ją podał.
+- **Wzorce:** `prototype/kZ3b-envelope-draft.md` (pełna narracja + cytat roman) · `prototype/k1-envelope-draft.md`, `k2-envelope-draft.md` (hybryda: wiadomość + oprawa narracyjna).
 
 ### Numeracja kopert
 

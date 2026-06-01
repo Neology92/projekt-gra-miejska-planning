@@ -11,6 +11,10 @@
 
 ---
 
+*Four marks walked, four names given — and in return, this. We had hoped to find our contact waiting. Instead: an envelope, and a scrap of paper folded inside it.*
+
+---
+
 **Messengers,**
 
 Your contact is gone.
@@ -72,10 +76,17 @@ Once you have placed Jordan, you will know where he works. Go there — and ask 
 
 ---
 
-*I cannot be there. Too dangerous now.*
-*And it was never mine to keep — I was only ever to pass it on.*
-*This letter is for the head of their Council. Their chairman. Into his own hand, and no other's.*
-*Find the way. — R.*
+I cannot be there. Too dangerous now.
+
+And it was never mine to keep — I was only ever to pass it on.
+
+This letter is for the head of their Council. Their chairman. Into his own hand, and no other's.
+
+Find the way. — R.
+
+---
+
+*So we are on our own. A riddle to point us at a man, a man to point us onward, and the letter still heavy in the bag. Whoever R. was, he is gone — we are not. Three people, three errands. Let us work it out.*
 
 ---
 
@@ -101,3 +112,5 @@ Once you have placed Jordan, you will know where he works. Go there — and ask 
 **Wersja Krzyżacy:** inne K2 (Pula B zamiast A; Z2 prowadzi do Albrechta, nie Jordana). Do napisania przy skalowaniu do MVP.
 
 **Ton:** plot twist (pośrednik zniknął) podany sucho, bez dramatyzmu — bardziej straszny tak niż z fanfarami.
+
+**Dwa rejestry [2026-06-01]:** dorzucone *otwarcie* i *zamknięcie* = kursywa (narracja z głów); main note + slip R. = roman (wiadomości z nadawcą — slip przeniesiony z kursywy na roman dla spójności klucza). Wiadomości **nieruszone treściowo**, tylko oprawa + format. ⚠ **Plotki (overheard)** = przytoczone słowa świata → docelowo roman; zostawione kursywą do passu stylizacyjnego (nie rozszerzam scope). Klucz: kursywa=głowa, roman=słowa świata (`mechanics/koperty-mg.md`).

@@ -12,6 +12,10 @@
 
 ---
 
+*Clear of Piccolo, away from the cook and his ladle, we break the seal.*
+
+---
+
 # INFILTRATE THE CASTLE
 
 **Messengers,**
@@ -32,7 +36,11 @@ Flatter him. Let him boast. A proud man with something to hide always shows more
 
 ---
 
-*Burn nothing. Trust no one in a Teutonic mantle. — J.*
+Burn nothing. Trust no one in a Teutonic mantle. — J.
+
+---
+
+*Scouts, then. We can be scouts. Find the proud Komtur, smile, lie a little, and listen. A man that sure of himself never hides things well.*
 
 ---
 
@@ -48,3 +56,4 @@ Flatter him. Let him boast. A proud man with something to hide always shows more
 - **„Eighth bell" / godzina:** świadomie NIE powtarzana tu (jest w skrypcie Jordana ustnie + w KF). K3 trzyma fokus na zadaniu Z3.
 - **Wersja Krzyżacy (MVP):** lustro = infiltracja Piccolo (Z3Z), inny cel/framing. NIE kopiować 1:1 — patrz `zamek-krzyzacki-lista.md` §Z3Z.
 - **Imię „Albrecht" bez nazwiska** w tekście gracza — wystarcza; „Kalb" w kanonie. Period-styling później.
+- **Dwa rejestry [2026-06-01]:** *otwarcie* (złamanie pieczęci poza Piccolo) + *zamknięcie* (grupa przyjmuje rolę zwiadowców-donosicieli) = kursywa, narracja z głów; nagłówek + „Messengers…" + podpis „— J." = roman (wiadomość Jordana, podpis przeniesiony z kursywy na roman). Klucz: kursywa=głowa, roman=słowa świata (`mechanics/koperty-mg.md`).

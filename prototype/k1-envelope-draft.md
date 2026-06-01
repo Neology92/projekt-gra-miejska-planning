@@ -10,6 +10,10 @@
 
 ---
 
+*The wax gives under your thumb — no seal any of us knows. Inside: a single sheet of instructions, and folded beneath it, heavier, the thing itself. The letter we are paid to carry, and forbidden to read.*
+
+---
+
 **Toruń, 3rd of February, the Year of Our Lord 1454**
 
 **Messengers,**
@@ -49,6 +53,10 @@ After that, you will receive your next instructions.
 
 ---
 
+*So: a letter we cannot read, a road we have to find for ourselves, and a plain promise of what it costs to fail. Whoever wants this carried does not mean for us to enjoy the carrying. The first mark waits on the map. We start walking.*
+
+---
+
 ## PLANNING NOTES (nie dla gracza)
 
 - **Groźba**: "With their hands" — fizyczna, medievalna, bez ozdobników. Celowo krótka.
@@ -57,3 +65,4 @@ After that, you will receive your next instructions.
 - **Rekwizyt w kopercie:** list zapieczętowany (noszą całą grę), mapa (9 glifów, bez nazw), karta deszyfrownika (9 piktogramów → następny glif).
 - **Wersja TR / wersja Krzyżacy**: K1 jest WSPÓLNA dla obu torów (nie zdradza frakcji). Podział następuje dopiero w K2.
 - Ton: rzeczowy, lekko zagrażający — ani epicki, ani przygodowy. Zleceniodawca nie jest wrogiem, ale nie jest przyjacielem.
+- **Dwa rejestry [2026-06-01]:** otwarcie i zamknięcie = *kursywa* (narracja z głów kurierów — wprowadza motyw); środek (data + „Messengers…" + instrukcje mapy) = roman (wiadomość zleceniodawcy). Wiadomość **nieruszona** — dorzucona tylko oprawa. Klucz: kursywa=głowa, roman=słowa świata (`mechanics/koperty-mg.md`).
