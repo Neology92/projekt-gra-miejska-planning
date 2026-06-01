@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Lew złoty — Apteka Pod Złotym Lwem">
+  <title>Lew złoty (Apteka Pod Złotym Lwem)</title>
+  <!-- uszy -->
+  <path d="M16 18 L22 26 L13 25 Z" fill="#a86c38" stroke="#6e4824" stroke-width="2.2" stroke-linejoin="round"/>
+  <path d="M48 18 L42 26 L51 25 Z" fill="#a86c38" stroke="#6e4824" stroke-width="2.2" stroke-linejoin="round"/>
+  <!-- grzywa -->
+  <circle cx="32" cy="31" r="21" fill="#a86c38" stroke="#6e4824" stroke-width="2.6"/>
+  <!-- ornament grzywy -->
+  <circle cx="32" cy="31" r="21" fill="none" stroke="#c08a52" stroke-width="2.6" stroke-dasharray="0.1 5.5" stroke-linecap="round"/>
+  <!-- pysk -->
+  <circle cx="32" cy="34" r="12.5" fill="#efe0b8" stroke="#6e4824" stroke-width="2.4"/>
+  <!-- oczy -->
+  <circle cx="27" cy="31" r="1.9" fill="#5c4310"/>
+  <circle cx="37" cy="31" r="1.9" fill="#5c4310"/>
+  <!-- nos + pyszczek -->
+  <path d="M32 35 L32 38" stroke="#5c4310" stroke-width="2" stroke-linecap="round"/>
+  <path d="M28 39 Q32 42 36 39" fill="none" stroke="#5c4310" stroke-width="2.2" stroke-linecap="round"/>
+</svg>

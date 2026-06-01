@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Flisak ze skrzypcami — Fontanna Flisaka">
+  <title>Flisak ze skrzypcami (Fontanna Flisaka)</title>
+  <!-- DECYZJA OSKARA: skrzypce (figura, którą wypatrujesz) vs żaba (prostsza sylwetka, hak „osiem żab"). Tu = flisak; podmiana na żabę trywialna. -->
+  <!-- kapelusz -->
+  <path d="M22 15 Q32 9 42 15 L45 17 L19 17 Z" fill="#a86c38" stroke="#6e4824" stroke-width="2.4" stroke-linejoin="round"/>
+  <!-- głowa -->
+  <circle cx="32" cy="22" r="5" fill="#efe0b8" stroke="#6e4824" stroke-width="2.2"/>
+  <!-- tułów -->
+  <path d="M24 29 L40 29 L38 50 L26 50 Z" fill="#a86c38" stroke="#6e4824" stroke-width="2.6" stroke-linejoin="round"/>
+  <!-- nogi -->
+  <line x1="29" y1="50" x2="28" y2="58" stroke="#6e4824" stroke-width="3" stroke-linecap="round"/>
+  <line x1="35" y1="50" x2="36" y2="58" stroke="#6e4824" stroke-width="3" stroke-linecap="round"/>
+  <!-- skrzypce pod brodą -->
+  <ellipse cx="23" cy="31" rx="4" ry="6.5" fill="#efe0b8" stroke="#6e4824" stroke-width="2.2" transform="rotate(-32 23 31)"/>
+  <!-- smyczek -->
+  <line x1="17" y1="25" x2="33" y2="39" stroke="#5c4310" stroke-width="2" stroke-linecap="round"/>
+  <!-- ramię ze smyczkiem -->
+  <path d="M40 31 L33 37" fill="none" stroke="#6e4824" stroke-width="2.6" stroke-linecap="round"/>
+</svg>

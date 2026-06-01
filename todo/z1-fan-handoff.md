@@ -20,7 +20,11 @@
 Wybór: **(c) dłuższe pierwsze legi**. Briefing zostaje na Rynku Nowomiejskim, twarda rozłączność P1–P3 **zostaje**, pula P1 rośnie przez głębsze starty (budżet do ~15 min dla grup głębokich). Zapisane w `puzzles/map.md §5.1, §5.3`.
 
 ## ✅ FAN WYKONANY → wynik: `puzzles/z1-10-sciezek.md`
-10 szkieletów ułożonych inline (`puzzles/z1-szkielety-10.md`), fan ×10 (sonnet), pass spójności + montaż zrobione. Wszystkie 10 łańcuchów w budżecie (graniczne G4 ~14,6 i G10 ~15 — prawdopodobnie >15 z czasem odczytu, swap obowiązkowy po pomiarze). G1 skorygowane 2× (P3 `S06`→`N03`→finalnie `N06`; reguła „pewne detale→łańcuch, niepewne→dystraktor"). **Następny krok: DECYZJA OSKARA — krucha G2 (3/4 kroków łańcucha z `⚠` detalem) + czy rebalansować wg reguły (patrz `z1-10-sciezek.md` §Ryzyka globalne); pula pewnych miejsc ciasna ~11/30 slotów).** Potem dry-run terenowy, tabela kod→gmerk, 9 ikon, mapy HTML.
+10 szkieletów ułożonych inline (`puzzles/z1-szkielety-10.md`), fan ×10 (sonnet), pass spójności + montaż zrobione. Wszystkie 10 łańcuchów w budżecie (graniczne G4 ~14,6 i G10 ~15 — prawdopodobnie >15 z czasem odczytu, swap obowiązkowy po pomiarze). G1 skorygowane 2× (P3 `S06`→`N03`→finalnie `N06`; reguła „pewne detale→łańcuch, niepewne→dystraktor").
+
+**✅ Decyzja G2 [Oskar 2026-06-01]: opcja (i) — zostaw, weryfikacja na dry-runie.** Zrobione potem: arkusz dry-runu (`puzzles/z1-dry-run-sheet.md`), globalna tabela glifów + pozycje (`puzzles/z1-glify-globalne.md`, 20 kodów), 9 ikon (22 total, `prototype/icons-contact-sheet.html`).
+
+**Następny krok: bazowa mapa SVG → 10 widoków per ścieżka** (wzór `prototype/mapa-z1-podglad.html`), niesione w teren jako wejście dry-runu. Dry-run terenowy (Oskar) = długi tor, odblokowany arkuszem.
 
 ## Otwarte (mniejsze)
 - **#2 słabe detale:** `N03` Modry Fartuch (tylko nazwa — Oskar: zostaw + teren), `N05` bazylika (→ piktogram łuków przyporowych + teren), `N04` lew (godziny apteki, nie 24/7 — OK tylko jeśli gra w godz. otwarcia).

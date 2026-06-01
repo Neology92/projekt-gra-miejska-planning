@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Wąska uliczka z łukami odporowymi — Ulica Ciasna">
+  <title>Wąska uliczka z łukami (Ulica Ciasna)</title>
+  <!-- szczelina nieba/ulicy w głębi -->
+  <rect x="28" y="16" width="8" height="40" fill="#efe0b8"/>
+  <!-- lewa ściana (perspektywa) -->
+  <path d="M6 8 L24 16 L24 56 L6 56 Z" fill="#a86c38" stroke="#6e4824" stroke-width="2.6" stroke-linejoin="round"/>
+  <!-- prawa ściana -->
+  <path d="M58 8 L40 16 L40 56 L58 56 Z" fill="#a86c38" stroke="#6e4824" stroke-width="2.6" stroke-linejoin="round"/>
+  <!-- łuki odporowe między ścianami -->
+  <path d="M24 24 Q32 18 40 24" fill="none" stroke="#5c4310" stroke-width="2.6" stroke-linecap="round"/>
+  <path d="M24 36 Q32 30 40 36" fill="none" stroke="#5c4310" stroke-width="2.6" stroke-linecap="round"/>
+  <path d="M24 48 Q32 42 40 48" fill="none" stroke="#5c4310" stroke-width="2.6" stroke-linecap="round"/>
+</svg>

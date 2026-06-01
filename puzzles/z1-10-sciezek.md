@@ -108,7 +108,10 @@
 
 ## Ryzyka globalne
 
-### 🔴 DECYZJA OSKARA: krucha grupa G2 + reguła „pewne→łańcuch"
+### ✅ DECYZJA OSKARA [2026-06-01 → opcja (i)]: G2 zostaje, weryfikacja na dry-runie
+**Wybór: (i) — zostaw, zweryfikuj w terenie.** G2 bez zmian; trzy detale `⚠` (N03/N04/N05) trafiają na **priorytet 1 arkusza dry-runu** (`z1-dry-run-sheet.md`). Jeśli teren obali którykolwiek → wracamy do (ii)/(iii). Reguła „pewne→łańcuch, niepewne→dystraktor" **nie jest** stosowana do pełnego rebalansu teraz (pula pewnych ciasna ~11/30).
+
+### 🔴 (kontekst decyzji) krucha grupa G2 + reguła „pewne→łańcuch"
 **`G2 = N03(fartuch⚠) → N04(lew-godziny⚠) → N05(bazylika⚠) → C01` — 3 z 4 kroków łańcucha mają niepewny detal.** To najkruchszy łańcuch zestawu: jeśli dry-run obali którykolwiek z trzech, G2 pada. Krok łańcucha z niewypatrzalnym detalem = **nierozwiązywalny** (nie „trudny"); ten sam detal w pętli dystraktorów jest nieszkodliwy. Stąd reguła: **detale `⚠` → pętle dystraktorów; detale pewne → łańcuchy.** G1 już tak przerobione.
 
 **Problem z pełnym rebalansem (czemu to Twoja decyzja, nie moja jednostronna):** pula *pewnych* miejsc łańcuchowych przy jednym briefingu NE to ~**11** (`N01`,`N02`,`N06` + 8× C), a slotów łańcuchowych jest **30** (10 grup × P1/P2/P3). 11 miejsc × 3 pozycje = 33 — teoretycznie starcza, ale ciasno i geometria NE→SW dodatkowo wiąże. Pełne wypchnięcie `N03/N04/N05` z łańcuchów do dystraktorów może się **nie domknąć w 100%** bez zmiany modelu (np. briefing między Rynkami → uwalnia więcej pewnych C jako tanie P1). Opcje dla Ciebie:
@@ -123,15 +126,15 @@
 
 ## Ikony do wygenerowania (unia faktycznie użytych detali)
 
-Gotowe (`prototype/icons/`, §7): `piernik` `astrolabium` `melonik` `gwiazda` `osioł` `brama-zaokraglona` `kaszownik` `zegar-jedna-wskazowka` `trabka` `kosciol-bez-wiezy` `herb-tarcza`.
+✅ **WSZYSTKIE 22 GOTOWE** [2026-06-01] — `prototype/icons/`, §7. Arkusz kontaktowy: `prototype/icons-contact-sheet.html`.
+- Wcześniejsze 13: `piernik` `astrolabium` `delfin` `melonik` `gwiazda` `osiol` `brama-zaokraglona` `kaszownik` `zegar-jedna-wskazowka` `trabka` `worek-zboza` `kosciol-bez-wiezy` `herb-tarcza`.
+- Nowe 9 (ta sesja): `waga`(N02) · `lew`(N04) · `fartuch`(N03 — narysowana mimo `⚠`; dry-run weryfikuje *widoczność*, nie rysowalność) · `bazylika-luki`(N05) · `szafa`(N06) · `wieza-bez-helmu`(C04) · `kotwica`(S04) · `waska-uliczka-luki`(S06) · `flisak`(D01 — rysunek = skrzypce; **flaga**: żaba jako prostsza sylwetka, swap trywialny).
 
-**Do zrobienia (9, styl §7):** `waga` (N02) · `lew` (N04) · `fartuch` (N03, dopiero po potwierdzeniu detalu w terenie) · `bazylika-luki` / `luki-przyporowe` (N05) · `szafa` (N06) · `wieza-bez-helmu` (C04) · `kotwica` (S04) · `waska-uliczka-luki` (S06) · `flisak` (D01 — decyzja: skrzypce czy żaba jako sylwetka).
-
-> Niewykorzystane jako dystraktory (z listy worst-case handoffu — NIE generować): `aniol` `baszta` `brama-luk` `dwa-szczyty` `schodkowy-szczyt` `wieza-bez-helmu`(jest), `osioł`(jest). Pula dystraktorów zbiegła się do W01/S01/S02/S04/D01 + miejsc N/C — znacznie węższa niż zakładano.
+> Niewykorzystane (NIE generować): `aniol` `baszta` `brama-luk` `dwa-szczyty` `schodkowy-szczyt`. Pula dystraktorów zbiegła się do W01/S01/S02/S04/D01 + miejsc N/C.
 
 ## Następne kroki
-1. Review Oskara: ścieżki, ryzyka globalne (zwł. #1 `N03`, #2 `N04`).
-2. Dry-run terenowy: weryfikacja `⚠ teren` (N03/N04/N05/S06) + pomiar nóg granicznych (G4, G10).
-3. Globalna tabela kod→gmerk (jeden glif na kod, spójnie dla wszystkich 10 map).
-4. Wektoryzacja 9 brakujących ikon.
-5. Mapy HTML per ścieżka (wzór `prototype/mapa-z1-podglad.html`).
+1. ✅ Decyzja G2 = opcja (i) [Oskar 2026-06-01].
+2. 🔴 **Dry-run terenowy (Oskar)** — arkusz: `z1-dry-run-sheet.md`. Weryfikacja `⚠` (N03/N04/N05/S06) + pomiar nóg granicznych (G4, G10) + czas/postój. **Długi tor** (godziny aptek, światło) — odblokowany.
+3. ✅ Globalna tabela kod→glif + pozycje x/y: `z1-glify-globalne.md` (20 kodów; render = placeholder geometryczny, gmerki dla Z6).
+4. ✅ Wektoryzacja 9 ikon — gotowe (22 total, arkusz kontaktowy).
+5. ⏳ **Bazowa mapa SVG** (20 glifów na pozycjach z `z1-glify-globalne.md`) → **10 widoków per ścieżka** (wzór `prototype/mapa-z1-podglad.html`). Mapy niosone w teren jako *wejście* dry-runu; 3 kontyngentne (G2/G4/G10) domykane po pomiarze.

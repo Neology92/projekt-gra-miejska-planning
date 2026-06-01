@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Łuki przyporowe / bazylika — Kościół św. Jakuba">
+  <title>Łuki przyporowe (Kościół św. Jakuba)</title>
+  <!-- nawa boczna lewa (niższa) -->
+  <path d="M10 30 L10 56 L26 56 L26 30 Z" fill="#efe0b8" stroke="#6e4824" stroke-width="2.4" stroke-linejoin="round"/>
+  <!-- nawa boczna prawa -->
+  <path d="M38 30 L38 56 L54 56 L54 30 Z" fill="#efe0b8" stroke="#6e4824" stroke-width="2.4" stroke-linejoin="round"/>
+  <!-- nawa główna (wysoka, środek) -->
+  <path d="M26 14 L32 6 L38 14 L38 56 L26 56 Z" fill="#a86c38" stroke="#6e4824" stroke-width="2.6" stroke-linejoin="round"/>
+  <!-- okno ostrołukowe nawy głównej -->
+  <path d="M30 22 Q32 17 34 22 L34 31 L30 31 Z" fill="#efe0b8" stroke="#6e4824" stroke-width="1.8" stroke-linejoin="round"/>
+  <!-- łuki przyporowe (skarpy) -->
+  <path d="M10 33 Q18 26 26 31" fill="none" stroke="#5c4310" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M54 33 Q46 26 38 31" fill="none" stroke="#5c4310" stroke-width="2.4" stroke-linecap="round"/>
+</svg>
