@@ -31,6 +31,12 @@
   --tex-fiber:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='f' x='0' y='0' width='300' height='300' filterUnits='userSpaceOnUse'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.010 0.050' numOctaves='3' seed='7' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23f)' opacity='0.09'/%3E%3C/svg%3E");
   --tex-fiber-strong:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='f2' x='0' y='0' width='300' height='300' filterUnits='userSpaceOnUse'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.010 0.050' numOctaves='4' seed='11' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23f2)' opacity='0.15'/%3E%3C/svg%3E");
 
+  /* RELIEF texture (chosen by Oskar 2026-06-02 = "relief-strong"). feDiffuseLighting reads fractalNoise as a
+     height-field → directional micro-shadows = the rough "normal-map" feel of parchment grain under fixed light.
+     Applied as a .sheet::after layer with mix-blend-mode:multiply (the lit image darkens the parch in the pits).
+     Per-asset variety = swap seed via .tx-N classes below (same DNA, different fibre pattern). Tile 300, seamless. */
+  --tex-relief:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='r' x='0' y='0' width='300' height='300' filterUnits='userSpaceOnUse'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.05' numOctaves='3' seed='7' stitchTiles='stitch' result='n'/%3E%3CfeDiffuseLighting in='n' surfaceScale='2.6' diffuseConstant='1.05' lighting-color='%23ffffff' result='l'%3E%3CfeDistantLight azimuth='235' elevation='58'/%3E%3C/feDiffuseLighting%3E%3CfeColorMatrix in='l' type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23r)' opacity='0.16'/%3E%3C/svg%3E");
+
   /* penned strokes (slightly irregular, double-inked) — stretch to fit */
   --pen-underline:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 10' preserveAspectRatio='none'%3E%3Cpath d='M2,6 C40,3 70,8.2 102,5.5 C134,3 168,7.6 198,5.2' fill='none' stroke='%2316110c' stroke-width='1.8' stroke-linecap='round'/%3E%3Cpath d='M3,7.6 C42,5.3 72,8.9 104,6.7 C136,4.7 168,8.3 197,6.5' fill='none' stroke='%2316110c' stroke-width='1' stroke-linecap='round' opacity='0.4'/%3E%3C/svg%3E");
   --pen-rule:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 8' preserveAspectRatio='none'%3E%3Cpath d='M2,4.4 C45,3.2 80,5.4 118,4.2 C150,3.2 175,5 198,4.1' fill='none' stroke='%2316110c' stroke-width='1.3' stroke-linecap='round'/%3E%3C/svg%3E");
@@ -62,16 +68,14 @@ body{
   letter-spacing:.004em;
   text-rendering:optimizeLegibility;
 
-  /* default parchment = the "soft" background */
+  /* default parchment = parch tone + soft shading gradients (fibre/relief comes from ::after) */
   background-color:var(--parch);
   background-image:
     radial-gradient(116% 114% at 50% 50%, transparent 58%, rgba(82,66,42,.10) 88%, rgba(82,66,42,.17) 100%),
     radial-gradient(72% 56% at 20% 16%, rgba(120,104,74,.05), transparent 60%),
-    radial-gradient(80% 60% at 84% 82%, rgba(120,104,74,.055), transparent 60%),
-    var(--tex-fiber),
-    var(--tex-grain);
-  background-repeat:no-repeat,no-repeat,no-repeat,repeat,repeat;
-  background-size:auto,auto,auto,300px 300px,160px 160px;
+    radial-gradient(80% 60% at 84% 82%, rgba(120,104,74,.055), transparent 60%);
+  background-repeat:no-repeat,no-repeat,no-repeat;
+  background-size:auto,auto,auto;
   background-position:center;
 
   -webkit-mask:var(--edge-mask) center / 100% 100% no-repeat;
@@ -79,6 +83,28 @@ body{
   -webkit-mask-mode:alpha; mask-mode:alpha;
   -webkit-print-color-adjust:exact; print-color-adjust:exact;
 }
+
+/* RELIEF grain layer (chosen 2026-06-02). Sits above the parch+gradients, below the text.
+   mix-blend-mode:multiply lets the lit height-field darken the parchment in its micro-pits.
+   No HTML change needed: pseudo-element + content lifted above it. */
+.sheet::after{
+  content:''; position:absolute; inset:0; z-index:0; pointer-events:none;
+  background-image:var(--tex-relief);
+  background-repeat:repeat; background-size:300px 300px;
+  mix-blend-mode:multiply;
+}
+.sheet > *{ position:relative; z-index:1; }   /* keep all text above the relief layer */
+
+/* Per-asset variety: put .tx-N on <html> to swap the relief seed (same look, different fibre pattern).
+   Assign one per envelope type so no two props share an identical grain. Default (no class) = seed 7.
+   K1=tx-2 · K2=tx-3 · K3=tx-4 · K-Z3b=tx-5 · K-Z4=tx-6 · KF=tx-7 · Z3 list=default · Z7=tx-8 (suggested map). */
+.tx-2{ --tex-relief:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='r' x='0' y='0' width='300' height='300' filterUnits='userSpaceOnUse'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.05' numOctaves='3' seed='13' stitchTiles='stitch' result='n'/%3E%3CfeDiffuseLighting in='n' surfaceScale='2.6' diffuseConstant='1.05' lighting-color='%23ffffff' result='l'%3E%3CfeDistantLight azimuth='235' elevation='58'/%3E%3C/feDiffuseLighting%3E%3CfeColorMatrix in='l' type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23r)' opacity='0.16'/%3E%3C/svg%3E"); }
+.tx-3{ --tex-relief:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='r' x='0' y='0' width='300' height='300' filterUnits='userSpaceOnUse'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.05' numOctaves='3' seed='23' stitchTiles='stitch' result='n'/%3E%3CfeDiffuseLighting in='n' surfaceScale='2.6' diffuseConstant='1.05' lighting-color='%23ffffff' result='l'%3E%3CfeDistantLight azimuth='235' elevation='58'/%3E%3C/feDiffuseLighting%3E%3CfeColorMatrix in='l' type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23r)' opacity='0.16'/%3E%3C/svg%3E"); }
+.tx-4{ --tex-relief:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='r' x='0' y='0' width='300' height='300' filterUnits='userSpaceOnUse'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.05' numOctaves='3' seed='31' stitchTiles='stitch' result='n'/%3E%3CfeDiffuseLighting in='n' surfaceScale='2.6' diffuseConstant='1.05' lighting-color='%23ffffff' result='l'%3E%3CfeDistantLight azimuth='235' elevation='58'/%3E%3C/feDiffuseLighting%3E%3CfeColorMatrix in='l' type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23r)' opacity='0.16'/%3E%3C/svg%3E"); }
+.tx-5{ --tex-relief:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='r' x='0' y='0' width='300' height='300' filterUnits='userSpaceOnUse'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.05' numOctaves='3' seed='43' stitchTiles='stitch' result='n'/%3E%3CfeDiffuseLighting in='n' surfaceScale='2.6' diffuseConstant='1.05' lighting-color='%23ffffff' result='l'%3E%3CfeDistantLight azimuth='235' elevation='58'/%3E%3C/feDiffuseLighting%3E%3CfeColorMatrix in='l' type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23r)' opacity='0.16'/%3E%3C/svg%3E"); }
+.tx-6{ --tex-relief:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='r' x='0' y='0' width='300' height='300' filterUnits='userSpaceOnUse'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.05' numOctaves='3' seed='61' stitchTiles='stitch' result='n'/%3E%3CfeDiffuseLighting in='n' surfaceScale='2.6' diffuseConstant='1.05' lighting-color='%23ffffff' result='l'%3E%3CfeDistantLight azimuth='235' elevation='58'/%3E%3C/feDiffuseLighting%3E%3CfeColorMatrix in='l' type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23r)' opacity='0.16'/%3E%3C/svg%3E"); }
+.tx-7{ --tex-relief:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='r' x='0' y='0' width='300' height='300' filterUnits='userSpaceOnUse'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.05' numOctaves='3' seed='73' stitchTiles='stitch' result='n'/%3E%3CfeDiffuseLighting in='n' surfaceScale='2.6' diffuseConstant='1.05' lighting-color='%23ffffff' result='l'%3E%3CfeDistantLight azimuth='235' elevation='58'/%3E%3C/feDiffuseLighting%3E%3CfeColorMatrix in='l' type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23r)' opacity='0.16'/%3E%3C/svg%3E"); }
+.tx-8{ --tex-relief:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='r' x='0' y='0' width='300' height='300' filterUnits='userSpaceOnUse'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.05' numOctaves='3' seed='83' stitchTiles='stitch' result='n'/%3E%3CfeDiffuseLighting in='n' surfaceScale='2.6' diffuseConstant='1.05' lighting-color='%23ffffff' result='l'%3E%3CfeDistantLight azimuth='235' elevation='58'/%3E%3C/feDiffuseLighting%3E%3CfeColorMatrix in='l' type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23r)' opacity='0.16'/%3E%3C/svg%3E"); }
 
 /* ===================== Background variants ===================== */
 /* bg-soft = default .sheet (declared above). bg-foxing adds faint age spots. */
