@@ -57,17 +57,17 @@ Theming: **podmieniony cukiernik** → miejsce „spożywcze" (Cukiernia) staje 
 
 #### Wersja themingowa (Jordan / Piccolo / chochla) — tor TR
 
-> Zmiana wobec fundamentu **tylko**: Cukiernia → **Piccolo**, jej produkt pierniki → **gorąca strawa** (wydawana chochlą), Ulrich → **Jordan**. Reszta identyczna.
+> Zmiana wobec fundamentu: Cukiernia → **Piccolo**, jej produkt pierniki → **gorąca strawa** (wydawana chochlą), Ulrich → **Jordan**; Kuźnia – produkt podkowy → **chochle** (metal, kucharz kupuje u kowala). Reszta identyczna.
 
 **Polecenie:** Te trzy osoby poszły dziś rano na miasto i każda coś kupiła. Wskaż, kto co kupił oraz gdzie pracują.
 
 **Miejsca (i co tam wytwarzają):**
 - Stary Młyn – chleb
 - **Piccolo – gorąca strawa** *(kuchnia; wydawana chochlą)*
-- Kuźnia – podkowy
+- Kuźnia – chochle
 
 **Imiona:** Kordian, Lambert, **Jordan**
-**Zakupy:** jedzenie, podkowa, sukno
+**Zakupy:** jedzenie, chochla, sukno
 
 **Pogłoski (prawdziwe):**
 1. Lambert mógł zjeść coś u siebie, ale poszedł kupić jedzenie gdzieś indziej.
@@ -77,14 +77,13 @@ Theming: **podmieniony cukiernik** → miejsce „spożywcze" (Cukiernia) staje 
 **Rozwiązanie (jednoznaczne ✓):**
 | Osoba | Pracuje | Kupił(a) |
 |---|---|---|
-| Kordian | Kuźnia (podkowy) | sukno |
+| Kordian | Kuźnia (chochle) | sukno |
 | Lambert | Stary Młyn (chleb) | jedzenie (strawa — z Piccolo) |
-| **Jordan** | **Piccolo (strawa)** | podkowa (od Kordiana) |
+| **Jordan** | **Piccolo (strawa)** | chochla (od Kordiana) |
 
-**Wyjście = imię + miejsce + atrybut:** rozwiązanie mówi, że **Jordan pracuje w Piccolo**. Gracz idzie do Piccolo i rozpoznaje kontakt — **kucharza z chochlą** = Jordan. Imię (z zagadki) + miejsce (z dedukcji) + atrybut (chochla = narzędzie kucharza w Piccolo, sygnał rozpoznawczy na miejscu, spójny z hasłem-testem „imię Jordan").
+**Wyjście = imię + miejsce + atrybut:** rozwiązanie mówi, że **Jordan pracuje w Piccolo**. Gracz idzie do Piccolo i rozpoznaje kontakt — **kucharza z chochlą** = Jordan. Imię (z zagadki) + miejsce (z dedukcji) + atrybut (chochla = narzędzie kucharza w Piccolo, sygnał rozpoznawczy na miejscu, spójny z hasłem-testem „imię Jordan"). Dodatkowa spójność: Jordan kupuje chochlę u kowala (kucharz kompletuje wyposażenie kuchni) — chochla pełni podwójną rolę: zakup w zagadce i atrybut rozpoznawczy w Piccolo.
 
-**Drobne do ewentualnej decyzji (zostawiam Tobie):**
-- „Jordan kupił podkowę" — kucharz kupujący podkowę jest neutralny (sprawunek przy okazji). Jeśli wolisz spójniejszy przedmiot, można zamienić produkt **Kuźni** na np. **kocioł / nóż kuchenny** (kucharz kupuje sprzęt od kowala) — jedyna sensowna podmiana „concrete object", logika zostaje.
+**Drobna do ewentualnej decyzji:**
 - „Piccolo" anachroniczne wobec 1454 (CLAUDE.md) — użyte zgodnie z Twoją trójką jako realna nazwa lokalu docelowego; w fikcji opisane jako kuchnia/gospoda.
 - **Theming krzyżacki:** ten wzorzec prowadzi do Jordana/Piccolo (TR). Krzyżacy idą do Albrechta — ich Z2 potrzebuje innego celu (inne imię/miejsce), **ta sama struktura logiczna**.
 
