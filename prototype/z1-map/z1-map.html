@@ -104,14 +104,6 @@
     { color: '#2a1f0e', weight: 1.5, fill: false, dashArray: '4,3', interactive: false }
   ).addTo(mapMain);
 
-  // START marker on main map
-  const startIcon = L.divIcon({
-    className: 'z1-start-marker',
-    html: 'START',
-    iconAnchor: [20, 10],
-  });
-  L.marker(START_COORDS, { icon: startIcon, interactive: false, keyboard: false }).addTo(mapMain);
-
   // All puzzle pins on main map (exclude inset cluster — shown in inset only)
   Object.keys(Z1_PLACES).forEach(code => {
     if (Z1_INSET_CODES.includes(code)) return;
@@ -162,7 +154,7 @@
 
   tileInset.once('load', () => { insetTilesLoaded = true; checkReady(); });
 
-  mapInset.fitBounds([Z1_INSET_SW, Z1_INSET_NE], { padding: [12, 12] });
+  mapInset.fitBounds([Z1_INSET_SW, Z1_INSET_NE], { padding: [8, 8] });
 
   // All inset-cluster pins
   Z1_INSET_CODES.forEach(code => {

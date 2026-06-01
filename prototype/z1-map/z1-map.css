@@ -85,6 +85,9 @@ body.parchment .leaflet-tile-pane {
 .leaflet-control-attribution,
 .leaflet-control-zoom { display: none !important; }
 
+/* Leaflet default bg is #ddd — override so tile-loading gaps match page bg */
+.leaflet-container { background: #e8e2d4; }
+
 /* --- Pin marker (shared across main + inset) ----------------------------- */
 
 .z1-pin {

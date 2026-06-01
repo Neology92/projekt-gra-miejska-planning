@@ -27,24 +27,24 @@ const Z1_PLACES = {
 
 // Glyph SVG bodies (no <svg> wrapper; will be embedded at x=4 y=4 width=24 height=24 viewBox="0 0 32 32")
 const Z1_GLYPHS = {
-  // N-zone: directional triangles
-  N01: '<polygon points="16,4 28,27 4,27" fill="none" stroke="#2a1f0e" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>',
-  N02: '<polygon points="16,28 28,5 4,5" fill="none" stroke="#2a1f0e" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>',
-  N03: '<polygon points="5,16 27,4 27,28" fill="none" stroke="#2a1f0e" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>',
-  N04: '<polygon points="27,16 5,4 5,28" fill="none" stroke="#2a1f0e" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>',
+  // N-zone: directional triangles (centroid shifted to 16,16 for optical centering)
+  N01: '<polygon points="16,1 28,24 4,24" fill="none" stroke="#2a1f0e" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>',
+  N02: '<polygon points="16,31 28,8 4,8" fill="none" stroke="#2a1f0e" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>',
+  N03: '<polygon points="1,16 23,4 23,28" fill="none" stroke="#2a1f0e" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>',
+  N04: '<polygon points="31,16 9,4 9,28" fill="none" stroke="#2a1f0e" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>',
   N05: '<polygon points="16,4 27.4,12.3 23.1,25.7 8.9,25.7 4.6,12.3" fill="none" stroke="#2a1f0e" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>',
   N06: '<polygon points="28,16 22,5.6 10,5.6 4,16 10,26.4 22,26.4" fill="none" stroke="#2a1f0e" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>',
   // C-zone: geometric/grid marks
   C01: '<polygon points="16,3 29,16 16,29 3,16" fill="none" stroke="#2a1f0e" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>',
-  C02: '<rect x="4" y="4" width="24" height="24" fill="none" stroke="#2a1f0e" stroke-width="2.4" stroke-linejoin="round"/>',
+  C02: '<rect x="6" y="6" width="20" height="20" fill="none" stroke="#2a1f0e" stroke-width="2.4" stroke-linejoin="round"/>',
   C03: '<polyline points="4,26 16,6 28,26" fill="none" stroke="#2a1f0e" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>',
-  C04: '<rect x="4" y="4" width="24" height="24" fill="none" stroke="#2a1f0e" stroke-width="2.4" stroke-linejoin="round"/><line x1="16" y1="4" x2="16" y2="28" stroke="#2a1f0e" stroke-width="2.4" stroke-linecap="round"/><line x1="4" y1="16" x2="28" y2="16" stroke="#2a1f0e" stroke-width="2.4" stroke-linecap="round"/>',
+  C04: '<rect x="6" y="6" width="20" height="20" fill="none" stroke="#2a1f0e" stroke-width="2.4" stroke-linejoin="round"/><line x1="16" y1="6" x2="16" y2="26" stroke="#2a1f0e" stroke-width="2.4" stroke-linecap="round"/><line x1="6" y1="16" x2="26" y2="16" stroke="#2a1f0e" stroke-width="2.4" stroke-linecap="round"/>',
   C06: '<path d="M4,16 C8,8 12,8 16,16 C20,24 24,24 28,16" fill="none" stroke="#2a1f0e" stroke-width="2.4" stroke-linecap="round"/>',
   C07: '<line x1="11" y1="3" x2="11" y2="29" stroke="#2a1f0e" stroke-width="2.4" stroke-linecap="round"/><line x1="21" y1="3" x2="21" y2="29" stroke="#2a1f0e" stroke-width="2.4" stroke-linecap="round"/><line x1="3" y1="11" x2="29" y2="11" stroke="#2a1f0e" stroke-width="2.4" stroke-linecap="round"/><line x1="3" y1="21" x2="29" y2="21" stroke="#2a1f0e" stroke-width="2.4" stroke-linecap="round"/>',
-  C08: '<rect x="4" y="4" width="24" height="24" fill="none" stroke="#2a1f0e" stroke-width="2.4" stroke-linejoin="round"/><line x1="16" y1="4" x2="16" y2="28" stroke="#2a1f0e" stroke-width="2.4" stroke-linecap="round"/><line x1="4" y1="28" x2="16" y2="16" stroke="#2a1f0e" stroke-width="1.4" stroke-linecap="round"/><line x1="4" y1="20" x2="12" y2="12" stroke="#2a1f0e" stroke-width="1.4" stroke-linecap="round"/><line x1="8" y1="28" x2="16" y2="20" stroke="#2a1f0e" stroke-width="1.4" stroke-linecap="round"/>',
-  C09: '<rect x="4" y="4" width="24" height="24" fill="none" stroke="#2a1f0e" stroke-width="2.4" stroke-linejoin="round"/><line x1="4" y1="16" x2="28" y2="16" stroke="#2a1f0e" stroke-width="2.4" stroke-linecap="round"/>',
+  C08: '<rect x="6" y="6" width="20" height="20" fill="none" stroke="#2a1f0e" stroke-width="2.4" stroke-linejoin="round"/><line x1="16" y1="6" x2="16" y2="26" stroke="#2a1f0e" stroke-width="2.4" stroke-linecap="round"/><line x1="6" y1="26" x2="16" y2="16" stroke="#2a1f0e" stroke-width="1.4" stroke-linecap="round"/><line x1="6" y1="20" x2="12" y2="14" stroke="#2a1f0e" stroke-width="1.4" stroke-linecap="round"/><line x1="10" y1="26" x2="16" y2="20" stroke="#2a1f0e" stroke-width="1.4" stroke-linecap="round"/>',
+  C09: '<rect x="6" y="6" width="20" height="20" fill="none" stroke="#2a1f0e" stroke-width="2.4" stroke-linejoin="round"/><line x1="6" y1="16" x2="26" y2="16" stroke="#2a1f0e" stroke-width="2.4" stroke-linecap="round"/>',
   // S-zone: cross marks
-  S01: '<line x1="5" y1="5" x2="27" y2="27" stroke="#2a1f0e" stroke-width="2.8" stroke-linecap="round"/><line x1="27" y1="5" x2="5" y2="27" stroke="#2a1f0e" stroke-width="2.8" stroke-linecap="round"/>',
+  S01: '<line x1="7" y1="7" x2="25" y2="25" stroke="#2a1f0e" stroke-width="2.8" stroke-linecap="round"/><line x1="25" y1="7" x2="7" y2="25" stroke="#2a1f0e" stroke-width="2.8" stroke-linecap="round"/>',
   S02: '<line x1="16" y1="28" x2="16" y2="14" stroke="#2a1f0e" stroke-width="2.4" stroke-linecap="round"/><line x1="16" y1="14" x2="8" y2="4" stroke="#2a1f0e" stroke-width="2.4" stroke-linecap="round"/><line x1="16" y1="14" x2="16" y2="4" stroke="#2a1f0e" stroke-width="2.4" stroke-linecap="round"/><line x1="16" y1="14" x2="24" y2="4" stroke="#2a1f0e" stroke-width="2.4" stroke-linecap="round"/>',
   S04: '<line x1="11" y1="5" x2="11" y2="27" stroke="#2a1f0e" stroke-width="2.4" stroke-linecap="round"/><line x1="21" y1="5" x2="21" y2="27" stroke="#2a1f0e" stroke-width="2.4" stroke-linecap="round"/>',
   // W-zone / D-zone
@@ -69,9 +69,10 @@ const Z1_GROUPS = {
 // Rynek Staromiejski cluster → rendered in inset only
 const Z1_INSET_CODES = ['C01','C02','C03','C04','C06','C07','D01'];
 
-// Inset bounding box (SW, NE) — Rynek cluster + margin
-const Z1_INSET_SW = [53.0098, 18.6036];
-const Z1_INSET_NE = [53.0114, 18.6058];
+// Inset bounding box (SW, NE) — tight around actual cluster points + minimal margin
+// Cluster lat 53.0101–53.0111, lng 18.6040–18.6053 → zoom ~17 in inset
+const Z1_INSET_SW = [53.0099, 18.6038];
+const Z1_INSET_NE = [53.0113, 18.6056];
 
 // FROZEN view — calibrate via z1-map-tune.html, then paste values here
 // Target: whole Stare + Nowe Miasto with ~5% margin; zoom as high as fits
