@@ -41,17 +41,10 @@
 <script>
 (function () {
   // --- parse URL params ---
-  const params  = new URLSearchParams(location.search);
-  const groupId = (params.get('view') || 'G1').toUpperCase();
-  const style   = params.get('style') || 'clean'; // 'clean' | 'parchment'
+  const params = new URLSearchParams(location.search);
+  const style  = params.get('style') || 'clean'; // 'clean' | 'parchment'
 
   if (style === 'parchment') document.body.classList.add('parchment');
-
-  const activeCodes = Z1_GROUPS[groupId];
-  if (!activeCodes) {
-    document.body.innerHTML = '<p style="padding:20px;font-family:monospace">Unknown group: ' + groupId + '</p>';
-    return;
-  }
 
   // --- readiness signal for headless render ---
   let mainTilesLoaded = false, insetTilesLoaded = false;
@@ -119,11 +112,10 @@
   });
   L.marker(START_COORDS, { icon: startIcon, interactive: false, keyboard: false }).addTo(mapMain);
 
-  // Active pins on main map (exclude inset cluster — shown in inset only)
-  activeCodes.forEach(code => {
+  // All puzzle pins on main map (exclude inset cluster — shown in inset only)
+  Object.keys(Z1_PLACES).forEach(code => {
     if (Z1_INSET_CODES.includes(code)) return;
     const place = Z1_PLACES[code];
-    if (!place) return;
     L.marker(place.coords, { icon: makePin(code), interactive: false, keyboard: false })
       .addTo(mapMain);
   });
@@ -172,9 +164,8 @@
 
   mapInset.fitBounds([Z1_INSET_SW, Z1_INSET_NE], { padding: [12, 12] });
 
-  // Active pins that belong to inset cluster
-  activeCodes.forEach(code => {
-    if (!Z1_INSET_CODES.includes(code)) return;
+  // All inset-cluster pins
+  Z1_INSET_CODES.forEach(code => {
     const place = Z1_PLACES[code];
     if (!place) return;
     L.marker(place.coords, { icon: makePin(code), interactive: false, keyboard: false })
