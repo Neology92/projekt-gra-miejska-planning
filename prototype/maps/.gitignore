@@ -1,0 +1,3 @@
+# Rendered map artifacts (regenerate via tools/map-gen/render-map.ps1)
+*.png
+*.pdf

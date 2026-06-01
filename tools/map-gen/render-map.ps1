@@ -1,21 +1,24 @@
-# render-map.ps1 — headless Chrome: PNG + PDF (A4 landscape) for Z1 navigation map
+# render-map.ps1 — headless Chrome: PNG + PDF (A4 landscape) for a navigation map.
+# General map-gen engine; map-data.js currently holds the Z1 prototype data.
 #
 # Usage:
-#   pwsh -File render-map.ps1              # render clean style
+#   pwsh -File render-map.ps1                       # group 'all', clean style
+#   pwsh -File render-map.ps1 -Group G3             # one group's 9 marks + fill-in key
 #   pwsh -File render-map.ps1 -Style parchment
-#   pwsh -File render-map.ps1 -Compare     # clean + parchment side-by-side
+#   pwsh -File render-map.ps1 -Compare              # clean + parchment side-by-side
 #
 # Requirements: network (Leaflet CDN + CARTO tiles). One-time pre-game render.
-# Output: output/z1-map.png + output/z1-map.pdf  (or z1-map-parchment.*)
+# Output: ../../prototype/maps/z1-<group>.png + .pdf  (e.g. z1-all.png, z1-G3.png)
 
 param(
   [string]$Style  = 'clean',  # clean | parchment
+  [string]$Group  = 'all',    # all | G1..G10
   [switch]$Compare            # render both styles for aesthetics check
 )
 
 $ErrorActionPreference = 'Stop'
 $here   = $PSScriptRoot
-$outDir = Join-Path $here 'output'
+$outDir = Join-Path (Resolve-Path (Join-Path $here '..\..')) 'prototype\maps'
 if (-not (Test-Path $outDir)) { New-Item -ItemType Directory -Path $outDir | Out-Null }
 
 # --- Locate Chrome or Edge ---
@@ -40,18 +43,20 @@ $H = 827
 function Render-Map {
   param([string]$StyleName)
 
-  $htmlPath = Join-Path $here 'z1-map.html'
+  $htmlPath = Join-Path $here 'map.html'
   $suffix   = if ($StyleName -ne 'clean') { "-$StyleName" } else { '' }
-  $uri      = ([System.Uri]$htmlPath).AbsoluteUri + "?style=$StyleName"
-  $pngOut   = Join-Path $outDir "z1-map$suffix.png"
-  $pdfOut   = Join-Path $outDir "z1-map$suffix.pdf"
+  $uri      = ([System.Uri]$htmlPath).AbsoluteUri + "?style=$StyleName&group=$Group"
+  $pngOut   = Join-Path $outDir "z1-$Group$suffix.png"
+  $pdfOut   = Join-Path $outDir "z1-$Group$suffix.pdf"
 
-  Write-Host "  Rendering ($StyleName)..." -NoNewline
+  Write-Host "  Rendering ($StyleName, $Group)..." -NoNewline
 
-  # Phase 1: screenshot PNG
-  # --virtual-time-budget unreliable for network tiles; we rely on window.__ready flag.
-  # Classic headless polls window.__ready via --run-all-compositor-stages-before-draw.
-  # Fallback: 10s timeout baked into z1-map.html.
+  if (Test-Path $pngOut) { Remove-Item $pngOut -Force -ErrorAction SilentlyContinue }
+
+  # Phase 1: screenshot PNG. Fallback for tile load: 10s timeout baked into map.html.
+  # NOTE: do NOT add --user-data-dir — a fresh profile breaks --screenshot on
+  # Chrome 147. The screenshot child flushes asynchronously, so we POLL for the
+  # file to appear & stabilise rather than trusting an immediate Test-Path.
   $args1 = @(
     '--headless'
     '--no-sandbox'
@@ -64,7 +69,18 @@ function Render-Map {
     $uri
   )
   & $browser @args1 2>$null
-  $pngOk = Test-Path $pngOut
+
+  # Wait for async screenshot flush (size must stabilise), up to 25s.
+  $deadline = (Get-Date).AddSeconds(25)
+  $lastLen  = -1
+  do {
+    Start-Sleep -Milliseconds 400
+    $len = if (Test-Path $pngOut) { (Get-Item $pngOut).Length } else { 0 }
+    if ($len -gt 0 -and $len -eq $lastLen) { break }
+    $lastLen = $len
+  } until ((Get-Date) -gt $deadline)
+
+  $pngOk = (Test-Path $pngOut) -and ((Get-Item $pngOut).Length -gt 0)
 
   if (-not $pngOk) {
     Write-Host " PNG FAILED" -ForegroundColor Red
@@ -84,6 +100,7 @@ img{display:block;width:297mm;height:210mm;object-fit:fill}
   $wrapperPath = Join-Path $env:TEMP "z1-wrap$suffix.html"
   Set-Content -Path $wrapperPath -Value $wrapperHtml -Encoding UTF8
 
+  if (Test-Path $pdfOut) { Remove-Item $pdfOut -Force -ErrorAction SilentlyContinue }
   $args2 = @(
     '--headless'
     '--no-sandbox'
@@ -93,9 +110,19 @@ img{display:block;width:297mm;height:210mm;object-fit:fill}
     ([System.Uri]$wrapperPath).AbsoluteUri
   )
   & $browser @args2 2>$null
+
+  $deadline2 = (Get-Date).AddSeconds(20)
+  $lastPdf   = -1
+  do {
+    Start-Sleep -Milliseconds 400
+    $plen = if (Test-Path $pdfOut) { (Get-Item $pdfOut).Length } else { 0 }
+    if ($plen -gt 0 -and $plen -eq $lastPdf) { break }
+    $lastPdf = $plen
+  } until ((Get-Date) -gt $deadline2)
+
   Remove-Item $wrapperPath -ErrorAction SilentlyContinue
 
-  $pdfOk = Test-Path $pdfOut
+  $pdfOk = (Test-Path $pdfOut) -and ((Get-Item $pdfOut).Length -gt 0)
   $pdfKb = if ($pdfOk) { [math]::Round((Get-Item $pdfOut).Length / 1KB) } else { 0 }
 
   $pngLabel = "{0,6} KB" -f $pngKb
@@ -106,15 +133,15 @@ img{display:block;width:297mm;height:210mm;object-fit:fill}
 # --- Main ---
 $styles = if ($Compare) { @('clean','parchment') } else { @($Style) }
 
-Write-Host "`nZ1 Map Render — $($styles.Count) job(s)`n"
+Write-Host "`nMap Render ($Group) — $($styles.Count) job(s)`n"
 foreach ($s in $styles) { Render-Map -StyleName $s }
 
 Write-Host "`nDone. Output: $outDir"
 Write-Host ""
 Write-Host "NEXT STEPS:"
-Write-Host "  1. Open output/z1-map.png at 100% zoom — check:"
+Write-Host "  1. Open prototype/maps/z1-$Group.png at 100% zoom — check:"
 Write-Host "     - building edges sharp (not pixelated)"
-Write-Host "     - all 19 puzzle pins + 2 landmarks visible"
-Write-Host "     - Rynek inset box in corner, cluster pins separated"
-Write-Host "  2. Open output/z1-map.pdf at 300% — no blur on raster"
+Write-Host "     - the group's marks on the map + matching rows in the KEY"
+Write-Host "     - Rynek inset (right rail) shows the Old-Town cluster, pins separated"
+Write-Host "  2. Open prototype/maps/z1-$Group.pdf at 300% — no blur on raster"
 Write-Host "  3. If tiles are grey/missing: re-run (CDN timeout on first run)"

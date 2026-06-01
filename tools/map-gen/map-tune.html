@@ -6,11 +6,11 @@
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
       integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
       crossorigin="anonymous"/>
-<link rel="stylesheet" href="z1-map.css"/>
+<link rel="stylesheet" href="map.css"/>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
         crossorigin="anonymous"></script>
-<script src="z1-map-data.js"></script>
+<script src="map-data.js"></script>
 </head>
 <body class="tune">
 
@@ -29,7 +29,7 @@
   1. Pan &amp; zoom until all 19 pins fit with ~5% margin<br>
   2. Keep zoom near an integer (e.g. 15 not 14.7) for sharper CARTO tiles<br>
   3. Copy the <em>center</em> and <em>zoom</em> values from the readout above<br>
-  4. Paste into <code>z1-map-data.js</code>:<br>
+  4. Paste into <code>map-data.js</code>:<br>
   &nbsp;&nbsp;<code>FROZEN_CENTER = [lat, lng]</code><br>
   &nbsp;&nbsp;<code>FROZEN_ZOOM = zoom</code>
 </div>

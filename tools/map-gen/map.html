@@ -2,39 +2,55 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Z1 Navigation Map</title>
+<title>Navigation Map</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
       integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
       crossorigin="anonymous"/>
-<link rel="stylesheet" href="z1-map.css"/>
+<link rel="stylesheet" href="map.css"/>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
         crossorigin="anonymous"></script>
-<script src="z1-map-data.js"></script>
+<script src="map-data.js"></script>
 </head>
 <body>
 
-<div id="map-container">
+<div id="sheet">
 
-  <!-- Main map -->
-  <div id="map-main"></div>
+  <!-- ============ LEFT: map column ============ -->
+  <div id="map-col">
+    <div id="map-main"></div>
 
-  <!-- North arrow (top-right, above inset) -->
-  <svg id="north-arrow" viewBox="0 0 32 44" xmlns="http://www.w3.org/2000/svg">
-    <polygon points="16,4 22,22 16,18 10,22" fill="#2a1f0e"/>
-    <polygon points="16,4 10,22 16,18 22,22" fill="#c8b89a" stroke="#2a1f0e" stroke-width="0.8"/>
-    <line x1="16" y1="4" x2="16" y2="32" stroke="#2a1f0e" stroke-width="1"/>
-    <text x="16" y="43" text-anchor="middle" font-family="Georgia,serif" font-size="9" fill="#2a1f0e" font-weight="bold">N</text>
-  </svg>
+    <!-- North arrow -->
+    <svg id="north-arrow" viewBox="0 0 32 44" xmlns="http://www.w3.org/2000/svg">
+      <polygon points="16,4 22,22 16,18 10,22" fill="#2a1f0e"/>
+      <polygon points="16,4 10,22 16,18 22,22" fill="#c8b89a" stroke="#2a1f0e" stroke-width="0.8"/>
+      <line x1="16" y1="4" x2="16" y2="32" stroke="#2a1f0e" stroke-width="1"/>
+      <text x="16" y="43" text-anchor="middle" font-family="Georgia,serif" font-size="9" fill="#2a1f0e" font-weight="bold">N</text>
+    </svg>
 
-  <!-- Inset (Rynek Staromiejski detail) -->
-  <div id="map-inset-wrap">
-    <div id="map-inset"></div>
-    <div id="inset-caption">Rynek Staromiejski · detail</div>
+    <!-- Attribution (ToS requirement) -->
+    <div id="attribution"></div>
   </div>
 
-  <!-- Attribution (ToS requirement) -->
-  <div id="attribution"></div>
+  <!-- ============ RIGHT: rail ============ -->
+  <div id="rail">
+
+    <!-- Rynek inset detail -->
+    <div id="rail-inset-wrap">
+      <div id="map-inset"></div>
+      <div id="inset-caption">Rynek Staromiejski &middot; detail</div>
+    </div>
+
+    <!-- Fill-in legend -->
+    <div id="rail-legend">
+      <div id="legend-head">
+        <div id="legend-title">KEY</div>
+        <div id="legend-sub">Write each place beside its mark as you find it.</div>
+      </div>
+      <div id="legend-rows"></div>
+    </div>
+
+  </div>
 
 </div>
 
@@ -42,9 +58,26 @@
 (function () {
   // --- parse URL params ---
   const params = new URLSearchParams(location.search);
-  const style  = params.get('style') || 'clean'; // 'clean' | 'parchment'
+  const style  = params.get('style') || 'clean';   // 'clean' | 'parchment'
+  const group  = params.get('group') || 'all';     // 'all' | 'G1'..'G10'
 
   if (style === 'parchment') document.body.classList.add('parchment');
+
+  // --- active codes for this view ---
+  const activeCodes = (group === 'all' || !Z1_GROUPS[group])
+    ? Object.keys(Z1_PLACES)
+    : Z1_GROUPS[group].filter(c => Z1_PLACES[c]);
+
+  const insetSet   = new Set(Z1_INSET_CODES);
+  const mainCodes  = activeCodes.filter(c => !insetSet.has(c));
+  const insetCodes = activeCodes.filter(c =>  insetSet.has(c));
+
+  // Legend order: zone order for codes, then landmarks
+  const ZONE_ORDER = ['N01','N02','N03','N04','N05','N06',
+                      'C01','C02','C03','C04','C06','C07','C08','C09',
+                      'S01','S02','S04','W01','D01'];
+  const legendCodes = ZONE_ORDER.filter(c => activeCodes.includes(c));
+  const landmarkIds = Object.keys(Z1_LANDMARKS);
 
   // --- readiness signal for headless render ---
   let mainTilesLoaded = false, insetTilesLoaded = false;
@@ -57,13 +90,17 @@
     }
   }
 
-  // --- pin builder (handles both puzzle codes and landmark ids) ---
+  // --- glyph lookup (puzzle codes + landmark ids) ---
+  function glyphFor(code) {
+    return Z1_GLYPHS[code] || (Z1_LANDMARKS[code] && Z1_LANDMARKS[code].glyph) || '';
+  }
+
+  // --- pin builder ---
   function makePin(code) {
-    const glyph = Z1_GLYPHS[code] || (Z1_LANDMARKS[code] && Z1_LANDMARKS[code].glyph);
     const pinSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 44" width="32" height="44">
       <path d="M16,42 C10,34 4,26 4,16 A12,12 0 1,1 28,16 C28,26 22,34 16,42Z"
             fill="#faf0d8" stroke="#2a1f0e" stroke-width="1.4"/>
-      <svg x="8" y="8" width="16" height="16" viewBox="0 0 32 32">${glyph}</svg>
+      <svg x="8" y="8" width="16" height="16" viewBox="0 0 32 32">${glyphFor(code)}</svg>
     </svg>`;
     return L.divIcon({
       className: 'z1-pin',
@@ -74,95 +111,101 @@
     });
   }
 
+  function addPins(map, codes, source) {
+    codes.forEach(code => {
+      const place = source[code];
+      if (!place) return;
+      L.marker(place.coords, { icon: makePin(code), interactive: false, keyboard: false })
+        .addTo(map);
+    });
+  }
+
   // --- MAIN MAP ---
   const mapMain = L.map('map-main', {
-    zoomControl:       false,
-    scrollWheelZoom:   false,
-    doubleClickZoom:   false,
-    touchZoom:         false,
-    dragging:          false,
-    keyboard:          false,
-    attributionControl: false,
-    zoomSnap:          0,
-    zoomDelta:         0,
-    inertia:           false,
+    zoomControl: false, scrollWheelZoom: false, doubleClickZoom: false,
+    touchZoom: false, dragging: false, keyboard: false,
+    attributionControl: false, zoomSnap: 0, zoomDelta: 0, inertia: false,
   });
 
-  const tileMain = L.tileLayer(TILE_URL, {
-    detectRetina: true,
-    maxZoom: 19,
-    attribution: TILE_ATTR,
-  }).addTo(mapMain);
-
-  tileMain.once('load', () => { mainTilesLoaded = true; checkReady(); });
+  L.tileLayer(TILE_URL, { detectRetina: true, maxZoom: 19, attribution: TILE_ATTR })
+    .addTo(mapMain)
+    .once('load', () => { mainTilesLoaded = true; checkReady(); });
 
   mapMain.setView(FROZEN_CENTER, FROZEN_ZOOM);
 
   // Inset outline rectangle on main map
-  const insetRect = L.rectangle(
-    [Z1_INSET_SW, Z1_INSET_NE],
-    { color: '#2a1f0e', weight: 1.5, fill: false, dashArray: '4,3', interactive: false }
-  ).addTo(mapMain);
+  L.rectangle([Z1_INSET_SW, Z1_INSET_NE],
+    { color: '#2a1f0e', weight: 1.5, fill: false, dashArray: '4,3', interactive: false })
+    .addTo(mapMain);
 
-  // All puzzle pins on main map (exclude inset cluster — shown in inset only)
-  Object.keys(Z1_PLACES).forEach(code => {
-    if (Z1_INSET_CODES.includes(code)) return;
-    const place = Z1_PLACES[code];
-    L.marker(place.coords, { icon: makePin(code), interactive: false, keyboard: false })
-      .addTo(mapMain);
-  });
-
-  // Fixed landmarks — always shown on all maps (same pin style, own glyph)
-  Object.keys(Z1_LANDMARKS).forEach(lid => {
-    const lm = Z1_LANDMARKS[lid];
-    L.marker(lm.coords, { icon: makePin(lid), interactive: false, keyboard: false })
-      .addTo(mapMain);
-  });
-
-  // Attribution — DOM construction avoids innerHTML with external strings
-  (function buildAttribution() {
-    const el = document.getElementById('attribution');
-    const osmLink = document.createElement('a');
-    osmLink.href = 'https://www.openstreetmap.org/copyright';
-    osmLink.textContent = 'OpenStreetMap';
-    const cartoLink = document.createElement('a');
-    cartoLink.href = 'https://carto.com/attributions';
-    cartoLink.textContent = 'CARTO';
-    el.appendChild(document.createTextNode('© '));
-    el.appendChild(osmLink);
-    el.appendChild(document.createTextNode(' contributors · © '));
-    el.appendChild(cartoLink);
-  }());
+  addPins(mapMain, mainCodes, Z1_PLACES);
+  addPins(mapMain, landmarkIds, Z1_LANDMARKS);
 
   // --- INSET MAP ---
   const mapInset = L.map('map-inset', {
-    zoomControl:       false,
-    scrollWheelZoom:   false,
-    doubleClickZoom:   false,
-    touchZoom:         false,
-    dragging:          false,
-    keyboard:          false,
-    attributionControl: false,
-    inertia:           false,
+    zoomControl: false, scrollWheelZoom: false, doubleClickZoom: false,
+    touchZoom: false, dragging: false, keyboard: false,
+    attributionControl: false, inertia: false,
   });
 
-  const tileInset = L.tileLayer(TILE_URL, {
-    detectRetina: true,
-    maxZoom: 19,
-    attribution: TILE_ATTR,
-  }).addTo(mapInset);
+  L.tileLayer(TILE_URL, { detectRetina: true, maxZoom: 19, attribution: TILE_ATTR })
+    .addTo(mapInset)
+    .once('load', () => { insetTilesLoaded = true; checkReady(); });
 
-  tileInset.once('load', () => { insetTilesLoaded = true; checkReady(); });
+  mapInset.fitBounds([Z1_INSET_SW, Z1_INSET_NE], { padding: [10, 10] });
+  addPins(mapInset, insetCodes, Z1_PLACES);
 
-  mapInset.fitBounds([Z1_INSET_SW, Z1_INSET_NE], { padding: [8, 8] });
+  // --- LEGEND (fill-in rows: glyph = ______) ---
+  (function buildLegend() {
+    const host = document.getElementById('legend-rows');
 
-  // All inset-cluster pins
-  Z1_INSET_CODES.forEach(code => {
-    const place = Z1_PLACES[code];
-    if (!place) return;
-    L.marker(place.coords, { icon: makePin(code), interactive: false, keyboard: false })
-      .addTo(mapInset);
-  });
+    function rowFor(code, glyph) {
+      const row = document.createElement('div');
+      row.className = 'legend-row';
+
+      const swatch = document.createElement('span');
+      swatch.className = 'lg-swatch';
+      // glyph strings come from our own static map-data.js (same trust level as makePin)
+      swatch.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="26" height="26">${glyph}</svg>`;
+
+      const eq = document.createElement('span');
+      eq.className = 'lg-eq';
+      eq.textContent = '=';
+
+      const line = document.createElement('span');
+      line.className = 'lg-line';
+
+      row.appendChild(swatch);
+      row.appendChild(eq);
+      row.appendChild(line);
+      return row;
+    }
+
+    legendCodes.forEach(code => host.appendChild(rowFor(code, glyphFor(code))));
+
+    // Fixed landmarks — visually divided (always-present reference marks)
+    if (landmarkIds.length) {
+      const div = document.createElement('div');
+      div.className = 'legend-divider';
+      host.appendChild(div);
+      landmarkIds.forEach(lid => host.appendChild(rowFor(lid, glyphFor(lid))));
+    }
+  }());
+
+  // --- ATTRIBUTION (DOM construction; no innerHTML with external strings) ---
+  (function buildAttribution() {
+    const el = document.getElementById('attribution');
+    const osm = document.createElement('a');
+    osm.href = 'https://www.openstreetmap.org/copyright';
+    osm.textContent = 'OpenStreetMap';
+    const carto = document.createElement('a');
+    carto.href = 'https://carto.com/attributions';
+    carto.textContent = 'CARTO';
+    el.appendChild(document.createTextNode('© '));
+    el.appendChild(osm);
+    el.appendChild(document.createTextNode(' contributors · © '));
+    el.appendChild(carto);
+  }());
 
 })();
 </script>

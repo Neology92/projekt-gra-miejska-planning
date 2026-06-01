@@ -1,58 +1,161 @@
-/* Z1 map — print-ready layout, 1170×827 px (A4 landscape at ~100 dpi)
-   With --force-device-scale-factor=3 → 3510×2481 px PNG ≈ 300 dpi print */
+/* General navigation map — print layout (A4 landscape ~100 dpi).
+   With --force-device-scale-factor=3 → 3510×2481 px PNG ≈ 300 dpi print.
+   Sheet + rail dimensions are CSS variables → easy to retune aspect / height. */
+
+:root {
+  --sheet-w:  1170px;   /* A4 landscape width  @ ~100 dpi */
+  --sheet-h:   827px;   /* A4 landscape height @ ~100 dpi */
+  --rail-w:    372px;   /* right rail width                */
+  --inset-h:   338px;   /* Rynek inset box height in rail  */
+  --inset-cap:  26px;   /* inset caption strip height      */
+
+  --ink:       #2a1f0e;
+  --ink-soft:  #7a6a54;
+  --rule:      #c8b89a;
+  --paper:     #faf6ef;
+  --page-bg:   #f7f1e8;
+  --tile-bg:   #e8e2d4;
+}
 
 *, *::before, *::after { box-sizing: border-box; }
 
 html, body {
   margin: 0; padding: 0;
-  width: 1170px; height: 827px;
+  width: var(--sheet-w); height: var(--sheet-h);
   overflow: hidden;
-  background: #f7f1e8;
+  background: var(--page-bg);
   font-family: Georgia, 'Times New Roman', serif;
 }
 
-#map-container {
+/* ---- Sheet split: map column + rail ------------------------------------ */
+
+#sheet {
+  display: flex;
+  width: var(--sheet-w);
+  height: var(--sheet-h);
+}
+
+#map-col {
   position: relative;
-  width: 1170px;
-  height: 827px;
+  flex: 1 1 auto;
+  height: 100%;
+  border-right: 1.5px solid var(--ink);
 }
 
 #map-main {
   position: absolute;
-  top: 0; left: 0;
-  width: 1170px;
-  height: 827px;
+  inset: 0;
 }
 
-/* --- Inset box ----------------------------------------------------------- */
+#rail {
+  flex: 0 0 var(--rail-w);
+  width: var(--rail-w);
+  height: 100%;
+  background: var(--paper);
+  display: flex;
+  flex-direction: column;
+}
 
-#map-inset-wrap {
-  position: absolute;
-  bottom: 48px; right: 14px;
-  width: 340px; height: 270px;
-  background: #faf6ef;
-  border: 1.5px solid #2a1f0e;
-  z-index: 500;
-  box-shadow: 2px 2px 6px rgba(0,0,0,.20);
+/* ---- Inset (Rynek detail) --------------------------------------------- */
+
+#rail-inset-wrap {
+  flex: 0 0 var(--inset-h);
+  height: var(--inset-h);
+  border-bottom: 1.5px solid var(--ink);
+  display: flex;
+  flex-direction: column;
 }
 
 #map-inset {
-  width: 340px;
-  height: 246px; /* caption takes 24px */
+  flex: 1 1 auto;
+  width: 100%;
 }
 
 #inset-caption {
-  height: 24px;
-  line-height: 24px;
+  flex: 0 0 var(--inset-cap);
+  height: var(--inset-cap);
+  line-height: var(--inset-cap);
   text-align: center;
-  font-size: 10px;
+  font-size: 11px;
   letter-spacing: .05em;
-  color: #2a1f0e;
-  border-top: 1px solid #c8b89a;
-  padding: 0 4px;
+  color: var(--ink);
+  background: var(--paper);
+  border-top: 1px solid var(--rule);
 }
 
-/* --- North arrow --------------------------------------------------------- */
+/* ---- Legend (fill-in: glyph = ______) --------------------------------- */
+
+#rail-legend {
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 14px 18px 12px;
+}
+
+#legend-head { margin-bottom: 10px; }
+
+#legend-title {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: .16em;
+  color: var(--ink);
+  border-bottom: 2px solid var(--ink);
+  padding-bottom: 5px;
+}
+
+#legend-sub {
+  font-size: 9.5px;
+  font-style: italic;
+  color: var(--ink-soft);
+  margin-top: 5px;
+  line-height: 1.35;
+}
+
+#legend-rows {
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;   /* spread rows over available height */
+}
+
+.legend-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 0;
+}
+
+.lg-swatch {
+  flex: 0 0 28px;
+  width: 28px; height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lg-swatch svg { display: block; }
+
+.lg-eq {
+  flex: 0 0 auto;
+  font-size: 15px;
+  color: var(--ink-soft);
+}
+
+.lg-line {
+  flex: 1 1 auto;
+  border-bottom: 1.5px dotted #a89878;
+  height: 1em;
+}
+
+.legend-divider {
+  height: 0;
+  border-top: 1px solid var(--rule);
+  margin: 2px 0;
+}
+
+/* ---- North arrow ------------------------------------------------------- */
 
 #north-arrow {
   position: absolute;
@@ -61,64 +164,39 @@ html, body {
   width: 32px; height: 44px;
 }
 
-/* --- Attribution footer -------------------------------------------------- */
+/* ---- Attribution footer ----------------------------------------------- */
 
 #attribution {
   position: absolute;
   bottom: 8px; left: 10px;
   font-size: 8px;
-  color: #7a6a54;
+  color: var(--ink-soft);
   z-index: 500;
   line-height: 1.3;
 }
 
-#attribution a { color: #7a6a54; text-decoration: none; }
+#attribution a { color: var(--ink-soft); text-decoration: none; }
 
-/* --- Parchment overlay --------------------------------------------------- */
+/* ---- Parchment overlay ------------------------------------------------- */
 
-body.parchment .leaflet-tile-pane {
-  filter: sepia(.35) saturate(.7) brightness(1.05);
-}
+body.parchment .leaflet-tile-pane { filter: sepia(.35) saturate(.7) brightness(1.05); }
 
-/* --- Leaflet chrome suppressed ------------------------------------------ */
+/* ---- Leaflet chrome suppressed ---------------------------------------- */
 
 .leaflet-control-attribution,
 .leaflet-control-zoom { display: none !important; }
 
-/* Leaflet default bg is #ddd — override so tile-loading gaps match page bg */
-.leaflet-container { background: #e8e2d4; }
+.leaflet-container { background: var(--tile-bg); }
 
-/* --- Pin marker (shared across main + inset) ----------------------------- */
+/* ---- Pin marker (shared main + inset) --------------------------------- */
 
 .z1-pin {
-  /* sizing handled by iconSize in JS */
   cursor: default;
   filter: drop-shadow(0 1px 2px rgba(0,0,0,.25));
 }
 
-/* --- START marker -------------------------------------------------------- */
-
-.z1-start-marker {
-  background: #8b0000;
-  color: #fff;
-  font-family: Georgia, serif;
-  font-size: 9px;
-  font-weight: bold;
-  letter-spacing: .08em;
-  padding: 2px 5px;
-  border: 1px solid #5a0000;
-  white-space: nowrap;
-  pointer-events: none;
-}
-
-/* --- Inset outline rectangle (on main map) ------------------------------ */
-
-.z1-inset-rect {
-  /* style set via L.rectangle options */
-}
-
 /* -------------------------------------------------------------------------
-   TUNE page overrides (z1-map-tune.html adds class="tune" to body)
+   TUNE page overrides (map-tune.html adds class="tune" to body)
    -------------------------------------------------------------------------*/
 
 body.tune {
