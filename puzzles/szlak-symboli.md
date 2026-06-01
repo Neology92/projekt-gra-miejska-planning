@@ -41,27 +41,42 @@ Reguły dla **każdej** trasy (per grupa). Każda nowa trasa musi je spełniać.
 7. **Omijać miejsca zarezerwowane** pod inne zagadki: Biedronka/polichromie (Z10), herby/Aleja Gmerków (Z6), zamek/Gdanisko (Z3/finał); Fontanna Flisaka tylko jako dystraktor (motyw Z4).
 8. **Dyspersja:** różne grupy = różne łańcuchy (różny pierwszy glif / inne przystanki), by się nie tłoczyły.
 
-## Trasa prototypu (propozycja — tor TR, 4 kroki)
+## Trasa prototypu (tor TR, 4 kroki) — Wariant A [decyzja Oskara 2026-06-02]
 
-Jednokierunkowy sweep **Nowe Miasto → centrum**, kończący na **Rynku Staromiejskim — tam kręci się MG** (przyjmuje raport Z1, wydaje K2). Wszystkie punkty 24/7 z ulicy. Dystanse orientacyjne — zweryfikuj w terenie.
+> **Zmiana [2026-06-02]:** wyrównanie legów przez przesunięcie środkowego przystanku na obrzeże Rynku (SW). **Pod Gwiazdą wypada z łańcucha → przechodzi do dystraktorów; Krzywa Wieża wchodzi do łańcucha.** Cel: równiejsze legi bez łamania reguły „dokładnie 4 kroki" i bez wchodzenia w Aleję Gmerków (rezerwa Z6, środek osi między rynkami). Stary wariant (Pod Gwiazdą zamiast Krzywej Wieży) → **backup niżej**.
 
-| Krok | Glif (mapa) | Teren — miejsce | Detal (deszyfrownik) | Marsz do nast. | → następny glif |
-|---|---|---|---|---|---|
-| start (calc) | — | *Rynek Nowomiejski* (punkt odniesienia) | — | ~2,5 min → | — |
-| 1 (z K1) | △ trójkąt | **Pomnik Piernikarki** | 🍪 piernik | ~3,5 min → | → ○ okrąg |
-| 2 | ○ okrąg | **Kamienica Pod Gwiazdą**, Rynek 35 | ⭐ gwiazda (1697) | ~1,5 min → | → □ kwadrat |
-| 3 | □ kwadrat | **osiołek**, Rynek/Żeglarska | 🫏 osioł (grzbiet pręgierza) | ~1,5 min → | → ◇ romb |
-| 4 (koniec) | ◇ romb | **Pomnik Kopernika**, Rynek | 🌐 astrolabium (sfera w dłoni — ⚠ zweryfikuj) | ~0 (MG tu) | → KONIEC → MG |
+Jednokierunkowy sweep **Nowe Miasto → Rynek Staromiejski**, kończący tam, gdzie **kręci się MG** (przyjmuje raport Z1, wydaje K2). Wszystkie punkty 24/7 z ulicy. Dystanse orientacyjne — zweryfikuj w terenie (dry-run).
 
-**Sprawdzenie reguły #2 ✓:** start → P1 → P2 → P3 → P4(=MG) ≈ 2,5 + 3,5 + 1,5 + 1,5 ≈ **~9-10 min** (w budżecie 12 ±2). Legi 2-4 są krótkie, bo trzy ostatnie przystanki leżą na Rynku Staromiejskim — grupa „zbiega się" na MG. Brak zawrotek; jednokierunkowy sweep E → centrum.
+| Krok | Teren — miejsce | Detal (deszyfrownik) | Marsz do nast. |
+|---|---|---|---|
+| start (calc) | *Rynek Nowomiejski* (punkt odniesienia) | — | ~2,5 min → |
+| 1 (z K1) | **Pomnik Piernikarki** (Małych Garbarów / Kr. Jadwigi) | 🍪 piernik | ~3,5 min → |
+| 2 | **osiołek**, Rynek/Żeglarska | 🫏 osioł (grzbiet pręgierza) | ~2,5 min → |
+| 3 | **Krzywa Wieża** (mury SW, ul. Pod Krzywą Wieżą) | 🗼 wieża (pochylona baszta) | ~2,5 min → |
+| 4 (koniec) | **Pomnik Kopernika**, Rynek (przy Ratuszu) | 🌐 astrolabium (sfera w dłoni) | ~0 (MG tu) |
 
-> Chcesz równiejsze ~3-min legi? Można dorzucić zachodni przystanek (np. **Łuk Cezara**, Piekary 37 — Michał Archanioł z trąbką) między Pod Gwiazdą a Kopernikiem, kosztem drobnego „bouncu" na zachód (~+3 min, wciąż w budżecie). *(W prototypie Łuk Cezara jest już użyty jako glif-dystraktor — patrz niżej.)*
+**Glify: do przepięcia przez agenta od glifów** (4 łańcuch + 5 dystraktorów, pętla rozłączna). Tu pokazujemy łańcuch przez **miejsca + detale** — przypisanie glif↔pozycja zostaje po stronie pracy nad mapą/glifami, żeby nie rozjechać warstw. Skład dystraktorów po zmianie: **Pod Gwiazdą [⭐]**, Filuś [🎩], Łuk Cezara [🎺], Przekupka [⚖️], Dwór Artusa [🛡️].
+
+**Sprawdzenie reguły #2 ✓:** start → P1 → P2 → P3 → P4(=MG) ≈ 2,5 + 3,5 + 2,5 + 2,5 ≈ **~11 min** (w budżecie 12 ±2). Legi równiejsze niż w starym wariancie (było 3,5/1,5/1,5).
+**Reguła #6 (zawrotki) — uwaga:** ostatni hop Krzywa Wieża (SW) → Kopernik (centrum Rynku) to **drobny powrót ku centrum**. Świadomy, akceptowalny koszt równiejszych legów (to dojście do MG). Zweryfikuj realny dystans/płynność w dry-runie.
+
+<details><summary><b>BACKUP — stary wariant (przed 2026-06-02): Pod Gwiazdą zamiast Krzywej Wieży</b></summary>
+
+| Krok | Glif | Miejsce | Detal | Marsz |
+|---|---|---|---|---|
+| 1 | △ | Pomnik Piernikarki | 🍪 piernik | ~3,5 |
+| 2 | ○ | Kamienica Pod Gwiazdą, Rynek 35 | ⭐ gwiazda (1697) | ~1,5 |
+| 3 | □ | osiołek, Rynek/Żeglarska | 🫏 osioł | ~1,5 |
+| 4 | ◇ | Pomnik Kopernika, Rynek | 🌐 astrolabium | ~0 (MG) |
+
+Legi 2-4 krótkie (trzy przystanki na Rynku). Odrzucony wariant z dorzuceniem Łuka Cezara (robił 5 kroków → łamał self-correction). Pętla dystraktorów wtedy zawierała Krzywą Wieżę.
+</details>
 
 ### Glify, detale, deszyfrownik, legenda → dane kanoniczne w spec
 
 Pełna tabela 9 znaków (glif ↔ detal ↔ miejsce ↔ haczyk ↔ następny glif ↔ rola), zawartość deszyfrownika gracza, legenda i klucz MG: **`puzzles/z1-szlak-spec.md`**. Tam też granica spoilera (kto co widzi) i checklista spójności. Cechy/piktogramy miejsc (rosnący katalog) → **`puzzles/ikonografia-miejsc.md`**.
 
-Skrót łańcucha (4 kroki): **△ Piernikarka [🍪] → ○ Pod Gwiazdą [⭐] → □ osiołek [🫏] → ◇ Kopernik [🌐] → KONIEC (MG)**. Pozostałe 5 glifów = dystraktory, których detale prowadzą w **fałszywe tropy = zamkniętą pętlę** `⬡→☆→✕→∿→⊙→⬡` (rozłączną z łańcuchem). **Dobór miejsc/dystraktorów/detali = propozycja do podmiany** (Twój wybór); świadomie pominięto Fontannę Flisaka (motyw → Z4).
+Skrót łańcucha (4 kroki, Wariant A [2026-06-02]): **Piernikarka [🍪] → osiołek [🫏] → Krzywa Wieża [🗼] → Kopernik [🌐] → KONIEC (MG)** (glify do przepięcia przez pracę nad mapą). Pozostałe 5 miejsc = dystraktory (Pod Gwiazdą, Filuś, Łuk Cezara, Przekupka, Dwór Artusa), których detale prowadzą w **fałszywe tropy = zamkniętą pętlę** (rozłączną z łańcuchem). **Dobór miejsc/dystraktorów/detali = propozycja do podmiany** (Twój wybór); świadomie pominięto Fontannę Flisaka (motyw → Z4).
 
 ## Treść startu w K1 — segment Z1 (draft)
 

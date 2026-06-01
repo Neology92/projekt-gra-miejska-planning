@@ -4,6 +4,12 @@
 >
 > Rationale projektowy, reguły tras, kalkulacja czasu → `puzzles/szlak-symboli.md`. Cechy/piktogramy miejsc (rosnący katalog) → `puzzles/ikonografia-miejsc.md`.
 
+> ⚠️ **TRASA ZMIENIONA [2026-06-02, Oskar] — Wariant A. TABELA NIŻEJ WYMAGA REPROPAGACJI.**
+> Nowy łańcuch (4 kroki): **Piernikarka → osiołek → Krzywa Wieża → Kopernik → KONIEC (MG)** (rationale: `szlak-symboli.md §Trasa prototypu Wariant A`).
+> **Zamiana ról:** *Pod Gwiazdą [⭐]* wychodzi z łańcucha → **dystraktor**; *Krzywa Wieża [🗼]* wchodzi do łańcucha (była dystraktorem ⬡). Nowe 5 dystraktorów: Pod Gwiazdą, Filuś, Łuk Cezara, Przekupka, Dwór Artusa.
+> **DO ZROBIENIA (koordynuj z pracą nad glifami/mapą — toczy się równolegle):** przepiąć w tabeli 9-znaków przypisania glif↔detal↔miejsce dla łańcucha △○□◇, przebudować pętlę dystraktorów (rozłączną, 5 miejsc), zaktualizować deszyfrownik + ASCII łańcucha + raport MG. **Tabela poniżej = jeszcze STARY łańcuch** — nie traktuj jej jako prawdy, dopóki nie zsynchronizowana z tym banerem.
+> Uboczny efekt: kolizja ☆/⭐ zmienia kontekst (⭐ jest teraz detalem dystraktora Pod Gwiazdą) — uwzględnij przy rozwiązywaniu kolizji glifów.
+
 ## Dwie warstwy znaków
 
 1. **Glify (mapa)** — 9 prostych, **abstrakcyjnych** znaków, które mówią TYLKO *gdzie iść* i **nie zdradzają**, co tam jest. Na mapie nieodróżnialne (4 z łańcucha + 5 dystraktorów). Finalnie można je zastąpić **gmerkami** (toruńskie znaki kupieckie — zob. Aleja Gmerków).

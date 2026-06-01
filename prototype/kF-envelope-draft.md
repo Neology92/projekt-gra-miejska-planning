@@ -1,7 +1,7 @@
 # KF — Final Envelope (draft)
 
 > **Language:** English (player-facing). Planning notes in Polish below.
-> **Status:** draft [2026-06-01] — awaiting Oskar's review.
+> **Status:** draft [2026-06-01] — awaiting Oskar's review. **Mechanika dostawy ZATWIERDZONA [2026-06-02, Oskar]: osobiste wręczenie przy ruinach Przedzamcza (lewa = Bażyński / prawa = Albrecht, list w ręce).** Treść gotowa do review.
 > **Trigger:** MG hands to group after they verify Z7 answer (HANS VON BAYSEN IS JORDAN THE COOK).
 > **Contents:** this note only. The sealed letter is what the group has been carrying since K1 — that is what they will deliver.
 > **Canon:** `concept/04-faza-3-final.md`.
