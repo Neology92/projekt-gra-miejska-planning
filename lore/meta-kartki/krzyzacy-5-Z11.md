@@ -45,7 +45,7 @@ Szyfrogram Z11 to **lustrzany odpowiednik Z7** — ten sam szyfr (Cezar shift +7
 
 **Hasło rozpoznawcze (Z11) — status [2026-06-02]:** treść nie wybrana przez autora. Kandydaci (z `concept/04-faza-3-final.md`): `THE VIRGIN GUARDS HER OWN` · `SUB TUUM PRAESIDIUM` (autentyczna antyfona) · `ONE CROSS ONE OATH` ⭐ · `OBEDIENT UNTO MARIENBURG` · `THE KEEP STILL STANDS` · challenge-response `ACRE` ↔ `MARIENBURG`. Po wyborze: ciphertext policzyć Cezarem shift +7, analogicznie do Z7.
 
-**Mechanika szyfrowania — identyczna z Z7:** szyfr Cezara shift +7; klucz odkryty przez porównanie nagłówków (motto `HELFEN, HILFEN UND WEHREN!` w tym samym foncie co Z3, ale zaszyfrowane). Krzyżak zna motto z własnej przynależności — porównanie intuicyjne: „to moje motto, ale zniekształcone". Brak rekwizytu (koła). (`puzzles/z7-szyfr-spec.md §0`, `concept/04-faza-3-final.md`)
+**Mechanika szyfrowania — identyczna z Z7:** szyfr Cezara shift +7; klucz odkryty przez porównanie nagłówków (motto `HELFEN, HEILEN UND WEHREN!` w tym samym foncie co Z3, ale zaszyfrowane). Krzyżak zna motto z własnej przynależności — porównanie intuicyjne: „to moje motto, ale zniekształcone". Brak rekwizytu (koła). (`puzzles/z7-szyfr-spec.md §0`, `concept/04-faza-3-final.md`)
 
 **Wolny wybór strony:** gracz-krzyżak może dostarczyć list do **Albrechta** (lojalność) lub do **Bażyńskiego** (zmiana strony, „zdrada"). Liczenie listów nie rozróżnia klasy gracza — tylko stronę odbioru. (`concept/04-faza-3-final.md`)
 
@@ -68,7 +68,7 @@ Szyfrogram Z11 to **lustrzany odpowiednik Z7** — ten sam szyfr (Cezar shift +7
 
 - **Krzyżacy wiedzieli z wyprzedzeniem.** Kalb raportował o „spisku Rady z Bażyńskim" od listopada 1453 — i nie mógł zareagować: za mało braci (~300), za mało pieniędzy. Bunt był klęską wywiadu niepopartego siłą. (wiki: `donosiciele-1454.js`)
 - **Podwójny system szpiegowski.** Zakon miał informatorów w Tajnej Radzie (listy „N.N. do Herrn Nicolaus", 7–8 I 1454); Tajna Rada infiltrowała krzyżacką korespondencję. (wiki: `donosiciele-1454.js`)
-- **Motto Zakonu jako klucz.** `HELFEN, HILFEN UND WEHREN!` z nagłówków korespondencji — elegancka pułapka: wróg zaszyfrowany własnym godłem.
+- **Motto Zakonu jako klucz.** `HELFEN, HEILEN UND WEHREN!` z nagłówków korespondencji — elegancka pułapka: wróg zaszyfrowany własnym godłem.
 - **Kalb lawirował.** 22 I 1454 proponował Malborkowi rokowania ze Związkiem — wielki mistrz odmówił. Pat: bez instrukcji, bez posiłków, z malejącymi zapasami. (wiki: `bunt-1454.js`)
 - **Załoga zamku: ok. 200 osób** (rycerze zakonni, zaciężni, księża, urzędnicy, służba, uciekinierzy). Po kapitulacji internowani — **nikt nie stracony**. (wiki: `bunt-1454.js`)
 - **Plan zamku — anomalia.** Podkowa / półelipsa zamiast typowego krzyżackiego czworoboku (nawiązanie do wcześniejszego grodu). (wiki: `zamek-krzyzacki.js`)

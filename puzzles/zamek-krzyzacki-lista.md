@@ -3,7 +3,7 @@
 **Status**: szkicowe. Z3 = obowiązkowa dla TR (infiltracja zamku). **Z3Z** = lustro dla krzyżaków (infiltracja Piccolo) — sekcja niżej.
 
 > **Treść listy nazwisk TR + uzasadnienie fabularne + pułapki historyczne → `z3-lista-tr-spec.md`** (research kanoniczny). Rekwizyt gracza (EN) → `prototype/pergamin-lista-tr-draft.md`.
-> ✅ **Model klucza rozstrzygnięty [2026-06-01, akt. sesja z Piotrem]:** lista nazwisk = **kontekst**; **klucz = porównanie nagłówków** (`HELFEN, HILFEN UND WEHREN!` w Z3 jawne ↔ zaszyfrowane Cezarem shift+7 w Z7) — gracz odkrywa przesunięcie przez porównanie, bez rekwizytu; twist „Jordan=Bażyński" niesie **osobny szyfrogram Z7** (przechwycony list, wydawany przez MG po opcjonalnej Z4/5/6). Kalimba = prosta zagadka melodia→liczby, nie zasila klucza. Szczegóły → `z3-lista-tr-spec.md §4` + `z7-szyfr-spec.md §0`.
+> ✅ **Model klucza rozstrzygnięty [2026-06-01, akt. sesja z Piotrem]:** lista nazwisk = **kontekst**; **klucz = porównanie nagłówków** (`HELFEN, HEILEN UND WEHREN!` w Z3 jawne ↔ zaszyfrowane Cezarem shift+7 w Z7) — gracz odkrywa przesunięcie przez porównanie, bez rekwizytu; twist „Jordan=Bażyński" niesie **osobny szyfrogram Z7** (przechwycony list, wydawany przez MG po opcjonalnej Z4/5/6). Kalimba = prosta zagadka melodia→liczby, nie zasila klucza. Szczegóły → `z3-lista-tr-spec.md §4` + `z7-szyfr-spec.md §0`.
 
 ## ✅ Struktura Z3 — ROZSTRZYGNIĘTA [2026-06-01, decyzja Oskara]
 

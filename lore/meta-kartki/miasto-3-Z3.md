@@ -7,7 +7,7 @@
 
 ## W skrócie
 
-Gracze odgrywają fałszywych donosicieli Zakonu — zbliżają się do komtura Albrechta Kalba (NPC/Zosia) przed ruinami zamku i kradną fizyczną listę nazwisk Tajnej Rady. Lista jest wymysłem autora (FABUŁA), ale komtur, donosiciele i wszyscy wymienieni w niej członkowie TR są postaciami historycznymi. Nagłówek listy niesie motto `HELFEN, HILFEN UND WEHREN!` — klucz do szyfru Cezara w Z7.
+Gracze odgrywają fałszywych donosicieli Zakonu — zbliżają się do komtura Albrechta Kalba (NPC/Zosia) przed ruinami zamku i kradną fizyczną listę nazwisk Tajnej Rady. Lista jest wymysłem autora (FABUŁA), ale komtur, donosiciele i wszyscy wymienieni w niej członkowie TR są postaciami historycznymi. Nagłówek listy niesie motto `HELFEN, HEILEN UND WEHREN!` — klucz do szyfru Cezara w Z7.
 
 ---
 
@@ -52,7 +52,7 @@ Zakon miał *wiedzę* o uczestnikach TR (przez donosy, przechwycone listy), ale 
 
 **Mechanika kradzieży i „choreografowany NPC Albrecht"** — czysta fikcja gry terenowej. Historyczny Kalb był o wiele bardziej statyczny — siedział na zamku, nie krążył po mieście z dokumentami.
 
-**Nagłówek listy jako nośnik klucza szyfrowego (`HELFEN, HILFEN UND WEHREN!` → Cezar shift+7)** — mechanika gry, nie dokument historyczny. Szyfr Cezara jako taki jest anachronizmem minimalnym (znany starożytności, używany w XV-wiecznej dyplomacji — patrz `fakty-vs-fabula.md poz.7`).
+**Nagłówek listy jako nośnik klucza szyfrowego (`HELFEN, HEILEN UND WEHREN!` → Cezar shift+7)** — mechanika gry, nie dokument historyczny. Szyfr Cezara jako taki jest anachronizmem minimalnym (znany starożytności, używany w XV-wiecznej dyplomacji — patrz `fakty-vs-fabula.md poz.7`).
 
 **„Hans von Baysen" na liście bez etykiety „Jordan"** — plant fabularny (twist ujawniony dopiero w Z7). Fabularne powiązanie Jordan = Bażyński to świadoma naginka `(fakty-vs-fabula.md poz.1)`.
 
