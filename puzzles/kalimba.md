@@ -63,7 +63,7 @@ Rekwizyt = kalimba, ale **koperta nazywa instrument z epoki**. Dobór konkretneg
 2. ~~Gdzie~~ ROZSTRZYGNIĘTE: Z4 (melodia flisaka) + Z8 (melodia zakonu).
 3. ~~Czy zmieniamy na historyczny instrument~~ ROZSTRZYGNIĘTE [2026-06-01]: rekwizyt = kalimba, **opis fabularny = instrument historyczny**; anachronizm schowany, meta-wyjaśnienie w kartce autorskiej.
 4. ~~Treść melodii Z4 (flisak)~~ ROZSTRZYGNIĘTE [2026-06-01]: **= Z8 (`621454`)**, różni tylko oprawa.
-5. **Który instrument narracyjny per tor** (z propozycji w `## Instrument narracyjny`) — do wyboru Oskara, gdy będziemy pisać teksty kopert Z4/Z8.
+5. ~~Który instrument narracyjny per tor~~ **ROZSTRZYGNIĘTE [2026-06-01]:** oba tory = **lamellofon (drumla / trump)**. Z4 (flisak): *"a trump, the kind a river man carries in his coat"*. Z8 (zakon): do doprecyzowania przy MVP (wariant sakralny — dzwonki klasztorne lub drumla jako ezoteryczny rekwizyt zakonu). Patrz `prototype/kZ4-envelope-draft.md §Planning notes`.
 
 ## Co autor może zrobić sam vs gdzie pomocy
 

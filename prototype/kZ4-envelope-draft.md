@@ -25,7 +25,7 @@ Before I give you the last thing — there is one more thing you can do.
 
 A man who worked the river docks below the city walls carried messages for us this past winter, hidden in the tunes he piped to pass the time. He is gone now. Before he went, he left this behind.
 
-*(Enclosed: his instrument — a river piper's whistle. The notes are marked with numbers.)*
+*(Enclosed: his instrument — a trump, the kind a river man carries in his coat. The tongues are marked with numbers.)*
 
 He left word:
 
@@ -41,13 +41,13 @@ Bring me the code. I will give you the last thing you need before tonight.
 
 ---
 
-*A river piper's tune. Six numbers from a dead man's whistle. We hold the instrument — small, worn smooth from years in a working coat. We listen first. Then we play.*
+*A river man's tune. Six numbers from a dead man's trump. We hold the instrument — small, worn smooth from years in a working coat. We listen first. Then we play.*
 
 ---
 
 ## PLANNING NOTES (nie dla gracza)
 
-- **Instrument narracyjny (⚠️ czeka na decyzję Oskara):** draft używa „river piper's whistle" = piszczałka flisacka. Alternatywy z `kalimba.md §Instrument narracyjny`: fujarka flisacka, fletnia (instrument ludowy, wiślański — klimat swojski, mieszczański). Podmiana = jednozdaniowy find-replace. Rekwizyt fizyczny = kalimba — bez zmian niezależnie od wyboru.
+- **Instrument narracyjny: ✅ WYBRANO [2026-06-01]** = **drumla** (drumbla, ang. *trump* / jaw harp / Maultrommel). Jedyny europejski lamellofon z epoki — przenośny, kieszeniowy, znany flisakom i wędrowcom. W tekście gracza: *"a trump, the kind a river man carries in his coat"*. Rekwizyt fizyczny = kalimba (bez zmian). Anachronizm (kalimba ma wiele języczków, drumla jeden) jest świadomie schowany — identycznie jak w `kalimba.md §Anachronizm`. Meta-wyjaśnienie → kartka autorska (zadanie na PÓŹNIEJ, `lore/meta-kartki-autorskie.md`).
 - **Kod = `621454`** — 6.2.1454, data buntu. Gracze nie wiedzą z góry, co to znaczy; odczytują liczby → podają MG → MG potwierdza. Sens daty jako daty odkryją (jeśli) po finale.
 - **BRAK szyfru w tej kopercie.** Mechanika: usłysz → zagraj → spisz liczby → podaj. Koło/Cezar/klucz = finał (Z7). Patrz `kalimba.md §Kiedy w grze`.
 - **Kto gra melodię:** MG (Oskar) gra na kalimbie lub odtwarza nagranie gdy grupa przychodzi. Koperta tego nie opisuje — to info dla MG (patrz `prototype/mg-runsheet.md §Z4`).
