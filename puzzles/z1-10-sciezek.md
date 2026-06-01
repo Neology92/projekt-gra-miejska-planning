@@ -42,34 +42,53 @@
 | Budżety graniczne G4/G10 | ✅ **odległości znośne** | flagi budżetu zdjęte; rozsuw powrotu do MG = bonus |
 | Nogi krótkie/nawrotne | ⚠️ **constraint**: dwa przystanki łańcucha NIE w zasięgu wzroku bez podchodzenia | dotyczy `G7 C04→C07 ~50m`; audyt par śródłańcuchowych w klastrze Rynku |
 
-### REBALANS v2 — PROPOZYCJA (pending akceptacji Oskara)
+### ✅ REBALANS v3 — OBOWIĄZUJĄCA (po dry-run R2, 2026-06-01)
 
-**Rozstrzygnięcia, na których stoi:** budżet poluzowany [Oskar] → **głębokie starty od Wisły wracają** (powód wykluczenia był tylko budżetowy); briefing **zostaje** na Rynku Nowomiejskim; reguła wzroku = **tylko śródłańcuchowo** (P1→P2, P2→P3); P3→P4 (zbieg u MG) zwolniony.
+**Względem v2: 5 swapów** wymuszone przez dry-run R2.1 (klaster `{C01, C02, C06, C07}` — wszystkie na/przy Rynku Staromiejskim, żadna para nie może być śródłańcuchowo kolejna).
 
-**Dźwignie:** (1) `G7` → start `S01` Brama Mostowa (ostrołuk pewny; w górę Mostowej = realna noga „do środka"). (2) `G2` ← `N06` jako P1 (ogon `N04→N05→C01` wymusza N-start) — **cede-and-swap**: `G6` schodzi na głęboki start `S02` Brama Klasztorna, uwalnia `N06`. (3) `G8/G9/G10` przereorganizowane tak, by ciasne pary trafiły na P3→P4 (zwolnione).
+Broken w v2: G8 P2→P3 (`C01→C07` ❌) · G9 P1→P2 (`C02→C06` ❌) + P2→P3 (`C06→C01` ❌) · G10 P2→P3 (`C07→C02` ❌).
+
+Swappy: G3.P1 `N02`→`C02` · G8.P3 `C07`→`N01` · G9.P1 `C02`→`N02` · G9.P3 `C01`→`S02` · G10.P3 `C02`→`N04`.
+
+**Detal S02:** kaszownik zbyt trudny do ikonizacji → **brama prostokątna (gotycki łuk) od strony Bulwaru**; `kaszownik.svg` przebudowany [2026-06-01].
 
 | Grupa | P1 | P2 | P3 | P4 (→MG) | start |
 |---|---|---|---|---|---|
-| G1 | N01 | N02 | N06 | C04 | NM (bez zmian) |
-| G2 | **N06** | N04 | N05 | C01 | NM (P1 ← N06) |
-| G3 | N02 | N01 | C03 | C06 | NM (bez zmian) |
-| G4 | N04 | N06 | C09 | C02 | NM (bez zmian) |
-| G5 | N05 | **C04** | C08 | C07 | NM (P2 ← C04, było N03) |
-| G6 | **S02** | C08 | C04 | C06 | **głęboki SW (Br. Klasztorna)** — przeprojektowany |
-| G7 | **S01** | C09 | C06 | C07 | **głęboki S (Br. Mostowa)** — przeprojektowany |
-| G8 | C09 | C01 | C07 | C06 | głęboki SE — reorder (ciasna C01-C02 → P3P4? nie; patrz flagi) |
-| G9 | C02 | C06 | C01 | C07 | głęboki SE — reorder |
-| G10 | C03 | C07 | C02 | C08 | głęboki NW — reorder |
+| G1 | N01 | N02 | N06 | C04 | NM |
+| G2 | N06 | N04 | N05 | C01 | NM |
+| G3 | **C02** | N01 | C03 | C06 | NM (P1 ← C02) |
+| G4 | N04 | N06 | C09 | C02 | NM |
+| G5 | N05 | C04 | C08 | C07 | NM |
+| G6 | S02 | C08 | C04 | C06 | głęboki SW (Br. Klasztorna) |
+| G7 | S01 | C09 | C06 | C07 | głęboki S (Br. Mostowa) |
+| G8 | C09 | C01 | **N01** | C06 | głęboki SE (P3 ← N01) |
+| G9 | **N02** | C06 | **S02** | C07 | NM-start (P1 ← N02, P3 ← S02) |
+| G10 | C03 | C07 | **N04** | C08 | głęboki NW (P3 ← N04) |
 
-**Pass disjointness:** P1 {N01·N06·N02·N04·N05·S02·S01·C09·C02·C03} ✓ · P2 {N02·N04·N01·N06·C04·C08·C09·C01·C06·C07} ✓ · P3 {N06·N05·C03·C09·C08·C04·C06·C07·C01·C02} ✓ — wszystkie 10/10 parami różne. P4 zbieg: C06×3 (G3,G6,G8), C07×3 (G5,G7,G9) — 3-krotny podział spotu MG (było 2×).
+**Pass disjointness v3:** P1 {N01·N06·C02·N04·N05·S02·S01·C09·N02·C03} ✓ · P2 {N02·N04·N01·N06·C04·C08·C09·C01·C06·C07} ✓ · P3 {N06·N05·C03·C09·C08·C04·C06·N01·S02·N04} ✓ — 10/10 parami różne w każdej kolumnie.
 
-**Wszystkie detale łańcuchowe pewne** (zero `N03`/`S06`). Trzy ciasne pary `C04-C07 / C04-C01 / C01-C02` **nie występują śródłańcuchowo**.
+**Brak par klastra śródłańcuchowo** — wszystkie {C01,C02,C06,C07} sąsiadują tylko z non-klastrem w P1→P2 i P2→P3. P3→P4 zwolniony (para sprawdzona: C03→C07 = G10, potwierdzono R2.1 ✅).
 
-**🟡 FLAGI do eyeballa na draft-mapie (pary cross-square ~80–150 m — prawdopodobnie realny marsz, ale Ty znasz sightline):**
-- G2 `N04→N05` (oba Rynek Nowomiejski — apteka vs kościół, mogą być intervisible)
-- G8 `C01→C07` · G9 `C02→C06`, `C06→C01` · G10 `C03→C07`, `C07→C02`
+> Następny krok: regeneracja 10 kart (§Ścieżki poniżej) na łańcuchach v3 — pętle dystraktorów + deszyfrowniki.
 
-> Po akceptacji: regeneracja 10 kart (pętle dystraktorów + deszyfrowniki) + bazowa mapa, na której domykamy 🟡 flagi wzrokowo.
+---
+
+### REBALANS v2 — ARCHIWUM (zastąpiona przez v3)
+
+**Poniżej zostawiona jako zapis historyczny** — v2 była poprawna disjointness-wise, ale miała 4 pary klastra śródłańcuchowo (obalone dry-run R2.1).
+
+| Grupa | P1 | P2 | P3 | P4 (→MG) |
+|---|---|---|---|---|
+| G1 | N01 | N02 | N06 | C04 |
+| G2 | N06 | N04 | N05 | C01 |
+| G3 | N02 | N01 | C03 | C06 |
+| G4 | N04 | N06 | C09 | C02 |
+| G5 | N05 | C04 | C08 | C07 |
+| G6 | S02 | C08 | C04 | C06 |
+| G7 | S01 | C09 | C06 | C07 |
+| G8 | C09 | C01 | ~~C07~~ | C06 |
+| G9 | ~~C02~~ | C06 | ~~C01~~ | C07 |
+| G10 | C03 | C07 | ~~C02~~ | C08 |
 
 ---
 

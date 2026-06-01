@@ -65,7 +65,7 @@ Kolumny: **Kod** (= glif, stały) · **Detal** (piktogram, stały) · **Miejsce*
 | Kod | Detal | Miejsce | Haczyk | Źródło | Rola |
 |---|---|---|---|---|---|
 | `S01` | brama (**ostrołuk ze szpicem**) | **Brama Mostowa** (ul. Mostowa, od Wisły) | gotycki **ostrołuk przejazdu** (+ tablice powodziowe na ościeżu); narożniki zaokrąglone z zewnątrz | ✓#18 + ✓ **teren 2026-06-01** (ostrołuk wypatrzalny; „zaokrąglone narożniki" za subtelne) — ikona `brama-ostroluk.svg` | Ł |
-| `S02` | kaszownik (otwór w łuku) | **Brama Klasztorna** (ul. Ducha Świętego) | trzy ostrołuki; kaszownik (otwór na wrzątek) | ✓#19 | Ł |
+| `S02` | kaszownik (otwory nad bramą) | **Brama Klasztorna** (ul. Ducha Świętego) | gotycki ostrołuk + machikuła z otworami ponad przejazdem — **od zewnątrz (Bulwar Filadelfijski)**; kaszownik widoczny z dołu ale trudny do ikonizacji → ikona = brama trapezowa + dwa łuki + 5 otworów nad przejazdem [ikon przebudowana 2026-06-01] | ✓#19 + ⚠ waypoint = strona zewnętrzna (Bulwar), nie ul. Ducha Świętego | Ł |
 | `S03` | brama-łuk (Via Regia) | **Brama Żeglarska** (ul. Żeglarska, od Wisły) | początek Via Regia / Droga Królewska | ✓#20 (⚠ mało wyróżniający detal) | D |
 | `S04` | kotwica | **Kotwica na Bulwarze** (Bulwar Filadelfijski) | duża kotwica (Szkoła Marynarki Wojennej) | ✓#30 | Ł |
 | `S05` | baszta | **Baszty** (Monstrancja / Koci Łeb / Gołębnik) | nazwane baszty murów wzdłuż Podmurnej | ✓#21 (wiele obiektów) | D |

@@ -144,13 +144,13 @@ Dotąd `S02` był tylko dystraktorem; w v2 jest **startem G6**. Detal = **kaszow
 
 | Element | Wynik | Decyzja/flaga |
 |---|---|---|
-| R2.1 para 1 (N04→N05) | | |
-| R2.1 para 2 (C01→C07) | | |
-| R2.1 para 3 (C02→C06) | | |
-| R2.1 para 4 (C06→C01) | | |
-| R2.1 para 5 (C03→C07) | | |
-| R2.1 para 6 (C07→C02) | | |
-| R2.2 S02 kaszownik | | |
-| R2.3 nogi S01/S02 | | |
+| R2.1 para 1 (N04→N05) | ✅ OK | bez zmian |
+| R2.1 para 2 (C01→C07) | ❌ za blisko | G8 P2→P3 wymaga rozbicia |
+| R2.1 para 3 (C02→C06) | ❌ za blisko | G9 P1→P2 wymaga rozbicia |
+| R2.1 para 4 (C06→C01) | ❌ za blisko | G9 P2→P3 wymaga rozbicia |
+| R2.1 para 5 (C03→C07) | ✅ OK | G10 P1→P2 bez zmian |
+| R2.1 para 6 (C07→C02) | ❌ za blisko | G10 P2→P3 wymaga rozbicia |
+| R2.2 S02 kaszownik | ⚠️ widziano z dołu (stojąc w bramie), ikona kaszownika trudna do zwizualizowania → **zmiana detalu na bramę** (prostokąt + gotycki łuk) od strony Bulwaru; `kaszownik.svg` przebudowany [2026-06-01] | S02 zostaje w łańcuchach; waypoint = od strony zewnętrznej (Bulwar Filadelfijski); `brama-zaokraglona.svg` → dystraktor only |
+| R2.3 nogi S01/S02 | ⏳ niezmierzone | poluzowany budżet — nie blokuje; zmierzyć przed playtestem |
 
 > Po R2: następna sesja domyka macierz v2 (rozbicie par „za ciasnych"), regeneruje 10 kart (pętle dystraktorów + deszyfrowniki) i buduje mapy.

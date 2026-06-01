@@ -12,9 +12,11 @@
 
 Łańcuchy + dystraktory razem dotykają **20 z 28** miejsc rejestru:
 
-`N01 N02 N03 N04 N05 N06` · `C01 C02 C03 C04 C06 C07 C08 C09` · `S01 S02 S04 S06` · `W01` · `D01`
+`N01 N02 N03 N04 N05 N06` · `C01 C02 C03 C04 C06 C07 C08 C09` · `S01 S02 S04` · `W01` · `D01`
 
-**Nieużyte (NIE renderować na bazowej mapie):** `C05` anioł, `S03` Żeglarska, `S05` baszty, `W02 W03 W04`, `D02`, `F01 F02 F03`.
+> **Zmiana v3 [2026-06-01]:** `S06` usunięte z puli (ikona `waska-uliczka-luki.svg` wycofana; detal nieczytelny w terenie). `N03` pozostaje w puli jako **martwy dystraktor** (ikona `fartuch.svg` narysowana, ale detal niewypatrzalny → wiersze dystraktora nieszkodliwe). Pula: 19 kodów (było 20).
+
+**Nieużyte (NIE renderować na bazowej mapie):** `C05` anioł, `S03` Żeglarska, `S05` baszty, `S06` Ulica Ciasna (wycofana), `W02 W03 W04`, `D02`, `F01 F02 F03`.
 
 ## 2. Tabela kanoniczna: kod → glif → pozycja → strefa
 
@@ -39,7 +41,7 @@
 | `S01` | ✕ | krzyż św. Andrzeja (saltire), grube kreski | 300 | 510 | S | Brama Mostowa |
 | `S02` | ⋔ | rozwidlenie / „widły" (trójząb kreskowy) | 200 | 500 | S | Brama Klasztorna |
 | `S04` | ∥ | dwie równoległe pionowe kreski | 160 | 525 | S | Kotwica/Bulwar |
-| `S06` | ⊿ | trójkąt prostokątny (mały, kąt prosty l-d) | 470 | 460 | S/E | Ulica Ciasna |
+| ~~`S06`~~ | ~~⊿~~ | ~~trójkąt prostokątny~~ | ~~470~~ | ~~460~~ | ~~S/E~~ | ~~Ulica Ciasna~~ — **wycofana z puli v3** (detal nieczytelny; NIE renderować) |
 | `W01` | ⌇ | linia falista pionowa (zygzak) | 120 | 330 | W | Łuk Cezara |
 | `D01` | ∴ | trzy kropki w trójkącie | 292 | 375 | C-SW | Fontanna Flisaka (dystr.) |
 
