@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Z3 + Z7 — Klucz MG (NIE dla gracza)</title>
+<!-- Print source for prototype/print/z3-z7-klucz-mg.pdf. MG-only answer key. Canon: puzzles/z7-szyfr-spec.md §0. -->
+<style>
+  :root {
+    --mono: "Cascadia Code", "Consolas", "Courier New", monospace;
+    --serif: Georgia, "Palatino Linotype", serif;
+  }
+  @page { size: A4; margin: 16mm 18mm; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: "Segoe UI", system-ui, sans-serif; color: #2a1a16; font-size: 11.5pt; line-height: 1.5; background: #fff; }
+
+  .banner {
+    background: #fbeae6; border: 1.5pt solid #d99; border-radius: 6px;
+    padding: 10px 14px; margin: 0 0 18px; color: #8a2e22; font-weight: 700; font-size: 13pt;
+    -webkit-print-color-adjust: exact; print-color-adjust: exact;
+  }
+  h3 { color: #9a3c2e; font-size: 10.5pt; text-transform: uppercase; letter-spacing: .05em; margin: 18px 0 6px; border-bottom: 1pt solid #e8c9c2; padding-bottom: 3px; }
+  p { margin: 7px 0; }
+  .align {
+    font-family: var(--mono); font-size: 11pt; background: #f7efe2;
+    border: 1pt solid #d8c39a; border-radius: 5px; padding: 12px 14px; margin: 6px 0;
+    white-space: pre; overflow-x: auto; line-height: 1.7; color: #3a2a14;
+    -webkit-print-color-adjust: exact; print-color-adjust: exact;
+  }
+  .answer { font-weight: 700; color: #7a2e22; font-size: 12pt; }
+  code { background: #f0e3df; padding: 1px 5px; border-radius: 4px; font-family: var(--mono); font-size: .92em; }
+  .muted { color: #8a6f68; font-size: 9.5pt; margin-top: 14px; }
+</style>
+</head>
+<body>
+
+  <div class="banner">⚠ KLUCZ MG — NIE DRUKOWAĆ DLA GRACZA</div>
+
+  <h3>Klucz: Cezar, przesunięcie +7</h3>
+  <p>Szyfrowano <strong>w przód o 7</strong> (A→H). Gracz <strong>cofa o 7</strong> (= naprzód o 19), licząc na palcach / ołówkiem na boku. <strong>Brak koła</strong> — świadoma decyzja (zbyt silna wskazówka).</p>
+
+  <h3>Wyrównanie nagłówków (to odkrywa gracz — porównuje oba rekwizyty)</h3>
+  <div class="align">Z3 jawny:   HELFEN, HILFEN UND WEHREN!
+Z7 szyfr:   OLSMLU, OPSMLU BUK DLOYLU!
+            każda litera przesunięta o +7 (H→O, E→L, L→S, F→M …)</div>
+
+  <h3>Odszyfrowanie ciała listu</h3>
+  <div class="align">szyfr:  QVYKHU AOL JVVR PZ OHUZ CVU IHFZLU AOLPY JOHPYTHU
+jawny:  JORDAN THE COOK IS HANS VON BAYSEN THEIR CHAIRMAN</div>
+  <p class="answer">Rozwiązanie: „JORDAN THE COOK IS HANS VON BAYSEN THEIR CHAIRMAN" (Jordan = Hans von Baysen, przewodniczący Tajnej Rady).</p>
+  <p>MG <strong>akceptuje sens</strong> — granice słów w szyfrogramie pozwalają uzupełnić pomyłkową literę domysłem, więc drobne błędy nie blokują.</p>
+
+  <h3>Spięcie z listą (Z3)</h3>
+  <p>Wpis #1 pergaminu, <strong>Hans von Baysen</strong>, to <strong>plant</strong>. Gracz zna sojusznika z Piccolo tylko jako „Jordan" (pseudonim) → nazwisko na liście czyta się jak kolejny radny. Po złamaniu Z7 wraca do listy i widzi: kucharz był #1 na liście gończej Zakonu od początku. „Where he lodges by day, we have not learned" = Zakon nie skojarzył go z kuchnią. Payoff retroaktywny.</p>
+
+  <h3>Hint awaryjny (tylko jeśli grupa utknie)</h3>
+  <p><em>„To samo motto wieńczy oba dokumenty — nagłówek, który się powtarza, to klucz. Połóżcie je obok siebie."</em> <strong>Nie</strong> podawaj liczby 7 — niech odkryją z porównania.</p>
+
+  <h3>Pomocnicza tabela Cezara +7</h3>
+  <div class="align">jawny:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+szyfr:  H I J K L M N O P Q R S T U V W X Y Z A B C D E F G</div>
+
+  <p class="muted">Dane kanoniczne: puzzles/z7-szyfr-spec.md §0 · puzzles/z3-lista-tr-spec.md. Podgląd ekranowy + notki: prototype/z3-z7-podglad.html. Szyfr zweryfikowany ręcznie (round-trip ✓).</p>
+
+</body>
+</html>
