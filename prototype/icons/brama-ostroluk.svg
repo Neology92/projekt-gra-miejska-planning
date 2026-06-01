@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Brama z ostrołukiem — Brama Mostowa">
+  <title>Brama z ostrołukiem (Brama Mostowa)</title>
+  <!-- bryła muru bramy -->
+  <path d="M8 58 L8 12 L56 12 L56 58 Z" fill="#a86c38" stroke="#6e4824" stroke-width="2.6" stroke-linejoin="round"/>
+  <!-- prześwit ostrołukowy (gotycki szpic) -->
+  <path d="M18 58 L18 32 Q18 16 32 13 Q46 16 46 32 L46 58 Z" fill="#efe0b8" stroke="#6e4824" stroke-width="2.4" stroke-linejoin="round"/>
+  <!-- archiwolta (jasny obrys łuku) -->
+  <path d="M23 58 L23 34 Q23 21 32 18 Q41 21 41 34 L41 58" fill="none" stroke="#fdf3e3" stroke-width="2.2" stroke-linejoin="round"/>
+  <!-- tablice powodziowe na ościeżu -->
+  <line x1="11" y1="40" x2="15" y2="40" stroke="#5c4310" stroke-width="1.8" stroke-linecap="round"/>
+  <line x1="11" y1="46" x2="15" y2="46" stroke="#5c4310" stroke-width="1.8" stroke-linecap="round"/>
+  <line x1="11" y1="52" x2="15" y2="52" stroke="#5c4310" stroke-width="1.8" stroke-linecap="round"/>
+</svg>

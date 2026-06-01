@@ -30,6 +30,22 @@
 
 ---
 
+## Wyniki dry-runu (Oskar, 2026-06-01)
+
+| Check | Werdykt | Konsekwencja |
+|---|---|---|
+| `N04` lew | ✅ widoczny nad drzwiami; **godziny apteki nieistotne** | pewny — G2 P2 / G4 P1 odblokowane |
+| `N05` bazylika/łuki | ✅ łuki + bryła kościoła rozpoznawalne | pewny — G2 P3 / G5 P1 / G6 P2 odblokowane |
+| `N03` fartuch | ❌ **brak widocznego godła/fartucha** | **wypada z łańcuchów** (G2 P1, G5 P2) → DYS-only |
+| `S06` Ulica Ciasna | ❌ łuki odporowe **nieczytelne** dla gracza | **wypada z łańcucha** (G7 P1); ikona wycofana |
+| Brama Mostowa `S01` | ✅ **ostrołuk przejazdu** wypatrzalny (lepszy niż „zaokr. narożniki") | piktogram poprawiony → `brama-ostroluk.svg` |
+| Budżety graniczne G4/G10 | ✅ **odległości znośne** | flagi budżetu zdjęte; rozsuw powrotu do MG = bonus |
+| Nogi krótkie/nawrotne | ⚠️ **constraint**: dwa przystanki łańcucha NIE w zasięgu wzroku bez podchodzenia | dotyczy `G7 C04→C07 ~50m`; audyt par śródłańcuchowych w klastrze Rynku |
+
+**🔴 REBALANS WYMUSZONY (pending — decyzja o briefingu należy do Oskara):** trzy kroki łańcucha padły — **G2 P1**, **G5 P2** (oba `N03`), **G7 P1** (`S06`) — plus **G7 P2→P3** trywialne (wzrok). Pula pewnych „tanich N" skurczyła się z 6 do **5** (`N01 N02 N04 N05 N06`), a grup NM-startowych jest 6 → nie domyka się przy jednym briefingu NE bez przesunięć. Warianty w `todo/otwarte-pytania.md` / niżej w §Ryzyka.
+
+---
+
 ## Ścieżki (łańcuch · pętla dystraktorów · deszyfrownik · klucz MG)
 
 > Format deszyfrownika: `detal [kod] → następny kod`. 4 wiersze łańcucha + 5 dystraktorów (zamknięta pętla). Klucz MG = 4 miejsca po kolei.

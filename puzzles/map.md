@@ -41,9 +41,9 @@ Kolumny: **Kod** (= glif, stały) · **Detal** (piktogram, stały) · **Miejsce*
 |---|---|---|---|---|---|
 | `N01` | piernik (serce) | **Pomnik Piernikarki** (zbieg M. Garbarów / Kr. Jadwigi) | kosz pierników; piesek szarpie suknię | ✓#35 | Ł · ikona ✓ `piernik.svg` |
 | `N02` | waga | **Pomnik Przekupki** (Rynek Nowomiejski, przy Modrym Fartuchu) | waga u stóp; gęś; kosz jaj | ✓#34 | Ł |
-| `N03` | fartuch (modry) | **Gospoda Pod Modrym Fartuchem** (Rynek Nowomiejski 8) | nazwa-godło „modry fartuch"; gotyk+barok | ✓#12 (⚠ teren: czy fizyczny szyld/fartuch widoczny) | Ł |
-| `N04` | lew (złoty) | **Apteka Pod Złotym Lwem** (Rynek Nowomiejski 13) | pozłacana rzeźba lwa we wnęce muru przy wejściu | ✓#13 | Ł |
-| `N05` | bazylika (łuki przyporowe) | **Kościół św. Jakuba** (Rynek Nowomiejski) | gotyk bazylikowy; łuki przyporowe; nawa główna wyższa | ✓#36 | Ł |
+| `N03` | fartuch (modry) | **Gospoda Pod Modrym Fartuchem** (Rynek Nowomiejski 8) | nazwa-godło „modry fartuch"; gotyk+barok | ✗ **teren 2026-06-01: BRAK widocznego fartucha/szyldu** — detal niewypatrzalny | **DYS-only** (martwy wiersz; NIE w łańcuchu) |
+| `N04` | lew (złoty) | **Apteka Pod Złotym Lwem** (Rynek Nowomiejski 13) | pozłacana rzeźba lwa **nad wejściem (drzwiami)** | ✓#13 + ✓ **teren 2026-06-01** (widoczny; godziny apteki nieistotne) | Ł |
+| `N05` | bazylika (łuki przyporowe) | **Kościół św. Jakuba** (Rynek Nowomiejski) | gotyk bazylikowy; łuki przyporowe; nawa główna wyższa | ✓#36 + ✓ **teren 2026-06-01** (łuki + bryła kościoła rozpoznawalne) | Ł |
 | `N06` | szafa (z szufladami) | **Teatr Baj Pomorski** (Piernikarska 9) | fasada jak drewniana szafa z szufladami + duży zegar | ✓#43 | Ł |
 
 ### Strefa C — Rynek Staromiejski i serce (kandydaci na STOP-4 u MG)
@@ -64,12 +64,12 @@ Kolumny: **Kod** (= glif, stały) · **Detal** (piktogram, stały) · **Miejsce*
 
 | Kod | Detal | Miejsce | Haczyk | Źródło | Rola |
 |---|---|---|---|---|---|
-| `S01` | brama (zaokrąglone narożniki) | **Brama Mostowa** (ul. Mostowa, od Wisły) | zaokrąglone narożniki; tablice powodziowe w przejeździe | ✓#18 | Ł |
+| `S01` | brama (**ostrołuk ze szpicem**) | **Brama Mostowa** (ul. Mostowa, od Wisły) | gotycki **ostrołuk przejazdu** (+ tablice powodziowe na ościeżu); narożniki zaokrąglone z zewnątrz | ✓#18 + ✓ **teren 2026-06-01** (ostrołuk wypatrzalny; „zaokrąglone narożniki" za subtelne) — ikona `brama-ostroluk.svg` | Ł |
 | `S02` | kaszownik (otwór w łuku) | **Brama Klasztorna** (ul. Ducha Świętego) | trzy ostrołuki; kaszownik (otwór na wrzątek) | ✓#19 | Ł |
 | `S03` | brama-łuk (Via Regia) | **Brama Żeglarska** (ul. Żeglarska, od Wisły) | początek Via Regia / Droga Królewska | ✓#20 (⚠ mało wyróżniający detal) | D |
 | `S04` | kotwica | **Kotwica na Bulwarze** (Bulwar Filadelfijski) | duża kotwica (Szkoła Marynarki Wojennej) | ✓#30 | Ł |
 | `S05` | baszta | **Baszty** (Monstrancja / Koci Łeb / Gołębnik) | nazwane baszty murów wzdłuż Podmurnej | ✓#21 (wiele obiektów) | D |
-| `S06` | wąska uliczka z łukami | **Ulica Ciasna** (Podmurna–Mostowa) | 3 m szer.; łuki odporowe między spichlerzami | ✓#45 | Ł |
+| `S06` | wąska uliczka z łukami | **Ulica Ciasna** (Podmurna–Mostowa) | 3 m szer.; łuki odporowe między spichlerzami | ✗ **teren 2026-06-01: łuki odporowe NIECZYTELNE dla gracza** (detal filmowy, nie nawigacyjny) | **poza łańcuchem** (ikona `waska-uliczka-luki.svg` wycofana z użycia) |
 
 ### Strefa W — Piekary / Rabiańska (typowe podejście od zachodu)
 
