@@ -73,6 +73,7 @@ Pytania pogrupowane wg pliku, w którym są dyskutowane szerzej.
 48. **Stylizacja kopert** - jaki wygląd, jaki wosk, jaka pieczęć?
 49. **Dźwięk dzwonu** w finale - co konkretnie?
 50. **Mechanika zliczania głosów** - pudełka / NPC / cyfrowo?
+64. **Retrofit K1/K2/K3 na konwencję „narrator z głów kurierów"** [2026-06-01]: konwencja głosu kopert rozstrzygnięta (narracja z głów, nie rozkaz nadawcy — `mechanics/koperty-mg.md`). K-Z3b już w tej konwencji. **Otwarte:** czy przepisać K1/K2/K3 (zdraftowane jako listy-rozkazy z jawnym nadawcą: zleceniodawca/„— R."/„— J."), czy zostają (tryb listu obronny, bo mają nadawcę-rekwizyt). Decyzja Oskara.
 
 ## Naginki historyczne - decyzje
 

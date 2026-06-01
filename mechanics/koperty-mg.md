@@ -40,6 +40,16 @@ Każda koperta zawiera **5 elementów**:
 
 > Wzorzec [2026-05-31]: Z5/Z9 — piekarz, któremu pomieszały się składniki, + ukryty test „jestem swój" (znajomość przepisu jako hasło wiarygodności). Patrz `puzzles/zagadka-sensoryczna.md`.
 
+### Konwencja głosu — narrator z głów kurierów [decyzja Oskara 2026-06-01]
+
+Koperty pisane są jako **narracja z perspektywy kurierów**: co widzą, co myślą, jakie wnioski się nasuwają — „narrator z ich głów". **Nie** jako rozkazy/instrukcje od nadawcy (Rady, Jordana). Dozwolone **wtrącenia wypowiedzianych kwestii NPC** (cytat w cudzysłowie, spójny z kartą danego aktora).
+
+- **Po co:** immersja + rozwiązuje problem nośnika — skoro koperta nie ma nadawcy, nie trzeba uzasadniać, kto fizycznie ją podał.
+- **Wręczenie koperty przez NPC** (np. Albrecht wręcza K-Z3b) = **meta-interakcja poza światem gry** (jak rozdanie karty). W fikcji nikt jej nie „daje".
+- **Polecenia/mechanika przemycane jako rozumowanie grupy** („on odwraca się tak samo za każdym razem… czekaj na obrót"), nie jako imperatyw z zewnątrz.
+- **Wzorzec:** `prototype/kZ3b-envelope-draft.md` (v2).
+- ⚠ **Retrofit:** K1/K2/K3 zdraftowano wcześniej w trybie **list-rozkaz od nadawcy** (zleceniodawca/„— R."/„— J."). Do decyzji Oskara, czy przepisać je na tę konwencję, czy zostają (mają jawnego nadawcę-list, więc tryb listu jest tam obronny). Patrz `todo/otwarte-pytania.md`.
+
 ### Numeracja kopert
 
 - **K1** - startowa, wszystkie grupy dostają.

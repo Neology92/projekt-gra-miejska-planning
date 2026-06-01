@@ -68,9 +68,7 @@ Hand the **K-Z3b envelope matching their colour.** They will step a little aside
 
 **Do NOT chase them off.** Dismiss them *verbally*, but stay where you are and let them linger nearby — they need to come back within reach of the list to steal it. If they hover, play it as them still angling for your favour: *"Still here? You smell reward, don't you. Speak, then — but be quick."* Keep boasting; keep the list out. The theft (STEP 3) happens with them right back in front of you.
 
-> **Why you hand it:** mechanically this envelope flips their task from "scout" to "steal." You don't react to its contents — you never see them open it, and if you do, you don't care. Stay in character as the bored, superior commander.
->
-> **⚠ Seam depends on Oskar's carrier decision** (`zamek-krzyzacki-lista.md` Otwarte #4): this card assumes Albrecht hands K-Z3b and players read it *a step away, then return*. If Oskar instead has Jordan pre-give the sealed K-Z3b ("open before the Komtur"), players open it **during** the talk and steal in the same beat — no leave/return. Either way: don't chase them off.
+> **Why you hand it:** mechanically this envelope flips their task from "scout" to "steal." Handing it is a **meta gesture, outside the fiction** (like dealing a card) — in-world *you are not giving them anything.* You don't react to its contents — you never "see" it. Stay in character as the bored, superior commander; the envelope simply passes from your hand to theirs and the game continues.
 
 ---
 
