@@ -100,7 +100,8 @@ To pytanie o **integralność twistu** — i jest już rozstrzygalne, bo w repo 
 | **Piccolo-człowiek = znany przywódca** (l. 10) | nazwisko przewodniczącego **telegrafuje twist** → Z7 zapada się do zwykłej metki; pominąć lub zamaskować |
 
 ✅ **Zależność ROZSTRZYGNIĘTA [2026-06-01]:** `concept/02-faza-2a-jordan.md` i `test-jordana.md` (decyzja 2026-05-31) ustalają, że Jordan = **pasywny weryfikator** (imię „Jordan" + kolor opaski), **nie ujawnia przywództwa w F2A**. To **przesądza górny wiersz tabeli** → l. 10 zamek-pliku jest nieaktualna. **Plant Bażyńskiego jest bezpieczny.**
-→ Pozostaje **czysto twórcza decyzja Oskara:** dać plant czy nie. **Rekomendacja: dać** — mocny retroaktywny payoff przy Z7 (gracz trzyma listę z „Hans von Baysen", po odszyfrowaniu „Jordan = von Baysen" wszystko klika).
+
+✅ **DECYZJA #2 ZATWIERDZONA [2026-06-01]: plant DANY.** Oskar: „Bażyński jest na liście". „Hans von Baysen" eksponowany jako **wpis #1** pergaminu (głowa rady, gończy cel Zakonu). Bezpieczny — gracz zna sojusznika z Piccolo jako „Jordan" (pseudonim), nie „von Baysen"; nazwisko czyta się jak kolejny radny. Po złamaniu Z7 („Jordan = Hans von Baysen") gracz wraca do listy i widzi: kucharz był #1 od początku. Retroaktywny payoff. Tekst wpisu → `prototype/pergamin-lista-tr-draft.md`.
 
 ### 🔒 DECYZJA #3 — ile nazwisk i jak prezentować niepełne
 
@@ -127,6 +128,7 @@ To pytanie o **integralność twistu** — i jest już rozstrzygalne, bo w repo 
 
 - ✅ Research nazwisk + uzasadnienie fabularne + pułapki — **gotowe**.
 - ✅ Model klucza (Decyzja #1) — **rozstrzygnięty**: motto w nagłówku listy Z3.
-- 🟡 Draft pergaminu (EN) → `prototype/pergamin-lista-tr-draft.md` (lista + motto w nagłówku = klucz).
-- 🟡 **Szyfrogram Z7 + materiał deszyfrujący** → `prototype/z7-szyfrogram-draft.md` + `puzzles/z7-szyfr-spec.md` (2026-06-01).
-- 🔒 Czeka na Oskara: Decyzje #2–#4 (lista) · rozbieżność F2A (skrypt Jordana vs `zamek-...lista.md` l. 10) · **nowa: rola Z4 na ścieżce TR** (Decyzja #1).
+- ✅ Plant Bażyńskiego (Decyzja #2) — **ZATWIERDZONY [2026-06-01]**: wpis #1 pergaminu.
+- 🟡 Draft pergaminu (EN) → `prototype/pergamin-lista-tr-draft.md` (10 wpisów z plantem #1 + motto w nagłówku = klucz).
+- ✅ **Szyfrogram Z7 + materiał deszyfrujący** → `prototype/z7-szyfrogram-draft.md` + `puzzles/z7-szyfr-spec.md` (plaintext zatwierdzony 2026-06-01).
+- 🔒 Czeka na Oskara: Decyzje #3 (dokładna liczba/forma niepełnych wpisów — obecnie 10) · #4 (opcjonalna sekcja szpiegów — domyślnie pominięta).

@@ -18,8 +18,10 @@ Decyzje autora z tej sesji, **nadrzędne wobec §1–§4 poniżej**:
 ### Ciphertext Cezara (shift 21) — POLICZONY i zweryfikowany round-trip [2026-06-01]
 
 - **Plaintext:** `JORDAN THE COOK IS HANS VON BAYSEN THEIR CHAIRMAN` (41 liter)
-- **Ciphertext (szyfrowanie +21):** `EJMYV IOCZX JJFDN CVINQ JIWVT NZIOC ZDMXC VDMHV I`
+- **Ciphertext (szyfrowanie +21), układ spacji = jak w zdaniu:** `EJMYVI OCZ XJJF DN CVIN QJI WVTNZI OCZDM XCVDMHVI` (wzór długości 6-3-4-2-4-3-6-5-8)
 - **Deszyfrowanie gracza:** cofnij każdą literę o **21** (równoważnie: przesuń o **+5**). Koło ustawione tak, że E→J, J→O, M→R… → `JORDAN…`.
+
+**Układ spacji — decyzja Oskara [2026-06-01]:** szyfrogram **zachowuje granice słów plaintextu**, NIE grupuje po 5. Powód: Cezar łamie się łatwo (ukrywanie granic nic nie chroni), a granice słów pozwalają graczowi **uzupełnić pomyłkową literę domysłem** w już trudnej zagadce terenowej. Równe kolumny ładne, ale mylące. *(Wariant „grupy po 5" — wcześniejszy, porzucony.)*
 
 → §3 (ciphertext Vigenère) i §4 (tabula recta) niżej — **archiwalne**, zastąpione powyższym. Prop gracza → `prototype/z7-szyfrogram-draft.md` (ciphertext zaktualizowany).
 
@@ -90,7 +92,7 @@ Tabula recta (materiał do druku) → `prototype/z7-szyfrogram-draft.md` (append
 
 - **Oczekiwana odpowiedź grupy:** odczytana treść = „JORDAN THE COOK IS HANS VON BAYSEN THEIR CHAIRMAN" (lub sens: *Jordan = Hans von Baysen, przywódca TR*).
 - **Co to odblokowuje:** wejście w finał KF — grupa wie teraz, **kim naprawdę jest sojusznik z Piccolo**, i z tą wiedzą podejmuje decyzję o dostarczeniu listu.
-- **Format odpowiedzi:** po deszyfrowaniu wychodzi **ciąg bez spacji** (`JORDANTHECOOKISHANSVONBAYSEN…`). **MG akceptuje odpowiedź bez rozdzielenia słów** — nie wymagaj spacji; liczy się sens.
+- **Format odpowiedzi:** szyfrogram zachowuje granice słów (układ jak w zdaniu), więc gracz odczyta naturalnie rozdzielone słowa → `JORDAN THE COOK IS HANS VON BAYSEN THEIR CHAIRMAN`. **MG akceptuje sens** (Jordan = Hans von Baysen, przewodniczący TR) — drobne pomyłki literowe nie blokują, bo granice słów pozwalają je uzupełnić domysłem.
 - **Hint awaryjny (jeśli utkną):** wskaż, że **to samo motto** widnieje na pergaminie Z3 i na liście — „nagłówek, który się powtarza, to klucz".
 
 ---
@@ -114,7 +116,7 @@ Szyfrogram = **dyspozycja komtura toruńskiego Albrechta Kalba do Malborka**, pr
 
 ## 8. Otwarte pytania (do Oskara)
 
-1. **Treść plaintextu** — akceptacja „JORDAN THE COOK IS HANS VON BAYSEN THEIR CHAIRMAN" czy własna wersja (przeliczę ciphertext).
+1. ✅ **Treść plaintextu — ZATWIERDZONA [2026-06-01]:** „JORDAN THE COOK IS HANS VON BAYSEN THEIR CHAIRMAN" (Oskar zaakceptował). Ciphertext Cezara +21 policzony i zamknięty (§0).
 2. ✅ **Klucz — ROZSTRZYGNIĘTE [2026-06-01]: Cezar, przesunięcie = liczba liter motta (21)**. (Vigenère + warianty pełne/skrót — porzucone, backup `prototype/z7-szyfrogram-vigenere-backup.md`.)
 3. **Czy „Hans von Baysen" jest na liście Z3** (plant) — rekomendacja: tak (patrz `z3-lista-tr-spec.md` Decyzja #2; zależność rozwiązana — Jordan zostaje kucharzem).
 4. **Czy ramka listu jawna** (tylko rdzeń szyfrowany) — rekomendacja: tak (playability). Alternatywa: cały list szyfrowany (trudniej).
@@ -131,5 +133,6 @@ Szyfrogram = **dyspozycja komtura toruńskiego Albrechta Kalba do Malborka**, pr
 - ✅ Kradzież listy Z3 **obligatoryjna** → brak twardego stopu [2026-06-01].
 - ✅ Anachronizm — Cezar minimalny; backup Vigenère → `prototype/z7-szyfrogram-vigenere-backup.md`.
 - ✅ Prop (EN) + koło Cezara → `prototype/z7-szyfrogram-draft.md`.
-- 🟡 Treść plaintextu — sens „Jordan=Bażyński" ustalony; **sformułowanie do akceptacji Oskara** (przy zmianie przeliczam ciphertext).
+- ✅ Treść plaintextu — **ZATWIERDZONA [2026-06-01]:** „JORDAN THE COOK IS HANS VON BAYSEN THEIR CHAIRMAN". Ciphertext zamknięty.
+- ⬜ Koło Cezara (rekwizyt A4, dwie tarcze) — do zaprojektowania (TODO w drafcie).
 - ⬜ KF (instrukcje finału, dostarczenie listu) — następny element łańcucha.

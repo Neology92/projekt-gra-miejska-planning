@@ -33,7 +33,15 @@ Dwa składniki: **klucz** (z zagadki obowiązkowej) + **szyfrogram** (z opcjonal
 ### Wynik odszyfrowania (per tor)
 
 - **Z7 (mieszczanie)** → **Jordan = Hans von Baysen**. Szyfrogram to przechwycona wiadomość: Zakon wiedział, kim naprawdę jest „kucharz". Lista nazwisk z Z3 NIE zawiera „Jordana" (pseudonim) — dopiero odszyfrowanie sklei tożsamość. Po rozwiązaniu grupa wie, do kogo realnie dostarczyć list.
-- **Z11 (krzyżacy)** → **HASŁO ROZPOZNAWCZE (parole)** do Albrechta. **Bez plot twistu tożsamości** [decyzja 2026-05-29] — Albrecht jawny; bramą jest **dowód godności**. Hasło to mechaniczne ucieleśnienie bramy: bez niego komtur uznaje kuriera za niegodnego. Podwójna brama: motto-klucz (tylko „swój" odszyfruje) + podanie hasła Albrechtowi. **Treść hasła — do ustalenia (autor).**
+- **Z11 (krzyżacy)** → **HASŁO ROZPOZNAWCZE (parole)** do Albrechta. **Bez plot twistu tożsamości** [decyzja 2026-05-29] — Albrecht jawny; bramą jest **dowód godności**. Hasło to mechaniczne ucieleśnienie bramy: bez niego komtur uznaje kuriera za niegodnego. Podwójna brama: motto-klucz (tylko „swój" odszyfruje) + podanie hasła Albrechtowi.
+  - **Treść hasła — KANDYDACI [2026-06-01, do wyboru Oskara; żaden nie wybrany]:**
+    - A1. `THE VIRGIN GUARDS HER OWN` (maryjne; 21 liter)
+    - A2. `SUB TUUM PRAESIDIUM` (łac. „pod Twoją obronę" — autentyczna antyfona maryjna; 17 liter)
+    - B1. `ONE CROSS ONE OATH` (lojalność, zwięzłe; 15 liter) ⭐ typ agenta
+    - B2. `OBEDIENT UNTO MARIENBURG` (posłuszeństwo Malborkowi; 21 liter)
+    - C1. `THE KEEP STILL STANDS` (wojskowe, oblężenie; 18 liter)
+    - C2. challenge–response `ACRE` ↔ `MARIENBURG` (4/10 liter)
+    - Po wyborze: policzyć ciphertext Cezara +21 (jak Z7). Materiał gracza = EN.
 - Po rozwiązaniu: **finalna decyzja** — komu dostarczyć list (Baysen / Albrecht). Wybór wolny dla obu klas.
 
 Szczegóły: `puzzles/zagadka-finalowa.md` (do napisania — obejmie Z7 i Z11).

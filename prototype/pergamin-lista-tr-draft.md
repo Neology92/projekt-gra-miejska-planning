@@ -22,39 +22,36 @@
 
 ---
 
-1. **Tileman vom Wege** — burgomaster of the Old Town. *Speaks for the council at the gate.*
-2. **Rutger von Birken** — sent to Kraków. *Carries their words to the king.*
-3. **Johann Huxer** — of the old burgomaster house. *Was among the founders, fourteen years past.*
-4. **Hermann Rusop** — of the old burgomaster house. *The same.*
-5. **Gabriel von Baysen** — *brother to the chairman. Bound to the league.*
-6. **— von Hutten** — *given name not known to us. Seen entering after the eighth bell.*
-7. **A Watzenrode** — *which of the house, uncertain.*
-8. **— von Datteln** — *reported by one friend only; not yet confirmed.*
-9. **— von Allen** — *of the house at the square. Presence doubtful.*
+1. **Hans von Baysen** — *they call him chairman. Meets the others where the Old Town council sits. Where he lodges by day, we have not learned.*
+2. **Tileman vom Wege** — burgomaster of the Old Town. *Speaks for the council at the gate.*
+3. **Rutger von Birken** — sent to Kraków. *Carries their words to the king.*
+4. **Johann Huxer** — of the old burgomaster house. *Was among the founders, fourteen years past.*
+5. **Hermann Rusop** — of the old burgomaster house. *The same.*
+6. **Gabriel von Baysen** — *brother to the chairman. Bound to the league.*
+7. **— von Hutten** — *given name not known to us. Seen entering after the eighth bell.*
+8. **A Watzenrode** — *which of the house, uncertain.*
+9. **— von Datteln** — *reported by one friend only; not yet confirmed.*
+10. **— von Allen** — *of the house at the square. Presence doubtful.*
 
 *Others sit with them whose names we have not yet bought.*
 
 ---
 
-*[OPTIONAL — Decision #2: the plant. If the chairman's true name is to be hidden in plain sight, add as the FIRST line:]*
-
-> **0. Hans von Baysen** — *they call him chairman. Meets the others where the Old Town council sits. Where he lodges by day, we have not learned.*
-
-*[If added: after the group cracks Z7 ("Jordan = Bażyński"), they can return to this list and see the name was here all along — the cook they ate with was at the top of the Order's most-wanted. Strong payoff. Only safe if no OTHER trail already links Jordan to leadership — see spec Decision #2.]*
+*[Entry 1 (Hans von Baysen) is the PLANT — Decision #2 RESOLVED [2026-06-01]: Oskar approved. The chairman's true name sits in plain sight at the top of the Order's most-wanted. The group knows their Piccolo ally only as "Jordan" (a pseudonym), so the name reads as just another councillor here. After cracking Z7 ("Jordan = Hans von Baysen"), they return to this list and see the cook they ate with was #1 all along. "Where he lodges by day, we have not learned" = the Order never connected him to the kitchen. Retroactive payoff.]*
 
 ---
 
 ## PLANNING NOTES (nie dla gracza)
 
 **Mapowanie wpisów na warstwy pewności (`z3-lista-tr-spec.md` §2):**
-- Wpisy 1–2 (vom Wege, Birken) = Warstwa 1, rdzeń 1454 — pełne, pewne.
-- Wpisy 3–5 (Huxer, Rusop, Gabriel) = Warstwa 2 — celowo opatrzone dopiskami osłabiającymi pewność („founders fourteen years past", „bound to the league"), żeby nie udawały udokumentowanych członków toruńskiej TR 1454.
-- Wpisy 6–9 (Hutten, Watzenrode, Datteln, Allen) = Warstwa 3, rody patrycjuszowskie — **bez dorabiania imion**: inicjały/„—"/„uncertain". Technika niekompletnego wywiadu = autentyczna i bezpieczna historycznie.
-- Wpis 0 (Bażyński) = plant pod twist, **opcjonalny** (Decyzja #2).
+- Wpis 1 (Hans von Baysen) = Warstwa 1 + **plant pod twist** [Decyzja #2 ZATWIERDZONA 2026-06-01]. Eksponowany jako #1 (głowa rady) — bezpieczny, bo gracz zna sojusznika jako „Jordan", nie „von Baysen". „Where he lodges by day, we have not learned" = Zakon nie skojarzył go z kuchnią Piccolo.
+- Wpisy 2–3 (vom Wege, Birken) = Warstwa 1, rdzeń 1454 — pełne, pewne.
+- Wpisy 4–6 (Huxer, Rusop, Gabriel) = Warstwa 2 — celowo opatrzone dopiskami osłabiającymi pewność („founders fourteen years past", „bound to the league"), żeby nie udawały udokumentowanych członków toruńskiej TR 1454.
+- Wpisy 7–10 (Hutten, Watzenrode, Datteln, Allen) = Warstwa 3, rody patrycjuszowskie — **bez dorabiania imion**: inicjały/„—"/„uncertain". Technika niekompletnego wywiadu = autentyczna i bezpieczna historycznie.
 
 **Czego tu NIE ma (i dlaczego):** Kopernik senior (nie w Toruniu II 1454), „burmistrz Herman von Allen" (obalone — użyto tylko rodu „von Allen"), Mikołaj z Ryńska (†1411). Patrz spec §3.
 
-**Liczba wpisów:** 9 (+ opcjonalny plant = 10). Mieści się w rekomendowanym 8–12. Połowa pewna, połowa niepełna — oddaje „roboczy spis wywiadu".
+**Liczba wpisów:** 10 (z plantem Bażyńskiego jako #1). Mieści się w rekomendowanym 8–12. Połowa pewna, połowa niepełna — oddaje „roboczy spis wywiadu".
 
 **Brak miast poza Toruniem:** świadomie — wiki nie podaje nazwisk delegatów Gdańska/Elbląga/Chełmna. „Others… whose names we have not yet bought" pokrywa tę lukę fabularnie, bez zgadywania nazwisk.
 

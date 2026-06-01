@@ -22,8 +22,7 @@ You pressed me to learn the head of their secret council — the one who hides h
 ---
 
 ```
-EJMYV  IOCZX  JJFDN  CVINQ  JIWVT
-NZIOC  ZDMXC  VDMHV  I
+EJMYVI  OCZ  XJJF  DN  CVIN  QJI  WVTNZI  OCZDM  XCVDMHVI
 ```
 
 ---
@@ -55,12 +54,14 @@ You have seen this motto before — it heads the list of names you took. **The m
 
 **Szyfrowany tylko rdzeń (41 liter), ramka jawna** — żeby praca w terenie była wykonalna. Ramka (zwrot „To the Hochmeister…", podpis Komtura) buduje klimat i kontekst bez kosztu deszyfrowania.
 
+**Układ spacji = jak w odszyfrowanym zdaniu** [decyzja Oskara 2026-06-01]: szyfrogram zachowuje **granice słów identyczne z plaintextem** (`EJMYVI OCZ XJJF DN CVIN QJI WVTNZI OCZDM XCVDMHVI` → 6-3-4-2-4-3-6-5-8), NIE grupy po 5. Rationale: (a) Cezar i tak łatwo złamać — ukrywanie granic nie chroni nic istotnego; (b) jak gracz pomyli pojedynczą literę, granice słów pozwalają **uzupełnić ją domysłem** (np. „JORDA_" → JORDAN); (c) równe kolumny są ładne, ale w już trudnej zagadce terenowej **mylące**. Czytelność > czystość kryptograficzna.
+
 **Fabuła:** to dyspozycja Albrechta Kalba (komtur toruński) do Malborka — wróg, którego grupa okradła z listy w Z3, sam zdradza tożsamość Jordana. Pokrycie: `donosiciele-1454.js` (komtur raportował do Malborka „spisek Rady z Bażyńskim").
 
 **Link do Z3:** nagłówek-motto MUSI być identyczny z nagłówkiem pergaminu Z3 (`prototype/pergamin-lista-tr-draft.md`). Powtórzenie = wskazówka, że to klucz.
 
 **Płatność:** plaintext „…HANS VON BAYSEN…" domyka się z plantem na liście Z3 (jeśli „Hans von Baysen" tam jest — gracz wraca i widzi, że kucharz był na szczycie listy gończej Zakonu).
 
-**Do akceptacji Oskara:** treść plaintextu (ramka + sekret). Klucz/szyfr już ustalone (Cezar +21). Anachronizm Cezara minimalny (szyfr przesuwny znany w starożytności) — w przeciwieństwie do Vigenère nie wymaga noty w `fakty-vs-fabula.md`.
+**Plaintext ZATWIERDZONY [2026-06-01]:** „JORDAN THE COOK IS HANS VON BAYSEN THEIR CHAIRMAN" (Oskar). Klucz/szyfr ustalone (Cezar +21), ciphertext zamknięty. Anachronizm Cezara minimalny (szyfr przesuwny znany w starożytności) — w przeciwieństwie do Vigenère nie wymaga noty w `fakty-vs-fabula.md`.
 
 **Stylizacja:** finalny list — pergamin, Fraktur, łac./niem. zwroty, pieczęć komtura; **koło Cezara** (dwie tarcze A–Z) jako osobny **A4** do druku. Po dry-runie.
