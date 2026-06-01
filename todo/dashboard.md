@@ -34,12 +34,12 @@
 
 ```
 ✅ K1 — startowa ............... draft gotowy (groźba „ucięcia rąk" + segment Z1)        [prototype/k1-envelope-draft.md]
-🟡 K2 — po Z1 ................. draft gotowy, placeholder na Z2 Piotra                    [prototype/k2-envelope-draft.md]
-⬜ K3 — od Jordana ............ brief F2B + przydział Z3+Z4
-⬜ K-Z3 — infiltracja zamku ... brief + zagadka + output (klucz)
-⬜ K-Z4 — melodia/kalimba ..... brief + zagadka + output (klucz)
-⬜ K8 — Z7 finałowy szyfr ..... brief + szyfr + ujawnienie komu oddać list
-⬜ KF — finał ................. instrukcje (gdzie, 8. bicie, jak dostarczyć)
+✅ K2 — po Z1 ................. draft gotowy (Z2 Einsteina wpisana: Jordan/Piccolo/chochla; plotki Puli A; slip R.)  [prototype/k2-envelope-draft.md]
+✅ K3 — od Jordana ............ draft gotowy (brief F2B + Z3 zwiad; K-Z3b osobno)         [prototype/k3-envelope-draft.md]
+✅ K-Z3b — ujawnienie kradzieży  draft gotowy (dwuetapowa; narracja + cytat Albrechta)   [prototype/kZ3b-envelope-draft.md]
+⬜ K-Z4 — melodia/kalimba ..... brak draftu — czeka: instrument narracyjny (decyzja Oskara)
+🟡 K8 — Z7 finałowy szyfr ..... szyfrogram gotowy (Cezar+7; „OHUZ CVU IHFZLU PZ QVYKHU AOL JVVR"); koperta do draftu  [prototype/z7-szyfrogram-draft.md]
+⬜ KF — finał ................. brak draftu — instrukcje (gdzie, 8. bicie, jak dostarczyć)
 ```
 
 ## B. Rekwizyty drukowane (8)
@@ -59,7 +59,7 @@
 
 ```
 ✅ Skrypt Jordana (Piotr) ..... draft gotowy (weryfikacja + dialog + K3)               [prototype/jordan-actor-script-draft.md]
-⬜ Karta gry Albrechta (Zosia)  choreografia „okna na kradzież listy" (Z3)
+✅ Karta gry Albrechta (Zosia)  draft gotowy (choreografia okna kradzieży + reakcje)   [prototype/albrecht-actor-card-draft.md]
 ```
 
 ## D. Dokumenty operacyjne MG (3)
@@ -77,22 +77,23 @@
 ⬜ Dry-run na papierze ........ przejście ścieżki, pomiar czasu (zwł. szyfr Cezara Z7)
 ```
 
-## 🔒 Decyzje Oskara blokujące prototyp
+## 🔒 Decyzje Oskara blokujące prototyp (aktualne)
 
 ```
-┌─ Z1 ──────────── dobór 4 miejsc + 5 dystraktorów + piktogramy detali + glify (geometr./gmerki) + kolizja ☆/⭐
-├─ K2 ──────────── akceptacja 5 plotek (Pula A) + forma inicjału pośrednika („R.")
-├─ Jordan ───────── akceptacja tonu skryptu + ew. dopiski do dialogu
-├─ Z3 ──────────── wariant mechaniki (A/B/C/D) + kradzież listy: fizyczna czy abstrakcyjna
-├─ Z4 ──────────── NOWE: rola na ścieżce TR (nie zasila już Z7 — klucz = motto z Z3)
-├─ Z7 ──────────── pełne motto vs skrót „HELFEN" + treść szyfrogramu (ujawnia „Jordan=Bażyński")
-└─ KF ──────────── ostateczna mechanika dostarczenia listu
+┌─ Z1 ──────────── akceptacja propozycji miejsc (Piernikarka/Pod Gwiazdą/osiołek/Kopernik + 5 dystr.)
+│                  + podmiana kolizji glif ☆ vs detal ⭐ przed generacją finalną
+├─ Z4 ──────────── instrument narracyjny per tor (piszczałka flisacka? fujarka? — jedno zdanie w K-Z4)
+├─ K8/Z7 ─────────  review szyfrogramu + finalna treść koperty
+└─ KF ──────────── mechanika dostarczenia listu (osobiste wręczenie, mock stołowy)
 ```
+
+✅ Zamknięte: K2 plotki · Z2 zagadka (Oskar) · Z3 mechanika (dwuetapowa) · Jordan skrypt · Albrecht karta · Z7 szyfrogram
 
 ## 🔄 Czeka na zewnątrz
 
 ```
-Z2 — zagadka Einsteina (4 osoby × 3 cechy) → robi Piotr → wynik: imię „Jordan" + miejsce „Piccolo"
+Z1 dry-run R2 — Oskar weryfikuje sightline 6 par + S02 kaszownik (z1-dry-run-sheet.md §RUNDA 2)
+                → potem domknięcie macierzy v2 + regeneracja 10 kart (MVP / dyspersja)
 ```
 
 ---
@@ -192,13 +193,14 @@ Z2 — zagadka Einsteina (4 osoby × 3 cechy) → robi Piotr → wynik: imię �
 ## 📊 Pasek postępu
 
 ```
-PROTOTYP   ███████░░░░░░░░░░░░░  ~35%   (rdzeń F1→F2A zdraftowany; F2B→finał + dokumenty MG + dry-run zostają)
-MVP        ██░░░░░░░░░░░░░░░░░░  ~10%   (architektura ustalona; produkcja, drugi tor, skalowanie przed nami)
+PROTOTYP   █████████████░░░░░░░  ~65%   (K1/K2/K3/K-Z3b/Z7/Jordan/Albrecht zdraftowane; K-Z4 + KF + dokumenty MG + dry-run zostają)
+MVP        ██░░░░░░░░░░░░░░░░░░  ~10%   (architektura ustalona; Z1 dyspersja czeka R2; produkcja, drugi tor, skalowanie przed nami)
 ```
 
 ## 🎯 Następny krok krytyczny
 
 ```
-► Domknięcie bloku 1 (F1→F2A): review Oskara K2 + skrypt Jordana + dobór miejsc Z1
-► Potem DZIEŃ 2: Z3 + Z4 + Z7 + KF jako JEDEN moduł (szyfr Cezara+7, klucz=porównanie nagłówków)
+► Prototyp — do napisania: K-Z4 (czeka: instrument narracyjny Oskara) · KF · arkusz MG · instrukcja MG
+► Prototyp — review: K1/K2/K3/K-Z3b/Jordan/Albrecht — czekają na Oskara i Piotra
+► Z1 dyspersja (MVP) — czeka: dry-run R2 (Oskar w terenie) → z1-dry-run-sheet.md §RUNDA 2
 ```

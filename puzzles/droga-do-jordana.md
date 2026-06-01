@@ -1,6 +1,6 @@
 # Zagadka 2 - Droga do Jordana
 
-**Status**: szkicowe.
+**Status**: ✅ **gotowe [2026-06-01]** — zagadka logiczna kompletna (Oskar), wersja themingowa Jordan/Piccolo/chochla zweryfikowana, wpisana do K2 (`prototype/k2-envelope-draft.md`).
 
 ## Mechanika (z briefu autora)
 

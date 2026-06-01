@@ -153,13 +153,15 @@ Te punkty są **niezmienne** i mają pokrycie w wiki:
 - **Język planowania**: polska robocza — pliki .md, decyzje, notatki, komentarze agenta.
 - **Język materiałów gracza**: **ANGIELSKI** — wszystkie artefakty w `prototype/` i `mvp/` przeznaczone dla graczy (koperty, rekwizyty, skrypty NPC, mapy, karty) **muszą być po angielsku**. Gracze nie mówią po polsku. Dokumenty MG (arkusz śledzenia, instrukcja MG) — angielski, bo MG też może pracować z angielskim. Jedyny wyjątek: nazwy własne toruńskie pozostają w oryginale (Rynek Staromiejski, Piccolo itp.).
 
-## Status na start (2026-05-29)
+## Status na start (2026-05-29) — aktualizacja 2026-06-01
 
-> **🔴 AKTUALNY PRIORYTET [2026-06-01]:** **Z1 dyspersja — 10 ścieżek „szlaku symboli".** Po dry-run runda 1 + **REBALANS v2** (7 z 10 łańcuchów przebudowane; głębokie starty od Wisły wróciły po poluzowaniu budżetu). **START dla nowej sesji: `todo/z1-fan-handoff.md`** (kompletny zrzut stanu + TODO). Czeka na: dry-run **runda 2** (Oskar weryfikuje sightline 6 par + `S02` — `puzzles/z1-dry-run-sheet.md §RUNDA 2`), potem regeneracja 10 kart + budowa map. Szerszy plan prototypu: `todo/roadmap-prototyp.md`.
+> **🟡 STAN [2026-06-01]:** Dwa równoległe wątki:
+> - **Prototyp (1 ścieżka TR):** K1/K2/K3/K-Z3b/Z7/skrypt Jordana/karta Albrechta — **drafty gotowe**, czekają na review Oskara + aktorów. Brakuje: **K-Z4** (czeka: instrument narracyjny Z4 — decyzja Oskara), **KF**, **arkusz MG**, **instrukcja MG**. Pełny dashboard: `todo/dashboard.md`.
+> - **Z1 dyspersja (10 grup, MVP):** po dry-run R1 + REBALANS v2. Czeka: dry-run **runda 2** (Oskar weryfikuje sightline 6 par + `S02` — `puzzles/z1-dry-run-sheet.md §RUNDA 2`). Zrzut stanu: `todo/z1-fan-handoff.md`.
 
-- ✅ Faza 1 — szkielet ma sens, szlak symboli wymaga konkretnego doboru miejsc i przygotowania szyfrownika
-- ✅ Faza 2A (Jordan) — szkielet jest, treść spotkania do dopisania
-- ⚠️ Faza 2B — wiadomo że 4 zagadki asynchroniczne (3, 4, 5, 6; dwie obowiązkowe, dwie opcjonalne), ale konkretne treści głównie do rozpisania
-- ⚠️ Faza 3 (finał) — koncept jest, scenariusz aktorski do napisania
-- 🔴 **Tor krzyżaków** — kompletnie nierozpisany, tylko zalążki
-- 🔴 **Mechanika liczenia listów** — jeszcze nie wiadomo jak grupy krzyżackie też dostarczają wiadomości
+- ✅ Faza 1 — mechanika Z1 ustalona; spec kompletna (`puzzles/z1-szlak-spec.md`); prototyp mock istnieje
+- ✅ Faza 2A (Jordan) — zagadka Z2 + skrypt Jordana zdraftowane
+- 🟡 Faza 2B — Z3 zdraftowane (K3, K-Z3b, karta Albrechta); Z4 mechanika gotowa, koperta do napisania; Z5/Z6 = MVP
+- ⚠️ Faza 3 (finał) — szyfrogram Z7 gotowy, koperta K8 i KF do napisania; scenka aktorska = przed dniem gry
+- 🔴 **Tor krzyżaków** — kompletnie nierozpisany (MVP)
+- 🔴 **Mechanika liczenia listów** — nierozstrzygnięta (MVP)

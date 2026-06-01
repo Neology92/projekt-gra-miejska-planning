@@ -18,7 +18,7 @@ Pytania pogrupowane wg pliku, w którym są dyskutowane szerzej.
 
 8. **F1 trasa Z1** — AKTUALIZACJA [2026-05-31]: **mechanika docelowa ustalona** (łańcuch + abstrakcyjne glify na mapie + szyfrownik obiekt→następny glif + legenda do autouzupełnienia; **4 kroki**). **Prototyp:** 1 łańcuch (tor TR), propozycja 4 miejsc w `puzzles/szlak-symboli.md`. **Pełna gra:** różne trasy per grupa (dyspersja) — model różnych pierwszych glifów, do MVP. Wcześniej [2026-05-29]: realizacją miał się zająć Piotr.
 9. ~~F2B — które obowiązkowe / wybierz 2 z 4~~ ROZSTRZYGNIĘTE [2026-05-29]: **model dywersyfikacji**, nie „wybierz 2 z 4". Obowiązkowa: **Z3 (TR) / Z3Z (krzyżacy)** + **1 opcjonalna** per grupa (5+5; tabele w `concept/03-faza-2b-asynchroniczne.md`). Bramkowanie finału: Z3/Z3Z + 1 opcjonalna (klucz wymienialny).
-10. **Wybór formy "trzy rzeczy do zestawienia"** w Z2 (`puzzles/droga-do-jordana.md`).
+10. ~~Wybór formy „trzy rzeczy do zestawienia" w Z2~~ ROZSTRZYGNIĘTE [2026-06-01, Oskar]: **zagadka logiczna Einsteina** (3 osoby × miejsce pracy × zakup). Wersja themingowa: Jordan=Piccolo=chochla. Wpisana do K2. Patrz `puzzles/droga-do-jordana.md`.
 11. ~~Wybór formy testu Jordana~~ ROZSTRZYGNIĘTE [2026-05-31]: **hasło (imię „Jordan" w K2 wersja TR) + weryfikacja koloru opaski (5 kolorów TR)**. Jordan pasywnie weryfikuje frakcję, nie testuje charakteru. Krzyżacy nie znają imienia → nie dostają K3. Patrz `puzzles/test-jordana.md`.
 12. ~~Wariant mechaniki Z3 (A/B/C/D)~~ ROZSTRZYGNIĘTE [2026-06-01]: **rozmowa-zwiad + kradzież fizyczna**, dwuetapowa koperta (K3 zwiad → K-Z3b ujawnienie kradzieży). Pretekst zwiadu = **fałszywi donosiciele** (wariant A; Albrecht sam wyciąga listę). Bez zagadki na murach. Patrz `puzzles/zamek-krzyzacki-lista.md` „Struktura Z3".
 13. ~~Mechanika „kradzieży listy" - fizyczna czy abstrakcyjna?~~ ROZSTRZYGNIĘTE [2026-06-01]: **fizyczna** — Albrecht chodzi przewidywalnym schematem, lista leży fizycznie, powtarzalne okno + reset/loop. Zwiad NIE bramkuje (bramką jest kradzież). Karta choreografii Albrechta → `prototype/albrecht-actor-card-draft.md`.
@@ -30,9 +30,9 @@ Pytania pogrupowane wg pliku, w którym są dyskutowane szerzej.
 ## ZAGADKI - treść
 
 18. **Z1: konkretne mapowanie symboli ↔ obiekty** (autorska kreatywka).
-19. **Z2: trzy rzeczy do zestawienia** - jakie konkretnie?
-20. **Z2b: treść testu Jordana** (formuła + konkret).
-21. **Z3 / Z3Z: mechanika infiltracji** (zamek / Piccolo) — treść do rozpisania; co jest „kluczem" wyjściowym; mechanika podebrania (Z3) / kradzieży zaopatrzenia (Z3Z); co jeśli złapani.
+19. ~~Z2: trzy rzeczy do zestawienia — jakie konkretnie?~~ ROZSTRZYGNIĘTE [2026-06-01, Oskar]: **zagadka logiczna** (Kordian/Lambert/Jordan × Młyn/Piccolo/Kuźnia × jedzenie/chochla/sukno). Patrz `puzzles/droga-do-jordana.md`, `prototype/k2-envelope-draft.md`.
+20. ~~Z2b: treść testu Jordana (formuła + konkret)~~ ROZSTRZYGNIĘTE [2026-06-01]: **dwustopniowy pasywny**: hasło = imię „Jordan" (z K2) + weryfikacja koloru opaski lidera. Skrypt Jordana zdraftowany → `prototype/jordan-actor-script-draft.md`.
+21. ~~Z3: mechanika infiltracji zamku~~ ROZSTRZYGNIĘTE [2026-06-01]: **dwuetapowa** (K3 zwiad → K-Z3b kradzież fizyczna); klucz = kradzież listy TR (pergamin). Drafty: K3, K-Z3b, karta Albrechta. Patrz `puzzles/zamek-krzyzacki-lista.md`. **Z3Z (tor krzyżaków):** do MVP.
 22. **Z4 / Z8: melodia (kalimba)** — treść melodii i mechanika rozpoznania/odtworzenia; co jest kluczem do finału.
 23. **Z5 / Z9: sensoryczna z piernikiem** — mechanika sensoryczna; jaki klucz wypluwa.
 24. **Z6: herby hanzeatyckie** — które herby faktycznie są na Aleji Gmerków (ul. Królowej Jadwigi), ile łącznie (bruk + latarnie), dobór 5 dystraktorów. **WYMAGA WIZYTY** + spisu herbów. Patrz `puzzles/herby-aleja.md`.
