@@ -27,11 +27,11 @@ const Z1_PLACES = {
 
 // Glyph SVG bodies (no <svg> wrapper; will be embedded at x=4 y=4 width=24 height=24 viewBox="0 0 32 32")
 const Z1_GLYPHS = {
-  // N-zone: directional triangles (centroid shifted to 16,16 for optical centering)
-  N01: '<polygon points="16,1 28,24 4,24" fill="none" stroke="#2a1f0e" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>',
-  N02: '<polygon points="16,31 28,8 4,8" fill="none" stroke="#2a1f0e" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>',
-  N03: '<polygon points="1,16 23,4 23,28" fill="none" stroke="#2a1f0e" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>',
-  N04: '<polygon points="31,16 9,4 9,28" fill="none" stroke="#2a1f0e" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>',
+  // N-zone: directional triangles — H=18 W=18, centroid=(16,16), corners at ~6.8px from center
+  N01: '<polygon points="16,4 25,22 7,22" fill="none" stroke="#2a1f0e" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>',
+  N02: '<polygon points="16,28 7,10 25,10" fill="none" stroke="#2a1f0e" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>',
+  N03: '<polygon points="4,16 22,7 22,25" fill="none" stroke="#2a1f0e" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>',
+  N04: '<polygon points="28,16 10,7 10,25" fill="none" stroke="#2a1f0e" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>',
   N05: '<polygon points="16,4 27.4,12.3 23.1,25.7 8.9,25.7 4.6,12.3" fill="none" stroke="#2a1f0e" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>',
   N06: '<polygon points="28,16 22,5.6 10,5.6 4,16 10,26.4 22,26.4" fill="none" stroke="#2a1f0e" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>',
   // C-zone: geometric/grid marks
