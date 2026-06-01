@@ -147,4 +147,4 @@ Reszta to dostrajanie, nie przebudowa.
 
 **Rekomendacja:** **A lub C** (zgodne z Twoim „metafizyczne/abstrakcyjne" + decyzją 1.2 o opisowości). B tylko jeśli świadomie dajesz Z4 punkt terenowy na Rynku (łamie 1.2). Instrument flisaka (skrzypce) — nie akcentować, melodia jest ponad instrumentem.
 
-- [ ] Wybór: A / B / C / inne. Klamra 8 żab→8 bicie: tak / nie.
+- [x] **WYBRANO: A** (mit znad wody, fontanna = meta + kartka autorska) [Oskar 2026-06-02]. Klamra 8 żab→8 bicie: **nie**. Wdrożone w `prototype/kZ4-envelope-draft.md` (TEXT v3 + planning notes) i `mg-runsheet.md §Z4`.

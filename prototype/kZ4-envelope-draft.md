@@ -15,25 +15,23 @@
 
 ---
 
-*The list is safe. We were sent on, down toward the water — the wharves below the walls, where the river men work. Carnival noise everywhere: pipes, a drum, somebody singing off-key. And then, in the cold mud at the river's edge, we find him.*
+*The list is safe in our hands. And then word comes to us of the river — of a body the watermen pulled from the shallows in the night and left lying, because no one came to claim it.*
 
 ---
 
-*A boatman. Dead — not long. The river men say he washed up in the night and no one has come for him. There is something familiar in the worn coat, the ink-stained fingers. Then it lands on us, cold as the water:*
+*We did not need to be told twice whose body it was. The worn coat. The ink still on the fingers. **R.** — the contact who was never where he should have been, who left us a scrap and a sealed letter and then nothing at all. He did not flee the city. He never had the chance.*
 
-*we have seen those fingers before. This is **R.** — the contact who was never where he should have been. The one who left us a scrap and a single letter, and then vanished. He did not flee the city. He never got the chance.*
+*A boatman, face-down in the mud — while the great men whose errands he ran sleep warm behind their walls tonight. The letter was never his. The cause was never his. He only carried. Carrying is what killed him. That is how it goes for small men caught in the schemes of large ones — they do the carrying, and they do the dying, and the men who gain by it never learn their names.*
 
-*Tucked inside his coat, against the damp: a small instrument, the kind a river man keeps for the long hours on the water — and, folded with it, a scrap of paper in his hand. The same hand as the note he left us.*
+*They found something on him, the watermen — a small instrument, the kind a river man keeps for the long hours on the water; and folded with it, a scrap in his hand. The same hand as the note he left us. Not a message, this time. A tune, set down note by note, and beneath it his last words:*
 
-It is not a message. It is a tune — notes set down one after another, and beneath them, his last words:
+> *They took the dispatch off me. I could not keep it — so I hid it where only our own would think to look. Play my tune true and you will have the number that opens the way to it. Play it as I played it to the river, note for note.*
 
-> *They took the dispatch off me. I could not keep it — so I hid it where only our own would think to look. Play my tune true and you will have the number that opens the way to it. Play it as I taught the river, note for note.*
+*And here is the strange of it. As we read his hand, the tune is somehow already in the air — drifting in off the cold water, with no player anywhere in sight. The way the old tale tells of a raftsman whose playing once drew the whole town's plague of frogs down the bank and under the Vistula. As if the river had kept his music for him, and gives it back now that he cannot.*
 
-*So R. caught a Teutonic dispatch on the water — and it cost him. Before the end he stowed it somewhere safe and locked the way to it behind the only thing that was ever truly his: his tune.*
+*No one marks it. The whole city is piping and drumming itself hoarse tonight; one more tune off the water is nothing at all. So we listen. We take up his instrument and we follow the tune note for note, writing down each number as it sounds.*
 
-*No one will hear us, not tonight — the whole city is piping and drumming itself hoarse. One more tune by the river is nothing. Play it. Play it true.*
-
-*Listen to how it goes. Then play it back on his instrument, note by note, and write down each number as it sounds. When it is done we will have **six numbers** — the number R. died keeping. Carry it back, and we will be handed what he hid.*
+*Six numbers. The number R. died keeping. We carry it back — and we will be given what he hid.*
 
 ---
 
@@ -45,8 +43,10 @@ It is not a message. It is a tune — notes set down one after another, and bene
 - **Inwarianta [advisor + kanon]:** kod `621454` = **wyłącznie bramka MG**; w fikcji nikt nie „czyta daty". Znaczenie 6.2.1454 = meta-reveal po grze (`kalimba.md`).
 - **Klamra B1 — muzyka karnawału = osłona:** „the whole city is piping and drumming" → granie melodii nie wzbudza podejrzeń. Funkcja + atmosfera. Pokrycie: `karnawal-1454.js` (pochody z muzyką: trąby, kornety, bębny).
 - **BRAK szyfru tutaj.** Mechanika: usłysz → zagraj → spisz liczby → podaj. Koło/Cezar/klucz = finał (Z7). Patrz `kalimba.md §Kiedy w grze`.
-- **Kto gra melodię:** MG (Oskar) gra na instrumencie lub odtwarza nagranie, gdy grupa przychodzi — w fikcji „melodia, którą R. grywał na rzece". Info dla MG: `prototype/mg-runsheet.md §Z4`.
-- **Nośnik znaleziska:** instrument wręcza fizycznie MG (meta, jak rozdanie karty — wzorzec K-Z3b). W fikcji „znaleźli go przy R.". Scrap z melodią = część koperty (roman).
+- **Melodia METAFIZYCZNA [decyzja Oskara 2026-06-02, wariant A]:** w fikcji melodia jest „już w powietrzu" — niesiona znad wody, bez grajka (R. martwy), „as if the river had kept his music for him". Abstrakcyjna, nie ma fizycznego źródła. Mechanicznie: MG odtwarza nagranie/gra, gdy grupa oddaje raport — ale fikcja ramuje to jako echo znad Wisły, nie „MG gra". Info dla MG: `prototype/mg-runsheet.md §Z4`.
+- **Spięcie z Fontanną Flisaka [wariant A — META, 2026-06-02]:** w tekście nawiązanie do legendy flisaka („the old tale… a raftsman whose playing once drew the whole town's plague of frogs… under the Vistula", `legenda-flisak.js`) — melodia jako mit znad wody. **Fontanna NIE pojawia się w fikcji** (anachronizm 1914) — most do niej (figura grajka + 8 żab przy Ratuszu, dziś) idzie przez **kartkę autorską po grze** (`lore/meta-kartki-autorskie.md`). Instrument legendy = skrzypce; NIE akcentujemy — melodia jest ponad instrumentem (R. grał na swoim lamellofonie).
+- **Gorzki akcent — inwersja moralna [decyzja Oskara 2026-06-02, p. 1.1 analizy]:** „while the great men whose errands he ran sleep warm behind their walls… small men caught in the schemes of large ones — they do the carrying, and they do the dying." R. (mały człowiek) zginął za grę wielkich (TR/narada). Nośnik filaru „TR=źli" na ścieżce prototypu (Z4), bo Z5 nie jest testowana. Mechanizm uniwersalny per tor (tor krzyżacki → analogiczna gorycz wobec Zakonu).
+- **Lokalizacja OPISOWA [decyzja Oskara 2026-06-02, p. 1.2]:** scena jest **czysto narracyjna** — grupa NIE idzie fizycznie nad Wisłę, MG tam nie stoi. Koperta opisuje zdarzenie („word comes to us of the river"), gracze je czytają/wyobrażają. Brak punktu terenowego.
+- **Nośnik znaleziska:** instrument wręcza fizycznie MG (meta, jak rozdanie karty — wzorzec K-Z3b). W fikcji „znaleziono go przy R.". Scrap z melodią = część koperty (roman).
 - **Dwa rejestry:** narracja z głów = *kursywa*; pisane słowa R. (scrap) = roman.
-- **Lokalizacja terenowa:** nabrzeże Wisły / Bulwar Filadelfijski (river men, wharves). Do potwierdzenia w mg-runsheet gdzie dokładnie grupa „znajduje" scenę.
 - **Wersja Krzyżacy (MVP):** Z8 lustro — inny framing (nie R., nie flisak). NIE kopiować 1:1.

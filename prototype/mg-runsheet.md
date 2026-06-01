@@ -68,8 +68,8 @@ No MG action for Z3.
 Group comes to your position after the castle scene.
 1. Hand K-Z4 + kalimba.
 2. Give them a moment to read the envelope.
-3. Play the melody for them once (or start recording). *(You are "someone" who plays it for them — in-fiction: you're another contact, or just a passerby. Keep it simple.)*
-4. They listen, then play it back themselves, writing numbers.
+3. Play the recording of the melody once, low and a little distant if you can. *(In-fiction the tune "drifts in off the water" — you are not performing it; you're just the means by which they hear it. Keep yourself out of it: start the recording, let it play, stay quiet.)*
+4. They listen, then play it back themselves on the instrument, writing numbers.
 5. They give you the code. Check: **621454**. Correct → hand K8 (Z7 szyfrogram).
 
 If wrong: *"Are you sure those are all the notes, in the right order?"* Replay melody once. See hint ladder below.
