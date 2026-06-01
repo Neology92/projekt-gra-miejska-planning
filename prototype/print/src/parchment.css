@@ -1,0 +1,167 @@
+/* parchment.css — IM Fell English manuscript styling for the player props (Z3 list, Z7 letter).
+   Face locked to IM Fell English (Oskar, 2026-06-01).
+
+   LOAD-BEARING: the motto + cipher body stay MONOSPACE and identical across Z3/Z7. The puzzle is
+   "lay the two headers side by side, compare glyph-by-glyph" (Caesar +7); both mottos are exactly
+   26 chars so the columns register. They are de-boxed here (no rigid frame) and drawn with a penned
+   hand instead — size / italic / hand underline — but the monospace + alignment must NOT change.
+
+   Sheet model: the parchment is a defined region (.sheet) floating on a white page with a white
+   margin, so the printed edges show on the paper (no bleed, nothing to cut). The parchment fades
+   softly into the white margin (mask), and ages slightly darker toward its own edges. */
+
+/* ===================== Font (self-hosted, latin subset) ===================== */
+@font-face{font-family:"IM Fell English";font-style:normal;font-weight:400;font-display:swap;src:url(fonts/IMFellEnglish-Regular.woff2) format("woff2");}
+@font-face{font-family:"IM Fell English";font-style:italic;font-weight:400;font-display:swap;src:url(fonts/IMFellEnglish-Italic.woff2) format("woff2");}
+
+/* ===================== Tokens ===================== */
+:root{
+  --ink:#16110c;              /* warm near-black scribal ink */
+  --ink-soft:#3b3024;         /* paler secondary ink (italic notes) */
+  --mono:"Cascadia Code","Consolas","Courier New",monospace;
+  --prose:"IM Fell English", Georgia, serif;
+
+  /* parchment base tones (light — printed B&W; keep toner sane) */
+  --parch:#f1ead9;
+
+  /* textures (grayscale, tile) */
+  --tex-grain:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)' opacity='0.05'/%3E%3C/svg%3E");
+  /* Tiled fiber. Seamless requires: explicit filter region = exactly the 300px tile (filterUnits=userSpaceOnUse)
+     + stitchTiles + baseFrequency*300 integer (0.010*300=3, 0.050*300=15). Keeps the PDF light vs background-size:cover. */
+  --tex-fiber:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='f' x='0' y='0' width='300' height='300' filterUnits='userSpaceOnUse'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.010 0.050' numOctaves='3' seed='7' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23f)' opacity='0.09'/%3E%3C/svg%3E");
+  --tex-fiber-strong:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='f2' x='0' y='0' width='300' height='300' filterUnits='userSpaceOnUse'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.010 0.050' numOctaves='4' seed='11' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23f2)' opacity='0.15'/%3E%3C/svg%3E");
+
+  /* penned strokes (slightly irregular, double-inked) — stretch to fit */
+  --pen-underline:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 10' preserveAspectRatio='none'%3E%3Cpath d='M2,6 C40,3 70,8.2 102,5.5 C134,3 168,7.6 198,5.2' fill='none' stroke='%2316110c' stroke-width='1.8' stroke-linecap='round'/%3E%3Cpath d='M3,7.6 C42,5.3 72,8.9 104,6.7 C136,4.7 168,8.3 197,6.5' fill='none' stroke='%2316110c' stroke-width='1' stroke-linecap='round' opacity='0.4'/%3E%3C/svg%3E");
+  --pen-rule:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 8' preserveAspectRatio='none'%3E%3Cpath d='M2,4.4 C45,3.2 80,5.4 118,4.2 C150,3.2 175,5 198,4.1' fill='none' stroke='%2316110c' stroke-width='1.3' stroke-linecap='round'/%3E%3C/svg%3E");
+
+  /* Irregular alpha mask: an inset rect whose edge is displaced by turbulence (uneven) then feathered
+     (blurred). The parchment dissolves into white through an organic, non-geometric boundary — no frame.
+     Opaque core reaches ~20mm from the edge, so the text (padding 30mm) is never faded. */
+  --edge-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 210 297' preserveAspectRatio='none'%3E%3Cfilter id='e' x='-12%25' y='-12%25' width='124%25' height='124%25'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.020' numOctaves='2' seed='6' result='n'/%3E%3CfeDisplacementMap in='SourceGraphic' in2='n' scale='13' xChannelSelector='R' yChannelSelector='G' result='d'/%3E%3CfeGaussianBlur in='d' stdDeviation='4.5'/%3E%3C/filter%3E%3Crect x='8' y='8' width='194' height='281' rx='5' fill='%23ffffff' filter='url(%23e)'/%3E%3C/svg%3E");
+}
+
+/* ===================== Page + sheet ===================== */
+@page{ size:A4; margin:0; }
+*{ box-sizing:border-box; }
+html,body{ margin:0; }
+body{
+  background:#ffffff;
+  font-family:var(--prose);
+  color:var(--ink);
+  -webkit-print-color-adjust:exact; print-color-adjust:exact;
+}
+
+.sheet{
+  position:relative;
+  margin:0;                       /* no white frame — the mask dissolves the parchment into white */
+  padding:30mm 30mm 32mm;         /* wide manuscript margin; keeps text clear of the faded edge zone */
+  min-height:297mm;
+  font-size:13.6pt;
+  line-height:1.74;
+  letter-spacing:.004em;
+  text-rendering:optimizeLegibility;
+
+  /* default parchment = the "soft" background */
+  background-color:var(--parch);
+  background-image:
+    radial-gradient(116% 114% at 50% 50%, transparent 58%, rgba(82,66,42,.10) 88%, rgba(82,66,42,.17) 100%),
+    radial-gradient(72% 56% at 20% 16%, rgba(120,104,74,.05), transparent 60%),
+    radial-gradient(80% 60% at 84% 82%, rgba(120,104,74,.055), transparent 60%),
+    var(--tex-fiber),
+    var(--tex-grain);
+  background-repeat:no-repeat,no-repeat,no-repeat,repeat,repeat;
+  background-size:auto,auto,auto,300px 300px,160px 160px;
+  background-position:center;
+
+  -webkit-mask:var(--edge-mask) center / 100% 100% no-repeat;
+          mask:var(--edge-mask) center / 100% 100% no-repeat;
+  -webkit-mask-mode:alpha; mask-mode:alpha;
+  -webkit-print-color-adjust:exact; print-color-adjust:exact;
+}
+
+/* ===================== Background variants ===================== */
+/* bg-soft = default .sheet (declared above). bg-foxing adds faint age spots. */
+
+.bg-foxing .sheet{
+  background-color:var(--parch);
+  background-image:
+    radial-gradient(116% 114% at 50% 50%, transparent 58%, rgba(82,66,42,.10) 88%, rgba(82,66,42,.17) 100%),
+    radial-gradient(2.2% 2.6% at 28% 32%, rgba(96,70,38,.16), transparent 70%),
+    radial-gradient(1.8% 2.1% at 67% 41%, rgba(96,70,38,.14), transparent 70%),
+    radial-gradient(2.6% 3.0% at 74% 73%, rgba(96,70,38,.13), transparent 70%),
+    radial-gradient(1.6% 1.9% at 41% 78%, rgba(96,70,38,.15), transparent 70%),
+    var(--tex-fiber),
+    var(--tex-grain);
+  background-repeat:no-repeat,no-repeat,no-repeat,no-repeat,no-repeat,repeat,repeat;
+  background-size:auto,auto,auto,auto,auto,300px 300px,160px 160px;
+}
+
+.bg-label{
+  position:absolute; left:26mm; bottom:16mm;
+  font-family:var(--mono); font-size:9pt; letter-spacing:.08em; color:var(--ink-soft);
+}
+
+/* ===================== Prose ===================== */
+p{ margin:0 0 15px; }
+.order-head{ margin:0 0 4px; }
+.order-sub,.lead,.seal,.names-foot{ font-style:italic; color:var(--ink-soft); }
+.order-sub{ margin:0 0 20px; }
+.lead{ margin:0 0 16px; }
+.seal{ margin-top:22px; }
+.names-foot{ margin:18px 0 0; }
+
+ol.names{ margin:0; padding-left:1.6em; }
+ol.names li{ margin:9px 0; padding-left:.2em; }
+ol.names li .nm{ font-variant:small-caps; letter-spacing:.06em; }   /* IM Fell has no bold → small-caps register */
+ol.names li i{ color:var(--ink-soft); }
+
+/* ===================== Motto + cipher (MONOSPACE, de-boxed, penned) ===================== */
+.motto{
+  font-family:var(--mono); font-weight:700; text-transform:uppercase; white-space:nowrap;
+  color:var(--ink);
+  width:fit-content; margin:0 auto 26px; padding:2px 0;
+  font-size:21pt; letter-spacing:.12em;
+}
+.cipher-body{
+  font-family:var(--mono); font-weight:700; color:var(--ink); text-align:center;
+  max-width:92%; margin:24px auto;
+  font-size:16.5pt; letter-spacing:.16em; word-spacing:.42em; line-height:2.05;
+}
+
+/* --- header treatment H-VARIANTS (swapped per render) --- */
+
+/* h-plain: scale + air only, no lines */
+.h-plain .motto{ letter-spacing:.2em; }
+
+/* h-underline: penned underline under the motto + under the cipher block */
+.h-underline .motto::after,
+.h-italic .motto::after{
+  content:''; display:block; height:10px; margin-top:5px;
+  background:var(--pen-underline) center/100% 10px no-repeat;
+}
+.h-underline .cipher-body::after,
+.h-italic .cipher-body::after{
+  content:''; display:block; height:8px; width:60%; margin:12px auto 0;
+  background:var(--pen-rule) center/100% 8px no-repeat;
+}
+
+/* h-italic: penned + leaning hand (monospace italic keeps the columns aligned) */
+.h-italic .motto,
+.h-italic .cipher-body{ font-style:italic; }
+
+/* h-rules: a penned rule above and below (no fill, no box) */
+.h-rules .motto::before,
+.h-rules .cipher-body::before{
+  content:''; display:block; height:8px; width:100%; margin:0 auto 6px;
+  background:var(--pen-rule) center/100% 8px no-repeat;
+}
+.h-rules .motto::after{
+  content:''; display:block; height:10px; width:100%; margin-top:5px;
+  background:var(--pen-underline) center/100% 10px no-repeat;
+}
+.h-rules .cipher-body{ max-width:78%; }
+.h-rules .cipher-body::after{
+  content:''; display:block; height:8px; width:100%; margin-top:12px;
+  background:var(--pen-rule) center/100% 8px no-repeat;
+}

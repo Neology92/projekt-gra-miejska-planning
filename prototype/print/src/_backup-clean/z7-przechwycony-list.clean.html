@@ -1,0 +1,52 @@
+<!-- BACKUP: clean (pre-parchment) version. Superseded 2026-06-01 by IM Fell parchment styling (bg-soft, h-plain). Kept per backup-variants rule; full history in git. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Z7 — Intercepted dispatch, Komtur of Thorn to Marienburg</title>
+<!-- Print source for prototype/print/z7-przechwycony-list.pdf. Canon: puzzles/z7-szyfr-spec.md §0.
+     Player-facing prop (English). Cipher: Caesar +7. No "how to read" aid on player copy (spec: unaided discovery). -->
+<style>
+  :root {
+    --mono: "Cascadia Code", "Consolas", "Courier New", monospace;
+    --serif: Georgia, "Palatino Linotype", "Iowan Old Style", serif;
+  }
+  @page { size: A4; margin: 18mm 20mm; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: var(--serif); color: #1a1611; font-size: 12.5pt; line-height: 1.6; background: #fff; }
+
+  .motto {
+    font-family: var(--mono); font-weight: 700; font-size: 19pt; letter-spacing: .12em;
+    text-align: center; color: #2a1f10; background: #f0e6cc;
+    border: 1.5pt solid #c9b07f; border-radius: 6px; padding: 13px 8px; margin: 0 0 26px;
+    white-space: nowrap; -webkit-print-color-adjust: exact; print-color-adjust: exact;
+  }
+  .lead { font-style: italic; color: #463a26; margin: 0 0 16px; }
+  p { margin: 0 0 16px; }
+  .cipher-body {
+    font-family: var(--mono); font-weight: 700; font-size: 16pt; letter-spacing: .16em;
+    text-align: center; color: #1a1611; background: #faf5e9;
+    border: 1.5pt dashed #c2a86c; border-radius: 6px; padding: 22px 12px; margin: 22px 0;
+    word-spacing: .45em; line-height: 1.95;
+    -webkit-print-color-adjust: exact; print-color-adjust: exact;
+  }
+  .seal { font-style: italic; color: #564627; margin-top: 22px; }
+</style>
+</head>
+<body>
+
+  <div class="motto">OLSMLU, OPSMLU BUK DLOYLU!</div>
+
+  <p class="lead">To the Hochmeister at Marienburg. In haste — and for your eyes alone.</p>
+
+  <p>What you asked of me, I have. I will not trust it to any road in plain words — too many hands lie between here and Marienburg. I set it down by our word, as we agreed:</p>
+
+  <div class="cipher-body">OHUZ CVU IHFZLU PZ QVYKHU AOL JVVR</div>
+
+  <p class="lead">Read it, then burn it. If this falls into the wrong hands before you, our word still keeps it shut.</p>
+
+  <p class="seal">— by the hand of the Komtur of Thorn</p>
+
+</body>
+</html>
+

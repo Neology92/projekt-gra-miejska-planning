@@ -1,0 +1,57 @@
+<!-- BACKUP: clean (pre-parchment) version. Superseded 2026-06-01 by IM Fell parchment styling (bg-soft, h-plain). Kept per backup-variants rule; full history in git. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Z3 — Order's intelligence list of the Secret Council</title>
+<!-- Print source for prototype/print/z3-pergamin-lista-tr.pdf. Canon: puzzles/z3-lista-tr-spec.md.
+     Player-facing prop (English). Functional print: clean A4, manuscript styling deferred (post dry-run). -->
+<style>
+  :root {
+    --mono: "Cascadia Code", "Consolas", "Courier New", monospace;
+    --serif: Georgia, "Palatino Linotype", "Iowan Old Style", serif;
+  }
+  @page { size: A4; margin: 18mm 20mm; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: var(--serif); color: #1a1611; font-size: 12.5pt; line-height: 1.55; background: #fff; }
+
+  .motto {
+    font-family: var(--mono); font-weight: 700; font-size: 19pt; letter-spacing: .12em;
+    text-align: center; color: #2a1f10; background: #f0e6cc;
+    border: 1.5pt solid #c9b07f; border-radius: 6px; padding: 13px 8px; margin: 0 0 24px;
+    white-space: nowrap; -webkit-print-color-adjust: exact; print-color-adjust: exact;
+  }
+  .order-head { font-weight: 700; margin: 0 0 4px; }
+  .order-sub { font-style: italic; color: #463a26; margin: 0 0 20px; }
+  ol.names { margin: 0; padding-left: 1.5em; }
+  ol.names li { margin: 9px 0; }
+  ol.names li .nm { font-weight: 700; }
+  ol.names li i { color: #4f4128; }
+  .names-foot { font-style: italic; color: #4f4128; margin: 18px 0 0; }
+</style>
+</head>
+<body>
+
+  <div class="motto">HELFEN, HILFEN UND WEHREN!</div>
+
+  <p class="order-head">By the hand of the Komtur of Thorn — for the eyes of the Order alone.</p>
+  <p class="order-sub">Those who gather in secret against us. Names gathered from faithful friends within the walls.</p>
+
+  <ol class="names">
+    <li><span class="nm">Hans von Baysen</span> — <i>they call him chairman. Meets the others where the Old Town council sits. Where he lodges by day, we have not learned.</i></li>
+    <li><span class="nm">Tileman vom Wege</span> — burgomaster of the Old Town. <i>Speaks for the council at the gate.</i></li>
+    <li><span class="nm">Rutger von Birken</span> — sent to Kraków. <i>Carries their words to the king.</i></li>
+    <li><span class="nm">Johann Huxer</span> — of the old burgomaster house. <i>Was among the founders, fourteen years past.</i></li>
+    <li><span class="nm">Hermann Rusop</span> — of the old burgomaster house. <i>The same.</i></li>
+    <li><span class="nm">Gabriel von Baysen</span> — <i>brother to the chairman. Bound to the league.</i></li>
+    <li><span class="nm">— von Hutten</span> — <i>given name not known to us. Seen entering after the eighth bell.</i></li>
+    <li><span class="nm">A Watzenrode</span> — <i>which of the house, uncertain.</i></li>
+    <li><span class="nm">— von Datteln</span> — <i>reported by one friend only; not yet confirmed.</i></li>
+    <li><span class="nm">— von Allen</span> — <i>of the house at the square. Presence doubtful.</i></li>
+  </ol>
+
+  <p class="names-foot">Others sit with them whose names we have not yet bought.</p>
+
+</body>
+</html>
+
