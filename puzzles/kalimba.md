@@ -65,18 +65,20 @@ Razem 3 grupy → wystarczy 1-2 egz. kalimby (grupy rozłożone w czasie). Każd
 
 Melodia → 621454 → data **6.2.1454** — to jest wynik sam w sobie, nie wejście do szyfru.
 
-Szyfr Cezara to **osobna zagadka** (lub drugi etap Z8):
-- **Szyfrogram** = jakaś wiadomość zaszyfrowana szyfrem Cezara.
+Szyfr Cezara to **osobna zagadka** (lub drugi etap Z8 / element finału Z11):
+- **Szyfrogram** = wiadomość zaszyfrowana szyfrem Cezara.
 - **Klucz = motto krzyżaków**: „**Helfen, Hilfen und Wehren**" (wg autora).
+- **Wynik odszyfrowania = HASŁO ROZPOZNAWCZE (parole)** [decyzja 2026-06-01] — które grupa podaje Albrechtowi w finale (Z11), by przyjął list. Brama godności: bez hasła komtur uznaje za niegodnego. Klucz=motto wzmacnia: tylko „swój" (kto poznał motto) odszyfruje. Patrz `concept/04-faza-3-final.md`.
 - Rekwizyt: **koło deszyfrujące** (Caesar wheel) — **wydruk A4**, dwie warstwy obrotowe.
 - Opcjonalnie: **3-kołowa wersja z symbolem** między kołami.
 - Koło **prawdopodobnie w kopercie Z8** (ostateczna decyzja TBD).
 
 ### TODO (do przygotowania)
-- [ ] Ustalić **co jest treścią szyfrogramu** (co jest zaszyfrowane mottem) — decyzja autora
+- [ ] Ustalić **treść hasła rozpoznawczego** (co wychodzi po odszyfrowaniu) — decyzja autora
+- [ ] Z hasła + klucza (motto) policzyć szyfrogram (jaki ciąg liter na karcie)
 - [ ] Zaprojektować koło Cezara — **wydruk A4**, dwie warstwy obrotowe
 - [ ] Opcjonalnie: **3-kołowa wersja z symbolem** między kołami — zdecydować czy warta nakładu
-- [ ] Rozkminić dokładną mechanikę: czy kalimba i szyfrogram to jeden etap Z8, czy dwa osobne
+- [ ] Rozkminić dokładną mechanikę: czy kalimba i szyfrogram to jeden etap Z8, czy dwa osobne (szyfrogram może być częścią finału Z11)
 
 ## Otwarte pytania
 
@@ -84,8 +86,8 @@ Szyfr Cezara to **osobna zagadka** (lub drugi etap Z8):
 2. ~~Gdzie~~ ROZSTRZYGNIĘTE: Z4 (melodia flisaka) + Z8 (melodia zakonu).
 3. **Czy zmieniamy na historyczny instrument** (B) — wciąż otwarte (anachronizm).
 4. **Treść melodii Z4 (flisak)** — do ustalenia (Z8 = 621454 ustalona).
-5. **Co jest treścią szyfrogramu** (co szyfrujemy mottem krzyżaków) — do decyzji autora.
-6. **Czy kalimba i szyfrogram to jeden ciąg Z8** czy dwie osobne zagadki?
+5. ~~Co jest treścią szyfrogramu~~ → wynik = **hasło rozpoznawcze do Albrechta** [2026-06-01]; **treść samego hasła** wciąż do ustalenia (autor).
+6. **Czy kalimba i szyfrogram to jeden ciąg Z8** czy dwie osobne zagadki (szyfrogram jako element finału Z11)?
 
 ## Co autor może zrobić sam vs gdzie pomocy
 
