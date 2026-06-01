@@ -48,7 +48,7 @@
 
 Broken w v2: G8 P2→P3 (`C01→C07` ❌) · G9 P1→P2 (`C02→C06` ❌) + P2→P3 (`C06→C01` ❌) · G10 P2→P3 (`C07→C02` ❌).
 
-Swappy: G3.P1 `N02`→`C02` · G8.P3 `C07`→`N01` · G9.P1 `C02`→`N02` · G9.P3 `C01`→`S02` · G10.P3 `C02`→`N04`.
+Swappy: G3.P1 `N02`→`C02` · G8.P3 `C07`→`N01` · G9.P1 `C02`→`N02` · G9.P3 `C01`→`S02` · G10.P3 `C02`→`N04` · **G5.P3 `C02`→`S04`** (sightline C04↔C02 potwierdzone w terenie 2026-06-01).
 
 **Detal S02:** kaszownik zbyt trudny do ikonizacji → **brama prostokątna (gotycki łuk) od strony Bulwaru**; `s02-brama-klasztorna.svg` przebudowany [2026-06-01].
 
@@ -58,18 +58,16 @@ Swappy: G3.P1 `N02`→`C02` · G8.P3 `C07`→`N01` · G9.P1 `C02`→`N02` · G9.
 | G2 | N06 | N04 | N05 | C01 | NM |
 | G3 | **C02** | N01 | C03 | C06 | NM (P1 ← C02) |
 | G4 | N04 | N06 | C09 | C02 | NM |
-| G5 | N05 | C04 | **C02** | C07 | NM (P3 C08→C02: constraint ikon) |
+| G5 | N05 | C04 | **S04** | C07 | NM (P3 C02→S04: sightline swap, bez teren. wer.) |
 | G6 | S02 | C08 | C04 | C06 | głęboki SW (Br. Klasztorna) |
 | G7 | S01 | C09 | C06 | C07 | głęboki S (Br. Mostowa) |
 | G8 | C09 | C01 | **N01** | C06 | głęboki SE (P3 ← N01) |
 | G9 | **N02** | C06 | **S02** | C07 | NM-start (P1 ← N02, P3 ← S02) |
 | G10 | C03 | C07 | **N04** | C08 | głęboki NW (P3 ← N04) |
 
-**Pass disjointness v3.1:** P1 {N01·N06·C02·N04·N05·S02·S01·C09·N02·C03} ✓ · P2 {N02·N04·N01·N06·C04·C08·C09·C01·C06·C07} ✓ · P3 {N06·N05·C03·C09·**C02**·C04·C06·N01·S02·N04} ✓ — 10/10 parami różne w każdej kolumnie (G5 P3: C08→C02).
+**Pass disjointness v3.2:** P1 {N01·N06·C02·N04·N05·S02·S01·C09·N02·C03} ✓ · P2 {N02·N04·N01·N06·C04·C08·C09·C01·C06·C07} ✓ · P3 {N06·N05·C03·C09·**S04**·C04·C06·N01·S02·N04} ✓ — 10/10 parami różne w każdej kolumnie (G5 P3: C02→S04 sightline swap; Ratusz↔Osiołek intervisible potwierdzono w terenie 2026-06-01).
 
 **Brak par klastra śródłańcuchowo** — wszystkie {C01,C02,C06,C07} sąsiadują tylko z non-klastrem w P1→P2 i P2→P3. P3→P4 zwolniony.
-
-**🟡 FLAGA sightline (nowa w v3.1):** `G5 C04→C02` (Ratusz → Osiołek, P2→P3). Para niesprawdzona w R2.1 (klaster testowany był {C01,C02,C06,C07} wzajemnie; C04 poza nim). Osiołek stoi przy Ratuszu od str. Żeglarskiej → **możliwe intervisible**. Do weryfikacji na draft-mapie / przy okazji strefy C. Jeśli ciasne → G5 P3 dostaje głęboki kod (S04/W01).
 
 ### 🔒 Constrainty ikon na karcie [Oskar, 2026-06-01] — anti-pair w obrębie deszyfrownika
 
@@ -114,81 +112,82 @@ Ikony zbyt podobne/jednoznaczne **nie mogą współwystąpić na jednej karcie**
 
 ---
 
-## Ścieżki (łańcuch · pętla dystraktorów · deszyfrownik · klucz MG)
+## Ścieżki — v3.2 (regeneracja 2026-06-01)
 
-> ⚠️ **STALE (v1) — NIE UŻYWAĆ łańcuchów poniżej.** Po dry-runie runda 1 obowiązuje **macierz REBALANS v2 powyżej** (7 z 10 łańcuchów zmienione: G2/G5/G6/G7/G8/G9/G10). Karty poniżej (pętle dystraktorów + deszyfrowniki) są **do regeneracji** na łańcuchach v2 w następnej sesji. Zachowane jako referencja formatu i źródło pętli dystraktorów do recyklingu.
+> Format deszyfrownika: `detal[KOD]→następnyKOD`. 4 wiersze łańcucha (ostatni →KONIEC) + separator ‖ + 5 wierszy pętli dystraktorów (zamknięta). Klucz MG = 4 miejsca łańcucha po kolei.
 
-> Format deszyfrownika: `detal [kod] → następny kod`. 4 wiersze łańcucha + 5 dystraktorów (zamknięta pętla). Klucz MG = 4 miejsca po kolei.
-
-### G1 — N-start, długa noga finałowa
-- **Łańcuch:** `N01` Piernikarka → `N02` Przekupka → `N06` Baj Pomorski → `C04` Ratusz
+### G1 — NM tani, sweep NE→SW
+- **Łańcuch:** `N01` Pomnik Piernikarki → `N02` Pomnik Przekupki → `N06` Teatr Baj Pomorski → `C04` Ratusz Staromiejski
 - **Pętla dystr.:** `N04`→`N05`→`N03`→`S04`→`W01`→`N04`
-- **Deszyfrownik:** piernik[N01]→N02 · waga[N02]→N06 · szafa[N06]→C04 · wieża bez hełmu[C04]→KONIEC ‖ lew[N04]→N05 · bazylika-łuki[N05]→N03 · fartuch[N03]→S04 · kotwica[S04]→W01 · trąbka[W01]→N04
-- **Klucz MG:** Piernikarka → Przekupka → Baj Pomorski → Ratusz
-- **Budżet:** ~12,5 min (N02→N06 krótki hop, N06→C04 dive ~500 m).
-- **⚠** wszystkie niepewne detale w pętli dystraktorów (nieszkodliwe): `N03` fartuch (tylko nazwa), `N05` bazylika→łuki, `N04` lew (godziny apteki). Łańcuch oparty na pewnych: `N01` piernik ✓#35, `N02` waga ✓#34, `N06` szafa+zegar ✓#43, `C04` wieża ✓#5. **Wzorzec reguły: pewne→łańcuch, niepewne→dystraktor.**
+- **Deszyfrownik:** piernik[N01]→N02 · gęś[N02]→N06 · szafa[N06]→C04 · wieża[C04]→KONIEC ‖ lew[N04]→N05 · bazylika-łuki[N05]→N03 · fartuch[N03]→S04 · kotwica[S04]→W01 · trąbka[W01]→N04
+- **Klucz MG:** Pomnik Piernikarki → Pomnik Przekupki → Teatr Baj Pomorski → Ratusz Staromiejski
+- **Budżet:** ~12,5 min (NM tani, sweep NE→SW; długa noga finałowa N06→C04 ~500 m)
 
-### G2 — N-start, długa noga finałowa (Kopernik)
-- **Łańcuch:** `N03` Modry Fartuch → `N04` Apteka Lew → `N05` Kościół Jakuba → `C01` Kopernik
-- **Pętla dystr.:** `N01`→`C03`→`W01`→`S04`→`C07`→`N01`
-- **Deszyfrownik:** fartuch[N03]→N04 · lew[N04]→N05 · bazylika-łuki[N05]→C01 · astrolabium[C01]→KONIEC ‖ piernik[N01]→C03 · melonik[C03]→W01 · trąbka[W01]→S04 · kotwica[S04]→C07 · herb[C07]→N01
-- **Klucz MG:** Modry Fartuch → Apteka Lew → Kościół Jakuba → Kopernik
-- **⚠** `N03` fartuch (teren, **łańcuch P1**); `N04` lew (godziny apteki, **łańcuch P2** — krytyczne, patrz ryzyko globalne); `N05` bazylika→łuki (teren, **łańcuch P3**). `C01` astrolabium = fakt (must-have).
+### G2 — NM tani, finał Kopernik
+- **Łańcuch:** `N06` Teatr Baj Pomorski → `N04` Apteka Pod Złotym Lwem → `N05` Kościół św. Jakuba → `C01` Pomnik Kopernika
+- **Pętla dystr.:** `N01`→`C02`→`C06`→`S01`→`W01`→`N01`
+- **Deszyfrownik:** szafa[N06]→N04 · lew[N04]→N05 · bazylika-łuki[N05]→C01 · astrolabium[C01]→KONIEC ‖ piernik[N01]→C02 · osioł[C02]→C06 · gwiazda[C06]→S01 · brama-ostrołuk[S01]→W01 · trąbka[W01]→N01
+- **Klucz MG:** Teatr Baj Pomorski → Apteka Pod Złotym Lwem → Kościół św. Jakuba → Pomnik Kopernika
+- **Budżet:** ~13,5 min (NE tani, długa noga finałowa N05→C01 ~500 m)
 
-### G3 — N-start tani
-- **Łańcuch:** `N02` Przekupka → `N01` Piernikarka → `C03` Filuś → `C06` Pod Gwiazdą
-- **Pętla dystr.:** `W01`→`S01`→`C07`→`D01`→`N05`→`W01`
-- **Deszyfrownik:** waga[N02]→N01 · piernik[N01]→C03 · melonik[C03]→C06 · gwiazda[C06]→KONIEC ‖ trąbka[W01]→S01 · brama-zaokr[S01]→C07 · herb[C07]→D01 · flisak[D01]→N05 · bazylika-łuki[N05]→W01
-- **Klucz MG:** Przekupka → Piernikarka → Filuś → Pod Gwiazdą
+### G3 — start Rynek SM, cofka NE, powrót SW
+- **Łańcuch:** `C02` Pręgierz Osiołek → `N01` Pomnik Piernikarki → `C03` Pies Filuś → `C06` Kamienica Pod Gwiazdą
+- **Pętla dystr.:** `N04`→`S01`→`W01`→`C07`→`C04`→`N04`
+- **Deszyfrownik:** osioł[C02]→N01 · piernik[N01]→C03 · melonik[C03]→C06 · gwiazda[C06]→KONIEC ‖ lew[N04]→S01 · brama-ostrołuk[S01]→W01 · trąbka[W01]→C07 · herb[C07]→C04 · wieża[C04]→N04
+- **Klucz MG:** Pręgierz Osiołek → Pomnik Piernikarki → Pies Filuś → Kamienica Pod Gwiazdą
+- **Budżet:** ~14,5 min (start C02 ~500 m od NM + cofka NE do N01, powrót SW)
 
-### G4 — N-start, P3 głęboki (Katedra) ⚠ budżet graniczny
-- **Łańcuch:** `N04` Apteka Lew → `N06` Baj Pomorski → `C09` Katedra Janów → `C02` Osiołek
-- **Pętla dystr.:** `C03`→`C07`→`W01`→`N02`→`D01`→`C03`
-- **Deszyfrownik:** lew[N04]→N06 · szafa[N06]→C09 · zegar-1-wskazówka[C09]→C02 · osioł[C02]→KONIEC ‖ melonik[C03]→C07 · herb[C07]→W01 · trąbka[W01]→N02 · waga[N02]→D01 · flisak[D01]→C03
-- **Klucz MG:** Apteka Lew → Baj Pomorski → Katedra Janów → Osiołek
-- **⚠** `N04` lew (godziny apteki, **łańcuch P1**); noga `N06`→`C09` ~620 m (najdłuższa); `C09`→`C02` ~180 m w górę Żeglarskiej (lekki nawrót — K1 nie może zdradzać, że Osiołek jest na drodze powrotnej).
+### G4 — NM tani, P3 głęboki SE (Katedra) ⚠ budżet graniczny
+- **Łańcuch:** `N04` Apteka Pod Złotym Lwem → `N06` Teatr Baj Pomorski → `C09` Katedra Janów → `C02` Pręgierz Osiołek
+- **Pętla dystr.:** `N01`→`C01`→`C06`→`S01`→`S04`→`N01`
+- **Deszyfrownik:** lew[N04]→N06 · szafa[N06]→C09 · zegar[C09]→C02 · osioł[C02]→KONIEC ‖ piernik[N01]→C01 · astrolabium[C01]→C06 · gwiazda[C06]→S01 · brama-ostrołuk[S01]→S04 · kotwica[S04]→N01
+- **Klucz MG:** Apteka Pod Złotym Lwem → Teatr Baj Pomorski → Katedra Janów → Pręgierz Osiołek
+- **Budżet:** ~14–15 min (NM tani, długa noga N06→C09 ~620 m — graniczny budżet)
+- **⚠** noga `N06`→`C09` ~620 m (najdłuższa w zestawie); `C09`→`C02` ~180 m w górę Żeglarskiej (lekki nawrót — K1 nie zdradza, że Osiołek na drodze powrotnej).
 
-### G5 — N-start tani
-- **Łańcuch:** `N05` Kościół Jakuba → `N03` Modry Fartuch → `C08` Kościół NMP → `C07` Dwór Artusa
-- **Pętla dystr.:** `W01`→`S04`→`C06`→`D01`→`N01`→`W01`
-- **Deszyfrownik:** bazylika-łuki[N05]→N03 · fartuch[N03]→C08 · kościół-bez-wieży[C08]→C07 · herb[C07]→KONIEC ‖ trąbka[W01]→S04 · kotwica[S04]→C06 · gwiazda[C06]→D01 · flisak[D01]→N01 · piernik[N01]→W01
-- **Klucz MG:** Kościół Jakuba → Modry Fartuch → Kościół NMP → Dwór Artusa
-- **⚠** `N05` bazylika→łuki (teren, **łańcuch P1**); `N03` fartuch (teren, **łańcuch P2**).
+### G5 — NM→Ratusz→Bulwar→Rynek SM (głęboki sweep)
+- **Łańcuch:** `N05` Kościół św. Jakuba → `C04` Ratusz Staromiejski → `S04` Kotwica na Bulwarze → `C07` Dwór Artusa
+- **Pętla dystr.:** `N02`→`N04`→`C03`→`C06`→`S01`→`N02`
+- **Deszyfrownik:** bazylika-łuki[N05]→C04 · wieża[C04]→S04 · kotwica[S04]→C07 · herb[C07]→KONIEC ‖ gęś[N02]→N04 · lew[N04]→C03 · melonik[C03]→C06 · gwiazda[C06]→S01 · brama-ostrołuk[S01]→N02
+- **Klucz MG:** Kościół św. Jakuba → Ratusz Staromiejski → Kotwica na Bulwarze Filadelfijskim → Dwór Artusa
+- **Budżet:** ~18–19 min (⚠ głęboki: N05→C04 ~650 m + zejście do Bulwaru i powrót na Rynek; poluzowany budżet)
+- **⚠** Ratusz↔Osiołek intervisible potwierdzone w terenie 2026-06-01 → S04 zamiast C02.
 
-### G6 — N-start tani
-- **Łańcuch:** `N06` Baj Pomorski → `N05` Kościół Jakuba → `C06` Pod Gwiazdą → `C08` Kościół NMP
-- **Pętla dystr.:** `C03`→`W01`→`D01`→`N02`→`C07`→`C03`
-- **Deszyfrownik:** szafa[N06]→N05 · bazylika-łuki[N05]→C06 · gwiazda[C06]→C08 · kościół-bez-wieży[C08]→KONIEC ‖ melonik[C03]→W01 · trąbka[W01]→D01 · flisak[D01]→N02 · waga[N02]→C07 · herb[C07]→C03
-- **Klucz MG:** Baj Pomorski → Kościół Jakuba → Pod Gwiazdą → Kościół NMP
-- **⚠** `N05` bazylika→łuki (teren, **łańcuch P2**).
+### G6 — głęboki SW (Brama Klasztorna), sweep S→Rynek SM
+- **Łańcuch:** `S02` Brama Klasztorna → `C08` Kościół NMP → `C04` Ratusz Staromiejski → `C06` Kamienica Pod Gwiazdą
+- **Pętla dystr.:** `S01`→`S04`→`C01`→`C07`→`N01`→`S01`
+- **Deszyfrownik:** kaszownik[S02]→C08 · kościół-bez-wieży[C08]→C04 · wieża[C04]→C06 · gwiazda[C06]→KONIEC ‖ brama-ostrołuk[S01]→S04 · kotwica[S04]→C01 · astrolabium[C01]→C07 · herb[C07]→N01 · piernik[N01]→S01
+- **Klucz MG:** Brama Klasztorna → Kościół NMP → Ratusz Staromiejski → Kamienica Pod Gwiazdą
+- **Budżet:** ~16 min (⚠ głęboki SW: start S02 Bulwar Filadelfijski, sweep S→C przez NMP, finał Rynek SM; poluzowany budżet)
 
-### G7 — głęboki start E (Podmurna)
-- **Łańcuch:** `S06` Ulica Ciasna → `C04` Ratusz → `C07` Dwór Artusa → `C03` Filuś
-- **Pętla dystr.:** `D01`→`W01`→`S01`→`N01`→`C06`→`D01`
-- **Deszyfrownik:** wąska-uliczka-łuki[S06]→C04 · wieża-bez-hełmu[C04]→C07 · herb[C07]→C03 · melonik[C03]→KONIEC ‖ flisak[D01]→W01 · trąbka[W01]→S01 · brama-zaokr[S01]→N01 · piernik[N01]→C06 · gwiazda[C06]→D01
-- **Klucz MG:** Ulica Ciasna → Ratusz → Dwór Artusa → Filuś
-- **⚠** `S06` łuki odporowe wypatrzalne z ulicy (teren); noga `C04`→`C07` ~50 m (ten sam obszar Rynku — ryzyko trywializacji kroku, ocena Oskara).
+### G7 — głęboki S (Brama Mostowa), sweep S→Rynek SM
+- **Łańcuch:** `S01` Brama Mostowa → `C09` Katedra Janów → `C06` Kamienica Pod Gwiazdą → `C07` Dwór Artusa
+- **Pętla dystr.:** `N01`→`C03`→`D01`→`S02`→`W01`→`N01`
+- **Deszyfrownik:** brama-ostrołuk[S01]→C09 · zegar[C09]→C06 · gwiazda[C06]→C07 · herb[C07]→KONIEC ‖ piernik[N01]→C03 · melonik[C03]→D01 · flisak[D01]→S02 · kaszownik[S02]→W01 · trąbka[W01]→N01
+- **Klucz MG:** Brama Mostowa → Katedra Janów → Kamienica Pod Gwiazdą → Dwór Artusa
+- **Budżet:** ~15 min (⚠ głęboki S: start S01 ~700 m od NM; lateralna noga S01→C09 nad Wisłą; finał Żeglarska→Rynek SM)
 
-### G8 — głęboki start SE (Żeglarska)
-- **Łańcuch:** `C09` Katedra Janów → `C02` Osiołek → `C01` Kopernik → `C06` Pod Gwiazdą
-- **Pętla dystr.:** `C03`→`C07`→`C08`→`W01`→`N02`→`C03`
-- **Deszyfrownik:** zegar-1-wskazówka[C09]→C02 · osioł[C02]→C01 · astrolabium[C01]→C06 · gwiazda[C06]→KONIEC ‖ melonik[C03]→C07 · herb[C07]→C08 · kościół-bez-wieży[C08]→W01 · trąbka[W01]→N02 · waga[N02]→C03
-- **Klucz MG:** Katedra Janów → Osiołek → Kopernik → Pod Gwiazdą
-- **⚠** brak `⚠ teren` (wszystkie 9 wiki-potwierdzone); `C01` astrolabium = fakt must-have; noga briefing→C09 ~580 m / ~7 min (najdłuższa pierwsza noga — dry-run GPS).
+### G8 — głęboki SE (Katedra), cofka NE, powrót SW
+- **Łańcuch:** `C09` Katedra Janów → `C01` Pomnik Kopernika → `N01` Pomnik Piernikarki → `C06` Kamienica Pod Gwiazdą
+- **Pętla dystr.:** `C02`→`N02`→`S01`→`S04`→`W01`→`C02`
+- **Deszyfrownik:** zegar[C09]→C01 · astrolabium[C01]→N01 · piernik[N01]→C06 · gwiazda[C06]→KONIEC ‖ osioł[C02]→N02 · gęś[N02]→S01 · brama-ostrołuk[S01]→S04 · kotwica[S04]→W01 · trąbka[W01]→C02
+- **Klucz MG:** Katedra Janów → Pomnik Kopernika → Pomnik Piernikarki → Kamienica Pod Gwiazdą
+- **Budżet:** ~14–15 min (głęboki SE start C09 ~580 m od NM; C01→N01 cofka NE ~450 m; N01→C06 powrót SW ~550 m)
 
-### G9 — głęboki start NE Rynek
-- **Łańcuch:** `C02` Osiołek → `C06` Pod Gwiazdą → `C04` Ratusz → `C07` Dwór Artusa
-- **Pętla dystr.:** `D01`→`W01`→`S01`→`S02`→`N02`→`D01`
-- **Deszyfrownik:** osioł[C02]→C06 · gwiazda[C06]→C04 · wieża-bez-hełmu[C04]→C07 · herb[C07]→KONIEC ‖ flisak[D01]→W01 · trąbka[W01]→S01 · brama-zaokr[S01]→S02 · kaszownik[S02]→N02 · waga[N02]→D01
-- **Klucz MG:** Osiołek → Pod Gwiazdą → Ratusz → Dwór Artusa
-- **⚠** brak `⚠ teren`; `C04` Ratusz i `C01` Kopernik ~20 m od siebie — MG mieć neutralną odpowiedź, gdyby grupa pytała o Kopernika (C01 nie jest na mapie G9).
+### G9 — NM tani, sweep SM→SW (Brama Klasztorna)→Rynek
+- **Łańcuch:** `N02` Pomnik Przekupki → `C06` Kamienica Pod Gwiazdą → `S02` Brama Klasztorna → `C07` Dwór Artusa
+- **Pętla dystr.:** `N04`→`C01`→`C09`→`S04`→`W01`→`N04`
+- **Deszyfrownik:** gęś[N02]→C06 · gwiazda[C06]→S02 · kaszownik[S02]→C07 · herb[C07]→KONIEC ‖ lew[N04]→C01 · astrolabium[C01]→C09 · zegar[C09]→S04 · kotwica[S04]→W01 · trąbka[W01]→N04
+- **Klucz MG:** Pomnik Przekupki → Kamienica Pod Gwiazdą → Brama Klasztorna → Dwór Artusa
+- **Budżet:** ~16 min (tani start NM; głęboki sweep Rynek SM→S02 nad Wisłą + powrót na Rynek)
 
-### G10 — głęboki start NW Rynek ⚠ budżet graniczny
-- **Łańcuch:** `C03` Filuś → `C07` Dwór Artusa → `C02` Osiołek → `C08` Kościół NMP
+### G10 — głęboki NW (Filuś Chełmińska), lateralna pętla Rynek SM
+- **Łańcuch:** `C03` Pies Filuś → `C07` Dwór Artusa → `N04` Apteka Pod Złotym Lwem → `C08` Kościół NMP
 - **Pętla dystr.:** `D01`→`W01`→`S01`→`C06`→`C04`→`D01`
-- **Deszyfrownik:** melonik[C03]→C07 · herb[C07]→C02 · osioł[C02]→C08 · kościół-bez-wieży[C08]→KONIEC ‖ flisak[D01]→W01 · trąbka[W01]→S01 · brama-zaokr[S01]→C06 · gwiazda[C06]→C04 · wieża-bez-hełmu[C04]→D01
-- **Klucz MG:** Filuś → Dwór Artusa → Osiołek → Kościół NMP
-- **⚠** noga briefing→C03 ~700 m / ~8,5 min (zmierzyć Chełmińską na dry-runie — jeśli ~500 m, całość spada do ~13); trasa C03(NW)→C07(SE)→C02(NE)→C08(NW) = lateralna pętla wokół Rynku (~510 m, bez wyjścia poza plac).
+- **Deszyfrownik:** melonik[C03]→C07 · herb[C07]→N04 · lew[N04]→C08 · kościół-bez-wieży[C08]→KONIEC ‖ flisak[D01]→W01 · trąbka[W01]→S01 · brama-ostrołuk[S01]→C06 · gwiazda[C06]→C04 · wieża[C04]→D01
+- **Klucz MG:** Pies Filuś → Dwór Artusa → Apteka Pod Złotym Lwem → Kościół NMP
+- **Budżet:** ~16–18 min (głęboki NW: brief→C03 ~700 m Chełmińską; lateralna pętla Rynek SM; cofka NE do N04; finał NMP)
+- **⚠** noga `C07`→`N04` = cofka NE ~400 m (K1 nie zdradza, że Apteka jest na drodze powrotnej przez Rynek NM).
 
 ---
 
@@ -220,8 +219,10 @@ Ikony zbyt podobne/jednoznaczne **nie mogą współwystąpić na jednej karcie**
 > Niewykorzystane (NIE generować): `aniol` `baszta` `brama-luk` `dwa-szczyty` `schodkowy-szczyt`.
 
 ## Następne kroki
-1. ✅ Decyzja G2 = opcja (i) [Oskar 2026-06-01].
-2. 🔴 **Dry-run terenowy (Oskar)** — arkusz: `z1-dry-run-sheet.md`. Weryfikacja `⚠` (N03/N04/N05/S06) + pomiar nóg granicznych (G4, G10) + czas/postój. **Długi tor** (godziny aptek, światło) — odblokowany.
-3. ✅ Globalna tabela kod→glif + pozycje x/y: `z1-glify-globalne.md` (20 kodów; render = placeholder geometryczny, gmerki dla Z6).
-4. ✅ Wektoryzacja 9 ikon — gotowe (22 total, arkusz kontaktowy).
-5. ⏳ **Bazowa mapa SVG** (20 glifów na pozycjach z `z1-glify-globalne.md`) → **10 widoków per ścieżka** (wzór `prototype/mapa-z1-podglad.html`). Mapy niosone w teren jako *wejście* dry-runu; 3 kontyngentne (G2/G4/G10) domykane po pomiarze.
+1. ✅ Decyzja G2 = opcja (i) [Oskar 2026-06-01] — v3.2 G2 zmienione (N03→N06 na P1), detale N04/N05 potwierdzone w terenie.
+2. ✅ Dry-run R1 + R2 [2026-06-01] — macierz domknięta do v3.2; Ratusz↔Osiołek intervisible → G5 P3 = S04.
+3. ✅ Globalna tabela kod→glif + pozycje x/y: `z1-glify-globalne.md` (19 kodów; render = placeholder geometryczny).
+4. ✅ Wektoryzacja ikon — 23 SVG, arkusz kontaktowy `prototype/icons-contact-sheet.html`.
+5. ✅ **10 kart v3.2** — §Ścieżki powyżej (regeneracja 2026-06-01, 10× sonnet).
+6. ⏳ **Bazowa mapa SVG** (19 glifów na pozycjach z `z1-glify-globalne.md`) → **10 widoków per ścieżka** (wzór `prototype/mapa-z1-podglad.html`). Flaga sightline G5 `C04→S04` do oceny wzrokowej na mapie (nowa noga niezweryfikowana terenowo).
+7. ⏳ **Playtest / dry-run R3** — całe 10 ścieżek z kartami i mapami; czas/postój per przystanek.
