@@ -4,20 +4,25 @@
 - **Z4 — melodia flisaka** (tor mieszczan, opcjonalna, 1 grupa).
 - **Z8 — melodia zakonu** (tor krzyżaków, opcjonalna, 2 grupy).
 
-Razem 3 grupy → wystarczy 1-2 egz. kalimby (grupy rozłożone w czasie). Każda z zagadek musi wypluć **wymienialny „klucz"** do finału (Z7/Z11). Treść melodii i mechanika kodu — do rozpisania. Decyzja o instrumencie (anachronizm) wciąż otwarta — patrz niżej.
+Razem 3 grupy → wystarczy 1-2 egz. kalimby (grupy rozłożone w czasie). Decyzja o instrumencie (anachronizm) wciąż otwarta — patrz niżej.
+
+> **Kalimba to PROSTA, OSOBNA zagadka** [doprecyzowanie 2026-06-01]: odtwórz melodię ze słuchu → spisz liczby z zagranych dźwięków → podaj MG. **Żadnego szyfru ani koła deszyfrującego tutaj.** Po oddaniu rozwiązania MG wydaje szyfrogram do finału (Z7/Z11) — ale szyfr/koło to element **finału**, nie kalimby. Patrz `concept/04-faza-3-final.md`, `puzzles/z7-szyfr-spec.md`.
 
 ## Pomysł autora (cytat skondensowany)
 
-> Drużyna musi powtórzyć na kalimbie dany motyw muzyczny i spisać liczby, które są na konkretnych pałeczkach (pręcikach kalimby). To będzie kod, który gdzieś podać.
+> Drużyna musi powtórzyć na kalimbie dany motyw muzyczny i spisać liczby, które wychodzą z zagranych dźwięków (nuty oznaczone liczbami na kalimbie). To będzie kod, który podać MG.
 
 ## Mechanika
 
-1. Kalimba (afrykański instrument lamellofoniczny, kciukowy).
-2. Każdy pręcik (lameka) ma **numerację**.
-3. Gracze otrzymują **zapis motywu muzycznego** - np. sekwencja nut do zagrania.
-4. Grając, dotykają konkretnych pręcików.
-5. **Spisują numery** pręcików → kod liczbowy.
-6. Kod podają jako hasło w innej zagadce.
+1. Kalimba (instrument lamellofoniczny, kciukowy) z **dźwiękami oznaczonymi liczbami**: C:1, D:2, E:3, F:4, G:5, A:6, … (mapowanie nuta→liczba naniesione na pręciki).
+2. Gracze **odtwarzają melodię ze słuchu** (nagranie / zagrane przez MG).
+3. Grając, czytają liczby przypisane do trafionych dźwięków.
+4. **Spisują liczby** → kod liczbowy (np. Z8 = `621454`).
+5. **Podają kod MG** = rozwiązanie zagadki. MG w zamian wydaje szyfrogram do finału (patrz model 2B→finał).
+
+**TODO rekwizyt** (z briefu autora 2026-06-01):
+- [ ] **Oznaczyć pierwszy dźwięk** melodii (żeby grupa wiedziała, skąd zacząć).
+- [ ] **Zakleić dźwięki nieużywane** w grze (ułatwienie — zostają tylko pręciki potrzebne do melodii).
 
 ## Problem: anachronizm (miejsce w fabule już jest)
 
@@ -54,40 +59,22 @@ Razem 3 grupy → wystarczy 1-2 egz. kalimby (grupy rozłożone w czasie). Każd
 - **Z4 — melodia flisaka** (mieszczanie, opcjonalna).
 - **Z8 — melodia zakonu** (krzyżacy, opcjonalna). Wariant D (kalimba jako ezoteryczny element zakonu) ładnie pasuje tu fabularnie.
 
-## Z8 — notatki autora [2026-06-01]
+## Melodie — co grają (per tor)
 
-### Melodia i co koduje
-- Sekwencja pręcików: **6 · 2 · 1 · 4 · 5 · 4**
-- Co to znaczy: **6.2.1454 = 6 lutego 1454** — data buntu toruńskiego. Melodia zakodowuje datę własnej klęski Zakonu.
-- Na kopercie / karcie gracza: **pierwszy dźwięk zaznaczyć** (wyróżnienie graficzne, żeby wiedzieli skąd zacząć).
+| Zagadka | Tor | Melodia → kod | Znaczenie |
+|---|---|---|---|
+| **Z8 — melodia zakonu** | krzyżacy | **6 · 2 · 1 · 4 · 5 · 4** = `621454` | **6.2.1454** = 6 lutego 1454, data buntu toruńskiego (data własnej klęski Zakonu) |
+| **Z4 — melodia flisaka** | mieszczanie | TBD | do ustalenia (autor) |
 
-### Szyfrogram + klucz (osobny element, niezależny od melodii)
-
-Melodia → 621454 → data **6.2.1454** — to jest wynik sam w sobie, nie wejście do szyfru.
-
-Szyfr Cezara to **osobna zagadka** (lub drugi etap Z8 / element finału Z11):
-- **Szyfrogram** = wiadomość zaszyfrowana szyfrem Cezara.
-- **Klucz = motto krzyżaków**: „**Helfen, Hilfen und Wehren**" (wg autora).
-- **Wynik odszyfrowania = HASŁO ROZPOZNAWCZE (parole)** [decyzja 2026-06-01] — które grupa podaje Albrechtowi w finale (Z11), by przyjął list. Brama godności: bez hasła komtur uznaje za niegodnego. Klucz=motto wzmacnia: tylko „swój" (kto poznał motto) odszyfruje. Patrz `concept/04-faza-3-final.md`.
-- Rekwizyt: **koło deszyfrujące** (Caesar wheel) — **wydruk A4**, dwie warstwy obrotowe.
-- Opcjonalnie: **3-kołowa wersja z symbolem** między kołami.
-- Koło **prawdopodobnie w kopercie Z8** (ostateczna decyzja TBD).
-
-### TODO (do przygotowania)
-- [ ] Ustalić **treść hasła rozpoznawczego** (co wychodzi po odszyfrowaniu) — decyzja autora
-- [ ] Z hasła + klucza (motto) policzyć szyfrogram (jaki ciąg liter na karcie)
-- [ ] Zaprojektować koło Cezara — **wydruk A4**, dwie warstwy obrotowe
-- [ ] Opcjonalnie: **3-kołowa wersja z symbolem** między kołami — zdecydować czy warta nakładu
-- [ ] Rozkminić dokładną mechanikę: czy kalimba i szyfrogram to jeden etap Z8, czy dwa osobne (szyfrogram może być częścią finału Z11)
+- Kod (liczby) = **rozwiązanie zagadki**, podawane MG. Nic więcej kalimba nie robi.
+- Po oddaniu kodu MG wydaje **szyfrogram do finału** (Z7 mieszczanie / Z11 krzyżacy). Szyfr, klucz (motto) i koło deszyfrujące — patrz `concept/04-faza-3-final.md`, `puzzles/z7-szyfr-spec.md`. **Tu, w kalimbie, ich nie ma.**
 
 ## Otwarte pytania
 
 1. ~~Czy używać kalimby~~ ROZSTRZYGNIĘTE: **tak** (Z4 + Z8).
 2. ~~Gdzie~~ ROZSTRZYGNIĘTE: Z4 (melodia flisaka) + Z8 (melodia zakonu).
 3. **Czy zmieniamy na historyczny instrument** (B) — wciąż otwarte (anachronizm).
-4. **Treść melodii Z4 (flisak)** — do ustalenia (Z8 = 621454 ustalona).
-5. ~~Co jest treścią szyfrogramu~~ → wynik = **hasło rozpoznawcze do Albrechta** [2026-06-01]; **treść samego hasła** wciąż do ustalenia (autor).
-6. **Czy kalimba i szyfrogram to jeden ciąg Z8** czy dwie osobne zagadki (szyfrogram jako element finału Z11)?
+4. **Treść melodii Z4 (flisak)** — do ustalenia (Z8 = `621454` ustalona).
 
 ## Co autor może zrobić sam vs gdzie pomocy
 

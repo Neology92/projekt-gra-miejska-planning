@@ -22,7 +22,7 @@
 ┌──────┐   ┌──────┐   ┌──────┐   ┌──────┐   ┌────────┐   ┌──────┐   ┌──────┐   ┌──────┐   ┌──────┐   ┌──────┐
 │  K1  │──▶│  Z1  │──▶│  MG  │──▶│  K2  │──▶│   Z2   │──▶│Jordan│──▶│  K3  │──▶│  Z3  │──▶│  Z4  │──▶│  Z7  │──▶ KF
 │start │   │szlak │   │raport│   │twist │   │Einstein│   │ /Z2b │   │brief │   │zamek │   │kalim.│   │szyfr │
-└──────┘   │symbol│   │ 4 m. │   │plotki│   │ (Piotr)│   │hasło │   │ F2B  │   │lista │   │ →klucz   │Vigen.│
+└──────┘   │symbol│   │ 4 m. │   │plotki│   │ (Piotr)│   │hasło │   │ F2B  │   │lista │   │ melo→#   │Cezar │
    🟡       └──────┘   └──────┘   └──────┘   └────────┘   │+kolor│   └──────┘   │ TR   │   └──────┘   └──────┘
             🟡/🔒        ⬜         🟡        🔄(Piotr)    └──────┘     ⬜        ⬜🔒       ⬜🔒        ⬜🔒
                                                               ✅
@@ -51,7 +51,7 @@
 🟡 Szyfrownik (deszyfrownik) .. w tym samym mocku — czeka na dobór piktogramów
 🟡 Pergamin z listą nazwisk TR  research gotowy + draft (EN); klucz=Decyzja#1  [prototype/pergamin-lista-tr-draft.md · puzzles/z3-lista-tr-spec.md]
 ⬜ Zapis melodii Z4 + pręciki . karta referencyjna: nuty → numery pręcików → kod
-🟡 Arkusz szyfru Z7 ........... Vigenère, klucz=motto z nagł. Z3; draft + tabula recta  [prototype/z7-szyfrogram-draft.md]
+🟡 Arkusz szyfru Z7 ........... Cezar +21 (=liczba liter motta z nagł. Z3); ciphertext gotowy + koło Cezara  [prototype/z7-szyfrogram-draft.md]
 ⬜ Mechanika dostarczenia ..... mock: list na prawą (Bażyński) / lewą (Albrecht) stronę stołu
 ```
 
@@ -74,7 +74,7 @@
 
 ```
 ⬜ Pass spójności ............. czy każdy etap daje klucz dla następnego
-⬜ Dry-run na papierze ........ przejście ścieżki, pomiar czasu (zwł. Vigenère)
+⬜ Dry-run na papierze ........ przejście ścieżki, pomiar czasu (zwł. szyfr Cezara Z7)
 ```
 
 ## 🔒 Decyzje Oskara blokujące prototyp
@@ -117,7 +117,7 @@ Z2 — zagadka Einsteina (4 osoby × 3 cechy) → robi Piotr → wynik: imię �
               │  Z3 infiltr. zamku (obowiązkowa)     │         │  Z3Z infiltr. Piccolo (obowiązkowa)  │
               │  + 1 opcjonalna:                     │         │  + 1 opcjonalna:                      │
               │     Z4 kalimba / Z5 piernik / Z6 herby│         │     Z8 kalimba / Z9 piernik / Z10 polichr.
-              │  Z7 finał (Vigenère, „Jordan=Bażyń.")│         │  Z11 finał (BRAK twistu, duma Albrechta)
+              │  Z7 finał (Cezar+21, „Jordan=Bażyń.")│         │  Z11 finał (BRAK twistu, duma Albrechta)
               └──────────────────┬───────────────────┘         └──────────────────┬───────────────────┘
                                  │                                                  │
                                  └───────────────▶  FINAŁ wspólny (KF)  ◀───────────┘
@@ -200,5 +200,5 @@ MVP        ██░░░░░░░░░░░░░░░░░░  ~10%   
 
 ```
 ► Domknięcie bloku 1 (F1→F2A): review Oskara K2 + skrypt Jordana + dobór miejsc Z1
-► Potem DZIEŃ 2: Z3 + Z4 + Z7 + KF jako JEDEN moduł (klucz Vigenère = najtrudniejszy węzeł)
+► Potem DZIEŃ 2: Z3 + Z4 + Z7 + KF jako JEDEN moduł (szyfr Cezara +21, klucz=motto z listy Z3)
 ```

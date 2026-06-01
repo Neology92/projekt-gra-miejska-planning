@@ -52,12 +52,14 @@ To nie jest naginka faktów, lecz **świadoma decyzja tonalna** o tym, jak gra *
 - **Naginka (dramatyczna)**: w grze "miasto się bawi" jednocześnie ze spiskiem. W rzeczywistości - karnawał był, ale po 3 II (blokada bram) atmosfera mogła być już napięta.
 - **Uzasadnienie**: kontrast karnawału i spisku to dobre tło narracyjne.
 
-### 7. ☆ Szyfr Vigenère w Z7 (finałowy szyfrogram)
+### 7. ☆ Szyfr Cezara w finale (Z7 mieszczanie / Z11 krzyżacy)
 
-- **Anachronizm**: szyfr Vigenère spopularyzowany ~1553 (Bellaso / Vigenère) — ~100 lat po 1454. W praktyce krzyżackiej XV w. — niemożliwe.
-- **Naginka**: przechwycony „list krzyżacki" (Z7) zaszyfrowany szyfrem Vigenère; klucz = motto Zakonu „Helfen, Hilfen und Wehren" z nagłówka listy nazwisk Z3.
-- **Uzasadnienie**: spójna, satysfakcjonująca mechanika finału (godło wroga jako klucz do obu zakończeń — TR: Vigenère→twist, Krzyżacy: Cezara→parole) + pokrycie fabularne (Zakon realnie szyfrował i przechwytywał korespondencję — donosy OBA, `donosiciele-1454.js`). Mechanika > ścisłość epoki, jak kalimba.
-- **Świadoma decyzja [2026-06-01]** (potwierdzona przez Oskara). Szczegóły: `puzzles/z7-szyfr-spec.md`.
+> **Zmiana [2026-06-01 wieczór]:** szyfr finałowy = **Cezar, oba tory** (wcześniej rozważany Vigenère, odrzucony jako za trudny w terenie + anachroniczny).
+
+- **Anachronizm: minimalny/żaden.** Szyfr przesuwny (Cezara) znany od starożytności; szyfry podstawieniowe były w XV-wiecznej dyplomacji w użyciu. W przeciwieństwie do Vigenère (~1553) nie wymaga naginki epoki.
+- **Mechanika**: przechwycony „list krzyżacki" (Z7) zaszyfrowany Cezarem; klucz = **liczba liter motta Zakonu** „Helfen, Hilfen und Wehren" (= 21) z nagłówka listy nazwisk Z3.
+- **Uzasadnienie**: spójna mechanika finału — godło wroga jako klucz do obu zakończeń (TR: szyfrogram→twist; Krzyżacy: szyfrogram→parole) + pokrycie fabularne (Zakon realnie szyfrował i przechwytywał korespondencję — donosy OBA, `donosiciele-1454.js`).
+- **Świadoma decyzja [2026-06-01]** (Oskar). Szczegóły: `puzzles/z7-szyfr-spec.md §0`.
 
 ## NIE naginamy (twarda historia)
 
@@ -82,7 +84,7 @@ Przykład zły (gdyby był): "Bażyński miał magiczny pierścień" → totalna
 - **Nie zmieniamy wyniku buntu** - kapitulacja zamku 7-8 II była, wojna 13-letnia nastąpiła, miasto wygrało.
 - **Nie zmieniamy postaci** (Bażyński nie staje się "Janem Obrzyńskim" - błąd autora poprawiony).
 - **Nie wprowadzamy postaci nieistniejących** jako głównych (NPC mogą być fikcyjni, ale **nie kluczowi** - kluczowi są historyczni).
-- **Nie używamy anachronizmów bez świadomości** (Tuba Dei, kalimba, Picollo, szyfr Vigenère - oznaczone tu jako świadome decyzje lub do zmiany).
+- **Nie używamy anachronizmów bez świadomości** (Tuba Dei, kalimba, Picollo - oznaczone tu jako świadome decyzje lub do zmiany). Szyfr finałowy = Cezar (już nie anachroniczny, patrz poz. 7).
 
 ## Otwarte pytania
 

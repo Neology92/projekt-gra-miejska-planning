@@ -58,7 +58,7 @@
 
 **Brak miast poza Toruniem:** świadomie — wiki nie podaje nazwisk delegatów Gdańska/Elbląga/Chełmna. „Others… whose names we have not yet bought" pokrywa tę lukę fabularnie, bez zgadywania nazwisk.
 
-**Klucz Vigenère = motto w nagłówku** [rozstrzygnięte 2026-06-01]: pergamin nosi „HELFEN · HILFEN · UND · WEHREN" jako nagłówek — to ono jest słowem-kluczem do szyfrogramu Z7 (litery → `HELFENHILFENUNDWEHREN`). **Nie ma żadnej mechaniki oznaczeń w nazwiskach** — klucz jest jawny w nagłówku; powtórzenie tego samego motta w nagłówku Z7 (CAPS) sygnalizuje graczowi, że to klucz. Pełna mechanika i tekst → `puzzles/z7-szyfr-spec.md`.
+**Klucz = motto w nagłówku** [rozstrzygnięte 2026-06-01, akt. wieczór: Cezar]: pergamin nosi „HELFEN · HILFEN · UND · WEHREN" jako nagłówek — gracz **liczy jego litery (21) = przesunięcie Cezara** do szyfrogramu Z7 (`HELFENHILFENUNDWEHREN` = 21 liter). **Nie ma żadnej mechaniki oznaczeń w nazwiskach** — klucz jest jawny w nagłówku; powtórzenie tego samego motta w nagłówku Z7 (CAPS) sygnalizuje graczowi, że to klucz. Pełna mechanika i tekst → `puzzles/z7-szyfr-spec.md §0`.
 
 **Opcjonalna sekcja „znani informatorzy"** (Decyzja #4): gdyby Oskar chciał donosicieli (Sleszer, Scolim, Bischoff) — jako ODDZIELNY blok („friends who serve us"), nie wmieszani w członków TR. Domyślnie pominięte.
 

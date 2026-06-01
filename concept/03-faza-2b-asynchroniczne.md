@@ -62,13 +62,15 @@ Mechaniki w większości do rozpisania (kreatywka Oskara). Tu zarys + rekwizyt +
 
 > **Uwaga:** dopiski z boardu („TR obraduje w Piccolo", „pogłębienie info o Radzie", „Związek Pruski wbrew rzemieślnikom") to **tylko sugestie tła fabularnego do kopert** po rozwiązaniu zagadek — nie mechanika. Realne mechaniki: Z4=melodia, Z5=sensoryczna, Z6=herby hanzeatyckie.
 
-## Kluczowa mechanika: 2B → finał (wymienialny „klucz")
+## Kluczowa mechanika: 2B → finał [zaktualizowane 2026-06-01]
 
-Każda zagadka opcjonalna (Z4/Z5/Z6, Z8/Z9/Z10) **wypluwa wymienialny „klucz"** (item / informacja / fragment szyfru) potrzebny do finałowego szyfru (Z7/Z11). Skutki:
+Finałowy szyfr (Z7/Z11) = **klucz (motto Zakonu) + szyfrogram**. Rozdział źródeł:
 
-- Koperta może zawierać „cokolwiek" — liczy się standardowy output.
-- Klucz może być **przekazywany przez MG** przy oddaniu rozwiązania.
-- Finał rozwiązywalny z: **klucz z Z3/Z3Z + dowolny 1 klucz opcjonalny** → różne zestawy per grupa działają.
+- **Klucz = MOTTO Zakonu**, z zagadki **obowiązkowej** (Z3: wykradzione wraz z listą; Z3Z/krzyżacy: znane z przynależności). Wspólny dla wszystkich grup danego toru.
+- **Szyfrogram = z jednej zagadki opcjonalnej** (Z4/Z5/Z6, Z8/Z9/Z10), **wydawany przez MG** przy oddaniu rozwiązania opcjonalnej. **Wymienialny** — każda opcjonalna daje (równoważny) szyfrogram.
+- Finał rozwiązywalny z: **motto z Z3/Z3Z + szyfrogram z dowolnej 1 opcjonalnej** → różne zestawy per grupa działają.
+
+> **Odwrócenie wcześniejszego Modelu B** (było: Z3=szyfrogram, Z4=klucz). Teraz Z3=klucz/motto, opcjonalne=szyfrogram. Wymienialność zachowana, bo klucz jest wspólny. Pełny model + typ szyfru (**Cezar +21**, oba tory) → `concept/04-faza-3-final.md`, `puzzles/z7-szyfr-spec.md §0`.
 
 To rozstrzyga wcześniejsze pytanie „które zagadki bramkują finał" (#9/#63): **Z3/Z3Z + 1 opcjonalna**.
 

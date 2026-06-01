@@ -20,7 +20,7 @@
 - **Zakres:** pionowy wycinek, ścieżka **TR + Z4**; poziom = **docelowe rozwiązania** (mock tylko do testu). Sekcja 0.
 - **Z1:** łańcuch + abstrakcyjne glify na mapie + szyfrownik obiekt→następny glif + legenda do autouzupełnienia; **4 kroki**; kończy u **MG na Rynku Staromiejskim** (Piccolo dopiero w Z2). Reguły tras + trasa w `puzzles/szlak-symboli.md`.
 - **Identyfikatory grup:** 10 kolorów (`mechanics/grupy-i-klasy.md`).
-- **Lokal Jordana:** Piccolo (ul. Prosta 20). **Z7:** Vigenère, krótki klucz. **Z3:** żywy Albrecht (Zosia) + karta choreografii kradzieży. **Dostarczenie listu:** osobiste (mock: stół prawa=Bażyński / lewa=Albrecht).
+- **Lokal Jordana:** Piccolo (ul. Prosta 20). **Z7:** Cezar, przesunięcie = liczba liter motta (21). **Z3:** żywy Albrecht (Zosia) + karta choreografii kradzieży. **Dostarczenie listu:** osobiste (mock: stół prawa=Bażyński / lewa=Albrecht).
 
 ---
 
@@ -78,7 +78,7 @@ To jest **cała** lista do wyprodukowania dla jednej ścieżki. ~20 pozycji.
 - [ ] **Szyfrownik** (obiekt terenowy → następny symbol).
 - [ ] **Pergamin z listą nazwisk TR** (Z3, klucz; nazwiska z wiki `tajna-rada.js` — research mój).
 - [ ] **Zapis melodii Z4 + mapa numeracji pręcików** (kalimba fizyczna już jest; karta = referencja: nuty/sekwencja → numery pręcików → kod liczbowy).
-- [ ] **Arkusz szyfru Z7 + materiał deszyfrujący** — szyfr **Vigenère** (klucz = **motto Zakonu z nagłówka listy Z3**, słowo „HELFEN…", NIE kalimba). Materiał: **tabula recta** + czytelna instrukcja deszyfrowania.
+- [ ] **Arkusz szyfru Z7 + materiał deszyfrujący** — szyfr **Cezara** (przesunięcie = **liczba liter motta Zakonu z nagłówka listy Z3**, `HELFEN…` = 21, NIE kalimba). Materiał: **koło Cezara A4** + czytelna instrukcja. *(Backup wersji Vigenère z tabula recta → `prototype/z7-szyfrogram-vigenere-backup.md`.)*
 - [ ] **Mechanika dostarczenia = osobiste przekazanie aktorowi** (Bażyński/Piotr i Albrecht/Zosia przy stole finałowym; gracz wręcza list wybranej stronie). Mock testowy: list na prawą (Bażyński) / lewą (Albrecht) stronę stołu.
 
 ### C. Skrypty/karty aktorów (2)
@@ -113,8 +113,8 @@ To jest **cała** lista do wyprodukowania dla jednej ścieżki. ~20 pozycji.
 
 | # | Blok | Twój input (decyzje/mechanika) | Mój output (drafty) | Twój czas | Mój czas |
 |---|---|---|---|---|---|
-| 2A | **Model „klucza" + Z3 + Z4** | Z3 = **żywy Albrecht (Zosia)** + choreografia okna na kradzież listy (telegrafowane obroty); **Model klucza [2026-06-01]:** Z3 daje **szyfrogram**, a **nagłówek listy Z3 niesie motto = klucz Vigenère**; kalimba (Z4) NIE zasila Z7 — **rola Z4 na ścieżce TR do redefinicji** | K3 + K-Z3 + K-Z4, pergamin z nazwiskami TR (research), karta gry Albrechta, zapis melodii + mapa pręcików, definicja kluczy | ~1–1,5 h | ~1,5 h |
-| 2B | **Z7 finał (najtrudniejsze spięcie)** | Szyfr = **Vigenère, krótki klucz** (zablokowane); szyfrogram = przechwycony list krzyżacki ujawniający „Jordan = Bażyński", klucz = motto Zakonu z nagłówka listy Z3 (NIE kalimba); pełne motto vs skrót „HELFEN" (trudność w terenie); co widzi gracz po rozwiązaniu | K8 (Z7): arkusz szyfru + materiał deszyfrujący + KF (instrukcje finału, dostarczenie listu) | ~45 min–1 h | ~1,5 h |
+| 2A | **Model „klucza" + Z3 + Z4** | Z3 = **żywy Albrecht (Zosia)** + choreografia okna na kradzież listy (telegrafowane obroty); **Model klucza [2026-06-01]:** **nagłówek listy Z3 niesie motto = klucz Cezara** (przesunięcie = liczba liter, 21); szyfrogram wydaje **MG po opcjonalnej (Z4/5/6)**; kalimba (Z4) = prosta zagadka melodia→liczby | K3 + K-Z3 + K-Z4, pergamin z nazwiskami TR (research), karta gry Albrechta, zapis melodii + mapa pręcików, definicja kluczy | ~1–1,5 h | ~1,5 h |
+| 2B | **Z7 finał (spięcie)** | Szyfr = **Cezar, przesunięcie = liczba liter motta (21)**; szyfrogram = przechwycony list krzyżacki ujawniający „Jordan = Bażyński" (wydawany przez MG po opcjonalnej), klucz = motto z nagłówka listy Z3; co widzi gracz po rozwiązaniu | K8 (Z7): arkusz szyfru + koło Cezara + KF (instrukcje finału, dostarczenie listu) | ~45 min–1 h | ~1,5 h |
 | 2C | **Montaż + dokumenty MG** | Review arkusza MG i instrukcji; akceptacja listy przedmiotów | arkusz śledzenia MG, instrukcja MG, lista przedmiotów (prototyp vs MVP), kompilacja stosu do druku | ~45 min | ~2 h |
 | 2D | **Pass spójności + dry-run na papierze** | Przejdź ścieżkę czytając artefakty po kolei — czy każdy etap daje klucz, którego potrzebuje następny? Czy odpowiedzi się zgadzają? | korekty wyłapanych dziur | ~45 min | ~30 min |
 
@@ -124,9 +124,9 @@ To jest **cała** lista do wyprodukowania dla jednej ścieżki. ~20 pozycji.
 
 ## 5. Ścieżka krytyczna i ryzyka
 
-- **Najtrudniejszy węzeł: Z7 + model klucza (blok 2B/2A).** Model [zaktualizowany 2026-06-01]: **Z3 daje szyfrogram** (przechwycony list krzyżacki ujawniający „Jordan = Bażyński"; lista nazwisk = kontekst) + **klucz = motto Zakonu z nagłówka listy Z3** (NIE z kalimby). Szyfr **zablokowany: Vigenère**, klucz = motto „HELFEN…". Kalimba (Z4) NIE zasila Z7 — patrz `z7-szyfr-spec.md`; rola Z4 na ścieżce TR do redefinicji.
-  - **Ryzyko trudności w terenie:** Vigenère łamie się ręcznie wolniej niż Cezar. Mitygacja: **krótki klucz + czytelna tabula recta/koło + jasna instrukcja**. Dry-run ma to **zmierzyć** (ile minut na złamanie) — to jeden z głównych celów prototypu.
-  - **Anachronizm** (~1553) — świadoma decyzja, jak kalimba → zapisać w `lore/fakty-vs-fabula.md`.
+- **Węzeł: Z7 + model klucza (blok 2B/2A).** Model [zaktualizowany 2026-06-01 wieczór]: **klucz = motto Zakonu z nagłówka listy Z3** → szyfr **Cezara, przesunięcie = liczba liter motta (21)**. **Szyfrogram** (przechwycony list ujawniający „Jordan = Bażyński") wydaje **MG po rozwiązaniu opcjonalnej (Z4/5/6)**; lista nazwisk = kontekst. Kalimba (Z4) = prosta zagadka melodia→liczby. Patrz `z7-szyfr-spec.md §0`.
+  - **Ryzyko trudności w terenie: ZMNIEJSZONE** — Cezar (jedno przesunięcie) łamie się szybko. Mitygacja: **czytelne koło Cezara + jasna instrukcja**. Dry-run i tak mierzy minuty.
+  - **Anachronizm: minimalny** — Cezar znany od starożytności (inaczej niż Vigenère ~1553). Backup Vigenère → `prototype/z7-szyfrogram-vigenere-backup.md`.
   - Jeśli spięcie nie domyka się czysto — kaskaduje na Z3, Z4, K3. Walidujemy ręcznie (przejście liczbowe) przed finalizacją kopert.
   → **Mitygacja:** projektujemy klucz+Z7 jako **jeden moduł**, walidujemy ręcznie (przejście liczbowe) zanim sfinalizujemy koperty.
 - **Z1 to największy pojedynczy kawałek** (blok 1B). Jeśli zabraknie czasu — patrz „rdzeń minimalny" niżej (stub Z1, reszta łańcucha pełna).

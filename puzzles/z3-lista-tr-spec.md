@@ -74,14 +74,16 @@ Wiki mówi, że TR miała delegatów **Gdańska, Elbląga, Chełmna**, ale **nie
 
 Oskar przesądził model (nadrzędny wobec starszych zapisów „klucz z kalimby"):
 
-- **Klucz Vigenère = motto Zakonu** „Helfen, Hilfen und Wehren" (litery → `HELFENHILFENUNDWEHREN`).
-- **Pergamin Z3 nosi to motto w nagłówku** (CAPS) — jako formuła/godło krzyżackiego dokumentu wywiadu. Stąd gracz bierze klucz.
-- **Z7 = przechwycony list krzyżacki** z **tym samym mottem w nagłówku (CAPS)**. Powtórzone motto na obu dokumentach = sygnał „to jest słowo-klucz".
-- Odszyfrowanie szyfrogramu Vigenère kluczem-mottem → **ujawnienie „Jordan = Hans von Baysen"** (twist).
-- **Kalimba (Z4/Z8) NIE jest źródłem tego klucza.** Z8 to *osobny* szyfr Cezara (klucz = to samo motto, wynik = parole do Albrechta w Z11) — patrz `kalimba.md`. Motto = wspólny klucz obu finałów (symetria: godło wroga otwiera oba zakończenia).
+> **AKTUALIZACJA [2026-06-01 wieczór]: szyfr = CEZAR, oba tory** (nie Vigenère). Motto wciąż klucz, ale zredukowane do jednego przesunięcia. Szczegóły i otwarta reguła „motto→liczba" → `puzzles/z7-szyfr-spec.md §0`, `concept/04-faza-3-final.md`.
 
-**⚠ Konsekwencja do domknięcia (nowe otwarte pytanie do Oskara):** skoro Z4 (melodia flisaka, opcjonalna TR) **nie podaje już klucza Z7**, jaka jest teraz **rola Z4 na ścieżce TR**? W prototypie łańcuch to `… Z3 → Z4 → Z7 …`; po zmianie Z4 nie zasila Z7. Albo Z4 dostaje nowy output (lokalizacja / parole / hint), albo łańcuch prototypu pomija Z4. **Do decyzji.**
-**Szyfrogram + arkusz Z7:** budowane 2026-06-01 → `prototype/z7-szyfrogram-draft.md`, `puzzles/z7-szyfr-spec.md`.
+- **Klucz = motto Zakonu** „Helfen, Hilfen und Wehren" → przesunięcie Cezara (reguła motto→liczba: ⬜ do ustalenia).
+- **Pergamin Z3 nosi to motto w nagłówku** (CAPS) — formuła/godło krzyżackiego dokumentu wywiadu. Stąd gracz bierze klucz.
+- **Szyfrogram = przechwycony list krzyżacki**, wydawany przez **MG** po rozwiązaniu jednej opcjonalnej (Z4/Z5/Z6). Nagłówek = **to samo motto, CAPS** = sygnał „to jest klucz".
+- Odszyfrowanie szyfrogramu kluczem-mottem → **ujawnienie „Jordan = Hans von Baysen"** (twist).
+- **Kalimba (Z4) NIE jest źródłem klucza** — Z4 to prosta zagadka melodia→liczby; po jej oddaniu MG wydaje szyfrogram. Motto = wspólny klucz obu finałów (symetria: godło wroga otwiera oba zakończenia, TR kradnie je z listy Z3, krzyżacy znają jako swoi).
+
+✅ **Rola Z4 rozstrzygnięta [2026-06-01]:** Z4 (i Z5/Z6) → po rozwiązaniu **MG wydaje szyfrogram**. Opcjonalne nie podają klucza (klucz=motto z Z3), lecz **odblokowują szyfrogram**. Wymienialne 1:1.
+**Szyfrogram + arkusz Z7:** `prototype/z7-szyfrogram-draft.md`, `puzzles/z7-szyfr-spec.md` (w rewizji na Cezara).
 
 ### 🔒 DECYZJA #2 — czy „Hans von Baysen / Bażyński" jest na liście? (rozstrzyga to rozbieżność w F2A)
 
@@ -114,9 +116,9 @@ To pytanie o **integralność twistu** — i jest już rozstrzygalne, bo w repo 
 
 ## 5. Klucz MG
 
-- **Co grupa zdobywa w Z3:** fizyczny pergamin (rekwizyt) wykradziony Albrechtowi (Zosia) — lista nazwisk z **mottem w nagłówku** (= klucz Vigenère).
-- **Co grupa z nim robi:** w Z7 dostaje przechwycony list krzyżacki (szyfrogram) z **tym samym mottem** w nagłówku → używa motta jako klucza → odszyfrowuje „Jordan = Hans von Baysen".
-- **Klucz Vigenère:** `HELFENHILFENUNDWEHREN` (pełne motto) lub skrót `HELFEN` — patrz `puzzles/z7-szyfr-spec.md`.
+- **Co grupa zdobywa w Z3:** fizyczny pergamin (rekwizyt) wykradziony Albrechtowi (Zosia) — lista nazwisk z **mottem w nagłówku** (= klucz szyfru).
+- **Co grupa z nim robi:** szyfrogram (przechwycony list) dostaje od **MG po rozwiązaniu jednej opcjonalnej** (Z4/5/6); używa **motta z nagłówka Z3 jako klucza Cezara** → odszyfrowuje „Jordan = Hans von Baysen".
+- **Klucz:** motto „Helfen, Hilfen und Wehren" → przesunięcie Cezara (reguła motto→liczba ⬜ do ustalenia) — patrz `puzzles/z7-szyfr-spec.md §0`.
 - **Weryfikacja MG:** grupa podaje odszyfrowaną treść (ujawnienie twistu) — wzorzec i pełny tekst w `puzzles/z7-szyfr-spec.md`.
 
 ---

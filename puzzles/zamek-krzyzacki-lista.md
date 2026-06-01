@@ -3,7 +3,7 @@
 **Status**: szkicowe. Z3 = obowiązkowa dla TR (infiltracja zamku). **Z3Z** = lustro dla krzyżaków (infiltracja Piccolo) — sekcja niżej.
 
 > **Treść listy nazwisk TR + uzasadnienie fabularne + pułapki historyczne → `z3-lista-tr-spec.md`** (research kanoniczny). Rekwizyt gracza (EN) → `prototype/pergamin-lista-tr-draft.md`.
-> ✅ **Model klucza rozstrzygnięty [2026-06-01]:** lista nazwisk = **kontekst**; **klucz Vigenère = motto Zakonu w nagłówku listy** („HELFEN HILFEN UND WEHREN"); twist „Jordan=Bażyński" niesie **osobny szyfrogram Z7** (przechwycony list krzyżacki z tym samym mottem). Kalimba (Z4) nie zasila Z7. Szczegóły → `z3-lista-tr-spec.md §4` + `z7-szyfr-spec.md`.
+> ✅ **Model klucza rozstrzygnięty [2026-06-01, akt. wieczór]:** lista nazwisk = **kontekst**; **klucz = motto Zakonu w nagłówku listy** („HELFEN HILFEN UND WEHREN") → szyfr **Cezara, przesunięcie = liczba liter motta (21)**; twist „Jordan=Bażyński" niesie **osobny szyfrogram Z7** (przechwycony list, wydawany przez MG po opcjonalnej Z4/5/6). Kalimba = prosta zagadka melodia→liczby, nie zasila klucza. Szczegóły → `z3-lista-tr-spec.md §4` + `z7-szyfr-spec.md §0`.
 
 ## Cel narracyjny
 
@@ -11,7 +11,7 @@ Grupa dowiaduje się, że Zakon ma **listę nazwisk Tajnej Rady**. Wnioski:
 - Lista jest u komtura Albrechta (na mieście).
 - Jeśli ją zdobędą - wiedzą **kto jest w TR** - i znajdą faktycznego adresata listu.
 - **Sztuczka**: na liście NIE MA „Jordana" (to pseudonim Bażyńskiego); może być za to „Hans von Baysen" jako jeden z członków TR — **plant pod twist** (patrz `z3-lista-tr-spec.md` Decyzja #2). Twist „Jordan = Bażyński" ujawnia **dopiero odszyfrowany szyfrogram Z7** (klucz = motto z nagłówka tej listy). ⚠ *Nieaktualne wcześniejsze założenie, że gracze poznają „człowiek z Piccolo = przywódca TR" już w F2A — F2A trzyma Jordana jako kucharza (concept/02, test-jordana, 2026-05-31).*
-- **Output** [rozstrzygnięte 2026-06-01]: lista nazwisk = **kontekst** (kto jest w TR), a jej **nagłówek niesie motto Zakonu = klucz Vigenère** do finałowego szyfrogramu Z7. Twist „Jordan=Bażyński" ujawnia osobny przechwycony list (Z7), nie sama lista. Kalimba (Z4) nie zasila Z7. → `z3-lista-tr-spec.md §4`, `z7-szyfr-spec.md`.
+- **Output** [rozstrzygnięte 2026-06-01]: lista nazwisk = **kontekst** (kto jest w TR), a jej **nagłówek niesie motto Zakonu = klucz Cezara** (przesunięcie = liczba liter motta, 21) do finałowego szyfrogramu Z7. Twist „Jordan=Bażyński" ujawnia osobny przechwycony list (Z7, wydawany przez MG po opcjonalnej), nie sama lista. Kalimba (Z4) nie zasila klucza. → `z3-lista-tr-spec.md §4`, `z7-szyfr-spec.md §0`.
 
 ## Miejsce - ruiny zamku krzyżackiego
 
@@ -62,7 +62,7 @@ Lustro Z3 dla toru krzyżaków (obowiązkowa, wszystkie 5 grup krzyżackich).
 
 ## Trudność - balans — ZAKTUALIZOWANE [2026-06-01]
 
-Kradzież listy jest **OBLIGATORYJNA** — **każda** grupa mieszczan MUSI zdobyć listę (jej nagłówek niesie klucz Vigenère do Z7). Stary balans („zbyt łatwe → wszystkie zdobywają → brak dramaturgii") **już nie obowiązuje**: celem jest, by **wszystkie** grupy zdobyły.
+Kradzież listy jest **OBLIGATORYJNA** — **każda** grupa mieszczan MUSI zdobyć listę (jej nagłówek niesie klucz Cezara do Z7). Stary balans („zbyt łatwe → wszystkie zdobywają → brak dramaturgii") **już nie obowiązuje**: celem jest, by **wszystkie** grupy zdobyły.
 
 - **Dramaturgia z wyniku → na przeżycie:** napięcie tkwi w samym momencie napadu (jak odwrócić uwagę Albrechta), nie w binarnym „uda się / nie uda".
 - **Wymóg projektowy (karta choreografii Albrechta/Zosi):** komtur musi dawać **powtarzalne / niezawodne okno** — „odsłania się" wielokrotnie lub wystarczająco długo, by każda grupa złapała moment (ew. MG asystuje). **Nigdy jednostrzałowe okno**, które grupa może bezpowrotnie przegapić.

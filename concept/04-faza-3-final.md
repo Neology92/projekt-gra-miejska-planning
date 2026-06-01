@@ -18,12 +18,23 @@
 
 ## Zagadki finałowe — Z7 (mieszczanie) i Z11 (krzyżacy)
 
-Oba tory mają osobny finał, oba to **szyfry** rozwiązywane z **kluczy zebranych w 2B**.
+Oba tory mają osobny finał, oba to **szyfry** rozwiązywane z elementów zebranych w 2B.
 
-- **Wejście (mechanika klucza):** każda grupa przychodzi z **kluczem z zagadki obowiązkowej (Z3 / Z3Z)** + **kluczem z jednej zagadki opcjonalnej** (Z4/5/6 lub Z8/9/10). Klucze są **wymienialne** — szyfr da się rozwiązać z dowolnej dopuszczonej pary (patrz `concept/03-faza-2b-asynchroniczne.md`). Klucz/rekwizyt może być przekazywany przez MG.
-- **Z7 (mieszczanie)** — sklejenie prowadzi do wniosku **Jordan = Jan Bażyński** (lista nazwisk z Z3 NIE zawiera „Jordana", bo to pseudonim; reszta kluczy wskazuje, że człowiek z Piccolo to przywódca TR). Po rozwiązaniu grupa wie, do kogo realnie dostarczyć list.
-- **Z11 (krzyżacy)** — analogiczny szyfr, ale **bez plot twistu tożsamości** [decyzja 2026-05-29]. Albrecht jest jawny; bramą jest **dowód godności** (weryfikacja z F2B) — Albrecht nie przyjmie listu od „niegodnych". **Wynik szyfru = HASŁO ROZPOZNAWCZE (parole)** [decyzja 2026-06-01], które grupa musi podać Albrechtowi, by przyjął list. To mechaniczne ucieleśnienie „bramy godności": bez odszyfrowanego hasła komtur uznaje kuriera za niegodnego. Wzmocnienie: **klucz szyfru = motto Zakonu** (Z8/kalimba), więc samo odszyfrowanie wymaga „bycia po stronie Zakonu" — tylko swój odczyta. **Treść hasła — do ustalenia (decyzja autora).** Patrz `concept/05-tor-krzyzakow.md`, `puzzles/kalimba.md`.
-- Po rozwiązaniu: **finalna decyzja** — komu dostarczyć list (Bażyński / Albrecht). Wybór wolny dla obu klas.
+### Model szyfru finałowego [KANON 2026-06-01]
+
+Dwa składniki: **klucz** (z zagadki obowiązkowej) + **szyfrogram** (z opcjonalnej). To **odwrócenie** wcześniejszego Modelu B (było: Z3=szyfrogram, Z4=klucz) — patrz `puzzles/z3-lista-tr-spec.md` Decyzja #1.
+
+- **KLUCZ szyfru = MOTTO ZAKONU** (oba tory, to samo motto — „Helfen, Hilfen und Wehren"). **Asymetria pozyskania:**
+  - **Mieszczanie** — motto **wykradzione** w Z3 (wraz z listą TR, z infiltracji Albrechta). Zdobywasz sekret wroga.
+  - **Krzyżacy** — motto **znane** (przynależność do Zakonu = godność). Ta sama informacja, druga droga.
+- **SZYFROGRAM = z jednej zagadki opcjonalnej**, wydawany **przez MG** przy oddaniu rozwiązania opcjonalnej (Z4/5/6 dla TR; Z8/9/10 dla krzyżaków). **Wymienialny** — każda opcjonalna daje (równoważny) szyfrogram, a klucz (motto) jest wspólny → „klucz z Z3/Z3Z + dowolna 1 opcjonalna" rozwiązuje finał.
+- **Typ szyfru: Cezar — OBA tory** [decyzja 2026-06-01]. **Klucz = przesunięcie o liczbę liter motta**: „Helfen, Hilfen und Wehren" = `HELFENHILFENUNDWEHREN` = **21 liter → shift 21** (≡ −5). Fabularnie: „policz litery godła Zakonu". Prostsze koło A4 (dwie tarcze), szybsze w terenie. Szyfrogram Z7 (mieszczanie) **policzony i zweryfikowany** (`EJMYV IOCZX JJFDN…`). Rekwizyt: **koło Cezara A4** w kopercie finałowej. Patrz `puzzles/z7-szyfr-spec.md §0`.
+
+### Wynik odszyfrowania (per tor)
+
+- **Z7 (mieszczanie)** → **Jordan = Hans von Baysen**. Szyfrogram to przechwycona wiadomość: Zakon wiedział, kim naprawdę jest „kucharz". Lista nazwisk z Z3 NIE zawiera „Jordana" (pseudonim) — dopiero odszyfrowanie sklei tożsamość. Po rozwiązaniu grupa wie, do kogo realnie dostarczyć list.
+- **Z11 (krzyżacy)** → **HASŁO ROZPOZNAWCZE (parole)** do Albrechta. **Bez plot twistu tożsamości** [decyzja 2026-05-29] — Albrecht jawny; bramą jest **dowód godności**. Hasło to mechaniczne ucieleśnienie bramy: bez niego komtur uznaje kuriera za niegodnego. Podwójna brama: motto-klucz (tylko „swój" odszyfruje) + podanie hasła Albrechtowi. **Treść hasła — do ustalenia (autor).**
+- Po rozwiązaniu: **finalna decyzja** — komu dostarczyć list (Baysen / Albrecht). Wybór wolny dla obu klas.
 
 Szczegóły: `puzzles/zagadka-finalowa.md` (do napisania — obejmie Z7 i Z11).
 
