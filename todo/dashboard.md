@@ -37,9 +37,9 @@
 ✅ K2 — po Z1 ................. draft gotowy (Z2 Einsteina wpisana: Jordan/Piccolo/chochla; plotki Puli A; slip R.)  [prototype/k2-envelope-draft.md]
 ✅ K3 — od Jordana ............ draft gotowy (brief F2B + Z3 zwiad; K-Z3b osobno)         [prototype/k3-envelope-draft.md]
 ✅ K-Z3b — ujawnienie kradzieży  draft gotowy (dwuetapowa; narracja + cytat Albrechta)   [prototype/kZ3b-envelope-draft.md]
-⬜ K-Z4 — melodia/kalimba ..... brak draftu — czeka: instrument narracyjny (decyzja Oskara)
+🟡 K-Z4 — melodia/kalimba ..... draft gotowy (piszczałka flisacka — ⚠️ instrument do wyboru Oskara)  [prototype/kZ4-envelope-draft.md]
 🟡 K8 — Z7 finałowy szyfr ..... szyfrogram gotowy (Cezar+7; „OHUZ CVU IHFZLU PZ QVYKHU AOL JVVR"); koperta do draftu  [prototype/z7-szyfrogram-draft.md]
-⬜ KF — finał ................. brak draftu — instrukcje (gdzie, 8. bicie, jak dostarczyć)
+🟡 KF — finał ................. draft gotowy (Przedzamcze, ósme bicie, wolny wybór strony)  [prototype/kF-envelope-draft.md]
 ```
 
 ## B. Rekwizyty drukowane (8)
@@ -65,8 +65,8 @@
 ## D. Dokumenty operacyjne MG (3)
 
 ```
-⬜ Arkusz śledzenia MG ........ grupa → następna koperta, klucze, odpowiedzi-wzorce
-⬜ Instrukcja MG .............. jak prowadzić ścieżkę, hinty awaryjne, sloty
+🟡 Arkusz śledzenia MG ........ draft gotowy (flow strip, tabela etapów, klucze odpowiedzi, lista rekwizytów)  [prototype/mg-tracking-sheet.md]
+🟡 Instrukcja MG .............. draft gotowy (fazy, drabinki hintów, protokoły awaryjne)  [prototype/mg-runsheet.md]
 ⬜ Lista przedmiotów .......... co kupić/wydrukować (prototyp vs MVP)
 ```
 
@@ -193,14 +193,15 @@ Z1 dry-run R2 — Oskar weryfikuje sightline 6 par + S02 kaszownik (z1-dry-run-s
 ## 📊 Pasek postępu
 
 ```
-PROTOTYP   █████████████░░░░░░░  ~65%   (K1/K2/K3/K-Z3b/Z7/Jordan/Albrecht zdraftowane; K-Z4 + KF + dokumenty MG + dry-run zostają)
+PROTOTYP   ████████████████░░░░  ~80%   (K1/K2/K3/K-Z3b/Z7/Jordan/Albrecht/K-Z4/KF/arkusz MG/instrukcja MG zdraftowane; dry-run + instrument choice + K8 koperta zostają)
 MVP        ██░░░░░░░░░░░░░░░░░░  ~10%   (architektura ustalona; Z1 dyspersja czeka R2; produkcja, drugi tor, skalowanie przed nami)
 ```
 
 ## 🎯 Następny krok krytyczny
 
 ```
-► Prototyp — do napisania: K-Z4 (czeka: instrument narracyjny Oskara) · KF · arkusz MG · instrukcja MG
+► Prototyp — drafty gotowe: K-Z4 · KF · arkusz MG · instrukcja MG (wszystkie czekają na review Oskara)
+► Prototyp — do domknięcia: instrument narracyjny K-Z4 (⚠️ decyzja Oskara) · K8 koperta (body koperty do Z7 szyfrogramu) · pass spójności · dry-run
 ► Prototyp — review: K1/K2/K3/K-Z3b/Jordan/Albrecht — czekają na Oskara i Piotra
 ► Z1 dyspersja (MVP) — czeka: dry-run R2 (Oskar w terenie) → z1-dry-run-sheet.md §RUNDA 2
 ```
