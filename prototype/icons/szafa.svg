@@ -1,16 +1,30 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Szafa z szufladami i zegarem — Baj Pomorski">
-  <title>Szafa z szufladami + zegar (Baj Pomorski)</title>
-  <!-- korpus -->
-  <rect x="12" y="8" width="40" height="48" rx="2" fill="#a86c38" stroke="#6e4824" stroke-width="2.6"/>
-  <!-- linie szuflad -->
-  <line x1="12" y1="24" x2="52" y2="24" stroke="#6e4824" stroke-width="2.2"/>
-  <line x1="12" y1="36" x2="52" y2="36" stroke="#6e4824" stroke-width="2.2"/>
-  <line x1="12" y1="46" x2="52" y2="46" stroke="#6e4824" stroke-width="2.2"/>
-  <!-- uchwyty -->
-  <circle cx="32" cy="30" r="1.8" fill="#5c4310"/>
-  <circle cx="32" cy="41" r="1.8" fill="#5c4310"/>
-  <circle cx="32" cy="51" r="1.8" fill="#5c4310"/>
-  <!-- zegar w górnej szufladzie -->
-  <circle cx="32" cy="16" r="5" fill="#efe0b8" stroke="#6e4824" stroke-width="2"/>
-  <path d="M32 16 L32 13 M32 16 L35 17" fill="none" stroke="#5c4310" stroke-width="1.6" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Fasada-szafa z szufladami i owalnym zegarem — Baj Pomorski">
+  <title>Fasada jak szafa: drzwi + szuflady + owalny zegar (Baj Pomorski)</title>
+  <!-- falisty gzyms na szczycie (charakterystyczny wygięty szczyt) -->
+  <path d="M14 14 Q20 8 26 12 Q32 6 38 12 Q44 8 50 14 L50 17 L14 17 Z"
+        fill="#8a6516" stroke="#6e4824" stroke-width="2.4" stroke-linejoin="round"/>
+  <!-- korpus szafy -->
+  <rect x="14" y="17" width="36" height="41" fill="#a86c38" stroke="#6e4824" stroke-width="2.6"/>
+  <!-- pionowy podział: drzwi (lewa) | szuflady (prawa) -->
+  <line x1="30" y1="17" x2="30" y2="58" stroke="#6e4824" stroke-width="2.4"/>
+  <!-- LEWA: wysokie drzwi szafy z łukowym górnym panelem -->
+  <path d="M18 54 L18 26 Q18 21 24 21 Q26 21 26 26 L26 54 Z"
+        fill="none" stroke="#6e4824" stroke-width="2" stroke-linejoin="round"/>
+  <!-- gałka drzwi -->
+  <circle cx="24" cy="40" r="1.6" fill="#5c4310"/>
+  <!-- PRAWA: stos szuflad z prostokątnymi wpuszczanymi uchwytami -->
+  <g stroke="#6e4824" stroke-width="2" fill="none">
+    <rect x="33" y="22" width="14" height="9"/>
+    <rect x="33" y="33" width="14" height="9"/>
+    <rect x="33" y="44" width="14" height="11"/>
+  </g>
+  <g fill="#5c4310">
+    <rect x="37.5" y="25.5" width="5" height="2" rx="0.8"/>
+    <rect x="37.5" y="36.5" width="5" height="2" rx="0.8"/>
+    <rect x="37.5" y="48" width="5" height="2" rx="0.8"/>
+  </g>
+  <!-- owalny zegar w ozdobnej ramie, wystający z lewego górnego boku -->
+  <ellipse cx="9" cy="24" rx="6" ry="8" fill="#efe0b8" stroke="#6e4824" stroke-width="2.4"/>
+  <ellipse cx="9" cy="24" rx="3.4" ry="4.8" fill="none" stroke="#8a6516" stroke-width="1.4"/>
+  <path d="M9 24 L9 21 M9 24 L11 26" fill="none" stroke="#5c4310" stroke-width="1.4" stroke-linecap="round"/>
 </svg>
