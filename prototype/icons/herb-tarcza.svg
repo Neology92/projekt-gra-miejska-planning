@@ -1,12 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Tarcza herbowa — herb Torunia, Dwór Artusa">
-  <title>Tarcza herbowa (Dwór Artusa)</title>
-  <!-- tarcza heraldyczna (typu hiszpańskiego, zaokrąglony spód) -->
-  <path d="M11 9 L53 9 L53 32 C 53 47 44 54 32 59 C 20 54 11 47 11 32 Z"
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Herb Torunia — tarcza z zamkiem">
+  <title>Herb Torunia na tarczy (Dwór Artusa, C07)</title>
+  <!-- tarcza heraldyczna -->
+  <path d="M14 10 L50 10 L50 36 Q50 50 32 57 Q14 50 14 36 Z"
         fill="#a86c38" stroke="#6e4824" stroke-width="2.6" stroke-linejoin="round"/>
-  <!-- wewnętrzny podział (głowica + krokiew) -->
-  <path d="M11 26 L53 26" fill="none" stroke="#5c4310" stroke-width="2.6" stroke-linecap="round"/>
-  <path d="M11 26 L32 40 L53 26" fill="none" stroke="#5c4310" stroke-width="2.6" stroke-linejoin="round"/>
-  <!-- obwódka wewnętrzna (jasny ornament) -->
-  <path d="M16 13 L48 13 L48 31 C 48 43 41 49 32 53 C 23 49 16 43 16 31 Z"
-        fill="none" stroke="#fdf3e3" stroke-width="2.2" stroke-linejoin="round"/>
+  <!-- obwódka wewnętrzna -->
+  <path d="M18 14 L46 14 L46 35 Q46 47 32 53 Q18 47 18 35 Z"
+        fill="none" stroke="#c08a52" stroke-width="1.8" stroke-linejoin="round"/>
+  <!-- mur bazowy zamku -->
+  <rect x="22" y="40" width="20" height="8" fill="#efe0b8" stroke="#5c4310" stroke-width="2"/>
+  <!-- wieża środkowa -->
+  <rect x="27" y="26" width="10" height="14" fill="#efe0b8" stroke="#5c4310" stroke-width="2"/>
+  <!-- blanki wieży środkowej -->
+  <path d="M27 26 L27 23 L29.5 23 L29.5 25 L31.5 25 L31.5 23 L34 23 L34 25 L36 25 L36 23 L37 23 L37 26 Z"
+        fill="#efe0b8" stroke="#5c4310" stroke-width="1.6" stroke-linejoin="round"/>
+  <!-- wieże boczne -->
+  <rect x="20" y="32" width="7" height="16" fill="#efe0b8" stroke="#5c4310" stroke-width="2"/>
+  <rect x="37" y="32" width="7" height="16" fill="#efe0b8" stroke="#5c4310" stroke-width="2"/>
+  <!-- brama gotycka (ostrołuk) -->
+  <path d="M29 48 L29 44 Q32 40 35 44 L35 48 Z" fill="#5c4310"/>
+  <!-- okna wież bocznych -->
+  <rect x="22" y="36" width="3" height="4" rx="0.6" fill="#5c4310"/>
+  <rect x="39" y="36" width="3" height="4" rx="0.6" fill="#5c4310"/>
 </svg>

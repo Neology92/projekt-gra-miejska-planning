@@ -20,7 +20,7 @@
 | Kod | Miejsce | Detal (co wypatrzeć) | Gdzie szukać | Ikona | Dotąd | Werdykt |
 |---|---|---|---|---|---|---|
 | `N01` | Pomnik Piernikarki (Garbary / Kr. Jadwigi) | piernik-serce w koszu; piesek szarpie suknię | u stóp figury | `piernik.svg` | wiki #35 | |
-| `N02` | Pomnik Przekupki (Rynek Nowomiejski) | waga u stóp; gęś; kosz jaj | u stóp figury | `waga.svg` | wiki #34 | |
+| `N02` | Pomnik Przekupki (Rynek Nowomiejski) | gęś u stóp (chwytliwsza niż waga) | u stóp figury | `ges.svg` | wiki #34 | |
 | `N04` | Apteka Pod Złotym Lwem (Rynek Nowom. 13) | pozłacany lew **nad drzwiami** | nad wejściem | `lew.svg` | **teren ✓** | ✅ (R1) |
 | `N05` | Kościół św. Jakuba (Rynek Nowomiejski) | łuki przyporowe; nawa gł. wyższa | bryła z ulicy | `bazylika-luki.svg` | **teren ✓** | ✅ (R1) |
 | `N06` | Teatr Baj Pomorski (Piernikarska 9) | fasada-szafa z szufladami + zegar | cała fasada | `szafa.svg` | wiki #43 | |

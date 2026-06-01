@@ -40,7 +40,7 @@ Kolumny: **Kod** (= glif, stały) · **Detal** (piktogram, stały) · **Miejsce*
 | Kod | Detal | Miejsce | Haczyk | Źródło | Rola |
 |---|---|---|---|---|---|
 | `N01` | piernik (serce) | **Pomnik Piernikarki** (zbieg M. Garbarów / Kr. Jadwigi) | kosz pierników; piesek szarpie suknię | ✓#35 | Ł · ikona ✓ `piernik.svg` |
-| `N02` | waga | **Pomnik Przekupki** (Rynek Nowomiejski, przy Modrym Fartuchu) | waga u stóp; gęś; kosz jaj | ✓#34 | Ł |
+| `N02` | gęś | **Pomnik Przekupki** (Rynek Nowomiejski, przy Modrym Fartuchu) | gęś u stóp (chwytliwsza niż waga); waga; kosz jaj | ✓#34 | Ł · ikona `ges.svg` (było `waga.svg` — zapas) |
 | `N03` | fartuch (modry) | **Gospoda Pod Modrym Fartuchem** (Rynek Nowomiejski 8) | nazwa-godło „modry fartuch"; gotyk+barok | ✗ **teren 2026-06-01: BRAK widocznego fartucha/szyldu** — detal niewypatrzalny | **DYS-only** (martwy wiersz; NIE w łańcuchu) |
 | `N04` | lew (złoty) | **Apteka Pod Złotym Lwem** (Rynek Nowomiejski 13) | pozłacana rzeźba lwa **nad wejściem (drzwiami)** | ✓#13 + ✓ **teren 2026-06-01** (widoczny; godziny apteki nieistotne) | Ł |
 | `N05` | bazylika (łuki przyporowe) | **Kościół św. Jakuba** (Rynek Nowomiejski) | gotyk bazylikowy; łuki przyporowe; nawa główna wyższa | ✓#36 + ✓ **teren 2026-06-01** (łuki + bryła kościoła rozpoznawalne) | Ł |
