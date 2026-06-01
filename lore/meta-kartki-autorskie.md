@@ -1,6 +1,8 @@
 # Kartki autorskie (meta-dodatek do kopert)
 
-**Status**: 🟢 **akumulator** [założony 2026-06-01]. To **nie jest** zadanie do zrobienia teraz — to miejsce, gdzie **zbieramy obok** materiał, który później (po wygenerowaniu wszystkich kopert) złoży się w kartki autorskie. **Najpierw gra, potem uwagi autorskie.**
+**Status**: 🟢 **w realizacji** [2026-06-02, Oskar aktywował]. Drafty surowca per koperta powstają w podfolderze **`lore/meta-kartki/`** — jeden plik na fizyczną kopertę (nazwy lustrzane do `puzzles/envelopes/`), z rozdziałem FAKT / LEGENDA / SPORNE / FABUŁA / ANACHRONIZM + cytatami z wiki. Ten plik = **brief i akumulator pojęciowy**; konkretne karty → `lore/meta-kartki/`. Wcześniej (do 2026-06-01) zadanie było odłożone („najpierw gra, potem uwagi autorskie") — Oskar zdjął tę blokadę.
+
+> ➡️ **Drafty kart:** `lore/meta-kartki/` (12 kart: Z1–Z11 + warianty torów; indeks w `lore/meta-kartki/README.md`).
 
 ## Pomysł (brief Oskara, 2026-06-01)
 
