@@ -113,16 +113,52 @@ const html = `<!doctype html>
     font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
   }
-  header {
-    padding: 22px 18px 14px; border-bottom: 1px solid var(--border);
-    background: linear-gradient(180deg, #241c15, #1a1410);
-    position: sticky; top: 0; z-index: 5;
+  /* topbar */
+  .topbar {
+    position: sticky; top: 0; z-index: 20;
+    background: linear-gradient(180deg, #261d15, #1c150f); border-bottom: 1px solid var(--border);
   }
-  header h1 { margin: 0; font-size: 19px; letter-spacing: .3px; font-weight: 700; }
-  header h1 .yr { color: var(--accent); }
-  header p { margin: 4px 0 0; color: var(--muted); font-size: 13px; }
+  .topbar-row { display: flex; align-items: center; gap: 12px; padding: 11px 14px 9px; max-width: 1100px; margin: 0 auto; }
+  .menu-btn {
+    flex: none; width: 44px; height: 44px; border-radius: 11px; cursor: pointer;
+    background: var(--surface-2); border: 1px solid var(--border); color: var(--text);
+    font-size: 20px; line-height: 1; display: grid; place-items: center;
+  }
+  .menu-btn:active { transform: scale(.93); }
+  .topbar h1 { margin: 0; font-size: 16px; font-weight: 700; line-height: 1.15; }
+  .topbar h1 .yr { color: var(--accent); }
+  .topbar .sub { color: var(--muted); font-size: 12px; margin-top: 1px; }
+  .search-row { padding: 0 14px 11px; max-width: 1100px; margin: 0 auto; }
+  .search {
+    width: 100%; font-size: 16px; padding: 11px 14px; border-radius: 11px;
+    background: var(--surface); border: 1px solid var(--border); color: var(--text);
+    -webkit-appearance: none;
+  }
+  .search::placeholder { color: var(--muted); }
+  .search:focus { outline: none; border-color: var(--accent); }
+  /* drawer */
+  .backdrop { position: fixed; inset: 0; background: rgba(0,0,0,.55); opacity: 0; pointer-events: none; transition: opacity .2s; z-index: 30; }
+  .backdrop.open { opacity: 1; pointer-events: auto; }
+  .drawer {
+    position: fixed; top: 0; left: 0; bottom: 0; width: min(80vw, 320px); z-index: 31;
+    background: var(--surface); border-right: 1px solid var(--border);
+    transform: translateX(-100%); transition: transform .22s ease; overflow-y: auto;
+    padding: max(18px, env(safe-area-inset-top)) 0 24px;
+  }
+  .drawer.open { transform: none; }
+  .drawer h2 { margin: 4px 18px 10px; font-size: 12px; letter-spacing: .6px; text-transform: uppercase; color: var(--muted); }
+  .drawer a {
+    display: flex; justify-content: space-between; gap: 10px; align-items: center;
+    padding: 13px 18px; color: var(--text); text-decoration: none; font-size: 15px;
+    border-left: 3px solid transparent;
+  }
+  .drawer a:active { background: var(--surface-2); border-left-color: var(--accent); }
+  .drawer a .c { color: var(--muted); font-size: 13px; }
+  .drawer a.spoiler-link { color: var(--accent-2); }
   main { padding: 8px 14px 48px; max-width: 1100px; margin: 0 auto; }
-  section { margin-top: 26px; }
+  section { margin-top: 26px; scroll-margin-top: 116px; }
+  .hidden { display: none !important; }
+  .empty { color: var(--muted); text-align: center; padding: 48px 14px; font-size: 14px; }
   .sec-head { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
   .sec-head h2 { margin: 0; font-size: 16px; font-weight: 700; }
   .sec-head .count { color: var(--muted); font-size: 12px; }
@@ -132,8 +168,12 @@ const html = `<!doctype html>
   .spoiler-toggle {
     cursor: pointer; user-select: none; color: var(--accent); font-size: 13px;
     background: var(--surface-2); border: 1px solid var(--border); border-radius: 999px;
-    padding: 4px 12px; display: inline-block;
+    padding: 6px 14px; display: inline-block; margin-bottom: 12px;
   }
+  .spoiler.collapsed .grid { display: none; }
+  /* przy aktywnym szukaniu pokaż dopasowania także w zwiniętej sekcji MG */
+  body.searching .spoiler.collapsed .grid { display: grid; }
+  body.searching .spoiler-toggle { display: none; }
   .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px; }
   .card {
     background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
@@ -163,10 +203,23 @@ const html = `<!doctype html>
 </style>
 </head>
 <body>
-<header>
-  <h1>Gra miejska — Toruń <span class="yr">1454</span></h1>
-  <p>${total} materiałów · dotknij kafelek, by otworzyć PDF</p>
-</header>
+<div class="backdrop" id="backdrop"></div>
+<nav class="drawer" id="drawer" aria-label="Sekcje">
+  <h2>Sekcje</h2>
+  <div id="drawer-links"></div>
+</nav>
+<div class="topbar">
+  <div class="topbar-row">
+    <button class="menu-btn" id="menu-btn" aria-label="Otwórz menu sekcji" aria-controls="drawer">☰</button>
+    <div>
+      <h1>Toruń <span class="yr">1454</span> · materiały</h1>
+      <div class="sub">${total} plików</div>
+    </div>
+  </div>
+  <div class="search-row">
+    <input class="search" id="search" type="search" inputmode="search" autocomplete="off" placeholder="Szukaj pliku…" aria-label="Szukaj pliku">
+  </div>
+</div>
 <main id="app"></main>
 <footer>
   Auto-generowane z <code>public/</code> · podgląd mobilny<br>
@@ -180,35 +233,86 @@ function fmtSize(b){ if(b<1024)return b+' B'; if(b<1048576)return (b/1024).toFix
 function esc(s){ return s.replace(/[&<>"]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
 
 const app = document.getElementById('app');
-const pdfQueue = []; // kolejka miniatur PDF do leniwego renderu (uzupełniana w makeCard)
+const drawerLinks = document.getElementById('drawer-links');
+const pdfQueue = [];   // miniatury PDF do leniwego, sekwencyjnego renderu
+const sections = [];   // rejestr sekcji do nawigacji i wyszukiwania
 
 for (const sec of DATA) {
   const section = document.createElement('section');
-  if (sec.spoiler) section.className = 'spoiler';
+  section.id = 'sec-' + sec.id;
+  section.className = sec.spoiler ? 'spoiler collapsed' : '';
+
   const head = document.createElement('div');
   head.className = 'sec-head';
   head.innerHTML = '<h2>'+esc(sec.label)+'</h2><span class="count">'+sec.items.length+'</span>';
   section.appendChild(head);
+
   const hint = document.createElement('p');
   hint.className = 'sec-hint';
   hint.textContent = sec.hint;
   section.appendChild(hint);
 
-  const grid = document.createElement('div');
-  grid.className = 'grid';
-  for (const f of sec.items) grid.appendChild(makeCard(f));
-
   if (sec.spoiler) {
     const toggle = document.createElement('span');
     toggle.className = 'spoiler-toggle';
-    toggle.textContent = 'Pokaż materiały MG ('+sec.items.length+')';
-    grid.style.display = 'none';
-    toggle.onclick = () => { const open = grid.style.display === 'none'; grid.style.display = open ? 'grid' : 'none'; toggle.textContent = (open?'Ukryj':'Pokaż')+' materiały MG ('+sec.items.length+')'; };
+    const label = () => (section.classList.contains('collapsed') ? 'Pokaż' : 'Ukryj') + ' materiały MG (' + sec.items.length + ')';
+    toggle.textContent = label();
+    toggle.onclick = () => { section.classList.toggle('collapsed'); toggle.textContent = label(); };
     section.appendChild(toggle);
+  }
+
+  const grid = document.createElement('div');
+  grid.className = 'grid';
+  const cards = [];
+  for (const f of sec.items) {
+    const card = makeCard(f);
+    cards.push({ el: card, hay: (f.name + ' ' + f.path).toLowerCase() });
+    grid.appendChild(card);
   }
   section.appendChild(grid);
   app.appendChild(section);
+  sections.push({ el: section, cards });
+
+  const link = document.createElement('a');
+  link.href = '#sec-' + sec.id;
+  if (sec.spoiler) link.className = 'spoiler-link';
+  link.innerHTML = '<span>'+esc(sec.label)+'</span><span class="c">'+sec.items.length+'</span>';
+  link.addEventListener('click', closeDrawer);
+  drawerLinks.appendChild(link);
 }
+
+const emptyMsg = document.createElement('div');
+emptyMsg.className = 'empty hidden';
+emptyMsg.textContent = 'Brak plików pasujących do wyszukiwania.';
+app.appendChild(emptyMsg);
+
+// --- hamburger / drawer ---
+const drawer = document.getElementById('drawer');
+const backdrop = document.getElementById('backdrop');
+function openDrawer() { drawer.classList.add('open'); backdrop.classList.add('open'); }
+function closeDrawer() { drawer.classList.remove('open'); backdrop.classList.remove('open'); }
+document.getElementById('menu-btn').addEventListener('click', openDrawer);
+backdrop.addEventListener('click', closeDrawer);
+document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeDrawer(); });
+
+// --- wyszukiwarka (filtruje kafelki po nazwie/ścieżce, ukrywa puste sekcje) ---
+const search = document.getElementById('search');
+search.addEventListener('input', () => {
+  const q = search.value.trim().toLowerCase();
+  document.body.classList.toggle('searching', q.length > 0);
+  let anyVisible = false;
+  for (const s of sections) {
+    let visible = 0;
+    for (const c of s.cards) {
+      const show = !q || c.hay.includes(q);
+      c.el.classList.toggle('hidden', !show);
+      if (show) visible++;
+    }
+    s.el.classList.toggle('hidden', visible === 0);
+    if (visible > 0) anyVisible = true;
+  }
+  emptyMsg.classList.toggle('hidden', anyVisible);
+});
 
 function makeCard(f) {
   if (f.kind === 'audio') {
@@ -236,7 +340,12 @@ function makeCard(f) {
   return a;
 }
 
-// --- leniwe renderowanie miniatur PDF (1. strona) przez IntersectionObserver
+// --- leniwe, BOUNDED i SEKWENCYJNE renderowanie miniatur PDF (1. strona) ---
+// Wcześniej ~38 dużych canvasów + równoległe ładowanie całych PDF-ów przepełniało
+// pamięć na telefonie -> przeglądarka ubijała i przeładowywała kartę. Teraz:
+//  * miniatura ograniczona do THUMB_W px (małe canvasy),
+//  * jednowątkowa kolejka -> naraz w pamięci tylko jeden dokument, zwalniany po renderze.
+const THUMB_W = 220;
 let pdfjs = null;
 async function loadPdfjs() {
   if (pdfjs) return pdfjs;
@@ -246,26 +355,40 @@ async function loadPdfjs() {
   return pdfjs;
 }
 async function renderThumb(el) {
+  let doc = null;
   try {
     const lib = await loadPdfjs();
-    const doc = await lib.getDocument(el.dataset.pdf).promise;
+    doc = await lib.getDocument({ url: el.dataset.pdf, disableAutoFetch: true }).promise;
     const page = await doc.getPage(1);
-    const scale = 0.6, vp = page.getViewport({ scale });
+    const ratio = Math.min(window.devicePixelRatio || 1, 1.5);
+    const scale = (THUMB_W / page.getViewport({ scale: 1 }).width) * ratio;
+    const vp = page.getViewport({ scale });
     const canvas = document.createElement('canvas');
-    const ratio = Math.min(window.devicePixelRatio || 1, 2);
-    canvas.width = vp.width * ratio; canvas.height = vp.height * ratio;
-    const ctx = canvas.getContext('2d'); ctx.scale(ratio, ratio);
+    canvas.width = Math.round(vp.width); canvas.height = Math.round(vp.height);
+    const ctx = canvas.getContext('2d', { alpha: false });
     await page.render({ canvasContext: ctx, viewport: vp }).promise;
     el.innerHTML = '<span class="badge">PDF</span>';
     el.appendChild(canvas);
-    doc.destroy();
+    page.cleanup();
   } catch (e) { /* placeholder zostaje */ }
+  finally { if (doc) { try { await doc.destroy(); } catch (e) {} } }
+}
+// jednowątkowa kolejka — naraz w pamięci tylko jeden dokument PDF
+const pending = [];
+let pumping = false;
+async function pump() {
+  if (pumping) return; pumping = true;
+  while (pending.length) {
+    const el = pending.shift();
+    if (el.isConnected) await renderThumb(el);
+  }
+  pumping = false;
 }
 const io = new IntersectionObserver((entries) => {
   for (const en of entries) {
-    if (en.isIntersecting) { io.unobserve(en.target); renderThumb(en.target); }
+    if (en.isIntersecting) { io.unobserve(en.target); pending.push(en.target); pump(); }
   }
-}, { rootMargin: '300px' });
+}, { rootMargin: '150px' });
 requestAnimationFrame(() => pdfQueue.forEach((el) => io.observe(el)));
 </script>
 </body>
