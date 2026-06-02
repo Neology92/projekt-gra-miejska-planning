@@ -23,46 +23,23 @@
 
 ## TEXT — KF (player reads this)
 
+> **Rejestr: JEDEN — czysta SCENA, 2. os. „you", kursywa.** Finał NIE jest listem (zasada domyślna #2: koperta = scena, nie wiadomość od nadawcy). Brak nadawcy, brak nagłówka „Messengers,", brak imperatywów w romanie, brak podpisu „— J.". Logistyka (Przedzamcze / ósme bicie / dwie strony / oddanie listu) przemycona jako wniosek grupy, nie rozkaz. [PRZEPISANE 2026-06-02 — Oskar: „to kompletnie nie powinien być list, sama narracja".]
+
 ---
 
 *You know now.*
 
-*The cook with the ladle. The man who tested you, trusted you, and sent you into the castle. Jordan is Hans von Baysen — the chairman of the Council, the man you were carrying this letter to all along.*
+*The cook with the ladle — the man who tested you, who trusted you, who sent you into the castle. Jordan is Hans von Baysen: the chairman of the Council, the man this letter was meant for from the very first hour.*
 
-*The eighth bell is close.*
+*Outside, the carnival is burning itself out. The pipes have gone quiet, the masks coming off all over Thorn — and yours with them. No more faces to wear.*
 
----
+*The letter has ridden in your bag since morning. Sealed, unread, unbroken — and so it stays. Whatever words are folded inside, they were never yours to know. You were only ever the hands that carried it.*
 
-**Messengers,**
+*It ends at the castle. At Przedzamcze, where the Order's fortress stands in ruin, the eighth bell will bring two men into the dark.*
 
-Tonight ends at the castle.
+*One is the chairman — the man who was Jordan all along. The other is Albrecht, the Komtur, the Order's hand in Thorn. Between them, a single choice: into whose hands the letter goes.*
 
-Go to the ruins at **Przedzamcze** — what remains of the Teutonic fortress. Be there at the **eighth bell**. You will not be alone.
-
-The letter you have been carrying all day. You still have not read it. You still do not know what it says.
-
-**At the ruins, you will find two sides:**
-
-- **On the left** — the chairman of the Council. The man who has been Jordan all along.
-- **On the right** — the Komtur, Albrecht. The Order's man in Thorn.
-
-**Walk to one of them. Place the letter in their hands.**
-
-That is the last thing we ask.
-
-— J.
-
----
-
-*This is what you have been carrying. This is where it ends.*
-
-*The pipes have gone quiet. The carnival is burning itself out, the masks coming off all over the city — and yours with them. No more faces to wear. Just you, and the choice.*
-
-*The sealed letter — in the bag since this morning, unread, unbroken. And it will stay that way. Whatever words are folded inside it, you will never know them. You were only ever the hands that carried it; tonight you are the hands that hand it on.*
-
-*The eighth bell. The ruins. A choice.*
-
-*You walk.*
+*The eighth bell. The ruins. You walk.*
 
 ---
 
@@ -73,13 +50,13 @@ That is the last thing we ask.
 - **Lokalizacja:** „Przedzamcze" — realna nazwa, gracze mogą ją wyszukać/pokazać na mapie. MG może doprecyzować punkt spotkania przy briefingu w terenie.
 - **Ósme bicie:** 20:30, rekwizyt (dzwon ręczny / nagranie). W tekście gracza: „eighth bell". Nie Tuba Dei (anachronizm — od 1500). Patrz `concept/04-faza-3-final.md`.
 - **Wolny wybór:** KF nie sugeruje, która strona jest „właściwa". Obie strony opisane neutralnie (funkcjonalnie, bez oceny). Zasada z `concept/04-faza-3-final.md` — wybór wolny dla obu klas.
-- **Podpis „— J."** = Jordan/Bażyński. Po odkryciu tożsamości = semantycznie gęste — gracz wie, kto to napisał.
+- **Brak nadawcy / podpisu [PRZEPISANE 2026-06-02]:** finał = scena, nie list. Usunięto nagłówek „Messengers,", imperatywy w romanie i podpis „— J.". Wcześniejszy draft był listem od Jordana/Bażyńskiego — łamało to zasadę domyślną #2 (koperta = scena napotkana w świecie, nie wiadomość od nadawcy) i było meta-niezręczne (Bażyński pisze o sobie w 3. os.: „the man who has been Jordan all along"). Teraz tożsamość = wniosek grupy w narracji.
 - **Rekwizyt:** list zapieczętowany (noszony całą grę) = to jest to, co oddają. Koperta tego nie tłumaczy mechanicznie — gracze to rozumieją z kontekstu.
 - **Wersja krzyżacka (MVP):** inne KF. Do napisania przy MVP. Nie kopiować 1:1.
 - **Klamra A3 — list nieotwarty (payoff) [2026-06-02]:** „unread, unbroken. And it will stay that way… we will never know them." Domyka motyw z K1 („forbidden to read") — gracze oddają zapieczętowany list, nigdy nie poznają treści. Wymowa: byli ślepym narzędziem; liczy się komu oddali, nie co niosło.
 - **Klamra A2 — maski spadają (domknięcie) [2026-06-02]:** „the masks are coming off all over the city — and ours with them." Karnawał (maski = przebrania całej gry, K1→K2→K3) kończy się w finale; maski spadają = prawda się ujawnia (Jordan=Bażyński). Spina motyw przebrania z rewelacją tożsamości.
-- **Lekki touch „hands":** „the hands that carried… the hands that hand it on" — echo groźby z K1 („answer with their hands"), bez rozwijania w pełną klamrę (A4 nieaktywne). Domyka sprawczość: te same ręce teraz wybierają.
-- **Dwa rejestry:** otwarcie i zamknięcie = *kursywa* (narracja z głów); ciało wiadomości = roman.
+- **Lekki touch „hands":** „You were only ever the hands that carried it" — echo groźby z K1 („answer with their hands"), bez rozwijania w pełną klamrę (A4 nieaktywne). Domyka sprawczość. [PRZEPISANE 2026-06-02: usunięto „the hands that hand it on" — należało do warstwy listu/imperatywu.]
+- **Jeden rejestr [PRZEPISANE 2026-06-02]:** całość = *kursywa*, narracja z głów, 2. os. „you". Brak warstwy roman (była ciałem listu — usunięta wraz z formatem listu).
 
 ---
 
