@@ -1,7 +1,7 @@
 # K-Z4 — The Boatman by the River (draft)
 
 > **Language:** English (player-facing). Planning notes in Polish below.
-> **Status:** draft [2026-06-02, v2 — przeramowane na scenę] — awaiting Oskar's review. **Instrument ZATWIERDZONY [2026-06-02, Oskar]: generyczny, nienazwany „iron-tongue instrument" (rekwizyt = kalimba), bez nazwy w fikcji.** Treść gotowa do review aktorskiego.
+> **Status:** draft [2026-06-02, v3 — narracja 2. os. + meta-ramka MG WPROWADZONE] — awaiting Oskar's review. **Instrument ZATWIERDZONY [2026-06-02, Oskar]: generyczny, nienazwany „iron-tongue instrument" (rekwizyt = kalimba), bez nazwy w fikcji.** Treść gotowa do review aktorskiego.
 > **Voice:** senderless scene — narrator **from inside the couriers' heads** (what they find, what they piece together). NOT a message from Jordan. Wzorzec = K-Z3b. *(Game-wide envelope convention — `mechanics/koperty-mg.md`.)*
 > **Typography:** narration = *italic (light)* = inside the head; words of the world (the scrap they find, its written words) = roman.
 > **Trigger:** MG hands to group after Z3 (they bring back the stolen list). This is the optional Z4 brief.
@@ -15,23 +15,28 @@
 
 ---
 
-*The list is safe in our hands. And then word comes to us of the river — of a body the watermen pulled from the shallows in the night and left lying, because no one came to claim it.*
+*The list is safe in your hands. And then word reaches you of the river — of a body the watermen pulled from the shallows in the night and left lying, because no one came to claim it.*
 
 ---
 
-*We did not need to be told twice whose body it was. The worn coat. The ink still on the fingers. **R.** — the contact who was never where he should have been, who left us a scrap and a sealed letter and then nothing at all. He did not flee the city. He never had the chance.*
+*You do not need to be told twice whose body it is. The worn coat. The ink still on the fingers. **R.** — the contact who was never where he should have been, who left you a scrap and a sealed letter and then nothing at all. He did not flee the city. He never had the chance.*
 
 *A boatman, face-down in the mud — while the great men whose errands he ran sleep warm behind their walls tonight. The letter was never his. The cause was never his. He only carried. Carrying is what killed him. That is how it goes for small men caught in the schemes of large ones — they do the carrying, and they do the dying, and the men who gain by it never learn their names.*
 
-*They found something on him, the watermen — a small instrument, the kind a river man keeps for the long hours on the water; and folded with it, a scrap in his hand. The same hand as the note he left us. Not a message, this time. A tune, set down note by note, and beneath it his last words:*
+*They found something on him, the watermen — a small instrument, the kind a river man keeps for the long hours on the water; and folded with it, a scrap in his hand. The same hand as the note he left you. Not a message, this time. A tune, set down note by note, and beneath it his last words:*
 
-> *They took the dispatch off me. I could not keep it — so I hid it where only our own would think to look. Play my tune true and you will have the number that opens the way to it. Play it as I played it to the river, note for note.*
+> They took the dispatch off me. I could not keep it — so I hid it where only our own would think to look. Play my tune true and you will have the number that opens the way to it. Play it as I played it to the river, note for note.
 
-*And here is the strange of it. As we read his hand, the tune is somehow already in the air — drifting in off the cold water, with no player anywhere in sight. The way the old tale tells of a raftsman whose playing once drew the whole town's plague of frogs down the bank and under the Vistula. As if the river had kept his music for him, and gives it back now that he cannot.*
+*And here is the strange of it. As you read his hand, the tune is somehow already in the air — drifting in off the cold water, with no player anywhere in sight. The way the old tale tells of a raftsman whose playing once drew the whole town's plague of frogs down the bank and under the Vistula. As if the river had kept his music for him, and gives it back now that he cannot.*
 
-*No one marks it. The whole city is piping and drumming itself hoarse tonight; one more tune off the water is nothing at all. So we listen. We take up his instrument and we follow the tune note for note, writing down each number as it sounds.*
+*No one marks it. The whole city is piping and drumming itself hoarse tonight; one more tune off the water is nothing at all. So you listen. You take up his instrument and follow the tune note for note, writing down each number as it sounds.*
 
-*Six numbers. The number R. died keeping. We carry it back — and we will be given what he hid.*
+*Six numbers. The number R. died keeping.*
+
+---
+
+> **↪ TO THE GAME MASTER** — *game instruction, not part of the world*
+> Bring the six numbers to the Game Master. What R. hid will be given to you in return.
 
 ---
 
@@ -53,6 +58,6 @@
 
 ---
 
-## REWIZJA [2026-06-02] — uwaga Oskara (DO WPROWADZENIA)
-- **Osoba narracji → ujednolicić do 2. osoby „you"** [decyzja Oskara 2026-06-02]. Obecna narracja kursywą jest w 1. os. mn. („we did not need to be told… we listen… we carry it back"); przepisać na narratora mówiącego DO grupy („you…"). **Scrap R.** (roman, słowa R. — „They took the dispatch off me…") **zostaje bez zmian** (to dokument, nie narracja). Zakres = wszystkie koperty (`mechanics/koperty-mg.md §Osoba narracji`). Przepisanie + render po passie ujednolicającym.
-- **Meta-ramka MG (raport Z4) [2026-06-02]:** Z4 kończy się **podaniem kodu `621454` MG** (obecne „we carry it back — and we will be given what he hid"). Wydzielić instrukcję gracz↔MG do **osobnej ramki meta** (callout): fikcja kończy się na „niesiemy liczbę", konkret (podaj kod MG → otrzymasz przechwycony list / K8) w ramce. Inwarianta: w fikcji nikt nie „czyta daty" — ramka też mówi tylko „podaj sześć liczb", nie ujawnia 6.2.1454. Konwencja → `mechanics/koperty-mg.md §Trzeci rejestr`.
+## REWIZJA [2026-06-02] — ✅ WPROWADZONA (rationale zachowane do review)
+- **Osoba narracji → 2. osoba „you"** — ZROBIONE (narracja przepisana z „we" na „you"). **Scrap R.** = roman (dokument, słowa R.) — bez kursywy.
+- **Meta-ramka MG (raport Z4)** — ZROBIONE: zakończenie narracji = „Six numbers. The number R. died keeping." → osobna ramka MG „bring the six numbers to the Game Master". Inwarianta zachowana: ramka mówi „six numbers", nie ujawnia 6.2.1454. Re-render → `public/` po akceptacji.

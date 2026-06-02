@@ -3,7 +3,7 @@
 > **Language:** English (player-facing). Planning notes in Polish below.
 > 🟢 **ZAKTUALIZOWANO — MECHANIKA NAGŁÓWKOWA + SHIFT +7 [2026-06-01]:** szyfr = Cezar shift+7, klucz = porównanie nagłówków (nie liczenie liter), brak koła. Prop poniżej = **wersja finalna (shift +7)**. Backup shift+3 → `puzzles/z7-szyfr-spec.md §0`.
 > 🗄️ Backup modelu +21 → `puzzles/z7-szyfr-spec.md §0`.
-> **Status:** draft [2026-06-01] — Canon → `puzzles/z7-szyfr-spec.md`.
+> **Status:** draft [2026-06-02, v2 — rama 2. os. + meta-ramka MG WPROWADZONE] — Canon → `puzzles/z7-szyfr-spec.md`.
 > **What it is:** an intercepted letter from the Komtur of Thorn to Marienburg, carried in envelope **K8**. Its enciphered core reveals the twist.
 > **Key:** the Order's motto appears in a distinctive script at the top of this letter — the SAME script (and punctuation) as the motto heading the Z3 names list the group already carries. Compare the two headers letter by letter to find the shift. No extra tool needed.
 
@@ -13,7 +13,7 @@
 
 ---
 
-*Whatever road brought it into our hands, here it is — a letter the Order never meant any of us to read. A dispatch from the castle, taken on its way to Marienburg, never delivered. And the heading is the same hand, the same proud script, as the list of names we carry. The two belong together.*
+*Whatever road brought it into your hands, here it is — a letter the Order never meant any of you to read. A dispatch from the castle, taken on its way to Marienburg, never delivered. And the heading is the same hand, the same proud script, as the list of names you carry. The two belong together.*
 
 ---
 
@@ -37,7 +37,12 @@ OHUZ  CVU  IHFZLU  PZ  QVYKHU  AOL  JVVR
 
 ---
 
-*The Order's own word locks it — but we hold their word too, headed across the list of names. Set the one against the other.*
+*The Order's own word locks it — but you hold their word too, headed across the list of names. Set the one against the other.*
+
+---
+
+> **↪ TO THE GAME MASTER** — *game instruction, not part of the world*
+> When you have drawn out the hidden line, bring what it says to the Game Master. The last word of the night is waiting there.
 
 ---
 
@@ -77,6 +82,6 @@ You have seen this script before — it is the same hand that headed the list of
 
 ---
 
-## REWIZJA [2026-06-02] — uwagi Oskara (DO WPROWADZENIA)
-- **Meta-ramka MG (raport Z7):** Z7 kończy się **podaniem odszyfrowanej odpowiedzi MG** (HANS VON BAYSEN IS JORDAN THE COOK) → MG wydaje KF. Dodać **osobną ramkę meta** (callout) z instrukcją gracz↔MG (zanieś rozwiązanie MG po finałową kopertę) — fikcja/rama narracyjna zostaje czysta, logistyka w ramce. Konwencja → `mechanics/koperty-mg.md §Trzeci rejestr`.
-- **Osoba narracji → ujednolicić do 2. osoby „you"** (rama kursywą: „our hands… we hold their word… set the one against the other"). Sam dispatch (roman: zwrot do Hochmeistra, podpis, ciphertext) i nagłówek-motto **zostają**. Zakres = wszystkie koperty (`mechanics/koperty-mg.md §Osoba narracji`).
+## REWIZJA [2026-06-02] — ✅ WPROWADZONA (rationale zachowane do review)
+- **Meta-ramka MG (raport Z7)** — ZROBIONE: po ramie zamykającej dodana osobna ramka MG („bring what it says to the Game Master"). Rama narracyjna czysta, logistyka w callout.
+- **Osoba narracji → 2. osoba „you"** — ZROBIONE: rama otwierająca/zamykająca przepisana z „our hands / we hold" na „you / your". Dispatch (roman: zwrot do Hochmeistra, podpis, „read it then burn it"), ciphertext i nagłówek-motto **nietknięte**. Re-render → `public/` po akceptacji.

@@ -1,10 +1,10 @@
 # K-Z3b — The Theft Order (draft)
 
 > **Language:** English (player-facing). Planning notes in Polish below.
-> **Status:** draft [2026-06-01, v2] — awaiting Oskar's review.
-> **Voice [decyzja Oskara 2026-06-01]:** narrator **from inside the couriers' heads** — what they saw, what they think, the conclusion forming. NOT an order from the Council. *(Game-wide envelope convention — see `mechanics/koperty-mg.md`.)*
-> **Typography:** narration = *italic (light)* = inside the head; the NPC quote (Albrecht: "The Order forgets nothing") = roman = words of the world. K-Z3b is all narration → all italic, with the one roman quote as contrast.
-> **Handed over by:** Komtur Albrecht (Zosia) — but the hand-over is a **meta interaction, outside the fiction** (like being dealt a card). In-world nobody "gave" this; it is the group's own dawning realisation. Sealed — opened **after they walk clear of him** (set up in K3).
+> **Status:** draft [2026-06-02, v3 — rewizja WPROWADZONA] — awaiting Oskar's review.
+> **Voice:** narrator **from inside the couriers' heads**, **2. osoba „you"** — what you see, what you think, the conclusion forming **in the moment**. NOT an order from the Council. *(Game-wide envelope convention — `mechanics/koperty-mg.md`.)*
+> **Typography:** narration = *italic (light)* = inside the head; the NPC quote (Albrecht: "The Order forgets nothing") = roman = words of the world; the meta-box (→ MG) = `.mg-note`. All narration is italic, with the one roman quote as contrast.
+> **Handed over by:** Komtur Albrecht (Zosia) — hand-over is a **meta interaction, outside the fiction** (like being dealt a card). In-world nobody "gives" this; it is the group's own dawning realisation **as it happens** (no „open once clear" — that meta-framing was cut; model patrolu, patrz §SEKWENCJA).
 > **Function:** flips the task from "scout" to **steal the list** — by the couriers realising what they just saw.
 > **Canon:** `puzzles/zamek-krzyzacki-lista.md` (Struktura Z3, pkt 3–4).
 
@@ -12,25 +12,24 @@
 
 ## TEXT — K-Z3b (player reads this)
 
-**SEALED. OPEN ONLY ONCE YOU ARE CLEAR OF THE KOMTUR.**
+*So that is the list.*
+
+*You saw it the moment he drew it out — that strip of parchment he keeps at his side, names inked down one beneath another.* "The Order forgets nothing," *he said, almost laughing, holding it up like a man showing off his gold. He has no idea what he is showing you.*
+
+*Those are the names of the Secret Council — every soul the Order has bought out of your own walls, set down and marked. That is what you should have come here for. Not words. That.*
+
+*And now he has set it down — laid it on the ledge at his side and stepped off to walk his little circuit, pointing out his walls, gazing off to boast. He will not hand it over; but he does not truly guard it either. A man that proud never watches his own table. Each time his round carries him away and his back is to it, the parchment lies there with no eyes on it.*
+
+*You could take it. Only while he is turned — never while he is looking, or he will have you by the wrist, and then you are thieves caught at the Order's own wall with no one to call. But on the turn, when he drifts off along his path…*
+
+*Watch him. He walks it the same way each time. Wait for the turn. Lift it clean. Then walk — do not run, not until you must.*
+
+*Carry those names away with you. Everything after tonight turns on them.*
 
 ---
 
-*(You tear it open in the shadow of the walls, out of his sight.)*
-
-*So that was the list.*
-
-*We saw it the moment he drew it out — that strip of parchment he keeps at his side, names inked down one beneath another.* "The Order forgets nothing," *he said, almost laughing, holding it up like a man showing off his gold. He had no idea what he was showing us.*
-
-*Those are the names of the Secret Council. Every soul the Order has bought out of our own walls, written down and marked. That is what we should have come here for. Not words. That.*
-
-*He will not part with it — but he does not guard it, either. A man that proud never watches his own table. He turns away to point at his walls, he looks off to boast — and for a breath or two, the parchment lies there with no eyes on it.*
-
-*We could take it. While his back is to it — never while he's looking, or he'd have us by the wrist, and then we are thieves caught at the Order's own wall with no one to call. But when he turns…*
-
-*Watch him. He moves the same way each time. Wait for the turn. Lift it clean. Walk — do not run, not until we have to.*
-
-*And then we carry those names back. Everything after tonight turns on them.*
+> **↪ TO THE GAME MASTER** — *game instruction, not part of the world*
+> Once the list is in your hands, bring it to the Game Master. What comes next is waiting there.
 
 ---
 
@@ -47,9 +46,9 @@
 
 ---
 
-## REWIZJA [2026-06-02] — uwagi Oskara (DO WPROWADZENIA, jeszcze nie wprowadzone)
+## REWIZJA [2026-06-02] — ✅ WPROWADZONA (rationale zachowane do review)
 
-> Notatki kierunkowe. Tekst wyżej **nietknięty** — materiał porównawczy. Przepisanie + render po akceptacji (a treść zależy od decyzji A/B niżej).
+> Tekst wyżej (v3) realizuje poniższe: meta-framing (SEALED / „you tear it open") wycięty; olśnienie w trakcie + model patrolu; 2. os.; meta-ramka MG (raport Z3). Re-render → `public/` po akceptacji.
 
 1. **USUNĄĆ meta-framing (precz w całości):**
    - „**SEALED. OPEN ONLY ONCE YOU ARE CLEAR OF THE KOMTUR.**" (obecna linia ~15)

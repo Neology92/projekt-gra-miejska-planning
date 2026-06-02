@@ -1,7 +1,9 @@
 # K2 — After Z1 Envelope (draft)
 
 > **Language:** English (player-facing). Planning notes in Polish below.
-> **Status:** draft [2026-06-01] — awaiting Oskar's review.
+> **Status:** draft [2026-06-02, v2 — rewizja WPROWADZONA] — awaiting Oskar's review.
+> ⚠ **Glify miejsc = `⟨mark⟩` placeholder** — jedyna część niefinalna. Realny glif Piccolo + 2 zmyślone (Młyn, Kuźnia) dobiera się przy generowaniu mapy Z1 (`#66`, `puzzles/droga-do-jordana.md §D`). Reszta tekstu (scena-odkrycie, plotki, zagadka, slip R., hasło) = finalna.
+> **Zmiana zakupu:** „horseshoe" → **„a ladle"** (chochla) + Kuźnia „ironwork" — zsynchronizowane z kanonem `droga-do-jordana §themingowa`: Jordan kupuje chochlę → to zarazem **hasło dnia** („what he bought this morning"). Rozwiązanie logiczne bez zmian (izomorfizm).
 > **Contents of physical envelope:** main note (this) + intermediary's note (separate slip).
 > **Triggers:** MG hands this to group after they correctly report 4 locations in order.
 
@@ -11,70 +13,32 @@
 
 ---
 
-*Four marks walked, four names given — and in return, this. We had hoped to find our contact waiting. Instead: an envelope, and a scrap of paper folded inside it.*
+*Four marks walked, four places named — and at the end of the chain, where your contact should be standing, no one. Only a sealed packet, left where you could not miss it, a hand you half-recognise scrawled on the outside; and folded inside, a single scrap of paper. He is gone. Fled, or taken, or thinking better of the whole thing — but gone. A contact who vanishes the very night the city takes up arms is rarely one who simply chose to leave.*
 
-*The carnival is louder here, and stranger. Carts roll toward the square that the men swear are loaded with fireworks "for the feast" — but the crates ride heavy, and the men guarding them are not laughing. Under the masks and the music, the whole city feels wound tight, like a string before it snaps.*
+*You had heard the city all the way here. Saint Dorothy's crowds parting for carts the carters swear are loaded with fireworks "for the feast" — yet the crates ride low and heavy, and the men walking beside them are not laughing. And under the masks the same talk keeps surfacing, again and again, if you let yourselves listen: that the Council meets after dark and decides for everyone and tells no one, because it fears the light. That it is the craftsmen who give up the men and the steel, and the Council that will still be ruling once the smoke clears — not them. That war means bread at double the price, a lords' quarrel paid for at the baker's stall. That Bażyński means to hand Prussia to the king in Kraków — one master traded for another — and that some knight or other will walk off with the whole of it in his pocket once the towns have done the dying. And, from an old woman who shook her head as you passed: that this Bażyński's own leg has gone stiff on him again, that the great man can barely cross a room — and that this is who means to bring down armoured knights.*
 
----
-
-**Messengers,**
-
-Your contact is gone.
-
-He left this note *(enclosed)* and nothing more. We do not know if he fled, was taken, or simply decided the risk was too great — though a contact who vanishes the same night the city arms itself is rarely a contact who chose to leave. What we know is that the letter still needs to reach its recipient before tonight.
-
-You will have to find the way yourselves.
-
-Before you do — you were on the streets of this city today. So were other people. Here is what they were saying.
+*The letter is still heavy in the bag, and it still has to reach the one it is meant for before the eighth bell. With your contact gone, the way is yours to find. You unfold his scrap — and beside it the packet has left you something to work from: three people sent into town this morning, and the errands they ran.*
 
 ---
 
-*Overheard near the Old Town Square:*
-
-> *"The Council meets after dark, tells no one, decides for everyone. Secret — because it fears the light."*
-
-*A craftsman near the city wall:*
-
-> *"We give the men and the weapons. When it's all over, the Council will still rule — not us."*
-
-*Two merchants, arguing by a cart:*
-
-> *"War comes — bread doubles in price. This is a lords' quarrel and the baker pays for it."*
-
-*Whispered at the inn:*
-
-> *"They say Bażyński is handing Prussia to the king in Kraków. Swapping one master for another."*
-
-*An old woman, shaking her head:*
-
-> *"Bażyński? His leg's gone stiff on him again — the great man can barely cross a room. And that's who means to bring down armoured knights."*
-
-*An old man at the gate:*
-
-> *"When it's done, some knight will walk away with all of Prussia in his pocket. The cities did the work. Someone else will take the prize."*
-
----
-
-Now. Find your next contact.
-
-**[Z2 — THE MORNING ERRANDS]**
+**The morning errands**
 
 Three people went into town this morning, and each bought one thing. Work out who bought what — and where each of them works.
 
-*Where they work, and what is made there:*
-- The Old Mill — bread
-- Piccolo — hot food *(a kitchen — ladled out)*
-- The Smithy — horseshoes
+*Where they work, what is made there — and the mark each place bears on your map:*
+- The Old Mill — bread — ⟨mark⟩
+- Piccolo — hot food *(a kitchen — ladled out)* — ⟨mark⟩
+- The Smithy — ironwork — ⟨mark⟩
 
 *The three:* Kordian · Lambert · Jordan
-*What was bought:* food · a horseshoe · cloth
+*What each one bought:* food · a ladle · cloth
 
-*Overheard this morning — all of it true:*
+*Heard about town this morning — every word of it true:*
 1. Lambert could have eaten at his own place, yet he went to buy his food elsewhere.
 2. Jordan bought from the one who bought cloth.
 3. The miller swears he bought nothing from Kordian.
 
-Once you have placed Jordan, you will know where he works. Go there — and ask for him by name.
+Place all three, and for each you will have a name, a trade, and the mark their workplace bears. **Only one of those three marks is on your map. That is the door you go to — and no other.**
 
 ---
 
@@ -82,17 +46,17 @@ Once you have placed Jordan, you will know where he works. Go there — and ask 
 
 ---
 
-I cannot be there. Too dangerous now.
+I cannot be there. It is too dangerous now — and the thing was never mine to keep. I was only ever to carry it a little of the way.
 
-And it was never mine to keep — I was only ever to pass it on.
+So now it falls to you. Whatever you were to put into my hands, you will put into his: the head of their Council — their chairman — into his own hand, and no other's. Find the way to him.
 
-This letter is for the head of their Council. Their chairman. Into his own hand, and no other's.
+When the marks send you to the door, you will not know our man on sight. So speak his name, and tell him what he bought this morning — that is the word we set for today, and by it he will know you came from me.
 
-Find the way. — R.
+Go carefully. — R.
 
 ---
 
-*So we are on our own. A riddle to point us at a man, a man to point us onward, and the letter still heavy in the bag. Whoever R. was, he is gone — we are not. Three people, three errands. Let us work it out.*
+*So you are on your own. A puzzle to point you at a door, a stranger behind it to point you onward, and the letter still heavy in the bag. Whoever R. was, he is gone — you are not. Three people, three errands. Work it out.*
 
 ---
 
@@ -130,10 +94,10 @@ Find the way. — R.
 
 ---
 
-## REWIZJA [2026-06-02] — uwagi Oskara (DO WPROWADZENIA, jeszcze nie wprowadzone)
+## REWIZJA [2026-06-02] — ✅ WPROWADZONA (rationale zachowane do review)
 
-> Notatki kierunkowe. Tekst wyżej **nietknięty** — materiał porównawczy. Przepisanie + render po akceptacji.
-> To **największa przebudowa** ze wszystkich kopert — K2 zmienia status i dochodzi nowa warstwa mechaniki (glify).
+> Tekst wyżej (v2) realizuje poniższe punkty A–F. Zostawione jako uzasadnienie decyzji. Jedyny otwarty element: **glify (`⟨mark⟩`)** — zależne od mapy Z1. Re-render → `public/` po akceptacji.
+> Była **największa przebudowa** ze wszystkich kopert (zmiana statusu na scenę + warstwa glifów).
 
 ### A. Rama przestaje być głosem zleceniodawcy → SCENA-ODKRYCIE (2. osoba)
 - Obecna rama „**Messengers, your contact is gone. We do not know if he fled…**" = zewnętrzny zleceniodawca relacjonuje grupie, co się stało. **To wycinamy.** Oskar: nikt z zewnątrz im tego nie mówi — **kurierzy sami to rozkminiają**: docierają na miejsce, zamiast kontaktu znajdują kopertę z notatką, i z niej (oraz z tego, co widzą wokół) **sami orientują się**, że R. zniknął.

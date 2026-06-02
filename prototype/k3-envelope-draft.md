@@ -1,7 +1,7 @@
 # K3 — From Jordan / Infiltrate the Castle (draft)
 
 > **Language:** English (player-facing). Planning notes in Polish below.
-> **Status:** draft [2026-06-01] — awaiting Oskar's review.
+> **Status:** draft [2026-06-02, v2 — rewizja WPROWADZONA] — awaiting Oskar's review.
 > **Handed over by:** Jordan (Piotr) at Piccolo, end of Faza 2A (see `prototype/jordan-actor-script-draft.md`, STEP 4).
 > **Contents of physical envelope:** this note. *(The second, sealed envelope — K-Z3b — is handed to the group later by Komtur Albrecht; see `prototype/kZ3b-envelope-draft.md`.)*
 > **Canon:** `puzzles/zamek-krzyzacki-lista.md` (Struktura Z3).
@@ -12,7 +12,7 @@
 
 ---
 
-*Clear of Piccolo, away from the cook and his ladle, we break the seal.*
+*Out of Piccolo, back into the carnival, the cook's ladle still bright in your mind. Whatever else he is, he has chosen to trust you this far — and to ask something of you in return.*
 
 ---
 
@@ -32,7 +32,7 @@ He is a proud man. He walks **outside the castle walls** as if the city were alr
 
 Flatter him. Let him boast. A proud man with something to hide always shows more than he means to.
 
-**When he is done with you, he will put something in your hand** — take it, thank him, and walk away. **Do not open it in front of him.** Once you are clear of the walls and his eyes, open it. It will tell you what to do next.
+Get from him what you can — a name he lets fall, a plan he has caught wind of, how much the Order has already guessed. When you have it, slip back into the crowd. Do not linger. Do not be a face he remembers.
 
 ---
 
@@ -40,7 +40,7 @@ Burn nothing. Trust no one in a Teutonic mantle. — J.
 
 ---
 
-*Scouts, then. We can be scouts. Find the proud Komtur, smile, lie a little, and listen. A man that sure of himself never hides things well.*
+*Scouts, then. You can be scouts. Find the proud Komtur, smile, lie a little, and listen. A man that sure of himself never hides things well.*
 
 ---
 
@@ -50,7 +50,7 @@ Burn nothing. Trust no one in a Teutonic mantle. — J.
 - **Pretekst = fałszywi donosiciele [wariant A, Oskar 2026-06-01]:** „wear another face… townsfolk eager to please the Order, who have heard things." To daje graczom rolę + zachętę by Albrecht **sam wyciągnął listę** (sprawdzić/dopisać nazwisko). Spięte z kartą Albrechta STEP 1.
 - **Zakaz zdradzenia się jako TR** — wprost („never of the Council — say that and you are dead"). Podnosi stawkę, trzyma immersję konspiracji.
 - **„Do not go into the ruins"** — fabularne uzasadnienie, że aktor (Zosia) stoi PRZED murami (ruiny biletowane). Rozwiązuje logistykę bez łamania immersji.
-- **Most do K-Z3b:** „he will put something in your hand… do not open it in front of him… open it once clear." Ustawia, że Albrecht wręcza kopertę (życzenie Oskara) i gracz otwiera ją na osobności → wtedy ujawnia się kradzież. Gracz nie wie z góry, że to rozkaz kradzieży.
+- ~~**Most do K-Z3b:** „he will put something in your hand… open it once clear."~~ **USUNIĘTE [2026-06-02]** — beat wycięty (meta, Zasada #3). K3 kończy się zadaniem zwiadu + „slip back into the crowd, do not be remembered" (instrukcja w świecie, bez zapowiedzi koperty). Wręczenie K-Z3b przez Albrechta = milczące, meta (patrz karta Albrechta §SEKWENCJA — model patrolu).
 - **Zwiad NIE bramkuje** — nie ma „poprawnej rozmowy". To pretekst zbliżenia. Bramką jest kradzież (K-Z3b + karta Albrechta). Gracz tego nie wie — myśli, że zadaniem jest „wyciągnąć info".
 - **Podpis „— J."** = Jordan, spójnie z „— R." (pośrednik) w K2. Lakoniczny.
 - **„Eighth bell" / godzina:** świadomie NIE powtarzana tu (jest w skrypcie Jordana ustnie + w KF). K3 trzyma fokus na zadaniu Z3.
@@ -61,9 +61,9 @@ Burn nothing. Trust no one in a Teutonic mantle. — J.
 
 ---
 
-## REWIZJA [2026-06-02] — uwagi Oskara (DO WPROWADZENIA, jeszcze nie wprowadzone)
+## REWIZJA [2026-06-02] — ✅ WPROWADZONA (rationale zachowane do review)
 
-> Notatki kierunkowe. Tekst wyżej **nietknięty** — materiał porównawczy. Przepisanie + render po akceptacji.
+> Tekst wyżej (v2) realizuje poniższe: opener „we break the seal" → opis świata; beat „put something in your hand" wycięty; oprawa → 2. os. Rdzeń wiadomości Jordana (roman) zachowany. Re-render → `public/` po akceptacji.
 
 1. **USUNĄĆ beat „he will put something in your hand…" (obecna linia ~35):** *„When he is done with you, he will put something in your hand — take it, thank him, and walk away. Do not open it in front of him. Once you are clear of the walls and his eyes, open it. It will tell you what to do next."* → **precz w całości.** Oskar: nie wyprzedzaj wydarzeń info i **nie mieszaj meta-mechaniki z fikcją.** Wręczenie K-Z3b to meta-poziom (komtur po prostu wręcza i odchodzi) — gra **nie zapowiada** graczom, że dostaną kopertę. Patrz `mechanics/koperty-mg.md` Zasada #3.
    - **Powiązany planning-note do usunięcia/przeredagowania:** punkt „**Most do K-Z3b**" wyżej (zakładał: „he will put something in your hand… open it once clear") — opisuje wycinany beat.
