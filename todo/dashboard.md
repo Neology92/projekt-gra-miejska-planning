@@ -152,7 +152,7 @@ Szczegóły: mechanics/koperty-mg.md §ZAŁOŻENIA PRZED RENDEREM · prototype/p
 > ⚠ **ŚCIEŻKA KRYTYCZNA TREŚCI MVP.** Tor KZ istnieje dziś tylko jako **meta-kartki** (`lore/meta-kartki/krzyzacy-*`) i wyrenderowane tabele Z11 + koperta/PDF Z9. **Brak kopert gracza:** Z3Z, Z8, Z10, Z11-list, K2-K, KF-KZ. To największa pojedyncza luka treści — mechanika = Oskar, draft koperty = agent po decyzji.
 
 ```
-⬜ K2-K (wersja krzyżacka) ...... Pula B plotek (krytyka Zakonu) + Z2 → Albrecht (handler KZ [2026-06-02])
+🟡 K2-K (wersja krzyżacka) ...... draft [2026-06-03]: rama (scena-odkrycie + pośrednik N. + Pula B B1/B2/B6/B8) GOTOWA; cel Albrecht JAWNY (twist=BRAK). ⚠ blok zagadki Z2 = OPEN (rdzeń Oskara; routing fork A/B — re-themed vs redirect) + glify ⟨mark⟩  [envelopes/krzyzacy-2-Z2.md]
 🟡 Skrypt Albrechta (Zosia) F2A . handler KZ DOPISANY [2026-06-03] jako PART TWO karty: weryfikacja (kolor+parol⟨TBD⟩) + duma/żądanie dowodu + zadanie Z3Z (obserwuj Jordana: szata+chochla) + wręczenie K3-K + Tabeli 1; NIE bierze listu (finał). Dwurolowość Zosi (TR cel / KZ handler) oflagowana  [materials/actors/albrecht-actor-card-draft.md PART TWO]
 ⬜ Z3Z — infiltracja Piccolo .... lustro Z3: kradzież „zaopatrzenia" + 20:30 + obserwacja Jordana (brązowa szata + chochla → dane Z11)
 🟡 Z8 — melodia zakonu .......... koperta gracza draft [2026-06-02]: lustro Z4 (kalimba, kod 621454), klimat zakonny + zapomniany brat; senderless scene + iron-tongue generic  [envelopes/krzyzacy-4-Z8.md]. Zostaje: review Oskara (TONE FLAG: gorycz vs lojalność) + klucz finału Z11
