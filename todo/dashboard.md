@@ -12,23 +12,32 @@
 ## Łańcuch gry — mapa przepływu
 
 ```
-                          ┌─────────────────────────────────────────────────┐
-                          │           TOR MIESZCZAN (TR) — prototyp          │
-                          └─────────────────────────────────────────────────┘
+                          ┌─────────────────────────────────────────────────────────────────┐
+                          │                 TOR MIESZCZAN (TR) — prototyp                    │
+                          └─────────────────────────────────────────────────────────────────┘
 
-  START                  FAZA 1                       FAZA 2A              FAZA 2B               FINAŁ
-   │                       │                             │                    │                    │
-   ▼                       ▼                             ▼                    ▼                    ▼
-┌──────┐   ┌──────┐   ┌──────┐   ┌──────┐   ┌────────┐   ┌──────┐   ┌──────┐   ┌──────┐   ┌──────┐   ┌──────┐
-│  K1  │──▶│  Z1  │──▶│  MG  │──▶│  K2  │──▶│   Z2   │──▶│Jordan│──▶│  K3  │──▶│  Z3  │──▶│  Z4  │──▶│  Z7  │──▶ KF
-│start │   │szlak │   │raport│   │twist │   │Einstein│   │ /Z2b │   │brief │   │zamek │   │kalim.│   │szyfr │
-└──────┘   │symbol│   │ 4 m. │   │plotki│   │ (Piotr)│   │hasło │   │ F2B  │   │lista │   │ melo→#   │Cezar │
-   🟡       └──────┘   └──────┘   └──────┘   └────────┘   │+kolor│   └──────┘   │ TR   │   └──────┘   └──────┘
-            🟡/🔒        ⬜         🟡        🔄(Piotr)    └──────┘     ⬜        ⬜🔒       ⬜🔒        ⬜🔒
-                                                              ✅
+  START                  FAZA 1                    FAZA 2A         FAZA 2B (Z3=2 koperty)        FINAŁ
+   │                       │                          │              │                              │
+   ▼                       ▼                          ▼              ▼                              ▼
+┌────────────┐  ┌──────┐  ┌──────┐  ┌────────────┐  ┌──────┐  ┌────────────┐  ┌──────┐  ┌──────┐  ┌────────────┐
+│poz.1  Z1   │─▶│  Z1  │─▶│  MG  │─▶│poz.2  Z2   │─▶│Jordan│─▶│poz.3  Z3   │─▶│  Z3  │─▶│  Z4  │─▶│poz.6  Z7   │
+│wspolne-1   │  │szlak │  │raport│  │miasto-2    │  │(Piotr│  │miasto-3    │  │zamek │  │kalim.│  │miasto-6    │
+│  Z1.md     │  │symb. │  │ 4 m. │  │  Z2.md     │  │/Z2b) │  │  Z3.md     │  │lista │  │melo→#│  │  Z7.md     │
+└────────────┘  └──────┘  └──────┘  └────────────┘  │hasło │  └────────────┘  │ TR   │  └──────┘  └────────────┘
+     🟡          🟡/🔒       ⬜           🟡          │+kolor│        ⬜         │  ↓   │   ⬜🔒          ⬜🔒
+                                                       └──────┘                 │poz.4 │
+                                                          ✅              ┌──────────────────┐
+                                                                          │poz.4  Z3b        │
+                                                                          │miasto-4-Z3b.md   │
+                                                                          │(Albrecht wręcza) │
+                                                                          └──────────────────┘
+                                                                               ✅ · raport u MG →
+                                                                          poz.5 Z4 [miasto-5-Z4]
+                                                                               (opcjonalna; prototyp)
                                                                                     motto Z3 ─┐
-                                                                                    (NIE Z4) ─┴─▶ Z7 ─▶ "Jordan=Bażyński"   (klucz = motto z nagłówka listy Z3)
+                                                                                    (NIE Z4) ─┴─▶ Z7 ─▶ "Jordan=Bażyński"
 ```
+> Numeracja poz. = kolejność otwierania koperty. Spec: `envelopes/README.md` (manifest). Stare nazwy K1–KF: `prototype/envelope-map.md`.
 
 ## A. Teksty kopert (7)
 
@@ -48,7 +57,7 @@
 
 ```
 🟡 List zapieczętowany ........ treść (rekwizyt noszony całą grę) — do napisania
-🟡 Wiadomość pośrednika ....... jest w drafcie K2 (slip „— R.") — do wydzielenia
+🟡 Wiadomość pośrednika ....... jest w drafcie poz.2 Z2 (slip „— R.") — do wydzielenia  [envelopes/miasto-2-Z2.md]
 🟡 Mapa Torunia z glifami ..... mock funkcjonalny istnieje                              [prototype/mapa-z1-podglad.html]
 🟡 Szyfrownik (deszyfrownik) .. w tym samym mocku — czeka na dobór piktogramów
 🟡 Pergamin z listą nazwisk TR  research gotowy + draft (EN); klucz=Decyzja#1  [prototype/pergamin-lista-tr-draft.md · puzzles/z3-lista-tr-spec.md]
