@@ -3,6 +3,8 @@
 Frakcja: **krzyzacy** (Zakon) · Pozycja na ścieżce (nr): **4** · Zadanie (nr_zad): **Z9** (sensoryczna z piernikiem, lustro Z5).
 Źródło treści: `puzzles/zagadka-sensoryczna.md`. Status: **wypełniona (draft do produkcji)**.
 
+> ⚠ **JĘZYK [flaga 2026-06-02]:** „Gotowy tekst" gracza poniżej jest po **polsku** — wymaga tłumaczenia na **EN** przed produkcją (reguła: materiały gracza = angielski). Meta-montaż zostaje po PL.
+
 ## Meta — montaż
 
 - **Kolor w nazwie?** Nie — koperta **identyczna dla grupy krzyżackiej z zestawem B** (Z3Z+Z9; 1 grupa, `concept/03-faza-2b-asynchroniczne.md`). Gdyby różniła się per kolor → `krzyzacy-<kolor>-4-Z9.md`.

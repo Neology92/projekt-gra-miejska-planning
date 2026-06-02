@@ -95,13 +95,6 @@ Dlaczego akurat ci dwaj aktorzy: finał = jednoczesne starcie Bażyński vs Albr
 - **Wiki**: `src/pages/tajna-rada.js` (lista członków)
 - **Wykorzystanie**: nazwiska na liście Z3.
 
-## Weryfikacja imion - poprawione
-
-Autor wymienił błędne / niepewne imiona:
-- **"Jan Obrzyński"** → POPRAWNIE: **Jan Bażyński** (Hans von Baysen).
-- **"Komtur Albrecht"** → POPRAWNIE: **Albrecht Kalb**.
-- **"Kucharz Jordan"** → OK (postać legendarna, używamy świadomie).
-
 ## Otwarte pytania
 
 1. **Stylizacja kostiumów 2 aktorów** - autentyczne XV-wieczne (drogie) czy "sugestywne" (chochla = Jordan/Piotr; płaszcz + krzyż = Albrecht/Zosia)?

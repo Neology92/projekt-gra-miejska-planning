@@ -22,7 +22,7 @@ Oba tory mają osobny finał, oba to **szyfry** rozwiązywane z elementów zebra
 
 ### Model szyfru finałowego [KANON 2026-06-01]
 
-Dwa składniki: **klucz** (z zagadki obowiązkowej) + **szyfrogram** (z opcjonalnej). To **odwrócenie** wcześniejszego Modelu B (było: Z3=szyfrogram, Z4=klucz) — patrz `puzzles/z3-lista-tr-spec.md` Decyzja #1.
+Dwa składniki: **klucz** (z zagadki obowiązkowej) + **szyfrogram** (z opcjonalnej). Patrz `puzzles/z3-lista-tr-spec.md` Decyzja #1.
 
 - **KLUCZ szyfru = ODKRYTY PRZEZ PORÓWNANIE NAGŁÓWKÓW** (oba tory). Motto `HELFEN, HEILEN UND WEHREN!` w charakterystycznym foncie łączy oba dokumenty wizualnie. **Asymetria pozyskania:**
   - **Mieszczanie** — jawne motto **wykradzione** w Z3 (lista TR z infiltracji Albrechta). Zdobywasz sekret wroga.
@@ -101,7 +101,7 @@ Mechanika:
 
 1. **Jaki dźwięk dzwonu?** Rekwizyt? Nagranie? Realny dzwon (kościół Jakuba ma dzwon ratuszowy?)
 2. **Aktorska scenka — kto gra?** Oskar + znajomy? Animatorzy z większą wprawą?
-3. ~~Czy zakończenie historyczne czy alternatywne~~ ROZSTRZYGNIĘTE [2026-05-29]: **hybryda** — fakty stałe, scenka przesuwa ciężar emocjonalny wg wyniku; wymowa moralna: TR/kupcy „źli" (patrz sekcja „Zakończenie — decyzja").
+3. ROZSTRZYGNIĘTE [2026-05-29]: zakończenie = **hybryda** — fakty stałe, scenka przesuwa ciężar emocjonalny wg wyniku; wymowa moralna: TR/kupcy „źli" (patrz sekcja „Zakończenie — decyzja").
 4. **Co z grupami które nie zdążą rozwiązać Z7** → dostarczają na ślepo? Mają jakiś hint od MG?
 5. **Skala zliczania** — proste (liczba listów) czy ważone (np. punkty zaufania z Z2B mnożą wagę listu)?
 6. **Po finale** — wspólne piwo? Ognisko? Zamknięcie gry musi mieć **rytuał pożegnalny** żeby gracze nie odpłynęli "no i koniec, idziemy".

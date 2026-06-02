@@ -1,6 +1,6 @@
 # Kartki autorskie (meta-dodatek do kopert)
 
-**Status**: 🟢 **w realizacji** [2026-06-02, Oskar aktywował]. Drafty surowca per koperta powstają w podfolderze **`lore/meta-kartki/`** — jeden plik na fizyczną kopertę (nazwy lustrzane do `puzzles/envelopes/`), z rozdziałem FAKT / LEGENDA / SPORNE / FABUŁA / ANACHRONIZM + cytatami z wiki. Ten plik = **brief i akumulator pojęciowy**; konkretne karty → `lore/meta-kartki/`. Wcześniej (do 2026-06-01) zadanie było odłożone („najpierw gra, potem uwagi autorskie") — Oskar zdjął tę blokadę.
+**Status**: 🟢 **w realizacji** [2026-06-02, Oskar aktywował]. Drafty surowca per koperta powstają w podfolderze **`lore/meta-kartki/`** — jeden plik na fizyczną kopertę (nazwy lustrzane do `puzzles/envelopes/`), z rozdziałem FAKT / LEGENDA / SPORNE / FABUŁA / ANACHRONIZM + cytatami z wiki. Ten plik = **brief i akumulator pojęciowy**; konkretne karty → `lore/meta-kartki/`.
 
 > ➡️ **Drafty kart:** `lore/meta-kartki/` (12 kart: Z1–Z11 + warianty torów; indeks w `lore/meta-kartki/README.md`).
 
@@ -36,18 +36,8 @@ Na **koniec** przygotowań Oskar chce przejść **wszystkie** rzeczy trafiające
 
 ---
 
-# Surowiec — zebrane pozycje (rośnie w trakcie pracy nad kopertami)
-
-> Format roboczy: per koperta/zagadka → co fakt / legenda / fabularyzacja + ciekawostka poszerzająca. Uzupełniamy przy okazji domykania każdej koperty, żeby nie robić wszystkiego naraz na końcu.
-
-## Z4 / Z8 — kalimba (melodia flisaka / melodia zakonu)
-
-- **Fabularyzacja (anachronizm)**: rekwizyt to **kalimba** — instrument afrykański (lamellofon), w Europie znany dopiero od XIX w. W Toruniu 1454 niemożliwy. W grze schowany pod opisem instrumentu historycznego (piszczałka flisacka / psałterion). → *to jest właśnie pozycja-sztandar tej kartki: „instrument, który trzymaliście, to kalimba, nie XV-wieczna piszczałka".*
-- **Fakt**: kod `621454` = **6 lutego 1454**, autentyczna data buntu toruńskiego (środa, dzień św. Doroty) — i zarazem data klęski Zakonu. Patrz wiki `bunt-1454.js`.
-- **Ciekawostka poszerzająca**: ta sama melodia/kod obsługuje oba tory (flisak i zakon) — symetria, którą gracze różnych frakcji mogą porównać po grze.
-
-<!-- Kolejne pozycje dopisujemy tu przy domykaniu kopert: Jordan=Bażyński, Picollo, dzwon (Tuba Dei), lista TR u Albrechta, karnawał, szyfr Cezara — większość już opisana w `fakty-vs-fabula.md`, tu zmapujemy ją per koperta. -->
+> **Surowiec treści przeniesiony do `lore/meta-kartki/`** — jeden plik na kopertę (FAKT/LEGENDA/SPORNE/FABUŁA/ANACHRONIZM + cytaty wiki). Ten plik trzyma już tylko brief pojęciowy i otwarte pytania o formę. Nie dopisuj tu surowca — dopisuj w `meta-kartki/`.
 
 ---
 
-**Powiązane**: `lore/fakty-vs-fabula.md` (rejestr naginek), `puzzles/kalimba.md` (decyzja o instrumencie).
+**Powiązane**: `lore/meta-kartki/` (karty per koperta), `lore/fakty-vs-fabula.md` (rejestr naginek), `puzzles/kalimba.md` (decyzja o instrumencie).

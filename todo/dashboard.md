@@ -1,6 +1,6 @@
 # 🗺️ Dashboard — Prototyp + MVP (widok jednoekranowy)
 
-> Graficzny przegląd stanu. Szczegóły sprintu prototypu → `roadmap-prototyp.md`. Decyzje → `otwarte-pytania.md`.
+> Graficzny przegląd stanu — **jedyne źródło statusów**. Decyzje → `otwarte-pytania.md` · Plan faz → `roadmap.md` · Archiwum (snapshoty, zamknięte decyzje) → `todo/archive/`.
 > **Legenda statusów:** ✅ gotowe · 🟡 draft/czeka na review · 🔄 w toku (input zewnętrzny) · ⬜ do zrobienia · 🔒 czeka na decyzję Oskara · 🚶 wymaga wizji lokalnej
 
 ---
@@ -80,15 +80,13 @@
 ## 🔒 Decyzje Oskara blokujące prototyp (aktualne)
 
 ```
-┌─ Z1 ──────────── akceptacja propozycji miejsc (Piernikarka/Pod Gwiazdą/osiołek/Kopernik + 5 dystr.)
-│                  + podmiana kolizji glif ☆ vs detal ⭐ przed generacją finalną
-├─ Z4 ──────────── instrument narracyjny per tor (piszczałka flisacka? fujarka? — jedno zdanie w K-Z4)
-├─ K8/Z7 ─────────  review szyfrogramu + finalna treść koperty
-└─ KF ──────────── mechanika dostarczenia listu (osobiste wręczenie, mock stołowy)
+┌─ Z1 ──────────── ✅ trasa = Wariant A [2026-06-02]: Piernikarka→osiołek→Krzywa Wieża→Kopernik (4 kroki).
+│                  Zostaje (nie-decyzyjne): repropagacja glifów/deszyfrownika (z1-szlak-spec §baner) +
+│                  kolizja ☆/⭐ [agent glify] + dry-run R2 w terenie
+└─ K8/Z7 ─────────  review szyfrogramu (treść gotowa: z7-szyfrogram-draft.md) — czeka na „ok" Oskara
 ```
 
-✅ Zamknięte: K2 plotki · Z2 zagadka (Oskar) · Z3 mechanika (dwuetapowa) · Jordan skrypt · Albrecht karta · Z7 szyfrogram
-✅ Rewizja narracyjna [2026-06-02]: koperta=scena (nie wiadomość) · oś czasu = wieczór 6 II (św. Doroty/karnawał) · klamry A1 flisak=R. / A2 maski→przebranie / A3 list nieotwarty / B1-B3 / C2 kulawy Jordan · pass atmosferyczny K1/K2/K3/KF · brief inwersji Z5 (MVP). Filozofia: `mechanics/koperty-mg.md §Zasada nadrzędna #2`
+> Log zamkniętych decyzji → `todo/archive/decyzje-zamkniete.md` (nie trzymamy changelogu w dashboardzie — git + archiwum).
 
 ## 🔄 Czeka na zewnątrz
 

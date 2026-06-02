@@ -3,6 +3,8 @@
 Frakcja: **miasto** (Tajna Rada) · Pozycja na ścieżce (nr): **4** · Zadanie (nr_zad): **Z5** (sensoryczna z piernikiem).
 Źródło treści: `puzzles/zagadka-sensoryczna.md`. Status: **wypełniona (draft do produkcji)**.
 
+> ⚠ **JĘZYK [flaga 2026-06-02]:** „Gotowy tekst" gracza poniżej jest po **polsku** — wymaga tłumaczenia na **EN** przed produkcją (reguła: materiały gracza = angielski). Meta-montaż zostaje po PL.
+
 ## Meta — montaż
 
 - **Kolor w nazwie?** Nie — koperta **identyczna dla wszystkich grup mieszczan z zestawem B** (Z3+Z5; 2 grupy, `concept/03-faza-2b-asynchroniczne.md`). Gdyby treść różniła się per kolor → podział na `miasto-<kolor>-4-Z5.md`.

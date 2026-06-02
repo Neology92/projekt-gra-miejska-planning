@@ -84,7 +84,7 @@ Grupa dowiaduje się, że Zakon ma **listę nazwisk Tajnej Rady**. Wnioski:
 Lustro Z3 dla toru krzyżaków (obowiązkowa, wszystkie 5 grup krzyżackich).
 
 - **Miejsce**: Piccolo (siedziba TR, gdzie urzęduje Jordan/Piotr).
-- **Zadania**: ukraść „zaopatrzenie" (w praktyce: odebrać kupony na obiad i je zjeść), **wyciągnąć od Jordana godzinę buntu (20:30)**, ew. ukraść rekwizyt (koło deszyfrujące — do decyzji).
+- **Zadania**: ukraść „zaopatrzenie" (w praktyce: odebrać kupony na obiad i je zjeść), **wyciągnąć od Jordana godzinę buntu (20:30)**. Klucz finału = porównanie nagłówków (Cezar +7, **brak koła deszyfrującego** — patrz `puzzles/z7-szyfr-spec.md §0`).
 - **Output**: **klucz do finału Z11** + godzina finału.
 - **Obsada**: ten sam Jordan/Piotr co dla TR — różni się tylko **framing w kopercie** (sojusznik ↔ cel infiltracji). Jeden aktor obsługuje oba tory.
 - Mechanika „kradzieży/infiltracji" — do rozpisania (analogicznie do podebrania listy Albrechtowi w Z3).
@@ -103,7 +103,7 @@ Kradzież listy jest **OBLIGATORYJNA** — **każda** grupa mieszczan MUSI zdoby
 3. ~~**Kradzież listy** - fizyczna czy abstrakcyjna?~~ ✅ **ROZSTRZYGNIĘTE [2026-06-01]: fizyczna** — komtur chodzi przewidywalnym schematem, lista leży fizycznie, powtarzalne okno + reset/loop. Patrz „Struktura Z3" pkt 4 + karta choreografii.
 4. ~~**Nośnik K-Z3b**~~ ✅ **ROZSTRZYGNIĘTE [2026-06-01, Oskar]: wariant (a) + konwencja narracyjna.** Albrecht fizycznie wręcza K-Z3b, ale **wręczenie = meta-interakcja poza światem gry** (jak rozdanie karty). Dziura logiczna („wróg daje rozkaz Rady") znika u źródła: **koperta nie zawiera rozkazu** — jej treść to **narracja z głów kurierów** (obserwacja listy + wniosek „to musimy ukraść" + plan), więc nie ma nadawcy. Beat „odejdź–przeczytaj–wróć" zostaje, złagodzony (Albrecht nie odgania, karta STEP 2). Pierwotny obraz Oskara („komtur wręcza kopertę") zachowany bez kosztu immersyjnego. **Konwencja głosu obejmuje wszystkie koperty** → `mechanics/koperty-mg.md`. Tekst → `prototype/kZ3b-envelope-draft.md` (v2).
 4. ~~Co jeśli grupa nie zdobędzie listy?~~ — ✅ **ROZSTRZYGNIĘTE [2026-06-01]: kradzież listy jest OBLIGATORYJNA dla każdej grupy mieszczan.** Nie ma ścieżki „nie zdobył" — kradzież projektujemy tak, by każda grupa ją wykonała. Tym samym znika twardy stop dla Z7 (klucz = motto z nagłówka listy jest zawsze dostępny). Patrz „Trudność — balans" niżej + karta choreografii Albrechta.
-5. **Z3Z**: mechanika kradzieży zaopatrzenia + czy kraść koło deszyfrujące; jak Jordan/Piotr „przecieka" godzinę 20:30 grupom infiltrującym.
+5. **Z3Z**: mechanika kradzieży zaopatrzenia; jak Jordan/Piotr „przecieka" godzinę 20:30 grupom infiltrującym.
 
 ## Co autor może zrobić sam vs gdzie pomocy
 

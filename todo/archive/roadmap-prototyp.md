@@ -1,3 +1,5 @@
+> 📦 **ARCHIWUM [2026-06-02].** Plan sprintu prototypu — wchłonięty przez `todo/dashboard.md` (statusy) i `todo/roadmap.md` (plan faz). Trzymany dla kontekstu/genealogii; **nie aktualizuj**.
+
 # Roadmap — Prototyp pojedynczej ścieżki (2 dni robocze, duża intensywność)
 
 > Dokument-sprint. Widok długofalowy całej gry (3–4 mies.) → `todo/roadmap.md`.

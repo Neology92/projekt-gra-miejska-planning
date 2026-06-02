@@ -70,8 +70,6 @@ Autor (Oskar) prowadzi **tablicę Whimsical** z dodatkowymi materiałami — pod
 - MCP to wersja desktopowa — działa tylko gdy aplikacja Whimsical jest otwarta i zalogowana. Snapshot (`board_snapshot`) wymaga, by board był aktywnym/otwartym plikiem; odczyt treści (`board_read`) działa bez tego.
 - Board bywa **wcześniejszy/aktualniejszy** niż pliki .md w niektórych miejscach (numeracja zagadek 2B) — patrz `todo/otwarte-pytania.md` przy rozbieżnościach.
 
-> Historycznie była mowa o tablicy Miro — projekt przeszedł na Whimsical.
-
 ## Struktura katalogu
 
 ```
@@ -83,7 +81,7 @@ projekt_gra-miejska-planning/
 │   ├── 02-faza-2a-jordan.md
 │   ├── 03-faza-2b-asynchroniczne.md
 │   ├── 04-faza-3-final.md
-│   └── 05-tor-krzyzakow.md    ← placeholder, do rozpisania
+│   └── 05-tor-krzyzakow.md    ← decyzje ramowe gotowe, treść 5 zagadek do rozpisania (MVP)
 ├── puzzles/                   ← zagadki (jedna na plik gdy gotowa, master-list dla orientacji)
 │   ├── 00-master-list.md
 │   ├── szlak-symboli.md
@@ -103,10 +101,12 @@ projekt_gra-miejska-planning/
 │   ├── miejsca.md
 │   ├── plotki-i-pogloski.md
 │   ├── fakty-vs-fabula.md
-│   └── meta-kartki-autorskie.md  ← akumulator: kartki „od autora" (fakt/legenda/fabuła) do kopert; zadanie na PÓŹNIEJ
+│   └── meta-kartki-autorskie.md  ← brief; karty per koperta → lore/meta-kartki/
 └── todo/
-    ├── roadmap.md             ← co dalej, w jakiej kolejności
-    └── otwarte-pytania.md     ← decyzje czekające na input
+    ├── dashboard.md           ← JEDYNE źródło statusów (pasek + blokery + następny krok)
+    ├── roadmap.md             ← kolejność faz A–E
+    ├── otwarte-pytania.md     ← decyzje (otwarte + rozstrzygnięte)
+    └── archive/               ← snapshoty, zamknięte decyzje, stary materiał
 ```
 
 ## Jak czytać te pliki
@@ -153,15 +153,17 @@ Te punkty są **niezmienne** i mają pokrycie w wiki:
 - **Język planowania**: polska robocza — pliki .md, decyzje, notatki, komentarze agenta.
 - **Język materiałów gracza**: **ANGIELSKI** — wszystkie artefakty w `prototype/` i `mvp/` przeznaczone dla graczy (koperty, rekwizyty, skrypty NPC, mapy, karty) **muszą być po angielsku**. Gracze nie mówią po polsku. Dokumenty MG (arkusz śledzenia, instrukcja MG) — angielski, bo MG też może pracować z angielskim. Jedyny wyjątek: nazwy własne toruńskie pozostają w oryginale (Rynek Staromiejski, Piccolo itp.).
 
-## Status na start (2026-05-29) — aktualizacja 2026-06-01
+## Status — gdzie go szukać
 
-> **🟡 STAN [2026-06-01]:** Dwa równoległe wątki:
-> - **Prototyp (1 ścieżka TR):** K1/K2/K3/K-Z3b/Z7/skrypt Jordana/karta Albrechta — **drafty gotowe**, czekają na review Oskara + aktorów. Brakuje: **K-Z4** (czeka: instrument narracyjny Z4 — decyzja Oskara), **KF**, **arkusz MG**, **instrukcja MG**. Pełny dashboard: `todo/dashboard.md`.
-> - **Z1 dyspersja (10 grup, MVP):** po dry-run R1 + REBALANS v2. **Mapy Leaflet zbudowane** (`prototype/z1-map/`). Czeka: dry-run **runda 2** (Oskar weryfikuje sightline 6 par + `S02` — `puzzles/z1-dry-run-sheet.md §RUNDA 2`), potem **kalibracja FROZEN_CENTER/FROZEN_ZOOM** (tune.html) + render. Zrzut stanu: `todo/z1-fan-handoff.md`.
+**Nie streszczamy statusu tutaj** (rozjeżdża się po każdej sesji). Zawsze aktualne źródła:
+- **Stan / co gotowe / następny krok** → `todo/dashboard.md`
+- **Decyzje (otwarte + rozstrzygnięte)** → `todo/otwarte-pytania.md`
+- **Kolejność faz** → `todo/roadmap.md`
 
-- ✅ Faza 1 — mechanika Z1 ustalona; spec kompletna (`puzzles/z1-szlak-spec.md`); prototyp mock istnieje
-- ✅ Faza 2A (Jordan) — zagadka Z2 + skrypt Jordana zdraftowane
-- 🟡 Faza 2B — Z3 zdraftowane (K3, K-Z3b, karta Albrechta); Z4 mechanika gotowa, koperta do napisania; Z5/Z6 = MVP
-- ⚠️ Faza 3 (finał) — szyfrogram Z7 gotowy, koperta K8 i KF do napisania; scenka aktorska = przed dniem gry
-- 🔴 **Tor krzyżaków** — kompletnie nierozpisany (MVP)
-- 🔴 **Mechanika liczenia listów** — nierozstrzygnięta (MVP)
+Skrót na 2026-06-02: prototyp ścieżki TR ~80% (drafty kopert/skryptów gotowe, czekają na review; zostają: instrument K-Z4, body koperty K8, pass spójności, dry-run). Tor krzyżaków = ramy gotowe, treść 5 zagadek niepisana (MVP). Z1 dyspersja 10 grup czeka na dry-run R2. Mechanika liczenia listów = MVP.
+
+### Konwencja utrzymania (żeby tracking „się działał")
+
+- Po ukończeniu jednostki (koperta / zagadka / rekwizyt) **zaktualizuj status w `todo/dashboard.md` w tym samym commicie**.
+- **Nie pisz logów „było→jest"** w żywych plikach — `git log` jest changelogiem; `todo/archive/` trzyma odrzucone projekty i snapshoty.
+- Decyzje zapisuj w `todo/otwarte-pytania.md` jako „**temat** — ROZSTRZYGNIĘTE [data]: ..." (bez przekreśleń).

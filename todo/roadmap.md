@@ -4,18 +4,13 @@
 
 ## Faza A - decyzje strategiczne (TY, ~2-3h skupionej pracy)
 
-**Zanim cokolwiek piszesz, podejmij te decyzje** - inaczej każda zagadka będzie zatkana czekaniem na input.
+**Pełny rejestr decyzji (otwarte + rozstrzygnięte) → `todo/otwarte-pytania.md`.** Tu tylko skrót dla orientacji.
 
-1. ~~Ile MG?~~ ROZSTRZYGNIĘTE: **1 MG = Oskar** (`mechanics/koperty-mg.md`).
-2. ~~Skala gry~~ ROZSTRZYGNIĘTE: **10 grup × 4 (~40 os.), 5+5**, ostateczna liczba w dniu gry.
-3. **Klasy ujawnione kiedy?** (wariant A/B/C w `mechanics/grupy-i-klasy.md`)
-4. **Mapa + szyfrownik: wspólne czy osobne per klasa?** (`mechanics/mapy-i-szyfrownik.md`)
-5. **Lokal Jordana** - który? Mam zgodę?
-6. ~~Aktorzy - kto gra?~~ ROZSTRZYGNIĘTE: **2 aktorów + MG**, obsada zamknięta (Jordan/Bażyński = **Piotr**, Albrecht = **Zosia**, MG = **Oskar**). Reszta postaci na papierze.
-7. **Mechanika finałowa** - prosta czy ważona? (`mechanics/finalowe-glosowanie.md`)
-8. ~~Tor krzyżacki~~ ROZSTRZYGNIĘTE: **pełna symetria** (osobny zestaw zagadek + plot twist + rekwizyty; treść, nie obsada). Patrz `concept/05-tor-krzyzakow.md`.
+Zamknięte i pozwalające ruszyć: 1 MG = Oskar · 10 grup × 4 (5+5) · obsada (Piotr/Zosia/Oskar) · pełna symetria torów · klasy ujawniane po Z2 · finał = prosta zliczanka (1 grupa = 1 głos) · lokal Jordana = Piccolo.
 
-**Decyzje zapisuj** w odpowiednich plikach (zastępując "otwarte pytania" rozstrzygnięciami) lub bezpośrednio w `otwarte-pytania.md` jako "ROZSTRZYGNIĘTE [data]: ...".
+Wciąż otwarte i strategiczne: **#3 data rozgrywki** (deadline) · **#6 mapa+szyfrownik wspólne czy per klasa** · **#15 co gdy grupa nie dostarczy** · **#59 budżet**.
+
+**Decyzje zapisuj** w `otwarte-pytania.md` jako „**temat** — ROZSTRZYGNIĘTE [data]: ..." (bez przekreśleń).
 
 ## Faza B - dopracowanie zagadek (TY + agent, ~10-20h)
 
@@ -97,7 +92,7 @@ Kolejność prac na zagadkach (priorytetowa):
 
 - [ ] **Drukowanie kopert** (~96 sztuk, posortowane)
 - [ ] **Pieczętowanie** wosk + pieczęć
-- [ ] **Listy zapieczętowane** (~12 sztuk, jeden per grupa)
+- [ ] **Listy zapieczętowane** (~10 sztuk, jeden per grupa)
 - [ ] **Mapy** (12-48 sztuk zależnie od decyzji)
 - [ ] **Szyfrowniki** (12-48 sztuk)
 - [ ] **Karta polichromii** (dla krzyżaków, jeśli tor jest)

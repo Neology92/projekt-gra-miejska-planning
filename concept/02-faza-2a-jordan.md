@@ -1,6 +1,6 @@
 # Faza 2A — Jordan
 
-**Status**: szkielet jest. Spotkanie z Jordanem i test zaufania do rozpisania w detalu.
+**Status**: szkielet jest; test zaufania ROZSTRZYGNIĘTY [2026-05-31] (hasło „Jordan" z K2 + weryfikacja koloru opaski — patrz `puzzles/test-jordana.md`, `prototype/jordan-actor-script-draft.md`). Spotkanie z Jordanem rozpisane w skrypcie aktora.
 
 ## Cel fazy (z perspektywy gracza)
 

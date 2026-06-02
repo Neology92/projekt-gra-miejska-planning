@@ -105,8 +105,8 @@ Autor wymienił "Picollo". Sprawdzenie:
 
 ## Otwarte pytania
 
-1. **Lokal** - który konkretnie? Wymaga zgody właściciela na gościnę 12 grup po 15-20 min każda.
-2. **Czas trwania spotkania** vs harmonogram MG - lokal nie wytrzyma 12 grup naraz; potrzebny **slot system**?
+1. **Lokal** — ROZSTRZYGNIĘTE [2026-05-31]: **Piccolo** (patrz `todo/otwarte-pytania.md` #34). Otwarte: zgoda właściciela na gościnę 10 grup po 15-20 min każda.
+2. **Czas trwania spotkania** vs harmonogram MG - lokal nie wytrzyma 10 grup naraz; potrzebny **slot system**?
 3. **Rekwizyt "chochla"** - kucharz ją nosi widocznie? Czy gracze muszą się dopytać i wtedy ją wyjmuje?
 4. **Co jeśli grupa wejdzie do innego lokalu i zapyta o Jordana?** Mechanizm fail-safe (właściciele okolicznych lokali mają instrukcję "Jordan jest u nas")?
 

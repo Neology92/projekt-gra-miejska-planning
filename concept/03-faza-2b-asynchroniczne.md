@@ -2,8 +2,6 @@
 
 **Status**: struktura przebudowana [2026-05-29] wg boardu Whimsical + ustaleń autora. Numeracja, dywersyfikacja i mechanika „klucza do finału" ustalone. Treści większości zagadek do rozpisania (kreatywka Oskara).
 
-> **Zmiana modelu** względem wcześniejszej wersji („wspólne 4 zagadki, wybierz 2 z 4"): teraz **każda klasa ma własny zestaw**, a w obrębie klasy **różne grupy dostają różne zestawy**. Patrz `concept/05-tor-krzyzakow.md` (pełna symetria torów).
-
 ## Cel fazy
 
 - **Asynchroniczność** — grupy nie tłoczą się w jednym miejscu; rozproszone po mieście.
@@ -71,7 +69,7 @@ Finałowy szyfr (Z7/Z11) = **klucz (motto Zakonu) + szyfrogram**. Rozdział źr�
   - **Framing fabularny [decyzja Oskara 2026-06-02]:** każda opcjonalna to **inna droga PRZECHWYCENIA tego samego krzyżackiego listu** (= szyfrogram Z7/Z11). Nie „nagroda za zagadkę z nikąd", lecz scena, w której grupa zdobywa przechwyconą dyspozycję. Po rozwiązaniu MG wydaje **uniwersalny** przechwycony list (K8) — treść method-agnostic, działa niezależnie którą opcjonalną grupa zrobiła. Z4 (prototyp): R.-flisak przejął dyspozycję na Wiśle i ukrył ją za melodią-kluczem → kod `621454` otwiera dostęp → MG wydaje list. Patrz `prototype/kZ4-envelope-draft.md`, `prototype/z7-szyfrogram-draft.md`, `mechanics/koperty-mg.md §Zasada nadrzędna #2`.
 - Finał rozwiązywalny z: **motto z Z3/Z3Z + szyfrogram z dowolnej 1 opcjonalnej** → różne zestawy per grupa działają.
 
-> **Odwrócenie wcześniejszego Modelu B** (było: Z3=szyfrogram, Z4=klucz). Teraz Z3=klucz/nagłówek, opcjonalne=szyfrogram. Wymienialność zachowana, bo klucz jest wspólny. Pełny model + typ szyfru (**Cezar shift+7**, oba tory; porównanie nagłówków) → `concept/04-faza-3-final.md`, `puzzles/z7-szyfr-spec.md §0`.
+> **Model:** Z3/Z3Z = klucz/nagłówek, opcjonalne = szyfrogram. Wymienialność zachowana, bo klucz jest wspólny. Pełny model + typ szyfru (**Cezar shift+7**, oba tory; porównanie nagłówków) → `concept/04-faza-3-final.md`, `puzzles/z7-szyfr-spec.md §0`.
 
 To rozstrzyga wcześniejsze pytanie „które zagadki bramkują finał" (#9/#63): **Z3/Z3Z + 1 opcjonalna**.
 
@@ -95,7 +93,6 @@ Faza 2B = etap obserwacji czy kurierzy są godni zaufania.
 ## Otwarte pytania
 1. Mechaniki **Z4, Z5, Z6, Z8, Z9, Z10** — do rozpisania (kreatywka Oskara).
 2. Co dokładnie jest „kluczem" wyjściowym z każdej zagadki (item fizyczny / hasło / fragment szyfru)? Czy wszystkie wymienialne 1:1?
-3. Czy **Z3Z** kradnie też koło deszyfrujące (rekwizyt do finału)?
-4. Mechanika „podebrania listy" Albrechtowi (Z3) — fizyczna vs abstrakcyjna; co jeśli grupa zostanie złapana?
-5. Czas trwania 2B na grupę (~60-90 min?).
-6. ~~Mechanika Z6 (anioły)~~ → **ZMIANA [2026-06-01]**: Z6 = herby hanzeatyckie na Aleji Gmerków. Wymaga wizyty na ul. Królowej Jadwigi i spisu herbów w bruku/na latarniach. Patrz `puzzles/herby-aleja.md`.
+3. Mechanika „podebrania listy" Albrechtowi (Z3) — fizyczna vs abstrakcyjna; co jeśli grupa zostanie złapana?
+4. Czas trwania 2B na grupę (~60-90 min?).
+5. **Z6 = herby hanzeatyckie** na Aleji Gmerków (ul. Królowej Jadwigi) — wymaga wizyty i spisu herbów w bruku/na latarniach. Patrz `puzzles/herby-aleja.md`.

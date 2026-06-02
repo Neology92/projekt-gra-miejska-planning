@@ -1,3 +1,5 @@
+> 📦 **ARCHIWUM [2026-06-02].** Jednorazowy snapshot krytycznego przeglądu draftów (sesja 2026-06-02). Decyzje z niego są już rozstrzygnięte w `todo/otwarte-pytania.md` / draftach. Trzymany jako zamrożony zapis; **nie aktualizuj**.
+
 # Analiza draftów prototypu — do adjudykacji Oskara
 
 > **Cel:** krytyczny przegląd całego łańcucha prototypu (tor TR) pod kątem Twoich założeń: immersja/scena, uzasadnienie fabularne, element musi bramkować, wymowa moralna (TR=źli), anty-prowadzenie-za-rączkę, każda grupa przechodzi, plot twist.
