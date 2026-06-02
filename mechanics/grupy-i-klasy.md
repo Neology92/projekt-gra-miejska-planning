@@ -54,11 +54,15 @@ Każda grupa = **jeden kolor** (opaska/szarfa). 10 kolorów dobranych pod **maks
 | 5 | Turkusowy | `#42D4F4` |
 | 6 | Niebieski | `#4363D8` |
 | 7 | Fioletowy | `#911EB4` |
-| 8 | Różowy (magenta) | `#F032E6` |
+| 8 | Biały | `#FFFFFF` |
 | 9 | Brązowy | `#9A6324` |
 | 10 | Czarny | `#2B2B2B` |
 
 Hex przydatny przy druku opasek i identyfikacji u MG (arkusz śledzenia per kolor). **Prototyp:** 1 grupa = 1 kolor.
+
+### Deterministyczne przypisanie kolor ↔ ścieżka Z1 — ROZSTRZYGNIĘTE [2026-06-02]
+
+Numer w tabeli = numer ścieżki Z1: **kolor `n` → ścieżka `Gn`** (Czerwony→G1, Pomarańczowy→G2, … Czarny→G10). Przypisanie jest **stałe** (nie losowe) — dzięki temu karty per grupa (mapa wspólna + **deszyfrownik** w kolorze narożnika) drukuje się raz, a „grupa niebieska" zawsze idzie ścieżką G6. **Co pozostaje losowe:** przydział koloru do **klasy** (TR vs krzyżacy) — kolor/ścieżka nie zdradza strony. Deszyfrownik (`tools/z1-decoder/`) nosi ten kolor w narożniku zamiast etykiety tekstowej; źródło hex = ta tabela (kopia robocza: `tools/z1-decoder/group-colors.js`).
 
 **Forma fizyczna opaski:** pasek papieru sklejony w bransoletkę — **nosi tylko lider grupy**. Reszta drużyny nie musi mieć identyfikatora; MG identyfikuje grupę po opasce lidera.
 

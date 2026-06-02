@@ -53,6 +53,12 @@ const Z1_GLYPHS = {
 };
 
 // 10 groups: each holds exactly 9 active codes (4 chain + 5 distractors, visually indistinct)
+//
+// ⚠ ELEMENT ORDER IS LOAD-BEARING FOR THE DECODER — DO NOT REORDER.
+// The map renders these as an unordered SET (order irrelevant). But tools/z1-decoder/ derives
+// the decoder-card edges FROM THIS ORDER: first 4 = chain (sequential, last→KONIEC), last 5 =
+// distractor loop (d0→d1→d2→d3→d4→d0). Reordering here silently breaks the decoder while the map
+// still renders fine. Chain order is canon in puzzles/z1-10-sciezek.md §Ścieżki v3.2 — keep in sync.
 const Z1_GROUPS = {
   G1:  ['N01','N02','N06','C04','N04','N05','N03','S04','W01'],
   G2:  ['N06','N04','N05','C01','N01','C02','C06','S01','W01'],

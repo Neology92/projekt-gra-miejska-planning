@@ -224,5 +224,6 @@ Ikony zbyt podobne/jednoznaczne **nie mogą współwystąpić na jednej karcie**
 3. ✅ Globalna tabela kod→glif + pozycje x/y: `z1-glify-globalne.md` (19 kodów; render = placeholder geometryczny).
 4. ✅ Wektoryzacja ikon — 23 SVG, arkusz kontaktowy `prototype/icons-contact-sheet.html`.
 5. ✅ **10 kart v3.2** — §Ścieżki powyżej (regeneracja 2026-06-01, 10× sonnet).
-6. ⏳ **Bazowa mapa SVG** (19 glifów na pozycjach z `z1-glify-globalne.md`) → **10 widoków per ścieżka** (wzór `prototype/mapa-z1-podglad.html`). Flaga sightline G5 `C04→S04` do oceny wzrokowej na mapie (nowa noga niezweryfikowana terenowo).
-7. ⏳ **Playtest / dry-run R3** — całe 10 ścieżek z kartami i mapami; czas/postój per przystanek.
+5b. ✅ **Deszyfrowniki — render 10 kart [2026-06-02]** — generator `tools/z1-decoder/` **derywuje** wiersze z `Z1_GROUPS` (`map-data.js`): pierwsze 4 = łańcuch, ostatnie 5 = pętla; ikona(kod) → glif(następny). Render → `public/decoders/decoder-G1..G10.pdf` (per kolor grupy, polski podpis na druk B&W). **Pass walidacyjny: PASS** (krawędzie == ta proza, anti-pair, klucze MG, pokrycie glif/ikon, brak nazw miejsc). ⚠ kolejność `Z1_GROUPS` jest load-bearing — patrz komentarz w `map-data.js`.
+6. ✅ **Mapa wspólna** wyrenderowana (`public/maps/map.*`, `tools/map-gen/`). Flaga sightline G5 `C04→S04` do oceny wzrokowej (nowa noga niezweryfikowana terenowo).
+7. ⏳ **Playtest / dry-run R3** — całe 10 ścieżek z kartami (deszyfrownik + mapa); czas/postój per przystanek.

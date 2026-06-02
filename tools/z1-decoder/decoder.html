@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Z1 Decoder</title>
+
+<!-- Reuse the player-prop parchment styling (font IM Fell + parch tone + tokens).
+     Fonts load relative to parchment.css, i.e. prototype/print/src/fonts/ — resolved automatically. -->
+<link rel="stylesheet" href="../../prototype/print/src/parchment.css">
+
+<style>
+  /* Force exactly one A4 page: 296mm (not 297) avoids the sub-pixel overflow that spawned a blank 2nd page. */
+  html,body{ height:297mm; overflow:hidden; }
+
+  /* Decoder-specific layout on top of parchment.css .sheet */
+  .sheet.decoder{ padding:17mm 26mm 16mm; height:296mm; min-height:0; overflow:hidden; }
+
+  /* Group colour tag — a corner swatch with an outline so even light colours (White, Yellow,
+     Cyan) stay visible on the pale parchment. Sits OUTSIDE .sheet so the parchment edge-mask
+     (which dissolves .sheet borders) does not erase it. Absolute to the page corner. */
+  .group-tag{
+    position:absolute; top:0; right:0; width:17mm; height:17mm; z-index:10;
+    border-left:1.4px solid var(--ink-soft); border-bottom:1.4px solid var(--ink-soft);
+    border-bottom-left-radius:3px;
+    display:flex; align-items:center; justify-content:center; padding:1mm;
+    -webkit-print-color-adjust:exact; print-color-adjust:exact;
+  }
+  /* Polish colour name — B&W-print fallback (colour fill vanishes in greyscale). Text colour
+     is set per group by luminance so it stays legible on both the colour fill and its B&W tone. */
+  .group-tag-label{ font-style:italic; font-size:7pt; line-height:1.05; text-align:center;
+                    word-break:break-word; }
+
+  .dec-head{ text-align:center; margin:0 0 3mm; }
+  .dec-title{ font-variant:small-caps; letter-spacing:.08em; font-size:17pt; margin:0 0 2.5mm; }
+  .dec-rule{ font-style:italic; color:var(--ink-soft); font-size:11.5pt; line-height:1.45;
+             max-width:80%; margin:0 auto; }
+
+  hr.dec-sep{ border:0; height:8px; width:55%; margin:4mm auto;
+    background:var(--pen-rule) center/100% 8px no-repeat; }
+
+  /* One legible column of rows — easiest to scan in the field; the shuffle hides the chain. */
+  .dec-rows{ display:flex; flex-direction:column; gap:3mm; max-width:60mm; margin:0 auto; }
+  .dec-row{ display:flex; align-items:center; justify-content:space-between; }
+
+  .dec-icon{ flex:0 0 13mm; width:13mm; height:13mm; display:flex; align-items:center; justify-content:center; }
+  .dec-icon img{ width:100%; height:100%; display:block; }
+
+  .dec-arrow{ flex:0 0 auto; font-size:15pt; color:var(--ink-soft); padding:0 3mm; }
+
+  .dec-glyph{ flex:0 0 12mm; width:12mm; height:12mm; display:flex; align-items:center; justify-content:center; }
+  .dec-glyph svg{ width:11mm; height:11mm; display:block; }
+  .dec-end{ font-variant:small-caps; letter-spacing:.06em; font-size:11pt; color:var(--ink);
+            text-align:center; line-height:1.1; }
+
+  /* Answer field: 4 ordered slots — the player draws the marks in the order found.
+     This IS the puzzle key; the MG checks it against the answer key for the group's colour. */
+  .dec-answer{ margin:5mm auto 0; max-width:120mm; }
+  .dec-answer-head{ text-align:center; font-style:italic; color:var(--ink-soft);
+                    font-size:11pt; line-height:1.4; margin:0 0 3mm; }
+  .dec-slots{ display:flex; justify-content:center; align-items:center; gap:0; }
+  .dec-slot{ width:18mm; height:18mm; border:1.4px solid var(--ink-soft); border-radius:2px;
+             position:relative; background:rgba(255,255,255,.18); }
+  .dec-slot-num{ position:absolute; top:1mm; left:1.6mm; font-size:9pt; color:var(--ink-soft); }
+  .dec-slot-arrow{ font-size:14pt; color:var(--ink-soft); padding:0 3mm; }
+
+  #err{ color:#7a1010; font-family:var(--mono); font-size:11pt; white-space:pre-wrap; padding:10mm; }
+</style>
+</head>
+<body>
+<div class="group-tag" id="group-tag"></div>
+<div class="sheet decoder" id="sheet"></div>
+<div id="err"></div>
+
+<!-- Shared data engine (glyphs + group edges) + decoder's own data (icon paths, group colours) -->
+<script src="../map-gen/map-data.js"></script>
+<script src="icon-map.js"></script>
+<script src="group-colors.js"></script>
+<script>
+(function () {
+  const params = new URLSearchParams(location.search);
+  const group  = (params.get('group') || 'G1').toUpperCase();
+
+  const fail = (msg) => { document.getElementById('err').textContent = 'DECODER ERROR — ' + msg;
+                          document.getElementById('sheet').style.display = 'none'; };
+
+  // ---- Structural assert (catches map-data drift permanently; see plan ⚠ invariant) ----
+  // NOTE: does NOT catch a semantic reorder of the 4 chain codes — only the one-time prose
+  // cross-check vs puzzles/z1-10-sciezek.md does. gm-key.html derives from the same Z1_GROUPS.
+  const codes = (typeof Z1_GROUPS !== 'undefined') ? Z1_GROUPS[group] : null;
+  if (!codes) return fail('unknown group "' + group + '" (expected G1..G10).');
+  if (codes.length !== 9) return fail(group + ' has ' + codes.length + ' codes, expected 9 (4 chain + 5 distractors).');
+  if (new Set(codes).size !== 9) return fail(group + ' has duplicate codes: ' + codes.join(', '));
+  for (const c of codes) {
+    if (!Z1_GLYPHS[c]) return fail('code ' + c + ' has no glyph in Z1_GLYPHS (map-data.js).');
+    if (!z1IconUrl(c)) return fail('code ' + c + ' has no icon in icon-map.js.');
+  }
+
+  // ---- Derive the 9 decoder edges from Z1_GROUPS order ----
+  // First 4 = chain (sequential, last → KONIEC). Last 5 = distractors (closed loop).
+  const chain = codes.slice(0, 4);
+  const dist  = codes.slice(4, 9);
+  const edges = [];
+  for (let i = 0; i < chain.length; i++)
+    edges.push({ src: chain[i], next: i < chain.length - 1 ? chain[i + 1] : 'KONIEC' });
+  for (let i = 0; i < dist.length; i++)
+    edges.push({ src: dist[i], next: dist[(i + 1) % dist.length] });
+
+  // ---- Deterministic shuffle (seed = group number) — repeatable render, hides which rows are the chain ----
+  const seed = parseInt(group.replace(/\D/g, ''), 10) || 1;
+  let s = seed * 2654435761 >>> 0;          // mulberry32
+  const rng = () => { s |= 0; s = s + 0x6D2B79F5 | 0;
+    let t = Math.imul(s ^ s >>> 15, 1 | s); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t;
+    return ((t ^ t >>> 14) >>> 0) / 4294967296; };
+  for (let i = edges.length - 1; i > 0; i--) {        // Fisher–Yates
+    const j = Math.floor(rng() * (i + 1)); [edges[i], edges[j]] = [edges[j], edges[i]];
+  }
+
+  // ---- Render ----
+  const glyphSvg = (code) =>
+    '<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">' + Z1_GLYPHS[code] + '</svg>';
+
+  const rowsHtml = edges.map(e => {
+    const right = e.next === 'KONIEC'
+      ? '<div class="dec-end">return<br>to MG</div>'   // END row: no glyph = the only tell
+      : '<div class="dec-glyph">' + glyphSvg(e.next) + '</div>';
+    return '<div class="dec-row">'
+         +   '<div class="dec-icon"><img src="' + z1IconUrl(e.src) + '" alt=""></div>'
+         +   '<div class="dec-arrow">&rarr;</div>'
+         +   right
+         + '</div>';
+  }).join('');
+
+  // 4-slot answer field — player draws the marks in the order found; the key to the puzzle.
+  const slots = [1, 2, 3, 4].map((n, i) =>
+      '<div class="dec-slot"><span class="dec-slot-num">' + n + '</span></div>'
+    + (i < 3 ? '<span class="dec-slot-arrow">&rarr;</span>' : '')
+  ).join('');
+
+  // Rule text (EN) — variant B (Oskar, 2026-06-02).
+  document.getElementById('sheet').innerHTML =
+      '<div class="dec-head">'
+    +   '<div class="dec-title">Reading the Marks</div>'
+    +   '<div class="dec-rule">Each mark on your map hides something. Find it, match it below, '
+    +     'and the next mark shows you where to go.</div>'
+    + '</div>'
+    + '<hr class="dec-sep">'
+    + '<div class="dec-rows">' + rowsHtml + '</div>'
+    + '<hr class="dec-sep">'
+    + '<div class="dec-answer">'
+    +   '<div class="dec-answer-head">Draw the marks in the order you found them, '
+    +     'then bring this to the MG.</div>'
+    +   '<div class="dec-slots">' + slots + '</div>'
+    + '</div>';
+
+  // Group colour corner tag (outside the masked sheet) + Polish name (B&W-print fallback).
+  const col = (typeof Z1_GROUP_COLORS !== 'undefined') && Z1_GROUP_COLORS[group];
+  if (col) {
+    const tag = document.getElementById('group-tag');
+    tag.style.background = col.hex;
+    // Relative luminance (sRGB) → dark or light text, legible on the fill AND its greyscale tone.
+    const h = col.hex.replace('#', '');
+    const lum = (0.299 * parseInt(h.slice(0,2),16) + 0.587 * parseInt(h.slice(2,4),16)
+               + 0.114 * parseInt(h.slice(4,6),16)) / 255;
+    const ink = lum > 0.6 ? '#16110c' : '#ffffff';
+    tag.innerHTML = '<span class="group-tag-label" style="color:' + ink + '">' + col.pl + '</span>';
+  }
+})();
+</script>
+</body>
+</html>

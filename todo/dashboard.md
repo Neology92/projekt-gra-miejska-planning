@@ -59,7 +59,7 @@
 🟡 List zapieczętowany ........ treść (rekwizyt noszony całą grę) — do napisania
 🟡 Wiadomość pośrednika ....... jest w drafcie poz.2 Z2 (slip „— R.") — do wydzielenia  [envelopes/miasto-2-Z2.md]
 🟡 Mapa Torunia z glifami ..... mock funkcjonalny istnieje                              [prototype/mapa-z1-podglad.html]
-🟡 Szyfrownik (deszyfrownik) .. w tym samym mocku — czeka na dobór piktogramów
+✅ Deszyfrownik (karty) ....... generator tools/z1-decoder/ (derywuje z Z1_GROUPS); 10 PDF public/decoders/ per kolor grupy; walidacja PASS  [tools/z1-decoder/README.md]
 🟡 Pergamin z listą nazwisk TR  research gotowy + draft (EN); klucz=Decyzja#1  [prototype/pergamin-lista-tr-draft.md · puzzles/z3-lista-tr-spec.md]
 ⬜ Zapis melodii Z4 + pręciki . karta referencyjna: nuty → numery pręcików → kod
 🟡 Arkusz szyfru Z7 ........... Cezar +7 (nagłówki w tym samym foncie; Z3 jawny ↔ Z7 zaszyfrowane; brak koła)  [prototype/z7-szyfrogram-draft.md]
@@ -170,7 +170,7 @@ Szczegóły: mechanics/koperty-mg.md §ZAŁOŻENIA PRZED RENDEREM · prototype/p
 ### 🟨 Dywersyfikacja (10 grup)
 
 ```
-⬜ Różne trasy Z1 per grupa ..... model różnych pierwszych glifów (dyspersja, brak tłoku)
+🟡 Różne trasy Z1 per grupa ..... macierz v3.2 (10 łańcuchów) + mapa wspólna + deszyfrowniki 10 (public/decoders/) GOTOWE; zostaje dry-run R3 w terenie
 ⬜ Tabele przydziału zestawów ... A/B/C × 2 tory (patrz concept/03 — model 5+5)
 ⬜ Mechanika klucza 2B→finał .... dla wszystkich par zagadek (wymienialność 1:1)
 ```
