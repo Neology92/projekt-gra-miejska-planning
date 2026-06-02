@@ -155,7 +155,7 @@ Szczegóły: mechanics/koperty-mg.md §ZAŁOŻENIA PRZED RENDEREM · prototype/p
 ⬜ K2-K (wersja krzyżacka) ...... Pula B plotek (krytyka Zakonu) + Z2 → Albrecht (handler KZ [2026-06-02])
 ⬜ Skrypt Albrechta (Zosia) F2A . handler KZ: spotkanie + żądanie dowodu + wręczenie K3-K (Z3Z) + Tabeli 1
 ⬜ Z3Z — infiltracja Piccolo .... lustro Z3: kradzież „zaopatrzenia" + 20:30 + obserwacja Jordana (brązowa szata + chochla → dane Z11)
-⬜ Z8 — melodia zakonu .......... lustro Z4 (kalimba)
+🟡 Z8 — melodia zakonu .......... koperta gracza draft [2026-06-02]: lustro Z4 (kalimba, kod 621454), klimat zakonny + zapomniany brat; senderless scene + iron-tongue generic  [envelopes/krzyzacy-4-Z8.md]. Zostaje: review Oskara (TONE FLAG: gorycz vs lojalność) + klucz finału Z11
 🟡 Z9 — sensoryczna piernik ..... lustro Z5; brief + rekwizyty wyrenderowane [2026-06-02] (public/krzyzacy-4-Z9.pdf + wspólne z5z9-* + mg-Z5Z9-klucz); zostaje: review Oskara + klucz finału (#9)
 🟡 Z10 — polichromie Biedronka .. grafiki gotowe (Piotr) [2026-06-02]; zostaje: mechanika klucza→finał + osadzenie w kopercie
 🟡 Z11 — finał krzyżaków ........ mechanika dwóch tabel [2026-06-02]: symbol-klucz (kolor szaty×chochla) → tabula recta → parol; spec+dane gotowe  [puzzles/z11-szyfr-spec.md]
