@@ -6,6 +6,12 @@ $ErrorActionPreference = 'Stop'
 $here = $PSScriptRoot
 $src  = Join-Path $here 'src'
 
+# Final print-ready PDFs go to the repo-root `public/` folder (single home for
+# deliverables to print, across prototype -> MVP). Created on demand.
+$repoRoot = (Resolve-Path (Join-Path $here '..\..')).Path
+$outDir   = Join-Path $repoRoot 'public'
+New-Item -ItemType Directory -Force -Path $outDir | Out-Null
+
 # Locate a Chromium-based browser.
 $candidates = @(
   "$env:LOCALAPPDATA\Google\Chrome\Application\chrome.exe",
@@ -34,7 +40,7 @@ $jobs = @{
 
 foreach ($in in $jobs.Keys) {
   $inPath  = Join-Path $src $in
-  $outPath = Join-Path $here $jobs[$in]
+  $outPath = Join-Path $outDir $jobs[$in]
   $uri = ([System.Uri]$inPath).AbsoluteUri
   # --no-sandbox: Chrome's own sandbox is blocked in restricted/sandboxed shells.
   # NO --user-data-dir on purpose: headless then uses an ephemeral throwaway profile

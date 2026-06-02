@@ -5,3 +5,7 @@
 Thumbs.db
 desktop.ini
 .DS_Store
+
+# Ostateczne rendery do druku (regenerowalne z prototype/print/render.ps1)
+# Jeśli chcesz wersjonować gotowe wydruki — usuń tę linię.
+public/
