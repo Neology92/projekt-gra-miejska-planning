@@ -1,7 +1,7 @@
 # Jordan — Actor Script (Piotr) — draft
 
 > **Language:** English (actor-facing). Planning notes in Polish below.
-> **Status:** draft [2026-06-01] — awaiting Oskar's/Piotr's review.
+> **Status:** draft [2026-06-02, v2 — STEP 1 hasło dnia WPROWADZONE] — awaiting Oskar's/Piotr's review.
 > **Actor:** Piotr (plays Jordan / Jan Bażyński — does NOT reveal the Bażyński connection here)
 > **Location:** Piccolo (ul. Prosta 20, Toruń)
 > **When:** Faza 2A — groups arrive after solving Z2
@@ -25,9 +25,11 @@ You are waiting at Piccolo. You have food ready. You are calm, watchful, and del
 
 ## STEP 1 — VERIFICATION (passive, quick)
 
-When a group approaches and asks for Jordan:
+When a group approaches:
 
-**Listen for the name.** If they say "Jordan" (or "we're looking for Jordan") → they have the right envelope. If they don't, they're lost — point them elsewhere politely.
+**Listen for the password.** The word set for today is a name *and* a purchase: they call you **Jordan** and tell you **what you bought this morning — a ladle.** A group that says, in effect, *"Jordan — you bought a ladle this morning"* has come from R. and worked out the way here. Answer them warmly: *"Then I think I know who sent you."*
+- If they name "Jordan" but miss the ladle, they are close but unproven — let them fish for it, or nudge: *"And how would you know me, if a friend had sent you?"*
+- If they have neither, they are lost — point them elsewhere politely.
 
 **Check the wristband color.** The group leader wears a colored band. Cross-check against your list. Only 5 colors belong to the right side. If the color doesn't match — they have the wrong contact. Tell them: *"I think you're looking for someone else."*
 
@@ -115,11 +117,7 @@ That's it. They leave.
 
 ---
 
-## REWIZJA [2026-06-02] — uwagi Oskara (DO WPROWADZENIA, jeszcze nie wprowadzone)
+## REWIZJA [2026-06-02] — ✅ częściowo WPROWADZONA
 
-> Skrypt wyżej **nietknięty** — materiał porównawczy.
-
-1. **Hasło dnia (E) — do wpisania w STEP 1 (Verification).** Slip R. w K2 instruuje kurierów, by na miejscu **zwrócili się po imieniu (Jordan) i wskazali, co kupił dziś rano (chochlę)** — to **parol ustalony na dzisiaj**. Trigger rozpoznania = *imię + „kupiłeś dziś rano chochlę"*, nie samo „pytanie o Jordana". Po poprawnym parolu Jordan: *„chyba wiem, kim jesteście"* (życzenie Oskara) → wpuszcza dalej.
-   - ⚠ **Synchronizacja z:** `prototype/k2-envelope-draft.md §E/F` (slip R.) i `puzzles/droga-do-jordana.md §E`. Trzy pliki muszą mówić to samo hasło.
-   - Opaska/kolor (obecny drugi check) zostaje jako warstwa logistyczna MG; parol = warstwa fabularna rozpoznania.
+1. **Hasło dnia (E) — ✅ WPROWADZONE w STEP 1.** Trigger rozpoznania = *imię „Jordan" + „kupiłeś dziś rano chochlę (a ladle)"* (parol dnia); po poprawnym parolu Jordan: *„Then I think I know who sent you."* Zsynchronizowane z `k2-envelope-draft.md §slip R./F` i `puzzles/droga-do-jordana.md §E` (chochla = zakup Jordana w zagadce = atrybut rozpoznawczy = hasło). Opaska/kolor zostaje jako warstwa logistyczna MG.
 2. **Drobna flaga — STEP 4 „Don't open it out here" (linia ~76):** to wypowiedź NPC w świecie (ostrożny kucharz), nie meta-logistyka — więc *prawdopodobnie OK*. Ale leży blisko wycinanego „do not open it in front of him / open once clear" (K3, Zasada #3). ⚠ przy ujednolicaniu zważyć, czy zostawić, czy przykryć opisem; **nie tnę automatycznie** — do decyzji Oskara.

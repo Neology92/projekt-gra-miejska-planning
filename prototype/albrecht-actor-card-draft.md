@@ -1,13 +1,13 @@
 # Komtur Albrecht — Actor Card (Zosia) — draft
 
 > **Language:** English (actor-facing). Planning notes in Polish below.
-> **Status:** draft [2026-06-01] — awaiting Oskar's / Zosia's review.
+> **Status:** draft [2026-06-02, v2 — STEP 2/3 przepisane na model patrolu] — awaiting Oskar's / Zosia's review.
 > **Actor:** Zosia plays **Komtur Albrecht Kalb** — commander of the Teutonic castle, arrogant, certain the Order still rules this city.
 > **Location:** **outside the castle walls** (NOT inside the ruins — those are ticketed/closed). A spot where you can stand, lean papers on a ledge/crate, and pace a few steps.
 > **When:** Faza 2B, Z3 — town (TR) groups come to you after Jordan sends them on the "scouting" errand (K3).
 > **Canon:** `puzzles/zamek-krzyzacki-lista.md` (Struktura Z3) · the list they steal → `prototype/pergamin-lista-tr-draft.md`.
 
-> ✅ **REWIZJA [2026-06-02] — SEKWENCJA ROZSTRZYGNIĘTA (model patrolu); STEP 2/3 do przepisania.** Oskar: komtur **wręcza kopertę → odchodzi kawałek → odkłada listę w konkretnym miejscu → patroluje** w jej zasięgu. Lista cały czas na widoku, ale patrol ma momenty, gdy na nią nie patrzy = okno kradzieży. To godzi „wręczy i odejdzie" z kradzieżą (odejdzie = kawałek, nie zniknie). **STEP 2** („nie odpędzaj") → zastąpione: wręcz milcząco, odejdź kawałek, patroluj. **STEP 3** (geometria/cykl) → przepisać z „obrotu w miejscu" na **patrol wokół odłożonej listy** (zasady telegrafu/powtarzalności/resetu zostają). Pełny opis: `prototype/kZ3b-envelope-draft.md §SEKWENCJA`, PLANNING NOTES na dole, `todo/otwarte-pytania.md #65`.
+> ✅ **REWIZJA [2026-06-02] — model patrolu WPROWADZONY (STEP 2/3 przepisane).** Sekwencja (Oskar): komtur **wręcza kopertę milcząco → odchodzi kawałek → odkłada listę w konkretnym miejscu → patroluje** wokół niej. Okno kradzieży = faza AWAY (na końcu obchodu, plecami do listy). STEP 2 = „odłóż listę, wręcz, odejdź w patrol"; STEP 3 = cykl patrolu (A AWAY / B RETURNING / C AT THE LIST), telegraf/powtarzalność/reset zachowane. Spójne z `prototype/kZ3b-envelope-draft.md §SEKWENCJA` i kopertą K-Z3b (olśnienie wyprzedzające). `todo/otwarte-pytania.md #65`.
 
 ---
 
@@ -32,11 +32,11 @@ You carry the Order's **intelligence list** — names of the Secret Council, gat
 
 - [ ] **Costume:** a dark mantle + cross (suggestive of the Order — final costume TBD, pyt. #33).
 - [ ] **A stack of list parchments** (identical copies — one stolen per group; you reset between groups). Keep spares hidden in a bag/satchel.
-- [ ] **One list parchment placed on your "surface"** — a ledge, low wall, crate, or fold-out table **on your LEFT** (see STAGE GEOMETRY in STEP 3), reachable by someone standing close.
+- [ ] **One list parchment placed at a fixed spot** — a ledge, low wall, crate, or fold-out table **you will keep walking past** (see STAGE GEOMETRY in STEP 3), reachable by someone while your back is turned.
 - [ ] **K-Z3b envelopes**, sorted by group colour (the "you saw the list — steal it" order you hand them).
 - [ ] Agreed signal method with Oskar (MG) for pacing groups / asking for help.
 
-Stand where you have **room to turn and take a few steps** — the theft window depends on you being able to turn your back and face front again clearly.
+Stand where you have **room to walk a few steps away from the list and back** — the theft window depends on you being able to put your back to it and return, clearly and repeatably.
 
 ---
 
@@ -60,56 +60,53 @@ Read a name or two aloud (flatter your own thoroughness), then **set the parchme
 
 ---
 
-## STEP 2 — HAND OVER K-Z3b
+## STEP 2 — SET THE LIST DOWN, HAND OVER K-Z3b, WALK OFF
 
-After a short, mocking exchange, **dismiss them — but give them the envelope** as you do. In-world you can frame it as a token for informers / instructions / a pass:
+After a short, mocking exchange, do three things in smooth succession:
 
-> *"Enough. Take this and be useful. The Order rewards those who serve it… and remembers those who don't."*
+1. **Set the list down** at your chosen spot — a ledge, low wall, crate, or fold-out table, a fixed place you will keep walking past. Do it naturally; you are simply done consulting it for now.
+2. **Hand them the K-Z3b envelope** matching their colour — **in silence.** A flat line as you turn away is enough: *"Enough. We are done here."* Do not explain it, do not react to it, do not let them pull you into talk about it.
+3. **Step off and begin your patrol** (STEP 3). Do **not** stand guard over the list, and do **not** chase the group away — you simply walk your circuit, bored and certain no one would dare.
 
-Hand the **K-Z3b envelope matching their colour.** They will step a little aside to read it. (That envelope tells them the list is the prize and to steal it — you do not know that. To you, you just dismissed some informers.)
-
-**Do NOT chase them off.** Dismiss them *verbally*, but stay where you are and let them linger nearby — they need to come back within reach of the list to steal it. If they hover, play it as them still angling for your favour: *"Still here? You smell reward, don't you. Speak, then — but be quick."* Keep boasting; keep the list out. The theft (STEP 3) happens with them right back in front of you.
-
-> **Why you hand it:** mechanically this envelope flips their task from "scout" to "steal." Handing it is a **meta gesture, outside the fiction** (like dealing a card) — in-world *you are not giving them anything.* You don't react to its contents — you never "see" it. Stay in character as the bored, superior commander; the envelope simply passes from your hand to theirs and the game continues.
+> **Why you hand it, then walk:** the envelope flips their task from "scout" to "steal," and your patrol is what opens the window. Handing-and-leaving is the sequence Oskar wants — *wręcz i odejdź* — but "leaving" means **a few steps into your circuit, not gone.** The list stays in plain view and within your patrol; the theft happens while your back is turned on the walk. The hand-over is a **meta gesture, outside the fiction** (like dealing a card) — in-world you give them nothing, you never "see" the envelope's contents. Stay the bored, superior commander.
 
 ---
 
-## STEP 3 — THE THEFT WINDOW (the core — choreography)
+## STEP 3 — THE PATROL (the core — choreography)
 
-Once they have read K-Z3b, they will try to take the parchment off your surface. **Your job: pace a predictable cycle so they can time a grab.** Make it **readable** — telegraph every turn.
+The list is down at its fixed spot and you have stepped off. Now **walk a predictable circuit past it** so the group can time a grab. Make it **readable** — telegraph every move.
 
 ### STAGE GEOMETRY — set this up the same way every time
 
-The steal only works if positions are fixed. Lock it in:
+The steal only works if the path is fixed. Lock it in:
 
-- **The list sits on your LEFT** (on the ledge/crate beside you).
-- **Players converse in FRONT of you**, drifting a little to your RIGHT as you draw them in.
-- **The OPEN window = you turn RIGHT, toward the walls** — pointing, boasting, gazing off. Your gaze and front go right; the list on your **left falls behind your shoulder, out of sight.**
-- **Players steal from your LEFT** — one slips left to the parchment while you face the walls. They are *behind your sightline*, not in front of it.
+- **The list sits at a fixed spot** — the ledge/crate you set it on. It does not move.
+- **You walk a short circuit:** a few steps away from the list (toward the walls, to point and boast), then back to it, then off again. **Same path every loop.**
+- **The OPEN window = you are at the far end of the circuit, back turned**, gazing at the walls and boasting. For a few seconds the list is behind you, unwatched.
+- **The CLOSED point = you are back beside the list** — pausing at it, touching it, eyeing the group.
+- **Players steal while you are at the far end, your back to them and to the list.**
 
 ```
-                 [ CASTLE WALLS ]
-                        ▲
-                        │   OPEN: you turn RIGHT and point/boast here
-        (your LEFT)     │        → your gaze leaves the list
-   LIST ▢· · · · · · · ·A ───────►
-        ▲               │
-        │ grab from     │   players talk in FRONT, drift slightly RIGHT
-        └─ the LEFT      ▼
-                    [ players ]
+   LIST ▢ (fixed)                         [ CASTLE WALLS ]
+        │                                        ▲
+        │   ◄── C: you pause here, AT the list    │
+        │        (facing it — do NOT steal)       │  A: you walk to the far end,
+        └─────────────────────────────────────────┘     BACK TURNED, point & boast
+                  your circuit  ──────────────►          → list unwatched: STEAL NOW
+                    [ players linger near the list, off to one side ]
 ```
 
-> If you turn the *wrong* way (left, toward the list), you stare straight at the thief — the window never opens. **Always turn RIGHT to open it.**
+> The window opens with **distance and a turned back**, not a turned head. If you loiter by the list, it never opens — **keep walking the circuit.**
 
 ### The cycle (repeat continuously, ~30–40 s per loop)
 
 | Phase | ~Time | What you do | Window |
 |---|---|---|---|
-| **A — OPEN** | 10–15 s | Turn **body first, then head** (telegraph!) **to your RIGHT** — point toward the walls, gaze into the distance, boast about the Order's strength. The list on your left is now behind your shoulder; you cannot see it. | **STEAL NOW (from your left)** |
-| **B — CLOSING** | 3–5 s | Begin turning back — **head first, then body** (telegraph the turn coming). | grab = risky |
-| **C — CLOSED** | ~10 s | Face front, **toward the list on your left** — tidy it, touch it, glance at the players. Anyone reaching now is caught. | do NOT steal |
+| **A — AWAY** | 10–15 s | **Step off clearly** (telegraph!) to the far end of your circuit, **back to the list**, point toward the walls and boast about the Order's strength. The list is behind you; you cannot see it. | **STEAL NOW (while you are away)** |
+| **B — RETURNING** | 3–5 s | Turn and **amble back** toward the list — telegraph the return coming. | grab = risky |
+| **C — AT THE LIST** | ~10 s | Stand at the list, tidy or touch it, glance at the players. Anyone reaching now is caught. | do NOT steal |
 
-Then loop back to Phase A. **Always telegraph the turn** (body→head opening, head→body closing) so players can read when the window opens and shuts. The window is **repeatable** — never a single one-shot chance.
+Then step off again to Phase A. **Always telegraph** (a clear step-off away, a clear amble back) so players can read when the window opens and shuts. The window is **repeatable** — never a single one-shot chance.
 
 > **Why telegraphed & repeatable:** stealing is **mandatory** — every group needs the list (its header carries the cipher key for the finale). The drama is in the *moment of the grab*, not in whether they succeed. Give them as many fair tries as they need.
 
@@ -118,7 +115,7 @@ Then loop back to Phase A. **Always telegraph the turn** (body→head opening, h
 ## STEP 4 — REACTIONS
 
 **If they grab during Phase A (success):**
-- **Don't notice.** Keep boasting, finish your turn, "discover" the list gone a beat later — or not at all. Let them get away. They will run; let them.
+- **Don't notice.** Keep boasting, finish your circuit, "discover" the list gone a beat later — or not at all. Let them get away. They will run; let them.
 - A small delayed reaction is fine for flavour: *"…now where did I— "* (too late).
 
 **If they reach during Phase B/C (caught):**
@@ -176,9 +173,7 @@ After a group steals the list and leaves:
 
 ---
 
-## REWIZJA [2026-06-02] — uwagi Oskara (DO WPROWADZENIA, jeszcze nie wprowadzone)
-
-> Notatki kierunkowe. Karta wyżej **nietknięta** — materiał porównawczy. Przeróbka STEP 2/3 po decyzji A/B.
+## REWIZJA [2026-06-02] — ✅ WPROWADZONA (model patrolu; rationale zachowane do review)
 
 **Uwaga Oskara (H):** *„dopisz do instrukcji komtura, że jak skończą rozmawiać, wręczy im te koperty i sobie odejdzie — żeby nie było możliwości mówienia do niego, pytania o te koperty. Po prostu niech wręczy i sobie odejdzie."*
 
@@ -192,7 +187,7 @@ After a group steals the list and leaves:
 3. **Okno = patrol:** lista cały czas na widoku i „pod opieką" patrolu, ale gdy jesteś **oddalony / odwrócony** (idziesz w drugą stronę swojej trasy) — przez kilka sekund na nią nie patrzysz. To jest okno. Gdy **wracasz do niej / mijasz ją / patrzysz** — okno zamknięte.
 4. Grupa czyta K-Z3b (olśnienie: „to lista — kradnijmy podczas jego przechadzki"), wyczekuje patrolu i podbiera listę.
 
-**Do przepisania (kierunek, mechanika Oskara — przy finalizacji karty):**
-- **STEP 2** — usunąć „nie odpędzaj, niech zostaną przy liście"; zastąpić: *wręcz milcząco → odejdź kawałek → odłóż listę → patroluj.* Wręczenie pozostaje meta (zero rozmowy o kopercie).
-- **STEP 3** — przepisać geometrię/cykl z „obrotu w miejscu (lista na lewej, gaze w prawo)" na **patrol wokół odłożonej listy**: okno otwarte = oddalony/odwrócony na swojej trasie; zamknięte = przy liście / patrzy. **Zachować** zasady: telegrafowanie ruchu, powtarzalność (nie jednostrzałowo), złapanie = reset (nie eliminacja), hojność/asysta MG przy 3+ próbach, reset egzemplarza między grupami.
-- K-Z3b = **olśnienie wyprzedzające** (Model A) — synchronizować z `prototype/kZ3b-envelope-draft.md §SEKWENCJA`.
+**✅ WPROWADZONE w karcie [2026-06-02]:**
+- **STEP 2** przepisany: „set the list down → hand over K-Z3b in silence → walk off into patrol" (usunięte „nie odpędzaj, niech zostaną przy liście"; wręczenie = meta, zero rozmowy o kopercie).
+- **STEP 3** przepisany: cykl **patrolu** — A AWAY (na końcu obchodu, plecami do listy → okno) / B RETURNING / C AT THE LIST. Geometria „lista na lewej / obrót w prawo" zastąpiona patrolem wokół odłożonej listy. Zachowane: telegraf, powtarzalność, złapanie=reset, asysta MG przy 3+, reset egzemplarza. BEFORE GROUPS (LEFT→fixed spot) i STEP 4 ("finish your circuit") zsynchronizowane.
+- K-Z3b = **olśnienie wyprzedzające** (Model A) — spójne z `prototype/kZ3b-envelope-draft.md §SEKWENCJA`.
