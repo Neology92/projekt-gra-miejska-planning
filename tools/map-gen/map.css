@@ -155,6 +155,16 @@ html, body {
   height: 1em;
 }
 
+/* MG variant (key=filled): place name printed instead of a blank line */
+.lg-name {
+  flex: 1 1 auto;
+  font-size: 12px;
+  color: var(--ink);
+  line-height: 1.15;
+  border-bottom: 1px solid #cdbfa3;
+  padding-bottom: 1px;
+}
+
 .legend-divider {
   height: 0;
   border-top: 1px solid var(--rule);

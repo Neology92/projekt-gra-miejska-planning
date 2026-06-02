@@ -50,7 +50,11 @@ pwsh -File render-map.ps1 -Style parchment
 pwsh -File render-map.ps1 -Compare            # clean + parchment side-by-side
 ```
 
-Output: `public/maps/map.png` + `map.pdf` (one shared map, all glyphs).
+Output (each run, both stay in sync):
+- `public/maps/map.png` + `map.pdf` — **player** sheet: blank fill-in KEY (`glyph = ____`).
+- `public/maps/map-mg.png` + `map-mg.pdf` — **MG** sheet: filled KEY (`glyph = place name`), doubles as the symbol→place reference. Header reads "KEY · MG — do not give to players".
+
+Add `key=filled` to the `map.html` URL to preview the MG variant in a browser.
 
 Check at 100% zoom: building edges sharp; all glyphs on the map match KEY rows;
 Rynek inset shows the Old-Town cluster with pins separated.

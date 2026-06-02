@@ -54,15 +54,17 @@ $CropH = $H * $DSF
 
 # --- Render function ---
 function Render-Map {
-  param([string]$StyleName)
+  param([string]$StyleName, [string]$KeyMode = 'blank')   # KeyMode: blank (player) | filled (MG)
 
   $htmlPath = Join-Path $here 'map.html'
-  $suffix   = if ($StyleName -ne 'clean') { "-$StyleName" } else { '' }
-  $uri    = ([System.Uri]$htmlPath).AbsoluteUri + "?style=$StyleName&group=all"
+  $styleSuffix = if ($StyleName -ne 'clean') { "-$StyleName" } else { '' }
+  $keySuffix   = if ($KeyMode -eq 'filled') { '-mg' } else { '' }
+  $suffix   = "$styleSuffix$keySuffix"
+  $uri    = ([System.Uri]$htmlPath).AbsoluteUri + "?style=$StyleName&group=all&key=$KeyMode"
   $pngOut = Join-Path $outDir "map$suffix.png"
   $pdfOut = Join-Path $outDir "map$suffix.pdf"
 
-  Write-Host "  Rendering ($StyleName)..." -NoNewline
+  Write-Host "  Rendering ($StyleName/$KeyMode)..." -NoNewline
 
   if (Test-Path $pngOut) { Remove-Item $pngOut -Force -ErrorAction SilentlyContinue }
 
@@ -167,17 +169,23 @@ img{display:block;width:297mm;height:210mm;object-fit:fill}
 }
 
 # --- Main ---
+# Each style produces TWO sheets that stay in sync: player (blank fill-in KEY)
+# and MG (filled KEY = symbol→place reference). Output: map.* + map-mg.*
 $styles = if ($Compare) { @('clean','parchment') } else { @($Style) }
 
-Write-Host "`nMap Render — $($styles.Count) job(s)`n"
-foreach ($s in $styles) { Render-Map -StyleName $s }
+Write-Host "`nMap Render — $($styles.Count * 2) job(s) (player + MG)`n"
+foreach ($s in $styles) {
+  Render-Map -StyleName $s -KeyMode 'blank'
+  Render-Map -StyleName $s -KeyMode 'filled'
+}
 
 Write-Host "`nDone. Output: $outDir"
 Write-Host ""
 Write-Host "NEXT STEPS:"
-Write-Host "  1. Open public/maps/map.png at 100% zoom — check:"
+Write-Host "  1. Open public/maps/map.png (player, blank KEY) at 100% zoom — check:"
 Write-Host "     - building edges sharp (not pixelated)"
 Write-Host "     - all glyphs visible + matching rows in the KEY"
 Write-Host "     - Rynek inset (right rail) shows the Old-Town cluster, pins separated"
-Write-Host "  2. Open public/maps/map.pdf at 300% — no blur on raster"
-Write-Host "  3. If tiles are grey/missing: re-run (CDN timeout on first run)"
+Write-Host "  2. Open public/maps/map-mg.png (MG, filled KEY) — every glyph has its place name."
+Write-Host "  3. Open the .pdf files at 300% — no blur on raster"
+Write-Host "  4. If tiles are grey/missing: re-run (CDN timeout on first run)"
