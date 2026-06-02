@@ -83,10 +83,12 @@ Grupa dowiaduje się, że Zakon ma **listę nazwisk Tajnej Rady**. Wnioski:
 
 Lustro Z3 dla toru krzyżaków (obowiązkowa, wszystkie 5 grup krzyżackich).
 
-- **Miejsce**: Piccolo (siedziba TR, gdzie urzęduje Jordan/Piotr).
-- **Zadania**: ukraść „zaopatrzenie" (w praktyce: odebrać kupony na obiad i je zjeść), **wyciągnąć od Jordana godzinę buntu (20:30)**. Klucz finału = porównanie nagłówków (Cezar +7, **brak koła deszyfrującego** — patrz `puzzles/z7-szyfr-spec.md §0`).
-- **Output**: **klucz do finału Z11** + godzina finału.
-- **Obsada**: ten sam Jordan/Piotr co dla TR — różni się tylko **framing w kopercie** (sojusznik ↔ cel infiltracji). Jeden aktor obsługuje oba tory.
+- **Handler [REWIZJA 2026-06-02]:** po Z2 kurierzy KZ trafiają do **Albrechta (Zosia)** — to **on** wręcza zadanie Z3Z + **Tabelę 1** (rekwizyt do finału Z11). Nie Jordan. Patrz `concept/05-tor-krzyzakow.md §REWIZJA`.
+- **Miejsce infiltracji**: Piccolo (siedziba TR, gdzie urzęduje Jordan/Piotr — **cel**, nie sojusznik KZ).
+- **Zadania**: ukraść „zaopatrzenie" (w praktyce: odebrać kupony na obiad i je zjeść), **wyciągnąć od Jordana godzinę buntu (20:30)**, **zaobserwować Jordana: barwa szaty (brązowa) + atrybut (chochla)** → dwie dane do Tabeli 1.
+- **Output**: **dane do klucza Z11** (kolor + przedmiot → symbol z Tabeli 1) + godzina finału.
+- **Finał Z11 [REWIZJA 2026-06-02]:** NOWA mechanika dwóch tabel (nie Cezar/nagłówki). Tabela 1 (kolor szaty × chochla → symbol) + Tabela 2 (tabula recta) → parol. Pełny spec: **`puzzles/z11-szyfr-spec.md`**.
+- **Obsada**: Albrecht (Zosia) = handler KZ; Jordan (Piotr) = cel infiltracji KZ. Symetrycznie do TR (gdzie Albrecht = cel, Jordan = handler).
 - Mechanika „kradzieży/infiltracji" — do rozpisania (analogicznie do podebrania listy Albrechtowi w Z3).
 
 ## Trudność - balans — ZAKTUALIZOWANE [2026-06-01]

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" class="tx-2">
+<head>
+<meta charset="utf-8">
+<title>Z11 — Table 2: Order Cipher (Tabula Recta)</title>
+
+<!-- Reuse parchment.css (fonts load relative to it, from prototype/print/src/fonts/) -->
+<link rel="stylesheet" href="../../prototype/print/src/parchment.css">
+
+<style>
+  /* A4 landscape page (16 rows fit comfortably on one A4) */
+  @page { size: A4 landscape; margin: 0; }
+
+  html, body { height: 210mm; overflow: hidden; }
+
+  .sheet.t2 {
+    padding: 11mm 16mm 9mm;
+    height: 209mm;
+    min-height: 0;
+    overflow: hidden;
+  }
+
+  /* Override edge-mask to A4 landscape proportions (297×210) */
+  :root {
+    --edge-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 297 210' preserveAspectRatio='none'%3E%3Cfilter id='e' x='-12%25' y='-12%25' width='124%25' height='124%25'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.020' numOctaves='2' seed='6' result='n'/%3E%3CfeDisplacementMap in='SourceGraphic' in2='n' scale='11' xChannelSelector='R' yChannelSelector='G' result='d'/%3E%3CfeGaussianBlur in='d' stdDeviation='3.5'/%3E%3C/filter%3E%3Crect x='7' y='7' width='283' height='196' rx='5' fill='%23ffffff' filter='url(%23e)'/%3E%3C/svg%3E");
+  }
+
+  /* Header */
+  .t2-head { text-align: center; margin: 0 0 3mm; }
+  .t2-title {
+    font-variant: small-caps;
+    letter-spacing: .08em;
+    font-size: 17pt;
+    margin: 0 0 1.5mm;
+  }
+  .t2-rule {
+    font-style: italic;
+    color: var(--ink-soft);
+    font-size: 10pt;
+    line-height: 1.4;
+    max-width: 85%;
+    margin: 0 auto;
+  }
+
+  hr.t2-sep {
+    border: 0;
+    height: 7px;
+    width: 55%;
+    margin: 2.5mm auto;
+    background: var(--pen-rule) center / 100% 7px no-repeat;
+  }
+
+  /* Table wrapper */
+  .t2-grid-wrap {
+    overflow: visible;
+  }
+
+  /* The tabula recta table */
+  .t2-grid {
+    border-collapse: collapse;
+    font-family: var(--prose);
+    color: var(--ink);
+    width: 100%;
+    table-layout: fixed;
+  }
+
+  /* Column headers A-Z */
+  .t2-grid th.alpha-head {
+    font-size: 8.5pt;
+    font-variant: small-caps;
+    letter-spacing: .04em;
+    text-align: center;
+    padding: 1mm 0 1mm;
+    border-bottom: 1.5px solid var(--ink-soft);
+    width: calc((100% - 14mm) / 26);  /* 26 letter cols, remaining = symbol col */
+  }
+  /* Symbol label column header */
+  .t2-grid th.sym-head {
+    width: 14mm;
+    border-bottom: 1.5px solid var(--ink-soft);
+    font-size: 8pt;
+    font-style: italic;
+    color: var(--ink-soft);
+    text-align: center;
+    padding: 1mm 0;
+  }
+
+  /* Row label cell (symbol icon) */
+  .t2-grid td.row-sym {
+    text-align: center;
+    vertical-align: middle;
+    padding: 0.5mm 1mm;
+    border-right: 1.5px solid var(--ink-soft);
+    height: 10mm;
+  }
+  .t2-grid td.row-sym svg {
+    width: 9mm;
+    height: 9mm;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* Letter cells */
+  .t2-grid td.letter-cell {
+    text-align: center;
+    vertical-align: middle;
+    padding: 0.5mm 0;
+    font-size: 9pt;
+    border: 0.5px solid rgba(59,48,36,.18);
+    height: 10mm;
+    letter-spacing: .01em;
+  }
+
+  /* Validation banner */
+  #val-banner {
+    display: none;
+    text-align: center;
+    font-size: 9pt;
+    margin-top: 2mm;
+  }
+  #val-banner.fail { display: block; color: #7a1010; }
+  #val-banner.pass { display: block; color: #2f6d3a; }
+</style>
+</head>
+<body>
+<div class="page-bg"></div>
+<div class="sheet t2" id="sheet"></div>
+<div id="val-banner"></div>
+
+<script src="cipher-data.js"></script>
+<script>
+(function () {
+  // Validation
+  const valid = Z11_DATA.runValidation(false);
+  const banner = document.getElementById('val-banner');
+  if (valid) {
+    banner.className = 'pass';
+    banner.textContent = '✓ Validation passed';
+  } else {
+    banner.className = 'fail';
+    banner.textContent = '✗ VALIDATION FAILED — see browser console';
+    Z11_DATA.runValidation(true);
+  }
+
+  const { SYMBOLS, T2_ROWS, ALPHABET, makeGmerkSvg } = Z11_DATA;
+
+  // Column headers: empty sym-head + A-Z
+  let headerRow = '<tr><th class="sym-head">Sign</th>';
+  ALPHABET.forEach(letter => {
+    headerRow += `<th class="alpha-head">${letter}</th>`;
+  });
+  headerRow += '</tr>';
+
+  // Data rows: S01..S25, each row = gmerk icon + 26 letters
+  let dataRows = '';
+  SYMBOLS.forEach((sym, i) => {
+    const row = T2_ROWS[i];
+    dataRows += '<tr>';
+    // Symbol label
+    dataRows += `<td class="row-sym">${makeGmerkSvg(sym.idx, 44)}</td>`;
+    // 26 letter cells
+    row.forEach(letter => {
+      dataRows += `<td class="letter-cell">${letter}</td>`;
+    });
+    dataRows += '</tr>';
+  });
+
+  document.getElementById('sheet').innerHTML =
+      '<div class="t2-head">'
+    +   '<div class="t2-title">Order Cipher</div>'
+    +   '<div class="t2-rule">Find your sign at the left. '
+    +     'For each mark in the ciphertext, read it inside that row — '
+    +     'the letter above it is your word.</div>'
+    + '</div>'
+    + '<hr class="t2-sep">'
+    + '<div class="t2-grid-wrap">'
+    +   `<table class="t2-grid"><thead>${headerRow}</thead><tbody>${dataRows}</tbody></table>`
+    + '</div>';
+})();
+</script>
+</body>
+</html>

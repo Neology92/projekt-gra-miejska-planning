@@ -127,7 +127,7 @@ Przydział **stały** — nie losowy w dniu gry. Źródło: G1 = jedyna testowan
 | G9 | Brązowy | `#9A6324` | **KZ (Krzyżacy)** | Z3Z — infiltracja Piccolo (Jordan/Piotr) | Z10 polichromie Biedronka | Z11 szyfr |
 | G10 | Czarny | `#2B2B2B` | **KZ (Krzyżacy)** | Z3Z — infiltracja Piccolo (Jordan/Piotr) | Z10 polichromie Biedronka | Z11 szyfr |
 
-> **Dla MG/aktorów:** TR = G1–G5 (Red/Orange/Yellow/Green/Cyan). KZ = G6–G10 (Blue/Purple/White/Brown/Black). Jordan obsługuje oba tory (różny framing koperty K2-K). Albrecht obsługuje wyłącznie TR w F2B Z3.
+> **Dla MG/aktorów:** TR = G1–G5 (Red/Orange/Yellow/Green/Cyan). KZ = G6–G10 (Blue/Purple/White/Brown/Black). **Podział aktorów po Z2 [REWIZJA 2026-06-02]:** każdy aktor jest *handlerem* jednej frakcji i *celem infiltracji* drugiej. **Jordan (Piotr)** = handler TR (Piccolo, K3) / cel infiltracji KZ w Z3Z (obserwują: brązowa szata + chochla). **Albrecht (Zosia)** = handler KZ (wręcza K3-K + Tabelę 1 do Z11) / cel infiltracji TR w Z3 (kradzież listy). Patrz `concept/05-tor-krzyzakow.md §REWIZJA`, `todo/otwarte-pytania.md #71`.
 
 Szczegóły Z1 per ścieżka → `puzzles/z1-10-sciezek.md` §Ścieżki v3.2. Pełne dane kolory + hex → `mechanics/grupy-i-klasy.md`.
 
