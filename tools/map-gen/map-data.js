@@ -15,7 +15,7 @@ const Z1_PLACES = {
   C03: { coords: [53.0111, 18.6045], name: 'Filuś'          },
   C04: { coords: [53.0103, 18.6044], name: 'Ratusz'         },
   C06: { coords: [53.0107, 18.6052], name: 'Pod Gwiazdą'    },
-  C07: { coords: [53.0101, 18.6042], name: 'Dwór Artusa'    },
+  C07: { coords: [53.0098, 18.6042], name: 'Dwór Artusa'    },
   C08: { coords: [53.0110, 18.6024], name: 'Kościół NMP'    },
   C09: { coords: [53.0094, 18.6063], name: 'Katedra Janów'  },
   S01: { coords: [53.0086, 18.6089], name: 'Brama Mostowa'  },
