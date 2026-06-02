@@ -4,7 +4,7 @@ Jedno źródło prawdy o **fizycznych kopertach** wręczanych graczom: co ma by�
 
 > Koperty to **warstwa montażowa** nad zagadkami. Treść merytoryczna mieszka w `puzzles/<zagadka>.md`, `concept/*`, `mechanics/*`. Tutaj składamy ją w to, co gracz fizycznie dostaje do ręki.
 >
-> **Indeks całego projektu:** `/index.md` (root). **Manifest ścieżki prototypu:** `prototype/envelope-map.md`.
+> **Indeks całego projektu:** `/index.md` (root). **Manifest ścieżki prototypu:** `todo/archive/envelope-map.md`.
 
 ---
 

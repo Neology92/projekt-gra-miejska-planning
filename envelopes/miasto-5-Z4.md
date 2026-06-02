@@ -22,7 +22,7 @@
 - **Typography:** narration = *italic (light)* = inside the head; words of the world (the scrap they find) = roman.
 - **Kiedy wręczyć:** MG wręcza grupie po Z3 (przyniesieniu wykradzionej listy).
 - **Rekwizyty w komplecie (meta, jak rozdanie karty):** instrument — mały „iron-tongue instrument", języczki oznaczone numerami. MG gra melodię (lub nagranie), grupa odgrywa. Rekwizyt fizyczny = kalimba. Patrz `puzzles/kalimba.md`.
-- **Dokąd odsyła:** grupa podaje kod `621454` MG → MG wydaje **przechwycony list** (K8 / szyfrogram do finału). Patrz `prototype/z7-szyfrogram-draft.md`.
+- **Dokąd odsyła:** grupa podaje kod `621454` MG → MG wydaje **przechwycony list** (K8 / szyfrogram do finału). Patrz `materials/props/z7-szyfrogram-draft.md`.
 - **Canon:** `puzzles/kalimba.md`. Klamra **flisak = R.** [decyzja Oskara 2026-06-02].
 
 
@@ -63,7 +63,7 @@
 - **Inwarianta [advisor + kanon]:** kod `621454` = **wyłącznie bramka MG**; w fikcji nikt nie „czyta daty". Znaczenie 6.2.1454 = meta-reveal po grze (`kalimba.md`).
 - **Klamra B1 — muzyka karnawału = osłona:** „the whole city is piping and drumming" → granie melodii nie wzbudza podejrzeń. Funkcja + atmosfera. Pokrycie: `karnawal-1454.js` (pochody z muzyką: trąby, kornety, bębny).
 - **BRAK szyfru tutaj.** Mechanika: usłysz → zagraj → spisz liczby → podaj. Koło/Cezar/klucz = finał (Z7). Patrz `kalimba.md §Kiedy w grze`.
-- **Melodia METAFIZYCZNA [decyzja Oskara 2026-06-02, wariant A]:** w fikcji melodia jest „już w powietrzu" — niesiona znad wody, bez grajka (R. martwy), „as if the river had kept his music for him". Abstrakcyjna, nie ma fizycznego źródła. Mechanicznie: MG odtwarza nagranie/gra, gdy grupa oddaje raport — ale fikcja ramuje to jako echo znad Wisły, nie „MG gra". Info dla MG: `prototype/mg-runsheet.md §Z4`.
+- **Melodia METAFIZYCZNA [decyzja Oskara 2026-06-02, wariant A]:** w fikcji melodia jest „już w powietrzu" — niesiona znad wody, bez grajka (R. martwy), „as if the river had kept his music for him". Abstrakcyjna, nie ma fizycznego źródła. Mechanicznie: MG odtwarza nagranie/gra, gdy grupa oddaje raport — ale fikcja ramuje to jako echo znad Wisły, nie „MG gra". Info dla MG: `materials/ops/mg-runsheet.md §Z4`.
 - **Spięcie z Fontanną Flisaka [wariant A — META, 2026-06-02]:** w tekście nawiązanie do legendy flisaka („the old tale… a raftsman whose playing once drew the whole town's plague of frogs… under the Vistula", `legenda-flisak.js`) — melodia jako mit znad wody. **Fontanna NIE pojawia się w fikcji** (anachronizm 1914) — most do niej (figura grajka + 8 żab przy Ratuszu, dziś) idzie przez **kartkę autorską po grze** (`lore/meta-kartki-autorskie.md`). Instrument legendy = skrzypce; NIE akcentujemy — melodia jest ponad instrumentem (R. grał na swoim lamellofonie).
 - **Gorzki akcent — inwersja moralna [decyzja Oskara 2026-06-02, p. 1.1 analizy]:** „while the great men whose errands he ran sleep warm behind their walls… small men caught in the schemes of large ones — they do the carrying, and they do the dying." R. (mały człowiek) zginął za grę wielkich (TR/narada). Nośnik filaru „TR=źli" na ścieżce prototypu (Z4), bo Z5 nie jest testowana. Mechanizm uniwersalny per tor (tor krzyżacki → analogiczna gorycz wobec Zakonu).
 - **Lokalizacja OPISOWA [decyzja Oskara 2026-06-02, p. 1.2]:** scena jest **czysto narracyjna** — grupa NIE idzie fizycznie nad Wisłę, MG tam nie stoi. Koperta opisuje zdarzenie („word comes to us of the river"), gracze je czytają/wyobrażają. Brak punktu terenowego.

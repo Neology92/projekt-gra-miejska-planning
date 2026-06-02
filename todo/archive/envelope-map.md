@@ -40,10 +40,10 @@ Stan po renumeracji: `wspolne-1-Z1`, `miasto-2-Z2`, `miasto-3-Z3`, `miasto-5-Z4`
 
 | Plik | Co to |
 |---|---|
-| `prototype/jordan-actor-script-draft.md` | skrypt aktora Jordan (Piotr), F2A |
-| `prototype/albrecht-actor-card-draft.md` | karta aktora Albrecht (Zosia), Z3 |
-| `prototype/z7-szyfrogram-draft.md` | przechwycony list / szyfrogram finałowy |
-| `prototype/pergamin-lista-tr-draft.md` | lista TR (łup Z3) |
-| `prototype/mg-runsheet.md`, `mg-tracking-sheet.md` | arkusze MG |
+| `materials/actors/jordan-actor-script-draft.md` | skrypt aktora Jordan (Piotr), F2A |
+| `materials/actors/albrecht-actor-card-draft.md` | karta aktora Albrecht (Zosia), Z3 |
+| `materials/props/z7-szyfrogram-draft.md` | przechwycony list / szyfrogram finałowy |
+| `materials/props/pergamin-lista-tr-draft.md` | lista TR (łup Z3) |
+| `materials/ops/mg-runsheet.md`, `mg-tracking-sheet.md` | arkusze MG |
 | `public/maps/` | rendery map nawigacyjnych (główne narzędzie gry) |
 | `prototype/icons/` | ikony detali Z1 (SVG) |

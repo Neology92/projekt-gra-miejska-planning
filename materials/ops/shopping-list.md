@@ -27,10 +27,10 @@ Decoder cards render via `tools/z1-decoder/` → output to `public/decoders/`.
 | Z7 szyfrogram (intercepted letter, 06a) + finale note (06b) | `miasto-06a-Z7-list.pdf` + `miasto-6-Z7.pdf` | ✅ | 2–3 | 2 + 1 spare | 06a handed/solved first, 06b after MG verify |
 | Z3/Z7 answer key (MG only) | `mg-Z3Z7-klucz.pdf` | ✅ | 1 | 1 | MG bag — do NOT hand to players (no stamp) |
 | KF envelope (finale) | *(content: `envelopes/` — no standalone PDF yet)* | 🔒 | 2–3 | 2 + 1 spare | Blocked: KF body not written yet |
-| MG tracking sheet | `prototype/mg-tracking-sheet.md` (print manually) | ⬜ | 1 | 1 | Print from .md or convert to PDF |
-| MG runsheet | `prototype/mg-runsheet.md` | ⬜ | 1 | 1 | MG reference — can be phone |
-| Jordan actor script | `prototype/jordan-actor-script-draft.md` | ⬜ | 1 (Piotr) | 1 (Piotr) | Awaiting Oskar/Piotr review before printing |
-| Albrecht actor card | `prototype/albrecht-actor-card-draft.md` | ⬜ | 1 (Zosia) | 1 (Zosia) | Awaiting Oskar/Zosia review before printing |
+| MG tracking sheet | `materials/ops/mg-tracking-sheet.md` (print manually) | ⬜ | 1 | 1 | Print from .md or convert to PDF |
+| MG runsheet | `materials/ops/mg-runsheet.md` | ⬜ | 1 | 1 | MG reference — can be phone |
+| Jordan actor script | `materials/actors/jordan-actor-script-draft.md` | ⬜ | 1 (Piotr) | 1 (Piotr) | Awaiting Oskar/Piotr review before printing |
+| Albrecht actor card | `materials/actors/albrecht-actor-card-draft.md` | ⬜ | 1 (Zosia) | 1 (Zosia) | Awaiting Oskar/Zosia review before printing |
 
 **Paper to buy for printing:**
 - Parchment-texture A4 paper (ivory/cream) — for envelopes, Z3 pergamin, sealed letters.

@@ -37,11 +37,11 @@
                                                                                     motto Z3 ─┐
                                                                                     (NIE Z4) ─┴─▶ Z7 ─▶ "Jordan=Bażyński"
 ```
-> Numeracja poz. = kolejność otwierania koperty. Spec: `envelopes/README.md` (manifest). Stare nazwy K1–KF: `prototype/envelope-map.md`.
+> Numeracja poz. = kolejność otwierania koperty. Spec: `envelopes/README.md` (manifest). Stare nazwy K1–KF: `todo/archive/envelope-map.md`.
 
 ## A. Teksty kopert (7)
 
-> Migracja [2026-06-02]: drafty przeniesione z `prototype/k*.md` → `envelopes/` (spec+manifest). Numeracja = kolejność otwierania (wstawka Z3b: opcjonalna→5, finał→6). Mapa starych↔nowych: `prototype/envelope-map.md`.
+> Migracja [2026-06-02]: drafty przeniesione z `prototype/k*.md` → `envelopes/` (spec+manifest). Numeracja = kolejność otwierania (wstawka Z3b: opcjonalna→5, finał→6). Mapa starych↔nowych: `todo/archive/envelope-map.md`.
 
 ```
 ✅ poz.1 Z1 — startowa ......... draft gotowy (groźba „ucięcia rąk" + segment Z1)        [envelopes/wspolne-1-Z1.md]
@@ -49,7 +49,7 @@
 ✅ poz.3 Z3 — od Jordana ...... draft gotowy (brief F2B + Z3 zwiad; Z3b osobno)         [envelopes/miasto-3-Z3.md]
 ✅ poz.4 Z3b — kradzież ....... draft gotowy (2. koperta etapu Z3; narracja + cytat Albrechta)  [envelopes/miasto-4-Z3b.md]
 🟡 poz.5 Z4 — melodia/kalimba . draft v2 (SCENA: martwy flisak=R. nad Wisłą, melodia=kod; instrument zatwierdzony)  [envelopes/miasto-5-Z4.md]
-✅ 06a Z7 finałowy szyfr ...... szyfrogram + rama narracyjna v2 + ramka MG; wyrenderowany + stempel  [prototype/z7-szyfrogram-draft.md · src/miasto-06a-Z7-list.html]
+✅ 06a Z7 finałowy szyfr ...... szyfrogram + rama narracyjna v2 + ramka MG; wyrenderowany + stempel  [materials/props/z7-szyfrogram-draft.md · src/miasto-06a-Z7-list.html]
 🟡 poz.6 Z7 — finał .......... draft gotowy (Przedzamcze, ósme bicie, wolny wybór; list nieotwarty, maski spadają)  [envelopes/miasto-6-Z7.md]
 ```
 
@@ -60,31 +60,31 @@
 🟡 Wiadomość pośrednika ....... jest w drafcie poz.2 Z2 (slip „— R.") — do wydzielenia  [envelopes/miasto-2-Z2.md]
 🟡 Mapa Torunia z glifami ..... mock funkcjonalny istnieje                              [prototype/mapa-z1-podglad.html]
 ✅ Deszyfrownik (karty) ....... generator tools/z1-decoder/ (derywuje z Z1_GROUPS); 10 PDF public/decoders/ per kolor grupy; walidacja PASS  [tools/z1-decoder/README.md]
-🟡 Pergamin z listą nazwisk TR  research gotowy + draft (EN); klucz=Decyzja#1  [prototype/pergamin-lista-tr-draft.md · puzzles/z3-lista-tr-spec.md]
+🟡 Pergamin z listą nazwisk TR  research gotowy + draft (EN); klucz=Decyzja#1  [materials/props/pergamin-lista-tr-draft.md · puzzles/z3-lista-tr-spec.md]
 ✅ Zapis melodii Z4 + pręciki . nagranie gotowe; pręciki oznaczone liczbowo (C:1, D:2, …); kod 621454
-🟡 Arkusz szyfru Z7 ........... Cezar +7 (nagłówki w tym samym foncie; Z3 jawny ↔ Z7 zaszyfrowane; brak koła)  [prototype/z7-szyfrogram-draft.md]
+🟡 Arkusz szyfru Z7 ........... Cezar +7 (nagłówki w tym samym foncie; Z3 jawny ↔ Z7 zaszyfrowane; brak koła)  [materials/props/z7-szyfrogram-draft.md]
 ✅ Mechanika dostarczenia ..... Przedzamcze 20:30 — list wręczany fizycznie aktorowi (Piotr/Bażyński lub Zosia/Albrecht); wybór fabularny, 1 grupa = 1 głos
 ```
 
 ## C. Skrypty/karty aktorów (2)
 
 ```
-✅ Skrypt Jordana (Piotr) ..... draft gotowy (weryfikacja + dialog + K3)               [prototype/jordan-actor-script-draft.md]
-✅ Karta gry Albrechta (Zosia)  draft gotowy (choreografia okna kradzieży + reakcje)   [prototype/albrecht-actor-card-draft.md]
+✅ Skrypt Jordana (Piotr) ..... draft gotowy (weryfikacja + dialog + K3)               [materials/actors/jordan-actor-script-draft.md]
+✅ Karta gry Albrechta (Zosia)  draft gotowy (choreografia okna kradzieży + reakcje)   [materials/actors/albrecht-actor-card-draft.md]
 ```
 
 ## D. Dokumenty operacyjne MG (3)
 
 ```
-🟡 Arkusz śledzenia MG ........ draft gotowy (flow strip, tabela etapów, klucze odpowiedzi, lista rekwizytów)  [prototype/mg-tracking-sheet.md]
-🟡 Instrukcja MG .............. draft gotowy (fazy, drabinki hintów, protokoły awaryjne)  [prototype/mg-runsheet.md]
+🟡 Arkusz śledzenia MG ........ draft gotowy (flow strip, tabela etapów, klucze odpowiedzi, lista rekwizytów)  [materials/ops/mg-tracking-sheet.md]
+🟡 Instrukcja MG .............. draft gotowy (fazy, drabinki hintów, protokoły awaryjne)  [materials/ops/mg-runsheet.md]
 →MVP Lista przedmiotów ........ co kupić/wydrukować/zdobyć — zakres pełnej gry
 ```
 
 ## E. Domknięcie
 
 ```
-✅ Pass spójności ............. łańcuch spójny end-to-end; jedyne niedomknięcie = glify Z1 (zależne od mapy)  [prototype/pass-spojnosci-prototyp.md]
+✅ Pass spójności ............. łańcuch spójny end-to-end; jedyne niedomknięcie = glify Z1 (zależne od mapy)  [todo/archive/pass-spojnosci-prototyp.md]
 ✅ Dry-run na papierze ........ DONE [2026-06-02]: przejście ścieżki, wnioski → MVP
 ```
 
@@ -182,6 +182,16 @@ Szczegóły: mechanics/koperty-mg.md §ZAŁOŻENIA PRZED RENDEREM · prototype/p
 ⬜ Stylizacja manuskryptowa ..... pergamin, kaligrafia, UnifrakturMaguntia, wosk, pieczęć
 ⬜ Kostiumy 2 aktorów ........... chochla (Jordan) + płaszcz/krzyż (Albrecht)
 ⬜ Rekwizyty × ilość ............ 1–2× kalimba, 1–2× zestaw sensoryczny, mapy/szyfrowniki
+```
+
+### 🌐 Lokalizacja językowa — aktorzy/MG = PL (decyzja #70)
+
+```
+⬜ Tłumaczenie EN→PL ............ drafty materials/actors/ (jordan, albrecht) + materials/ops/
+                                 (mg-runsheet, mg-tracking, mg-group-cards, mg-master-board,
+                                 mg-quick-hints, shopping-list) powstały po EN; przełożyć na PL.
+                                 Wyjątek: cytaty treści zagadek / odpowiedzi gracza zostają EN.
+                                 materials/props/ (pergamin, szyfrogram) = EN (gracz) — bez zmian.
 ```
 
 ### 🟥 Logistyka dnia gry

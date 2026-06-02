@@ -85,7 +85,7 @@ Go carefully. — R.
 
 **Wiadomość pośrednika:** lakoniczna, tylko inicjał (nie wiadomo kto to R. — niepotrzebna wiedza). Mechanika: gracze dostają ją jako „dowód" że pośrednik istniał, ale uciekł.
 
-**TROP CELU — „dostarcz chairmanowi" [2026-06-01, decyzja Oskara]:** slip R. zasiewa **silny trop**, że list ma trafić do **głowy Rady / chairmana**, w jego własne ręce. To ustawia cel kuriera na początku gry — **bez zdradzania, kim chairman jest**. Funkcja: w finale, gdy Z7 odszyfruje „HANS VON BAYSEN IS JORDAN THE COOK", gracz sam spina wątki: chairman z K2 = Hans von Baysen z listy Z3 (wpis #1 „they call him chairman") = Jordan-kucharz, którego poznali. Splice player-derived, anty-prowadzenie-za-rączkę. Dlatego list Z7 **został odchudzony** (nie zapowiada już rodzaju informacji) — ciężar znaczenia niosą trzy wątki: ten trop + „chairman" przy wpisie #1 Z3 + sam szyfr. Patrz `prototype/z7-szyfrogram-draft.md` (nota „List ODCHUDZONY") i `puzzles/z7-szyfr-spec.md`.
+**TROP CELU — „dostarcz chairmanowi" [2026-06-01, decyzja Oskara]:** slip R. zasiewa **silny trop**, że list ma trafić do **głowy Rady / chairmana**, w jego własne ręce. To ustawia cel kuriera na początku gry — **bez zdradzania, kim chairman jest**. Funkcja: w finale, gdy Z7 odszyfruje „HANS VON BAYSEN IS JORDAN THE COOK", gracz sam spina wątki: chairman z K2 = Hans von Baysen z listy Z3 (wpis #1 „they call him chairman") = Jordan-kucharz, którego poznali. Splice player-derived, anty-prowadzenie-za-rączkę. Dlatego list Z7 **został odchudzony** (nie zapowiada już rodzaju informacji) — ciężar znaczenia niosą trzy wątki: ten trop + „chairman" przy wpisie #1 Z3 + sam szyfr. Patrz `materials/props/z7-szyfrogram-draft.md` (nota „List ODCHUDZONY") i `puzzles/z7-szyfr-spec.md`.
 
 > ⚠ **Wersja Krzyżacy:** ich K2 prowadzi do Albrechta (nie chairmana TR) — trop celu musi być inny (parole/hasło do komtura, nie „chairman Rady"). Do napisania przy MVP. NIE kopiować tropu TR 1:1.
 
@@ -134,7 +134,7 @@ Go carefully. — R.
 
 ### E. Hasło dnia — przekazuje je R. (w slipie)
 - Slip R. ma poinstruować: **po dotarciu na miejsce zwrócić się do osoby PO IMIENIU i wskazać, co kupiła dziś rano (chochlę)** — wtedy będzie wiedziała, że są „od nas". To **hasło ustalone na dziś**.
-- Trigger rozpoznania (imię „Jordan" + „kupiłeś dziś rano chochlę") → **musi rozpoznawać Jordan-aktor**: cross-ref do `prototype/jordan-actor-script-draft.md` (do zsynchronizowania).
+- Trigger rozpoznania (imię „Jordan" + „kupiłeś dziś rano chochlę") → **musi rozpoznawać Jordan-aktor**: cross-ref do `materials/actors/jordan-actor-script-draft.md` (do zsynchronizowania).
 
 ### F. Slip „— R." — rewrite na jasne skierowanie do kuriera
 - Obecny slip („*This letter is for the head of their Council. Their chairman. Into his own hand…*") **nie jest jasny, że chodzi o list niesiony przez kuriera.** Przeredagować jako wprost skierowane do znalazcy:

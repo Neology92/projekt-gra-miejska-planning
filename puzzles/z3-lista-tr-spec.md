@@ -2,7 +2,7 @@
 
 > **Rola pliku:** jedno źródło prawdy dla **pergaminu z listą TR** (rekwizyt/output Z3). Pula nazwisk + uzasadnienie fabularne + decyzje projektowe + pułapki historyczne + klucz MG.
 > **Status:** research gotowy [2026-06-01]. Decyzje strukturalne (poniżej) — do Oskara.
-> **Powiązania:** mechanika i miejsce Z3 → `zamek-krzyzacki-lista.md`; obsada → `lore/postaci.md`; rekwizyt gracza (EN) → `prototype/pergamin-lista-tr-draft.md`.
+> **Powiązania:** mechanika i miejsce Z3 → `zamek-krzyzacki-lista.md`; obsada → `lore/postaci.md`; rekwizyt gracza (EN) → `materials/props/pergamin-lista-tr-draft.md`.
 > **Źródła (wiki):** `tajna-rada.js`, `zwiazek-pruski.js`, `jan-bazynski.js`, `tileman-vom-wege.js`, `rutger-birken.js`, `patrycjat-torunski.js`, `donosiciele-1454.js`, `kopernik-senior.js`, `ratusz-staromiejski.js`.
 
 ---
@@ -83,7 +83,7 @@ Oskar przesądził model (nadrzędny wobec starszych zapisów „klucz z kalimby
 - **Kalimba (Z4) NIE jest źródłem klucza** — Z4 to prosta zagadka melodia→liczby; po jej oddaniu MG wydaje szyfrogram.
 
 ✅ **Rola Z4 rozstrzygnięta [2026-06-01]:** Z4 (i Z5/Z6) → po rozwiązaniu **MG wydaje szyfrogram**. Wymienialne 1:1.
-**Szyfrogram + spec:** `prototype/z7-szyfrogram-draft.md`, `puzzles/z7-szyfr-spec.md`.
+**Szyfrogram + spec:** `materials/props/z7-szyfrogram-draft.md`, `puzzles/z7-szyfr-spec.md`.
 
 ### 🔒 DECYZJA #2 — czy „Hans von Baysen / Bażyński" jest na liście? (rozstrzyga to rozbieżność w F2A)
 
@@ -101,7 +101,7 @@ To pytanie o **integralność twistu** — i jest już rozstrzygalne, bo w repo 
 
 ✅ **Zależność ROZSTRZYGNIĘTA [2026-06-01]:** `concept/02-faza-2a-jordan.md` i `test-jordana.md` (decyzja 2026-05-31) ustalają, że Jordan = **pasywny weryfikator** (imię „Jordan" + kolor opaski), **nie ujawnia przywództwa w F2A**. To **przesądza górny wiersz tabeli** → l. 10 zamek-pliku jest nieaktualna. **Plant Bażyńskiego jest bezpieczny.**
 
-✅ **DECYZJA #2 ZATWIERDZONA [2026-06-01]: plant DANY.** Oskar: „Bażyński jest na liście". „Hans von Baysen" eksponowany jako **wpis #1** pergaminu (głowa rady, gończy cel Zakonu). Bezpieczny — gracz zna sojusznika z Piccolo jako „Jordan" (pseudonim), nie „von Baysen"; nazwisko czyta się jak kolejny radny. Po złamaniu Z7 („Jordan = Hans von Baysen") gracz wraca do listy i widzi: kucharz był #1 od początku. Retroaktywny payoff. Tekst wpisu → `prototype/pergamin-lista-tr-draft.md`.
+✅ **DECYZJA #2 ZATWIERDZONA [2026-06-01]: plant DANY.** Oskar: „Bażyński jest na liście". „Hans von Baysen" eksponowany jako **wpis #1** pergaminu (głowa rady, gończy cel Zakonu). Bezpieczny — gracz zna sojusznika z Piccolo jako „Jordan" (pseudonim), nie „von Baysen"; nazwisko czyta się jak kolejny radny. Po złamaniu Z7 („Jordan = Hans von Baysen") gracz wraca do listy i widzi: kucharz był #1 od początku. Retroaktywny payoff. Tekst wpisu → `materials/props/pergamin-lista-tr-draft.md`.
 
 ### 🔒 DECYZJA #3 — ile nazwisk i jak prezentować niepełne
 
@@ -129,6 +129,6 @@ To pytanie o **integralność twistu** — i jest już rozstrzygalne, bo w repo 
 - ✅ Research nazwisk + uzasadnienie fabularne + pułapki — **gotowe**.
 - ✅ Model klucza (Decyzja #1) — **rozstrzygnięty**: motto w nagłówku listy Z3.
 - ✅ Plant Bażyńskiego (Decyzja #2) — **ZATWIERDZONY [2026-06-01]**: wpis #1 pergaminu.
-- 🟡 Draft pergaminu (EN) → `prototype/pergamin-lista-tr-draft.md` (10 wpisów z plantem #1 + motto w nagłówku = klucz).
-- ✅ **Szyfrogram Z7 + materiał deszyfrujący** → `prototype/z7-szyfrogram-draft.md` + `puzzles/z7-szyfr-spec.md` (plaintext zatwierdzony 2026-06-01).
+- 🟡 Draft pergaminu (EN) → `materials/props/pergamin-lista-tr-draft.md` (10 wpisów z plantem #1 + motto w nagłówku = klucz).
+- ✅ **Szyfrogram Z7 + materiał deszyfrujący** → `materials/props/z7-szyfrogram-draft.md` + `puzzles/z7-szyfr-spec.md` (plaintext zatwierdzony 2026-06-01).
 - 🔒 Czeka na Oskara: Decyzje #3 (dokładna liczba/forma niepełnych wpisów — obecnie 10) · #4 (opcjonalna sekcja szpiegów — domyślnie pominięta).

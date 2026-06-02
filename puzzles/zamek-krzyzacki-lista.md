@@ -2,7 +2,7 @@
 
 **Status**: szkicowe. Z3 = obowiązkowa dla TR (infiltracja zamku). **Z3Z** = lustro dla krzyżaków (infiltracja Piccolo) — sekcja niżej.
 
-> **Treść listy nazwisk TR + uzasadnienie fabularne + pułapki historyczne → `z3-lista-tr-spec.md`** (research kanoniczny). Rekwizyt gracza (EN) → `prototype/pergamin-lista-tr-draft.md`.
+> **Treść listy nazwisk TR + uzasadnienie fabularne + pułapki historyczne → `z3-lista-tr-spec.md`** (research kanoniczny). Rekwizyt gracza (EN) → `materials/props/pergamin-lista-tr-draft.md`.
 > ✅ **Model klucza rozstrzygnięty [2026-06-01, akt. sesja z Piotrem]:** lista nazwisk = **kontekst**; **klucz = porównanie nagłówków** (`HELFEN, HEILEN UND WEHREN!` w Z3 jawne ↔ zaszyfrowane Cezarem shift+7 w Z7) — gracz odkrywa przesunięcie przez porównanie, bez rekwizytu; twist „Jordan=Bażyński" niesie **osobny szyfrogram Z7** (przechwycony list, wydawany przez MG po opcjonalnej Z4/5/6). Kalimba = prosta zagadka melodia→liczby, nie zasila klucza. Szczegóły → `z3-lista-tr-spec.md §4` + `z7-szyfr-spec.md §0`.
 
 ## ✅ Struktura Z3 — ROZSTRZYGNIĘTA [2026-06-01, decyzja Oskara]
@@ -26,11 +26,11 @@ Dwuetapowa koperta + rozmowa-zwiad + choreografowana kradzież. Zamyka otwarte #
 - Po wręczeniu K-Z3b Albrecht chodzi **przewidywalnym schematem** (przystaje, patrzy, odwraca się) — jak NPC w grze. Gracz wyłapuje **okno** na podebranie listy (leży fizycznie).
 - W schemacie MUSI być też faza, gdy Albrecht patrzy **wprost na listę** (okno zamknięte — widać, że ktoś by kradł). Okno **powtarzalne, nigdy jednostrzałowe**.
 - **Loop:** po kradzieży i ucieczce grupy Albrecht **resetuje** — kładzie kolejny egzemplarz listy dla następnej grupy.
-- Wszystko → **karta choreografii Albrechta (Zosia)**: `prototype/albrecht-actor-card-draft.md`.
+- Wszystko → **karta choreografii Albrechta (Zosia)**: `materials/actors/albrecht-actor-card-draft.md`.
 
 > **Zwiad NIE jest bramką mechaniczną** [świadoma decyzja, zasada „element musi bramkować"]: rozmowa to pretekst, by zbliżyć gracza do Albrechta i uzasadnić wręczenie K-Z3b + ekspozycję listy. **Bramką jest kradzież** (lista = nagłówek z kluczem Cezara do Z7). Nie ma „rozwiązania rozmowy".
 
-**Artefakty:** `envelopes/miasto-3-Z3.md` (zwiad) · `envelopes/miasto-4-Z3b.md` (ujawnienie kradzieży) · `prototype/albrecht-actor-card-draft.md` (choreografia) · lista = `prototype/pergamin-lista-tr-draft.md`.
+**Artefakty:** `envelopes/miasto-3-Z3.md` (zwiad) · `envelopes/miasto-4-Z3b.md` (ujawnienie kradzieży) · `materials/actors/albrecht-actor-card-draft.md` (choreografia) · lista = `materials/props/pergamin-lista-tr-draft.md`.
 
 ---
 

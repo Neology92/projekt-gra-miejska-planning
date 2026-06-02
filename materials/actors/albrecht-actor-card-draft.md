@@ -5,7 +5,7 @@
 > **Actor:** Zosia plays **Komtur Albrecht Kalb** — commander of the Teutonic castle, arrogant, certain the Order still rules this city.
 > **Location:** **outside the castle walls** (NOT inside the ruins — those are ticketed/closed). A spot where you can stand, lean papers on a ledge/crate, and pace a few steps.
 > **When:** Faza 2B, Z3 — town (TR) groups come to you after Jordan sends them on the "scouting" errand (K3).
-> **Canon:** `puzzles/zamek-krzyzacki-lista.md` (Struktura Z3) · the list they steal → `prototype/pergamin-lista-tr-draft.md`.
+> **Canon:** `puzzles/zamek-krzyzacki-lista.md` (Struktura Z3) · the list they steal → `materials/props/pergamin-lista-tr-draft.md`.
 
 > ✅ **REWIZJA [2026-06-02] — model patrolu WPROWADZONY (STEP 2/3 przepisane).** Sekwencja (Oskar): komtur **wręcza kopertę milcząco → odchodzi kawałek → odkłada listę w konkretnym miejscu → patroluje** wokół niej. Okno kradzieży = faza AWAY (na końcu obchodu, plecami do listy). STEP 2 = „odłóż listę, wręcz, odejdź w patrol"; STEP 3 = cykl patrolu (A AWAY / B RETURNING / C AT THE LIST), telegraf/powtarzalność/reset zachowane. Spójne z `envelopes/miasto-4-Z3b.md §Rewizja (SEKWENCJA)` i kopertą Z3b (olśnienie wyprzedzające). `todo/otwarte-pytania.md #65`.
 

@@ -1,8 +1,8 @@
 # Z7 — Finałowy szyfrogram (spec kanoniczny)
 
 > **Rola pliku:** jedno źródło prawdy dla **szyfrogramu Z7** — przechwyconego listu krzyżackiego, którego odszyfrowanie ujawnia twist „Jordan = Bażyński". Szyfr, klucz, plaintext, ciphertext, mechanika, weryfikacja MG, ryzyka.
-> **Status:** 🟡 **W REWIZJI [2026-06-01]** — mechanika klucza zmieniona: **porównanie nagłówków** (nie liczenie liter motta). Dwie wersje testowe: A (shift +3) i B (shift +7, kandydat). §0 = kanon nowej mechaniki; §4 zaktualizowane. Prop gracza → `prototype/z7-szyfrogram-draft.md`.
-> **Powiązania:** klucz z nagłówka listy Z3 → `z3-lista-tr-spec.md`, `prototype/pergamin-lista-tr-draft.md`. Rekwizyt gracza (EN) → `prototype/z7-szyfrogram-draft.md`. Lustro krzyżackie (Z8/Z11) → `kalimba.md`, `concept/04-faza-3-final.md` (kanon modelu).
+> **Status:** 🟡 **W REWIZJI [2026-06-01]** — mechanika klucza zmieniona: **porównanie nagłówków** (nie liczenie liter motta). Dwie wersje testowe: A (shift +3) i B (shift +7, kandydat). §0 = kanon nowej mechaniki; §4 zaktualizowane. Prop gracza → `materials/props/z7-szyfrogram-draft.md`.
+> **Powiązania:** klucz z nagłówka listy Z3 → `z3-lista-tr-spec.md`, `materials/props/pergamin-lista-tr-draft.md`. Rekwizyt gracza (EN) → `materials/props/z7-szyfrogram-draft.md`. Lustro krzyżackie (Z8/Z11) → `kalimba.md`, `concept/04-faza-3-final.md` (kanon modelu).
 
 ---
 
@@ -64,7 +64,7 @@ litery: `HANSVONBAYSENISJORDANTHECOOK` (28 liter)
 2. **Odszyfruj ciało:** cofnij każdą literę szyfrogramu o odkrytą wartość. Można liczyć na palcach, ołówkiem na boku papieru, lub w głowie (alfabet A–Z jest cykliczny: po Z wraca A).
 3. **Odczytaj:** litery jawne w kolejności dają plaintext. Układ spacji jak w zdaniu — pomyłka w jednej literze jest naprawialna domysłem ze słowa.
 
-Brak rekwizytu (koła/tabeli) — świadoma decyzja (koło byłoby zbyt silną wskazówką). Prop gracza (szyfrogram) → `prototype/z7-szyfrogram-draft.md`.
+Brak rekwizytu (koła/tabeli) — świadoma decyzja (koło byłoby zbyt silną wskazówką). Prop gracza (szyfrogram) → `materials/props/z7-szyfrogram-draft.md`.
 
 ---
 

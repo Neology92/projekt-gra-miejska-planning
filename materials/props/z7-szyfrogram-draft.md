@@ -66,7 +66,7 @@ You have seen this script before — it is the same hand that headed the list of
 
 **Fabuła:** to dyspozycja Albrechta Kalba (komtur toruński) do Malborka — wróg, którego grupa okradła z listy w Z3, sam zdradza tożsamość Jordana. Pokrycie: `donosiciele-1454.js` (komtur raportował do Malborka „spisek Rady z Bażyńskim").
 
-**Link do Z3:** nagłówek Z7 MUSI używać **tego samego charakterystycznego fontu** co nagłówek pergaminu Z3 (`prototype/pergamin-lista-tr-draft.md`). Font + identyczna interpunkcja (przecinek, wykrzyknik) = sygnał wizualny, że oba nagłówki są związane — to cały hint.
+**Link do Z3:** nagłówek Z7 MUSI używać **tego samego charakterystycznego fontu** co nagłówek pergaminu Z3 (`materials/props/pergamin-lista-tr-draft.md`). Font + identyczna interpunkcja (przecinek, wykrzyknik) = sygnał wizualny, że oba nagłówki są związane — to cały hint.
 
 **Płatność:** plaintext „…HANS VON BAYSEN…" domyka się z plantem na liście Z3 — gracz wraca i widzi, że kucharz był na szczycie listy gończej Zakonu.
 

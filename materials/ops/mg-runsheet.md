@@ -1,7 +1,7 @@
 # GM Runsheet — Prototype (TR path)
 
 > **Language:** English (GM-facing).
-> **Scope:** prototype only — single TR path, one group test run. For answer keys and prop checklist, see `prototype/mg-tracking-sheet.md`.
+> **Scope:** prototype only — single TR path, one group test run. For answer keys and prop checklist, see `materials/ops/mg-tracking-sheet.md`.
 
 ---
 
@@ -12,8 +12,8 @@
 - [ ] Load kalimba melody on phone as backup (record yourself playing it).
 - [ ] Prepare sealed letter props (folded paper with wax seal, 1 per group + 1 spare).
 - [ ] Pack GM bag — sorted by stage, per tracking sheet checklist.
-- [ ] Brief Piotr (Jordan): `prototype/jordan-actor-script-draft.md`. Confirm he has ladle prop and K3 envelopes.
-- [ ] Brief Zosia (Albrecht): `prototype/albrecht-actor-card-draft.md`. Confirm she has K-Z3b envelopes and pergamin props.
+- [ ] Brief Piotr (Jordan): `materials/actors/jordan-actor-script-draft.md`. Confirm he has ladle prop and K3 envelopes.
+- [ ] Brief Zosia (Albrecht): `materials/actors/albrecht-actor-card-draft.md`. Confirm she has K-Z3b envelopes and pergamin props.
 - [ ] Confirm start location. Set up any fixed drop points if using them.
 
 ---

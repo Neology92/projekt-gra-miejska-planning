@@ -2,7 +2,7 @@
 
 > **Language:** English (player-facing). Planning notes in Polish below.
 > **Status:** draft [2026-06-02, v2 — rewizja WPROWADZONA] — awaiting Oskar's review.
-> **Handed over by:** Jordan (Piotr) at Piccolo, end of Faza 2A (see `prototype/jordan-actor-script-draft.md`, STEP 4).
+> **Handed over by:** Jordan (Piotr) at Piccolo, end of Faza 2A (see `materials/actors/jordan-actor-script-draft.md`, STEP 4).
 > **Contents of physical envelope:** this note. *(The second, sealed envelope — K-Z3b — is handed to the group later by Komtur Albrecht; see `envelopes/miasto-4-Z3b.md`.)*
 > **Canon:** `puzzles/zamek-krzyzacki-lista.md` (Struktura Z3).
 
@@ -15,7 +15,7 @@
 - **Frakcja:** **miasto** (Tajna Rada). Wersja krzyżacka = lustro Z3Z (infiltracja Piccolo) — patrz `puzzles/zamek-krzyzacki-lista.md §Z3Z`, koperta `krzyzacy-3-Z3Z` (pending). NIE kopiować 1:1.
 - **Pozycja (nr otwierania):** 3. **ETAP Z3 = dwie koperty:** ta (`miasto-3-Z3`, zlecenie zwiadu, wręcza Jordan) + `miasto-4-Z3b` (rozkaz kradzieży, wręcza Albrecht w trakcie spotkania). Raport u MG jest **wspólny** dla całego etapu Z3 (Z3b nie ma osobnego checkpointu).
 - **Wkładki fizyczne:** ta notatka. *(Druga, zapieczętowana koperta — `miasto-4-Z3b` — wręczana grupie później przez Komtura Albrechta.)*
-- **Kiedy wręczyć:** Jordan (Piotr) w Piccolo, koniec Fazy 2A (patrz `prototype/jordan-actor-script-draft.md`, STEP 4).
+- **Kiedy wręczyć:** Jordan (Piotr) w Piccolo, koniec Fazy 2A (patrz `materials/actors/jordan-actor-script-draft.md`, STEP 4).
 - **Kiedy NIE wręczać:** przed rozpoznaniem Jordana / przed F2A.
 - **Dokąd odsyła:** do Albrechta (Zosia) **przed murami zamku** → tam zachodzi Z3b.
 - **Canon:** `puzzles/zamek-krzyzacki-lista.md` (Struktura Z3).

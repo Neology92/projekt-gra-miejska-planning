@@ -89,7 +89,7 @@ Część zagadek wymaga **zaniesienia odpowiedzi do MG**, żeby odebrać kolejn�
 - **Trzy rejestry razem:** *kursywa* = wewnątrz głowy · roman = słowa świata · **ramka** = meta (gra ↔ gracz). Pierwsze dwa są w fikcji; trzeci **świadomie poza nią**.
 - **Realizuje element 5 struktury koperty** („co po rozwiązaniu — punkt MG"). **Tylko** w kopertach, które realnie wymagają powrotu do MG — gdy zagadka jest wprost i kończy się raportem.
 - **Implementacja (przy renderze, NIE teraz):** osobna klasa CSS (np. `.mg-note`) w `prototype/print/src/parchment.css` — ramka/obwódka, inny krój/kolor, ewentualna ikona; wizualnie „naklejka instrukcyjna", nie pergaminowa narracja. ⚠ flaga do wdrożenia przy passie renderującym.
-- **Kandydaci (powrót do MG po rozwiązaniu):** **Z1**→raport 4 miejsc (K1), **Z3**→przyniesienie wykradzionej listy (K-Z3b), **Z4**→kod `621454` (K-Z4), **Z7**→odpowiedź finałowa przed KF. Dokładny tekst per koperta — przy finalizacji. Patrz `prototype/mg-runsheet.md` (gdzie MG przyjmuje raporty).
+- **Kandydaci (powrót do MG po rozwiązaniu):** **Z1**→raport 4 miejsc (K1), **Z3**→przyniesienie wykradzionej listy (K-Z3b), **Z4**→kod `621454` (K-Z4), **Z7**→odpowiedź finałowa przed KF. Dokładny tekst per koperta — przy finalizacji. Patrz `materials/ops/mg-runsheet.md` (gdzie MG przyjmuje raporty).
 
 ### 📌 ZAŁOŻENIA PRZED RENDEREM — nie pominąć (pinned)
 

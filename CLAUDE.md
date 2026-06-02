@@ -72,41 +72,26 @@ Autor (Oskar) prowadzi **tablicę Whimsical** z dodatkowymi materiałami — pod
 
 ## Struktura katalogu
 
+> Szczegółowa „mapa — gdzie czego szukać" + głęboki detal kopert → **`index.md`** (root). Tu tylko szkielet.
+
 ```
 projekt_gra-miejska-planning/
-├── CLAUDE.md                  ← ten plik (indeks + kontekst)
-├── concept/                   ← struktura gry: fazy, klasy, finał
-│   ├── 00-overview.md
-│   ├── 01-faza-1-kurierzy.md
-│   ├── 02-faza-2a-jordan.md
-│   ├── 03-faza-2b-asynchroniczne.md
-│   ├── 04-faza-3-final.md
-│   └── 05-tor-krzyzakow.md    ← decyzje ramowe gotowe, treść 5 zagadek do rozpisania (MVP)
-├── puzzles/                   ← zagadki (jedna na plik gdy gotowa, master-list dla orientacji)
-│   ├── 00-master-list.md
-│   ├── szlak-symboli.md
-│   ├── droga-do-jordana.md
-│   ├── zamek-krzyzacki-lista.md
-│   ├── test-jordana.md
-│   ├── kalimba.md
-│   └── polichromie-biedronka.md
-├── mechanics/                 ← jak gra działa od strony operacyjnej
-│   ├── koperty-mg.md
-│   ├── mapy-i-szyfrownik.md
-│   ├── grupy-i-klasy.md
-│   ├── motywacja-kurierow.md
-│   └── finalowe-glosowanie.md
-├── lore/                      ← treść narracyjna
-│   ├── postaci.md
-│   ├── miejsca.md
-│   ├── plotki-i-pogloski.md
-│   ├── fakty-vs-fabula.md
-│   └── meta-kartki-autorskie.md  ← brief; karty per koperta → lore/meta-kartki/
-└── todo/
-    ├── dashboard.md           ← JEDYNE źródło statusów (pasek + blokery + następny krok)
-    ├── roadmap.md             ← kolejność faz A–E
-    ├── otwarte-pytania.md     ← decyzje (otwarte + rozstrzygnięte)
-    └── archive/               ← snapshoty, zamknięte decyzje, stary materiał
+├── CLAUDE.md          ← kontekst + zasady + faktografia (auto-ładowany co sesję)
+├── index.md           ← mapa „gdzie czego szukać" + głęboki detal kopert (3 osie / join-key)
+├── concept/           ← co się dzieje: fazy (00–05), klasy, finał, tor krzyżaków
+├── puzzles/           ← jak gracze rozwiązują: zagadki Z1–Z11, ścieżki/mapy Z1, specy
+├── envelopes/         ← SPEC + MANIFEST + tekst kopert gracza (nazwa = [frakcja]-[nr]-[Zx])
+├── mechanics/         ← jak gra działa logistycznie: koperty(MG), grupy/klasy, mapy/szyfrownik, finał
+├── lore/              ← co opowiadamy: postacie, miejsca, plotki, fakty-vs-fabuła, meta-kartki/
+├── materials/         ← materiały do gry/produkcji (promowane z prototype/ w MVP)
+│   ├── actors/        ← skrypty aktorów — PL (Jordan/Piotr, Albrecht/Zosia)
+│   ├── ops/           ← dokumenty MG — PL (runsheet, tracking, group-cards, master-board, quick-hints, shopping-list)
+│   └── props/         ← rekwizyty player-facing — EN (pergamin Z3, szyfrogram Z7)
+├── prototype/         ← artefakty + generatory ścieżki prototypu: print/, icons/, meta-cards/, podglądy HTML
+├── tools/             ← generatory: map-gen/ (mapa), z1-decoder/ (deszyfrowniki)
+├── public/            ← GOTOWE pliki do druku (wynik renderów): koperty PDF, maps/, decoders/
+├── resources/         ← materiały źródłowe (zdjęcia, zrzuty referencyjne)
+└── todo/              ← dashboard (status) · roadmap (kolejność faz) · otwarte-pytania (decyzje) · archive/
 ```
 
 ## Jak czytać te pliki
@@ -174,7 +159,11 @@ Te punkty są **niezmienne** i mają pokrycie w wiki:
 - **Ostateczne pliki do druku** → folder **`public/`** w korzeniu repo (wersjonowany). Jedno miejsce na gotowe deliverable dla graczy — koperty (`prototype/print/render.ps1`), mapy (`tools/map-gen/render-map.ps1`), deszyfrowniki (`tools/z1-decoder/render-decoder.ps1`), inne rendery. Struktura: `public/maps/`, `public/decoders/`, `public/` (koperty PDF). Źródła renderów zostają w `prototype/print/src/`, `tools/map-gen/`, `tools/z1-decoder/`; `public/` trzyma tylko wynik.
 - **`tools/`** trzyma generatory artefaktów. Mogą być **puzzle-agnostyczne** (silnik `map-gen`) lub **specyficzne dla zagadki** (`z1-decoder`); narzędzie generujące idzie do `tools/`, nie do `puzzles/` (te zostają planistyczne .md). Współdzielenie danych między narzędziami = import (np. `z1-decoder` czyta glify z `map-gen/map-data.js`), nie kopia.
 - **Język planowania**: polska robocza — pliki .md, decyzje, notatki, komentarze agenta.
-- **Język materiałów gracza**: **ANGIELSKI** — wszystkie artefakty w `prototype/` i `mvp/` przeznaczone dla graczy (koperty, rekwizyty, skrypty NPC, mapy, karty) **muszą być po angielsku**. Gracze nie mówią po polsku. Dokumenty MG (arkusz śledzenia, instrukcja MG) — angielski, bo MG też może pracować z angielskim. Jedyny wyjątek: nazwy własne toruńskie pozostają w oryginale (Rynek Staromiejski, Piccolo itp.).
+- **Język materiałów — dwa adresaty** (ROZSTRZYGNIĘTE [2026-06-02], #70):
+  - **GRACZ → ANGIELSKI.** Wszystko, co gracz czyta/trzyma: koperty (`envelopes/`), rekwizyty player-facing (`materials/props/` — pergamin, szyfrogram), mapy, karty deszyfrujące. Gracze nie mówią po polsku.
+  - **AKTORZY i MG → POLSKI.** Skrypty aktorów (`materials/actors/`), dokumenty MG (`materials/ops/` — runsheet, tracking, group-cards, master-board, quick-hints, shopping-list): **instrukcje, podpowiedzi, tracking, choreografia = po polsku** (Piotr, Zosia, Oskar są Polakami — PL ułatwia). **Wyjątek:** gdy materiał aktora/MG **cytuje konkretną treść zagadki lub odpowiedź gracza** (np. hasło, ciphertext, kwestię z koperty) — cytat zostaje w oryginale (EN).
+  - **Nazwy własne toruńskie** zawsze w oryginale (Rynek Staromiejski, Piccolo itp.).
+  - ⚠ **Dług:** obecne drafty w `materials/actors/` i `materials/ops/` powstały po angielsku — **do przetłumaczenia na PL** (zadanie MVP, patrz `todo/dashboard.md`).
 
 ## Status — gdzie go szukać
 

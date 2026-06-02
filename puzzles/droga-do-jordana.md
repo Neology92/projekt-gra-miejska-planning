@@ -143,4 +143,4 @@ Autor wymienił "Picollo". Sprawdzenie:
 ### E. Hasło dnia — przekazuje je R. (w slipie K2), rozpoznaje Jordan
 - Slip R. instruuje: **po dotarciu na miejsce zwrócić się do osoby PO IMIENIU i wskazać, co kupiła dziś rano (chochlę)** → wtedy będzie wiedziała, że są „od nas". To **hasło ustalone na dziś**.
 - Łączy zagadkę z rozpoznaniem: imię (z dedukcji/zagadki) + atrybut-zakup (chochla) = parol. Spójne z „rozpoznają kucharza po chochli".
-- ⚠ **Cross-ref do zsynchronizowania:** `prototype/jordan-actor-script-draft.md` — Jordan-aktor **musi rozpoznawać trigger** „imię Jordan + «kupiłeś dziś rano chochlę»" jako hasło wejścia (a nie samo „pytanie o Jordana").
+- ⚠ **Cross-ref do zsynchronizowania:** `materials/actors/jordan-actor-script-draft.md` — Jordan-aktor **musi rozpoznawać trigger** „imię Jordan + «kupiłeś dziś rano chochlę»" jako hasło wejścia (a nie samo „pytanie o Jordana").

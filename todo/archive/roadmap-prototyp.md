@@ -10,7 +10,7 @@
 Struktura Z3 rozstrzygnięta (Oskar) i zdraftowana: **dwuetapowa koperta + rozmowa-zwiad (fałszywi donosiciele) + choreografowana kradzież listy**. Artefakty:
 - `prototype/k3-envelope-draft.md` — koperta od Jordana (framing ZWIAD, cel kradzieży ukryty).
 - `prototype/kZ3b-envelope-draft.md` — koperta ujawniająca cel (UKRADNIJ LISTĘ).
-- `prototype/albrecht-actor-card-draft.md` — **scenariusz aktorski Zosi** (komtur Albrecht): kontekst postaci + telegrafowany cykl okna kradzieży + reset/loop + reakcje (życzenie Oskara: konkretne wytyczne dla aktorów).
+- `materials/actors/albrecht-actor-card-draft.md` — **scenariusz aktorski Zosi** (komtur Albrecht): kontekst postaci + telegrafowany cykl okna kradzieży + reset/loop + reakcje (życzenie Oskara: konkretne wytyczne dla aktorów).
 - Kanon + zamknięte otwarte #1/#3 → `puzzles/zamek-krzyzacki-lista.md`; globalne #12/#13 → `todo/otwarte-pytania.md`.
 
 **Otwarte po Z3:** nośnik K-Z3b (zamek Otwarte #4) · **melodia Z4 (kalimba flisaka)** — wciąż TBD · KF (finał) + system oznaczania kopert w `mechanics/koperty-mg.md` — gotowe do draftu (niezależne).
@@ -90,7 +90,7 @@ To jest **cała** lista do wyprodukowania dla jednej ścieżki. ~20 pozycji.
 - [ ] **Szyfrownik** (obiekt terenowy → następny symbol).
 - [ ] **Pergamin z listą nazwisk TR** (Z3, klucz; nazwiska z wiki `tajna-rada.js` — research mój).
 - [ ] **Zapis melodii Z4 + mapa numeracji pręcików** (kalimba fizyczna już jest; karta = referencja: nuty/sekwencja → numery pręcików → kod liczbowy).
-- [ ] **Arkusz szyfru Z7 + materiał deszyfrujący** — szyfr **Cezara shift+7** (klucz = porównanie nagłówka Z7 z mottem Z3 — ten sam font, ta sama interpunkcja; brak koła; NIE kalimba). Prop gracza gotowy → `prototype/z7-szyfrogram-draft.md`.
+- [ ] **Arkusz szyfru Z7 + materiał deszyfrujący** — szyfr **Cezara shift+7** (klucz = porównanie nagłówka Z7 z mottem Z3 — ten sam font, ta sama interpunkcja; brak koła; NIE kalimba). Prop gracza gotowy → `materials/props/z7-szyfrogram-draft.md`.
 - [ ] **Mechanika dostarczenia = osobiste przekazanie aktorowi** (Bażyński/Piotr i Albrecht/Zosia przy stole finałowym; gracz wręcza list wybranej stronie). Mock testowy: list na prawą (Bażyński) / lewą (Albrecht) stronę stołu.
 
 ### C. Skrypty/karty aktorów (2)
@@ -108,7 +108,7 @@ To jest **cała** lista do wyprodukowania dla jednej ścieżki. ~20 pozycji.
 
 Zadania zgłoszone przez Oskara po domknięciu rdzenia Z3↔Z7. Każde z funkcją bramkującą.
 
-- [x] **Układ spacji szyfrogramu Z7 = jak w zdaniu** (NIE grupy po 5) — ZROBIONE [2026-06-01]. Aktualny ciphertext (shift+7, skrócony [2026-06-01] — „HANS VON BAYSEN IS JORDAN THE COOK", Jordan na końcu jako zaskoczenie): `OHUZ CVU IHFZLU PZ QVYKHU AOL JVVR`. *Funkcja:* granice słów pozwalają uzupełnić pomyłkową literę domysłem w trudnej zagadce terenowej. Detale → `puzzles/z7-szyfr-spec.md §0`, `prototype/z7-szyfrogram-draft.md`.
+- [x] **Układ spacji szyfrogramu Z7 = jak w zdaniu** (NIE grupy po 5) — ZROBIONE [2026-06-01]. Aktualny ciphertext (shift+7, skrócony [2026-06-01] — „HANS VON BAYSEN IS JORDAN THE COOK", Jordan na końcu jako zaskoczenie): `OHUZ CVU IHFZLU PZ QVYKHU AOL JVVR`. *Funkcja:* granice słów pozwalają uzupełnić pomyłkową literę domysłem w trudnej zagadce terenowej. Detale → `puzzles/z7-szyfr-spec.md §0`, `materials/props/z7-szyfrogram-draft.md`.
 - [ ] **Negatywne plotki o WŁASNEJ frakcji — nagroda za opcjonalną (Z4–6 mieszczanie / Z8–10 krzyżacy).** Po wykonaniu opcjonalnej grupa dostaje plotki obciążające *swoją* stronę (mieszczanie → cień na TR; krzyżacy → cień na Zakon). *Funkcja:* zasiewa wątpliwość moralną → finałowa decyzja „komu dać list" przestaje być oczywista. Wymaga: puli plotek negatywnych per frakcja (research/draft mój) + przypisania do MG. Zakres: Z4 = prototyp; Z5–6 + Z8–10 = MVP. Powiązania: `lore/plotki-i-pogloski.md` (Pula A/B), `concept/04-faza-3-final.md` („Co napędza decyzję").
 - [ ] **System oznaczania kopert: kolor grupy + numer koperty, BEZ frakcji i BEZ numeru zadania.** Koperta nosi tylko kolor (1 z 10 grup) + numer sekwencyjny. *Funkcja:* anti-spoiler — gracz nie odgaduje toru ani treści zadania z opisu; MG mapuje kolor+numer → zawartość przez arkusz śledzenia. Zakres: prototyp (1 grupa) → MVP (10). Plik docelowy: `mechanics/koperty-mg.md`.
 - [x] ~~**Zajawka ucząca liczyć litery (onboarding klucza Z7)**~~ — **NIEAKTUALNE [2026-06-01]:** klucz to teraz porównanie nagłówków (nie liczenie liter) → onboarding liczenia liter odpada. Mechanika odkrycia jest czytelna przez samą interpunkcję w nagłówku. Zarchiwizowane.
