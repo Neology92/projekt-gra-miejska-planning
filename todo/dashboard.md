@@ -45,7 +45,7 @@
 
 ```
 ✅ poz.1 Z1 — startowa ......... draft gotowy (groźba „ucięcia rąk" + segment Z1)        [envelopes/wspolne-1-Z1.md]
-✅ poz.2 Z2 — po Z1 ........... draft gotowy (Z2 Einsteina: Jordan/Piccolo/chochla; plotki Puli A; slip R.)  [envelopes/miasto-2-Z2.md]
+✅ poz.2 Z2 — po Z1 ........... draft gotowy (Z2 Einsteina: Jordan/Piccolo/miecz; zakup-parol=miecz [06-02]; plotki Puli A; slip R.)  [envelopes/miasto-2-Z2.md]
 ✅ poz.3 Z3 — od Jordana ...... draft gotowy (brief F2B + Z3 zwiad; Z3b osobno)         [envelopes/miasto-3-Z3.md]
 ✅ poz.4 Z3b — kradzież ....... draft gotowy (2. koperta etapu Z3; narracja + cytat Albrechta)  [envelopes/miasto-4-Z3b.md]
 🟡 poz.5 Z4 — melodia/kalimba . draft v2 (SCENA: martwy flisak=R. nad Wisłą, melodia=kod; instrument zatwierdzony)  [envelopes/miasto-5-Z4.md]
@@ -150,13 +150,16 @@ Szczegóły: mechanics/koperty-mg.md §ZAŁOŻENIA PRZED RENDEREM · prototype/p
 ### 🟦 Drugi tor (krzyżacki) — lustro
 
 ```
-⬜ K2-K (wersja krzyżacka) ...... Pula B plotek (krytyka Zakonu) + Z2 → Albrecht
-⬜ Skrypt Albrechta (Zosia) F2A . spotkanie krzyżaków + żądanie dowodu godności
-⬜ Z3Z — infiltracja Piccolo .... lustro Z3: kradzież „zaopatrzenia" + wyciągnięcie godziny 20:30
+⬜ K2-K (wersja krzyżacka) ...... Pula B plotek (krytyka Zakonu) + Z2 → Albrecht (handler KZ [2026-06-02])
+⬜ Skrypt Albrechta (Zosia) F2A . handler KZ: spotkanie + żądanie dowodu + wręczenie K3-K (Z3Z) + Tabeli 1
+⬜ Z3Z — infiltracja Piccolo .... lustro Z3: kradzież „zaopatrzenia" + 20:30 + obserwacja Jordana (brązowa szata + chochla → dane Z11)
 ⬜ Z8 — melodia zakonu .......... lustro Z4 (kalimba)
 ⬜ Z9 — sensoryczna piernik ..... lustro Z5
 🟡 Z10 — polichromie Biedronka .. grafiki gotowe (Piotr) [2026-06-02]; zostaje: mechanika klucza→finał + osadzenie w kopercie
-⬜ Z11 — finał krzyżaków ........ BRAK plot twistu; brama = duma Albrechta
+🟡 Z11 — finał krzyżaków ........ mechanika dwóch tabel [2026-06-02]: symbol-klucz (kolor szaty×chochla) → tabula recta → parol; spec+dane gotowe  [puzzles/z11-szyfr-spec.md]
+✅ Tabela 1 (lookup) KZ ......... 4×4 wyrenderowana (kolory EN × rysunki: piernik/miecz/chochla/świeca → gmerki; klucz centralny)  [public/z11-tabela-1-symbole.pdf · tools/z11-cipher/]
+✅ Tabela 2 (tabula recta) KZ ... 16 wierszy × A–Z wyrenderowana (A4 landscape; klucz=MARIENBURG; walidacja PASS)  [public/z11-tabela-2-tabula-recta.pdf]
+   ⬜ Otwarte do Z11: parol finalny · styl symboli (gmerki robocze) · gdzie wydać Tabelę 2 (spec §8)
 ⬜ KF — wariant krzyżacki ....... dostawa listu stronie Zakonu
 ```
 
@@ -171,6 +174,10 @@ Szczegóły: mechanics/koperty-mg.md §ZAŁOŻENIA PRZED RENDEREM · prototype/p
 
 ```
 🟡 Różne trasy Z1 per grupa ..... macierz v3.2 (10 łańcuchów) + mapa wspólna + deszyfrowniki 10 (public/decoders/) GOTOWE; zostaje dry-run R3 w terenie
+⬜ Miejscówki zadań KZ na mapie . PO ustaleniu ścieżek krzyżaków → nanieść POI zadań KZ na mapę do druku.
+                                 Nowe: „Biedronka" (Z10 polichromie). Piccolo (Z3Z) już jest. Z8 (kalimba)/Z9
+                                 (piernik) = rekwizyt wydawany przez MG, bez POI. [poboczne TR: Aleja Gmerków/ul.
+                                 Królowej Jadwigi dla Z6 też brak na mapie]. Edycja: tools/map-gen/map-data.js
 ⬜ Tabele przydziału zestawów ... A/B/C × 2 tory (patrz concept/03 — model 5+5)
 ⬜ Mechanika klucza 2B→finał .... dla wszystkich par zagadek (wymienialność 1:1)
 ```
@@ -180,8 +187,8 @@ Szczegóły: mechanics/koperty-mg.md §ZAŁOŻENIA PRZED RENDEREM · prototype/p
 ```
 ⬜ 10–40 kopii kopert ........... druk całego stosu × liczba grup
 ⬜ Stylizacja manuskryptowa ..... pergamin, kaligrafia, UnifrakturMaguntia, wosk, pieczęć
-⬜ Kostiumy 2 aktorów ........... chochla (Jordan) + płaszcz/krzyż (Albrecht)
-⬜ Rekwizyty × ilość ............ 1–2× kalimba, 1–2× zestaw sensoryczny, mapy/szyfrowniki
+⬜ Kostiumy 2 aktorów ........... chochla (Jordan, przykrywka) + płaszcz/krzyż (Albrecht)
+⬜ Rekwizyty × ilość ............ 1–2× kalimba, 1–2× zestaw sensoryczny, mapy/szyfrowniki, 1× miecz (zakup Z2 = broń finału Bażyńskiego)
 ```
 
 ### 🌐 Lokalizacja językowa — aktorzy/MG = PL (decyzja #70)
