@@ -20,7 +20,9 @@
 
 Oba tory mają osobny finał, oba to **szyfry** rozwiązywane z elementów zebranych w 2B.
 
-### Model szyfru finałowego [KANON 2026-06-01]
+### Model szyfru finałowego [KANON 2026-06-01 — TR; KZ zrewidowany 2026-06-02]
+
+> ⚠ **REWIZJA [2026-06-02]: finały NIE są już lustrem mechanicznym.** Tor **TR (Z7)** zostaje na modelu poniżej (Cezar +7 + porównanie nagłówków). Tor **KZ (Z11)** dostał **nową mechanikę: dwie tabele** (symbol-klucz `kolor szaty Jordana × chochla` → tabula recta → parol). Poniższy „KANON" opisuje odtąd **tylko Z7**; dla Z11 patrz **`puzzles/z11-szyfr-spec.md`**. Stary model Z11 (Cezar, lustro) → backup w tym samym specu.
 
 Dwa składniki: **klucz** (z zagadki obowiązkowej) + **szyfrogram** (z opcjonalnej). Patrz `puzzles/z3-lista-tr-spec.md` Decyzja #1.
 
@@ -34,7 +36,7 @@ Dwa składniki: **klucz** (z zagadki obowiązkowej) + **szyfrogram** (z opcjonal
 
 - **Z7 (mieszczanie)** → **Jordan = Hans von Baysen**. Szyfrogram to przechwycona wiadomość: Zakon wiedział, kim naprawdę jest „kucharz". Lista nazwisk z Z3 NIE zawiera „Jordana" (pseudonim) — dopiero odszyfrowanie sklei tożsamość. Po rozwiązaniu grupa wie, do kogo realnie dostarczyć list.
   - **Splice bez prowadzenia za rączkę [2026-06-01]:** przechwycony list **nie zapowiada** rodzaju informacji w szyfrze (odchudzony). Gracz spina sam z trzech wątków: trop celu z **K2** („dostarcz list **chairmanowi** Rady, w jego ręce", zasiany na początku) + wpis #1 pergaminu Z3 („Hans von Baysen — *they call him chairman*") + odszyfrowane zdanie. → chairman, do którego mieli zanieść list, to Jordan-kucharz. Zależność twarda: K2 (trop) i fraza „they call him chairman" na liście muszą zostać. Patrz `puzzles/z7-szyfr-spec.md §5`, `envelopes/miasto-2-Z2.md`.
-- **Z11 (krzyżacy)** → **HASŁO ROZPOZNAWCZE (parole)** do Albrechta. **Bez plot twistu tożsamości** [decyzja 2026-05-29] — Albrecht jawny; bramą jest **dowód godności**. Hasło to mechaniczne ucieleśnienie bramy: bez niego komtur uznaje kuriera za niegodnego. Podwójna brama: motto-klucz (tylko „swój" odszyfruje) + podanie hasła Albrechtowi.
+- **Z11 (krzyżacy)** → **HASŁO ROZPOZNAWCZE (parole)** do Albrechta. **Bez plot twistu tożsamości** [decyzja 2026-05-29] — Albrecht jawny; bramą jest **dowód godności**. Podwójna brama: **symbol-klucz** (tylko kto był u Jordana zna kolor szaty + chochlę → Tabela 1) + odczyt **tabula recta** (Tabela 2) → parol podany Albrechtowi. **[REWIZJA 2026-06-02: mechanika = dwie tabele, nie Cezar; spec `puzzles/z11-szyfr-spec.md`.]**
   - **Treść hasła — KANDYDACI [2026-06-01, do wyboru Oskara; żaden nie wybrany]:**
     - A1. `THE VIRGIN GUARDS HER OWN` (maryjne; 21 liter)
     - A2. `SUB TUUM PRAESIDIUM` (łac. „pod Twoją obronę" — autentyczna antyfona maryjna; 17 liter)
@@ -73,6 +75,7 @@ Mechanika:
 3. MG (Oskar) odczytuje **wynik zliczenia listów** — przewaga jednej ze stron.
 4. **Scenka aktorska**:
    - **Bażyński** (Piotr) i **Albrecht** (Zosia) konfrontują się.
+   - **Miecz Jordana — callback z Z2 [2026-06-02, decyzja Oskara]:** Bażyński występuje z **mieczem** — tym samym, który „kucharz Jordan kupił dziś rano" (parol Z2, tor TR). Gdy ujawnia się twist (Jordan = Bażyński), miecz domyka klamrę: niepozorny poranny zakup z początku gry okazuje się bronią przywódcy buntu. Grupy TR, które rozwiązały Z2, rozpoznają miecz → nagroda za uważność. *(Draft — choreografię i kwestię „odsłonięcia miecza" dopisuje Oskar. Rekwizyt: 1× miecz, patrz `todo/roadmap.md`.)*
    - Treść scenki zależy od wyniku — różne warianty zakończenia.
    - W tle: tłum graczy jako "lud Torunia".
 5. **Epilog**: krótki kontekst — jak naprawdę skończył się bunt (kapitulacja zamku 7-8 II, wojna 13-letnia 1454-1466, II pokój toruński 1466). Można wskazać że gracze "byli przy tym".

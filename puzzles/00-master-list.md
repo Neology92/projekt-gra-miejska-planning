@@ -7,7 +7,7 @@ Numeracja kanoniczna [2026-05-29] po scaleniu z boardem. Tory **mieszczan** i **
 | # | Zagadka | Faza | Tor | Status | Plik |
 |---|---------|------|-----|--------|------|
 | 1 | Szlak symboli | F1 | wspólne | szkicowe (mechanika OK, miejsca + szyfrownik do doboru; różne trasy per grupa) | `szlak-symboli.md` |
-| 2 | Droga do Jordana (logiczna „kto co kupił + gdzie pracuje" → Piccolo + chochla + Jordan) | koniec F1 / F2A | wspólne | szkicowe+ (treść otrzymana + zweryfikowana jednoznaczność [2026-06-01]; theming per frakcja + most do Jordan/Piccolo otwarte) | `droga-do-jordana.md` |
+| 2 | Droga do Jordana (logiczna „kto co kupił + gdzie pracuje" → Piccolo + miecz + Jordan) | koniec F1 / F2A | wspólne | szkicowe+ (treść otrzymana + zweryfikowana jednoznaczność [2026-06-01]; zakup-parol chochla → miecz [2026-06-02]; theming per frakcja + most do Jordan/Piccolo otwarte) | `droga-do-jordana.md` |
 | 2b | Test zaufania Jordana | F2A | TR (u Jordana) | placeholder | `test-jordana.md` |
 | **3** | Infiltracja zamku krzyżackiego — lista nazwisk TR (obowiązkowa TR) | F2B | mieszczanie | szkicowe | `zamek-krzyzacki-lista.md` |
 | **3Z** | Infiltracja Piccolo — kradzież zaopatrzenia + godzina buntu (obowiązkowa krzyżacy) | F2B | krzyżacy | szkicowe | `zamek-krzyzacki-lista.md` (sekcja) / do wydzielenia |
@@ -18,7 +18,7 @@ Numeracja kanoniczna [2026-05-29] po scaleniu z boardem. Tory **mieszczan** i **
 | 8 | Melodia zakonu (kalimba) — lustro Z4 | F2B | krzyżacy (opc.) | szkicowe+ (rdzeń zamknięty: melodia/kod `621454`, rekwizyt fizyczny gotowy; oprawa fabularna + instrument narracyjny do tekstu koperty) | `kalimba.md` |
 | 9 | Sensoryczna z piernikiem — lustro Z5 | F2B | krzyżacy (opc.) | szkicowe+ (mechanika = Z5; koperta Z9 draft, uzasadnienie 1+2) | `zagadka-sensoryczna.md` |
 | 10 | Polichromie w „Biedronce" + Bestiariusz Krzyżowca — lustro Z6 | F2B | krzyżacy (opc.) | szkicowe (mechanika jasna, treść do doboru) | `polichromie-biedronka.md` |
-| 11 | Finałowa — szyfr (krzyżacy) | F3 | krzyżacy | placeholder | `zagadka-finalowa.md` (sekcja) |
+| 11 | Finałowa — szyfr (krzyżacy): dwie tabele (symbol-klucz `kolor szaty Jordana × chochla` → tabula recta → parol) | F3 | krzyżacy | szkicowe (mechanika + dane robocze zamknięte [2026-06-02]; parol/styl symboli/liczba wierszy/miejsce wydania Tab.2 otwarte) | `z11-szyfr-spec.md` |
 | bonus | „Opowieść skazanego" (puzzle z trójkątów, dwustronne) | F2B | oba (opcjonalna, gdy grupa świetna) | placeholder, niski priorytet | `bonus-opowiesc-skazanego.md` (do utworzenia) |
 
 ## Legenda statusów

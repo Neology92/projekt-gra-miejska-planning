@@ -49,7 +49,7 @@ W finale (F3) zliczamy: ile listów trafiło do **Bażyńskiego** (przez Jordana
 - **Plus**: dokładność, brak fizycznego balastu.
 - **Minus**: łamie immersję historyczną.
 
-**Sugestia: B** - najbardziej immersyjne, fizyczne, możliwe do wykonania.
+**ROZSTRZYGNIĘTE [2026-06-02]: Wariant B** — aktorzy (Piotr/Bażyński + Zosia/Albrecht) odbierają listy fizycznie przy Przedzamczu o 20:30. Wybór fabularny — gracze sami decydują komu wręczyć. Nie ma pudełek, nie ma QR.
 
 ## Co jeśli grupa nie dostarczy?
 
@@ -69,7 +69,7 @@ W finale (F3) zliczamy: ile listów trafiło do **Bażyńskiego** (przez Jordana
 ## Otwarte pytania
 
 1. ~~Prosta czy ważona~~ ROZSTRZYGNIĘTE [2026-05-29]: **prosta, 1 grupa = 1 głos**.
-2. **Mechanika fizyczna** (A/B/C)? — wciąż otwarte.
+2. ~~Mechanika fizyczna (A/B/C)~~ ROZSTRZYGNIĘTE [2026-06-02]: **Wariant B** — aktorzy odbierają fizycznie.
 3. **Co jeśli niedostarczyli** (warianty 1/2/3)? — wciąż otwarte (sugestia: wariant 1).
 4. ~~Czy krzyżacy zobowiązani~~ ROZSTRZYGNIĘTE [2026-05-29]: **wolny wybór** — mogą dostarczyć dowolnej stronie.
 5. **Remis** - co wtedy? Trzeci wariant scenki? Improwizacja? — wciąż otwarte.
