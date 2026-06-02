@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Sprawdzenie prototypu — instrukcja dla Pati</title>
+<!-- Source for public/prototyp-druk/SPRAWDZENIE-PATI.pdf (this HTML is the canonical source; the .md was retired).
+     Regen: chrome --headless --print-to-pdf=public/prototyp-druk/SPRAWDZENIE-PATI.pdf this-file
+     Clean reading style (NOT parchment) — this is a working QA brief, not a player prop. -->
+<style>
+  @page { size: A4; margin: 18mm 20mm; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+    color: #20262e; font-size: 11.2pt; line-height: 1.55; margin: 0;
+    -webkit-print-color-adjust: exact; print-color-adjust: exact;
+  }
+  h1 { font-size: 20pt; margin: 0 0 4px; color: #1a2733; }
+  h2 { font-size: 13.5pt; margin: 22px 0 8px; color: #234; border-bottom: 2px solid #d8dee6; padding-bottom: 4px; }
+  p { margin: 8px 0; }
+  ul, ol { margin: 8px 0; padding-left: 22px; }
+  li { margin: 4px 0; }
+  strong { color: #11181f; }
+  code {
+    background: #eef1f5; padding: 1px 6px; border-radius: 4px;
+    font-family: "Cascadia Code", "Consolas", monospace; font-size: .9em; color: #2a3a4a;
+  }
+  .intro { background: #f4f7fa; border: 1px solid #dde4ec; border-radius: 8px; padding: 12px 16px; margin: 14px 0; }
+  .warn {
+    background: #fdeeee; border: 1.5px solid #e4a6a0; border-radius: 8px;
+    padding: 12px 16px; margin: 16px 0; color: #7a2820;
+  }
+  .warn strong { color: #6a1f18; }
+  .note { background: #eef6f0; border-left: 4px solid #5a9e72; padding: 8px 14px; margin: 12px 0; border-radius: 0 6px 6px 0; }
+  table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 10.6pt; }
+  th, td { border: 1px solid #cdd5de; padding: 6px 10px; text-align: left; vertical-align: top; }
+  th { background: #eaeff4; color: #1d2a36; font-weight: 600; }
+  td:first-child, th:first-child { text-align: center; width: 52px; font-weight: 600; }
+  .step { background: #f7f9fb; border: 1px solid #e2e8ef; border-radius: 7px; padding: 10px 15px; margin: 10px 0; }
+  .step .lbl { font-weight: 700; color: #1a2733; }
+  .star { color: #b8860b; }
+  .foot { margin-top: 22px; color: #4a5560; font-style: italic; }
+</style>
+</head>
+<body>
+
+  <h1>Sprawdzenie prototypu — instrukcja dla Pati</h1>
+
+  <div class="intro">
+    <p>Cześć! Testujemy <strong>prototyp jednej ścieżki</strong> gry terenowej (Toruń 1454). Robisz to <strong>„z kanapy"</strong> — wcielasz się w grupę graczy i przechodzisz całość na sucho, a tam gdzie trzeba „pójść w teren", używasz <strong>Google Street View</strong> (Toruń, Stare i Nowe Miasto).</p>
+    <p><strong>Po co to:</strong> chcemy sprawdzić, czy zagadki da się rozwiązać <strong>samodzielnie</strong>, czy teksty są jasne i czy nic nie zgrzyta. Najcenniejsze jest to, <strong>gdzie się zatniesz</strong> — to znaczy, że coś wymaga poprawki.</p>
+    <p>🌐 <strong>Materiały gracza są po angielsku</strong> — celowo (prawdziwi gracze nie mówią po polsku). To nie błąd.</p>
+  </div>
+
+  <div class="warn">
+    <p style="margin-top:0"><strong>⛔ Zasada nr 1 — nie psuj sobie testu</strong></p>
+    <ul style="margin-bottom:0">
+      <li><strong>NIE otwieraj folderu <code>mg-tylko/</code>.</strong> Tam są rozwiązania (klucz dla prowadzącego). Cały sens testu = czy poradzisz sobie <strong>bez</strong> zaglądania.</li>
+      <li><strong>NIE podglądaj kopert do przodu.</strong> Otwieraj je dokładnie w kolejności niżej — następną dopiero gdy rozwiążesz poprzednią. Inaczej zepsujesz sobie pomiar „czy dało się dojść samej".</li>
+      <li><strong>Nie usuwaj żadnych plików po drodze</strong> — wcześniejsze materiały bywają potrzebne na późniejszych etapach.</li>
+    </ul>
+  </div>
+
+  <h2>📨 Jak zarządzać kopertami (rób za siebie to, co w grze robi prowadzący)</h2>
+  <p>W prawdziwej grze kolejne koperty wręcza <strong>Mistrz Gry albo aktorzy</strong> — zawsze dopiero, gdy grupa rozwiąże bieżący etap. Testując sama, <strong>pilnujesz tego sama</strong>: rozwiąż krok, dopiero potem otwórz pliki następnego.</p>
+  <p>Wszystkie pliki gracza są w folderze <code>gracz/</code>, ponumerowane w kolejności otwierania:</p>
+
+  <table>
+    <tr><th>Krok</th><th>Otwórz pliki</th><th>Kiedy otworzyć</th></tr>
+    <tr><td>1</td><td><code>01a_koperta</code> + <code>01b_mapa</code> + <code>01c_deszyfrownik</code></td><td>na start</td></tr>
+    <tr><td>2</td><td><code>02a_koperta</code> + <code>02b_kartka</code></td><td>po rozwiązaniu kroku 1</td></tr>
+    <tr><td>3</td><td><code>03_koperta</code></td><td>po rozwiązaniu kroku 2</td></tr>
+    <tr><td>4</td><td><code>04a_koperta</code> + <code>04b_pergamin</code></td><td>po kroku 3</td></tr>
+    <tr><td>5</td><td><code>05_koperta</code></td><td>po kroku 4</td></tr>
+    <tr><td>6</td><td><code>06_list</code></td><td>po kroku 5</td></tr>
+    <tr><td>7</td><td><code>07_koperta</code></td><td>po kroku 6</td></tr>
+  </table>
+
+  <p><strong>Co to za dodatkowe pliki (poza samymi kopertami):</strong></p>
+  <ul>
+    <li><code>01b_mapa</code>, <code>01c_deszyfrownik</code> — pomoce do kroku 1 (koperta <code>01a</code> tłumaczy, jak ich używać).</li>
+    <li><code>02b_kartka</code> — mały skrawek dołączony do koperty kroku 2.</li>
+    <li><code>04b_pergamin</code> — dokument, który <strong>zdobywasz</strong> w kroku 4.</li>
+  </ul>
+  <div class="note">Litery (a/b/c) przy tym samym numerze = rzeczy z tego samego kroku, otwierasz je razem.</div>
+
+  <h2>🔎 Na co patrzeć (krok po kroku — bez podpowiedzi do rozwiązań)</h2>
+
+  <div class="step"><span class="lbl">Krok 1 — szlak po mieście.</span> ⚠ Ten etap jest jeszcze <strong>w budowie</strong> (mapa, znaczki i trasa to wersje robocze) — <strong>nie zgłaszaj tego jako błąd</strong>. Co możesz sprawdzić: czy koperta jasno tłumaczy <strong>mechanikę</strong> (jak się poruszać między punktami). Odpal Street View i oceń, czy detale, których szuka gracz, są <strong>realnie widoczne</strong> na ulicy.</div>
+
+  <div class="step"><span class="lbl">Krok 2.</span> Zagadka logiczna. Oceń: czy da się ją rozwiązać <strong>jednoznacznie</strong> z podanych przesłanek? Czy wskazówek wystarcza? Czy z wyniku jasno wynika, <strong>co robić dalej</strong>? Zanotuj, ile czasu Ci zajęła.</div>
+
+  <div class="step"><span class="lbl">Krok 3.</span> Brief zadania (w grze prowadzi je aktor). Oceń: czy jasne, <strong>co grupa ma zrobić</strong> i dlaczego?</div>
+
+  <div class="step"><span class="lbl">Krok 4.</span> To scena. Oceń: czy z koperty jasno wynika, <strong>co się właśnie wydarzyło</strong> i co masz teraz zrobić?</div>
+
+  <div class="step"><span class="lbl">Krok 5.</span> Zagadka oparta na <strong>dźwięku/melodii</strong> — bez fizycznego instrumentu nie przejdziesz jej w pełni, więc oceń przede wszystkim <strong>sam tekst sceny</strong> i czy instrukcja zadania jest zrozumiała.</div>
+
+  <div class="step"><span class="lbl">Krok 6 — szyfr. <span class="star">⭐ najważniejszy pomiar.</span></span> Spróbuj <strong>rozwiązać szyfr samodzielnie</strong>. Tu najbardziej interesuje nas <strong>proces</strong>: czy w ogóle domyśliłaś się, <em>jak</em> się do tego zabrać? Ile czasu zajęło? Czy coś było mylące lub czego brakowało? <em>(W notatkach opisz drogę i odczucia — nie musisz przepisywać wyniku.)</em></div>
+
+  <div class="step"><span class="lbl">Krok 7 — finał.</span> Oceń: czy jasne, <strong>co zrobić na końcu</strong>?</div>
+
+  <h2>📝 Co notować</h2>
+  <ul>
+    <li><strong>Czasy</strong> na krok (zwłaszcza krok 2 i krok 6).</li>
+    <li><strong>Gdzie utknęłaś</strong> i co było niejasne.</li>
+    <li>Czy coś <strong>zdradza za dużo</strong> (psuje zagadkę) albo <strong>za mało</strong> (nie da się ruszyć).</li>
+    <li>Literówki / błędy językowe (teksty są po angielsku).</li>
+    <li><strong>Street view:</strong> które miejsca/detale są wiarygodne, a które wątpliwe.</li>
+  </ul>
+
+  <p class="foot">Dzięki! Każda uwaga „tu się zacięłam / to było niejasne" jest na wagę złota. 🎭</p>
+
+</body>
+</html>
