@@ -61,9 +61,9 @@
 🟡 Mapa Torunia z glifami ..... mock funkcjonalny istnieje                              [prototype/mapa-z1-podglad.html]
 ✅ Deszyfrownik (karty) ....... generator tools/z1-decoder/ (derywuje z Z1_GROUPS); 10 PDF public/decoders/ per kolor grupy; walidacja PASS  [tools/z1-decoder/README.md]
 🟡 Pergamin z listą nazwisk TR  research gotowy + draft (EN); klucz=Decyzja#1  [prototype/pergamin-lista-tr-draft.md · puzzles/z3-lista-tr-spec.md]
-⬜ Zapis melodii Z4 + pręciki . karta referencyjna: nuty → numery pręcików → kod
+✅ Zapis melodii Z4 + pręciki . nagranie gotowe; pręciki oznaczone liczbowo (C:1, D:2, …); kod 621454
 🟡 Arkusz szyfru Z7 ........... Cezar +7 (nagłówki w tym samym foncie; Z3 jawny ↔ Z7 zaszyfrowane; brak koła)  [prototype/z7-szyfrogram-draft.md]
-⬜ Mechanika dostarczenia ..... mock: list na prawą (Bażyński) / lewą (Albrecht) stronę stołu
+✅ Mechanika dostarczenia ..... Przedzamcze 20:30 — list wręczany fizycznie aktorowi (Piotr/Bażyński lub Zosia/Albrecht); wybór fabularny, 1 grupa = 1 głos
 ```
 
 ## C. Skrypty/karty aktorów (2)
@@ -78,14 +78,14 @@
 ```
 🟡 Arkusz śledzenia MG ........ draft gotowy (flow strip, tabela etapów, klucze odpowiedzi, lista rekwizytów)  [prototype/mg-tracking-sheet.md]
 🟡 Instrukcja MG .............. draft gotowy (fazy, drabinki hintów, protokoły awaryjne)  [prototype/mg-runsheet.md]
-⬜ Lista przedmiotów .......... co kupić/wydrukować (prototyp vs MVP)
+→MVP Lista przedmiotów ........ co kupić/wydrukować/zdobyć — zakres pełnej gry
 ```
 
 ## E. Domknięcie
 
 ```
 ✅ Pass spójności ............. łańcuch spójny end-to-end; jedyne niedomknięcie = glify Z1 (zależne od mapy)  [prototype/pass-spojnosci-prototyp.md]
-⬜ Dry-run na papierze ........ przejście ścieżki, pomiar czasu (zwł. szyfr Cezara Z7)
+✅ Dry-run na papierze ........ DONE [2026-06-02]: przejście ścieżki, wnioski → MVP
 ```
 
 ## 🔒 Decyzje Oskara blokujące prototyp (aktualne)
@@ -93,17 +93,17 @@
 ```
 ┌─ Z1 ──────────── ✅ trasa = Wariant A [2026-06-02]: Piernikarka→osiołek→Krzywa Wieża→Kopernik (4 kroki).
 │                  Zostaje (nie-decyzyjne): repropagacja glifów/deszyfrownika (z1-szlak-spec §baner) +
-│                  kolizja ☆/⭐ [agent glify] + dry-run R2 w terenie
-└─ K8/Z7 ─────────  review szyfrogramu (treść gotowa: z7-szyfrogram-draft.md) — czeka na „ok" Oskara
+│                  kolizja ☆/⭐ [agent glify]
+└─ K8/Z7 ─────────  ✅ ZATWIERDZONE [2026-06-02]: rama narracyjna + meta-instrukcja MG wdrożone
 ```
 
 > Log zamkniętych decyzji → `todo/archive/decyzje-zamkniete.md` (nie trzymamy changelogu w dashboardzie — git + archiwum).
 
-## 🔄 Czeka na zewnątrz
+## 🔄 Przesunięte na MVP
 
 ```
-Z1 dry-run R2 — Oskar weryfikuje sightline 6 par + S02 kaszownik (z1-dry-run-sheet.md §RUNDA 2)
-                → potem domknięcie macierzy v2 + regeneracja 10 kart (MVP / dyspersja)
+Z1 dry-run w terenie (R2) — Oskar weryfikuje sightline w terenie (opcjonalnie po MVP)
+                           → domknięcie macierzy v2 + regeneracja 10 kart (dyspersja)
 ```
 
 ## 🖨 Render kopert — ODBLOKOWANY ✅
@@ -211,15 +211,15 @@ Szczegóły: mechanics/koperty-mg.md §ZAŁOŻENIA PRZED RENDEREM · prototype/p
 ## 📊 Pasek postępu
 
 ```
-PROTOTYP   ██████████████████░░  ~90%   (koperty v2 wyrenderowane, K8 gotowy, pass spójności PASS; zostają: dry-run, review Oskara/Piotra, glify Z1 z mapy)
-MVP        ██░░░░░░░░░░░░░░░░░░  ~10%   (architektura ustalona; Z1 dyspersja czeka R2; produkcja, drugi tor, skalowanie przed nami)
+PROTOTYP   ██████████████████░░  ~98%   (dry-run DONE, Z7 OK; czeka: finalne recenzje Oskara/Piotra przed MVP)
+MVP        ██░░░░░░░░░░░░░░░░░░  ~10%   (architektura ustalona; produkcja, drugi tor, skalowanie przed nami; Z1 terrain czeka)
 ```
 
 ## 🎯 Następny krok krytyczny
 
 ```
-► Prototyp — cały stos kopert v2 (K1/K2/K3/K-Z3b/K-Z4/K8/KF) wyrenderowany do public/; pass spójności PASS
-► Prototyp — do domknięcia: dry-run na papierze · glify Z1 z mapy (sprzęga z Z1 dry-run R2)
-► Prototyp — review: stos kopert + Jordan/Albrecht — czeka na Oskara i Piotra
-► Z1 dyspersja (MVP) — czeka: dry-run R2 (Oskar w terenie) → z1-dry-run-sheet.md §RUNDA 2
+► Prototyp — review stos kopert + skrypty aktorów czeka na Oskara i Piotra (wszystko wyrenderowane)
+► Prototyp → MVP — zapisać wnioski z dry-runu papierowego
+► MVP Phase A — rozstrzygnąć 4 strategiczne pytania (#3, #6, #15, #59)
+► MVP Phase B — treści tor krzyżacki + opcjonalne zagadki
 ```
