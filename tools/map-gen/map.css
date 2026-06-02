@@ -61,7 +61,7 @@ html, body {
 
 #map-inset-overlay {
   position: absolute;
-  bottom: 14px; right: 14px;   /* over the Wisła (only pin-free area) */
+  bottom: 14px; right: 0px;   /* over the Wisła (only pin-free area); shifted 5% right */
   width: var(--inset-w);
   height: var(--inset-h);
   z-index: 500;
