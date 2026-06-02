@@ -3,7 +3,7 @@
 
 **Koperta:** Z8 · **Zadanie:** Melodia zakonu · **Tor:** krzyżacy (Zakon Krzyżacki)
 
-> **Lustro Z4.** Baza faktyczna tej kartki jest wspólna z kartką `miasto-4-Z4.md` (tor mieszczan). Ten sam instrument, ta sama melodia, ten sam kod. Różni się: **klimat opisu** (zakonny zamiast wiślanego — ale w obu wypadkach bez nazwy własnej, patrz niżej), frakcja i perspektywa emocjonalna. Sekcje FAKT i ANACHRONIZM (kalimba) są tożsame — poniżej zaznaczono, gdzie pojawia się różnica torów.
+> **Lustro Z4.** Baza faktyczna tej kartki jest wspólna z kartką `miasto-5-Z4.md` (tor mieszczan). Ten sam instrument, ta sama melodia, ten sam kod. Różni się: **klimat opisu** (zakonny zamiast wiślanego — ale w obu wypadkach bez nazwy własnej, patrz niżej), frakcja i perspektywa emocjonalna. Sekcje FAKT i ANACHRONIZM (kalimba) są tożsame — poniżej zaznaczono, gdzie pojawia się różnica torów.
 
 ---
 
@@ -85,4 +85,4 @@ W kopercie Z8 instrument **nie ma nazwy własnej** — opisany jest ogólnie jak
 | `warstwa-anachronizmy.js` | zestawienie obiektów nieistniejących w 1454 r. |
 | `fakty-vs-fabula.md` poz. 2 | decyzja o kalimbie jako anachronizmie świadomym |
 | `puzzles/kalimba.md` | mechanika zagadki, mapowanie nuta→liczba, instrument narracyjny per tor |
-| `miasto-4-Z4.md` | kartka lustrzana — tor mieszczan, baza faktyczna wspólna |
+| `miasto-5-Z4.md` | kartka lustrzana — tor mieszczan, baza faktyczna wspólna |

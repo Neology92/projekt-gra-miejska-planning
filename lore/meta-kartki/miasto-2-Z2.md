@@ -1,4 +1,4 @@
-# Kartka autorska — wspolne-2-Z2 (Z2 droga do Jordana)
+# Kartka autorska — miasto-2-Z2 (Z2 droga do Jordana)
 > ⚠ SPOILER — zdradza twist Jordan = Bażyński · meta-dodatek „od autora" · draft [2026-06-02]
 
 **Koperta:** poz. 2 (wspólna) · **Zadanie:** Z2 droga do Jordana · **Tor:** wspólny

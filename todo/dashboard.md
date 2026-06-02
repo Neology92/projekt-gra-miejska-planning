@@ -32,14 +32,16 @@
 
 ## A. Teksty kopert (7)
 
+> Migracja [2026-06-02]: drafty przeniesione z `prototype/k*.md` → `puzzles/envelopes/` (spec+manifest). Numeracja = kolejność otwierania (wstawka Z3b: opcjonalna→5, finał→6). Mapa starych↔nowych: `prototype/envelope-map.md`.
+
 ```
-✅ K1 — startowa ............... draft gotowy (groźba „ucięcia rąk" + segment Z1)        [prototype/k1-envelope-draft.md]
-✅ K2 — po Z1 ................. draft gotowy (Z2 Einsteina wpisana: Jordan/Piccolo/chochla; plotki Puli A; slip R.)  [prototype/k2-envelope-draft.md]
-✅ K3 — od Jordana ............ draft gotowy (brief F2B + Z3 zwiad; K-Z3b osobno)         [prototype/k3-envelope-draft.md]
-✅ K-Z3b — ujawnienie kradzieży  draft gotowy (dwuetapowa; narracja + cytat Albrechta)   [prototype/kZ3b-envelope-draft.md]
-🟡 K-Z4 — melodia/kalimba ..... draft v2 (SCENA: martwy flisak=R. nad Wisłą, melodia=kod; instrument zatwierdzony)  [prototype/kZ4-envelope-draft.md]
+✅ poz.1 Z1 — startowa ......... draft gotowy (groźba „ucięcia rąk" + segment Z1)        [puzzles/envelopes/wspolne-1-Z1.md]
+✅ poz.2 Z2 — po Z1 ........... draft gotowy (Z2 Einsteina: Jordan/Piccolo/chochla; plotki Puli A; slip R.)  [puzzles/envelopes/miasto-2-Z2.md]
+✅ poz.3 Z3 — od Jordana ...... draft gotowy (brief F2B + Z3 zwiad; Z3b osobno)         [puzzles/envelopes/miasto-3-Z3.md]
+✅ poz.4 Z3b — kradzież ....... draft gotowy (2. koperta etapu Z3; narracja + cytat Albrechta)  [puzzles/envelopes/miasto-4-Z3b.md]
+🟡 poz.5 Z4 — melodia/kalimba . draft v2 (SCENA: martwy flisak=R. nad Wisłą, melodia=kod; instrument zatwierdzony)  [puzzles/envelopes/miasto-5-Z4.md]
 🟡 K8 — Z7 finałowy szyfr ..... szyfrogram + uniwersalna rama narracyjna (przechwycony list, method-agnostic)  [prototype/z7-szyfrogram-draft.md]
-🟡 KF — finał ................. draft gotowy (Przedzamcze, ósme bicie, wolny wybór; list nieotwarty, maski spadają)  [prototype/kF-envelope-draft.md]
+🟡 poz.6 Z7 — finał .......... draft gotowy (Przedzamcze, ósme bicie, wolny wybór; list nieotwarty, maski spadają)  [puzzles/envelopes/miasto-6-Z7.md]
 ```
 
 ## B. Rekwizyty drukowane (8)

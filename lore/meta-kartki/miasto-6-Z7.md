@@ -1,4 +1,4 @@
-# Kartka autorska — miasto-5-Z7 (Z7 finał — szyfrogram, twist Jordan = Bażyński)
+# Kartka autorska — miasto-6-Z7 (Z7 finał — szyfrogram, twist Jordan = Bażyński)
 > ⚠ SPOILER — finał, twist Jordan=Bażyński · meta-dodatek „od autora" · draft [2026-06-02]
 
 **Koperta:** poz. 5 (tor mieszczan) · **Zadanie:** Z7 — odszyfruj przechwycony list; odkryj, kim jest Jordan · **Tor:** mieszczanie / Tajna Rada

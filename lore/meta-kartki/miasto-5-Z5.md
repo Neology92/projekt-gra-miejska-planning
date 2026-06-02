@@ -1,4 +1,4 @@
-# Kartka autorska — miasto-4-Z5 (Z5 zagadka sensoryczna — piernikarz)
+# Kartka autorska — miasto-5-Z5 (Z5 zagadka sensoryczna — piernikarz)
 > meta-dodatek „od autora" · draft [2026-06-02]
 
 **Koperta:** poz. 4 (tor mieszczan) · **Zadanie:** Z5 — rozpoznanie składników piernika (słuch, węch, waga) · **Tor:** mieszczanie / Tajna Rada

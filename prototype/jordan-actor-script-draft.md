@@ -119,5 +119,5 @@ That's it. They leave.
 
 ## REWIZJA [2026-06-02] — ✅ częściowo WPROWADZONA
 
-1. **Hasło dnia (E) — ✅ WPROWADZONE w STEP 1.** Trigger rozpoznania = *imię „Jordan" + „kupiłeś dziś rano chochlę (a ladle)"* (parol dnia); po poprawnym parolu Jordan: *„Then I think I know who sent you."* Zsynchronizowane z `k2-envelope-draft.md §slip R./F` i `puzzles/droga-do-jordana.md §E` (chochla = zakup Jordana w zagadce = atrybut rozpoznawczy = hasło). Opaska/kolor zostaje jako warstwa logistyczna MG.
+1. **Hasło dnia (E) — ✅ WPROWADZONE w STEP 1.** Trigger rozpoznania = *imię „Jordan" + „kupiłeś dziś rano chochlę (a ladle)"* (parol dnia); po poprawnym parolu Jordan: *„Then I think I know who sent you."* Zsynchronizowane z `puzzles/envelopes/miasto-2-Z2.md §Rewizja (slip R./F)` i `puzzles/droga-do-jordana.md §E` (chochla = zakup Jordana w zagadce = atrybut rozpoznawczy = hasło). Opaska/kolor zostaje jako warstwa logistyczna MG.
 2. **Drobna flaga — STEP 4 „Don't open it out here" (linia ~76):** to wypowiedź NPC w świecie (ostrożny kucharz), nie meta-logistyka — więc *prawdopodobnie OK*. Ale leży blisko wycinanego „do not open it in front of him / open once clear" (K3, Zasada #3). ⚠ przy ujednolicaniu zważyć, czy zostawić, czy przykryć opisem; **nie tnę automatycznie** — do decyzji Oskara.

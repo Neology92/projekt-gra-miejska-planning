@@ -1,5 +1,5 @@
-<!-- META-CARD · envelope 5 (Z7, finale — town track) · the last card: open when the game is over -->
-<!-- DRAFT EN · ~160 words · SPOILER: full twist · curated from lore/meta-kartki/miasto-5-Z7.md (2 reveals only) -->
+<!-- META-CARD · envelope 6 (Z7, finale — town track) · the last card: open when the game is over -->
+<!-- DRAFT EN · ~160 words · SPOILER: full twist · curated from lore/meta-kartki/miasto-6-Z7.md (2 reveals only) -->
 
 ## ⚠ Jordan was never a cook. He's the man you carried every letter back to.
 

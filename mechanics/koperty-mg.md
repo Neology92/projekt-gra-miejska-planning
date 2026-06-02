@@ -60,7 +60,7 @@ Koperta łączy **dwa rejestry**, rozróżniane **typograficznie**:
 - **Hybryda, nie „albo/albo":** koperta-wiadomość (np. K1 list zleceniodawcy) dostaje **oprawę narracyjną** (otwarcie/zamknięcie z głów) — **nie jest przepisywana, tylko rozszerzana**. Koperta bez nadawcy (np. K-Z3b) bywa w całości rejestrem narracyjnym, z cytatem NPC roman w środku.
 - **Wręczenie koperty przez NPC** (np. Albrecht wręcza K-Z3b) = **meta-interakcja poza światem gry** (jak rozdanie karty). W fikcji nikt jej nie „daje".
 - **Po co narracja:** immersja + rozwiązuje problem nośnika — koperta bez nadawcy nie wymaga uzasadnienia, kto ją podał.
-- **Wzorce:** `prototype/kZ3b-envelope-draft.md` (pełna narracja + cytat roman) · `prototype/k1-envelope-draft.md`, `k2-envelope-draft.md` (hybryda: wiadomość + oprawa narracyjna).
+- **Wzorce:** `puzzles/envelopes/miasto-4-Z3b.md` (pełna narracja + cytat roman) · `puzzles/envelopes/wspolne-1-Z1.md`, `puzzles/envelopes/miasto-2-Z2.md` (hybryda: wiadomość + oprawa narracyjna).
 
 #### Osoba narracji — 2. osoba „you" [decyzja Oskara 2026-06-02]
 
@@ -68,7 +68,7 @@ Koperta łączy **dwa rejestry**, rozróżniane **typograficznie**:
   - Przykład: *„we had hoped to find our contact waiting"* → *„you had hoped to find your contact waiting"*.
   - **Po co:** narrator-na-zewnątrz może swobodniej odmalować świat dookoła i **wpleść plotki/pogłoski w opis podróży**, zamiast wyliczać je jako osobne cytaty „overheard near the square / whispered at the inn".
   - To zmienia **OSOBĘ** rejestru kursywy, **nie** sam podział kursywa/roman (klucz „kursywa=głowa, roman=słowa świata" obowiązuje dalej).
-- **Plotki/pogłoski → wplecione w narrację-podróż** (mowa zależna / opis tego, co grupa mija i słyszy), nie wypisane listą cytatów. ⚠ **To zastępuje** wcześniejszą notę „plotki overheard docelowo roman" (`k2-envelope-draft.md`): w narracji 2. os. plotki idą kursywą jako część opisu, nie roman.
+- **Plotki/pogłoski → wplecione w narrację-podróż** (mowa zależna / opis tego, co grupa mija i słyszy), nie wypisane listą cytatów. ⚠ **To zastępuje** wcześniejszą notę „plotki overheard docelowo roman" (`puzzles/envelopes/miasto-2-Z2.md`): w narracji 2. os. plotki idą kursywą jako część opisu, nie roman.
 - **Zakres:** ROZSTRZYGNIĘTE [2026-06-02] — **ujednolicić do 2. osoby „you" we wszystkich kopertach** (K1, K2, K3, K-Z3b, K-Z4, KF). Nie różnicujemy; głos zbiorowy „we" wycofany także z finałowych.
 
 ### Zasada nadrzędna #3: koperta opisuje świat wyobrażony, nie komentuje realnego gracza [decyzja Oskara 2026-06-02]

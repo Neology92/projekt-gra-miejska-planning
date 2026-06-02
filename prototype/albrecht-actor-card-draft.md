@@ -7,7 +7,7 @@
 > **When:** Faza 2B, Z3 — town (TR) groups come to you after Jordan sends them on the "scouting" errand (K3).
 > **Canon:** `puzzles/zamek-krzyzacki-lista.md` (Struktura Z3) · the list they steal → `prototype/pergamin-lista-tr-draft.md`.
 
-> ✅ **REWIZJA [2026-06-02] — model patrolu WPROWADZONY (STEP 2/3 przepisane).** Sekwencja (Oskar): komtur **wręcza kopertę milcząco → odchodzi kawałek → odkłada listę w konkretnym miejscu → patroluje** wokół niej. Okno kradzieży = faza AWAY (na końcu obchodu, plecami do listy). STEP 2 = „odłóż listę, wręcz, odejdź w patrol"; STEP 3 = cykl patrolu (A AWAY / B RETURNING / C AT THE LIST), telegraf/powtarzalność/reset zachowane. Spójne z `prototype/kZ3b-envelope-draft.md §SEKWENCJA` i kopertą K-Z3b (olśnienie wyprzedzające). `todo/otwarte-pytania.md #65`.
+> ✅ **REWIZJA [2026-06-02] — model patrolu WPROWADZONY (STEP 2/3 przepisane).** Sekwencja (Oskar): komtur **wręcza kopertę milcząco → odchodzi kawałek → odkłada listę w konkretnym miejscu → patroluje** wokół niej. Okno kradzieży = faza AWAY (na końcu obchodu, plecami do listy). STEP 2 = „odłóż listę, wręcz, odejdź w patrol"; STEP 3 = cykl patrolu (A AWAY / B RETURNING / C AT THE LIST), telegraf/powtarzalność/reset zachowane. Spójne z `puzzles/envelopes/miasto-4-Z3b.md §Rewizja (SEKWENCJA)` i kopertą Z3b (olśnienie wyprzedzające). `todo/otwarte-pytania.md #65`.
 
 ---
 
@@ -165,7 +165,7 @@ After a group steals the list and leaves:
 
 **Kradzież OBLIGATORYJNA:** każda grupa MUSI zdobyć listę (nagłówek = klucz Cezara do Z7). Dlatego okno hojne + asysta MG przy 3+ nieudanych próbach. Brak ścieżki „nie zdobył".
 
-**Nośnik K-Z3b — założenie do akceptacji:** karta zakłada, że Albrecht **fizycznie wręcza** K-Z3b (życzenie Oskara: „przekazuje kopertę kolejną"). Drobna nielogiczność (wróg daje rozkaz Rady) zaadresowana w `prototype/kZ3b-envelope-draft.md` (treść = głos rozkazu/spostrzeżenia gracza, nie „od Albrechta"). Alternatywa nośnika → `zamek-krzyzacki-lista.md` Otwarte #4.
+**Nośnik K-Z3b — założenie do akceptacji:** karta zakłada, że Albrecht **fizycznie wręcza** K-Z3b (życzenie Oskara: „przekazuje kopertę kolejną"). Drobna nielogiczność (wróg daje rozkaz Rady) zaadresowana w `puzzles/envelopes/miasto-4-Z3b.md` (treść = głos rozkazu/spostrzeżenia gracza, nie „od Albrechta"). Alternatywa nośnika → `zamek-krzyzacki-lista.md` Otwarte #4.
 
 **Lokalizacja przed murami:** do ruin nie wchodzimy (biletowane). Konkretny punkt (Przedzamcze / przy Gdanisku) — `przewodnik-miejsc-gry.js`, do ustalenia w wizji lokalnej.
 
@@ -190,4 +190,4 @@ After a group steals the list and leaves:
 **✅ WPROWADZONE w karcie [2026-06-02]:**
 - **STEP 2** przepisany: „set the list down → hand over K-Z3b in silence → walk off into patrol" (usunięte „nie odpędzaj, niech zostaną przy liście"; wręczenie = meta, zero rozmowy o kopercie).
 - **STEP 3** przepisany: cykl **patrolu** — A AWAY (na końcu obchodu, plecami do listy → okno) / B RETURNING / C AT THE LIST. Geometria „lista na lewej / obrót w prawo" zastąpiona patrolem wokół odłożonej listy. Zachowane: telegraf, powtarzalność, złapanie=reset, asysta MG przy 3+, reset egzemplarza. BEFORE GROUPS (LEFT→fixed spot) i STEP 4 ("finish your circuit") zsynchronizowane.
-- K-Z3b = **olśnienie wyprzedzające** (Model A) — spójne z `prototype/kZ3b-envelope-draft.md §SEKWENCJA`.
+- K-Z3b = **olśnienie wyprzedzające** (Model A) — spójne z `puzzles/envelopes/miasto-4-Z3b.md §Rewizja (SEKWENCJA)`.

@@ -1,4 +1,4 @@
-<!-- META-CARD · envelope 4 (Z6, Hanseatic marks — town track, optional) · open once your final envelope is in hand -->
+<!-- META-CARD · envelope 5 (Z6, Hanseatic marks — town track, optional) · open once your final envelope is in hand -->
 <!-- DRAFT EN · ~150 words -->
 
 ## Before signatures, merchants signed with a mark — and you just read a wall of them.

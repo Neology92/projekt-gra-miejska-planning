@@ -24,7 +24,7 @@ Finałowa kartka (Z7/Z11) czytana **po grze** — tu trafiają wszystkie odłoż
 ## Kwestie do rozstrzygnięcia (oflagowane, NIE rozwiązane)
 
 1. **Z1 — wariantowość.** Hook „almost nothing was really there" pasuje do trasy prototypu (3 z 4 punktów anachroniczne). Pełna gra ma różne trasy per grupa → każda będzie potrzebować swojego wariantu Z1 (inne punkty = inne ciekawostki). Ta karta = wersja trasy prototypu.
-2. **Z2 — rozbieżność frakcji.** `puzzles/droga-do-jordana.md` sygnalizuje, że krzyżacki cel Z2 może być inny niż Jordan (krzyżacy idą ku Albrechtowi). Karta `wspolne-2-Z2` napisana **neutralnie** (legenda Jordana + anachronizm Piccolo — dotyka obu frakcji, bo obie stykają się z Jordanem/Piccolo do poz. 3). Jeśli Z2 krzyżaków faktycznie się rozjedzie → potrzebny wariant krzyżacki.
+2. **Z2 — rozbieżność frakcji.** `puzzles/droga-do-jordana.md` sygnalizuje, że krzyżacki cel Z2 jest inny niż Jordan (krzyżacy idą ku Albrechtowi) — dlatego **brief Z2 forkuje per frakcja** (`miasto-2-Z2` + `krzyzacy-2-Z2` pending, decyzja 2026-06-02). Karta meta `miasto-2-Z2` napisana **neutralnie** (legenda Jordana + anachronizm Piccolo — dotyka obu frakcji, bo obie stykają się z Jordanem/Piccolo do poz. 3) → ta sama treść = baza dla `krzyzacy-2-Z2` przy MVP.
 
 ## Mapa kart (= koperty, per frakcja)
 

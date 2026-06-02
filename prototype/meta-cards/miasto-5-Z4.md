@@ -1,4 +1,4 @@
-<!-- META-CARD · envelope 4 (Z4, raftsman's melody — town track, optional) · open once your final envelope is in hand -->
+<!-- META-CARD · envelope 5 (Z4, raftsman's melody — town track, optional) · open once your final envelope is in hand -->
 <!-- DRAFT EN · ~150 words · kalimba reveal · NO Bażyński (finale-only) -->
 
 ## That "small iron-tongue instrument" was an African thumb piano.

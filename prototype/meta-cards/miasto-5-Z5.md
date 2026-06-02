@@ -1,4 +1,4 @@
-<!-- META-CARD · envelope 4 (Z5, gingerbread — town track, optional) · open once your final envelope is in hand -->
+<!-- META-CARD · envelope 5 (Z5, gingerbread — town track, optional) · open once your final envelope is in hand -->
 <!-- DRAFT EN · ~150 words -->
 
 ## Everything you smelled was real 1454 — except the one sweet thing.
