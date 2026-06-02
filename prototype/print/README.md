@@ -6,11 +6,13 @@ Wydruki dla prototypu pojedynczej ścieżki. Generowane z HTML w `src/` przez `r
 
 | PDF | Co to | Dla kogo |
 |---|---|---|
-| `z3-pergamin-lista-tr.pdf` | Lista nazwisk Tajnej Rady (wywiad Zakonu), motto = klucz | **gracz** (Z3, niesiony do finału) |
-| `z7-przechwycony-list.pdf` | Przechwycony list krzyżacki, szyfrogram Cezara +7 | **gracz** (Z7, koperta K8) |
-| `z3-z7-klucz-mg.pdf` | Klucz: +7, wyrównanie nagłówków, odszyfrowanie, hint awaryjny | **MG — NIE dla gracza** |
+| `miasto-04b-Z3-pergamin.pdf` | Lista nazwisk Tajnej Rady (wywiad Zakonu), motto = klucz | **gracz** (koperta 04, niesiony do finału) |
+| `miasto-06a-Z7-list.pdf` | Przechwycony list krzyżacki, szyfrogram Cezara +7 | **gracz** (koperta 06, szyfr finałowy) |
+| `mg-Z3Z7-klucz.pdf` | Klucz: +7, wyrównanie nagłówków, odszyfrowanie, hint awaryjny | **MG — NIE dla gracza** |
 
-> ⚠ `z3-z7-klucz-mg.pdf` zawiera rozwiązanie. Drukuj osobno, nie dawaj graczom.
+> ⚠ `mg-Z3Z7-klucz.pdf` zawiera rozwiązanie. Drukuj osobno, nie dawaj graczom. Jako jedyny rekwizyt **nie nosi stempla** (nie trafia do koperty gracza).
+>
+> Nazwy zgodne z kanonem `[frakcja]-[NN][slot]-[Zx][-typ]` (patrz `envelopes/README.md §Systematyka nazw`). Rekwizyty noszą pozycję koperty (pergamin = łup etapu 04; szyfrogram = 06a, otwierany przed notatką finałową 06b).
 
 ## Regeneracja
 
@@ -45,10 +47,19 @@ lista). Używaj tylko gdy naprawdę chcesz PDF ze starym tekstem.
 Stan [2026-06-02]: **port prozy v2 wykonany** — wszystkie 7 kopert kurierskich (`wspolne-1-Z1,
 miasto-2-Z2, miasto-2-Z2-slip, miasto-3-Z3, miasto-4-Z3b, miasto-5-Z4, miasto-6-Z7` — nazwy
 zgodne z `envelopes/<frakcja>-<poz>-<zadanie>.md`) mają prozę v2 w HTML, markery RENDER-BLOCK
-usunięte. `z7-przechwycony-list`
-(= koperta K8) dostał ramę narracyjną v2 + ramkę `.mg-note` (sam dispatch + motto + cipher-body
-nietknięte — load-bearing monospace). **Bez markerów:** `z3-pergamin-lista-tr`, `z3-z7-klucz-mg`
+usunięte. `miasto-06a-Z7-list`
+(= szyfr finałowy) dostał ramę narracyjną v2 + ramkę `.mg-note` (sam dispatch + motto + cipher-body
+nietknięte — load-bearing monospace). **Bez markerów:** `miasto-04b-Z3-pergamin`, `mg-Z3Z7-klucz`
 — dokumenty in-world (lista Zakonu / klucz MG), własne spece, render-zweryfikowane, bez ramy v2.
+
+### Stempel produkcyjny (edge-stamp)
+
+Każdy rekwizyt gracza nosi na prawym brzegu **pionowy, blady, drobny stempel** `[frakcja][NN]-[kolor]`
+(np. `m06-czerwony`) — informacja, do której koperty (nr) i jakiego koloru drużyny należy karta. Służy
+**sortowaniu wydruków**, nie graczom (celowo trudno-odczytywalny). Źródła HTML noszą placeholder
+`__STAMP__`; `render.ps1 -Color <kolor>` podmienia go przy renderze (temp-copy, źródła zostają czyste).
+`assemble-prototype-bundle.ps1 -Decoder Gn` derywuje kolor z tabeli (`mechanics/grupy-i-klasy.md`).
+Klucz MG (`mg-Z3Z7-klucz`) **nie ma** placeholdera → renderuje się bez stempla.
 
 ### Dom draftów (założenie — przenosiny w toku)
 

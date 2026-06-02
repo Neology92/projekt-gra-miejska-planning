@@ -24,15 +24,25 @@ $bundle   = Join-Path $public  'prototyp-druk'
 $gracz    = Join-Path $bundle  'gracz'
 $mgOnly   = Join-Path $bundle  'mg-tylko'
 
+# Decoder Gn -> team color (Polish), for the per-prop edge-stamp. Source: mechanics/grupy-i-klasy.md.
+$colorByDecoder = @{
+  'G1'='czerwony'; 'G2'='pomaranczowy'; 'G3'='zolty';     'G4'='zielony';  'G5'='turkusowy'
+  'G6'='niebieski'; 'G7'='fioletowy';   'G8'='bialy';      'G9'='brazowy';  'G10'='czarny'
+}
+$color = $colorByDecoder[$Decoder]
+if (-not $color) { throw "Unknown -Decoder '$Decoder' (expected G1..G10)." }
+
 # 1 — fresh render of all envelope/prop PDFs into public/ (honours the staleness guard).
+# Pass the team color so the edge-stamp matches the chosen decoder (one color per group).
 if (-not $SkipRender) {
-  Write-Host "Rendering source PDFs (render.ps1)..." -ForegroundColor Cyan
-  & (Join-Path $here 'render.ps1')
+  Write-Host "Rendering source PDFs (render.ps1) — stamp color: $color ($Decoder)..." -ForegroundColor Cyan
+  & (Join-Path $here 'render.ps1') -Color $color
   if ($LASTEXITCODE) { throw "render.ps1 failed (exit $LASTEXITCODE) — bundle aborted." }
 }
 
-# 2 — clean + recreate the bundle folders (idempotent).
-if (Test-Path $bundle) { Remove-Item $bundle -Recurse -Force }
+# 2 — clean + recreate ONLY the generated subfolders (idempotent). We must NOT nuke the whole
+# bundle root: SPRAWDZENIE-PATI.pdf lives there and is authored separately (not by this script).
+foreach ($d in @($gracz, $mgOnly)) { if (Test-Path $d) { Remove-Item $d -Recurse -Force } }
 New-Item -ItemType Directory -Force -Path $gracz, $mgOnly | Out-Null
 
 # 3 — player-facing props, numbered in PLAY ORDER (step = open order).
@@ -40,17 +50,20 @@ New-Item -ItemType Directory -Force -Path $gracz, $mgOnly | Out-Null
 # "flisak" etc. that would give away a solution before the tester reaches it). Source names
 # follow the envelopes/<frakcja>-<poz>-<zadanie> convention (renamed 2026-06-02).
 $decoderPdf = Join-Path $public ("decoders\decoder-{0}.pdf" -f $Decoder)
+# Bundle order = open order. Sub-slot a/b/c groups items handed within the same stage.
+# Z7 finale stage = two beats: 06a (cipher dispatch, solved first) → 06b (finale note, after verify).
+# This removes the old phantom "07" (pos-6 brief landed as bundle 07 because the cipher had no nr).
 $playerMap = [ordered]@{
-  'wspolne-1-Z1.pdf'         = '01a_koperta.pdf'
-  'maps\map.pdf'             = '01b_mapa.pdf'
-  'miasto-2-Z2.pdf'          = '02a_koperta.pdf'
-  'miasto-2-Z2-slip.pdf'     = '02b_kartka.pdf'
-  'miasto-3-Z3.pdf'          = '03_koperta.pdf'
-  'miasto-4-Z3b.pdf'         = '04a_koperta.pdf'
-  'z3-pergamin-lista-tr.pdf' = '04b_pergamin.pdf'
-  'miasto-5-Z4.pdf'          = '05_koperta.pdf'
-  'z7-przechwycony-list.pdf' = '06_list.pdf'
-  'miasto-6-Z7.pdf'          = '07_koperta.pdf'
+  'wspolne-1-Z1.pdf'            = '01a_koperta.pdf'
+  'maps\map.pdf'                = '01b_mapa.pdf'
+  'miasto-2-Z2.pdf'             = '02a_koperta.pdf'
+  'miasto-2-Z2-slip.pdf'        = '02b_kartka.pdf'
+  'miasto-3-Z3.pdf'             = '03_koperta.pdf'
+  'miasto-4-Z3b.pdf'            = '04a_koperta.pdf'
+  'miasto-04b-Z3-pergamin.pdf'  = '04b_pergamin.pdf'
+  'miasto-5-Z4.pdf'             = '05_koperta.pdf'
+  'miasto-06a-Z7-list.pdf'      = '06a_list.pdf'
+  'miasto-6-Z7.pdf'             = '06b_koperta.pdf'
 }
 
 $missing = @()
@@ -64,9 +77,9 @@ if (Test-Path $decoderPdf) { Copy-Item $decoderPdf (Join-Path $gracz '01c_deszyf
 else { $missing += ("decoders\decoder-{0}.pdf" -f $Decoder) }
 
 # 4 — GM-only answer key (SPOILER): kept in its own folder, clearly fenced off from the tester.
-$keySrc = Join-Path $public 'z3-z7-klucz-mg.pdf'
+$keySrc = Join-Path $public 'mg-Z3Z7-klucz.pdf'
 if (Test-Path $keySrc) { Copy-Item $keySrc (Join-Path $mgOnly 'klucz-Z3-Z7.pdf') -Force }
-else { $missing += 'z3-z7-klucz-mg.pdf' }
+else { $missing += 'mg-Z3Z7-klucz.pdf' }
 
 # 5 — report.
 Write-Host ''

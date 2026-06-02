@@ -31,17 +31,45 @@ OŚ 3 — ZESTAW OPC. (A/B/C): różnicuje zagadkę opcjonalną (Z4/Z5/Z6 miasto
 
 ## Systematyka nazw
 
+**Jeden klucz kanoniczny dla CAŁEGO stosu (briefy + rekwizyty + drafty + PDF-y):**
+
 ```
-[frakcja]-[nr]-[Zx]                 ← gdy koperta identyczna dla wszystkich kolorów frakcji
-[frakcja]-[kolor]-[nr]-[Zx]         ← gdy na danym etapie WKŁADKA/treść różni się per kolor
+BRIEF (koperta-tekst):   [frakcja]-[nr]-[Zx]              np. miasto-2-Z2, miasto-6-Z7
+BRIEF per kolor:         [frakcja]-[kolor]-[nr]-[Zx]      (gdy WKŁADKA/treść różni się per kolor)
+REKWIZYT (wkładka/łup):  [frakcja]-[nr][slot]-[Zx]-[typ]  np. miasto-04b-Z3-pergamin, miasto-06a-Z7-list
+DOKUMENT MG (nie gracz):  mg-[Zx]-[typ]                   np. mg-Z3Z7-klucz
 ```
 
 - **frakcja** — `wspolne` (tylko Z1, klasa niejawna) · `miasto` (Tajna Rada) · `krzyzacy` (Zakon).
-- **kolor** — identyfikator grupy (10 kolorów, `mechanics/grupy-i-klasy.md`). **Pomijany**, gdy koperta jest taka sama dla wszystkich grup frakcji. Dodawany (osobne pliki per kolor) **dopiero gdy treść/wkładka różni się na tym etapie**.
-- **nr** — **KOLEJNOŚĆ OTWIERANIA koperty** na ścieżce frakcji (NIE etap MG, NIE numer zadania). Liczona od 1.
-- **Zx** — numer zadania w tej kopercie (Z1, Z2…). Może się rozjeżdżać z `nr`.
+- **kolor** — identyfikator grupy (10 kolorów, `mechanics/grupy-i-klasy.md`). **Pomijany** w nazwie pliku, gdy koperta jest taka sama dla wszystkich grup frakcji (kolor żyje wtedy tylko w **stemplu**, niżej). Osobne pliki per kolor **dopiero gdy treść/wkładka różni się na tym etapie**.
+- **nr** — **KOLEJNOŚĆ OTWIERANIA koperty** na ścieżce frakcji (NIE etap MG, NIE numer zadania). Liczona od 1. **To jest klucz łączący** brief, jego rekwizyty i stempel — wszystko, co należy do tej samej pozycji, nosi ten sam `nr`. W rekwizytach/stemplu zapisywany **2-cyfrowo** (`04`, `06`); briefy mają historycznie 1-cyfrowo (`nr ≤ 6`, sortuje się poprawnie).
+- **slot** — `a`/`b`/`c`: kilka kart wręczanych **w obrębie tej samej pozycji**, w kolejności wręczania. `a` = otwierane pierwsze. Pomijany, gdy pozycja ma 1 kartę (`03_koperta`, `05_koperta`). Przykłady: `04a` koperta Z3b + `04b` pergamin-łup; `06a` szyfrogram (rozwiązywany) + `06b` notatka finałowa (po weryfikacji).
+- **Zx** — numer zadania (Z1, Z2…). Może się rozjeżdżać z `nr`. W rekwizycie: zadanie, do którego należy łup/wkładka.
+- **typ** — co to za karta: `koperta` (brief) · `mapa` · `deszyfrownik` · `kartka` (slip) · `pergamin` · `list` (szyfrogram).
 
 > **`nr` = kolejność otwierania, nie etap MG.** Przykład: na torze miasta `miasto-4-Z3b` jest otwierana **4.**, ale należy do **etapu Z3** (raport u MG wspólny z `miasto-3-Z3`). „Pozycja 4" ≠ „czwarty checkpoint MG".
+
+### Co w nazwie kluczowe, co do pominięcia
+
+| Token | Status | Czemu |
+|---|---|---|
+| `nr` (pozycja) | **KLUCZOWY** | klucz łączący kartę ↔ koperta ↔ stempel; bez niego nie wiadomo, gdzie karta trafia |
+| `slot` (a/b/c) | **KLUCZOWY** (gdy >1 karta) | mówi, co leży razem w jednej pozycji i w jakiej kolejności |
+| `frakcja` | **KLUCZOWY** | rozdziela tory miasto/krzyzacy (MVP) |
+| `typ` | **KLUCZOWY** | co fizycznie drukować (papier pergaminowy? mapa A3?) |
+| `kolor` | **KLUCZOWY** (w stemplu) | która drużyna; w nazwie pliku pomijany, gdy karta wspólna |
+| `Zx` | warstwa autorska; **pomijany na warstwie gracza** | spoiler-neutralny montaż używa `nr`, nie `Zx` |
+| opisy fabularne (`jordan`, `flisak`, `lista-tr`, `przechwycony`) | **DO POMINIĘCIA** | spoilują rozwiązanie; w montażu gracza nazwa neutralna |
+| markery wersji/draftu (`-v2`, `-draft`) | **DO POMINIĘCIA** | wersja = git, nie nazwa pliku |
+
+### Stempel produkcyjny (na każdym rekwizycie gracza)
+
+Każda drukowana karta gracza nosi na prawym brzegu **pionowy, blady, drobny stempel** — `[litera-frakcji][NN]-[kolor]`, np. **`m06-czerwony`** (`w`=wspólne, `m`=miasto, `k`=krzyzacy). Mówi, **do której koperty (nr) i jakiego koloru drużyny** karta należy → szybkie sortowanie luźnych wydruków. Celowo trudno-odczytywalny (nie konkuruje z treścią, nie pomaga graczowi).
+
+- Stempel = warstwa renderu: HTML nosi placeholder `__STAMP__`, `render.ps1 -Color <kolor>` podmienia przy druku (`prototype/print/parchment.css §edge-stamp`). Pozycja+frakcja są stałe per plik (mapa `$stampPrefix` w `render.ps1`); kolor to parametr.
+- Stały dla wariantów opcjonalnych: koperta 05 = `m05` niezależnie czy w środku Z4/Z5/Z6.
+- **Dokumenty MG nie mają stempla** (`mg-Z3Z7-klucz` — nie trafia do koperty gracza).
+- 10 kolorów (`mechanics/grupy-i-klasy.md`): G1 czerwony · G2 pomaranczowy · G3 zolty · G4 zielony · G5 turkusowy · G6 niebieski · G7 fioletowy · G8 bialy · G9 brazowy · G10 czarny.
 
 ## Struktura ścieżek (skąd biorą się nr)
 
@@ -83,6 +111,22 @@ Wiersz = pozycja otwierania · kolumny = `plik-briefu | wkładki | rekwizyty`. *
 | 3 | `krzyzacy-3-Z3Z.md` | pending |
 | 4 | `krzyzacy-4-Z8.md` / `krzyzacy-4-Z9.md` *(wypełniona)* / `krzyzacy-4-Z10.md` | Z9 draft, reszta pending |
 | 5 | `krzyzacy-5-Z11.md` | pending |
+
+## Montaż fizyczny — karta → koperta → etykieta (prototyp, tor miasta, 1 kolor)
+
+> **Szybka weryfikacja przy pakowaniu:** co włożyć do której zaklejonej koperty (z czym razem) i jak ją podpisać z zewnątrz. **Źródło wykonawcze = `prototype/print/assemble-prototype-bundle.ps1` `$playerMap`** (kod, nie ta tabela — tabela ją lustrzy; przy rozbieżności wygrywa `$playerMap`). Pliki `public/<nazwa>.pdf`; folder montażowy `public/prototyp-druk/gracz/` nadaje nazwy neutralne (bez spoilerów).
+
+| Koperta (etykieta z zewnątrz) | Karty w środku — `public/…pdf` | Nazwa w `gracz/` | Stempel | Kiedy/uwaga |
+|---|---|---|---|---|
+| **❶ wspólna** | `wspolne-1-Z1.pdf` + `maps/map.pdf` + `decoders/decoder-G1.pdf` | `01a_koperta`, `01b_mapa`, `01c_deszyfrownik` | `w01-czerwony` | start; + opaska koloru + zapieczętowany list |
+| **❷ miasto** | `miasto-2-Z2.pdf` + `miasto-2-Z2-slip.pdf` | `02a_koperta`, `02b_kartka` | `m02-czerwony` | po Z1 (slip „— R.") |
+| **❸ miasto** | `miasto-3-Z3.pdf` | `03_koperta` | `m03-czerwony` | wręcza Jordan (zlecenie zwiadu) |
+| **❹ miasto** | `miasto-4-Z3b.pdf` + `miasto-04b-Z3-pergamin.pdf` | `04a_koperta`, `04b_pergamin` | `m04-czerwony` | Z3b: Albrecht wręcza kopertę, pergamin = łup kradzieży |
+| **❺ miasto** | `miasto-5-Z4.pdf` *(opc.; lub Z5/Z6)* | `05_koperta` | `m05-czerwony` | opcjonalna; w MVP wymienna na Z5/Z6 |
+| **❻ miasto** | `miasto-06a-Z7-list.pdf` → potem `miasto-6-Z7.pdf` | `06a_list`, `06b_koperta` | `m06-czerwony` | 06a rozwiązują (szyfr), 06b po weryfikacji u MG |
+| *(MG, NIE koperta gracza)* | `mg-Z3Z7-klucz.pdf` | `mg-tylko/klucz-Z3-Z7` | *(brak)* | klucz odpowiedzi — torba MG |
+
+> **Etykieta koperty** = duży `nr` (np. „❻") + nazwa frakcji + kolor drużyny (np. „miasto · czerwony"). Spoiler-neutralna: nie pisz `Zx` ani treści fabularnej na zewnątrz. Pozycja ❻ = dwie koperty fizyczne (06a, 06b) wręczane w dwóch momentach jednego etapu Z7.
 
 ## Mapa plików (stan)
 

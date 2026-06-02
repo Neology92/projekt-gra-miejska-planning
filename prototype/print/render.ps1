@@ -23,7 +23,12 @@
 # mechanics/koperty-mg.md (pinned assumptions block).
 # ──────────────────────────────────────────────────────────────────────────────
 
-param([switch]$Force)
+param(
+  [switch]$Force,
+  # Team color for the per-prop edge-stamp (Polish name). Prototype default = czerwony (G1).
+  # MVP: assemble-prototype-bundle.ps1 derives this from -Decoder Gn via the color table.
+  [string]$Color = 'czerwony'
+)
 
 $ErrorActionPreference = 'Stop'
 $here = $PSScriptRoot
@@ -48,10 +53,13 @@ if (-not $browser) { throw "No Chrome/Edge found." }
 Write-Host "Browser: $browser"
 
 # source file -> output pdf
+# Names follow the canonical key [frakcja]-[NN][slot]-[Zx][-typ] (see envelopes/README.md §Systematyka nazw).
+# Loose props now carry their envelope position: pergamin = 04b (loot of Z3 stage), cipher list = 06a
+# (Z7 finale stage, handed BEFORE the finale note 06b). The MG key is excluded from the player stamp.
 $jobs = @{
-  'z3-pergamin-lista-tr.html' = 'z3-pergamin-lista-tr.pdf'
-  'z7-przechwycony-list.html' = 'z7-przechwycony-list.pdf'
-  'z3-z7-klucz-mg.html'       = 'z3-z7-klucz-mg.pdf'
+  'miasto-04b-Z3-pergamin.html' = 'miasto-04b-Z3-pergamin.pdf'
+  'miasto-06a-Z7-list.html'     = 'miasto-06a-Z7-list.pdf'
+  'mg-Z3Z7-klucz.html'          = 'mg-Z3Z7-klucz.pdf'
   # Envelope render layer — names match envelopes/<frakcja>-<poz>-<zadanie>.md (canon).
   'wspolne-1-Z1.html'         = 'wspolne-1-Z1.pdf'
   'miasto-2-Z2.html'          = 'miasto-2-Z2.pdf'
@@ -60,6 +68,21 @@ $jobs = @{
   'miasto-4-Z3b.html'         = 'miasto-4-Z3b.pdf'
   'miasto-5-Z4.html'          = 'miasto-5-Z4.pdf'
   'miasto-6-Z7.html'          = 'miasto-6-Z7.pdf'
+}
+
+# Edge-stamp prefix per source (faction letter + 2-digit envelope nr). The color suffix is the -Color
+# run param. Each player HTML carries a "__STAMP__" placeholder; we replace it with "<prefix>-<color>"
+# in a temp copy before printing. Sources NOT listed here (mg-Z3Z7-klucz = GM-only) render unstamped.
+$stampPrefix = @{
+  'wspolne-1-Z1.html'           = 'w01'
+  'miasto-2-Z2.html'            = 'm02'
+  'miasto-2-Z2-slip.html'       = 'm02'
+  'miasto-3-Z3.html'            = 'm03'
+  'miasto-4-Z3b.html'           = 'm04'
+  'miasto-04b-Z3-pergamin.html' = 'm04'
+  'miasto-5-Z4.html'            = 'm05'
+  'miasto-06a-Z7-list.html'     = 'm06'
+  'miasto-6-Z7.html'            = 'm06'
 }
 
 # ── Staleness guard: refuse to render any source still carrying a RENDER-BLOCK marker.
@@ -90,10 +113,27 @@ if ($blocked) {
   Write-Host ''
 }
 
+$tempFiles = @()
 foreach ($in in $jobs.Keys) {
   $inPath  = Join-Path $src $in
   $outPath = Join-Path $outDir $jobs[$in]
-  $uri = ([System.Uri]$inPath).AbsoluteUri
+
+  # Stamp injection: if this source has a prefix + still holds the __STAMP__ placeholder, render a
+  # temp copy with "<prefix>-<color>" substituted. Keeps the source files color-agnostic (one set of
+  # HTML, N colors at render time). Sources without a prefix (GM key) render straight from $inPath.
+  $renderPath = $inPath
+  if ($stampPrefix.ContainsKey($in)) {
+    $html = Get-Content -Raw -LiteralPath $inPath
+    if ($html -match '__STAMP__') {
+      $stamp = "{0}-{1}" -f $stampPrefix[$in], $Color
+      $tmp = Join-Path $src (".stamped-{0}" -f $in)
+      ($html -replace '__STAMP__', $stamp) | Set-Content -NoNewline -LiteralPath $tmp -Encoding UTF8
+      $renderPath = $tmp
+      $tempFiles += $tmp
+    }
+  }
+
+  $uri = ([System.Uri]$renderPath).AbsoluteUri
   # --no-sandbox: Chrome's own sandbox is blocked in restricted/sandboxed shells.
   # NO --user-data-dir on purpose: headless then uses an ephemeral throwaway profile
   #   and exits cleanly after writing the PDF. A custom user-data-dir triggers the
@@ -106,5 +146,8 @@ foreach ($in in $jobs.Keys) {
     Write-Warning "FAILED: $($jobs[$in])"
   }
 }
+
+# Clean up temp stamped copies (leave the source HTML pristine with the __STAMP__ placeholder).
+foreach ($t in $tempFiles) { if (Test-Path $t) { Remove-Item -LiteralPath $t -Force } }
 
 Write-Host "Done."

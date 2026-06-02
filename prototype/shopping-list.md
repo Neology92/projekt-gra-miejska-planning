@@ -22,10 +22,10 @@ Decoder cards render via `tools/z1-decoder/` → output to `public/decoders/`.
 | K2 envelope (main note + slip) | `miasto-2-Z2.pdf` + `miasto-2-Z2-slip.pdf` | ✅ | 2–3 sets | 2 sets + 1 spare of each | Print slip separately — smaller cut |
 | K3 envelope (Jordan hands this) | *(content: `envelopes/miasto-3-Z3.md` → no standalone PDF yet)* | ⬜ | 2–3 | 2 + 1 spare | Piotr keeps these at Piccolo |
 | K-Z3b envelope (Albrecht hands this) | `miasto-4-Z3b.pdf` | ✅ | 2–3 | 2 + 1 spare | Zosia keeps these at Przedzamcze |
-| Z3 pergamin (names list — stolen prop) | `z3-pergamin-lista-tr.pdf` | ✅ | 3–4 (1 per theft + spares) | 4–6 (reset between groups; Zosia brings stack) | Print on parchment paper — this is a physical prop |
+| Z3 pergamin (names list — stolen prop) | `miasto-04b-Z3-pergamin.pdf` | ✅ | 3–4 (1 per theft + spares) | 4–6 (reset between groups; Zosia brings stack) | Print on parchment paper — this is a physical prop |
 | K-Z4 envelope | `miasto-5-Z4.pdf` | ✅ | 2–3 | 2 + 1 spare | Parchment paper preferred |
-| K8 / Z7 szyfrogram (intercepted letter) | `miasto-6-Z7.pdf` + `z7-przechwycony-list.pdf` | ✅ | 2–3 | 2 + 1 spare | Print double-sided if one file; else two sheets |
-| Z3/Z7 answer key (MG only) | `z3-z7-klucz-mg.pdf` | ✅ | 1 | 1 | MG bag — do NOT hand to players |
+| Z7 szyfrogram (intercepted letter, 06a) + finale note (06b) | `miasto-06a-Z7-list.pdf` + `miasto-6-Z7.pdf` | ✅ | 2–3 | 2 + 1 spare | 06a handed/solved first, 06b after MG verify |
+| Z3/Z7 answer key (MG only) | `mg-Z3Z7-klucz.pdf` | ✅ | 1 | 1 | MG bag — do NOT hand to players (no stamp) |
 | KF envelope (finale) | *(content: `envelopes/` — no standalone PDF yet)* | 🔒 | 2–3 | 2 + 1 spare | Blocked: KF body not written yet |
 | MG tracking sheet | `prototype/mg-tracking-sheet.md` (print manually) | ⬜ | 1 | 1 | Print from .md or convert to PDF |
 | MG runsheet | `prototype/mg-runsheet.md` | ⬜ | 1 | 1 | MG reference — can be phone |
@@ -73,7 +73,7 @@ Decoder cards render via `tools/z1-decoder/` → output to `public/decoders/`.
 | Item | What it is | Effort | Notes |
 |---|---|---|---|
 | **Sealed letter prop** | An A5 or A4 sheet rolled or folded, sealed with wax stamp, carried by group all day | Low | Print a simple text on parchment paper ("To Jan Bażyński — for his eyes only"), fold or roll, seal with wax. Make 2 + 1 spare (one spare travels unused). Seal AFTER folding |
-| **Z3 parchment — multiple printed copies** | Identical copies of `z3-pergamin-lista-tr.pdf` on parchment paper, edge-torn or aged | Low | Print, cut to size. Optional: lightly tea-stain edges for texture. Each stolen copy is consumed; Zosia resets from stack |
+| **Z3 parchment — multiple printed copies** | Identical copies of `miasto-04b-Z3-pergamin.pdf` on parchment paper, edge-torn or aged | Low | Print, cut to size. Optional: lightly tea-stain edges for texture. Each stolen copy is consumed; Zosia resets from stack |
 | **Color reference card for actors** | A small printed card listing: group color → what wristband looks like → group number | Very low | 1 card for Piotr (Jordan) + 1 for Zosia (Albrecht). Print from MG tracking sheet |
 | **Jaw harp practice recording** | Phone audio of the Z4 melody (621454 in harp tones) | Low | Record before game day as backup. MG plays this if instrument fails. Confirm melody matches `puzzles/kalimba.md` |
 

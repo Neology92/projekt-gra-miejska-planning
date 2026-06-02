@@ -49,7 +49,7 @@
 ✅ poz.3 Z3 — od Jordana ...... draft gotowy (brief F2B + Z3 zwiad; Z3b osobno)         [envelopes/miasto-3-Z3.md]
 ✅ poz.4 Z3b — kradzież ....... draft gotowy (2. koperta etapu Z3; narracja + cytat Albrechta)  [envelopes/miasto-4-Z3b.md]
 🟡 poz.5 Z4 — melodia/kalimba . draft v2 (SCENA: martwy flisak=R. nad Wisłą, melodia=kod; instrument zatwierdzony)  [envelopes/miasto-5-Z4.md]
-✅ K8 — Z7 finałowy szyfr ..... szyfrogram + rama narracyjna v2 + ramka MG w HTML; wyrenderowany  [prototype/z7-szyfrogram-draft.md · src/z7-przechwycony-list.html]
+✅ 06a Z7 finałowy szyfr ...... szyfrogram + rama narracyjna v2 + ramka MG; wyrenderowany + stempel  [prototype/z7-szyfrogram-draft.md · src/miasto-06a-Z7-list.html]
 🟡 poz.6 Z7 — finał .......... draft gotowy (Przedzamcze, ósme bicie, wolny wybór; list nieotwarty, maski spadają)  [envelopes/miasto-6-Z7.md]
 ```
 

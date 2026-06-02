@@ -99,7 +99,7 @@ Dwa fakty, które muszą być **wykonane zanim ktokolwiek zrobi pass renderując
 
 2. **Render NIE jest sync.** Proza graczy żyje w draftach `.md`; HTML w `prototype/print/src/` to **ręcznie** przepisana warstwa renderu — nic nie syncuje draft→HTML. Stan na 2026-06-02: 7 kopert kurierskich (`k1, k2, k2-slip, k3, kZ3b, kZ4, kF`) ma prozę **v2** (2. osoba + ramka `.mg-note`) **tylko w `.md`**; HTML wciąż trzyma **v1** (1. osoba, logistyka wpleciona). Render-pass = **3 podkroki**: (a) port prozy v2 → HTML, (b) markup `.mg-note` wokół 4 ramek meta, (c) klasa CSS `.mg-note` w `parchment.css` (patrz flaga wyżej).
 
-**Guard, który tego pilnuje:** każdy stale HTML nosi linię-marker `RENDER-BLOCK`; `render.ps1` **przerywa render** (exit 1), dopóki marker istnieje. Odblokowanie = port prozy + usunięcie linii markera z danego pliku. Override: `render.ps1 -Force` (świadomie, ze starym tekstem). Dokumenty in-world (`z3-pergamin`, `z7-przechwycony-list`, `z3-z7-klucz-mg`) **nie** są objęte — mają własne spece i są render-zweryfikowane. Szczegóły: `prototype/print/README.md §Staleness guard`.
+**Guard, który tego pilnuje:** każdy stale HTML nosi linię-marker `RENDER-BLOCK`; `render.ps1` **przerywa render** (exit 1), dopóki marker istnieje. Odblokowanie = port prozy + usunięcie linii markera z danego pliku. Override: `render.ps1 -Force` (świadomie, ze starym tekstem). Dokumenty in-world (`miasto-04b-Z3-pergamin`, `miasto-06a-Z7-list`, `mg-Z3Z7-klucz`) **nie** są objęte — mają własne spece i są render-zweryfikowane. Szczegóły: `prototype/print/README.md §Staleness guard`.
 
 ### Numeracja kopert
 
