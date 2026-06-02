@@ -39,6 +39,8 @@
 
 *One is the chairman — the man who was Jordan all along. The other is Albrecht, the Komtur, the Order's hand in Thorn. Between them, a single choice: into whose hands the letter goes.*
 
+*And should you think of crossing to the Komtur — you begin to see how it would have to be done. The Order opens its hand to no one who cannot name it. But you have already held its watchword in your own: those same words at the head of the list you stole from him — `HELFEN, HEILEN UND WEHREN!` — the key that broke the cipher tonight. Speak them to Albrecht, and the Order would take you for its own. Come without them, and he would know you for what you are.*
+
 *The eighth bell. The ruins. You walk.*
 
 ---
@@ -50,6 +52,7 @@
 - **Lokalizacja:** „Przedzamcze" — realna nazwa, gracze mogą ją wyszukać/pokazać na mapie. MG może doprecyzować punkt spotkania przy briefingu w terenie.
 - **Ósme bicie:** 20:30, rekwizyt (dzwon ręczny / nagranie). W tekście gracza: „eighth bell". Nie Tuba Dei (anachronizm — od 1500). Patrz `concept/04-faza-3-final.md`.
 - **Wolny wybór:** KF nie sugeruje, która strona jest „właściwa". Obie strony opisane neutralnie (funkcjonalnie, bez oceny). Zasada z `concept/04-faza-3-final.md` — wybór wolny dla obu klas.
+- **Brama Albrechta = motto [dodane 2026-06-03, Oskar]:** dopisany beat — grupa *domyśla się*, że oddanie listu Albrechtowi wymaga podania motta Zakonu `HELFEN, HEILEN UND WEHREN!`, które **już ma** (nagłówek wykradzionej listy = klucz Z7, którym właśnie złamali szyfr). Payoff symetrii: to samo motto, które było ich kluczem, otwiera też wrogą stronę. Mechanika aktora: `materials/actors/albrecht-actor-card-draft.md §PART THREE`. Kanon: `puzzles/z11-szyfr-spec.md §5`. *Nie spoiluje wyboru — to opcja „gdybyś chciał przejść do komtura".*
 - **Brak nadawcy / podpisu [PRZEPISANE 2026-06-02]:** finał = scena, nie list. Usunięto nagłówek „Messengers,", imperatywy w romanie i podpis „— J.". Wcześniejszy draft był listem od Jordana/Bażyńskiego — łamało to zasadę domyślną #2 (koperta = scena napotkana w świecie, nie wiadomość od nadawcy) i było meta-niezręczne (Bażyński pisze o sobie w 3. os.: „the man who has been Jordan all along"). Teraz tożsamość = wniosek grupy w narracji.
 - **Rekwizyt:** list zapieczętowany (noszony całą grę) = to jest to, co oddają. Koperta tego nie tłumaczy mechanicznie — gracze to rozumieją z kontekstu.
 - **Wersja krzyżacka (MVP):** inne KF. Do napisania przy MVP. Nie kopiować 1:1.

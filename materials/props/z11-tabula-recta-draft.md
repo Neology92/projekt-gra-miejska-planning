@@ -30,19 +30,21 @@ row S11 (cell):  M A R I E N B U G C D F H J K L O P Q S T V W X Y Z
 
 ---
 
-## CIPHERTEXT (the Z11 szyfrogram, given in Z8/Z9/Z10)
+## CIPHERTEXT (the Z11 szyfrogram = the Order's motto, in the KZ finale envelope)
 
-**Working parole (plaintext) — candidate B1, swappable (spec §8.5):**
+**Plaintext = the Order's MOTTO** [decyzja Oskara 2026-06-03] — the same motto that is the Z7 KEY for the mieszczanie:
 ```
-ONE CROSS ONE OATH
+HELFEN, HEILEN UND WEHREN!
 ```
 
 **Ciphertext (encoded with row S11):**
 ```
-KJE RPKQQ KJE KMSU
+UEFNEJ UEGFEJ TJI WEUPEJ
 ```
 
-**Round-trip check (decode S11):** K→O, J→N, E→E → `ONE`; R→C, P→R, K→O, Q→S, Q→S → `CROSS`; KJE → `ONE`; K→O, M→A, S→T, U→H → `OATH`. ✓ = `ONE CROSS ONE OATH`.
+**Round-trip check (decode S11):** UEFNEJ → `HELFEN`; UEGFEJ → `HEILEN`; TJI → `UND`; WEUPEJ → `WEHREN`. ✓ = `HELFEN HEILEN UND WEHREN` (validation `cipher-data.js` PASS).
+
+> Spoken to Albrecht at the finale (Przedzamcze, 20:30), the motto unlocks delivering the letter to him — for both factions. KZ groups get it by decoding Z11; TR defectors read it off the stolen list (Z3). Punctuation (comma/!) is cosmetic on the prop; validation uses letters + word spaces.
 
 > ⚠ **Zmiana parolu:** wpisz nowy plaintext, zakoduj literę po literze przez „Encode map" wyżej → nowy ciphertext. Wiersz S11 (MARIENBURG) i pozostałe 15 wierszy bez zmian.
 

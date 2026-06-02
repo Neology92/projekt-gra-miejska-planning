@@ -1,7 +1,7 @@
 # Z11 — Finałowy szyfr krzyżaków (spec kanoniczny)
 
 > **Rola pliku:** jedno źródło prawdy dla **finału toru krzyżackiego (Z11)** — mechanika dwóch tabel (symbol-klucz + tabula recta), dane, plaintext/ciphertext, weryfikacja MG, ryzyka. Lustro funkcjonalne Z7 (mieszczanie), ale **inna mechanika szyfru** [decyzja Oskara 2026-06-02].
-> **Status:** 🟡 **szkic mechaniki zamknięty, dane robocze** [2026-06-02]. Mechanika dwóch tabel ROZSTRZYGNIĘTA; kolor szaty Jordana ROZSTRZYGNIĘTY (**brązowy**); parol + styl symboli + miejsce wydania Tabeli 2 = otwarte (patrz §8). Prop gracza (EN) → `materials/props/z11-tabela-symboli-draft.md`, `materials/props/z11-tabula-recta-draft.md`.
+> **Status:** 🟡 **mechanika + dane zamknięte, rekwizyty wyrenderowane** [akt. 2026-06-03]. Dwie tabele 4×4/16 ROZSTRZYGNIĘTE; kolor szaty (brązowy), parol (= **motto Zakonu**) ROZSTRZYGNIĘTE; styl symboli + miejsce wydania Tabeli 2 = otwarte (§8). Prop gracza (EN) → `materials/props/z11-tabela-symboli-draft.md`, `materials/props/z11-tabula-recta-draft.md`. Finałowa koperta KZ → `envelopes/krzyzacy-5-Z11.md`.
 > **Powiązania:** tor KZ → `concept/05-tor-krzyzakow.md`; Z3Z (skąd Tabela 1) → `puzzles/zamek-krzyzacki-lista.md §Z3Z`; finał → `concept/04-faza-3-final.md`; lustro TR → `puzzles/z7-szyfr-spec.md`.
 
 ---
@@ -15,7 +15,7 @@ Finały **przestają być lustrem mechanicznym**. Były symetryczne (oba Cezar +
 | Typ szyfru | Cezar shift +7 | podstawieniowy (tabula recta) |
 | Klucz | przesunięcie odkryte przez **porównanie nagłówków** (motto Z3 jawne ↔ Z7 zaszyfrowane) | **symbol** odczytany z Tabeli 1 (kolor szaty Jordana × chochla) |
 | Rekwizyt | brak (świadomie — koło = zbyt silna wskazówka) | **dwie tabele** (Tabela 1 lookup + Tabela 2 tabula recta) |
-| Wynik | „HANS VON BAYSEN IS JORDAN THE COOK" (twist) | **parol** dla Albrechta (dowód godności) |
+| Wynik | „HANS VON BAYSEN IS JORDAN THE COOK" (twist) | **motto Zakonu** `HELFEN, HEILEN UND WEHREN!` (hasło dla Albrechta) |
 
 > **Symetria zachowana TEMATYCZNIE, nie mechanicznie:** oba tory kończą szyfrem rozwiązywanym z elementów 2B; oba dają wynik bramkujący finał. Mieszczanie *wykradają* sekret wroga (Cezar); krzyżacy *składają* swój klucz z dwóch obserwacji u Jordana (tabele). Stary model Z11 (Cezar, lustro Z7) → **§Backup** na dole; nie kasować.
 
@@ -36,12 +36,12 @@ Finały **przestają być lustrem mechanicznym**. Były symetryczne (oba Cezar +
   - **kolor** = barwa szaty Jordana → **brązowy (Brown)** [ROZSTRZYGNIĘTE 2026-06-02];
   - **przedmiot** = atrybut Jordana → **chochla (Ladle)**.
 - Przecięcie `wiersz Brown × kolumna Ladle` = **symbol-klucz** (jeden, wspólny dla całej frakcji KZ — patrz §3 „klucz wspólny").
-- **Co bramkuje:** nie różnicowanie grup, lecz „znajdź właściwe współrzędne" — gracz musi *wiedzieć*, że kolorem jest szata Jordana, a przedmiotem chochla, i poprawnie je przeciąć. Pozostałe 24 komórki = dystraktory (prowadzą do złych wierszy Tabeli 2 = bełkot).
+- **Co bramkuje:** nie różnicowanie grup, lecz „znajdź właściwe współrzędne" — gracz musi *wiedzieć*, że kolorem jest szata Jordana, a przedmiotem chochla, i poprawnie je przeciąć. Pozostałe 15 komórek = dystraktory (prowadzą do złych wierszy Tabeli 2 = bełkot).
 
 ### Tabela 2 — tabula recta (`symbol → alfabet podstawienia`)
 
 - **Pionowo (nagłówek kolumn): kolejne litery alfabetu A–Z** (= litery jawne / plaintext).
-- **Poziomo (etykiety wierszy): symbole** (te same 25 znaków co w komórkach Tabeli 1).
+- **Poziomo (etykiety wierszy): symbole** (te same 16 znaków co w komórkach Tabeli 1).
 - **W każdym wierszu inne ustawienie liter alfabetu** — czyli każdy wiersz to osobny alfabet podstawieniowy. **Tylko wiersz symbolu-klucza** odszyfrowuje ciphertext w sensowny parol; pozostałe dają bełkot (self-check gracza: „czytelne czy bełkot").
 - **Deszyfrowanie:** dla danej litery ciphertextu gracz **szuka jej w wierszu symbolu-klucza** i odczytuje **literę nagłówka kolumny** nad nią = litera jawna. (Klasyczny odczyt tabula recta: cell→column-header.)
 
@@ -64,25 +64,26 @@ wiersz ★KLUCZ:     M A R I E N B U G C D F H J K L O P Q S T V W X Y Z
 ```
 (alfabet z hasła MARIENBURG: unikalne litery M-A-R-I-E-N-B-U-G, potem reszta C-D-F-H-J-K-L-O-P-Q-S-T-V-W-X-Y-Z)
 
-**Plaintext (parol) — ROBOCZY [kandydat B1 z `concept/04`; do wyboru Oskara, §8]:**
+**Plaintext (parol) = MOTTO ZAKONU [ROZSTRZYGNIĘTE 2026-06-03, Oskar]:**
 ```
-ONE CROSS ONE OATH
+HELFEN HEILEN UND WEHREN
 ```
+(na rekwizycie kosmetycznie z interpunkcją: `HELFEN, HEILEN UND WEHREN!`) — **to samo motto, które u mieszczan jest KLUCZEM do Z7** (porównanie nagłówków). Symetria: TR ma je jawne (na wykradzionej liście) i używa jako klucza; KZ je **odszyfrowują** i wypowiadają Albrechtowi.
 
-**Ciphertext (szyfrogram Z11, wydawany w Z8/Z9/Z10) — szyfrowanie wierszem ★KLUCZ:**
+**Ciphertext (szyfrogram Z11) — szyfrowanie wierszem S11 (MARIENBURG):**
 ```
-KJE RPKQQ KJE KMSU
+UEFNEJ UEGFEJ TJI WEUPEJ
 ```
-(O→K, N→J, E→E, C→R, R→P, S→Q, A→M, T→S, H→U; round-trip do `ONE CROSS ONE OATH` ✓)
+(HELFEN→UEFNEJ, HEILEN→UEGFEJ, UND→TJI, WEHREN→WEUPEJ; round-trip ✓, walidacja `cipher-data.js` PASS)
 
-> ⚠ **Przy zmianie parolu**: przelicz ciphertext tym samym wierszem ★KLUCZ (`materials/props/z11-tabula-recta-draft.md` ma tabelę kodowania). Hasło-substytucja MARIENBURG może zostać niezależnie od parolu.
+> **Po co odszyfrowywać własne motto?** Brama = *dowód*, nie wiedza: większość graczy nie zna niemieckiego motta Zakonu z głowy — szyfrogram je ujawnia, a samo odszyfrowanie dowodzi, że grupa złożyła klucz (była u Jordana → symbol → tabula recta). Wynik wypowiadają Albrechtowi.
 
 ---
 
 ## 3. MECHANIKA GRACZA (krok po kroku)
 
 1. **Po Z2** kurierzy KZ trafiają do **Albrechta** (Zosia — handler toru KZ), który wręcza im zadanie infiltracji Piccolo + **Tabelę 1** (K3-K). **W Piccolo** grupa obserwuje **Jordana** (cel infiltracji): barwę szaty (brązowa) + atrybut (chochla), wyciąga godzinę buntu (20:30). Patrz §6.
-2. **Po godzinie buntu / w finale** grupa ma **szyfrogram** (z Z8/Z9/Z10) i **Tabelę 2**.
+2. **W finale** grupa ma **szyfrogram** (w finałowej kopercie KZ `krzyzacy-5-Z11.md`) i **Tabelę 2**.
 3. **Tabela 1:** przecina wiersz `Brown` z kolumną `Ladle` → odczytuje **symbol-klucz**.
 4. **Tabela 2:** odnajduje **wiersz oznaczony tym symbolem**.
 5. **Deszyfruje** szyfrogram literą po literze (cell→column-header) → odczytuje **parol**.
@@ -94,8 +95,8 @@ KJE RPKQQ KJE KMSU
 
 ## 4. WERYFIKACJA MG
 
-- **Oczekiwana odpowiedź grupy:** odczytany parol = `ONE CROSS ONE OATH` (lub finalny parol po wyborze Oskara). Podany Albrechtowi jako dowód godności.
-- **Co odblokowuje:** Albrecht uznaje kuriera za „swojego" → grupa może dostarczyć list (wolny wybór strony, `concept/04`).
+- **Oczekiwana odpowiedź grupy:** odczytane motto = `HELFEN, HEILEN UND WEHREN!`. **Wypowiedziane Albrechtowi** = hasło Zakonu.
+- **Co odblokowuje:** podanie motta Albrechtowi **odblokowuje oddanie mu listu** w finale (Przedzamcze 20:30). Bez motta komtur nie przyjmie wiadomości. Patrz `materials/actors/albrecht-actor-card-draft.md §FINALE` i `envelopes/krzyzacy-5-Z11.md`.
 - **Hint awaryjny (jeśli utkną):**
   - nie wiedzą, jaki kolor/przedmiot → przypomnij: „co nosił człowiek z Piccolo? co miał w dłoni?" (brązowa szata + chochla);
   - mają symbol, nie umieją Tabeli 2 → wskaż, że szukają litery ciphertextu **wewnątrz** wiersza i czytają **nagłówek kolumny** nad nią;
@@ -107,8 +108,9 @@ KJE RPKQQ KJE KMSU
 
 - **Tabela 1 (kolor × przedmiot)** = krzyżacki **klucz rozpoznawczy do swoich**: Zakon nie ufa nikomu na słowo — by udowodnić, że byłeś u właściwego człowieka (infiltrowałeś Piccolo i *widziałeś* Jordana), musisz znać szczegóły, których nie zna postronny: barwę jego szaty i narzędzie. Te dwa fakty „odblokowują" Zakonowi symbol z ich własnej tablicy.
 - **Tabela 2 (tabula recta)** = szyfr Zakonu; tylko „swój" (kto zna symbol) odczyta dyspozycję.
-- **Parol** = mechaniczne ucieleśnienie **bramy godności** (Albrecht jawny, żąda dowodu — `concept/05`). Podwójna brama: symbol-klucz (tylko kto był u Jordana) + poprawny odczyt tabula recta.
-- **Spięcie z torem TR (symbole):** kolumny Tabeli 1 (sukno/chleb/miecz/piernik/chochla) **celowo cytują motywy z zagadki Z2 mieszczan** (sukno, chleb, piernik) + chochlę (atrybut Jordana). Wspólny słownik przedmiotów spina oba tory wizualnie, choć szyfr jest inny.
+- **Motto = hasło Zakonu** = mechaniczne ucieleśnienie **bramy godności** (Albrecht jawny, żąda dowodu — `concept/05`). Potrójna brama: symbol-klucz (tylko kto był u Jordana) + odczyt tabula recta + **wypowiedzenie motta Albrechtowi** w finale.
+- **Symetria z Z7 (motto spina oba finały) [2026-06-03]:** to samo motto `HELFEN, HEILEN UND WEHREN!` jest u **mieszczan KLUCZEM** (porównują jawny nagłówek wykradzionej listy z zaszyfrowanym nagłówkiem Z7), a u **krzyżaków WYNIKIEM** (odszyfrowują → wypowiadają). Motto = uniwersalne „hasło Zakonu" bramkujące oddanie listu Albrechtowi — **dla obu frakcji**: KZ zdobywa je przez Z11, TR-dezerter odczytuje z wykradzionej listy (`puzzles/z3-lista-tr-spec.md`).
+- **Spięcie z torem TR (symbole):** kolumny Tabeli 1 (piernik/miecz/chochla/świeca) cytują motywy z toru mieszczan (piernik, miecz=zakup-parol Z2) + chochlę (atrybut Jordana).
 
 ---
 
@@ -117,8 +119,10 @@ KJE RPKQQ KJE KMSU
 | Element | Skąd gracz go ma | Status |
 |---|---|---|
 | **Tabela 1** (lookup) | **Albrecht (Zosia) wręcza w K3-K po Z2** — handler toru KZ; grupa niesie ją do Piccolo, gdzie obserwuje Jordana (kolor szaty + chochla) | kanon [2026-06-02] |
-| **Szyfrogram Z11** | **MG wydaje po opcjonalnej Z8/Z9/Z10** (wymienialny, jak w Z7) | kanon |
+| **Szyfrogram Z11** (`UEFNEJ UEGFEJ TJI WEUPEJ`) | w **finałowej kopercie KZ** (`envelopes/krzyzacy-5-Z11.md`) — ostatnia koperta od MG | [2026-06-03] |
 | **Tabela 2** (tabula recta) | **DO WYBRANIA**: (a) razem z Tabelą 1 w K3-K, albo (b) dopiero w finale (z szyfrogramem) | OTWARTE [2026-06-02] — patrz §8 |
+
+> **Brama dostawy w finale [2026-06-03]:** przy Przedzamczu (20:30) Albrecht przyjmie list **tylko od grupy, która wypowie motto** `HELFEN, HEILEN UND WEHREN!`. KZ zdobywa je z Z11 (deszyfracja); TR-dezerter odczytuje z wykradzionej listy. Bez motta — komtur odprawia. Scenariusz Albrechta: `materials/actors/albrecht-actor-card-draft.md §FINALE`. Wzmianki w kopertach finałowych: KZ `envelopes/krzyzacy-5-Z11.md`, TR `envelopes/miasto-6-Z7.md`.
 
 ---
 
@@ -139,7 +143,7 @@ KJE RPKQQ KJE KMSU
 4. ✅ **Klucz wspólny dla frakcji KZ** [2026-06-02] (nie per grupa).
 4a. ✅ **Tabelę 1 wręcza Albrecht (Zosia) po Z2** [2026-06-02] — handler toru KZ (nie Jordan). Patrz `concept/05-tor-krzyzakow.md`, `puzzles/zamek-krzyzacki-lista.md §Z3Z`.
 4b. ✅ **Tabela 1: kolumny = rysunki przedmiotów (SVG), wiersze = kolory po angielsku** [2026-06-02].
-5. ⬜ **Parol (plaintext Z11)** — kandydaci w `concept/04` (A1 `THE VIRGIN GUARDS HER OWN`, A2 `SUB TUUM PRAESIDIUM`, B1 `ONE CROSS ONE OATH` ⭐, B2 `OBEDIENT UNTO MARIENBURG`, C1 `THE KEEP STILL STANDS`, C2 challenge-response). Roboczo B1. Po wyborze przeliczyć ciphertext.
+5. ✅ **Parol = MOTTO ZAKONU** `HELFEN, HEILEN UND WEHREN!` [ROZSTRZYGNIĘTE 2026-06-03, Oskar]. Ciphertext `UEFNEJ UEGFEJ TJI WEUPEJ` (round-trip ✓). To samo motto co klucz Z7 → symetria finałów; podanie Albrechtowi bramkuje oddanie listu. (Wcześniejsi kandydaci `ONE CROSS ONE OATH` itd. — porzuceni.)
 6. ⬜ **Styl symboli** — 3 propozycje w `materials/props/z11-tabela-symboli-draft.md` (gmerki / pieczęcie heraldyczne / znaki astronomiczne). Wymóg: **wyraźnie inne niż glify mapy Z1** (geometryczne △○□) **i niż piktogramy miejsc** (Kopernik, osiołek). Rekomendacja: gmerki.
 7. ✅ **Liczba wierszy Tabeli 2 = 16** [2026-06-02] (z 4×4) — mieści się na jednej A4 landscape (zweryfikowane renderem).
 8. ⬜ **Gdzie wydać Tabelę 2** — z Tabelą 1 (K3-K) czy w finale. §6.
@@ -152,9 +156,9 @@ KJE RPKQQ KJE KMSU
 - ✅ Mechanika — **dwie tabele (symbol-klucz + tabula recta), KZ-only** [2026-06-02].
 - ✅ Siatka **4×4**; wiersz-klucz = **Brown** (szata Jordana), kolumna-klucz = **Ladle** (chochla); klucz **S11** centralny. Klucz wspólny dla frakcji.
 - ✅ Kolumny (rysunki) = Gingerbread/Sword/Ladle/Candle; wiersze = Red/Green/Brown/Black; tekst-reguła ogólny.
-- ✅ Dane + round-trip (parol `ONE CROSS ONE OATH`, ciphertext `KJE RPKQQ KJE KMSU`, hasło MARIENBURG, 16 wierszy).
+- ✅ **Parol = motto Zakonu** `HELFEN, HEILEN UND WEHREN!` [2026-06-03]; ciphertext `UEFNEJ UEGFEJ TJI WEUPEJ`; hasło-substytucja MARIENBURG; 16 wierszy; round-trip ✓. Motto bramkuje oddanie listu Albrechtowi (symetria z Z7).
 - ✅ **Rekwizyty wyrenderowane** [2026-06-02]: `public/z11-tabela-1-symbole.pdf` (A4), `public/z11-tabela-2-tabula-recta.pdf` (A4 landscape). Generator: `tools/z11-cipher/` (walidacja PASS). Styl symboli = gmerki **roboczo** (do wyboru, §8.6).
-- ⬜ Parol finalny, styl symboli (gmerki/heraldyka/astro), miejsce wydania Tabeli 2 — §8.
+- ⬜ Styl symboli (gmerki/heraldyka/astro), miejsce wydania Tabeli 2 — §8. (Parol ROZSTRZYGNIĘTY = motto.)
 
 ---
 

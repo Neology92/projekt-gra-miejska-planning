@@ -339,7 +339,36 @@ You play Albrecht for **both** factions, in opposite framings. Practical rules:
 
 ---
 
+## PART THREE — FINALE · the delivery gate (BOTH factions) [2026-06-03]
+
+> At **Przedzamcze, the eighth bell (20:30)**, the groups gather. You stand on **your** side; Bażyński (Piotr) on his. Each group chooses into whose hand its sealed letter goes. **This is where you finally take a letter — or refuse it.**
+
+**You take NO letter on trust. The gate is the Order's watchword.**
+
+When a group comes to give *you* the letter:
+
+1. **Demand the word — first, before your hand moves.**
+   > *"Before the Order's hand closes on anything — the watchword. Speak it."*
+2. **Correct = the Order's motto `HELFEN, HEILEN UND WEHREN!`** Accept any reasonable form — they may read it haltingly or in pieces; accept the sense. → **Take the letter.**
+   > *"Helfen, Heilen, Wehren. Good. You are the Order's. Give it here."*
+   The letter counts for the Order (Oskar tallies the side).
+3. **Wrong word / no word → refuse. Do NOT take the letter.**
+   > *"No word, no welcome. The Order does not take paper from strangers. Take it to the other man, if you dare."*
+   They may turn to Bażyński instead — their free choice.
+
+**Where the word comes from (you don't say this — just know it):**
+- **KZ groups** decoded it tonight (their finale cipher Z11 yields the motto).
+- **TR groups who switch to you** can read it off the **list they stole from you** — its header carries the same motto. Either way, only someone who did the work can speak it.
+
+> *Tone: the same proud Komtur. The watchword is not a courtesy — it is the Order proving who belongs to it. You would sooner refuse a letter than take it from a mouth that cannot say the words.*
+
+> **Logistyka (MG):** brama działa **per grupa** w momencie wręczenia. Grupa, która wybrała Twoją stronę bez motta → odpraw (mogą iść do Bażyńskiego albo odejść; liczy się strona odbioru, `concept/04`). Sporne przypadki rozstrzyga Oskar.
+
+---
+
 ## PLANNING NOTES (nie dla gracza/aktora)
+
+**Brama-motto w finale [decyzja Oskara 2026-06-03]:** podanie motta Zakonu `HELFEN, HEILEN UND WEHREN!` odblokowuje oddanie listu Albrechtowi (PART THREE). Motto = odszyfrowany wynik **Z11** (KZ) lub nagłówek **wykradzionej listy** (TR-dezerter). Symetria z Z7: to samo motto jest tam **kluczem** mieszczan. Pełny kontekst: `puzzles/z11-szyfr-spec.md §4/§5`, `envelopes/krzyzacy-5-Z11.md`, `envelopes/miasto-6-Z7.md`.
 
 **Rola Albrechta = dwie role [REWIZJA 2026-06-02/03, `concept/05 §REWIZJA`].** ~~Zosia obsługuje TYLKO tor TR Z3~~ — nieaktualne. Zosia gra Albrechta dla **OBU** torów: (1) **cel kradzieży** dla TR (PART ONE — lista), (2) **handler** dla KZ (PART TWO — wręcza zadanie Z3Z + Tabelę 1, żąda dowodu godności). Symetrycznie do Piotra/Jordana (handler→TR / cel→KZ). Brama KZ = **duma Albrechta** (jawny komtur żąda, by udowodnić wartość przed przyjęciem listu) — `concept/05`, `puzzles/z11-szyfr-spec.md §5`. **Logistyka dnia:** MG przeplata kolejki TR/KZ (nigdy obie naraz). ⚠ Dwurolowość jednego aktora = otwarte do weryfikacji na próbie (flaga symetryczna z Piotrem, `krzyzacy-3-Z3Z §SPORNE`).
 

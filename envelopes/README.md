@@ -110,7 +110,7 @@ Wiersz = pozycja otwierania · kolumny = `plik-briefu | wkładki | rekwizyty`. *
 | 2 | `krzyzacy-2-Z2.md` | **pending** (→ Albrecht, Pula B) |
 | 3 | `krzyzacy-3-Z3Z.md` | pending |
 | 4 | `krzyzacy-4-Z8.md` / `krzyzacy-4-Z9.md` *(wypełniona)* / `krzyzacy-4-Z10.md` | Z9 draft, reszta pending |
-| 5 | `krzyzacy-5-Z11.md` | pending |
+| 5 | `krzyzacy-5-Z11.md` | **draft [2026-06-03]** (szyfrogram=motto + brama Albrechta) |
 
 ## Montaż fizyczny — karta → koperta → etykieta (prototyp, tor miasta, 1 kolor)
 
@@ -147,7 +147,7 @@ Legenda: **draft** (pełny tekst EN + meta) · **placeholder** (tylko wiersz, tr
 | `krzyzacy-4-Z8.md` | placeholder | `puzzles/kalimba.md` |
 | `krzyzacy-4-Z9.md` | draft | `puzzles/zagadka-sensoryczna.md` |
 | `krzyzacy-4-Z10.md` | placeholder | `puzzles/polichromie-biedronka.md` |
-| `krzyzacy-5-Z11.md` | placeholder | `concept/04-faza-3-final.md` |
+| `krzyzacy-5-Z11.md` | draft [2026-06-03] | `concept/04-faza-3-final.md`, `puzzles/z11-szyfr-spec.md` (szyfrogram=motto + brama Albrechta) |
 
 ## Co zawiera plik koperty
 

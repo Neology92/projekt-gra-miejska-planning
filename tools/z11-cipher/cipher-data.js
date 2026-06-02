@@ -190,8 +190,11 @@ function encodeWithRow(plaintext, row) {
 
 /* =================== VALIDATION =================== */
 
-const CIPHERTEXT  = 'KJE RPKQQ KJE KMSU';
-const PLAINTEXT   = 'ONE CROSS ONE OATH';
+// Plaintext = the Order's motto (same motto that is the Z7 KEY for the mieszczanie).
+// Decoding Z11 yields it; spoken to Albrecht it unlocks delivering the letter. [decyzja Oskara 2026-06-03]
+// Punctuation (comma/!) is cosmetic on the prop only — validation uses letters + word spaces.
+const PLAINTEXT   = 'HELFEN HEILEN UND WEHREN';
+const CIPHERTEXT  = 'UEFNEJ UEGFEJ TJI WEUPEJ';
 const N           = SYMBOLS.length;   // 16
 
 function runValidation(loud) {
