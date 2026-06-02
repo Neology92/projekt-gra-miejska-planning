@@ -167,7 +167,7 @@
     .addTo(mapInset)
     .once('load', () => { insetTilesLoaded = true; checkReady(); });
 
-  mapInset.fitBounds([Z1_INSET_SW, Z1_INSET_NE], { padding: [10, 10] });
+  mapInset.fitBounds([Z1_INSET_SW, Z1_INSET_NE], { padding: [11, 11] });
   addPins(mapInset, insetCodes, Z1_PLACES);
 
   // --- LEGEND (fill-in rows: glyph = ______) ---
