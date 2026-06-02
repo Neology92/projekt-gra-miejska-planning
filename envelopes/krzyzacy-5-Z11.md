@@ -11,7 +11,7 @@
 - **Frakcja:** **krzyzacy** (Zakon). Lustro funkcjonalne `miasto-6-Z7`, ale inny finał (BRAK twistu tożsamości — Albrecht jawny; brama = dowód godności).
 - **Pozycja (nr otwierania):** 5 (finał krzyżaków; tor KZ = 5 pozycji). Zadanie = **Z11** (szyfr finałowy).
 - **Wkładki / co gracz ma już przy sobie:** Tabela 1 (od Albrechta, K3-K), Tabela 2 (tabula recta), zapieczętowany list (noszony od pozycji 1).
-- **W tej kopercie:** ten brief + **szyfrogram Z11** (`UEFNEJ UEGFEJ TJI WEUPEJ`).
+- **W tej kopercie:** ten brief + **szyfrogram Z11** (`UEFNEJ, UEGFEJ TJI WEUPEJ!`).
 - **Kiedy wręczyć:** MG wręcza, gdy grupa kończy tor 2B (Z3Z + opcjonalna) i zbiera się do finału.
 - **Dokąd odsyła:** ruiny Przedzamcza, ósme bicie (20:30) — wybór strony (Albrecht / Bażyński), oddanie listu. **Brama Albrechta = wypowiedzenie motta Zakonu** (odszyfrowane z Z11).
 - **Canon:** `concept/04-faza-3-final.md`, `puzzles/z11-szyfr-spec.md §4/§5`.
@@ -30,7 +30,7 @@
 
 *The Order does not take a courier on trust. Among the papers a coded line was set down — the watchword every true son of the Order can draw out, and no stranger can. Read your sign, find its row, and let the marks give up their word:*
 
-> `UEFNEJ  UEGFEJ  TJI  WEUPEJ`
+> `UEFNEJ, UEGFEJ TJI WEUPEJ!`
 
 *The word you read is the Order's own. Carry it to the walls.*
 
@@ -50,6 +50,6 @@
 - **Wolny wybór (jak TR):** mogą oddać list **Bażyńskiemu** (zmiana strony) zamiast Albrechtowi — `concept/04`. Tekst nie ocenia wyboru.
 - **BRAK twistu tożsamości** [decyzja 2026-05-29]: finał KZ nie ujawnia „Jordan=Bażyński" jako rewelacji dla siebie — Albrecht jawny od początku. Brama = godność (motto), nie wiedza tajna.
 - **Ósme bicie / Przedzamcze / nie Tuba Dei** — jak `miasto-6-Z7` (anachronizm dzwonu).
-- **Interpunkcja szyfrogramu:** pokazany bez przecinka/wykrzyknika (same litery + spacje słów); odszyfrowane gracz formatuje jako motto. (Dane: `materials/props/z11-tabula-recta-draft.md`.)
+- **Interpunkcja szyfrogramu [Oskar 2026-06-03]:** pokazany **z przecinkiem i wykrzyknikiem** w tych samych pozycjach co motto (`UEFNEJ, … WEUPEJ!`) — lokuje słowa i lustruje urządzenie z Z7 (interpunkcja jako kotwica). Interpunkcja przechodzi 1:1 (nie szyfrowana). Walidacja round-trip w `cipher-data.js` operuje na samych literach + spacjach. (Dane: `materials/props/z11-tabula-recta-draft.md`.)
 - **⚠ Dystrybucja Tabeli 2 / prowenancja szyfrogramu:** szyfrogram tu, w finale (decyzja 2026-06-03). Reszta dystrybucji (gdzie wydać Tabelę 2; rola opcjonalnej Z8/9/10 w bramkowaniu finału) — `puzzles/z11-szyfr-spec.md §6/§8`, `otwarte-pytania #27b`.
 - **Status:** placeholder w manifescie (`envelopes/README.md`) → podniesiony do **draft** [2026-06-03].

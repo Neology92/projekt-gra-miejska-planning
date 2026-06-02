@@ -72,9 +72,9 @@ HELFEN HEILEN UND WEHREN
 
 **Ciphertext (szyfrogram Z11) — szyfrowanie wierszem S11 (MARIENBURG):**
 ```
-UEFNEJ UEGFEJ TJI WEUPEJ
+UEFNEJ, UEGFEJ TJI WEUPEJ!
 ```
-(HELFEN→UEFNEJ, HEILEN→UEGFEJ, UND→TJI, WEHREN→WEUPEJ; round-trip ✓, walidacja `cipher-data.js` PASS)
+(HELFEN→UEFNEJ, HEILEN→UEGFEJ, UND→TJI, WEHREN→WEUPEJ; **interpunkcja przechodzi 1:1** — przecinek/wykrzyknik w tych samych pozycjach co motto, jako kotwica lokująca słowa [Oskar 2026-06-03, jak w Z7]; round-trip na samych literach ✓, walidacja `cipher-data.js` PASS)
 
 > **Po co odszyfrowywać własne motto?** Brama = *dowód*, nie wiedza: większość graczy nie zna niemieckiego motta Zakonu z głowy — szyfrogram je ujawnia, a samo odszyfrowanie dowodzi, że grupa złożyła klucz (była u Jordana → symbol → tabula recta). Wynik wypowiadają Albrechtowi.
 
@@ -119,7 +119,7 @@ UEFNEJ UEGFEJ TJI WEUPEJ
 | Element | Skąd gracz go ma | Status |
 |---|---|---|
 | **Tabela 1** (lookup) | **Albrecht (Zosia) wręcza w K3-K po Z2** — handler toru KZ; grupa niesie ją do Piccolo, gdzie obserwuje Jordana (kolor szaty + chochla) | kanon [2026-06-02] |
-| **Szyfrogram Z11** (`UEFNEJ UEGFEJ TJI WEUPEJ`) | w **finałowej kopercie KZ** (`envelopes/krzyzacy-5-Z11.md`) — ostatnia koperta od MG | [2026-06-03] |
+| **Szyfrogram Z11** (`UEFNEJ, UEGFEJ TJI WEUPEJ!`) | w **finałowej kopercie KZ** (`envelopes/krzyzacy-5-Z11.md`) — ostatnia koperta od MG | [2026-06-03] |
 | **Tabela 2** (tabula recta) | **DO WYBRANIA**: (a) razem z Tabelą 1 w K3-K, albo (b) dopiero w finale (z szyfrogramem) | OTWARTE [2026-06-02] — patrz §8 |
 
 > **Brama dostawy w finale [2026-06-03]:** przy Przedzamczu (20:30) Albrecht przyjmie list **tylko od grupy, która wypowie motto** `HELFEN, HEILEN UND WEHREN!`. KZ zdobywa je z Z11 (deszyfracja); TR-dezerter odczytuje z wykradzionej listy. Bez motta — komtur odprawia. Scenariusz Albrechta: `materials/actors/albrecht-actor-card-draft.md §FINALE`. Wzmianki w kopertach finałowych: KZ `envelopes/krzyzacy-5-Z11.md`, TR `envelopes/miasto-6-Z7.md`.
@@ -143,7 +143,7 @@ UEFNEJ UEGFEJ TJI WEUPEJ
 4. ✅ **Klucz wspólny dla frakcji KZ** [2026-06-02] (nie per grupa).
 4a. ✅ **Tabelę 1 wręcza Albrecht (Zosia) po Z2** [2026-06-02] — handler toru KZ (nie Jordan). Patrz `concept/05-tor-krzyzakow.md`, `puzzles/zamek-krzyzacki-lista.md §Z3Z`.
 4b. ✅ **Tabela 1: kolumny = rysunki przedmiotów (SVG), wiersze = kolory po angielsku** [2026-06-02].
-5. ✅ **Parol = MOTTO ZAKONU** `HELFEN, HEILEN UND WEHREN!` [ROZSTRZYGNIĘTE 2026-06-03, Oskar]. Ciphertext `UEFNEJ UEGFEJ TJI WEUPEJ` (round-trip ✓). To samo motto co klucz Z7 → symetria finałów; podanie Albrechtowi bramkuje oddanie listu. (Wcześniejsi kandydaci `ONE CROSS ONE OATH` itd. — porzuceni.)
+5. ✅ **Parol = MOTTO ZAKONU** `HELFEN, HEILEN UND WEHREN!` [ROZSTRZYGNIĘTE 2026-06-03, Oskar]. Ciphertext `UEFNEJ, UEGFEJ TJI WEUPEJ!` (interpunkcja 1:1; round-trip ✓). To samo motto co klucz Z7 → symetria finałów; podanie Albrechtowi bramkuje oddanie listu. (Wcześniejsi kandydaci `ONE CROSS ONE OATH` itd. — porzuceni.)
 6. ⬜ **Styl symboli** — 3 propozycje w `materials/props/z11-tabela-symboli-draft.md` (gmerki / pieczęcie heraldyczne / znaki astronomiczne). Wymóg: **wyraźnie inne niż glify mapy Z1** (geometryczne △○□) **i niż piktogramy miejsc** (Kopernik, osiołek). Rekomendacja: gmerki.
 7. ✅ **Liczba wierszy Tabeli 2 = 16** [2026-06-02] (z 4×4) — mieści się na jednej A4 landscape (zweryfikowane renderem).
 8. ⬜ **Gdzie wydać Tabelę 2** — z Tabelą 1 (K3-K) czy w finale. §6.
@@ -156,7 +156,7 @@ UEFNEJ UEGFEJ TJI WEUPEJ
 - ✅ Mechanika — **dwie tabele (symbol-klucz + tabula recta), KZ-only** [2026-06-02].
 - ✅ Siatka **4×4**; wiersz-klucz = **Brown** (szata Jordana), kolumna-klucz = **Ladle** (chochla); klucz **S11** centralny. Klucz wspólny dla frakcji.
 - ✅ Kolumny (rysunki) = Gingerbread/Sword/Ladle/Candle; wiersze = Red/Green/Brown/Black; tekst-reguła ogólny.
-- ✅ **Parol = motto Zakonu** `HELFEN, HEILEN UND WEHREN!` [2026-06-03]; ciphertext `UEFNEJ UEGFEJ TJI WEUPEJ`; hasło-substytucja MARIENBURG; 16 wierszy; round-trip ✓. Motto bramkuje oddanie listu Albrechtowi (symetria z Z7).
+- ✅ **Parol = motto Zakonu** `HELFEN, HEILEN UND WEHREN!` [2026-06-03]; ciphertext `UEFNEJ, UEGFEJ TJI WEUPEJ!` (interpunkcja 1:1); hasło-substytucja MARIENBURG; 16 wierszy; round-trip ✓. Motto bramkuje oddanie listu Albrechtowi (symetria z Z7).
 - ✅ **Rekwizyty wyrenderowane** [2026-06-02]: `public/z11-tabela-1-symbole.pdf` (A4), `public/z11-tabela-2-tabula-recta.pdf` (A4 landscape). Generator: `tools/z11-cipher/` (walidacja PASS). Styl symboli = gmerki **roboczo** (do wyboru, §8.6).
 - ⬜ Styl symboli (gmerki/heraldyka/astro), miejsce wydania Tabeli 2 — §8. (Parol ROZSTRZYGNIĘTY = motto.)
 

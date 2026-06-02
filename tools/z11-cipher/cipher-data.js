@@ -194,7 +194,10 @@ function encodeWithRow(plaintext, row) {
 // Decoding Z11 yields it; spoken to Albrecht it unlocks delivering the letter. [decyzja Oskara 2026-06-03]
 // Punctuation (comma/!) is cosmetic on the prop only — validation uses letters + word spaces.
 const PLAINTEXT   = 'HELFEN HEILEN UND WEHREN';
-const CIPHERTEXT  = 'UEFNEJ UEGFEJ TJI WEUPEJ';
+const CIPHERTEXT  = 'UEFNEJ UEGFEJ TJI WEUPEJ';        // letters + word spaces — used for round-trip validation
+// Player-facing form on the prop [Oskar 2026-06-03]: punctuation passes through 1:1 (comma/!
+// in the same positions as the motto, anchoring the words — same device as Z7).
+const CIPHERTEXT_DISPLAY = 'UEFNEJ, UEGFEJ TJI WEUPEJ!';
 const N           = SYMBOLS.length;   // 16
 
 function runValidation(loud) {
@@ -241,7 +244,7 @@ function runValidation(loud) {
 
 const Z11_DATA = {
   SYMBOLS, T1_ROWS, T1_COLS, COL_ICONS, T2_ROWS, ALPHABET,
-  KEY_ROW, KEY_IDX, CIPHERTEXT, PLAINTEXT,
+  KEY_ROW, KEY_IDX, CIPHERTEXT, CIPHERTEXT_DISPLAY, PLAINTEXT,
   makeGmerkSvg, generateGmerkPath, decodeWithRow, encodeWithRow, runValidation,
 };
 
