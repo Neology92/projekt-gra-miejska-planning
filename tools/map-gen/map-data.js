@@ -67,13 +67,13 @@ const Z1_GROUPS = {
 };
 
 // Rynek Staromiejski cluster → rendered in inset only
-const Z1_INSET_CODES = ['C01','C02','C03','C04','C06','C07','D01'];
+const Z1_INSET_CODES = ['C01','C02','C04','C06','C07','D01'];
 
 // Inset bounding box (SW, NE) — WHOLE Rynek Staromiejski + a ring of context,
 // not just the cluster. Wide enough to read the market square; the main map is
 // zoomed out to fit both towns, so the inset is what separates the dense pins.
-const Z1_INSET_SW = [53.0097, 18.6034];
-const Z1_INSET_NE = [53.0115, 18.6058];
+const Z1_INSET_SW = [53.0098, 18.6039];
+const Z1_INSET_NE = [53.0106, 18.6052];
 
 // FROZEN view — fixed center/zoom shared by ALL group maps (same place = same
 // pixel on every map; positional consistency is a hard rule). Must fit the UNION

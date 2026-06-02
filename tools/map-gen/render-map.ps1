@@ -35,9 +35,24 @@ Write-Host "Browser: $browser"
 
 # --- Layout constants ---
 # A4 landscape at ~100 dpi: 297mm/25.4 * 100 = 1169.3 ≈ 1170 px wide
-# With --force-device-scale-factor=3: output is 3510×2481 ≈ 300 dpi
-$W = 1170
-$H = 827
+# With --force-device-scale-factor=3: output is 3510×2484 ≈ 300 dpi
+$W   = 1170
+$H   = 828
+$DSF = 3            # --force-device-scale-factor
+
+# Headless Chrome reserves ~16px width + ~95px height of the window for
+# decoration/scrollbar, so the layout VIEWPORT is smaller than --window-size
+# while the screenshot still captures the full outer window. Result: the bottom
+# 95px of the sheet was being CLIPPED and replaced by a page-bg strip, and a
+# thin strip appeared on the right. Fix: render into an OVERSIZED window so the
+# viewport comfortably exceeds the sheet (full render, no clip), then crop the
+# PNG back to the exact sheet box (W×H × DSF) at the top-left.
+$MarginW = 60      # window padding beyond sheet width  (> ~16 decoration)
+$MarginH = 160     # window padding beyond sheet height (> ~95 decoration)
+$WinW = $W + $MarginW
+$WinH = $H + $MarginH
+$CropW = $W * $DSF
+$CropH = $H * $DSF
 
 # --- Render function ---
 function Render-Map {
@@ -62,8 +77,9 @@ function Render-Map {
     '--no-sandbox'
     '--disable-gpu'
     '--disable-web-security'            # allows file:// → CDN fetch
-    "--force-device-scale-factor=3"
-    "--window-size=$W,$H"
+    "--force-device-scale-factor=$DSF"
+    "--window-size=$WinW,$WinH"
+    "--hide-scrollbars"
     "--screenshot=$pngOut"
     '--run-all-compositor-stages-before-draw'
     $uri
@@ -85,6 +101,28 @@ function Render-Map {
   if (-not $pngOk) {
     Write-Host " PNG FAILED" -ForegroundColor Red
     return
+  }
+
+  # Crop the oversized capture down to the exact sheet box (top-left corner).
+  # The sheet has margin:0 and fixed W×H, so at DSF it always occupies the
+  # top-left CropW×CropH; everything beyond is decoration page-bg → discard.
+  try {
+    Add-Type -AssemblyName System.Drawing
+    $src = New-Object System.Drawing.Bitmap($pngOut)
+    if ($src.Width -lt $CropW -or $src.Height -lt $CropH) {
+      $src.Dispose()
+      Write-Host (" CROP SKIP (capture {0}x{1} < {2}x{3})" -f $src.Width,$src.Height,$CropW,$CropH) -ForegroundColor Yellow
+    } else {
+      $dst  = New-Object System.Drawing.Bitmap($CropW, $CropH)
+      $g    = [System.Drawing.Graphics]::FromImage($dst)
+      $rect = New-Object System.Drawing.Rectangle(0, 0, $CropW, $CropH)
+      $g.DrawImage($src, $rect, $rect, [System.Drawing.GraphicsUnit]::Pixel)
+      $g.Dispose(); $src.Dispose()
+      $dst.Save($pngOut, [System.Drawing.Imaging.ImageFormat]::Png)
+      $dst.Dispose()
+    }
+  } catch {
+    Write-Host " CROP ERROR: $($_.Exception.Message)" -ForegroundColor Yellow
   }
 
   $pngKb = [math]::Round((Get-Item $pngOut).Length / 1KB)

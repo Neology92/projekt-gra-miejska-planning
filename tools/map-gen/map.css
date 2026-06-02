@@ -4,7 +4,7 @@
 
 :root {
   --sheet-w:  1170px;   /* A4 landscape width  @ ~100 dpi */
-  --sheet-h:   827px;   /* A4 landscape height @ ~100 dpi */
+  --sheet-h:   828px;   /* A4 landscape height — 828 divisible by 3 (device-scale-factor) */
   --rail-w:    300px;   /* right rail width (legend / notes only) */
   --inset-w:   290px;   /* Rynek inset overlay width (clears S01 to its left) */
   --inset-h:   300px;   /* Rynek inset overlay height             */
