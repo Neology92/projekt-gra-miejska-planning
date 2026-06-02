@@ -6,3 +6,10 @@ Thumbs.db
 desktop.ini
 .DS_Store
 
+
+# Artefakty generatora galerii (tools/pdf-viewer)
+public/index.html
+public/files.json
+
+# Local Netlify folder
+.netlify

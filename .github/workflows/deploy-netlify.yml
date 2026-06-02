@@ -1,0 +1,34 @@
+name: Deploy galeria PDF → Netlify
+
+# Continuous deploy: każdy push na master, który dotyka materiałów w public/
+# lub generatora galerii, przebudowuje index.html i wysyła public/ na Netlify.
+# Sekrety: NETLIFY_AUTH_TOKEN, NETLIFY_SITE_ID (ustawione w Settings → Secrets).
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'public/**'
+      - 'tools/pdf-viewer/**'
+      - 'netlify.toml'
+      - '.github/workflows/deploy-netlify.yml'
+  workflow_dispatch: {}
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Generuj galerię (public/index.html)
+        run: node tools/pdf-viewer/build.mjs
+
+      - name: Deploy na Netlify (produkcja)
+        run: npx --yes netlify-cli@26 deploy --prod --dir public --message "CI: ${{ github.sha }}"
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}

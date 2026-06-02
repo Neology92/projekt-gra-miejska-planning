@@ -1,0 +1,18 @@
+# Netlify — serwuje WYŁĄCZNIE katalog public/ (galeria PDF/materiałów gry).
+# Reszta planning-repo (concept/, puzzles/, lore/, mechanics/...) NIE trafia na stronę.
+# index.html jest auto-generowany z public/ przez build command przy każdym deployu,
+# więc każdy commit dodający plik do public/ pojawia się online po pushu.
+
+[build]
+  command = "node tools/pdf-viewer/build.mjs"
+  publish = "public"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# PDF-y otwierane inline w przeglądarce (mobilnej) zamiast wymuszania pobrania.
+[[headers]]
+  for = "/*.pdf"
+  [headers.values]
+    Content-Type = "application/pdf"
+    Content-Disposition = "inline"
