@@ -52,7 +52,7 @@ Wymowa moralna (`lore/fakty-vs-fabula.md §Wymowa moralna`):
 > „Plot twist Jordan = Bażyński ma gorzki smak — 'bohater' prowadzący graczy okazuje się przywódcą strony pchającej świat w dół."
 
 **Dodatkowe elementy fabularne w Z2:**
-- Zagadka logiczna (Einstein-type) jako mechanizm dotarcia do Jordana (`puzzles/droga-do-jordana.md`): Kordian/Lambert/Jordan × Kuźnia/Stary Młyn/Piccolo × sukno/jedzenie/chochla. Struktura czysto gamistyczna, niehistoryczna.
+- Zagadka logiczna (Einstein-type) jako mechanizm dotarcia do Jordana (`puzzles/droga-do-jordana.md`): Kordian/Lambert/Jordan × Kuźnia/Stary Młyn/Piccolo × sukno/jedzenie/**miecz** [zakup-parol Jordana zmieniony chochla → miecz 2026-06-02]. Struktura czysto gamistyczna, niehistoryczna.
 
 ---
 
@@ -69,7 +69,7 @@ Wymowa moralna (`lore/fakty-vs-fabula.md §Wymowa moralna`):
 
 1. **Bażyński a nazwa własna.** Rodzina pochodzenia lubeckiego (ród Fleming) osiadła na Warmii. W 1289 r. biskup warmiński Henryk Fleming nadał bratu Albertowi wieś Bażyny (niem. Baysen) → von Baysen → Bażyński (wiki: `jan-bazynski.js`). Twist „Jordan = Bażyński" może być wzmocniony grą na dwoistości nazwisk (imię/pseudonim/narodowość).
 2. **Tajna Rada — nie Rada Miejska Torunia.** Gracze mogą mylić oba ciała (wiki: `tajna-rada.js`). Bażyński jako przewodniczący TR to lider ponadmiejski — to wzmacnia status „chairmana" z K2.
-3. **Chochla — dwuznaczność.** W Z2 pełni podwójną rolę: zakup w dedukcji (Jordan kupuje chochlę u kowala) i atrybut rozpoznawczy w lokalu (`puzzles/droga-do-jordana.md`).
+3. **Miecz — zakup-parol + klamra finału.** W Z2 zakup Jordana w dedukcji to **miecz** (ironwork kupiony u kowala) = zarazem **parol** rozpoznawczy w lokalu (`puzzles/droga-do-jordana.md §E`). Kontrintuicyjny (kucharz, a kupił miecz) → testuje, że gracz naprawdę rozwiązał zagadkę. Miecz schowany w F2A, **wraca w finale** jako broń Bażyńskiego (`concept/04`) — niepozorny poranny zakup okazuje się bronią przywódcy buntu. **Chochla** zostaje osobno jako narzędzie kucharza / przykrywka / tie‑in z legendą „Jordan z chochlą" (nie jest już kluczem rozpoznania).
 4. **Kucharz w XV-wiecznym Toruniu.** Realny ślad: rachunek budowlany z 1520 — Stadtkoch przy Bramie Chełmińskiej (wiki: `legenda-jordan.js`). Kuchnia XV w.: łosoś wiślany, dziczyzna, pierniki, piwa pruskie (wiki: `kuchnia-pierniki.js`).
 5. **Bracia Bażyńscy.** Ścibor Bażyński (zm. 1480) — drugi gubernator Prus Królewskich po śmierci Jana; Gabriel (zm. 1475) — wojewoda elbląski (wiki: `jan-bazynski.js`).
 

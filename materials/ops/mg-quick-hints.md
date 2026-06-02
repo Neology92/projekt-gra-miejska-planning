@@ -43,7 +43,7 @@
 ║  Z2 — MORNING ERRANDS (logic puzzle from K2)               ║
 ╠══════════════════════════════════════════════════════════════╣
 ║  ANSWER: Jordan → Piccolo (the hot-food place)              ║
-║  Supporting: he bought a ladle there                        ║
+║  Supporting: he bought a sword there                        ║
 ║  (Lambert → Old Mill / bread; Kordian → Smithy / cloth)    ║
 ╠══════════════════════════════════════════════════════════════╣
 ║  H1 (gentle):                                               ║

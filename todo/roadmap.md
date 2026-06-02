@@ -98,7 +98,8 @@ Kolejność prac na zagadkach (priorytetowa):
 - **Mapy** (12-48 sztuk zależnie od decyzji)
 - **Szyfrowniki** (12-48 sztuk)
 - **Karta polichromii** (dla krzyżaków, jeśli tor jest)
-- **Rekwizyt chochli** Jordana
+- **Rekwizyt chochli** Jordana (przykrywka kucharza)
+- **Rekwizyt miecza** Jordana (zakup Z2 = parol; broń finału Bażyńskiego — `concept/04`)
 - **Pergamin z listą TR** (Z3 - jeden)
 - **Kostiumy 2 aktorów** (Jordan/Piotr — chochla; Albrecht/Zosia — płaszcz + krzyż)
 - **Dzwon / nagranie** na finał

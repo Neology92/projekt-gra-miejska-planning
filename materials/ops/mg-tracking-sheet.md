@@ -46,7 +46,7 @@ If completely off: send them back to start (△) — do not give names.
 
 ### Z2 — Morning Errands
 Full solution:
-- Jordan → Piccolo (hot food) — bought a ladle
+- Jordan → Piccolo (hot food) — bought a sword (parol)
 - Lambert → Old Mill (bread) — bought food
 - Kordian → Smithy (ironwork) — bought cloth
 

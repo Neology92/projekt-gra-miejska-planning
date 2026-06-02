@@ -19,9 +19,9 @@
 ║  □ Green (G4)   □ Cyan (G5)                                  ║
 ╠══════════════════════════════════════════════════════════════╣
 ║  VERIFICATION (on group arrival):                           ║
-║  ✓ They say "Jordan" + "bought a ladle" → warm welcome      ║
+║  ✓ They say "Jordan" + "bought a sword" → warm welcome      ║
 ║    → "Then I think I know who sent you."                    ║
-║  ~ They say "Jordan" but miss the ladle → nudge:            ║
+║  ~ They say "Jordan" but miss the sword → nudge:            ║
 ║    "And how would you know me, if a friend sent you?"       ║
 ║  ✗ Neither → politely redirect: "I think you're looking     ║
 ║    for someone else in this street."                        ║
@@ -51,9 +51,11 @@ You are waiting at Piccolo. You have food ready. You are calm, watchful, and del
 **One physical detail — keep it quiet, don't point at it:** you have a bad leg. A stiff knee, an old ache — you favour it when you stand, when you cross the room. Nothing dramatic, no limp played for laughs. Just a man whose body is not what it was. *(Don't explain it. It is a thread the sharp ones may pull at the very end — see planning notes.)*
 
 **Props you should have:**
-- [ ] A ladle (visible — this is how they find you)
+- [ ] A ladle (visible — you are a cook; this is your cover, not the password)
 - [ ] K3 envelopes (one per group, sorted by color)
 - [ ] Color reference list (5 TR wristband colors)
+
+> *They do NOT find you by the ladle. They find you by your name and by knowing what you bought this morning — a sword. (You don't show the sword; it stays out of sight. It surfaces only at the very end. See planning notes.)*
 
 ---
 
@@ -61,8 +63,8 @@ You are waiting at Piccolo. You have food ready. You are calm, watchful, and del
 
 When a group approaches:
 
-**Listen for the password.** The word set for today is a name *and* a purchase: they call you **Jordan** and tell you **what you bought this morning — a ladle.** A group that says, in effect, *"Jordan — you bought a ladle this morning"* has come from R. and worked out the way here. Answer them warmly: *"Then I think I know who sent you."*
-- If they name "Jordan" but miss the ladle, they are close but unproven — let them fish for it, or nudge: *"And how would you know me, if a friend had sent you?"*
+**Listen for the password.** The word set for today is a name *and* a purchase: they call you **Jordan** and tell you **what you bought this morning — a sword.** A group that says, in effect, *"Jordan — you bought a sword this morning"* has come from R. and worked out the way here. Answer them warmly: *"Then I think I know who sent you."*
+- If they name "Jordan" but miss the sword — or guess wrong (a cook, surely a ladle?) — they are close but unproven. Let them fish for it, or nudge: *"And how would you know me, if a friend had sent you?"* The right answer is a sword; that is the proof they truly worked it out.
 - If they have neither, they are lost — point them elsewhere politely.
 
 **Check the wristband color.** The group leader wears a colored band. Cross-check against your list. Only 5 colors belong to the right side. If the color doesn't match — they have the wrong contact. Tell them: *"I think you're looking for someone else."*
@@ -153,5 +155,7 @@ That's it. They leave.
 
 ## REWIZJA [2026-06-02] — ✅ częściowo WPROWADZONA
 
-1. **Hasło dnia (E) — ✅ WPROWADZONE w STEP 1.** Trigger rozpoznania = *imię „Jordan" + „kupiłeś dziś rano chochlę (a ladle)"* (parol dnia); po poprawnym parolu Jordan: *„Then I think I know who sent you."* Zsynchronizowane z `envelopes/miasto-2-Z2.md §Rewizja (slip R./F)` i `puzzles/droga-do-jordana.md §E` (chochla = zakup Jordana w zagadce = atrybut rozpoznawczy = hasło). Opaska/kolor zostaje jako warstwa logistyczna MG.
+1. **Hasło dnia (E) — ✅ WPROWADZONE w STEP 1.** Trigger rozpoznania = *imię „Jordan" + „kupiłeś dziś rano miecz (a sword)"* (parol dnia) [zmiana chochla → miecz 2026-06-02]; po poprawnym parolu Jordan: *„Then I think I know who sent you."* Zsynchronizowane z `envelopes/miasto-2-Z2.md` i `puzzles/droga-do-jordana.md §E` (miecz = zakup Jordana w zagadce = parol). Jordan zostaje kucharzem (chochla = przykrywka, NIE klucz rozpoznania); miecz schowany, payoff w finale. Opaska/kolor zostaje jako warstwa logistyczna MG.
+
+> **Klamra miecza [2026-06-02, decyzja Oskara]:** parol „kupiłeś dziś rano miecz" to zasiew. Miecz, który Jordan-kucharz „kupił rano", jest tą samą bronią, którą **Bażyński (= Jordan) walczy w finałowej scence** pod zamkiem (`concept/04-faza-3-final.md`). Piotr w finale gra Bażyńskiego z mieczem — callback nagradzający graczy, którzy rozwiązali Z2. W Piccolo miecza NIE pokazuje (przykrywka + zaskoczenie w finale).
 2. **Drobna flaga — STEP 4 „Don't open it out here" (linia ~76):** to wypowiedź NPC w świecie (ostrożny kucharz), nie meta-logistyka — więc *prawdopodobnie OK*. Ale leży blisko wycinanego „do not open it in front of him / open once clear" (K3, Zasada #3). ⚠ przy ujednolicaniu zważyć, czy zostawić, czy przykryć opisem; **nie tnę automatycznie** — do decyzji Oskara.

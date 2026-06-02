@@ -3,7 +3,7 @@
 > **Language:** English (player-facing). Planning notes in Polish below.
 > **Status:** draft [2026-06-02, v2 — rewizja WPROWADZONA] — awaiting Oskar's review.
 > ⚠ **Glify miejsc = `⟨mark⟩` placeholder** — jedyna część niefinalna. Realny glif Piccolo + 2 zmyślone (Młyn, Kuźnia) dobiera się przy generowaniu mapy Z1 (`#66`, `puzzles/droga-do-jordana.md §D`). Reszta tekstu (scena-odkrycie, plotki, zagadka, slip R., hasło) = finalna.
-> **Zmiana zakupu:** „horseshoe" → **„a ladle"** (chochla) + Kuźnia „ironwork" — zsynchronizowane z kanonem `droga-do-jordana §themingowa`: Jordan kupuje chochlę → to zarazem **hasło dnia** („what he bought this morning"). Rozwiązanie logiczne bez zmian (izomorfizm).
+> **Zmiana zakupu:** „horseshoe" → „a ladle" → **„a sword"** (miecz) [2026-06-02]; Kuźnia „ironwork". Jordan kupuje miecz → to zarazem **hasło dnia** („what he bought this morning") i broń, która wraca w finale (`concept/04-faza-3-final.md`). Rozwiązanie logiczne bez zmian (izomorfizm — miecz = ironwork z Kuźni). Patrz baner „ZMIANA ATRYBUTU" w `puzzles/droga-do-jordana.md`.
 > **Contents of physical envelope:** main note (this) + intermediary's note (separate slip).
 > **Triggers:** MG hands this to group after they correctly report 4 locations in order.
 
@@ -44,7 +44,7 @@ Three people went into town this morning, and each bought one thing. Work out wh
 - The Smithy — ironwork — ⟨mark⟩
 
 *The three:* Kordian · Lambert · Jordan
-*What each one bought:* food · a ladle · cloth
+*What each one bought:* food · a sword · cloth
 
 *Heard about town this morning — every word of it true:*
 1. Lambert could have eaten at his own place, yet he went to buy his food elsewhere.
@@ -89,7 +89,7 @@ Go carefully. — R.
 
 > ⚠ **Wersja Krzyżacy:** ich K2 prowadzi do Albrechta (nie chairmana TR) — trop celu musi być inny (parole/hasło do komtura, nie „chairman Rady"). Do napisania przy MVP. NIE kopiować tropu TR 1:1.
 
-**Z2 — wpisana wersja themingowa [2026-06-01]:** zagadka logiczna 3 osoby × {miejsce pracy, zakup}, rdzeń Oskara z nałożoną trójką **Jordan / Piccolo / chochla**. Rozwiązanie jednoznaczne (dowód: `puzzles/droga-do-jordana.md`). Wynik = **Jordan pracuje w Piccolo** → gracz idzie tam, pyta o Jordana (imię = jednocześnie hasło-test wejścia, patrz `concept/02-faza-2a-jordan.md`), rozpoznaje go po **chochli**. „ladled out / ask for him by name" niesie atrybut + hasło bez meta-gadania.
+**Z2 — wpisana wersja themingowa [2026-06-01; zakup-parol chochla → miecz 2026-06-02]:** zagadka logiczna 3 osoby × {miejsce pracy, zakup}, rdzeń Oskara z nałożoną trójką **Jordan / Piccolo / miecz**. Rozwiązanie jednoznaczne (dowód: `puzzles/droga-do-jordana.md`; miecz = ironwork z Kuźni, izomorfizm zachowany). Wynik = **Jordan pracuje w Piccolo + kupił rano miecz** → gracz idzie tam, podaje imię + parol „kupiłeś dziś rano miecz" (hasło-test wejścia, patrz `concept/02-faza-2a-jordan.md`). Jordan zostaje kucharzem (chochla = flavor „ladled out"); miecz schowany, payoff w finale. Parol kontrintuicyjny → testuje dedukcję.
 - **Imiona prowizoryczne** (Kordian/Lambert/Jordan): „Kordian" anachroniczny (XIX w.); do podmiany przy period-themingu. Tylko **Jordan** jest kanoniczny (kontakt TR).
 - **Wersja krzyżacka:** inne K2 — Z2 prowadzi do **Albrechta**, nie Jordana/Piccolo; ta sama struktura logiczna, inny cel (imię/miejsce). Do napisania przy MVP. NIE kopiować 1:1.
 
@@ -123,7 +123,7 @@ Go carefully. — R.
 
 ### C. NIE zdradzać, że szukają Jordana / że pójdą tam, gdzie pracuje
 - Obecne zdanie (sekcja Z2): „**Once you have placed Jordan, you will know where he works. Go there — and ask for him by name.**" → **USUNĄĆ.** Oskar: na tym etapie gracze **nie mogą wiedzieć, że szukają Jordana**.
-- **Trzy rzeczy do samodzielnego połączenia:** *Piccolo* (miejsce) · *Jordan* (imię) · *chochla* (atrybut). Dopiero gdy zepną wszystkie trzy — wiedzą, dokąd iść i kogo szukać. „Jordan" ma być **odkryciem**, nie zdaniem odczytanym i skwitowanym „aha, Jordan, to idziemy".
+- **Trzy rzeczy do samodzielnego połączenia:** *Piccolo* (miejsce) · *Jordan* (imię) · *miecz* (zakup-parol). Dopiero gdy zepną wszystkie trzy — wiedzą, dokąd iść i kogo szukać. „Jordan" ma być **odkryciem**, nie zdaniem odczytanym i skwitowanym „aha, Jordan, to idziemy".
 
 ### D. NOWA WARSTWA — glify miejsc → nawigacja zamiast „idź tam, gdzie pracuje" [ROZSTRZYGNIĘTE 2026-06-02]
 - Po rozwiązaniu zagadki gracze mają **3 pełne ścieżki `[glif]–[miejsce]–[osoba]–[atrybut]`** (po jednej na osobę), z czego **TYLKO JEDEN glif istnieje na mapie** (Piccolo). Sami muszą ustalić, że właśnie tam idą.
@@ -133,8 +133,8 @@ Go carefully. — R.
 - ⚠ **Zależność techniczna:** glif Piccolo **musi realnie istnieć** na mapie Z1 (`prototype/maps/`) — sprzęga z pendingiem mapy/deszyfrownika. Pełna mechanika → `puzzles/droga-do-jordana.md §D`.
 
 ### E. Hasło dnia — przekazuje je R. (w slipie)
-- Slip R. ma poinstruować: **po dotarciu na miejsce zwrócić się do osoby PO IMIENIU i wskazać, co kupiła dziś rano (chochlę)** — wtedy będzie wiedziała, że są „od nas". To **hasło ustalone na dziś**.
-- Trigger rozpoznania (imię „Jordan" + „kupiłeś dziś rano chochlę") → **musi rozpoznawać Jordan-aktor**: cross-ref do `materials/actors/jordan-actor-script-draft.md` (do zsynchronizowania).
+- Slip R. ma poinstruować: **po dotarciu na miejsce zwrócić się do osoby PO IMIENIU i wskazać, co kupiła dziś rano (miecz)** — wtedy będzie wiedziała, że są „od nas". To **hasło ustalone na dziś**. *(Slip mówi tylko „what he bought this morning" — generycznie; treść = miecz, z dedukcji.)*
+- Trigger rozpoznania (imię „Jordan" + „kupiłeś dziś rano miecz") → rozpoznaje Jordan-aktor: cross-ref ZSYNCHRONIZOWANY z `materials/actors/jordan-actor-script-draft.md`.
 
 ### F. Slip „— R." — rewrite na jasne skierowanie do kuriera
 - Obecny slip („*This letter is for the head of their Council. Their chairman. Into his own hand…*") **nie jest jasny, że chodzi o list niesiony przez kuriera.** Przeredagować jako wprost skierowane do znalazcy:

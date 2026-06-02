@@ -50,7 +50,8 @@ Decoder cards render via `tools/z1-decoder/` → output to `public/decoders/`.
 | **Wristbands / colored arm bands** (group ID) | All day | 2 colors (e.g., G1 + G2) | 2 colors minimum | Colored fabric wristbands or silicone event bands; ~2–5 PLN each. Craft stores / allegro. 4–6 per group if multi-player |
 | **Jaw harp / drumla / kalimba** | Z4 | 1 | 1–2 (groups rotate) | "Jaw harp," "jews harp," "drumla." Medieval music shops, Allegro, etsy. ~20–60 PLN. Practice before game day — melody must be reproducible |
 | **Hand bell** (finale, 8 strikes) | KF finale | 1 | 1 | A small brass hand bell, NOT Tuba Dei (anachronism). Church supply shops, Allegro, antique markets. ~20–50 PLN. Alternative: phone recording of a single bell struck 8 times |
-| **Ladle** (Jordan/Piotr prop) | F2A (Jordan scene) | 1 | 1 | Wooden or metal; kitchen store. Should look period-plausible. ~10–20 PLN |
+| **Ladle** (Jordan/Piotr prop) | F2A (Jordan scene) | 1 | 1 | Cook's cover prop (NOT the password — recognition is by name + parol "bought a sword"). Wooden or metal; kitchen store. Period-plausible. ~10–20 PLN |
+| **Sword** (Jordan→Bażyński prop) | KF finale (Bażyński scene) | 1 | 1 | Jordan's "morning purchase" from Z2 = parol, then Bażyński's weapon in the finale confrontation (callback). Hidden during F2A. Theatrical/foam or blunt decorative sword; period-plausible. Allegro/theatrical props. ~30–80 PLN |
 | **Stack of Z3 parchment copies** (Albrecht/Zosia) | Z3 theft scene | 4–6 printed | 6–8 printed | Already counted in print section above — Zosia needs a satchel or folder to hold spares |
 | **Portable surface for Albrecht** (list display) | Z3 theft scene | Optional for dry-run | 1 | A small fold-out table, lectern, or wooden crate. Albrecht sets the list on this for the patrol. Must be stable outdoors |
 | **Wax seal + stamp** | Sealed letter prop | 1 set | 1 set | Sealing wax sticks + brass/metal seal stamp. Generic wax seal kits on Allegro/Amazon: ~20–40 PLN. For prototyp: Order cross or neutral heraldic stamp |
@@ -62,7 +63,7 @@ Decoder cards render via `tools/z1-decoder/` → output to `public/decoders/`.
 
 | Item | Who | Dry-run | Live ×2 | Notes |
 |---|---|---|---|---|
-| **Apron + ladle** (Jordan/cook) | Piotr | ⬜ minimal | ⬜ full | A heavy cloth apron reads "cook" clearly. The ladle is the key prop. No full medieval costume needed for prototype |
+| **Apron + ladle** (Jordan/cook) | Piotr | ⬜ minimal | ⬜ full | A heavy cloth apron reads "cook" clearly. The ladle sells the cover (recognition is by name + parol, not the ladle). No full medieval costume needed for prototype. Sword = separate finale prop (see props table) |
 | **Dark mantle / cloak + cross emblem** (Albrecht/Komtur) | Zosia | ⬜ minimal | ⬜ suggest Order | A dark cloak + white-on-black or black-on-white cross. Does NOT need to be a full Teutonic habit for prototype — suggestion is enough. Craft a felt cross badge (~10–20 PLN fabric) or buy theatrical cross prop. See `albrecht-actor-card-draft.md §BEFORE GROUPS ARRIVE` — "costume TBD, question #33" |
 | **MG vest / lanyard** | MG (Oskar) | ⬜ | ⬜ | Optional but useful for players to identify MG. A high-vis vest, or just a lanyard with badge |
 

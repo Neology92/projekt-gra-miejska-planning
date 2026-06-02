@@ -2,13 +2,19 @@
 
 **Status**: 🟡 **rdzeń logiczny gotowy, dochodzi NOWA WARSTWA [2026-06-02]** — zagadka logiczna kompletna (Oskar) i zweryfikowana, ale uwagi Oskara z 2026-06-02 dodają **warstwę glifów** (nawigacja) + **hasło dnia** i zmieniają sposób, w jaki gracz dociera do celu (nie „idź, gdzie Jordan pracuje"). Patrz `## REWIZJA [2026-06-02]` na dole. Rdzeń logiczny niżej **nietknięty**.
 
+> ### ⚔ ZMIANA ATRYBUTU [2026-06-02, decyzja Oskara] — chochla → **miecz**
+> Poranny zakup Jordana w zagadce (i zarazem **parol dnia**) to teraz **miecz**, nie chochla. Powód: miecz **wraca w finale** — Bażyński (= Jordan) walczy nim w scence pod zamkiem (`concept/04-faza-3-final.md`). Zakup Jordana zyskuje funkcję bramkującą całą grę (foreshadow → payoff), czego chochla nie miała.
+> - **Wariant rozpoznania = B („ukryty zakup, parol, broń finału"):** Jordan zostaje kucharzem — **chochla pozostaje** jako jego narzędzie/przykrywka i tie‑in z legendą („Jordan z chochlą", wiki `legenda-jordan.js`). Miecz jest **kupiony i schowany**; NIE jest noszony jako widoczny atrybut. Rozpoznanie na miejscu = **imię „Jordan" + parol „kupiłeś dziś rano miecz"** (nie „człowiek z mieczem"). Przykrywka kucharza nienaruszona.
+> - **Logika zagadki bez zmian (izomorfizm):** miecz to *ironwork* z Kuźni — wpada dokładnie w slot, który miała chochla (przedmiot metalowy kupiony u kowala Kordiana). Rozwiązanie dalej jednoznaczne; „sukno" wciąż jedynym zakupem spoza trójki (silnik P2).
+> - Poprzedni wariant (chochla jako zakup/atrybut/parol) był ROZSTRZYGNIĘTY [2026-06-01]; pełna treść chochla w `git log` tego pliku. Wzmianki o chochli **jako narzędziu kucharza / legendzie** zostają w mocy.
+
 ## Mechanika (z briefu autora)
 
 Po wizycie u MG (koniec F1) grupa dostaje kopertę z:
 1. **Plot twistem**: pośrednika nie ma.
 2. **Trzy rzeczy do zestawienia** (jakaś forma zagadki logicznej).
-3. Rozwiązanie = wskazówka *"udajcie się do [lokal] i znajdźcie osobę z [atrybut] o imieniu [imię]"*.
-4. Atrybut: **chochla**. Imię: **Jordan**.
+3. Rozwiązanie = wskazówka *"udajcie się do [lokal] i znajdźcie osobę o imieniu [imię], która kupiła dziś rano [zakup]"*.
+4. Zakup-parol: **miecz** (zob. baner „ZMIANA ATRYBUTU" wyżej). Imię: **Jordan**. Kucharz Jordan dalej nosi **chochlę** (przykrywka/legenda), ale rozpoznanie idzie przez imię + parol, nie przez widoczny atrybut.
 5. Lokal: **Picollo** (lub inny - do decyzji, patrz niżej).
 
 ## Trop celu kuriera — zasiany w K2 [2026-06-01, decyzja Oskara]
@@ -51,13 +57,13 @@ Koperta K2 (slip pośrednika R.) niesie **silny trop**: list ma trafić do **gł
 - Wszystkie 3 pogłoski muszą zostać — każda konieczna do jednoznaczności.
 - (drobne) „Kordian" to imię literackie XIX w. (Słowacki) → anachronizm dla 1454; przy period-accurate themingu podmień. Lambert/Ulrich OK germańsko.
 
-### ✅ Most do „Jordan + Piccolo + chochla" — ROZSTRZYGNIĘTY [2026-06-01, decyzja Oskara]
+### ✅ Most do „Jordan + Piccolo + miecz" — ROZSTRZYGNIĘTY [2026-06-01; zakup-parol zmieniony chochla → miecz 2026-06-02]
 
-Theming: **podmieniony cukiernik** → miejsce „spożywcze" (Cukiernia) staje się **Piccolo**, a osoba tam pracująca to **Jordan** (kucharz, atrybut **chochla**). Struktura logiczna i zdania-pogłoski **nietknięte** (izomorfizm ⇒ jednoznaczność zachowana). Wynik = „Jordan pracuje w Piccolo" → gracz idzie tam i rozpoznaje kontakt po **chochli**. Fundament (Kordian/Lambert/Ulrich, Cukiernia) zostaje wyżej jako baza; wersja themingowa niżej.
+Theming: **podmieniony cukiernik** → miejsce „spożywcze" (Cukiernia) staje się **Piccolo**, a osoba tam pracująca to **Jordan** (kucharz; chochla = jego narzędzie/przykrywka). Struktura logiczna i zdania-pogłoski **nietknięte** (izomorfizm ⇒ jednoznaczność zachowana). Wynik = „Jordan pracuje w Piccolo" → gracz idzie tam i rozpoznaje kontakt przez **imię + parol „kupiłeś dziś rano miecz"** (patrz §E i baner „ZMIANA ATRYBUTU"). Fundament (Kordian/Lambert/Ulrich, Cukiernia) zostaje wyżej jako baza; wersja themingowa niżej.
 
-#### Wersja themingowa (Jordan / Piccolo / chochla) — tor TR
+#### Wersja themingowa (Jordan / Piccolo / miecz) — tor TR
 
-> Zmiana wobec fundamentu: Cukiernia → **Piccolo**, jej produkt pierniki → **gorąca strawa** (wydawana chochlą), Ulrich → **Jordan**; Kuźnia – produkt podkowy → **metalowe przedmioty** (kucharz kupuje u kowala). Reszta identyczna.
+> Zmiana wobec fundamentu: Cukiernia → **Piccolo**, jej produkt pierniki → **gorąca strawa** (wydawana chochlą — flavor kuchni), Ulrich → **Jordan**; Kuźnia – produkt podkowy → **metalowe przedmioty / ironwork** (kucharz kupuje miecz u kowala). Reszta identyczna.
 
 **Polecenie:** Te trzy osoby poszły dziś rano na miasto i każda coś kupiła. Wskaż, kto co kupił oraz gdzie pracują.
 
@@ -67,7 +73,7 @@ Theming: **podmieniony cukiernik** → miejsce „spożywcze" (Cukiernia) staje 
 - Kuźnia – metalowe przedmioty
 
 **Imiona:** Kordian, Lambert, **Jordan**
-**Zakupy:** jedzenie, chochla, sukno
+**Zakupy:** jedzenie, miecz, sukno
 
 **Pogłoski (prawdziwe):**
 1. Lambert mógł zjeść coś u siebie, ale poszedł kupić jedzenie gdzieś indziej.
@@ -79,9 +85,9 @@ Theming: **podmieniony cukiernik** → miejsce „spożywcze" (Cukiernia) staje 
 |---|---|---|
 | Kordian | Kuźnia (metalowe przedmioty) | sukno |
 | Lambert | Stary Młyn (chleb) | jedzenie (strawa — z Piccolo) |
-| **Jordan** | **Piccolo (strawa)** | chochla (od Kordiana) |
+| **Jordan** | **Piccolo (strawa)** | miecz (od Kordiana) |
 
-**Wyjście = imię + miejsce + atrybut:** rozwiązanie mówi, że **Jordan pracuje w Piccolo**. Gracz idzie do Piccolo i rozpoznaje kontakt — **kucharza z chochlą** = Jordan. Imię (z zagadki) + miejsce (z dedukcji) + atrybut (chochla = narzędzie kucharza w Piccolo, sygnał rozpoznawczy na miejscu, spójny z hasłem-testem „imię Jordan"). Dodatkowa spójność: Jordan kupuje chochlę u kowala (kucharz kompletuje wyposażenie kuchni) — chochla pełni podwójną rolę: zakup w zagadce i atrybut rozpoznawczy w Piccolo.
+**Wyjście = imię + miejsce + zakup-parol:** rozwiązanie mówi, że **Jordan pracuje w Piccolo** oraz że **kupił dziś rano miecz**. Gracz idzie do Piccolo, podaje imię + parol („kupiłeś dziś rano miecz") i tak rozpoznaje kontakt. Imię (z zagadki) + miejsce (z dedukcji) + parol-zakup (miecz). **Uwaga projektowa:** parol „miecz" jest celowo *kontrintuicyjny* — oczywisty strzał „kucharz → chochla" jest błędny; tylko gracz, który rzeczywiście rozwiązał zagadkę, wskaże miecz. To wzmacnia bramkę (parol testuje dedukcję, nie zgadywanie). Spójność fabularna: kucharz kupujący miecz w dniu buntu = cichy foreshadow (gracz tego nie widzi na miejscu — miecz schowany — ale wraca w finale jako broń Bażyńskiego). Chochla zostaje jako narzędzie kucharza / przykrywka, nie jako klucz rozpoznania.
 
 **Drobna do ewentualnej decyzji:**
 - „Piccolo" anachroniczne wobec 1454 (CLAUDE.md) — użyte zgodnie z Twoją trójką jako realna nazwa lokalu docelowego; w fikcji opisane jako kuchnia/gospoda.
@@ -99,7 +105,7 @@ Autor wymienił "Picollo". Sprawdzenie:
 ## Mechanika spotkania
 
 1. Grupa przychodzi do lokalu.
-2. Pyta o "Jordana" / "osobę z chochlą".
+2. Podaje imię „Jordan" + parol „kupiłeś dziś rano miecz".
 3. NPC (Jordan) potwierdza tożsamość.
 4. Grupa siada → zaczyna się Faza 2A (patrz `concept/02-faza-2a-jordan.md`).
 
@@ -107,7 +113,7 @@ Autor wymienił "Picollo". Sprawdzenie:
 
 1. **Lokal** — ROZSTRZYGNIĘTE [2026-05-31]: **Piccolo** (patrz `todo/otwarte-pytania.md` #34). Otwarte: zgoda właściciela na gościnę 10 grup po 15-20 min każda.
 2. **Czas trwania spotkania** vs harmonogram MG - lokal nie wytrzyma 10 grup naraz; potrzebny **slot system**?
-3. **Rekwizyt "chochla"** - kucharz ją nosi widocznie? Czy gracze muszą się dopytać i wtedy ją wyjmuje?
+3. **Rekwizyt "chochla"** - kucharz ją nosi widocznie jako przykrywkę (tak — flavor kuchni). **Rekwizyt „miecz"** - schowany (zakup poranny), NIE pokazywany w Piccolo; wypływa dopiero w finale jako broń Bażyńskiego (`concept/04-faza-3-final.md`). Do produkcji: 1× miecz (rekwizyt finałowy).
 4. **Co jeśli grupa wejdzie do innego lokalu i zapyta o Jordana?** Mechanizm fail-safe (właściciele okolicznych lokali mają instrukcję "Jordan jest u nas")?
 
 ## Co autor może zrobić sam vs gdzie pomocy
@@ -123,7 +129,7 @@ Autor wymienił "Picollo". Sprawdzenie:
 
 ### C. NIE zdradzać z góry, że szukają Jordana / że pójdą tam, gdzie pracuje
 - W K2 znika zdanie „*once you have placed Jordan, you will know where he works — go there and ask for him by name*". Gracze na tym etapie **nie mają wiedzieć, że szukają Jordana**.
-- **Trzy rzeczy do samodzielnego zestawienia:** *Piccolo* (miejsce) · *Jordan* (imię) · *chochla* (atrybut). Cel ujawnia się dopiero po spięciu wszystkich trzech. „Jordan" = **odkrycie**, nie odczyt.
+- **Trzy rzeczy do samodzielnego zestawienia:** *Piccolo* (miejsce) · *Jordan* (imię) · *miecz* (zakup-parol). Cel ujawnia się dopiero po spięciu wszystkich trzech. „Jordan" = **odkrycie**, nie odczyt.
 
 ### D. Warstwa glifów — ROZSTRZYGNIĘTA STRUKTURA [2026-06-02, Oskar]
 **Po rozwiązaniu zagadki gracze mają 3 pełne ścieżki `[glif]–[miejsce]–[osoba]–[atrybut]` — po jednej na każdą z trzech osób — z czego TYLKO JEDEN glif istnieje na mapie.** Stąd sami muszą ustalić, dokąd iść (to ten z prawdziwym glifem).
@@ -131,16 +137,16 @@ Autor wymienił "Picollo". Sprawdzenie:
 - Zagadka logiczna daje komplet dla wszystkich trzech (kto gdzie pracuje, co kupił, jaki glif ma jego miejsce):
   - Kordian → Kuźnia → sukno → glif ▢ (zmyślony)
   - Lambert → Stary Młyn → jedzenie → glif ▢ (zmyślony)
-  - **Jordan → Piccolo → chochla → glif ▢ (PRAWDZIWY — jest na mapie Z1)**
+  - **Jordan → Piccolo → miecz → glif ▢ (PRAWDZIWY — jest na mapie Z1)**
 - **Cel NIE jest wyłożony** — zagadka nie mówi „idź do Jordana/Piccolo". Trzy ścieżki są równorzędne; rozstrzygnięcie dokąd iść = **sprawdzić, który z trzech glifów występuje na mapie**. To domyka §C („odkrycie, nie odczyt"): cel odsłania dopiero porównanie glifów z mapą, nie zdanie w zagadce.
 - Glify pochodzą z **wygenerowanej mapy Z1** (`public/maps/`). Glif Piccolo = realny punkt na mapie; glify Młyna i Kuźni = wiarygodne wizualnie, ale **nieobecne**.
-- Gdy grupa ustali prawdziwy glif → ma komplet: **miejsce (Piccolo) + imię (Jordan) + atrybut (chochla)** → idzie tam i podaje hasło dnia (§E).
+- Gdy grupa ustali prawdziwy glif → ma komplet: **miejsce (Piccolo) + imię (Jordan) + zakup-parol (miecz)** → idzie tam i podaje hasło dnia (§E).
 
 **Do rozpisania (szczegół, nie teraz finalnie):** trzeba zasiać graczom, że mają **porównać glify z mapą** (np. w K2 / slipie R.: „jeden z tych znaków odnajdziesz na swojej mapie — tam czeka twój człowiek"). Bez tego nie wiedzą, że glif jest kluczem nawigacyjnym.
 
 > ⚠ **Zależność od mapy Z1 (techniczna, wciąż otwarta):** glif Piccolo **musi realnie istnieć** na wygenerowanej mapie (`public/maps/`) i być jednym z glifów deszyfrownika Z1. Przy generowaniu mapy **zarezerwować/wskazać glif punktu Piccolo**; dobrać 2 wiarygodne, ale nieistniejące glify dla Młyna i Kuźni. To sprzęga z pendingiem mapy/deszyfrownika.
 
 ### E. Hasło dnia — przekazuje je R. (w slipie K2), rozpoznaje Jordan
-- Slip R. instruuje: **po dotarciu na miejsce zwrócić się do osoby PO IMIENIU i wskazać, co kupiła dziś rano (chochlę)** → wtedy będzie wiedziała, że są „od nas". To **hasło ustalone na dziś**.
-- Łączy zagadkę z rozpoznaniem: imię (z dedukcji/zagadki) + atrybut-zakup (chochla) = parol. Spójne z „rozpoznają kucharza po chochli".
-- ⚠ **Cross-ref do zsynchronizowania:** `materials/actors/jordan-actor-script-draft.md` — Jordan-aktor **musi rozpoznawać trigger** „imię Jordan + «kupiłeś dziś rano chochlę»" jako hasło wejścia (a nie samo „pytanie o Jordana").
+- Slip R. instruuje: **po dotarciu na miejsce zwrócić się do osoby PO IMIENIU i wskazać, co kupiła dziś rano (miecz)** → wtedy będzie wiedziała, że są „od nas". To **hasło ustalone na dziś**.
+- Łączy zagadkę z rozpoznaniem: imię (z dedukcji/zagadki) + zakup (miecz) = parol. Parol kontrintuicyjny (kucharz, a kupił miecz) → testuje dedukcję, nie zgadywanie „chochla".
+- ⚠ **Cross-ref ZSYNCHRONIZOWANY:** `materials/actors/jordan-actor-script-draft.md` — Jordan-aktor rozpoznaje trigger „imię Jordan + «kupiłeś dziś rano miecz»" jako hasło wejścia (a nie samo „pytanie o Jordana").

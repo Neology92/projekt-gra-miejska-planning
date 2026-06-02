@@ -18,8 +18,8 @@ Znaleźć kucharza Jordana, dowiedzieć się od niego co tak naprawdę dzieje si
 
 Mechanika:
 - Druga koperta (po opuszczeniu MG na końcu fazy 1) zawiera zestaw **3 rzeczy** do zestawienia (np. ikonografia, daty, miejsca).
-- Po zestawieniu: wskazówka *"udajcie się do [lokal] i znajdźcie osobę z [atrybut] o imieniu [imię]"*.
-  - **Atrybut**: chochla (kontekst — Jordan to legendarny kucharz miejski z chochlą; patrz wiki `legenda-jordan.js` / Quest #5 w `scenariusze-questow.js`).
+- Po zestawieniu: wskazówka *"udajcie się do [lokal], znajdźcie osobę o imieniu [imię] i wskażcie, co kupiła dziś rano"*.
+  - **Rozpoznanie = imię + parol „kupiłeś dziś rano miecz"** [zmiana chochla → miecz 2026-06-02; baner w `puzzles/droga-do-jordana.md`]. Jordan dalej jest kucharzem (chochla = przykrywka i tie‑in z legendą „Jordan z chochlą", wiki `legenda-jordan.js` / Quest #5 w `scenariusze-questow.js`); miecz to jego schowany poranny zakup, który **wraca w finale** jako broń Bażyńskiego.
   - **Lokal**: do decyzji — Picollo? inna gospoda? (Picollo padło w pierwotnym opisie autora, ale to nazwa współczesna; do potwierdzenia czy używamy współczesnej nazwy czy "gospoda przy Rynku Staromiejskim" w stylu historycznym.)
 - Po podaniu hasła ("przyszliśmy do Jordana") osoba ich przyjmuje.
 

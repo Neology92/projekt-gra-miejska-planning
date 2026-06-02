@@ -54,7 +54,7 @@ Dlaczego akurat ci dwaj aktorzy: finał = jednoczesne starcie Bażyński vs Albr
 - **Pochodzenie**: legenda XIX-wieczna, najwcześniejsza wzmianka 1520 (rachunek budowlany).
 - **Wiki**: `src/pages/legenda-jordan.js` (jeśli istnieje - sprawdzić)
 - **W grze (autorska fikcja)**: Jordan = pseudonim Bażyńskiego. Plot twist F3.
-- **Cecha rozpoznawcza**: **chochla** (atrybut wskazany w Z2 - "znajdźcie osobę z chochlą o imieniu Jordan").
+- **Cecha rozpoznawcza**: kucharz z **chochlą** (przykrywka + tie‑in z legendą „Jordan z chochlą"), ale rozpoznanie w grze idzie przez **imię + parol „kupiłeś dziś rano miecz"** (Z2) — nie przez widoczny atrybut [zmiana chochla → miecz 2026-06-02]. **Miecz** = schowany poranny zakup, który **wraca w finale** jako broń Bażyńskiego (`concept/04-faza-3-final.md`).
 - **Lokalizacja**: lokal gastronomiczny (Picollo / "Gospoda Pod Chochlą" / inny - patrz `puzzles/droga-do-jordana.md`).
 - **Angielska wersja twistu** (dla materiałów gracza): Jordan = **Hans von Baysen** [ustalone 2026-06-01] — w materiałach EN używamy formy niemieckiej (rozpoznawalna, prusko-hanzeatycka), nie polskiej „Jan Bażyński".
 
