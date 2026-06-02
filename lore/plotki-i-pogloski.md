@@ -107,6 +107,39 @@ B9. *„Nawet biskupi się odwracają — pomezański swego czasu sam związkowc
 Jordan może pytać:
 - *"Słyszeliście coś dziś niezwykłego?"* → gracz powtarza zapamiętaną plotkę → Jordan ocenia uważność.
 
+## Przypisanie do kopert — draft [2026-06-02]
+
+> Oskar wybiera 3–5 plotek z każdej puli per koperta. Kolumna "pula" = gotowe kandydatki z sekcji wyżej.
+> Zasada: K1–K2 = tylko neutralne (klasa jeszcze nieznana); K3+ = dopiero Pula A (TR) lub B (KR).
+
+### Prototyp — tor TR (wszystkie grupy)
+
+| Koperta | Moment gry | Tag docelowy | Kandydatki (ID) | Funkcja narracyjna |
+|---------|-----------|--------------|-----------------|-------------------|
+| **K1** (start) | przed Z1, wszyscy | NCM + F3 | 1, 2, 6, 14, 15 | Atmosfera napięcia + foreshadow Jordana/Krzywej Wieży; bez politycznych oskarżeń |
+| **K2** (po Z1) | po szlaku, przed Jordanem | NCM + F2A + łagodna A | 3, 7, A1, A6 | Albrecht ma listę (foreshadow Z3); ekonomiczna krytyka TR (A1/A6) — nienachalna |
+| **K3** (od Jordana) | po F2A, przed Z3 | F2B + A | A2, A3, A5, 13 | Jordan właśnie im zaufał — a tu: Rada po nocach, prawa cechów, Tajna Rada bez mandatu |
+| **K-Z3b** (Albrecht) | po kradzieży listy | F3 + A | A4, A7, A8 | Inkorporacja, Bażyński sięgnie po władzę — mocne F3, tuż przed szyfrem finałowym |
+| **K-Z4** (melodia) | przed ostatnim szyfrem | F3 + A | A7, A8 | Powtórzenie dwóch najsilniejszych → gracze trafiają na finał z zasianym zwątpieniem |
+| **K8/Z7** | szyfrogram/finał | — | (brak plotek) | Szyfrogram JEST rewelacją — nie zaśmiecamy plotkami |
+| **KF** | finał | — | (brak plotek) | Scena teatralna, wolny wybór — cisza narracyjna |
+
+### MVP — tor KR (5 grup krzyżackich) — różnice
+
+| Koperta | Różnica względem TR | Kandydatki (ID) |
+|---------|--------------------|-----------------| 
+| **K2-K** | Pula B zamiast A | B1, B2, B6, B8 (łagodne) |
+| **K3-K** (od Albrechta) | Pula B, mocniejsze | B3, B4, B5, B7 |
+| **K-Z3Z** (kradzież Piccolo) | Pula B, F3 | B7, B8, B9 |
+| Finał KR | brak plotek | (cisza narracyjna) |
+
+### Notatki balansowe
+
+- **K1 i K2 = zero Pul A/B.** Klasa nieznana; plotki krytyczne zanim gracz wie, dla kogo pracuje, traciłyby efekt inwersji.
+- **A7 + A8 powtarzają się** w K-Z3b i K-Z4 — celowo: mocny F3 tuż przed i tuż po Z3. Jeśli 3-plotkowy limit, użyj tylko K-Z3b.
+- **Plotka 15** (*„Jordan z chochlą — legenda. Może ktoś inny?"*) — idealna w K1, nim gracze spotkają Piotra; po spotkaniu traci moc forshadowu.
+- **Plotka 7** (*„Komtur Albrecht ma listę"*) — jedyna, która pojawia się przed Z3 i jest jej bezpośrednim foreshadowem; nie dawaj jej za K3 (za późno).
+
 ## Otwarte pytania
 
 1. **Ile plotek w jednej kopercie** (3 vs 5)?

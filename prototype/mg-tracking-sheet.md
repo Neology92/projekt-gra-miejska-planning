@@ -46,9 +46,9 @@ If completely off: send them back to start (△) — do not give names.
 
 ### Z2 — Morning Errands
 Full solution:
-- Jordan → Piccolo (hot food)
-- Lambert → Smithy (horseshoes)
-- Kordian → Old Mill (bread)
+- Jordan → Piccolo (hot food) — bought a ladle
+- Lambert → Old Mill (bread) — bought food
+- Kordian → Smithy (ironwork) — bought cloth
 
 Accept if group correctly says Jordan = Piccolo. They don't need to have solved the whole table.
 
