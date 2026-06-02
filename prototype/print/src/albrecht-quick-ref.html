@@ -2,214 +2,227 @@
 <html lang="pl">
 <head>
 <meta charset="UTF-8">
-<title>Komtur Albrecht — Ściąga aktora (Zosia)</title>
+<title>Komtur Albrecht — Ściąga Zosi</title>
 <style>
 @page { size: A4; margin: 8mm 9mm; }
 * { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: "Segoe UI", system-ui, sans-serif; font-size: 8.5pt; color: #2a1a10; background: #fff; }
+body { font-family: "Segoe UI", system-ui, sans-serif; font-size: 8.8pt; color: #2a1a10; background: #fff; line-height: 1.35; }
 
+/* ── Banner ── */
 .banner {
-  background: #1e3050; color: #fff; padding: 6px 11px;
-  font-weight: 700; font-size: 11.5pt;
+  background: #1e3050; color: #fff;
+  padding: 6px 12px;
   -webkit-print-color-adjust: exact; print-color-adjust: exact;
 }
-.banner-sub { font-size: 7.5pt; font-weight: 400; opacity: .8; }
+.banner h1 { font-size: 12pt; font-weight: 700; }
+.banner-sub { font-size: 8pt; opacity: .8; margin-top: 1px; }
 
-/* Two-column layout */
-.cols { display: grid; grid-template-columns: 1fr 1fr; gap: 0; border: 1.5pt solid #5070a0; border-radius: 0 0 5px 5px; overflow: hidden; }
-.col { padding: 0; }
-.col-kz { border-right: 1pt solid #8090b0; }
-
-.col-banner {
-  padding: 4px 10px; font-weight: 700; font-size: 9.5pt;
-  display: flex; align-items: center; gap: 6px;
+/* ── Postać ── */
+.character {
+  background: #eef2f8; border-bottom: 1.5pt solid #8090b0;
+  padding: 6px 12px;
   -webkit-print-color-adjust: exact; print-color-adjust: exact;
 }
-.col-banner-kz { background: #d8e8f8; border-bottom: 1.5pt solid #6080b8; color: #1a3060; }
-.col-banner-tr { background: #f8e4d8; border-bottom: 1.5pt solid #c07050; color: #7a2e10; }
-.badge { font-size: 7pt; padding: 1px 6px; border-radius: 8px; font-weight: 700; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-.badge-kz { background: #4363d8; color: #fff; }
-.badge-tr { background: #e6194b; color: #fff; }
+.character-label { font-size: 7pt; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: #1e3050; margin-bottom: 3px; }
 
-.sec { padding: 4px 10px; border-bottom: .5pt solid #ddd; }
-.sec:last-child { border-bottom: none; }
-.sh { font-weight: 700; font-size: 7pt; text-transform: uppercase; letter-spacing: .05em; margin-bottom: 3px; }
-.sh-kz { color: #1a3060; }
-.sh-tr { color: #8a2010; }
+/* ── Two-col ── */
+.cols { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+.col { border-right: 1.5pt solid #8090b0; }
+.col:last-child { border-right: none; }
 
-/* Groups strip */
-.grps { display: flex; flex-wrap: wrap; gap: 3px; }
-.gt {
+.col-head {
+  padding: 5px 11px; font-weight: 700; font-size: 9.5pt;
+  display: flex; align-items: center; gap: 7px;
+  -webkit-print-color-adjust: exact; print-color-adjust: exact;
+}
+.col-head-a { background: #d8e8f8; border-bottom: 1pt solid #7090c0; color: #1a3060; }
+.col-head-b { background: #f8e8e0; border-bottom: 1pt solid #c07050; color: #7a2010; }
+
+.col-who {
+  padding: 5px 11px 4px;
+  font-size: 8.5pt;
+  border-bottom: 1pt solid #ddd;
+  -webkit-print-color-adjust: exact; print-color-adjust: exact;
+}
+.who-label { font-size: 7pt; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; margin-bottom: 2px; }
+.who-label-a { color: #1a3060; }
+.who-label-b { color: #7a2010; }
+.opaski { display: flex; flex-wrap: wrap; gap: 2px; margin: 3px 0; }
+.op {
   display: flex; align-items: center; gap: 2px;
-  padding: 1px 6px; border-radius: 8px; font-size: 7.5pt; font-weight: 600;
+  padding: 1px 5px; border-radius: 7px; font-size: 7.5pt; font-weight: 600;
   -webkit-print-color-adjust: exact; print-color-adjust: exact;
 }
-.chk { font-family: "Consolas","Courier New",monospace; font-size: 10pt; }
 .dot { width: 9px; height: 9px; border-radius: 50%; border: .5pt solid rgba(0,0,0,.2); flex-shrink:0; }
+.who-bg-a { background: #deeaf8; border: .5pt solid #8aace0; color: #1a2a50; }
+.who-bg-b { background: #fdeee6; border: .5pt solid #d09070; color: #5a1a00; }
 
-/* Steps */
-.step { display: grid; grid-template-columns: 11px 1fr; gap: 1px 5px; padding: 2.5px 0; border-bottom: .4pt dotted #ddd; font-size: 8.5pt; line-height: 1.3; }
+.sec { padding: 4px 11px; border-bottom: .5pt solid #e8e0d8; }
+.sec:last-child { border-bottom: none; }
+.sh { font-size: 7pt; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; margin-bottom: 3px; }
+.sh-a { color: #1a3060; }
+.sh-b { color: #8a2010; }
+
+.step { display: grid; grid-template-columns: 12px 1fr; gap: 1px 5px; padding: 2.5px 0; border-bottom: .4pt dotted #e0d4c8; font-size: 8.5pt; }
 .step:last-child { border-bottom: none; }
-.sn { font-weight: 700; font-size: 9.5pt; }
-.sn-k { color: #1a3060; }
-.sn-t { color: #8a2010; }
-.cq { font-style: italic; background: #eef2fa; border-radius: 2px; padding: 0 3px; border: .5pt solid #b0c0d8; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-.cq-t { background: #fdf0e8; border-color: #d0a888; }
+.sn { font-weight: 700; font-size: 10pt; }
+.sn-a { color: #1a3060; }
+.sn-b { color: #8a2010; }
+.q { font-style: italic; background: #eef2fa; border-radius: 2px; padding: 0 3px; border: .4pt solid #b0c4e0; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+.q-b { background: #fdf0e8; border-color: #d0a888; }
 .nb { font-size: 7.5pt; color: #7a6050; }
-.nb-imp { color: #1a3060; font-weight: 600; }
 
-/* Patrol table */
-.patrol-tbl { width: 100%; border-collapse: collapse; margin: 2px 0; }
-.patrol-tbl td { padding: 3px 5px; font-size: 8pt; line-height: 1.25; vertical-align: top; border: .5pt solid #ccc; }
-.ph-a { background: #e8f4e0; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-.ph-b { background: #fdf0d4; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-.ph-c { background: #fce8e4; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-.ph-lbl { font-weight: 700; font-size: 8.5pt; }
+/* ── Patrol ── */
+.patrol { display: flex; gap: 4px; margin: 2px 0; }
+.ph { flex:1; border-radius: 4px; padding: 4px 6px; font-size: 8pt; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+.ph-a { background: #e4f4e0; border: 1pt solid #4a9040; }
+.ph-b { background: #fdf0d4; border: 1pt solid #b08020; }
+.ph-c { background: #fce8e4; border: 1pt solid #c03030; }
+.ph-lbl { font-weight: 700; margin-bottom: 1px; }
 .steal { color: #1a6a10; font-weight: 700; font-size: 7.5pt; }
-.caut  { color: #7a5000; font-weight: 600; font-size: 7.5pt; }
-.nst   { color: #9a1a1a; font-weight: 700; font-size: 7.5pt; }
+.risk  { color: #7a5000; font-weight: 600; font-size: 7.5pt; }
+.nope  { color: #9a1a1a; font-weight: 700; font-size: 7.5pt; }
 
-/* Reactions mini-table */
-.react { width: 100%; border-collapse: collapse; }
-.react td { padding: 2px 4px; font-size: 8pt; border-bottom: .4pt dotted #ddd; vertical-align: top; }
+/* ── React ── */
+.react { width: 100%; border-collapse: collapse; font-size: 8.5pt; }
+.react td { padding: 2px 3px; border-bottom: .4pt dotted #ddd; vertical-align: top; }
 .react tr:last-child td { border-bottom: none; }
-.ri { font-family: "Consolas","Courier New",monospace; font-size: 10pt; width: 14px; }
+.ri { font-family: "Consolas","Courier New",monospace; font-size: 10pt; width: 13px; }
 
-/* Done row spanning both columns */
-.done-full { padding: 4px 10px; background: #f5f0ea; border-top: 1pt solid #c8b8a0; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-.done-label { font-weight: 700; font-size: 7.5pt; text-transform: uppercase; letter-spacing: .05em; color: #5a3a10; margin-bottom: 3px; }
-.done-row { display: flex; gap: 5px; flex-wrap: wrap; }
-.di { display: flex; align-items: center; gap: 3px; font-size: 8.5pt; padding: 2px 6px; border: .5pt solid #ccc; border-radius: 8px; }
+/* ── Outer border ── */
+.frame { border: 1.5pt solid #5070a0; border-radius: 0 0 5px 5px; overflow: hidden; }
+
+/* ── Done ── */
+.done-wrap { padding: 5px 12px; background: #f5f0ea; border-top: 1pt solid #c8b8a0; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+.done-label { font-size: 7pt; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: #5a3a10; margin-bottom: 3px; }
+.done-cols { display: flex; gap: 0; }
+.done-half { flex:1; padding-right: 8px; border-right: 1.5pt solid #8090b0; }
+.done-half:last-child { padding-right: 0; padding-left: 8px; border-right: none; }
+.done-flabel { font-size: 7pt; font-weight: 700; margin-bottom: 3px; text-transform: uppercase; letter-spacing: .04em; }
+.done-flabel-a { color: #1a3060; }
+.done-flabel-b { color: #8a2010; }
+.done-row { display: flex; flex-wrap: wrap; gap: 4px; }
+.di { display: flex; align-items: center; gap: 3px; font-size: 8.5pt; padding: 2px 6px; border: .5pt solid #ccc; border-radius: 7px; }
 .dchk { font-family: "Consolas","Courier New",monospace; font-size: 10pt; }
-
-.alert { border-radius: 3px; padding: 3px 6px; font-size: 7.5pt; margin: 2px 0; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-.al-k { background: #deeaf8; border: .5pt solid #7090c0; }
-.al-t { background: #f8e4d8; border: .5pt solid #c07050; }
 </style>
 </head>
 <body>
 
-<div class="banner">Komtur Albrecht — Ściąga aktora <span class="banner-sub">· Zosia · dwie role: bramkarz KZ + cel kradzieży TR · finał 20:30 Przedzamcze</span></div>
+<div class="banner">
+  <h1>Komtur Albrecht Kalb — Ściąga Zosi</h1>
+  <div class="banner-sub">Dwie różne role w jednej grze · lokalizacja: na zewnątrz murów zamkowych (Przedzamcze) · finał: 20:30 w tym samym miejscu</div>
+</div>
 
+<div class="character">
+  <div class="character-label">Kim jesteś (tło postaci)</div>
+  <p>Jesteś <b>komturem Albrechtem Kalbem</b> — dowódcą wojskowym Zakonu Krzyżackiego w Toruniu, luty 1454 roku. Zakon rządzi tym miastem od dekad i jest pewny, że tak zostanie. Twoja postać jest <b>arogancka, wyniosła, przekonana o wyższości Zakonu</b> — mieszczanie to dla ciebie petenci i potencjalni zdrajcy. Nie wiesz, że właśnie dojrzewa bunt, który skończy się szturmem na zamek. Czujesz się bezpiecznie.
+  <br>Nosisz przy sobie <b>listę z nazwiskami</b> osób podejrzanych o spiskowanie — agenturalna kartoteka Zakonu. Jesteś z niej dumny i nie krępujesz się jej pokazywać, żeby zaimponować.</p>
+</div>
+
+<div class="frame">
 <div class="cols">
 
-  <!-- ══════════════ ROLA KZ ══════════════ -->
-  <div class="col col-kz">
-    <div class="col-banner col-banner-kz"><span class="badge badge-kz">KZ</span> Handler F2A — „dowiedźcie wartości" · TY jesteś ich pierwszym kontaktem</div>
+  <!-- ══ KOLUMNA A: lojaliści ══ -->
+  <div class="col">
+    <div class="col-head col-head-a">Rola A — lojaliści Zakonu</div>
 
-    <div class="sec">
-      <div class="sh sh-kz">Twoje grupy KZ (prosto z Z2-K — NIE byli wcześniej u Jordana)</div>
-      <div class="grps">
-        <div class="gt" style="background:#4363D8;color:#fff"><span class="chk">□</span><span class="dot" style="background:#4363D8;border-color:#fff"></span>Niebieski</div>
-        <div class="gt" style="background:#911EB4;color:#fff"><span class="chk">□</span><span class="dot" style="background:#911EB4;border-color:#fff"></span>Fioletowy</div>
-        <div class="gt" style="background:#f0f0f0;color:#2a1a10;border:.5pt solid #888"><span class="chk">□</span><span class="dot" style="background:#f8f8f8;border-color:#888"></span>Biały</div>
-        <div class="gt" style="background:#9A6324;color:#fff"><span class="chk">□</span><span class="dot" style="background:#9A6324;border-color:#fff"></span>Brązowy</div>
-        <div class="gt" style="background:#2B2B2B;color:#fff"><span class="chk">□</span><span class="dot" style="background:#2B2B2B;border-color:#fff"></span>Czarny</div>
+    <div class="col-who">
+      <div class="who-label who-label-a">Kto przychodzi (opaski)</div>
+      <div class="opaski">
+        <div class="op who-bg-a"><span class="dot" style="background:#4363D8;border-color:#4363D8"></span>Niebieska</div>
+        <div class="op who-bg-a"><span class="dot" style="background:#911EB4;border-color:#911EB4"></span>Fioletowa</div>
+        <div class="op who-bg-a"><span class="dot" style="background:#f4f4f4;border-color:#888"></span>Biała</div>
+        <div class="op who-bg-a"><span class="dot" style="background:#9A6324;border-color:#9A6324"></span>Brązowa</div>
+        <div class="op who-bg-a"><span class="dot" style="background:#2B2B2B;border-color:#2B2B2B"></span>Czarna</div>
       </div>
-      <div class="alert al-k"><b>Symetria:</b> TR idzie po Z2 do Jordana (sojusznik) → Jordan wysyła na zamek. KZ idzie po Z2-K do <b>Ciebie</b> (handler) → Ty wysyłasz do Piccolo. Każdy aktor = handler jednej frakcji + cel infiltracji drugiej.<br><b>Ton:</b> arogancki, wymagający — ale gotowy przyjąć tych, którzy dowiodą wartości.</div>
+      <p>Kurierzy, którzy rozwiązali zagadkę wskazującą właśnie na ciebie. <b>Są po stronie Zakonu</b> — przychodzą jako twoi lojaliści, chcą twojego zlecenia. Jesteś ich dowódcą. Podchodzą do ciebie bezpośrednio, bez udawania.</p>
     </div>
 
     <div class="sec">
-      <div class="sh sh-kz">Scena [MVP TBD — szczegóły z Oskarem]</div>
-      <div class="step">
-        <span class="sn sn-k">1</span>
-        <div>Przyjmujesz ich jako potencjalnych lojalnych. Otwarcie:<br>
-        <span class="cq">„Zakon nie szuka każdego — ale tych, którzy mu naprawdę służą, przyjmuje."</span></div>
-      </div>
-      <div class="step">
-        <span class="sn sn-k">2</span>
-        <div>Słowa nie wystarczą — muszą udowodnić wartość czynem:<br>
-        <span class="cq">„Każdy twierdzi, że jest po naszej stronie. Dowiedźcie swojej wartości — dopiero wtedy wasz list trafi w moje ręce."</span><br>
-        Wręcz K3-K <b>milcząco</b>, bez komentarza. Jeden gest kończący. <span class="nb imp nb-imp">K3-K wysyła ich do infiltracji Piccolo (Z3Z) — dopiero WTEDY trafią do Jordana, ale jako szpiedzy Zakonu, nie sojusznicy.</span></div>
-      </div>
-      <div class="step">
-        <span class="sn sn-k">3</span>
-        <div>Gdy wracają z wynikiem — minimalne uznanie:<br>
-        <span class="cq">„Zakon pamięta tych, którzy działają."</span></div>
-      </div>
+      <div class="sh sh-a">Twoja rola i nastawienie</div>
+      <p>Jesteś wymagający, ale gotów przyjąć lojalnych. <b>Słowa nic nie kosztują — liczy się co zrobią.</b> Dajesz im zadanie zanim zaakceptujesz ich list. Nie jesteś wobec nich wrogi.</p>
+    </div>
+
+    <div class="sec">
+      <div class="sh sh-a">Scena — krok po kroku</div>
+      <div class="step"><span class="sn sn-a">1</span><div>Przyjmujesz ich chłodno, jako przełożony. Możliwe otwarcie:<br><span class="q">„Zakon nie szuka każdego — ale tych, którzy naprawdę mu służą, przyjmuje."</span></div></div>
+      <div class="step"><span class="sn sn-a">2</span><div>Zanim przyjmiesz ich list — muszą udowodnić wartość:<br><span class="q">„Każdy twierdzi, że jest po naszej stronie. Dowiedźcie czynem — dopiero wtedy wasze słowa coś znaczą."</span><br>Wręcz kopertę z zadaniem <b>milcząco</b> (nie tłumacz, co w środku) i jednym gestem kończysz rozmowę.</div></div>
+      <div class="step"><span class="sn sn-a">3</span><div>Gdy wracają po wykonaniu zadania — krótkie, chłodne uznanie:<br><span class="q">„Zakon pamięta tych, którzy działają."</span></div></div>
     </div>
   </div>
 
-  <!-- ══════════════ ROLA TR ══════════════ -->
+  <!-- ══ KOLUMNA B: fałszywi donosiciele ══ -->
   <div class="col">
-    <div class="col-banner col-banner-tr"><span class="badge badge-tr">TR</span> Cel kradzieży — lista musi być do ukradzenia</div>
+    <div class="col-head col-head-b">Rola B — fałszywi donosiciele</div>
 
-    <div class="sec">
-      <div class="sh sh-tr">Twoje grupy TR (donosiciele → kradną listę)</div>
-      <div class="grps">
-        <div class="gt" style="background:#E6194B;color:#fff"><span class="chk">□</span><span class="dot" style="background:#E6194B;border-color:#fff"></span>Czerwony</div>
-        <div class="gt" style="background:#F58231;color:#fff"><span class="chk">□</span><span class="dot" style="background:#F58231;border-color:#fff"></span>Pomarańcz.</div>
-        <div class="gt" style="background:#FFE119;color:#1a1a00;border:.5pt solid #ccc"><span class="chk">□</span><span class="dot" style="background:#FFE119;border-color:#aaa"></span>Żółty</div>
-        <div class="gt" style="background:#3CB44B;color:#fff"><span class="chk">□</span><span class="dot" style="background:#3CB44B;border-color:#fff"></span>Zielony</div>
-        <div class="gt" style="background:#42D4F4;color:#1a2a2a;border:.5pt solid #aaa"><span class="chk">□</span><span class="dot" style="background:#42D4F4;border-color:#aaa"></span>Turkusowy</div>
+    <div class="col-who">
+      <div class="who-label who-label-b">Kto przychodzi (opaski)</div>
+      <div class="opaski">
+        <div class="op who-bg-b"><span class="dot" style="background:#E6194B;border-color:#E6194B"></span>Czerwona</div>
+        <div class="op who-bg-b"><span class="dot" style="background:#F58231;border-color:#F58231"></span>Pomarańcz.</div>
+        <div class="op who-bg-b"><span class="dot" style="background:#FFE119;border-color:#aaa"></span>Żółta</div>
+        <div class="op who-bg-b"><span class="dot" style="background:#3CB44B;border-color:#3CB44B"></span>Zielona</div>
+        <div class="op who-bg-b"><span class="dot" style="background:#42D4F4;border-color:#aaa"></span>Turkusowa</div>
       </div>
-      <div class="alert al-t"><b>3 zadania TR:</b> wciel się w wroga · pokaż listę SAM (z pychy) · daj uczciwe okno kradzieży — każda grupa MUSI zdołać.</div>
+      <p>Mieszczanie udający donosicieli — „mamy dla ciebie informacje o spiskowcach". <b>Ich prawdziwy cel: niepostrzeżenie ukraść listę nazwisk, którą nosisz.</b> TY o tym nie wiesz. Traktujesz ich jak petentów chcących zaimponować.</p>
     </div>
 
     <div class="sec">
-      <div class="sh sh-tr">Scena</div>
-      <div class="step">
-        <span class="sn sn-t">1</span>
-        <div>Podejście — pogarda, która ciepłeje przy nazwisku:<br>
-        <span class="cq cq-t">„Ty. Czego chcesz? ...Informacje, tak? Wszyscy nagle mają informacje."</span></div>
-      </div>
-      <div class="step">
-        <span class="sn sn-t">2</span>
-        <div>Pokaż listę <b>z własnej pychy</b> — „sprawdzam czy wiemy":<br>
-        <span class="cq cq-t">„Zakon niczego nie zapomina."</span> Czytasz jedno nazwisko, potem <b>odkładasz na stałe miejsce.</b></div>
-      </div>
-      <div class="step">
-        <span class="sn sn-t">3</span>
-        <div>Wręcz K-Z3b milcząco → <span class="cq cq-t">„Dość. Skończyliśmy."</span> → odejdź w patrol.</div>
-      </div>
+      <div class="sh sh-b">Twoja rola i nastawienie</div>
+      <p>Arogancki, ale zaciekawiony, gdy wspominają nazwiska. Chcesz pokazać, że Zakon już wszystko wie — to twoja pycha. <b>Wyciągasz listę SAMI (z własnej inicjatywy)</b>, żeby „sprawdzić czy to nowe nazwisko". Odkładasz ją. Chodzisz w kółko. Oni kradną.</p>
     </div>
 
     <div class="sec">
-      <div class="sh sh-tr">Cykl patrolu (~30–40 sek / kółko)</div>
-      <table class="patrol-tbl">
-        <tr>
-          <td class="ph-a" style="width:33%"><span class="ph-lbl">A — ODEJŚCIE</span><br>plecami do listy, wskazujesz mury<br><span class="steal">▲ TERAZ KRAŚĆ</span></td>
-          <td class="ph-b" style="width:33%"><span class="ph-lbl">B — POWRÓT</span><br>telegrafuj obrót wyraźnie<br><span class="caut">⚠ ryzykowne</span></td>
-          <td class="ph-c" style="width:34%"><span class="ph-lbl">C — PRZY LIŚCIE</span><br>stoisz, patrzysz na grupę<br><span class="nst">✗ NIE kraść</span></td>
-        </tr>
-      </table>
-      <p class="nb">Zawsze telegrafuj · złapanie = reset, nie koniec · 3+ prób bez sukcesu → wydłuż A lub zadzwoń do Oskara · reset między grupami: świeży egzemplarz z torby</p>
+      <div class="sh sh-b">Scena — krok po kroku</div>
+      <div class="step"><span class="sn sn-b">1</span><div>Przyjmujesz z pogardą, która miękknie gdy wspominają nazwiska:<br><span class="q q-b">„Ty. Czego chcesz? ...Informacje, tak? Wszyscy nagle mają informacje."</span></div></div>
+      <div class="step"><span class="sn sn-b">2</span><div>Gdy podają nazwisko — <b>sam</b> sięgasz po listę:<br><span class="q q-b">„Zobaczę, czy mamy już tego zdrajcę... ha. Zakon niczego nie zapomina."</span><br>Czytasz jedno-dwa nazwiska z dumą, potem <b>odkładasz listę na ustalony stały punkt</b>.</div></div>
+      <div class="step"><span class="sn sn-b">3</span><div>Wręcz im kopertę milcząco → <span class="q q-b">„Dość. Skończyliśmy."</span> → odejdź w patrol.</div></div>
     </div>
 
     <div class="sec">
-      <div class="sh sh-tr">Reakcje</div>
+      <div class="sh sh-b">Patrol — jak dawać okno do kradzieży</div>
+      <div class="patrol">
+        <div class="ph ph-a"><div class="ph-lbl">A — ODEJŚCIE</div>kilka kroków od listy, <b>plecami do niej</b>, wskazujesz mury i przechwalasz się<div class="steal">▲ TERAZ KRAŚĆ</div></div>
+        <div class="ph ph-b"><div class="ph-lbl">B — POWRÓT</div>powoli wracasz — <b>wyraźnie odwróć się</b> zanim ruszysz<div class="risk">⚠ ryzykowne</div></div>
+        <div class="ph ph-c"><div class="ph-lbl">C — PRZY LIŚCIE</div>stoisz obok, patrzysz na grupę<div class="nope">✗ nie kraść</div></div>
+      </div>
+      <p class="nb">Powtarzaj w kółko · zawsze telegrafuj obrót · każda grupa MUSI zdołać ukraść (złapanie = reset, nie koniec) · jeśli próbują 3× bez skutku — wydłuż fazę A lub daj znak Oskarowi</p>
+    </div>
+
+    <div class="sec">
+      <div class="sh sh-b">Reakcje</div>
       <table class="react">
-        <tr><td class="ri" style="color:#1a6a10">✓</td><td><b>Ukradli (A):</b> nie zauważasz, kończ kółko. <span class="cq cq-t">„...gdzie ja— "</span> z opóźnieniem.</td></tr>
-        <tr><td class="ri" style="color:#c06010">~</td><td><b>Złapani (B/C):</b> <span class="cq cq-t">„Łapy precz!"</span> → połóż listę, wróć do cyklu.</td></tr>
-        <tr><td class="ri" style="color:#c01030">?</td><td><b>Bierni:</b> <span class="cq cq-t">„No? Moja lista i ja jesteśmy zajęci."</span> → wzrok na pergamin → Oskar.</td></tr>
+        <tr><td class="ri" style="color:#1a6a10">✓</td><td><b>Ukradli (faza A):</b> nie zauważasz, kończ kółko. <span class="q q-b">„...gdzie ja— "</span> za późno. Pozwól im odejść. Wyjmij nowy egzemplarz z torby.</td></tr>
+        <tr><td class="ri" style="color:#c06010">~</td><td><b>Złapani (B/C):</b> <span class="q q-b">„Łapy precz!"</span> → połóż listę z powrotem, wróć do cyklu. Zawsze daj kolejną szansę.</td></tr>
+        <tr><td class="ri" style="color:#c01030">?</td><td><b>Stoją i nic:</b> <span class="q q-b">„No? Coś jeszcze? Moja lista i ja jesteśmy zajęci."</span> → wzrok na pergamin → Oskar.</td></tr>
       </table>
     </div>
   </div>
 
 </div>
+</div>
 
-<!-- Done — full width -->
-<div class="done-full">
+<div class="done-wrap">
   <div class="done-label">Odhacz po scenie z każdą grupą</div>
-  <div style="display:flex;gap:0;align-items:stretch">
-    <div style="flex:1;padding:3px 6px 3px 0;border-right:1.5pt solid #8090b0">
-      <div style="font-size:7pt;font-weight:700;color:#1a3060;text-transform:uppercase;letter-spacing:.05em;margin-bottom:3px;padding-left:2px">KZ — Krzyżacy</div>
+  <div class="done-cols">
+    <div class="done-half">
+      <div class="done-flabel done-flabel-a">Lojaliści — niebieskie opaski</div>
       <div class="done-row">
-        <div class="di"><span class="dchk">□</span><span class="dot" style="background:#4363D8"></span>Niebieski</div>
-        <div class="di"><span class="dchk">□</span><span class="dot" style="background:#911EB4"></span>Fioletowy</div>
-        <div class="di"><span class="dchk">□</span><span class="dot" style="background:#f8f8f8;border:.5pt solid #888"></span>Biały</div>
-        <div class="di"><span class="dchk">□</span><span class="dot" style="background:#9A6324"></span>Brązowy</div>
-        <div class="di"><span class="dchk">□</span><span class="dot" style="background:#2B2B2B"></span>Czarny</div>
+        <div class="di"><span class="dchk">□</span><span class="dot" style="background:#4363D8"></span>Niebieska</div>
+        <div class="di"><span class="dchk">□</span><span class="dot" style="background:#911EB4"></span>Fioletowa</div>
+        <div class="di"><span class="dchk">□</span><span class="dot" style="background:#f4f4f4;border:.5pt solid #888"></span>Biała</div>
+        <div class="di"><span class="dchk">□</span><span class="dot" style="background:#9A6324"></span>Brązowa</div>
+        <div class="di"><span class="dchk">□</span><span class="dot" style="background:#2B2B2B"></span>Czarna</div>
       </div>
     </div>
-    <div style="flex:1;padding:3px 0 3px 8px">
-      <div style="font-size:7pt;font-weight:700;color:#8a2010;text-transform:uppercase;letter-spacing:.05em;margin-bottom:3px;padding-left:2px">TR — Tajna Rada</div>
+    <div class="done-half">
+      <div class="done-flabel done-flabel-b">Fałszywi donosiciele — ciepłe opaski</div>
       <div class="done-row">
-        <div class="di"><span class="dchk">□</span><span class="dot" style="background:#E6194B"></span>Czerwony</div>
+        <div class="di"><span class="dchk">□</span><span class="dot" style="background:#E6194B"></span>Czerwona</div>
         <div class="di"><span class="dchk">□</span><span class="dot" style="background:#F58231"></span>Pomarańcz.</div>
-        <div class="di"><span class="dchk">□</span><span class="dot" style="background:#FFE119;border:.5pt solid #aaa"></span>Żółty</div>
-        <div class="di"><span class="dchk">□</span><span class="dot" style="background:#3CB44B"></span>Zielony</div>
-        <div class="di"><span class="dchk">□</span><span class="dot" style="background:#42D4F4;border:.5pt solid #aaa"></span>Turkusowy</div>
+        <div class="di"><span class="dchk">□</span><span class="dot" style="background:#FFE119;border:.5pt solid #aaa"></span>Żółta</div>
+        <div class="di"><span class="dchk">□</span><span class="dot" style="background:#3CB44B"></span>Zielona</div>
+        <div class="di"><span class="dchk">□</span><span class="dot" style="background:#42D4F4;border:.5pt solid #aaa"></span>Turkusowa</div>
       </div>
     </div>
   </div>
