@@ -48,6 +48,25 @@ html, body {
   inset: 0;
 }
 
+/* TESTER copy stamp — shown only with ?tester=1 (pre-game terrain check) */
+.tester-banner {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: #8b0000;
+  background: rgba(250, 246, 239, 0.88);
+  border: 1.5px solid #8b0000;
+  border-radius: 3px;
+  padding: 4px 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
 #rail {
   flex: 0 0 var(--rail-w);
   width: var(--rail-w);

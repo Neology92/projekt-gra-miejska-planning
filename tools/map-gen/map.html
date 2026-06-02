@@ -59,9 +59,21 @@
   const group  = params.get('group') || 'all';     // 'all' | 'G1'..'G10'
   const keyMode = params.get('key') || 'blank';     // 'blank' (player) | 'filled' (MG)
   const filled = keyMode === 'filled';
+  const tester = params.get('tester') === '1';      // pre-game terrain check copy
 
   if (style === 'parchment') document.body.classList.add('parchment');
   if (filled) document.body.classList.add('mg');
+
+  // --- TESTER banner (additive overlay; never on player/MG canonical renders) ---
+  if (tester) {
+    const mapCol = document.getElementById('map-col');
+    if (mapCol) {
+      const banner = document.createElement('div');
+      banner.className = 'tester-banner';
+      banner.textContent = 'TESTER · Adam';
+      mapCol.appendChild(banner);
+    }
+  }
 
   // --- active codes for this view ---
   const activeCodes = (group === 'all' || !Z1_GROUPS[group])

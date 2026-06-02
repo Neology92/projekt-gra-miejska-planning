@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Z1 — Arkusz symboli (TESTER)</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  @page { size: A4 portrait; margin: 12mm 11mm; }
+
+  body {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 11px;
+    color: #1a1008;
+    background: #faf6ef;
+    margin: 0; padding: 14px 16px;
+  }
+
+  .head-row {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    border-bottom: 2px solid #2a1f0e;
+    padding-bottom: 6px;
+    margin-bottom: 4px;
+  }
+
+  h1 {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: .05em;
+    margin: 0;
+    color: #2a1f0e;
+  }
+
+  .tester-tag {
+    font-family: Georgia, serif;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: #8b0000;
+    border: 1.5px solid #8b0000;
+    border-radius: 3px;
+    padding: 3px 9px;
+  }
+
+  .subtitle {
+    font-size: 9.5px;
+    color: #7a6a54;
+    margin-bottom: 12px;
+    letter-spacing: .02em;
+  }
+
+  table { border-collapse: collapse; width: 100%; }
+
+  th {
+    font-size: 8.5px;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: #7a6a54;
+    padding: 5px 7px;
+    border-bottom: 1.5px solid #2a1f0e;
+    text-align: left;
+  }
+
+  td {
+    padding: 6px 7px;
+    border-bottom: 1px solid #d8cdb8;
+    vertical-align: middle;
+  }
+
+  tr:nth-child(even) td { background: #f3ede0; }
+
+  .code {
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    font-size: 12px;
+    color: #2a1f0e;
+    white-space: nowrap;
+  }
+
+  .icon-cell { width: 56px; text-align: center; }
+  .icon-cell img { width: 46px; height: 46px; display: inline-block; vertical-align: middle; }
+
+  .glyph-cell { width: 46px; text-align: center; }
+  .glyph-cell svg { display: inline-block; vertical-align: middle; }
+
+  .look { font-size: 11px; color: #2a1f0e; }
+  .place { font-size: 11px; font-weight: bold; }
+
+  .section-head {
+    font-size: 9px;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+    color: #7a6a54;
+    margin: 18px 0 6px;
+    font-weight: bold;
+  }
+
+  .footer {
+    margin-top: 14px;
+    font-size: 8.5px;
+    color: #9a8870;
+    border-top: 1px solid #d8cdb8;
+    padding-top: 7px;
+    line-height: 1.5;
+  }
+</style>
+</head>
+<body>
+
+<div class="head-row">
+  <h1>Zadanie 1 · Arkusz wszystkich symboli</h1>
+  <span class="tester-tag">TESTER · Adam</span>
+</div>
+<div class="subtitle">
+  Komplet symboli Z1 do weryfikacji w terenie przed grą. <b>Ikona detalu</b> = co gracz wypatruje w realu;
+  <b>glif</b> = ten sam punkt na mapie nawigacyjnej. Sprawdź, czy detal jest rozpoznawalny z ulicy, a glif trafia w to miejsce.
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Kod</th>
+      <th>Ikona detalu</th>
+      <th>Co szukać w terenie</th>
+      <th>Glif na mapie</th>
+      <th>Miejsce</th>
+    </tr>
+  </thead>
+  <tbody id="rows"></tbody>
+</table>
+
+<div class="section-head">Stałe punkty orientacyjne (zawsze na mapie · bez ikony detalu — gracz poznaje je z koperty)</div>
+<table>
+  <thead>
+    <tr><th>Kod</th><th></th><th>Rola</th><th>Glif na mapie</th><th>Miejsce</th></tr>
+  </thead>
+  <tbody id="landmark-rows"></tbody>
+</table>
+
+<div class="footer">
+  19 punktów Z1 (5 stref: N — Nowe Miasto · C — Rynek Staromiejski i okolice · S — bramy nad Wisłą · W/D — dystraktory) + 4 stałe punkty.
+  Glify są jednolite (placeholdery geometryczne) — gracz nie odróżnia łańcucha od dystraktora po kształcie.
+  Pełny przegląd ikon: <code>prototype/icons-contact-sheet.html</code>. Źródło danych: <code>tools/map-gen/map-data.js</code> + <code>tools/z1-decoder/icon-map.js</code>.
+</div>
+
+<script src="map-data.js"></script>
+<script>
+(function () {
+  // code → { icon file (in ../../prototype/icons/), detail to spot in terrain }
+  const DETAIL = {
+    N01: { icon: 'n01-piernikarka.svg',     look: 'Kosz pierników (pomnik Piernikarki)' },
+    N02: { icon: 'n02-przekupka.svg',       look: 'Gęś (pomnik Przekupki)' },
+    N03: { icon: 'n03-modry-fartuch.svg',   look: 'Fartuch — UWAGA: brak widocznego godła w terenie (tylko dystraktor)' },
+    N04: { icon: 'n04-apteka-lew.svg',      look: 'Lew nad drzwiami (Apteka Pod Złotym Lwem)' },
+    N05: { icon: 'n05-kosciol-jakuba.svg',  look: 'Bazylika / rząd łuków (kościół św. Jakuba)' },
+    N06: { icon: 'n06-baj-pomorski.svg',    look: 'Fasada-szafa (Teatr Baj Pomorski)' },
+    C01: { icon: 'c01-kopernik.svg',        look: 'Astrolabium (pomnik Kopernika)' },
+    C02: { icon: 'c02-osiolek.svg',         look: 'Osioł / pręgierz (Osiołek)' },
+    C03: { icon: 'c03-pies-filus.svg',      look: 'Melonik (pies Filuś)' },
+    C04: { icon: 'c04-ratusz.svg',          look: 'Wieża bez hełmu (Ratusz Staromiejski) — ≠ zegar C09' },
+    C06: { icon: 'c06-pod-gwiazda.svg',     look: 'Gwiazda (Kamienica Pod Gwiazdą)' },
+    C07: { icon: 'c07-dwor-artusa.svg',     look: 'Herb / tarcza (Dwór Artusa)' },
+    C08: { icon: 'c08-kosciol-nmp.svg',     look: 'Kościół bez wieży (NMP) — ≠ bazylika N05' },
+    C09: { icon: 'c09-katedra-janow.svg',   look: 'Zegar z 1 wskazówką (Katedra św. Janów) — ≠ wieża C04' },
+    S01: { icon: 's01-brama-mostowa.svg',   look: 'Ostrołuk przejazdu + krenelaż (Brama Mostowa)' },
+    S02: { icon: 's02-brama-klasztorna.svg',look: 'Brama (gotycki łuk od Bulwaru) — kaszownik słabo czytelny' },
+    S04: { icon: 's04-kotwica-bulwar.svg',  look: 'Kotwica na Bulwarze Filadelfijskim' },
+    W01: { icon: 'w01-luk-cezara.svg',      look: 'Trąbka herolda (Łuk Cezara)' },
+    D01: { icon: 'd01-fontanna-flisaka.svg',look: 'Flisak / skrzypce (Fontanna Flisaka)' },
+  };
+
+  const ICON_DIR = '../../prototype/icons/';
+
+  const ORDER = ['N01','N02','N03','N04','N05','N06',
+                 'C01','C02','C03','C04','C06','C07','C08','C09',
+                 'S01','S02','S04','W01','D01'];
+
+  const svgNS = 'http://www.w3.org/2000/svg';
+  const parser = new DOMParser();
+
+  function glyphSvg(body) {
+    const svgEl = document.createElementNS(svgNS, 'svg');
+    svgEl.setAttribute('viewBox', '0 0 32 32');
+    svgEl.setAttribute('width', '34');
+    svgEl.setAttribute('height', '34');
+    const parsed = parser.parseFromString(
+      '<svg xmlns="' + svgNS + '">' + body + '</svg>', 'image/svg+xml');
+    Array.from(parsed.documentElement.childNodes).forEach(n => {
+      svgEl.appendChild(document.importNode(n, true));
+    });
+    return svgEl;
+  }
+
+  const tbody = document.getElementById('rows');
+  ORDER.forEach(code => {
+    const p = Z1_PLACES[code];
+    const d = DETAIL[code];
+    if (!p || !d) return;
+    const tr = document.createElement('tr');
+
+    const tdCode = document.createElement('td');
+    const cs = document.createElement('span');
+    cs.className = 'code'; cs.textContent = code;
+    tdCode.appendChild(cs); tr.appendChild(tdCode);
+
+    const tdIcon = document.createElement('td');
+    tdIcon.className = 'icon-cell';
+    const img = document.createElement('img');
+    img.src = ICON_DIR + d.icon; img.alt = p.name;
+    tdIcon.appendChild(img); tr.appendChild(tdIcon);
+
+    const tdLook = document.createElement('td');
+    tdLook.className = 'look'; tdLook.textContent = d.look;
+    tr.appendChild(tdLook);
+
+    const tdGlyph = document.createElement('td');
+    tdGlyph.className = 'glyph-cell';
+    tdGlyph.appendChild(glyphSvg(Z1_GLYPHS[code]));
+    tr.appendChild(tdGlyph);
+
+    const tdName = document.createElement('td');
+    tdName.className = 'place'; tdName.textContent = p.name;
+    tr.appendChild(tdName);
+
+    tbody.appendChild(tr);
+  });
+
+  // Landmarks (glyph only)
+  const lbody = document.getElementById('landmark-rows');
+  const ROLE = {
+    L01: 'Punkt zborny / handler TR (Piccolo)',
+    L02: 'Cel finałowy (Zamek Krzyżacki)',
+    L03: 'Zadanie F2B — polichromie (Z10 KZ)',
+    L04: 'Zadanie F2B — herby Hanzy (Z6 TR)',
+  };
+  Object.keys(Z1_LANDMARKS).forEach(lid => {
+    const lm = Z1_LANDMARKS[lid];
+    const tr = document.createElement('tr');
+
+    const tdCode = document.createElement('td');
+    const cs = document.createElement('span');
+    cs.className = 'code'; cs.textContent = lid;
+    tdCode.appendChild(cs); tr.appendChild(tdCode);
+
+    tr.appendChild(document.createElement('td')); // spacer (no detail icon)
+
+    const tdRole = document.createElement('td');
+    tdRole.className = 'look'; tdRole.textContent = ROLE[lid] || '';
+    tr.appendChild(tdRole);
+
+    const tdGlyph = document.createElement('td');
+    tdGlyph.className = 'glyph-cell';
+    tdGlyph.appendChild(glyphSvg(lm.glyph));
+    tr.appendChild(tdGlyph);
+
+    const tdName = document.createElement('td');
+    tdName.className = 'place'; tdName.textContent = lm.name;
+    tr.appendChild(tdName);
+
+    lbody.appendChild(tr);
+  });
+}());
+</script>
+</body>
+</html>
