@@ -180,6 +180,7 @@ function fmtSize(b){ if(b<1024)return b+' B'; if(b<1048576)return (b/1024).toFix
 function esc(s){ return s.replace(/[&<>"]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
 
 const app = document.getElementById('app');
+const pdfQueue = []; // kolejka miniatur PDF do leniwego renderu (uzupełniana w makeCard)
 
 for (const sec of DATA) {
   const section = document.createElement('section');
@@ -236,7 +237,6 @@ function makeCard(f) {
 }
 
 // --- leniwe renderowanie miniatur PDF (1. strona) przez IntersectionObserver
-const pdfQueue = [];
 let pdfjs = null;
 async function loadPdfjs() {
   if (pdfjs) return pdfjs;
