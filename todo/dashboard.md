@@ -102,8 +102,9 @@
 ## 🔄 Przesunięte na MVP
 
 ```
-Z1 dry-run w terenie (R2) — Oskar weryfikuje sightline w terenie (opcjonalnie po MVP)
-                           → domknięcie macierzy v2 + regeneracja 10 kart (dyspersja)
+Z1 dry-run R3 — Oskar testuje w terenie całe 10 ścieżek z kartami (deszyfrownik G1–G10 + mapa
+               wspólna); pomiar czasu/postoju per przystanek. R2 (sightline 6 par + S02) ZROBIONE →
+               macierz v3.2 + 10 kart (public/decoders/) + mapa wygenerowane i spójne z map-data.js.
 ```
 
 ## 🖨 Render kopert — ODBLOKOWANY ✅

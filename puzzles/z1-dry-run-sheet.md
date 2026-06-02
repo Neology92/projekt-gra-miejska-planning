@@ -107,8 +107,12 @@ Plan zakładał ~700 m / ~8,5 min, ale to mogło być przeszacowane.
 
 ---
 
-# RUNDA 2 — do sprawdzenia (po REBALANSIE v2)
+# RUNDA 2 — ✅ ZROBIONE [2026-06-01] (po REBALANSIE v2)
 
+> **STATUS: zamknięta.** Sightline 6 par sprawdzone, S02 rozwiązane → **REBALANS v3** (`z1-10-sciezek.md`),
+> 10 kart zregenerowane + wyrenderowane (`public/decoders/`), mapa wspólna (`public/maps/`), dane spójne
+> z `map-data.js`. Wyniki w tabeli niżej. **Następny teren = RUNDA 3** (całe 10 ścieżek z kartami) — sekcja na końcu.
+>
 > Kontekst: runda 1 zmusiła przebudowę 7 z 10 łańcuchów → **macierz REBALANS v2** (`z1-10-sciezek.md` §REBALANS v2). Wprowadziła głębokie starty od Wisły (`S01`, `S02`) i przereorganizowała grupy Rynku. Runda 2 weryfikuje **to, co nowe**: 6 par „cross-square" (sightline), nowy krok `S02`, i nowe nogi. **Wszystkie detale łańcuchowe są pewne** (z rundy 1 / wiki) — tu chodzi głównie o **wzrok i odległość**, nie o istnienie detalu.
 
 ## R2.1 🔴 Sightline — 6 par cross-square (reguła: NIE w zasięgu wzroku bez podchodzenia)
@@ -153,4 +157,20 @@ Dotąd `S02` był tylko dystraktorem; w v2 jest **startem G6**. Detal = **kaszow
 | R2.2 S02 kaszownik | ⚠️ widziano z dołu (stojąc w bramie), ikona kaszownika trudna do zwizualizowania → **zmiana detalu na bramę** (prostokąt + gotycki łuk) od strony Bulwaru; `s02-brama-klasztorna.svg` przebudowany [2026-06-01] | S02 zostaje w łańcuchach; waypoint = od strony zewnętrznej (Bulwar Filadelfijski); `brama-zaokraglona.svg` → dystraktor only |
 | R2.3 nogi S01/S02 | ⏳ niezmierzone | poluzowany budżet — nie blokuje; zmierzyć przed playtestem |
 
-> Po R2: następna sesja domyka macierz v2 (rozbicie par „za ciasnych"), regeneruje 10 kart (pętle dystraktorów + deszyfrowniki) i buduje mapy.
+> ✅ Po R2 [2026-06-01/02]: macierz domknięta (rozbicie 4 par „za ciasnych" → REBALANS v3, 5 swapów), 10 kart
+> zregenerowane + wyrenderowane (`public/decoders/decoder-G1..G10.pdf`), mapa wspólna zbudowana (`public/maps/`).
+> Dane v3.2 spójne z `tools/map-gen/map-data.js` (`Z1_GROUPS`). Walidacja deszyfrowników: PASS.
+
+---
+
+# RUNDA 3 — do zrobienia w terenie (pełny przejazd)
+
+> **Cel:** pierwszy realny przejazd całych ścieżek z kompletem rekwizytów (deszyfrownik G* + mapa wspólna).
+> R1/R2 weryfikowały detale i wzrok zza pojedynczych przystanków; R3 mierzy **doświadczenie całej trasy**.
+
+- [ ] Wydrukuj 1–2 karty (np. `decoder-G2.pdf`, `decoder-G10.pdf` — najdłuższe budżety) + mapę `map.pdf`.
+- [ ] Przejdź łańcuch jak gracz: znajdź glif na mapie → wypatrz detal w terenie → odczytaj następny kod.
+- [ ] Zmierz **czas/postój per przystanek** (dojście + wypatrzenie + odczyt deszyfrownika): ______ min/postój.
+- [ ] Zmierz **całość ścieżki** vs budżet z `z1-10-sciezek.md` (G2 ~13,5 / G10 ~16–18 min): ______ min.
+- [ ] Niezmierzone nogi z R2.3 (briefing→S01, briefing→S02, G7 S01→C09): ______ m / ______ min.
+- **SWAP TRIGGER:** jeśli realna całość **> ~20 min** lub postój **> ~1,5 min/przystanek** → zgłoś, skrócimy nogi.
