@@ -22,6 +22,39 @@ Wymaga Chrome lub Edge (Win11 ma Edge). Renderuje A4, honoruje `@page`/`@media p
 Treść kanoniczna: `puzzles/z3-lista-tr-spec.md`, `puzzles/z7-szyfr-spec.md §0`.
 Podgląd ekranowy z notkami projektowymi: `prototype/z3-z7-podglad.html`.
 
+## ⚠ Staleness guard — przeczytaj zanim renderujesz koperty
+
+**Proza graczy żyje w draftach `.md`, nie w tych HTML-ach.** HTML w `src/` to ręcznie
+przepisana warstwa renderu — **nic nie synchronizuje draft → HTML automatycznie**. Gdy
+draft dostaje nową prozę (np. rewizja v2: 2. osoba + ramka `.mg-note`), a HTML jej nie
+dostaje, `render.ps1` wyprodukowałby cicho **nieaktualny** PDF.
+
+Dlatego każdy HTML z **starą** prozą nosi w treści linię-marker `RENDER-BLOCK`.
+`render.ps1` skanuje markery **przed** odpaleniem przeglądarki i **przerywa** (exit 1),
+wypisując listę nieaktualnych źródeł. To znaczy, że render się nie uda dopóki proza nie
+zostanie przeniesiona do HTML.
+
+**Jak odblokować plik:** przenieś bieżącą prozę draftu do HTML → **usuń** linię
+`RENDER-BLOCK` z tego pliku. Markery **dodaj z powrotem**, jeśli później zrewidujesz prozę
+draftu, a jeszcze jej nie przeniosłeś (guard to jednorazowe potwierdzenie, nie żywy detektor
+dryfu — dyscyplina jest po stronie autora).
+
+**Świadomy override:** `pwsh -File render.ps1 -Force` renderuje mimo markerów (głośny banner +
+lista). Używaj tylko gdy naprawdę chcesz PDF ze starym tekstem.
+
+Obecnie zablokowane (7): `k1, k2, k2-slip, k3, kZ3b, kZ4, kF` — koperty kurierskie czekające
+na port prozy v2. **Niezablokowane:** `z3-pergamin-lista-tr`, `z7-przechwycony-list`,
+`z3-z7-klucz-mg` — to dokumenty in-world (głos Komtura / lista Zakonu), mają własne spece i są
+render-zweryfikowane; rewizja narracji v2 ich nie dotyczy.
+
+### Dom draftów (założenie — przenosiny w toku)
+
+Kanoniczne drafty kopert **przenoszą się** z `prototype/*-envelope-draft.md` do
+**`puzzles/envelopes/`** (nazwy Z-numerowane). Przenosin **dokonuje osobny agent**. Guard tego
+nie psuje: kluczuje po markerze w HTML (który przeżywa przenosiny), **nie** po ścieżkach draftów.
+Po przenosinach traktuj `puzzles/envelopes/` jako źródło prawdy przy porcie prozy. Spięte też w
+`mechanics/koperty-mg.md` (blok założeń).
+
 ## Stylistyka
 
 Manuskryptowa, pod druk **czarno-biały** (`src/parchment.css`):

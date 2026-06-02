@@ -1,6 +1,29 @@
 # Render print-ready PDFs from the HTML sources in ./src.
-# Usage: pwsh -File render.ps1   (run from prototype/print/)
+# Usage: pwsh -File render.ps1            (run from prototype/print/)
+#        pwsh -File render.ps1 -Force     (override the staleness guard, see below)
 # Requires Chrome or Edge (Windows 11 ships Edge). Honors @media print + @page A4.
+#
+# ── STALENESS GUARD (read before rendering) ───────────────────────────────────
+# The player-facing PROSE is authored in markdown DRAFTS, not in these HTML files.
+# The HTML in ./src is a hand-ported render layer; nothing auto-syncs draft -> HTML.
+# Each ./src HTML that still holds OLD prose carries a `RENDER-BLOCK` marker line.
+# This script scans for that marker and ABORTS before launching the browser, so a
+# render can never silently emit a stale PDF. To clear a block: port the current
+# draft prose into the HTML, then delete that file's RENDER-BLOCK line. Re-add the
+# marker whenever you later revise a draft's prose but haven't re-ported it yet.
+# `-Force` proceeds anyway (prints a loud banner + the list) — use only knowingly.
+#
+# ── DRAFT HOME (assumption, pending a separate move) ──────────────────────────
+# Canonical envelope drafts are moving from  prototype/*-envelope-draft.md
+#                                       to   puzzles/envelopes/  (Z-numbered names).
+# That move is performed by a separate agent. This script does NOT resolve draft
+# paths (the guard keys off the in-HTML marker, which survives the move), so the
+# rename cannot break it. After the move, treat puzzles/envelopes/ as the source
+# of truth when porting prose. See prototype/print/README.md and
+# mechanics/koperty-mg.md (pinned assumptions block).
+# ──────────────────────────────────────────────────────────────────────────────
+
+param([switch]$Force)
 
 $ErrorActionPreference = 'Stop'
 $here = $PSScriptRoot
@@ -36,6 +59,34 @@ $jobs = @{
   'kZ3b.html'                 = 'kZ3b.pdf'
   'kZ4.html'                  = 'kZ4.pdf'
   'kF.html'                   = 'kF.pdf'
+}
+
+# ── Staleness guard: refuse to render any source still carrying a RENDER-BLOCK marker.
+$blocked = foreach ($in in $jobs.Keys) {
+  $inPath = Join-Path $src $in
+  if (-not (Test-Path $inPath)) { continue }
+  $marker = Select-String -Path $inPath -SimpleMatch -Pattern 'RENDER-BLOCK' -List
+  if ($marker) {
+    [pscustomobject]@{ File = $in; Reason = ($marker.Line -replace '^\s*<!--\s*', '' -replace '\s*-->\s*$', '') }
+  }
+}
+if ($blocked) {
+  Write-Host ''
+  Write-Host '  ============================================================' -ForegroundColor Yellow
+  Write-Host '   STALE RENDER SOURCES — prose not yet ported from drafts' -ForegroundColor Yellow
+  Write-Host '  ============================================================' -ForegroundColor Yellow
+  foreach ($b in $blocked) {
+    Write-Host ("   - {0}" -f $b.File) -ForegroundColor Yellow
+    Write-Host ("       {0}" -f $b.Reason) -ForegroundColor DarkGray
+  }
+  Write-Host ''
+  if (-not $Force) {
+    throw "Render aborted: $($blocked.Count) source(s) still hold a RENDER-BLOCK marker. " +
+          "Port the current draft prose into each HTML and delete its marker line, " +
+          "or re-run with -Force to render the stale text knowingly."
+  }
+  Write-Host '  -Force set: rendering STALE sources anyway. Output PDFs will NOT match the drafts.' -ForegroundColor Red
+  Write-Host ''
 }
 
 foreach ($in in $jobs.Keys) {

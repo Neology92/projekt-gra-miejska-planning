@@ -3,6 +3,11 @@
 #   variants/backgrounds/  — parchment background samples (no body text), one per candidate bg
 # Usage: pwsh -File render-variants.ps1   (run from prototype/print/)
 # Throwaway comparison artifacts — collapse to the chosen bg once decided.
+#
+# NOTE: this is a TUNING tool (style variants under src/variants/), not production.
+# It deliberately has NO staleness guard — variants exist to preview look, not final
+# prose. The prose-staleness guard lives in render.ps1 (production render to public/).
+# See prototype/print/README.md §Staleness guard before rendering player-facing copy.
 
 $ErrorActionPreference = 'Stop'
 $here = $PSScriptRoot

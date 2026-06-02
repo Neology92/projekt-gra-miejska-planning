@@ -91,6 +91,16 @@ Część zagadek wymaga **zaniesienia odpowiedzi do MG**, żeby odebrać kolejn�
 - **Implementacja (przy renderze, NIE teraz):** osobna klasa CSS (np. `.mg-note`) w `prototype/print/src/parchment.css` — ramka/obwódka, inny krój/kolor, ewentualna ikona; wizualnie „naklejka instrukcyjna", nie pergaminowa narracja. ⚠ flaga do wdrożenia przy passie renderującym.
 - **Kandydaci (powrót do MG po rozwiązaniu):** **Z1**→raport 4 miejsc (K1), **Z3**→przyniesienie wykradzionej listy (K-Z3b), **Z4**→kod `621454` (K-Z4), **Z7**→odpowiedź finałowa przed KF. Dokładny tekst per koperta — przy finalizacji. Patrz `prototype/mg-runsheet.md` (gdzie MG przyjmuje raporty).
 
+### 📌 ZAŁOŻENIA PRZED RENDEREM — nie pominąć (pinned)
+
+Dwa fakty, które muszą być **wykonane zanim ktokolwiek zrobi pass renderujący** koperty do `public/`. Spięte tutaj, żeby nie umknęły między sesjami.
+
+1. **Drafty kopert przenoszą się `prototype/*-envelope-draft.md` → `puzzles/envelopes/`** (nazwy Z-numerowane, jak `wspolne-1-Z1.md`, `miasto-4-Z5.md`, `krzyzacy-4-Z9.md`). Przenosin **dokonuje osobny agent**. Po przenosinach **źródłem prawdy dla prozy** jest `puzzles/envelopes/`, a `prototype/*-envelope-draft.md` jest deprecated. Tu nie zakładamy docelowego mapowania nazw — to robi agent przenoszący.
+
+2. **Render NIE jest sync.** Proza graczy żyje w draftach `.md`; HTML w `prototype/print/src/` to **ręcznie** przepisana warstwa renderu — nic nie syncuje draft→HTML. Stan na 2026-06-02: 7 kopert kurierskich (`k1, k2, k2-slip, k3, kZ3b, kZ4, kF`) ma prozę **v2** (2. osoba + ramka `.mg-note`) **tylko w `.md`**; HTML wciąż trzyma **v1** (1. osoba, logistyka wpleciona). Render-pass = **3 podkroki**: (a) port prozy v2 → HTML, (b) markup `.mg-note` wokół 4 ramek meta, (c) klasa CSS `.mg-note` w `parchment.css` (patrz flaga wyżej).
+
+**Guard, który tego pilnuje:** każdy stale HTML nosi linię-marker `RENDER-BLOCK`; `render.ps1` **przerywa render** (exit 1), dopóki marker istnieje. Odblokowanie = port prozy + usunięcie linii markera z danego pliku. Override: `render.ps1 -Force` (świadomie, ze starym tekstem). Dokumenty in-world (`z3-pergamin`, `z7-przechwycony-list`, `z3-z7-klucz-mg`) **nie** są objęte — mają własne spece i są render-zweryfikowane. Szczegóły: `prototype/print/README.md §Staleness guard`.
+
 ### Numeracja kopert
 
 - **K1** - startowa, wszystkie grupy dostają.

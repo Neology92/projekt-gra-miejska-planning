@@ -95,6 +95,15 @@ Z1 dry-run R2 — Oskar weryfikuje sightline 6 par + S02 kaszownik (z1-dry-run-s
                 → potem domknięcie macierzy v2 + regeneracja 10 kart (MVP / dyspersja)
 ```
 
+## 🖨 Render kopert — ZABLOKOWANY (guard aktywny)
+
+```
+render.ps1 PRZERYWA render 7 kopert (k1,k2,k2-slip,k3,kZ3b,kZ4,kF): proza v2 jest w .md, HTML wciąż v1.
+Odblokowanie = render-pass 3 podkroki (port v2→HTML + markup .mg-note + CSS .mg-note), per plik usuń marker RENDER-BLOCK.
+Najpierw: przeniesienie draftów prototype/*-envelope-draft.md → puzzles/envelopes/ (osobny agent).
+Szczegóły: mechanics/koperty-mg.md §ZAŁOŻENIA PRZED RENDEREM · prototype/print/README.md §Staleness guard
+```
+
 ---
 ---
 
