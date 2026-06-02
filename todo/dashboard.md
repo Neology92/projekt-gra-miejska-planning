@@ -149,6 +149,8 @@ Szczegóły: mechanics/koperty-mg.md §ZAŁOŻENIA PRZED RENDEREM · prototype/p
 
 ### 🟦 Drugi tor (krzyżacki) — lustro
 
+> ⚠ **ŚCIEŻKA KRYTYCZNA TREŚCI MVP.** Tor KZ istnieje dziś tylko jako **meta-kartki** (`lore/meta-kartki/krzyzacy-*`) i wyrenderowane tabele Z11 + koperta/PDF Z9. **Brak kopert gracza:** Z3Z, Z8, Z10, Z11-list, K2-K, KF-KZ. To największa pojedyncza luka treści — mechanika = Oskar, draft koperty = agent po decyzji.
+
 ```
 ⬜ K2-K (wersja krzyżacka) ...... Pula B plotek (krytyka Zakonu) + Z2 → Albrecht (handler KZ [2026-06-02])
 ⬜ Skrypt Albrechta (Zosia) F2A . handler KZ: spotkanie + żądanie dowodu + wręczenie K3-K (Z3Z) + Tabeli 1
@@ -198,9 +200,14 @@ Szczegóły: mechanics/koperty-mg.md §ZAŁOŻENIA PRZED RENDEREM · prototype/p
 ```
 ⬜ Tłumaczenie EN→PL ............ drafty materials/actors/ (jordan, albrecht) + materials/ops/
                                  (mg-runsheet, mg-tracking, mg-group-cards, mg-master-board,
-                                 mg-quick-hints, shopping-list) powstały po EN; przełożyć na PL.
+                                 mg-quick-hints, shopping-list) — zweryfikowane [2026-06-02]: nadal EN
+                                 (nagłówki „Language: English"); przełożyć na PL.
                                  Wyjątek: cytaty treści zagadek / odpowiedzi gracza zostają EN.
                                  materials/props/ (pergamin, szyfrogram) = EN (gracz) — bez zmian.
+⬜ Skalowanie ops/actors ........ zweryfikowane [2026-06-02]: mg-runsheet/shopping-list nadal w zakresie
+                                 „prototype only — single TR path". MVP: rozszerzyć na OBA tory + 10 grup
+                                 (tracking/master-board/group-cards × 10; runsheet z fazą KZ). Idzie w parze
+                                 z tłumaczeniem (przepisuj od razu na PL).
 ```
 
 ### 🟥 Logistyka dnia gry
