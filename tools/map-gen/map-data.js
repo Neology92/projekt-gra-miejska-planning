@@ -119,10 +119,10 @@ const Z1_LANDMARKS = {
          + '<circle cx="10.5" cy="13" r="1.8" fill="#2a1f0e"/><circle cx="21.5" cy="13" r="1.8" fill="#2a1f0e"/>',
   },
   L04: {
-    coords: [53.0112, 18.6096],
-    name: 'Aleja Herbów (Kr. Jadwigi)',  // Z6 TR — herby miast Hanzy w bruku; pin = ŚRODEK ul. Kr. Jadwigi (8 herbów)
-    // NIE „Aleja Gmerków" (to ul. Żeglarska, inne miejsce). Główny ciąg 22 herbów jest na ul. Szerokiej
-    // (pokrywa się z L03 Biedronka/Szeroka 22) — jeśli Z6 ma chodzić Szeroką, przesuń pin tam. Patrz puzzles/herby-aleja.md §Research.
+    coords: [53.0107, 18.6084],
+    name: 'Aleja Herbów (Szeroka)',  // Z6 TR — herby miast Hanzy w bruku; pin = wsch. ul. Szeroka (główny ciąg 22 herbów)
+    // NIE „Aleja Gmerków" (to ul. Żeglarska, inne miejsce). Pin w wsch. części Szerokiej, by NIE zlewał się
+    // z L03 Biedronka/Szeroka 22 (~80 m na zach.). Ciąg herbów rozciąga się dalej na Kr. Jadwigi. Patrz puzzles/herby-aleja.md §Research.
     // shield outline (heraldic) — points down; distinct from pentagon N05 (points up)
     glyph: '<polygon points="6,5 26,5 26,15 16,28 6,15" fill="none" stroke="#2a1f0e"'
          + ' stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>',
