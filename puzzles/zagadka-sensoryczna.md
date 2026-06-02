@@ -201,15 +201,17 @@ Pointy nie trzeba porzucać — trzeba **świadomie wybrać** framing (zgodnie z
 > ⚠ **Bez tej karty zagadka się nie domyka.** Sam ciężar daje tylko „cięższy/lżejszy"; mapowanie *cięższy → żytnia* istnieje **wyłącznie** przez proporcję z przepisu. Oskarowe „jednej mąki 2–3× więcej" TO jest właśnie ta proporcja — musi trafić do graczy jako rekwizyt.
 
 ```
-MASTER BOGUMIŁ'S RULE — TORUŃ PIERNIK
+THE RULE FOR TORUŃ PIERNIK
 
   Rye flour ......... three measures   (the body of the dough)
   Wheat flour ....... one measure      (for a smoother crumb)
   Honey ............. as much as the dough will take
-  Pounded spices .... cinnamon, cloves, ginger — and no other root.
+  Pounded spices .... cinnamon, cloves, ginger, cardamom — and no other root.
 ```
 
-Przepis robi dwie rzeczy: (a) **rye 3 : wheat 1** → „czego w cieście więcej, tego w słoju ciężej" rozstrzyga A vs B; (b) **zamyka listę korzeni** (`cinnamon, cloves, ginger — and no other root`) → nazwy spoza niej (nutmeg, cardamom, pepper, buckwheat/barley flour) gracz odrzuca przez czytanie przepisu. *Świadomy efekt:* znajomość/uważne czytanie przepisu = przejście ukrytego testu „jesteś swój".
+Przepis robi dwie rzeczy: (a) **rye 3 : wheat 1** → „czego w cieście więcej, tego w słoju ciężej" rozstrzyga A vs B; (b) **zamyka listę składników** (4 korzenie: `cinnamon, cloves, ginger, cardamom` + 2 mąki + miód; `and no other root`) → nazwy spoza niej (nutmeg, pepper, buckwheat flour) gracz odrzuca przez czytanie przepisu. *Świadomy efekt:* znajomość/uważne czytanie przepisu = przejście ukrytego testu „jesteś swój".
+> **Karta bez nazwiska [poprawka 2026-06-02, advisor]:** nagłówek = `THE RULE FOR TORUŃ PIERNIK` (NIE „Master Bogumił's") — bo **ta sama fizyczna karta obsługuje Z5 (mieszczanie) i Z9 (krzyżacy)**; podpis toruńskiego piekarza w ręku krzyżaków byłby sprzeczny. Bezimienna „reguła" wzmacnia easter egg: to nie czyjś prywatny przepis, lecz ta sama znana reguła znana „po obu stronach".
+> **⚠ Kardamon MUSI być w przepisie:** kardamon = prawdziwy słój G; gdyby go w przepisie brakło, recipe-gating („nie ma w przepisie → fake") błędnie odrzucałby go jak dystraktor. Lista korzeni w przepisie = **wszystkie 4 prawdziwe przyprawy** (cinnamon, cloves, ginger, cardamom). Wiki potwierdza kardamon w palecie piernika (linia 74). Dystraktory (nutmeg, pepper, buckwheat) zostają poza listą.
 > Wariant trudniejszy (opcja): przepis podaje tylko proporcje mąk + „spices, as the craft requires" (bez nazw) → pełna identyfikacja zmysłowa, dystraktory odrzucane wyłącznie węchem. Domyślnie zostaje wersja z nazwami (łagodniejsza, mocniej spina motyw „znaj przepis").
 
 ### Lista etykiet — PLAYER-FACING (EN, #70): 10 nazw = 5 prawdziwych + 5 dystraktorów

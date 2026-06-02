@@ -32,7 +32,7 @@ Frakcja: **krzyzacy** (Zakon) · Pozycja na ścieżce (nr): **4** · Zadanie: **
 
 *The komturia kitchen is loud with the day's work — knives and copper and the heat of the ovens — and beyond its walls a city that will not settle. The brother who keeps the kitchen you do not see; there is no hand to spare tonight. But the spice jars stand waiting in a row, bare of any label, and propped against them a note in a careful, cloister-trained hand.*
 
-> Brothers — the komtur's table will not touch what the kitchen cannot name, and these came up from a merchant's store with never a mark on them. I've no hour free tonight. But you are of our own, and this is our own craft — German work, that has flourished in these lands as long as the Order has held them; any man of ours knows these roots by heart. Take their measure however you can, only do not open them — a spice once aired is spoiled. And keep to my recipe: not every name they sent up belongs in a piernik at all.
+> Brothers — the komtur's table will not touch what the kitchen cannot name, and these came up from a merchant's store with never a mark on them. I've no hour free tonight. But you are of our own, and this is our own craft — German work, that has flourished in these lands as long as the Order has held them; any man of ours knows these roots by heart. Take their measure however you can, only do not open them — a spice once aired is spoiled. And keep to the rule: not every name they sent up belongs in a piernik at all.
 >
 > Let the town shout itself hoarse beyond these walls. The komtur dines as he has always dined, and this kitchen does not falter. See that you do not either.
 > — Brother of the komtur's kitchen
