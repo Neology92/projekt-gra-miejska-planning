@@ -10,12 +10,12 @@ const Z1_PLACES = {
   N04: { coords: [53.0115, 18.6103], name: 'Apteka Lew'     },
   N05: { coords: [53.0119, 18.6126], name: 'Kościół Jakuba' },
   N06: { coords: [53.0104, 18.6122], name: 'Baj Pomorski'   },
-  C01: { coords: [53.0103, 18.6050], name: 'Kopernik'       },
-  C02: { coords: [53.0102, 18.6053], name: 'Osiołek'        },
+  C01: { coords: [53.0103, 18.60495], name: 'Kopernik'       },
+  C02: { coords: [53.01015, 18.6053], name: 'Osiołek'        },
   C03: { coords: [53.0111, 18.6045], name: 'Filuś'          },
   C04: { coords: [53.0103, 18.6044], name: 'Ratusz'         },
   C06: { coords: [53.0107, 18.6052], name: 'Pod Gwiazdą'    },
-  C07: { coords: [53.0100, 18.6042], name: 'Dwór Artusa'    },
+  C07: { coords: [53.00995, 18.60415], name: 'Dwór Artusa'    },
   C08: { coords: [53.0110, 18.6024], name: 'Kościół NMP'    },
   C09: { coords: [53.0094, 18.6063], name: 'Katedra Janów'  },
   S01: { coords: [53.0086, 18.6089], name: 'Brama Mostowa'  },
@@ -72,8 +72,8 @@ const Z1_INSET_CODES = ['C01','C02','C04','C07','D01'];
 // Inset bounding box (SW, NE) — WHOLE Rynek Staromiejski + a ring of context,
 // not just the cluster. Wide enough to read the market square; the main map is
 // zoomed out to fit both towns, so the inset is what separates the dense pins.
-const Z1_INSET_SW = [53.0098, 18.6039];
-const Z1_INSET_NE = [53.0106, 18.6055];
+const Z1_INSET_SW = [53.0098, 18.6040];
+const Z1_INSET_NE = [53.0106, 18.6053];
 
 // FROZEN view — fixed center/zoom shared by ALL group maps (same place = same
 // pixel on every map; positional consistency is a hard rule). Must fit the UNION
