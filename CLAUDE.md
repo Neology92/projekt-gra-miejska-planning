@@ -149,7 +149,7 @@ Te punkty są **niezmienne** i mają pokrycie w wiki:
 - **Każda większa zmiana** w tym repo → commit (`feat:`, `fix:`, `docs:`, `chore:`).
 - **Nie deployujemy** tego projektu — to czysto planistyczny katalog. Wiki ma osobny deploy do Netlify.
 - **Plany dalekosiężne** w `todo/roadmap.md`, decyzje czekające na input — w `todo/otwarte-pytania.md`.
-- **Generowane artefakty wizualne** (obrazki, PDF-y, wydruki, mocki HTML mapy/kart/kopert) → podfolder **`prototype/`** (dla milestone'u prototypu pojedynczej ścieżki). Przy skalowaniu do MVP → analogicznie **`mvp/`**. Pliki planistyczne (.md) zostają w `concept/`, `puzzles/`, `mechanics/` itd.
+- **Generowane artefakty wizualne** (obrazki, PDF-y, wydruki, mocki HTML mapy/kart/kopert) → podfolder **`prototype/`** (dla milestone'u prototypu pojedynczej ścieżki). **Od fazy MVP działamy w roocie — bez osobnego `mvp/`** (był pusty, usunięty; patrz `todo/otwarte-pytania.md` #69). Pliki planistyczne (.md) zostają w `concept/`, `puzzles/`, `mechanics/` itd.
 - **Ostateczne pliki do druku** → folder **`public/`** w korzeniu repo (wersjonowany). Jedno miejsce na gotowe deliverable dla graczy — koperty (`prototype/print/render.ps1`), mapy (`tools/map-gen/render-map.ps1`), deszyfrowniki (`tools/z1-decoder/render-decoder.ps1`), inne rendery. Struktura: `public/maps/`, `public/decoders/`, `public/` (koperty PDF). Źródła renderów zostają w `prototype/print/src/`, `tools/map-gen/`, `tools/z1-decoder/`; `public/` trzyma tylko wynik.
 - **`tools/`** trzyma generatory artefaktów. Mogą być **puzzle-agnostyczne** (silnik `map-gen`) lub **specyficzne dla zagadki** (`z1-decoder`); narzędzie generujące idzie do `tools/`, nie do `puzzles/` (te zostają planistyczne .md). Współdzielenie danych między narzędziami = import (np. `z1-decoder` czyta glify z `map-gen/map-data.js`), nie kopia.
 - **Język planowania**: polska robocza — pliki .md, decyzje, notatki, komentarze agenta.
@@ -161,8 +161,6 @@ Te punkty są **niezmienne** i mają pokrycie w wiki:
 - **Stan / co gotowe / następny krok** → `todo/dashboard.md`
 - **Decyzje (otwarte + rozstrzygnięte)** → `todo/otwarte-pytania.md`
 - **Kolejność faz** → `todo/roadmap.md`
-
-Skrót na 2026-06-02: prototyp ścieżki TR ~80% (drafty kopert/skryptów gotowe, czekają na review; zostają: instrument K-Z4, body koperty K8, pass spójności, dry-run). Tor krzyżaków = ramy gotowe, treść 5 zagadek niepisana (MVP). Z1 dyspersja 10 grup czeka na dry-run R2. Mechanika liczenia listów = MVP.
 
 ### Konwencja utrzymania (żeby tracking „się działał")
 

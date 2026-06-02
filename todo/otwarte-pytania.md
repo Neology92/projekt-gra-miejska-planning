@@ -91,6 +91,11 @@ Pytania pogrupowane wg pliku, w którym są dyskutowane szerzej.
 58. **Kiedy playtest** - tydzień przed, miesiąc przed, dwa tygodnie?
 59. **Budżet** - ile autor inwestuje w rekwizyty/druk/aktorów?
 68. **Kiedy review prototypu (koperty + skrypty)** — ROZSTRZYGNIĘTE [2026-06-02, Oskar]: **w MVP, nie na zamknięcie prototypu.** Prototyp = zamknięty (cały stos wyrenderowany, dane Z1 spójne, R2 zrobione). Review stosu (Oskar + Piotr) i dry-run R3 wchodzą jako zadania MVP — **nie blokują** startu Fazy A. Przechodzimy do MVP.
+69. **Reorganizacja repo na wejściu w MVP** — ROZSTRZYGNIĘTE [2026-06-02, Oskar], 4 wybory:
+    - **(a) Brak osobnego `mvp/`** — folder był pusty, usunięty. Od MVP **działamy w roocie** (puzzles/, mechanics/, envelopes/, prototype/ dla artefaktów).
+    - **(b) CLAUDE.md ↔ index.md = podział ról** — CLAUDE.md (auto-ładowany) trzyma lean+AKTUALNĄ strukturę + wszystkie zasady; index.md = tylko głęboki detal kopert (3 osie/join-key). „Konwencja utrzymania" żyje w 1 miejscu (CLAUDE.md §Workflow), index linkuje. Każdy fakt = jeden dom.
+    - **(c) roadmap.md = tylko kolejność faz** — checkboxy `[ ]/[x]` ze STANEM usunięte; status żyje wyłącznie w `dashboard.md`. roadmap trzyma kolejność/zakres A–E.
+    - **(d) prototype/ — promocja baz operacyjnych** — żywe bazy MVP (skrypty aktorów, pergamin, z7-szyfrogram, shopping-list) wychodzą z `prototype/` do folderów docelowych + aktualizacja wszystkich refs; snapshoty prototype-only (pass-spojnosci, envelope-map) → `todo/archive/`; generatory/podglądy (icons/, print/, meta-cards/, HTML) zostają. Mapping docelowy ustalany przed przenosinami.
 
 ## Rozbieżności board (Whimsical) vs pliki .md
 
