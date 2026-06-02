@@ -112,3 +112,14 @@ That's it. They leave.
 **Czas 10-15 min per grupa:** 5 grup TR × 15 min = 75 min okna dla Piotra. Rozłożyć fale grup (Oskar zarządza kolejką). Piotr nie musi wiedzieć ile grup jest — dostaje grupy jedna po drugiej.
 
 **K3 per kolor:** Piotr ma przygotowane koperty posortowane wg koloru opaski. Każda K3 może być identyczna (w prototypie) lub różna (przy skalowaniu — różne opcjonalne zagadki per grupa).
+
+---
+
+## REWIZJA [2026-06-02] — uwagi Oskara (DO WPROWADZENIA, jeszcze nie wprowadzone)
+
+> Skrypt wyżej **nietknięty** — materiał porównawczy.
+
+1. **Hasło dnia (E) — do wpisania w STEP 1 (Verification).** Slip R. w K2 instruuje kurierów, by na miejscu **zwrócili się po imieniu (Jordan) i wskazali, co kupił dziś rano (chochlę)** — to **parol ustalony na dzisiaj**. Trigger rozpoznania = *imię + „kupiłeś dziś rano chochlę"*, nie samo „pytanie o Jordana". Po poprawnym parolu Jordan: *„chyba wiem, kim jesteście"* (życzenie Oskara) → wpuszcza dalej.
+   - ⚠ **Synchronizacja z:** `prototype/k2-envelope-draft.md §E/F` (slip R.) i `puzzles/droga-do-jordana.md §E`. Trzy pliki muszą mówić to samo hasło.
+   - Opaska/kolor (obecny drugi check) zostaje jako warstwa logistyczna MG; parol = warstwa fabularna rozpoznania.
+2. **Drobna flaga — STEP 4 „Don't open it out here" (linia ~76):** to wypowiedź NPC w świecie (ostrożny kucharz), nie meta-logistyka — więc *prawdopodobnie OK*. Ale leży blisko wycinanego „do not open it in front of him / open once clear" (K3, Zasada #3). ⚠ przy ujednolicaniu zważyć, czy zostawić, czy przykryć opisem; **nie tnę automatycznie** — do decyzji Oskara.

@@ -127,3 +127,42 @@ Find the way. — R.
 - **Maski (kontynuacja A2):** „under the masks and the music" — utrzymuje motyw przebrania zasiany w K1, wiodący do K3.
 
 **Dwa rejestry [2026-06-01]:** dorzucone *otwarcie* i *zamknięcie* = kursywa (narracja z głów); main note + slip R. = roman (wiadomości z nadawcą — slip przeniesiony z kursywy na roman dla spójności klucza). Wiadomości **nieruszone treściowo**, tylko oprawa + format. ⚠ **Plotki (overheard)** = przytoczone słowa świata → docelowo roman; zostawione kursywą do passu stylizacyjnego (nie rozszerzam scope). Klucz: kursywa=głowa, roman=słowa świata (`mechanics/koperty-mg.md`).
+
+---
+
+## REWIZJA [2026-06-02] — uwagi Oskara (DO WPROWADZENIA, jeszcze nie wprowadzone)
+
+> Notatki kierunkowe. Tekst wyżej **nietknięty** — materiał porównawczy. Przepisanie + render po akceptacji.
+> To **największa przebudowa** ze wszystkich kopert — K2 zmienia status i dochodzi nowa warstwa mechaniki (glify).
+
+### A. Rama przestaje być głosem zleceniodawcy → SCENA-ODKRYCIE (2. osoba)
+- Obecna rama „**Messengers, your contact is gone. We do not know if he fled…**" = zewnętrzny zleceniodawca relacjonuje grupie, co się stało. **To wycinamy.** Oskar: nikt z zewnątrz im tego nie mówi — **kurierzy sami to rozkminiają**: docierają na miejsce, zamiast kontaktu znajdują kopertę z notatką, i z niej (oraz z tego, co widzą wokół) **sami orientują się**, że R. zniknął.
+- Nowa rama = **narracja-odkrycie z głów, 2. osoba** („*you reach the mark… no one waits; instead, folded paper in his place…*"). Patrz `mechanics/koperty-mg.md §Osoba narracji`.
+- **Skutek statusu:** K2 przesuwa się z „wiadomość + slip" ku **scenie**. Jedynym realnym dokumentem-nadawcą zostaje **slip „— R."** (roman). Zaktualizowane w `koperty-mg.md` Zasada #2.
+
+### B. Plotki → wplecione w narrację-podróż, nie wyliczone cytaty
+- Obecny blok „*Overheard near the square / A craftsman / Two merchants / Whispered at the inn…*" (osobne cytaty) → **rozpuścić w opis drogi**: co grupa mija, słyszy w przejściu, wyłapuje z tłumu karnawału. Mowa zależna / strzępy w narracji 2. os., nie lista źródeł.
+- **Treść/funkcja plotek zostaje** (Pula A: A3/A5/A6/A7/A8 + kulawy Bażyński C2) — zmienia się tylko **forma podania**. ⚠ To zastępuje wcześniejszą notę „plotki docelowo roman" (akapit wyżej): w narracji 2. os. idą kursywą jako część opisu.
+
+### C. NIE zdradzać, że szukają Jordana / że pójdą tam, gdzie pracuje
+- Obecne zdanie (sekcja Z2): „**Once you have placed Jordan, you will know where he works. Go there — and ask for him by name.**" → **USUNĄĆ.** Oskar: na tym etapie gracze **nie mogą wiedzieć, że szukają Jordana**.
+- **Trzy rzeczy do samodzielnego połączenia:** *Piccolo* (miejsce) · *Jordan* (imię) · *chochla* (atrybut). Dopiero gdy zepną wszystkie trzy — wiedzą, dokąd iść i kogo szukać. „Jordan" ma być **odkryciem**, nie zdaniem odczytanym i skwitowanym „aha, Jordan, to idziemy".
+
+### D. NOWA WARSTWA — glify miejsc (pomysł Oskara) → nawigacja zamiast „idź tam, gdzie pracuje"
+- Każde z 3 miejsc zagadki dostaje **glif** wypisany obok jego nazwy. Glify = te z **wygenerowanej mapy Z1** (`prototype/maps/`).
+- **Haczyk:** glif **Piccolo = PRAWDZIWY** (realnie oznacza punkt na mapie). Glify **Starego Młyna i Kuźni = ZMYŚLONE** — nigdy nie występują na mapie.
+- Skutek: gracze mogą udać się **tylko w jedno miejsce** (to z istniejącym glifem). Domknięcie zagadki = sprawdzić, który z trzech glifów faktycznie jest na mapie. To zastępuje wykładanie „Jordan pracuje w Piccolo, idźcie tam".
+- ⚠ **Zależność:** wymaga, by glif Piccolo **realnie istniał** na mapie Z1 — sprzęga z pendingiem mapy/deszyfrownika. Pełna mechanika → `puzzles/droga-do-jordana.md`.
+
+### E. Hasło dnia — przekazuje je R. (w slipie)
+- Slip R. ma poinstruować: **po dotarciu na miejsce zwrócić się do osoby PO IMIENIU i wskazać, co kupiła dziś rano (chochlę)** — wtedy będzie wiedziała, że są „od nas". To **hasło ustalone na dziś**.
+- Trigger rozpoznania (imię „Jordan" + „kupiłeś dziś rano chochlę") → **musi rozpoznawać Jordan-aktor**: cross-ref do `prototype/jordan-actor-script-draft.md` (do zsynchronizowania).
+
+### F. Slip „— R." — rewrite na jasne skierowanie do kuriera
+- Obecny slip („*This letter is for the head of their Council. Their chairman. Into his own hand…*") **nie jest jasny, że chodzi o list niesiony przez kuriera.** Przeredagować jako wprost skierowane do znalazcy:
+  - sens: *„jeśli miałeś mi coś dostarczyć — to, co miałeś przekazać mnie, masz teraz zanieść do **głowy ich Rady, ich chairmana**, w jego własne ręce. Znajdź drogę."*
+  - dołożyć **hasło dnia (E)** do slipu.
+- Trop celu (chairman, bez zdradzania kim jest) **zostaje** — to klucz do finałowego splice'u (patrz nota „TROP CELU" wyżej).
+
+### Flaga do decyzji Oskara
+- **Redundancja:** czy po dodaniu nawigacji glifowej (D) wynik zagadki logicznej dalej musi jawnie nazwać „Jordan → Piccolo", czy logika ma dawać tylko trójkę {imię, atrybut, miejsce-jako-glif} bez wykładania celu? To decyzja projektowa Oskara — `puzzles/droga-do-jordana.md` ma to oznaczone.

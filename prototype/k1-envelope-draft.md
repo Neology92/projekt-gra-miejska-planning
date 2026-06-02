@@ -71,3 +71,14 @@ After that, you will receive your next instructions.
 - **Wersja TR / wersja Krzyżacy**: K1 jest WSPÓLNA dla obu torów (nie zdradza frakcji). Podział następuje dopiero w K2.
 - Ton: rzeczowy, lekko zagrażający — ani epicki, ani przygodowy. Zleceniodawca nie jest wrogiem, ale nie jest przyjacielem.
 - **Dwa rejestry [2026-06-01]:** otwarcie i zamknięcie = *kursywa* (narracja z głów kurierów — wprowadza motyw); środek (data + „Messengers…" + instrukcje mapy) = roman (wiadomość zleceniodawcy). Wiadomość **nieruszona** — dorzucona tylko oprawa. Klucz: kursywa=głowa, roman=słowa świata (`mechanics/koperty-mg.md`).
+
+---
+
+## REWIZJA [2026-06-02] — uwagi Oskara (DO WPROWADZENIA, jeszcze nie wprowadzone)
+
+> Notatki kierunkowe. Tekst wyżej **nietknięty** — to materiał porównawczy. Przepisanie + render dopiero po akceptacji Oskara.
+
+1. **Oprawa narracyjna → 2. osoba „you/your".** Otwarcie i zamknięcie (kursywa) przepisać z 1. os. mn. („we"/„us"/„our") na narratora mówiącego DO grupy. Cel: narrator może odmalować więcej świata dookoła. Patrz `mechanics/koperty-mg.md §Osoba narracji`.
+2. **Status K1 = nadal wiadomość-wyjątek.** Rdzeń (data + „Messengers,…" + instrukcje mapy, roman) **zostaje wiadomością zleceniodawcy** — K1 to świadomy wyjątek od „koperta = scena" (ktoś realnie pisze zlecenie). Zmiana dotyczy tylko OSOBY oprawy kursywą, nie statusu listu.
+3. **Linia 13 („The wax gives under your thumb…") — atmosfera fikcji, NIE meta → ZOSTAJE.** To kurier otwierający list w 1454 (świat), nie komentarz mechaniki gry. Nie tnie tego Zasada #3. Jeśli przy 2. os. zabrzmi niezręcznie — dostosować, nie usuwać. ⚠ flaga do akceptacji Oskara.
+4. **Plotek tu brak** — K1 ich nie ma; wplatanie plotek w narrację dotyczy K2.

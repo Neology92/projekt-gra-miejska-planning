@@ -44,3 +44,25 @@
 - **„Carry those names back"** = do MG (Oskar); punkt/godzina → `mechanics/koperty-mg.md`. Po oddaniu listy MG wręcza kopertę opcjonalnej (Z4 w prototypie).
 - **Klucz ukryty:** tekst NIE wspomina, że nagłówek listy niesie szyfr Cezara do Z7 — odkrycie dopiero przy finale. Tu lista = „kto jest w Radzie". Patrz `z3-lista-tr-spec.md §4`.
 - **Wersja Krzyżacy (MVP):** lustro Z3Z (infiltracja Piccolo), inny łup/framing. NIE kopiować 1:1.
+
+---
+
+## REWIZJA [2026-06-02] — uwagi Oskara (DO WPROWADZENIA, jeszcze nie wprowadzone)
+
+> Notatki kierunkowe. Tekst wyżej **nietknięty** — materiał porównawczy. Przepisanie + render po akceptacji (a treść zależy od decyzji A/B niżej).
+
+1. **USUNĄĆ meta-framing (precz w całości):**
+   - „**SEALED. OPEN ONLY ONCE YOU ARE CLEAR OF THE KOMTUR.**" (obecna linia ~15)
+   - „**(You tear it open in the shadow of the walls, out of his sight.)**" (obecna linia ~19)
+   - Oskar: to próba opisania, co gracz *zrobił* w realu + wplecenie meta-mechaniki w fikcję. **Bez sensu.** Koperta opisuje świat **wyobrażony**, nie uzasadnia realnych czynności. Patrz `mechanics/koperty-mg.md` Zasada #3.
+2. **Przeramować na olśnienie DZIEJĄCE SIĘ W TRAKCIE spotkania, nie „po odejściu".** Obraz Oskara: grupa robi podchody, próbuje wyciągnąć info od komtura; komtur w akcie pychy/wyższości **sam wyciąga listę i coś na niej dopisuje** — i w głowach kurierów **świta**: *„wow, ok — to jest to, co moglibyśmy ukraść"*. Treść = ich **wewnętrzne rozkminy**: skupienie na liście, narastająca chęć jej zdobycia. Bez „odejdź → przeczytaj → wróć".
+3. **Front-matter „Voice/Handed over" (linie ~5–9) do przeredagowania** — zawiera wycinany opis („Sealed — opened after they walk clear of him") i moment wręczenia; zsynchronizować z decyzją A/B.
+4. **Osoba narracji:** Oskar objął 2. os. zakresem K1–K3; K-Z3b jest dalej. Zostaje na razie 1. os. mn. „we" — ⚠ flaga spójności (czy ujednolicić do 2. os. razem z resztą) do decyzji przy passie ujednolicającym. **Nie konwertować po cichu.**
+
+### ⚠⚠ KONFLIKT SEKWENCJI — DECYZJA OSKARA (A czy B) — blokuje finalną treść
+Treść K-Z3b **różni się materialnie** zależnie od tego, kiedy następuje kradzież względem wręczenia koperty. Druga uwaga Oskara („komtur **wręcza koperty i odchodzi**, gracze się nimi zajmują") zderza się z mechaniką kradzieży, która wymaga, by komtur **został** z listą na widoku. Dwa spójne modele:
+
+- **Model A — koperta WYZWALA kradzież:** Albrecht wręcza K-Z3b **w trakcie** (lista na widoku) → grupa czyta (olśnienie + jak ukraść) → kradnie przy **obecnym** Albrechcie. „Wręcz i odejdź" = wręcz bez słowa, nie dyskutuj koperty; STEP 2 karty Albrechta („nie odpędzaj, niech zostaną") **zostaje**. K-Z3b = olśnienie **wyprzedzające** kradzież (pasuje do „to, co *moglibyśmy* ukraść").
+- **Model B — kradzież LIVE, koperta = wyjście:** olśnienie i kradzież dzieją się na żywo w scenie (aktorsko, telegrafowane okno — karta to już ma) → Albrecht wręcza K-Z3b **na koniec** i odchodzi → grupa czyta **retrospektywnie** („widzieliśmy, wzięliśmy, niesiemy dalej"). Tu K-Z3b **przestaje być instrukcją kradzieży**. Pasuje do „wręczy i sobie pójdzie, oni się zajmą kopertą".
+
+→ rozwidlenie zapisane w `todo/otwarte-pytania.md`; karta Albrechta (`prototype/albrecht-actor-card-draft.md`) ma zależne STEP 2/3 i czeka na tę samą decyzję. **To Twoja mechanika — Ty wybierasz.**

@@ -13,9 +13,8 @@
 
 ## Czy jeden MG czy więcej?
 
-- **Jeden MG** = ryzyko bottlenecku, 12 grup obciąża go za mocno.
-- **Wielu MG** (2-3) = łatwiejsze, ale wymaga koordynacji (każdy ma swoje koperty, swoich graczy).
-- **Sugestia**: **2 MG**, jeden dla TR, drugi dla krzyżaków. Naturalna separacja klas.
+- **ROZSTRZYGNIĘTE [2026-05-29]: 1 MG = Oskar.** 10 grup obsługiwanych przez jednego MG przy rozłożeniu grup w czasie (Jordan = wąskie gardło).
+- Ryzyko bottlenecku adresujemy harmonogramem fal grup, nie liczbą MG.
 
 ## Mapa pozycji MG
 
@@ -44,7 +43,7 @@ Każda koperta zawiera **5 elementów**:
 
 **Domyślnie koperta to SCENA/AKCJA napotkana w świecie gry — nie wiadomość od nadawcy.** Cel: immersja jak w tabletop RPG — coś *się dzieje*, grupa *bierze w tym udział*, narracja jest soczysta i wciągająca, a nie sztywnym listem od zleceniodawcy. Gracze fizycznie dostają kopertę od MG (meta-interakcja, jak rozdanie karty), ale **treść opisuje zdarzenie**, nie nadawcę.
 
-- **Wiadomość z nadawcą = WYJĄTEK, nie reguła.** Dopuszczalna gdy ktoś realnie pisze do grupy: K1 (zleceniodawca), K2 (slip „— R."), K3 (Jordan zleca Z3). Poza tym — scena.
+- **Wiadomość z nadawcą = WYJĄTEK, nie reguła.** Dopuszczalna gdy ktoś realnie pisze do grupy: K1 (zleceniodawca), K3 (Jordan zleca Z3). W **K2** [korekta 2026-06-02] rama przesuwa się ku **scenie-odkryciu** (grupa sama orientuje się, że kontakt zniknął — nie informuje jej zewnętrzny zleceniodawca „Messengers, your contact is gone"); jedynym realnym dokumentem-nadawcą zostaje **slip „— R."**. Poza tym — scena.
 - **Senderless scene** rozwiązuje problem nośnika: koperta bez nadawcy nie wymaga uzasadnienia „kto ją dał" — to materializacja tego, co grupa widzi/odkrywa. Wzorce: **K-Z3b** (olśnienie: „to była lista") i **K-Z4** (znalezisko: martwy flisak nad Wisłą).
 - **Komponuje się z dwoma rejestrami (niżej), nie zastępuje ich.** Scena = narracja z głów (kursywa) + ewentualne słowa świata (roman: napis, zapis, cytat NPC).
 - **Opcjonalne zagadki (Z4/Z5/Z6) = sceny przechwycenia krzyżackiego listu** — każda inną drogą; po rozwiązaniu MG wydaje przechwycony list (K8/Z7). To fabularny powód, czemu opcjonalna „daje szyfrogram". Patrz `concept/03-faza-2b-asynchroniczne.md`, `concept/04-faza-3-final.md`.
@@ -63,6 +62,25 @@ Koperta łączy **dwa rejestry**, rozróżniane **typograficznie**:
 - **Po co narracja:** immersja + rozwiązuje problem nośnika — koperta bez nadawcy nie wymaga uzasadnienia, kto ją podał.
 - **Wzorce:** `prototype/kZ3b-envelope-draft.md` (pełna narracja + cytat roman) · `prototype/k1-envelope-draft.md`, `k2-envelope-draft.md` (hybryda: wiadomość + oprawa narracyjna).
 
+#### Osoba narracji — 2. osoba „you" [decyzja Oskara 2026-06-02]
+
+- **Narracja z głów (kursywa) = 2. osoba „you / your"**, przynajmniej w pierwszych listach (**K1–K3**). Narrator mówi **DO grupy**, nie z jej wnętrza w 1. os. mn.
+  - Przykład: *„we had hoped to find our contact waiting"* → *„you had hoped to find your contact waiting"*.
+  - **Po co:** narrator-na-zewnątrz może swobodniej odmalować świat dookoła i **wpleść plotki/pogłoski w opis podróży**, zamiast wyliczać je jako osobne cytaty „overheard near the square / whispered at the inn".
+  - To zmienia **OSOBĘ** rejestru kursywy, **nie** sam podział kursywa/roman (klucz „kursywa=głowa, roman=słowa świata" obowiązuje dalej).
+- **Plotki/pogłoski → wplecione w narrację-podróż** (mowa zależna / opis tego, co grupa mija i słyszy), nie wypisane listą cytatów. ⚠ **To zastępuje** wcześniejszą notę „plotki overheard docelowo roman" (`k2-envelope-draft.md`): w narracji 2. os. plotki idą kursywą jako część opisu, nie roman.
+- **Zakres:** K1–K3 teraz; **K-Z4 / KF — osobna decyzja Oskara** (na razie 1. os. mn. „we"; **nie konwertować po cichu**).
+
+### Zasada nadrzędna #3: koperta opisuje świat wyobrażony, nie komentuje realnego gracza [decyzja Oskara 2026-06-02]
+
+**Treść koperty opisuje wydarzenie w świecie 1454 — nie uzasadnia ani nie komentuje tego, co gracz fizycznie robi przy grze, ani mechaniki przekazywania kopert.** Rozszerza #2: scena ma być w pełni wyobrażona.
+
+- **ZAKAZANE w treści dla gracza:** „open only once you are clear of X", „you tear it open / break the seal", „take it and thank him", „read it on your own", „in the next envelope you will find…". To miks meta-mechaniki z fikcją.
+- **Wręczenie/otwarcie koperty = meta-poziom, milczące.** NPC wręcza kopertę i kończy interakcję — nie zapowiada jej, nie tłumaczy; gracz nie pyta o nią aktora (patrz karta Albrechta).
+- **Zamiast „co zrobił gracz" → „co dzieje się w wyobrażeniu":** nie „podszedłeś, wziąłeś listę, odszedłeś", lecz „komtur w swojej pysze wyciąga listę… i świta wam, że to jest to, co moglibyście zabrać".
+- **Atmosfera fikcji ≠ meta (uwaga przy przemiataniu):** fizyczność **w obrębie świata** (kurier łamie wosk listu z 1454) jest OK jako atmosfera — reguła tnie komentarz **realnych czynności gracza i logistyki gry**, nie całą fizyczność fikcji. Przy wątpliwych: **oznacz do decyzji, nie kasuj hurtem.**
+- **Wzorce do przerobienia:** K-Z3b (precz „SEALED — OPEN ONLY ONCE YOU ARE CLEAR OF THE KOMTUR" + „you tear it open…"), K3 (precz „he will put something in your hand… open it once clear"; mocny kandydat: opener „we break the seal").
+
 ### Numeracja kopert
 
 - **K1** - startowa, wszystkie grupy dostają.
@@ -80,7 +98,7 @@ Koperta łączy **dwa rejestry**, rozróżniane **typograficznie**:
 
 ## Logistyka kopert
 
-- **Drukowanie**: 12 grup × 8 etapów = 96 kopert minimum.
+- **Drukowanie**: 10 grup × 8 etapów = 80 kopert minimum.
 - **Przygotowanie**: foldowanie, pieczętowanie, pakowanie - praca manualna.
 - **Trzymanie**: torba MG, posortowane wg etapu i klasy.
 

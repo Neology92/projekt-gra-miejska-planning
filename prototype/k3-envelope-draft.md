@@ -58,3 +58,15 @@ Burn nothing. Trust no one in a Teutonic mantle. — J.
 - **Imię „Albrecht" bez nazwiska** w tekście gracza — wystarcza; „Kalb" w kanonie. Period-styling później.
 - **Klamra A2 — payoff masek [2026-06-02]:** „the carnival lends you one for free… half the city is masked tonight" domyka setup z K1/K2 (maski karnawału). Mechanika przebrania (udawanie donosicieli przy Albrechcie) zyskuje uzasadnienie w świecie gry — karnawał czyni ją naturalną, nie podejrzaną. Pokrycie: `karnawal-1454.js`.
 - **Dwa rejestry [2026-06-01]:** *otwarcie* (złamanie pieczęci poza Piccolo) + *zamknięcie* (grupa przyjmuje rolę zwiadowców-donosicieli) = kursywa, narracja z głów; nagłówek + „Messengers…" + podpis „— J." = roman (wiadomość Jordana, podpis przeniesiony z kursywy na roman). Klucz: kursywa=głowa, roman=słowa świata (`mechanics/koperty-mg.md`).
+
+---
+
+## REWIZJA [2026-06-02] — uwagi Oskara (DO WPROWADZENIA, jeszcze nie wprowadzone)
+
+> Notatki kierunkowe. Tekst wyżej **nietknięty** — materiał porównawczy. Przepisanie + render po akceptacji.
+
+1. **USUNĄĆ beat „he will put something in your hand…" (obecna linia ~35):** *„When he is done with you, he will put something in your hand — take it, thank him, and walk away. Do not open it in front of him. Once you are clear of the walls and his eyes, open it. It will tell you what to do next."* → **precz w całości.** Oskar: nie wyprzedzaj wydarzeń info i **nie mieszaj meta-mechaniki z fikcją.** Wręczenie K-Z3b to meta-poziom (komtur po prostu wręcza i odchodzi) — gra **nie zapowiada** graczom, że dostaną kopertę. Patrz `mechanics/koperty-mg.md` Zasada #3.
+   - **Powiązany planning-note do usunięcia/przeredagowania:** punkt „**Most do K-Z3b**" wyżej (zakładał: „he will put something in your hand… open it once clear") — opisuje wycinany beat.
+2. **Opener „we break the seal" (obecna linia ~15):** *„Clear of Piccolo, away from the cook and his ladle, we break the seal."* → **mocny kandydat do cięcia** — to komentarz realnej czynności gracza (łamanie pieczęci = meta), ta sama kategoria co wycinany opener K-Z3b. Jeśli zostawić jakikolwiek wstęp, to opis świata (wyjście z Piccolo w karnawałową noc), **nie** „łamiemy pieczęć". ⚠ do decyzji Oskara.
+3. **Oprawa narracyjna → 2. osoba „you/your"** (otwarcie/zamknięcie kursywą). Patrz `koperty-mg.md §Osoba narracji`.
+4. **Status K3 = nadal wiadomość-wyjątek** (Jordan realnie zleca Z3). Rdzeń „INFILTRATE THE CASTLE / Messengers,… / — J." (roman) **zostaje wiadomością** — zmienia się tylko osoba oprawy + cięcia z pkt 1–2.

@@ -1,6 +1,6 @@
 # Zagadka 2 - Droga do Jordana
 
-**Status**: ✅ **gotowe [2026-06-01]** — zagadka logiczna kompletna (Oskar), wersja themingowa Jordan/Piccolo/chochla zweryfikowana, wpisana do K2 (`prototype/k2-envelope-draft.md`).
+**Status**: 🟡 **rdzeń logiczny gotowy, dochodzi NOWA WARSTWA [2026-06-02]** — zagadka logiczna kompletna (Oskar) i zweryfikowana, ale uwagi Oskara z 2026-06-02 dodają **warstwę glifów** (nawigacja) + **hasło dnia** i zmieniają sposób, w jaki gracz dociera do celu (nie „idź, gdzie Jordan pracuje"). Patrz `## REWIZJA [2026-06-02]` na dole. Rdzeń logiczny niżej **nietknięty**.
 
 ## Mechanika (z briefu autora)
 
@@ -114,3 +114,29 @@ Autor wymienił "Picollo". Sprawdzenie:
 
 - **Sam**: wybór lokalu (negocjacje), stworzenie trzech rzeczy do zestawienia (kreatywna), nadanie imienia/stylu NPC Jordana.
 - **Z pomocą agenta**: research dostępnych lokali w obrębie gry (mogę sprawdzić listę 45 miejsc), weryfikacja historyczna nazw, generacja 3-4 wariantów "trzech rzeczy do zestawienia" do wyboru.
+
+---
+
+## REWIZJA [2026-06-02] — uwagi Oskara (DO WPROWADZENIA, jeszcze nie wprowadzone)
+
+> Rdzeń logiczny wyżej **zostaje**. To są nadbudowy nad nim. Pełny kontekst kopertowy → `prototype/k2-envelope-draft.md §REWIZJA`.
+
+### C. NIE zdradzać z góry, że szukają Jordana / że pójdą tam, gdzie pracuje
+- W K2 znika zdanie „*once you have placed Jordan, you will know where he works — go there and ask for him by name*". Gracze na tym etapie **nie mają wiedzieć, że szukają Jordana**.
+- **Trzy rzeczy do samodzielnego zestawienia:** *Piccolo* (miejsce) · *Jordan* (imię) · *chochla* (atrybut). Cel ujawnia się dopiero po spięciu wszystkich trzech. „Jordan" = **odkrycie**, nie odczyt.
+
+### D. Warstwa glifów (pomysł Oskara) — nawigacja zastępuje „idź, gdzie pracuje"
+- Każde z 3 miejsc zagadki dostaje **glif** wypisany obok nazwy (Stary Młyn ▢, Piccolo ▢, Kuźnia ▢).
+- Glify pochodzą z **wygenerowanej mapy Z1** (`prototype/maps/`).
+- **HACZYK — sedno pomysłu:** glif **Piccolo = PRAWDZIWY** (realnie oznacza punkt na mapie Z1); glify **Starego Młyna i Kuźni = ZMYŚLONE**, nigdy nie występują na mapie.
+- Skutek: gracze mogą udać się **tylko w jedno miejsce** — to, którego glif faktycznie jest na mapie. **Domknięcie zagadki = sprawdzić, który z trzech glifów istnieje na mapie.** To zamyka pętlę bez wykładania „Jordan pracuje w Piccolo, idźcie tam".
+- Jeśli grupa zacznie od glifów (porówna z mapą od razu) — od początku wie, że celem jest Piccolo, ale **nie wie**, kogo tam spotka ani jaki będzie atrybut/hasło. To dopuszczalne i nawet ładne (dwie drogi wejścia w zagadkę).
+
+> ⚠ **Zależność od mapy Z1:** glif Piccolo **musi realnie istnieć** na wygenerowanej mapie (`prototype/maps/`) — i być jednym z glifów deszyfrownika Z1. Sprzęga z pendingiem mapy/deszyfrownika; przy generowaniu mapy zarezerwować/wskazać glif punktu Piccolo. Dwa „zmyślone" glify muszą być wizualnie wiarygodne, ale **nieobecne** na mapie.
+
+> ⚠ **Flaga do decyzji Oskara (redundancja):** czy po dodaniu nawigacji glifowej (D) wynik zagadki logicznej dalej ma jawnie nazywać „Jordan → Piccolo", czy logika ma dawać tylko trójkę {imię, atrybut, miejsce-jako-glif} **bez wykładania celu** (cel odsłania dopiero porównanie glifu z mapą)? Druga opcja jest spójniejsza z C („odkrycie, nie odczyt"), ale to **Twoja decyzja projektowa** — może zostawiasz redundancję jako podpowiedź dla słabszych grup.
+
+### E. Hasło dnia — przekazuje je R. (w slipie K2), rozpoznaje Jordan
+- Slip R. instruuje: **po dotarciu na miejsce zwrócić się do osoby PO IMIENIU i wskazać, co kupiła dziś rano (chochlę)** → wtedy będzie wiedziała, że są „od nas". To **hasło ustalone na dziś**.
+- Łączy zagadkę z rozpoznaniem: imię (z dedukcji/zagadki) + atrybut-zakup (chochla) = parol. Spójne z „rozpoznają kucharza po chochli".
+- ⚠ **Cross-ref do zsynchronizowania:** `prototype/jordan-actor-script-draft.md` — Jordan-aktor **musi rozpoznawać trigger** „imię Jordan + «kupiłeś dziś rano chochlę»" jako hasło wejścia (a nie samo „pytanie o Jordana").

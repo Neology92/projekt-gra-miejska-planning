@@ -7,6 +7,8 @@
 > **When:** Faza 2B, Z3 — town (TR) groups come to you after Jordan sends them on the "scouting" errand (K3).
 > **Canon:** `puzzles/zamek-krzyzacki-lista.md` (Struktura Z3) · the list they steal → `prototype/pergamin-lista-tr-draft.md`.
 
+> ⚠ **REWIZJA [2026-06-02] — STEP 2 i STEP 3 SĄ POD DECYZJĄ; nie traktuj ich jako finalnych.** Uwaga Oskara („komtur **wręcza kopertę i odchodzi**, żeby gracze nie wciągali aktora w rozmowę o kopercie") zderza się z obecnym STEP 2 („**nie odpędzaj** — niech zostaną przy liście, by ją ukraść"). Moment „odejścia" względem okna kradzieży czeka na rozstrzygnięcie **Model A / Model B** → `prototype/kZ3b-envelope-draft.md §KONFLIKT SEKWENCJI`, `todo/otwarte-pytania.md`. Szczegóły w PLANNING NOTES na dole. Reszta karty (cel sceny, choreografia okna, reset) pozostaje aktualna niezależnie od A/B.
+
 ---
 
 ## WHO YOU ARE (context — read this first)
@@ -171,3 +173,21 @@ After a group steals the list and leaves:
 **Lokalizacja przed murami:** do ruin nie wchodzimy (biletowane). Konkretny punkt (Przedzamcze / przy Gdanisku) — `przewodnik-miejsc-gry.js`, do ustalenia w wizji lokalnej.
 
 **Kostium (pyt. globalne #33):** „sugestywny" (płaszcz + krzyż) wystarcza do prototypu; pełny strój zakonny — opcja przy produkcji.
+
+---
+
+## REWIZJA [2026-06-02] — uwagi Oskara (DO WPROWADZENIA, jeszcze nie wprowadzone)
+
+> Notatki kierunkowe. Karta wyżej **nietknięta** — materiał porównawczy. Przeróbka STEP 2/3 po decyzji A/B.
+
+**Uwaga Oskara (H):** *„dopisz do instrukcji komtura, że jak skończą rozmawiać, wręczy im te koperty i sobie odejdzie — żeby nie było możliwości mówienia do niego, pytania o te koperty. Po prostu niech wręczy i sobie odejdzie."*
+
+- **Zasada bezdyskusyjna (do wprowadzenia niezależnie od A/B):** wręczenie K-Z3b jest **milczące, meta** — Albrecht **nie zapowiada, nie tłumaczy, nie reaguje** na zawartość; gracz **nie pyta** aktora o kopertę. Komtur kończy interakcję i **nie wdaje się w rozmowę o niej.** (Zgodne z `koperty-mg.md` Zasada #3.)
+- **Czego NIE robić [korekta wg przeglądu]:** **nie** dopisywać „wręcz i odejdź" jako kolejnej linijki obok obecnego STEP 2 („nie odpędzaj — niech zostaną przy liście") — zostawiłoby to kartę z dwiema sprzecznymi instrukcjami. **STEP 2 i STEP 3 wymagają przeróbki, nie dopisku.**
+
+**KONFLIKT do rozstrzygnięcia (Twoja decyzja — model autorstwa):** literalne „wręczy i sobie pójdzie" ⟂ mechanika kradzieży, która wymaga, by komtur **został** z listą na widoku. Dwa spójne modele (pełny opis: `prototype/kZ3b-envelope-draft.md §KONFLIKT SEKWENCJI`):
+
+- **Model A (koperta wyzwala kradzież):** wręczenie K-Z3b **w trakcie**, lista na widoku → gracze czytają (olśnienie + jak ukraść) → kradną przy **obecnym** komturze. „Wręcz i odejdź" = wręcz **bez słowa**, nie dyskutuj koperty. **STEP 2 zostaje** (nie odpędzaj), STEP 3 (okno kradzieży) bez zmian. Komtur „odchodzi" dopiero po kradzieży / na koniec slotu.
+- **Model B (kradzież live, koperta = wyjście):** olśnienie i kradzież dzieją się **na żywo** w scenie (telegrafowane okno — STEP 3 już to ma) → komtur wręcza K-Z3b **na koniec i odchodzi** → gracze czytają retrospektywnie. Tu **STEP 2 do przepisania** (kradzież nie czeka na kopertę; koperta = domknięcie po fakcie), K-Z3b przestaje być instrukcją kradzieży.
+
+→ rozwidlenie w `todo/otwarte-pytania.md`. Po wyborze: przepisać STEP 2 (+ ewentualnie STEP 3) i zsynchronizować z treścią K-Z3b.
