@@ -67,7 +67,7 @@ const Z1_GROUPS = {
 };
 
 // Rynek Staromiejski cluster → rendered in inset only
-const Z1_INSET_CODES = ['C01','C02','C04','C06','C07','D01'];
+const Z1_INSET_CODES = ['C01','C02','C04','C07','D01'];
 
 // Inset bounding box (SW, NE) — WHOLE Rynek Staromiejski + a ring of context,
 // not just the cluster. Wide enough to read the market square; the main map is
