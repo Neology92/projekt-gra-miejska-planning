@@ -20,9 +20,9 @@ map (no spoilers); CARTO `light_nolabels` keeps tiles name-free too.
 | `map.css` | Layout (sheet/rail are CSS vars), pin styles, parchment toggle |
 | `map-tune.html` | Interactive calibration — set `FROZEN_CENTER`/`FROZEN_ZOOM` |
 | `gm-key.html` | GM reference: code → glyph → place (full answer key) |
-| `render-map.ps1` | Headless-Chrome batch renderer → `../../prototype/maps/` |
+| `render-map.ps1` | Headless-Chrome batch renderer → `../../public/maps/` |
 
-Output (PNG + PDF) lands in **`prototype/maps/`**, not here.
+Output (PNG + PDF) lands in **`public/maps/`** (root-level, committed to git), not here.
 
 ## Requirements
 
@@ -51,7 +51,7 @@ pwsh -File render-map.ps1 -Group G3 -Style parchment
 pwsh -File render-map.ps1 -Group G3 -Compare   # clean + parchment side-by-side
 ```
 
-Output: `prototype/maps/z1-<group>.png` + `.pdf`.
+Output: `public/maps/map.png` + `.pdf` (group=all); `map-G3.png` + `.pdf` (group=G3).
 
 Check at 100% zoom: building edges sharp; the group's marks on the map match the
 KEY rows; the Rynek inset shows the Old-Town cluster with pins separated.

@@ -13,7 +13,7 @@ Po wizycie u MG (koniec F1) grupa dostaje kopertę z:
 
 ## Trop celu kuriera — zasiany w K2 [2026-06-01, decyzja Oskara]
 
-Koperta K2 (slip pośrednika R.) niesie **silny trop**: list ma trafić do **głowy Rady / chairmana**, w jego własne ręce — *bez zdradzania, kim chairman jest*. To ustawia cel kuriera na początku gry. Funkcja: w finale (Z7 „HANS VON BAYSEN IS JORDAN THE COOK") gracz sam spina, że chairman z K2 = Hans von Baysen z listy Z3 („they call him chairman") = poznany Jordan-kucharz. Anty-prowadzenie-za-rączkę. Pełny łańcuch i zależności → `prototype/k2-envelope-draft.md`, `puzzles/z7-szyfr-spec.md §5`. **Ironia:** zagadka Z2 prowadzi ich do „następnego kontaktu" (Jordan) — a to właśnie do niego (jako chairmana) mieli zanieść list. Nie wiedzą tego aż do finału.
+Koperta K2 (slip pośrednika R.) niesie **silny trop**: list ma trafić do **głowy Rady / chairmana**, w jego własne ręce — *bez zdradzania, kim chairman jest*. To ustawia cel kuriera na początku gry. Funkcja: w finale (Z7 „HANS VON BAYSEN IS JORDAN THE COOK") gracz sam spina, że chairman z K2 = Hans von Baysen z listy Z3 („they call him chairman") = poznany Jordan-kucharz. Anty-prowadzenie-za-rączkę. Pełny łańcuch i zależności → `puzzles/envelopes/miasto-2-Z2.md`, `puzzles/z7-szyfr-spec.md §5`. **Ironia:** zagadka Z2 prowadzi ich do „następnego kontaktu" (Jordan) — a to właśnie do niego (jako chairmana) mieli zanieść list. Nie wiedzą tego aż do finału.
 
 ## Treść zagadki Z2 — OTRZYMANA [2026-06-01, od Oskara]
 
@@ -119,7 +119,7 @@ Autor wymienił "Picollo". Sprawdzenie:
 
 ## REWIZJA [2026-06-02] — uwagi Oskara (DO WPROWADZENIA, jeszcze nie wprowadzone)
 
-> Rdzeń logiczny wyżej **zostaje**. To są nadbudowy nad nim. Pełny kontekst kopertowy → `prototype/k2-envelope-draft.md §REWIZJA`.
+> Rdzeń logiczny wyżej **zostaje**. To są nadbudowy nad nim. Pełny kontekst kopertowy → `puzzles/envelopes/miasto-2-Z2.md §Rewizja`.
 
 ### C. NIE zdradzać z góry, że szukają Jordana / że pójdą tam, gdzie pracuje
 - W K2 znika zdanie „*once you have placed Jordan, you will know where he works — go there and ask for him by name*". Gracze na tym etapie **nie mają wiedzieć, że szukają Jordana**.
@@ -133,12 +133,12 @@ Autor wymienił "Picollo". Sprawdzenie:
   - Lambert → Stary Młyn → jedzenie → glif ▢ (zmyślony)
   - **Jordan → Piccolo → chochla → glif ▢ (PRAWDZIWY — jest na mapie Z1)**
 - **Cel NIE jest wyłożony** — zagadka nie mówi „idź do Jordana/Piccolo". Trzy ścieżki są równorzędne; rozstrzygnięcie dokąd iść = **sprawdzić, który z trzech glifów występuje na mapie**. To domyka §C („odkrycie, nie odczyt"): cel odsłania dopiero porównanie glifów z mapą, nie zdanie w zagadce.
-- Glify pochodzą z **wygenerowanej mapy Z1** (`prototype/maps/`). Glif Piccolo = realny punkt na mapie; glify Młyna i Kuźni = wiarygodne wizualnie, ale **nieobecne**.
+- Glify pochodzą z **wygenerowanej mapy Z1** (`public/maps/`). Glif Piccolo = realny punkt na mapie; glify Młyna i Kuźni = wiarygodne wizualnie, ale **nieobecne**.
 - Gdy grupa ustali prawdziwy glif → ma komplet: **miejsce (Piccolo) + imię (Jordan) + atrybut (chochla)** → idzie tam i podaje hasło dnia (§E).
 
 **Do rozpisania (szczegół, nie teraz finalnie):** trzeba zasiać graczom, że mają **porównać glify z mapą** (np. w K2 / slipie R.: „jeden z tych znaków odnajdziesz na swojej mapie — tam czeka twój człowiek"). Bez tego nie wiedzą, że glif jest kluczem nawigacyjnym.
 
-> ⚠ **Zależność od mapy Z1 (techniczna, wciąż otwarta):** glif Piccolo **musi realnie istnieć** na wygenerowanej mapie (`prototype/maps/`) i być jednym z glifów deszyfrownika Z1. Przy generowaniu mapy **zarezerwować/wskazać glif punktu Piccolo**; dobrać 2 wiarygodne, ale nieistniejące glify dla Młyna i Kuźni. To sprzęga z pendingiem mapy/deszyfrownika.
+> ⚠ **Zależność od mapy Z1 (techniczna, wciąż otwarta):** glif Piccolo **musi realnie istnieć** na wygenerowanej mapie (`public/maps/`) i być jednym z glifów deszyfrownika Z1. Przy generowaniu mapy **zarezerwować/wskazać glif punktu Piccolo**; dobrać 2 wiarygodne, ale nieistniejące glify dla Młyna i Kuźni. To sprzęga z pendingiem mapy/deszyfrownika.
 
 ### E. Hasło dnia — przekazuje je R. (w slipie K2), rozpoznaje Jordan
 - Slip R. instruuje: **po dotarciu na miejsce zwrócić się do osoby PO IMIENIU i wskazać, co kupiła dziś rano (chochlę)** → wtedy będzie wiedziała, że są „od nas". To **hasło ustalone na dziś**.

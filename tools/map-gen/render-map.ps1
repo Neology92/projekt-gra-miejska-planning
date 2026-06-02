@@ -8,7 +8,7 @@
 #   pwsh -File render-map.ps1 -Compare              # clean + parchment side-by-side
 #
 # Requirements: network (Leaflet CDN + CARTO tiles). One-time pre-game render.
-# Output: ../../prototype/maps/z1-<group>.png + .pdf  (e.g. z1-all.png, z1-G3.png)
+# Output: ../../public/maps/map.png + .pdf  (group=all); map-G3.png + .pdf  (group=G3)
 
 param(
   [string]$Style  = 'clean',  # clean | parchment
@@ -18,7 +18,7 @@ param(
 
 $ErrorActionPreference = 'Stop'
 $here   = $PSScriptRoot
-$outDir = Join-Path (Resolve-Path (Join-Path $here '..\..')) 'prototype\maps'
+$outDir = Join-Path (Resolve-Path (Join-Path $here '..\..')) 'public\maps'
 if (-not (Test-Path $outDir)) { New-Item -ItemType Directory -Path $outDir | Out-Null }
 
 # --- Locate Chrome or Edge ---
@@ -61,8 +61,9 @@ function Render-Map {
   $htmlPath = Join-Path $here 'map.html'
   $suffix   = if ($StyleName -ne 'clean') { "-$StyleName" } else { '' }
   $uri      = ([System.Uri]$htmlPath).AbsoluteUri + "?style=$StyleName&group=$Group"
-  $pngOut   = Join-Path $outDir "z1-$Group$suffix.png"
-  $pdfOut   = Join-Path $outDir "z1-$Group$suffix.pdf"
+  $baseName = if ($Group -eq 'all') { 'map' } else { "map-$Group" }
+  $pngOut   = Join-Path $outDir "$baseName$suffix.png"
+  $pdfOut   = Join-Path $outDir "$baseName$suffix.pdf"
 
   Write-Host "  Rendering ($StyleName, $Group)..." -NoNewline
 
@@ -135,7 +136,7 @@ html,body{margin:0;padding:0;width:297mm;height:210mm;overflow:hidden}
 img{display:block;width:297mm;height:210mm;object-fit:fill}
 </style></head><body><img src="$pngOut"/></body></html>
 "@
-  $wrapperPath = Join-Path $env:TEMP "z1-wrap$suffix.html"
+  $wrapperPath = Join-Path $env:TEMP "map-wrap-$Group$suffix.html"
   Set-Content -Path $wrapperPath -Value $wrapperHtml -Encoding UTF8
 
   if (Test-Path $pdfOut) { Remove-Item $pdfOut -Force -ErrorAction SilentlyContinue }
@@ -177,9 +178,10 @@ foreach ($s in $styles) { Render-Map -StyleName $s }
 Write-Host "`nDone. Output: $outDir"
 Write-Host ""
 Write-Host "NEXT STEPS:"
-Write-Host "  1. Open prototype/maps/z1-$Group.png at 100% zoom — check:"
+$outName = if ($Group -eq 'all') { 'map' } else { "map-$Group" }
+Write-Host "  1. Open public/maps/$outName.png at 100% zoom — check:"
 Write-Host "     - building edges sharp (not pixelated)"
 Write-Host "     - the group's marks on the map + matching rows in the KEY"
 Write-Host "     - Rynek inset (right rail) shows the Old-Town cluster, pins separated"
-Write-Host "  2. Open prototype/maps/z1-$Group.pdf at 300% — no blur on raster"
+Write-Host "  2. Open public/maps/$outName.pdf at 300% — no blur on raster"
 Write-Host "  3. If tiles are grey/missing: re-run (CDN timeout on first run)"

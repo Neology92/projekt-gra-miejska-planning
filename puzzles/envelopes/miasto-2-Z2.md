@@ -1,66 +1,111 @@
-# K2 — After Z1 Envelope (draft)
+# Koperta `miasto-2-Z2` — After Z1 / The Morning Errands
 
+> **Migracja z:** `prototype/k2-envelope-draft.md` [2026-06-02].
 > **Language:** English (player-facing). Planning notes in Polish below.
-> **Status:** draft [2026-06-02, v2 — rewizja WPROWADZONA] — awaiting Oskar's review.
-> ⚠ **Glify miejsc = `⟨mark⟩` placeholder** — jedyna część niefinalna. Realny glif Piccolo + 2 zmyślone (Młyn, Kuźnia) dobiera się przy generowaniu mapy Z1 (`#66`, `puzzles/droga-do-jordana.md §D`). Reszta tekstu (scena-odkrycie, plotki, zagadka, slip R., hasło) = finalna.
-> **Zmiana zakupu:** „horseshoe" → **„a ladle"** (chochla) + Kuźnia „ironwork" — zsynchronizowane z kanonem `droga-do-jordana §themingowa`: Jordan kupuje chochlę → to zarazem **hasło dnia** („what he bought this morning"). Rozwiązanie logiczne bez zmian (izomorfizm).
-> **Contents of physical envelope:** main note (this) + intermediary's note (separate slip).
-> **Triggers:** MG hands this to group after they correctly report 4 locations in order.
+> **Status:** draft [2026-06-01] — awaiting Oskar's review. **TO największa przebudowa ze wszystkich kopert** (REWIZJA niżej, niewprowadzona).
+
+## Meta — montaż
+
+- **Frakcja:** **miasto** (Tajna Rada). To **pierwsza koperta frakcyjna** — brief rozjeżdża się tu per frakcja (miasto→Jordan/Piccolo/chairman + Pula A plotek; krzyzacy→Albrecht + Pula B). Wersja krzyżacka = `krzyzacy-2-Z2` (**pending, MVP** — NIE kopiować 1:1).
+- **Pozycja (nr otwierania):** 2.
+- **Wkładki fizyczne:** (a) main note (brief) · (b) **slip „— R."** (osobny skrawek — wiadomość pośrednika) · (wkładka nawigacyjna §D: glify miejsc — REWIZJA, do domknięcia z mapą).
+- **Kiedy wręczyć:** po poprawnym raporcie Z1 u MG (4 miejsca w kolejności).
+- **Kiedy NIE wręczać:** przed zaliczeniem Z1.
+- **Dokąd odsyła:** do Jordana w Piccolo (F2A) → tam grupa dostaje `miasto-3-Z3`. ⚠ cel (Jordan/Piccolo) **odkrywany przez graczy**, nie wyłożony (REWIZJA §C/§D).
+- **Wersja krzyżacka:** Z2 prowadzi do **Albrechta**, nie Jordana/Piccolo; ta sama struktura logiczna, inny cel. Pula B plotek. Trop celu inny (parole do komtura). → `krzyzacy-2-Z2` przy MVP.
+
+## Gotowy tekst (EN — player reads this)
+
+### MAIN NOTE — Z2
 
 ---
 
-## MAIN NOTE — K2 (player reads this)
+*Four marks walked, four names given — and in return, this. We had hoped to find our contact waiting. Instead: an envelope, and a scrap of paper folded inside it.*
+
+*The carnival is louder here, and stranger. Carts roll toward the square that the men swear are loaded with fireworks "for the feast" — but the crates ride heavy, and the men guarding them are not laughing. Under the masks and the music, the whole city feels wound tight, like a string before it snaps.*
 
 ---
 
-*Four marks walked, four places named — and at the end of the chain, where your contact should be standing, no one. Only a sealed packet, left where you could not miss it, a hand you half-recognise scrawled on the outside; and folded inside, a single scrap of paper. He is gone. Fled, or taken, or thinking better of the whole thing — but gone. A contact who vanishes the very night the city takes up arms is rarely one who simply chose to leave.*
+**Messengers,**
 
-*You had heard the city all the way here. Saint Dorothy's crowds parting for carts the carters swear are loaded with fireworks "for the feast" — yet the crates ride low and heavy, and the men walking beside them are not laughing. And under the masks the same talk keeps surfacing, again and again, if you let yourselves listen: that the Council meets after dark and decides for everyone and tells no one, because it fears the light. That it is the craftsmen who give up the men and the steel, and the Council that will still be ruling once the smoke clears — not them. That war means bread at double the price, a lords' quarrel paid for at the baker's stall. That Bażyński means to hand Prussia to the king in Kraków — one master traded for another — and that some knight or other will walk off with the whole of it in his pocket once the towns have done the dying. And, from an old woman who shook her head as you passed: that this Bażyński's own leg has gone stiff on him again, that the great man can barely cross a room — and that this is who means to bring down armoured knights.*
+Your contact is gone.
 
-*The letter is still heavy in the bag, and it still has to reach the one it is meant for before the eighth bell. With your contact gone, the way is yours to find. You unfold his scrap — and beside it the packet has left you something to work from: three people sent into town this morning, and the errands they ran.*
+He left this note *(enclosed)* and nothing more. We do not know if he fled, was taken, or simply decided the risk was too great — though a contact who vanishes the same night the city arms itself is rarely a contact who chose to leave. What we know is that the letter still needs to reach its recipient before tonight.
+
+You will have to find the way yourselves.
+
+Before you do — you were on the streets of this city today. So were other people. Here is what they were saying.
 
 ---
 
-**The morning errands**
+*Overheard near the Old Town Square:*
+
+> *"The Council meets after dark, tells no one, decides for everyone. Secret — because it fears the light."*
+
+*A craftsman near the city wall:*
+
+> *"We give the men and the weapons. When it's all over, the Council will still rule — not us."*
+
+*Two merchants, arguing by a cart:*
+
+> *"War comes — bread doubles in price. This is a lords' quarrel and the baker pays for it."*
+
+*Whispered at the inn:*
+
+> *"They say Bażyński is handing Prussia to the king in Kraków. Swapping one master for another."*
+
+*An old woman, shaking her head:*
+
+> *"Bażyński? His leg's gone stiff on him again — the great man can barely cross a room. And that's who means to bring down armoured knights."*
+
+*An old man at the gate:*
+
+> *"When it's done, some knight will walk away with all of Prussia in his pocket. The cities did the work. Someone else will take the prize."*
+
+---
+
+Now. Find your next contact.
+
+**[Z2 — THE MORNING ERRANDS]**
 
 Three people went into town this morning, and each bought one thing. Work out who bought what — and where each of them works.
 
-*Where they work, what is made there — and the mark each place bears on your map:*
-- The Old Mill — bread — ⟨mark⟩
-- Piccolo — hot food *(a kitchen — ladled out)* — ⟨mark⟩
-- The Smithy — ironwork — ⟨mark⟩
+*Where they work, and what is made there:*
+- The Old Mill — bread
+- Piccolo — hot food *(a kitchen — ladled out)*
+- The Smithy — horseshoes
 
 *The three:* Kordian · Lambert · Jordan
-*What each one bought:* food · a ladle · cloth
+*What was bought:* food · a horseshoe · cloth
 
-*Heard about town this morning — every word of it true:*
+*Overheard this morning — all of it true:*
 1. Lambert could have eaten at his own place, yet he went to buy his food elsewhere.
 2. Jordan bought from the one who bought cloth.
 3. The miller swears he bought nothing from Kordian.
 
-Place all three, and for each you will have a name, a trade, and the mark their workplace bears. **Only one of those three marks is on your map. That is the door you go to — and no other.**
+Once you have placed Jordan, you will know where he works. Go there — and ask for him by name.
 
 ---
 
-## INTERMEDIARY'S NOTE — separate slip (player reads this)
+### INTERMEDIARY'S NOTE — separate slip
 
 ---
 
-I cannot be there. It is too dangerous now — and the thing was never mine to keep. I was only ever to carry it a little of the way.
+I cannot be there. Too dangerous now.
 
-So now it falls to you. Whatever you were to put into my hands, you will put into his: the head of their Council — their chairman — into his own hand, and no other's. Find the way to him.
+And it was never mine to keep — I was only ever to pass it on.
 
-When the marks send you to the door, you will not know our man on sight. So speak his name, and tell him what he bought this morning — that is the word we set for today, and by it he will know you came from me.
+This letter is for the head of their Council. Their chairman. Into his own hand, and no other's.
 
-Go carefully. — R.
-
----
-
-*So you are on your own. A puzzle to point you at a door, a stranger behind it to point you onward, and the letter still heavy in the bag. Whoever R. was, he is gone — you are not. Three people, three errands. Work it out.*
+Find the way. — R.
 
 ---
 
-## PLANNING NOTES (nie dla gracza)
+*So we are on our own. A riddle to point us at a man, a man to point us onward, and the letter still heavy in the bag. Whoever R. was, he is gone — we are not. Three people, three errands. Let us work it out.*
+
+---
+
+## Notatki planistyczne (nie dla gracza)
 
 **Plotki dobrane z Puli A** (krytyka TR dla kurierów TR):
 - A3 — Tajna Rada opaque, unelected (forshadow F2A)
@@ -72,37 +117,35 @@ Go carefully. — R.
 
 **Wiadomość pośrednika:** lakoniczna, tylko inicjał (nie wiadomo kto to R. — niepotrzebna wiedza). Mechanika: gracze dostają ją jako „dowód" że pośrednik istniał, ale uciekł.
 
-**TROP CELU — „dostarcz chairmanowi" [2026-06-01, decyzja Oskara]:** slip R. zasiewa **silny trop**, że list ma trafić do **głowy Rady / chairmana**, w jego własne ręce. To ustawia cel kuriera na początku gry — **bez zdradzania, kim chairman jest**. Funkcja: w finale, gdy Z7 odszyfruje „HANS VON BAYSEN IS JORDAN THE COOK", gracz sam spina wątki: chairman z K2 = Hans von Baysen z listy Z3 (wpis #1 „they call him chairman") = Jordan-kucharz, którego poznali. Splice player-derived, anty-prowadzenie-za-rączkę. Dlatego list Z7 **został odchudzony** (nie zapowiada już rodzaju informacji) — ciężar znaczenia niosą trzy wątki: ten trop + „chairman" przy wpisie #1 Z3 + sam szyfr. Patrz `prototype/z7-szyfrogram-draft.md` (nota „List ODCHUDZONY") i `puzzles/z7-szyfr-spec.md`.
+**TROP CELU — „dostarcz chairmanowi" [2026-06-01, decyzja Oskara]:** slip R. zasiewa **silny trop**, że list ma trafić do **głowy Rady / chairmana**, w jego własne ręce. To ustawia cel kuriera na początku gry — **bez zdradzania, kim chairman jest**. Funkcja: w finale, gdy Z7 odszyfruje „HANS VON BAYSEN IS JORDAN THE COOK", gracz sam spina wątki: chairman z Z2 = Hans von Baysen z listy Z3 (wpis #1 „they call him chairman") = Jordan-kucharz, którego poznali. Splice player-derived, anty-prowadzenie-za-rączkę. Dlatego list Z7 **został odchudzony** (nie zapowiada już rodzaju informacji) — ciężar znaczenia niosą trzy wątki: ten trop + „chairman" przy wpisie #1 Z3 + sam szyfr. Patrz `prototype/z7-szyfrogram-draft.md` (nota „List ODCHUDZONY") i `puzzles/z7-szyfr-spec.md`.
 
-> ⚠ **Wersja Krzyżacy:** ich K2 prowadzi do Albrechta (nie chairmana TR) — trop celu musi być inny (parole/hasło do komtura, nie „chairman Rady"). Do napisania przy MVP. NIE kopiować tropu TR 1:1.
+> ⚠ **Wersja Krzyżacy:** ich Z2 prowadzi do Albrechta (nie chairmana TR) — trop celu musi być inny (parole/hasło do komtura, nie „chairman Rady"). Do napisania przy MVP. NIE kopiować tropu TR 1:1.
 
 **Z2 — wpisana wersja themingowa [2026-06-01]:** zagadka logiczna 3 osoby × {miejsce pracy, zakup}, rdzeń Oskara z nałożoną trójką **Jordan / Piccolo / chochla**. Rozwiązanie jednoznaczne (dowód: `puzzles/droga-do-jordana.md`). Wynik = **Jordan pracuje w Piccolo** → gracz idzie tam, pyta o Jordana (imię = jednocześnie hasło-test wejścia, patrz `concept/02-faza-2a-jordan.md`), rozpoznaje go po **chochli**. „ladled out / ask for him by name" niesie atrybut + hasło bez meta-gadania.
 - **Imiona prowizoryczne** (Kordian/Lambert/Jordan): „Kordian" anachroniczny (XIX w.); do podmiany przy period-themingu. Tylko **Jordan** jest kanoniczny (kontakt TR).
-- **Wersja krzyżacka:** inne K2 — Z2 prowadzi do **Albrechta**, nie Jordana/Piccolo; ta sama struktura logiczna, inny cel (imię/miejsce). Do napisania przy MVP. NIE kopiować 1:1.
-
-**Wersja Krzyżacy:** inne K2 (Pula B zamiast A; Z2 prowadzi do Albrechta, nie Jordana). Do napisania przy skalowaniu do MVP.
+- **Wersja krzyżacka:** inne Z2 — prowadzi do **Albrechta**, nie Jordana/Piccolo; ta sama struktura logiczna, inny cel (imię/miejsce). Do napisania przy MVP. NIE kopiować 1:1.
 
 **Ton:** plot twist (pośrednik zniknął) podany sucho, bez dramatyzmu — bardziej straszny tak niż z fanfarami.
 
 **Pass atmosferyczny [2026-06-02]:**
-- **Klamra A1 (R. → martwy flisak w Z4):** wzmocniono cień „was taken" („a contact who vanishes the same night the city arms itself is rarely a contact who chose to leave"). Payoff w K-Z4: R. = martwy boatman nad Wisłą, zginął strzegąc przechwyconej dyspozycji. Nie zdradzać tu — tylko zasiać.
+- **Klamra A1 (R. → martwy flisak w Z4):** wzmocniono cień „was taken" („a contact who vanishes the same night the city arms itself is rarely a contact who chose to leave"). Payoff w `miasto-5-Z4`: R. = martwy boatman nad Wisłą, zginął strzegąc przechwyconej dyspozycji. Nie zdradzać tu — tylko zasiać.
 - **Klamra B3 (broń „na fajerwerki"):** „carts… loaded with fireworks 'for the feast' — but the crates ride heavy" → proch do dział wnoszony pod osłoną zapustów. Forshadow szturmu/finału. Pokrycie: `karnawal-1454.js` (broń/proch „na turniej/fajerwerki").
-- **Eskalacja napięcia:** K1 = „miasto nie wie, że ma się bać"; K2 = „wound tight, like a string before it snaps" — napięcie rośnie w godzinach (oś 6 II, jeden wieczór).
-- **Maski (kontynuacja A2):** „under the masks and the music" — utrzymuje motyw przebrania zasiany w K1, wiodący do K3.
+- **Eskalacja napięcia:** Z1 = „miasto nie wie, że ma się bać"; Z2 = „wound tight, like a string before it snaps" — napięcie rośnie w godzinach (oś 6 II, jeden wieczór).
+- **Maski (kontynuacja A2):** „under the masks and the music" — utrzymuje motyw przebrania zasiany w Z1, wiodący do Z3.
 
 **Dwa rejestry [2026-06-01]:** dorzucone *otwarcie* i *zamknięcie* = kursywa (narracja z głów); main note + slip R. = roman (wiadomości z nadawcą — slip przeniesiony z kursywy na roman dla spójności klucza). Wiadomości **nieruszone treściowo**, tylko oprawa + format. ⚠ **Plotki (overheard)** = przytoczone słowa świata → docelowo roman; zostawione kursywą do passu stylizacyjnego (nie rozszerzam scope). Klucz: kursywa=głowa, roman=słowa świata (`mechanics/koperty-mg.md`).
 
 ---
 
-## REWIZJA [2026-06-02] — ✅ WPROWADZONA (rationale zachowane do review)
+## Rewizja [2026-06-02] — uwagi Oskara (DO WPROWADZENIA, jeszcze nie wprowadzone)
 
-> Tekst wyżej (v2) realizuje poniższe punkty A–F. Zostawione jako uzasadnienie decyzji. Jedyny otwarty element: **glify (`⟨mark⟩`)** — zależne od mapy Z1. Re-render → `public/` po akceptacji.
-> Była **największa przebudowa** ze wszystkich kopert (zmiana statusu na scenę + warstwa glifów).
+> Notatki kierunkowe. Tekst wyżej **nietknięty** — materiał porównawczy. Przepisanie + render po akceptacji.
+> To **największa przebudowa** ze wszystkich kopert — Z2 zmienia status i dochodzi nowa warstwa mechaniki (glify).
 
 ### A. Rama przestaje być głosem zleceniodawcy → SCENA-ODKRYCIE (2. osoba)
 - Obecna rama „**Messengers, your contact is gone. We do not know if he fled…**" = zewnętrzny zleceniodawca relacjonuje grupie, co się stało. **To wycinamy.** Oskar: nikt z zewnątrz im tego nie mówi — **kurierzy sami to rozkminiają**: docierają na miejsce, zamiast kontaktu znajdują kopertę z notatką, i z niej (oraz z tego, co widzą wokół) **sami orientują się**, że R. zniknął.
 - Nowa rama = **narracja-odkrycie z głów, 2. osoba** („*you reach the mark… no one waits; instead, folded paper in his place…*"). Patrz `mechanics/koperty-mg.md §Osoba narracji`.
-- **Skutek statusu:** K2 przesuwa się z „wiadomość + slip" ku **scenie**. Jedynym realnym dokumentem-nadawcą zostaje **slip „— R."** (roman). Zaktualizowane w `koperty-mg.md` Zasada #2.
+- **Skutek statusu:** Z2 przesuwa się z „wiadomość + slip" ku **scenie**. Jedynym realnym dokumentem-nadawcą zostaje **slip „— R."** (roman). Zaktualizowane w `koperty-mg.md` Zasada #2.
 
 ### B. Plotki → wplecione w narrację-podróż, nie wyliczone cytaty
 - Obecny blok „*Overheard near the square / A craftsman / Two merchants / Whispered at the inn…*" (osobne cytaty) → **rozpuścić w opis drogi**: co grupa mija, słyszy w przejściu, wyłapuje z tłumu karnawału. Mowa zależna / strzępy w narracji 2. os., nie lista źródeł.
@@ -117,7 +160,7 @@ Go carefully. — R.
 - Glify Starego Młyna i Kuźni = **zmyślone** (nieobecne na mapie); glif Piccolo = **prawdziwy** (z mapy Z1).
 - **Cel NIE jest wyłożony** w zagadce (znika „Jordan pracuje w Piccolo, idźcie tam") — odsłania go dopiero porównanie 3 glifów z mapą.
 - **Do zasiania w treści:** instrukcja, że jeden z tych znaków znajdą **na swojej mapie** = tam cel (inaczej nie wiedzą, że glif jest kluczem nawigacyjnym).
-- ⚠ **Zależność techniczna:** glif Piccolo **musi realnie istnieć** na mapie Z1 (`prototype/maps/`) — sprzęga z pendingiem mapy/deszyfrownika. Pełna mechanika → `puzzles/droga-do-jordana.md §D`.
+- ⚠ **Zależność techniczna:** glif Piccolo **musi realnie istnieć** na mapie Z1 (`public/maps/`) — sprzęga z pendingiem mapy/deszyfrownika. Pełna mechanika → `puzzles/droga-do-jordana.md §D`.
 
 ### E. Hasło dnia — przekazuje je R. (w slipie)
 - Slip R. ma poinstruować: **po dotarciu na miejsce zwrócić się do osoby PO IMIENIU i wskazać, co kupiła dziś rano (chochlę)** — wtedy będzie wiedziała, że są „od nas". To **hasło ustalone na dziś**.
