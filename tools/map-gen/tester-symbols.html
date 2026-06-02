@@ -5,14 +5,13 @@
 <title>Z1 — Arkusz symboli (TESTER)</title>
 <style>
   *, *::before, *::after { box-sizing: border-box; }
-  @page { size: A4 portrait; margin: 12mm 11mm; }
+  @page { size: A4 portrait; margin: 10mm 10mm; }
 
   body {
     font-family: Georgia, 'Times New Roman', serif;
-    font-size: 11px;
     color: #1a1008;
     background: #faf6ef;
-    margin: 0; padding: 14px 16px;
+    margin: 0; padding: 12px 14px;
   }
 
   .head-row {
@@ -20,239 +19,136 @@
     align-items: baseline;
     justify-content: space-between;
     border-bottom: 2px solid #2a1f0e;
-    padding-bottom: 6px;
-    margin-bottom: 4px;
+    padding-bottom: 5px;
+    margin-bottom: 3px;
   }
 
-  h1 {
-    font-size: 16px;
-    font-weight: bold;
-    letter-spacing: .05em;
-    margin: 0;
-    color: #2a1f0e;
-  }
+  h1 { font-size: 15px; font-weight: bold; letter-spacing: .04em; margin: 0; color: #2a1f0e; }
 
   .tester-tag {
-    font-family: Georgia, serif;
-    font-weight: bold;
-    font-size: 13px;
-    letter-spacing: .12em;
-    text-transform: uppercase;
-    color: #8b0000;
-    border: 1.5px solid #8b0000;
-    border-radius: 3px;
-    padding: 3px 9px;
+    font-weight: bold; font-size: 12px; letter-spacing: .12em; text-transform: uppercase;
+    color: #8b0000; border: 1.5px solid #8b0000; border-radius: 3px; padding: 2px 8px;
   }
 
-  .subtitle {
-    font-size: 9.5px;
-    color: #7a6a54;
-    margin-bottom: 12px;
-    letter-spacing: .02em;
-  }
-
-  table { border-collapse: collapse; width: 100%; }
-
-  th {
-    font-size: 8.5px;
-    letter-spacing: .06em;
-    text-transform: uppercase;
-    color: #7a6a54;
-    padding: 5px 7px;
-    border-bottom: 1.5px solid #2a1f0e;
-    text-align: left;
-  }
-
-  td {
-    padding: 6px 7px;
-    border-bottom: 1px solid #d8cdb8;
-    vertical-align: middle;
-  }
-
-  tr:nth-child(even) td { background: #f3ede0; }
-
-  .code {
-    font-family: 'Courier New', monospace;
-    font-weight: bold;
-    font-size: 12px;
-    color: #2a1f0e;
-    white-space: nowrap;
-  }
-
-  .icon-cell { width: 56px; text-align: center; }
-  .icon-cell img { width: 46px; height: 46px; display: inline-block; vertical-align: middle; }
-
-  .glyph-cell { width: 46px; text-align: center; }
-  .glyph-cell svg { display: inline-block; vertical-align: middle; }
-
-  .look { font-size: 11px; color: #2a1f0e; }
-  .place { font-size: 11px; font-weight: bold; }
+  .subtitle { font-size: 9px; color: #7a6a54; margin-bottom: 10px; letter-spacing: .02em; }
 
   .section-head {
-    font-size: 9px;
-    letter-spacing: .07em;
-    text-transform: uppercase;
-    color: #7a6a54;
-    margin: 18px 0 6px;
-    font-weight: bold;
+    font-size: 9px; letter-spacing: .07em; text-transform: uppercase; color: #7a6a54;
+    margin: 4px 0 6px; font-weight: bold;
+  }
+
+  /* compact tile grid */
+  .grid { display: grid; gap: 7px; }
+  .grid.codes { grid-template-columns: repeat(4, 1fr); }
+  .grid.landmarks { grid-template-columns: repeat(4, 1fr); }
+
+  .tile {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    border: 1px solid #d8cdb8;
+    border-radius: 4px;
+    background: #f3ede0;
+    padding: 5px 7px;
+  }
+
+  .tile .code {
+    font-family: 'Courier New', monospace;
+    font-weight: bold; font-size: 11px; color: #2a1f0e;
+    width: 26px; flex: 0 0 26px;
+  }
+
+  .tile img { width: 38px; height: 38px; flex: 0 0 38px; }
+  .tile .glyph { width: 38px; height: 38px; flex: 0 0 38px; display: flex; align-items: center; justify-content: center; }
+
+  /* empty fill-in box — insert the symbol here */
+  .symbol-box {
+    flex: 1 1 auto;
+    height: 38px;
+    border: 1.4px solid #2a1f0e;
+    border-radius: 3px;
+    background: #fffdf8;
   }
 
   .footer {
-    margin-top: 14px;
-    font-size: 8.5px;
-    color: #9a8870;
-    border-top: 1px solid #d8cdb8;
-    padding-top: 7px;
-    line-height: 1.5;
+    margin-top: 10px; font-size: 8px; color: #9a8870;
+    border-top: 1px solid #d8cdb8; padding-top: 6px; line-height: 1.5;
   }
 </style>
 </head>
 <body>
 
 <div class="head-row">
-  <h1>Zadanie 1 · Arkusz wszystkich symboli</h1>
+  <h1>Zadanie 1 · Symbole</h1>
   <span class="tester-tag">TESTER · Adam</span>
 </div>
 <div class="subtitle">
-  Komplet symboli Z1 do weryfikacji w terenie przed grą. <b>Ikona detalu</b> = co gracz wypatruje w realu.
-  Sprawdź, czy detal jest rozpoznawalny z ulicy i trafia w to miejsce.
+  <b>Test:</b> ikona detalu wskazuje miejsce → wstaw w ramkę glif (symbol mapy), który Twoim zdaniem tam jest. Potem porównaj z mapą.
 </div>
 
-<table>
-  <thead>
-    <tr>
-      <th>Kod</th>
-      <th>Ikona detalu</th>
-      <th>Co szukać w terenie</th>
-      <th>Miejsce</th>
-    </tr>
-  </thead>
-  <tbody id="rows"></tbody>
-</table>
+<div class="section-head">Punkty Z1 (19) — ikona detalu · ramka na glif do dopasowania</div>
+<div class="grid codes" id="rows"></div>
 
-<div class="section-head">Stałe punkty orientacyjne (zawsze na mapie · bez ikony detalu — rozpoznawane po glifie)</div>
-<table>
-  <thead>
-    <tr><th>Kod</th><th></th><th>Rola</th><th>Glif na mapie</th><th>Miejsce</th></tr>
-  </thead>
-  <tbody id="landmark-rows"></tbody>
-</table>
+<div class="section-head">Stałe punkty orientacyjne (4) — glif dany z góry (reference · nie zgadujesz)</div>
+<div class="grid landmarks" id="landmark-rows"></div>
 
 <div class="footer">
-  19 punktów Z1 (5 stref: N — Nowe Miasto · C — Rynek Staromiejski i okolice · S — bramy nad Wisłą · W/D — dystraktory) + 4 stałe punkty.
-  Pełny przegląd ikon: <code>prototype/icons-contact-sheet.html</code>. Źródło danych: <code>tools/z1-decoder/icon-map.js</code>.
+  5 stref: N — Nowe Miasto · C — Rynek Staromiejski i okolice · S — bramy nad Wisłą · W/D — dystraktory.
+  Pełny przegląd ikon: <code>prototype/icons-contact-sheet.html</code>. Źródło: <code>tools/z1-decoder/icon-map.js</code>.
 </div>
 
 <script src="map-data.js"></script>
 <script>
 (function () {
-  // code → { icon file (in ../../prototype/icons/), detail to spot in terrain }
   const DETAIL = {
-    N01: { icon: 'n01-piernikarka.svg',     look: 'Kosz pierników (pomnik Piernikarki)' },
-    N02: { icon: 'n02-przekupka.svg',       look: 'Gęś (pomnik Przekupki)' },
-    N03: { icon: 'n03-modry-fartuch.svg',   look: 'Fartuch — UWAGA: brak widocznego godła w terenie (tylko dystraktor)' },
-    N04: { icon: 'n04-apteka-lew.svg',      look: 'Lew nad drzwiami (Apteka Pod Złotym Lwem)' },
-    N05: { icon: 'n05-kosciol-jakuba.svg',  look: 'Bazylika / rząd łuków (kościół św. Jakuba)' },
-    N06: { icon: 'n06-baj-pomorski.svg',    look: 'Fasada-szafa (Teatr Baj Pomorski)' },
-    C01: { icon: 'c01-kopernik.svg',        look: 'Astrolabium (pomnik Kopernika)' },
-    C02: { icon: 'c02-osiolek.svg',         look: 'Osioł / pręgierz (Osiołek)' },
-    C03: { icon: 'c03-pies-filus.svg',      look: 'Melonik (pies Filuś)' },
-    C04: { icon: 'c04-ratusz.svg',          look: 'Wieża bez hełmu (Ratusz Staromiejski) — ≠ zegar C09' },
-    C06: { icon: 'c06-pod-gwiazda.svg',     look: 'Gwiazda (Kamienica Pod Gwiazdą)' },
-    C07: { icon: 'c07-dwor-artusa.svg',     look: 'Herb / tarcza (Dwór Artusa)' },
-    C08: { icon: 'c08-kosciol-nmp.svg',     look: 'Kościół bez wieży (NMP) — ≠ bazylika N05' },
-    C09: { icon: 'c09-katedra-janow.svg',   look: 'Zegar z 1 wskazówką (Katedra św. Janów) — ≠ wieża C04' },
-    S01: { icon: 's01-brama-mostowa.svg',   look: 'Ostrołuk przejazdu + krenelaż (Brama Mostowa)' },
-    S02: { icon: 's02-brama-klasztorna.svg',look: 'Brama (gotycki łuk od Bulwaru) — kaszownik słabo czytelny' },
-    S04: { icon: 's04-kotwica-bulwar.svg',  look: 'Kotwica na Bulwarze Filadelfijskim' },
-    W01: { icon: 'w01-luk-cezara.svg',      look: 'Trąbka herolda (Łuk Cezara)' },
-    D01: { icon: 'd01-fontanna-flisaka.svg',look: 'Flisak / skrzypce (Fontanna Flisaka)' },
+    N01: 'n01-piernikarka.svg',     N02: 'n02-przekupka.svg',       N03: 'n03-modry-fartuch.svg',
+    N04: 'n04-apteka-lew.svg',      N05: 'n05-kosciol-jakuba.svg',  N06: 'n06-baj-pomorski.svg',
+    C01: 'c01-kopernik.svg',        C02: 'c02-osiolek.svg',         C03: 'c03-pies-filus.svg',
+    C04: 'c04-ratusz.svg',          C06: 'c06-pod-gwiazda.svg',     C07: 'c07-dwor-artusa.svg',
+    C08: 'c08-kosciol-nmp.svg',     C09: 'c09-katedra-janow.svg',   S01: 's01-brama-mostowa.svg',
+    S02: 's02-brama-klasztorna.svg',S04: 's04-kotwica-bulwar.svg',  W01: 'w01-luk-cezara.svg',
+    D01: 'd01-fontanna-flisaka.svg',
   };
-
   const ICON_DIR = '../../prototype/icons/';
-
   const ORDER = ['N01','N02','N03','N04','N05','N06',
                  'C01','C02','C03','C04','C06','C07','C08','C09',
                  'S01','S02','S04','W01','D01'];
 
   const svgNS = 'http://www.w3.org/2000/svg';
   const parser = new DOMParser();
-
   function glyphSvg(body) {
     const svgEl = document.createElementNS(svgNS, 'svg');
     svgEl.setAttribute('viewBox', '0 0 32 32');
-    svgEl.setAttribute('width', '34');
-    svgEl.setAttribute('height', '34');
-    const parsed = parser.parseFromString(
-      '<svg xmlns="' + svgNS + '">' + body + '</svg>', 'image/svg+xml');
-    Array.from(parsed.documentElement.childNodes).forEach(n => {
-      svgEl.appendChild(document.importNode(n, true));
-    });
+    svgEl.setAttribute('width', '30'); svgEl.setAttribute('height', '30');
+    const parsed = parser.parseFromString('<svg xmlns="' + svgNS + '">' + body + '</svg>', 'image/svg+xml');
+    Array.from(parsed.documentElement.childNodes).forEach(n => svgEl.appendChild(document.importNode(n, true)));
     return svgEl;
   }
+  function box() { const b = document.createElement('div'); b.className = 'symbol-box'; return b; }
+  function codeLabel(text) { const s = document.createElement('span'); s.className = 'code'; s.textContent = text; return s; }
 
-  const tbody = document.getElementById('rows');
+  // Z1 codes: code + detail icon + box
+  const rows = document.getElementById('rows');
   ORDER.forEach(code => {
-    const p = Z1_PLACES[code];
-    const d = DETAIL[code];
-    if (!p || !d) return;
-    const tr = document.createElement('tr');
-
-    const tdCode = document.createElement('td');
-    const cs = document.createElement('span');
-    cs.className = 'code'; cs.textContent = code;
-    tdCode.appendChild(cs); tr.appendChild(tdCode);
-
-    const tdIcon = document.createElement('td');
-    tdIcon.className = 'icon-cell';
+    if (!DETAIL[code]) return;
+    const tile = document.createElement('div'); tile.className = 'tile';
+    tile.appendChild(codeLabel(code));
     const img = document.createElement('img');
-    img.src = ICON_DIR + d.icon; img.alt = p.name;
-    tdIcon.appendChild(img); tr.appendChild(tdIcon);
-
-    const tdLook = document.createElement('td');
-    tdLook.className = 'look'; tdLook.textContent = d.look;
-    tr.appendChild(tdLook);
-
-    const tdName = document.createElement('td');
-    tdName.className = 'place'; tdName.textContent = p.name;
-    tr.appendChild(tdName);
-
-    tbody.appendChild(tr);
+    img.src = ICON_DIR + DETAIL[code]; img.alt = code;
+    tile.appendChild(img);
+    tile.appendChild(box());
+    rows.appendChild(tile);
   });
 
-  // Landmarks (glyph only)
-  const lbody = document.getElementById('landmark-rows');
-  const ROLE = {
-    L01: 'Punkt zborny / handler TR (Piccolo)',
-    L02: 'Cel finałowy (Zamek Krzyżacki)',
-    L03: 'Zadanie F2B — polichromie (Z10 KZ)',
-    L04: 'Zadanie F2B — herby Hanzy (Z6 TR)',
-  };
+  // Landmarks: code + glyph shown (given reference — NOT guessed, NO box)
+  const lrows = document.getElementById('landmark-rows');
   Object.keys(Z1_LANDMARKS).forEach(lid => {
-    const lm = Z1_LANDMARKS[lid];
-    const tr = document.createElement('tr');
-
-    const tdCode = document.createElement('td');
-    const cs = document.createElement('span');
-    cs.className = 'code'; cs.textContent = lid;
-    tdCode.appendChild(cs); tr.appendChild(tdCode);
-
-    tr.appendChild(document.createElement('td')); // spacer (no detail icon)
-
-    const tdRole = document.createElement('td');
-    tdRole.className = 'look'; tdRole.textContent = ROLE[lid] || '';
-    tr.appendChild(tdRole);
-
-    const tdGlyph = document.createElement('td');
-    tdGlyph.className = 'glyph-cell';
-    tdGlyph.appendChild(glyphSvg(lm.glyph));
-    tr.appendChild(tdGlyph);
-
-    const tdName = document.createElement('td');
-    tdName.className = 'place'; tdName.textContent = lm.name;
-    tr.appendChild(tdName);
-
-    lbody.appendChild(tr);
+    const tile = document.createElement('div'); tile.className = 'tile';
+    tile.appendChild(codeLabel(lid));
+    const g = document.createElement('div'); g.className = 'glyph';
+    g.appendChild(glyphSvg(Z1_LANDMARKS[lid].glyph));
+    tile.appendChild(g);
+    lrows.appendChild(tile);
   });
 }());
 </script>
