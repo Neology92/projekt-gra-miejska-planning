@@ -12,9 +12,9 @@ Frakcja: **krzyzacy** (Zakon) · Pozycja na ścieżce (nr): **4** · Zadanie (nr
 - **Kiedy NIE wręczać:** grupom krzyżackim z zestawu A (Z8) ani C (Z10); grupom mieszczan (mają `miasto-4-Z5`); przed zaliczeniem Z3Z.
 - **Co MG mówi przy wydaniu:** kieruje do „brata-kucharza" komturii (to samo stanowisko/aktor co Z5, inny framing) — *„Brat kucharz potrzebuje pewnej ręki przy korzeniach…"*. MG NIE zdradza, że to test wiarygodności.
 - **Dokąd odsyła po rozwiązaniu:** z powrotem do MG po kopertę pozycji 5 (`krzyzacy-5-Z11`, finał). Punkt/godzina: TBD.
-- **Rekwizyty:** **ten sam zestaw** co Z5 (**6 słojów A–F**, karta przepisu, 10 kartoników, karta rozpiski, pierniki). 1 zestaw obsługuje Z5+Z9 — `zagadka-sensoryczna.md` §Draft do produkcji.
+- **Zagadka IDENTYCZNA z Z5 [Oskar 2026-06-02]:** te same **7 słojów A–G**, ten sam przepis, te same 3 dystraktory, ta sama mechanika i rekwizyty. 1 zestaw obsługuje Z5+Z9 — `zagadka-sensoryczna.md` §Draft do produkcji. **Różnica wyłącznie w briefie** (framing).
 
-> ⚠ **DŁUG [2026-06-02]:** „Gotowy tekst" niżej jest po PL, w starym głosie (1. os., bez konwencji 3 rejestrów) i odwołuje się do starej spec. **Do przejścia: EN + głos (2. os. „you" + słowa brata-kucharza roman + ramka MG) + spójność z 6-słojową spec.** Framing Z9 ≠ Z5: brat-kucharz, duma niemiecko-hanzeatycka (NIE sceptyk buntu). Wzorzec finalny = `miasto-5-Z5.md` v2.
+> ⚠ **DŁUG [2026-06-02]:** „Gotowy tekst" niżej jest po PL, w starym głosie (1. os., bez konwencji 3 rejestrów). **Do przejścia: EN + głos (2. os. „you" + słowa brata-kucharza roman + ramka MG).** Framing Z9 ≠ Z5: brat-kucharz, duma niemiecko-hanzeatycka (NIE sceptyk buntu) — easter egg „obie frakcje, to samo hasło" działa właśnie dzięki identycznej zagadce + różnym briefom. Wzorzec finalny = `miasto-5-Z5.md` v2.
 
 ## Zawartość (co fizycznie w kopercie)
 

@@ -15,7 +15,7 @@ Frakcja: **miasto** (Tajna Rada) · Pozycja na ścieżce (nr): **5** · Zadanie:
 - **Kiedy NIE wręczać:** grupom z zestawu A (Z4) ani C (Z6); grupom krzyżackim (mają `krzyzacy-4-Z9`); przed zaliczeniem Z3.
 - **Co MG mówi przy wydaniu:** kieruje do „piekarza" (stanowisko Z5; piekarz = **na papierze**, obsługuje MG — `otwarte-pytania.md` §NPC) — *„Mistrz Bogumił prosił o pomocną rękę, znajdziecie go przy…"*. MG NIE zdradza, że to test wiarygodności.
 - **Dokąd odsyła po rozwiązaniu:** z powrotem do MG po kopertę finałową (`miasto-6-Z7`). Konkretny punkt/godzina: TBD (`mechanics/koperty-mg.md`).
-- **Rekwizyty w komplecie ze stanowiskiem (meta, nie w kopercie):** **6 słojów A–F**, **karta przepisu** (player-prop, rye:wheat 3:1), **10 kartoników z nazwami** (6 prawdziwych + 4 dystraktory), **karta rozpiski** (A–F), **pierniki** (nagroda). Spec → `puzzles/zagadka-sensoryczna.md` §Draft do produkcji.
+- **Rekwizyty w komplecie ze stanowiskiem (meta, nie w kopercie):** **7 słojów A–G**, **karta przepisu** (player-prop, rye:wheat 3:1), **10 kartoników z nazwami** (7 prawdziwych + 3 dystraktory), **karta rozpiski** (A–G), **pierniki** (nagroda). Spec → `puzzles/zagadka-sensoryczna.md` §Draft do produkcji.
 
 ## Zawartość (co fizycznie w kopercie)
 
@@ -38,7 +38,7 @@ Frakcja: **miasto** (Tajna Rada) · Pozycja na ścieżce (nr): **5** · Zadanie:
 
 *You carry letters tonight for the very men he means. There is no one here to say it to. You set the note down and take up the first jar.*
 
-*Six jars, and no two alike — if your senses are keen enough to part them. Trust what they tell you, and set the right name to each letter on his card. Some of the names he was handed belong to no piernik at all; for those, his recipe is your guide.*
+*Seven jars, and no two alike — if your senses are keen enough to part them. Trust what they tell you, and set the right name to each letter on his card. Some of the names he was handed belong to no piernik at all; for those, his recipe is your guide.*
 
 ---
 
