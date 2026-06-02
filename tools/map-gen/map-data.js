@@ -109,6 +109,22 @@ const Z1_LANDMARKS = {
     glyph: '<path d="M16,16 C13,10 4,10 4,16 C4,22 13,22 16,16 C19,10 28,10 28,16 C28,22 19,22 16,16Z"'
          + ' fill="none" stroke="#2a1f0e" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>',
   },
+  // F2B task sites (not Z1 nodes) — same always-on landmark treatment as Piccolo/Zamek.
+  L03: {
+    coords: [53.0106, 18.6072],
+    name: 'Biedronka (polichromie)',  // Szeroka 22 — Z10 KZ (wiki pkt #9)
+    // ⊕ circle bisected vertically + 2 dots (ladybug) — only outlined circle on the map
+    glyph: '<circle cx="16" cy="16" r="12" fill="none" stroke="#2a1f0e" stroke-width="2.4"/>'
+         + '<line x1="16" y1="4" x2="16" y2="28" stroke="#2a1f0e" stroke-width="2.4" stroke-linecap="round"/>'
+         + '<circle cx="10.5" cy="13" r="1.8" fill="#2a1f0e"/><circle cx="21.5" cy="13" r="1.8" fill="#2a1f0e"/>',
+  },
+  L04: {
+    coords: [53.0114, 18.6099],
+    name: 'Aleja Gmerków',  // ul. Królowej Jadwigi — Z6 TR (wiki pkt #37)
+    // shield outline (heraldic) — points down; distinct from pentagon N05 (points up)
+    glyph: '<polygon points="6,5 26,5 26,15 16,28 6,15" fill="none" stroke="#2a1f0e"'
+         + ' stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>',
+  },
 };
 
 // Tile URL — CARTO Voyager (no labels): legible streets/blocks/water for field
