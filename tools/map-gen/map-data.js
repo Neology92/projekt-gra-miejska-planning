@@ -120,7 +120,7 @@ const Z1_LANDMARKS = {
   },
   L04: {
     coords: [53.0114, 18.6099],
-    name: 'Aleja Gmerków',  // ul. Królowej Jadwigi — Z6 TR (wiki pkt #37)
+    name: 'Aleja Gmerków i Herbów',  // ul. Królowej Jadwigi — gmerki + herby Hanzy, jedno miejsce; Z6 TR (wiki pkt #37)
     // shield outline (heraldic) — points down; distinct from pentagon N05 (points up)
     glyph: '<polygon points="6,5 26,5 26,15 16,28 6,15" fill="none" stroke="#2a1f0e"'
          + ' stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>',
