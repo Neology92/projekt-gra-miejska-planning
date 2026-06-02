@@ -14,8 +14,9 @@
 ╔══════════════════════════════════════════════════════════════╗
 ║  JORDAN / PIOTR — QUICK REF                                 ║
 ╠══════════════════════════════════════════════════════════════╣
-║  YOUR 5 TR GROUPS (fill before game — get from Oskar):      ║
-║  □ ________  □ ________  □ ________  □ ________  □ _______ ║
+║  YOUR 5 TR GROUPS (fixed — no fill-in needed):              ║
+║  □ Red (G1)   □ Orange (G2)   □ Yellow (G3)                 ║
+║  □ Green (G4)   □ Cyan (G5)                                  ║
 ╠══════════════════════════════════════════════════════════════╣
 ║  VERIFICATION (on group arrival):                           ║
 ║  ✓ They say "Jordan" + "bought a ladle" → warm welcome      ║
@@ -28,8 +29,7 @@
 ║    "I think you're looking for someone else."               ║
 ╠══════════════════════════════════════════════════════════════╣
 ║  DONE CHECKLIST (tick when group receives K3):              ║
-║  □ ________  □ ________  □ ________  □ ________  □ _______ ║
-║    (fill with colour names from your TR list above)         ║
+║  □ Red    □ Orange    □ Yellow    □ Green    □ Cyan          ║
 ╠══════════════════════════════════════════════════════════════╣
 ║  PROPS EACH GROUP GETS:                                     ║
 ║  ▸ K3 envelope — match to group's wristband colour          ║

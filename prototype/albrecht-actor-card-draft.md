@@ -17,8 +17,9 @@
 ╔══════════════════════════════════════════════════════════════╗
 ║  ALBRECHT / ZOSIA — QUICK REF                               ║
 ╠══════════════════════════════════════════════════════════════╣
-║  YOUR 5 TR GROUPS (same list as Jordan — get from Oskar):   ║
-║  □ ________  □ ________  □ ________  □ ________  □ _______ ║
+║  YOUR 5 TR GROUPS (fixed — same as Jordan's list):          ║
+║  □ Red (G1)   □ Orange (G2)   □ Yellow (G3)                 ║
+║  □ Green (G4)   □ Cyan (G5)                                  ║
 ╠══════════════════════════════════════════════════════════════╣
 ║  SCENE SEQUENCE (every group, every time):                  ║
 ║  1. They approach → you receive them as informers           ║
@@ -43,7 +44,7 @@
 ║  They always get another try. Never end the scene on a catch║
 ╠══════════════════════════════════════════════════════════════╣
 ║  DONE CHECKLIST (tick when group steals list and leaves):   ║
-║  □ ________  □ ________  □ ________  □ ________  □ _______ ║
+║  □ Red    □ Orange    □ Yellow    □ Green    □ Cyan          ║
 ╠══════════════════════════════════════════════════════════════╣
 ║  FINALE: also needed at Przedzamcze at 20:30.              ║
 ╚══════════════════════════════════════════════════════════════╝

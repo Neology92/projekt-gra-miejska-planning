@@ -125,6 +125,27 @@ Oskar **chce sam tworzyć** — robi grę terenową dla znajomych i ważne dla n
 - **Agent NIE robi za Oskara**: nie wymyśla finalnej treści zagadek, fabularnych zwrotów akcji, charakterów postaci ani sensu narracyjnego — to praca twórcza, którą Oskar chce zrobić sam.
 - **Wskazuj kontekstowo, co Oskar mógłby zrobić sam**, a gdzie agent realnie odciąża (np. "tę zagadkę kalimbową musisz wymyślić ty — mogę zweryfikować że pasują motywy z XV w. i podać 3 propozycje stylistyczne").
 
+## Kanoniczny przydział grup — frakcje i zagadki (ROZSTRZYGNIĘTE)
+
+Przydział **stały** — nie losowy w dniu gry. Źródło: G1 = jedyna testowana ścieżka prototypu (TR+Z4) → G1–G5 = TR, G6–G10 = KZ. Rozkład opcjonalnych zagadek z `concept/03-faza-2b-asynchroniczne.md` (1×Z4, 2×Z5, 2×Z6 dla TR; 2×Z8, 1×Z9, 2×Z10 dla KZ).
+
+| G# | Kolor | Hex | Frakcja | Zagadka F2B obowiązkowa | Zagadka F2B opcjonalna | Finał |
+|---|---|---|---|---|---|---|
+| G1 | Czerwony | `#E6194B` | **TR (Mieszczanie)** | Z3 — infiltracja zamku (Albrecht/Zosia) | **Z4 kalimba** — kod `621454` | Z7 szyfr |
+| G2 | Pomarańczowy | `#F58231` | **TR (Mieszczanie)** | Z3 — infiltracja zamku (Albrecht/Zosia) | Z5 sensoryczna piernik | Z7 szyfr |
+| G3 | Żółty | `#FFE119` | **TR (Mieszczanie)** | Z3 — infiltracja zamku (Albrecht/Zosia) | Z5 sensoryczna piernik | Z7 szyfr |
+| G4 | Zielony | `#3CB44B` | **TR (Mieszczanie)** | Z3 — infiltracja zamku (Albrecht/Zosia) | Z6 herby hanzeatyckie | Z7 szyfr |
+| G5 | Turkusowy | `#42D4F4` | **TR (Mieszczanie)** | Z3 — infiltracja zamku (Albrecht/Zosia) | Z6 herby hanzeatyckie | Z7 szyfr |
+| G6 | Niebieski | `#4363D8` | **KZ (Krzyżacy)** | Z3Z — infiltracja Piccolo (Jordan/Piotr) | Z8 melodia zakonu (kalimba) | Z11 szyfr |
+| G7 | Fioletowy | `#911EB4` | **KZ (Krzyżacy)** | Z3Z — infiltracja Piccolo (Jordan/Piotr) | Z8 melodia zakonu (kalimba) | Z11 szyfr |
+| G8 | Biały | `#FFFFFF` | **KZ (Krzyżacy)** | Z3Z — infiltracja Piccolo (Jordan/Piotr) | Z9 sensoryczna piernik | Z11 szyfr |
+| G9 | Brązowy | `#9A6324` | **KZ (Krzyżacy)** | Z3Z — infiltracja Piccolo (Jordan/Piotr) | Z10 polichromie Biedronka | Z11 szyfr |
+| G10 | Czarny | `#2B2B2B` | **KZ (Krzyżacy)** | Z3Z — infiltracja Piccolo (Jordan/Piotr) | Z10 polichromie Biedronka | Z11 szyfr |
+
+> **Dla MG/aktorów:** TR = G1–G5 (Red/Orange/Yellow/Green/Cyan). KZ = G6–G10 (Blue/Purple/White/Brown/Black). Jordan obsługuje oba tory (różny framing koperty K2-K). Albrecht obsługuje wyłącznie TR w F2B Z3.
+
+Szczegóły Z1 per ścieżka → `puzzles/z1-10-sciezek.md` §Ścieżki v3.2. Pełne dane kolory + hex → `mechanics/grupy-i-klasy.md`.
+
 ## Faktografia — twarde fakty (z wiki)
 
 Te punkty są **niezmienne** i mają pokrycie w wiki:

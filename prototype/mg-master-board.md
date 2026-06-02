@@ -2,43 +2,35 @@
 
 > **Language:** English (GM-facing).
 > **Print:** one page, landscape. Use as a wall chart or clipboard overlay during the game.
-> **Fill in BEFORE game:** (1) assign TR / KZ to each colour, (2) circle the 5 TR colours — those go to Jordan and Albrecht.
-
----
-
-## Class assignment (fill before game)
-
-| TR groups (5) | KZ groups (5) |
-|---|---|
-| _____ · _____ · _____ · _____ · _____ | _____ · _____ · _____ · _____ · _____ |
+> **Classes are fixed** — no fill-in needed. Canon: `CLAUDE.md §Kanoniczny przydział grup`.
 
 ---
 
 ## Status board
 
-Each cell: tick **when completed** and note time if useful.  
-**Columns:** `S` = Start · `Z1` = symbol trail report · `Z3` = returns with pergamin [TR] · `Z4` = kalimba code [TR] · `Z7` = cipher answer [TR] · `F` = finale arrived · `→` = delivered to B (Bażyński) or A (Albrecht)
+Tick each cell when the stage is complete and MG hands the next envelope.  
+**Columns:** `S` = Start (K1 given) · `Z1` = answer correct, K2/K2-K given · `Z3/Z3Z` = returns with output, optional-K given · `Zopt` = optional answer correct, K8 given · `Z7/Z11` = cipher answer, KF given · `F` = arrived finale · `→` = delivered to B (Bażyński) or A (Albrecht)
 
-| Color | G# | Class | S | Z1 | Z3 | Z4 | Z7 | F | → |
-|---|---|---|---|---|---|---|---|---|---|
-| Red | G1 | ___ | □ | □ K2 | □ K-Z4 | □ K8 | □ KF | □ | B / A |
-| Orange | G2 | ___ | □ | □ K2 | □ K-Z4 | □ K8 | □ KF | □ | B / A |
-| Yellow | G3 | ___ | □ | □ K2 | □ K-Z4 | □ K8 | □ KF | □ | B / A |
-| Green | G4 | ___ | □ | □ K2 | □ K-Z4 | □ K8 | □ KF | □ | B / A |
-| Cyan | G5 | ___ | □ | □ K2 | □ K-Z4 | □ K8 | □ KF | □ | B / A |
-| Blue | G6 | ___ | □ | □ K2 | □ K-Z4 | □ K8 | □ KF | □ | B / A |
-| Purple | G7 | ___ | □ | □ K2 | □ K-Z4 | □ K8 | □ KF | □ | B / A |
-| White | G8 | ___ | □ | □ K2 | □ K-Z4 | □ K8 | □ KF | □ | B / A |
-| Brown | G9 | ___ | □ | □ K2 | □ K-Z4 | □ K8 | □ KF | □ | B / A |
-| Black | G10 | ___ | □ | □ K2 | □ K-Z4 | □ K8 | □ KF | □ | B / A |
+| Color | G# | Class | Optional | S | Z1 | Z3/Z3Z | Zopt | Z7/Z11 | F | → |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Red | G1 | TR | Z4 kalimba | □ | □ K2 | □ K-Z4 | □ K8 | □ KF | □ | B / A |
+| Orange | G2 | TR | Z5 piernik | □ | □ K2 | □ K-Z5 | □ K8 | □ KF | □ | B / A |
+| Yellow | G3 | TR | Z5 piernik | □ | □ K2 | □ K-Z5 | □ K8 | □ KF | □ | B / A |
+| Green | G4 | TR | Z6 herby | □ | □ K2 | □ K-Z6 | □ K8 | □ KF | □ | B / A |
+| Cyan | G5 | TR | Z6 herby | □ | □ K2 | □ K-Z6 | □ K8 | □ KF | □ | B / A |
+| Blue | G6 | KZ | Z8 melodia | □ | □ K2-K | □ K-Z8 | □ K8-K | □ KF-K | □ | B / A |
+| Purple | G7 | KZ | Z8 melodia | □ | □ K2-K | □ K-Z8 | □ K8-K | □ KF-K | □ | B / A |
+| White | G8 | KZ | Z9 piernik | □ | □ K2-K | □ K-Z9 | □ K8-K | □ KF-K | □ | B / A |
+| Brown | G9 | KZ | Z10 polichromie | □ | □ K2-K | □ K-Z10 | □ K8-K | □ KF-K | □ | B / A |
+| Black | G10 | KZ | Z10 polichromie | □ | □ K2-K | □ K-Z10 | □ K8-K | □ KF-K | □ | B / A |
 
-> **Z3, Z4, Z7 columns** are TR path only. For KZ groups (MVP), those columns track the KZ equivalent stages (TBD) — mark the same squares and note KZ in the Notes column.
+> **KZ columns (Z3Z, Z8–Z10, Z11) are MVP TBD.** On prototype day, only G1 (Red, TR, Z4) runs fully. For other groups in a prototype dry-run, mark stages as they pass.
 
 ---
 
 ## Z1 answers — quick lookup
 
-| Color / G# | Z1 answer (4 places in order) | Start zone |
+| Color / G# | Z1 answer (4 places in order) | Zone |
 |---|---|---|
 | Red / G1 | Piernikarka → Przekupka → Baj Pomorski → Ratusz | NM |
 | Orange / G2 | Baj Pomorski → Apteka Lew → Kościół Jakuba → Kopernik | NM |
@@ -51,8 +43,6 @@ Each cell: tick **when completed** and note time if useful.
 | Brown / G9 | Przekupka → Pod Gwiazdą → Brama Klasztorna → Dwór Artusa | NM |
 | Black / G10 | Filuś → Dwór Artusa → Apteka Lew → Kościół NMP | deep NW |
 
-> NM = Rynek Nowomiejski area start. "Deep" = distant from start — those groups take slightly longer on Z1.
-
 ---
 
 ## Finale tally (20:30)
@@ -61,4 +51,4 @@ Each cell: tick **when completed** and note time if useful.
 |---|---|---|
 | | | |
 
-> If tie: see `concept/04-faza-3-final.md §Remis` for fallback. Current suggestion: improvised standoff + meta-commentary.
+> Tie: see `concept/04-faza-3-final.md §Remis`. Fallback: improvised standoff + historical epilogue.
