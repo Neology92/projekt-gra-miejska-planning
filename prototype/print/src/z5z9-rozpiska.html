@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-soft tx-4">
+<head>
+<meta charset="UTF-8">
+<title>The Baker's Card — answer card (Z5 / Z9)</title>
+<!-- Shared station prop, ONE PER GROUP (consumable — players write on it). Source: puzzles/zagadka-sensoryczna.md §Karta rozpiski.
+     Ships BLANK. The correct A–G mapping lives ONLY on the GM key (mg-Z5Z9-klucz). Seven jars A–G (active 7-jar spec, line 183).
+     NO edge-stamp (shared, not color-specific). Style: parchment.css + scoped fill-in layout below. -->
+<link rel="stylesheet" href="parchment.css">
+<style>
+  .sheet.answer{ padding:32mm 32mm; }
+  .answer-title{
+    font-variant:small-caps; letter-spacing:.06em;
+    font-size:19pt; line-height:1.25; margin:0 0 4px; color:var(--ink); text-align:center;
+  }
+  .answer-intro{
+    font-style:italic; color:var(--ink-soft); font-size:12.5pt; line-height:1.55;
+    text-align:center; max-width:80%; margin:6px auto 26px;
+  }
+  .answer-intro::after{
+    content:''; display:block; height:8px; width:54%; margin:18px auto 0;
+    background:var(--pen-rule) center/100% 8px no-repeat;
+  }
+  ol.jars{ list-style:none; margin:0 auto; padding:0; max-width:74%; }
+  ol.jars li{
+    display:flex; align-items:baseline; gap:.8em;
+    margin:0 0 16px; font-size:15pt;
+  }
+  ol.jars li .jar{
+    font-variant:small-caps; letter-spacing:.05em; color:var(--ink);
+    white-space:nowrap;
+  }
+  ol.jars li .blank{
+    flex:1; border-bottom:1px solid rgba(22,17,12,.5);
+    height:1.5em;
+  }
+</style>
+</head>
+<body>
+  <div class="page-bg" aria-hidden="true"></div>
+  <div class="sheet answer">
+
+    <h1 class="answer-title">The baker must know what is in each jar</h1>
+    <p class="answer-intro">Write a name beside each letter. There are more names than jars — not every name belongs. Do not open the jars.</p>
+
+    <ol class="jars">
+      <li><span class="jar">Jar A</span><span class="blank"></span></li>
+      <li><span class="jar">Jar B</span><span class="blank"></span></li>
+      <li><span class="jar">Jar C</span><span class="blank"></span></li>
+      <li><span class="jar">Jar D</span><span class="blank"></span></li>
+      <li><span class="jar">Jar E</span><span class="blank"></span></li>
+      <li><span class="jar">Jar F</span><span class="blank"></span></li>
+      <li><span class="jar">Jar G</span><span class="blank"></span></li>
+    </ol>
+
+  </div>
+</body>
+</html>

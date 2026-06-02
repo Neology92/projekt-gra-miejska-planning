@@ -154,7 +154,7 @@ Szczegóły: mechanics/koperty-mg.md §ZAŁOŻENIA PRZED RENDEREM · prototype/p
 ⬜ Skrypt Albrechta (Zosia) F2A . handler KZ: spotkanie + żądanie dowodu + wręczenie K3-K (Z3Z) + Tabeli 1
 ⬜ Z3Z — infiltracja Piccolo .... lustro Z3: kradzież „zaopatrzenia" + 20:30 + obserwacja Jordana (brązowa szata + chochla → dane Z11)
 ⬜ Z8 — melodia zakonu .......... lustro Z4 (kalimba)
-⬜ Z9 — sensoryczna piernik ..... lustro Z5
+🟡 Z9 — sensoryczna piernik ..... lustro Z5; brief + rekwizyty wyrenderowane [2026-06-02] (public/krzyzacy-4-Z9.pdf + wspólne z5z9-* + mg-Z5Z9-klucz); zostaje: review Oskara + klucz finału (#9)
 🟡 Z10 — polichromie Biedronka .. grafiki gotowe (Piotr) [2026-06-02]; zostaje: mechanika klucza→finał + osadzenie w kopercie
 🟡 Z11 — finał krzyżaków ........ mechanika dwóch tabel [2026-06-02]: symbol-klucz (kolor szaty×chochla) → tabula recta → parol; spec+dane gotowe  [puzzles/z11-szyfr-spec.md]
 ✅ Tabela 1 (lookup) KZ ......... 4×4 wyrenderowana (kolory EN × rysunki: piernik/miecz/chochla/świeca → gmerki; klucz centralny)  [public/z11-tabela-1-symbole.pdf · tools/z11-cipher/]
@@ -166,7 +166,9 @@ Szczegóły: mechanics/koperty-mg.md §ZAŁOŻENIA PRZED RENDEREM · prototype/p
 ### 🟩 Pozostałe opcjonalne TR
 
 ```
-⬜ Z5 — sensoryczna z piernikiem  mechanika zapach/smak/dotyk → klucz
+🟡 Z5 — sensoryczna z piernikiem  spec+draft gotowe; brief + 3 wspólne rekwizyty (przepis/etykiety/rozpiska) + klucz MG wyrenderowane [2026-06-02]
+                                 (public/miasto-5-Z5.pdf · z5z9-przepis/etykiety/rozpiska.pdf · mg-Z5Z9-klucz.pdf — 1 zestaw słojów obsługuje Z5+Z9);
+                                 zostaje: review Oskara + klucz finału (#9)
 🔄 Z6 — herby hanzeatyckie ...... Piotr przygotowuje zagadkę; szczegóły TBD [2026-06-02]
 ```
 

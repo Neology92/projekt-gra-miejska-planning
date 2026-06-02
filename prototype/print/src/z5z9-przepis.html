@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-soft tx-7">
+<head>
+<meta charset="UTF-8">
+<title>The Rule for Toruń Piernik — recipe card (Z5 / Z9)</title>
+<!-- Shared station prop (one card serves BOTH Z5 mieszczanie and Z9 krzyżacy). Source: puzzles/zagadka-sensoryczna.md §Karta przepisu.
+     NAMELESS by design (line 213): a Toruń baker's name in Krzyżak hands would break the cross-faction easter egg.
+     Function, not ornament: (a) rye 3 : wheat 1 lets weight disambiguate the two flours; (b) the closed spice list
+     (cinnamon, cloves, ginger, nutmeg — and no other root) recipe-gates the distractors (cardamom, pepper, buckwheat).
+     NO edge-stamp (not color-specific). Style: parchment.css + scoped recipe layout below. -->
+<link rel="stylesheet" href="parchment.css">
+<style>
+  .sheet.recipe{
+    padding:36mm 34mm;
+    display:flex; flex-direction:column; justify-content:center;
+    text-align:center;
+  }
+  .recipe-title{
+    font-variant:small-caps; letter-spacing:.07em;
+    font-size:24pt; line-height:1.18; margin:0 0 6px; color:var(--ink);
+  }
+  .recipe-title::after{
+    content:''; display:block; height:10px; width:62%; margin:14px auto 0;
+    background:var(--pen-underline) center/100% 10px no-repeat;
+  }
+  .recipe-sub{ font-style:italic; color:var(--ink-soft); font-size:13pt; margin:0 0 30px; }
+
+  dl.recipe-list{
+    margin:0 auto; max-width:78%; text-align:left;
+    font-size:15pt; line-height:1.5;
+  }
+  dl.recipe-list > div{ margin:0 0 18px; }
+  dl.recipe-list dt{
+    font-variant:small-caps; letter-spacing:.05em; font-size:16pt; color:var(--ink);
+  }
+  dl.recipe-list dd{
+    margin:2px 0 0; font-style:italic; color:var(--ink-soft); font-size:13.5pt;
+  }
+  dl.recipe-list dd .qty{ font-style:normal; color:var(--ink); font-variant:small-caps; letter-spacing:.04em; }
+
+  .recipe-spices dt{ margin-bottom:3px; }
+  .recipe-spices .roots{ font-style:normal; color:var(--ink); font-size:14.5pt; }
+  .recipe-spices .closing{ font-variant:small-caps; letter-spacing:.05em; color:var(--ink); }
+</style>
+</head>
+<body>
+  <div class="page-bg" aria-hidden="true"></div>
+  <div class="sheet recipe">
+
+    <h1 class="recipe-title">The Rule for Toruń Piernik</h1>
+    <p class="recipe-sub">as every honest oven in this town has kept it</p>
+
+    <dl class="recipe-list">
+      <div>
+        <dt>Rye flour</dt>
+        <dd><span class="qty">three measures</span> — the body of the dough</dd>
+      </div>
+      <div>
+        <dt>Wheat flour</dt>
+        <dd><span class="qty">one measure</span> — for a smoother crumb</dd>
+      </div>
+      <div>
+        <dt>Honey</dt>
+        <dd>as much as the dough will take</dd>
+      </div>
+      <div class="recipe-spices">
+        <dt>Pounded spices</dt>
+        <dd><span class="roots">cinnamon, cloves, ginger, nutmeg</span> — <span class="closing">and no other root.</span></dd>
+      </div>
+    </dl>
+
+  </div>
+</body>
+</html>

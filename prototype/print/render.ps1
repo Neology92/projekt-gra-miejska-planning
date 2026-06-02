@@ -69,6 +69,14 @@ $jobs = @{
   'miasto-4-Z3b.html'         = 'miasto-4-Z3b.pdf'
   'miasto-5-Z4.html'          = 'miasto-5-Z4.pdf'
   'miasto-6-Z7.html'          = 'miasto-6-Z7.pdf'
+  # Sensory puzzle Z5 (mieszczanie) / Z9 (krzyżacy) — IDENTYCZNA zagadka, 1 zestaw słojów.
+  # Two faction briefs (stamped) + three SHARED station props + one GM key (all unstamped — not color-specific).
+  'miasto-5-Z5.html'          = 'miasto-5-Z5.pdf'
+  'krzyzacy-4-Z9.html'        = 'krzyzacy-4-Z9.pdf'
+  'z5z9-przepis.html'         = 'z5z9-przepis.pdf'
+  'z5z9-etykiety.html'        = 'z5z9-etykiety.pdf'
+  'z5z9-rozpiska.html'        = 'z5z9-rozpiska.pdf'
+  'mg-Z5Z9-klucz.html'        = 'mg-Z5Z9-klucz.pdf'
 }
 
 # MG operational + actor materials → public/prototyp-druk/mg-i-aktorzy/
@@ -92,8 +100,12 @@ $stampPrefix = @{
   'miasto-4-Z3b.html'           = 'm04'
   'miasto-04b-Z3-pergamin.html' = 'm04'
   'miasto-5-Z4.html'            = 'm05'
+  'miasto-5-Z5.html'            = 'm05'
   'miasto-06a-Z7-list.html'     = 'm06'
   'miasto-6-Z7.html'            = 'm06'
+  # Krzyżacy faction = letter 'k' (first non-TR player prop). Z9 = pozycja 4 → k04.
+  # Shared props (z5z9-*) + GM key carry NO prefix → render unstamped (no __STAMP__ in their HTML).
+  'krzyzacy-4-Z9.html'          = 'k04'
 }
 
 # ── Staleness guard: refuse to render any source still carrying a RENDER-BLOCK marker.
