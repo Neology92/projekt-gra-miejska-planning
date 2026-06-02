@@ -49,7 +49,7 @@
 ✅ poz.3 Z3 — od Jordana ...... draft gotowy (brief F2B + Z3 zwiad; Z3b osobno)         [envelopes/miasto-3-Z3.md]
 ✅ poz.4 Z3b — kradzież ....... draft gotowy (2. koperta etapu Z3; narracja + cytat Albrechta)  [envelopes/miasto-4-Z3b.md]
 🟡 poz.5 Z4 — melodia/kalimba . draft v2 (SCENA: martwy flisak=R. nad Wisłą, melodia=kod; instrument zatwierdzony)  [envelopes/miasto-5-Z4.md]
-🟡 K8 — Z7 finałowy szyfr ..... szyfrogram + uniwersalna rama narracyjna (przechwycony list, method-agnostic)  [prototype/z7-szyfrogram-draft.md]
+✅ K8 — Z7 finałowy szyfr ..... szyfrogram + rama narracyjna v2 + ramka MG w HTML; wyrenderowany  [prototype/z7-szyfrogram-draft.md · src/z7-przechwycony-list.html]
 🟡 poz.6 Z7 — finał .......... draft gotowy (Przedzamcze, ósme bicie, wolny wybór; list nieotwarty, maski spadają)  [envelopes/miasto-6-Z7.md]
 ```
 
@@ -84,7 +84,7 @@
 ## E. Domknięcie
 
 ```
-⬜ Pass spójności ............. czy każdy etap daje klucz dla następnego
+✅ Pass spójności ............. łańcuch spójny end-to-end; jedyne niedomknięcie = glify Z1 (zależne od mapy)  [prototype/pass-spojnosci-prototyp.md]
 ⬜ Dry-run na papierze ........ przejście ścieżki, pomiar czasu (zwł. szyfr Cezara Z7)
 ```
 
@@ -212,15 +212,15 @@ Szczegóły: mechanics/koperty-mg.md §ZAŁOŻENIA PRZED RENDEREM · prototype/p
 ## 📊 Pasek postępu
 
 ```
-PROTOTYP   █████████████████░░░  ~85%   (koperty zdraftowane + wyrenderowane do PDF v2; zostają: K8 koperta, pass spójności, dry-run, review Oskara/Piotra)
+PROTOTYP   ██████████████████░░  ~90%   (koperty v2 wyrenderowane, K8 gotowy, pass spójności PASS; zostają: dry-run, review Oskara/Piotra, glify Z1 z mapy)
 MVP        ██░░░░░░░░░░░░░░░░░░  ~10%   (architektura ustalona; Z1 dyspersja czeka R2; produkcja, drugi tor, skalowanie przed nami)
 ```
 
 ## 🎯 Następny krok krytyczny
 
 ```
-► Prototyp — koperty zdraftowane + wyrenderowane (PDF v2 w public/); czekają na review Oskara/Piotra
-► Prototyp — do domknięcia: K8 koperta (body koperty do Z7 szyfrogramu) · pass spójności · dry-run
-► Prototyp — review: cały stos kopert (K1/K2/K3/K-Z3b/K-Z4/KF) + Jordan/Albrecht — Oskar i Piotr
+► Prototyp — cały stos kopert v2 (K1/K2/K3/K-Z3b/K-Z4/K8/KF) wyrenderowany do public/; pass spójności PASS
+► Prototyp — do domknięcia: dry-run na papierze · glify Z1 z mapy (sprzęga z Z1 dry-run R2)
+► Prototyp — review: stos kopert + Jordan/Albrecht — czeka na Oskara i Piotra
 ► Z1 dyspersja (MVP) — czeka: dry-run R2 (Oskar w terenie) → z1-dry-run-sheet.md §RUNDA 2
 ```

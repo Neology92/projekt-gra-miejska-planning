@@ -48,7 +48,7 @@
 }
 
 /* ===================== Page + sheet ===================== */
-@page{ size:A4; margin:0; }
+@page{ size:A4; margin:18mm 0 0 0; }  /* top margin repeats on EVERY page → continuation pages don't butt the top edge */
 *{ box-sizing:border-box; }
 html,body{ margin:0; }
 body{
@@ -58,15 +58,17 @@ body{
   -webkit-print-color-adjust:exact; print-color-adjust:exact;
 }
 
-.sheet{
-  position:relative;
-  margin:0;                       /* no white frame — the mask dissolves the parchment into white */
-  padding:30mm 30mm 32mm;         /* wide manuscript margin; keeps text clear of the faded edge zone */
-  min-height:297mm;
-  font-size:13.6pt;
-  line-height:1.74;
-  letter-spacing:.004em;
-  text-rendering:optimizeLegibility;
+/* PER-PAGE BACKGROUND (.page-bg) — load-bearing for multi-page props.
+   A background painted on .sheet is rendered ONCE across the whole element box, then the print
+   engine slices that single image per page. When a prop overflows to page 2, page 2 shows the
+   bottom slice — the gradient "center" and the mask's edge-fade/corners land at the page break,
+   not at each physical sheet's borders (the "background drifts off-centre on page 2" bug).
+   Fix: carry the parchment + mask on a position:fixed layer. Chrome repeats fixed elements on
+   EVERY printed page, A4-aligned, so each page gets its own centred parchment with the edge-fade
+   at that page's own borders — independent of page count. Requires <div class="page-bg"></div>
+   as the first child of <body>. .sheet is now pure content (no background of its own). */
+.page-bg{
+  position:fixed; inset:0; z-index:0; pointer-events:none;
 
   /* default parchment = parch tone + soft shading gradients (fibre/relief comes from ::after) */
   background-color:var(--parch);
@@ -86,14 +88,24 @@ body{
 
 /* RELIEF grain layer (chosen 2026-06-02). Sits above the parch+gradients, below the text.
    mix-blend-mode:multiply lets the lit height-field darken the parchment in its micro-pits.
-   No HTML change needed: pseudo-element + content lifted above it. */
-.sheet::after{
-  content:''; position:absolute; inset:0; z-index:0; pointer-events:none;
+   --tex-relief cascades from <html>, so per-asset .tx-N seeds keep working untouched. */
+.page-bg::after{
+  content:''; position:absolute; inset:0; pointer-events:none;
   background-image:var(--tex-relief);
   background-repeat:repeat; background-size:300px 300px;
   mix-blend-mode:multiply;
 }
-.sheet > *{ position:relative; z-index:1; }   /* keep all text above the relief layer */
+
+.sheet{
+  position:relative; z-index:1;   /* content sits above the fixed parchment layer */
+  margin:0;
+  padding:12mm 30mm 32mm;         /* top 12mm + @page 18mm = 30mm on page 1; @page margin gives the rest per page */
+  min-height:297mm;
+  font-size:13.6pt;
+  line-height:1.74;
+  letter-spacing:.004em;
+  text-rendering:optimizeLegibility;
+}
 
 /* Per-asset variety: put .tx-N on <html> to swap the relief seed (same look, different fibre pattern).
    Assign one per envelope type so no two props share an identical grain. Default (no class) = seed 7.
@@ -107,9 +119,9 @@ body{
 .tx-8{ --tex-relief:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='r' x='0' y='0' width='300' height='300' filterUnits='userSpaceOnUse'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.05' numOctaves='3' seed='83' stitchTiles='stitch' result='n'/%3E%3CfeDiffuseLighting in='n' surfaceScale='2.6' diffuseConstant='1.05' lighting-color='%23ffffff' result='l'%3E%3CfeDistantLight azimuth='235' elevation='58'/%3E%3C/feDiffuseLighting%3E%3CfeColorMatrix in='l' type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23r)' opacity='0.16'/%3E%3C/svg%3E"); }
 
 /* ===================== Background variants ===================== */
-/* bg-soft = default .sheet (declared above). bg-foxing adds faint age spots. */
+/* bg-soft = default .page-bg (declared above). bg-foxing adds faint age spots. */
 
-.bg-foxing .sheet{
+.bg-foxing .page-bg{
   background-color:var(--parch);
   background-image:
     radial-gradient(116% 114% at 50% 50%, transparent 58%, rgba(82,66,42,.10) 88%, rgba(82,66,42,.17) 100%),

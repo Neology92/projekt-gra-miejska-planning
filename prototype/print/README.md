@@ -42,10 +42,11 @@ dryfu — dyscyplina jest po stronie autora).
 **Świadomy override:** `pwsh -File render.ps1 -Force` renderuje mimo markerów (głośny banner +
 lista). Używaj tylko gdy naprawdę chcesz PDF ze starym tekstem.
 
-Obecnie zablokowane (7): `k1, k2, k2-slip, k3, kZ3b, kZ4, kF` — koperty kurierskie czekające
-na port prozy v2. **Niezablokowane:** `z3-pergamin-lista-tr`, `z7-przechwycony-list`,
-`z3-z7-klucz-mg` — to dokumenty in-world (głos Komtura / lista Zakonu), mają własne spece i są
-render-zweryfikowane; rewizja narracji v2 ich nie dotyczy.
+Stan [2026-06-02]: **port prozy v2 wykonany** — wszystkie 7 kopert kurierskich (`k1, k2, k2-slip,
+k3, kZ3b, kZ4, kF`) mają prozę v2 w HTML, markery RENDER-BLOCK usunięte. `z7-przechwycony-list`
+(= koperta K8) dostał ramę narracyjną v2 + ramkę `.mg-note` (sam dispatch + motto + cipher-body
+nietknięte — load-bearing monospace). **Bez markerów:** `z3-pergamin-lista-tr`, `z3-z7-klucz-mg`
+— dokumenty in-world (lista Zakonu / klucz MG), własne spece, render-zweryfikowane, bez ramy v2.
 
 ### Dom draftów (założenie — przenosiny w toku)
 
