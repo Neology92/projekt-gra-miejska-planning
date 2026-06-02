@@ -42,7 +42,7 @@ At each mark:
 2. That picture points you to the **next mark**. Go there. Do it again.
 3. Write each place you name into the **legend** on your map.
 
-Your chain is **exactly four steps** long, and it ends where you are to make the handover.
+Your chain is **exactly four steps** long, and it ends where you are to make contact.
 
 Beware false trails: if you find yourselves going in circles, or returning to a mark you have already named, you have strayed — go back to the last mark you were sure of.
 
