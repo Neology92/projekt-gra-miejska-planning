@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Parchment texture lab</title>
+<!-- Texture sampling sandbox — does NOT touch parchment.css.
+     URL params:  ?v=<variant>&seed=<int>
+       v = soft | tuned | relief | relief-strong
+       seed = integer (feTurbulence seed → different fibre pattern, same DNA)
+     Goal: let Oskar compare (a) tuned procedural noise vs (b) subtle relief (feDiffuseLighting),
+     across 2-3 seeds, on B&W-printable parchment with real text for legibility.
+     Philosophy preserved from parchment.css: low opacity, text in clean margin, edge-fade. -->
+<style>
+  @page{ size:A4; margin:0; }
+  *{ box-sizing:border-box; }
+  html,body{ margin:0; background:#fff; }
+  :root{
+    --ink:#16110c; --ink-soft:#3b3024;
+    --parch:#f1ead9;
+    --prose:Georgia, "Times New Roman", serif;   /* lab uses system serif; prod uses IM Fell */
+    --mono:"Cascadia Code","Consolas","Courier New",monospace;
+  }
+  .sheet{
+    position:relative;
+    padding:30mm 30mm 32mm;
+    min-height:297mm;
+    font-family:var(--prose); color:var(--ink);
+    font-size:13.6pt; line-height:1.74;
+    background-color:var(--parch);
+    -webkit-print-color-adjust:exact; print-color-adjust:exact;
+  }
+  /* shading + edge ageing kept identical to parchment.css philosophy */
+  .sheet::before{
+    content:''; position:absolute; inset:0; pointer-events:none; z-index:0;
+    background-image:
+      radial-gradient(116% 114% at 50% 50%, transparent 58%, rgba(82,66,42,.10) 88%, rgba(82,66,42,.17) 100%),
+      radial-gradient(72% 56% at 20% 16%, rgba(120,104,74,.05), transparent 60%),
+      radial-gradient(80% 60% at 84% 82%, rgba(120,104,74,.055), transparent 60%);
+  }
+  .tex{ position:absolute; inset:0; pointer-events:none; z-index:0; }   /* JS injects texture bg here */
+  .sheet > .body{ position:relative; z-index:1; }
+  /* edge fade into white (organic) */
+  .sheet{
+    -webkit-mask:var(--edge) center / 100% 100% no-repeat;
+            mask:var(--edge) center / 100% 100% no-repeat;
+    --edge:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 210 297' preserveAspectRatio='none'%3E%3Cfilter id='e' x='-12%25' y='-12%25' width='124%25' height='124%25'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.020' numOctaves='2' seed='6' result='n'/%3E%3CfeDisplacementMap in='SourceGraphic' in2='n' scale='13' xChannelSelector='R' yChannelSelector='G' result='d'/%3E%3CfeGaussianBlur in='d' stdDeviation='4.5'/%3E%3C/filter%3E%3Crect x='8' y='8' width='194' height='281' rx='5' fill='%23ffffff' filter='url(%23e)'/%3E%3C/svg%3E");
+  }
+  .badge{ position:absolute; left:26mm; bottom:14mm; z-index:2;
+    font-family:var(--mono); font-size:9pt; letter-spacing:.06em; color:var(--ink-soft); }
+  .motto{ font-family:var(--mono); font-weight:700; text-transform:uppercase;
+    font-size:21pt; letter-spacing:.12em; text-align:center; margin:0 0 26px; }
+  h1{ font-size:19pt; font-variant:small-caps; letter-spacing:.04em; margin:0 0 18px; font-weight:400; }
+  p{ margin:0 0 15px; }
+  .soft{ color:var(--ink-soft); font-style:italic; }
+</style>
+</head>
+<body>
+  <div class="sheet">
+    <div class="tex" id="tex"></div>
+    <div class="body">
+      <div class="motto">HELFEN, HEILEN UND WEHREN!</div>
+      <h1>Infiltrate the Castle</h1>
+      <p class="soft">Clear of Piccolo, away from the cook and his ladle, we break the seal.</p>
+      <p>Messengers — you asked to be trusted. Here is how you earn it. Before this night is over, we move against the Order, but we move half-blind. The Komtur of the castle knows more about us than we would like, and we need to know what he knows.</p>
+      <p>A proud man walks outside his own walls as if the city were already his. Wear another face — the carnival lends you one for free. Offer him a whiff of a name, a rumour, and let him talk.</p>
+      <p class="soft">A test page: this paragraph and the small-caps heading are here to judge ink legibility over the texture under plain black-and-white print. If the lettering muddies, the texture is too strong.</p>
+    </div>
+    <div class="badge" id="badge"></div>
+  </div>
+
+<script>
+  const q = new URLSearchParams(location.search);
+  const v = q.get('v') || 'soft';
+  const seed = parseInt(q.get('seed') || '7', 10);
+
+  // Build a grayscale SVG texture data-URI per variant. All tile 300×300, seamless (stitchTiles).
+  function svg(inner, opacity){
+    const s = `<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'>`
+      + `<filter id='f' x='0' y='0' width='300' height='300' filterUnits='userSpaceOnUse'>${inner}</filter>`
+      + `<rect width='300' height='300' filter='url(%23f)' opacity='${opacity}'/></svg>`;
+    return `url("data:image/svg+xml,${encodeURIComponent(s).replace(/%2523/g,'%23')}")`;
+  }
+  // careful: encodeURIComponent already encodes #; SVG uses url(#f) internally → keep as %23
+  function build(){
+    let inner, opacity, extraFine = '';
+    if (v === 'soft'){
+      // baseline = current parchment.css fibre
+      inner = `<feTurbulence type='fractalNoise' baseFrequency='0.010 0.050' numOctaves='3' seed='${seed}' stitchTiles='stitch'/>`
+            + `<feColorMatrix type='saturate' values='0'/>`;
+      opacity = 0.09;
+    } else if (v === 'tuned'){
+      // more octaves + a faint fine grain layered = richer "micro" fibre, still flat (no lighting). Delicate.
+      inner = `<feTurbulence type='fractalNoise' baseFrequency='0.012 0.055' numOctaves='4' seed='${seed}' stitchTiles='stitch'/>`
+            + `<feColorMatrix type='saturate' values='0'/>`;
+      opacity = 0.12;
+      extraFine = svg(`<feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='${seed+100}' stitchTiles='stitch'/><feColorMatrix type='saturate' values='0'/>`, 0.045);
+    } else if (v === 'relief' || v === 'relief-strong'){
+      // feDiffuseLighting reads the noise as a height-field → directional micro-shadows (the "normal map" effect).
+      const scale = (v === 'relief') ? 1.4 : 2.6;
+      const op    = (v === 'relief') ? 0.10 : 0.16;
+      inner = `<feTurbulence type='fractalNoise' baseFrequency='0.05' numOctaves='3' seed='${seed}' stitchTiles='stitch' result='n'/>`
+            + `<feDiffuseLighting in='n' surfaceScale='${scale}' diffuseConstant='1.05' lighting-color='%23ffffff' result='l'>`
+            + `<feDistantLight azimuth='235' elevation='58'/></feDiffuseLighting>`
+            + `<feColorMatrix in='l' type='saturate' values='0'/>`;
+      opacity = op;
+    }
+    const layers = [];
+    if (extraFine) layers.push(extraFine);
+    layers.push(svg(inner, opacity));
+    const tex = document.getElementById('tex');
+    tex.style.backgroundImage = layers.join(',');
+    tex.style.backgroundRepeat = layers.map(()=> 'repeat').join(',');
+    tex.style.backgroundSize = layers.map((_,i)=> i===0 && extraFine ? '160px 160px' : '300px 300px').join(',');
+    tex.style.mixBlendMode = 'multiply';
+    document.getElementById('badge').textContent = `v=${v}  seed=${seed}`;
+  }
+  build();
+</script>
+</body>
+</html>
