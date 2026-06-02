@@ -163,8 +163,7 @@ Szczegóły: mechanics/koperty-mg.md §ZAŁOŻENIA PRZED RENDEREM · prototype/p
 
 ```
 ⬜ Z5 — sensoryczna z piernikiem  mechanika zapach/smak/dotyk → klucz
-⬜ Z6 — herby hanzeatyckie ...... 🚶 Aleja Gmerków (ul. Królowej Jadwigi) — WYMAGA WIZYTY + spisu herbów
-                                                                              [puzzles/herby-aleja.md]
+🔄 Z6 — herby hanzeatyckie ...... Piotr przygotowuje zagadkę; szczegóły TBD [2026-06-02]
 ```
 
 ### 🟨 Dywersyfikacja (10 grup)
