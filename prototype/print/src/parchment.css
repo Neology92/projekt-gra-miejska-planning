@@ -48,7 +48,7 @@
 }
 
 /* ===================== Page + sheet ===================== */
-@page{ size:A4; margin:18mm 0 0 0; }  /* top margin repeats on EVERY page → continuation pages don't butt the top edge */
+@page{ size:A4; margin:0; }  /* full-bleed: the fixed .page-bg covers the whole sheet, parchment dissolves into white via the mask (no @page margin → no white strip; per-page text margin comes from one .sheet per page, see below) */
 *{ box-sizing:border-box; }
 html,body{ margin:0; }
 body{
@@ -99,13 +99,18 @@ body{
 .sheet{
   position:relative; z-index:1;   /* content sits above the fixed parchment layer */
   margin:0;
-  padding:12mm 30mm 32mm;         /* top 12mm + @page 18mm = 30mm on page 1; @page margin gives the rest per page */
-  min-height:297mm;
+  padding:30mm 30mm 32mm;         /* manuscript margins — top AND bottom, applied to EVERY .sheet */
+  min-height:297mm;               /* border-box → each .sheet is exactly one A4 page */
   font-size:13.6pt;
   line-height:1.74;
   letter-spacing:.004em;
   text-rendering:optimizeLegibility;
 }
+
+/* Multi-page props: split content into consecutive .sheet blocks (one per page). Each starts a
+   new page and carries its own 30/32mm top+bottom padding, so continuation pages never butt the
+   sheet edge. The fixed .page-bg repeats the parchment full-bleed under every page automatically. */
+.sheet + .sheet{ break-before:page; -webkit-column-break-before:always; page-break-before:always; }
 
 /* Per-asset variety: put .tx-N on <html> to swap the relief seed (same look, different fibre pattern).
    Assign one per envelope type so no two props share an identical grain. Default (no class) = seed 7.

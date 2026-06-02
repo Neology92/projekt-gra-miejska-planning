@@ -52,13 +52,14 @@ $jobs = @{
   'z3-pergamin-lista-tr.html' = 'z3-pergamin-lista-tr.pdf'
   'z7-przechwycony-list.html' = 'z7-przechwycony-list.pdf'
   'z3-z7-klucz-mg.html'       = 'z3-z7-klucz-mg.pdf'
-  'k1.html'                   = 'k1.pdf'
-  'k2.html'                   = 'k2.pdf'
-  'k2-slip.html'              = 'k2-slip.pdf'
-  'k3.html'                   = 'k3.pdf'
-  'kZ3b.html'                 = 'kZ3b.pdf'
-  'kZ4.html'                  = 'kZ4.pdf'
-  'kF.html'                   = 'kF.pdf'
+  # Envelope render layer — names match envelopes/<frakcja>-<poz>-<zadanie>.md (canon).
+  'wspolne-1-Z1.html'         = 'wspolne-1-Z1.pdf'
+  'miasto-2-Z2.html'          = 'miasto-2-Z2.pdf'
+  'miasto-2-Z2-slip.html'     = 'miasto-2-Z2-slip.pdf'
+  'miasto-3-Z3.html'          = 'miasto-3-Z3.pdf'
+  'miasto-4-Z3b.html'         = 'miasto-4-Z3b.pdf'
+  'miasto-5-Z4.html'          = 'miasto-5-Z4.pdf'
+  'miasto-6-Z7.html'          = 'miasto-6-Z7.pdf'
 }
 
 # ── Staleness guard: refuse to render any source still carrying a RENDER-BLOCK marker.

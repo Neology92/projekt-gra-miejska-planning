@@ -42,8 +42,10 @@ dryfu — dyscyplina jest po stronie autora).
 **Świadomy override:** `pwsh -File render.ps1 -Force` renderuje mimo markerów (głośny banner +
 lista). Używaj tylko gdy naprawdę chcesz PDF ze starym tekstem.
 
-Stan [2026-06-02]: **port prozy v2 wykonany** — wszystkie 7 kopert kurierskich (`k1, k2, k2-slip,
-k3, kZ3b, kZ4, kF`) mają prozę v2 w HTML, markery RENDER-BLOCK usunięte. `z7-przechwycony-list`
+Stan [2026-06-02]: **port prozy v2 wykonany** — wszystkie 7 kopert kurierskich (`wspolne-1-Z1,
+miasto-2-Z2, miasto-2-Z2-slip, miasto-3-Z3, miasto-4-Z3b, miasto-5-Z4, miasto-6-Z7` — nazwy
+zgodne z `envelopes/<frakcja>-<poz>-<zadanie>.md`) mają prozę v2 w HTML, markery RENDER-BLOCK
+usunięte. `z7-przechwycony-list`
 (= koperta K8) dostał ramę narracyjną v2 + ramkę `.mg-note` (sam dispatch + motto + cipher-body
 nietknięte — load-bearing monospace). **Bez markerów:** `z3-pergamin-lista-tr`, `z3-z7-klucz-mg`
 — dokumenty in-world (lista Zakonu / klucz MG), własne spece, render-zweryfikowane, bez ramy v2.
