@@ -8,8 +8,8 @@
 
 - **Frakcja:** WSPÓLNA dla obu torów (miasto + krzyzacy). Brief **celowo identyczny** dla wszystkich 10 grup — nie zdradza klasy (`mechanics/grupy-i-klasy.md §34`). Podział frakcji następuje dopiero w pozycji 2 (Z2).
 - **Pozycja (nr otwierania):** 1.
-- **Oś koloru — WKŁADKA per grupa:** brief jest globalny, ale **mapa + deszyfrownik różnią się per kolor (10 wariantów)**. Te warianty NIE są plikami tutaj — żyją w `puzzles/z1-10-sciezek.md` (10 ścieżek) + `public/maps/` (render). Spec koperty tylko je **wskazuje**.
-- **Wkładki fizyczne w kopercie:** (a) **mapa** danej grupy (9 glifów, bez nazw) · (b) **karta deszyfrownika** danej grupy (detal → następny glif) · (c) **zapieczętowany list** (rekwizyt niesiony całą grę) · (d) **opaska koloru** grupy (pasek papieru, nosi lider — `grupy-i-klasy.md`).
+- **Mapa — WSPÓLNA dla wszystkich grup:** jeden plik (`public/maps/map.png/.pdf`), wszystkie glify widoczne. Grupy nawigują po wspólnej mapie, różnią się tylko **pierwszym glifem** (różne łańcuchy przez tę samą mapę). Patrz `puzzles/z1-10-sciezek.md` + `mechanics/mapy-i-szyfrownik.md`.
+- **Wkładki fizyczne w kopercie:** (a) **mapa** (wspólna, identyczna dla wszystkich) · (b) **karta deszyfrownika** danej grupy (detal → następny glif, per kolor/ścieżka) · (c) **zapieczętowany list** (rekwizyt niesiony całą grę) · (d) **opaska koloru** grupy (pasek papieru, nosi lider — `grupy-i-klasy.md`).
 - **Kiedy wręczyć:** na starcie, briefing na Rynku Nowomiejskim.
 - **Kiedy NIE wręczać:** —
 - **Dokąd odsyła:** łańcuch 4 miejsc → raport u MG (Rynek Staromiejski) → koperta pozycji 2 (`miasto-2-Z2` / `krzyzacy-2-Z2`).

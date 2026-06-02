@@ -27,7 +27,7 @@ OŚ 2 — FRAKCJA (2):      różnicuje BRIEF od pozycji 2 (Z2) wzwyż. miasto /
 OŚ 3 — ZESTAW OPC. (A/B/C): różnicuje zagadkę opcjonalną (Z4/Z5/Z6 miasto · Z8/Z9/Z10 krzyzacy).
 ```
 
-**Konsekwencja dla Z1:** brief Z1 jest **globalny** (celowo identyczny — ukrywa klasę, `mechanics/grupy-i-klasy.md §34`). 10 wariantów wkładki per kolor **NIE są plikami tutaj** — żyją w `puzzles/z1-10-sciezek.md` + `public/maps/`. Plik `wspolne-1-Z1.md` tylko je **wskazuje**.
+**Konsekwencja dla Z1:** brief Z1 jest **globalny** (celowo identyczny — ukrywa klasę, `mechanics/grupy-i-klasy.md §34`). Mapa = **jedna wspólna** (`public/maps/map.png`). Deszyfrownik różni się per kolor/ścieżka — 10 wariantów w `puzzles/z1-10-sciezek.md`. Plik `wspolne-1-Z1.md` tylko je **wskazuje**.
 
 ## Systematyka nazw
 

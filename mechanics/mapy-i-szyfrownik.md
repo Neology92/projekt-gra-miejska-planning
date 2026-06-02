@@ -65,7 +65,7 @@
 
 ## Otwarte pytania
 
-1. **Jedna mapa wspólna czy dwie różne** (per klasa)?
+1. **Jedna mapa wspólna czy dwie różne** — ROZSTRZYGNIĘTE [2026-06-02, Oskar]: **jedna wspólna mapa** dla wszystkich grup; plik `public/maps/map.png/.pdf`. Deszyfrownik może różnić się per kolor.
 2. **Mapa per gracz czy per grupa?** (12 kopii vs 48 kopii)
 3. **Szyfrownik per gracz czy per grupa?**
 4. **Format papieru** (A4/A3, format mapy)

@@ -16,7 +16,7 @@ map (no spoilers); CARTO `light_nolabels` keeps tiles name-free too.
 | File | Purpose |
 |------|---------|
 | `map-data.js` | Coordinates, glyph SVGs, group definitions (Z1 data) |
-| `map.html` | Print view — `?group=G1..G10\|all` `&style=clean\|parchment` |
+| `map.html` | Print view — `?group=all` `&style=clean\|parchment` (always all glyphs) |
 | `map.css` | Layout (sheet/rail are CSS vars), pin styles, parchment toggle |
 | `map-tune.html` | Interactive calibration — set `FROZEN_CENTER`/`FROZEN_ZOOM` |
 | `gm-key.html` | GM reference: code → glyph → place (full answer key) |
@@ -45,16 +45,15 @@ const FROZEN_ZOOM   = zoom;
 ### 2 — Render
 
 ```powershell
-pwsh -File render-map.ps1 -Group G3            # one group: 9 marks + matching KEY
-pwsh -File render-map.ps1 -Group all           # every mark (calibration / overview)
-pwsh -File render-map.ps1 -Group G3 -Style parchment
-pwsh -File render-map.ps1 -Group G3 -Compare   # clean + parchment side-by-side
+pwsh -File render-map.ps1                      # clean style → public/maps/map.png + .pdf
+pwsh -File render-map.ps1 -Style parchment
+pwsh -File render-map.ps1 -Compare            # clean + parchment side-by-side
 ```
 
-Output: `public/maps/map.png` + `.pdf` (group=all); `map-G3.png` + `.pdf` (group=G3).
+Output: `public/maps/map.png` + `map.pdf` (one shared map, all glyphs).
 
-Check at 100% zoom: building edges sharp; the group's marks on the map match the
-KEY rows; the Rynek inset shows the Old-Town cluster with pins separated.
+Check at 100% zoom: building edges sharp; all glyphs on the map match KEY rows;
+Rynek inset shows the Old-Town cluster with pins separated.
 
 ## Render reliability (Chrome 147)
 

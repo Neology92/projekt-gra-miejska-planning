@@ -1,18 +1,16 @@
 # render-map.ps1 — headless Chrome: PNG + PDF (A4 landscape) for a navigation map.
-# General map-gen engine; map-data.js currently holds the Z1 prototype data.
+# Renders the single shared navigation map (all glyphs visible) used by all groups.
 #
 # Usage:
-#   pwsh -File render-map.ps1                       # group 'all', clean style
-#   pwsh -File render-map.ps1 -Group G3             # one group's 9 marks + fill-in key
+#   pwsh -File render-map.ps1                       # clean style → public/maps/map.png + .pdf
 #   pwsh -File render-map.ps1 -Style parchment
 #   pwsh -File render-map.ps1 -Compare              # clean + parchment side-by-side
 #
 # Requirements: network (Leaflet CDN + CARTO tiles). One-time pre-game render.
-# Output: ../../public/maps/map.png + .pdf  (group=all); map-G3.png + .pdf  (group=G3)
+# Output: ../../public/maps/map.png + map.pdf
 
 param(
   [string]$Style  = 'clean',  # clean | parchment
-  [string]$Group  = 'all',    # all | G1..G10
   [switch]$Compare            # render both styles for aesthetics check
 )
 
@@ -60,12 +58,11 @@ function Render-Map {
 
   $htmlPath = Join-Path $here 'map.html'
   $suffix   = if ($StyleName -ne 'clean') { "-$StyleName" } else { '' }
-  $uri      = ([System.Uri]$htmlPath).AbsoluteUri + "?style=$StyleName&group=$Group"
-  $baseName = if ($Group -eq 'all') { 'map' } else { "map-$Group" }
-  $pngOut   = Join-Path $outDir "$baseName$suffix.png"
-  $pdfOut   = Join-Path $outDir "$baseName$suffix.pdf"
+  $uri    = ([System.Uri]$htmlPath).AbsoluteUri + "?style=$StyleName&group=all"
+  $pngOut = Join-Path $outDir "map$suffix.png"
+  $pdfOut = Join-Path $outDir "map$suffix.pdf"
 
-  Write-Host "  Rendering ($StyleName, $Group)..." -NoNewline
+  Write-Host "  Rendering ($StyleName)..." -NoNewline
 
   if (Test-Path $pngOut) { Remove-Item $pngOut -Force -ErrorAction SilentlyContinue }
 
@@ -136,7 +133,7 @@ html,body{margin:0;padding:0;width:297mm;height:210mm;overflow:hidden}
 img{display:block;width:297mm;height:210mm;object-fit:fill}
 </style></head><body><img src="$pngOut"/></body></html>
 "@
-  $wrapperPath = Join-Path $env:TEMP "map-wrap-$Group$suffix.html"
+  $wrapperPath = Join-Path $env:TEMP "map-wrap$suffix.html"
   Set-Content -Path $wrapperPath -Value $wrapperHtml -Encoding UTF8
 
   if (Test-Path $pdfOut) { Remove-Item $pdfOut -Force -ErrorAction SilentlyContinue }
@@ -172,16 +169,15 @@ img{display:block;width:297mm;height:210mm;object-fit:fill}
 # --- Main ---
 $styles = if ($Compare) { @('clean','parchment') } else { @($Style) }
 
-Write-Host "`nMap Render ($Group) — $($styles.Count) job(s)`n"
+Write-Host "`nMap Render — $($styles.Count) job(s)`n"
 foreach ($s in $styles) { Render-Map -StyleName $s }
 
 Write-Host "`nDone. Output: $outDir"
 Write-Host ""
 Write-Host "NEXT STEPS:"
-$outName = if ($Group -eq 'all') { 'map' } else { "map-$Group" }
-Write-Host "  1. Open public/maps/$outName.png at 100% zoom — check:"
+Write-Host "  1. Open public/maps/map.png at 100% zoom — check:"
 Write-Host "     - building edges sharp (not pixelated)"
-Write-Host "     - the group's marks on the map + matching rows in the KEY"
+Write-Host "     - all glyphs visible + matching rows in the KEY"
 Write-Host "     - Rynek inset (right rail) shows the Old-Town cluster, pins separated"
-Write-Host "  2. Open public/maps/$outName.pdf at 300% — no blur on raster"
+Write-Host "  2. Open public/maps/map.pdf at 300% — no blur on raster"
 Write-Host "  3. If tiles are grey/missing: re-run (CDN timeout on first run)"
