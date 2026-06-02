@@ -50,3 +50,8 @@
 - **Nośnik znaleziska:** instrument wręcza fizycznie MG (meta, jak rozdanie karty — wzorzec K-Z3b). W fikcji „znaleziono go przy R.". Scrap z melodią = część koperty (roman).
 - **Dwa rejestry:** narracja z głów = *kursywa*; pisane słowa R. (scrap) = roman.
 - **Wersja Krzyżacy (MVP):** Z8 lustro — inny framing (nie R., nie flisak). NIE kopiować 1:1.
+
+---
+
+## REWIZJA [2026-06-02] — uwaga Oskara (DO WPROWADZENIA)
+- **Osoba narracji → ujednolicić do 2. osoby „you"** [decyzja Oskara 2026-06-02]. Obecna narracja kursywą jest w 1. os. mn. („we did not need to be told… we listen… we carry it back"); przepisać na narratora mówiącego DO grupy („you…"). **Scrap R.** (roman, słowa R. — „They took the dispatch off me…") **zostaje bez zmian** (to dokument, nie narracja). Zakres = wszystkie koperty (`mechanics/koperty-mg.md §Osoba narracji`). Przepisanie + render po passie ujednolicającym.

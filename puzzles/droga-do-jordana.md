@@ -125,16 +125,20 @@ Autor wymienił "Picollo". Sprawdzenie:
 - W K2 znika zdanie „*once you have placed Jordan, you will know where he works — go there and ask for him by name*". Gracze na tym etapie **nie mają wiedzieć, że szukają Jordana**.
 - **Trzy rzeczy do samodzielnego zestawienia:** *Piccolo* (miejsce) · *Jordan* (imię) · *chochla* (atrybut). Cel ujawnia się dopiero po spięciu wszystkich trzech. „Jordan" = **odkrycie**, nie odczyt.
 
-### D. Warstwa glifów (pomysł Oskara) — nawigacja zastępuje „idź, gdzie pracuje"
-- Każde z 3 miejsc zagadki dostaje **glif** wypisany obok nazwy (Stary Młyn ▢, Piccolo ▢, Kuźnia ▢).
-- Glify pochodzą z **wygenerowanej mapy Z1** (`prototype/maps/`).
-- **HACZYK — sedno pomysłu:** glif **Piccolo = PRAWDZIWY** (realnie oznacza punkt na mapie Z1); glify **Starego Młyna i Kuźni = ZMYŚLONE**, nigdy nie występują na mapie.
-- Skutek: gracze mogą udać się **tylko w jedno miejsce** — to, którego glif faktycznie jest na mapie. **Domknięcie zagadki = sprawdzić, który z trzech glifów istnieje na mapie.** To zamyka pętlę bez wykładania „Jordan pracuje w Piccolo, idźcie tam".
-- Jeśli grupa zacznie od glifów (porówna z mapą od razu) — od początku wie, że celem jest Piccolo, ale **nie wie**, kogo tam spotka ani jaki będzie atrybut/hasło. To dopuszczalne i nawet ładne (dwie drogi wejścia w zagadkę).
+### D. Warstwa glifów — ROZSTRZYGNIĘTA STRUKTURA [2026-06-02, Oskar]
+**Po rozwiązaniu zagadki gracze mają 3 pełne ścieżki `[glif]–[miejsce]–[osoba]–[atrybut]` — po jednej na każdą z trzech osób — z czego TYLKO JEDEN glif istnieje na mapie.** Stąd sami muszą ustalić, dokąd iść (to ten z prawdziwym glifem).
 
-> ⚠ **Zależność od mapy Z1:** glif Piccolo **musi realnie istnieć** na wygenerowanej mapie (`prototype/maps/`) — i być jednym z glifów deszyfrownika Z1. Sprzęga z pendingiem mapy/deszyfrownika; przy generowaniu mapy zarezerwować/wskazać glif punktu Piccolo. Dwa „zmyślone" glify muszą być wizualnie wiarygodne, ale **nieobecne** na mapie.
+- Zagadka logiczna daje komplet dla wszystkich trzech (kto gdzie pracuje, co kupił, jaki glif ma jego miejsce):
+  - Kordian → Kuźnia → sukno → glif ▢ (zmyślony)
+  - Lambert → Stary Młyn → jedzenie → glif ▢ (zmyślony)
+  - **Jordan → Piccolo → chochla → glif ▢ (PRAWDZIWY — jest na mapie Z1)**
+- **Cel NIE jest wyłożony** — zagadka nie mówi „idź do Jordana/Piccolo". Trzy ścieżki są równorzędne; rozstrzygnięcie dokąd iść = **sprawdzić, który z trzech glifów występuje na mapie**. To domyka §C („odkrycie, nie odczyt"): cel odsłania dopiero porównanie glifów z mapą, nie zdanie w zagadce.
+- Glify pochodzą z **wygenerowanej mapy Z1** (`prototype/maps/`). Glif Piccolo = realny punkt na mapie; glify Młyna i Kuźni = wiarygodne wizualnie, ale **nieobecne**.
+- Gdy grupa ustali prawdziwy glif → ma komplet: **miejsce (Piccolo) + imię (Jordan) + atrybut (chochla)** → idzie tam i podaje hasło dnia (§E).
 
-> ⚠ **Flaga do decyzji Oskara (redundancja):** czy po dodaniu nawigacji glifowej (D) wynik zagadki logicznej dalej ma jawnie nazywać „Jordan → Piccolo", czy logika ma dawać tylko trójkę {imię, atrybut, miejsce-jako-glif} **bez wykładania celu** (cel odsłania dopiero porównanie glifu z mapą)? Druga opcja jest spójniejsza z C („odkrycie, nie odczyt"), ale to **Twoja decyzja projektowa** — może zostawiasz redundancję jako podpowiedź dla słabszych grup.
+**Do rozpisania (szczegół, nie teraz finalnie):** trzeba zasiać graczom, że mają **porównać glify z mapą** (np. w K2 / slipie R.: „jeden z tych znaków odnajdziesz na swojej mapie — tam czeka twój człowiek"). Bez tego nie wiedzą, że glif jest kluczem nawigacyjnym.
+
+> ⚠ **Zależność od mapy Z1 (techniczna, wciąż otwarta):** glif Piccolo **musi realnie istnieć** na wygenerowanej mapie (`prototype/maps/`) i być jednym z glifów deszyfrownika Z1. Przy generowaniu mapy **zarezerwować/wskazać glif punktu Piccolo**; dobrać 2 wiarygodne, ale nieistniejące glify dla Młyna i Kuźni. To sprzęga z pendingiem mapy/deszyfrownika.
 
 ### E. Hasło dnia — przekazuje je R. (w slipie K2), rozpoznaje Jordan
 - Slip R. instruuje: **po dotarciu na miejsce zwrócić się do osoby PO IMIENIU i wskazać, co kupiła dziś rano (chochlę)** → wtedy będzie wiedziała, że są „od nas". To **hasło ustalone na dziś**.

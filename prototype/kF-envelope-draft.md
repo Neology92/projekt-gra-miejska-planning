@@ -67,3 +67,8 @@ That is the last thing we ask.
 - **Klamra A2 — maski spadają (domknięcie) [2026-06-02]:** „the masks are coming off all over the city — and ours with them." Karnawał (maski = przebrania całej gry, K1→K2→K3) kończy się w finale; maski spadają = prawda się ujawnia (Jordan=Bażyński). Spina motyw przebrania z rewelacją tożsamości.
 - **Lekki touch „hands":** „the hands that carried… the hands that hand it on" — echo groźby z K1 („answer with their hands"), bez rozwijania w pełną klamrę (A4 nieaktywne). Domyka sprawczość: te same ręce teraz wybierają.
 - **Dwa rejestry:** otwarcie i zamknięcie = *kursywa* (narracja z głów); ciało wiadomości = roman.
+
+---
+
+## REWIZJA [2026-06-02] — uwaga Oskara (DO WPROWADZENIA)
+- **Osoba narracji → ujednolicić do 2. osoby „you"** [decyzja Oskara 2026-06-02]. Obecna narracja kursywą („You know now." już jest 2. os., ale zamknięcie idzie w „we": „what we were carrying… we will never know them… we walk") — ujednolicić CAŁĄ narrację z głów na „you", w tym finałowy głos zbiorowy (Oskar: bez różnicowania). Ciało wiadomości (roman, „— J.") zostaje. Zakres = wszystkie koperty (`mechanics/koperty-mg.md §Osoba narracji`). Przepisanie + render po passie ujednolicającym.

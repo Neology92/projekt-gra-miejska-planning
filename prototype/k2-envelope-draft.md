@@ -148,11 +148,12 @@ Find the way. — R.
 - Obecne zdanie (sekcja Z2): „**Once you have placed Jordan, you will know where he works. Go there — and ask for him by name.**" → **USUNĄĆ.** Oskar: na tym etapie gracze **nie mogą wiedzieć, że szukają Jordana**.
 - **Trzy rzeczy do samodzielnego połączenia:** *Piccolo* (miejsce) · *Jordan* (imię) · *chochla* (atrybut). Dopiero gdy zepną wszystkie trzy — wiedzą, dokąd iść i kogo szukać. „Jordan" ma być **odkryciem**, nie zdaniem odczytanym i skwitowanym „aha, Jordan, to idziemy".
 
-### D. NOWA WARSTWA — glify miejsc (pomysł Oskara) → nawigacja zamiast „idź tam, gdzie pracuje"
-- Każde z 3 miejsc zagadki dostaje **glif** wypisany obok jego nazwy. Glify = te z **wygenerowanej mapy Z1** (`prototype/maps/`).
-- **Haczyk:** glif **Piccolo = PRAWDZIWY** (realnie oznacza punkt na mapie). Glify **Starego Młyna i Kuźni = ZMYŚLONE** — nigdy nie występują na mapie.
-- Skutek: gracze mogą udać się **tylko w jedno miejsce** (to z istniejącym glifem). Domknięcie zagadki = sprawdzić, który z trzech glifów faktycznie jest na mapie. To zastępuje wykładanie „Jordan pracuje w Piccolo, idźcie tam".
-- ⚠ **Zależność:** wymaga, by glif Piccolo **realnie istniał** na mapie Z1 — sprzęga z pendingiem mapy/deszyfrownika. Pełna mechanika → `puzzles/droga-do-jordana.md`.
+### D. NOWA WARSTWA — glify miejsc → nawigacja zamiast „idź tam, gdzie pracuje" [ROZSTRZYGNIĘTE 2026-06-02]
+- Po rozwiązaniu zagadki gracze mają **3 pełne ścieżki `[glif]–[miejsce]–[osoba]–[atrybut]`** (po jednej na osobę), z czego **TYLKO JEDEN glif istnieje na mapie** (Piccolo). Sami muszą ustalić, że właśnie tam idą.
+- Glify Starego Młyna i Kuźni = **zmyślone** (nieobecne na mapie); glif Piccolo = **prawdziwy** (z mapy Z1).
+- **Cel NIE jest wyłożony** w zagadce (znika „Jordan pracuje w Piccolo, idźcie tam") — odsłania go dopiero porównanie 3 glifów z mapą.
+- **Do zasiania w treści:** instrukcja, że jeden z tych znaków znajdą **na swojej mapie** = tam cel (inaczej nie wiedzą, że glif jest kluczem nawigacyjnym).
+- ⚠ **Zależność techniczna:** glif Piccolo **musi realnie istnieć** na mapie Z1 (`prototype/maps/`) — sprzęga z pendingiem mapy/deszyfrownika. Pełna mechanika → `puzzles/droga-do-jordana.md §D`.
 
 ### E. Hasło dnia — przekazuje je R. (w slipie)
 - Slip R. ma poinstruować: **po dotarciu na miejsce zwrócić się do osoby PO IMIENIU i wskazać, co kupiła dziś rano (chochlę)** — wtedy będzie wiedziała, że są „od nas". To **hasło ustalone na dziś**.
@@ -164,5 +165,5 @@ Find the way. — R.
   - dołożyć **hasło dnia (E)** do slipu.
 - Trop celu (chairman, bez zdradzania kim jest) **zostaje** — to klucz do finałowego splice'u (patrz nota „TROP CELU" wyżej).
 
-### Flaga do decyzji Oskara
-- **Redundancja:** czy po dodaniu nawigacji glifowej (D) wynik zagadki logicznej dalej musi jawnie nazwać „Jordan → Piccolo", czy logika ma dawać tylko trójkę {imię, atrybut, miejsce-jako-glif} bez wykładania celu? To decyzja projektowa Oskara — `puzzles/droga-do-jordana.md` ma to oznaczone.
+### Redundancja — ROZSTRZYGNIĘTE [2026-06-02]
+- Wynik zagadki logicznej **NIE wykłada celu** „Jordan → Piccolo". Logika daje 3 równorzędne trójki {imię, atrybut, miejsce-jako-glif}; cel odsłania dopiero porównanie glifów z mapą (§D). Spójne z §C („odkrycie, nie odczyt"). Szczegóły → `puzzles/droga-do-jordana.md §D`.

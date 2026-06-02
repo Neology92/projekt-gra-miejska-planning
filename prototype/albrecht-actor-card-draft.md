@@ -7,7 +7,7 @@
 > **When:** Faza 2B, Z3 — town (TR) groups come to you after Jordan sends them on the "scouting" errand (K3).
 > **Canon:** `puzzles/zamek-krzyzacki-lista.md` (Struktura Z3) · the list they steal → `prototype/pergamin-lista-tr-draft.md`.
 
-> ⚠ **REWIZJA [2026-06-02] — STEP 2 i STEP 3 SĄ POD DECYZJĄ; nie traktuj ich jako finalnych.** Uwaga Oskara („komtur **wręcza kopertę i odchodzi**, żeby gracze nie wciągali aktora w rozmowę o kopercie") zderza się z obecnym STEP 2 („**nie odpędzaj** — niech zostaną przy liście, by ją ukraść"). Moment „odejścia" względem okna kradzieży czeka na rozstrzygnięcie **Model A / Model B** → `prototype/kZ3b-envelope-draft.md §KONFLIKT SEKWENCJI`, `todo/otwarte-pytania.md`. Szczegóły w PLANNING NOTES na dole. Reszta karty (cel sceny, choreografia okna, reset) pozostaje aktualna niezależnie od A/B.
+> ✅ **REWIZJA [2026-06-02] — SEKWENCJA ROZSTRZYGNIĘTA (model patrolu); STEP 2/3 do przepisania.** Oskar: komtur **wręcza kopertę → odchodzi kawałek → odkłada listę w konkretnym miejscu → patroluje** w jej zasięgu. Lista cały czas na widoku, ale patrol ma momenty, gdy na nią nie patrzy = okno kradzieży. To godzi „wręczy i odejdzie" z kradzieżą (odejdzie = kawałek, nie zniknie). **STEP 2** („nie odpędzaj") → zastąpione: wręcz milcząco, odejdź kawałek, patroluj. **STEP 3** (geometria/cykl) → przepisać z „obrotu w miejscu" na **patrol wokół odłożonej listy** (zasady telegrafu/powtarzalności/resetu zostają). Pełny opis: `prototype/kZ3b-envelope-draft.md §SEKWENCJA`, PLANNING NOTES na dole, `todo/otwarte-pytania.md #65`.
 
 ---
 
@@ -185,9 +185,14 @@ After a group steals the list and leaves:
 - **Zasada bezdyskusyjna (do wprowadzenia niezależnie od A/B):** wręczenie K-Z3b jest **milczące, meta** — Albrecht **nie zapowiada, nie tłumaczy, nie reaguje** na zawartość; gracz **nie pyta** aktora o kopertę. Komtur kończy interakcję i **nie wdaje się w rozmowę o niej.** (Zgodne z `koperty-mg.md` Zasada #3.)
 - **Czego NIE robić [korekta wg przeglądu]:** **nie** dopisywać „wręcz i odejdź" jako kolejnej linijki obok obecnego STEP 2 („nie odpędzaj — niech zostaną przy liście") — zostawiłoby to kartę z dwiema sprzecznymi instrukcjami. **STEP 2 i STEP 3 wymagają przeróbki, nie dopisku.**
 
-**KONFLIKT do rozstrzygnięcia (Twoja decyzja — model autorstwa):** literalne „wręczy i sobie pójdzie" ⟂ mechanika kradzieży, która wymaga, by komtur **został** z listą na widoku. Dwa spójne modele (pełny opis: `prototype/kZ3b-envelope-draft.md §KONFLIKT SEKWENCJI`):
+**✅ SEKWENCJA — ROZSTRZYGNIĘTA [2026-06-02, Oskar]: model patrolu (łączy „wręcz i odejdź" z kradzieżą).** Komtur nie stoi nad listą — **odkłada ją i przechadza się**. Nowy przebieg sceny:
 
-- **Model A (koperta wyzwala kradzież):** wręczenie K-Z3b **w trakcie**, lista na widoku → gracze czytają (olśnienie + jak ukraść) → kradną przy **obecnym** komturze. „Wręcz i odejdź" = wręcz **bez słowa**, nie dyskutuj koperty. **STEP 2 zostaje** (nie odpędzaj), STEP 3 (okno kradzieży) bez zmian. Komtur „odchodzi" dopiero po kradzieży / na koniec slotu.
-- **Model B (kradzież live, koperta = wyjście):** olśnienie i kradzież dzieją się **na żywo** w scenie (telegrafowane okno — STEP 3 już to ma) → komtur wręcza K-Z3b **na koniec i odchodzi** → gracze czytają retrospektywnie. Tu **STEP 2 do przepisania** (kradzież nie czeka na kopertę; koperta = domknięcie po fakcie), K-Z3b przestaje być instrukcją kradzieży.
+1. **Podchody + ekspozycja listy** (jak STEP 1): donosiciele, komtur w pysze wyciąga listę, czyta nazwisko, pokazuje, ile Zakon wie.
+2. **Wręcz K-Z3b i odejdź kawałek:** wręcz kopertę **milcząco** (meta, bez komentarza, nie reaguj na treść), **odłóż listę w konkretnym, ustalonym miejscu** (ledge/crate/parapet) i **zacznij patrolować** — przechadzaj się tam i z powrotem w zasięgu listy. NIE znikasz, NIE odpędzasz grupy; po prostu nie wisisz nad parchmentem.
+3. **Okno = patrol:** lista cały czas na widoku i „pod opieką" patrolu, ale gdy jesteś **oddalony / odwrócony** (idziesz w drugą stronę swojej trasy) — przez kilka sekund na nią nie patrzysz. To jest okno. Gdy **wracasz do niej / mijasz ją / patrzysz** — okno zamknięte.
+4. Grupa czyta K-Z3b (olśnienie: „to lista — kradnijmy podczas jego przechadzki"), wyczekuje patrolu i podbiera listę.
 
-→ rozwidlenie w `todo/otwarte-pytania.md`. Po wyborze: przepisać STEP 2 (+ ewentualnie STEP 3) i zsynchronizować z treścią K-Z3b.
+**Do przepisania (kierunek, mechanika Oskara — przy finalizacji karty):**
+- **STEP 2** — usunąć „nie odpędzaj, niech zostaną przy liście"; zastąpić: *wręcz milcząco → odejdź kawałek → odłóż listę → patroluj.* Wręczenie pozostaje meta (zero rozmowy o kopercie).
+- **STEP 3** — przepisać geometrię/cykl z „obrotu w miejscu (lista na lewej, gaze w prawo)" na **patrol wokół odłożonej listy**: okno otwarte = oddalony/odwrócony na swojej trasie; zamknięte = przy liście / patrzy. **Zachować** zasady: telegrafowanie ruchu, powtarzalność (nie jednostrzałowo), złapanie = reset (nie eliminacja), hojność/asysta MG przy 3+ próbach, reset egzemplarza między grupami.
+- K-Z3b = **olśnienie wyprzedzające** (Model A) — synchronizować z `prototype/kZ3b-envelope-draft.md §SEKWENCJA`.
