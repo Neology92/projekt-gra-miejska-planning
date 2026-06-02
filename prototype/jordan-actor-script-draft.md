@@ -8,6 +8,40 @@
 
 ---
 
+## QUICK REFERENCE (actor cheat sheet — print separately if needed)
+
+```
+╔══════════════════════════════════════════════════════════════╗
+║  JORDAN / PIOTR — QUICK REF                                 ║
+╠══════════════════════════════════════════════════════════════╣
+║  YOUR 5 TR GROUPS (fill before game — get from Oskar):      ║
+║  □ ________  □ ________  □ ________  □ ________  □ _______ ║
+╠══════════════════════════════════════════════════════════════╣
+║  VERIFICATION (on group arrival):                           ║
+║  ✓ They say "Jordan" + "bought a ladle" → warm welcome      ║
+║    → "Then I think I know who sent you."                    ║
+║  ~ They say "Jordan" but miss the ladle → nudge:            ║
+║    "And how would you know me, if a friend sent you?"       ║
+║  ✗ Neither → politely redirect: "I think you're looking     ║
+║    for someone else in this street."                        ║
+║  ✗ Wrong wristband colour (not on your list above) →        ║
+║    "I think you're looking for someone else."               ║
+╠══════════════════════════════════════════════════════════════╣
+║  DONE CHECKLIST (tick when group receives K3):              ║
+║  □ ________  □ ________  □ ________  □ ________  □ _______ ║
+║    (fill with colour names from your TR list above)         ║
+╠══════════════════════════════════════════════════════════════╣
+║  PROPS EACH GROUP GETS:                                     ║
+║  ▸ K3 envelope — match to group's wristband colour          ║
+║  ▸ (food/drink if Piccolo is set up for it)                 ║
+╠══════════════════════════════════════════════════════════════╣
+║  TIMING: ~10–15 min per group. Signal Oskar when done.     ║
+║  Next group waits outside — do NOT run two at once.        ║
+╚══════════════════════════════════════════════════════════════╝
+```
+
+---
+
 ## BEFORE GROUPS ARRIVE
 
 You are Jordan. A cook. A man with a ladle. You are *not* Jan Bażyński — not today, not in front of them.

@@ -11,6 +11,46 @@
 
 ---
 
+## QUICK REFERENCE (actor cheat sheet — print separately if needed)
+
+```
+╔══════════════════════════════════════════════════════════════╗
+║  ALBRECHT / ZOSIA — QUICK REF                               ║
+╠══════════════════════════════════════════════════════════════╣
+║  YOUR 5 TR GROUPS (same list as Jordan — get from Oskar):   ║
+║  □ ________  □ ________  □ ________  □ ________  □ _______ ║
+╠══════════════════════════════════════════════════════════════╣
+║  SCENE SEQUENCE (every group, every time):                  ║
+║  1. They approach → you receive them as informers           ║
+║  2. You pull out the list (showing off) → set it down       ║
+║  3. Hand K-Z3b silently → step off into patrol              ║
+║  4. Patrol cycle until they steal (see below)               ║
+║  5. Reset: fresh parchment from bag → ready for next group  ║
+╠══════════════════════════════════════════════════════════════╣
+║  PATROL CYCLE (~30–40 s per loop):                          ║
+║  A  AWAY  — step to far end, BACK TO LIST → STEAL NOW       ║
+║  B  RETURN — amble back, telegraph the turn → risky         ║
+║  C  AT LIST — stand at list, eye them → DO NOT steal        ║
+║  Always telegraph clearly. Repeat until they grab it.      ║
+╠══════════════════════════════════════════════════════════════╣
+║  IF PASSIVE (not realising they should steal):              ║
+║  In character: "Well? Was there something else? My list     ║
+║  and I are very busy." (draw eye to parchment)             ║
+║  If still stuck: signal Oskar (MG).                        ║
+╠══════════════════════════════════════════════════════════════╣
+║  IF CAUGHT (reaching during B or C):                        ║
+║  "Hands off, gutter-rat!" → reset parchment → resume.      ║
+║  They always get another try. Never end the scene on a catch║
+╠══════════════════════════════════════════════════════════════╣
+║  DONE CHECKLIST (tick when group steals list and leaves):   ║
+║  □ ________  □ ________  □ ________  □ ________  □ _______ ║
+╠══════════════════════════════════════════════════════════════╣
+║  FINALE: also needed at Przedzamcze at 20:30.              ║
+╚══════════════════════════════════════════════════════════════╝
+```
+
+---
+
 ## WHO YOU ARE (context — read this first)
 
 You are **Komtur Albrecht**, the Order's commander. You hold this city by right and by force, and you do not believe the rabble will dare anything. You are **proud, a little bored, and contemptuous** of townsfolk. You enjoy being flattered.
