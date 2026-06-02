@@ -178,3 +178,69 @@ KOPERTY POZYCYJNE razem:               65   (lub 60)
 3. **Miejsce wydania Tabeli 2** (#72) — w ❸ z Tabelą 1, czy później w ❺a? Wpływa na to, co pakujesz do której koperty KZ.
 4. **Zapieczętowany list** — kolor drużyny na nim czy anonimowy?
 5. **Treść kopert KZ** (`krzyzacy-2`, `-3-Z3Z`, `-4-Z8`, `-4-Z10`, `-5-Z11`) wciąż PENDING — etykiety można podpisać, ale wsadu jeszcze nie ma.
+
+---
+
+## 7. Kody kopert + zawartość (manifest pakowania)
+
+> Widok od strony **kodu systemowego** (`[frakcja]-[nr][slot]-[Zx][-typ]`, kanon `envelopes/README.md`). Lista TYPÓW — instancja per kolor mnoży się ×5 (stempel `[w/m/k][NN]-[kolor]`, deszyfrownik per grupa).
+> Legenda statusu pliku: ✅ wyrenderowany w `public/` · 🟡 draft .md, nie wyrenderowany · ⬜ PENDING (brak treści).
+
+### ❶ WSPÓLNE (oba tory) — kod koperty `wspolne-1-Z1` · stempel `w01-[kolor]`
+- ✅ `wspolne-1-Z1.pdf` — brief Z1 *(01a_koperta)*
+- ✅ `maps/map.pdf` — mapa (wspólna, identyczna dla wszystkich) *(01b_mapa)*
+- ✅ `decoders/decoder-G{1..10}.pdf` — deszyfrownik **per grupa** *(01c_deszyfrownik)*
+- 🟡 zapieczętowany list (rekwizyt, niesiony całą grę) — 1/grupa
+- ⬜ opaska koloru (pasek papieru) — 1/grupa
+
+### TOR MIASTA (TR)
+
+**❷ `miasto-2-Z2` · stempel `m02-[kolor]`**
+- ✅ `miasto-2-Z2.pdf` — brief Z2 *(02a_koperta)*
+- ✅ `miasto-2-Z2-slip.pdf` — slip „— R." *(02b_kartka)*
+
+**❸ `miasto-3-Z3` · stempel `m03-[kolor]`** — wręcza Jordan (Piotr)
+- ✅ `miasto-3-Z3.pdf` — brief Z3 (zlecenie zwiadu) *(03_koperta)*
+- *(brak wkładek)*
+
+**❹ `miasto-4-Z3b` · stempel `m04-[kolor]`** — wręcza Albrecht (Zosia)
+- ✅ `miasto-4-Z3b.pdf` — brief Z3b (rozkaz kradzieży) *(04a_koperta)*
+- ✅ `miasto-04b-Z3-pergamin.pdf` — pergamin-lista TR = **łup** *(04b_pergamin)*
+  - ⚠ **nie jest zaklejony w ❹** — Albrecht trzyma go jako rekwizyt i odkłada do kradzieży. Pakować przy rekwizytach Albrechta, nie do koperty gracza.
+
+**❺ `miasto-5-Z{4|5|6}` · stempel `m05-[kolor]`** (stempel stały niezależnie od wariantu)
+- wariant A → ✅ `miasto-5-Z4.pdf` *(05_koperta)* + rekwizyt: **kalimba** (kod melodii 621454)
+- wariant B → ✅ `miasto-5-Z5.pdf` + rekwizyt: **słoje sensoryczne**; wkładki wspólne ✅ `z5z9-przepis.pdf`, ✅ `z5z9-etykiety.pdf`, ✅ `z5z9-rozpiska.pdf`
+- wariant C → ⬜ `miasto-5-Z6.pdf` (PENDING) + karta herbów
+
+**❻a `miasto-06a-Z7-list` · stempel `m06-[kolor]`**
+- ✅ `miasto-06a-Z7-list.pdf` — szyfrogram Z7 (rozwiązują) *(06a_list)*
+
+**❻b `miasto-6-Z7` · stempel `m06-[kolor]`**
+- ✅ `miasto-6-Z7.pdf` — notatka finałowa (kieruje na Przedzamcze) *(06b_koperta)*
+
+### TOR KRZYŻAKÓW (KZ)
+
+**❷ `krzyzacy-2-Z2` · stempel `k02-[kolor]`** — ⬜ PENDING
+- ⬜ `krzyzacy-2-Z2.pdf` — brief Z2 (→ Albrecht)
+- ⬜ slip (Pula B plotek)
+
+**❸ `krzyzacy-3-Z3Z` · stempel `k03-[kolor]`** — wręcza Albrecht (handler KZ)
+- 🟡 `krzyzacy-3-Z3Z.pdf` — brief Z3Z (infiltracja Piccolo) — placeholder, PENDING
+- ✅ `z11-tabela-1-symbole.pdf` — **Tabela 1** (lookup symboli) — wkładka
+
+**❹ `krzyzacy-4-Z{8|9|10}` · stempel `k04-[kolor]`**
+- wariant A → ⬜ `krzyzacy-4-Z8.pdf` (PENDING) + kalimba
+- wariant B → ✅ `krzyzacy-4-Z9.pdf` + słoje sensoryczne (wkładki wspólne `z5z9-*`)
+- wariant C → ⬜ `krzyzacy-4-Z10.pdf` (PENDING) + karta polichromii
+
+**❺a `krzyzacy-5-Z11` (część szyfrowa) · stempel `k05-[kolor]`** — ⬜ PENDING
+- ⬜ `krzyzacy-5-Z11.pdf` — materiały szyfru Z11
+- ✅ `z11-tabela-2-tabula-recta.pdf` — **Tabela 2** (tabula recta) — miejsce wydania #72 (tu albo w ❸)
+
+**❺b `krzyzacy-5-Z11` (notatka finałowa) · stempel `k05-[kolor]`** — ⬜ PENDING
+- ⬜ notatka finałowa — struktura 2-kopertowa (lustro Z7) do potwierdzenia
+
+### MG — dokumenty (NIE koperty gracza, bez stempla)
+- ✅ `mg-Z3Z7-klucz.pdf` — klucz odpowiedzi Z3 + Z7
+- ✅ `mg-Z5Z9-klucz.pdf` — klucz odpowiedzi Z5 + Z9
