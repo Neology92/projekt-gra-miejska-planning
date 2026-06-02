@@ -110,7 +110,7 @@ Ta sama mechanika i rekwizyty (1 grupa krzyżacka — patrz `concept/03-faza-2b-
 
 ## Otwarte pytania
 
-1. **Ile słoiczków, ile nazw** — draft proponuje **7 słoiczków + 11 nazw** (4 dystraktory). Do potwierdzenia/zmiany przez Oskara.
+1. ~~Ile słoiczków, ile nazw~~ ROZSTRZYGNIĘTE [2026-06-02, Oskar]: **5 słojów (A–E) + 10 nazw** (5 prawdziwych: cynamon, mąka żytnia, mąka pszenna, goździki, imbir + 5 dystraktorów). Zestaw 7-słojowy (z miodem i pieprzem) — superseded, w `git log`.
 2. ~~Które kanały~~ ROZSTRZYGNIĘTE [2026-05-31]: **słuch + węch + ważenie w dłoni**; bez smaku, bez otwierania słoików.
 3. ~~Wariant dwóch mąk~~ ROZSTRZYGNIĘTE [2026-05-31]: **(I) rye-dominant** (więcej żytniej = cięższy słoiczek).
 4. **Strategia dystraktorów** — draft: **miks** (myląco-zmysłowe + 1 kanoniczna-nieobecna + 1 anachroniczna). Do potwierdzenia.
@@ -180,58 +180,75 @@ Pointy nie trzeba porzucać — trzeba **świadomie wybrać** framing (zgodnie z
 
 > To propozycja tekstów i konkretów „pod druk". Wszystko edytowalne — celem jest dać Ci punkt startu, nie wersję ostateczną.
 
-### Zestaw słoiczków (propozycja: 7)
+### Zestaw słoiczków — SPEC AKTYWNA [2026-06-02, Oskar]: 5 słojów (A–E)
 
-| Słój | Zawartość | Forma (pod kanały) | Sygnały rozpoznawcze |
+> **Zmiana 7→5.** Oskar podał świeżą, węższą specyfikację: **5 poprawnych** (cynamon, mąka żytnia, mąka pszenna, goździki, imbir) + **5 dystraktorów**. **Usunięte z poprzedniego (7-słojowego) wariantu:** **miód** (kanał „chlupot"/płyn) i **pieprz** — pieprz wraca jako *nazwa-dystraktor* (patrz niżej). Stary 7-słojowy zestaw → `git log` (superseded). Oznaczenie słojów: **litery A–E** (do podmiany na kształty słoików, jeśli Oskar dostarczy).
+
+| Słój | Zawartość (klucz MG) | Forma (pod kanały) | Sygnały rozpoznawcze | Oś, która identyfikuje |
+|---|---|---|---|---|
+| A | **mąka żytnia** | **pełniej napełniony — najcięższy** | bezwonna, cisza, **wyraźnie ciężka** | **ciężar + przepis** (żyta 3× więcej → cięższy słój = żytnia) |
+| B | **mąka pszenna** | mniej napełniony (lżejszy) | bezwonna, cisza, lżejsza | **ciężar + przepis** (lżejsza z dwóch mąk) |
+| C | **cynamon** | mielony | cisza/szelest pyłu, mocny słodko-korzenny zapach | **zapach** (słodko-korzenny) |
+| D | **goździki** | **całe pąki** | **grzechot twardych pąków**, bardzo mocny zapach | **słuch (grzechot) + zapach** |
+| E | **imbir** | mielony | bezgłośny pył, zapach ostro-korzenny | **zapach** (ostry, „gryzący") |
+
+> Domknięcie sensoryczne: **zapach** izoluje C/E (i wzmacnia D); **słuch/sypkość** wyróżnia D (całe pąki grzechoczą, reszta to milczący pył); **ciężar** rozdziela bezwonną parę A/B — ale rozstrzyga ją dopiero **przepis** (żyto:pszenica = 3:1). Bez przepisu A vs B to rzut monetą — dlatego przepis jest **rekwizytem player-facing**, nie przypisem.
+
+### Karta przepisu — REKWIZYT PLAYER-FACING (EN, #70), funkcyjny nie ozdobny
+
+> ⚠ **Bez tej karty zagadka się nie domyka.** Sam ciężar daje tylko „cięższy/lżejszy"; mapowanie *cięższy → żytnia* istnieje **wyłącznie** przez proporcję z przepisu. Oskarowe „jednej mąki 2–3× więcej" TO jest właśnie ta proporcja — musi trafić do graczy jako rekwizyt.
+
+```
+MASTER BOGUMIŁ'S RULE — TORUŃ PIERNIK
+
+  Rye flour ......... three measures   (the body of the dough)
+  Wheat flour ....... one measure      (for a smoother crumb)
+  Honey ............. as much as the dough will take
+  Pounded spices .... cinnamon, cloves, ginger — and no other root.
+```
+
+Przepis robi dwie rzeczy: (a) **rye 3 : wheat 1** → „czego w cieście więcej, tego w słoju ciężej" rozstrzyga A vs B; (b) **zamyka listę korzeni** (`cinnamon, cloves, ginger — and no other root`) → nazwy spoza niej (nutmeg, cardamom, pepper, buckwheat/barley flour) gracz odrzuca przez czytanie przepisu. *Świadomy efekt:* znajomość/uważne czytanie przepisu = przejście ukrytego testu „jesteś swój".
+> Wariant trudniejszy (opcja): przepis podaje tylko proporcje mąk + „spices, as the craft requires" (bez nazw) → pełna identyfikacja zmysłowa, dystraktory odrzucane wyłącznie węchem. Domyślnie zostaje wersja z nazwami (łagodniejsza, mocniej spina motyw „znaj przepis").
+
+### Lista etykiet — PLAYER-FACING (EN, #70): 10 nazw = 5 prawdziwych + 5 dystraktorów
+
+Gracze mają **przed sobą wszystkie 10 nazw** (kartoniki/lista) — nazw jest więcej niż słojów, więc nie da się „każda po kolei". Kolejność na liście pomieszana (nie grupować prawdziwych/fałszywych):
+
+```
+buckwheat flour   ·   cinnamon   ·   barley flour   ·   cloves   ·   nutmeg
+ginger   ·   wheat flour   ·   cardamom   ·   rye flour   ·   pepper
+```
+
+### Karta rozpiski — PLAYER-FACING (EN), do wypełnienia (A–E)
+
+```
+THE BAKER MUST KNOW WHAT IS IN EACH JAR.
+Write a name beside each letter. There are more names than jars —
+not every name belongs. Do not open the jars.
+
+  Jar A: ____________________
+  Jar B: ____________________
+  Jar C: ____________________
+  Jar D: ____________________
+  Jar E: ____________________
+```
+
+> Klucz MG (NIE dla graczy): **A** rye flour · **B** wheat flour · **C** cinnamon · **D** cloves · **E** ginger. (Litery przydzielone roboczo — przy produkcji wymieszać.)
+
+### Dystraktory (nazwy bez słoika) — 5, każdy z osią, która go pokonuje
+
+| Nazwa-pułapka | Myli z (poprawnym) | Oś, która ją pokonuje | Czemu myli (i czemu okresowo OK) |
 |---|---|---|---|
-| A | **mąka żytnia** | pełniej napełniony (cięższy!) | bezwonna, cisza, **wyraźnie ciężka** |
-| B | **mąka pszenna** | mniej napełniony (lżejszy) | bezwonna, cisza, lżejsza |
-| C | **miód** | szczelnie zamknięty | **chlupot**, ciężar, słodko-woskowy zapach |
-| D | **goździki** | całe | **grzechot twardych pąków**, bardzo mocny zapach |
-| E | **cynamon** | mielony | cisza/szelest pyłu, mocny słodko-korzenny zapach |
-| F | **imbir** | mielony lub kawałki | zapach ostro-korzenny |
-| G | **pieprz** | ziarna | **grzechot kuleczek**, ostry zapach |
+| **nutmeg** (gałka muszkatołowa) | cinnamon (C) | **zapach** + przepis | brązowy korzenny proszek, ciepła woń blisko cynamonu; w prawdziwym pierniku JEST (paleta wiki) → kusi „przecież pasuje", ale nie ma go w tym przepisie. Stary Świat ✓ |
+| **cardamom** (kardamon) | ginger (E) | **zapach** + przepis | aromatyczny korzeń, myli z ostrym imbirem; w palecie wiki, ale nie w tym przepisie. Stary Świat ✓ |
+| **pepper** (pieprz) | cloves (D) | **zapach** (+ przepis) | **pułapka słuchu**: ziarna pieprzu grzechoczą tak jak całe goździki → dźwięk NIE rozróżnia, dopiero zapach (ostry vs goździkowy). Stary Świat ✓ |
+| **buckwheat flour** (mąka gryczana) | rye flour (A) | **tylko przepis** | bezwonny pył jak każda mąka — zmysły nie odrzucą; pokonuje wyłącznie przepis (żyto+pszenica, nie gryka). Gryka w Toruniu od XIII w. (wiki) ✓ |
+| **barley flour** (mąka jęczmienna) | wheat flour (B) | **tylko przepis** | jw. — bezwonny pył, recipe-gated. Jęczmień obecny (wiki) ✓ |
 
-*(Skalowalne: chcesz 8–9 słoików — dołóż gałkę muszkatołową i/lub kardamon jako prawdziwe i przesuń je z listy dystraktorów.)*
+> **Bilans do decyzji (advisor):** 3 dystraktory przyprawowe (pokonywane **węchem**) + 2 mączne (pokonywane **wyłącznie przepisem**). To wzmacnia rolę przepisu jako „serca zagadki" — ale 2 z 5 to test czytania, nie zmysłów. Jeśli chcesz wierniej oddać „oceniają zmysłami": podmień jeden dystraktor mączny na przyprawowy **coriander** (kolendra — Stary Świat ✓, nasiona grzechoczą jak pieprz, nuta cytrusowo-korzenna → myli z D/pieprzem, pokonywany **węchem**). Wynik: 4 sensoryczne + 1 mączny.
+> **Anachronizm-smaczek (opcja, NIE w domyślnej piątce):** jeśli chcesz nagrodzić znawców historii — dorzuć **paprika** lub **allspice** (oba Nowy Świat, niemożliwe 1454; uwaga: stary draft mylnie traktował „ziele angielskie/allspice" jako tylko „niekanoniczne" — to anachronizm jak papryka). Odrzucalne i węchem/kolorem, i datą. Nie może być wymagane (gracz nie musi znać dat, by wygrać zmysłami).
 
-### Karta przepisu (rekwizyt funkcyjny — in-fiction)
-
-> **Przepis Mistrza [Bogumiła] na pierniki toruńskie**
-> — Mąki żytniej: **trzy miary** (gruba podstawa ciasta)
-> — Mąki pszennej: **miara jedna** (dla gładkości)
-> — Miodu przaśnego: ile ciasto przyjmie (na związanie)
-> — Korzeni utłuczonych: **cynamonu, goździków, imbiru, pieprzu**
-> — *(skórka, woda różana — wedle zasobu spiżarni)*
-
-Przepis robi dwie rzeczy: (a) **3 miary żytniej : 1 pszennej** → „czego więcej w cieście, tego ciężej w słoju" rozstrzyga A vs B; (b) **wymienia dozwolone korzenie** → nazwy spoza listy (gałka, ziele angielskie, papryka…) gracz odrzuca. *Świadomy efekt:* znajomość/uważne czytanie przepisu = przejście testu „jesteś swój".
-> Wariant trudniejszy (opcja): przepis podaje tylko proporcje mąk + „korzenie wedle sztuki" (bez nazw) → pełna identyfikacja zmysłowa, dystraktory odrzucane węchem/historią. Domyślnie zostaje wersja z nazwami (łagodniejsza, mocniej spina motyw „znaj przepis").
-
-### Karta rozpiski (do wypełnienia przez graczy)
-
-```
-PIEKARZ MUSI WIEDZIEĆ, CO JEST W KTÓRYM SŁOJU.
-Wpiszcie nazwę przy każdej literze. Uwaga: nazw jest więcej niż słojów —
-nie każda pasuje. Słojów nie otwierać.
-
-  A: ____________________
-  B: ____________________
-  C: ____________________
-  D: ____________________
-  E: ____________________
-  F: ____________________
-  G: ____________________
-```
-
-### Dystraktory (nazwy bez słoika) — propozycja 4
-
-| Nazwa-pułapka | Typ | Dlaczego myli |
-|---|---|---|
-| **gałka muszkatołowa** | kanoniczna, ale nieobecna | jest w prawdziwym pierniku → kusi „przecież pasuje"; ale nie ma jej w tym przepisie ani w słojach. Nagradza czytanie przepisu. |
-| **ziele angielskie** | myląco-zmysłowa | zapach blisko goździków, ziarna jak pieprz → łatwo pomylić z D lub G. |
-| **kolendra** | myląco-zmysłowa | nasiona grzechoczą jak pieprz; nuta cytrusowo-korzenna myli. |
-| **papryka mielona** | anachronizm (smaczek) | Nowy Świat, XVI w. — odrzucalna i węchem/kolorem, i historią (`lore/fakty-vs-fabula.md`). |
-
-→ 7 słojów + 7 prawdziwych nazw + 4 dystraktory = **11 kartoników z nazwami**.
+→ 5 słojów + 5 prawdziwych nazw + 5 dystraktorów = **10 kartoników z nazwami**.
 
 > **Koperty fizyczne**: zmontowane w `envelopes/miasto-4-Z5.md` i `envelopes/krzyzacy-4-Z9.md` (meta: kiedy wręczyć/nie, co MG mówi, rekwizyty). Teksty niżej są ich źródłem.
 
