@@ -110,7 +110,7 @@ Ta sama mechanika i rekwizyty (1 grupa krzyżacka — patrz `concept/03-faza-2b-
 
 ## Otwarte pytania
 
-1. ~~Ile słoiczków, ile nazw~~ ROZSTRZYGNIĘTE [2026-06-02, Oskar]: **5 słojów (A–E) + 10 nazw** (5 prawdziwych: cynamon, mąka żytnia, mąka pszenna, goździki, imbir + 5 dystraktorów). Zestaw 7-słojowy (z miodem i pieprzem) — superseded, w `git log`.
+1. ~~Ile słoiczków, ile nazw~~ ROZSTRZYGNIĘTE [2026-06-02, Oskar]: **6 słojów (A–F) + 10 nazw** (6 prawdziwych: cynamon, mąka żytnia, mąka pszenna, goździki, imbir, **miód** + 4 dystraktory: nutmeg, cardamom, pepper, buckwheat flour). Etap pośredni 5-słojowy (bez miodu) i pierwotny 7-słojowy — superseded, w `git log`.
 2. ~~Które kanały~~ ROZSTRZYGNIĘTE [2026-05-31]: **słuch + węch + ważenie w dłoni**; bez smaku, bez otwierania słoików.
 3. ~~Wariant dwóch mąk~~ ROZSTRZYGNIĘTE [2026-05-31]: **(I) rye-dominant** (więcej żytniej = cięższy słoiczek).
 4. **Strategia dystraktorów** — draft: **miks** (myląco-zmysłowe + 1 kanoniczna-nieobecna + 1 anachroniczna). Do potwierdzenia.
@@ -180,19 +180,20 @@ Pointy nie trzeba porzucać — trzeba **świadomie wybrać** framing (zgodnie z
 
 > To propozycja tekstów i konkretów „pod druk". Wszystko edytowalne — celem jest dać Ci punkt startu, nie wersję ostateczną.
 
-### Zestaw słoiczków — SPEC AKTYWNA [2026-06-02, Oskar]: 5 słojów (A–E)
+### Zestaw słoiczków — SPEC AKTYWNA [2026-06-02, Oskar]: 6 słojów (A–F)
 
-> **Zmiana 7→5.** Oskar podał świeżą, węższą specyfikację: **5 poprawnych** (cynamon, mąka żytnia, mąka pszenna, goździki, imbir) + **5 dystraktorów**. **Usunięte z poprzedniego (7-słojowego) wariantu:** **miód** (kanał „chlupot"/płyn) i **pieprz** — pieprz wraca jako *nazwa-dystraktor* (patrz niżej). Stary 7-słojowy zestaw → `git log` (superseded). Oznaczenie słojów: **litery A–E** (do podmiany na kształty słoików, jeśli Oskar dostarczy).
+> **Ewolucja 7→5→6.** Finalnie: **6 poprawnych** (cynamon, mąka żytnia, mąka pszenna, goździki, imbir, **miód**) + **4 dystraktory**. Miód **wraca** jako 6. słój (kanał „chlupot"/płyn + duży ciężar — najłatwiejszy do rozpoznania). **Pieprz** zostaje *nazwą-dystraktorem* (nie słojem). Stary 7-słojowy zestaw → `git log` (superseded). Oznaczenie słojów: **litery A–F** (do podmiany na kształty słoików, jeśli Oskar dostarczy).
 
 | Słój | Zawartość (klucz MG) | Forma (pod kanały) | Sygnały rozpoznawcze | Oś, która identyfikuje |
 |---|---|---|---|---|
-| A | **mąka żytnia** | **pełniej napełniony — najcięższy** | bezwonna, cisza, **wyraźnie ciężka** | **ciężar + przepis** (żyta 3× więcej → cięższy słój = żytnia) |
+| A | **mąka żytnia** | **pełniej napełniony — najcięższy proszek** | bezwonna, cisza, **wyraźnie ciężka** | **ciężar + przepis** (żyta 3× więcej → cięższy słój = żytnia) |
 | B | **mąka pszenna** | mniej napełniony (lżejszy) | bezwonna, cisza, lżejsza | **ciężar + przepis** (lżejsza z dwóch mąk) |
 | C | **cynamon** | mielony | cisza/szelest pyłu, mocny słodko-korzenny zapach | **zapach** (słodko-korzenny) |
 | D | **goździki** | **całe pąki** | **grzechot twardych pąków**, bardzo mocny zapach | **słuch (grzechot) + zapach** |
 | E | **imbir** | mielony | bezgłośny pył, zapach ostro-korzenny | **zapach** (ostry, „gryzący") |
+| F | **miód** | **szczelnie zamknięty (płyn!)** | **chlupot**, słodko-woskowy zapach, ciężki | **słuch (chlupot) + zapach + ciężar** — najłatwiejszy |
 
-> Domknięcie sensoryczne: **zapach** izoluje C/E (i wzmacnia D); **słuch/sypkość** wyróżnia D (całe pąki grzechoczą, reszta to milczący pył); **ciężar** rozdziela bezwonną parę A/B — ale rozstrzyga ją dopiero **przepis** (żyto:pszenica = 3:1). Bez przepisu A vs B to rzut monetą — dlatego przepis jest **rekwizytem player-facing**, nie przypisem.
+> Domknięcie sensoryczne: **słuch/sypkość** ma teraz dwa odrębne sygnały — **grzechot** (D goździki; uwaga: dystraktor *pepper* grzechocze tak samo) i **chlupot** (F miód, jedyny płyn); reszta to milczący pył. **Zapach** izoluje C/E (i wzmacnia D/F). **Ciężar** rozdziela bezwonną parę A/B — ale rozstrzyga ją dopiero **przepis** (żyto:pszenica = 3:1). Bez przepisu A vs B to rzut monetą — dlatego przepis jest **rekwizytem player-facing**, nie przypisem.
 
 ### Karta przepisu — REKWIZYT PLAYER-FACING (EN, #70), funkcyjny nie ozdobny
 
@@ -212,14 +213,14 @@ Przepis robi dwie rzeczy: (a) **rye 3 : wheat 1** → „czego w cieście więce
 
 ### Lista etykiet — PLAYER-FACING (EN, #70): 10 nazw = 5 prawdziwych + 5 dystraktorów
 
-Gracze mają **przed sobą wszystkie 10 nazw** (kartoniki/lista) — nazw jest więcej niż słojów, więc nie da się „każda po kolei". Kolejność na liście pomieszana (nie grupować prawdziwych/fałszywych):
+Gracze mają **przed sobą wszystkie 10 nazw** (kartoniki/lista) — nazw jest więcej niż słojów (6 słojów, 10 nazw → 4 zbędne), więc nie da się „każda po kolei". Kolejność na liście pomieszana (nie grupować prawdziwych/fałszywych):
 
 ```
-buckwheat flour   ·   cinnamon   ·   barley flour   ·   cloves   ·   nutmeg
+buckwheat flour   ·   cinnamon   ·   honey   ·   cloves   ·   nutmeg
 ginger   ·   wheat flour   ·   cardamom   ·   rye flour   ·   pepper
 ```
 
-### Karta rozpiski — PLAYER-FACING (EN), do wypełnienia (A–E)
+### Karta rozpiski — PLAYER-FACING (EN), do wypełnienia (A–F)
 
 ```
 THE BAKER MUST KNOW WHAT IS IN EACH JAR.
@@ -231,11 +232,12 @@ not every name belongs. Do not open the jars.
   Jar C: ____________________
   Jar D: ____________________
   Jar E: ____________________
+  Jar F: ____________________
 ```
 
-> Klucz MG (NIE dla graczy): **A** rye flour · **B** wheat flour · **C** cinnamon · **D** cloves · **E** ginger. (Litery przydzielone roboczo — przy produkcji wymieszać.)
+> Klucz MG (NIE dla graczy): **A** rye flour · **B** wheat flour · **C** cinnamon · **D** cloves · **E** ginger · **F** honey. (Litery przydzielone roboczo — przy produkcji wymieszać.)
 
-### Dystraktory (nazwy bez słoika) — 5, każdy z osią, która go pokonuje
+### Dystraktory (nazwy bez słoika) — 4, każdy z osią, która go pokonuje
 
 | Nazwa-pułapka | Myli z (poprawnym) | Oś, która ją pokonuje | Czemu myli (i czemu okresowo OK) |
 |---|---|---|---|
@@ -243,12 +245,12 @@ not every name belongs. Do not open the jars.
 | **cardamom** (kardamon) | ginger (E) | **zapach** + przepis | aromatyczny korzeń, myli z ostrym imbirem; w palecie wiki, ale nie w tym przepisie. Stary Świat ✓ |
 | **pepper** (pieprz) | cloves (D) | **zapach** (+ przepis) | **pułapka słuchu**: ziarna pieprzu grzechoczą tak jak całe goździki → dźwięk NIE rozróżnia, dopiero zapach (ostry vs goździkowy). Stary Świat ✓ |
 | **buckwheat flour** (mąka gryczana) | rye flour (A) | **tylko przepis** | bezwonny pył jak każda mąka — zmysły nie odrzucą; pokonuje wyłącznie przepis (żyto+pszenica, nie gryka). Gryka w Toruniu od XIII w. (wiki) ✓ |
-| **barley flour** (mąka jęczmienna) | wheat flour (B) | **tylko przepis** | jw. — bezwonny pył, recipe-gated. Jęczmień obecny (wiki) ✓ |
 
-> **Bilans do decyzji (advisor):** 3 dystraktory przyprawowe (pokonywane **węchem**) + 2 mączne (pokonywane **wyłącznie przepisem**). To wzmacnia rolę przepisu jako „serca zagadki" — ale 2 z 5 to test czytania, nie zmysłów. Jeśli chcesz wierniej oddać „oceniają zmysłami": podmień jeden dystraktor mączny na przyprawowy **coriander** (kolendra — Stary Świat ✓, nasiona grzechoczą jak pieprz, nuta cytrusowo-korzenna → myli z D/pieprzem, pokonywany **węchem**). Wynik: 4 sensoryczne + 1 mączny.
-> **Anachronizm-smaczek (opcja, NIE w domyślnej piątce):** jeśli chcesz nagrodzić znawców historii — dorzuć **paprika** lub **allspice** (oba Nowy Świat, niemożliwe 1454; uwaga: stary draft mylnie traktował „ziele angielskie/allspice" jako tylko „niekanoniczne" — to anachronizm jak papryka). Odrzucalne i węchem/kolorem, i datą. Nie może być wymagane (gracz nie musi znać dat, by wygrać zmysłami).
+> **Bilans:** 3 dystraktory przyprawowe (pokonywane **węchem**) + 1 mączny (pokonywany **wyłącznie przepisem**). Mączny zostaje jeden — wystarczy, by zmusić do sprawdzenia listy korzeni/mąk w przepisie, bez przeciążania zagadki testem czytania. Wszystkie 4 są dodatkowo **recipe-gated** (żadnego nie ma w przepisie), więc przepis jest wspólnym backstopem.
+> **Opcja podmiany:** chcesz dystraktor czysto sensoryczny zamiast mącznego → **coriander** (kolendra — Stary Świat ✓, nasiona grzechoczą jak pieprz/goździki, nuta cytrusowo-korzenna → pułapka słuchu, pokonywany **węchem**). Wynik: 4 sensoryczne, 0 mącznych.
+> **Anachronizm-smaczek (opcja, NIE w domyślnej czwórce):** by nagrodzić znawców historii — podmień jeden na **paprika** lub **allspice** (oba Nowy Świat, niemożliwe 1454; uwaga: stary draft mylnie traktował „ziele angielskie/allspice" jako tylko „niekanoniczne" — to anachronizm jak papryka). Odrzucalne węchem/kolorem i datą; nie może być wymagane (gracz nie musi znać dat, by wygrać zmysłami).
 
-→ 5 słojów + 5 prawdziwych nazw + 5 dystraktorów = **10 kartoników z nazwami**.
+→ 6 słojów + 6 prawdziwych nazw + 4 dystraktory = **10 kartoników z nazwami**.
 
 > **Koperty fizyczne**: zmontowane w `envelopes/miasto-4-Z5.md` i `envelopes/krzyzacy-4-Z9.md` (meta: kiedy wręczyć/nie, co MG mówi, rekwizyty). Teksty niżej są ich źródłem.
 
