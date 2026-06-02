@@ -2,207 +2,260 @@
 <html lang="pl">
 <head>
 <meta charset="UTF-8">
-<title>Jordan — Ściąga aktora (Piotr)</title>
+<title>Jordan — Ściąga Piotra</title>
 <style>
-@page { size: A4; margin: 10mm 12mm; }
+@page { size: A4; margin: 9mm 10mm; }
 * { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: "Segoe UI", system-ui, sans-serif; font-size: 9pt; color: #2a1a10; background: #fff; }
+body { font-family: "Segoe UI", system-ui, sans-serif; font-size: 8.5pt; color: #2a1a10; background: #fff; line-height: 1.38; }
 
 .banner {
-  background: #3a2a18; color: #fff; padding: 7px 12px;
-  border-radius: 5px 5px 0 0; font-weight: 700; font-size: 12pt;
+  background: #3a2a18; color: #fff; padding: 6px 12px;
   -webkit-print-color-adjust: exact; print-color-adjust: exact;
 }
-.banner-sub { font-size: 8pt; font-weight: 400; opacity: .8; margin-top: 1px; }
-.card { border: 2pt solid #8a6040; border-radius: 5px; overflow: hidden; margin-bottom: 3mm; }
-.section { padding: 6px 11px; border-bottom: 1pt solid #ddd; }
-.section:last-child { border-bottom: none; }
-.sh { font-weight: 700; font-size: 7.5pt; text-transform: uppercase; letter-spacing: .06em; margin-bottom: 4px; }
-.sh.tr-sh { color: #9a2e22; }
-.sh.kz-sh { color: #1e3a6a; }
-.sh.gen { color: #5a3a10; }
+.banner h1 { font-size: 12pt; font-weight: 700; }
+.banner-sub { font-size: 7.5pt; opacity: .8; margin-top: 1px; }
 
-/* Role headers */
-.role-banner {
-  display: flex; align-items: center; gap: 8px;
-  padding: 5px 11px; font-weight: 700; font-size: 10pt;
+.character {
+  background: #f5ede0; border-bottom: 1.5pt solid #a08060;
+  padding: 7px 12px;
   -webkit-print-color-adjust: exact; print-color-adjust: exact;
 }
-.role-tr { background: #f5e8e0; border-bottom: 1.5pt solid #d08060; color: #7a2e10; }
-.role-kz { background: #e4ecf8; border-bottom: 1.5pt solid #6080b8; color: #1e3a6a; }
-.role-badge {
-  font-size: 7.5pt; padding: 2px 8px; border-radius: 10px; font-weight: 600;
-  -webkit-print-color-adjust: exact; print-color-adjust: exact;
-}
-.tr-badge { background: #e6194b; color: #fff; }
-.kz-badge { background: #4363d8; color: #fff; }
+.ch-label { font-size: 7pt; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: #5a3010; margin-bottom: 4px; }
 
-.groups { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 4px; }
-.group-tag {
-  display: flex; align-items: center; gap: 3px;
-  padding: 2px 7px; border-radius: 10px; font-size: 8.5pt; font-weight: 600;
+.frame { border: 1.5pt solid #806040; border-top: none; overflow: hidden; }
+.cols { display: grid; grid-template-columns: 1fr 1fr; }
+.col { border-right: 1.5pt solid #a08060; }
+.col:last-child { border-right: none; }
+
+.col-head {
+  padding: 5px 11px; font-weight: 700; font-size: 9.5pt;
   -webkit-print-color-adjust: exact; print-color-adjust: exact;
 }
-.chk { font-family: "Consolas","Courier New",monospace; font-size: 11pt; margin-right: 1px; }
-.dot { width: 10px; height: 10px; border-radius: 50%; border: .5pt solid rgba(0,0,0,.2); flex-shrink:0; }
+.col-head-tr { background: #f0e4d0; border-bottom: 1pt solid #b09060; color: #5a3010; }
+.col-head-kz { background: #e4ecf8; border-bottom: 1pt solid #7090c0; color: #1a3060; }
 
-.step { display: grid; grid-template-columns: 13px 1fr; gap: 2px 6px; padding: 3px 0; border-bottom: .5pt dotted #e0d0c0; font-size: 8.8pt; line-height: 1.35; }
+.sec { padding: 5px 11px; border-bottom: .5pt solid #e8ddd4; }
+.sec:last-child { border-bottom: none; }
+.sh { font-size: 7pt; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; margin-bottom: 3px; }
+.sh-tr { color: #7a3010; }
+.sh-kz { color: #1a3060; }
+
+.opaski { display: flex; flex-wrap: wrap; gap: 3px; margin: 3px 0 4px; }
+.op {
+  display: flex; align-items: center; gap: 2px;
+  padding: 1px 5px; border-radius: 7px; font-size: 7.5pt; font-weight: 600;
+  -webkit-print-color-adjust: exact; print-color-adjust: exact;
+}
+.dot { width: 9px; height: 9px; border-radius: 50%; border: .5pt solid rgba(0,0,0,.2); flex-shrink:0; }
+.op-tr { background: #fde8d0; border: .5pt solid #d09060; color: #5a2000; }
+.op-kz { background: #deeaf8; border: .5pt solid #8aace0; color: #1a2a50; }
+
+.step { display: grid; grid-template-columns: 13px 1fr; gap: 1px 5px; padding: 3.5px 0; border-bottom: .4pt dotted #e0d4c8; font-size: 8.5pt; line-height: 1.35; }
 .step:last-child { border-bottom: none; }
 .sn { font-weight: 700; font-size: 10pt; }
-.sn.tr-sn { color: #9a2e22; }
-.sn.kz-sn { color: #1e3a6a; }
-.cue { font-style: italic; background: #fdf5e8; border-radius: 3px; padding: 1px 4px; border: .5pt solid #e8d8b0; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-.cue-kz { background: #eef2fa; border-color: #b8c8e0; }
-.note { font-size: 8pt; color: #7a6050; }
-.note.important { color: #8a2010; font-weight: 600; }
+.sn-tr { color: #7a3010; }
+.sn-kz { color: #1a3060; }
+.q   { font-style: italic; background: #fdf5e8; border-radius: 2px; padding: 0 3px; border: .4pt solid #e0c890; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+.qkz { font-style: italic; background: #eef2fa; border-radius: 2px; padding: 0 3px; border: .4pt solid #b0c4e0; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+.nb  { font-size: 7.5pt; color: #7a6050; }
+.imp { font-weight: 700; color: #7a3010; }
 
 .verify-grid { display: grid; grid-template-columns: 13px 108px 1fr; gap: 2px 7px; }
-.vr-row { display: contents; }
+.vr { display: contents; }
 .vm { font-family: "Consolas","Courier New",monospace; font-size: 11pt; padding: 2px 0; }
 .vc { font-size: 8pt; color: #5a4030; padding-top: 1px; }
-.vr { font-style: italic; font-size: 8.8pt; padding: 2px 0; }
+.vres { font-style: italic; font-size: 8.5pt; padding: 2px 0; }
 
-.done-row { display: flex; gap: 6px; flex-wrap: wrap; }
-.done-item { display: flex; align-items: center; gap: 4px; font-size: 9pt; padding: 3px 7px; border: 1pt solid #ccc; border-radius: 10px; }
-.done-chk { font-family: "Consolas","Courier New",monospace; font-size: 11pt; }
-
-.divider { height: 3mm; }
-.alert { background: #fff8e0; border: 1pt solid #d0a020; border-radius: 4px; padding: 4px 8px; font-size: 8pt; margin: 3px 0; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+/* Done */
+.done-wrap { padding: 5px 12px; background: #f2ece0; border-top: 1pt solid #c8a880; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+.done-label { font-size: 7pt; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: #5a3a10; margin-bottom: 3px; }
+.done-cols { display: flex; gap: 0; }
+.done-half { flex:1; padding-right: 8px; border-right: 1.5pt solid #a08060; }
+.done-half:last-child { padding-right: 0; padding-left: 8px; border-right: none; }
+.done-flabel { font-size: 7pt; font-weight: 700; margin-bottom: 3px; text-transform: uppercase; letter-spacing: .04em; }
+.done-flabel-tr { color: #7a3010; }
+.done-flabel-kz { color: #1a3060; }
+.done-row { display: flex; flex-wrap: wrap; gap: 4px; }
+.di { display: flex; align-items: center; gap: 3px; font-size: 8.5pt; padding: 2px 6px; border: .5pt solid #ccc; border-radius: 7px; }
+.dchk { font-family: "Consolas","Courier New",monospace; font-size: 10pt; }
 </style>
 </head>
 <body>
 
-<div class="card">
-  <div class="banner">
-    Jordan — Ściąga aktora
-    <div class="banner-sub">Piotr · Piccolo, ul. Prosta 20 · grasz Jordana — kucharza z chochlą, NIE Jana Bażyńskiego (twist finału)</div>
-  </div>
+<div class="banner">
+  <h1>Jordan (kucharz) — Ściąga Piotra</h1>
+  <div class="banner-sub">Dwie role w jednej grze · lokalizacja: Piccolo, ul. Prosta 20 · czas na grupę: 10–15 min</div>
+</div>
 
-  <!-- ═══════════════════════════════════════════════════════
-       ROLA 1: TR — talkative ally
-  ══════════════════════════════════════════════════════════ -->
-  <div class="role-banner role-tr">
-    <span class="role-badge tr-badge">TR</span>
-    Faza 2A — sojusznik grup Tajnej Rady · WCHODZISZ W ROLĘ W PEŁNI, jesteś gadatliwy i ciepły
-  </div>
+<div class="character">
+  <div class="ch-label">Kim jesteś — tło postaci</div>
+  <p>Grasz <b>Jordana</b> — kucharza z Piccolo. Tak cię znają w mieście. Twoje prawdziwe imię i tożsamość nie padają w tej grze — to twist na sam koniec, do którego gracze dochodzą sami przez szyfr. <b>Grasz wyłącznie kucharza.</b></p>
+  <p style="margin-top:3px">Luty 1454 roku. W Toruniu wrze, ale na powierzchni nic nie widać. Część mieszczan od tygodni organizuje w cieniu bunt przeciwko Zakonowi Krzyżackiemu. Ty jesteś jednym z węzłów tej sieci — przekazujesz instrukcje, weryﬁkujesz kurierów, koordynujesz timing. <b>Jesteś ostrożny z natury, działasz od lat</b> — wiesz jak rozpoznać swojego, zanim się odezwiesz szczerze.</p>
+  <p style="margin-top:3px">Twoja postać: <b>spokojny, czujny, powściągliwy</b> — ale cieplejszy niż to, co widzisz u przedstawicieli Zakonu. Gdy ktoś przejdzie weryfikację, rozmawiasz z nim jak z zaufanym. Masz czas na atmosferę, na wciągnięcie — nie spieszysz się. To ważna rozmowa.</p>
+  <p style="margin-top:3px"><b>Detal fizyczny — lekko kulejąca noga:</b> stary ból, sztywne kolano. Nic dramatycznego. Gdy stoisz i chodzisz po lokalu — widać, że jedna noga nie jest taka jak kiedyś. Nie podkreślaj, nie graj na pokaz. Po prostu niech to będzie. Uważni gracze mogą to zapamiętać — będzie miało znaczenie na samym końcu gry.</p>
+</div>
 
-  <div class="section">
-    <div class="sh tr-sh">Twoje 5 grup TR (przychodzą z hasłem, wychodzą z K3)</div>
-    <div class="groups">
-      <div class="group-tag" style="background:#E6194B;color:#fff"><span class="chk">□</span><span class="dot" style="background:#E6194B;border-color:#fff"></span>Czerwony</div>
-      <div class="group-tag" style="background:#F58231;color:#fff"><span class="chk">□</span><span class="dot" style="background:#F58231;border-color:#fff"></span>Pomarańcz.</div>
-      <div class="group-tag" style="background:#FFE119;color:#1a1a00;border:1pt solid #ccc"><span class="chk">□</span><span class="dot" style="background:#FFE119;border-color:#aaa"></span>Żółty</div>
-      <div class="group-tag" style="background:#3CB44B;color:#fff"><span class="chk">□</span><span class="dot" style="background:#3CB44B;border-color:#fff"></span>Zielony</div>
-      <div class="group-tag" style="background:#42D4F4;color:#1a2a2a;border:1pt solid #aaa"><span class="chk">□</span><span class="dot" style="background:#42D4F4;border-color:#aaa"></span>Turkusowy</div>
-    </div>
-  </div>
+<div class="frame">
+<div class="cols">
 
-  <div class="section">
-    <div class="sh tr-sh">Weryfikacja przy wejściu</div>
-    <div class="verify-grid">
-      <div class="vr-row"><span class="vm" style="color:#1a7030">✓</span><span class="vc">mówią „Jordan" + „chochla"</span><span class="vr"><span class="cue">„Myślę, że wiem, kto was przysłał."</span> → przejdź do sceny</span></div>
-      <div class="vr-row"><span class="vm" style="color:#c06010">~</span><span class="vc">jest „Jordan", brak chochli</span><span class="vr"><span class="cue">„A skąd byście mnie znali, gdyby przyjaciel was przysłał?"</span></span></div>
-      <div class="vr-row"><span class="vm" style="color:#c01030">✗</span><span class="vc">ani Jordan, ani chochla</span><span class="vr"><span class="cue">„Chyba szukacie kogoś innego na tej ulicy."</span></span></div>
-      <div class="vr-row"><span class="vm" style="color:#c01030">✗</span><span class="vc">zła opaska (KZ)</span><span class="vr"><span class="cue">„Pomyłka."</span> → zadzwoń do Oskara</span></div>
-    </div>
-  </div>
+  <!-- ══ ROLA A: TR (sojusznicy) ══ -->
+  <div class="col">
+    <div class="col-head col-head-tr">Rola A — sojusznicy (kurierzy Tajnej Rady)</div>
 
-  <div class="section">
-    <div class="sh tr-sh">Scena — bądź gadatliwy, snuj historię, angażuj</div>
-    <div class="step">
-      <span class="sn tr-sn">1</span>
-      <div><b>Posadź, nakarm, daj chwilę odetchnąć.</b> Jesteś gospodarzem — to ma wyglądać jak normalna wizyta w kuchni. Kilka sekund ciszy, potem zaczynacie. <span class="cue">„Usiądźcie. Widać, że chodziliście."</span></div>
-    </div>
-    <div class="step">
-      <span class="sn tr-sn">2</span>
-      <div><b>Opowiedz im o mieście — z nastrojem, nie spieszysz się.</b> Masz czas, a to, co mówisz, ma wagę. Możesz opisać, jak miasto wygląda od środka, co słyszałeś od ludzi na rynku:<br>
-      <span class="cue">„Coś się ma zaraz zdarzyć. Zakon trzyma to miasto od dekad — i ci, którzy liczą się w tym mieście, zdecydowali, że ta noc to ta właściwa. Koła kręcą się od tygodni. Cicho, ostrożnie. Tej nocy przestaną być ciche."</span>
-      <br><span class="note">Nie spieszysz się. Atmosfera jest ważna — oni mają to poczuć.</span></div>
-    </div>
-    <div class="step">
-      <span class="sn tr-sn">3</span>
-      <div><b>Timing i ich rola:</b> <span class="cue">„Ósme uderzenie. To wtedy. Bądźcie przy zamku zanim wybije."</span><br>
-      <span class="cue">„Ten list, który nosicie — musi trafić w odpowiednie ręce przed dzwonem. Ale najpierw musicie udowodnić, że warto wam zaufać z czymś poważniejszym."</span></div>
-    </div>
-    <div class="step">
-      <span class="sn tr-sn">4</span>
-      <div><b>Wyślij z zadaniem:</b> <span class="cue">„Nie daję wam następnego kroku na wiarę. Zasłużcie na to."</span><br>
-      Wręcz K3 w kolorze opaski. <span class="cue">„Nie otwierajcie tutaj."</span><br>
-      <span class="note important">NIE ujawniaj że jesteś Bażyńskim. To twist finału (Z7+KF). Jordan = tylko kucharz.</span></div>
-    </div>
-    <div class="step">
-      <span class="sn tr-sn">+</span>
-      <div><b>Detal fizyczny (grasz cicho):</b> lekko kulejąca noga — stary ból, sztywne kolano. Naturalnie, bez podkreślania. To forshadow tożsamości Bażyńskiego dla uważnych graczy.</div>
-    </div>
-  </div>
-
-  <div class="divider"></div>
-
-  <!-- ═══════════════════════════════════════════════════════
-       ROLA 2: KZ — oblivious info source
-  ══════════════════════════════════════════════════════════ -->
-  <div class="role-banner role-kz">
-    <span class="role-badge kz-badge">KZ</span>
-    Faza 2B Z3Z — nieświadomy cel infiltracji · Albrecht ich tu wysłał · TY o tym NIE wiesz [MVP TBD]
-  </div>
-
-  <div class="section">
-    <div class="sh kz-sh">Grupy KZ które infiltrują Piccolo (przysyła je Albrecht po K3-K)</div>
-    <div class="groups">
-      <div class="group-tag" style="background:#4363D8;color:#fff"><span class="chk">□</span><span class="dot" style="background:#4363D8;border-color:#fff"></span>Niebieski</div>
-      <div class="group-tag" style="background:#911EB4;color:#fff"><span class="chk">□</span><span class="dot" style="background:#911EB4;border-color:#fff"></span>Fioletowy</div>
-      <div class="group-tag" style="background:#f0f0f0;color:#2a1a10;border:1pt solid #888"><span class="chk">□</span><span class="dot" style="background:#f8f8f8;border-color:#888"></span>Biały</div>
-      <div class="group-tag" style="background:#9A6324;color:#fff"><span class="chk">□</span><span class="dot" style="background:#9A6324;border-color:#fff"></span>Brązowy</div>
-      <div class="group-tag" style="background:#2B2B2B;color:#fff"><span class="chk">□</span><span class="dot" style="background:#2B2B2B;border-color:#fff"></span>Czarny</div>
-    </div>
-    <div class="alert"><b>Symetria:</b> TY wysyłasz TR na zamek (do Albrechta). Albrecht wysyła KZ tutaj (do Ciebie). Grupy KZ są szpiegami Zakonu — Ty o tym NIE wiesz.<br><b>TRYB PASYWNY:</b> jesteś kucharzem w pracy. Oni wyciągają informacje, a Ty się nie orientujesz.</div>
-  </div>
-
-  <div class="section">
-    <div class="sh kz-sh">Co robisz i co „przez przypadek" ujawniasz [MVP TBD — szczegóły do ustalenia z Oskarem]</div>
-    <div class="step">
-      <span class="sn kz-sn">1</span>
-      <div>Obsługujesz ich jak normalnych klientów. Krótkie, trochę nieufne powitanie. Nie jesteś wrogi, ale nie wciągasz w rozmowę.</div>
-    </div>
-    <div class="step">
-      <span class="sn kz-sn">2</span>
-      <div>W rozmowie „przypadkowo" wymieniasz godzinę 20:30 — jakby to była normalna informacja o zamknięciu, dostawie, spotkaniu. Nie widzisz w tym nic niezwykłego. <span class="note">Dokładna scena do ustalenia z Oskarem — MVP.</span></div>
-    </div>
-    <div class="step">
-      <span class="sn kz-sn">3</span>
-      <div>Masz „zaopatrzenie" (kupony na posiłek) leżące gdzieś dostępne — nie pilnujesz ich specjalnie. Oni to zabierają. Możesz to zauważyć za późno, albo wcale. <span class="note">Dokładna mechanika — MVP.</span></div>
-    </div>
-  </div>
-
-  <div class="section">
-    <div class="sh gen">Ogólne</div>
-    <p style="font-size:8.8pt;line-height:1.4">
-      10–15 min per grupa · sygnał do Oskara gdy skończyłeś · pełny skrypt: <i>prototype/jordan-actor-script-draft.md</i>
-    </p>
-    <div style="display:flex;gap:0;align-items:stretch;margin-top:4px">
-      <div style="flex:1;padding-right:8px;border-right:1.5pt solid #c8804a">
-        <div style="font-size:7pt;font-weight:700;color:#9a2e22;text-transform:uppercase;letter-spacing:.05em;margin-bottom:3px">TR — sojusznicy</div>
-        <div class="done-row">
-          <div class="done-item"><span class="done-chk">□</span><span class="dot" style="background:#E6194B"></span>Czerwony</div>
-          <div class="done-item"><span class="done-chk">□</span><span class="dot" style="background:#F58231"></span>Pomarańcz.</div>
-          <div class="done-item"><span class="done-chk">□</span><span class="dot" style="background:#FFE119;border:1pt solid #aaa"></span>Żółty</div>
-          <div class="done-item"><span class="done-chk">□</span><span class="dot" style="background:#3CB44B"></span>Zielony</div>
-          <div class="done-item"><span class="done-chk">□</span><span class="dot" style="background:#42D4F4;border:1pt solid #aaa"></span>Turkusowy</div>
-        </div>
+    <div class="sec">
+      <div class="sh sh-tr">Kto przychodzi</div>
+      <div class="opaski">
+        <div class="op op-tr"><span class="dot" style="background:#E6194B"></span>Czerwona</div>
+        <div class="op op-tr"><span class="dot" style="background:#F58231"></span>Pomarańcz.</div>
+        <div class="op op-tr"><span class="dot" style="background:#FFE119;border-color:#aaa"></span>Żółta</div>
+        <div class="op op-tr"><span class="dot" style="background:#3CB44B"></span>Zielona</div>
+        <div class="op op-tr"><span class="dot" style="background:#42D4F4;border-color:#aaa"></span>Turkusowa</div>
       </div>
-      <div style="flex:1;padding-left:8px">
-        <div style="font-size:7pt;font-weight:700;color:#1a3060;text-transform:uppercase;letter-spacing:.05em;margin-bottom:3px">KZ — szpiedzy (Z3Z)</div>
-        <div class="done-row">
-          <div class="done-item"><span class="done-chk">□</span><span class="dot" style="background:#4363D8"></span>Niebieski</div>
-          <div class="done-item"><span class="done-chk">□</span><span class="dot" style="background:#911EB4"></span>Fioletowy</div>
-          <div class="done-item"><span class="done-chk">□</span><span class="dot" style="background:#f8f8f8;border:1pt solid #888"></span>Biały</div>
-          <div class="done-item"><span class="done-chk">□</span><span class="dot" style="background:#9A6324"></span>Brązowy</div>
-          <div class="done-item"><span class="done-chk">□</span><span class="dot" style="background:#2B2B2B"></span>Czarny</div>
-        </div>
+      <p>Kurierzy, którzy rozwiązali zagadkę logiczną i wydedukostrowali, że przychodzi tu „Jordan" — kucharz w Piccolo, który tego ranka kupił chochlę. To ich hasło. Są po twojej stronie i czekają na zadanie. Są tu dlatego, że ktoś im zaufał wystarczająco, żeby wskazać ten adres.</p>
+    </div>
+
+    <div class="sec">
+      <div class="sh sh-tr">Twoja rola i nastawienie</div>
+      <p>Jesteś ich <b>sojusznikiem i pierwszym realnym kontaktem z konspiracją</b>. Przed tą rozmową nosili list nie wiedząc po co — teraz dowiadują się co naprawdę się dzieje i jaka jest ich rola. <b>Bądź gadatliwy</b> — to nie jest zimna wymiana dokumentów. Chcesz, żeby rozumieli stawkę. Mówisz spokojnie, ale z powagą. Możesz nakarmić, dać chwilę żeby usiedli. To ma wyglądać jak spotkanie u zaufanego, a nie jak odprawa wojskowa.</p>
+    </div>
+
+    <div class="sec">
+      <div class="sh sh-tr">Weryfikacja przy wejściu — zanim cokolwiek powiesz</div>
+      <div class="verify-grid">
+        <div class="vr"><span class="vm" style="color:#1a7030">✓</span><span class="vc">mówią „Jordan" + „chochla"</span><span class="vres"><span class="q">„Myślę, że wiem, kto was przysłał."</span> Przyjmujesz ciepło — mogą zostać.</span></div>
+        <div class="vr"><span class="vm" style="color:#c06010">~</span><span class="vc">jest „Jordan", bez chochli</span><span class="vres">Blisko, ale nie wystarczy. Prowokujesz: <span class="q">„A skąd byście mnie znali, gdyby przyjaciel was przysłał?"</span> Czekasz aż sami dorzucą chochlę.</span></div>
+        <div class="vr"><span class="vm" style="color:#c01030">✗</span><span class="vc">ani imię, ani chochla</span><span class="vres"><span class="q">„Chyba szukacie kogoś innego na tej ulicy. Przepraszam."</span> Nie daj się wciągnąć dalej. Zadzwoń do Oskara.</span></div>
+        <div class="vr"><span class="vm" style="color:#c01030">✗</span><span class="vc">zła opaska (niebieska/fioletowa/ biała/brązowa/czarna)</span><span class="vres"><span class="q">„Chyba pomyłka."</span> Zadzwoń cicho do Oskara — to może być szpieg Zakonu.</span></div>
+      </div>
+    </div>
+
+    <div class="sec">
+      <div class="sh sh-tr">Scena krok po kroku — bądź gadatliwy, snuj historię</div>
+      <div class="step">
+        <span class="sn sn-tr">1</span>
+        <div><b>Posadź, nakarm, daj im chwilę.</b> To ma być normalna wizyta w kuchni — aż do momentu gdy zaczniecie rozmawiać. Kilka sekund luzu i atmosfery:<br>
+        <span class="q">„Usiądźcie. Widać, że chodziliście."</span><br>
+        <span class="q">„Dziwny dzień na przenoszenie wiadomości."</span></div>
+      </div>
+      <div class="step">
+        <span class="sn sn-tr">2</span>
+        <div><b>Opowiedz im co się dzieje w mieście — nie spieszysz się.</b> Oni mają dopiero zrozumieć, w co wchodzą. Możesz opisać atmosferę na ulicach, napiętość, co słyszałeś. Ale rdzeń przekazu:<br>
+        <span class="q">„Coś się ma zaraz zdarzyć. Zakon trzyma to miasto od dekad — i ci, którzy się tu liczą, zdecydowali, że ta noc to ta właściwa. Koła kręcą się od tygodni. Cicho, ostrożnie. Tej nocy przestaną być ciche."</span><br>
+        Możesz powiedzieć to własnymi słowami. Ważne, żeby poczuli, że to nie jest ćwiczenie.</div>
+      </div>
+      <div class="step">
+        <span class="sn sn-tr">3</span>
+        <div><b>Podaj timing i ich rolę.</b> Muszą wiedzieć kiedy i po co:<br>
+        <span class="q">„Ósme uderzenie. To wtedy. Bądźcie przy zamku zanim wybije."</span><br>
+        <span class="q">„Ten list, który nosicie — musi trafić w odpowiednie ręce przed dzwonem. Ale najpierw musicie udowodnić, że warto wam zaufać z czymś poważniejszym."</span></div>
+      </div>
+      <div class="step">
+        <span class="sn sn-tr">4</span>
+        <div><b>Wyślij z zadaniem — wręcz K3.</b> To koperta z ich następnym krokiem.<br>
+        <span class="q">„Nie daję wam następnego kroku na wiarę. Zasłużcie na to."</span><br>
+        Wręcz kopertę dopasowaną do koloru ich opaski. Potem jedno zdanie kończące:<br>
+        <span class="q">„Nie otwierajcie tutaj."</span><br>
+        Tyle. Wychodzą. Nie przedłużaj.</div>
+      </div>
+      <div class="step">
+        <span class="sn sn-tr">+</span>
+        <div><b>Trudne pytania o twoją tożsamość — nie łam się.</b> Jesteś Jordanem kucharzem i tylko tym:<br>
+        <span class="q">„Jestem po prostu człowiekiem z chochlą. Teraz — chcecie to co mam, czy nie?"</span></div>
       </div>
     </div>
   </div>
 
+  <!-- ══ ROLA B: KZ (szpiedzy) ══ -->
+  <div class="col">
+    <div class="col-head col-head-kz">Rola B — szpiedzy Zakonu (infiltracja Piccolo)</div>
+
+    <div class="sec">
+      <div class="sh sh-kz">Kto przychodzi i co naprawdę chcą</div>
+      <div class="opaski">
+        <div class="op op-kz"><span class="dot" style="background:#4363D8"></span>Niebieska</div>
+        <div class="op op-kz"><span class="dot" style="background:#911EB4"></span>Fioletowa</div>
+        <div class="op op-kz"><span class="dot" style="background:#f4f4f4;border-color:#888"></span>Biała</div>
+        <div class="op op-kz"><span class="dot" style="background:#9A6324"></span>Brązowa</div>
+        <div class="op op-kz"><span class="dot" style="background:#2B2B2B"></span>Czarna</div>
+      </div>
+      <p>Kurierzy lojalni Zakonowi — wysłani przez komtura Albrechta żeby <b>potajemnie zebrać informacje o Tajnej Radzie</b>. Wchodzą jako zwykli klienci Piccolo. Ty <b>nie wiesz, że to szpiedzy</b>. Widzisz gości restauracji, nie wrogów.</p>
+      <p style="margin-top:3px">Chcą wyciągnąć od ciebie <b>godzinę buntu (20:30 / ósme uderzenie)</b> i zabrać „zaopatrzenie" (kupony na posiłek) leżące w zasięgu. Obserwują też jak wyglądasz (brązowa szata, chochla), żeby potwierdzić Albrechowi, że trafili do właściwego miejsca.</p>
+    </div>
+
+    <div class="sec">
+      <div class="sh sh-kz">Twoja rola i nastawienie</div>
+      <p>Jesteś <b>zwykłym kucharzem w pracy</b> — nie masz powodów żeby być podejrzliwy. Jesteś trochę zajęty, hospitacyjny ale nie przesadnie wylewny wobec nieznajomych. Rozmawiasz normalnie. Możesz wspominać o wieczorze, planach, tym co będzie później — nie wiedząc, że każde słowo może być zbierane.</p>
+      <p style="margin-top:3px"><b>Nie weryfikujesz ich opaski.</b> Nie masz systemu haseł dla obcych — to tylko klienci. Obsłuż ich normalnie.</p>
+    </div>
+
+    <div class="sec" style="break-before: page;">
+      <div class="sh sh-kz">Jak prowadzić scenę — TRYB PASYWNY</div>
+      <div class="step">
+        <span class="sn sn-kz">1</span>
+        <div><b>Przyjmujesz ich jak gości.</b> Krótkie, neutralne powitanie. Nie ma serdeczności ani nieufności — po prostu kucharz w pracy:<br>
+        <span class="qkz">„Czym mogę służyć?"</span><br>
+        <span class="qkz">„Usiadajcie, zaraz się wami zajmę."</span></div>
+      </div>
+      <div class="step">
+        <span class="sn sn-kz">2</span>
+        <div><b>Godzina „wycieka" w naturalnej rozmowie.</b> Nie mówisz wprost że za chwilę będzie bunt — ale wspominasz ósme uderzenie jak coś zwyczajnego, związanego z pracą lub planami wieczoru:<br>
+        <span class="qkz">„Dziś wieczór będzie tłoczno. Ósme bicie i chciałbym już zamykać."</span><br>
+        <span class="qkz">„Przed ósmą zdążę skończyć. Potem — zobaczymy."</span><br>
+        Mówisz to bez wyróżniania, jak by to była informacja o zamknięciu baru.</div>
+      </div>
+      <div class="step">
+        <span class="sn sn-kz">3</span>
+        <div><b>„Zaopatrzenie" leży dostępnie.</b> Kupony na posiłek, kartki, coś w rodzaju notesu lub kwotowniku — leżą w widocznym miejscu, nieszczególnie zabezpieczone. Nie pilnujesz ich aktywnie. Odwracasz się do pieca, zajmujesz czymś innym. Jeśli wezmą — nie zauważasz.</div>
+      </div>
+      <div class="step">
+        <span class="sn sn-kz">4</span>
+        <div><b>Możesz też odpowiadać na pytania — nie masz powodów być tajemniczy.</b><br>
+        Pytają czy tu pracujesz? <span class="qkz">„Jordan. Gotuję tu od lat."</span><br>
+        Pytają o chochlę przy pasie? <span class="qkz">„Mój atrybut zawodowy."</span> (z lekką ironią)<br>
+        Pytają o wieczór w mieście? <span class="qkz">„Spokojnie pewnie. Jak zawsze."</span> (nie podejrzewasz nic)</div>
+      </div>
+      <div class="step">
+        <span class="sn sn-kz">+</span>
+        <div><b>Co jeśli zachowują się dziwnie lub za bardzo dopytują:</b> jesteś trochę nieufny, ale nie dramatyzujesz:<br>
+        <span class="qkz">„Dużo pytań jak na gości, którzy przyszli zjeść."</span><br>
+        Możesz się odsunąć i dać znak Oskarowi, że coś jest nie tak.</div>
+      </div>
+    </div>
+
+    <div class="sec">
+      <div class="sh sh-kz">Timing i logistyka (obie role)</div>
+      <p><b>10–15 minut per grupa.</b> Pięć grup sojuszników (ciepłe opaski) + pięć grup szpiegów (niebieskie opaski) = potencjalnie 10 grup przez Piccolo przez cały dzień. Oskar zarządza kolejką — daje ci znać kiedy nadchodzi następna. <b>Daj sygnał gdy skończyłeś z aktualną grupą</b> (SMS/umówiony znak).<br>
+      Nie musisz wiedzieć ile grup zostało — skupiasz się tylko na tej, która jest teraz przed tobą.</p>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<div class="done-wrap">
+  <div class="done-label">Odhacz po każdej grupie — gdy wyszli z Piccolo</div>
+  <div class="done-cols">
+    <div class="done-half">
+      <div class="done-flabel done-flabel-tr">Sojusznicy — ciepłe opaski (Rola A, dostali K3)</div>
+      <div class="done-row">
+        <div class="di"><span class="dchk">□</span><span class="dot" style="background:#E6194B"></span>Czerwona</div>
+        <div class="di"><span class="dchk">□</span><span class="dot" style="background:#F58231"></span>Pomarańcz.</div>
+        <div class="di"><span class="dchk">□</span><span class="dot" style="background:#FFE119;border:.5pt solid #aaa"></span>Żółta</div>
+        <div class="di"><span class="dchk">□</span><span class="dot" style="background:#3CB44B"></span>Zielona</div>
+        <div class="di"><span class="dchk">□</span><span class="dot" style="background:#42D4F4;border:.5pt solid #aaa"></span>Turkusowa</div>
+      </div>
+    </div>
+    <div class="done-half">
+      <div class="done-flabel done-flabel-kz">Szpiedzy Zakonu — niebieskie opaski (Rola B, zebrali info)</div>
+      <div class="done-row">
+        <div class="di"><span class="dchk">□</span><span class="dot" style="background:#4363D8"></span>Niebieska</div>
+        <div class="di"><span class="dchk">□</span><span class="dot" style="background:#911EB4"></span>Fioletowa</div>
+        <div class="di"><span class="dchk">□</span><span class="dot" style="background:#f4f4f4;border:.5pt solid #888"></span>Biała</div>
+        <div class="di"><span class="dchk">□</span><span class="dot" style="background:#9A6324"></span>Brązowa</div>
+        <div class="di"><span class="dchk">□</span><span class="dot" style="background:#2B2B2B"></span>Czarna</div>
+      </div>
+    </div>
+  </div>
 </div>
 
 </body>
