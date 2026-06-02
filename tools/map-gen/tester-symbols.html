@@ -114,8 +114,8 @@
   <span class="tester-tag">TESTER · Adam</span>
 </div>
 <div class="subtitle">
-  Komplet symboli Z1 do weryfikacji w terenie przed grą. <b>Ikona detalu</b> = co gracz wypatruje w realu;
-  <b>glif</b> = ten sam punkt na mapie nawigacyjnej. Sprawdź, czy detal jest rozpoznawalny z ulicy, a glif trafia w to miejsce.
+  Komplet symboli Z1 do weryfikacji w terenie przed grą. <b>Ikona detalu</b> = co gracz wypatruje w realu.
+  Sprawdź, czy detal jest rozpoznawalny z ulicy i trafia w to miejsce.
 </div>
 
 <table>
@@ -124,14 +124,13 @@
       <th>Kod</th>
       <th>Ikona detalu</th>
       <th>Co szukać w terenie</th>
-      <th>Glif na mapie</th>
       <th>Miejsce</th>
     </tr>
   </thead>
   <tbody id="rows"></tbody>
 </table>
 
-<div class="section-head">Stałe punkty orientacyjne (zawsze na mapie · bez ikony detalu — gracz poznaje je z koperty)</div>
+<div class="section-head">Stałe punkty orientacyjne (zawsze na mapie · bez ikony detalu — rozpoznawane po glifie)</div>
 <table>
   <thead>
     <tr><th>Kod</th><th></th><th>Rola</th><th>Glif na mapie</th><th>Miejsce</th></tr>
@@ -141,8 +140,7 @@
 
 <div class="footer">
   19 punktów Z1 (5 stref: N — Nowe Miasto · C — Rynek Staromiejski i okolice · S — bramy nad Wisłą · W/D — dystraktory) + 4 stałe punkty.
-  Glify są jednolite (placeholdery geometryczne) — gracz nie odróżnia łańcucha od dystraktora po kształcie.
-  Pełny przegląd ikon: <code>prototype/icons-contact-sheet.html</code>. Źródło danych: <code>tools/map-gen/map-data.js</code> + <code>tools/z1-decoder/icon-map.js</code>.
+  Pełny przegląd ikon: <code>prototype/icons-contact-sheet.html</code>. Źródło danych: <code>tools/z1-decoder/icon-map.js</code>.
 </div>
 
 <script src="map-data.js"></script>
@@ -214,11 +212,6 @@
     const tdLook = document.createElement('td');
     tdLook.className = 'look'; tdLook.textContent = d.look;
     tr.appendChild(tdLook);
-
-    const tdGlyph = document.createElement('td');
-    tdGlyph.className = 'glyph-cell';
-    tdGlyph.appendChild(glyphSvg(Z1_GLYPHS[code]));
-    tr.appendChild(tdGlyph);
 
     const tdName = document.createElement('td');
     tdName.className = 'place'; tdName.textContent = p.name;
