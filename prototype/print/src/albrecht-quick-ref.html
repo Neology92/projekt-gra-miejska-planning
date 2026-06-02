@@ -4,220 +4,205 @@
 <meta charset="UTF-8">
 <title>Komtur Albrecht — Ściąga aktora (Zosia)</title>
 <style>
-@page { size: A4; margin: 10mm 12mm; }
+@page { size: A4; margin: 8mm 9mm; }
 * { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: "Segoe UI", system-ui, sans-serif; font-size: 9pt; color: #2a1a10; background: #fff; }
+body { font-family: "Segoe UI", system-ui, sans-serif; font-size: 8.5pt; color: #2a1a10; background: #fff; }
 
 .banner {
-  background: #1e3050; color: #fff; padding: 7px 12px;
-  border-radius: 5px 5px 0 0; font-weight: 700; font-size: 12pt;
+  background: #1e3050; color: #fff; padding: 6px 11px;
+  font-weight: 700; font-size: 11.5pt;
   -webkit-print-color-adjust: exact; print-color-adjust: exact;
 }
-.banner-sub { font-size: 8pt; font-weight: 400; opacity: .8; margin-top: 1px; }
-.card { border: 2pt solid #3a5070; border-radius: 5px; overflow: hidden; margin-bottom: 3mm; }
-.section { padding: 6px 11px; border-bottom: 1pt solid #ddd; }
-.section:last-child { border-bottom: none; }
-.sh { font-weight: 700; font-size: 7.5pt; text-transform: uppercase; letter-spacing: .06em; margin-bottom: 4px; }
-.sh.kz-sh { color: #1e3a6a; }
-.sh.tr-sh { color: #9a2e22; }
-.sh.gen { color: #3a3a3a; }
+.banner-sub { font-size: 7.5pt; font-weight: 400; opacity: .8; }
 
-.role-banner {
-  display: flex; align-items: center; gap: 8px;
-  padding: 5px 11px; font-weight: 700; font-size: 10pt;
+/* Two-column layout */
+.cols { display: grid; grid-template-columns: 1fr 1fr; gap: 0; border: 1.5pt solid #5070a0; border-radius: 0 0 5px 5px; overflow: hidden; }
+.col { padding: 0; }
+.col-kz { border-right: 1pt solid #8090b0; }
+
+.col-banner {
+  padding: 4px 10px; font-weight: 700; font-size: 9.5pt;
+  display: flex; align-items: center; gap: 6px;
   -webkit-print-color-adjust: exact; print-color-adjust: exact;
 }
-.role-kz { background: #e4ecf8; border-bottom: 1.5pt solid #6080b8; color: #1e3a6a; }
-.role-tr { background: #fae8e0; border-bottom: 1.5pt solid #c07050; color: #7a2e10; }
-.role-badge { font-size: 7.5pt; padding: 2px 8px; border-radius: 10px; font-weight: 600; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-.kz-badge { background: #4363d8; color: #fff; }
-.tr-badge { background: #e6194b; color: #fff; }
+.col-banner-kz { background: #d8e8f8; border-bottom: 1.5pt solid #6080b8; color: #1a3060; }
+.col-banner-tr { background: #f8e4d8; border-bottom: 1.5pt solid #c07050; color: #7a2e10; }
+.badge { font-size: 7pt; padding: 1px 6px; border-radius: 8px; font-weight: 700; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+.badge-kz { background: #4363d8; color: #fff; }
+.badge-tr { background: #e6194b; color: #fff; }
 
-.groups { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 4px; }
-.group-tag {
-  display: flex; align-items: center; gap: 3px;
-  padding: 2px 7px; border-radius: 10px; font-size: 8.5pt; font-weight: 600;
+.sec { padding: 4px 10px; border-bottom: .5pt solid #ddd; }
+.sec:last-child { border-bottom: none; }
+.sh { font-weight: 700; font-size: 7pt; text-transform: uppercase; letter-spacing: .05em; margin-bottom: 3px; }
+.sh-kz { color: #1a3060; }
+.sh-tr { color: #8a2010; }
+
+/* Groups strip */
+.grps { display: flex; flex-wrap: wrap; gap: 3px; }
+.gt {
+  display: flex; align-items: center; gap: 2px;
+  padding: 1px 6px; border-radius: 8px; font-size: 7.5pt; font-weight: 600;
   -webkit-print-color-adjust: exact; print-color-adjust: exact;
 }
-.chk { font-family: "Consolas","Courier New",monospace; font-size: 11pt; margin-right: 1px; }
-.dot { width: 10px; height: 10px; border-radius: 50%; border: .5pt solid rgba(0,0,0,.2); flex-shrink:0; }
+.chk { font-family: "Consolas","Courier New",monospace; font-size: 10pt; }
+.dot { width: 9px; height: 9px; border-radius: 50%; border: .5pt solid rgba(0,0,0,.2); flex-shrink:0; }
 
-.step { display: grid; grid-template-columns: 13px 1fr; gap: 2px 6px; padding: 3px 0; border-bottom: .5pt dotted #e0d0c0; font-size: 8.8pt; line-height: 1.35; }
+/* Steps */
+.step { display: grid; grid-template-columns: 11px 1fr; gap: 1px 5px; padding: 2.5px 0; border-bottom: .4pt dotted #ddd; font-size: 8.5pt; line-height: 1.3; }
 .step:last-child { border-bottom: none; }
-.sn { font-weight: 700; font-size: 10pt; }
-.sn.kz-sn { color: #1e3a6a; }
-.sn.tr-sn { color: #9a2e22; }
-.cue { font-style: italic; padding: 1px 4px; border-radius: 3px; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-.cue-kz { background: #eef2fa; border: .5pt solid #b0c0d8; }
-.cue-tr { background: #fdf0e8; border: .5pt solid #d0a888; }
-.note { font-size: 8pt; color: #7a6050; }
-.note.imp { color: #1e3a6a; font-weight: 600; }
+.sn { font-weight: 700; font-size: 9.5pt; }
+.sn-k { color: #1a3060; }
+.sn-t { color: #8a2010; }
+.cq { font-style: italic; background: #eef2fa; border-radius: 2px; padding: 0 3px; border: .5pt solid #b0c0d8; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+.cq-t { background: #fdf0e8; border-color: #d0a888; }
+.nb { font-size: 7.5pt; color: #7a6050; }
+.nb-imp { color: #1a3060; font-weight: 600; }
 
-/* Patrol cycle */
-.patrol { display: flex; gap: 5px; margin: 3px 0; }
-.phase { flex: 1; border-radius: 5px; padding: 5px 7px; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-.phase-a { background: #e4f4e0; border: 1.5pt solid #4a9040; }
-.phase-b { background: #fdf0d4; border: 1.5pt solid #c09020; }
-.phase-c { background: #fce8e4; border: 1.5pt solid #c03030; }
-.pl { font-weight: 700; font-size: 9.5pt; margin-bottom: 1px; }
-.pd { font-size: 8pt; line-height: 1.3; }
-.steal-now { font-weight: 700; color: #1a6a10; font-size: 8pt; margin-top: 2px; }
-.caution { color: #7a5000; font-size: 8pt; font-weight: 600; margin-top: 2px; }
-.no-steal { font-weight: 700; color: #9a1a1a; font-size: 8pt; margin-top: 2px; }
+/* Patrol table */
+.patrol-tbl { width: 100%; border-collapse: collapse; margin: 2px 0; }
+.patrol-tbl td { padding: 3px 5px; font-size: 8pt; line-height: 1.25; vertical-align: top; border: .5pt solid #ccc; }
+.ph-a { background: #e8f4e0; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+.ph-b { background: #fdf0d4; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+.ph-c { background: #fce8e4; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+.ph-lbl { font-weight: 700; font-size: 8.5pt; }
+.steal { color: #1a6a10; font-weight: 700; font-size: 7.5pt; }
+.caut  { color: #7a5000; font-weight: 600; font-size: 7.5pt; }
+.nst   { color: #9a1a1a; font-weight: 700; font-size: 7.5pt; }
 
-.react-grid { display: grid; grid-template-columns: 13px 1fr; gap: 2px 6px; }
-.rr { display: contents; }
-.rm { font-family: "Consolas","Courier New",monospace; font-size: 11pt; padding: 2px 0; }
+/* Reactions mini-table */
+.react { width: 100%; border-collapse: collapse; }
+.react td { padding: 2px 4px; font-size: 8pt; border-bottom: .4pt dotted #ddd; vertical-align: top; }
+.react tr:last-child td { border-bottom: none; }
+.ri { font-family: "Consolas","Courier New",monospace; font-size: 10pt; width: 14px; }
 
-.done-row { display: flex; gap: 6px; flex-wrap: wrap; }
-.done-item { display: flex; align-items: center; gap: 4px; font-size: 9pt; padding: 3px 7px; border: 1pt solid #ccc; border-radius: 10px; }
-.done-chk { font-family: "Consolas","Courier New",monospace; font-size: 11pt; }
+/* Done row spanning both columns */
+.done-full { padding: 4px 10px; background: #f5f0ea; border-top: 1pt solid #c8b8a0; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+.done-label { font-weight: 700; font-size: 7.5pt; text-transform: uppercase; letter-spacing: .05em; color: #5a3a10; margin-bottom: 3px; }
+.done-row { display: flex; gap: 5px; flex-wrap: wrap; }
+.di { display: flex; align-items: center; gap: 3px; font-size: 8.5pt; padding: 2px 6px; border: .5pt solid #ccc; border-radius: 8px; }
+.dchk { font-family: "Consolas","Courier New",monospace; font-size: 10pt; }
 
-.alert { border-radius: 4px; padding: 4px 8px; font-size: 8pt; margin: 3px 0; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-.alert-kz { background: #e8f0fa; border: 1pt solid #7090c0; }
-.alert-tr { background: #fae8e0; border: 1pt solid #c07050; }
-.divider { height: 2.5mm; }
+.alert { border-radius: 3px; padding: 3px 6px; font-size: 7.5pt; margin: 2px 0; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+.al-k { background: #deeaf8; border: .5pt solid #7090c0; }
+.al-t { background: #f8e4d8; border: .5pt solid #c07050; }
 </style>
 </head>
 <body>
 
-<div class="card">
-  <div class="banner">
-    Komtur Albrecht — Ściąga aktora
-    <div class="banner-sub">Zosia · dwie role: (1) zadaniodawca dla KZ na Przedzamczu, (2) cel kradzieży dla TR przy zamku</div>
-  </div>
+<div class="banner">Komtur Albrecht — Ściąga aktora <span class="banner-sub">· Zosia · dwie role: bramkarz KZ + cel kradzieży TR · finał 20:30 Przedzamcze</span></div>
 
-  <!-- ═══════════════════════════════════════════════════════
-       ROLA 1: KZ — gatekeeper "dowiedźcie wartości"
-  ══════════════════════════════════════════════════════════ -->
-  <div class="role-banner role-kz">
-    <span class="role-badge kz-badge">KZ</span>
-    Faza 2B — bramkarz zadań · grupy KZ muszą UDOWODNIĆ wartość, zanim dostaniesz ich list [MVP TBD]
-  </div>
+<div class="cols">
 
-  <div class="section">
-    <div class="sh kz-sh">Twoje 5 grup KZ (przychodzą po Z3Z — już byli u Jordana/Piccolo)</div>
-    <div class="groups">
-      <div class="group-tag" style="background:#4363D8;color:#fff"><span class="chk">□</span><span class="dot" style="background:#4363D8;border-color:#fff"></span>Niebieski</div>
-      <div class="group-tag" style="background:#911EB4;color:#fff"><span class="chk">□</span><span class="dot" style="background:#911EB4;border-color:#fff"></span>Fioletowy</div>
-      <div class="group-tag" style="background:#f0f0f0;color:#2a1a10;border:1pt solid #888"><span class="chk">□</span><span class="dot" style="background:#f8f8f8;border-color:#888"></span>Biały</div>
-      <div class="group-tag" style="background:#9A6324;color:#fff"><span class="chk">□</span><span class="dot" style="background:#9A6324;border-color:#fff"></span>Brązowy</div>
-      <div class="group-tag" style="background:#2B2B2B;color:#fff"><span class="chk">□</span><span class="dot" style="background:#2B2B2B;border-color:#fff"></span>Czarny</div>
-    </div>
-    <div class="alert alert-kz"><b>Ton:</b> arogancki, wymagający, przekonany o wyższości Zakonu — ale gotowy zaakceptować tych, którzy dowiodą swojej wartości. Nie jesteś wrogi; jesteś wymagający. Słowa kosztują mało — czyny to inna sprawa.</div>
-  </div>
+  <!-- ══════════════ ROLA KZ ══════════════ -->
+  <div class="col col-kz">
+    <div class="col-banner col-banner-kz"><span class="badge badge-kz">KZ</span> Zadaniodawca — „dowiedźcie wartości"</div>
 
-  <div class="section">
-    <div class="sh kz-sh">Scena z KZ — przebieg [MVP TBD — szczegóły z Oskarem]</div>
-    <div class="step">
-      <span class="sn kz-sn">1</span>
-      <div><b>Przyjmujesz ich jako potencjalnych lojalnych poddanych Zakonu.</b> Możliwe otwarcie:<br>
-      <span class="cue cue-kz">„Przyszliście do komtura. Dobrze. Zakon nie szuka każdego — ale tych, którzy naprawdę mu służą, przyjmuje."</span></div>
-    </div>
-    <div class="step">
-      <span class="sn kz-sn">2</span>
-      <div><b>Ale słowa to za mało.</b> Zanim przyjmiesz od nich jakikolwiek list lub informację, muszą udowodnić, że na to zasłużyli:<br>
-      <span class="cue cue-kz">„Każdy twierdzi, że jest po naszej stronie. Dowiedźcie swojej wartości — dopiero wtedy wasz list trafi w moje ręce."</span><br>
-      Wręcz K3-K (kopertę z zadaniem opcjonalnym Z8/Z9/Z10 odpowiednim dla danej grupy). <span class="note imp">Kopertę wręczasz milcząco, bez komentarza do zawartości. Kończysz interakcję krótkim gestem — oni odchodzą.</span></div>
-    </div>
-    <div class="step">
-      <span class="sn kz-sn">3</span>
-      <div><b>Gdy wracają po wykonaniu zadania:</b> przyjmujesz wynik z minimalnym uznaniem — jakbyś oczekiwał nie mniej. Możesz powiedzieć:<br>
-      <span class="cue cue-kz">„Zakon pamięta tych, którzy działają."</span><br>
-      <span class="note">Szczegółowa mechanika powrotu i co konkretnie odbierasz — do ustalenia z Oskarem (MVP).</span></div>
-    </div>
-  </div>
-
-  <div class="divider"></div>
-
-  <!-- ═══════════════════════════════════════════════════════
-       ROLA 2: TR — theft scene target
-  ══════════════════════════════════════════════════════════ -->
-  <div class="role-banner role-tr">
-    <span class="role-badge tr-badge">TR</span>
-    Faza 2B Z3 — cel kradzieży dla mieszczan · twoja lista musi być do ukradzenia
-  </div>
-
-  <div class="section">
-    <div class="sh tr-sh">Grupy TR które kradną twoją listę</div>
-    <div class="groups">
-      <div class="group-tag" style="background:#E6194B;color:#fff"><span class="chk">□</span><span class="dot" style="background:#E6194B;border-color:#fff"></span>Czerwony</div>
-      <div class="group-tag" style="background:#F58231;color:#fff"><span class="chk">□</span><span class="dot" style="background:#F58231;border-color:#fff"></span>Pomarańcz.</div>
-      <div class="group-tag" style="background:#FFE119;color:#1a1a00;border:1pt solid #ccc"><span class="chk">□</span><span class="dot" style="background:#FFE119;border-color:#aaa"></span>Żółty</div>
-      <div class="group-tag" style="background:#3CB44B;color:#fff"><span class="chk">□</span><span class="dot" style="background:#3CB44B;border-color:#fff"></span>Zielony</div>
-      <div class="group-tag" style="background:#42D4F4;color:#1a2a2a;border:1pt solid #aaa"><span class="chk">□</span><span class="dot" style="background:#42D4F4;border-color:#aaa"></span>Turkusowy</div>
-    </div>
-    <div class="alert alert-tr"><b>Twoje 3 zadania TR:</b> (1) wciel się w wroga; (2) pokaż listę — sam z siebie; (3) daj uczciwe okno do kradzieży — każda grupa MUSI zdołać zabrać listę.</div>
-  </div>
-
-  <div class="section">
-    <div class="sh tr-sh">Scena — przebieg</div>
-    <div class="step">
-      <span class="sn tr-sn">1</span>
-      <div><b>Podejście:</b> Udają donosicieli z informacjami o spiskowcach. Przyjmujesz ich pogardą:<br>
-      <span class="cue cue-tr">„Ty. Czego chcesz? ...Informacje, tak? Wszyscy w tym mieście nagle mają informacje."</span><br>
-      Gdy sugerują nazwiska: <span class="cue cue-tr">„Nazwiska. Masz nazwiska. Dobrze. Lojalni poddani są tak rzadcy."</span></div>
-    </div>
-    <div class="step">
-      <span class="sn tr-sn">2</span>
-      <div><b>Pokaż listę — z własnej pychy.</b> Sam sięgasz, żeby „sprawdzić czy już wiemy":<br>
-      <span class="cue cue-tr">„Zobaczę, czy wasz zdrajca jest już nam znany... ha. Zakon niczego nie zapomina."</span><br>
-      Czytasz jedno-dwa nazwiska. Potem <b>odkładasz listę na stałe miejsce</b> (parapet/skrzynka). Gest naturalny — skończyłeś z nią na chwilę.</div>
-    </div>
-    <div class="step">
-      <span class="sn tr-sn">3</span>
-      <div><b>Wręcz K-Z3b w milczeniu, odejdź w patrol.</b> Jedno zdanie: <span class="cue cue-tr">„Dość. Skończyliśmy."</span> Odwracasz się i zaczynasz chodzić w kółko — NIE stoisz nad listą.</div>
-    </div>
-  </div>
-
-  <div class="section">
-    <div class="sh tr-sh">Cykl patrolu (~30–40 sek)</div>
-    <div class="patrol">
-      <div class="phase phase-a">
-        <div class="pl">A — ODEJŚCIE</div>
-        <div class="pd">krok do dalekiego końca trasy, <b>plecami do listy</b>, wskazujesz na mury, przechwalisz się</div>
-        <div class="steal-now">▲ TERAZ KRAŚĆ</div>
+    <div class="sec">
+      <div class="sh sh-kz">Twoje grupy KZ (po Z3Z, już byli u Jordana)</div>
+      <div class="grps">
+        <div class="gt" style="background:#4363D8;color:#fff"><span class="chk">□</span><span class="dot" style="background:#4363D8;border-color:#fff"></span>Niebieski</div>
+        <div class="gt" style="background:#911EB4;color:#fff"><span class="chk">□</span><span class="dot" style="background:#911EB4;border-color:#fff"></span>Fioletowy</div>
+        <div class="gt" style="background:#f0f0f0;color:#2a1a10;border:.5pt solid #888"><span class="chk">□</span><span class="dot" style="background:#f8f8f8;border-color:#888"></span>Biały</div>
+        <div class="gt" style="background:#9A6324;color:#fff"><span class="chk">□</span><span class="dot" style="background:#9A6324;border-color:#fff"></span>Brązowy</div>
+        <div class="gt" style="background:#2B2B2B;color:#fff"><span class="chk">□</span><span class="dot" style="background:#2B2B2B;border-color:#fff"></span>Czarny</div>
       </div>
-      <div class="phase phase-b">
-        <div class="pl">B — POWRÓT</div>
-        <div class="pd">powoli wracasz — <b>telegrafuj obrót</b></div>
-        <div class="caution">⚠ ryzykowne</div>
+      <div class="alert al-k"><b>Ton:</b> arogancki, wymagający, pewny wyższości Zakonu — ale gotowy przyjąć tych, którzy dowiodą wartości. Wymagający, nie wrogi.</div>
+    </div>
+
+    <div class="sec">
+      <div class="sh sh-kz">Scena [MVP TBD — szczegóły z Oskarem]</div>
+      <div class="step">
+        <span class="sn sn-k">1</span>
+        <div>Przyjmujesz ich jako potencjalnych lojalnych. Otwarcie:<br>
+        <span class="cq">„Zakon nie szuka każdego — ale tych, którzy mu naprawdę służą, przyjmuje."</span></div>
       </div>
-      <div class="phase phase-c">
-        <div class="pl">C — PRZY LIŚCIE</div>
-        <div class="pd">stajesz przy liście, poprawiasz, patrzysz</div>
-        <div class="no-steal">✗ NIE kraść</div>
+      <div class="step">
+        <span class="sn sn-k">2</span>
+        <div>Słowa nie wystarczą — muszą udowodnić wartość czynem:<br>
+        <span class="cq">„Każdy twierdzi, że jest po naszej stronie. Dowiedźcie swojej wartości — dopiero wtedy wasz list trafi w moje ręce."</span><br>
+        Wręcz K3-K <b>milcząco</b>, bez komentarza. Jeden gest kończący. <span class="nb imp nb-imp">Nie komentujesz zawartości koperty.</span></div>
+      </div>
+      <div class="step">
+        <span class="sn sn-k">3</span>
+        <div>Gdy wracają z wynikiem — minimalne uznanie:<br>
+        <span class="cq">„Zakon pamięta tych, którzy działają."</span></div>
       </div>
     </div>
-    <p style="font-size:8pt;color:#5a4030;margin-top:3px">Zawsze telegrafuj · złapanie = reset, nie eliminacja · 3+ nieudane próby → wydłuż fazę A lub zadzwoń do Oskara · reset: świeży egzemplarz z torby między grupami</p>
   </div>
 
-  <div class="section">
-    <div class="sh tr-sh">Reakcje</div>
-    <div class="react-grid">
-      <div class="rr"><span class="rm" style="color:#1a6a10">✓</span><span style="font-size:8.8pt;padding:3px 0;display:block"><b>Ukradli (faza A):</b> nie zauważasz. Kończ kółko. <span class="cue cue-tr">„...gdzie ja— "</span> z opóźnieniem. Pozwól im odejść.</span></div>
-      <div class="rr"><span class="rm" style="color:#c06010">~</span><span style="font-size:8.8pt;padding:3px 0;display:block"><b>Złapani (B/C):</b> <span class="cue cue-tr">„Łapy precz! To sprawy Zakonu."</span> Połóż listę z powrotem, wróć do cyklu.</span></div>
-      <div class="rr"><span class="rm" style="color:#c01030">?</span><span style="font-size:8.8pt;padding:3px 0;display:block"><b>Bierni:</b> <span class="cue cue-tr">„No? Coś jeszcze? Moja lista i ja jesteśmy bardzo zajęci."</span> → skieruj wzrok na pergamin. Nadal brak reakcji → Oskar.</span></div>
+  <!-- ══════════════ ROLA TR ══════════════ -->
+  <div class="col">
+    <div class="col-banner col-banner-tr"><span class="badge badge-tr">TR</span> Cel kradzieży — lista musi być do ukradzenia</div>
+
+    <div class="sec">
+      <div class="sh sh-tr">Twoje grupy TR (donosiciele → kradną listę)</div>
+      <div class="grps">
+        <div class="gt" style="background:#E6194B;color:#fff"><span class="chk">□</span><span class="dot" style="background:#E6194B;border-color:#fff"></span>Czerwony</div>
+        <div class="gt" style="background:#F58231;color:#fff"><span class="chk">□</span><span class="dot" style="background:#F58231;border-color:#fff"></span>Pomarańcz.</div>
+        <div class="gt" style="background:#FFE119;color:#1a1a00;border:.5pt solid #ccc"><span class="chk">□</span><span class="dot" style="background:#FFE119;border-color:#aaa"></span>Żółty</div>
+        <div class="gt" style="background:#3CB44B;color:#fff"><span class="chk">□</span><span class="dot" style="background:#3CB44B;border-color:#fff"></span>Zielony</div>
+        <div class="gt" style="background:#42D4F4;color:#1a2a2a;border:.5pt solid #aaa"><span class="chk">□</span><span class="dot" style="background:#42D4F4;border-color:#aaa"></span>Turkusowy</div>
+      </div>
+      <div class="alert al-t"><b>3 zadania TR:</b> wciel się w wroga · pokaż listę SAM (z pychy) · daj uczciwe okno kradzieży — każda grupa MUSI zdołać.</div>
+    </div>
+
+    <div class="sec">
+      <div class="sh sh-tr">Scena</div>
+      <div class="step">
+        <span class="sn sn-t">1</span>
+        <div>Podejście — pogarda, która ciepłeje przy nazwisku:<br>
+        <span class="cq cq-t">„Ty. Czego chcesz? ...Informacje, tak? Wszyscy nagle mają informacje."</span></div>
+      </div>
+      <div class="step">
+        <span class="sn sn-t">2</span>
+        <div>Pokaż listę <b>z własnej pychy</b> — „sprawdzam czy wiemy":<br>
+        <span class="cq cq-t">„Zakon niczego nie zapomina."</span> Czytasz jedno nazwisko, potem <b>odkładasz na stałe miejsce.</b></div>
+      </div>
+      <div class="step">
+        <span class="sn sn-t">3</span>
+        <div>Wręcz K-Z3b milcząco → <span class="cq cq-t">„Dość. Skończyliśmy."</span> → odejdź w patrol.</div>
+      </div>
+    </div>
+
+    <div class="sec">
+      <div class="sh sh-tr">Cykl patrolu (~30–40 sek / kółko)</div>
+      <table class="patrol-tbl">
+        <tr>
+          <td class="ph-a" style="width:33%"><span class="ph-lbl">A — ODEJŚCIE</span><br>plecami do listy, wskazujesz mury<br><span class="steal">▲ TERAZ KRAŚĆ</span></td>
+          <td class="ph-b" style="width:33%"><span class="ph-lbl">B — POWRÓT</span><br>telegrafuj obrót wyraźnie<br><span class="caut">⚠ ryzykowne</span></td>
+          <td class="ph-c" style="width:34%"><span class="ph-lbl">C — PRZY LIŚCIE</span><br>stoisz, patrzysz na grupę<br><span class="nst">✗ NIE kraść</span></td>
+        </tr>
+      </table>
+      <p class="nb">Zawsze telegrafuj · złapanie = reset, nie koniec · 3+ prób bez sukcesu → wydłuż A lub zadzwoń do Oskara · reset między grupami: świeży egzemplarz z torby</p>
+    </div>
+
+    <div class="sec">
+      <div class="sh sh-tr">Reakcje</div>
+      <table class="react">
+        <tr><td class="ri" style="color:#1a6a10">✓</td><td><b>Ukradli (A):</b> nie zauważasz, kończ kółko. <span class="cq cq-t">„...gdzie ja— "</span> z opóźnieniem.</td></tr>
+        <tr><td class="ri" style="color:#c06010">~</td><td><b>Złapani (B/C):</b> <span class="cq cq-t">„Łapy precz!"</span> → połóż listę, wróć do cyklu.</td></tr>
+        <tr><td class="ri" style="color:#c01030">?</td><td><b>Bierni:</b> <span class="cq cq-t">„No? Moja lista i ja jesteśmy zajęci."</span> → wzrok na pergamin → Oskar.</td></tr>
+      </table>
     </div>
   </div>
 
-  <div class="section">
-    <div class="sh gen">Gotowe — odhacz po scenie z daną grupą</div>
-    <div class="done-row">
-      <div class="done-item"><span class="done-chk">□</span><span class="dot" style="background:#4363D8"></span>Niebieski</div>
-      <div class="done-item"><span class="done-chk">□</span><span class="dot" style="background:#911EB4"></span>Fioletowy</div>
-      <div class="done-item"><span class="done-chk">□</span><span class="dot" style="background:#f8f8f8;border:1pt solid #888"></span>Biały</div>
-      <div class="done-item"><span class="done-chk">□</span><span class="dot" style="background:#9A6324"></span>Brązowy</div>
-      <div class="done-item"><span class="done-chk">□</span><span class="dot" style="background:#2B2B2B"></span>Czarny</div>
-      <div class="done-item"><span class="done-chk">□</span><span class="dot" style="background:#E6194B"></span>Czerwony</div>
-      <div class="done-item"><span class="done-chk">□</span><span class="dot" style="background:#F58231"></span>Pomarańcz.</div>
-      <div class="done-item"><span class="done-chk">□</span><span class="dot" style="background:#FFE119;border:1pt solid #aaa"></span>Żółty</div>
-      <div class="done-item"><span class="done-chk">□</span><span class="dot" style="background:#3CB44B"></span>Zielony</div>
-      <div class="done-item"><span class="done-chk">□</span><span class="dot" style="background:#42D4F4;border:1pt solid #aaa"></span>Turkusowy</div>
-    </div>
-    <p class="note" style="margin-top:4px">⚠ Potrzebna na Przedzamczu o 20:30 (finał). · Pełna karta: prototype/albrecht-actor-card-draft.md</p>
-  </div>
+</div>
 
+<!-- Done — full width -->
+<div class="done-full">
+  <div class="done-label">Odhacz po scenie z każdą grupą</div>
+  <div class="done-row">
+    <div class="di"><span class="dchk">□</span><span class="dot" style="background:#4363D8"></span>Niebieski</div>
+    <div class="di"><span class="dchk">□</span><span class="dot" style="background:#911EB4"></span>Fioletowy</div>
+    <div class="di"><span class="dchk">□</span><span class="dot" style="background:#f8f8f8;border:.5pt solid #888"></span>Biały</div>
+    <div class="di"><span class="dchk">□</span><span class="dot" style="background:#9A6324"></span>Brązowy</div>
+    <div class="di"><span class="dchk">□</span><span class="dot" style="background:#2B2B2B"></span>Czarny</div>
+    <div class="di"><span class="dchk">□</span><span class="dot" style="background:#E6194B"></span>Czerwony</div>
+    <div class="di"><span class="dchk">□</span><span class="dot" style="background:#F58231"></span>Pomarańcz.</div>
+    <div class="di"><span class="dchk">□</span><span class="dot" style="background:#FFE119;border:.5pt solid #aaa"></span>Żółty</div>
+    <div class="di"><span class="dchk">□</span><span class="dot" style="background:#3CB44B"></span>Zielony</div>
+    <div class="di"><span class="dchk">□</span><span class="dot" style="background:#42D4F4;border:.5pt solid #aaa"></span>Turkusowy</div>
+  </div>
 </div>
 
 </body>
