@@ -106,12 +106,12 @@ Z1 dry-run R2 — Oskar weryfikuje sightline 6 par + S02 kaszownik (z1-dry-run-s
                 → potem domknięcie macierzy v2 + regeneracja 10 kart (MVP / dyspersja)
 ```
 
-## 🖨 Render kopert — ZABLOKOWANY (guard aktywny)
+## 🖨 Render kopert — ODBLOKOWANY ✅
 
 ```
-render.ps1 PRZERYWA render 7 kopert (k1,k2,k2-slip,k3,kZ3b,kZ4,kF): proza v2 jest w .md, HTML wciąż v1.
-Odblokowanie = render-pass 3 podkroki (port v2→HTML + markup .mg-note + CSS .mg-note), per plik usuń marker RENDER-BLOCK.
-Najpierw: przeniesienie draftów prototype/*-envelope-draft.md → envelopes/ (osobny agent).
+Port prozy v2 → 7 HTML-i WYKONANY [2026-06-02]: markery RENDER-BLOCK usunięte (k1,k2,k2-slip,k3,kZ3b,kZ4,kF),
+proza v2 (2. os. „you" + sceny + .mg-note) w HTML, klasa CSS .mg-note dodana. render.ps1 przechodzi —
+10 PDF-ów w public/ (v2). To są drafty do REVIEW Oskara, NIE zatwierdzone finały.
 Szczegóły: mechanics/koperty-mg.md §ZAŁOŻENIA PRZED RENDEREM · prototype/print/README.md §Staleness guard
 ```
 
@@ -154,7 +154,7 @@ Szczegóły: mechanics/koperty-mg.md §ZAŁOŻENIA PRZED RENDEREM · prototype/p
 ⬜ Z3Z — infiltracja Piccolo .... lustro Z3: kradzież „zaopatrzenia" + wyciągnięcie godziny 20:30
 ⬜ Z8 — melodia zakonu .......... lustro Z4 (kalimba)
 ⬜ Z9 — sensoryczna piernik ..... lustro Z5
-⬜ Z10 — polichromie Biedronka .. 🚶 Bestiariusz Krzyżowca (wymaga researchu na miejscu)
+🟡 Z10 — polichromie Biedronka .. grafiki gotowe (Piotr) [2026-06-02]; zostaje: mechanika klucza→finał + osadzenie w kopercie
 ⬜ Z11 — finał krzyżaków ........ BRAK plot twistu; brama = duma Albrechta
 ⬜ KF — wariant krzyżacki ....... dostawa listu stronie Zakonu
 ```
@@ -212,15 +212,15 @@ Szczegóły: mechanics/koperty-mg.md §ZAŁOŻENIA PRZED RENDEREM · prototype/p
 ## 📊 Pasek postępu
 
 ```
-PROTOTYP   ████████████████░░░░  ~80%   (K1/K2/K3/K-Z3b/Z7/Jordan/Albrecht/K-Z4/KF/arkusz MG/instrukcja MG zdraftowane; dry-run + instrument choice + K8 koperta zostają)
+PROTOTYP   █████████████████░░░  ~85%   (koperty zdraftowane + wyrenderowane do PDF v2; zostają: K8 koperta, pass spójności, dry-run, review Oskara/Piotra)
 MVP        ██░░░░░░░░░░░░░░░░░░  ~10%   (architektura ustalona; Z1 dyspersja czeka R2; produkcja, drugi tor, skalowanie przed nami)
 ```
 
 ## 🎯 Następny krok krytyczny
 
 ```
-► Prototyp — drafty gotowe: K-Z4 · KF · arkusz MG · instrukcja MG (wszystkie czekają na review Oskara)
-► Prototyp — do domknięcia: instrument narracyjny K-Z4 (⚠️ decyzja Oskara) · K8 koperta (body koperty do Z7 szyfrogramu) · pass spójności · dry-run
-► Prototyp — review: K1/K2/K3/K-Z3b/Jordan/Albrecht — czekają na Oskara i Piotra
+► Prototyp — koperty zdraftowane + wyrenderowane (PDF v2 w public/); czekają na review Oskara/Piotra
+► Prototyp — do domknięcia: K8 koperta (body koperty do Z7 szyfrogramu) · pass spójności · dry-run
+► Prototyp — review: cały stos kopert (K1/K2/K3/K-Z3b/K-Z4/KF) + Jordan/Albrecht — Oskar i Piotr
 ► Z1 dyspersja (MVP) — czeka: dry-run R2 (Oskar w terenie) → z1-dry-run-sheet.md §RUNDA 2
 ```
