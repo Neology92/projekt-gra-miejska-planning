@@ -1,6 +1,6 @@
 # Kartki autorskie (meta-dodatek do kopert)
 
-**Status**: 🟢 **w realizacji** [2026-06-02, Oskar aktywował]. Drafty surowca per koperta powstają w podfolderze **`lore/meta-kartki/`** — jeden plik na fizyczną kopertę (nazwy lustrzane do `puzzles/envelopes/`), z rozdziałem FAKT / LEGENDA / SPORNE / FABUŁA / ANACHRONIZM + cytatami z wiki. Ten plik = **brief i akumulator pojęciowy**; konkretne karty → `lore/meta-kartki/`.
+**Status**: 🟢 **w realizacji** [2026-06-02, Oskar aktywował]. Drafty surowca per koperta powstają w podfolderze **`lore/meta-kartki/`** — jeden plik na fizyczną kopertę (nazwy lustrzane do `envelopes/`), z rozdziałem FAKT / LEGENDA / SPORNE / FABUŁA / ANACHRONIZM + cytatami z wiki. Ten plik = **brief i akumulator pojęciowy**; konkretne karty → `lore/meta-kartki/`.
 
 > ➡️ **Drafty kart:** `lore/meta-kartki/` (12 kart: Z1–Z11 + warianty torów; indeks w `lore/meta-kartki/README.md`).
 

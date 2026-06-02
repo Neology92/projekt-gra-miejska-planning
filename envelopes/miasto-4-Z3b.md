@@ -1,8 +1,16 @@
-# Koperta `miasto-4-Z3b` — The Theft Order
+# K-Z3b — The Theft Order (draft)
 
-> **Migracja z:** `prototype/kZ3b-envelope-draft.md` [2026-06-02].
 > **Language:** English (player-facing). Planning notes in Polish below.
-> **Status:** draft [2026-06-01, v2] — awaiting Oskar's review.
+> **Status:** draft [2026-06-02, v3 — rewizja WPROWADZONA] — awaiting Oskar's review.
+> **Voice:** narrator **from inside the couriers' heads**, **2. osoba „you"** — what you see, what you think, the conclusion forming **in the moment**. NOT an order from the Council. *(Game-wide envelope convention — `mechanics/koperty-mg.md`.)*
+> **Typography:** narration = *italic (light)* = inside the head; the NPC quote (Albrecht: "The Order forgets nothing") = roman = words of the world; the meta-box (→ MG) = `.mg-note`. All narration is italic, with the one roman quote as contrast.
+> **Handed over by:** Komtur Albrecht (Zosia) — hand-over is a **meta interaction, outside the fiction** (like being dealt a card). In-world nobody "gives" this; it is the group's own dawning realisation **as it happens** (no „open once clear" — that meta-framing was cut; model patrolu, patrz §SEKWENCJA).
+> **Function:** flips the task from "scout" to **steal the list** — by the couriers realising what they just saw.
+> **Canon:** `puzzles/zamek-krzyzacki-lista.md` (Struktura Z3, pkt 3–4).
+
+---
+
+> **Migracja → `envelopes/` (root)** z `prototype/kZ3b-envelope-draft.md` — treść kanoniczna v2/v3 (@ ac9901d^) [2026-06-02].
 
 ## Meta — montaż
 
@@ -15,31 +23,31 @@
 - **Dokąd odsyła:** grupa niesie wykradzioną listę do MG → MG wydaje kopertę opcjonalnej (`miasto-5-Z4` w prototypie).
 - **Canon:** `puzzles/zamek-krzyzacki-lista.md` (Struktura Z3, pkt 3–4).
 
-## Gotowy tekst (EN — player reads this)
 
-**SEALED. OPEN ONLY ONCE YOU ARE CLEAR OF THE KOMTUR.**
+## TEXT — K-Z3b (player reads this)
 
----
+*So that is the list.*
 
-*(You tear it open in the shadow of the walls, out of his sight.)*
+*You saw it the moment he drew it out — that strip of parchment he keeps at his side, names inked down one beneath another.* "The Order forgets nothing," *he said, almost laughing, holding it up like a man showing off his gold. He has no idea what he is showing you.*
 
-*So that was the list.*
+*Those are the names of the Secret Council — every soul the Order has bought out of your own walls, set down and marked. That is what you should have come here for. Not words. That.*
 
-*We saw it the moment he drew it out — that strip of parchment he keeps at his side, names inked down one beneath another.* "The Order forgets nothing," *he said, almost laughing, holding it up like a man showing off his gold. He had no idea what he was showing us.*
+*And now he has set it down — laid it on the ledge at his side and stepped off to walk his little circuit, pointing out his walls, gazing off to boast. He will not hand it over; but he does not truly guard it either. A man that proud never watches his own table. Each time his round carries him away and his back is to it, the parchment lies there with no eyes on it.*
 
-*Those are the names of the Secret Council. Every soul the Order has bought out of our own walls, written down and marked. That is what we should have come here for. Not words. That.*
+*You could take it. Only while he is turned — never while he is looking, or he will have you by the wrist, and then you are thieves caught at the Order's own wall with no one to call. But on the turn, when he drifts off along his path…*
 
-*He will not part with it — but he does not guard it, either. A man that proud never watches his own table. He turns away to point at his walls, he looks off to boast — and for a breath or two, the parchment lies there with no eyes on it.*
+*Watch him. He walks it the same way each time. Wait for the turn. Lift it clean. Then walk — do not run, not until you must.*
 
-*We could take it. While his back is to it — never while he's looking, or he'd have us by the wrist, and then we are thieves caught at the Order's own wall with no one to call. But when he turns…*
-
-*Watch him. He moves the same way each time. Wait for the turn. Lift it clean. Walk — do not run, not until we have to.*
-
-*And then we carry those names back. Everything after tonight turns on them.*
+*Carry those names away with you. Everything after tonight turns on them.*
 
 ---
 
-## Notatki planistyczne (nie dla gracza)
+> **↪ TO THE GAME MASTER** — *game instruction, not part of the world*
+> Once the list is in your hands, bring it to the Game Master. What comes next is waiting there.
+
+---
+
+## PLANNING NOTES (nie dla gracza)
 
 - **Konwencja głosu [decyzja Oskara 2026-06-01]:** narracja z głów kurierów — obserwacja („we saw it the moment he drew it out"), myśl/wniosek („*that* is what we should have come for"), plan działania jako rozumowanie grupy. **Nie rozkaz Rady.** Wtrącenie kwestii NPC: cytat Albrechta *„The Order forgets nothing"* (spójny z jego kartą STEP 1). To wzorzec dla wszystkich kopert — patrz `mechanics/koperty-mg.md`.
 - **Nośnik = wariant (a), ROZSTRZYGNIĘTY:** Albrecht fizycznie wręcza kopertę, ale to **meta-interakcja poza światem gry** — w fikcji nikt jej nie „daje", to materializacja olśnienia grupy. Znika dziura logiczna (wróg ≠ nadawca rozkazu), bo koperta nie ma nadawcy. Zatwierdza pierwotny obraz Oskara („komtur wręcza kopertę") bez kosztu immersyjnego.
@@ -48,31 +56,31 @@
 - **Beat „odejdź–przeczytaj–wróć":** koperta otwierana o krok od komtura („in the shadow of the walls, out of his sight"), potem powrót do kradzieży. Albrecht nie odgania (karta STEP 2). Świadomie wybrany wariant (a) — patrz `zamek-krzyzacki-lista.md` Otwarte #4 (rozstrzygnięte).
 - **„Carry those names back"** = do MG (Oskar); punkt/godzina → `mechanics/koperty-mg.md`. Po oddaniu listy MG wręcza kopertę opcjonalnej (Z4 w prototypie).
 - **Klucz ukryty:** tekst NIE wspomina, że nagłówek listy niesie szyfr Cezara do Z7 — odkrycie dopiero przy finale. Tu lista = „kto jest w Radzie". Patrz `z3-lista-tr-spec.md §4`.
-- **Wersja Krzyżacy (MVP):** lustro Z3Z (infiltracja Piccolo), inny łup/framing. NIE kopiować 1:1. **Asymetria torów:** miasto ma wstawkę Z3b (6 pozycji), krzyżacy na razie NIE mają lustra Z3b (5 pozycji) — czy MVP krzyżaków dostanie analog = osobna decyzja.
+- **Wersja Krzyżacy (MVP):** lustro Z3Z (infiltracja Piccolo), inny łup/framing. NIE kopiować 1:1.
 
 ---
 
-## Rewizja [2026-06-02] — uwagi Oskara (DO WPROWADZENIA, jeszcze nie wprowadzone)
+## REWIZJA [2026-06-02] — ✅ WPROWADZONA (rationale zachowane do review)
 
-> Notatki kierunkowe. Tekst wyżej **nietknięty** — materiał porównawczy. Przepisanie + render po akceptacji (a treść zależy od decyzji A/B niżej).
+> Tekst wyżej (v3) realizuje poniższe: meta-framing (SEALED / „you tear it open") wycięty; olśnienie w trakcie + model patrolu; 2. os.; meta-ramka MG (raport Z3). Re-render → `public/` po akceptacji.
 
 1. **USUNĄĆ meta-framing (precz w całości):**
-   - „**SEALED. OPEN ONLY ONCE YOU ARE CLEAR OF THE KOMTUR.**"
-   - „**(You tear it open in the shadow of the walls, out of his sight.)**"
+   - „**SEALED. OPEN ONLY ONCE YOU ARE CLEAR OF THE KOMTUR.**" (obecna linia ~15)
+   - „**(You tear it open in the shadow of the walls, out of his sight.)**" (obecna linia ~19)
    - Oskar: to próba opisania, co gracz *zrobił* w realu + wplecenie meta-mechaniki w fikcję. **Bez sensu.** Koperta opisuje świat **wyobrażony**, nie uzasadnia realnych czynności. Patrz `mechanics/koperty-mg.md` Zasada #3.
 2. **Przeramować na olśnienie DZIEJĄCE SIĘ W TRAKCIE spotkania, nie „po odejściu".** Obraz Oskara: grupa robi podchody, próbuje wyciągnąć info od komtura; komtur w akcie pychy/wyższości **sam wyciąga listę i coś na niej dopisuje** — i w głowach kurierów **świta**: *„wow, ok — to jest to, co moglibyśmy ukraść"*. Treść = ich **wewnętrzne rozkminy**: skupienie na liście, narastająca chęć jej zdobycia. Bez „odejdź → przeczytaj → wróć".
-3. **Front-matter „Voice/Handed over" do przeredagowania** — zawiera wycinany opis („Sealed — opened after they walk clear of him") i moment wręczenia; zsynchronizować z decyzją A/B.
+3. **Front-matter „Voice/Handed over" (linie ~5–9) do przeredagowania** — zawiera wycinany opis („Sealed — opened after they walk clear of him") i moment wręczenia; zsynchronizować z decyzją A/B.
 4. **Osoba narracji:** ROZSTRZYGNIĘTE [2026-06-02] — **ujednolicić do 2. osoby „you"** (jak cała reszta kopert). Cytat Albrechta („The Order forgets nothing") zostaje roman.
-5. **Meta-ramka MG (raport Z3) [2026-06-02]:** po kradzieży grupa **niesie listę do MG** (obecne „we carry those names back"). Wydzielić instrukcję gracz↔MG do **osobnej ramki meta** (callout) — fikcja kończy się na „niesiemy te nazwiska", konkret (do MG, po kolejną kopertę) w ramce. Konwencja → `mechanics/koperty-mg.md §Trzeci rejestr`.
+5. **Meta-ramka MG (raport Z3) [2026-06-02]:** po kradzieży grupa **niesie listę do MG** (obecne „we carry those names back" / „carry those names back to MG"). Wydzielić instrukcję gracz↔MG do **osobnej ramki meta** (callout) — fikcja kończy się na „niesiemy te nazwiska", konkret (do MG, po kolejną kopertę) w ramce. Konwencja → `mechanics/koperty-mg.md §Trzeci rejestr`.
 
 ### ✅ SEKWENCJA — ROZSTRZYGNIĘTA [2026-06-02, Oskar]: modele A i B się ŁĄCZĄ (patrol)
 Wcześniejszy „konflikt" zniknął — Oskar opisał sekwencję, w której wręczenie koperty i „odejście" komtura **nie wykluczają** kradzieży, tylko ją umożliwiają:
 
 1. Grupa robi podchody (rola fałszywych donosicieli), komtur w pysze **wyciąga listę** i pokazuje, ile Zakon wie.
-2. Komtur **wręcza Z3b** (milcząco, meta) i **odchodzi kawałek** — **odkłada listę w konkretnym miejscu** i **zaczyna się przechadzać/patrolować** w jej zasięgu.
-3. Grupa czyta Z3b = **olśnienie wyprzedzające kradzież** (Model A): „to była lista — to jest to, co moglibyśmy zabrać; on jej pilnuje patrolem, ale są chwile, gdy na nią nie patrzy".
+2. Komtur **wręcza K-Z3b** (milcząco, meta) i **odchodzi kawałek** — **odkłada listę w konkretnym miejscu** i **zaczyna się przechadzać/patrolować** w jej zasięgu.
+3. Grupa czyta K-Z3b = **olśnienie wyprzedzające kradzież** (Model A): „to była lista — to jest to, co moglibyśmy zabrać; on jej pilnuje patrolem, ale są chwile, gdy na nią nie patrzy".
 4. Kradzież dzieje się **podczas patrolu** — lista cały czas na widoku i w zasięgu komtura, ale okno otwiera się, gdy oddalony/odwrócony nie patrzy na nią.
 
-**Skutki dla treści Z3b:** Z3b **zostaje olśnieniem + odczytaniem okna** (instrukcja-jako-rozumowanie), ale obraz mechaniki zmienia się z „on obraca się stojąc obok" na **„on patroluje wokół odłożonej listy"**. Przy przepisaniu: zamiast „he turns away to point at his walls… the parchment lies there" → coś w duchu „he set it down and walks his little circuit; each time his back is to it, it sits there unwatched". Telegrafowanie i powtarzalność okna zostają.
+**Skutki dla treści K-Z3b:** K-Z3b **zostaje olśnieniem + odczytaniem okna** (instrukcja-jako-rozumowanie), ale obraz mechaniki zmienia się z „on obraca się stojąc obok" na **„on patroluje wokół odłożonej listy"**. Przy przepisaniu: zamiast „he turns away to point at his walls… the parchment lies there" → coś w duchu „he set it down and walks his little circuit; each time his back is to it, it sits there unwatched". Telegrafowanie i powtarzalność okna zostają.
 
 → `todo/otwarte-pytania.md #65` = ROZSTRZYGNIĘTE; karta Albrechta — STEP 3 do przepisania na **model patrolu** (geometria/cykl), STEP 2 „nie odpędzaj" zastąpione „wręcz → odejdź kawałek → patroluj".

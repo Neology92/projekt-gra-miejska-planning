@@ -50,9 +50,9 @@ render-zweryfikowane; rewizja narracji v2 ich nie dotyczy.
 ### Dom draftów (założenie — przenosiny w toku)
 
 Kanoniczne drafty kopert **przenoszą się** z `prototype/*-envelope-draft.md` do
-**`puzzles/envelopes/`** (nazwy Z-numerowane). Przenosin **dokonuje osobny agent**. Guard tego
+**`envelopes/`** (nazwy Z-numerowane). Przenosin **dokonuje osobny agent**. Guard tego
 nie psuje: kluczuje po markerze w HTML (który przeżywa przenosiny), **nie** po ścieżkach draftów.
-Po przenosinach traktuj `puzzles/envelopes/` jako źródło prawdy przy porcie prozy. Spięte też w
+Po przenosinach traktuj `envelopes/` jako źródło prawdy przy porcie prozy. Spięte też w
 `mechanics/koperty-mg.md` (blok założeń).
 
 ## Stylistyka

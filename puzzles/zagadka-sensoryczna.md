@@ -233,7 +233,7 @@ nie każda pasuje. Słojów nie otwierać.
 
 → 7 słojów + 7 prawdziwych nazw + 4 dystraktory = **11 kartoników z nazwami**.
 
-> **Koperty fizyczne**: zmontowane w `puzzles/envelopes/miasto-4-Z5.md` i `puzzles/envelopes/krzyzacy-4-Z9.md` (meta: kiedy wręczyć/nie, co MG mówi, rekwizyty). Teksty niżej są ich źródłem.
+> **Koperty fizyczne**: zmontowane w `envelopes/miasto-4-Z5.md` i `envelopes/krzyzacy-4-Z9.md` (meta: kiedy wręczyć/nie, co MG mówi, rekwizyty). Teksty niżej są ich źródłem.
 
 ### Koperta Z5 — mieszczanie / Tajna Rada (draft)
 

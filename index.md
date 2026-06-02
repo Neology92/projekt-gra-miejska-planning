@@ -22,10 +22,11 @@
 | Folder | Co tam jest |
 |---|---|
 | `concept/` | *co się dzieje* w grze — fazy, klasy, finał, tor krzyżaków |
-| `puzzles/` | *jak gracze rozwiązują* etapy — w tym **`puzzles/envelopes/`** = SPEC + MANIFEST kopert |
+| `puzzles/` | *jak gracze rozwiązują* etapy — zagadki Z1–Z11, mapy/ścieżki Z1 |
+| **`envelopes/`** | **SPEC + MANIFEST kopert gracza** (warstwa montażowa NAD zagadkami; źródło prawdy składania wydruku) |
 | `mechanics/` | *jak gra działa logistycznie* — koperty (MG), grupy/klasy/kolory, mapy/szyfrownik, finałowe liczenie |
 | `lore/` | *co opowiadamy graczom* — postacie, miejsca, plotki, fakty-vs-fabuła, surowiec kartek meta (`lore/meta-kartki/`) |
-| `prototype/` | artefakty do druku ścieżki prototypu (EN) — koperty (spec w `puzzles/envelopes/`), kartki meta (`meta-cards/`), mapy, skrypty aktorów, arkusze MG |
+| `prototype/` | artefakty do druku ścieżki prototypu (EN) — koperty (spec w `envelopes/`), kartki meta (`meta-cards/`), mapy, skrypty aktorów, arkusze MG |
 | `tools/` | generatory (np. `map-gen/`) |
 | `todo/` | dashboard, roadmap, otwarte pytania, archiwum |
 
@@ -35,11 +36,11 @@ Trzy foldery trzymają **lustrzane** pliki o tej samej nazwie `[frakcja]-[nr]-[Z
 
 | Folder | Warstwa | Język |
 |---|---|---|
-| `puzzles/envelopes/` | **SPEC + MANIFEST + gotowy tekst koperty** (źródło prawdy montażu) | meta PL / tekst EN |
+| `envelopes/` | **SPEC + MANIFEST + gotowy tekst koperty** (źródło prawdy montażu) | meta PL / tekst EN |
 | `prototype/meta-cards/` | kartka „od autora" dołączana do koperty (player-facing) | EN |
 | `lore/meta-kartki/` | surowiec do kartki meta (źródła, cytaty wiki) | PL/EN |
 
-- **Reguła numeracji:** `nr` = **kolejność otwierania** koperty na ścieżce frakcji (nie etap MG). Czytaj `puzzles/envelopes/README.md` (trzy osie rozbieżności + manifest).
+- **Reguła numeracji:** `nr` = **kolejność otwierania** koperty na ścieżce frakcji (nie etap MG). Czytaj `envelopes/README.md` (trzy osie rozbieżności + manifest).
 - **Manifest ścieżki prototypu:** `prototype/envelope-map.md` (mapowanie stare `k*` → nowe `envelopes/*`).
 - **Konwencja głosu kopert** (kursywa=głowa / roman=słowa świata, wręczenie przez NPC = meta): `mechanics/koperty-mg.md`.
 

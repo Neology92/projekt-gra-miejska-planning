@@ -13,7 +13,7 @@ Po wizycie u MG (koniec F1) grupa dostaje kopertę z:
 
 ## Trop celu kuriera — zasiany w K2 [2026-06-01, decyzja Oskara]
 
-Koperta K2 (slip pośrednika R.) niesie **silny trop**: list ma trafić do **głowy Rady / chairmana**, w jego własne ręce — *bez zdradzania, kim chairman jest*. To ustawia cel kuriera na początku gry. Funkcja: w finale (Z7 „HANS VON BAYSEN IS JORDAN THE COOK") gracz sam spina, że chairman z K2 = Hans von Baysen z listy Z3 („they call him chairman") = poznany Jordan-kucharz. Anty-prowadzenie-za-rączkę. Pełny łańcuch i zależności → `puzzles/envelopes/miasto-2-Z2.md`, `puzzles/z7-szyfr-spec.md §5`. **Ironia:** zagadka Z2 prowadzi ich do „następnego kontaktu" (Jordan) — a to właśnie do niego (jako chairmana) mieli zanieść list. Nie wiedzą tego aż do finału.
+Koperta K2 (slip pośrednika R.) niesie **silny trop**: list ma trafić do **głowy Rady / chairmana**, w jego własne ręce — *bez zdradzania, kim chairman jest*. To ustawia cel kuriera na początku gry. Funkcja: w finale (Z7 „HANS VON BAYSEN IS JORDAN THE COOK") gracz sam spina, że chairman z K2 = Hans von Baysen z listy Z3 („they call him chairman") = poznany Jordan-kucharz. Anty-prowadzenie-za-rączkę. Pełny łańcuch i zależności → `envelopes/miasto-2-Z2.md`, `puzzles/z7-szyfr-spec.md §5`. **Ironia:** zagadka Z2 prowadzi ich do „następnego kontaktu" (Jordan) — a to właśnie do niego (jako chairmana) mieli zanieść list. Nie wiedzą tego aż do finału.
 
 ## Treść zagadki Z2 — OTRZYMANA [2026-06-01, od Oskara]
 
@@ -119,7 +119,7 @@ Autor wymienił "Picollo". Sprawdzenie:
 
 ## REWIZJA [2026-06-02] — uwagi Oskara (DO WPROWADZENIA, jeszcze nie wprowadzone)
 
-> Rdzeń logiczny wyżej **zostaje**. To są nadbudowy nad nim. Pełny kontekst kopertowy → `puzzles/envelopes/miasto-2-Z2.md §Rewizja`.
+> Rdzeń logiczny wyżej **zostaje**. To są nadbudowy nad nim. Pełny kontekst kopertowy → `envelopes/miasto-2-Z2.md §Rewizja`.
 
 ### C. NIE zdradzać z góry, że szukają Jordana / że pójdą tam, gdzie pracuje
 - W K2 znika zdanie „*once you have placed Jordan, you will know where he works — go there and ask for him by name*". Gracze na tym etapie **nie mają wiedzieć, że szukają Jordana**.

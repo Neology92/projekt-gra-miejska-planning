@@ -2,13 +2,13 @@
 
 > **Co to:** mapa, na których plikach operować przy kopertach prototypu. Prototyp testuje **JEDNĄ ścieżkę z wielu** w MVP: **frakcja miasto (Tajna Rada), 1 kolor grupy, zagadka opcjonalna = Z4 (melodia flisaka).**
 >
-> **Źródło prawdy spec/montażu:** `puzzles/envelopes/`. Ten plik jest skrótem nawigacyjnym + zapisem migracji.
+> **Źródło prawdy spec/montażu:** `envelopes/`. Ten plik jest skrótem nawigacyjnym + zapisem migracji.
 
-## Migracja [2026-06-02]: stare `prototype/k*.md` → `puzzles/envelopes/*`
+## Migracja [2026-06-02]: stare `prototype/k*.md` → `envelopes/*`
 
-Drafty kopert **przeniesione** z `prototype/k*.md` do kanonicznego `puzzles/envelopes/`. Stare pliki usunięte (treść w git history). Numeracja `nr` = **kolejność otwierania** (wstawka Z3b przesunęła opcjonalną na 5 i finał na 6).
+Drafty kopert **przeniesione** z `prototype/k*.md` do kanonicznego `envelopes/`. Stare pliki usunięte (treść w git history). Numeracja `nr` = **kolejność otwierania** (wstawka Z3b przesunęła opcjonalną na 5 i finał na 6).
 
-| Stara nazwa (`prototype/`) | Nowa nazwa (`puzzles/envelopes/`) | nr | Zadanie |
+| Stara nazwa (`prototype/`) | Nowa nazwa (`envelopes/`) | nr | Zadanie |
 |---|---|---|---|
 | `k1-envelope-draft.md` | `wspolne-1-Z1.md` | 1 | Z1 — szlak symboli |
 | `k2-envelope-draft.md` | `miasto-2-Z2.md` | 2 | Z2 — droga do Jordana |

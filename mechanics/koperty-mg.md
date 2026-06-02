@@ -60,7 +60,7 @@ Koperta łączy **dwa rejestry**, rozróżniane **typograficznie**:
 - **Hybryda, nie „albo/albo":** koperta-wiadomość (np. K1 list zleceniodawcy) dostaje **oprawę narracyjną** (otwarcie/zamknięcie z głów) — **nie jest przepisywana, tylko rozszerzana**. Koperta bez nadawcy (np. K-Z3b) bywa w całości rejestrem narracyjnym, z cytatem NPC roman w środku.
 - **Wręczenie koperty przez NPC** (np. Albrecht wręcza K-Z3b) = **meta-interakcja poza światem gry** (jak rozdanie karty). W fikcji nikt jej nie „daje".
 - **Po co narracja:** immersja + rozwiązuje problem nośnika — koperta bez nadawcy nie wymaga uzasadnienia, kto ją podał.
-- **Wzorce:** `puzzles/envelopes/miasto-4-Z3b.md` (pełna narracja + cytat roman) · `puzzles/envelopes/wspolne-1-Z1.md`, `puzzles/envelopes/miasto-2-Z2.md` (hybryda: wiadomość + oprawa narracyjna).
+- **Wzorce:** `envelopes/miasto-4-Z3b.md` (pełna narracja + cytat roman) · `envelopes/wspolne-1-Z1.md`, `envelopes/miasto-2-Z2.md` (hybryda: wiadomość + oprawa narracyjna).
 
 #### Osoba narracji — 2. osoba „you" [decyzja Oskara 2026-06-02]
 
@@ -68,7 +68,7 @@ Koperta łączy **dwa rejestry**, rozróżniane **typograficznie**:
   - Przykład: *„we had hoped to find our contact waiting"* → *„you had hoped to find your contact waiting"*.
   - **Po co:** narrator-na-zewnątrz może swobodniej odmalować świat dookoła i **wpleść plotki/pogłoski w opis podróży**, zamiast wyliczać je jako osobne cytaty „overheard near the square / whispered at the inn".
   - To zmienia **OSOBĘ** rejestru kursywy, **nie** sam podział kursywa/roman (klucz „kursywa=głowa, roman=słowa świata" obowiązuje dalej).
-- **Plotki/pogłoski → wplecione w narrację-podróż** (mowa zależna / opis tego, co grupa mija i słyszy), nie wypisane listą cytatów. ⚠ **To zastępuje** wcześniejszą notę „plotki overheard docelowo roman" (`puzzles/envelopes/miasto-2-Z2.md`): w narracji 2. os. plotki idą kursywą jako część opisu, nie roman.
+- **Plotki/pogłoski → wplecione w narrację-podróż** (mowa zależna / opis tego, co grupa mija i słyszy), nie wypisane listą cytatów. ⚠ **To zastępuje** wcześniejszą notę „plotki overheard docelowo roman" (`envelopes/miasto-2-Z2.md`): w narracji 2. os. plotki idą kursywą jako część opisu, nie roman.
 - **Zakres:** ROZSTRZYGNIĘTE [2026-06-02] — **ujednolicić do 2. osoby „you" we wszystkich kopertach** (K1, K2, K3, K-Z3b, K-Z4, KF). Nie różnicujemy; głos zbiorowy „we" wycofany także z finałowych.
 
 ### Zasada nadrzędna #3: koperta opisuje świat wyobrażony, nie komentuje realnego gracza [decyzja Oskara 2026-06-02]
@@ -95,7 +95,7 @@ Część zagadek wymaga **zaniesienia odpowiedzi do MG**, żeby odebrać kolejn�
 
 Dwa fakty, które muszą być **wykonane zanim ktokolwiek zrobi pass renderujący** koperty do `public/`. Spięte tutaj, żeby nie umknęły między sesjami.
 
-1. **Drafty kopert przenoszą się `prototype/*-envelope-draft.md` → `puzzles/envelopes/`** (nazwy Z-numerowane, jak `wspolne-1-Z1.md`, `miasto-4-Z5.md`, `krzyzacy-4-Z9.md`). Przenosin **dokonuje osobny agent**. Po przenosinach **źródłem prawdy dla prozy** jest `puzzles/envelopes/`, a `prototype/*-envelope-draft.md` jest deprecated. Tu nie zakładamy docelowego mapowania nazw — to robi agent przenoszący.
+1. **Drafty kopert przenoszą się `prototype/*-envelope-draft.md` → `envelopes/`** (nazwy Z-numerowane, jak `wspolne-1-Z1.md`, `miasto-4-Z5.md`, `krzyzacy-4-Z9.md`). Przenosin **dokonuje osobny agent**. Po przenosinach **źródłem prawdy dla prozy** jest `envelopes/`, a `prototype/*-envelope-draft.md` jest deprecated. Tu nie zakładamy docelowego mapowania nazw — to robi agent przenoszący.
 
 2. **Render NIE jest sync.** Proza graczy żyje w draftach `.md`; HTML w `prototype/print/src/` to **ręcznie** przepisana warstwa renderu — nic nie syncuje draft→HTML. Stan na 2026-06-02: 7 kopert kurierskich (`k1, k2, k2-slip, k3, kZ3b, kZ4, kF`) ma prozę **v2** (2. osoba + ramka `.mg-note`) **tylko w `.md`**; HTML wciąż trzyma **v1** (1. osoba, logistyka wpleciona). Render-pass = **3 podkroki**: (a) port prozy v2 → HTML, (b) markup `.mg-note` wokół 4 ramek meta, (c) klasa CSS `.mg-note` w `parchment.css` (patrz flaga wyżej).
 

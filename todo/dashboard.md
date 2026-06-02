@@ -32,16 +32,16 @@
 
 ## A. Teksty kopert (7)
 
-> Migracja [2026-06-02]: drafty przeniesione z `prototype/k*.md` → `puzzles/envelopes/` (spec+manifest). Numeracja = kolejność otwierania (wstawka Z3b: opcjonalna→5, finał→6). Mapa starych↔nowych: `prototype/envelope-map.md`.
+> Migracja [2026-06-02]: drafty przeniesione z `prototype/k*.md` → `envelopes/` (spec+manifest). Numeracja = kolejność otwierania (wstawka Z3b: opcjonalna→5, finał→6). Mapa starych↔nowych: `prototype/envelope-map.md`.
 
 ```
-✅ poz.1 Z1 — startowa ......... draft gotowy (groźba „ucięcia rąk" + segment Z1)        [puzzles/envelopes/wspolne-1-Z1.md]
-✅ poz.2 Z2 — po Z1 ........... draft gotowy (Z2 Einsteina: Jordan/Piccolo/chochla; plotki Puli A; slip R.)  [puzzles/envelopes/miasto-2-Z2.md]
-✅ poz.3 Z3 — od Jordana ...... draft gotowy (brief F2B + Z3 zwiad; Z3b osobno)         [puzzles/envelopes/miasto-3-Z3.md]
-✅ poz.4 Z3b — kradzież ....... draft gotowy (2. koperta etapu Z3; narracja + cytat Albrechta)  [puzzles/envelopes/miasto-4-Z3b.md]
-🟡 poz.5 Z4 — melodia/kalimba . draft v2 (SCENA: martwy flisak=R. nad Wisłą, melodia=kod; instrument zatwierdzony)  [puzzles/envelopes/miasto-5-Z4.md]
+✅ poz.1 Z1 — startowa ......... draft gotowy (groźba „ucięcia rąk" + segment Z1)        [envelopes/wspolne-1-Z1.md]
+✅ poz.2 Z2 — po Z1 ........... draft gotowy (Z2 Einsteina: Jordan/Piccolo/chochla; plotki Puli A; slip R.)  [envelopes/miasto-2-Z2.md]
+✅ poz.3 Z3 — od Jordana ...... draft gotowy (brief F2B + Z3 zwiad; Z3b osobno)         [envelopes/miasto-3-Z3.md]
+✅ poz.4 Z3b — kradzież ....... draft gotowy (2. koperta etapu Z3; narracja + cytat Albrechta)  [envelopes/miasto-4-Z3b.md]
+🟡 poz.5 Z4 — melodia/kalimba . draft v2 (SCENA: martwy flisak=R. nad Wisłą, melodia=kod; instrument zatwierdzony)  [envelopes/miasto-5-Z4.md]
 🟡 K8 — Z7 finałowy szyfr ..... szyfrogram + uniwersalna rama narracyjna (przechwycony list, method-agnostic)  [prototype/z7-szyfrogram-draft.md]
-🟡 poz.6 Z7 — finał .......... draft gotowy (Przedzamcze, ósme bicie, wolny wybór; list nieotwarty, maski spadają)  [puzzles/envelopes/miasto-6-Z7.md]
+🟡 poz.6 Z7 — finał .......... draft gotowy (Przedzamcze, ósme bicie, wolny wybór; list nieotwarty, maski spadają)  [envelopes/miasto-6-Z7.md]
 ```
 
 ## B. Rekwizyty drukowane (8)
@@ -102,7 +102,7 @@ Z1 dry-run R2 — Oskar weryfikuje sightline 6 par + S02 kaszownik (z1-dry-run-s
 ```
 render.ps1 PRZERYWA render 7 kopert (k1,k2,k2-slip,k3,kZ3b,kZ4,kF): proza v2 jest w .md, HTML wciąż v1.
 Odblokowanie = render-pass 3 podkroki (port v2→HTML + markup .mg-note + CSS .mg-note), per plik usuń marker RENDER-BLOCK.
-Najpierw: przeniesienie draftów prototype/*-envelope-draft.md → puzzles/envelopes/ (osobny agent).
+Najpierw: przeniesienie draftów prototype/*-envelope-draft.md → envelopes/ (osobny agent).
 Szczegóły: mechanics/koperty-mg.md §ZAŁOŻENIA PRZED RENDEREM · prototype/print/README.md §Staleness guard
 ```
 

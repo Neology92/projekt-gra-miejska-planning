@@ -4,7 +4,7 @@
 
 ## Co to jest
 
-Jeden plik = jedna fizyczna koperta (nazwy lustrzane do `puzzles/envelopes/`). Każdy plik to **draft kartki autorskiej** (meta-dodatek „od autora", czytany *obok* rozgrywki), który dla danej koperty rozdziela:
+Jeden plik = jedna fizyczna koperta (nazwy lustrzane do `envelopes/`). Każdy plik to **draft kartki autorskiej** (meta-dodatek „od autora", czytany *obok* rozgrywki), który dla danej koperty rozdziela:
 
 - **FAKT** — co naprawdę się wydarzyło / istniało (pokrycie w wiki, tag `--rubrum`).
 - **LEGENDA** — co jest podaniem/legendą (wiki `--legenda`).
@@ -23,9 +23,9 @@ Każda pozycja w miarę możliwości **cytuje wiki**: `(wiki: nazwa-strony.js)` 
 - **Język**: draft po polsku (jak cały akumulator). Finalna forma player-facing + ew. tłumaczenie = późniejsza decyzja (player materials = ENG, ale to kartka „od autora" — status do ustalenia).
 - **⚠ SPOILER**: część kart zdradza twisty (Jordan = Bażyński). Karty oznaczone, do fizycznego oddzielenia przy produkcji.
 
-## Mapa kart (lustrzana do `puzzles/envelopes/`)
+## Mapa kart (lustrzana do `envelopes/`)
 
-> **Numeracja = kolejność otwierania koperty** (`puzzles/envelopes/README.md`). ⚠ **Tory mają różną długość:** miasto = 6 pozycji (wstawka Z3b na poz. 4 — bez własnej kartki, obejmuje ją etap Z3), krzyzacy = 5. Opcjonalne: miasto poz. **5**, krzyzacy poz. **4**.
+> **Numeracja = kolejność otwierania koperty** (`envelopes/README.md`). ⚠ **Tory mają różną długość:** miasto = 6 pozycji (wstawka Z3b na poz. 4 — bez własnej kartki, obejmuje ją etap Z3), krzyzacy = 5. Opcjonalne: miasto poz. **5**, krzyzacy poz. **4**.
 
 | Plik | Koperta | Zadanie | Rdzeń meta |
 |---|---|---|---|
@@ -44,4 +44,4 @@ Każda pozycja w miarę możliwości **cytuje wiki**: `(wiki: nazwa-strony.js)` 
 
 ## Powiązane
 
-`lore/meta-kartki-autorskie.md` (brief + akumulator) · `lore/fakty-vs-fabula.md` (rejestr naginek) · `puzzles/envelopes/` (fizyczne koperty) · wiki `projekt_gra-miejska/src/pages/`.
+`lore/meta-kartki-autorskie.md` (brief + akumulator) · `lore/fakty-vs-fabula.md` (rejestr naginek) · `envelopes/` (fizyczne koperty) · wiki `projekt_gra-miejska/src/pages/`.

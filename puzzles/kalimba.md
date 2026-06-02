@@ -52,7 +52,7 @@ Koperta Z4 (K-Z4) **nie jest wiadomością od Jordana** — Jordan jest poza tym
 - **koperta = scena, nie wiadomość** (`mechanics/koperty-mg.md §Zasada nadrzędna #2`),
 - **klamra flisak = R.** (echo `legenda-flisak.js` — muzyk znad Wisły).
 
-Pełny tekst i notatki: `puzzles/envelopes/miasto-5-Z4.md`. Kod `621454` pozostaje **wyłącznie bramką MG** — w fikcji nikt nie czyta daty.
+Pełny tekst i notatki: `envelopes/miasto-5-Z4.md`. Kod `621454` pozostaje **wyłącznie bramką MG** — w fikcji nikt nie czyta daty.
 
 ## Melodie — co grają (per tor)
 
@@ -72,7 +72,7 @@ Pełny tekst i notatki: `puzzles/envelopes/miasto-5-Z4.md`. Kod `621454` pozosta
 2. ~~Gdzie~~ ROZSTRZYGNIĘTE: Z4 (melodia flisaka) + Z8 (melodia zakonu).
 3. ~~Czy zmieniamy na historyczny instrument~~ ROZSTRZYGNIĘTE [2026-06-01]: rekwizyt = kalimba, **opis fabularny = instrument historyczny**; anachronizm schowany, meta-wyjaśnienie w kartce autorskiej.
 4. ~~Treść melodii Z4 (flisak)~~ ROZSTRZYGNIĘTE [2026-06-01]: **= Z8 (`621454`)**, różni tylko oprawa.
-5. ~~Który instrument narracyjny per tor~~ **ROZSTRZYGNIĘTE [2026-06-01]:** **brak nazwy własnej — opis ogólny: „lamellofon"**. Zasada: opisujemy mechanizm (metalowe języczki), nie nazywamy instrumentu z epoki. Kalimba = lamellofon → żaden anachronizm w tekście. Z4 (flisak): *"a small iron-tongue instrument"*. Z8 (zakon): analogicznie przy MVP. Patrz `puzzles/envelopes/miasto-5-Z4.md §Notatki planistyczne`.
+5. ~~Który instrument narracyjny per tor~~ **ROZSTRZYGNIĘTE [2026-06-01]:** **brak nazwy własnej — opis ogólny: „lamellofon"**. Zasada: opisujemy mechanizm (metalowe języczki), nie nazywamy instrumentu z epoki. Kalimba = lamellofon → żaden anachronizm w tekście. Z4 (flisak): *"a small iron-tongue instrument"*. Z8 (zakon): analogicznie przy MVP. Patrz `envelopes/miasto-5-Z4.md §Notatki planistyczne`.
 
 ## Co autor może zrobić sam vs gdzie pomocy
 
