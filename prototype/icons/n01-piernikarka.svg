@@ -1,14 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Piernik — toruńskie serce piernikowe">
-  <title>Piernik (toruńskie serce)</title>
-  <!-- ciasto piernikowe -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Kosz pierników — pomnik Piernikarki">
+  <title>Kosz pierników (Piernikarka)</title>
+  <!-- pałąk kosza -->
+  <path d="M17 30 C 17 9, 47 9, 47 30" fill="none" stroke="#6e4824" stroke-width="2.6" stroke-linecap="round"/>
+  <path d="M19 29 C 19 13, 45 13, 45 29" fill="none" stroke="#c08a52" stroke-width="2" stroke-linecap="round"/>
+  <!-- pierniki wystające ponad krawędź -->
   <path d="M32 57 C 14 43 6 32 6 22 C 6 14 12 9 19 9 C 25 9 30 13 32 18 C 34 13 39 9 45 9 C 52 9 58 14 58 22 C 58 32 50 43 32 57 Z"
-        fill="#a86c38" stroke="#6e4824" stroke-width="2.5" stroke-linejoin="round"/>
-  <!-- delikatne podświetlenie -->
-  <path d="M20 14 C 15 15 11 18 11 23" fill="none" stroke="#c08a52" stroke-width="2.4" stroke-linecap="round"/>
-  <!-- lukier: kropkowana obwódka (wewnętrzne serce) -->
+        fill="#c08a52" stroke="#6e4824" stroke-width="2.4" stroke-linejoin="round"
+        transform="translate(19 16) scale(0.2)"/>
   <path d="M32 57 C 14 43 6 32 6 22 C 6 14 12 9 19 9 C 25 9 30 13 32 18 C 34 13 39 9 45 9 C 52 9 58 14 58 22 C 58 32 50 43 32 57 Z"
-        fill="none" stroke="#fdf3e3" stroke-width="2.4" stroke-linecap="round"
-        stroke-dasharray="0.1 5.4" transform="translate(32 31.5) scale(0.78) translate(-32 -31.5)"/>
-  <!-- lukier: zawijas w środku -->
-  <path d="M22 31 q5 -7 10 0 t10 0" fill="none" stroke="#fdf3e3" stroke-width="2.3" stroke-linecap="round"/>
+        fill="#c08a52" stroke="#6e4824" stroke-width="2.4" stroke-linejoin="round"
+        transform="translate(31 18) scale(0.22)"/>
+  <!-- krawędź kosza (rant) -->
+  <path d="M9 31 Q32 25 55 31 Q32 37 9 31 Z"
+        fill="#efe0b8" stroke="#6e4824" stroke-width="2.5" stroke-linejoin="round"/>
+  <!-- czasza kosza -->
+  <path d="M12 33 L52 33 L45 55 Q44 58 40 58 L24 58 Q20 58 19 55 Z"
+        fill="#a86c38" stroke="#6e4824" stroke-width="2.6" stroke-linejoin="round"/>
+  <!-- splot: pionowe pręty -->
+  <path d="M24 35 L23 57 M32 35 L32 58 M40 35 L41 57" fill="none" stroke="#6e4824" stroke-width="2" stroke-linecap="round"/>
+  <!-- splot: poziome pasma -->
+  <path d="M14 41 Q32 44 50 41 M16 49 Q32 52 48 49" fill="none" stroke="#6e4824" stroke-width="2" stroke-linecap="round"/>
+  <path d="M15 45 Q32 48 49 45" fill="none" stroke="#c08a52" stroke-width="1.8" stroke-linecap="round"/>
 </svg>

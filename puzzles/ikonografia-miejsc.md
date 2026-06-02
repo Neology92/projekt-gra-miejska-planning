@@ -17,7 +17,7 @@
 
 | Miejsce | Lokalizacja | Cecha wizualna (haczyk) | Piktogram (placeholder) | Rola w Z1 | Weryfikacja |
 |---|---|---|---|---|---|
-| **Pomnik Piernikarki** | Rynek Nowomiejski | kosz toruńskich pierników; piesek szarpie suknię | **piernik** (serce piernikowe) — wektor `prototype/icons/n01-piernikarka.svg` | łańcuch (△) | ✓ wiki #35 |
+| **Pomnik Piernikarki** | Rynek Nowomiejski | kosz toruńskich pierników; piesek szarpie suknię | **koszyk** (kosz pierników) — wektor `prototype/icons/n01-piernikarka.svg` | łańcuch (△) | ✓ wiki #35 |
 | **Kamienica Pod Gwiazdą** | Rynek Staromiejski 35 | pozłacana **gwiazda** na szczycie żółtej barokowej fasady (data 1697) | ⭐ gwiazda | łańcuch (○) | ✓ wiki #7 |
 | **osiołek** (dawny pręgierz) | Rynek / zbieg z ul. Żeglarską | żelazny **grzbiet osiołka** (replika pręgierza) | 🫏 osioł | łańcuch (□) | ✓ wiki #3 |
 | **Pomnik Kopernika** | Rynek Staromiejski (przy Ratuszu) | **astrolabium / sfera armilarna** trzymane przez posąg astronoma | **astrolabium** — wektor `prototype/icons/c01-kopernik.svg` | łańcuch (◇, KONIEC) | ✓ **FAKT [autor, 2026-06-01]** — posąg trzyma instrument (must-have); wiki #1 wymienia tylko wąsik i delfina, ale instrument jest |
@@ -31,14 +31,14 @@
 
 Pełnoprawne SVG (nie emoji), użyte w `prototype/mapa-z1-podglad.html`:
 
-- `prototype/icons/n01-piernikarka.svg` — toruńskie **serce piernikowe** (brąz + kropkowany lukier).
+- `prototype/icons/n01-piernikarka.svg` — **kosz toruńskich pierników** (wiklinowy splot, pałąk, dwa pierniki-serca ponad krawędzią). Wariant z samym sercem zachowany jako `n01-piernikarka-zapas-serce.svg`.
 - `prototype/icons/c01-kopernik.svg` — **astrolabium** (tarcza z graduacją, ekliptyka, alidada, zawieszka).
 
 Pozostałe 7 detali to na razie emoji (🫏 ⭐ 🗼 🎩 🎺 ⚖️ 🛡️) — do zwektoryzowania w tym samym stylu, gdy ścieżka będzie zatwierdzona.
 
 ## Cechy alternatywne (zapas — gdyby trzeba podmienić piktogram)
 
-- **Piernikarka:** piesek u sukni (uwaga: kolizja z motywem „pies" przy Filusiu) · kobieta w czepku.
+- **Piernikarka:** serce piernikowe (poprzedni piktogram, `n01-piernikarka-zapas-serce.svg`) · piesek u sukni (uwaga: kolizja z motywem „pies" przy Filusiu) · kobieta w czepku.
 - **Pod Gwiazdą:** ornament kwiatowo-owocowy fasady · data **1697** · barokowy portal.
 - **osiołek:** ołowiane ciężarki u nóg · ostra blacha grzbietu.
 - **Kopernik:** **wąsik** (znaleziony w renowacji 2003) · głowa **delfina** w studzience cokołu · inskrypcja łacińska na cokole.

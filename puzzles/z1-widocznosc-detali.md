@@ -21,7 +21,7 @@
 
 | Kod | Miejsce | Detal (co wypatrzeć) | Gdzie szukać | Ikona | Dotąd | Werdykt |
 |---|---|---|---|---|---|---|
-| `N01` | Pomnik Piernikarki (Garbary / Kr. Jadwigi) | piernik-serce w koszu; piesek szarpie suknię | u stóp figury | `n01-piernikarka.svg` | wiki #35 | ✅ (R2) |
+| `N01` | Pomnik Piernikarki (Garbary / Kr. Jadwigi) | kosz pierników w dłoni; piesek szarpie suknię | trzymany przez figurę | `n01-piernikarka.svg` | wiki #35 | ✅ (R2) |
 | `N02` | Pomnik Przekupki (Rynek Nowomiejski) | gęś u stóp (chwytliwsza niż waga) | u stóp figury | `n02-przekupka.svg` | wiki #34 | ✅ (R2) |
 | `N04` | Apteka Pod Złotym Lwem (Rynek Nowom. 13) | pozłacany lew **nad drzwiami** | nad wejściem | `n04-apteka-lew.svg` | **teren ✓** | ✅ (R1) |
 | `N05` | Kościół św. Jakuba (Rynek Nowomiejski) | łuki przyporowe; nawa gł. wyższa | bryła z ulicy | `n05-kosciol-jakuba.svg` | **teren ✓** | ✅ (R1) |
