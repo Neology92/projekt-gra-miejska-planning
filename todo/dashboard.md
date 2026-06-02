@@ -153,7 +153,7 @@ Szczegóły: mechanics/koperty-mg.md §ZAŁOŻENIA PRZED RENDEREM · prototype/p
 
 ```
 ⬜ K2-K (wersja krzyżacka) ...... Pula B plotek (krytyka Zakonu) + Z2 → Albrecht (handler KZ [2026-06-02])
-⬜ Skrypt Albrechta (Zosia) F2A . handler KZ: spotkanie + żądanie dowodu + wręczenie K3-K (Z3Z) + Tabeli 1
+🟡 Skrypt Albrechta (Zosia) F2A . handler KZ DOPISANY [2026-06-03] jako PART TWO karty: weryfikacja (kolor+parol⟨TBD⟩) + duma/żądanie dowodu + zadanie Z3Z (obserwuj Jordana: szata+chochla) + wręczenie K3-K + Tabeli 1; NIE bierze listu (finał). Dwurolowość Zosi (TR cel / KZ handler) oflagowana  [materials/actors/albrecht-actor-card-draft.md PART TWO]
 ⬜ Z3Z — infiltracja Piccolo .... lustro Z3: kradzież „zaopatrzenia" + 20:30 + obserwacja Jordana (brązowa szata + chochla → dane Z11)
 🟡 Z8 — melodia zakonu .......... koperta gracza draft [2026-06-02]: lustro Z4 (kalimba, kod 621454), klimat zakonny + zapomniany brat; senderless scene + iron-tongue generic  [envelopes/krzyzacy-4-Z8.md]. Zostaje: review Oskara (TONE FLAG: gorycz vs lojalność) + klucz finału Z11
 🟡 Z9 — sensoryczna piernik ..... lustro Z5; brief + rekwizyty wyrenderowane [2026-06-02] (public/krzyzacy-4-Z9.pdf + wspólne z5z9-* + mg-Z5Z9-klucz); zostaje: review Oskara + klucz finału (#9)

@@ -11,6 +11,20 @@
 
 ---
 
+> ## TWO ROLES — read this first [2026-06-03]
+> You, Zosia, play **Komtur Albrecht for BOTH factions**, in two opposite scenes:
+> - **PART ONE — TR groups (the list theft):** the town's couriers come to you posing as "informers"; you show off the Order's list and let them steal it. (Everything from QUICK REFERENCE down to PLANNING NOTES.)
+> - **PART TWO — KZ groups (the handler):** the Order's *own* couriers come to you; you test them, send them to infiltrate the enemy's nest, and arm them with the Order's key. (New section, just before PLANNING NOTES.)
+>
+> Same costume, same Komtur — opposite framing. Which scene you run depends on the group's **wristband colour**:
+> **TR = Red / Orange / Yellow / Green / Cyan** → PART ONE (they rob you).
+> **KZ = Blue / Purple / White / Brown / Black** → PART TWO (they serve you).
+> **Oskar (MG) staggers the two queues so a TR group and a KZ group are never with you at once** (they would see contradictory scenes).
+
+---
+
+## PART ONE — TR GROUPS · the list theft
+
 ## QUICK REFERENCE (actor cheat sheet — print separately if needed)
 
 ```
@@ -196,9 +210,138 @@ After a group steals the list and leaves:
 
 ---
 
+# PART TWO — KZ GROUPS · the handler
+
+> Your **second role** [added 2026-06-03, REWIZJA]. To the **town (TR)** groups you are the enemy whose list they steal (PART ONE). To the **Order's (KZ)** groups you are their **handler** — the proud Komtur who tests them, sends them into the enemy's nest, and gives them the Order's recognition key. Same costume, same Komtur; opposite scene. **Oskar staggers the queues so the two never overlap.**
+
+## QUICK REFERENCE — KZ HANDLER
+
+```
+╔══════════════════════════════════════════════════════════════╗
+║  ALBRECHT / ZOSIA — KZ HANDLER QUICK REF                    ║
+╠══════════════════════════════════════════════════════════════╣
+║  YOUR 5 KZ GROUPS (fixed):                                  ║
+║  □ Blue (G6)   □ Purple (G7)   □ White (G8)                 ║
+║  □ Brown (G9)   □ Black (G10)                                ║
+╠══════════════════════════════════════════════════════════════╣
+║  VERIFY ON ARRIVAL:                                         ║
+║  ✓ Right wristband colour (above) + the day's word          ║
+║    (from N.'s slip — ⟨PAROLE TBD: ties to KZ Z2⟩)          ║
+║  ✗ Wrong colour / no word → "The Order does not know you." ║
+╠══════════════════════════════════════════════════════════════╣
+║  SCENE SEQUENCE (every group, every time):                  ║
+║  1. They approach, claim to serve the Order → verify        ║
+║  2. Pride & contempt: they must EARN the Order's trust      ║
+║  3. Set the task: infiltrate the enemy's nest (Piccolo)     ║
+║  4. Hand K3-K + Recognition Table (Tabela 1) — in silence   ║
+║  5. Dismiss them. You do NOT take their letter now.         ║
+╠══════════════════════════════════════════════════════════════╣
+║  THEY KEEP THE LETTER. Delivery is at the walls tonight     ║
+║  (20:30), free choice — never here.                         ║
+╠══════════════════════════════════════════════════════════════╣
+║  DONE CHECKLIST:                                            ║
+║  □ Blue   □ Purple   □ White   □ Brown   □ Black             ║
+╚══════════════════════════════════════════════════════════════╝
+```
+
+---
+
+## WHO YOU ARE (to the KZ groups)
+
+Same proud Komtur — but these are people who come *claiming to serve the Order.* You do not embrace them. The Order is not desperate (let them think so), and you trust no one on sight. They carry a dispatch they say must reach you; their go-between has vanished. Good — go-betweens are weak links. But **you will not simply take what they carry. First they prove they are worth the Order's trust.**
+
+Your gate is **pride.** You are the legitimate power here; the rabble are beneath you; and anyone who would serve the Order earns it by doing the Order's dangerous work — going into the enemy's own nest and bringing back what the Order needs.
+
+### Your three jobs (KZ handler)
+1. **Be the proud master, not a grateful ally.** They serve you; you do not thank them. Contempt that *tests*, not warmth.
+2. **Set the task (Z3Z).** Send them to infiltrate the townsmen's nest — Piccolo, the cook Jordan's kitchen — to steal the enemy's supplies, learn the **hour** of the rising, and *watch the cook himself closely.*
+3. **Arm them with the Order's key.** Hand the **Recognition Table** (Tabela 1) — the Order's cipher of colours and tokens — that they will need before the night is out. Hand it with K3-K, **in silence** (meta gesture, like dealing a card).
+
+> You are NOT collecting their letter. The dispatch stays with them. Whether it ever reaches your hand is decided at the walls tonight (the finale) — not now.
+
+---
+
+## STEP K1 — THEY APPROACH (verify)
+
+A group comes up claiming to carry something for the Order, or to serve it. Receive them with **cold suspicion** — the Order does not trust strangers:
+
+> *"You. You come to the Komtur of the Order. State your business — and be quick about it."*
+
+Verify two things before you give them anything:
+
+- **Wristband colour** — only the five above are yours. Wrong colour → *"I think you have mistaken your master. The Order does not know you."* (signal Oskar).
+- **The day's word** — N., their vanished go-between, set a word for today; a true man of the Order's cause will give it. ⟨**PAROLE TBD** — ties to the KZ version of the Z2 deduction; cross-ref `envelopes/krzyzacy-2-Z2` slip when written.⟩ No word → press them once; if still nothing, send them off.
+
+If both check out, let a little grim satisfaction show:
+
+> *"…So. Sent to me, and the carrier already gone to ground. Of course he is."*
+
+---
+
+## STEP K2 — PRIDE & THE TASK
+
+Do **not** warm to them. They may expect thanks, or to simply hand over their dispatch and be done. Deny them both:
+
+> *"You think you carry something, and so the Order owes you? The Order owes no one. If you would serve — if you would have me so much as look at what you carry — you will earn it first."*
+
+Then set the task (Z3Z), in your own words:
+
+> There is a cook in this town. Jordan. Keeps a kitchen at Piccolo. It is no kitchen — it is where the traitors' Council does its whispering. Go there. Take what feeds them — their supplies — and deny it to them. Learn the **hour** they mean to move tonight. And mark the cook himself well: **what he wears, what he carries.** The Order will know its enemy by sight.
+
+> *Why "mark what he wears, what he carries": this seeds the two Z3Z observations the group needs for the finale cipher — Jordan's **brown robe** and his **ladle** (→ Recognition Table / Z11). Say it as a commander's thoroughness, not a riddle.*
+
+> *Tone: this is a test as much as a task. You expect them to fail. Let them feel they must prove you wrong.*
+
+---
+
+## STEP K3 — HAND OVER K3-K + RECOGNITION TABLE, DISMISS
+
+Three things in smooth succession:
+
+1. **Hand the K3-K envelope** matching their colour — **in silence.** A flat line is enough: *"Everything you need is in here."* Do not explain it, do not discuss its contents, do not let them pull you into talk about it (meta gesture, outside the fiction — like dealing a card).
+2. **Hand the Recognition Table** (Tabela 1) — the Order's grid of colours and tokens. In-world, frame it as the Order's secret:
+   > *"And this. The Order knows its own by signs the rabble cannot read. You will need it before the night is out. Guard it — lose it and you are no one to me."*
+3. **Dismiss them:**
+   > *"Now go. Come to the walls tonight, when the eighth bell sounds — if you have proven worth the coming."*
+
+You keep the dispatch out of it. **You never take their letter here.**
+
+---
+
+## STEP K4 — REACTIONS (KZ)
+
+**If they try to hand you the letter now:**
+- Refuse, proud. *"Did I ask for it? You hand the Order nothing until you have shown you are the Order's. Tonight. At the walls. Not before."*
+
+**If they push to know more about the task:**
+- *"It is all in there. The Order does not hold hands."* (point to K3-K).
+
+**If they ask who the cook really is / about the game:**
+- *"A traitor with a ladle. That is all you need to know."* **Do NOT hint that Jordan is anyone but a cook** — you do not know it, and it must not leak (the finale twist is the town's, not yours).
+
+**If a group is passive / unsure what to do:**
+- *"Well? The night will not wait. Go."* If still stuck, signal Oskar (MG).
+
+**If they get aggressive or break character:**
+- You are a proud commander; you do not break. *"You forget yourself."* Oskar intervenes if needed.
+
+---
+
+## TIMING & THE TWO ROLES (read with Oskar)
+
+You play Albrecht for **both** factions, in opposite framings. Practical rules:
+
+- **~5–10 min per KZ group** (verify + task + hand-over). Oskar paces the queue.
+- **Oskar staggers TR and KZ groups** so you are never running a theft scene (PART ONE) and a handler scene (PART TWO) at the same time — they would see contradictory versions of you.
+- **Costume is the same** for both. Location can be the same spot outside the walls, or two nearby spots — agree with Oskar on the day.
+- **The Recognition Table (Tabela 1)** is a printed prop — have a stack, one per KZ group, sorted by colour (like the K3-K envelopes).
+- ⚠ **Open (verify with Zosia at rehearsal):** whether one actor can sustain two opposite framings across the afternoon. Flagged **symmetric with Piotr/Jordan**, who is also dual-role (handler → TR at Piccolo / infiltration *target* → KZ in Z3Z). See `lore/meta-kartki/krzyzacy-3-Z3Z.md §SPORNE` and `concept/05-tor-krzyzakow.md §REWIZJA`.
+
+---
+
 ## PLANNING NOTES (nie dla gracza/aktora)
 
-**Rola Albrechta = jedyny żywy „wróg".** Zosia obsługuje TYLKO tor TR Z3 (kradzież listy). Tor krzyżacki ma osobną mechanikę (papier), Albrecht się tam nie dubluje w prototypie.
+**Rola Albrechta = dwie role [REWIZJA 2026-06-02/03, `concept/05 §REWIZJA`].** ~~Zosia obsługuje TYLKO tor TR Z3~~ — nieaktualne. Zosia gra Albrechta dla **OBU** torów: (1) **cel kradzieży** dla TR (PART ONE — lista), (2) **handler** dla KZ (PART TWO — wręcza zadanie Z3Z + Tabelę 1, żąda dowodu godności). Symetrycznie do Piotra/Jordana (handler→TR / cel→KZ). Brama KZ = **duma Albrechta** (jawny komtur żąda, by udowodnić wartość przed przyjęciem listu) — `concept/05`, `puzzles/z11-szyfr-spec.md §5`. **Logistyka dnia:** MG przeplata kolejki TR/KZ (nigdy obie naraz). ⚠ Dwurolowość jednego aktora = otwarte do weryfikacji na próbie (flaga symetryczna z Piotrem, `krzyzacy-3-Z3Z §SPORNE`).
 
 **Dlaczego Albrecht sam wyciąga listę (wariant A — donosiciele):** to domyka uzasadnienie fabularne (`zasada-uzasadnienie-fabularne`) — lista jest na widoku, bo komtur **chce** pochwalić się wiedzą Zakonu przed „donosicielami". Bez tego lista „leżąca przypadkiem" byłaby naciągana. Pokrycie: `donosiciele-1454.js`.
 
