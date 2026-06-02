@@ -38,7 +38,8 @@ $src  = Join-Path $here 'src'
 # deliverables to print, across prototype -> MVP). Created on demand.
 $repoRoot = (Resolve-Path (Join-Path $here '..\..')).Path
 $outDir   = Join-Path $repoRoot 'public'
-New-Item -ItemType Directory -Force -Path $outDir | Out-Null
+$outDirMG = Join-Path $outDir 'prototyp-druk\mg-i-aktorzy'
+New-Item -ItemType Directory -Force -Path $outDir, $outDirMG | Out-Null
 
 # Locate a Chromium-based browser.
 $candidates = @(
@@ -68,6 +69,16 @@ $jobs = @{
   'miasto-4-Z3b.html'         = 'miasto-4-Z3b.pdf'
   'miasto-5-Z4.html'          = 'miasto-5-Z4.pdf'
   'miasto-6-Z7.html'          = 'miasto-6-Z7.pdf'
+}
+
+# MG operational + actor materials → public/prototyp-druk/mg-i-aktorzy/
+# No stamp injection (these are GM/actor-facing, not player-facing).
+$jobsMG = @{
+  'mg-group-cards.html'   = 'prototyp-druk\mg-i-aktorzy\mg-karty-grup.pdf'
+  'mg-master-board.html'  = 'prototyp-druk\mg-i-aktorzy\mg-tablica-statusow.pdf'
+  'mg-quick-hints.html'   = 'prototyp-druk\mg-i-aktorzy\mg-szybkie-podpowiedzi.pdf'
+  'jordan-quick-ref.html' = 'prototyp-druk\mg-i-aktorzy\jordan-quick-ref.pdf'
+  'albrecht-quick-ref.html' = 'prototyp-druk\mg-i-aktorzy\albrecht-quick-ref.pdf'
 }
 
 # Edge-stamp prefix per source (faction letter + 2-digit envelope nr). The color suffix is the -Color
@@ -149,5 +160,22 @@ foreach ($in in $jobs.Keys) {
 
 # Clean up temp stamped copies (leave the source HTML pristine with the __STAMP__ placeholder).
 foreach ($t in $tempFiles) { if (Test-Path $t) { Remove-Item -LiteralPath $t -Force } }
+
+# Render MG operational + actor materials (no stamp, no staleness guard — these are authored directly in HTML).
+Write-Host ''
+Write-Host 'Rendering MG/actor materials...' -ForegroundColor Cyan
+foreach ($in in $jobsMG.Keys) {
+  $inPath  = Join-Path $src $in
+  if (-not (Test-Path $inPath)) { Write-Warning "MISSING source: $in"; continue }
+  $outPath = Join-Path $outDir $jobsMG[$in]
+  $uri = ([System.Uri]$inPath).AbsoluteUri
+  & $browser --headless --no-sandbox --disable-gpu --no-pdf-header-footer `
+    --print-to-pdf="$outPath" $uri | Out-Null
+  if (Test-Path $outPath) {
+    "{0,-40} -> {1,8:N0} bytes" -f $jobsMG[$in], (Get-Item $outPath).Length
+  } else {
+    Write-Warning "FAILED: $($jobsMG[$in])"
+  }
+}
 
 Write-Host "Done."

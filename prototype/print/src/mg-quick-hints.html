@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>GM Quick Hints — per puzzle</title>
+<style>
+@page { size: A4; margin: 12mm 14mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: "Segoe UI", system-ui, sans-serif; font-size: 9pt; color: #2a1a10; background: #fff; }
+
+h1 { font-size: 13pt; margin-bottom: 1mm; }
+.subtitle { font-size: 7.5pt; color: #7a6a58; margin-bottom: 4mm; }
+
+.hint-box {
+  border: 1.5pt solid #c8b0a0;
+  border-radius: 6px;
+  margin-bottom: 4mm;
+  overflow: hidden;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+.hint-header {
+  background: #3a2a18; color: #fff;
+  padding: 5px 10px;
+  display: flex; align-items: baseline; gap: 8px;
+  -webkit-print-color-adjust: exact; print-color-adjust: exact;
+}
+.hint-name { font-weight: 700; font-size: 10pt; }
+.hint-answer-bar {
+  background: #f0e8d8; padding: 4px 10px;
+  border-bottom: 1pt solid #c8b0a0;
+  font-family: "Consolas","Courier New",monospace; font-size: 8.5pt;
+  -webkit-print-color-adjust: exact; print-color-adjust: exact;
+}
+.ans-label { color: #7a6050; font-size: 7.5pt; font-weight: 600; text-transform: uppercase; }
+.ans-val { font-weight: 700; color: #7a2e22; }
+
+.hints { padding: 4px 10px; }
+.hint-row {
+  display: grid; grid-template-columns: 52px 1fr;
+  gap: 2px 6px; padding: 3px 0;
+  border-bottom: .5pt dotted #ddd; line-height: 1.35;
+  font-size: 8.8pt;
+}
+.hint-row:last-child { border-bottom: none; }
+.hlabel {
+  font-weight: 700; font-size: 7.5pt; text-transform: uppercase;
+  letter-spacing: .04em; color: #5a4030; white-space: nowrap; padding-top: 1px;
+}
+.hlabel.emergency { color: #9a2020; }
+.hlabel.special { color: #2a5a30; }
+.htext { }
+.htext em { font-style: italic; color: #4a3020; }
+.htext strong { color: #2a1a10; }
+</style>
+</head>
+<body>
+
+<h1>GM Quick Hints — per puzzle</h1>
+<p class="subtitle">Pull out when a group phones in stuck. Give hints in order (H1 → H2 → H3 → Emergency). Skip levels only when time is critical. Z2/Z3: hints delivered over the phone.</p>
+
+<!-- Z1 -->
+<div class="hint-box">
+  <div class="hint-header">
+    <span class="hint-name">Z1 — Symbol Trail</span>
+    <span style="font-size:8pt;opacity:.8">expected ~20–30 min · report = 4 places in order</span>
+  </div>
+  <div class="hint-answer-bar">
+    <span class="ans-label">Answer: </span>
+    <span class="ans-val">group-specific — see their group card or master board</span>
+  </div>
+  <div class="hints">
+    <div class="hint-row">
+      <span class="hlabel">H1 gentle</span>
+      <span class="htext"><em>"Match the image on your cipher card to what you physically see — it's something actually there, not something you'd need to know. Look closely."</em></span>
+    </div>
+    <div class="hint-row">
+      <span class="hlabel">H2 medium</span>
+      <span class="htext"><em>"You're looking for [describe the type of object — e.g. an animal / a number / a building feature]. That image is on your cipher card."</em></span>
+    </div>
+    <div class="hint-row">
+      <span class="hlabel">H3 direct</span>
+      <span class="htext">Name the next location directly. Time matters more than the puzzle at this stage.</span>
+    </div>
+    <div class="hint-row">
+      <span class="hlabel emergency">On wrong loop</span>
+      <span class="htext"><em>"You've walked 4+ places — does the last one say KONIEC (END)? If not, you're on the wrong path. Go back to the very first symbol on your K1 envelope and start again."</em></span>
+    </div>
+  </div>
+</div>
+
+<!-- Z2 -->
+<div class="hint-box">
+  <div class="hint-header">
+    <span class="hint-name">Z2 — Morning Errands</span>
+    <span style="font-size:8pt;opacity:.8">logic puzzle in K2 · no MG checkpoint — hints by phone if they call</span>
+  </div>
+  <div class="hint-answer-bar">
+    <span class="ans-label">Answer: </span>
+    <span class="ans-val">Jordan → Piccolo (hot-food place) — bought a ladle</span>
+    <span style="color:#7a6050;font-size:7.5pt;"> (Lambert → Old Mill / bread · Kordian → Smithy / cloth)</span>
+  </div>
+  <div class="hints">
+    <div class="hint-row">
+      <span class="hlabel">H1 gentle</span>
+      <span class="htext"><em>"Clue 2 tells you something about Jordan directly. Start there."</em></span>
+    </div>
+    <div class="hint-row">
+      <span class="hlabel">H2 medium</span>
+      <span class="htext"><em>"Lambert bought food outside his own place — so he can't work at the food place. That rules one out for him. Work from there."</em></span>
+    </div>
+    <div class="hint-row">
+      <span class="hlabel">H3 direct</span>
+      <span class="htext"><em>"Jordan works at Piccolo. Go there and ask for him by name."</em></span>
+    </div>
+  </div>
+</div>
+
+<!-- Z3 -->
+<div class="hint-box">
+  <div class="hint-header">
+    <span class="hint-name">Z3 — Castle / Theft</span>
+    <span style="font-size:8pt;opacity:.8">Zosia/Albrecht runs this · theft is mandatory · every group must succeed</span>
+  </div>
+  <div class="hint-answer-bar">
+    <span class="ans-label">Goal: </span>
+    <span class="ans-val">steal parchment (pergamin) while Albrecht's back is turned · bring to MG</span>
+  </div>
+  <div class="hints">
+    <div class="hint-row">
+      <span class="hlabel">H1 on-site</span>
+      <span class="htext"><strong>Signal Zosia</strong> (don't call the group). Ask her to slow her patrol / lengthen Phase A (away time).</span>
+    </div>
+    <div class="hint-row">
+      <span class="hlabel">H2 phone group</span>
+      <span class="htext"><em>"Re-read the envelope you received from the commander. The instructions are there."</em></span>
+    </div>
+    <div class="hint-row">
+      <span class="hlabel">H3 direct</span>
+      <span class="htext"><em>"You need the parchment he was reading from. He sets it down and walks away — wait until his back is turned, then take it cleanly."</em></span>
+    </div>
+    <div class="hint-row">
+      <span class="hlabel emergency">Emergency</span>
+      <span class="htext">Zosia unavailable: hand group the pergamin directly. <em>"A contact managed to get this from inside."</em> Z4 continues normally.</span>
+    </div>
+  </div>
+</div>
+
+<!-- Z4 -->
+<div class="hint-box">
+  <div class="hint-header">
+    <span class="hint-name">Z4 — Kalimba</span>
+    <span style="font-size:8pt;opacity:.8">listen to melody → play back → write 6 note-numbers → report</span>
+  </div>
+  <div class="hint-answer-bar">
+    <span class="ans-label">Code: </span>
+    <span class="ans-val">6 · 2 · 1 · 4 · 5 · 4</span>
+    <span style="color:#7a6050;font-size:7.5pt;"> — exact order, 6 digits. Do NOT confirm partial codes.</span>
+  </div>
+  <div class="hints">
+    <div class="hint-row">
+      <span class="hlabel">H1 gentle</span>
+      <span class="htext"><em>"Play it slower than you think. One note at a time — write the number before you move to the next."</em></span>
+    </div>
+    <div class="hint-row">
+      <span class="hlabel">H2 replay</span>
+      <span class="htext">Replay the melody more slowly. <em>"Count as you go — don't try to remember it all at the end."</em></span>
+    </div>
+    <div class="hint-row">
+      <span class="hlabel">H3 count</span>
+      <span class="htext"><em>"You have exactly six notes. You're close — make sure you haven't missed one."</em> (Do NOT give any digit.)</span>
+    </div>
+    <div class="hint-row">
+      <span class="hlabel emergency">Emergency</span>
+      <span class="htext">(&lt;30 min to 20:30) <em>"A contact passed on the boatman's code: 6, 2, 1, 4, 5, 4."</em> Hand K8 directly.</span>
+    </div>
+  </div>
+</div>
+
+<!-- Z7 -->
+<div class="hint-box">
+  <div class="hint-header">
+    <span class="hint-name">Z7 — Cezar Cipher</span>
+    <span style="font-size:8pt;opacity:.8">shift +7 · compare motto headers on szyfrogram (K8) vs pergamin (Z3 list)</span>
+  </div>
+  <div class="hint-answer-bar">
+    <span class="ans-label">Answer: </span>
+    <span class="ans-val">HANS VON BAYSEN IS JORDAN THE COOK</span>
+    <span style="color:#7a6050;font-size:7.5pt;"> — accept core: "Hans von Baysen". Full phrase can be paraphrased.</span>
+  </div>
+  <div class="hints">
+    <div class="hint-row">
+      <span class="hlabel">H1 gentle</span>
+      <span class="htext"><em>"Look at the very top of that letter. You've seen that script before today — somewhere you've already been."</em></span>
+    </div>
+    <div class="hint-row">
+      <span class="hlabel">H2 medium</span>
+      <span class="htext"><em>"Compare the heading of the cipher letter with the heading of the names list you stole. Same font, same punctuation. Count how many steps each letter moved — same shift every time."</em></span>
+    </div>
+    <div class="hint-row">
+      <span class="hlabel">H3 key only</span>
+      <span class="htext">(&lt;30 min) <em>"The shift is 7 — every letter moved 7 steps forward. Apply that backwards."</em></span>
+    </div>
+    <div class="hint-row">
+      <span class="hlabel emergency">Emergency</span>
+      <span class="htext"><em>"It reads: HANS VON BAYSEN IS JORDAN THE COOK. Who does that make Jordan?"</em></span>
+    </div>
+    <div class="hint-row">
+      <span class="hlabel special">Twist didn't land</span>
+      <span class="htext">Group decoded but seems unmoved — ask: <em>"Who were you sent to deliver that letter to, from the very start?"</em> → then: <em>"Look at the top of the names list — what does it say beside the first name?"</em> Let them connect it themselves.</span>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Albrecht — Actor Quick Ref (Zosia)</title>
+<style>
+@page { size: A5; margin: 10mm 12mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: "Segoe UI", system-ui, sans-serif; font-size: 9.5pt; color: #2a1a10; background: #fff; }
+
+.banner {
+  background: #2a3a50; color: #fff;
+  padding: 8px 12px; border-radius: 5px 5px 0 0;
+  font-weight: 700; font-size: 12pt;
+  -webkit-print-color-adjust: exact; print-color-adjust: exact;
+}
+.banner-sub { font-size: 8pt; font-weight: 400; opacity: .8; margin-top: 1px; }
+.card { border: 2pt solid #4a6080; border-radius: 5px; overflow: hidden; margin-bottom: 4mm; }
+.section { padding: 6px 10px; border-bottom: 1pt solid #ddd; }
+.section:last-child { border-bottom: none; }
+.sh { font-weight: 700; font-size: 8pt; text-transform: uppercase; letter-spacing: .05em; color: #2a4060; margin-bottom: 4px; }
+
+.groups { display: flex; flex-wrap: wrap; gap: 4px; }
+.group-tag {
+  display: flex; align-items: center; gap: 4px;
+  padding: 3px 8px; border-radius: 12px; font-size: 8.5pt; font-weight: 600;
+  -webkit-print-color-adjust: exact; print-color-adjust: exact;
+}
+.chk { font-family: "Consolas","Courier New",monospace; font-size: 12pt; margin-right: 2px; }
+.dot { width: 10px; height: 10px; border-radius: 50%; border: .5pt solid rgba(0,0,0,.2); flex-shrink:0; }
+
+/* Patrol cycle */
+.patrol { display: flex; gap: 6px; margin-top: 2px; }
+.phase {
+  flex: 1; border-radius: 5px; padding: 5px 7px;
+  -webkit-print-color-adjust: exact; print-color-adjust: exact;
+}
+.phase-a { background: #e8f4e8; border: 1pt solid #5a9a5a; }
+.phase-b { background: #faf0d8; border: 1pt solid #c0a030; }
+.phase-c { background: #fce8e8; border: 1pt solid #c04040; }
+.phase-label { font-weight: 700; font-size: 9pt; }
+.phase-sub { font-size: 7.5pt; margin-top: 1px; }
+.steal-now { font-weight: 700; color: #1a6a1a; font-size: 8pt; }
+.caution { color: #7a5000; font-size: 8pt; }
+.no-steal { font-weight: 700; color: #9a1a1a; font-size: 8pt; }
+
+.done-row { display: flex; gap: 6px; flex-wrap: wrap; }
+.done-item { display: flex; align-items: center; gap: 4px; font-size: 9pt; padding: 3px 7px; border: 1pt solid #ccc; border-radius: 10px; }
+.done-chk { font-family: "Consolas","Courier New",monospace; font-size: 11pt; }
+
+.verify-row { display: grid; grid-template-columns: 14px 1fr; gap: 3px 6px; padding: 3px 0; border-bottom: .5pt dotted #ddd; font-size: 8.8pt; align-items: baseline; }
+.verify-row:last-child { border-bottom: none; }
+.mark { font-family: "Consolas","Courier New",monospace; font-size: 11pt; }
+.note { font-size: 8pt; color: #7a6050; font-style: italic; }
+</style>
+</head>
+<body>
+
+<div class="card">
+  <div class="banner">
+    Komtur Albrecht — Quick Reference
+    <div class="banner-sub">Zosia · outside castle walls (Przedzamcze area) · Faza 2B Z3</div>
+  </div>
+
+  <div class="section">
+    <div class="sh">Your 5 TR groups (fixed)</div>
+    <div class="groups">
+      <div class="group-tag" style="background:#E6194B;color:#fff"><span class="chk">□</span><span class="dot" style="background:#E6194B;border-color:#fff"></span>Red</div>
+      <div class="group-tag" style="background:#F58231;color:#fff"><span class="chk">□</span><span class="dot" style="background:#F58231;border-color:#fff"></span>Orange</div>
+      <div class="group-tag" style="background:#FFE119;color:#1a1a00;border:1pt solid #ccc"><span class="chk">□</span><span class="dot" style="background:#FFE119;border-color:#aaa"></span>Yellow</div>
+      <div class="group-tag" style="background:#3CB44B;color:#fff"><span class="chk">□</span><span class="dot" style="background:#3CB44B;border-color:#fff"></span>Green</div>
+      <div class="group-tag" style="background:#42D4F4;color:#1a2a2a;border:1pt solid #aaa"><span class="chk">□</span><span class="dot" style="background:#42D4F4;border-color:#aaa"></span>Cyan</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="sh">Scene sequence (every group)</div>
+    <ol style="font-size:8.8pt; padding-left:14px; line-height:1.6">
+      <li>They approach as <em>informers</em> → receive with contempt that warms into interest</li>
+      <li>Pull out list (showing off) → set it down at fixed spot</li>
+      <li>Hand K-Z3b <strong>silently</strong> (meta — no comment, no reaction to content)</li>
+      <li>Step off into patrol cycle (see below)</li>
+      <li>After steal: reset with fresh parchment from bag</li>
+    </ol>
+  </div>
+
+  <div class="section">
+    <div class="sh">Patrol cycle (~30–40 s per loop)</div>
+    <div class="patrol">
+      <div class="phase phase-a">
+        <div class="phase-label">A — AWAY</div>
+        <div class="phase-sub">step to far end, back to list</div>
+        <div class="steal-now">▲ STEAL NOW</div>
+      </div>
+      <div class="phase phase-b">
+        <div class="phase-label">B — RETURN</div>
+        <div class="phase-sub">amble back, telegraph clearly</div>
+        <div class="caution">⚠ risky</div>
+      </div>
+      <div class="phase phase-c">
+        <div class="phase-label">C — AT LIST</div>
+        <div class="phase-sub">stand at list, eye them</div>
+        <div class="no-steal">✗ do not steal</div>
+      </div>
+    </div>
+    <p style="font-size:8pt;color:#5a4030;margin-top:3px">Always telegraph! Repeat until they grab. Caught = reset, never end the scene.</p>
+  </div>
+
+  <div class="section">
+    <div class="sh">If group is passive</div>
+    <div class="verify-row"><span class="mark" style="color:#c06010">1</span><span>In character: <em>"Well? Was there something else? My list and I are very busy."</em> (draw eye to parchment)</span></div>
+    <div class="verify-row"><span class="mark" style="color:#c01030">2</span><span>Still stuck after 3+ tries: slow Phase A / signal Oskar (MG)</span></div>
+  </div>
+
+  <div class="section">
+    <div class="sh">Done — tick when group steals list and leaves</div>
+    <div class="done-row">
+      <div class="done-item"><span class="done-chk">□</span><span class="dot" style="background:#E6194B"></span>Red</div>
+      <div class="done-item"><span class="done-chk">□</span><span class="dot" style="background:#F58231"></span>Orange</div>
+      <div class="done-item"><span class="done-chk">□</span><span class="dot" style="background:#FFE119;border:1pt solid #aaa"></span>Yellow</div>
+      <div class="done-item"><span class="done-chk">□</span><span class="dot" style="background:#3CB44B"></span>Green</div>
+      <div class="done-item"><span class="done-chk">□</span><span class="dot" style="background:#42D4F4;border:1pt solid #aaa"></span>Cyan</div>
+    </div>
+    <p class="note" style="margin-top:4px">Also needed at Przedzamcze at 20:30 for finale. Full script: prototype/albrecht-actor-card-draft.md</p>
+  </div>
+</div>
+
+</body>
+</html>

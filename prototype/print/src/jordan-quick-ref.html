@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Jordan — Actor Quick Ref (Piotr)</title>
+<style>
+@page { size: A5; margin: 10mm 12mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: "Segoe UI", system-ui, sans-serif; font-size: 9.5pt; color: #2a1a10; background: #fff; }
+
+.banner {
+  background: #3a2a18; color: #fff;
+  padding: 8px 12px; border-radius: 5px 5px 0 0;
+  font-weight: 700; font-size: 12pt;
+  -webkit-print-color-adjust: exact; print-color-adjust: exact;
+}
+.banner-sub { font-size: 8pt; font-weight: 400; opacity: .8; margin-top: 1px; }
+.card { border: 2pt solid #8a6040; border-radius: 5px; overflow: hidden; margin-bottom: 4mm; }
+.section { padding: 6px 10px; border-bottom: 1pt solid #ddd; }
+.section:last-child { border-bottom: none; }
+.sh { font-weight: 700; font-size: 8pt; text-transform: uppercase; letter-spacing: .05em; color: #7a4020; margin-bottom: 4px; }
+
+/* Group checklist */
+.groups { display: flex; flex-wrap: wrap; gap: 4px; }
+.group-tag {
+  display: flex; align-items: center; gap: 4px;
+  padding: 3px 8px; border-radius: 12px; font-size: 8.5pt; font-weight: 600;
+  -webkit-print-color-adjust: exact; print-color-adjust: exact;
+}
+.chk { font-family: "Consolas","Courier New",monospace; font-size: 12pt; margin-right: 2px; }
+.dot { width: 10px; height: 10px; border-radius: 50%; border: .5pt solid rgba(0,0,0,.2); flex-shrink:0; }
+
+/* Verification table */
+.verify-row { display: grid; grid-template-columns: 14px 80px 1fr; gap: 3px 6px; padding: 3px 0; border-bottom: .5pt dotted #ddd; font-size: 8.8pt; align-items: baseline; }
+.verify-row:last-child { border-bottom: none; }
+.mark { font-family: "Consolas","Courier New",monospace; font-size: 11pt; }
+.cond { font-size: 8pt; color: #5a4030; }
+.response { font-style: italic; color: #3a2a18; }
+
+/* Done checklist */
+.done-row { display: flex; gap: 6px; flex-wrap: wrap; }
+.done-item { display: flex; align-items: center; gap: 4px; font-size: 9pt; padding: 3px 7px; border: 1pt solid #ccc; border-radius: 10px; }
+.done-chk { font-family: "Consolas","Courier New",monospace; font-size: 11pt; }
+
+.note { font-size: 8pt; color: #7a6050; font-style: italic; }
+</style>
+</head>
+<body>
+
+<div class="card">
+  <div class="banner">
+    Jordan — Quick Reference
+    <div class="banner-sub">Piotr · Piccolo, ul. Prosta 20 · Faza 2A</div>
+  </div>
+
+  <div class="section">
+    <div class="sh">Your 5 TR groups (fixed)</div>
+    <div class="groups">
+      <div class="group-tag" style="background:#E6194B;color:#fff"><span class="chk">□</span><span class="dot" style="background:#E6194B;border-color:#fff"></span>Red</div>
+      <div class="group-tag" style="background:#F58231;color:#fff"><span class="chk">□</span><span class="dot" style="background:#F58231;border-color:#fff"></span>Orange</div>
+      <div class="group-tag" style="background:#FFE119;color:#1a1a00;border:1pt solid #ccc"><span class="chk">□</span><span class="dot" style="background:#FFE119;border-color:#aaa"></span>Yellow</div>
+      <div class="group-tag" style="background:#3CB44B;color:#fff"><span class="chk">□</span><span class="dot" style="background:#3CB44B;border-color:#fff"></span>Green</div>
+      <div class="group-tag" style="background:#42D4F4;color:#1a2a2a;border:1pt solid #aaa"><span class="chk">□</span><span class="dot" style="background:#42D4F4;border-color:#aaa"></span>Cyan</div>
+    </div>
+    <p class="note" style="margin-top:4px">KZ groups (Blue/Purple/White/Brown/Black) also come here for Z3Z — different framing. Check wristband before proceeding.</p>
+  </div>
+
+  <div class="section">
+    <div class="sh">Verification on arrival</div>
+    <div class="verify-row"><span class="mark" style="color:#1a7030">✓</span><span class="cond">says "Jordan" + "bought a ladle"</span><span class="response">"Then I think I know who sent you."</span></div>
+    <div class="verify-row"><span class="mark" style="color:#c06010">~</span><span class="cond">says "Jordan" but no ladle</span><span class="response">"And how would you know me, if a friend sent you?"</span></div>
+    <div class="verify-row"><span class="mark" style="color:#c01030">✗</span><span class="cond">neither</span><span class="response">"I think you're looking for someone else in this street. Sorry."</span></div>
+    <div class="verify-row"><span class="mark" style="color:#c01030">✗</span><span class="cond">wrong wristband colour</span><span class="response">"I think you're looking for someone else." → signal Oskar</span></div>
+  </div>
+
+  <div class="section">
+    <div class="sh">Props per group</div>
+    <p style="font-size:8.8pt">K3 envelope — match to wristband colour before handing over. Say: <em style="font-style:italic;color:#3a2a18">"Don't open it out here."</em></p>
+  </div>
+
+  <div class="section">
+    <div class="sh">Done — tick when group leaves with K3</div>
+    <div class="done-row">
+      <div class="done-item"><span class="done-chk">□</span><span class="dot" style="background:#E6194B"></span>Red</div>
+      <div class="done-item"><span class="done-chk">□</span><span class="dot" style="background:#F58231"></span>Orange</div>
+      <div class="done-item"><span class="done-chk">□</span><span class="dot" style="background:#FFE119;border:1pt solid #aaa"></span>Yellow</div>
+      <div class="done-item"><span class="done-chk">□</span><span class="dot" style="background:#3CB44B"></span>Green</div>
+      <div class="done-item"><span class="done-chk">□</span><span class="dot" style="background:#42D4F4;border:1pt solid #aaa"></span>Cyan</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="sh">Timing &amp; logistics</div>
+    <p style="font-size:8.8pt">10–15 min per group · signal Oskar when done · next group waits outside · do NOT run two at once.</p>
+    <p class="note" style="margin-top:3px">Full script: prototype/jordan-actor-script-draft.md</p>
+  </div>
+</div>
+
+</body>
+</html>
