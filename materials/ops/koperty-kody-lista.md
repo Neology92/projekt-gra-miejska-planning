@@ -1,0 +1,81 @@
+# Koperty — lista kodów do zapisania (cała gra)
+
+> **Format kodu:** `[m/zk]-[kolor]-[nr_koperty]-[nr_zadania]`
+> `m` = miasto (TR) · `zk` = zakon (krzyżacy) · `nr_koperty` = kolejność otwierania w danej grupie · `nr_zadania` = Z#.
+> **Wyczerpująca, płaska lista 65 kopert.** Przechodź wiersz po wierszu i zapisuj kod na kopercie. Kolory bez ogonków (zgodnie ze stemplem druku).
+> ⚠ Z1 (`-1-Z1`) jest treściowo wspólna (ukrywa frakcję) — prefiks `m`/`zk` wynika z koloru grupy. Jeśli wolisz nie zdradzać frakcji na zewnątrz tej koperty, użyj na niej `w` zamiast `m/zk`.
+
+**Opcjonalna F2B per grupa:** czerwony=Z4 · pomaranczowy=Z5 · zolty=Z5 · zielony=Z6 · turkusowy=Z6 · niebieski=Z8 · fioletowy=Z8 · bialy=Z9 · brazowy=Z10 · czarny=Z10.
+
+---
+
+- [ ] `m-czerwony-1-Z1` — szlak symboli (wspólna: brief + mapa + deszyfrownik + list + opaska)
+- [ ] `m-czerwony-2-Z2` — droga do Jordana (brief + slip „— R.")
+- [ ] `m-czerwony-3-Z3` — infiltracja zamku / zwiad (wręcza Jordan)
+- [ ] `m-czerwony-4-Z3b` — rozkaz kradzieży (wręcza Albrecht; pergamin = łup obok)
+- [ ] `m-czerwony-5-Z4` — opcjonalna: melodia / kalimba (rekwizyt)
+- [ ] `m-czerwony-6-Z7` — szyfrogram finałowy (rozwiązują)
+- [ ] `m-czerwony-7-Z7` — notatka finałowa (po weryfikacji u MG)
+- [ ] `m-pomaranczowy-1-Z1` — szlak symboli (wspólna: brief + mapa + deszyfrownik + list + opaska)
+- [ ] `m-pomaranczowy-2-Z2` — droga do Jordana (brief + slip „— R.")
+- [ ] `m-pomaranczowy-3-Z3` — infiltracja zamku / zwiad (wręcza Jordan)
+- [ ] `m-pomaranczowy-4-Z3b` — rozkaz kradzieży (wręcza Albrecht; pergamin = łup obok)
+- [ ] `m-pomaranczowy-5-Z5` — opcjonalna: sensoryczna / piernik (słoje)
+- [ ] `m-pomaranczowy-6-Z7` — szyfrogram finałowy (rozwiązują)
+- [ ] `m-pomaranczowy-7-Z7` — notatka finałowa (po weryfikacji u MG)
+- [ ] `m-zolty-1-Z1` — szlak symboli (wspólna: brief + mapa + deszyfrownik + list + opaska)
+- [ ] `m-zolty-2-Z2` — droga do Jordana (brief + slip „— R.")
+- [ ] `m-zolty-3-Z3` — infiltracja zamku / zwiad (wręcza Jordan)
+- [ ] `m-zolty-4-Z3b` — rozkaz kradzieży (wręcza Albrecht; pergamin = łup obok)
+- [ ] `m-zolty-5-Z5` — opcjonalna: sensoryczna / piernik (słoje)
+- [ ] `m-zolty-6-Z7` — szyfrogram finałowy (rozwiązują)
+- [ ] `m-zolty-7-Z7` — notatka finałowa (po weryfikacji u MG)
+- [ ] `m-zielony-1-Z1` — szlak symboli (wspólna: brief + mapa + deszyfrownik + list + opaska)
+- [ ] `m-zielony-2-Z2` — droga do Jordana (brief + slip „— R.")
+- [ ] `m-zielony-3-Z3` — infiltracja zamku / zwiad (wręcza Jordan)
+- [ ] `m-zielony-4-Z3b` — rozkaz kradzieży (wręcza Albrecht; pergamin = łup obok)
+- [ ] `m-zielony-5-Z6` — opcjonalna: herby hanzeatyckie (karta herbów)
+- [ ] `m-zielony-6-Z7` — szyfrogram finałowy (rozwiązują)
+- [ ] `m-zielony-7-Z7` — notatka finałowa (po weryfikacji u MG)
+- [ ] `m-turkusowy-1-Z1` — szlak symboli (wspólna: brief + mapa + deszyfrownik + list + opaska)
+- [ ] `m-turkusowy-2-Z2` — droga do Jordana (brief + slip „— R.")
+- [ ] `m-turkusowy-3-Z3` — infiltracja zamku / zwiad (wręcza Jordan)
+- [ ] `m-turkusowy-4-Z3b` — rozkaz kradzieży (wręcza Albrecht; pergamin = łup obok)
+- [ ] `m-turkusowy-5-Z6` — opcjonalna: herby hanzeatyckie (karta herbów)
+- [ ] `m-turkusowy-6-Z7` — szyfrogram finałowy (rozwiązują)
+- [ ] `m-turkusowy-7-Z7` — notatka finałowa (po weryfikacji u MG)
+- [ ] `zk-niebieski-1-Z1` — szlak symboli (wspólna: brief + mapa + deszyfrownik + list + opaska)
+- [ ] `zk-niebieski-2-Z2` — droga / → Albrecht (brief + slip Pula B)
+- [ ] `zk-niebieski-3-Z3Z` — infiltracja Piccolo (wręcza Albrecht; + Tabela 1)
+- [ ] `zk-niebieski-4-Z8` — opcjonalna: melodia zakonu / kalimba (rekwizyt)
+- [ ] `zk-niebieski-5-Z11` — szyfr finałowy (+ Tabela 2)
+- [ ] `zk-niebieski-6-Z11` — notatka finałowa (po weryfikacji u MG)
+- [ ] `zk-fioletowy-1-Z1` — szlak symboli (wspólna: brief + mapa + deszyfrownik + list + opaska)
+- [ ] `zk-fioletowy-2-Z2` — droga / → Albrecht (brief + slip Pula B)
+- [ ] `zk-fioletowy-3-Z3Z` — infiltracja Piccolo (wręcza Albrecht; + Tabela 1)
+- [ ] `zk-fioletowy-4-Z8` — opcjonalna: melodia zakonu / kalimba (rekwizyt)
+- [ ] `zk-fioletowy-5-Z11` — szyfr finałowy (+ Tabela 2)
+- [ ] `zk-fioletowy-6-Z11` — notatka finałowa (po weryfikacji u MG)
+- [ ] `zk-bialy-1-Z1` — szlak symboli (wspólna: brief + mapa + deszyfrownik + list + opaska)
+- [ ] `zk-bialy-2-Z2` — droga / → Albrecht (brief + slip Pula B)
+- [ ] `zk-bialy-3-Z3Z` — infiltracja Piccolo (wręcza Albrecht; + Tabela 1)
+- [ ] `zk-bialy-4-Z9` — opcjonalna: sensoryczna / piernik (słoje)
+- [ ] `zk-bialy-5-Z11` — szyfr finałowy (+ Tabela 2)
+- [ ] `zk-bialy-6-Z11` — notatka finałowa (po weryfikacji u MG)
+- [ ] `zk-brazowy-1-Z1` — szlak symboli (wspólna: brief + mapa + deszyfrownik + list + opaska)
+- [ ] `zk-brazowy-2-Z2` — droga / → Albrecht (brief + slip Pula B)
+- [ ] `zk-brazowy-3-Z3Z` — infiltracja Piccolo (wręcza Albrecht; + Tabela 1)
+- [ ] `zk-brazowy-4-Z10` — opcjonalna: polichromie / Biedronka (karta)
+- [ ] `zk-brazowy-5-Z11` — szyfr finałowy (+ Tabela 2)
+- [ ] `zk-brazowy-6-Z11` — notatka finałowa (po weryfikacji u MG)
+- [ ] `zk-czarny-1-Z1` — szlak symboli (wspólna: brief + mapa + deszyfrownik + list + opaska)
+- [ ] `zk-czarny-2-Z2` — droga / → Albrecht (brief + slip Pula B)
+- [ ] `zk-czarny-3-Z3Z` — infiltracja Piccolo (wręcza Albrecht; + Tabela 1)
+- [ ] `zk-czarny-4-Z10` — opcjonalna: polichromie / Biedronka (karta)
+- [ ] `zk-czarny-5-Z11` — szyfr finałowy (+ Tabela 2)
+- [ ] `zk-czarny-6-Z11` — notatka finałowa (po weryfikacji u MG)
+
+---
+
+**Razem: 65 kopert** — TR (miasto) 5×7 = 35 · KZ (zakon) 5×6 = 30.
+Manifest zawartości (co fizycznie do środka) → ten sam folder: `koperty-rozpiska.md §7`.
