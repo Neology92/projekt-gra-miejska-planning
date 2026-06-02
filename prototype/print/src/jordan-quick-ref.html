@@ -1,98 +1,171 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
 <meta charset="UTF-8">
-<title>Jordan — Actor Quick Ref (Piotr)</title>
+<title>Jordan — Ściąga aktora (Piotr)</title>
 <style>
-@page { size: A5; margin: 10mm 12mm; }
+@page { size: A4; margin: 11mm 13mm; }
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body { font-family: "Segoe UI", system-ui, sans-serif; font-size: 9.5pt; color: #2a1a10; background: #fff; }
 
 .banner {
-  background: #3a2a18; color: #fff;
-  padding: 8px 12px; border-radius: 5px 5px 0 0;
-  font-weight: 700; font-size: 12pt;
+  background: #3a2a18; color: #fff; padding: 8px 14px;
+  border-radius: 5px 5px 0 0; font-weight: 700; font-size: 13pt;
   -webkit-print-color-adjust: exact; print-color-adjust: exact;
 }
-.banner-sub { font-size: 8pt; font-weight: 400; opacity: .8; margin-top: 1px; }
+.banner-sub { font-size: 8.5pt; font-weight: 400; opacity: .8; margin-top: 2px; }
 .card { border: 2pt solid #8a6040; border-radius: 5px; overflow: hidden; margin-bottom: 4mm; }
-.section { padding: 6px 10px; border-bottom: 1pt solid #ddd; }
+.section { padding: 7px 12px; border-bottom: 1pt solid #ddd; }
 .section:last-child { border-bottom: none; }
-.sh { font-weight: 700; font-size: 8pt; text-transform: uppercase; letter-spacing: .05em; color: #7a4020; margin-bottom: 4px; }
+.sh { font-weight: 700; font-size: 8pt; text-transform: uppercase; letter-spacing: .05em; color: #7a4020; margin-bottom: 5px; }
 
-/* Group checklist */
-.groups { display: flex; flex-wrap: wrap; gap: 4px; }
+.groups { display: flex; flex-wrap: wrap; gap: 5px; }
 .group-tag {
   display: flex; align-items: center; gap: 4px;
-  padding: 3px 8px; border-radius: 12px; font-size: 8.5pt; font-weight: 600;
+  padding: 3px 9px; border-radius: 12px; font-size: 9pt; font-weight: 600;
   -webkit-print-color-adjust: exact; print-color-adjust: exact;
 }
-.chk { font-family: "Consolas","Courier New",monospace; font-size: 12pt; margin-right: 2px; }
-.dot { width: 10px; height: 10px; border-radius: 50%; border: .5pt solid rgba(0,0,0,.2); flex-shrink:0; }
+.chk { font-family: "Consolas","Courier New",monospace; font-size: 12pt; margin-right: 1px; }
+.dot { width: 11px; height: 11px; border-radius: 50%; border: .5pt solid rgba(0,0,0,.2); flex-shrink:0; }
 
-/* Verification table */
-.verify-row { display: grid; grid-template-columns: 14px 80px 1fr; gap: 3px 6px; padding: 3px 0; border-bottom: .5pt dotted #ddd; font-size: 8.8pt; align-items: baseline; }
-.verify-row:last-child { border-bottom: none; }
-.mark { font-family: "Consolas","Courier New",monospace; font-size: 11pt; }
-.cond { font-size: 8pt; color: #5a4030; }
-.response { font-style: italic; color: #3a2a18; }
+.step { display: grid; grid-template-columns: 14px 1fr; gap: 2px 7px; padding: 4px 0; border-bottom: .5pt dotted #e0d0c0; font-size: 9pt; line-height: 1.4; }
+.step:last-child { border-bottom: none; }
+.step-num { font-weight: 700; color: #7a4020; font-size: 10pt; }
+.cue { font-style: italic; color: #2a1a10; background: #fdf5e8; border-radius: 3px; padding: 1px 5px; display: inline; border: .5pt solid #e8d8b0; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+.note { font-size: 8pt; color: #7a6050; margin-top: 1px; }
 
-/* Done checklist */
-.done-row { display: flex; gap: 6px; flex-wrap: wrap; }
-.done-item { display: flex; align-items: center; gap: 4px; font-size: 9pt; padding: 3px 7px; border: 1pt solid #ccc; border-radius: 10px; }
-.done-chk { font-family: "Consolas","Courier New",monospace; font-size: 11pt; }
+.verify-grid { display: grid; grid-template-columns: 14px 110px 1fr; gap: 3px 8px; }
+.verify-row { display: contents; }
+.vm { font-family: "Consolas","Courier New",monospace; font-size: 12pt; padding: 2px 0; }
+.vc { font-size: 8.5pt; color: #5a4030; padding-top: 2px; }
+.vr { font-style: italic; color: #2a1a10; font-size: 9pt; padding: 2px 0; }
 
-.note { font-size: 8pt; color: #7a6050; font-style: italic; }
+.done-row { display: flex; gap: 7px; flex-wrap: wrap; }
+.done-item { display: flex; align-items: center; gap: 5px; font-size: 9.5pt; padding: 4px 9px; border: 1pt solid #ccc; border-radius: 10px; }
+.done-chk { font-family: "Consolas","Courier New",monospace; font-size: 12pt; }
+
+.alert { background: #fff3e0; border: 1pt solid #f0a030; border-radius: 4px; padding: 4px 8px; font-size: 8.5pt; margin-top: 4px; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
 </style>
 </head>
 <body>
 
 <div class="card">
   <div class="banner">
-    Jordan — Quick Reference
-    <div class="banner-sub">Piotr · Piccolo, ul. Prosta 20 · Faza 2A</div>
+    Jordan — Ściąga aktora
+    <div class="banner-sub">Piotr · Piccolo, ul. Prosta 20 · wchodzisz jako Jordan, kucharz z chochlą — NIE jesteś Jan Bażyński (to twist finału)</div>
   </div>
 
   <div class="section">
-    <div class="sh">Your 5 TR groups (fixed)</div>
+    <div class="sh">Twoje 5 grup TR (stałe, znane przed grą)</div>
     <div class="groups">
-      <div class="group-tag" style="background:#E6194B;color:#fff"><span class="chk">□</span><span class="dot" style="background:#E6194B;border-color:#fff"></span>Red</div>
-      <div class="group-tag" style="background:#F58231;color:#fff"><span class="chk">□</span><span class="dot" style="background:#F58231;border-color:#fff"></span>Orange</div>
-      <div class="group-tag" style="background:#FFE119;color:#1a1a00;border:1pt solid #ccc"><span class="chk">□</span><span class="dot" style="background:#FFE119;border-color:#aaa"></span>Yellow</div>
-      <div class="group-tag" style="background:#3CB44B;color:#fff"><span class="chk">□</span><span class="dot" style="background:#3CB44B;border-color:#fff"></span>Green</div>
-      <div class="group-tag" style="background:#42D4F4;color:#1a2a2a;border:1pt solid #aaa"><span class="chk">□</span><span class="dot" style="background:#42D4F4;border-color:#aaa"></span>Cyan</div>
+      <div class="group-tag" style="background:#E6194B;color:#fff"><span class="chk">□</span><span class="dot" style="background:#E6194B;border-color:#fff"></span>Czerwony</div>
+      <div class="group-tag" style="background:#F58231;color:#fff"><span class="chk">□</span><span class="dot" style="background:#F58231;border-color:#fff"></span>Pomarańczowy</div>
+      <div class="group-tag" style="background:#FFE119;color:#1a1a00;border:1pt solid #ccc"><span class="chk">□</span><span class="dot" style="background:#FFE119;border-color:#aaa"></span>Żółty</div>
+      <div class="group-tag" style="background:#3CB44B;color:#fff"><span class="chk">□</span><span class="dot" style="background:#3CB44B;border-color:#fff"></span>Zielony</div>
+      <div class="group-tag" style="background:#42D4F4;color:#1a2a2a;border:1pt solid #aaa"><span class="chk">□</span><span class="dot" style="background:#42D4F4;border-color:#aaa"></span>Turkusowy</div>
     </div>
-    <p class="note" style="margin-top:4px">KZ groups (Blue/Purple/White/Brown/Black) also come here for Z3Z — different framing. Check wristband before proceeding.</p>
+    <div class="alert">Krzyżacy (Niebieski/Fioletowy/Biały/Brązowy/Czarny) też do ciebie przyjdą — ich wejście wygląda inaczej. Sprawdź kolor opaski ZANIM zaczniesz mówić.</div>
   </div>
 
   <div class="section">
-    <div class="sh">Verification on arrival</div>
-    <div class="verify-row"><span class="mark" style="color:#1a7030">✓</span><span class="cond">says "Jordan" + "bought a ladle"</span><span class="response">"Then I think I know who sent you."</span></div>
-    <div class="verify-row"><span class="mark" style="color:#c06010">~</span><span class="cond">says "Jordan" but no ladle</span><span class="response">"And how would you know me, if a friend sent you?"</span></div>
-    <div class="verify-row"><span class="mark" style="color:#c01030">✗</span><span class="cond">neither</span><span class="response">"I think you're looking for someone else in this street. Sorry."</span></div>
-    <div class="verify-row"><span class="mark" style="color:#c01030">✗</span><span class="cond">wrong wristband colour</span><span class="response">"I think you're looking for someone else." → signal Oskar</span></div>
+    <div class="sh">Weryfikacja przy wejściu</div>
+    <div class="verify-grid">
+      <div class="verify-row">
+        <span class="vm" style="color:#1a7030">✓</span>
+        <span class="vc">mówią „Jordan" + „chochla"</span>
+        <span class="vr">„Myślę, że wiem, kto was przysłał." → przejdź do kroku 2</span>
+      </div>
+      <div class="verify-row">
+        <span class="vm" style="color:#c06010">~</span>
+        <span class="vc">mówią „Jordan", bez chochli</span>
+        <span class="vr">„A skąd byście mnie znali, gdyby przyjaciel was przysłał?" → daj im wyciągnąć hasło</span>
+      </div>
+      <div class="verify-row">
+        <span class="vm" style="color:#c01030">✗</span>
+        <span class="vc">ani Jordan, ani chochla</span>
+        <span class="vr">„Chyba szukacie kogoś innego na tej ulicy. Przepraszam." → zadzwoń do Oskara</span>
+      </div>
+      <div class="verify-row">
+        <span class="vm" style="color:#c01030">✗</span>
+        <span class="vc">zła opaska (KZ, nie TR)</span>
+        <span class="vr">„Myślę, że szukacie kogoś innego." → zadzwoń do Oskara dyskretnie</span>
+      </div>
+    </div>
   </div>
 
   <div class="section">
-    <div class="sh">Props per group</div>
-    <p style="font-size:8.8pt">K3 envelope — match to wristband colour before handing over. Say: <em style="font-style:italic;color:#3a2a18">"Don't open it out here."</em></p>
+    <div class="sh">Przebieg sceny — krok po kroku</div>
+    <div class="step">
+      <span class="step-num">1</span>
+      <div>
+        <b>Posadź i pozwól odetchnąć.</b> Jeśli jest jedzenie — zaproponuj. Krótko, kilka sekund.
+        Możesz powiedzieć coś w stylu: <span class="cue">„Usiądźcie. Widać, że chodziliście."</span>
+        albo: <span class="cue">„Dziwny dzień na przenoszenie wiadomości."</span>
+      </div>
+    </div>
+    <div class="step">
+      <span class="step-num">2</span>
+      <div>
+        <b>Powiedz im o sytuacji w mieście</b> — własnymi słowami, nie dosłownie:
+        <span class="cue">„Coś się ma zaraz zdarzyć. Zakon trzyma to miasto wystarczająco długo — i ci, którzy mają do powiedzenia, zdecydowali, że ta noc to ta właściwa. Koła kręcą się od tygodni, cicho, ostrożnie. Tej nocy przestaną być ciche."</span>
+      </div>
+    </div>
+    <div class="step">
+      <span class="step-num">3</span>
+      <div>
+        <b>Timing i rola grupy:</b>
+        <span class="cue">„Ósme uderzenie — to wtedy. Bądźcie przy zamku zanim wybije."</span>
+        <br><span class="cue">„Ten list, który nosicie — musi trafić w odpowiednie ręce przed dzwonem. Ale najpierw musicie udowodnić, że warto wam zaufać."</span>
+      </div>
+    </div>
+    <div class="step">
+      <span class="step-num">4</span>
+      <div>
+        <b>Wyślij do zadania — wręcz K3:</b>
+        <span class="cue">„Nie dam wam następnego kroku na wiarę. Zasłużcie na to."</span> → wręcz K3 w kolorze opaski.
+        <br><span class="cue">„Nie otwierajcie tutaj."</span>
+        <br><span class="note">Ważne: NIE mów kim jesteś, NIE ujawniaj Bażyńskiego. Plot twist tylko w finale (Z7+KF).</span>
+      </div>
+    </div>
+    <div class="step">
+      <span class="step-num">5</span>
+      <div>
+        <b>Kończysz interakcję.</b> Oni wychodzą. Gdy wychodzą — sygnał do Oskara że skończyłeś z tą grupą (SMS/umówiony znak).
+      </div>
+    </div>
   </div>
 
   <div class="section">
-    <div class="sh">Done — tick when group leaves with K3</div>
+    <div class="sh">Szczegóły fizyczne (grasz cicho, nie podkreślasz)</div>
+    <p style="font-size:9pt;line-height:1.5">Lekko kulejąca noga — stary ból, sztywne kolano. Nic dramatycznego, nic na pokaz. Siedząc ledwo widać. To <b>forshadow tożsamości Bażyńskiego</b> dla uważnych graczy — w finale połączą „kulawy Jordan" z „kulawy bazyliszek". NIE wskazuj na to sam.</p>
+  </div>
+
+  <div class="section">
+    <div class="sh">Trudne sytuacje</div>
+    <div class="step">
+      <span class="step-num">?</span>
+      <div><b>Pytają za dużo kim jesteś:</b> <span class="cue">„Jestem tylko człowiekiem z chochlą. Chcecie to, co mam, czy nie?"</span></div>
+    </div>
+    <div class="step">
+      <span class="step-num">?</span>
+      <div><b>Agresywni lub wychodzą ze skryptu:</b> zostań spokojny w roli. Jesteś kucharzem. Nie wiesz o czym mówią. Zadzwoń do Oskara jeśli potrzebujesz wsparcia.</div>
+    </div>
+    <div class="step">
+      <span class="step-num">?</span>
+      <div><b>Następna grupa czeka na zewnątrz:</b> postaraj się nie przekraczać 15 min. Daj Oskarowi sygnał gdy skończyłeś — on zarządza kolejką.</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="sh">Gotowe — odhacz gdy grupa wychodzi z K3</div>
     <div class="done-row">
-      <div class="done-item"><span class="done-chk">□</span><span class="dot" style="background:#E6194B"></span>Red</div>
-      <div class="done-item"><span class="done-chk">□</span><span class="dot" style="background:#F58231"></span>Orange</div>
-      <div class="done-item"><span class="done-chk">□</span><span class="dot" style="background:#FFE119;border:1pt solid #aaa"></span>Yellow</div>
-      <div class="done-item"><span class="done-chk">□</span><span class="dot" style="background:#3CB44B"></span>Green</div>
-      <div class="done-item"><span class="done-chk">□</span><span class="dot" style="background:#42D4F4;border:1pt solid #aaa"></span>Cyan</div>
+      <div class="done-item"><span class="done-chk">□</span><span class="dot" style="background:#E6194B"></span>Czerwony</div>
+      <div class="done-item"><span class="done-chk">□</span><span class="dot" style="background:#F58231"></span>Pomarańczowy</div>
+      <div class="done-item"><span class="done-chk">□</span><span class="dot" style="background:#FFE119;border:1pt solid #aaa"></span>Żółty</div>
+      <div class="done-item"><span class="done-chk">□</span><span class="dot" style="background:#3CB44B"></span>Zielony</div>
+      <div class="done-item"><span class="done-chk">□</span><span class="dot" style="background:#42D4F4;border:1pt solid #aaa"></span>Turkusowy</div>
     </div>
-  </div>
-
-  <div class="section">
-    <div class="sh">Timing &amp; logistics</div>
-    <p style="font-size:8.8pt">10–15 min per group · signal Oskar when done · next group waits outside · do NOT run two at once.</p>
-    <p class="note" style="margin-top:3px">Full script: prototype/jordan-actor-script-draft.md</p>
+    <p class="note" style="margin-top:5px">Timing: 10–15 min na grupę · 5 grup TR × 15 min = okno ~75 min dla Piotra · pełny skrypt: prototype/jordan-actor-script-draft.md</p>
   </div>
 </div>
 

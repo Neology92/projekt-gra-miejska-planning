@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
 <meta charset="UTF-8">
-<title>GM Group Cards — all 10 groups</title>
+<title>Karty grup MG — wszystkie 10 grup</title>
 <style>
 :root {
   --border: #c8b8a0;
@@ -10,76 +10,48 @@
   --text: #2a1a10;
   --muted: #7a6a58;
   --answer-bg: #f0e8d8;
-  --check-font: "Consolas","Courier New",monospace;
+  --check-font: "Cascadia Code","Consolas","Courier New",monospace;
 }
 @page { size: A4; margin: 10mm 12mm; }
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body { font-family: "Segoe UI", system-ui, sans-serif; font-size: 9.5pt; color: var(--text); background: #fff; }
 
-/* Two cards per A4 page */
 .page { page-break-after: always; display: flex; flex-direction: column; gap: 8mm; height: 277mm; justify-content: space-around; }
 .page:last-child { page-break-after: auto; }
 
 .card {
-  border: 2pt solid var(--border);
-  border-radius: 6px;
-  background: var(--bg);
-  flex: 0 0 auto;
-  overflow: hidden;
-  -webkit-print-color-adjust: exact;
-  print-color-adjust: exact;
+  border: 2pt solid var(--border); border-radius: 6px;
+  background: var(--bg); flex: 0 0 auto; overflow: hidden;
+  -webkit-print-color-adjust: exact; print-color-adjust: exact;
 }
-
-/* Card header band */
 .card-header {
   display: flex; align-items: center; gap: 10px;
-  padding: 7px 12px;
-  font-weight: 700;
-  -webkit-print-color-adjust: exact;
-  print-color-adjust: exact;
+  padding: 7px 12px; font-weight: 700;
+  -webkit-print-color-adjust: exact; print-color-adjust: exact;
 }
 .swatch { width: 22px; height: 22px; border-radius: 3px; flex-shrink: 0; border: 1pt solid rgba(0,0,0,.15); }
 .group-name { font-size: 12pt; }
-.class-badge {
-  margin-left: auto; font-size: 8pt; font-weight: 600;
-  padding: 2px 8px; border-radius: 10px;
-  background: rgba(0,0,0,.12);
-}
-.optional-badge {
-  font-size: 8pt; font-weight: 500;
-  padding: 2px 8px; border-radius: 10px;
-  background: rgba(0,0,0,.08);
-}
+.class-badge { margin-left: auto; font-size: 8pt; font-weight: 600; padding: 2px 8px; border-radius: 10px; background: rgba(0,0,0,.12); }
+.optional-badge { font-size: 8pt; font-weight: 500; padding: 2px 8px; border-radius: 10px; background: rgba(0,0,0,.08); }
 
-/* Z1 answer bar */
 .z1-bar {
-  background: var(--answer-bg);
-  padding: 5px 12px;
-  font-family: var(--check-font);
-  font-size: 8.5pt;
-  border-top: 1pt solid var(--border);
-  border-bottom: 1pt solid var(--border);
-  -webkit-print-color-adjust: exact;
-  print-color-adjust: exact;
+  background: var(--answer-bg); padding: 5px 12px;
+  font-family: var(--check-font); font-size: 8.5pt;
+  border-top: 1pt solid var(--border); border-bottom: 1pt solid var(--border);
+  -webkit-print-color-adjust: exact; print-color-adjust: exact;
 }
 .z1-label { color: var(--muted); font-size: 7.5pt; text-transform: uppercase; letter-spacing: .05em; }
 
-/* Stages */
 .stages { padding: 5px 10px 6px; }
 .stage {
-  display: grid;
-  grid-template-columns: 16px 48px 1fr;
-  align-items: baseline;
-  gap: 3px 6px;
-  padding: 2.5px 0;
-  border-bottom: .5pt dotted #ddd;
-  font-size: 8.8pt;
-  line-height: 1.35;
+  display: grid; grid-template-columns: 16px 52px 1fr;
+  align-items: baseline; gap: 3px 6px;
+  padding: 2.5px 0; border-bottom: .5pt dotted #ddd;
+  font-size: 8.8pt; line-height: 1.35;
 }
 .stage:last-child { border-bottom: none; }
 .chk { font-family: var(--check-font); font-size: 11pt; line-height: 1; color: #555; }
 .stage-id { color: var(--muted); font-size: 7.5pt; font-weight: 600; text-transform: uppercase; white-space: nowrap; }
-.stage-body { }
 .answer { font-weight: 700; color: #7a2e22; }
 .give { color: #2a6032; font-weight: 600; }
 .wrong { color: #8a4010; font-style: italic; }
@@ -88,7 +60,6 @@ body { font-family: "Segoe UI", system-ui, sans-serif; font-size: 9.5pt; color: 
 .notes-row { display: flex; align-items: center; gap: 6px; padding: 4px 10px; border-top: 1pt solid var(--border); font-size: 8pt; color: var(--muted); }
 .notes-line { flex: 1; border-bottom: .5pt solid #ccc; height: 12px; }
 
-/* Color-specific header tints */
 .hdr-red    { background: #E6194B; color: #fff; }
 .hdr-orange { background: #F58231; color: #fff; }
 .hdr-yellow { background: #FFE119; color: #2a1a10; }
@@ -96,263 +67,227 @@ body { font-family: "Segoe UI", system-ui, sans-serif; font-size: 9.5pt; color: 
 .hdr-cyan   { background: #42D4F4; color: #1a2a2a; }
 .hdr-blue   { background: #4363D8; color: #fff; }
 .hdr-purple { background: #911EB4; color: #fff; }
-.hdr-white  { background: #f0f0f0; color: #2a1a10; border-bottom: 1.5pt solid #aaa; }
+.hdr-white  { background: #f0f0f0; color: #2a1a10; }
 .hdr-brown  { background: #9A6324; color: #fff; }
 .hdr-black  { background: #2B2B2B; color: #fff; }
-.swatch-white { border: 1.5pt solid #888 !important; }
 </style>
 </head>
 <body>
 
-<!-- PAGE 1: G1 Red + G2 Orange -->
+<!-- STRONA 1: G1 Czerwony + G2 Pomarańczowy -->
 <div class="page">
 
 <div class="card">
   <div class="card-header hdr-red">
     <div class="swatch" style="background:#E6194B"></div>
-    <span class="group-name">G1 · RED</span>
+    <span class="group-name">G1 · CZERWONY</span>
     <span class="optional-badge">Z4 kalimba</span>
     <span class="class-badge">TR — Tajna Rada</span>
   </div>
-  <div class="z1-bar">
-    <span class="z1-label">Z1 answer: </span>
-    <strong>Piernikarka → Przekupka → Baj Pomorski → Ratusz</strong>
-  </div>
+  <div class="z1-bar"><span class="z1-label">Odpowiedź Z1: </span><strong>Piernikarka → Przekupka → Baj Pomorski → Ratusz</strong></div>
   <div class="stages">
-    <div class="stage"><span class="chk">□</span><span class="stage-id">0 Start</span><span class="stage-body">Give: K1 + letter + map + <strong>G1 cipher card</strong> (RED corner)</span></div>
-    <div class="stage"><span class="chk">□</span><span class="stage-id">1 Z1</span><span class="stage-body"><span class="answer">Piernikarka → Przekupka → Baj Pomorski → Ratusz</span> → <span class="give">give K2</span><br><span class="wrong">wrong: "One of those doesn't match. Go back to the last mark you're certain of."</span></span></div>
-    <div class="stage"><span class="chk">□</span><span class="stage-id">2a Z3 done</span><span class="stage-body">Group brings: <strong>pergamin</strong> (stolen list) → <span class="give">give K-Z4 + kalimba</span> · play melody recording once</span></div>
-    <div class="stage"><span class="chk">□</span><span class="stage-id">2b Z4</span><span class="stage-body">Code: <span class="answer">621454</span> → <span class="give">give K8</span><br><span class="wrong">wrong: "Are you sure those are all the notes, in the right order?" Replay once.</span></span></div>
-    <div class="stage"><span class="chk">□</span><span class="stage-id">2c Z7</span><span class="stage-body">Answer (core): <span class="answer">HANS VON BAYSEN</span> → "Yes — that's it." → <span class="give">give KF</span> · "Eighth bell. Przedzamcze. Be there."</span></div>
-    <div class="stage"><span class="chk">□</span><span class="stage-id">3 Finale</span><span class="stage-body">Arrived 20:30 · letter → <span class="finale-check">□</span>Bażyński <span class="finale-check">□</span>Albrecht</span></div>
+    <div class="stage"><span class="chk">□</span><span class="stage-id">0 Start</span><span>Daj: K1 + zapieczętowany list + mapa Z1 + karta deszyfrująca G1 (CZERWONY narożnik)</span></div>
+    <div class="stage"><span class="chk">□</span><span class="stage-id">1 Raport Z1</span><span><span class="answer">Piernikarka → Przekupka → Baj Pomorski → Ratusz</span> → <span class="give">daj K2</span><br><span class="wrong">błąd: „Jedno z tych miejsc nie pasuje. Wróćcie do ostatniego pewnego punktu."</span></span></div>
+    <div class="stage"><span class="chk">□</span><span class="stage-id">2a Z3 gotowe</span><span>Grupa przynosi: <strong>pergamin</strong> (wykradziona lista) → <span class="give">daj K-Z4 + kalimba</span> · odtwórz melodię raz</span></div>
+    <div class="stage"><span class="chk">□</span><span class="stage-id">2b Kod Z4</span><span>Kod: <span class="answer">621454</span> → <span class="give">daj K8</span><br><span class="wrong">błąd: „Czy na pewno wszystkie nuty i kolejność się zgadzają?" — odtwórz raz.</span></span></div>
+    <div class="stage"><span class="chk">□</span><span class="stage-id">2c Szyfr Z7</span><span>Odpowiedź (rdzeń): <span class="answer">HANS VON BAYSEN</span> → „Tak — to to." → <span class="give">daj KF</span> · „Ósme uderzenie. Przedzamcze. Bądźcie tam."</span></div>
+    <div class="stage"><span class="chk">□</span><span class="stage-id">3 Finał</span><span>Dotarli na 20:30 · list → <span class="finale-check">□</span>Bażyński <span class="finale-check">□</span>Albrecht</span></div>
   </div>
-  <div class="notes-row">Notes <div class="notes-line"></div></div>
+  <div class="notes-row">Notatki <div class="notes-line"></div></div>
 </div>
 
 <div class="card">
   <div class="card-header hdr-orange">
     <div class="swatch" style="background:#F58231"></div>
-    <span class="group-name">G2 · ORANGE</span>
-    <span class="optional-badge">Z5 piernik [MVP]</span>
+    <span class="group-name">G2 · POMARAŃCZOWY</span>
+    <span class="optional-badge">Z5 sensoryczna [MVP]</span>
     <span class="class-badge">TR — Tajna Rada</span>
   </div>
-  <div class="z1-bar">
-    <span class="z1-label">Z1 answer: </span>
-    <strong>Baj Pomorski → Apteka Lew → Kościół Jakuba → Kopernik</strong>
-  </div>
+  <div class="z1-bar"><span class="z1-label">Odpowiedź Z1: </span><strong>Baj Pomorski → Apteka Lew → Kościół Jakuba → Kopernik</strong></div>
   <div class="stages">
-    <div class="stage"><span class="chk">□</span><span class="stage-id">0 Start</span><span class="stage-body">Give: K1 + letter + map + <strong>G2 cipher card</strong> (ORANGE corner)</span></div>
-    <div class="stage"><span class="chk">□</span><span class="stage-id">1 Z1</span><span class="stage-body"><span class="answer">Baj Pomorski → Apteka Lew → Kościół Jakuba → Kopernik</span> → <span class="give">give K2</span></span></div>
-    <div class="stage"><span class="chk">□</span><span class="stage-id">2a Z3 done</span><span class="stage-body">Group brings: <strong>pergamin</strong> → <span class="give">give K-Z5 + props</span> <span class="tbd">[Z5 spec TBD — MVP]</span></span></div>
-    <div class="stage"><span class="chk">□</span><span class="stage-id">2b Z5</span><span class="stage-body"><span class="tbd">Answer TBD (MVP) → give K8</span></span></div>
-    <div class="stage"><span class="chk">□</span><span class="stage-id">2c Z7</span><span class="stage-body">Answer: <span class="answer">HANS VON BAYSEN</span> → <span class="give">give KF</span> · "Eighth bell. Przedzamcze."</span></div>
-    <div class="stage"><span class="chk">□</span><span class="stage-id">3 Finale</span><span class="stage-body">Arrived 20:30 · letter → <span class="finale-check">□</span>Bażyński <span class="finale-check">□</span>Albrecht</span></div>
+    <div class="stage"><span class="chk">□</span><span class="stage-id">0 Start</span><span>Daj: K1 + zapieczętowany list + mapa Z1 + karta G2 (POMARAŃCZOWY narożnik)</span></div>
+    <div class="stage"><span class="chk">□</span><span class="stage-id">1 Raport Z1</span><span><span class="answer">Baj Pomorski → Apteka Lew → Kościół Jakuba → Kopernik</span> → <span class="give">daj K2</span></span></div>
+    <div class="stage"><span class="chk">□</span><span class="stage-id">2a Z3 gotowe</span><span>Przynosi: <strong>pergamin</strong> → <span class="give">daj K-Z5 + rekwizyty</span> <span class="tbd">[spec Z5 do ustalenia — MVP]</span></span></div>
+    <div class="stage"><span class="chk">□</span><span class="stage-id">2b Raport Z5</span><span><span class="tbd">Odpowiedź TBD (MVP) → daj K8</span></span></div>
+    <div class="stage"><span class="chk">□</span><span class="stage-id">2c Szyfr Z7</span><span>Odpowiedź: <span class="answer">HANS VON BAYSEN</span> → <span class="give">daj KF</span> · „Ósme uderzenie. Przedzamcze."</span></div>
+    <div class="stage"><span class="chk">□</span><span class="stage-id">3 Finał</span><span>Dotarli na 20:30 · list → <span class="finale-check">□</span>Bażyński <span class="finale-check">□</span>Albrecht</span></div>
   </div>
-  <div class="notes-row">Notes <div class="notes-line"></div></div>
+  <div class="notes-row">Notatki <div class="notes-line"></div></div>
 </div>
 
-</div><!-- /page 1 -->
+</div>
 
-<!-- PAGE 2: G3 Yellow + G4 Green -->
+<!-- STRONA 2: G3 Żółty + G4 Zielony -->
 <div class="page">
 
 <div class="card">
   <div class="card-header hdr-yellow">
     <div class="swatch" style="background:#FFE119; border-color:#ccc"></div>
-    <span class="group-name">G3 · YELLOW</span>
-    <span class="optional-badge">Z5 piernik [MVP]</span>
+    <span class="group-name">G3 · ŻÓŁTY</span>
+    <span class="optional-badge">Z5 sensoryczna [MVP]</span>
     <span class="class-badge">TR — Tajna Rada</span>
   </div>
-  <div class="z1-bar">
-    <span class="z1-label">Z1 answer: </span>
-    <strong>Osiołek → Piernikarka → Filuś → Pod Gwiazdą</strong>
-  </div>
+  <div class="z1-bar"><span class="z1-label">Odpowiedź Z1: </span><strong>Osiołek → Piernikarka → Filuś → Pod Gwiazdą</strong></div>
   <div class="stages">
-    <div class="stage"><span class="chk">□</span><span class="stage-id">0 Start</span><span class="stage-body">Give: K1 + letter + map + <strong>G3 cipher card</strong> (YELLOW corner)</span></div>
-    <div class="stage"><span class="chk">□</span><span class="stage-id">1 Z1</span><span class="stage-body"><span class="answer">Osiołek → Piernikarka → Filuś → Pod Gwiazdą</span> → <span class="give">give K2</span></span></div>
-    <div class="stage"><span class="chk">□</span><span class="stage-id">2a Z3 done</span><span class="stage-body">Group brings: <strong>pergamin</strong> → <span class="give">give K-Z5 + props</span> <span class="tbd">[Z5 spec TBD — MVP]</span></span></div>
-    <div class="stage"><span class="chk">□</span><span class="stage-id">2b Z5</span><span class="stage-body"><span class="tbd">Answer TBD (MVP) → give K8</span></span></div>
-    <div class="stage"><span class="chk">□</span><span class="stage-id">2c Z7</span><span class="stage-body">Answer: <span class="answer">HANS VON BAYSEN</span> → <span class="give">give KF</span> · "Eighth bell. Przedzamcze."</span></div>
-    <div class="stage"><span class="chk">□</span><span class="stage-id">3 Finale</span><span class="stage-body">Arrived 20:30 · letter → <span class="finale-check">□</span>Bażyński <span class="finale-check">□</span>Albrecht</span></div>
+    <div class="stage"><span class="chk">□</span><span class="stage-id">0 Start</span><span>Daj: K1 + zapieczętowany list + mapa Z1 + karta G3 (ŻÓŁTY narożnik)</span></div>
+    <div class="stage"><span class="chk">□</span><span class="stage-id">1 Raport Z1</span><span><span class="answer">Osiołek → Piernikarka → Filuś → Pod Gwiazdą</span> → <span class="give">daj K2</span></span></div>
+    <div class="stage"><span class="chk">□</span><span class="stage-id">2a Z3 gotowe</span><span>Przynosi: <strong>pergamin</strong> → <span class="give">daj K-Z5 + rekwizyty</span> <span class="tbd">[MVP]</span></span></div>
+    <div class="stage"><span class="chk">□</span><span class="stage-id">2b Raport Z5</span><span><span class="tbd">Odpowiedź TBD (MVP) → daj K8</span></span></div>
+    <div class="stage"><span class="chk">□</span><span class="stage-id">2c Szyfr Z7</span><span>Odpowiedź: <span class="answer">HANS VON BAYSEN</span> → <span class="give">daj KF</span> · „Ósme uderzenie. Przedzamcze."</span></div>
+    <div class="stage"><span class="chk">□</span><span class="stage-id">3 Finał</span><span>Dotarli na 20:30 · list → <span class="finale-check">□</span>Bażyński <span class="finale-check">□</span>Albrecht</span></div>
   </div>
-  <div class="notes-row">Notes <div class="notes-line"></div></div>
+  <div class="notes-row">Notatki <div class="notes-line"></div></div>
 </div>
 
 <div class="card">
   <div class="card-header hdr-green">
     <div class="swatch" style="background:#3CB44B"></div>
-    <span class="group-name">G4 · GREEN</span>
+    <span class="group-name">G4 · ZIELONY</span>
     <span class="optional-badge">Z6 herby [MVP]</span>
     <span class="class-badge">TR — Tajna Rada</span>
   </div>
-  <div class="z1-bar">
-    <span class="z1-label">Z1 answer: </span>
-    <strong>Apteka Lew → Baj Pomorski → Katedra Janów → Osiołek</strong>
-    <span style="color:#888; font-size:7.5pt;"> ⚠ long leg (~14 min)</span>
-  </div>
+  <div class="z1-bar"><span class="z1-label">Odpowiedź Z1: </span><strong>Apteka Lew → Baj Pomorski → Katedra Janów → Osiołek</strong><span style="color:#888;font-size:7.5pt"> ⚠ długa noga (~14 min)</span></div>
   <div class="stages">
-    <div class="stage"><span class="chk">□</span><span class="stage-id">0 Start</span><span class="stage-body">Give: K1 + letter + map + <strong>G4 cipher card</strong> (GREEN corner)</span></div>
-    <div class="stage"><span class="chk">□</span><span class="stage-id">1 Z1</span><span class="stage-body"><span class="answer">Apteka Lew → Baj Pomorski → Katedra Janów → Osiołek</span> → <span class="give">give K2</span></span></div>
-    <div class="stage"><span class="chk">□</span><span class="stage-id">2a Z3 done</span><span class="stage-body">Group brings: <strong>pergamin</strong> → <span class="give">give K-Z6 + karta herbów</span> <span class="tbd">[Z6 TBD — MVP]</span></span></div>
-    <div class="stage"><span class="chk">□</span><span class="stage-id">2b Z6</span><span class="stage-body"><span class="tbd">3 matching herby (ul. Królowej Jadwigi) — answer TBD (MVP) → give K8</span></span></div>
-    <div class="stage"><span class="chk">□</span><span class="stage-id">2c Z7</span><span class="stage-body">Answer: <span class="answer">HANS VON BAYSEN</span> → <span class="give">give KF</span> · "Eighth bell. Przedzamcze."</span></div>
-    <div class="stage"><span class="chk">□</span><span class="stage-id">3 Finale</span><span class="stage-body">Arrived 20:30 · letter → <span class="finale-check">□</span>Bażyński <span class="finale-check">□</span>Albrecht</span></div>
+    <div class="stage"><span class="chk">□</span><span class="stage-id">0 Start</span><span>Daj: K1 + zapieczętowany list + mapa Z1 + karta G4 (ZIELONY narożnik)</span></div>
+    <div class="stage"><span class="chk">□</span><span class="stage-id">1 Raport Z1</span><span><span class="answer">Apteka Lew → Baj Pomorski → Katedra Janów → Osiołek</span> → <span class="give">daj K2</span></span></div>
+    <div class="stage"><span class="chk">□</span><span class="stage-id">2a Z3 gotowe</span><span>Przynosi: <strong>pergamin</strong> → <span class="give">daj K-Z6 + karta herbów</span> <span class="tbd">[MVP]</span></span></div>
+    <div class="stage"><span class="chk">□</span><span class="stage-id">2b Raport Z6</span><span><span class="tbd">3 herby pasujące z ul. Królowej Jadwigi — odpowiedź TBD (MVP) → daj K8</span></span></div>
+    <div class="stage"><span class="chk">□</span><span class="stage-id">2c Szyfr Z7</span><span>Odpowiedź: <span class="answer">HANS VON BAYSEN</span> → <span class="give">daj KF</span> · „Ósme uderzenie. Przedzamcze."</span></div>
+    <div class="stage"><span class="chk">□</span><span class="stage-id">3 Finał</span><span>Dotarli na 20:30 · list → <span class="finale-check">□</span>Bażyński <span class="finale-check">□</span>Albrecht</span></div>
   </div>
-  <div class="notes-row">Notes <div class="notes-line"></div></div>
+  <div class="notes-row">Notatki <div class="notes-line"></div></div>
 </div>
 
-</div><!-- /page 2 -->
+</div>
 
-<!-- PAGE 3: G5 Cyan + G6 Blue -->
+<!-- STRONA 3: G5 Turkusowy + G6 Niebieski -->
 <div class="page">
 
 <div class="card">
   <div class="card-header hdr-cyan">
     <div class="swatch" style="background:#42D4F4; border-color:#aaa"></div>
-    <span class="group-name">G5 · CYAN</span>
+    <span class="group-name">G5 · TURKUSOWY</span>
     <span class="optional-badge">Z6 herby [MVP]</span>
     <span class="class-badge">TR — Tajna Rada</span>
   </div>
-  <div class="z1-bar">
-    <span class="z1-label">Z1 answer: </span>
-    <strong>Kościół Jakuba → Ratusz → Kotwica → Dwór Artusa</strong>
-  </div>
+  <div class="z1-bar"><span class="z1-label">Odpowiedź Z1: </span><strong>Kościół Jakuba → Ratusz → Kotwica → Dwór Artusa</strong></div>
   <div class="stages">
-    <div class="stage"><span class="chk">□</span><span class="stage-id">0 Start</span><span class="stage-body">Give: K1 + letter + map + <strong>G5 cipher card</strong> (CYAN corner)</span></div>
-    <div class="stage"><span class="chk">□</span><span class="stage-id">1 Z1</span><span class="stage-body"><span class="answer">Kościół Jakuba → Ratusz → Kotwica → Dwór Artusa</span> → <span class="give">give K2</span></span></div>
-    <div class="stage"><span class="chk">□</span><span class="stage-id">2a Z3 done</span><span class="stage-body">Group brings: <strong>pergamin</strong> → <span class="give">give K-Z6 + karta herbów</span> <span class="tbd">[Z6 TBD]</span></span></div>
-    <div class="stage"><span class="chk">□</span><span class="stage-id">2b Z6</span><span class="stage-body"><span class="tbd">3 matching herby — answer TBD (MVP) → give K8</span></span></div>
-    <div class="stage"><span class="chk">□</span><span class="stage-id">2c Z7</span><span class="stage-body">Answer: <span class="answer">HANS VON BAYSEN</span> → <span class="give">give KF</span> · "Eighth bell. Przedzamcze."</span></div>
-    <div class="stage"><span class="chk">□</span><span class="stage-id">3 Finale</span><span class="stage-body">Arrived 20:30 · letter → <span class="finale-check">□</span>Bażyński <span class="finale-check">□</span>Albrecht</span></div>
+    <div class="stage"><span class="chk">□</span><span class="stage-id">0 Start</span><span>Daj: K1 + zapieczętowany list + mapa Z1 + karta G5 (TURKUSOWY narożnik)</span></div>
+    <div class="stage"><span class="chk">□</span><span class="stage-id">1 Raport Z1</span><span><span class="answer">Kościół Jakuba → Ratusz → Kotwica → Dwór Artusa</span> → <span class="give">daj K2</span></span></div>
+    <div class="stage"><span class="chk">□</span><span class="stage-id">2a Z3 gotowe</span><span>Przynosi: <strong>pergamin</strong> → <span class="give">daj K-Z6 + karta herbów</span> <span class="tbd">[MVP]</span></span></div>
+    <div class="stage"><span class="chk">□</span><span class="stage-id">2b Raport Z6</span><span><span class="tbd">3 herby — odpowiedź TBD (MVP) → daj K8</span></span></div>
+    <div class="stage"><span class="chk">□</span><span class="stage-id">2c Szyfr Z7</span><span>Odpowiedź: <span class="answer">HANS VON BAYSEN</span> → <span class="give">daj KF</span> · „Ósme uderzenie. Przedzamcze."</span></div>
+    <div class="stage"><span class="chk">□</span><span class="stage-id">3 Finał</span><span>Dotarli na 20:30 · list → <span class="finale-check">□</span>Bażyński <span class="finale-check">□</span>Albrecht</span></div>
   </div>
-  <div class="notes-row">Notes <div class="notes-line"></div></div>
+  <div class="notes-row">Notatki <div class="notes-line"></div></div>
 </div>
 
 <div class="card">
   <div class="card-header hdr-blue">
     <div class="swatch" style="background:#4363D8"></div>
-    <span class="group-name">G6 · BLUE</span>
+    <span class="group-name">G6 · NIEBIESKI</span>
     <span class="optional-badge">Z8 melodia [MVP]</span>
     <span class="class-badge">KZ — Krzyżacy</span>
   </div>
-  <div class="z1-bar">
-    <span class="z1-label">Z1 answer: </span>
-    <strong>Brama Klasztorna → Kościół NMP → Ratusz → Pod Gwiazdą</strong>
-    <span style="color:#888; font-size:7.5pt;"> ⚠ deep SW start</span>
-  </div>
+  <div class="z1-bar"><span class="z1-label">Odpowiedź Z1: </span><strong>Brama Klasztorna → Kościół NMP → Ratusz → Pod Gwiazdą</strong><span style="color:#888;font-size:7.5pt"> ⚠ daleki start SW</span></div>
   <div class="stages">
-    <div class="stage"><span class="chk">□</span><span class="stage-id">0 Start</span><span class="stage-body">Give: K1 + letter + map + <strong>G6 cipher card</strong> (BLUE corner)</span></div>
-    <div class="stage"><span class="chk">□</span><span class="stage-id">1 Z1</span><span class="stage-body"><span class="answer">Brama Klasztorna → Kościół NMP → Ratusz → Pod Gwiazdą</span> → <span class="give">give K2-K</span></span></div>
-    <div class="stage"><span class="chk">□</span><span class="stage-id">2a Z3Z done</span><span class="stage-body"><span class="tbd">[Z3Z output TBD — MVP] → give K-Z8 + kalimba</span></span></div>
-    <div class="stage"><span class="chk">□</span><span class="stage-id">2b Z8</span><span class="stage-body"><span class="tbd">Melody code TBD (MVP) → give K8-K (Z11 cipher)</span></span></div>
-    <div class="stage"><span class="chk">□</span><span class="stage-id">2c Z11</span><span class="stage-body"><span class="tbd">Answer TBD (MVP) → give KF-K</span></span></div>
-    <div class="stage"><span class="chk">□</span><span class="stage-id">3 Finale</span><span class="stage-body">Arrived 20:30 · letter → <span class="finale-check">□</span>Bażyński <span class="finale-check">□</span>Albrecht</span></div>
+    <div class="stage"><span class="chk">□</span><span class="stage-id">0 Start</span><span>Daj: K1 + zapieczętowany list + mapa Z1 + karta G6 (NIEBIESKI narożnik)</span></div>
+    <div class="stage"><span class="chk">□</span><span class="stage-id">1 Raport Z1</span><span><span class="answer">Brama Klasztorna → Kościół NMP → Ratusz → Pod Gwiazdą</span> → <span class="give">daj K2-K</span></span></div>
+    <div class="stage"><span class="chk">□</span><span class="stage-id">2a Z3Z gotowe</span><span><span class="tbd">[efekt Z3Z TBD — MVP] → daj K-Z8 + kalimba</span></span></div>
+    <div class="stage"><span class="chk">□</span><span class="stage-id">2b Raport Z8</span><span><span class="tbd">Kod melodii TBD (MVP) → daj K8-K (szyfr Z11)</span></span></div>
+    <div class="stage"><span class="chk">□</span><span class="stage-id">2c Szyfr Z11</span><span><span class="tbd">Odpowiedź TBD (MVP) → daj KF-K</span></span></div>
+    <div class="stage"><span class="chk">□</span><span class="stage-id">3 Finał</span><span>Dotarli na 20:30 · list → <span class="finale-check">□</span>Bażyński <span class="finale-check">□</span>Albrecht</span></div>
   </div>
-  <div class="notes-row">Notes <div class="notes-line"></div></div>
+  <div class="notes-row">Notatki <div class="notes-line"></div></div>
 </div>
 
-</div><!-- /page 3 -->
+</div>
 
-<!-- PAGE 4: G7 Purple + G8 White -->
+<!-- STRONA 4: G7 Fioletowy + G8 Biały -->
 <div class="page">
 
 <div class="card">
   <div class="card-header hdr-purple">
     <div class="swatch" style="background:#911EB4"></div>
-    <span class="group-name">G7 · PURPLE</span>
+    <span class="group-name">G7 · FIOLETOWY</span>
     <span class="optional-badge">Z8 melodia [MVP]</span>
     <span class="class-badge">KZ — Krzyżacy</span>
   </div>
-  <div class="z1-bar">
-    <span class="z1-label">Z1 answer: </span>
-    <strong>Brama Mostowa → Katedra Janów → Pod Gwiazdą → Dwór Artusa</strong>
-    <span style="color:#888; font-size:7.5pt;"> ⚠ deep S start</span>
-  </div>
+  <div class="z1-bar"><span class="z1-label">Odpowiedź Z1: </span><strong>Brama Mostowa → Katedra Janów → Pod Gwiazdą → Dwór Artusa</strong><span style="color:#888;font-size:7.5pt"> ⚠ daleki start S</span></div>
   <div class="stages">
-    <div class="stage"><span class="chk">□</span><span class="stage-id">0 Start</span><span class="stage-body">Give: K1 + letter + map + <strong>G7 cipher card</strong> (PURPLE corner)</span></div>
-    <div class="stage"><span class="chk">□</span><span class="stage-id">1 Z1</span><span class="stage-body"><span class="answer">Brama Mostowa → Katedra Janów → Pod Gwiazdą → Dwór Artusa</span> → <span class="give">give K2-K</span></span></div>
-    <div class="stage"><span class="chk">□</span><span class="stage-id">2a Z3Z done</span><span class="stage-body"><span class="tbd">[Z3Z TBD — MVP] → give K-Z8 + kalimba</span></span></div>
-    <div class="stage"><span class="chk">□</span><span class="stage-id">2b Z8</span><span class="stage-body"><span class="tbd">Melody code TBD (MVP) → give K8-K</span></span></div>
-    <div class="stage"><span class="chk">□</span><span class="stage-id">2c Z11</span><span class="stage-body"><span class="tbd">Answer TBD (MVP) → give KF-K</span></span></div>
-    <div class="stage"><span class="chk">□</span><span class="stage-id">3 Finale</span><span class="stage-body">Arrived 20:30 · letter → <span class="finale-check">□</span>Bażyński <span class="finale-check">□</span>Albrecht</span></div>
+    <div class="stage"><span class="chk">□</span><span class="stage-id">0 Start</span><span>Daj: K1 + zapieczętowany list + mapa Z1 + karta G7 (FIOLETOWY narożnik)</span></div>
+    <div class="stage"><span class="chk">□</span><span class="stage-id">1 Raport Z1</span><span><span class="answer">Brama Mostowa → Katedra Janów → Pod Gwiazdą → Dwór Artusa</span> → <span class="give">daj K2-K</span></span></div>
+    <div class="stage"><span class="chk">□</span><span class="stage-id">2a Z3Z gotowe</span><span><span class="tbd">[MVP] → daj K-Z8 + kalimba</span></span></div>
+    <div class="stage"><span class="chk">□</span><span class="stage-id">2b Raport Z8</span><span><span class="tbd">Kod TBD (MVP) → daj K8-K</span></span></div>
+    <div class="stage"><span class="chk">□</span><span class="stage-id">2c Szyfr Z11</span><span><span class="tbd">Odpowiedź TBD (MVP) → daj KF-K</span></span></div>
+    <div class="stage"><span class="chk">□</span><span class="stage-id">3 Finał</span><span>Dotarli na 20:30 · list → <span class="finale-check">□</span>Bażyński <span class="finale-check">□</span>Albrecht</span></div>
   </div>
-  <div class="notes-row">Notes <div class="notes-line"></div></div>
+  <div class="notes-row">Notatki <div class="notes-line"></div></div>
 </div>
 
 <div class="card">
   <div class="card-header hdr-white">
-    <div class="swatch swatch-white" style="background:#f8f8f8"></div>
-    <span class="group-name">G8 · WHITE</span>
-    <span class="optional-badge">Z9 piernik [MVP]</span>
+    <div class="swatch" style="background:#f8f8f8; border-color:#888"></div>
+    <span class="group-name">G8 · BIAŁY</span>
+    <span class="optional-badge">Z9 sensoryczna [MVP]</span>
     <span class="class-badge">KZ — Krzyżacy</span>
   </div>
-  <div class="z1-bar">
-    <span class="z1-label">Z1 answer: </span>
-    <strong>Katedra Janów → Kopernik → Piernikarka → Pod Gwiazdą</strong>
-    <span style="color:#888; font-size:7.5pt;"> ⚠ deep SE start</span>
-  </div>
+  <div class="z1-bar"><span class="z1-label">Odpowiedź Z1: </span><strong>Katedra Janów → Kopernik → Piernikarka → Pod Gwiazdą</strong><span style="color:#888;font-size:7.5pt"> ⚠ daleki start SE</span></div>
   <div class="stages">
-    <div class="stage"><span class="chk">□</span><span class="stage-id">0 Start</span><span class="stage-body">Give: K1 + letter + map + <strong>G8 cipher card</strong> (WHITE corner)</span></div>
-    <div class="stage"><span class="chk">□</span><span class="stage-id">1 Z1</span><span class="stage-body"><span class="answer">Katedra Janów → Kopernik → Piernikarka → Pod Gwiazdą</span> → <span class="give">give K2-K</span></span></div>
-    <div class="stage"><span class="chk">□</span><span class="stage-id">2a Z3Z done</span><span class="stage-body"><span class="tbd">[Z3Z TBD — MVP] → give K-Z9 + sensoryczne props</span></span></div>
-    <div class="stage"><span class="chk">□</span><span class="stage-id">2b Z9</span><span class="stage-body"><span class="tbd">Answer TBD (MVP) → give K8-K</span></span></div>
-    <div class="stage"><span class="chk">□</span><span class="stage-id">2c Z11</span><span class="stage-body"><span class="tbd">Answer TBD (MVP) → give KF-K</span></span></div>
-    <div class="stage"><span class="chk">□</span><span class="stage-id">3 Finale</span><span class="stage-body">Arrived 20:30 · letter → <span class="finale-check">□</span>Bażyński <span class="finale-check">□</span>Albrecht</span></div>
+    <div class="stage"><span class="chk">□</span><span class="stage-id">0 Start</span><span>Daj: K1 + zapieczętowany list + mapa Z1 + karta G8 (BIAŁY narożnik)</span></div>
+    <div class="stage"><span class="chk">□</span><span class="stage-id">1 Raport Z1</span><span><span class="answer">Katedra Janów → Kopernik → Piernikarka → Pod Gwiazdą</span> → <span class="give">daj K2-K</span></span></div>
+    <div class="stage"><span class="chk">□</span><span class="stage-id">2a Z3Z gotowe</span><span><span class="tbd">[MVP] → daj K-Z9 + rekwizyty sensoryczne</span></span></div>
+    <div class="stage"><span class="chk">□</span><span class="stage-id">2b Raport Z9</span><span><span class="tbd">Odpowiedź TBD (MVP) → daj K8-K</span></span></div>
+    <div class="stage"><span class="chk">□</span><span class="stage-id">2c Szyfr Z11</span><span><span class="tbd">Odpowiedź TBD (MVP) → daj KF-K</span></span></div>
+    <div class="stage"><span class="chk">□</span><span class="stage-id">3 Finał</span><span>Dotarli na 20:30 · list → <span class="finale-check">□</span>Bażyński <span class="finale-check">□</span>Albrecht</span></div>
   </div>
-  <div class="notes-row">Notes <div class="notes-line"></div></div>
+  <div class="notes-row">Notatki <div class="notes-line"></div></div>
 </div>
 
-</div><!-- /page 4 -->
+</div>
 
-<!-- PAGE 5: G9 Brown + G10 Black -->
+<!-- STRONA 5: G9 Brązowy + G10 Czarny -->
 <div class="page">
 
 <div class="card">
   <div class="card-header hdr-brown">
     <div class="swatch" style="background:#9A6324"></div>
-    <span class="group-name">G9 · BROWN</span>
+    <span class="group-name">G9 · BRĄZOWY</span>
     <span class="optional-badge">Z10 polichromie [MVP]</span>
     <span class="class-badge">KZ — Krzyżacy</span>
   </div>
-  <div class="z1-bar">
-    <span class="z1-label">Z1 answer: </span>
-    <strong>Przekupka → Pod Gwiazdą → Brama Klasztorna → Dwór Artusa</strong>
-  </div>
+  <div class="z1-bar"><span class="z1-label">Odpowiedź Z1: </span><strong>Przekupka → Pod Gwiazdą → Brama Klasztorna → Dwór Artusa</strong></div>
   <div class="stages">
-    <div class="stage"><span class="chk">□</span><span class="stage-id">0 Start</span><span class="stage-body">Give: K1 + letter + map + <strong>G9 cipher card</strong> (BROWN corner)</span></div>
-    <div class="stage"><span class="chk">□</span><span class="stage-id">1 Z1</span><span class="stage-body"><span class="answer">Przekupka → Pod Gwiazdą → Brama Klasztorna → Dwór Artusa</span> → <span class="give">give K2-K</span></span></div>
-    <div class="stage"><span class="chk">□</span><span class="stage-id">2a Z3Z done</span><span class="stage-body"><span class="tbd">[Z3Z TBD — MVP] → give K-Z10 + Bestiariusz prop</span></span></div>
-    <div class="stage"><span class="chk">□</span><span class="stage-id">2b Z10</span><span class="stage-body"><span class="tbd">3 correct monsters from Biedronka — answer TBD (MVP) → give K8-K</span></span></div>
-    <div class="stage"><span class="chk">□</span><span class="stage-id">2c Z11</span><span class="stage-body"><span class="tbd">Answer TBD (MVP) → give KF-K</span></span></div>
-    <div class="stage"><span class="chk">□</span><span class="stage-id">3 Finale</span><span class="stage-body">Arrived 20:30 · letter → <span class="finale-check">□</span>Bażyński <span class="finale-check">□</span>Albrecht</span></div>
+    <div class="stage"><span class="chk">□</span><span class="stage-id">0 Start</span><span>Daj: K1 + zapieczętowany list + mapa Z1 + karta G9 (BRĄZOWY narożnik)</span></div>
+    <div class="stage"><span class="chk">□</span><span class="stage-id">1 Raport Z1</span><span><span class="answer">Przekupka → Pod Gwiazdą → Brama Klasztorna → Dwór Artusa</span> → <span class="give">daj K2-K</span></span></div>
+    <div class="stage"><span class="chk">□</span><span class="stage-id">2a Z3Z gotowe</span><span><span class="tbd">[MVP] → daj K-Z10 + Bestiariusz Krzyżowca</span></span></div>
+    <div class="stage"><span class="chk">□</span><span class="stage-id">2b Raport Z10</span><span><span class="tbd">3 potwory z polichromii Biedronki — odpowiedź TBD (MVP) → daj K8-K</span></span></div>
+    <div class="stage"><span class="chk">□</span><span class="stage-id">2c Szyfr Z11</span><span><span class="tbd">Odpowiedź TBD (MVP) → daj KF-K</span></span></div>
+    <div class="stage"><span class="chk">□</span><span class="stage-id">3 Finał</span><span>Dotarli na 20:30 · list → <span class="finale-check">□</span>Bażyński <span class="finale-check">□</span>Albrecht</span></div>
   </div>
-  <div class="notes-row">Notes <div class="notes-line"></div></div>
+  <div class="notes-row">Notatki <div class="notes-line"></div></div>
 </div>
 
 <div class="card">
   <div class="card-header hdr-black">
     <div class="swatch" style="background:#2B2B2B"></div>
-    <span class="group-name">G10 · BLACK</span>
+    <span class="group-name">G10 · CZARNY</span>
     <span class="optional-badge">Z10 polichromie [MVP]</span>
     <span class="class-badge">KZ — Krzyżacy</span>
   </div>
-  <div class="z1-bar">
-    <span class="z1-label">Z1 answer: </span>
-    <strong>Filuś → Dwór Artusa → Apteka Lew → Kościół NMP</strong>
-    <span style="color:#888; font-size:7.5pt;"> ⚠ deep NW start</span>
-  </div>
+  <div class="z1-bar"><span class="z1-label">Odpowiedź Z1: </span><strong>Filuś → Dwór Artusa → Apteka Lew → Kościół NMP</strong><span style="color:#888;font-size:7.5pt"> ⚠ daleki start NW</span></div>
   <div class="stages">
-    <div class="stage"><span class="chk">□</span><span class="stage-id">0 Start</span><span class="stage-body">Give: K1 + letter + map + <strong>G10 cipher card</strong> (BLACK corner)</span></div>
-    <div class="stage"><span class="chk">□</span><span class="stage-id">1 Z1</span><span class="stage-body"><span class="answer">Filuś → Dwór Artusa → Apteka Lew → Kościół NMP</span> → <span class="give">give K2-K</span></span></div>
-    <div class="stage"><span class="chk">□</span><span class="stage-id">2a Z3Z done</span><span class="stage-body"><span class="tbd">[Z3Z TBD — MVP] → give K-Z10 + Bestiariusz prop</span></span></div>
-    <div class="stage"><span class="chk">□</span><span class="stage-id">2b Z10</span><span class="stage-body"><span class="tbd">3 correct monsters — answer TBD (MVP) → give K8-K</span></span></div>
-    <div class="stage"><span class="chk">□</span><span class="stage-id">2c Z11</span><span class="stage-body"><span class="tbd">Answer TBD (MVP) → give KF-K</span></span></div>
-    <div class="stage"><span class="chk">□</span><span class="stage-id">3 Finale</span><span class="stage-body">Arrived 20:30 · letter → <span class="finale-check">□</span>Bażyński <span class="finale-check">□</span>Albrecht</span></div>
+    <div class="stage"><span class="chk">□</span><span class="stage-id">0 Start</span><span>Daj: K1 + zapieczętowany list + mapa Z1 + karta G10 (CZARNY narożnik)</span></div>
+    <div class="stage"><span class="chk">□</span><span class="stage-id">1 Raport Z1</span><span><span class="answer">Filuś → Dwór Artusa → Apteka Lew → Kościół NMP</span> → <span class="give">daj K2-K</span></span></div>
+    <div class="stage"><span class="chk">□</span><span class="stage-id">2a Z3Z gotowe</span><span><span class="tbd">[MVP] → daj K-Z10 + Bestiariusz</span></span></div>
+    <div class="stage"><span class="chk">□</span><span class="stage-id">2b Raport Z10</span><span><span class="tbd">3 potwory — odpowiedź TBD (MVP) → daj K8-K</span></span></div>
+    <div class="stage"><span class="chk">□</span><span class="stage-id">2c Szyfr Z11</span><span><span class="tbd">Odpowiedź TBD (MVP) → daj KF-K</span></span></div>
+    <div class="stage"><span class="chk">□</span><span class="stage-id">3 Finał</span><span>Dotarli na 20:30 · list → <span class="finale-check">□</span>Bażyński <span class="finale-check">□</span>Albrecht</span></div>
   </div>
-  <div class="notes-row">Notes <div class="notes-line"></div></div>
+  <div class="notes-row">Notatki <div class="notes-line"></div></div>
 </div>
 
-</div><!-- /page 5 -->
+</div>
 
 </body>
 </html>

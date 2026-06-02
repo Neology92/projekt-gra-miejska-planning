@@ -1,90 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
 <meta charset="UTF-8">
-<title>GM Quick Hints — per puzzle</title>
+<title>Szybkie podpowiedzi MG — per zagadka</title>
 <style>
-@page { size: A4; margin: 12mm 14mm; }
+@page { size: A4; margin: 11mm 13mm; }
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body { font-family: "Segoe UI", system-ui, sans-serif; font-size: 9pt; color: #2a1a10; background: #fff; }
 
 h1 { font-size: 13pt; margin-bottom: 1mm; }
-.subtitle { font-size: 7.5pt; color: #7a6a58; margin-bottom: 4mm; }
+.subtitle { font-size: 7.5pt; color: #7a6a58; margin-bottom: 3mm; line-height: 1.4; }
 
-.hint-box {
-  border: 1.5pt solid #c8b0a0;
-  border-radius: 6px;
-  margin-bottom: 4mm;
-  overflow: hidden;
-  -webkit-print-color-adjust: exact;
-  print-color-adjust: exact;
-}
+.hint-box { border: 1.5pt solid #c8b0a0; border-radius: 6px; margin-bottom: 3.5mm; overflow: hidden; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
 .hint-header {
-  background: #3a2a18; color: #fff;
-  padding: 5px 10px;
+  background: #3a2a18; color: #fff; padding: 4px 10px;
   display: flex; align-items: baseline; gap: 8px;
   -webkit-print-color-adjust: exact; print-color-adjust: exact;
 }
-.hint-name { font-weight: 700; font-size: 10pt; }
+.hint-name { font-weight: 700; font-size: 10.5pt; }
+.hint-meta { font-size: 7.5pt; opacity: .75; }
 .hint-answer-bar {
   background: #f0e8d8; padding: 4px 10px;
   border-bottom: 1pt solid #c8b0a0;
-  font-family: "Consolas","Courier New",monospace; font-size: 8.5pt;
+  font-size: 8.5pt;
   -webkit-print-color-adjust: exact; print-color-adjust: exact;
 }
 .ans-label { color: #7a6050; font-size: 7.5pt; font-weight: 600; text-transform: uppercase; }
-.ans-val { font-weight: 700; color: #7a2e22; }
+.ans-val { font-weight: 700; color: #7a2e22; font-family: "Consolas","Courier New",monospace; }
+.ans-note { color: #7a6050; font-size: 7.5pt; }
 
 .hints { padding: 4px 10px; }
-.hint-row {
-  display: grid; grid-template-columns: 52px 1fr;
-  gap: 2px 6px; padding: 3px 0;
-  border-bottom: .5pt dotted #ddd; line-height: 1.35;
-  font-size: 8.8pt;
-}
+.hint-row { display: grid; grid-template-columns: 62px 1fr; gap: 2px 6px; padding: 3px 0; border-bottom: .5pt dotted #ddd; line-height: 1.35; font-size: 8.8pt; }
 .hint-row:last-child { border-bottom: none; }
-.hlabel {
-  font-weight: 700; font-size: 7.5pt; text-transform: uppercase;
-  letter-spacing: .04em; color: #5a4030; white-space: nowrap; padding-top: 1px;
-}
-.hlabel.emergency { color: #9a2020; }
-.hlabel.special { color: #2a5a30; }
-.htext { }
-.htext em { font-style: italic; color: #4a3020; }
-.htext strong { color: #2a1a10; }
+.hlabel { font-weight: 700; font-size: 7.5pt; text-transform: uppercase; letter-spacing: .04em; color: #5a4030; padding-top: 1px; white-space: nowrap; }
+.hlabel.emerg { color: #9a1a1a; }
+.hlabel.spec { color: #1a5a30; }
+.htext i { font-style: italic; color: #3a2818; }
+.htext b { font-weight: 700; }
+.htext .bg { display: inline-block; background: #f8eedc; border-radius: 3px; padding: 1px 4px; font-size: 8pt; color: #5a3010; border: .5pt solid #ddc890; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
 </style>
 </head>
 <body>
 
-<h1>GM Quick Hints — per puzzle</h1>
-<p class="subtitle">Pull out when a group phones in stuck. Give hints in order (H1 → H2 → H3 → Emergency). Skip levels only when time is critical. Z2/Z3: hints delivered over the phone.</p>
+<h1>Szybkie podpowiedzi MG — per zagadka</h1>
+<p class="subtitle">Wyciągnij gdy grupa dzwoni z prośbą o pomoc. Dawaj podpowiedzi po kolei (H1 → H2 → H3 → Awaryjnie). Pomijaj poziomy tylko gdy brakuje czasu. Z2 i Z3: podpowiedzi przez telefon, MG nie jest na miejscu.</p>
 
 <!-- Z1 -->
 <div class="hint-box">
   <div class="hint-header">
-    <span class="hint-name">Z1 — Symbol Trail</span>
-    <span style="font-size:8pt;opacity:.8">expected ~20–30 min · report = 4 places in order</span>
+    <span class="hint-name">Z1 — Szlak symboli</span>
+    <span class="hint-meta">~20–30 min · raport = 4 miejsca w kolejności</span>
   </div>
   <div class="hint-answer-bar">
-    <span class="ans-label">Answer: </span>
-    <span class="ans-val">group-specific — see their group card or master board</span>
+    <span class="ans-label">Odpowiedź: </span>
+    <span class="ans-val">per grupę — patrz karta danej grupy lub tablica Z1</span>
   </div>
   <div class="hints">
     <div class="hint-row">
-      <span class="hlabel">H1 gentle</span>
-      <span class="htext"><em>"Match the image on your cipher card to what you physically see — it's something actually there, not something you'd need to know. Look closely."</em></span>
+      <span class="hlabel">H1 delikatna</span>
+      <span class="htext"><i>„Dopasujcie obrazek z waszej karty do tego, co widzicie w terenie — szukajcie czegoś fizycznie tam obecnego, nie czegoś, co trzeba znać. Patrzcie uważnie."</i></span>
     </div>
     <div class="hint-row">
-      <span class="hlabel">H2 medium</span>
-      <span class="htext"><em>"You're looking for [describe the type of object — e.g. an animal / a number / a building feature]. That image is on your cipher card."</em></span>
+      <span class="hlabel">H2 średnia</span>
+      <span class="htext"><i>„Szukacie [podaj typ obiektu — np. zwierzęcia / narzędzia / detalu architektonicznego]. Ten obrazek jest na waszej karcie."</i></span>
     </div>
     <div class="hint-row">
-      <span class="hlabel">H3 direct</span>
-      <span class="htext">Name the next location directly. Time matters more than the puzzle at this stage.</span>
+      <span class="hlabel">H3 bezpośr.</span>
+      <span class="htext">Podaj nazwę następnego miejsca wprost. Czas jest ważniejszy niż zagadka na tym etapie.</span>
     </div>
     <div class="hint-row">
-      <span class="hlabel emergency">On wrong loop</span>
-      <span class="htext"><em>"You've walked 4+ places — does the last one say KONIEC (END)? If not, you're on the wrong path. Go back to the very first symbol on your K1 envelope and start again."</em></span>
+      <span class="hlabel emerg">Złe pętle</span>
+      <span class="htext"><i>„Odwiedziliście 4 miejsca — czy na ostatnim było KONIEC? Jeśli nie, jesteście na złej ścieżce. Wróćcie do pierwszego symbolu podanego w kopercie K1 i zacznijcie od nowa."</i></span>
+    </div>
+    <div class="hint-row">
+      <span class="hlabel spec">Dla MG</span>
+      <span class="htext">Grupy z dalekimi startami (G6 SW, G7 S, G8 SE, G10 NW) potrzebują ok. 25–30 min. Nie panikuj przy opóźnieniu — to normalne dla tych tras.</span>
     </div>
   </div>
 </div>
@@ -92,26 +82,26 @@ h1 { font-size: 13pt; margin-bottom: 1mm; }
 <!-- Z2 -->
 <div class="hint-box">
   <div class="hint-header">
-    <span class="hint-name">Z2 — Morning Errands</span>
-    <span style="font-size:8pt;opacity:.8">logic puzzle in K2 · no MG checkpoint — hints by phone if they call</span>
+    <span class="hint-name">Z2 — Poranne sprawunki</span>
+    <span class="hint-meta">zagadka logiczna z K2 · brak checkpointu MG — podpowiedzi przez telefon</span>
   </div>
   <div class="hint-answer-bar">
-    <span class="ans-label">Answer: </span>
-    <span class="ans-val">Jordan → Piccolo (hot-food place) — bought a ladle</span>
-    <span style="color:#7a6050;font-size:7.5pt;"> (Lambert → Old Mill / bread · Kordian → Smithy / cloth)</span>
+    <span class="ans-label">Odpowiedź: </span>
+    <span class="ans-val">Jordan → Piccolo</span>
+    <span class="ans-note"> (kupił chochlę · Lambert → Stary Młyn / chleb · Kordian → Kowalnia / sukno)</span>
   </div>
   <div class="hints">
     <div class="hint-row">
-      <span class="hlabel">H1 gentle</span>
-      <span class="htext"><em>"Clue 2 tells you something about Jordan directly. Start there."</em></span>
+      <span class="hlabel">H1 delikatna</span>
+      <span class="htext"><i>„Wskazówka 2 mówi coś bezpośrednio o Jordanie. Od niej zacznijcie."</i></span>
     </div>
     <div class="hint-row">
-      <span class="hlabel">H2 medium</span>
-      <span class="htext"><em>"Lambert bought food outside his own place — so he can't work at the food place. That rules one out for him. Work from there."</em></span>
+      <span class="hlabel">H2 średnia</span>
+      <span class="htext"><i>„Lambert kupił jedzenie poza swoim miejscem pracy — więc nie pracuje w miejscu z jedzeniem. To eliminuje jedną opcję dla Lamberta. Idźcie tym tropem."</i></span>
     </div>
     <div class="hint-row">
-      <span class="hlabel">H3 direct</span>
-      <span class="htext"><em>"Jordan works at Piccolo. Go there and ask for him by name."</em></span>
+      <span class="hlabel">H3 bezpośr.</span>
+      <span class="htext"><i>„Jordan pracuje w Piccolo. Idźcie tam i spytajcie o niego po imieniu."</i></span>
     </div>
   </div>
 </div>
@@ -119,29 +109,29 @@ h1 { font-size: 13pt; margin-bottom: 1mm; }
 <!-- Z3 -->
 <div class="hint-box">
   <div class="hint-header">
-    <span class="hint-name">Z3 — Castle / Theft</span>
-    <span style="font-size:8pt;opacity:.8">Zosia/Albrecht runs this · theft is mandatory · every group must succeed</span>
+    <span class="hint-name">Z3 — Zamek / Kradzież</span>
+    <span class="hint-meta">Zosia/Albrecht prowadzi tę scenę · kradzież OBOWIĄZKOWA — każda grupa musi zdołać</span>
   </div>
   <div class="hint-answer-bar">
-    <span class="ans-label">Goal: </span>
-    <span class="ans-val">steal parchment (pergamin) while Albrecht's back is turned · bring to MG</span>
+    <span class="ans-label">Cel: </span>
+    <span class="ans-val">wykraść pergamin (listę) gdy Albrecht odwrócony plecami · przynieść do MG</span>
   </div>
   <div class="hints">
     <div class="hint-row">
-      <span class="hlabel">H1 on-site</span>
-      <span class="htext"><strong>Signal Zosia</strong> (don't call the group). Ask her to slow her patrol / lengthen Phase A (away time).</span>
+      <span class="hlabel">H1 na miejscu</span>
+      <span class="htext"><b>Zadzwoń do Zosi</b> (nie do grupy). Poproś ją o spowolnienie patrolu / wydłużenie fazy AWAY (gdy stoi tyłem). Zosia wie co robić.</span>
     </div>
     <div class="hint-row">
-      <span class="hlabel">H2 phone group</span>
-      <span class="htext"><em>"Re-read the envelope you received from the commander. The instructions are there."</em></span>
+      <span class="hlabel">H2 tel. do gr.</span>
+      <span class="htext"><i>„Przeczytajcie jeszcze raz kopertę, którą dostaliście od komtura. Instrukcja jest tam."</i></span>
     </div>
     <div class="hint-row">
-      <span class="hlabel">H3 direct</span>
-      <span class="htext"><em>"You need the parchment he was reading from. He sets it down and walks away — wait until his back is turned, then take it cleanly."</em></span>
+      <span class="hlabel">H3 bezpośr.</span>
+      <span class="htext"><i>„Widzieliście listę, którą czytał. Odkłada ją i odchodzi — czekajcie aż odwróci się plecami, wtedy bierzcie. Nie ruszajcie gdy na was patrzy."</i></span>
     </div>
     <div class="hint-row">
-      <span class="hlabel emergency">Emergency</span>
-      <span class="htext">Zosia unavailable: hand group the pergamin directly. <em>"A contact managed to get this from inside."</em> Z4 continues normally.</span>
+      <span class="hlabel emerg">Zosia nieob.</span>
+      <span class="htext">Wręcz grupie pergamin samodzielnie: <i>„Nasz kontakt zdołał to zdobyć."</i> Z4 działa normalnie. Zosia potrzebna na finał o 20:30.</span>
     </div>
   </div>
 </div>
@@ -150,29 +140,33 @@ h1 { font-size: 13pt; margin-bottom: 1mm; }
 <div class="hint-box">
   <div class="hint-header">
     <span class="hint-name">Z4 — Kalimba</span>
-    <span style="font-size:8pt;opacity:.8">listen to melody → play back → write 6 note-numbers → report</span>
+    <span class="hint-meta">usłysz melodię → zagraj → zapisz 6 cyfr → raport do MG</span>
   </div>
   <div class="hint-answer-bar">
-    <span class="ans-label">Code: </span>
+    <span class="ans-label">Kod: </span>
     <span class="ans-val">6 · 2 · 1 · 4 · 5 · 4</span>
-    <span style="color:#7a6050;font-size:7.5pt;"> — exact order, 6 digits. Do NOT confirm partial codes.</span>
+    <span class="ans-note"> — dokładna kolejność, 6 cyfr. NIE potwierdzaj częściowych kodów. NIE dawaj K8 bez pełnego kodu.</span>
   </div>
   <div class="hints">
     <div class="hint-row">
-      <span class="hlabel">H1 gentle</span>
-      <span class="htext"><em>"Play it slower than you think. One note at a time — write the number before you move to the next."</em></span>
+      <span class="hlabel">H1 delikatna</span>
+      <span class="htext"><i>„Grajcie wolniej niż myślicie. Jedna nuta naraz — zapiszcie cyfrę zanim przejdziecie do następnej."</i></span>
     </div>
     <div class="hint-row">
-      <span class="hlabel">H2 replay</span>
-      <span class="htext">Replay the melody more slowly. <em>"Count as you go — don't try to remember it all at the end."</em></span>
+      <span class="hlabel">H2 powtórz</span>
+      <span class="htext">Odtwórz melodię wolniej niż poprzednio. <i>„Liczcie w trakcie — nie próbujcie zapamiętać wszystkiego na końcu."</i></span>
     </div>
     <div class="hint-row">
-      <span class="hlabel">H3 count</span>
-      <span class="htext"><em>"You have exactly six notes. You're close — make sure you haven't missed one."</em> (Do NOT give any digit.)</span>
+      <span class="hlabel">H3 liczenie</span>
+      <span class="htext"><i>„Masz dokładnie sześć nut. Jesteś blisko — upewnij się, że żadnej nie pominęliście."</i> <b>NIE podawaj żadnej cyfry.</b></span>
     </div>
     <div class="hint-row">
-      <span class="hlabel emergency">Emergency</span>
-      <span class="htext">(&lt;30 min to 20:30) <em>"A contact passed on the boatman's code: 6, 2, 1, 4, 5, 4."</em> Hand K8 directly.</span>
+      <span class="hlabel emerg">Awaryjnie</span>
+      <span class="htext">(&lt;30 min do 20:30) <i>„Kontakt przekazał kod flisaka: 6, 2, 1, 4, 5, 4."</i> Daj K8 bezpośrednio.</span>
+    </div>
+    <div class="hint-row">
+      <span class="hlabel spec">Dla MG</span>
+      <span class="htext">Gdy grasz melodię: uruchom nagranie, zachowaj dystans, zostań cicho. W fikcji melodia „niesie się znad wody" — nie jesteś wykonawcą, tylko środkiem przekazu. Nie komentuj.</span>
     </div>
   </div>
 </div>
@@ -180,34 +174,61 @@ h1 { font-size: 13pt; margin-bottom: 1mm; }
 <!-- Z7 -->
 <div class="hint-box">
   <div class="hint-header">
-    <span class="hint-name">Z7 — Cezar Cipher</span>
-    <span style="font-size:8pt;opacity:.8">shift +7 · compare motto headers on szyfrogram (K8) vs pergamin (Z3 list)</span>
+    <span class="hint-name">Z7 — Szyfr Cezara</span>
+    <span class="hint-meta">przesunięcie +7 · porównaj nagłówki: szyfrogram (K8) vs pergamin (lista Z3)</span>
   </div>
   <div class="hint-answer-bar">
-    <span class="ans-label">Answer: </span>
+    <span class="ans-label">Odpowiedź: </span>
     <span class="ans-val">HANS VON BAYSEN IS JORDAN THE COOK</span>
-    <span style="color:#7a6050;font-size:7.5pt;"> — accept core: "Hans von Baysen". Full phrase can be paraphrased.</span>
+    <span class="ans-note"> — akceptuj rdzeń: „Hans von Baysen". Resztę można sparafrazować.</span>
   </div>
   <div class="hints">
     <div class="hint-row">
-      <span class="hlabel">H1 gentle</span>
-      <span class="htext"><em>"Look at the very top of that letter. You've seen that script before today — somewhere you've already been."</em></span>
+      <span class="hlabel">H1 delikatna</span>
+      <span class="htext"><i>„Spójrzcie na sam szczyt tego listu. Ten krój pisma widzieliście już dziś — gdzieś, gdzie byliście."</i></span>
     </div>
     <div class="hint-row">
-      <span class="hlabel">H2 medium</span>
-      <span class="htext"><em>"Compare the heading of the cipher letter with the heading of the names list you stole. Same font, same punctuation. Count how many steps each letter moved — same shift every time."</em></span>
+      <span class="hlabel">H2 średnia</span>
+      <span class="htext"><i>„Porównajcie nagłówek szyfrogramu z nagłówkiem listy nazwisk, którą ukradliście. Ten sam krój, ta sama interpunkcja. Policzcie o ile kroków każda litera się przesunęła — to samo przesunięcie za każdym razem."</i></span>
     </div>
     <div class="hint-row">
-      <span class="hlabel">H3 key only</span>
-      <span class="htext">(&lt;30 min) <em>"The shift is 7 — every letter moved 7 steps forward. Apply that backwards."</em></span>
+      <span class="hlabel">H3 klucz</span>
+      <span class="htext">(&lt;30 min) <i>„Przesunięcie wynosi 7 — każda litera przesunięta o 7 kroków do przodu. Stosujcie to odwrotnie do szyfrogramu."</i></span>
     </div>
     <div class="hint-row">
-      <span class="hlabel emergency">Emergency</span>
-      <span class="htext"><em>"It reads: HANS VON BAYSEN IS JORDAN THE COOK. Who does that make Jordan?"</em></span>
+      <span class="hlabel emerg">Awaryjnie</span>
+      <span class="htext"><i>„Tekst brzmi: HANS VON BAYSEN IS JORDAN THE COOK. Kim jest zatem Jordan?"</i></span>
     </div>
     <div class="hint-row">
-      <span class="hlabel special">Twist didn't land</span>
-      <span class="htext">Group decoded but seems unmoved — ask: <em>"Who were you sent to deliver that letter to, from the very start?"</em> → then: <em>"Look at the top of the names list — what does it say beside the first name?"</em> Let them connect it themselves.</span>
+      <span class="hlabel spec">Twist nie zagrał</span>
+      <span class="htext">Odszyfrowano, ale bez reakcji — zadaj dwa pytania: <i>„Do kogo mieliście dostarczyć list od samego początku?"</i> (→ do przewodniczącego Rady, z K2) · potem: <i>„Co stoi przy pierwszym nazwisku na liście?"</i> (→ „they call him chairman"). Niech sami złączą wątki. Nie mów wprost.</span>
+    </div>
+  </div>
+</div>
+
+<!-- Protokoły awaryjne -->
+<div class="hint-box">
+  <div class="hint-header"><span class="hint-name">Protokoły awaryjne</span></div>
+  <div class="hints" style="padding: 5px 10px">
+    <div class="hint-row">
+      <span class="hlabel emerg">Duże opóźnienie</span>
+      <span class="htext">Grupa ponad 40 min za planem: pomiń Z4 (podaj kod 6,2,1,4,5,4 wprost), skompresuj Z7 do H3/awaryjnie. Wszystkie grupy muszą dotrzeć na Przedzamcze najpóźniej o 20:15.</span>
+    </div>
+    <div class="hint-row">
+      <span class="hlabel emerg">Piotr niedost.</span>
+      <span class="htext">Z2 działa — grupa dedukcją trafi do Piccolo. Jako MG: podrzuć K3 jako „martwy drop": <i>„Był tu wcześniej, zostawił to dla was."</i></span>
+    </div>
+    <div class="hint-row">
+      <span class="hlabel emerg">Zosia niedost.</span>
+      <span class="htext">Scena Z3 odpada. Wręcz grupie pergamin samodzielnie: <i>„Kontakt zdołał to zdobyć."</i> Zosia potrzebna tylko na finał (20:30) — jeśli może dotrzeć na Przedzamcze, wszystko OK.</span>
+    </div>
+    <div class="hint-row">
+      <span class="hlabel emerg">Zgubiony list</span>
+      <span class="htext">1 zapasowy w torbie MG. Wręcz: <i>„Kontakt znalazł — nie był daleko."</i> Bez zapasowego: złożona kartka papieru. Ważne jest, do kogo idą na finał — nie sam rekwizyt.</span>
+    </div>
+    <div class="hint-row">
+      <span class="hlabel emerg">Remis w finale</span>
+      <span class="htext">Patrz concept/04-faza-3-final.md §Remis. Improwizacja Piotra i Zosi — standoff bez rozstrzygnięcia. Oskar dodaje komentarz historyczny.</span>
     </div>
   </div>
 </div>

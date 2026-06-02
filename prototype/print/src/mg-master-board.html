@@ -1,237 +1,240 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
 <meta charset="UTF-8">
-<title>GM Master Board — all groups at a glance</title>
+<title>Tablica statusów MG — widok jednoekranowy</title>
 <style>
 @page { size: A4 landscape; margin: 10mm 12mm; }
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body { font-family: "Segoe UI", system-ui, sans-serif; font-size: 9pt; color: #2a1a10; background: #fff; }
 
-h1 { font-size: 13pt; color: #2a1a10; margin-bottom: 2mm; }
-.subtitle { font-size: 8pt; color: #7a6a58; margin-bottom: 4mm; }
+h1 { font-size: 13pt; margin-bottom: 1mm; }
+.subtitle { font-size: 7.5pt; color: #7a6a58; margin-bottom: 4mm; }
 
-/* Status table */
-table { width: 100%; border-collapse: collapse; margin-bottom: 5mm; }
+table { width: 100%; border-collapse: collapse; margin-bottom: 4mm; }
 th {
-  background: #3a2a18; color: #fff; font-size: 8pt; text-transform: uppercase;
-  letter-spacing: .04em; padding: 5px 6px; text-align: center;
+  background: #3a2a18; color: #fff; font-size: 7.5pt; text-transform: uppercase;
+  letter-spacing: .04em; padding: 5px 4px; text-align: center;
   -webkit-print-color-adjust: exact; print-color-adjust: exact;
 }
-th.left { text-align: left; }
-td { padding: 4px 5px; border: .5pt solid #ccc; vertical-align: middle; font-size: 8.5pt; }
+th.left { text-align: left; padding-left: 8px; }
+td { padding: 3px 4px; border: .5pt solid #ccc; vertical-align: middle; font-size: 8.5pt; }
 tr:nth-child(even) td { background: #faf7f2; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
 
-.color-cell {
-  font-weight: 700; padding: 4px 8px;
-  -webkit-print-color-adjust: exact; print-color-adjust: exact;
-}
-.chk-cell { text-align: center; font-size: 13pt; color: #555; font-family: "Consolas","Courier New",monospace; padding: 2px 4px; }
-.give-cell { font-size: 7.5pt; color: #2a6032; font-weight: 600; text-align: center; vertical-align: middle; }
-.class-cell { font-size: 7.5pt; font-weight: 600; text-align: center; }
+.color-cell { font-weight: 700; padding: 3px 6px; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+.chk-cell { text-align: center; font-size: 13pt; color: #555; font-family: "Consolas","Courier New",monospace; padding: 1px 3px; }
+.give-cell { font-size: 7pt; color: #2a6032; font-weight: 600; display: block; }
+.class-cell { font-size: 7.5pt; font-weight: 700; text-align: center; }
 .tr-class { color: #7a2e22; }
 .kz-class { color: #1a3a6a; }
-.optional-cell { font-size: 7.5pt; color: #555; text-align: center; }
-.side-cell { font-size: 8pt; color: #555; text-align: center; }
+.opt-cell { font-size: 7pt; color: #555; text-align: center; }
+.dot { display: inline-block; width: 11px; height: 11px; border-radius: 50%; border: .5pt solid rgba(0,0,0,.2); vertical-align: middle; margin-right: 3px; }
 
-/* Color swatches in cells */
-.swatch-dot { display: inline-block; width: 12px; height: 12px; border-radius: 50%; margin-right: 4px; vertical-align: middle; border: .5pt solid rgba(0,0,0,.2); }
-
-/* Z1 quick lookup table */
 .z1-table { width: 100%; border-collapse: collapse; }
-.z1-table th { background: #5a4030; color: #fff; font-size: 7.5pt; padding: 4px 6px; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-.z1-table td { padding: 3px 6px; border: .5pt solid #ddd; font-size: 8pt; }
+.z1-table th { background: #5a4030; color: #fff; font-size: 7pt; padding: 3px 6px; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+.z1-table td { padding: 2.5px 6px; border: .5pt solid #ddd; font-size: 8pt; }
 .z1-table tr:nth-child(even) td { background: #faf7f2; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-.z1-answer { font-family: "Consolas","Courier New",monospace; font-size: 8pt; }
+.z1-ans { font-family: "Consolas","Courier New",monospace; font-size: 8pt; }
+.z1-w { color: var(--muted); font-size: 7pt; }
 
-/* Finale section */
-.finale-box { border: 1.5pt solid #9a3c2e; border-radius: 5px; padding: 4px 10px; display: inline-flex; gap: 20mm; align-items: center; }
-.finale-label { font-weight: 700; font-size: 9pt; color: #9a3c2e; }
-.finale-blank { border-bottom: 1pt solid #333; width: 20mm; display: inline-block; }
-
-.section-head { font-size: 9pt; font-weight: 700; color: #5a3020; text-transform: uppercase; letter-spacing: .05em; margin-bottom: 2mm; margin-top: 3mm; }
+.sh { font-size: 8.5pt; font-weight: 700; color: #5a3020; text-transform: uppercase; letter-spacing: .05em; margin-bottom: 2mm; margin-top: 3mm; }
+.finale-row { display: flex; align-items: center; gap: 10mm; margin-top: 3mm; }
+.finale-field { display: flex; align-items: center; gap: 3mm; }
+.finale-label { font-weight: 700; font-size: 9pt; color: #9a3c2e; white-space: nowrap; }
+.finale-blank { border-bottom: 1pt solid #333; width: 22mm; display: inline-block; }
+.note { font-size: 7.5pt; color: #7a6050; }
 </style>
 </head>
 <body>
 
-<h1>GM Master Board — all groups at a glance</h1>
-<p class="subtitle">TR = G1–G5 (Red/Orange/Yellow/Green/Cyan) · KZ = G6–G10 (Blue/Purple/White/Brown/Black) · Canon: CLAUDE.md §Kanoniczny przydział grup</p>
+<h1>Tablica statusów MG — widok jednoekranowy</h1>
+<p class="subtitle">TR = G1–G5 (Czerwony/Pomarańczowy/Żółty/Zielony/Turkusowy) · KZ = G6–G10 (Niebieski/Fioletowy/Biały/Brązowy/Czarny) · Kanon: CLAUDE.md §Kanoniczny przydział grup</p>
 
-<p class="section-head">Status — tick when MG hands the next item</p>
+<p class="sh">Status — odhaczaj po wręczeniu kolejnej pozycji</p>
 <table>
   <thead>
     <tr>
-      <th class="left" style="width:13%">Color</th>
-      <th style="width:5%">G#</th>
-      <th style="width:7%">Class</th>
-      <th style="width:8%">Optional</th>
-      <th style="width:7%">S<br><span style="font-weight:400;font-size:7pt">K1 given</span></th>
-      <th style="width:9%">Z1<br><span style="font-weight:400;font-size:7pt">→ K2/K2-K</span></th>
-      <th style="width:9%">Z3/Z3Z<br><span style="font-weight:400;font-size:7pt">→ opt-K</span></th>
-      <th style="width:9%">Zopt<br><span style="font-weight:400;font-size:7pt">→ K8</span></th>
-      <th style="width:9%">Z7/Z11<br><span style="font-weight:400;font-size:7pt">→ KF</span></th>
-      <th style="width:7%">Finale<br><span style="font-weight:400;font-size:7pt">arrived</span></th>
-      <th style="width:7%">→<br><span style="font-weight:400;font-size:7pt">B / A</span></th>
+      <th class="left" style="width:13%">Kolor</th>
+      <th style="width:4%">G#</th>
+      <th style="width:6%">Frakcja</th>
+      <th style="width:8%">Opcjonalna</th>
+      <th style="width:7%">START<br><span style="font-weight:400;font-size:6.5pt">daj K1</span></th>
+      <th style="width:9%">Z1<br><span style="font-weight:400;font-size:6.5pt">→ K2 / K2-K</span></th>
+      <th style="width:9%">Z3/Z3Z<br><span style="font-weight:400;font-size:6.5pt">→ kop. opt.</span></th>
+      <th style="width:9%">Zopt<br><span style="font-weight:400;font-size:6.5pt">→ K8</span></th>
+      <th style="width:9%">Z7/Z11<br><span style="font-weight:400;font-size:6.5pt">→ KF</span></th>
+      <th style="width:7%">Finał<br><span style="font-weight:400;font-size:6.5pt">dotarł</span></th>
+      <th style="width:7%">→<br><span style="font-weight:400;font-size:6.5pt">B / A</span></th>
+      <th style="width:12%">Notatki</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td class="color-cell" style="background:#E6194B;color:#fff"><span class="swatch-dot" style="background:#E6194B;border-color:#fff"></span>Red</td>
+      <td class="color-cell" style="background:#E6194B;color:#fff"><span class="dot" style="background:#E6194B;border-color:#fff"></span>Czerwony</td>
       <td style="text-align:center;font-weight:700">G1</td>
       <td class="class-cell tr-class">TR</td>
-      <td class="optional-cell">Z4 kalimba</td>
+      <td class="opt-cell">Z4 kalimba</td>
       <td class="chk-cell">□</td>
-      <td class="chk-cell">□ <span class="give-cell" style="display:block">K2</span></td>
-      <td class="chk-cell">□ <span class="give-cell" style="display:block">K-Z4+🎵</span></td>
-      <td class="chk-cell">□ <span class="give-cell" style="display:block">K8</span></td>
-      <td class="chk-cell">□ <span class="give-cell" style="display:block">KF</span></td>
+      <td class="chk-cell">□<span class="give-cell">K2</span></td>
+      <td class="chk-cell">□<span class="give-cell">K-Z4+🎵</span></td>
+      <td class="chk-cell">□<span class="give-cell">K8</span></td>
+      <td class="chk-cell">□<span class="give-cell">KF</span></td>
       <td class="chk-cell">□</td>
-      <td class="side-cell">□B □A</td>
+      <td style="text-align:center;font-size:8pt">□B □A</td>
+      <td></td>
     </tr>
     <tr>
-      <td class="color-cell" style="background:#F58231;color:#fff"><span class="swatch-dot" style="background:#F58231;border-color:#fff"></span>Orange</td>
+      <td class="color-cell" style="background:#F58231;color:#fff"><span class="dot" style="background:#F58231;border-color:#fff"></span>Pomarańcz.</td>
       <td style="text-align:center;font-weight:700">G2</td>
       <td class="class-cell tr-class">TR</td>
-      <td class="optional-cell">Z5 piernik</td>
+      <td class="opt-cell">Z5 piernik</td>
       <td class="chk-cell">□</td>
-      <td class="chk-cell">□ <span class="give-cell" style="display:block">K2</span></td>
-      <td class="chk-cell">□ <span class="give-cell" style="display:block">K-Z5</span></td>
-      <td class="chk-cell">□ <span class="give-cell" style="display:block">K8</span></td>
-      <td class="chk-cell">□ <span class="give-cell" style="display:block">KF</span></td>
+      <td class="chk-cell">□<span class="give-cell">K2</span></td>
+      <td class="chk-cell">□<span class="give-cell">K-Z5</span></td>
+      <td class="chk-cell">□<span class="give-cell">K8</span></td>
+      <td class="chk-cell">□<span class="give-cell">KF</span></td>
       <td class="chk-cell">□</td>
-      <td class="side-cell">□B □A</td>
+      <td style="text-align:center;font-size:8pt">□B □A</td>
+      <td></td>
     </tr>
     <tr>
-      <td class="color-cell" style="background:#FFE119;color:#1a1a00;border-color:#ccc"><span class="swatch-dot" style="background:#FFE119;border-color:#aaa"></span>Yellow</td>
+      <td class="color-cell" style="background:#FFE119;color:#1a1a00"><span class="dot" style="background:#FFE119;border-color:#aaa"></span>Żółty</td>
       <td style="text-align:center;font-weight:700">G3</td>
       <td class="class-cell tr-class">TR</td>
-      <td class="optional-cell">Z5 piernik</td>
+      <td class="opt-cell">Z5 piernik</td>
       <td class="chk-cell">□</td>
-      <td class="chk-cell">□ <span class="give-cell" style="display:block">K2</span></td>
-      <td class="chk-cell">□ <span class="give-cell" style="display:block">K-Z5</span></td>
-      <td class="chk-cell">□ <span class="give-cell" style="display:block">K8</span></td>
-      <td class="chk-cell">□ <span class="give-cell" style="display:block">KF</span></td>
+      <td class="chk-cell">□<span class="give-cell">K2</span></td>
+      <td class="chk-cell">□<span class="give-cell">K-Z5</span></td>
+      <td class="chk-cell">□<span class="give-cell">K8</span></td>
+      <td class="chk-cell">□<span class="give-cell">KF</span></td>
       <td class="chk-cell">□</td>
-      <td class="side-cell">□B □A</td>
+      <td style="text-align:center;font-size:8pt">□B □A</td>
+      <td></td>
     </tr>
     <tr>
-      <td class="color-cell" style="background:#3CB44B;color:#fff"><span class="swatch-dot" style="background:#3CB44B;border-color:#fff"></span>Green</td>
+      <td class="color-cell" style="background:#3CB44B;color:#fff"><span class="dot" style="background:#3CB44B;border-color:#fff"></span>Zielony</td>
       <td style="text-align:center;font-weight:700">G4</td>
       <td class="class-cell tr-class">TR</td>
-      <td class="optional-cell">Z6 herby</td>
+      <td class="opt-cell">Z6 herby</td>
       <td class="chk-cell">□</td>
-      <td class="chk-cell">□ <span class="give-cell" style="display:block">K2</span></td>
-      <td class="chk-cell">□ <span class="give-cell" style="display:block">K-Z6</span></td>
-      <td class="chk-cell">□ <span class="give-cell" style="display:block">K8</span></td>
-      <td class="chk-cell">□ <span class="give-cell" style="display:block">KF</span></td>
+      <td class="chk-cell">□<span class="give-cell">K2</span></td>
+      <td class="chk-cell">□<span class="give-cell">K-Z6</span></td>
+      <td class="chk-cell">□<span class="give-cell">K8</span></td>
+      <td class="chk-cell">□<span class="give-cell">KF</span></td>
       <td class="chk-cell">□</td>
-      <td class="side-cell">□B □A</td>
+      <td style="text-align:center;font-size:8pt">□B □A</td>
+      <td></td>
     </tr>
     <tr>
-      <td class="color-cell" style="background:#42D4F4;color:#1a2a2a"><span class="swatch-dot" style="background:#42D4F4;border-color:#aaa"></span>Cyan</td>
+      <td class="color-cell" style="background:#42D4F4;color:#1a2a2a"><span class="dot" style="background:#42D4F4;border-color:#aaa"></span>Turkusowy</td>
       <td style="text-align:center;font-weight:700">G5</td>
       <td class="class-cell tr-class">TR</td>
-      <td class="optional-cell">Z6 herby</td>
+      <td class="opt-cell">Z6 herby</td>
       <td class="chk-cell">□</td>
-      <td class="chk-cell">□ <span class="give-cell" style="display:block">K2</span></td>
-      <td class="chk-cell">□ <span class="give-cell" style="display:block">K-Z6</span></td>
-      <td class="chk-cell">□ <span class="give-cell" style="display:block">K8</span></td>
-      <td class="chk-cell">□ <span class="give-cell" style="display:block">KF</span></td>
+      <td class="chk-cell">□<span class="give-cell">K2</span></td>
+      <td class="chk-cell">□<span class="give-cell">K-Z6</span></td>
+      <td class="chk-cell">□<span class="give-cell">K8</span></td>
+      <td class="chk-cell">□<span class="give-cell">KF</span></td>
       <td class="chk-cell">□</td>
-      <td class="side-cell">□B □A</td>
+      <td style="text-align:center;font-size:8pt">□B □A</td>
+      <td></td>
     </tr>
     <tr>
-      <td class="color-cell" style="background:#4363D8;color:#fff"><span class="swatch-dot" style="background:#4363D8;border-color:#fff"></span>Blue</td>
+      <td class="color-cell" style="background:#4363D8;color:#fff"><span class="dot" style="background:#4363D8;border-color:#fff"></span>Niebieski</td>
       <td style="text-align:center;font-weight:700">G6</td>
       <td class="class-cell kz-class">KZ</td>
-      <td class="optional-cell">Z8 melodia</td>
+      <td class="opt-cell">Z8 melodia</td>
       <td class="chk-cell">□</td>
-      <td class="chk-cell">□ <span class="give-cell" style="display:block">K2-K</span></td>
-      <td class="chk-cell">□ <span class="give-cell" style="display:block">K-Z8+🎵</span></td>
-      <td class="chk-cell">□ <span class="give-cell" style="display:block">K8-K</span></td>
-      <td class="chk-cell">□ <span class="give-cell" style="display:block">KF-K</span></td>
+      <td class="chk-cell">□<span class="give-cell">K2-K</span></td>
+      <td class="chk-cell">□<span class="give-cell">K-Z8+🎵</span></td>
+      <td class="chk-cell">□<span class="give-cell">K8-K</span></td>
+      <td class="chk-cell">□<span class="give-cell">KF-K</span></td>
       <td class="chk-cell">□</td>
-      <td class="side-cell">□B □A</td>
+      <td style="text-align:center;font-size:8pt">□B □A</td>
+      <td></td>
     </tr>
     <tr>
-      <td class="color-cell" style="background:#911EB4;color:#fff"><span class="swatch-dot" style="background:#911EB4;border-color:#fff"></span>Purple</td>
+      <td class="color-cell" style="background:#911EB4;color:#fff"><span class="dot" style="background:#911EB4;border-color:#fff"></span>Fioletowy</td>
       <td style="text-align:center;font-weight:700">G7</td>
       <td class="class-cell kz-class">KZ</td>
-      <td class="optional-cell">Z8 melodia</td>
+      <td class="opt-cell">Z8 melodia</td>
       <td class="chk-cell">□</td>
-      <td class="chk-cell">□ <span class="give-cell" style="display:block">K2-K</span></td>
-      <td class="chk-cell">□ <span class="give-cell" style="display:block">K-Z8+🎵</span></td>
-      <td class="chk-cell">□ <span class="give-cell" style="display:block">K8-K</span></td>
-      <td class="chk-cell">□ <span class="give-cell" style="display:block">KF-K</span></td>
+      <td class="chk-cell">□<span class="give-cell">K2-K</span></td>
+      <td class="chk-cell">□<span class="give-cell">K-Z8+🎵</span></td>
+      <td class="chk-cell">□<span class="give-cell">K8-K</span></td>
+      <td class="chk-cell">□<span class="give-cell">KF-K</span></td>
       <td class="chk-cell">□</td>
-      <td class="side-cell">□B □A</td>
+      <td style="text-align:center;font-size:8pt">□B □A</td>
+      <td></td>
     </tr>
     <tr>
-      <td class="color-cell" style="background:#f0f0f0;color:#2a1a10;border-color:#aaa"><span class="swatch-dot" style="background:#f8f8f8;border-color:#888"></span>White</td>
+      <td class="color-cell" style="background:#f0f0f0;color:#2a1a10"><span class="dot" style="background:#f8f8f8;border-color:#888"></span>Biały</td>
       <td style="text-align:center;font-weight:700">G8</td>
       <td class="class-cell kz-class">KZ</td>
-      <td class="optional-cell">Z9 piernik</td>
+      <td class="opt-cell">Z9 piernik</td>
       <td class="chk-cell">□</td>
-      <td class="chk-cell">□ <span class="give-cell" style="display:block">K2-K</span></td>
-      <td class="chk-cell">□ <span class="give-cell" style="display:block">K-Z9</span></td>
-      <td class="chk-cell">□ <span class="give-cell" style="display:block">K8-K</span></td>
-      <td class="chk-cell">□ <span class="give-cell" style="display:block">KF-K</span></td>
+      <td class="chk-cell">□<span class="give-cell">K2-K</span></td>
+      <td class="chk-cell">□<span class="give-cell">K-Z9</span></td>
+      <td class="chk-cell">□<span class="give-cell">K8-K</span></td>
+      <td class="chk-cell">□<span class="give-cell">KF-K</span></td>
       <td class="chk-cell">□</td>
-      <td class="side-cell">□B □A</td>
+      <td style="text-align:center;font-size:8pt">□B □A</td>
+      <td></td>
     </tr>
     <tr>
-      <td class="color-cell" style="background:#9A6324;color:#fff"><span class="swatch-dot" style="background:#9A6324;border-color:#fff"></span>Brown</td>
+      <td class="color-cell" style="background:#9A6324;color:#fff"><span class="dot" style="background:#9A6324;border-color:#fff"></span>Brązowy</td>
       <td style="text-align:center;font-weight:700">G9</td>
       <td class="class-cell kz-class">KZ</td>
-      <td class="optional-cell">Z10 polichromie</td>
+      <td class="opt-cell">Z10 polichromie</td>
       <td class="chk-cell">□</td>
-      <td class="chk-cell">□ <span class="give-cell" style="display:block">K2-K</span></td>
-      <td class="chk-cell">□ <span class="give-cell" style="display:block">K-Z10</span></td>
-      <td class="chk-cell">□ <span class="give-cell" style="display:block">K8-K</span></td>
-      <td class="chk-cell">□ <span class="give-cell" style="display:block">KF-K</span></td>
+      <td class="chk-cell">□<span class="give-cell">K2-K</span></td>
+      <td class="chk-cell">□<span class="give-cell">K-Z10</span></td>
+      <td class="chk-cell">□<span class="give-cell">K8-K</span></td>
+      <td class="chk-cell">□<span class="give-cell">KF-K</span></td>
       <td class="chk-cell">□</td>
-      <td class="side-cell">□B □A</td>
+      <td style="text-align:center;font-size:8pt">□B □A</td>
+      <td></td>
     </tr>
     <tr>
-      <td class="color-cell" style="background:#2B2B2B;color:#fff"><span class="swatch-dot" style="background:#2B2B2B;border-color:#fff"></span>Black</td>
+      <td class="color-cell" style="background:#2B2B2B;color:#fff"><span class="dot" style="background:#2B2B2B;border-color:#fff"></span>Czarny</td>
       <td style="text-align:center;font-weight:700">G10</td>
       <td class="class-cell kz-class">KZ</td>
-      <td class="optional-cell">Z10 polichromie</td>
+      <td class="opt-cell">Z10 polichromie</td>
       <td class="chk-cell">□</td>
-      <td class="chk-cell">□ <span class="give-cell" style="display:block">K2-K</span></td>
-      <td class="chk-cell">□ <span class="give-cell" style="display:block">K-Z10</span></td>
-      <td class="chk-cell">□ <span class="give-cell" style="display:block">K8-K</span></td>
-      <td class="chk-cell">□ <span class="give-cell" style="display:block">KF-K</span></td>
+      <td class="chk-cell">□<span class="give-cell">K2-K</span></td>
+      <td class="chk-cell">□<span class="give-cell">K-Z10</span></td>
+      <td class="chk-cell">□<span class="give-cell">K8-K</span></td>
+      <td class="chk-cell">□<span class="give-cell">KF-K</span></td>
       <td class="chk-cell">□</td>
-      <td class="side-cell">□B □A</td>
+      <td style="text-align:center;font-size:8pt">□B □A</td>
+      <td></td>
     </tr>
   </tbody>
 </table>
 
-<p class="section-head">Z1 answers — quick lookup</p>
+<p class="sh">Odpowiedzi Z1 — szybki podgląd</p>
 <table class="z1-table">
-  <thead><tr><th style="width:12%">Color / G#</th><th>Z1 answer (4 places in order)</th><th style="width:10%">Zone</th></tr></thead>
+  <thead><tr><th style="width:12%">Kolor / G#</th><th>Odpowiedź Z1 (4 miejsca w kolejności)</th><th style="width:9%">Strefa startu</th></tr></thead>
   <tbody>
-    <tr><td style="color:#c01040;font-weight:700">Red / G1</td><td class="z1-answer">Piernikarka → Przekupka → Baj Pomorski → Ratusz</td><td>NM</td></tr>
-    <tr><td style="color:#c06010;font-weight:700">Orange / G2</td><td class="z1-answer">Baj Pomorski → Apteka Lew → Kościół Jakuba → Kopernik</td><td>NM</td></tr>
-    <tr><td style="color:#7a7000;font-weight:700">Yellow / G3</td><td class="z1-answer">Osiołek → Piernikarka → Filuś → Pod Gwiazdą</td><td>NM</td></tr>
-    <tr><td style="color:#1a7030;font-weight:700">Green / G4</td><td class="z1-answer">Apteka Lew → Baj Pomorski → Katedra Janów → Osiołek</td><td>NM</td></tr>
-    <tr><td style="color:#008a90;font-weight:700">Cyan / G5</td><td class="z1-answer">Kościół Jakuba → Ratusz → Kotwica → Dwór Artusa</td><td>NM</td></tr>
-    <tr><td style="color:#3050b0;font-weight:700">Blue / G6</td><td class="z1-answer">Brama Klasztorna → Kościół NMP → Ratusz → Pod Gwiazdą</td><td>deep SW</td></tr>
-    <tr><td style="color:#6a1090;font-weight:700">Purple / G7</td><td class="z1-answer">Brama Mostowa → Katedra Janów → Pod Gwiazdą → Dwór Artusa</td><td>deep S</td></tr>
-    <tr><td style="color:#444;font-weight:700">White / G8</td><td class="z1-answer">Katedra Janów → Kopernik → Piernikarka → Pod Gwiazdą</td><td>deep SE</td></tr>
-    <tr><td style="color:#7a4c10;font-weight:700">Brown / G9</td><td class="z1-answer">Przekupka → Pod Gwiazdą → Brama Klasztorna → Dwór Artusa</td><td>NM</td></tr>
-    <tr><td style="color:#1a1a1a;font-weight:700">Black / G10</td><td class="z1-answer">Filuś → Dwór Artusa → Apteka Lew → Kościół NMP</td><td>deep NW</td></tr>
+    <tr><td style="color:#c01040;font-weight:700">Czerwony / G1</td><td class="z1-ans">Piernikarka → Przekupka → Baj Pomorski → Ratusz</td><td>NM (centralna)</td></tr>
+    <tr><td style="color:#b05000;font-weight:700">Pomarańcz. / G2</td><td class="z1-ans">Baj Pomorski → Apteka Lew → Kościół Jakuba → Kopernik</td><td>NM</td></tr>
+    <tr><td style="color:#7a7000;font-weight:700">Żółty / G3</td><td class="z1-ans">Osiołek → Piernikarka → Filuś → Pod Gwiazdą</td><td>NM</td></tr>
+    <tr><td style="color:#1a7030;font-weight:700">Zielony / G4</td><td class="z1-ans">Apteka Lew → Baj Pomorski → Katedra Janów → Osiołek</td><td>NM</td></tr>
+    <tr><td style="color:#007880;font-weight:700">Turkusowy / G5</td><td class="z1-ans">Kościół Jakuba → Ratusz → Kotwica → Dwór Artusa</td><td>NM</td></tr>
+    <tr><td style="color:#2a48b0;font-weight:700">Niebieski / G6</td><td class="z1-ans">Brama Klasztorna → Kościół NMP → Ratusz → Pod Gwiazdą</td><td>⚠ daleki SW</td></tr>
+    <tr><td style="color:#6a1090;font-weight:700">Fioletowy / G7</td><td class="z1-ans">Brama Mostowa → Katedra Janów → Pod Gwiazdą → Dwór Artusa</td><td>⚠ daleki S</td></tr>
+    <tr><td style="color:#444;font-weight:700">Biały / G8</td><td class="z1-ans">Katedra Janów → Kopernik → Piernikarka → Pod Gwiazdą</td><td>⚠ daleki SE</td></tr>
+    <tr><td style="color:#7a4c10;font-weight:700">Brązowy / G9</td><td class="z1-ans">Przekupka → Pod Gwiazdą → Brama Klasztorna → Dwór Artusa</td><td>NM</td></tr>
+    <tr><td style="color:#1a1a1a;font-weight:700">Czarny / G10</td><td class="z1-ans">Filuś → Dwór Artusa → Apteka Lew → Kościół NMP</td><td>⚠ daleki NW</td></tr>
   </tbody>
 </table>
 
-<div style="margin-top:4mm; display:flex; align-items:center; gap:8mm;">
-  <p class="section-head" style="margin:0">Finale tally (20:30):</p>
-  <div class="finale-box">
-    <span class="finale-label">Bażyński:</span> <span class="finale-blank"></span>
-    <span class="finale-label">Albrecht:</span> <span class="finale-blank"></span>
-    <span class="finale-label">Result:</span> <span class="finale-blank" style="width:30mm"></span>
-  </div>
+<div class="finale-row">
+  <p class="sh" style="margin:0">Wynik finału (20:30):</p>
+  <div class="finale-field"><span class="finale-label">Bażyński:</span><span class="finale-blank"></span></div>
+  <div class="finale-field"><span class="finale-label">Albrecht:</span><span class="finale-blank"></span></div>
+  <div class="finale-field"><span class="finale-label">Wynik:</span><span class="finale-blank" style="width:35mm"></span></div>
+  <p class="note">Remis → concept/04-faza-3-final.md §Remis</p>
 </div>
 
 </body>
