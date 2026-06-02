@@ -90,6 +90,7 @@ Pytania pogrupowane wg pliku, w którym są dyskutowane szerzej.
 57. **Z kim konsultujemy** - tylko autor, czy ktoś jeszcze (znajomi, animatorzy)?
 58. **Kiedy playtest** - tydzień przed, miesiąc przed, dwa tygodnie?
 59. **Budżet** - ile autor inwestuje w rekwizyty/druk/aktorów?
+68. **Kiedy review prototypu (koperty + skrypty)** — ROZSTRZYGNIĘTE [2026-06-02, Oskar]: **w MVP, nie na zamknięcie prototypu.** Prototyp = zamknięty (cały stos wyrenderowany, dane Z1 spójne, R2 zrobione). Review stosu (Oskar + Piotr) i dry-run R3 wchodzą jako zadania MVP — **nie blokują** startu Fazy A. Przechodzimy do MVP.
 
 ## Rozbieżności board (Whimsical) vs pliki .md
 

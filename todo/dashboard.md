@@ -212,15 +212,14 @@ Szczegóły: mechanics/koperty-mg.md §ZAŁOŻENIA PRZED RENDEREM · prototype/p
 ## 📊 Pasek postępu
 
 ```
-PROTOTYP   ██████████████████░░  ~98%   (dry-run DONE, Z7 OK; czeka: finalne recenzje Oskara/Piotra przed MVP)
-MVP        ██░░░░░░░░░░░░░░░░░░  ~10%   (architektura ustalona; produkcja, drugi tor, skalowanie przed nami; Z1 terrain czeka)
+PROTOTYP   ████████████████████  ZAMKNIĘTY [2026-06-02] — wszystko wyrenderowane; review przesunięty do MVP (decyzja Oskara)
+MVP        ██░░░░░░░░░░░░░░░░░░  ~10%   (architektura ustalona; produkcja, drugi tor, skalowanie przed nami; Z1 terrain R3 czeka)
 ```
 
 ## 🎯 Następny krok krytyczny
 
 ```
-► Prototyp — review stos kopert + skrypty aktorów czeka na Oskara i Piotra (wszystko wyrenderowane)
-► Prototyp → MVP — zapisać wnioski z dry-runu papierowego
-► MVP Phase A — rozstrzygnąć 4 strategiczne pytania (#3, #6, #15, #59)
-► MVP Phase B — treści tor krzyżacki + opcjonalne zagadki
+► MVP Phase A — rozstrzygnąć 4 strategiczne pytania (#3 data, #6 mapa+szyfrownik, #15 brak dostawy, #59 budżet)
+► MVP Phase B — treści tor krzyżacki (Z3Z, Z8–Z11) + opcjonalne zagadki TR (Z5, Z6)
+► MVP (równolegle) — review stosu prototypu (koperty + skrypty aktorów) wchodzi tu, nie blokuje startu Fazy A
 ```
