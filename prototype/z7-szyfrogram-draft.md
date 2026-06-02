@@ -74,3 +74,9 @@ You have seen this script before — it is the same hand that headed the list of
 **Plaintext ZATWIERDZONY [2026-06-01, skrócony — Jordan na końcu jako zaskoczenie]:** „HANS VON BAYSEN IS JORDAN THE COOK" (28 liter). Szyfr = Cezar +7. Brak rekwizytu (koła). Anachronizm minimalny. *(Poprzedni, dłuższy: „JORDAN THE COOK IS HANS VON BAYSEN THEIR CHAIRMAN" — backup w `puzzles/z7-szyfr-spec.md §0`.)*
 
 **Stylizacja:** finalny list — pergamin, Fraktur, łac./niem. zwroty, pieczęć komtura. Bez koła Cezara — świadoma decyzja. Po dry-runie.
+
+---
+
+## REWIZJA [2026-06-02] — uwagi Oskara (DO WPROWADZENIA)
+- **Meta-ramka MG (raport Z7):** Z7 kończy się **podaniem odszyfrowanej odpowiedzi MG** (HANS VON BAYSEN IS JORDAN THE COOK) → MG wydaje KF. Dodać **osobną ramkę meta** (callout) z instrukcją gracz↔MG (zanieś rozwiązanie MG po finałową kopertę) — fikcja/rama narracyjna zostaje czysta, logistyka w ramce. Konwencja → `mechanics/koperty-mg.md §Trzeci rejestr`.
+- **Osoba narracji → ujednolicić do 2. osoby „you"** (rama kursywą: „our hands… we hold their word… set the one against the other"). Sam dispatch (roman: zwrot do Hochmeistra, podpis, ciphertext) i nagłówek-motto **zostają**. Zakres = wszystkie koperty (`mechanics/koperty-mg.md §Osoba narracji`).

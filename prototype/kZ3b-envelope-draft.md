@@ -58,6 +58,7 @@
 2. **Przeramować na olśnienie DZIEJĄCE SIĘ W TRAKCIE spotkania, nie „po odejściu".** Obraz Oskara: grupa robi podchody, próbuje wyciągnąć info od komtura; komtur w akcie pychy/wyższości **sam wyciąga listę i coś na niej dopisuje** — i w głowach kurierów **świta**: *„wow, ok — to jest to, co moglibyśmy ukraść"*. Treść = ich **wewnętrzne rozkminy**: skupienie na liście, narastająca chęć jej zdobycia. Bez „odejdź → przeczytaj → wróć".
 3. **Front-matter „Voice/Handed over" (linie ~5–9) do przeredagowania** — zawiera wycinany opis („Sealed — opened after they walk clear of him") i moment wręczenia; zsynchronizować z decyzją A/B.
 4. **Osoba narracji:** ROZSTRZYGNIĘTE [2026-06-02] — **ujednolicić do 2. osoby „you"** (jak cała reszta kopert). Cytat Albrechta („The Order forgets nothing") zostaje roman.
+5. **Meta-ramka MG (raport Z3) [2026-06-02]:** po kradzieży grupa **niesie listę do MG** (obecne „we carry those names back" / „carry those names back to MG"). Wydzielić instrukcję gracz↔MG do **osobnej ramki meta** (callout) — fikcja kończy się na „niesiemy te nazwiska", konkret (do MG, po kolejną kopertę) w ramce. Konwencja → `mechanics/koperty-mg.md §Trzeci rejestr`.
 
 ### ✅ SEKWENCJA — ROZSTRZYGNIĘTA [2026-06-02, Oskar]: modele A i B się ŁĄCZĄ (patrol)
 Wcześniejszy „konflikt" zniknął — Oskar opisał sekwencję, w której wręczenie koperty i „odejście" komtura **nie wykluczają** kradzieży, tylko ją umożliwiają:

@@ -81,6 +81,16 @@ Koperta łączy **dwa rejestry**, rozróżniane **typograficznie**:
 - **Atmosfera fikcji ≠ meta (uwaga przy przemiataniu):** fizyczność **w obrębie świata** (kurier łamie wosk listu z 1454) jest OK jako atmosfera — reguła tnie komentarz **realnych czynności gracza i logistyki gry**, nie całą fizyczność fikcji. Przy wątpliwych: **oznacz do decyzji, nie kasuj hurtem.**
 - **Wzorce do przerobienia:** K-Z3b (precz „SEALED — OPEN ONLY ONCE YOU ARE CLEAR OF THE KOMTUR" + „you tear it open…"), K3 (precz „he will put something in your hand… open it once clear"; mocny kandydat: opener „we break the seal").
 
+### Trzeci rejestr — ramka meta-logistyczna (callout MG) [decyzja Oskara 2026-06-02]
+
+Część zagadek wymaga **zaniesienia odpowiedzi do MG**, żeby odebrać kolejną kopertę. Taka instrukcja jest **meta** — nie należy do świata 1454 — więc Zasada #3 zabrania wplatać ją w narrację. Rozwiązanie: **wydzielona, wizualnie wyróżniona RAMKA** (callout), jawnie odcięta od fikcji. To **uzupełnia** Zasadę #3 (nie łamie jej): meta nie zanieczyszcza narracji, bo siedzi w osobnym rejestrze.
+
+- **Co w ramce:** zwięzła instrukcja gracz↔MG — *„po rozwiązaniu zanieś odpowiedź Mistrzowi Gry i odbierz kolejną kopertę"*. Sformułowana schludnie/elegancko, ale **nie udaje fikcji** (zero narracji, głosu z głów, fabuły).
+- **Trzy rejestry razem:** *kursywa* = wewnątrz głowy · roman = słowa świata · **ramka** = meta (gra ↔ gracz). Pierwsze dwa są w fikcji; trzeci **świadomie poza nią**.
+- **Realizuje element 5 struktury koperty** („co po rozwiązaniu — punkt MG"). **Tylko** w kopertach, które realnie wymagają powrotu do MG — gdy zagadka jest wprost i kończy się raportem.
+- **Implementacja (przy renderze, NIE teraz):** osobna klasa CSS (np. `.mg-note`) w `prototype/print/src/parchment.css` — ramka/obwódka, inny krój/kolor, ewentualna ikona; wizualnie „naklejka instrukcyjna", nie pergaminowa narracja. ⚠ flaga do wdrożenia przy passie renderującym.
+- **Kandydaci (powrót do MG po rozwiązaniu):** **Z1**→raport 4 miejsc (K1), **Z3**→przyniesienie wykradzionej listy (K-Z3b), **Z4**→kod `621454` (K-Z4), **Z7**→odpowiedź finałowa przed KF. Dokładny tekst per koperta — przy finalizacji. Patrz `prototype/mg-runsheet.md` (gdzie MG przyjmuje raporty).
+
 ### Numeracja kopert
 
 - **K1** - startowa, wszystkie grupy dostają.
