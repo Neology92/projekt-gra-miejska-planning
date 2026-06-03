@@ -66,7 +66,13 @@ $playerJobs = @(
   @{ Src='miasto-5-Z5.html';            Name='miasto-{c}-5-Z5';             Stamp='m05'; Colors=@('pomaranczowy','zolty') } # opt B: G2,G3
   @{ Src='miasto-6-Z7.html';            Name='miasto-{c}-6-Z7';             Stamp='m06'; Colors=$TR_COLORS }
   @{ Src='miasto-06a-Z7-list.html';     Name='miasto-{c}-06a-Z7-list';      Stamp='m06'; Colors=$TR_COLORS }
-  @{ Src='krzyzacy-4-Z9.html';          Name='krzyzacy-{c}-4-Z9';           Stamp='k04'; Colors=@('bialy') }                # opt: G8
+  @{ Src='krzyzacy-2-Z2.html';           Name='krzyzacy-{c}-2-Z2';            Stamp='k02'; Colors=$KZ_COLORS }
+  @{ Src='krzyzacy-2-Z2-slip.html';     Name='krzyzacy-{c}-2-Z2-slip';      Stamp='k02'; Colors=$KZ_COLORS }
+  @{ Src='krzyzacy-3-Z3Z.html';         Name='krzyzacy-{c}-3-Z3Z';          Stamp='k03'; Colors=$KZ_COLORS }
+  @{ Src='krzyzacy-4-Z8.html';          Name='krzyzacy-{c}-4-Z8';           Stamp='k04'; Colors=@('niebieski','fioletowy') } # opt A: G6,G7
+  @{ Src='krzyzacy-4-Z9.html';          Name='krzyzacy-{c}-4-Z9';           Stamp='k04'; Colors=@('bialy') }                # opt B: G8
+  @{ Src='krzyzacy-4-Z10.html';         Name='krzyzacy-{c}-4-Z10';          Stamp='k04'; Colors=@('brazowy','czarny') }     # opt C: G9,G10
+  @{ Src='krzyzacy-5-Z11.html';         Name='krzyzacy-{c}-5-Z11';          Stamp='k05'; Colors=$KZ_COLORS }
   # Shared piernik station props — ONE source serves BOTH Z5 (TR G2,G3) and Z9 (KZ G8) -> two destinations.
   @{ Src='z5z9-przepis.html';           Name='miasto-{c}-5-Z5-przepis';     Stamp='m05'; Colors=@('pomaranczowy','zolty') }
   @{ Src='z5z9-przepis.html';           Name='krzyzacy-{c}-4-Z9-przepis';   Stamp='k04'; Colors=@('bialy') }
