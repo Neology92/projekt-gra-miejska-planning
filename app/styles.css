@@ -150,3 +150,16 @@ em{ font-style:italic; } strong{ font-weight:400; color:var(--rubrum); }
 .sel > span{ flex:none; width:88px; font-size:.85rem; color:var(--ink-soft); }
 .sel select{ flex:1; min-width:0; font-family:var(--prose); font-size:1rem; padding:9px 10px;
   border:1px solid rgba(60,46,28,.4); border-radius:6px; background:#fff; color:var(--ink); }
+
+/* --- Z3: pisany rozkaz handlera (Jordan/Albrecht) --- */
+.order{ border:1px solid rgba(60,46,28,.45); border-radius:8px; background:rgba(0,0,0,.02);
+  padding:14px 16px; margin:16px 0; }
+.order-title{ font-family:var(--prose); font-size:1.35rem; letter-spacing:.04em; text-transform:uppercase;
+  color:var(--rubrum); text-align:center; border-bottom:1px solid rgba(60,46,28,.3); padding-bottom:8px; margin-bottom:8px; }
+.sign{ font-style:italic; text-align:right; color:var(--ink-soft); margin-top:.6em; }
+.say{ font-style:normal; }
+
+/* --- ramka „od Mistrza Gry" (meta) --- */
+.mg-note{ border:1px dashed rgba(60,46,28,.5); border-radius:8px; background:rgba(138,45,32,.05);
+  padding:12px 14px; margin:18px 0 0; }
+.mg-label{ font-family:var(--mono); font-size:.7rem; letter-spacing:.06em; color:var(--rubrum); display:block; margin-bottom:4px; }
