@@ -18,6 +18,7 @@ function setSt(patch) {
   return s;
 }
 function isSolved(id) { return !!(st().solved || {})[id]; }
+function markSolved(id) { return setSt({ solved: { [id]: true } }); }
 
 /* ---------- helpers DOM ---------- */
 function el(tag, cls, html) {
@@ -61,6 +62,63 @@ function showGroupSelect() {
     setSt({ group: chosen, stage: 'z1' });
     showStage('z1');
   };
+
+  g.appendChild(testFooter());
+}
+
+/* ===================== TEST PATH (ukryty skip — tylko dla autora) =====================
+   Mały, blady „UAM" na samym dole bramy startowej. Tap → odsłania panel skoku do
+   dowolnej grupy i etapu (Z1/Z2/Z3/F2B), z opcją „pokaż jako rozwiązany". Nie jest
+   częścią fabuły — służy wyłącznie szybszemu testowaniu. */
+function testFooter() {
+  const wrap = el('div', 'uam-wrap');
+  const tag = el('p', 'uam-foot', 'UAM');
+  const panel = el('div', 'testpath'); panel.hidden = true;
+  buildTestPath(panel);
+  tag.onclick = () => {
+    panel.hidden = !panel.hidden;
+    if (!panel.hidden && panel.scrollIntoView) panel.scrollIntoView({ behavior: 'smooth' });
+  };
+  wrap.appendChild(tag);
+  wrap.appendChild(panel);
+  return wrap;
+}
+
+function buildTestPath(panel) {
+  panel.appendChild(el('div', 'tp-title', 'Test path — skip to any step'));
+
+  const cur = st().group || 1;
+  const row = el('label', 'tp-row', '<span>Group</span>');
+  const sel = el('select');
+  for (let n = 1; n <= 10; n++) {
+    const m = GROUP_META[n];
+    const o = el('option', null, `${n} · ${m.name} (${m.faction})`);
+    o.value = n; if (n == cur) o.selected = true;
+    sel.appendChild(o);
+  }
+  row.appendChild(sel);
+  panel.appendChild(row);
+
+  const check = el('label', 'tp-check');
+  const cb = el('input'); cb.type = 'checkbox';
+  check.appendChild(cb);
+  check.appendChild(el('span', null, 'show step as already solved'));
+  panel.appendChild(check);
+
+  const steps = el('div', 'tp-steps');
+  STEP_ORDER.forEach((id) => {
+    const b = el('button', 'tp-btn', STEPS[id].label || id);
+    b.type = 'button';
+    b.onclick = () => {
+      const group = parseInt(sel.value, 10) || 1;
+      const solved = {};
+      if (cb.checked) solved[id] = true;
+      try { localStorage.setItem(LS, JSON.stringify({ group, stage: id, solved })); } catch (e) {}
+      showStage(id);
+    };
+    steps.appendChild(b);
+  });
+  panel.appendChild(steps);
 }
 
 /* ===================== EKRAN: ETAP ===================== */

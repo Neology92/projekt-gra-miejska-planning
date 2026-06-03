@@ -32,6 +32,10 @@ python3 -m http.server 8000   # → http://localhost:8000
 - **Z2** = checkpoint fabularny (granica POC). Pełna zagadka Z2 + rozwidlenie frakcji = kolejna faza.
 - Ikony PWA puste w manifeście.
 
+## 🔧 Test path (ukryty skip dla autora)
+
+Na **samym dole ekranu wyboru grupy** jest blady, drobny napis **`UAM`** (mono, prawie niewidoczny). **Tap → odsłania panel „Test path"**: wybór grupy (1–10) + przyciski skoku do dowolnego etapu (`Z1` / `Z2` / `Z3` / `F2B`) i checkbox **„show step as already solved"** (od razu pokazuje panel cleared/reveal zamiast zagadki). Służy **tylko testowaniu** — nie jest częścią fabuły, gracz go nie zauważy. Kod: `testFooter()` / `buildTestPath()` w `app.js`, style `.uam-foot` / `.testpath` w `styles.css`.
+
 ## Architektura / jak dołożyć etap
 
 - `z1-data.js` — kanon zagadki Z1/G1 (9 ikon + łańcuch). Dla innych grup: analogiczny obiekt z `Z1_GROUPS`.
