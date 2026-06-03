@@ -70,7 +70,8 @@
 ║  KOD (liczba załogi): "30" — Albrecht wyjawia z pychy gdy   ║
 ║  pytają o siłę zamku (STEP 1B). To ich zwiad z K3.          ║
 ║  CO MUSI ZROBIĆ GRUPA: (1) wyciągnąć liczbę "30",          ║
-║  (2) przeczytać K-Z3b (od Albrechta), potem ukraść pergamin ║
+║  (2) WPISAĆ 30 do APKI → apka daje rozkaz kradzieży         ║
+║  (Albrecht NIE wręcza koperty!), potem ukraść pergamin      ║
 ║  gdy Albrecht odwrócony plecami w patrolu. Przynieść do MG. ║
 ║  UWAGA: liczba + kradzież OBOWIĄZKOWE — każda grupa musi   ║
 ║  odnieść sukces. Zosia zbriefowana, pomaga przy zacięciu.   ║
@@ -79,8 +80,8 @@
 ║    Zasygnalizuj Zosi żeby zwolniła patrol / wydłużyła Fazę A║
 ╠──────────────────────────────────────────────────────────────╣
 ║  H2 (jeśli grupa dzwoni do CIEBIE zdezorientowana):        ║
-║    "Re-read the envelope you received from the commander.   ║
-║    The instructions are there."                             ║
+║    "Did you get a number from the Komtur? Enter it in       ║
+║    the app — that's what tells you what to do next."        ║
 ╠──────────────────────────────────────────────────────────────╣
 ║  H3 (bezpośrednia — dzwoń do grupy):                        ║
 ║    "You need the parchment he was reading from. He sets     ║

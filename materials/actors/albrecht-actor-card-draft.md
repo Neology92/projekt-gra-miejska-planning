@@ -9,7 +9,7 @@
 
 > ✅ **REWIZJA [2026-06-02] — model patrolu WPROWADZONY (STEP 2/3 przepisane).** Sekwencja (Oskar): komtur **wręcza kopertę milcząco → odchodzi kawałek → odkłada listę w konkretnym miejscu → patroluje** wokół niej. Okno kradzieży = faza AWAY (na końcu obchodu, plecami do listy). STEP 2 = „odłóż listę, wręcz, odejdź w patrol"; STEP 3 = cykl patrolu (A AWAY / B RETURNING / C AT THE LIST), telegraf/powtarzalność/reset zachowane. Spójne z `envelopes/miasto-4-Z3b.md §Rewizja (SEKWENCJA)` i kopertą Z3b (olśnienie wyprzedzające). `todo/otwarte-pytania.md #65`.
 
-> ✅ **REWIZJA [2026-06-03] — BRAMA LICZBOWA (kod = liczba załogi).** Zlecenie zwiadu (K3) ma teraz **konkretny cel wywiadu: ilu ludzi trzyma zamek.** Albrecht (w pysze) wyjawia liczbę — **historycznie ~30 braci** (`lore/stronnictwa.md`, `plotki-i-pogloski.md B6`; ⚠ NIE 300 — to była siła Zakonu w *całych Prusach*). Ta liczba = **„kod", który grupa wynosi** (gdzie wpięty downstream → `todo/otwarte-pytania.md #77`, otwarte). **Brama:** K-Z3b wręczasz **dopiero po** tym, jak padła liczba (jeśli nie pytają — naprowadź/chełp się sam). Nowy **STEP 1B** niżej. `todo/otwarte-pytania.md #77`.
+> ✅ **REWIZJA [2026-06-03] — BRAMA LICZBOWA → APKA (kod zamiast koperty).** Zlecenie zwiadu (K3) ma teraz **konkretny cel wywiadu: ilu ludzi trzyma zamek.** Albrecht (w pysze) wyjawia liczbę — **dokładnie `30`** (historyczne ~30 braci: `lore/stronnictwa.md`, `plotki-i-pogloski.md B6`; ⚠ NIE 300 — to była siła Zakonu w *całych Prusach*). **NOWE [Oskar 2026-06-03]:** ta liczba = **kod, który gracz wpisuje do APLIKACJI** (`https://torun-1454-gra.netlify.app`) — i to **apka** odsłania mu rozkaz kradzieży (dawne K-Z3b), **zamiast fizycznej koperty od Albrechta.** **Komtur NIE wręcza już żadnej koperty** — po liczbie odkłada listę i schodzi w patrol; rozkaz „to lista — ukradnij ją" dostają z apki po wpisaniu `30`. Nowy **STEP 1B** niżej; STEP 2 = „odłóż listę → zakończ rozmowę → patrol" (bez koperty). `todo/otwarte-pytania.md #77`.
 
 ---
 
@@ -41,16 +41,17 @@
 ║  1. Podchodzą → przyjmujesz ich jako donosicieli             ║
 ║  2. Wyciągasz listę (popisujesz się) → odkładasz ją          ║
 ║  3. PYTAJĄ o siłę zamku → chełpisz się: "THIRTY" (ich KOD)   ║
-║     ↳ BRAMA: K-Z3b wręczasz DOPIERO gdy padła liczba         ║
-║  4. Wręczasz K-Z3b milcząco → schodzisz w patrol            ║
+║     ↳ to liczbę 30 wpiszą do APKI (nie ma koperty od ciebie) ║
+║  4. Odkładasz listę → kończysz rozmowę → schodzisz w patrol  ║
 ║  5. Cykl patrolu dopóki nie ukradną (patrz niżej)            ║
 ║  6. Reset: nowy pergamin z torby → gotowa na kolejną grupę   ║
 ╠══════════════════════════════════════════════════════════════╣
-║  LICZBA ZAŁOGI (ich „kod" — zwiad z K3):                     ║
-║  ✦ Pytają „ilu was broni zamku?" → mówisz: "THIRTY."        ║
+║  LICZBA ZAŁOGI (ich „kod" do APKI — zwiad z K3):            ║
+║  ✦ Pytają „ilu was broni zamku?" → mówisz: "THIRTY." (=30)  ║
 ║  ✦ To prawda historyczna (~30 braci) — chełp się nią z dumą ║
 ║  ✦ Nie pytają? Naprowadź — CHCESZ się chwalić (STEP 1B)     ║
-║  ✦ Liczba PADA zanim wręczysz K-Z3b. Bez niej — nie wręczaj ║
+║  ✦ NIE wręczasz koperty. Gracz wpisze 30 do apki → apka     ║
+║    da mu rozkaz kradzieży. Ty tylko odkładasz listę+patrol. ║
 ╠══════════════════════════════════════════════════════════════╣
 ║  CYKL PATROLU (~30–40 s na pętlę):                           ║
 ║  A  AWAY  — schodzisz na dalszy koniec, PLECAMI DO LISTY     ║
@@ -101,7 +102,7 @@ Nosisz **listę wywiadowczą** Zakonu — imiona Tajnej Rady, zebrane od płatny
 - [ ] **Kostium:** ciemny płaszcz + krzyż (sugestywny dla Zakonu — ostateczny kostium do ustalenia, pyt. #33).
 - [ ] **Stos pergaminów z listą** (identyczne kopie — jedna skradziona na grupę; resetujesz między grupami). Trzymaj zapasy w torbie/teczce.
 - [ ] **Jeden pergamin z listą położony w stałym miejscu** — na parapecie, niskim murku, skrzynce lub składanym stole **obok którego będziesz chodzić** (patrz GEOMETRIA SCENY w STEP 3), w zasięgu osoby gdy odwrócisz plecy.
-- [ ] **Koperty K-Z3b**, posortowane wg koloru grupy (rozkaz „widziałeś listę — ukradnij ją", który im wręczasz).
+- [ ] ~~Koperty K-Z3b~~ **USUNIĘTE [2026-06-03]** — rozkaz kradzieży idzie teraz z **aplikacji** (gracz wpisuje kod `30`). Komtur nic nie wręcza grupom TR. (Upewnij się tylko, że grupa wie, że ma apkę — to po stronie MG/startu.)
 - [ ] Uzgodniony z Oskarem (MG) sposób sygnalizowania przy dopasowywaniu tempa grup / proszeniu o pomoc.
 
 Stań w miejscu, w którym masz **miejsce, żeby przejść kilka kroków od listy i z powrotem** — okno na kradzież zależy od tego, że możesz wyraźnie odwrócić się i wrócić.
@@ -128,9 +129,9 @@ Przeczytaj głośno jedno lub dwa imiona (pochwal swoją skrupulatność), a pot
 
 ---
 
-## STEP 1B — LICZBA ZAŁOGI (brama do K-Z3b)
+## STEP 1B — LICZBA ZAŁOGI (kod do apki — brama kradzieży)
 
-> **To jest nowy beat [2026-06-03].** Zanim odejdziesz w patrol, **gracz musi wyciągnąć z ciebie liczbę obrońców zamku.** Zlecił im to ich człowiek (Jordan) — przyszli między innymi po tę liczbę. To ich **„kod"**. Ty oddajesz ją **z pychy**, nie z przymusu.
+> **To jest nowy beat [2026-06-03].** Zanim odejdziesz w patrol, **gracz musi wyciągnąć z ciebie liczbę obrońców zamku.** Zlecił im to ich człowiek (Jordan) — przyszli między innymi po tę liczbę. To ich **„kod"**, który **wpiszą do aplikacji** (a apka odsłoni im rozkaz kradzieży — **ty nie wręczasz żadnej koperty**). Ty oddajesz liczbę **z pychy**, nie z przymusu.
 
 Donosiciele, którzy chcą zaskarbić łaskę Zakonu, naturalnie dopytają, jak mocny jest zamek („czy jesteście bezpieczni, panie?", „ilu was tu broni murów?"). **Kiedy zapytają — chełp się:**
 
@@ -143,21 +144,20 @@ Donosiciele, którzy chcą zaskarbić łaskę Zakonu, naturalnie dopytają, jak 
 
 > *"You would serve the Order? Then you will want to know the strength you are throwing in with. Go on — ask me how this castle stands. I will not pretend it is any secret."*
 
-**BRAMA:** dopiero **gdy liczba padła** przechodzisz do STEP 2 (odkładasz listę, wręczasz K-Z3b, patrol). Jeśli grupa rwie się dalej, a liczby jeszcze nie usłyszała — przytrzymaj ich tą chełpliwością, aż padnie. **Każda grupa musi wyjść z liczbą** (to ich kod) — jak przy kradzieży, jeśli się zacina, naprowadzaj/asystuje MG.
+**BRAMA:** dopiero **gdy liczba padła** przechodzisz do STEP 2 (odkładasz listę, kończysz rozmowę, patrol). Liczba `30` jest tym, co gracz **wpisze do apki** — apka wtedy odsłoni mu rozkaz kradzieży. Jeśli grupa rwie się dalej, a liczby jeszcze nie usłyszała — przytrzymaj ich tą chełpliwością, aż padnie. **Każda grupa musi wyjść z liczbą** (to ich kod) — jak przy kradzieży, jeśli się zacina, naprowadzaj/asystuje MG.
 
 > *Dlaczego oddajesz liczbę tak łatwo: jesteś pewny, że 30 braci wystarczy na motłoch — pogarda każe ci się chwalić, nie ukrywać. Ta sama pycha, która eksponuje listę, wydaje też liczbę. (Czego nie wiesz: oddajesz wrogowi własną słabość.)*
 
 ---
 
-## STEP 2 — ODŁÓŻ LISTĘ, WRĘCZ K-Z3b, ODEJDŹ
+## STEP 2 — ODŁÓŻ LISTĘ, ZAKOŃCZ ROZMOWĘ, ODEJDŹ W PATROL
 
-**Dopiero gdy padła liczba załogi (STEP 1B).** Po krótkim, szyderczym dialogu wykonaj trzy rzeczy płynnie po sobie:
+**Dopiero gdy padła liczba załogi (STEP 1B).** Po krótkim, szyderczym dialogu wykonaj dwie rzeczy płynnie po sobie:
 
 1. **Połóż listę** w wybranym miejscu — parapecie, niskim murku, skrzynce lub składanym stole, stałe miejsce obok którego będziesz wielokrotnie przechodzić. Rób to naturalnie; po prostu skończyłeś ją przeglądać.
-2. **Wręcz im kopertę K-Z3b** pasującą do ich koloru — **w milczeniu.** Wystarczy płaskie zdanie gdy odwracasz się: *"Enough. We are done here."* Nie tłumacz, nie reaguj na nią, nie daj się wciągnąć w rozmowę o niej.
-3. **Odejdź i zacznij patrol** (STEP 3). **Nie** stój nad listą i **nie** przepędzaj grupy — po prostu wykonujesz swój obchód, znudzony i pewny, że nikt by się nie ośmielił.
+2. **Zakończ rozmowę i odejdź w patrol** (STEP 3) — płaskie zdanie, gdy się odwracasz: *"Enough. We are done here."* **Nie** stój nad listą i **nie** przepędzaj grupy — po prostu wykonujesz swój obchód, znudzony i pewny, że nikt by się nie ośmielił. **Nie wręczasz im niczego** (rozkaz kradzieży dostaną z apki po wpisaniu kodu `30`).
 
-> **Dlaczego wręczasz, a potem odchodzisz:** koperta odwraca ich zadanie ze „zwiadowcy" w „złodzieja", a twój patrol otwiera okno. Wręcz i odejdź to sekwencja, której chce Oskar — *wręcz i odejdź* — ale „odejście" oznacza **kilka kroków w obchód, nie zniknięcie.** Lista zostaje na widoku i w zasięgu twojego patrolu; kradzież dzieje się gdy odwrócisz plecy w trakcie obchodu. Wręczenie to **gest meta, poza fikcją** (jak rozdanie karty) — w fikcyjnym świecie nie dajesz im nic, nigdy „nie widzisz" zawartości koperty. Zostań znudzonym, wywyższonym komturem.
+> **Dlaczego po prostu odchodzisz (bez koperty):** [ZMIANA 2026-06-03] rozkaz „to była lista — ukradnij ją" niesie teraz **aplikacja** (gracz wpisuje kod `30`, który właśnie z ciebie wyciągnął), nie koperta z twojej ręki. Twoja rola się upraszcza: **odłóż listę i patroluj.** „Odejście" oznacza **kilka kroków w obchód, nie zniknięcie** — lista zostaje na widoku i w zasięgu twojego patrolu; kradzież dzieje się, gdy odwrócisz plecy w trakcie obchodu. Zostań znudzonym, wywyższonym komturem; nie komentuj, nie reaguj na to, że grzebią w telefonie.
 
 ---
 
@@ -415,7 +415,7 @@ Gdy grupa przychodzi oddać ci list:
 
 **Brama liczbowa = kod [decyzja Oskara 2026-06-03]:** zwiad z K3 ma teraz **konkretny, bramkujący cel** — wyciągnąć od Albrechta liczbę obrońców zamku (STEP 1B). Liczba = **kod, który grupa wynosi** z etapu Z3 (gdzie wpięty downstream → otwarte, `todo/otwarte-pytania.md #77`). To **modyfikuje wcześniejszą zasadę „zwiad NIE bramkuje"** (`zamek-krzyzacki-lista.md`): rozmowa zyskuje jedną twardą daną do uzyskania (liczbę), reszta donosu zostaje przykrywką; kradzież nadal jest drugą, fizyczną bramką. **Liczba = `30`** — ⚠ **historyczność:** toruński zamek miał ~30 braci (`lore/stronnictwa.md`, `plotki-i-pogloski.md B6`); **NIE 300** (300 = bracia w *całych Prusach*, plotka B6 — żeby nie kolidować, Albrecht mówi o *swoim* zamku, nie o Zakonie). Oddanie liczby = przez pychę (spójne z ekspozycją listy: ta sama duma wydaje i listę, i siłę). Dokładną cyfrę (`30` vs np. „a score and ten" / inna runda) Oskar może zaklepać przy renderze.
 
-**Nośnik K-Z3b — założenie do akceptacji:** karta zakłada, że Albrecht **fizycznie wręcza** K-Z3b (życzenie Oskara: „przekazuje kopertę kolejną"). Drobna nielogiczność (wróg daje rozkaz Rady) zaadresowana w `envelopes/miasto-4-Z3b.md` (treść = głos rozkazu/spostrzeżenia gracza, nie „od Albrechta"). Alternatywa nośnika → `zamek-krzyzacki-lista.md` Otwarte #4.
+**Nośnik K-Z3b — ZMIANA [Oskar 2026-06-03]: APKA, nie koperta.** ~~Albrecht fizycznie wręcza K-Z3b~~ — nieaktualne. Rozkaz kradzieży niesie teraz **aplikacja**: gracz wpisuje kod `30` (liczba załogi wyciągnięta z Albrechta) → apka odsłania treść (dawne K-Z3b). Komtur **nic nie wręcza** grupom TR — odkłada listę i patroluje. Znika też dawna nielogiczność „wróg daje rozkaz Rady" (nie ma już wręczenia). Treść narracyjna K-Z3b zostaje **źródłem** dla apki (`envelopes/miasto-4-Z3b.md`) — przenosi się z papieru do warstwy online. ⚠ **Do domknięcia:** budowa etapu Z3 w apce (bramka typu „kod = 30") + czyszczenie manifestu kopert (5× `m-[kolor]-4-Z3b` przestaje być fizyczne) → `todo/otwarte-pytania.md #77`.
 
 **Lokalizacja przed murami:** do ruin nie wchodzimy (biletowane). Konkretny punkt (Przedzamcze / przy Gdanisku) — `przewodnik-miejsc-gry.js`, do ustalenia w wizji lokalnej.
 
@@ -424,6 +424,8 @@ Gdy grupa przychodzi oddać ci list:
 ---
 
 ## REWIZJA [2026-06-02] — ✅ WPROWADZONA (model patrolu; rationale zachowane do review)
+
+> ⚠ **CZĘŚCIOWO NADPISANE [2026-06-03]:** poniższy rationale mówi o **wręczaniu koperty K-Z3b** — to już **nieaktualne**. Rozkaz kradzieży idzie teraz z **apki** (kod `30`); Albrecht **nic nie wręcza** grupom TR. **Model patrolu (geometria/cykl/reset) ZOSTAJE bez zmian** — zmienił się tylko nośnik rozkazu (koperta → apka). Czytaj poniższe jako historię modelu patrolu, ignorując „wręczenie koperty". Patrz flaga u góry karty + STEP 2.
 
 **Uwaga Oskara (H):** *„dopisz do instrukcji komtura, że jak skończą rozmawiać, wręczy im te koperty i sobie odejdzie — żeby nie było możliwości mówienia do niego, pytania o te koperty. Po prostu niech wręczy i sobie odejdzie."*
 

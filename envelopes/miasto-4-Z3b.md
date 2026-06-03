@@ -4,9 +4,9 @@
 > **Status:** draft [2026-06-02, v3 — rewizja WPROWADZONA] — awaiting Oskar's review.
 > **Voice:** narrator **from inside the couriers' heads**, **2. osoba „you"** — what you see, what you think, the conclusion forming **in the moment**. NOT an order from the Council. *(Game-wide envelope convention — `mechanics/koperty-mg.md`.)*
 > **Typography:** narration = *italic (light)* = inside the head; the NPC quote (Albrecht: "The Order forgets nothing") = roman = words of the world; the meta-box (→ MG) = `.mg-note`. All narration is italic, with the one roman quote as contrast.
-> **Handed over by:** Komtur Albrecht (Zosia) — hand-over is a **meta interaction, outside the fiction** (like being dealt a card). In-world nobody "gives" this; it is the group's own dawning realisation **as it happens** (no „open once clear" — that meta-framing was cut; model patrolu, patrz §SEKWENCJA).
+> **Delivery [ZMIANA — Oskar 2026-06-03]:** **NIE koperta fizyczna od Albrechta — treść odsłania APLIKACJA** po wpisaniu kodu `30` (liczba załogi wyciągnięta z komtura w rozmowie). Albrecht nic nie wręcza; ten tekst staje się **briefem etapu Z3 w apce** (`https://torun-1454-gra.netlify.app`). ~~Handed over by Komtur Albrecht~~ — nieaktualne. Reszta zasad głosu/typografii bez zmian (to wciąż olśnienie „to była lista", model patrolu).
 > **Function:** flips the task from "scout" to **steal the list** — by the couriers realising what they just saw.
-> **Canon:** `puzzles/zamek-krzyzacki-lista.md` (Struktura Z3, pkt 3–4).
+> **Canon:** `puzzles/zamek-krzyzacki-lista.md` (Struktura Z3, pkt 3–4); brama kodowa → `materials/actors/albrecht-actor-card-draft.md §STEP 1B`, `todo/otwarte-pytania.md #77`.
 
 ---
 
@@ -18,7 +18,7 @@
 - **Pozycja (nr otwierania):** 4. **NIE jest osobnym etapem MG** — to druga koperta etapu Z3 (`miasto-3-Z3` = koperta 1/2, ta = 2/2). Raport u MG wspólny z Z3. W manifeście liczy się jako otwierana 4., ale przy MG nie ma własnego checkpointu.
 - **Voice [decyzja Oskara 2026-06-01]:** narrator **from inside the couriers' heads** — what they saw, what they think, the conclusion forming. NOT an order from the Council. *(Game-wide envelope convention — `mechanics/koperty-mg.md`.)*
 - **Typography:** narration = *italic (light)* = inside the head; the NPC quote (Albrecht: "The Order forgets nothing") = roman = words of the world. Z3b is all narration → all italic, with the one roman quote as contrast.
-- **Kiedy/jak wręczyć:** Komtur Albrecht (Zosia) — ale wręczenie to **meta-interakcja poza fikcją** (jak rozdanie karty). W fikcji nikt jej nie „daje"; to materializacja olśnienia grupy. Zapieczętowana — otwierana **po odejściu od komtura** (ustawione w `miasto-3-Z3`).
+- **Kiedy/jak dostarczyć [ZMIANA 2026-06-03]:** **przez aplikację, nie kopertę.** Po rozmowie z Albrechtem gracz wpisuje kod `30` (liczba załogi) → apka odsłania ten tekst. ~~Komtur wręcza zapieczętowaną kopertę~~ — nieaktualne; komtur nic nie daje. ⚠ Konsekwencja: 5× fizyczna `m-[kolor]-4-Z3b` z manifestu (`materials/ops/koperty-kody-lista.md`) **odpada** (do czyszczenia, #77); etap Z3 w apce do zbudowania (bramka „kod = 30").
 - **Funkcja:** przełącza zadanie ze „zwiadu" na **kradzież listy** — przez to, że kurierzy uświadamiają sobie, co właśnie zobaczyli.
 - **Dokąd odsyła:** grupa niesie wykradzioną listę do MG → MG wydaje kopertę opcjonalnej (`miasto-5-Z4` w prototypie).
 - **Canon:** `puzzles/zamek-krzyzacki-lista.md` (Struktura Z3, pkt 3–4).
@@ -74,6 +74,9 @@
 5. **Meta-ramka MG (raport Z3) [2026-06-02]:** po kradzieży grupa **niesie listę do MG** (obecne „we carry those names back" / „carry those names back to MG"). Wydzielić instrukcję gracz↔MG do **osobnej ramki meta** (callout) — fikcja kończy się na „niesiemy te nazwiska", konkret (do MG, po kolejną kopertę) w ramce. Konwencja → `mechanics/koperty-mg.md §Trzeci rejestr`.
 
 ### ✅ SEKWENCJA — ROZSTRZYGNIĘTA [2026-06-02, Oskar]: modele A i B się ŁĄCZĄ (patrol)
+
+> ⚠ **CZĘŚCIOWO NADPISANE [2026-06-03]:** poniżej mowa o **wręczaniu koperty K-Z3b** — nieaktualne. Rozkaz idzie z **apki** (kod `30`); komtur nic nie wręcza. **Patrol/okno kradzieży ZOSTAJE** — czytaj poniższe ignorując „wręczenie koperty", krok 2 = „odkłada listę → kończy rozmowę → patrol". Patrz banner u góry pliku.
+
 Wcześniejszy „konflikt" zniknął — Oskar opisał sekwencję, w której wręczenie koperty i „odejście" komtura **nie wykluczają** kradzieży, tylko ją umożliwiają:
 
 1. Grupa robi podchody (rola fałszywych donosicieli), komtur w pysze **wyciąga listę** i pokazuje, ile Zakon wie.

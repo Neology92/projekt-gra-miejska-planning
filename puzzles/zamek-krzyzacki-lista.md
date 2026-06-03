@@ -16,23 +16,23 @@ Dwuetapowa koperta + rozmowa-zwiad + choreografowana kradzież. Zamyka otwarte #
 - **Pretekst = fałszywi donosiciele [wariant A, wybór Oskara 2026-06-01]:** gracze udają miastowych łasych na łaskę Zakonu, którzy „wiedzą o knujących przeciw Zakonowi". Albrecht, łasy na donos, **sam wyciąga spis** (listę TR), by sprawdzić/dopisać nazwisko → lista ląduje na widoku z jego własnej inicjatywy. Pokrycie: `donosiciele-1454.js` (realna siatka donosicieli Zakonu). Domyka `zasada-uzasadnienie-fabularne`: Albrecht ma i pokazuje listę z własnego powodu.
 - Jordan NIE ujawnia, że chodzi o kradzież — gracze sądzą, że to tylko zwiad/rozmowa.
 
-**2. Spotkanie z Albrechtem (Zosia, przed murami) → wyjawia liczbę → wręcza K-Z3b.**
+**2. Spotkanie z Albrechtem (Zosia, przed murami) → wyjawia liczbę → KOD `30` DO APKI.**
 - Krótka, lekko mockująca rozmowa. **Albrecht z pychy wyjawia liczbę obrońców** — **`30`** braci (historyczne ~30; ⚠ NIE 300 = siła Zakonu w *całych Prusach*). Liczba = kod grupy (karta Albrechta **STEP 1B**).
-- **Brama:** dopiero **po podaniu liczby** Albrecht (biorąc graczy za donosicieli) odkłada listę i daje im **drugą kopertę (K-Z3b)**. Jeśli nie pytają — naprowadza (chce się chwalić). Każda grupa musi wyjść z liczbą + listą (asysta MG, jak przy kradzieży).
+- **Brama [ZMIANA 2026-06-03]:** gracz **wpisuje `30` do aplikacji**, a **apka odsłania rozkaz kradzieży** (dawne K-Z3b) — **Albrecht NIE wręcza koperty**, tylko odkłada listę i patroluje. Jeśli nie pytają — naprowadza (chce się chwalić). Każda grupa musi wyjść z liczbą + listą (asysta MG).
 
-**3. K-Z3b — UJAWNIENIE prawdziwego celu: UKRADNIJ LISTĘ.**
+**3. Rozkaz kradzieży (z APKI po kodzie `30`) — UJAWNIENIE prawdziwego celu: UKRADNIJ LISTĘ.**
 - Rys fabularny: podczas rozmowy dostrzegliście listę nazwisk → orientujecie się, że to spis Tajnej Rady, rzecz bezcenna → możecie ją wykraść, więc to zrobicie.
 - Ostrzeżenie: bardzo uważać na Albrechta, konsekwencje ogromne, jeśli złapani.
 
 **4. Kradzież = fizyczne, choreografowane okno [#3 rozstrzygnięte: fizyczna].**
-- Po wręczeniu K-Z3b Albrecht chodzi **przewidywalnym schematem** (przystaje, patrzy, odwraca się) — jak NPC w grze. Gracz wyłapuje **okno** na podebranie listy (leży fizycznie).
+- Gdy grupa ma już rozkaz kradzieży (z apki, po kodzie `30`), Albrecht chodzi **przewidywalnym schematem** (przystaje, patrzy, odwraca się) — jak NPC w grze. Gracz wyłapuje **okno** na podebranie listy (leży fizycznie).
 - W schemacie MUSI być też faza, gdy Albrecht patrzy **wprost na listę** (okno zamknięte — widać, że ktoś by kradł). Okno **powtarzalne, nigdy jednostrzałowe**.
 - **Loop:** po kradzieży i ucieczce grupy Albrecht **resetuje** — kładzie kolejny egzemplarz listy dla następnej grupy.
 - Wszystko → **karta choreografii Albrechta (Zosia)**: `materials/actors/albrecht-actor-card-draft.md`.
 
 > **Zwiad MA teraz jedną bramkę [ZMIANA, Oskar 2026-06-03]:** ~~rozmowa to czysty pretekst bez „rozwiązania"~~ — dezaktualizacja. Rozmowa zyskuje **jedną twardą daną do wyciągnięcia: liczbę obrońców (`30`) = kod.** Reszta donosu pozostaje przykrywką (nie ma „poprawnej rozmowy" poza liczbą). **Druga, fizyczna bramka = kradzież listy** (nagłówek z kluczem Cezara do Z7). Dwie bramki etapu: **liczba (kod)** + **lista (klucz)**. Obie obligatoryjne, obie z asystą MG, żeby każda grupa przeszła.
 
-**Artefakty:** `envelopes/miasto-3-Z3.md` (zwiad) · `envelopes/miasto-4-Z3b.md` (ujawnienie kradzieży) · `materials/actors/albrecht-actor-card-draft.md` (choreografia) · lista = `materials/props/pergamin-lista-tr-draft.md`.
+**Artefakty:** `envelopes/miasto-3-Z3.md` (zwiad) · `envelopes/miasto-4-Z3b.md` (ujawnienie kradzieży — **treść = brief apki po kodzie `30`, nie koperta** [2026-06-03]) · `materials/actors/albrecht-actor-card-draft.md` (choreografia + STEP 1B brama) · lista = `materials/props/pergamin-lista-tr-draft.md` · apka = `app/` (`mechanics/hybryda-online.md`).
 
 ---
 

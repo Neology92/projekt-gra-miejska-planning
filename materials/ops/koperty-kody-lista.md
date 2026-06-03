@@ -7,40 +7,42 @@
 
 **Opcjonalna F2B per grupa:** czerwony=Z4 · pomaranczowy=Z5 · zolty=Z5 · zielony=Z6 · turkusowy=Z6 · niebieski=Z8 · fioletowy=Z8 · bialy=Z9 · brazowy=Z10 · czarny=Z10.
 
+> ⚠ **ZMIANA [Oskar 2026-06-03] — 5× `m-[kolor]-4-Z3b` (TR) ODPADA z druku.** Rozkaz kradzieży (dawne K-Z3b) idzie teraz przez **aplikację** (gracz wpisuje kod `30` wyciągnięty z Albrechta), nie jako fizyczna koperta. Pięć wierszy `-4-Z3b` poniżej **zostawiam przekreślone** do czasu przeliczenia manifestu (było 65 kopert → po cięciu **60**). Pozycje otwierania TR (5→Z4/5/6, 6→Z7, 7→Z7) bez zmian numeru — Z3b był „2. kopertą etapu Z3" bez własnego checkpointu MG. Patrz `todo/otwarte-pytania.md #77`.
+
 ---
 
 - [ ] `m-czerwony-1-Z1` — szlak symboli (wspólna: brief + mapa + deszyfrownik + list + opaska)
 - [ ] `m-czerwony-2-Z2` — droga do Jordana (brief + slip „— R.")
 - [ ] `m-czerwony-3-Z3` — infiltracja zamku / zwiad (wręcza Jordan)
-- [ ] `m-czerwony-4-Z3b` — rozkaz kradzieży (wręcza Albrecht; pergamin = łup obok)
+- [ ] `m-czerwony-4-Z3b` — ~~rozkaz kradzieży (wręcza Albrecht)~~ → **APKA (kod 30), NIE koperta** [#77]; pergamin = łup (kradnie się fizycznie, zostaje)
 - [ ] `m-czerwony-5-Z4` — opcjonalna: melodia / kalimba (rekwizyt)
 - [ ] `m-czerwony-6-Z7` — szyfrogram finałowy (rozwiązują)
 - [ ] `m-czerwony-7-Z7` — notatka finałowa (po weryfikacji u MG)
 - [ ] `m-pomaranczowy-1-Z1` — szlak symboli (wspólna: brief + mapa + deszyfrownik + list + opaska)
 - [ ] `m-pomaranczowy-2-Z2` — droga do Jordana (brief + slip „— R.")
 - [ ] `m-pomaranczowy-3-Z3` — infiltracja zamku / zwiad (wręcza Jordan)
-- [ ] `m-pomaranczowy-4-Z3b` — rozkaz kradzieży (wręcza Albrecht; pergamin = łup obok)
+- [ ] `m-pomaranczowy-4-Z3b` — ~~rozkaz kradzieży (wręcza Albrecht)~~ → **APKA (kod 30), NIE koperta** [#77]; pergamin = łup (kradnie się fizycznie, zostaje)
 - [ ] `m-pomaranczowy-5-Z5` — opcjonalna: sensoryczna / piernik (słoje)
 - [ ] `m-pomaranczowy-6-Z7` — szyfrogram finałowy (rozwiązują)
 - [ ] `m-pomaranczowy-7-Z7` — notatka finałowa (po weryfikacji u MG)
 - [ ] `m-zolty-1-Z1` — szlak symboli (wspólna: brief + mapa + deszyfrownik + list + opaska)
 - [ ] `m-zolty-2-Z2` — droga do Jordana (brief + slip „— R.")
 - [ ] `m-zolty-3-Z3` — infiltracja zamku / zwiad (wręcza Jordan)
-- [ ] `m-zolty-4-Z3b` — rozkaz kradzieży (wręcza Albrecht; pergamin = łup obok)
+- [ ] `m-zolty-4-Z3b` — ~~rozkaz kradzieży (wręcza Albrecht)~~ → **APKA (kod 30), NIE koperta** [#77]; pergamin = łup (kradnie się fizycznie, zostaje)
 - [ ] `m-zolty-5-Z5` — opcjonalna: sensoryczna / piernik (słoje)
 - [ ] `m-zolty-6-Z7` — szyfrogram finałowy (rozwiązują)
 - [ ] `m-zolty-7-Z7` — notatka finałowa (po weryfikacji u MG)
 - [ ] `m-zielony-1-Z1` — szlak symboli (wspólna: brief + mapa + deszyfrownik + list + opaska)
 - [ ] `m-zielony-2-Z2` — droga do Jordana (brief + slip „— R.")
 - [ ] `m-zielony-3-Z3` — infiltracja zamku / zwiad (wręcza Jordan)
-- [ ] `m-zielony-4-Z3b` — rozkaz kradzieży (wręcza Albrecht; pergamin = łup obok)
+- [ ] `m-zielony-4-Z3b` — ~~rozkaz kradzieży (wręcza Albrecht)~~ → **APKA (kod 30), NIE koperta** [#77]; pergamin = łup (kradnie się fizycznie, zostaje)
 - [ ] `m-zielony-5-Z6` — opcjonalna: herby hanzeatyckie (karta herbów)
 - [ ] `m-zielony-6-Z7` — szyfrogram finałowy (rozwiązują)
 - [ ] `m-zielony-7-Z7` — notatka finałowa (po weryfikacji u MG)
 - [ ] `m-turkusowy-1-Z1` — szlak symboli (wspólna: brief + mapa + deszyfrownik + list + opaska)
 - [ ] `m-turkusowy-2-Z2` — droga do Jordana (brief + slip „— R.")
 - [ ] `m-turkusowy-3-Z3` — infiltracja zamku / zwiad (wręcza Jordan)
-- [ ] `m-turkusowy-4-Z3b` — rozkaz kradzieży (wręcza Albrecht; pergamin = łup obok)
+- [ ] `m-turkusowy-4-Z3b` — ~~rozkaz kradzieży (wręcza Albrecht)~~ → **APKA (kod 30), NIE koperta** [#77]; pergamin = łup (kradnie się fizycznie, zostaje)
 - [ ] `m-turkusowy-5-Z6` — opcjonalna: herby hanzeatyckie (karta herbów)
 - [ ] `m-turkusowy-6-Z7` — szyfrogram finałowy (rozwiązują)
 - [ ] `m-turkusowy-7-Z7` — notatka finałowa (po weryfikacji u MG)
@@ -77,5 +79,5 @@
 
 ---
 
-**Razem: 65 kopert** — TR (miasto) 5×7 = 35 · KZ (zakon) 5×6 = 30.
+**Razem: 60 kopert** [po cięciu Z3b, 2026-06-03] — TR (miasto) 5×6 = 30 (Z3b → apka) · KZ (zakon) 5×6 = 30. *(Było 65; 5× `m-[kolor]-4-Z3b` przeniesione do aplikacji — patrz baner u góry, #77.)*
 Manifest zawartości (co fizycznie do środka) → ten sam folder: `koperty-rozpiska.md §7`.
