@@ -116,7 +116,7 @@ Symbole: `✅` zrobione · `🟡` częściowe/draft · `⬜` do zrobienia · `�
 
 - [ ] **Instrukcja zadania jest wprost** — gracz wie, CO ma zrobić, bez łopatologii. (Audyt: większość ✅; patrz wyjątki niżej.)
 - [ ] **Ramka „↪ TO THE GAME MASTER"** obecna, jeśli z zagadki wraca się z czymś do MG — i mówi, że MG **wręczy kolejne zadanie**.
-- [ ] **Ramka MG podaje GDZIE czeka MG** — dziś wszystkie ramki mają placeholder lokalizacji („is waiting there", bez miejsca). Uzupełnić po ustaleniu punktów MG w `mg-runsheet.md`. *(cross-cutting — patrz sekcja na końcu)*
+- [x] **Ramka MG podaje GDZIE czeka MG** — DODANE [06-03]: „the Game Master, who keeps to the Rynek Staromiejski (the Old Town market square)" we wszystkich ramkach. *(zostaje: ew. zróżnicowanie po fazach w `mg-runsheet` — dziś MG „krąży po rynku" globalnie)*
 - [ ] **Rejestry głosu** zgodne z `mechanics/koperty-mg.md`: kursywa=głowa (2. os. „you"), roman=słowa świata, ramka=meta MG.
 - [ ] **Stempel** `__STAMP__` w źródle HTML (nie hardkod); render `-Color` podmienia.
 - [ ] **Nazwa miasta** = wyłącznie „Toruń" (reguła C4; zamiana wdrożona 06-03).
@@ -246,7 +246,7 @@ Symbole: `✅` zrobione · `🟡` częściowe/draft · `⬜` do zrobienia · `�
 
 ## Czeki cross-cutting (dotyczą wielu plików — jedna decyzja, wiele edycji)
 
-- [ ] **Lokalizacja MG w ramkach** — uzupełnić „bring it to the Game Master at [miejsce]" we wszystkich kopertach z ramką MG po ustaleniu punktów w `mg-runsheet`.
+- [x] **Lokalizacja MG w ramkach** — DODANE [06-03]: MG krąży po **Rynku Staromiejskim** — wpisane do ramki Z1 + wszystkich ramek raportu (Z3b/Z4/Z5/Z3Z/Z9/Z7). ⚠ PDF do re-renderu.
 - [x] **Toruń / Thorn** — ROZSTRZYGNIĘTE + WDROŻONE [06-03]: **wyłącznie „Toruń"**, nigdy „Thorn". Zamiana zrobiona w plikach źródłowych; grep `Thorn`=0. Stała reguła C4 w `wydruk-auto-checki.md`. ⚠ dotknięte PDF do re-renderu.
 - [ ] **Period-theming imion** — „Kordian" (XIX w.) i inne anachroniczne imiona do podmiany na zgodne z XV w.
 - [ ] **Stempel** — przy renderze każdej karty gracza podać `-Color <kolor grupy>`; dokumenty MG bez stempla.
