@@ -43,7 +43,7 @@
 ---
 
 > **↪ TO THE GAME MASTER** — *game instruction, not part of the world*
-> Once the list is in your hands, bring it to the Game Master. What comes next is waiting there.
+> Once the list is in your hands, bring it to the Game Master, who keeps to the Rynek Staromiejski (the Old Town market square). What comes next is waiting there.
 
 ---
 

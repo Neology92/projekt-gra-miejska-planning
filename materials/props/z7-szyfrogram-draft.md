@@ -42,7 +42,7 @@ OHUZ  CVU  IHFZLU  PZ  QVYKHU  AOL  JVVR
 ---
 
 > **↪ TO THE GAME MASTER** — *game instruction, not part of the world*
-> When you have drawn out the hidden line, bring what it says to the Game Master. The last word of the night is waiting there.
+> When you have drawn out the hidden line, bring what it says to the Game Master, who keeps to the Rynek Staromiejski (the Old Town market square). The last word of the night is waiting there.
 
 ---
 

@@ -52,7 +52,7 @@ Eat, take his measure, and slip back into the dark. Do not be a face he remember
 ---
 
 > **↪ TO THE GAME MASTER** — *game instruction, not part of the world*
-> Bring the cook back to the Game Master in two strokes — **the colour he wears and the thing he carries.** With those — and the cook's own meal-token spent at his board — you have done what was asked; what comes next is waiting there.
+> Bring the cook back to the Game Master — he keeps to the Rynek Staromiejski (the Old Town market square) — in two strokes — **the colour he wears and the thing he carries.** With those — and the cook's own meal-token spent at his board — you have done what was asked; what comes next is waiting there.
 
 ---
 

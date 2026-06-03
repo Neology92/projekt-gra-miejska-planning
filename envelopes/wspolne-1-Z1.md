@@ -62,7 +62,7 @@ Beware false trails: if you find yourselves going in circles, or returning to a 
 ---
 
 > **↪ TO THE GAME MASTER** — *game instruction, not part of the world*
-> When your chain is complete, bring your **four places, in the order you found them**, to the Game Master. That is your way onward.
+> When your chain is complete, bring your **four places, in the order you found them**, to the Game Master, who keeps to the Rynek Staromiejski (the Old Town market square). That is your way onward.
 
 ---
 
