@@ -169,3 +169,11 @@ em{ font-style:italic; } strong{ font-weight:400; color:var(--rubrum); }
   border:1px solid rgba(60,46,28,.4); border-radius:10px; }
 .map-mark svg{ display:block; margin:0 auto; }
 .map-mark-cap{ margin-top:8px; font-size:.95rem; color:var(--ink); }
+
+/* --- przyciski wyboru (herby Z6 / polichromie Z10) --- */
+.picks{ display:flex; flex-wrap:wrap; gap:10px; margin:12px 0 4px; }
+.pick{ font-family:var(--prose); font-size:1.05rem; cursor:pointer; min-width:52px;
+  padding:11px 16px; border:1px solid rgba(60,46,28,.4); border-radius:8px;
+  background:var(--tile); color:var(--ink); }
+.pick:active{ transform:scale(.97); }
+.pick.on{ border-color:var(--rubrum); border-width:2px; background:#f6ecdd; color:var(--rubrum); }

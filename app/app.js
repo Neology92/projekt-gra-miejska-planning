@@ -74,11 +74,15 @@ function showStage(id) {
 
   const s = el('section', 'screen step');
   s.appendChild(groupChip(group));
-  s.appendChild(el('span', 'stage-tag', step.label));
+  const tagLabel = step.type === 'optional' ? OPTIONAL[GROUP_OPTIONAL[group]].label : step.label;
+  s.appendChild(el('span', 'stage-tag', tagLabel));
 
-  if (step.type === 'actor-brief') {
+  if (step.type === 'optional') {
+    /* Z4–Z10 — opcjonalna zagadka per grupa */
+    optionalStage(s, OPTIONAL[GROUP_OPTIONAL[group]], step);
+  } else if (step.type === 'actor-brief') {
     /* Z3 — scena handlera (nośnik briefu), treść per frakcja */
-    actorBrief(s, Z3_DATA[faction]);
+    actorBrief(s, Z3_DATA[faction], step);
   } else if (step.puzzle && step.puzzle.type === 'logic') {
     /* Z2 — treść per frakcja */
     const data = Z2_DATA[faction];
@@ -119,7 +123,7 @@ function slipBlock(data) {
 }
 
 /* ===================== Z3 — scena handlera (nośnik briefu) ===================== */
-function actorBrief(s, data) {
+function actorBrief(s, data, step) {
   s.appendChild(el('h2', 'stage-title', data.title));
   s.appendChild(propFrame(data.prop));
   s.appendChild(briefBody(data.sceneOpen));
@@ -132,6 +136,15 @@ function actorBrief(s, data) {
 
   s.appendChild(briefBody(data.sceneClose));
 
+  const onward = (parent) => {
+    parent.appendChild(mgNote(data.mg));
+    if (step && step.next) {
+      const c = el('button', 'btn', 'Continue to your task →');
+      c.onclick = () => showStage(step.next);
+      parent.appendChild(c);
+    }
+  };
+
   if (data.theft) {
     // TR: twist kradzieży ukryty za przyciskiem (zachowuje beat „olśnienia")
     const btn = el('button', 'btn', data.theftButton);
@@ -141,19 +154,161 @@ function actorBrief(s, data) {
       btn.remove();
       slot.appendChild(el('hr', 'rule'));
       slot.appendChild(briefBody(data.theft));
-      slot.appendChild(mgNote(data.mg));
-      slot.scrollIntoView ? slot.scrollIntoView({ behavior: 'smooth' }) : 0;
+      onward(slot);
+      if (slot.scrollIntoView) slot.scrollIntoView({ behavior: 'smooth' });
     };
   } else {
-    s.appendChild(mgNote(data.mg));
+    onward(s);
   }
 }
 
 function mgNote(text) {
   const d = el('div', 'mg-note');
-  d.innerHTML = `<span class="mg-label">↪ Game Master</span> ${text}`
-    + `<p class="muted small" style="margin:.5em 0 0">Report there to go on. (Boundary of the proof-of-concept — the optional puzzle and the finale are the next phase.)</p>`;
+  d.innerHTML = `<span class="mg-label">↪ Game Master</span> ${text}`;
   return d;
+}
+
+/* ===================== OPCJONALNA (Z4–Z10) ===================== */
+function optScrap(lines) {
+  const d = el('div', 'slip');
+  d.innerHTML = `<div class="slip-label">written, in another hand</div>`
+    + lines.map((p) => `<p class="msg">${p}</p>`).join('');
+  return d;
+}
+
+function optionalStage(s, opt, step) {
+  s.appendChild(el('h2', 'stage-title', opt.title));
+  s.appendChild(propFrame(opt.prop));
+  s.appendChild(briefBody(opt.scene));
+  if (opt.scrap) s.appendChild(optScrap(opt.scrap));
+  if (opt.sceneAfter && opt.sceneAfter.length) s.appendChild(briefBody(opt.sceneAfter));
+
+  if (isSolved('opt')) { s.appendChild(optClearedPanel(opt)); return; }
+
+  const byType = { code: optCode, assign: optAssign, 'choose-one': optChooseOne, 'choose-many': optChooseMany };
+  const render = byType[opt.puzzle.type];
+  if (render) s.appendChild(render(opt));
+}
+
+function optSolved(opt) { markSolved('opt'); showOptSuccess(opt); }
+
+/* kalimba — audio + 6 cyfr */
+function optCode(opt) {
+  const p = opt.puzzle;
+  const w = el('div', 'solve');
+  w.innerHTML = `<hr class="rule"><h3>The tune</h3><p class="msg">${p.prompt}</p>`;
+  const audio = el('audio'); audio.controls = true; audio.src = p.audio; audio.preload = 'none';
+  audio.style.width = '100%'; audio.style.margin = '8px 0';
+  w.appendChild(audio);
+  const inp = el('input'); inp.type = 'text'; inp.inputMode = 'numeric';
+  inp.className = 'code-input'; inp.maxLength = p.length; inp.placeholder = 'SIX NUMBERS'; inp.autocomplete = 'off';
+  w.appendChild(inp);
+  const btn = el('button', 'btn', 'Confirm'); w.appendChild(btn);
+  const fb = el('p', 'feedback'); w.appendChild(fb);
+  const submit = () => {
+    const v = (inp.value || '').replace(/[^0-9]/g, '');
+    if (v === p.answer) optSolved(opt);
+    else { fb.textContent = 'That is not the tune. Listen again, and play it note for note.'; fb.className = 'feedback err'; }
+  };
+  btn.onclick = submit;
+  inp.addEventListener('keydown', (e) => { if (e.key === 'Enter') submit(); });
+  return w;
+}
+
+/* sensoryczna — przepis + 7 słojów A–G → nazwa */
+function optAssign(opt) {
+  const p = opt.puzzle;
+  const w = el('div', 'solve');
+  w.innerHTML = `<hr class="rule"><h3>Name the jars</h3><p class="msg">${p.prompt}</p>`;
+  const rule = el('div', 'order');
+  rule.appendChild(el('div', 'order-title', 'The rule for Toruń piernik'));
+  rule.appendChild(briefBody(p.recipe.map((t) => ({ reg: 'msg', html: t }))));
+  w.appendChild(rule);
+  if (p.hint) w.appendChild(el('p', 'narration small', p.hint));
+
+  const form = el('div', 'assign');
+  p.rows.forEach((jar) => {
+    const row = el('div', 'assign-row');
+    row.innerHTML = `<div class="who">Jar ${jar}</div>`
+      + `<label class="sel"><span>holds</span><select data-jar="${jar}"><option value="">—</option>`
+      + p.options.map((o) => `<option value="${o}">${o}</option>`).join('')
+      + `</select></label>`;
+    form.appendChild(row);
+  });
+  w.appendChild(form);
+  const btn = el('button', 'btn', 'Confirm'); w.appendChild(btn);
+  const fb = el('p', 'feedback'); w.appendChild(fb);
+  btn.onclick = () => {
+    let ok = true;
+    p.rows.forEach((jar) => {
+      const v = form.querySelector('select[data-jar="' + jar + '"]').value;
+      if (v !== p.solution[jar]) ok = false;
+    });
+    if (ok) optSolved(opt);
+    else { fb.textContent = 'The baker shakes his head — that batch would not come out right. Weigh and smell them again.'; fb.className = 'feedback err'; }
+  };
+  return w;
+}
+
+/* herby — wybór jednego nadawcy */
+function optChooseOne(opt) {
+  const p = opt.puzzle;
+  const w = el('div', 'solve');
+  w.innerHTML = `<hr class="rule"><h3>The silent road</h3><p class="msg">${p.prompt}</p>`;
+  const picks = el('div', 'picks'); let chosen = null;
+  p.options.forEach((o) => {
+    const b = el('button', 'pick'); b.type = 'button'; b.textContent = o;
+    b.onclick = () => { chosen = o; picks.querySelectorAll('.pick').forEach((x) => x.classList.toggle('on', x.textContent === o)); };
+    picks.appendChild(b);
+  });
+  w.appendChild(picks);
+  const btn = el('button', 'btn', 'Confirm'); w.appendChild(btn);
+  const fb = el('p', 'feedback'); w.appendChild(fb);
+  btn.onclick = () => {
+    if (chosen === p.answer) optSolved(opt);
+    else { fb.textContent = 'That envoy’s sister answered. Walk the shields again — match like to like.'; fb.className = 'feedback err'; }
+  };
+  return w;
+}
+
+/* polichromie — wybór wielu (zbiór) */
+function optChooseMany(opt) {
+  const p = opt.puzzle;
+  const w = el('div', 'solve');
+  w.innerHTML = `<hr class="rule"><h3>Read the wall</h3><p class="msg">${p.prompt}</p>`;
+  const picks = el('div', 'picks'); const sel = new Set();
+  p.options.forEach((o) => {
+    const b = el('button', 'pick'); b.type = 'button'; b.textContent = o;
+    b.onclick = () => { if (sel.has(o)) sel.delete(o); else sel.add(o); b.classList.toggle('on', sel.has(o)); };
+    picks.appendChild(b);
+  });
+  w.appendChild(picks);
+  const btn = el('button', 'btn', 'Confirm'); w.appendChild(btn);
+  const fb = el('p', 'feedback'); w.appendChild(fb);
+  btn.onclick = () => {
+    const want = p.answer.slice().sort().join('');
+    const got = [...sel].sort().join('');
+    if (got === want) optSolved(opt);
+    else { fb.textContent = 'A townsman’s reading. Some you marked were never there — and one that is, you missed.'; fb.className = 'feedback err'; }
+  };
+  return w;
+}
+
+function optClearedPanel(opt) {
+  return el('div', 'done', `<hr class="rule"><div class="seal small">✔</div>
+    <p class="msg">You already cleared this task.</p>${mgNoteHTML(opt.mg)}`);
+}
+function mgNoteHTML(text) { return `<div class="mg-note"><span class="mg-label">↪ Game Master</span> ${text}</div>`; }
+
+function showOptSuccess(opt) {
+  clear();
+  const d = el('section', 'screen done');
+  d.innerHTML = `<div class="seal">✔</div><h2>Done as asked</h2>
+    ${mgNoteHTML(opt.mg)}
+    <p class="muted small">This is the boundary of the proof-of-concept — the finale (Z7 / Z11, the cipher) is the next phase.</p>
+    <button id="back" class="btn ghost">Back to start</button>`;
+  APP.appendChild(d);
+  d.querySelector('#back').onclick = () => { localStorage.setItem(LS, JSON.stringify({ solved: {} })); showGroupSelect(); };
 }
 
 function groupChip(group) {

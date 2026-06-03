@@ -76,9 +76,19 @@ const STEPS = {
     id: 'z3',
     label: 'Z3',
     type: 'actor-brief',   // dane per frakcja z Z3_DATA
+    next: 'opt',
+  },
+
+  /* --- Opcjonalna (F2B) — jedna zagadka per grupa (Z4–Z10). Treść = OPTIONAL
+         (optional-data.js) wg GROUP_OPTIONAL. Apka waliduje odpowiedź.
+         Po niej → finał = kolejna faza (granica POC). --- */
+  opt: {
+    id: 'opt',
+    label: 'F2B',
+    type: 'optional',
     next: null,
   },
 
 };
 
-const STEP_ORDER = ['z1', 'z2', 'z3'];
+const STEP_ORDER = ['z1', 'z2', 'z3', 'opt'];
