@@ -1,5 +1,6 @@
 # Toruń 1454 — aplikacja gry hybrydowej (`app/`)
 
+> 🌐 **LIVE:** **https://torun-1454-gra.netlify.app** (osobna strona Netlify, projekt `torun-1454-gra`).
 > **Co to:** samodzielna aplikacja webowa realizująca warstwę fabularną gry online za kodami dostępu (`mechanics/hybryda-online.md`, #77). **Osobna strona Netlify** (własna domena), niezależna od galerii materiałów (`public/` → `torun-1454-materialy`).
 > **Stan:** POC dwóch etapów — **Z1 (pełna zagadka)** + **Z2 (checkpoint, granica POC)**.
 > **Język:** gracz = EN. Komentarze/README = PL (warstwa planistyczna).
