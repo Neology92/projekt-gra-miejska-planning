@@ -1,8 +1,8 @@
 # K2-K — After Z1 Envelope (Krzyżacy / Order) — draft
 
 > **Language:** English (player-facing, #70). Planning notes in Polish below.
-> **Status:** draft [2026-06-03, v1 — rama + slip N. + Pula B; blok zagadki Z2 = OPEN] — awaiting Oskar's review.
-> ⚠ **BLOK ZAGADKI Z2 = niefinalny.** Rama (scena-odkrycie), slip pośrednika **N.** i plotki (Pula B) = gotowe do review. **Sama zagadka logiczna kierująca do Albrechta = rdzeń Oskara** (jak po stronie TR) — patrz `## THE PUZZLE (OPEN)` + PLANNING NOTES §Routing fork. Glify miejsc = `⟨mark⟩` placeholder (jak w `miasto-2-Z2`).
+> **Status:** draft [2026-06-03, v2 — rama + slip N. + Pula B + zagadka Z2 (propozycja, routing A)] — awaiting Oskar's review.
+> ⚠ **Zagadka Z2 = PROPOZYCJA agenta** (routing A, rozstrzygnięty przez Oskara 2026-06-03). Logika zwalidowana (jednoznaczna), tekst player-facing gotowy — ale **rdzeń = decyzja Oskara**: zatwierdź lub podmień (parol „the Komtur's seal" jest mało kontrintuicyjny — patrz PLANNING NOTES). Glify miejsc = `⟨mark⟩` placeholder (zależne od mapy, jak w `miasto-2-Z2`).
 > **Voice:** senderless scene — narrator **from inside the couriers' heads**, 2nd person „you" (#67); N.'s slip = roman (a written document — words of the world, #47); MG handover = osobno (montaż MG). *(Wzorzec = `envelopes/miasto-2-Z2`; konwencja — `mechanics/koperty-mg.md`.)*
 > **Typography:** narration = *italic* (inside the head); N.'s slip + the puzzle text = roman.
 > **Contents of physical envelope:** main note (this) + intermediary's note (separate slip — „— N.").
@@ -35,29 +35,28 @@
 
 ---
 
-## THE PUZZLE (OPEN — rdzeń Oskara)
+## THE PUZZLE — Z2 (PROPOZYCJA — zatwierdź/podmień)
 
-> ⚠ **TEN BLOK = niefinalny.** Zagadka logiczna kierująca grupę KZ do **Albrechta** (analogicznie jak TR-owa kieruje do Jordana/Piccolo) — **rdzeń = Oskar** (po stronie TR zagadka „otrzymana" od Oskara, agent ją tylko othemował). Dwie ścieżki routingu do rozstrzygnięcia — patrz PLANNING NOTES §Routing fork. Poniżej **szkielet** wymagań, nie finalna treść.
->
-> **Co blok musi dać graczowi:**
-> 1. **Cel nawigacyjny** = miejsce/postać Albrechta (jego glif na mapie — jedyny „prawdziwy" z trzech, jak Piccolo w TR).
-> 2. **Hasło dnia (parol)** do komtura — odpowiednik TR „kupiłeś dziś rano miecz". Co nim jest = zależne od rdzenia zagadki; cross-ref do `materials/actors/albrecht-actor-card-draft.md §STEP K1` (tam też `⟨PAROLE TBD⟩`).
-> 3. **Instrukcja**, że jeden ze znaków znajdą **na swojej mapie** = tam cel (inaczej nie wiedzą, że glif jest kluczem nawigacyjnym).
->
-> *Where they work, what is made there — and the mark each place bears on your map:*
-> - ⟨place A⟩ — ⟨trade⟩ — ⟨mark⟩
-> - ⟨place B — Albrecht's post / the castle⟩ — ⟨…⟩ — ⟨mark⟩
-> - ⟨place C⟩ — ⟨trade⟩ — ⟨mark⟩
->
-> *The three:* ⟨…⟩ · ⟨…⟩ · ⟨Albrecht⟩
-> *What each one bought / their tell:* ⟨…⟩ · ⟨…⟩ · ⟨parole⟩
->
-> *Heard about town this morning — every word of it true:*
-> 1. ⟨clue⟩
-> 2. ⟨clue⟩
-> 3. ⟨clue⟩
->
-> Place all three, and for each you will have a name, a place, and the mark it bears. **Only one of those three marks is on your map. That is where you go — and no other.**
+> ⚠ **PROPOZYCJA agenta [2026-06-03], routing = Opcja A** (osobna zagadka kierująca do Albrechta). **Rdzeń zagadki = Twój** — to draft do akceptacji/podmiany (jak po stronie TR zagadkę dał Oskar, agent othemował). Logika **zwalidowana: rozwiązanie jednoznaczne** (dowód niżej, PLANNING NOTES). Glify = `⟨mark⟩` (zależne od mapy). Player-facing tekst gotowy do druku po Twoim „ok".
+
+**The morning's men**
+
+Three of the Order's men were about the town this morning. Each was at one post, and each bore one thing. Work out who was where — and what each man carried.
+
+*Where each was posted, and the mark that place bears on your map:*
+- The Chełmno Gate — ⟨mark⟩
+- The Komtur's seat, by the castle — ⟨mark⟩
+- The chapel of St. Mary — ⟨mark⟩
+
+*The three:* Heinrich · Konrad · Albrecht
+*What each man bore:* a ring of keys · a sealed dispatch · the Komtur's own seal
+
+*Heard about town this morning — every word of it true:*
+1. Heinrich locked the Chełmno Gate at dawn, and kept its keys on him the morning long.
+2. The man at the chapel bore the dispatch, to be read out at the Mass.
+3. Konrad has not set foot by the castle in a week.
+
+Place all three, and for each you will have a name, a post, and the mark it bears. **Only one of those three marks is on your map. That is where you go — and no other. And when you stand before the man you were sent to, name to him what he bore this morning: that is the word set for today, and by it he will know you for the Order's.**
 
 ---
 
@@ -69,7 +68,7 @@ I cannot be there. It is too dangerous now — and the thing was never mine to k
 
 So now it falls to you. What you were to put into my hands, you will put into his: **the Komtur of the Order, Albrecht himself** — into his own hand, and no other's. He holds this city for the Order, and to him the Order's word must go.
 
-But know this: the Komtur trusts no one on sight, least of all in days like these. He will not take what you carry on your say-so. When you find him, give him the word we set for today — by it he will know you came from me — and be ready to prove you are the Order's. He will ask it of you. Give him no cause to doubt.
+But know this: the Komtur trusts no one on sight, least of all in days like these. He will not take what you carry on your say-so. When you find him, **name to him what he bore through the town this morning** — that is the word we set for today, and by it he will know you came from me. And be ready to prove you are the Order's: he will ask it of you. Give him no cause to doubt.
 
 Go carefully. — N.
 
@@ -90,12 +89,13 @@ Go carefully. — N.
 
 **Cargo (co kurier KZ niesie):** ten sam **zapieczętowany list** noszony całą grę; domyślny adresat = Albrecht; **wolny wybór** dostawy w finale (Bażyński/Albrecht, `concept/04`). Albrecht-handler **NIE bierze listu** przy K2/Z3Z — dostawa dopiero pod murami 20:30 (`albrecht-actor-card §PART TWO STEP K4`).
 
-**Hasło dnia / parol:** slip mówi generycznie „the word we set for today" + „be ready to prove you are the Order's" (= brama dowodu = zadanie Z3Z). Konkretny parol **zależy od rdzenia zagadki Z2** (poniżej) → `⟨PAROLE TBD⟩`, zsynchronizować z `albrecht-actor-card §STEP K1`.
+**Hasło dnia / parol [PROPOZYCJA 2026-06-03]:** parol = **„the Komtur's own seal"** — gracz dedukuje z zagadki, że Albrecht (cel jawny ze slipu) był „by the castle" i niósł **pieczęć**; staje przed Albrechtem i nazywa, co niósł. Mechanika lustrzana do TR („tell him what he bought" = miecz). ⚠ **Mniej kontrintuicyjny niż miecz-kucharza** (pieczęć komtura = oczywista) i **bez payoffu w finale** (TR-owy miecz wraca u Bażyńskiego). Jeśli chcesz parol z zaskoczeniem/klamrą — podmień „tell" Albrechta w zagadce (przelicz tylko ten wiersz). Zsynchronizować z `albrecht-actor-card §STEP K1` (`⟨PAROLE TBD⟩` → „the Komtur's seal").
 
-**§Routing fork — DO DECYZJI OSKARA (jak Z2 prowadzi do Albrechta):**
-- **Opcja A — zagadka re-themowana (osobny rdzeń):** nowa trójka {osoba×miejsce×tell} rozwiązująca się na Albrechta + jego glif na mapie. Spójne z `K2 notes: „ta sama struktura logiczna, inny cel (imię/miejsce)"`. **Problem:** Albrecht = komtur, nie kupiec „kupujący towar" — schemat „kto co kupił + gdzie pracuje" nie pasuje wprost; może wymagać innego typu zagadki (np. „kto kłamie / kto był gdzie"). To **rdzeń twórczy = Ty.**
-- **Opcja B — ta sama zagadka TR, przekierowana slipem:** puzzle wskazuje Jordana/Piccolo (jak TR), ale slip N. redefiniuje: „kucharz to wróg — twój pan to Komtur; idź do niego, nie do kuchni". Reużywa gotową zagadkę; **ryzyko:** miesza cele, mniej czysto, i Z3Z i tak każe im iść do Piccolo (kolizja: po co najpierw do Albrechta, skoro cel = Piccolo?).
-- **Rekomendacja agenta:** Opcja A (czystsza fabularnie, zero kolizji z Z3Z), ale rdzeń zagadki podaj Ty — mogę othemować jak przy TR. Albo: podaj typ/treść, dobiorę glif + parol.
+**§Routing — ROZSTRZYGNIĘTE [Oskar 2026-06-03]: Opcja A** (osobna zagadka kierująca do Albrechta; NIE redirect slipem). Zagadka wyżej = propozycja agenta na wzór TR.
+- **Dowód jednoznaczności** (3 ludzie × 3 posty × 3 przedmioty): Clue 1 → Heinrich=Gate+keys. Clue 3 → Konrad≠castle, więc z {chapel, castle} Konrad=chapel; Albrecht=castle. Clue 2 → chapel niesie dispatch, więc Konrad=dispatch. Albrechtowi zostaje **seal**. Jedyne rozwiązanie. ✓
+- **Cel nawigacyjny:** Albrecht = „by the castle" → glif zamku/Przedzamcza (jedyny na mapie z trzech; Gate i chapel = glify-dystraktory, NIE na mapie gracza — wymóg dla map-gen, jak Mill/Smithy w TR). „Identyfikacja osoby" nieobecna (cel jawny ze slipu) — zagadka pełni rolę **nawigacji + parolu**, nie ukrycia tożsamości (twist=BRAK).
+- **Imiona** = niemieckie, okresowe (Heinrich/Konrad), Albrecht = kanon (komtur). Posty: Brama Chełmińska, Przedzamcze/zamek, Kościół Mariacki — toruńskie, w oryginale.
+- **Opcja B (odrzucona):** redirect slipem kolidowałby z Z3Z (które i tak kieruje do Piccolo).
 
 **Glify (`⟨mark⟩`):** zależne od mapy Z1 (`tools/map-gen/`); glif Albrechta/zamku musi realnie istnieć na mapie (jak Piccolo dla TR). Sprzęga z pendingiem mapy (#66). Nowy POI „post Albrechta / zamek" do naniesienia (`dashboard §Miejscówki zadań KZ`).
 

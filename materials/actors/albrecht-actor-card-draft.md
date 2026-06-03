@@ -226,7 +226,8 @@ After a group steals the list and leaves:
 ╠══════════════════════════════════════════════════════════════╣
 ║  VERIFY ON ARRIVAL:                                         ║
 ║  ✓ Right wristband colour (above) + the day's word          ║
-║    (from N.'s slip — ⟨PAROLE TBD: ties to KZ Z2⟩)          ║
+║    (the day's word = what you bore this morning:            ║
+║     "the Komtur's seal" — proposed, pending Oskar)         ║
 ║  ✗ Wrong colour / no word → "The Order does not know you." ║
 ╠══════════════════════════════════════════════════════════════╣
 ║  SCENE SEQUENCE (every group, every time):                  ║
@@ -270,7 +271,7 @@ A group comes up claiming to carry something for the Order, or to serve it. Rece
 Verify two things before you give them anything:
 
 - **Wristband colour** — only the five above are yours. Wrong colour → *"I think you have mistaken your master. The Order does not know you."* (signal Oskar).
-- **The day's word** — N., their vanished go-between, set a word for today; a true man of the Order's cause will give it. ⟨**PAROLE TBD** — ties to the KZ version of the Z2 deduction; cross-ref `envelopes/krzyzacy-2-Z2` slip when written.⟩ No word → press them once; if still nothing, send them off.
+- **The day's word** — N., their vanished go-between, set a word for today; a true man of the Order's cause will give it. They prove it by **naming what you bore through the town this morning: the Komtur's seal.** *(Proposed parol — from the KZ Z2 deduction in `envelopes/krzyzacy-2-Z2`; pending Oskar's sign-off, may change.)* No word → press them once; if still nothing, send them off.
 
 If both check out, let a little grim satisfaction show:
 

@@ -48,9 +48,9 @@
 ✅ poz.2 Z2 — po Z1 ........... draft gotowy (Z2 Einsteina: Jordan/Piccolo/miecz; zakup-parol=miecz [06-02]; plotki Puli A; slip R.)  [envelopes/miasto-2-Z2.md]
 ✅ poz.3 Z3 — od Jordana ...... draft gotowy (brief F2B + Z3 zwiad; Z3b osobno)         [envelopes/miasto-3-Z3.md]
 ✅ poz.4 Z3b — kradzież ....... draft gotowy (2. koperta etapu Z3; narracja + cytat Albrechta)  [envelopes/miasto-4-Z3b.md]
-🟡 poz.5 Z4 — melodia/kalimba . draft v2 (SCENA: martwy flisak=R. nad Wisłą, melodia=kod; instrument zatwierdzony)  [envelopes/miasto-5-Z4.md]
+🟡 poz.5 Z4 — melodia/kalimba . draft v2 (SCENA: martwy flisak=R. nad Wisłą, melodia=kod; instrument zatwierdzony) + doubt-beat/rozterka [2026-06-03]  [envelopes/miasto-5-Z4.md]
 ✅ 06a Z7 finałowy szyfr ...... szyfrogram + rama narracyjna v2 + ramka MG; wyrenderowany + stempel  [materials/props/z7-szyfrogram-draft.md · src/miasto-06a-Z7-list.html]
-🟡 poz.6 Z7 — finał .......... draft gotowy (Przedzamcze, ósme bicie, wolny wybór; list nieotwarty, maski spadają)  [envelopes/miasto-6-Z7.md]
+🟡 poz.6 Z7 — finał .......... draft gotowy (Przedzamcze, ósme bicie, list nieotwarty, maski spadają) + przejście do Albrechta KUSZĄCE [2026-06-03]: kotwica spotkania (Z3) + kuszenie racją + beat motta (Oskar, „jak")  [envelopes/miasto-6-Z7.md]
 ```
 
 ## B. Rekwizyty drukowane (8)
@@ -152,11 +152,11 @@ Szczegóły: mechanics/koperty-mg.md §ZAŁOŻENIA PRZED RENDEREM · prototype/p
 > ⚠ **ŚCIEŻKA KRYTYCZNA TREŚCI MVP.** Tor KZ istnieje dziś tylko jako **meta-kartki** (`lore/meta-kartki/krzyzacy-*`) i wyrenderowane tabele Z11 + koperta/PDF Z9. **Brak kopert gracza:** Z3Z, Z8, Z10, Z11-list, K2-K, KF-KZ. To największa pojedyncza luka treści — mechanika = Oskar, draft koperty = agent po decyzji.
 
 ```
-🟡 K2-K (wersja krzyżacka) ...... draft [2026-06-03]: rama (scena-odkrycie + pośrednik N. + Pula B B1/B2/B6/B8) GOTOWA; cel Albrecht JAWNY (twist=BRAK). ⚠ blok zagadki Z2 = OPEN (rdzeń Oskara; routing fork A/B — re-themed vs redirect) + glify ⟨mark⟩  [envelopes/krzyzacy-2-Z2.md]
+🟡 K2-K (wersja krzyżacka) ...... draft v2 [2026-06-03]: rama (N. + Pula B) + zagadka Z2 (propozycja, routing A rozstrzygnięty; logika jednoznaczna; parol „Komtur's seal"). Cel Albrecht JAWNY (twist=BRAK). Zostaje: review Oskara (zatwierdź/podmień zagadkę+parol) + glify ⟨mark⟩ (mapa)  [envelopes/krzyzacy-2-Z2.md]
 🟡 Skrypt Albrechta (Zosia) F2A . handler KZ DOPISANY [2026-06-03] jako PART TWO karty: weryfikacja (kolor+parol⟨TBD⟩) + duma/żądanie dowodu + zadanie Z3Z (obserwuj Jordana: szata+chochla) + wręczenie K3-K + Tabeli 1; NIE bierze listu (finał). Dwurolowość Zosi (TR cel / KZ handler) oflagowana  [materials/actors/albrecht-actor-card-draft.md PART TWO]
 ⬜ Z3Z — infiltracja Piccolo .... lustro Z3: kradzież „zaopatrzenia" + 20:30 + obserwacja Jordana (brązowa szata + chochla → dane Z11)
-🟡 Z8 — melodia zakonu .......... koperta gracza draft [2026-06-02]: lustro Z4 (kalimba, kod 621454), klimat zakonny + zapomniany brat; senderless scene + iron-tongue generic  [envelopes/krzyzacy-4-Z8.md]. Zostaje: review Oskara (TONE FLAG: gorycz vs lojalność) + klucz finału Z11
-🟡 Z9 — sensoryczna piernik ..... lustro Z5; brief + rekwizyty wyrenderowane [2026-06-02] (public/krzyzacy-4-Z9.pdf + wspólne z5z9-* + mg-Z5Z9-klucz); zostaje: review Oskara + klucz finału (#9)
+🟡 Z8 — melodia zakonu .......... koperta gracza draft v2 [2026-06-03]: lustro Z4 (kalimba, kod 621454), klimat zakonny + zapomniany brat; TONE FLAG ROZSTRZYGNIĘTY ku krytyce Zakonu + doubt-beat (Pula B) [Oskar]  [envelopes/krzyzacy-4-Z8.md]. Zostaje: review Oskara + klucz finału Z11
+🟡 Z9 — sensoryczna piernik ..... lustro Z5; brief v3 [2026-06-03]: DWA KANAŁY krytyki Zakonu (podsłuch Pula B + rozterka kuriera; kucharz nadal dumny); rekwizyty wyrenderowane [2026-06-02] (public/krzyzacy-4-Z9.pdf + z5z9-* + mg-Z5Z9-klucz). ⚠ tekst zmieniony po renderze → re-render po review. Zostaje: review Oskara + klucz finału (#9)
 🟡 Z10 — polichromie Biedronka .. grafiki gotowe (Piotr) [2026-06-02]; zostaje: mechanika klucza→finał + osadzenie w kopercie
 🟡 Z11 — finał krzyżaków ........ mechanika dwóch tabel [2026-06-02]: symbol-klucz (kolor szaty×chochla) → tabula recta → parol; spec+dane gotowe  [puzzles/z11-szyfr-spec.md]
 ✅ Tabela 1 (lookup) KZ ......... 4×4 wyrenderowana (kolory EN × rysunki: piernik/miecz/chochla/świeca → gmerki; klucz centralny)  [public/z11-tabela-1-symbole.pdf · tools/z11-cipher/]
