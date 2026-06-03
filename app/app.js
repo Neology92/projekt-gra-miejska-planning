@@ -70,29 +70,49 @@ function showStage(id) {
   if (!step || !group) return showGroupSelect();
   setSt({ stage: id });
   clear();
+  const faction = GROUP_META[group].faction;
 
   const s = el('section', 'screen step');
   s.appendChild(groupChip(group));
   s.appendChild(el('span', 'stage-tag', step.label));
-  s.appendChild(el('h2', 'stage-title', step.title));
-  s.appendChild(propFrame(step.prop));
-  s.appendChild(briefBody(step.brief));
 
-  if (step.puzzle && step.puzzle.type === 'symbol-sequence' && !isSolved(id)) {
-    const data = z1PuzzleFor(group);
-    s.appendChild(symbolPuzzle(step, data));
-  } else if (step.puzzle && isSolved(id)) {
-    s.appendChild(clearedPanel(step));
-  } else if (step.terminal) {
-    s.appendChild(terminalPanel(step, group));
+  if (step.puzzle && step.puzzle.type === 'logic') {
+    /* Z2 — treść per frakcja */
+    const data = Z2_DATA[faction];
+    s.appendChild(el('h2', 'stage-title', data.title));
+    s.appendChild(propFrame(step.prop));
+    s.appendChild(briefBody(data.scene));
+    s.appendChild(slipBlock(data));
+    if (isSolved(id)) s.appendChild(z2RevealPanel(data));
+    else s.appendChild(logicPuzzle(step, data));
+  } else {
+    /* Z1 — symbol-sequence */
+    s.appendChild(el('h2', 'stage-title', step.title));
+    s.appendChild(propFrame(step.prop));
+    s.appendChild(briefBody(step.brief));
+    if (step.puzzle && step.puzzle.type === 'symbol-sequence' && !isSolved(id)) {
+      s.appendChild(symbolPuzzle(step, z1PuzzleFor(group)));
+    } else if (step.puzzle && isSolved(id)) {
+      s.appendChild(clearedPanel(step));
+    } else if (step.terminal) {
+      s.appendChild(terminalPanel(step, group));
+    }
   }
 
   const back = el('button', 'btn ghost', 'Start over (change group)');
   back.style.marginTop = '22px';
-  back.onclick = () => { setSt({ group: null, stage: null, solved: {} }); localStorage.setItem(LS, JSON.stringify({ solved: {} })); showGroupSelect(); };
+  back.onclick = () => { localStorage.setItem(LS, JSON.stringify({ solved: {} })); showGroupSelect(); };
   s.appendChild(back);
 
   APP.appendChild(s);
+}
+
+/* slip pośrednika (Z2) */
+function slipBlock(data) {
+  const d = el('div', 'slip');
+  d.innerHTML = `<div class="slip-label">A scrap of paper — left for you</div>`
+    + data.slip.map((p) => `<p class="msg">${p}</p>`).join('');
+  return d;
 }
 
 function groupChip(group) {
@@ -217,8 +237,74 @@ function terminalPanel(step, group) {
   const fac = factionName(GROUP_META[group].faction);
   return el('div', 'done', `<hr class="rule">
     <p class="msg">From here your road runs with the <strong>${fac}</strong>.</p>
-    <p class="msg">This is the boundary of the proof-of-concept — the full Z2 puzzle and the
-    rest of your group’s flow are the next phase.</p>`);
+    <p class="msg">This is the boundary of the proof-of-concept.</p>`);
+}
+
+/* ===================== ZAGADKA: dedukcja logiczna (Z2) ===================== */
+function logicPuzzle(step, data) {
+  const p = data.puzzle;
+  const wrap = el('div', 'solve');
+  wrap.innerHTML = `<hr class="rule"><h3>${p.lead}</h3><p class="msg">${p.intro}</p>`;
+  wrap.appendChild(el('p', 'msg', `<strong>The three:</strong> ${p.people.join(' · ')}`));
+  wrap.appendChild(el('p', 'msg', `<strong>${p.placeLabel}:</strong> ${p.places.join(' · ')}`));
+  wrap.appendChild(el('p', 'msg', `<strong>${p.itemLabel}:</strong> ${p.items.join(' · ')}`));
+  const ol = el('ol', 'brief-list');
+  p.clues.forEach((c) => ol.appendChild(el('li', null, c)));
+  wrap.appendChild(ol);
+  wrap.appendChild(el('p', 'msg', '<em>Only one of those marks is on your map. That is the door you go to — and no other.</em>'));
+
+  // przypisania: każda osoba dostaje miejsce + przedmiot (natywne select)
+  const form = el('div', 'assign');
+  p.people.forEach((person) => {
+    const row = el('div', 'assign-row');
+    row.innerHTML = `<div class="who">${person}</div>`
+      + selectHtml('place', person, p.placeLabel, p.places)
+      + selectHtml('item', person, p.itemLabel, p.items);
+    form.appendChild(row);
+  });
+  wrap.appendChild(form);
+
+  const btn = el('button', 'btn', 'Confirm'); wrap.appendChild(btn);
+  const fb = el('p', 'feedback'); wrap.appendChild(fb);
+  wrap.appendChild(el('p', 'demo-note', 'Work it out from the three things you overheard, then place all three.'));
+
+  btn.onclick = () => {
+    let ok = true;
+    p.people.forEach((person) => {
+      const pl = form.querySelector('select[data-kind="place"][data-who="' + person + '"]').value;
+      const it = form.querySelector('select[data-kind="item"][data-who="' + person + '"]').value;
+      if (pl !== p.solution[person].place || it !== p.solution[person].item) ok = false;
+    });
+    if (ok) { setSt({ solved: { [step.id]: true } }); showSuccessZ2(data); }
+    else { fb.textContent = 'That doesn’t hold together. Re-read the three things you overheard.'; fb.className = 'feedback err'; }
+  };
+  return wrap;
+}
+
+function selectHtml(kind, who, label, opts) {
+  return `<label class="sel"><span>${label}</span>`
+    + `<select data-kind="${kind}" data-who="${who}"><option value="">—</option>`
+    + opts.map((o) => `<option value="${o}">${o}</option>`).join('')
+    + `</select></label>`;
+}
+
+function z2RevealPanel(data) {
+  return el('div', 'done', `<hr class="rule"><div class="seal small">✔</div>
+    <p class="msg">${data.reveal.head}</p>
+    <p class="msg">${data.reveal.body}</p>
+    <p class="muted small">Go find them — they carry your way onward. (Boundary of the proof-of-concept.)</p>`);
+}
+
+function showSuccessZ2(data) {
+  clear();
+  const d = el('section', 'screen done');
+  d.innerHTML = `<div class="seal">✔</div><h2>The pieces fit</h2>
+    <p class="msg">${data.reveal.head}</p>
+    <p class="msg">${data.reveal.body}</p>
+    <p class="muted small">Go find them — they carry your way onward. (Boundary of the proof-of-concept.)</p>
+    <button id="back" class="btn ghost">Back to start</button>`;
+  APP.appendChild(d);
+  d.querySelector('#back').onclick = () => { localStorage.setItem(LS, JSON.stringify({ solved: {} })); showGroupSelect(); };
 }
 
 /* ===================== START ===================== */

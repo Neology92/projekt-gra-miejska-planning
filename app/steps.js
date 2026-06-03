@@ -27,7 +27,7 @@ const STEPS = {
       { reg: 'rule' },
       { reg: 'dateline', html: 'Toruń, the 6th of February, the Year of Our Lord 1454' },
       { reg: 'head', html: 'Messengers,' },
-      { reg: 'msg', html: 'The sealed letter enclosed with this note is not yours to read. Carry it. Protect it. Deliver it before the eighth bell strikes tonight.' },
+      { reg: 'msg', html: 'The sealed letter enclosed with this note is not yours to read. Carry it. Protect it. Deliver it before the ninth bell strikes tonight.' },
       { reg: 'msg', html: 'You were paid to do a simple thing. The city has made it complicated. Your contact is not where he was meant to be, and you will have to find your own way to the one who must receive this.' },
       { reg: 'msg', html: 'Know this: whoever reads that letter, loses it, or puts it in the wrong hands will answer for it. Not with coin. <em>With their hands.</em> You are warned once. You will not be warned again.' },
       { reg: 'rule' },
@@ -57,27 +57,19 @@ const STEPS = {
   },
 
   /* --- Z2 — checkpoint: kontakt odnaleziony (granica POC). --- */
+  /* --- Z2 — pierwsza koperta frakcyjna: zagadka logiczna → kontakt.
+         Treść (scena/slip/zagadka/reveal) = Z2_DATA[frakcja] (z2-data.js).
+         Z2→Z3 = scena aktora (Jordan/Albrecht) → granica POC. --- */
   z2: {
     id: 'z2',
     label: 'Z2',
-    title: 'You reached your contact',
-
-    brief: [
-      { reg: 'narration', html: 'Four marks, named in order — and the last one opens. Someone has been waiting for exactly your faces, on exactly this day. The carnival noise closes over the two of you like water.' },
-      { reg: 'msg', html: 'This is where your single errand becomes something larger. From here the road forks — but which way, and to whom, is the next chapter.' },
-      { reg: 'rule' },
-      { reg: 'narration', html: 'Keep the sealed letter close. You will be asked for it before the night is out.' },
-    ],
-
     prop: {
       what: 'the sealed letter (still unopened)',
       from: 'you have carried it since the start',
       where: 'keep it on you — it is handed over only at the finale',
     },
-
-    puzzle: null,
+    puzzle: { type: 'logic' },   // dane per frakcja z Z2_DATA
     next: null,
-    terminal: true,
   },
 
 };
