@@ -64,6 +64,7 @@ $playerJobs = @(
   @{ Src='miasto-04b-Z3-pergamin.html'; Name='miasto-{c}-04b-Z3-pergamin';  Stamp='m04'; Colors=$TR_COLORS }
   @{ Src='miasto-5-Z4.html';            Name='miasto-{c}-5-Z4';             Stamp='m05'; Colors=@('czerwony') }            # opt A: G1
   @{ Src='miasto-5-Z5.html';            Name='miasto-{c}-5-Z5';             Stamp='m05'; Colors=@('pomaranczowy','zolty') } # opt B: G2,G3
+  @{ Src='miasto-5-Z6.html';            Name='miasto-{c}-5-Z6';             Stamp='m05'; Colors=@('zielony','turkusowy') }   # opt C: G4,G5
   @{ Src='miasto-6-Z7.html';            Name='miasto-{c}-6-Z7';             Stamp='m06'; Colors=$TR_COLORS }
   @{ Src='miasto-06a-Z7-list.html';     Name='miasto-{c}-06a-Z7-list';      Stamp='m06'; Colors=$TR_COLORS }
   @{ Src='krzyzacy-2-Z2.html';           Name='krzyzacy-{c}-2-Z2';            Stamp='k02'; Colors=$KZ_COLORS }
