@@ -1,0 +1,45 @@
+name: Deploy aplikacja gry → Netlify (osobna strona)
+
+# OSOBNA strona Netlify dla aplikacji gry hybrydowej (app/), niezależna od
+# galerii materiałów (public/ → torun-1454-materialy). Push na master dotykający
+# app/** → znajdź stronę „torun-1454-gra" (utwórz, jeśli nie istnieje) i wyślij app/.
+# Reużywa istniejącego sekretu NETLIFY_AUTH_TOKEN (ten sam zespół). Site-ID nie
+# jest poufne — rozwiązywane w locie z API, więc nie trzeba nowego sekretu.
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'app/**'
+      - '.github/workflows/deploy-app-netlify.yml'
+  workflow_dispatch: {}
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Znajdź lub utwórz stronę + wyślij app/
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+        run: |
+          set -euo pipefail
+          SITE_NAME=torun-1454-gra
+          CLI="npx --yes netlify-cli@26"
+
+          echo "Szukam istniejącej strony $SITE_NAME…"
+          SITE_ID=$($CLI api listSites --data '{}' \
+            | jq -r ".[] | select(.name==\"$SITE_NAME\") | .id" | head -1 || true)
+
+          if [ -z "${SITE_ID:-}" ] || [ "$SITE_ID" = "null" ]; then
+            echo "Brak — tworzę stronę $SITE_NAME…"
+            SITE_ID=$($CLI api createSite --data "{\"name\":\"$SITE_NAME\"}" | jq -r .id)
+          fi
+          echo "Site ID: $SITE_ID"
+
+          $CLI deploy --prod --dir app --site "$SITE_ID" --message "CI ${{ github.sha }}"
