@@ -181,58 +181,46 @@ export const ETAPY = [
   Gra toczy się w prawdziwym Toruniu, wśród autentycznych miejsc i z postaciami historycznymi.
   Ale żeby gra działała, Oskar musiał trochę naginać historię — łączyć legendy z faktami,
   używać nowożytnych pomników jako punktów orientacyjnych, wymyślać sceny, które nigdy się nie wydarzyły.
-  Te kartki to <strong>komentarz autora</strong>: dla każdej koperty wyjaśniają, co jest prawdziwą historią,
-  co legendą z XIX wieku, co wymysłem Oskara na potrzeby fabuły, a co świadomym anachronizmem
-  (czyli czymś, co w 1454 roku nie istniało, ale jest użyte w grze bo po prostu tam stoi i wygląda fajnie).
+  Te kartki to <strong>komentarz autora</strong>: dla każdej koperty wyjaśniają, co w tej zagadce jest prawdziwą
+  historią, a co wymysłem lub anachronizmem.
 </p>
 <p>
   Pomyśl o tym jak o <em>komentarzu reżysera na DVD</em> — „ta scena jest z dokumentów historycznych,
   tamtą wymyśliłem, a ten pomnik jest z 2011 roku ale pasował do trasy".
 </p>
 <p>
-  <strong>Kiedy gracz by to dostał?</strong> Oskar jeszcze nie zdecydował. Opcje to:
-  razem z kopertą (przed rozwiązaniem), po rozwiązaniu danej zagadki, albo na samym końcu jako debrief.
-  Mogą też w ogóle nie wejść do gry — stąd to review.
+  <strong>Nowy format:</strong> Każda kartka to teraz dwa zdania — jeden fakt i jedna ciekawostka.
+  Projekt zakłada wydruk z jednej A4 (ok. 6–7 kartek na stronę, do wycięcia).
+</p>
+<p>
+  <strong>Kiedy gracz by to dostał?</strong> Oskar jeszcze nie zdecydował — razem z kopertą,
+  po rozwiązaniu, albo jako debrief po grze. Mogą też nie wejść do gry — stąd to review.
 </p>
 
 <h3>Dlaczego Oskar chce twojej opinii?</h3>
 <p>
-  Po pierwsze: <strong>czy to w ogóle ma sens jako format?</strong>
-  Oskar nie jest pewien, czy gracze chcieliby to czytać. Może to za dużo tekstu, może psuje flow,
-  może jest super — ale chce drugiego zdania od kogoś, kto widzi grę z zewnątrz.
+  <strong>Pytanie nr 1:</strong> Czy kartki wchodzą do gry i kiedy? Czy ten format (2 zdania) ma sens,
+  czy gracze w ogóle chcieliby to czytać?
 </p>
 <p>
-  Po drugie, i to jest pilne: <strong>trzy kartki zawierają spoilery</strong>.
-  Mają informacje, które ujawniają rzeczy, które gracz powinien odkryć dopiero w finale.
-  Oskar chce wiedzieć, które to są i czy wywalić spoilerowe fragmenty, czy przesunąć te kartki na koniec.
-  Zaznaczył je w liście "Do sprawdzenia" poniżej — <span class="warn-inline">⚠ pozycje oznaczone ostrzeżeniem</span>.
-</p>
-<p>
-  Po trzecie: <strong>czy kartki nie są za długie?</strong>
-  Kilka z nich to 2–3 strony A4. Może warto zostawić tylko część
-  (np. wyciąć sekcję "Ciekawostki" i "Źródła wiki" z drukowanej wersji, zostawić tylko FAKT/LEGENDA/FABUŁA)?
-  Twoja intuicja jest tu wartościowa.
+  <strong>Pytanie nr 2:</strong> <span class="warn-inline">⚠ Trzy kartki zawierają spoilery</span>
+  (oznaczone poniżej). Danie ich przed finałem niszczy plot twist. Czy je wyrzucić, czy tylko odłożyć na po-finale?
 </p>`,
     doSprawdzenia: [
       '─── PYTANIE GŁÓWNE ────────────────────────────────────────',
-      'Czy kartki wchodzą do gry? (Opcje: przed otwarciem koperty / po rozwiązaniu / debrief po grze / nigdy)',
+      'Czy kartki wchodzą do gry? (Opcje: razem z kopertą / po rozwiązaniu / debrief po grze / nigdy)',
       '─── SPOILERY — DECYZJA WYMAGANA ──────────────────────────',
-      '⚠ miasto-2-Z2-meta: ujawnia Jordan = Bażyński (twist finału Z7). Danie go przed Z7 = ZNISZCZY CAŁY PLOT TWIST. → wywal treść albo przesuń na po-Z7.',
-      '⚠ miasto-6-Z7-meta: zawiera twist Jordan=Bażyński + wymowę moralną finału. Bezpieczna tylko RAZEM z kopertą Z7 lub po niej.',
-      '⚠ krzyzacy-5-Z11-meta: mechanika finału KZ + wzmianka o powiązaniu z twistem TR. Bezpieczna tylko razem z kopertą Z11 lub po niej.',
-      '─── POZOSTAŁE (brak spoilerów) ────────────────────────────',
-      'wspolne-1-Z1-meta: anachronizmy miejsc Z1 (Pomnik Piernikarki 2011, Kopernik 1853, Osiołek 2007, Kamienica Pod Gwiazdą 1697). Bezpieczna przed/po.',
-      'miasto-3-Z3-meta: zamek, Albrecht Kalb, Tajna Rada, donosiciele. "Hans von Baysen" pojawia się na liście ale BEZ połączenia z Jordanem. Bezpieczna przed/po.',
-      'krzyzacy-3-Z3Z-meta: lustro Z3 od strony KZ. Bezpieczna przed/po.',
-      'miasto-5-Z4-meta: kalimba (anachronizm), flisak (legenda), data 6.II.1454 jako kod. Bezpieczna przed/po.',
-      'krzyzacy-4-Z8-meta: lustro Z4. Bezpieczna przed/po.',
-      'miasto-5-Z5-meta: pierniki, cechy, głos sceptyczny piekarza (inwersja moralna). Bezpieczna przed/po.',
-      'krzyzacy-4-Z9-meta: lustro Z5. Bezpieczna przed/po.',
-      'miasto-5-Z6-meta: herby hanzeatyckie, Aleja Herbów. Bezpieczna przed/po.',
-      'krzyzacy-4-Z10-meta: polichromie, bestiariusz. Bezpieczna przed/po.',
-      '─── DŁUGOŚĆ ───────────────────────────────────────────────',
-      'wspolne-1-Z1-meta jest najdłuższa (~3 strony — 4 miejsca Z1 + dystraktory). Pozostałe 1–2 strony.',
-      'Czy kartki są za długie? Oskar pyta: czy wywalić Ciekawostki/Źródła z drukowanej wersji?',
+      '⚠ miasto-2-Z2: ujawnia Jordan = Bażyński (twist finału Z7). Dać PO Z7, nigdy przed.',
+      '⚠ miasto-6-Z7: zawiera twist Jordan = Bażyński + wymowę moralną. Dać razem z Z7 lub po.',
+      '⚠ krzyzacy-5-Z11: finał KZ. Dać razem z Z11 lub po.',
+      '─── POZOSTAŁE (bezpieczne przed/po) ───────────────────────',
+      'wspolne-1-Z1: Kopernik 1853, Piernikarka 2011, pręgierz-replika 2007 — na trasie nic z 1454.',
+      'miasto-3-Z3: zamek, Kalb, Gdanisko ocalało jako latryna → prochownia.',
+      'krzyzacy-3-Z3Z: Zakon wiedział o buncie od XI 1453, ale miał 300 braci w całych Prusach.',
+      'miasto-5-Z4 / krzyzacy-4-Z8: kalimba z XIX w. (nie padała nazwa), fontanna Flisaka 1914.',
+      'miasto-5-Z5 / krzyzacy-4-Z9: katarzynki to XIX w.; papryka i kakao — Nowy Świat (XVI w.).',
+      'miasto-5-Z6: Aleja Gmerków to instalacja z ostatniego remontu, nie z 1454.',
+      'krzyzacy-4-Z10: Biedronka na Szerokiej 22 — polichromie z ok. 1370 r., 84 lata przed buntem.',
     ],
     plikiWspolne: [
       'wspolne-1-Z1-meta.pdf',
