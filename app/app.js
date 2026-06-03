@@ -179,12 +179,20 @@ function optScrap(lines) {
   return d;
 }
 
+function mapMark(glyph, caption) {
+  const d = el('div', 'map-mark');
+  d.innerHTML = `<svg viewBox="0 0 32 32" width="80" height="80" aria-label="map mark">${glyph}</svg>`
+    + `<div class="map-mark-cap">${caption}</div>`;
+  return d;
+}
+
 function optionalStage(s, opt, step) {
   s.appendChild(el('h2', 'stage-title', opt.title));
   s.appendChild(propFrame(opt.prop));
   s.appendChild(briefBody(opt.scene));
   if (opt.scrap) s.appendChild(optScrap(opt.scrap));
   if (opt.sceneAfter && opt.sceneAfter.length) s.appendChild(briefBody(opt.sceneAfter));
+  if (opt.mapGlyph) s.appendChild(mapMark(opt.mapGlyph, opt.mapGlyphCaption));
 
   if (isSolved('opt')) { s.appendChild(optClearedPanel(opt)); return; }
 
