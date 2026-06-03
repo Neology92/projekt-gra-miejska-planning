@@ -32,13 +32,13 @@ Symbole: `✅` zrobione · `🟡` częściowe/draft · `⬜` do zrobienia · `�
 | `miasto-4-Z3b.md` | TR | Z3 (2. koperta) | gracz EN | ✅ | ✅ | ✅ `miasto-4-Z3b.pdf` | ⬜ |
 | `miasto-5-Z4.md` | TR | Z4 (opc. A) | gracz EN | ✅ | 🟡 v2 | ✅ `miasto-5-Z4.pdf` | ⬜ |
 | `miasto-5-Z5.md` | TR | Z5 (opc. B) | gracz EN | ✅ | ✅ | ✅ `miasto-5-Z5.pdf` | ⬜ |
-| `miasto-5-Z6` (herby) | TR | Z6 (opc. C) | gracz EN | ✅ | ❌ brak pliku (README mówi „placeholder", pliku nie ma) | ⬜ | ⬜ |
+| `miasto-5-Z6.md` (herby) | TR | Z6 (opc. C) | gracz EN | ✅ | ✅ draft v1 [06-03] (EN; klucz: Piotr potwierdza) | ⬜ (brak źródła HTML + PDF) | ⬜ |
 | `miasto-6-Z7.md` | TR | Z7 / finał | gracz EN | ✅ | ✅ | ✅ `miasto-6-Z7.pdf` | ⬜ |
 | `krzyzacy-2-Z2.md` | KZ | Z2 | gracz EN | ✅ | ✅ (nowy 2026-06-03) | ⬜ | ⬜ |
-| `krzyzacy-3-Z3Z` | KZ | Z3Z | gracz EN | ✅ | ❌ brak pliku (tylko meta-kartka) | ⬜ | ⬜ |
+| `krzyzacy-3-Z3Z.md` | KZ | Z3Z | gracz EN | ✅ | ✅ draft v2 [06-03] | ⬜ | ⬜ |
 | `krzyzacy-4-Z8.md` | KZ | Z8 (opc.) | gracz EN | ✅ | 🟡 draft | ⬜ | ⬜ |
 | `krzyzacy-4-Z9.md` | KZ | Z9 (opc.) | gracz EN | ✅ | ✅ | ✅ `krzyzacy-4-Z9.pdf` | ⬜ |
-| `krzyzacy-4-Z10` (polichromie) | KZ | Z10 (opc.) | gracz EN | ✅ | ❌ brak pliku (tylko meta-kartka) | ⬜ | ⬜ |
+| `krzyzacy-4-Z10.md` (polichromie) | KZ | Z10 (opc.) | gracz EN | ✅ | ✅ draft [06-03] (karta-rekwizyt = bestiariusz `.jpeg`) | ⬜ | ⬜ |
 | `krzyzacy-5-Z11.md` | KZ | Z11 / finał | gracz EN | ✅ | ✅ (nowy 2026-06-03) | ⬜ | ⬜ |
 
 ## B. Rekwizyty drukowane (player-facing) — `materials/props/` + `prototype/print/src/`
@@ -57,7 +57,7 @@ Symbole: `✅` zrobione · `🟡` częściowe/draft · `⬜` do zrobienia · `�
 | Tabela 2 — tabula recta | KZ | Z11 | ✅ | ✅ `z11-tabula-recta-draft.md` | ✅ `z11-tabela-2-tabula-recta.pdf` | ⬜ |
 | Melodia Z4/Z8 (audio) | TR+KZ | Z4/Z8 | ✅ | — (nagranie) | ✅ `z4-song-loop.mp3` | ⬜ |
 | Kalimba + pręciki numerowane | TR+KZ | Z4/Z8 | ✅ | — (rekwizyt fizyczny) | — | ⬜ |
-| Zapieczętowany list (noszony całą grę) | wspólne | Z1→finał | ✅ | ❌ brak treści/pliku | ⬜ | ⬜ |
+| Zapieczętowany list (noszony całą grę) | wspólne | Z1→finał | ✅ | ✅ grafika v1-mute (sealed; bez treści czytelnej) | ✅ `wspolne-1-Z1-list.pdf` | ⬜ |
 | Slip Pula B (wkładka Z2 KZ) | KZ | Z2 | ✅ | ❌ brak pliku (w `krzyzacy-2-Z2.md` jako „N." — do wydzielenia) | ⬜ | ⬜ |
 | Karta herbów hanzeatyckich | TR | Z6 | ✅ | ❌ brak (grafiki u Piotra, poza repo) | ⬜ | ⬜ |
 | Polichromie Biedronka (grafiki) | KZ | Z10 | ✅ | ❌ brak w repo (grafiki u Piotra) | ⬜ | ⬜ |
@@ -98,9 +98,9 @@ Symbole: `✅` zrobione · `🟡` częściowe/draft · `⬜` do zrobienia · `�
 
 ## Największe luki (czysty plan — brak pliku)
 
-1. **Tor KZ — brakujące koperty gracza:** `krzyzacy-3-Z3Z`, `krzyzacy-4-Z10` (oraz `miasto-5-Z6` na torze TR). Mechanika Z3Z ma otwarte pytania projektowe → bloker treści MVP-KZ.
+1. **Tor KZ + Z6 — drafty kopert ISTNIEJĄ [06-03]** (`krzyzacy-3-Z3Z`, `krzyzacy-4-Z10`, `miasto-5-Z6`): luka przesunięta z „brak draftu" na **brak renderu + review** (Z6 dodatkowo: brak źródła HTML). NIE jest już „brak pliku".
 2. **Wersje PL** wszystkich aktorów + dokumentów MG (dziś EN).
-3. **Zapieczętowany list** (rekwizyt niesiony całą grę) — brak treści.
+3. **Zapieczętowany list** — ✅ wyrenderowany [06-03] (v1-mute → `public/wspolne-1-Z1-list.pdf`); sealed, bez treści czytelnej. Nie jest już luką.
 4. **Karta herbów Z6 / polichromie Z10** — grafiki u Piotra, poza repo.
 5. **Klucze MG Z4/Z8, Z6/Z10, Z11** jako osobne PDF — dane istnieją, brak renderu do torby MG.
 6. **Slip Pula B** (KZ, analog slipu „— R.") — do wydzielenia z `krzyzacy-2-Z2.md`.
