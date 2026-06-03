@@ -1,7 +1,7 @@
 # KF (krzyzacy) — Final Envelope · Z11 (draft)
 
 > **Language:** English (player-facing). Planning notes in Polish below.
-> **Status:** draft [2026-06-03] — KZ finale; carries the Z11 szyfrogram + the motto-gate to Albrecht. Awaiting Oskar's review.
+> **Status:** draft [2026-06-03] — KZ finale; explains the motto-gate to Albrecht (the Z11 szyfrogram itself comes from the optional, pos 4 — NOT this envelope). Awaiting Oskar's review.
 > **Canon:** `concept/04-faza-3-final.md`, `puzzles/z11-szyfr-spec.md`. Mirror (TR finale): `envelopes/miasto-6-Z7.md`.
 
 ---
@@ -24,7 +24,7 @@
 
 ---
 
-*The night you served has come. Across Thorn the carnival gutters out, the masks come down — and the Order's quiet work shows its face at last.*
+*The night you served has come. Across Toruń the carnival gutters out, the masks come down — and the Order's quiet work shows its face at last.*
 
 *You did what was asked. You walked into the rebels' nest, sat at their cook's table, marked the man and the hour. Now one thing remains: to prove, to the Komtur's own face, that you are the Order's and no one else's.*
 
@@ -50,5 +50,5 @@
 - **BRAK twistu tożsamości** [decyzja 2026-05-29]: finał KZ nie ujawnia „Jordan=Bażyński" jako rewelacji dla siebie — Albrecht jawny od początku. Brama = godność (motto), nie wiedza tajna.
 - **Ósme bicie / Przedzamcze / nie Tuba Dei** — jak `miasto-6-Z7` (anachronizm dzwonu).
 - **Interpunkcja szyfrogramu [Oskar 2026-06-03]:** pokazany **z przecinkiem i wykrzyknikiem** w tych samych pozycjach co motto (`UEFNEJ, … WEUPEJ!`) — lokuje słowa i lustruje urządzenie z Z7 (interpunkcja jako kotwica). Interpunkcja przechodzi 1:1 (nie szyfrowana). Walidacja round-trip w `cipher-data.js` operuje na samych literach + spacjach. (Dane: `materials/props/z11-tabula-recta-draft.md`.)
-- **⚠ Dystrybucja Tabeli 2 / prowenancja szyfrogramu:** szyfrogram tu, w finale (decyzja 2026-06-03). Reszta dystrybucji (gdzie wydać Tabelę 2; rola opcjonalnej Z8/9/10 w bramkowaniu finału) — `puzzles/z11-szyfr-spec.md §6/§8`, `otwarte-pytania #27b`.
+- **⚠ Dystrybucja Tabeli 2 (otwarte):** gdzie gracz dostaje Tabelę 2 (z Tabelą 1 od Albrechta, czy w finale) — `puzzles/z11-szyfr-spec.md §6/§8`, `otwarte-pytania #27b`. (Szyfrogram = rozstrzygnięte: po opcjonalnej, pozycja 4 — patrz nota „Prowenancja szyfrogramu" wyżej.)
 - **Status:** placeholder w manifescie (`envelopes/README.md`) → podniesiony do **draft** [2026-06-03].
