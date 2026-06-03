@@ -1,7 +1,7 @@
 /* sw.js — offline shell (spec §D: łączność/offline w terenie, ~3h gry).
    Cache-first dla powłoki; nawigacje (deep-link /zN po odświeżeniu) → fallback
    na cached index.html (routing czysto kliencki). Bump CACHE przy zmianie. */
-const CACHE = 'torun1454-v1';
+const CACHE = 'torun1454-v2';   // bump → wymusza świeże pliki (routing na hashu)
 const SHELL = [
   '/', '/index.html', '/styles.css', '/app.js', '/steps.js', '/z1-data.js',
   '/manifest.webmanifest',
