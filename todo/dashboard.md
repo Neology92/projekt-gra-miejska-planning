@@ -158,7 +158,7 @@ Szczegóły: mechanics/koperty-mg.md §ZAŁOŻENIA PRZED RENDEREM · prototype/p
 🟡 K2-K (wersja krzyżacka) ...... draft v2 [2026-06-03]: rama (N. + Pula B) + zagadka Z2 (routing A; parol „Komtur's seal"). Cel Albrecht JAWNY. Zostaje: review Oskara + glify ⟨mark⟩ + HTML render  [envelopes/krzyzacy-2-Z2.md]
                                  ⚠ BRAK HTML → BRAK PDF (5 kolorów KZ do wyrenderowania)
 🟡 Skrypt Albrechta (Zosia) F2A . handler KZ DOPISANY [2026-06-03] jako PART TWO karty  [materials/actors/albrecht-actor-card-draft.md PART TWO]
-🟡 Z3Z — infiltracja Piccolo .... draft v2 [2026-06-03]: obserwacja (kolor+chochla→Z11), cover=udawanie TR, kupon, plotki B7/B8/B9. Jednokopertowe. Zostaje: review Oskara + HTML render  [envelopes/krzyzacy-3-Z3Z.md]
+🟡 Z3Z — infiltracja Piccolo .... draft v2 [2026-06-03]: obserwacja (kolor+chochla→Z11), cover=udawanie TR, kupon, plotki B7/B8/B9. Jednokopertowe. + etap z3z/z3zb ZBUDOWANY w app/ (bramka `observe` brown+ladle, test headless OK, #77). Zostaje: review Oskara + HTML render koperty  [envelopes/krzyzacy-3-Z3Z.md · app/steps.js]
                                  ⚠ BRAK HTML → BRAK PDF (5 kolorów KZ do wyrenderowania)
 🟡 Z8 — melodia zakonu .......... draft v2 [2026-06-03]: kalimba, kod 621454, klimat zakonny + doubt-beat. Zostaje: review Oskara + HTML render  [envelopes/krzyzacy-4-Z8.md]
                                  ⚠ BRAK HTML → BRAK PDF (G6 niebieski + G7 fioletowy)

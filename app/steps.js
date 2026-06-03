@@ -13,6 +13,9 @@
                  | { type:'symbol-sequence', prompt }  (Z1; dane per grupa, z1PuzzleFor)
                  | { type:'code', answer, heading, prompt, placeholder?, note?, errMsg? }
                    (Z3; gracz wpisuje liczbę wyciągniętą od aktora — np. `30` od Albrechta)
+                 | { type:'observe', fields:[{label,placeholder?,accept:[...]}], heading,
+                     prompt, note?, errMsg? }  (Z3Z; gracz zgłasza obserwacje — np. kolor
+                     szaty + atrybut kucharza; walidacja każdego pola wg accept-listy)
      success   — (opcjonalne) { seal?, title, text } — ekran po rozwiązaniu (override Z1)
      fork      — (opcjonalne) { TR:<id|null>, KZ:<id|null> } — rozejście wg frakcji (Z2)
      next, terminal
@@ -82,7 +85,7 @@ const STEPS = {
     },
 
     puzzle: null,
-    fork: { TR: 'z3', KZ: null },   // TR → infiltracja zamku (Z3); KZ → Z3Z (next phase)
+    fork: { TR: 'z3', KZ: 'z3z' },   // TR → infiltracja zamku (Z3); KZ → infiltracja Piccolo (Z3Z)
   },
 
   /* --- Z3 — infiltracja zamku: zwiad u Albrechta + BRAMKA KODU (liczba załogi). ---
@@ -144,6 +147,64 @@ const STEPS = {
     next: null,
   },
 
+  /* --- Z3Z — tor KZ: infiltracja Piccolo + BRAMKA OBSERWACJI (rozpoznaj kucharza). ---
+     Lustro Z3 (TR). Zamiast liczby od Albrechta — dwie obserwacje Jordana:
+     kolor szaty (brown) + atrybut (ladle). Te dane zasilają finał Z11
+     (Tabela 1: kolor szaty × chochla → symbol; `puzzles/z11-szyfr-spec.md`).
+     Pełny rozkaz Albrechta + tabele = FIZYCZNA koperta `krzyzacy-3-Z3Z` (tu skrót). --- */
+  z3z: {
+    id: 'z3z',
+    label: 'Z3',
+    title: 'Inside Piccolo',
+
+    brief: [
+      { reg: 'narration', html: 'You carried the Komtur’s order into the cook’s kitchen, exactly as he bid you — Piccolo, the traitors’ nest that wears an apron. The carnival lent you a face; you passed for the Council’s own, and the cook took you for friends and fed you without a second thought.' },
+      { reg: 'narration', html: 'You ate at his hearth and spent his token to the last — every bowl one the Council will not. And while you ate, you watched the man with the ladle close.' },
+      { reg: 'rule' },
+      { reg: 'head', html: 'Now the Order wants the man.' },
+      { reg: 'msg', html: 'Not his words — his person. By two plain marks the Order will know its enemy again, wherever he runs: the colour he wears, and the one thing never out of his hand.' },
+    ],
+
+    puzzle: {
+      type: 'observe',
+      heading: 'Mark the cook — in two strokes',
+      prompt: 'You sat at his board and watched him. Set the man down for the Order.',
+      fields: [
+        { label: 'The colour he wears', placeholder: 'a colour',
+          accept: ['brown', 'brownish', 'dark brown', 'brazowy', 'brązowy', 'brunatny'] },
+        { label: 'The one thing never out of his hand', placeholder: 'a thing he carries',
+          accept: ['ladle', 'a ladle', 'the ladle', 'soup ladle', 'cooking ladle', 'spoon', 'big spoon', 'scoop', 'dipper', 'chochla'] },
+      ],
+      note: 'Two plain strokes — what he wore, what he held. Didn’t catch it? Slip back to his hearth and look again.',
+      errMsg: 'That is not the man. Look again — the colour he wears, and the thing never out of his hand.',
+    },
+
+    success: {
+      seal: '✔',
+      title: 'You have him in two strokes',
+      text: 'A brown robe, and a ladle that never leaves his hand. By those marks the Order will know its enemy — wherever he runs.',
+    },
+
+    next: 'z3zb',
+  },
+
+  /* --- Z3Zb — domknięcie KZ: oddanie „człowieka w dwóch kreskach" + kupon u MG. --- */
+  z3zb: {
+    id: 'z3zb',
+    label: 'Z3',
+    title: 'Slip back into the dark',
+
+    brief: [
+      { reg: 'narration', html: 'One of the Council’s people, for an hour, over a borrowed supper — and now you carry their cook away in your memory, drawn in two strokes, and they never knew whose side you came in on.' },
+      { reg: 'narration', html: 'Be gone before anyone wonders. Do not be a face he remembers.' },
+      { reg: 'rule' },
+      { reg: 'msg', html: '<strong>↪ To the Game Master:</strong> bring the cook back to the Game Master at the Rynek Staromiejski (the Old Town market square) — in two strokes, the colour he wears and the thing he carries — with his own meal-token spent. With those, you have done what was asked; what comes next is waiting there.' },
+    ],
+
+    puzzle: null,
+    next: null,
+  },
+
 };
 
-const STEP_ORDER = ['z1', 'z2', 'z3', 'z3b'];
+const STEP_ORDER = ['z1', 'z2', 'z3', 'z3b', 'z3z', 'z3zb'];

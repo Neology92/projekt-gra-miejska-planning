@@ -83,6 +83,8 @@ function showStage(id) {
       s.appendChild(symbolPuzzle(step, z1PuzzleFor(group)));
     } else if (step.puzzle.type === 'code') {
       s.appendChild(codePuzzle(step));
+    } else if (step.puzzle.type === 'observe') {
+      s.appendChild(observePuzzle(step));
     }
   } else if (step.puzzle && isSolved(id)) {
     s.appendChild(clearedPanel(step));
@@ -230,6 +232,48 @@ function codePuzzle(step) {
       fb.textContent = p.errMsg || 'That is not the number. Try again.';
       fb.className = 'feedback err';
     }
+  };
+
+  refresh();
+  return wrap;
+}
+
+/* ===================== BRAMKA: obserwacja (kilka pól, każde z accept-listą) ===================== */
+function observePuzzle(step) {
+  const p = step.puzzle;
+  const wrap = el('div', 'solve');
+  wrap.innerHTML = `<hr class="rule"><h3>${p.heading || 'What did you see?'}</h3><p class="msg">${p.prompt}</p>`;
+
+  const norm = (v) => String(v == null ? '' : v).trim().replace(/\s+/g, ' ').toLowerCase();
+  const rows = [];
+  p.fields.forEach((f, i) => {
+    const lab = el('label', 'field-label', f.label);
+    lab.setAttribute('for', 'obs' + i);
+    const inp = el('input', 'code-input');
+    inp.type = 'text'; inp.id = 'obs' + i;
+    inp.setAttribute('autocomplete', 'off');
+    inp.setAttribute('aria-label', f.label);
+    if (f.placeholder) inp.placeholder = f.placeholder;
+    wrap.appendChild(lab); wrap.appendChild(inp);
+    rows.push({ inp, accept: (f.accept || []).map(norm) });
+  });
+
+  const go = el('button', 'btn', 'Confirm'); go.disabled = true; wrap.appendChild(go);
+  const fb = el('p', 'feedback'); wrap.appendChild(fb);
+  if (p.note) wrap.appendChild(el('p', 'demo-note', p.note));
+
+  function refresh() {
+    go.disabled = !rows.every((r) => norm(r.inp.value).length > 0);
+    fb.textContent = ''; fb.className = 'feedback';
+  }
+  rows.forEach((r) => {
+    r.inp.addEventListener('input', refresh);
+    r.inp.addEventListener('keydown', (e) => { if (e.key === 'Enter' && !go.disabled) { e.preventDefault(); go.click(); } });
+  });
+  go.onclick = () => {
+    const ok = rows.every((r) => r.accept.indexOf(norm(r.inp.value)) >= 0);
+    if (ok) { setSt({ solved: { [step.id]: true } }); showSuccess(step); }
+    else { fb.textContent = p.errMsg || 'Not quite. Look again.'; fb.className = 'feedback err'; }
   };
 
   refresh();

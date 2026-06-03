@@ -19,6 +19,7 @@
 - **Kiedy wręczyć:** Albrecht (Zosia) po Z2, jako handler KZ (`albrecht-actor-card §STEP K3`).
 - **Kiedy NIE wręczać:** przed spotkaniem z Albrechtem; grupom mieszczan (mają `miasto-3-Z3`).
 - **Dokąd odsyła:** do **Piccolo** (siedziba TR, gdzie urzęduje Jordan/Piotr = cel infiltracji) → po obserwacji grupa wraca do MG z „opisem człowieka" (kolor+atrybut) → MG wydaje opcjonalną (Z8/Z9/Z10).
+- **APKA [ZBUDOWANE 2026-06-03]:** obserwacja jest też **bramką w aplikacji** (lustro kodu `30` z toru TR) — etap `z3z`, `puzzle.type:'observe'`: gracz zgłasza **kolor szaty (`brown`) + atrybut (`ladle`)** (accept-listy z synonimami), po czym apka kieruje na `z3zb` (handoff do MG). ⚠ **Ta koperta + obie tabele zostają FIZYCZNE** (rozkaz Albrechta niesie tabele Z11) — apka trzyma tylko skrót sceny + bramkę, nie zastępuje koperty (inaczej niż TR, gdzie K-Z3b w całości poszło do apki). `app/steps.js §z3z`, `todo/otwarte-pytania.md #77`.
 - **Canon:** lustro `miasto-3-Z3`; `puzzles/zamek-krzyzacki-lista.md §Z3Z`; `puzzles/z11-szyfr-spec.md`.
 
 ## TEXT — K3-K (player reads this)
