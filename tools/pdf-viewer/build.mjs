@@ -35,12 +35,15 @@ const SECTIONS = [
   { id: 'prototyp',  label: 'Prototyp do druku — gracz', hint: 'Zestaw druków testowej ścieżki.',             spoiler: false },
   { id: 'audio',     label: 'Audio',                    hint: 'Ścieżki dźwiękowe.',                           spoiler: false },
   { id: 'inne',      label: 'Inne',                     hint: 'Pozostałe pliki.',                             spoiler: false },
+  { id: 'archive',   label: '🗄 Archiwum',               hint: 'Stare/zarchiwizowane wersje. Pomijane w paczkach ZIP („Pobierz wszystko" / „Do druku").', spoiler: false },
   { id: 'mg',        label: '🔒 MG / spoilery',          hint: 'Klucze odpowiedzi i materiały tylko dla Mistrza Gry. NIE pokazuj graczom.', spoiler: true },
 ];
 
 function categorize(rel) {
   const lower = rel.toLowerCase().replace(/\\/g, '/');
   const base = path.basename(lower);
+  // archive/ ma pierwszeństwo — stare pliki nie mogą wyciekać do prototyp/mg/inne
+  if (lower.startsWith('archive/')) return 'archive';
   if (base.startsWith('mg-') || lower.includes('/mg-tylko/') || base.includes('klucz') || base.includes('sprawdzenie')) return 'mg';
   if (lower.includes('decoder')) return 'decoders';
   if (lower.startsWith('maps/') || base.startsWith('map.') || base.startsWith('map-')) return 'maps';
@@ -74,12 +77,14 @@ function walk(dir, base = '') {
     const ext = path.extname(entry.name).toLowerCase();
     if (!VIEWABLE.has(ext)) continue;
     const stat = fs.statSync(path.join(dir, entry.name));
+    const relPath = rel.replace(/\\/g, '/');
     out.push({
-      path: rel.replace(/\\/g, '/'),
+      path: relPath,
       name: humanize(rel),
       cat: categorize(rel),
       kind: kind(ext),
       size: stat.size,
+      archived: relPath.toLowerCase().startsWith('archive/'),
     });
   }
   return out;
@@ -91,7 +96,9 @@ const grouped = SECTIONS
   .filter((s) => s.items.length > 0);
 
 const total = files.length;
+const hasAudio = files.some((f) => f.kind === 'audio');
 const manifestJson = JSON.stringify(grouped);
+const audioChip = hasAudio ? '<button class="chip" data-type="audio">Audio</button>' : '';
 
 const html = `<!doctype html>
 <html lang="pl">
@@ -128,7 +135,7 @@ const html = `<!doctype html>
   .topbar h1 { margin: 0; font-size: 16px; font-weight: 700; line-height: 1.15; }
   .topbar h1 .yr { color: var(--accent); }
   .topbar .sub { color: var(--muted); font-size: 12px; margin-top: 1px; }
-  .search-row { padding: 0 14px 11px; max-width: 1100px; margin: 0 auto; }
+  .search-row { padding: 0 14px 9px; max-width: 1100px; margin: 0 auto; }
   .search {
     width: 100%; font-size: 16px; padding: 11px 14px; border-radius: 11px;
     background: var(--surface); border: 1px solid var(--border); color: var(--text);
@@ -136,6 +143,32 @@ const html = `<!doctype html>
   }
   .search::placeholder { color: var(--muted); }
   .search:focus { outline: none; border-color: var(--accent); }
+  /* toolbar: przełącznik widoku + filtr typu */
+  .toolbar { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; padding: 0 14px 11px; max-width: 1100px; margin: 0 auto; }
+  .seg { display: inline-flex; background: var(--surface); border: 1px solid var(--border); border-radius: 999px; padding: 3px; }
+  .seg-btn {
+    border: 0; background: transparent; color: var(--muted); cursor: pointer;
+    font-size: 13px; font-weight: 600; padding: 7px 14px; border-radius: 999px; line-height: 1;
+  }
+  .seg-btn.active { background: var(--accent); color: #1a1410; }
+  .chips { display: inline-flex; gap: 6px; flex-wrap: wrap; }
+  .chip {
+    border: 1px solid var(--border); background: var(--surface); color: var(--muted); cursor: pointer;
+    font-size: 13px; padding: 7px 12px; border-radius: 999px; line-height: 1;
+  }
+  .chip.active { border-color: var(--accent); color: var(--accent); background: var(--surface-2); }
+  /* pasek pobierania (nie sticky) */
+  .dlbar {
+    max-width: 1100px; margin: 0 auto; padding: 14px;
+    display: flex; gap: 10px; flex-wrap: wrap; align-items: center;
+  }
+  .dl-btn {
+    border: 1px solid var(--accent); background: var(--surface-2); color: var(--accent); cursor: pointer;
+    font-size: 14px; font-weight: 600; padding: 11px 16px; border-radius: 11px; line-height: 1;
+  }
+  .dl-btn:active { transform: scale(.97); }
+  .dl-btn:disabled { opacity: .55; cursor: default; }
+  .dl-status { color: var(--muted); font-size: 12px; flex: 1 1 100%; min-height: 16px; word-break: break-word; }
   /* drawer */
   .backdrop { position: fixed; inset: 0; background: rgba(0,0,0,.55); opacity: 0; pointer-events: none; transition: opacity .2s; z-index: 30; }
   .backdrop.open { opacity: 1; pointer-events: auto; }
@@ -156,7 +189,7 @@ const html = `<!doctype html>
   .drawer a .c { color: var(--muted); font-size: 13px; }
   .drawer a.spoiler-link { color: var(--accent-2); }
   main { padding: 8px 14px 48px; max-width: 1100px; margin: 0 auto; }
-  section { margin-top: 26px; scroll-margin-top: 116px; }
+  section { margin-top: 26px; scroll-margin-top: 176px; }
   .hidden { display: none !important; }
   .empty { color: var(--muted); text-align: center; padding: 48px 14px; font-size: 14px; }
   .sec-head { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
@@ -193,11 +226,27 @@ const html = `<!doctype html>
     background: rgba(0,0,0,.55); color: var(--accent); padding: 2px 7px; border-radius: 6px; text-transform: uppercase;
   }
   .meta { padding: 9px 11px 11px; }
-  .meta .nm { font-size: 13px; font-weight: 600; line-height: 1.3; word-break: break-word; }
+  .meta .nm { font-size: 13px; font-weight: 600; line-height: 1.3; word-break: break-word; color: inherit; text-decoration: none; }
+  a.nm:hover { color: var(--accent); }
   .meta .sz { color: var(--muted); font-size: 11px; margin-top: 3px; }
+  .dl {
+    display: inline-grid; place-items: center; width: 34px; height: 34px; flex: none;
+    border: 1px solid var(--border); border-radius: 9px; background: var(--surface-2);
+    color: var(--accent); text-decoration: none; font-size: 16px; line-height: 1;
+  }
+  .dl:active { transform: scale(.92); }
   .audio-card { padding: 12px; }
-  .audio-card .nm { font-size: 14px; font-weight: 600; margin-bottom: 8px; }
+  .audio-card .nm { font-size: 14px; font-weight: 600; margin-bottom: 8px; display: block; }
   .audio-card audio { width: 100%; }
+  /* --- tryb LISTY (bez podglądów): kafelki → kompaktowe wiersze --- */
+  body.mode-list .grid { grid-template-columns: 1fr; gap: 8px; }
+  body.mode-list .thumb { display: none; }
+  body.mode-list .card { flex-direction: row; align-items: center; }
+  body.mode-list .meta { flex: 1; display: flex; align-items: center; gap: 12px; padding: 11px 12px; min-width: 0; }
+  body.mode-list .meta .nm { flex: 1; min-width: 0; font-size: 14px; }
+  body.mode-list .meta .sz { margin-top: 0; flex: none; }
+  body.mode-list .audio-card { flex-direction: row; }
+  body.mode-list .audio-card audio { width: auto; max-width: 240px; flex: 1; }
   footer { color: var(--muted); font-size: 12px; text-align: center; padding: 26px 14px; border-top: 1px solid var(--border); margin-top: 30px; }
   footer code { color: var(--accent); }
 </style>
@@ -219,6 +268,23 @@ const html = `<!doctype html>
   <div class="search-row">
     <input class="search" id="search" type="search" inputmode="search" autocomplete="off" placeholder="Szukaj pliku…" aria-label="Szukaj pliku">
   </div>
+  <div class="toolbar">
+    <div class="seg" role="group" aria-label="Widok">
+      <button class="seg-btn active" data-mode="gallery">Galeria</button>
+      <button class="seg-btn" data-mode="list">Lista</button>
+    </div>
+    <div class="chips" id="type-chips" role="group" aria-label="Filtr typu">
+      <button class="chip active" data-type="all">Wszystko</button>
+      <button class="chip" data-type="pdf">PDF</button>
+      <button class="chip" data-type="image">Grafiki</button>
+      ${audioChip}
+    </div>
+  </div>
+</div>
+<div class="dlbar">
+  <button class="dl-btn" id="dl-all">⬇ Pobierz wszystko (ZIP)</button>
+  <button class="dl-btn" id="dl-print">⬇ Do druku — PDF (ZIP)</button>
+  <span class="dl-status" id="dl-status">Paczki ZIP pomijają sekcję Archiwum (stare wersje).</span>
 </div>
 <main id="app"></main>
 <footer>
@@ -266,7 +332,7 @@ for (const sec of DATA) {
   const cards = [];
   for (const f of sec.items) {
     const card = makeCard(f);
-    cards.push({ el: card, hay: (f.name + ' ' + f.path).toLowerCase() });
+    cards.push({ el: card, hay: (f.name + ' ' + f.path).toLowerCase(), kind: f.kind });
     grid.appendChild(card);
   }
   section.appendChild(grid);
@@ -295,16 +361,19 @@ document.getElementById('menu-btn').addEventListener('click', openDrawer);
 backdrop.addEventListener('click', closeDrawer);
 document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeDrawer(); });
 
-// --- wyszukiwarka (filtruje kafelki po nazwie/ścieżce, ukrywa puste sekcje) ---
+// --- filtrowanie (szukanie po nazwie/ścieżce + filtr typu), ukrywa puste sekcje ---
 const search = document.getElementById('search');
-search.addEventListener('input', () => {
+let typeFilter = 'all';   // 'all' | 'pdf' | 'image' | 'audio'
+function applyFilter() {
   const q = search.value.trim().toLowerCase();
   document.body.classList.toggle('searching', q.length > 0);
   let anyVisible = false;
   for (const s of sections) {
     let visible = 0;
     for (const c of s.cards) {
-      const show = !q || c.hay.includes(q);
+      const matchQ = !q || c.hay.includes(q);
+      const matchT = typeFilter === 'all' || c.kind === typeFilter;
+      const show = matchQ && matchT;
       c.el.classList.toggle('hidden', !show);
       if (show) visible++;
     }
@@ -312,20 +381,51 @@ search.addEventListener('input', () => {
     if (visible > 0) anyVisible = true;
   }
   emptyMsg.classList.toggle('hidden', anyVisible);
-});
+}
+search.addEventListener('input', applyFilter);
+
+// --- przełącznik widoku Galeria / Lista (czysty CSS przez klasę body) ---
+for (const btn of document.querySelectorAll('.seg-btn')) {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.seg-btn').forEach((b) => b.classList.remove('active'));
+    btn.classList.add('active');
+    document.body.classList.toggle('mode-list', btn.dataset.mode === 'list');
+  });
+}
+
+// --- filtr typu (chipy) ---
+for (const chip of document.querySelectorAll('#type-chips .chip')) {
+  chip.addEventListener('click', () => {
+    document.querySelectorAll('#type-chips .chip').forEach((c) => c.classList.remove('active'));
+    chip.classList.add('active');
+    typeFilter = chip.dataset.type;
+    applyFilter();
+  });
+}
+
+// link pobierania (atrybut download — same-origin wymusza pobranie mimo nagłówka inline)
+function dlLink(f) {
+  const dl = document.createElement('a');
+  dl.className = 'dl'; dl.href = f.path; dl.download = f.path.split('/').pop();
+  dl.title = 'Pobierz'; dl.setAttribute('aria-label', 'Pobierz ' + f.name); dl.textContent = '⬇';
+  return dl;
+}
 
 function makeCard(f) {
   if (f.kind === 'audio') {
     const div = document.createElement('div');
-    div.className = 'card audio-card';
+    div.className = 'card audio-card'; div.dataset.kind = 'audio';
     div.innerHTML = '<div class="nm">'+esc(f.name)+'</div>';
     const a = document.createElement('audio'); a.controls = true; a.preload = 'none'; a.src = f.path;
     div.appendChild(a);
+    div.appendChild(dlLink(f));
     return div;
   }
-  const a = document.createElement('a');
-  a.className = 'card'; a.href = f.path; a.target = '_blank'; a.rel = 'noopener';
-  const thumb = document.createElement('div'); thumb.className = 'thumb';
+  const card = document.createElement('div');
+  card.className = 'card'; card.dataset.kind = f.kind;
+  // miniatura = link-podgląd (otwiera w nowej karcie)
+  const thumb = document.createElement('a');
+  thumb.className = 'thumb'; thumb.href = f.path; thumb.target = '_blank'; thumb.rel = 'noopener';
   if (f.kind === 'image') {
     const img = document.createElement('img'); img.loading = 'lazy'; img.src = f.path; img.alt = f.name;
     thumb.appendChild(img);
@@ -333,12 +433,71 @@ function makeCard(f) {
     thumb.innerHTML = '<span class="badge">PDF</span><span class="ph">PDF</span>';
     thumb.dataset.pdf = f.path; pdfQueue.push(thumb);
   }
-  a.appendChild(thumb);
+  card.appendChild(thumb);
   const meta = document.createElement('div'); meta.className = 'meta';
-  meta.innerHTML = '<div class="nm">'+esc(f.name)+'</div><div class="sz">'+fmtSize(f.size)+'</div>';
-  a.appendChild(meta);
-  return a;
+  const nm = document.createElement('a');
+  nm.className = 'nm'; nm.href = f.path; nm.target = '_blank'; nm.rel = 'noopener'; nm.textContent = f.name;
+  const sz = document.createElement('div'); sz.className = 'sz'; sz.textContent = fmtSize(f.size);
+  meta.appendChild(nm); meta.appendChild(sz); meta.appendChild(dlLink(f));
+  card.appendChild(meta);
+  return card;
 }
+
+// --- pobieranie ZIP (JSZip ładowany leniwie z CDN, pakowanie po stronie klienta) ---
+// "Pobierz wszystko" = cały public/ bez archive/. "Do druku" = wszystkie PDF-y bez archive/.
+// compression STORE: PDF/PNG są już skompresowane -> pakowanie bez CPU; fetch sekwencyjny,
+// pojedynczy błąd pliku nie przerywa całej paczki (tolerancja per-plik).
+const ALL_ITEMS = [];
+for (const sec of DATA) for (const it of sec.items) ALL_ITEMS.push(it);
+const ZIP_ALL = ALL_ITEMS.filter((f) => !f.archived);
+const ZIP_PRINT = ALL_ITEMS.filter((f) => !f.archived && f.kind === 'pdf');
+
+const dlStatus = document.getElementById('dl-status');
+let jszipPromise = null;
+function loadJSZip() {
+  if (jszipPromise) return jszipPromise;
+  jszipPromise = new Promise((resolve, reject) => {
+    const s = document.createElement('script');
+    s.src = 'https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js';
+    s.onload = () => resolve(window.JSZip);
+    s.onerror = () => reject(new Error('Nie udało się wczytać JSZip (sprawdź internet)'));
+    document.head.appendChild(s);
+  });
+  return jszipPromise;
+}
+async function buildZip(items, zipName, btn) {
+  if (!items.length) { dlStatus.textContent = 'Brak plików do spakowania.'; return; }
+  const buttons = document.querySelectorAll('.dl-btn');
+  buttons.forEach((b) => { b.disabled = true; });
+  let ok = 0, fail = 0;
+  try {
+    const JSZip = await loadJSZip();
+    const zip = new JSZip();
+    for (let i = 0; i < items.length; i++) {
+      const f = items[i];
+      dlStatus.textContent = 'Pobieranie ' + (i + 1) + '/' + items.length + '… ' + f.path;
+      try {
+        const resp = await fetch(f.path);
+        if (!resp.ok) throw new Error('HTTP ' + resp.status);
+        zip.file(f.path, await resp.arrayBuffer());
+        ok++;
+      } catch (e) { fail++; }
+    }
+    dlStatus.textContent = 'Tworzenie pliku ZIP…';
+    const blob = await zip.generateAsync({ type: 'blob', compression: 'STORE' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url; a.download = zipName; document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 5000);
+    dlStatus.textContent = 'Gotowe: ' + zipName + ' — ' + ok + ' plików' + (fail ? (', ' + fail + ' pominięto (błąd)') : '') + '.';
+  } catch (e) {
+    dlStatus.textContent = 'Błąd: ' + e.message;
+  } finally {
+    buttons.forEach((b) => { b.disabled = false; });
+  }
+}
+document.getElementById('dl-all').addEventListener('click', (e) => buildZip(ZIP_ALL, 'torun-1454-wszystko.zip', e.currentTarget));
+document.getElementById('dl-print').addEventListener('click', (e) => buildZip(ZIP_PRINT, 'torun-1454-do-druku.zip', e.currentTarget));
 
 // --- leniwe, BOUNDED i SEKWENCYJNE renderowanie miniatur PDF (1. strona) ---
 // Wcześniej ~38 dużych canvasów + równoległe ładowanie całych PDF-ów przepełniało
