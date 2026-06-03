@@ -33,7 +33,7 @@ Kolejność prac na zagadkach (priorytetowa):
 - Wariant mechaniki Z3 (A/B/C/D) - `puzzles/zamek-krzyzacki-lista.md`
 - Treść listy (autentyczne nazwiska z wiki `tajna-rada.js`)
 - Mechanika "kradzieży" listy komturowi Albrechtowi (Z3)
-- Mechanika Z3Z (kradzież zaopatrzenia + przeciek godziny 20:30 + ew. koło deszyfrujące)
+- Mechanika Z3Z (kradzież zaopatrzenia + przeciek godziny 21:00 + ew. koło deszyfrujące)
 - Zdefiniowanie „klucza" wyjściowego z Z3 i Z3Z do finału
 
 **Bez Z3/Z3Z finał nie ma sensu.**
@@ -102,7 +102,7 @@ Kolejność prac na zagadkach (priorytetowa):
 - **Rekwizyt miecza** Jordana (zakup Z2 = parol; broń finału Bażyńskiego — `concept/04`)
 - **Pergamin z listą TR** (Z3 - jeden)
 - **Kostiumy 2 aktorów** (Jordan/Piotr — chochla; Albrecht/Zosia — płaszcz + krzyż)
-- ~~**Dzwon / nagranie** na finał~~ — DROPPED [#49]: bez rekwizytu, „ósme bicie" tylko narracyjnie
+- ~~**Dzwon / nagranie** na finał~~ — DROPPED [#49]: bez rekwizytu, „dziewiąte bicie" tylko narracyjnie
 - ~~**Pudełka / NPCs do zliczania głosów**~~ — [#50]: bez pudełek; aktorzy (Jordan/Albrecht) liczą odebrane listy przed scenką
 
 ## Faza D - testy (TY + 4-6 znajomych, ~2-3h)

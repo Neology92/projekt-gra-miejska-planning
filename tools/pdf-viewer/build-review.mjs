@@ -117,7 +117,7 @@ const INTRO_HTML = `
 <h2>O czym jest gra</h2>
 <p><strong>Toruń, 3–8 lutego 1454.</strong> Karnawał. W tle: <em>Tajna Rada Związku Pruskiego</em> planuje bunt — 6 II 1454 mieszczanie toruńscy wyprą krzyżaków z zamku. Gracze wchodzą w to jako kurierzy, nie wiedząc po czyjej są stronie.</p>
 <p><strong>Format:</strong> 10 grup × ~4 osoby. G1–G5 = Tajna Rada (TR, mieszczanie). G6–G10 = Krzyżacy. Podział niejawny na starcie — każdy myśli że jest po prostu kurierem.</p>
-<p><strong>Finał:</strong> o 20:30 (ósme bicie dzwonu) pod ruinami zamku — aktorska scenka: Bażyński (Piotr) vs Albrecht (Zosia). Grupy już wcześniej dostarczyły list wybranej stronie. Wynik = zliczenie listów.</p>
+<p><strong>Finał:</strong> o 21:00 (dziewiąte bicie dzwonu) pod ruinami zamku — aktorska scenka: Bażyński (Piotr) vs Albrecht (Zosia). Grupy już wcześniej dostarczyły list wybranej stronie. Wynik = zliczenie listów.</p>
 <p><strong>Wymowa moralna:</strong> TR wygrywają historycznie, ale gra ich pokazuje jako stronę „złą" — zwycięstwo buntu to świat zmieniający się na gorsze.</p>
 
 <h2>Twoje role, Piotrze</h2>
@@ -139,7 +139,7 @@ const INTRO_HTML = `
   <li><strong>Jordan = Bażyński</strong> — legenda XIX-wieczna + postać historyczna sklejone. Celowy plot twist.</li>
   <li><strong>Kalimba</strong> — instrument afrykański, anachronizm. Opis fabularny mówi „fujarka/psałterion". Rekwizyt fizyczny celowo zostawiony.</li>
   <li><strong>„Piccolo"</strong> — współczesna nazwa. Może być zastąpiona „U Jordana" / „Gospoda Pod Chochlą".</li>
-  <li><strong>„Ósme bicie" / dzwon</strong> — NIE „Tuba Dei" (dopiero 1500). OK mówić „dzwon ratuszowy".</li>
+  <li><strong>„Dziewiąte bicie" / dzwon</strong> — NIE „Tuba Dei" (dopiero 1500). OK mówić „dzwon ratuszowy".</li>
   <li><strong>Szyfr Cezara (Z7/Z11)</strong> — nie anachronizm; szyfry podstawieniowe były w XV w. w użyciu.</li>
 </ul>
 

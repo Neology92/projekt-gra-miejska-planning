@@ -66,7 +66,7 @@ Burn nothing. Trust no one in a Teutonic mantle. — J.
 - ~~**Most do K-Z3b:** „he will put something in your hand… open it once clear."~~ **USUNIĘTE [2026-06-02]** — beat wycięty (meta, Zasada #3). K3 kończy się zadaniem zwiadu + „slip back into the crowd, do not be remembered" (instrukcja w świecie, bez zapowiedzi koperty). Wręczenie K-Z3b przez Albrechta = milczące, meta (patrz karta Albrechta §SEKWENCJA — model patrolu).
 - **Zwiad NIE bramkuje** — nie ma „poprawnej rozmowy". To pretekst zbliżenia. Bramką jest kradzież (K-Z3b + karta Albrechta). Gracz tego nie wie — myśli, że zadaniem jest „wyciągnąć info".
 - **Podpis „— J."** = Jordan, spójnie z „— R." (pośrednik) w K2. Lakoniczny.
-- **„Eighth bell" / godzina:** świadomie NIE powtarzana tu (jest w skrypcie Jordana ustnie + w KF). K3 trzyma fokus na zadaniu Z3.
+- **„Ninth bell" / godzina:** świadomie NIE powtarzana tu (jest w skrypcie Jordana ustnie + w KF). K3 trzyma fokus na zadaniu Z3.
 - **Wersja Krzyżacy (MVP):** lustro = infiltracja Piccolo (Z3Z), inny cel/framing. NIE kopiować 1:1 — patrz `zamek-krzyzacki-lista.md` §Z3Z.
 - **Imię „Albrecht" bez nazwiska** w tekście gracza — wystarcza; „Kalb" w kanonie. Period-styling później.
 - **Klamra A2 — payoff masek [2026-06-02]:** „the carnival lends you one for free… half the city is masked tonight" domyka setup z K1/K2 (maski karnawału). Mechanika przebrania (udawanie donosicieli przy Albrechcie) zyskuje uzasadnienie w świecie gry — karnawał czyni ją naturalną, nie podejrzaną. Pokrycie: `karnawal-1454.js`.

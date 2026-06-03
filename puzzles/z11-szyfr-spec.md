@@ -82,7 +82,7 @@ UEFNEJ, UEGFEJ TJI WEUPEJ!
 
 ## 3. MECHANIKA GRACZA (krok po kroku)
 
-1. **Po Z2** kurierzy KZ trafiają do **Albrechta** (Zosia — handler toru KZ), który wręcza im zadanie infiltracji Piccolo + **Tabelę 1** (K3-K). **W Piccolo** grupa obserwuje **Jordana** (cel infiltracji): barwę szaty (brązowa) + atrybut (chochla), wyciąga godzinę buntu (20:30). Patrz §6.
+1. **Po Z2** kurierzy KZ trafiają do **Albrechta** (Zosia — handler toru KZ), który wręcza im zadanie infiltracji Piccolo + **Tabelę 1** (K3-K). **W Piccolo** grupa obserwuje **Jordana** (cel infiltracji): barwę szaty (brązowa) + atrybut (chochla), wyciąga godzinę buntu (21:00). Patrz §6.
 2. **Po opcjonalnej (Z8/9/10, pozycja 4)** MG wydaje grupie **szyfrogram** (wymienialny). W finale grupa ma więc szyfrogram + **Tabelę 2** i je składa.
 3. **Tabela 1:** przecina wiersz `Brown` z kolumną `Ladle` → odczytuje **symbol-klucz**.
 4. **Tabela 2:** odnajduje **wiersz oznaczony tym symbolem**.
@@ -96,7 +96,7 @@ UEFNEJ, UEGFEJ TJI WEUPEJ!
 ## 4. WERYFIKACJA MG
 
 - **Oczekiwana odpowiedź grupy:** odczytane motto = `HELFEN, HEILEN UND WEHREN!`. **Wypowiedziane Albrechtowi** = hasło Zakonu.
-- **Co odblokowuje:** podanie motta Albrechtowi **odblokowuje oddanie mu listu** w finale (Przedzamcze 20:30). Bez motta komtur nie przyjmie wiadomości. Patrz `materials/actors/albrecht-actor-card-draft.md §FINALE` i `envelopes/krzyzacy-5-Z11.md`.
+- **Co odblokowuje:** podanie motta Albrechtowi **odblokowuje oddanie mu listu** w finale (Przedzamcze 21:00). Bez motta komtur nie przyjmie wiadomości. Patrz `materials/actors/albrecht-actor-card-draft.md §FINALE` i `envelopes/krzyzacy-5-Z11.md`.
 - **Hint awaryjny (jeśli utkną):**
   - nie wiedzą, jaki kolor/przedmiot → przypomnij: „co nosił człowiek z Piccolo? co miał w dłoni?" (brązowa szata + chochla);
   - mają symbol, nie umieją Tabeli 2 → wskaż, że szukają litery ciphertextu **wewnątrz** wiersza i czytają **nagłówek kolumny** nad nią;
@@ -122,7 +122,7 @@ UEFNEJ, UEGFEJ TJI WEUPEJ!
 | **Szyfrogram Z11** (`UEFNEJ, UEGFEJ TJI WEUPEJ!`) | **MG wydaje po opcjonalnej Z8/9/10 (pozycja 4 — przedostatnia koperta), wymienialny** [Oskar 2026-06-03] — gracz niesie go do finału. **NIE** w finałowej kopercie. | kanon |
 | **Tabela 2** (tabula recta) | **DO WYBRANIA**: (a) razem z Tabelą 1 w K3-K, albo (b) dopiero w finale | OTWARTE [2026-06-02] — patrz §8 |
 
-> **Brama dostawy w finale [2026-06-03]:** przy Przedzamczu (20:30) Albrecht przyjmie list **tylko od grupy, która wypowie motto** `HELFEN, HEILEN UND WEHREN!`. KZ zdobywa je z Z11 (deszyfracja); TR-dezerter odczytuje z wykradzionej listy. Bez motta — komtur odprawia. Scenariusz Albrechta: `materials/actors/albrecht-actor-card-draft.md §FINALE`. Wzmianki w kopertach finałowych: KZ `envelopes/krzyzacy-5-Z11.md`, TR `envelopes/miasto-6-Z7.md`.
+> **Brama dostawy w finale [2026-06-03]:** przy Przedzamczu (21:00) Albrecht przyjmie list **tylko od grupy, która wypowie motto** `HELFEN, HEILEN UND WEHREN!`. KZ zdobywa je z Z11 (deszyfracja); TR-dezerter odczytuje z wykradzionej listy. Bez motta — komtur odprawia. Scenariusz Albrechta: `materials/actors/albrecht-actor-card-draft.md §FINALE`. Wzmianki w kopertach finałowych: KZ `envelopes/krzyzacy-5-Z11.md`, TR `envelopes/miasto-6-Z7.md`.
 
 ---
 

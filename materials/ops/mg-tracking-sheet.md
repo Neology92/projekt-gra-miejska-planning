@@ -14,7 +14,7 @@ K1 → [Z1: symbol trail] → report to MG → K2
      → [Z3: castle/Albrecht/K-Z3b] → report to MG → K-Z4 + kalimba
      → [Z4: play melody] → report to MG → K8 (Z7 szyfrogram)
      → [Z7: decipher] → report to MG → KF
-     → [20:30, castle ruins] → deliver letter → FINALE
+     → [21:00, castle ruins] → deliver letter → FINALE
 ```
 
 ---
@@ -29,7 +29,7 @@ K1 → [Z1: symbol trail] → report to MG → K2
 | 3 | Z3 + K-Z3b | Grupa ma pergamin (lista imion) | Grupa trzyma rekwizyt | — | Piotr wręcza K3; Zosia wręcza K-Z3b; MG nie jest zaangażowany w scenę Z3 |
 | 4 | Z4 (kalimba) | Kod: sześć cyfr | **621454** | K8 = szyfrogram Z7 | Najpierw odtwórz melodię dla grupy; słuchają potem grają sami |
 | 5 | Z7 (szyfr) | Odszyfrowana wiadomość | **HANS VON BAYSEN IS JORDAN THE COOK** | KF | Cezar +7; klucz = porównaj nagłówki motto |
-| 6 | Finał | Grupa przybywa na Przedzamcze, 20:30 | — | — | Każdy aktor przyjmuje listy wręczone bezpośrednio jemu; aktorzy liczą swoje stosy przed sceną [#50]; uruchom scenę teatralną |
+| 6 | Finał | Grupa przybywa na Przedzamcze, 21:00 | — | — | Każdy aktor przyjmuje listy wręczone bezpośrednio jemu; aktorzy liczą swoje stosy przed sceną [#50]; uruchom scenę teatralną |
 
 ---
 
@@ -104,5 +104,5 @@ Jeśli zablokowana: patrz drabinka podpowiedzi w mg-runsheet.md.
 - [ ] Rekwizyty pergaminu Z3 = lista imion (Zosia wręcza podczas sceny zamkowej, albo MG wręcza osobno — potwierdź z Oskarem)
 
 **Finał:**
-- ~~Rekwizyt dzwonu~~ PORZUCONY [#49, 2026-06-03] — bez rekwizytu dźwiękowego; „ósmy dzwon" to tylko słowny narracyjny znacznik czasu
+- ~~Rekwizyt dzwonu~~ PORZUCONY [#49, 2026-06-03] — bez rekwizytu dźwiękowego; „dziewiąty dzwon" to tylko słowny narracyjny znacznik czasu
 - [ ] Aktorzy zajmują swoje strony na Przedzamczu (Piotr/Bażyński + Zosia/Albrecht). Grupy wręczają listy **bezpośrednio wybranemu aktorowi** (Wariant B — bez skrzynek, bez stołu lewa/prawa). Każdy aktor liczy swój stos tuż przed sceną [#50].

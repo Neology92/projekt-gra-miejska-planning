@@ -14,7 +14,7 @@ W finale (F3) zliczamy: ile listów trafiło do **Bażyńskiego** (przez Jordana
 ## Podstawowa wersja (prosta)
 
 - 1 grupa = 1 głos.
-- Każda grupa **dostarcza list** do jednej ze stron przed 20:30.
+- Każda grupa **dostarcza list** do jednej ze stron przed 21:00.
 - **Zliczanie**: kto dostarczył gdzie. Większość wygrywa.
 
 ## Wariant rozszerzony (ważony)
@@ -50,7 +50,7 @@ W finale (F3) zliczamy: ile listów trafiło do **Bażyńskiego** (przez Jordana
 - **Plus**: dokładność, brak fizycznego balastu.
 - **Minus**: łamie immersję historyczną.
 
-**ROZSTRZYGNIĘTE [2026-06-02]: Wariant B** — aktorzy (Piotr/Bażyński + Zosia/Albrecht) odbierają listy fizycznie przy Przedzamczu o 20:30. Wybór fabularny — gracze sami decydują komu wręczyć. Nie ma pudełek, nie ma QR.
+**ROZSTRZYGNIĘTE [2026-06-02]: Wariant B** — aktorzy (Piotr/Bażyński + Zosia/Albrecht) odbierają listy fizycznie przy Przedzamczu o 21:00. Wybór fabularny — gracze sami decydują komu wręczyć. Nie ma pudełek, nie ma QR.
 
 **Liczenie [2026-06-03, Oskar]:** **Jordan i Albrecht liczą fizycznie odebrane listy tuż przed rozpoczęciem finałowej scenki** — każdy wie, ile ma. Wynik = porównanie obu stosów na żywo. Bez osobnego licznika MG.
 
@@ -64,7 +64,7 @@ W finale (F3) zliczamy: ile listów trafiło do **Bażyńskiego** (przez Jordana
 
 ## Komunikacja wyniku
 
-- W scenie finałowej (pod zamkiem, 20:30):
+- W scenie finałowej (pod zamkiem, 21:00):
   - MG / narrator ogłasza zliczone głosy.
   - Aktor-Bażyński i aktor-Albrecht odgrywają scenkę zgodnie z wynikiem.
   - **Wariant epilogu** zależny od wyniku (patrz `concept/04-faza-3-final.md`).

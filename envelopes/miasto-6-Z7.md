@@ -17,13 +17,13 @@
 - **Pozycja (nr otwierania):** 6 (finał miasta; po wstawce Z3b). Zadanie = **Z7** (szyfr finałowy).
 - **Wkładki:** ta notatka. Zapieczętowany list (noszony od pozycji 1) = to, co grupa fizycznie oddaje.
 - **Kiedy wręczyć:** MG wręcza po weryfikacji rozwiązania Z7 (HANS VON BAYSEN IS JORDAN THE COOK).
-- **Dokąd odsyła:** ruiny Przedzamcza, ósme bicie (20:30) — wybór strony (Bażyński / Albrecht), oddanie listu.
+- **Dokąd odsyła:** ruiny Przedzamcza, dziewiąte bicie (21:00) — wybór strony (Bażyński / Albrecht), oddanie listu.
 - **Canon:** `concept/04-faza-3-final.md`.
 
 
 ## TEXT — KF (player reads this)
 
-> **Rejestr: JEDEN — czysta SCENA, 2. os. „you", kursywa.** Finał NIE jest listem (zasada domyślna #2: koperta = scena, nie wiadomość od nadawcy). Brak nadawcy, brak nagłówka „Messengers,", brak imperatywów w romanie, brak podpisu „— J.". Logistyka (Przedzamcze / ósme bicie / dwie strony / oddanie listu) przemycona jako wniosek grupy, nie rozkaz. [PRZEPISANE 2026-06-02 — Oskar: „to kompletnie nie powinien być list, sama narracja".]
+> **Rejestr: JEDEN — czysta SCENA, 2. os. „you", kursywa.** Finał NIE jest listem (zasada domyślna #2: koperta = scena, nie wiadomość od nadawcy). Brak nadawcy, brak nagłówka „Messengers,", brak imperatywów w romanie, brak podpisu „— J.". Logistyka (Przedzamcze / dziewiąte bicie / dwie strony / oddanie listu) przemycona jako wniosek grupy, nie rozkaz. [PRZEPISANE 2026-06-02 — Oskar: „to kompletnie nie powinien być list, sama narracja".]
 
 ---
 
@@ -35,7 +35,7 @@
 
 *The letter has ridden in your bag since morning. Sealed, unread, unbroken — and so it stays. Whatever words are folded inside, they were never yours to know. You were only ever the hands that carried it.*
 
-*It ends at the castle. At Przedzamcze, where the Order's fortress stands in ruin, the eighth bell will bring two men into the dark — and you are bound to neither.*
+*It ends at the castle. At Przedzamcze, where the Order's fortress stands in ruin, the ninth bell will bring two men into the dark — and you are bound to neither.*
 
 *One is the chairman: the man who was Jordan, who fed you and tested you and sent you under the Komtur's wall. The other is Albrecht — and you know his face too. You stood before him in the dark by those very walls, close enough to lift the list from beneath his hand; you flattered him, he boasted, and for all his pride he was no monster. The letter was meant for the chairman. That is not the same as saying it must go to him.*
 
@@ -43,7 +43,7 @@
 
 *And should you think of crossing to the Komtur — you begin to see how it would have to be done. The Order opens its hand to no one who cannot name it. But you have already held its watchword in your own: those same words at the head of the list you stole from him — `HELFEN, HEILEN UND WEHREN!` — the key that broke the cipher tonight. Speak them to Albrecht, and the Order would take you for its own. Come without them, and he would know you for what you are.*
 
-*The eighth bell. The ruins. You walk.*
+*The ninth bell. The ruins. You walk.*
 
 ---
 
@@ -52,7 +52,7 @@
 - **Trigger:** po weryfikacji przez MG rozwiązania Z7 (HANS VON BAYSEN IS JORDAN THE COOK).
 - **Plot twist acknowledged in opening italic:** otwarcie kursywą jawnie domknął to, co gracz właśnie odkrył. To zamknięcie narracyjne — nie nowe zaskoczenie, lecz integracja. Kursywa=głowa: gracz przetwarza tożsamość Jordana.
 - **Lokalizacja:** „Przedzamcze" — realna nazwa, gracze mogą ją wyszukać/pokazać na mapie. MG może doprecyzować punkt spotkania przy briefingu w terenie.
-- **Ósme bicie:** 20:30, rekwizyt (dzwon ręczny / nagranie). W tekście gracza: „eighth bell". Nie Tuba Dei (anachronizm — od 1500). Patrz `concept/04-faza-3-final.md`.
+- **Dziewiąte bicie:** 21:00, rekwizyt (dzwon ręczny / nagranie). W tekście gracza: „ninth bell". Nie Tuba Dei (anachronizm — od 1500). Patrz `concept/04-faza-3-final.md`.
 - **Wolny wybór + KUSZĄCE przejście [REWIZJA 2026-06-03, Oskar — `plotki-i-pogloski.md §Łuk`]:** wcześniej „obie strony neutralnie, bez oceny" → teraz finał **aktywnie kusi przejściem do Albrechta** (decyzja: przejście = „mocne/kuszące"). Dwa nowe akapity: (1) **kotwica spotkania** — „*the other is Albrecht — and you know his face too… for all his pride he was no monster*" (przypomina Z3: kurier TR realnie stał przed komturem, więc druga strona ma twarz, nie jest abstrakcją); (2) **kuszenie racją** — zbiera echem pogłoski całej gry (K2 „rising of rich men / Rada w mroku / Prusy do kieszeni" + piekarz Z5 + gorycz Z4) i wprost podsuwa: *może to komtur zasłużył, nikt nie pozna twojej ręki*. **Nie** ogłasza „słusznej" strony — kusi, zostawia wybór graczowi (spójne z „wolny wybór wolny dla obu klas", `concept/04`). Filar „TR=źli" wspiera kuszenie ku Zakonowi (inwersja moralna). Łączy się z beatem mechaniki niżej (motto = „jak" przejść); ten akapit = „dlaczego" przejść.
   - ⚠ **Generalizacja callbacków [2026-06-03]:** kuszenie przywołuje pogłoski **bez pinowania do konkretnej opcjonalnej** („*the talk in the crowds, the bitter little notes left where you would find them*") — bo KF jest **wspólny dla 3 ścieżek TR** (Z4/Z5/Z6), a tylko K2 (tłum) niosła pogłoski u wszystkich. Pierwotnie miałem „off the cold water" (Z4) + „baker's note" (Z5) — grupa z Z6 nie miała żadnego. „notes left where you would find them" pokrywa skrawek R. (Z4) i gryps piekarza (Z5) generycznie, a dla Z6 zostaje atmosferyczne. Gdyby MVP chciał per-wariant KF — można dopiąć konkret.
 - **Brama Albrechta = motto [dodane 2026-06-03, Oskar]:** dopisany beat — grupa *domyśla się*, że oddanie listu Albrechtowi wymaga podania motta Zakonu `HELFEN, HEILEN UND WEHREN!`, które **już ma** (nagłówek wykradzionej listy = klucz Z7, którym właśnie złamali szyfr). Payoff symetrii: to samo motto, które było ich kluczem, otwiera też wrogą stronę. Mechanika aktora: `materials/actors/albrecht-actor-card-draft.md §PART THREE`. Kanon: `puzzles/z11-szyfr-spec.md §5`. *Nie spoiluje wyboru — to opcja „gdybyś chciał przejść do komtura".*

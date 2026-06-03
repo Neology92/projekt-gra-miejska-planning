@@ -47,8 +47,13 @@ const Z2_DATA = {
       onMap: 'Piccolo',
     },
     reveal: {
-      head: 'Only one mark is on your map: <strong>Piccolo</strong>.',
-      body: 'Go there. You will not know your man on sight — so ask for <strong>Jordan</strong> by name, and tell him what he bought this morning: <strong>a sword</strong>. By that word he will know you came from R. He carries your way onward.',
+      head: 'Only one of those marks is on your map. This is it — look for it:',
+      // glif Piccolo = L01 z tools/map-gen/map-data.js §Z1_LANDMARKS (≡ trzy poziome kreski)
+      glyph: '<line x1="4" y1="11" x2="28" y2="11" stroke="#2a1f0e" stroke-width="2.4" stroke-linecap="round"/>'
+        + '<line x1="4" y1="16" x2="28" y2="16" stroke="#2a1f0e" stroke-width="2.4" stroke-linecap="round"/>'
+        + '<line x1="4" y1="21" x2="28" y2="21" stroke="#2a1f0e" stroke-width="2.4" stroke-linecap="round"/>',
+      glyphCaption: 'That mark is <strong>Piccolo</strong>. Go there.',
+      body: 'You will not know your man on sight — so ask for <strong>Jordan</strong> by name, and tell him what he bought this morning: <strong>a sword</strong>. By that word he will know you came from R. He carries your way onward.',
     },
   },
 
@@ -88,8 +93,12 @@ const Z2_DATA = {
       onMap: 'By the castle',
     },
     reveal: {
-      head: 'Only one mark is on your map: <strong>by the castle</strong>.',
-      body: 'Go there. The Komtur trusts no one on sight — so name to <strong>Albrecht</strong> what he bore this morning: <strong>the Komtur’s own seal</strong>. By that word he will know you for the Order’s. Be ready to prove it — he will ask.',
+      head: 'Only one of those marks is on your map. This is it — look for it:',
+      // glif Zamku Krzyżackiego = L02 z tools/map-gen/map-data.js §Z1_LANDMARKS (∞ lemniskata)
+      glyph: '<path d="M16,16 C13,10 4,10 4,16 C4,22 13,22 16,16 C19,10 28,10 28,16 C28,22 19,22 16,16Z"'
+        + ' fill="none" stroke="#2a1f0e" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>',
+      glyphCaption: 'That mark is the Komtur’s seat, <strong>by the castle</strong>. Go there.',
+      body: 'The Komtur trusts no one on sight — so name to <strong>Albrecht</strong> what he bore this morning: <strong>the Komtur’s own seal</strong>. By that word he will know you for the Order’s. Be ready to prove it — he will ask.',
     },
   },
 

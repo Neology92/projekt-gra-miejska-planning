@@ -18,7 +18,7 @@ Wszystkie mają **identyczny format i ten sam kanon** — różnią się tylko *
 
 - **Faction-neutral.** W Fazie 1 nikt nie wie, że są dwie klasy (`concept/01-faza-1-kurierzy`). List jest **celowo identyczny dla 10 grup** i nie zdradza strony: pieczęć = nieznany **house-mark** (gmerk), **nie** herb, **nie** krzyż Zakonu, **nie** korona/orzeł; miasto = **„Toruń"** (nie niem. „Thorn"); bleed-through za adresem jest **nieczytelny**.
 - **Player-facing → angielski** (lico listu; treść w środku zostaje zapieczętowana).
-- Data **Toruń, 6 II 1454**; „before the eighth bell" (= 20:30, **nie** Tuba Dei — anachronizm); groźba w nocie K1 („with their hands"), nie tu.
+- Data **Toruń, 6 II 1454**; „before the ninth bell" (= 21:00, **nie** Tuba Dei — anachronizm); groźba w nocie K1 („with their hands"), nie tu.
 
 ## Format / druk
 

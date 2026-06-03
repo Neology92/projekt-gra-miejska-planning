@@ -45,7 +45,7 @@ Zaznaczaj każdą komórkę gdy etap jest ukończony i MG wręcza kolejną koper
 
 ---
 
-## Liczenie listów w finale (20:30)
+## Liczenie listów w finale (21:00)
 
 | Listy do Bażyńskiego | Listy do Albrechta | Wynik |
 |---|---|---|

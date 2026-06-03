@@ -35,10 +35,10 @@ To nie jest naginka faktów, lecz **świadoma decyzja tonalna** o tym, jak gra *
 - **Anachronizm**: nazwa współczesna, włoska. W XV w. - **niemożliwe**.
 - **Mitigacja**: stylizować na "Gospoda Pod Chochlą" / "U Jordana".
 
-### 4. ☆ Dzwon o 20:30
+### 4. ☆ Dzwon o 21:00
 
 - **Sytuacja**: dzwon **Tuba Dei** z katedry Św. Janów to **dopiero 1500** (46 lat po buncie). W 1454 inny dzwon ratuszowy.
-- **Mitigacja**: można odtworzyć dźwięk dzwonu (rekwizyt, nagranie, ręczny dzwon), ale **NIE używać nazwy "Tuba Dei"** w narracji. Mówić "dzwon ratuszowy", "ósme bicie".
+- **Mitigacja**: można odtworzyć dźwięk dzwonu (rekwizyt, nagranie, ręczny dzwon), ale **NIE używać nazwy "Tuba Dei"** w narracji. Mówić "dzwon ratuszowy", "dziewiąte bicie".
 - Patrz wiki Quest #8 (`scenariusze-questow.js`).
 
 ### 5. ☆ Lista nazwisk TR u komtura Albrechta

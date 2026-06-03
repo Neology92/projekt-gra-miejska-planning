@@ -157,7 +157,7 @@ Symbole: `✅` zrobione · `🟡` częściowe/draft · `⬜` do zrobienia · `�
 ### `miasto-6-Z7.md` (KF, finał TR)
 - [ ] **Czysta scena, bez nadawcy/podpisu** (zasada „koperta=scena").
 - [ ] Wolny wybór strony — neutralny, bez oceny.
-- [ ] Ósme bicie = 20:30; nie „Tuba Dei"; Przedzamcze (realna nazwa).
+- [ ] Dziewiąte bicie = 21:00; nie „Tuba Dei"; Przedzamcze (realna nazwa).
 - [ ] Reveal „Jordan = Hans von Baysen" — domknięcie, nie nowe zaskoczenie.
 
 ### `krzyzacy-2-Z2.md` (nowy)
@@ -181,7 +181,7 @@ Symbole: `✅` zrobione · `🟡` częściowe/draft · `⬜` do zrobienia · `�
 - [ ] Szyfrogram = **motto Zakonu** (nie „Jordan=Bażyński" — KZ bez twistu tożsamości).
 - [ ] Tabula recta: klucz = **MARIENBURG**; round-trip parolu PASS.
 - [ ] Symbol-klucz: **Brown × Ladle → S11** (centralny).
-- [ ] Brama Albrechta = wypowiedzenie motta; ósme bicie 20:30; Przedzamcze.
+- [ ] Brama Albrechta = wypowiedzenie motta; dziewiąte bicie 21:00; Przedzamcze.
 - [ ] **Dystrybucja Tabeli 2** (gdzie wydać) — otwarte (`z11-szyfr-spec §6/§8`).
 
 ## Rekwizyty

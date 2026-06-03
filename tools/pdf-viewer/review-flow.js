@@ -82,7 +82,7 @@ export const ETAPY = [
       'TR: instrukcja infiltracji zamku czytelna; brak checkpointu MG po Z3 (raport dopiero po Z3b)',
       'TR: pergamin (łup Z3b) — wpis #1 "chairman" zasiewa finał Z7',
       'TR: klucz do Z7 = motto HELFEN HEILEN UND WEHREN (zaszyfrowane +7 w szyfrgramie)',
-      'KZ: cel = obserwacja (kolor szaty + chochla); godzina buntu = 20:30',
+      'KZ: cel = obserwacja (kolor szaty + chochla); godzina buntu = 21:00',
       'KZ: Tabela 1 do Z11 — Brown×Ladle = klucz centralny; Albrecht wręcza po Z3Z',
     ],
     plikiPerFrakcja: {
@@ -131,7 +131,7 @@ export const ETAPY = [
       'Dwa nagłówki TYM SAMYM fontem: motto w Z3 (jawne) i w szyfrgramie (zaszyfrowane)',
       'Brak koła/rekwizytu — czysty Cezar; shift odkrywany przez porównanie',
       'Tabula recta: klucz MARIENBURG; round-trip parolu PASS — Z11',
-      '"Ósme bicie" = 20:30; NIE "Tuba Dei"; miejsce = Przedzamcze',
+      '"Dziewiąte bicie" = 21:00; NIE "Tuba Dei"; miejsce = Przedzamcze',
     ],
     plikiPerFrakcja: {
       miasto: ['miasto-{kolor}-6-Z7.pdf', 'miasto-{kolor}-06a-Z7-list.pdf'],
@@ -154,13 +154,13 @@ export const ETAPY = [
   {
     id: 'E7',
     nr: 7,
-    tytul: 'Finał aktorski: 20:30 pod zamkiem',
+    tytul: 'Finał aktorski: 21:00 pod zamkiem',
     typ: 'wspolny',
     opis: 'Wszystkie 10 grup zbiera się pod ruinami zamku krzyżackiego. MG ogłasza wynik. Scenka aktorska: Bażyński (Piotr) vs Albrecht (Zosia). Callback: Bażyński wyciąga miecz z Z2. Dwie drogi zakończenia (triumf TR / kompromitacja TR).',
     doSprawdzenia: [
       'Scenka: miecz Bażyńskiego = callback parolu z Z2 ("kupiłeś dziś rano miecz")',
       'Aktorzy zajmują strony osobno; grupy wręczają listy bezpośrednio wybranej osobie (Wariant B)',
-      'Brak rekwizytu dzwonu (porzucone #49); "ósme bicie" = słowny znacznik czasu',
+      'Brak rekwizytu dzwonu (porzucone #49); "dziewiąte bicie" = słowny znacznik czasu',
       'MG-runsheet: skalowanie na 2 tory i 10 grup; protokół awaryjny gdy aktor niedostępny',
     ],
     plikiWspolne: [],

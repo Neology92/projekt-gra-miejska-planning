@@ -14,7 +14,7 @@
 - **1.1 (ton/inwersja):** ✅ WPROWADZIĆ wariant (b) — śmierć R. „za grę wielkich" jako nośnik goryczy. Mechanizm: tor TR → TR/narada źli; tor krzyżacki → Zakon zły.
 - **1.2 (lokalizacja K-Z4):** ✅ scena **czysto opisowa/narracyjna** — bez MG nad Wisłą, gracze czytają opis (nie fizyczne miejsce).
 - **1.3 (melodia):** 🔄 kierunek = **metafizyczny/abstrakcyjny** (melodia słyszalna „niedaleko flisaka", bez fizycznego grajka) + próba spięcia z **Fontanną Flisaka**. Warianty do wyboru → sekcja na końcu pliku „§ Spięcie melodii z fontanną".
-- **1.4 (trudność finału):** ✅ ZOSTAW, testujemy (a). Korekta założenia: gra ~2h (18:15→20:30) z posiłkiem, nie 4h. Z7 bez odchudzania.
+- **1.4 (trudność finału):** ✅ ZOSTAW, testujemy (a). Korekta założenia: gra ~2h (18:15→21:00) z posiłkiem, nie 4h. Z7 bez odchudzania.
 - **1.5 (splice za subtelny):** ✅ (a)+(c) — zostaw subtelny + **safety net w drabince hintów MG** (krok „jeśli odszyfrowali, ale twist nie wybrzmiał — przypomnij cel z K2 + «chairman» z listy"). Wdrożone w `mg-runsheet.md §Z7`.
 - **1.6 (ton za mroczny):** ✅ zostaw mrok — kontrast daje **karnawał** (smaczki B w K1/K2: muzyka, róże św. Doroty, „fajerwerki"); sztuczna lekkość byłaby nie-w-tonie i kłóciła się z gorzkim finałem (TR=źli). Świadoma decyzja.
 - **3.1 (kalimba/Z2 za proste):** ✅ zostaw — świadomy **rytm trudności**: K1/Z1 (łatwe wejście) → Z2 (lekka logika, transfer do Jordana) → Z3 (napięcie, kradzież) → Z4 (oddech sensoryczno-muzyczny) → Z7 (szczyt). Kalimba = wytchnienie po Z3, nie wyzwanie. Z2 = brama narracyjna, nie ma być trudna.
@@ -65,7 +65,7 @@
 
 ### 1.4 — Z7 bramkuje twist za najtrudniejszym zadaniem, a finał i tak go ujawnia
 - **Gdzie:** `z7-szyfrogram-draft.md` (Cezar +7, porównanie nagłówków Fraktur, 28-liter dekod) + `concept/04` (finał: Piotr=Jordan ujawnia teatralnie).
-- **Problem:** to najtrudniejsze zadanie w grze, robione w 4. godzinie przez zmęczoną grupę, przed 20:30. **Wielu nie skończy.** A skoro finał ujawnia twist teatralnie tak czy siak — realnym zyskiem z Z7 jest **poinformowana dostawa** (wiesz, do kogo niesiesz, ZANIM zdecydujesz), nie sam reveal. Czyli najtrudniejsze zadanie nagradza „wiedz 20 minut wcześniej".
+- **Problem:** to najtrudniejsze zadanie w grze, robione w 4. godzinie przez zmęczoną grupę, przed 21:00. **Wielu nie skończy.** A skoro finał ujawnia twist teatralnie tak czy siak — realnym zyskiem z Z7 jest **poinformowana dostawa** (wiesz, do kogo niesiesz, ZANIM zdecydujesz), nie sam reveal. Czyli najtrudniejsze zadanie nagradza „wiedz 20 minut wcześniej".
 - **Pytanie:** czy ciężar Z7 jest proporcjonalny do nagrody?
 - **Rozwiązania:**
   - (a) Zostaw trudne — twist = nagroda dla najlepszych, reszta dowiaduje się w finale (świadomie). Drabinka hintów MG (`mg-runsheet.md §Z7`) już łagodzi.
@@ -116,7 +116,7 @@
 - [ ] Łańcuch finału: zostaw / odchudź (które warstwy?)
 
 ### 3.3 — Niespójności (poza defektem #0)
-- **Brak** twardych niespójności fabularnych w łańcuchu — daty (6 II), nazwiska (Bażyński/Albrecht/Tileman), godzina (20:30/8. bicie), motto (HEILEN, po Twojej poprawce) są spójne między kopertami. To dobry znak. *(Jedyny był defekt #0 — artefakt PDF, nie treść.)*
+- **Brak** twardych niespójności fabularnych w łańcuchu — daty (6 II), nazwiska (Bażyński/Albrecht/Tileman), godzina (21:00/8. bicie), motto (HEILEN, po Twojej poprawce) są spójne między kopertami. To dobry znak. *(Jedyny był defekt #0 — artefakt PDF, nie treść.)*
 
 ---
 
@@ -139,7 +139,7 @@ Reszta to dostrajanie, nie przebudowa.
 2. **Lokalizacja** — fontanna na Rynku; R. (flisak) ginie nad Wisłą. Dwa różne miejsca.
 3. **Instrument** — legenda/figura = skrzypce; nasz rekwizyt = lamellofon. Rozwiązanie: melodia „ta sama" niezależnie od instrumentu (flisak grał ją na swoim, wy odtwarzacie na swoim) — nie akcentować instrumentu flisaka.
 
-**Mocna zbieżność tematyczna (czemu to w ogóle działa):** flisak-grajek znad Wisły, którego MUZYKA prowadzi/zwabia (legenda) ↔ R.-flisak, którego melodia jest kluczem. Plus: **8 żab ↔ 8. bicie dzwonu** (finał 20:30) — potencjalna klamra liczbowa.
+**Mocna zbieżność tematyczna (czemu to w ogóle działa):** flisak-grajek znad Wisły, którego MUZYKA prowadzi/zwabia (legenda) ↔ R.-flisak, którego melodia jest kluczem. Plus: **8 żab ↔ 8. bicie dzwonu** (finał 21:00) — potencjalna klamra liczbowa.
 
 ### Warianty (do wyboru — różnią się tym, czy fontanna jest TERENOWA czy META)
 
@@ -149,7 +149,7 @@ Reszta to dostrajanie, nie przebudowa.
 **B — Figura flisaka jako terenowy punkt (gracze idą pod fontannę).** Z4 dzieje się przy figurze flisaka na Rynku. Tam gracze „słyszą"/odtwarzają melodię. Fikcja nie nazywa „fontanny" — mówi o „miejscu flisaka / figurze grajka znad wody". Most metafizyczny: R. zginął nad Wisłą, ale jego melodia „wraca" przy wizerunku flisaka.
   - ✅ Namacalne, 8 żab widoczne (→ klamra 8. bicie), silne połączenie z fontanną. ❌ Anachronizm w kadrze (choć nienazwany), miesza Wisłę z Rynkiem, **kłóci się z Twoją decyzją 1.2** („scena opisowa, bez fizycznej lokalizacji") — chyba że Z4 świadomie dostaje punkt terenowy.
 
-**C — Hybryda: melodia metafizyczna (jak A) + klamra 8 żab → 8. bicie.** Melodia abstrakcyjna znad wody (A), ale flisak staje się **motywem spinającym całą grę**: jego melodia daje datę (`621454`), a jego legenda (8 żab) cicho zapowiada godzinę finału (8. bicie, 20:30). Fontanna = meta + smaczek liczbowy.
+**C — Hybryda: melodia metafizyczna (jak A) + klamra 8 żab → 8. bicie.** Melodia abstrakcyjna znad wody (A), ale flisak staje się **motywem spinającym całą grę**: jego melodia daje datę (`621454`), a jego legenda (8 żab) cicho zapowiada godzinę finału (8. bicie, 21:00). Fontanna = meta + smaczek liczbowy.
   - ✅ Flisak jako klamra początek↔koniec, metafizyczne, fontanna obecna przez 8 żab. ❌ „8 żab → 8 bicie" subtelne/ezoteryczne — może umknąć albo wyglądać przypadkowo.
 
 **Rekomendacja:** **A lub C** (zgodne z Twoim „metafizyczne/abstrakcyjne" + decyzją 1.2 o opisowości). B tylko jeśli świadomie dajesz Z4 punkt terenowy na Rynku (łamie 1.2). Instrument flisaka (skrzypce) — nie akcentować, melodia jest ponad instrumentem.

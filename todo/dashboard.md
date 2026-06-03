@@ -50,7 +50,7 @@
 ✅ poz.4 Z3b — kradzież ....... draft gotowy (2. koperta etapu Z3; narracja + cytat Albrechta)  [envelopes/miasto-4-Z3b.md]
 🟡 poz.5 Z4 — melodia/kalimba . draft v2 (SCENA: martwy flisak=R. nad Wisłą, melodia=kod; instrument zatwierdzony) + doubt-beat/rozterka [2026-06-03]  [envelopes/miasto-5-Z4.md]
 ✅ 06a Z7 finałowy szyfr ...... szyfrogram + rama narracyjna v2 + ramka MG; wyrenderowany + stempel  [materials/props/z7-szyfrogram-draft.md · src/miasto-06a-Z7-list.html]
-🟡 poz.6 Z7 — finał .......... draft gotowy (Przedzamcze, ósme bicie, list nieotwarty, maski spadają) + przejście do Albrechta KUSZĄCE [2026-06-03]: kotwica spotkania (Z3) + kuszenie racją + beat motta (Oskar, „jak")  [envelopes/miasto-6-Z7.md]
+🟡 poz.6 Z7 — finał .......... draft gotowy (Przedzamcze, dziewiąte bicie, list nieotwarty, maski spadają) + przejście do Albrechta KUSZĄCE [2026-06-03]: kotwica spotkania (Z3) + kuszenie racją + beat motta (Oskar, „jak")  [envelopes/miasto-6-Z7.md]
 ```
 
 ## B. Rekwizyty drukowane (8)
@@ -65,7 +65,7 @@
 🟡 Pergamin z listą nazwisk TR  research gotowy + draft (EN); klucz=Decyzja#1  [materials/props/pergamin-lista-tr-draft.md · puzzles/z3-lista-tr-spec.md]
 ✅ Zapis melodii Z4 + pręciki . nagranie gotowe; pręciki oznaczone liczbowo (C:1, D:2, …); kod 621454
 🟡 Arkusz szyfru Z7 ........... Cezar +7 (nagłówki w tym samym foncie; Z3 jawny ↔ Z7 zaszyfrowane; brak koła)  [materials/props/z7-szyfrogram-draft.md]
-✅ Mechanika dostarczenia ..... Przedzamcze 20:30 — list wręczany fizycznie aktorowi (Piotr/Bażyński lub Zosia/Albrecht); wybór fabularny, 1 grupa = 1 głos
+✅ Mechanika dostarczenia ..... Przedzamcze 21:00 — list wręczany fizycznie aktorowi (Piotr/Bażyński lub Zosia/Albrecht); wybór fabularny, 1 grupa = 1 głos
 ```
 
 ## C. Skrypty/karty aktorów (2)
@@ -233,7 +233,7 @@ Szczegóły: mechanics/koperty-mg.md §ZAŁOŻENIA PRZED RENDEREM · prototype/p
 ✅ Formularz zapisów ............ [#39] bez znaczenia — gra dla znajomych, brak rejestracji
 ✅ Komunikacja awaryjna ......... [#41] bez znaczenia — MG mobilny na Rynku
 ✅ Lokalizacje MG w fazach ...... [#36] MG mobilny wokół Rynku Staromiejskiego (F1–F3); finał=Przedzamcze
-✅ Dźwięk dzwonu finału ......... [#49] bez rekwizytu — „ósme bicie" tylko narracyjnie (znacznik czasu)
+✅ Dźwięk dzwonu finału ......... [#49] bez rekwizytu — „dziewiąte bicie" tylko narracyjnie (znacznik czasu)
 ⬜ Scenka aktorska finału ....... Bażyński vs Albrecht, warianty wg wyniku (treść = Oskar)
 ✅ Mechanika zliczania głosów ... [#50] Jordan i Albrecht liczą odebrane listy tuż przed scenką (Wariant B)
 ```

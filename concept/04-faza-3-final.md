@@ -6,7 +6,7 @@
 
 1. Rozwiązać **zagadkę 7** = sklejenie wniosków z faz 2A i 2B.
 2. **Zdecydować komu dostarczyć list**: Janowi Bażyńskiemu (Tajna Rada) czy komturowi Albrechtowi (Krzyżacy).
-3. Dotrzeć pod ruiny zamku krzyżackiego **na ósme bicie dzwonu (20:30)**.
+3. Dotrzeć pod ruiny zamku krzyżackiego **na dziewiąte bicie dzwonu (21:00)**.
 4. Obejrzeć **scenkę finałową** — starcie Bażyński vs Albrecht, z wynikiem zależnym od zliczonych listów.
 
 ## Cel fazy (z perspektywy projektu)
@@ -70,7 +70,7 @@ Po dostarczeniu list jest **fizycznie zliczony** przy danej stronie.
 ## Zliczanie i finał
 
 Mechanika:
-1. **20:30**, wszystkie grupy zbierają się przy ruinach zamku.
+1. **21:00**, wszystkie grupy zbierają się przy ruinach zamku.
 2. **8. uderzenie dzwonu** (rekwizyt: dzwon ręczny lub nagranie — **nie Tuba Dei**, ten dzwon to dopiero 1500).
 3. MG (Oskar) odczytuje **wynik zliczenia listów** — przewaga jednej ze stron.
 4. **Scenka aktorska**:
@@ -95,7 +95,7 @@ Mechanika:
 
 ## Co już wiemy / decyzje
 
-- Finał o **20:30**, 8. bicie dzwonu — wybrane.
+- Finał o **21:00**, 8. bicie dzwonu — wybrane.
 - Lokalizacja: **ruiny zamku krzyżackiego** (Przedzamcze 3, Gdanisko obok).
 - Element aktorski — obsada zamknięta: **Bażyński = Piotr**, **Albrecht = Zosia**, MG = Oskar.
 - **Nie używać nazwy "Tuba Dei"** dla dzwonu (anachronizm — Tuba Dei od 1500).

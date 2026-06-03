@@ -10,7 +10,7 @@
 
 > ### REWIZJA [2026-06-02, Oskar] — KZ mają żywego handlera (Albrecht)
 > Odwraca decyzję „Krzyżacy nie mają żywego NPC". **Po Z2 kurierzy KZ trafiają do Albrechta (Zosia) zamiast do Jordana** — i to **on wręcza im zadanie Z3Z** (infiltracja Piccolo) + rekwizyty (Tabela 1 do Z11). Symetria obsadowa:
-> - **Jordan (Piotr):** handler/sojusznik **TR** (Piccolo, wydaje K3) · cel infiltracji dla **KZ** (obserwują go w Z3Z: brązowa szata + chochla, wyciągają 20:30).
+> - **Jordan (Piotr):** handler/sojusznik **TR** (Piccolo, wydaje K3) · cel infiltracji dla **KZ** (obserwują go w Z3Z: brązowa szata + chochla, wyciągają 21:00).
 > - **Albrecht (Zosia):** handler/zleceniodawca **KZ** (wydaje K3-K) · cel infiltracji dla **TR** (kradzież listy w Z3).
 > Spójne z `materials/actors/jordan-actor-script-draft.md` (lista tylko 5 grup TR). ⚠ Do aktualizacji: `CLAUDE.md` (nota „Jordan obsługuje oba tory" — nieaktualna), karta Albrechta (dodać rolę handlera KZ + framing K3-K), `droga-do-jordana.md` (theming Z2 krzyżacki → cel = Albrecht).
 - **Skala:** 10 grup, podział 5+5 → **5 grup krzyżackich**.
@@ -20,7 +20,7 @@
 Numeracja kanoniczna — patrz `puzzles/00-master-list.md` i `concept/03-faza-2b-asynchroniczne.md`.
 
 - **Do Z2 identycznie** z torem TR (szlak symboli Z1 → „kto kłamie?" Z2 → Piccolo).
-- **Rozdział po Z2.** Kurierzy KZ trafiają do **Albrechta (Zosia)**, który wręcza **Z3Z — infiltrację Piccolo** (siedziby TR): kradzież zaopatrzenia (kupony na obiad → zjeść), wyciągnięcie **godziny buntu (20:30)** od Jordana, obserwacja Jordana (brązowa szata + chochla → dane do Z11). Lustro Z3 (mieszczanie infiltrują zamek Albrechta). Jordan/Piotr = **cel** infiltracji KZ (nie ich handler — patrz REWIZJA wyżej).
+- **Rozdział po Z2.** Kurierzy KZ trafiają do **Albrechta (Zosia)**, który wręcza **Z3Z — infiltrację Piccolo** (siedziby TR): kradzież zaopatrzenia (kupony na obiad → zjeść), wyciągnięcie **godziny buntu (21:00)** od Jordana, obserwacja Jordana (brązowa szata + chochla → dane do Z11). Lustro Z3 (mieszczanie infiltrują zamek Albrechta). Jordan/Piotr = **cel** infiltracji KZ (nie ich handler — patrz REWIZJA wyżej).
 - **Zagadki opcjonalne (lustra TR):**
   - **Z8 — melodia zakonu** (kalimba) ← lustro Z4 (melodia flisaka).
   - **Z9 — sensoryczna z piernikiem** ← lustro Z5.
