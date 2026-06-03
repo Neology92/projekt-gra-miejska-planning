@@ -63,7 +63,7 @@ function Capture-MapPng {
   )
   & $browser @args1 2>$null
 
-  $deadline = (Get-Date).AddSeconds(25); $lastLen = -1
+  $deadline = (Get-Date).AddSeconds(50); $lastLen = -1   # parchment = filtr CPU-raster kafli ~34 s; clean ~15 s
   do {
     Start-Sleep -Milliseconds 400
     $len = if (Test-Path $PngOut) { (Get-Item $PngOut).Length } else { 0 }
