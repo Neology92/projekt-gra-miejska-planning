@@ -56,10 +56,8 @@ const STEPS = {
     next: 'z2',
   },
 
-  /* --- Z2 — checkpoint: kontakt odnaleziony (granica POC). --- */
   /* --- Z2 — pierwsza koperta frakcyjna: zagadka logiczna → kontakt.
-         Treść (scena/slip/zagadka/reveal) = Z2_DATA[frakcja] (z2-data.js).
-         Z2→Z3 = scena aktora (Jordan/Albrecht) → granica POC. --- */
+         Treść (scena/slip/zagadka/reveal) = Z2_DATA[frakcja] (z2-data.js). --- */
   z2: {
     id: 'z2',
     label: 'Z2',
@@ -69,9 +67,18 @@ const STEPS = {
       where: 'keep it on you — it is handed over only at the finale',
     },
     puzzle: { type: 'logic' },   // dane per frakcja z Z2_DATA
+    next: 'z3',
+  },
+
+  /* --- Z3 — scena handlera (Jordan/Albrecht). Apka = nośnik briefu (bez walidacji).
+         Treść = Z3_DATA[frakcja] (z3-data.js). Z3 → opcjonalna = kolejna faza. --- */
+  z3: {
+    id: 'z3',
+    label: 'Z3',
+    type: 'actor-brief',   // dane per frakcja z Z3_DATA
     next: null,
   },
 
 };
 
-const STEP_ORDER = ['z1', 'z2'];
+const STEP_ORDER = ['z1', 'z2', 'z3'];

@@ -76,7 +76,10 @@ function showStage(id) {
   s.appendChild(groupChip(group));
   s.appendChild(el('span', 'stage-tag', step.label));
 
-  if (step.puzzle && step.puzzle.type === 'logic') {
+  if (step.type === 'actor-brief') {
+    /* Z3 — scena handlera (nośnik briefu), treść per frakcja */
+    actorBrief(s, Z3_DATA[faction]);
+  } else if (step.puzzle && step.puzzle.type === 'logic') {
     /* Z2 — treść per frakcja */
     const data = Z2_DATA[faction];
     s.appendChild(el('h2', 'stage-title', data.title));
@@ -115,6 +118,44 @@ function slipBlock(data) {
   return d;
 }
 
+/* ===================== Z3 — scena handlera (nośnik briefu) ===================== */
+function actorBrief(s, data) {
+  s.appendChild(el('h2', 'stage-title', data.title));
+  s.appendChild(propFrame(data.prop));
+  s.appendChild(briefBody(data.sceneOpen));
+
+  // pisany rozkaz handlera (Jordan/Albrecht)
+  const order = el('div', 'order');
+  order.appendChild(el('div', 'order-title', data.orderTitle));
+  order.appendChild(briefBody(data.order));
+  s.appendChild(order);
+
+  s.appendChild(briefBody(data.sceneClose));
+
+  if (data.theft) {
+    // TR: twist kradzieży ukryty za przyciskiem (zachowuje beat „olśnienia")
+    const btn = el('button', 'btn', data.theftButton);
+    s.appendChild(btn);
+    const slot = el('div'); s.appendChild(slot);
+    btn.onclick = () => {
+      btn.remove();
+      slot.appendChild(el('hr', 'rule'));
+      slot.appendChild(briefBody(data.theft));
+      slot.appendChild(mgNote(data.mg));
+      slot.scrollIntoView ? slot.scrollIntoView({ behavior: 'smooth' }) : 0;
+    };
+  } else {
+    s.appendChild(mgNote(data.mg));
+  }
+}
+
+function mgNote(text) {
+  const d = el('div', 'mg-note');
+  d.innerHTML = `<span class="mg-label">↪ Game Master</span> ${text}`
+    + `<p class="muted small" style="margin:.5em 0 0">Report there to go on. (Boundary of the proof-of-concept — the optional puzzle and the finale are the next phase.)</p>`;
+  return d;
+}
+
 function groupChip(group) {
   const m = GROUP_META[group];
   const dark = ['#FFFFFF', '#FFE119', '#42D4F4'].indexOf(m.hex) >= 0;  // jasne tła → ciemny tekst
@@ -143,7 +184,7 @@ function briefBody(blocks) {
       b.items.forEach((t) => ol.appendChild(el('li', null, t)));
       wrap.appendChild(ol); return;
     }
-    const cls = { narration: 'narration', msg: 'msg', head: 'head', dateline: 'dateline' }[b.reg] || 'msg';
+    const cls = { narration: 'narration', msg: 'msg', head: 'head', dateline: 'dateline', sign: 'sign' }[b.reg] || 'msg';
     wrap.appendChild(el('p', cls, b.html));
   });
   return wrap;
@@ -289,10 +330,12 @@ function selectHtml(kind, who, label, opts) {
 }
 
 function z2RevealPanel(data) {
-  return el('div', 'done', `<hr class="rule"><div class="seal small">✔</div>
+  const d = el('div', 'done', `<hr class="rule"><div class="seal small">✔</div>
     <p class="msg">${data.reveal.head}</p>
     <p class="msg">${data.reveal.body}</p>
-    <p class="muted small">Go find them — they carry your way onward. (Boundary of the proof-of-concept.)</p>`);
+    <button class="btn" id="cont2">Continue to Z3 →</button>`);
+  const b = d.querySelector('#cont2'); if (b) b.onclick = () => showStage('z3');
+  return d;
 }
 
 function showSuccessZ2(data) {
@@ -301,10 +344,10 @@ function showSuccessZ2(data) {
   d.innerHTML = `<div class="seal">✔</div><h2>The pieces fit</h2>
     <p class="msg">${data.reveal.head}</p>
     <p class="msg">${data.reveal.body}</p>
-    <p class="muted small">Go find them — they carry your way onward. (Boundary of the proof-of-concept.)</p>
-    <button id="back" class="btn ghost">Back to start</button>`;
+    <p class="muted small">Find them — they carry your way onward.</p>
+    <button id="cont" class="btn">Continue to Z3 →</button>`;
   APP.appendChild(d);
-  d.querySelector('#back').onclick = () => { localStorage.setItem(LS, JSON.stringify({ solved: {} })); showGroupSelect(); };
+  d.querySelector('#cont').onclick = () => showStage('z3');
 }
 
 /* ===================== START ===================== */
