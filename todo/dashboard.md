@@ -46,7 +46,7 @@
 ```
 ✅ poz.1 Z1 — startowa ......... draft gotowy (groźba „ucięcia rąk" + segment Z1)        [envelopes/wspolne-1-Z1.md]
 ✅ poz.2 Z2 — po Z1 ........... draft gotowy (Z2 Einsteina: Jordan/Piccolo/miecz; zakup-parol=miecz [06-02]; plotki Puli A; slip R.)  [envelopes/miasto-2-Z2.md]
-✅ poz.3 Z3 — od Jordana ...... draft gotowy (brief F2B + Z3 zwiad; Z3b osobno)         [envelopes/miasto-3-Z3.md]
+✅ poz.3 Z3 — od Jordana ...... draft gotowy (brief F2B + Z3 zwiad; Z3b osobno) + BRAMA LICZBOWA: zwiad = wyciągnąć liczbę załogi "30" = kod [2026-06-03]  [envelopes/miasto-3-Z3.md]
 ✅ poz.4 Z3b — kradzież ....... draft gotowy (2. koperta etapu Z3; narracja + cytat Albrechta)  [envelopes/miasto-4-Z3b.md]
 🟡 poz.5 Z4 — melodia/kalimba . draft v2 (SCENA: martwy flisak=R. nad Wisłą, melodia=kod; instrument zatwierdzony) + doubt-beat/rozterka [2026-06-03]  [envelopes/miasto-5-Z4.md]
 ✅ 06a Z7 finałowy szyfr ...... szyfrogram + rama narracyjna v2 + ramka MG; wyrenderowany + stempel  [materials/props/z7-szyfrogram-draft.md · src/miasto-06a-Z7-list.html]
@@ -72,7 +72,7 @@
 
 ```
 ✅ Skrypt Jordana (Piotr) ..... draft gotowy (weryfikacja + dialog + K3). PART TWO [2026-06-03]: rola celu infiltracji KZ (gra nabranego, karmi/wręcza kupon, daje się obejrzeć — brąz+chochla, NIE daje K3)  [materials/actors/jordan-actor-script-draft.md]
-✅ Karta gry Albrechta (Zosia)  draft gotowy (choreografia okna kradzieży + reakcje)   [materials/actors/albrecht-actor-card-draft.md]
+✅ Karta gry Albrechta (Zosia)  draft gotowy (choreografia okna kradzieży + reakcje) + STEP 1B brama liczbowa: wyjawia "30" przed K-Z3b [2026-06-03]   [materials/actors/albrecht-actor-card-draft.md]
 ```
 
 ## D. Dokumenty operacyjne MG (3)

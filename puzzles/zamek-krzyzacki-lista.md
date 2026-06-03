@@ -12,11 +12,13 @@ Dwuetapowa koperta + rozmowa-zwiad + choreografowana kradzież. Zamyka otwarte #
 **1. K3 (wręcza Jordan w Piccolo) — framing ZWIAD, cel kradzieży UKRYTY.**
 - Nagłówek wielkimi: **INFILTRACJA ZAMKU**.
 - Polecenie: komtur Albrecht bywa **przed murami** (do ruin nie wchodzimy — biletowane), czuje się pewnie w mieście. Nawiążcie z nim kontakt, **nie zdradźcie, że jesteście z Tajnej Rady**, wyciągnijcie z niego ile się da.
+- **Konkretny cel wywiadu = LICZBA OBROŃCÓW [Oskar 2026-06-03]:** K3 zleca wprost — dowiedzcie się, **ilu ludzi trzyma zamek** (Rada musi to wiedzieć przed uderzeniem). Ta liczba = **kod, który grupa wynosi** z etapu (gdzie wpięty downstream → otwarte, `todo/otwarte-pytania.md #77`). Pytanie ubrane w przykrywkę donosiciela (troska o bezpieczeństwo Zakonu = flattery).
 - **Pretekst = fałszywi donosiciele [wariant A, wybór Oskara 2026-06-01]:** gracze udają miastowych łasych na łaskę Zakonu, którzy „wiedzą o knujących przeciw Zakonowi". Albrecht, łasy na donos, **sam wyciąga spis** (listę TR), by sprawdzić/dopisać nazwisko → lista ląduje na widoku z jego własnej inicjatywy. Pokrycie: `donosiciele-1454.js` (realna siatka donosicieli Zakonu). Domyka `zasada-uzasadnienie-fabularne`: Albrecht ma i pokazuje listę z własnego powodu.
 - Jordan NIE ujawnia, że chodzi o kradzież — gracze sądzą, że to tylko zwiad/rozmowa.
 
-**2. Spotkanie z Albrechtem (Zosia, przed murami) → wręcza K-Z3b.**
-- Krótka, lekko mockująca rozmowa. Albrecht (biorąc graczy za donosicieli) daje im **drugą kopertę (K-Z3b)**.
+**2. Spotkanie z Albrechtem (Zosia, przed murami) → wyjawia liczbę → wręcza K-Z3b.**
+- Krótka, lekko mockująca rozmowa. **Albrecht z pychy wyjawia liczbę obrońców** — **`30`** braci (historyczne ~30; ⚠ NIE 300 = siła Zakonu w *całych Prusach*). Liczba = kod grupy (karta Albrechta **STEP 1B**).
+- **Brama:** dopiero **po podaniu liczby** Albrecht (biorąc graczy za donosicieli) odkłada listę i daje im **drugą kopertę (K-Z3b)**. Jeśli nie pytają — naprowadza (chce się chwalić). Każda grupa musi wyjść z liczbą + listą (asysta MG, jak przy kradzieży).
 
 **3. K-Z3b — UJAWNIENIE prawdziwego celu: UKRADNIJ LISTĘ.**
 - Rys fabularny: podczas rozmowy dostrzegliście listę nazwisk → orientujecie się, że to spis Tajnej Rady, rzecz bezcenna → możecie ją wykraść, więc to zrobicie.
@@ -28,7 +30,7 @@ Dwuetapowa koperta + rozmowa-zwiad + choreografowana kradzież. Zamyka otwarte #
 - **Loop:** po kradzieży i ucieczce grupy Albrecht **resetuje** — kładzie kolejny egzemplarz listy dla następnej grupy.
 - Wszystko → **karta choreografii Albrechta (Zosia)**: `materials/actors/albrecht-actor-card-draft.md`.
 
-> **Zwiad NIE jest bramką mechaniczną** [świadoma decyzja, zasada „element musi bramkować"]: rozmowa to pretekst, by zbliżyć gracza do Albrechta i uzasadnić wręczenie K-Z3b + ekspozycję listy. **Bramką jest kradzież** (lista = nagłówek z kluczem Cezara do Z7). Nie ma „rozwiązania rozmowy".
+> **Zwiad MA teraz jedną bramkę [ZMIANA, Oskar 2026-06-03]:** ~~rozmowa to czysty pretekst bez „rozwiązania"~~ — dezaktualizacja. Rozmowa zyskuje **jedną twardą daną do wyciągnięcia: liczbę obrońców (`30`) = kod.** Reszta donosu pozostaje przykrywką (nie ma „poprawnej rozmowy" poza liczbą). **Druga, fizyczna bramka = kradzież listy** (nagłówek z kluczem Cezara do Z7). Dwie bramki etapu: **liczba (kod)** + **lista (klucz)**. Obie obligatoryjne, obie z asystą MG, żeby każda grupa przeszła.
 
 **Artefakty:** `envelopes/miasto-3-Z3.md` (zwiad) · `envelopes/miasto-4-Z3b.md` (ujawnienie kradzieży) · `materials/actors/albrecht-actor-card-draft.md` (choreografia) · lista = `materials/props/pergamin-lista-tr-draft.md`.
 

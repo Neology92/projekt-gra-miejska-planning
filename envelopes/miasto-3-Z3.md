@@ -45,7 +45,9 @@ He is a proud man. He walks **outside the castle walls** as if the city were alr
 
 Flatter him. Let him boast. A proud man with something to hide always shows more than he means to.
 
-Get from him what you can — a name he lets fall, a plan he has caught wind of, how much the Order has already guessed. When you have it, slip back into the crowd. Do not linger. Do not be a face he remembers.
+**One thing above all, the Council must have it:** how many men hold that castle. We move against those walls before this night is out, and we will not move blind. Ask it the way a frightened friend of the Order would — *"Are you safe behind these walls, my lord? How many swords stand with you?"* — and let his pride answer. **Fix the number in your heads and carry it back to us. Everything we plan tonight rests on it.**
+
+Get from him what else you can, too — a name he lets fall, a plan he has caught wind of, how much the Order has already guessed. But come back with the number. When you have it, slip back into the crowd. Do not linger. Do not be a face he remembers.
 
 ---
 
@@ -61,6 +63,7 @@ Burn nothing. Trust no one in a Teutonic mantle. — J.
 
 - **Nagłówek wielkimi „INFILTRATE THE CASTLE"** — życzenie Oskara: misja nazwana wprost, wielkimi słowami. Ale **prawdziwy cel (kradzież listy) UKRYTY** — Jordan ramuje to jako *zwiad/rozmowę*, nie kradzież. Twist „to kradzież" przychodzi w K-Z3b (od Albrechta).
 - **Pretekst = fałszywi donosiciele [wariant A, Oskar 2026-06-01]:** „wear another face… townsfolk eager to please the Order, who have heard things." To daje graczom rolę + zachętę by Albrecht **sam wyciągnął listę** (sprawdzić/dopisać nazwisko). Spięte z kartą Albrechta STEP 1.
+- **Cel wywiadu = LICZBA OBROŃCÓW (kod) [Oskar 2026-06-03]:** zwiad ma teraz jedną konkretną, bramkującą daną — „how many men hold that castle". Albrecht wyjawia ją z pychy (karta Albrechta **STEP 1B**): **`30`** braci (historyczne ~30; ⚠ **nie 300** — to była siła Zakonu w *całych Prusach*, plotka B6). Liczba = **kod, który grupa wynosi** z Z3; gdzie wpięty downstream („kodowanie dalszych zadań") → otwarte, `todo/otwarte-pytania.md #77`. Pytanie ujęte w cover donosiciela (troska o bezpieczeństwo Zakonu = flattery), więc nie łamie przykrywki. **Brama:** liczba pada zanim Albrecht wręcza K-Z3b.
 - **Zakaz zdradzenia się jako TR** — wprost („never of the Council — say that and you are dead"). Podnosi stawkę, trzyma immersję konspiracji.
 - **„Do not go into the ruins"** — fabularne uzasadnienie, że aktor (Zosia) stoi PRZED murami (ruiny biletowane). Rozwiązuje logistykę bez łamania immersji.
 - ~~**Most do K-Z3b:** „he will put something in your hand… open it once clear."~~ **USUNIĘTE [2026-06-02]** — beat wycięty (meta, Zasada #3). K3 kończy się zadaniem zwiadu + „slip back into the crowd, do not be remembered" (instrukcja w świecie, bez zapowiedzi koperty). Wręczenie K-Z3b przez Albrechta = milczące, meta (patrz karta Albrechta §SEKWENCJA — model patrolu).

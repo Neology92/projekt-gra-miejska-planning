@@ -9,6 +9,8 @@
 
 > ✅ **REWIZJA [2026-06-02] — model patrolu WPROWADZONY (STEP 2/3 przepisane).** Sekwencja (Oskar): komtur **wręcza kopertę milcząco → odchodzi kawałek → odkłada listę w konkretnym miejscu → patroluje** wokół niej. Okno kradzieży = faza AWAY (na końcu obchodu, plecami do listy). STEP 2 = „odłóż listę, wręcz, odejdź w patrol"; STEP 3 = cykl patrolu (A AWAY / B RETURNING / C AT THE LIST), telegraf/powtarzalność/reset zachowane. Spójne z `envelopes/miasto-4-Z3b.md §Rewizja (SEKWENCJA)` i kopertą Z3b (olśnienie wyprzedzające). `todo/otwarte-pytania.md #65`.
 
+> ✅ **REWIZJA [2026-06-03] — BRAMA LICZBOWA (kod = liczba załogi).** Zlecenie zwiadu (K3) ma teraz **konkretny cel wywiadu: ilu ludzi trzyma zamek.** Albrecht (w pysze) wyjawia liczbę — **historycznie ~30 braci** (`lore/stronnictwa.md`, `plotki-i-pogloski.md B6`; ⚠ NIE 300 — to była siła Zakonu w *całych Prusach*). Ta liczba = **„kod", który grupa wynosi** (gdzie wpięty downstream → `todo/otwarte-pytania.md #77`, otwarte). **Brama:** K-Z3b wręczasz **dopiero po** tym, jak padła liczba (jeśli nie pytają — naprowadź/chełp się sam). Nowy **STEP 1B** niżej. `todo/otwarte-pytania.md #77`.
+
 ---
 
 > ## DWIE ROLE — przeczytaj najpierw [2026-06-03]
@@ -38,9 +40,17 @@
 ║  SEKWENCJA SCENY (każda grupa, za każdym razem):             ║
 ║  1. Podchodzą → przyjmujesz ich jako donosicieli             ║
 ║  2. Wyciągasz listę (popisujesz się) → odkładasz ją          ║
-║  3. Wręczasz K-Z3b milcząco → schodzisz w patrol            ║
-║  4. Cykl patrolu dopóki nie ukradną (patrz niżej)            ║
-║  5. Reset: nowy pergamin z torby → gotowa na kolejną grupę   ║
+║  3. PYTAJĄ o siłę zamku → chełpisz się: "THIRTY" (ich KOD)   ║
+║     ↳ BRAMA: K-Z3b wręczasz DOPIERO gdy padła liczba         ║
+║  4. Wręczasz K-Z3b milcząco → schodzisz w patrol            ║
+║  5. Cykl patrolu dopóki nie ukradną (patrz niżej)            ║
+║  6. Reset: nowy pergamin z torby → gotowa na kolejną grupę   ║
+╠══════════════════════════════════════════════════════════════╣
+║  LICZBA ZAŁOGI (ich „kod" — zwiad z K3):                     ║
+║  ✦ Pytają „ilu was broni zamku?" → mówisz: "THIRTY."        ║
+║  ✦ To prawda historyczna (~30 braci) — chełp się nią z dumą ║
+║  ✦ Nie pytają? Naprowadź — CHCESZ się chwalić (STEP 1B)     ║
+║  ✦ Liczba PADA zanim wręczysz K-Z3b. Bez niej — nie wręczaj ║
 ╠══════════════════════════════════════════════════════════════╣
 ║  CYKL PATROLU (~30–40 s na pętlę):                           ║
 ║  A  AWAY  — schodzisz na dalszy koniec, PLECAMI DO LISTY     ║
@@ -79,9 +89,10 @@ Nosisz **listę wywiadowczą** Zakonu — imiona Tajnej Rady, zebrane od płatny
 ### Trzy twoje zadania (DLACZEGO reszta poniżej jest taka, jaka jest)
 1. **Sprzedaj wroga.** Bądź dumnym komturem — gracze powinni czuć, że rozmawiają z władzą.
 2. **Eksponuj listę.** Wyciągnij ją *z własnej inicjatywy* (sprawdzasz donos) i połóż tam, gdzie ją widać. To jest cały sens tej sceny.
-3. **Daj im rzetelne, powtarzalne okno na kradzież** — a potem resetuj i rób to samo dla kolejnej grupy. Jesteś przeszkodą, ale *pokonaną, cierpliwą*. **Każda grupa musi odnieść sukces.**
+3. **Wyjaw liczbę załogi.** Z dumy chełpisz się siłą zamku — **„thirty"** (~30 braci). To jest **kod, po który przyszli** (zwiad z K3). Liczba pada **zanim** wręczysz im rozkaz kradzieży (STEP 1B = brama).
+4. **Daj im rzetelne, powtarzalne okno na kradzież** — a potem resetuj i rób to samo dla kolejnej grupy. Jesteś przeszkodą, ale *pokonaną, cierpliwą*. **Każda grupa musi odnieść sukces.**
 
-> Nie sprawdzasz ich zagadką. Nie ma „właściwej odpowiedzi" na rozmowę. Rozmowa jest przykrywką; **kradzież jest prawdziwym zadaniem.** Twoja rola: sprawić, żeby kradzież była *napięta, ale wykonalna*.
+> Rozmowa ma teraz **jeden konkretny cel** dla gracza: wyciągnąć z ciebie liczbę obrońców. Poza tym nie sprawdzasz ich zagadką — reszta donosu to przykrywka. **Liczba (kod) + kradzież = dwa prawdziwe zadania.** Twoja rola: oddać liczbę bez oporu (pycha!), a kradzież uczynić *napiętą, ale wykonalną*.
 
 ---
 
@@ -117,9 +128,30 @@ Przeczytaj głośno jedno lub dwa imiona (pochwal swoją skrupulatność), a pot
 
 ---
 
+## STEP 1B — LICZBA ZAŁOGI (brama do K-Z3b)
+
+> **To jest nowy beat [2026-06-03].** Zanim odejdziesz w patrol, **gracz musi wyciągnąć z ciebie liczbę obrońców zamku.** Zlecił im to ich człowiek (Jordan) — przyszli między innymi po tę liczbę. To ich **„kod"**. Ty oddajesz ją **z pychy**, nie z przymusu.
+
+Donosiciele, którzy chcą zaskarbić łaskę Zakonu, naturalnie dopytają, jak mocny jest zamek („czy jesteście bezpieczni, panie?", „ilu was tu broni murów?"). **Kiedy zapytają — chełp się:**
+
+> *"Thirty."* (powolny, dumny uśmiech) *"Thirty brothers of the Order hold these walls — and thirty is plenty for a town of weavers and fishwives. Let the rabble come; they will break on us like water on stone."*
+
+- **Liczba = `30` (mów „thirty").** To prawda historyczna (~30 braci w toruńskim zamku) — i właśnie dlatego brzmi jak chełpliwa pewność, a nie tajemnica. Podaj ją **jasno i raz**, żeby grupa ją usłyszała i zapamiętała.
+- *(Wariant tonu, do wyboru — ta sama liczba:* *"Thirty swords. That is all it takes to keep a city like yours in its place."*)*
+
+**Jeśli sami NIE pytają o siłę zamku** (a chcesz, żeby padło) — **naprowadź, bo z natury CHCESZ się chwalić:**
+
+> *"You would serve the Order? Then you will want to know the strength you are throwing in with. Go on — ask me how this castle stands. I will not pretend it is any secret."*
+
+**BRAMA:** dopiero **gdy liczba padła** przechodzisz do STEP 2 (odkładasz listę, wręczasz K-Z3b, patrol). Jeśli grupa rwie się dalej, a liczby jeszcze nie usłyszała — przytrzymaj ich tą chełpliwością, aż padnie. **Każda grupa musi wyjść z liczbą** (to ich kod) — jak przy kradzieży, jeśli się zacina, naprowadzaj/asystuje MG.
+
+> *Dlaczego oddajesz liczbę tak łatwo: jesteś pewny, że 30 braci wystarczy na motłoch — pogarda każe ci się chwalić, nie ukrywać. Ta sama pycha, która eksponuje listę, wydaje też liczbę. (Czego nie wiesz: oddajesz wrogowi własną słabość.)*
+
+---
+
 ## STEP 2 — ODŁÓŻ LISTĘ, WRĘCZ K-Z3b, ODEJDŹ
 
-Po krótkim, szyderczym dialogu wykonaj trzy rzeczy płynnie po sobie:
+**Dopiero gdy padła liczba załogi (STEP 1B).** Po krótkim, szyderczym dialogu wykonaj trzy rzeczy płynnie po sobie:
 
 1. **Połóż listę** w wybranym miejscu — parapecie, niskim murku, skrzynce lub składanym stole, stałe miejsce obok którego będziesz wielokrotnie przechodzić. Rób to naturalnie; po prostu skończyłeś ją przeglądać.
 2. **Wręcz im kopertę K-Z3b** pasującą do ich koloru — **w milczeniu.** Wystarczy płaskie zdanie gdy odwracasz się: *"Enough. We are done here."* Nie tłumacz, nie reaguj na nią, nie daj się wciągnąć w rozmowę o niej.
@@ -380,6 +412,8 @@ Gdy grupa przychodzi oddać ci list:
 **Choreografia = sedno (życzenie Oskara 2026-06-01):** bardzo konkretny, telegrafowany, powtarzalny cykl. Kluczowe zasady projektowe: (1) okno OTWARTE = ciało+głowa odwrócone, lista poza wzrokiem; (2) okno ZAMKNIĘTE = patrzy wprost na listę; (3) zawsze telegrafuj obrót; (4) nigdy jednostrzałowo; (5) złapanie = reset, nie eliminacja; (6) reset/loop egzemplarza między grupami. Patrz `zamek-krzyzacki-lista.md` „Struktura Z3" pkt 4.
 
 **Kradzież OBLIGATORYJNA:** każda grupa MUSI zdobyć listę (nagłówek = klucz Cezara do Z7). Dlatego okno hojne + asysta MG przy 3+ nieudanych próbach. Brak ścieżki „nie zdobył".
+
+**Brama liczbowa = kod [decyzja Oskara 2026-06-03]:** zwiad z K3 ma teraz **konkretny, bramkujący cel** — wyciągnąć od Albrechta liczbę obrońców zamku (STEP 1B). Liczba = **kod, który grupa wynosi** z etapu Z3 (gdzie wpięty downstream → otwarte, `todo/otwarte-pytania.md #77`). To **modyfikuje wcześniejszą zasadę „zwiad NIE bramkuje"** (`zamek-krzyzacki-lista.md`): rozmowa zyskuje jedną twardą daną do uzyskania (liczbę), reszta donosu zostaje przykrywką; kradzież nadal jest drugą, fizyczną bramką. **Liczba = `30`** — ⚠ **historyczność:** toruński zamek miał ~30 braci (`lore/stronnictwa.md`, `plotki-i-pogloski.md B6`); **NIE 300** (300 = bracia w *całych Prusach*, plotka B6 — żeby nie kolidować, Albrecht mówi o *swoim* zamku, nie o Zakonie). Oddanie liczby = przez pychę (spójne z ekspozycją listy: ta sama duma wydaje i listę, i siłę). Dokładną cyfrę (`30` vs np. „a score and ten" / inna runda) Oskar może zaklepać przy renderze.
 
 **Nośnik K-Z3b — założenie do akceptacji:** karta zakłada, że Albrecht **fizycznie wręcza** K-Z3b (życzenie Oskara: „przekazuje kopertę kolejną"). Drobna nielogiczność (wróg daje rozkaz Rady) zaadresowana w `envelopes/miasto-4-Z3b.md` (treść = głos rozkazu/spostrzeżenia gracza, nie „od Albrechta"). Alternatywa nośnika → `zamek-krzyzacki-lista.md` Otwarte #4.
 

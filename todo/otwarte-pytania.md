@@ -123,6 +123,10 @@ Pytania pogrupowane wg pliku, w którym są dyskutowane szerzej.
 
 75. **Z10 KZ — klucz A/B/E (spot-check)** — ROZSTRZYGNIĘTE [2026-06-03, Oskar]: **ufamy researchowi A/B/E** — render bez wizji lokalnej. Ryzyko przyjęte; opcjonalny spot-check Szeroka 22 w dniu gry nie blokuje renderu. Zsynchronizowane: `envelopes/krzyzacy-4-Z10.md`.
 
+77. **Z3 (TR) — brama liczbowa u Albrechta + „kod" załogi** — CZĘŚCIOWO ROZSTRZYGNIĘTE [2026-06-03, Oskar]: zwiad z K3 dostaje **konkretny cel: wyciągnąć od Albrechta liczbę obrońców zamku**; Albrecht z pychy ją wyjawia (karta **STEP 1B**), a liczba pada **przed** wręczeniem K-Z3b (brama). ✅ **Liczba = `30`** — ⚠ historyczność: toruński zamek ~30 braci (`lore/stronnictwa.md`, `plotki-i-pogloski.md B6`); **świadomie NIE 300** (300 = bracia w *całych Prusach*; Oskar wybrał dosłowność zamku). Zsynchronizowane: `materials/actors/albrecht-actor-card-draft.md §STEP 1B`, `envelopes/miasto-3-Z3.md`, `puzzles/zamek-krzyzacki-lista.md §Struktura Z3`, `materials/ops/mg-quick-hints.md §Z3`. **⚠ OTWARTE (downstream — „kodowanie dalszych zadań"):** (a) **gdzie wpięty kod `30`** — co odblokowuje / do czego wchodzi (kłódka? input opcjonalnej? składnik finału?); (b) czy to **pierwszy z serii** kodów-liczb wyciąganych od NPC (system), czy jednorazowy beat; (c) dokładna cyfra/forma przy renderze (`30` vs „a score and ten"). To **agent czeka na projekt Oskara** (kreatywka downstream).
+
+78. **Kodowanie dalszych zadań — system kodów-liczb** — OTWARTE [zgłoszone 2026-06-03, Oskar buduje równolegle]: zamysł, by kolejne etapy **kodować liczbami wyciąganymi od NPC** (pierwsza instancja = `30` od Albrechta, #77). Do ustalenia jako **system**: gdzie kody się zbierają, czy się składają (np. w jeden kod finałowy), jak weryfikuje MG, czy dotyczy obu frakcji. Agent nie projektuje treści — czeka na ramę Oskara, potem spina dokumenty.
+
 ---
 
 ## Sugestia kolejności rozstrzygania

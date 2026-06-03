@@ -67,11 +67,13 @@
 ╔══════════════════════════════════════════════════════════════╗
 ║  Z3 — ZAMEK / KRADZIEŻ  [prowadzi Zosia/Albrecht]           ║
 ╠══════════════════════════════════════════════════════════════╣
-║  CO MUSI ZROBIĆ GRUPA: przeczytać K-Z3b (od Albrechta),    ║
-║  potem ukraść pergamin gdy Albrecht jest odwrócony plecami  ║
-║  podczas patrolu. Przynieść pergamin do MG.                 ║
-║  UWAGA: kradzież OBOWIĄZKOWA — każda grupa musi odnieść    ║
-║  sukces. Zosia jest zbriefowana żeby pomóc przy 3+ próbach. ║
+║  KOD (liczba załogi): "30" — Albrecht wyjawia z pychy gdy   ║
+║  pytają o siłę zamku (STEP 1B). To ich zwiad z K3.          ║
+║  CO MUSI ZROBIĆ GRUPA: (1) wyciągnąć liczbę "30",          ║
+║  (2) przeczytać K-Z3b (od Albrechta), potem ukraść pergamin ║
+║  gdy Albrecht odwrócony plecami w patrolu. Przynieść do MG. ║
+║  UWAGA: liczba + kradzież OBOWIĄZKOWE — każda grupa musi   ║
+║  odnieść sukces. Zosia zbriefowana, pomaga przy zacięciu.   ║
 ╠══════════════════════════════════════════════════════════════╣
 ║  H1 (jeśli grupa bierna — dzwoń do Zosi, nie do grupy):    ║
 ║    Zasygnalizuj Zosi żeby zwolniła patrol / wydłużyła Fazę A║
