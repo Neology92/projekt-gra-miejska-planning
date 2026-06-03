@@ -31,21 +31,42 @@ OŚ 3 — ZESTAW OPC. (A/B/C): różnicuje zagadkę opcjonalną (Z4/Z5/Z6 miasto
 
 ## Systematyka nazw
 
-**Jeden klucz kanoniczny dla CAŁEGO stosu (briefy + rekwizyty + drafty + PDF-y):**
+### Dwie warstwy — źródło autorskie vs deliverable `public/`
+
+System nazw żyje na **dwóch warstwach** (ROZSTRZYGNIĘTE 2026-06-03, decyzja Oskara):
+
+| Warstwa | Co to | Klucz | Kolor w nazwie? |
+|---|---|---|---|
+| **Źródło autorskie** | `envelopes/*.md`, `prototype/print/src/*.html`, drafty meta | `[frakcja]-[nr][slot]-[Zx][-typ]` | **NIE** — jedno źródło per logiczna koperta (kolor identyczny w treści) |
+| **Deliverable `public/*.pdf`** | gotowe wydruki do oprawienia w koperty | `[frakcja]-[kolor]-[nr][slot]-[Zx][-typ]` | **TAK — zawsze** — osobny plik per grupa = 1 plik ↔ 1 fizyczna koperta |
+
+**Reguła generacji:** jedno źródło (`.html`) → generator pętli po kolorach frakcji → N plików `public/` (każdy ze swoim stemplem). Briefy współdzielone (np. `miasto-3-Z3`) renderują się 5× (5 grup TR) z identyczną treścią, różnym kolorem w nazwie i stemplu. To **świadomy** wybór: zero dwuznaczności przy pakowaniu („chwytam *zolty* do koperty G3"), kosztem near-duplikatów (patrz `public/_INSTRUKCJA-DRUKU.md`).
+
+> **NIE rozbijać `.md`/`.html` na per-kolor.** Plik źródłowy zostaje jeden (join-key do meta-kartek; trio opc. Z4/Z5/Z6 dzieli pozycję 5). Mnożymy **tylko** output PDF.
+
+### Klucz nazwy pliku `public/`
 
 ```
-BRIEF (koperta-tekst):   [frakcja]-[nr]-[Zx]              np. miasto-2-Z2, miasto-6-Z7
-BRIEF per kolor:         [frakcja]-[kolor]-[nr]-[Zx]      (gdy WKŁADKA/treść różni się per kolor)
-REKWIZYT (wkładka/łup):  [frakcja]-[nr][slot]-[Zx]-[typ]  np. miasto-04b-Z3-pergamin, miasto-06a-Z7-list
-DOKUMENT MG (nie gracz):  mg-[Zx]-[typ]                   np. mg-Z3Z7-klucz
+GRACZ (per grupa):  [frakcja]-[kolor]-[nr][slot]-[Zx][-typ]
+                    np. miasto-zolty-3-Z3, wspolne-czerwony-1-Z1-mapa, miasto-czerwony-04b-Z3-pergamin
+MG / aktor:         [adresat]-[Zx?]-[typ]   (BEZ koloru, BEZ stempla)
+                    np. mg-Z3Z7-klucz, mg-karty-grup, aktor-jordan-quick-ref
 ```
 
-- **frakcja** — `wspolne` (tylko Z1, klasa niejawna) · `miasto` (Tajna Rada) · `krzyzacy` (Zakon).
-- **kolor** — identyfikator grupy (10 kolorów, `mechanics/grupy-i-klasy.md`). **Pomijany** w nazwie pliku, gdy koperta jest taka sama dla wszystkich grup frakcji (kolor żyje wtedy tylko w **stemplu**, niżej). Osobne pliki per kolor **dopiero gdy treść/wkładka różni się na tym etapie**.
-- **nr** — **KOLEJNOŚĆ OTWIERANIA koperty** na ścieżce frakcji (NIE etap MG, NIE numer zadania). Liczona od 1. **To jest klucz łączący** brief, jego rekwizyty i stempel — wszystko, co należy do tej samej pozycji, nosi ten sam `nr`. W rekwizytach/stemplu zapisywany **2-cyfrowo** (`04`, `06`); briefy mają historycznie 1-cyfrowo (`nr ≤ 6`, sortuje się poprawnie).
-- **slot** — `a`/`b`/`c`: kilka kart wręczanych **w obrębie tej samej pozycji**, w kolejności wręczania. `a` = otwierane pierwsze. Pomijany, gdy pozycja ma 1 kartę (`03_koperta`, `05_koperta`). Przykłady: `04a` koperta Z3b + `04b` pergamin-łup; `06a` szyfrogram (rozwiązywany) + `06b` notatka finałowa (po weryfikacji).
-- **Zx** — numer zadania (Z1, Z2…). Może się rozjeżdżać z `nr`. W rekwizycie: zadanie, do którego należy łup/wkładka.
-- **typ** — co to za karta: `koperta` (brief) · `mapa` · `deszyfrownik` · `kartka` (slip) · `pergamin` · `list` (szyfrogram).
+- **frakcja / adresat (PREFIKS — zamknięty słownik).** Pierwszy token = adresat. Po samej nazwie wiadomo, dla kogo plik:
+  | Prefiks | Adresat | Stempel? |
+  |---|---|---|
+  | `wspolne-` | gracz, Z1, wszystkie 10 grup (klasa niejawna) | tak |
+  | `miasto-` | gracz, Tajna Rada (G1–G5) | tak |
+  | `krzyzacy-` | gracz, Zakon (G6–G10) | tak |
+  | `mg-` | Mistrz Gry (klucze, tracking, tablica) | nie |
+  | `aktor-jordan-` | aktor Jordan / Piotr (handler TR) | nie |
+  | `aktor-albrecht-` | aktor Albrecht / Zosia (handler KZ) | nie |
+- **kolor** — identyfikator grupy, **zawsze ASCII bez diakrytyków** (filename-safe, cross-platform): `czerwony` `pomaranczowy` `zolty` `zielony` `turkusowy` (TR, G1–G5) · `niebieski` `fioletowy` `bialy` `brazowy` `czarny` (KZ, G6–G10). Mapa G→kolor: `mechanics/grupy-i-klasy.md` (G1 czerwony … G10 czarny).
+- **nr** — **KOLEJNOŚĆ OTWIERANIA koperty** na ścieżce frakcji (NIE etap MG, NIE numer zadania). Liczona od 1. **Klucz łączący** brief, jego rekwizyty i stempel. W rekwizytach/stemplu 2-cyfrowo (`04`, `06`); briefy 1-cyfrowo (`nr ≤ 6`).
+- **slot** — `a`/`b`/`c`: kilka kart w obrębie tej samej pozycji, w kolejności wręczania. `a` = pierwsze. Pomijany, gdy pozycja ma 1 kartę. Przykłady: `04a` koperta Z3b + `04b` pergamin-łup; `06a` szyfrogram + `06b` notatka finałowa.
+- **Zx** — numer zadania (Z1, Z2…). Może się rozjeżdżać z `nr`.
+- **typ (= opcjonalny „co to jest" na końcu — zatwierdzony przez Oskara 2026-06-03).** Brief nie ma typu (sam jest kopertą). Pozostałe niosą opis na końcu: `mapa` · `deszyfrownik` · `slip` · `pergamin` · `list` (szyfrogram) · `przepis` · `rozpiska` · `tabela-symbole` · `tabela-recta` · `audio` · `bestiariusz`. **Cały kod (frakcja-kolor-nr-Zx) musi wystąpić PRZED** opisem.
 
 > **`nr` = kolejność otwierania, nie etap MG.** Przykład: na torze miasta `miasto-4-Z3b` jest otwierana **4.**, ale należy do **etapu Z3** (raport u MG wspólny z `miasto-3-Z3`). „Pozycja 4" ≠ „czwarty checkpoint MG".
 
@@ -109,7 +130,7 @@ Wiersz = pozycja otwierania · kolumny = `plik-briefu | wkładki | rekwizyty`. *
 | 1 | `wspolne-1-Z1.md` | wspólny z miastem |
 | 2 | `krzyzacy-2-Z2.md` | **pending** (→ Albrecht, Pula B) |
 | 3 | `krzyzacy-3-Z3Z.md` | pending |
-| 4 | `krzyzacy-4-Z8.md` / `krzyzacy-4-Z9.md` *(wypełniona)* / `krzyzacy-4-Z10.md` | Z9 draft, reszta pending |
+| 4 | `krzyzacy-4-Z8.md` / `krzyzacy-4-Z9.md` / `krzyzacy-4-Z10.md` *(wszystkie wypełnione)* | Z8/Z9/Z10 draft |
 | 5 | `krzyzacy-5-Z11.md` | **draft [2026-06-03]** (szyfrogram=motto + brama Albrechta) |
 
 ## Montaż fizyczny — karta → koperta → etykieta (prototyp, tor miasta, 1 kolor)
@@ -146,7 +167,7 @@ Legenda: **draft** (pełny tekst EN + meta) · **placeholder** (tylko wiersz, tr
 | `krzyzacy-3-Z3Z.md` | placeholder | `zamek-krzyzacki-lista.md §Z3Z` |
 | `krzyzacy-4-Z8.md` | placeholder | `puzzles/kalimba.md` |
 | `krzyzacy-4-Z9.md` | draft | `puzzles/zagadka-sensoryczna.md` |
-| `krzyzacy-4-Z10.md` | placeholder | `puzzles/polichromie-biedronka.md` |
+| `krzyzacy-4-Z10.md` | draft [2026-06-03] | `puzzles/polichromie-biedronka.md` |
 | `krzyzacy-5-Z11.md` | draft [2026-06-03] | `concept/04-faza-3-final.md`, `puzzles/z11-szyfr-spec.md` (szyfrogram=motto + brama Albrechta) |
 
 ## Co zawiera plik koperty

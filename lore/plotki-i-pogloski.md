@@ -140,6 +140,67 @@ Jordan może pytać:
 - **Plotka 15** (*„Jordan z chochlą — legenda. Może ktoś inny?"*) — idealna w K1, nim gracze spotkają Piotra; po spotkaniu traci moc forshadowu.
 - **Plotka 7** (*„Komtur Albrecht ma listę"*) — jedyna, która pojawia się przed Z3 i jest jej bezpośrednim foreshadowem; nie dawaj jej za K3 (za późno).
 
+## Łuk: pogłoski → rozterki → przejście na drugą stronę [2026-06-03, Oskar]
+
+> **Co to za sekcja.** Pogłoski (Pule A/B) to dotąd była **statyczna warstwa atmosfery**. Ta sekcja podnosi je do **łuku dramaturgicznego**: te same fakty, które krytykują „własną" stronę, mają z biegiem gry **narastać w żywe zwątpienie** kuriera, a w finale stać się **nazwanym wyborem** — możesz oddać list drugiej stronie. Trzy elementy = jeden łuk, nie trzy funkcje.
+
+### Trzy ogniwa łuku
+
+| Ogniwo | Gdzie | Mechanizm |
+|---|---|---|
+| **1. Pogłoska** (sieje) | Z2 + opcjonalne (Z4–Z6 / Z8–Z10) | fakt krytyczny wobec własnej strony, podany jako podsłuch / głos w świecie |
+| **2. Rozterka** (dojrzewa) | wplata w opcjonalne + przed finałem | **doubt-beat**: kurier *sam* nazywa niepokój — „komu właściwie służę, czy to słuszna strona?" |
+| **3. Przejście** (rozstrzyga) | finał (Z7 / Z11) | jawna, **kusząca** opcja oddania listu drugiej stronie, zakotwiczona w „poznałeś też tamtych" |
+
+### Doubt-beat (rozterka) — definicja narzędzia
+
+Krótki (1–3 zdania) fragment **narracji z głowy kuriera** (kursywa, 2. os. „you"), w którym gracz **nazywa własny niepokój**:
+- czy strona, dla której (nieświadomie) pracuje, jest „słuszna",
+- czy idąc tym tropem nie podejmuje **złej** decyzji,
+- echo konkretnej pogłoski („*a rising of rich men, he called it, and you are its hands*").
+
+**Zasada:** doubt-beat **nie rozstrzyga** — zostawia ciężar w graczu („*you push the thought down. It does not go far.*"). Nie psuje immersji zadania (to nie wykład) — to chwila wahania w przejściu. Tag: **F3** (zasila finałowy wybór). Klamra: **„poznałeś tę drugą stronę"** — każdy kurier spotyka oba aktory (TR infiltruje Albrechta w Z3; KZ obserwuje Jordana w Z3Z), więc rozterka ma realną kotwicę: *tamten nie wydał ci się potworem*.
+
+### Decyzja: dwa kanały krytyki — żeby głosy w świecie zostały wiarygodne [2026-06-03]
+
+Krytyka własnej strony idzie **dwoma rozłącznymi kanałami**, by nie psuć charakteru postaci:
+- **Kanał A — podsłuch / rozgoryczony głos uboczny:** to, co kurier *słyszy* w tłumie/na ulicy (Pule A/B) — anonimowe, niezobowiązujące.
+- **Kanał B — własne zwątpienie kuriera:** doubt-beat w narracji z głowy.
+
+**Postaci-zleceniodawcy w świecie (piekarz TR, brat-kucharz KZ) NIE muszą krytykować własnej strony.** Piekarz (Z5) *może* być gorzkim sceptykiem (jest mniejszościowym głosem). Brat-kucharz (Z9) **zostaje dumny i lojalny** — krytyka Zakonu na jego torze idzie **kanałem A+B** (podsłuch po drodze do komturii + rozterka kuriera), nie z jego ust. To rozwiązuje napięcie „chcę krytyki Zakonu" vs „brat-kucharz celowo lojalny": **oba prawdziwe naraz**, bo na różnych kanałach.
+
+### Asymetria do nadrobienia (diagnoza wykonania, nie projektu)
+
+Projekt (Pule A/B + tabela) jest **kompletny**. Luka jest w **realizacji i symetrii**:
+
+| Strona | Stan nasycenia | Co zrobić |
+|---|---|---|
+| **TR** (K2 / Z4 / Z5) | ✅ dobrze nasycone | dorzucić tylko **doubt-beat** (Z4, Z5) — pogłoski już są |
+| **KZ** (Z8 / Z9 / Z10) | ❌ niedonasycone | Z8 częściowe → wzmocnić; Z9 zero → **dwa kanały**; Z10 nieistniejące → seed |
+| **Finał TR** (Z7) | wybór zdawkowy | przejście → **mocne/kuszące** + kotwica Z3 |
+| **Finał KZ** (Z11) | nieistniejące | seed: lustro przejścia (kusi oddać Jordanowi) |
+
+### Seed dla kopert nienapisanych (Z6, Z10, Z11, krzyzacy-2) — niesie łuk, gdy ktoś je napisze
+
+- **`miasto-5-Z6`** (herby hanzeatyckie, TR): wpleść **kanał A** (Pula A — np. A2 prawo składu / A4 aspiracje patrycjatu „herby malują, o turniejach śnią" — tematycznie spina z herbami!) + **doubt-beat**. Herby = naturalny hak dla A4 (patrycjat chce być szlachtą).
+- **`krzyzacy-4-Z10`** (polichromie „Biedronka" + Bestiariusz, KZ): wpleść **kanał A** (Pula B — np. B6 garstka braci / B7 sam komtur chciał się układać) + **doubt-beat**. Wymaga researchu polichromii on-site (`concept/05`), ale warstwa pogłosek/rozterki jest niezależna od treści zagadki.
+- **`krzyzacy-5-Z11`** (finał KZ): **lustro Z7** — przejście **mocne/kuszące**: kusi oddać list **Jordanowi/Bażyńskiemu** (KZ-zdrada). Kotwica: „obserwowałeś go z bliska w Piccolo (Z3Z) — kucharz z chochłą nie wyglądał ci na wroga". Echo Puli B. **Bez** twistu tożsamości (KZ go nie ma) — kusi *racją*, nie rewelacją.
+- **`krzyzacy-2-Z2`** (KZ, lustro K2): Pula B (B1/B2/B6/B8 łagodne — klasa świeżo ujawniona), podsłuch po drodze do Albrechta. Bez doubt-beatu jeszcze (za wcześnie — zwątpienie dojrzewa później).
+
+### Stan realizacji łuku [2026-06-03]
+
+| Koperta | Pogłoska (kanał A) | Rozterka (doubt-beat) | Przejście |
+|---|---|---|---|
+| `miasto-2-Z2` | ✅ A3/A5/A6/A7/A8 | — (za wcześnie) | — |
+| `miasto-5-Z4` | ✅ inwersja „wielcy/mali" | ✅ DODANE 2026-06-03 | — |
+| `miasto-5-Z5` | ✅ piekarz-sceptyk | ✅ DODANE 2026-06-03 | — |
+| `miasto-5-Z6` | seed | seed | — |
+| `miasto-6-Z7` (finał) | echo wcześniejszych | ✅ w finale | ✅ **mocne** DODANE 2026-06-03 |
+| `krzyzacy-4-Z8` | ✅ wzmocnione 2026-06-03 | ✅ DODANE 2026-06-03 | — |
+| `krzyzacy-4-Z9` | ✅ DODANE 2026-06-03 (podsłuch B1/B5/B6) | ✅ DODANE 2026-06-03 | — |
+| `krzyzacy-4-Z10` | ✅ DODANE 2026-06-03 (podsłuch B7/B9/B2) | ✅ DODANE 2026-06-03 | — |
+| `krzyzacy-5-Z11` (finał) | seed | seed | seed: **mocne** (lustro) |
+
 ## Otwarte pytania
 
 1. **Ile plotek w jednej kopercie** (3 vs 5)?
