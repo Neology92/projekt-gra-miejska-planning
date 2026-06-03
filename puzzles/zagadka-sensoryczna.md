@@ -31,8 +31,8 @@ MG zabiera słoiczki, odchodzi na bok („idzie upiec"), po chwili wraca:
 ## Mechanika
 
 1. **Słoiczki**: N nieprzezroczystych, **zamkniętych** pojemników oznaczonych **literami** (A, B, C…). Wolno **wąchać, potrząsać, ważyć w dłoni** (porównawczo). **Nie wolno otwierać** (in-fiction: korzeń się zwietrzy; produkcyjnie: brak bałaganu i kontaktu z zawartością). Konsystencję gracz czyta pośrednio — przez dźwięk i ciężar.
-2. **Etykiety (nazwy)**: kartoniki z nazwami składników — **więcej nazw niż słoiczków** (utrudnienie). Nie da się przypisać „każda nazwa po kolei"; część nazw to dystraktory bez pokrycia.
-3. **Przepis** (rekwizyt): lista składników z **proporcjami**. Pełni dwie role: (a) mówi, czego się spodziewać w słoiczkach, (b) **rozstrzyga przypadki nierozróżnialne zmysłami** — np. „więcej mąki żytniej niż pszennej" → cięższy słoiczek to żytnia.
+2. **Nazwy składników**: pula nazw, z której gracze wybierają, **pochodzi z przepisu** (to on jest listą — patrz pkt 3; osobnych kartoników-etykiet NIE ma, usunięte 2026-06-03). Nazw jest **więcej niż słoiczków** (utrudnienie): część składników z przepisu **nie stoi w słoikach** — to nazwy bez pokrycia. Nie da się przypisać „każda nazwa po kolei".
+3. **Przepis** (rekwizyt — ŹRÓDŁO PRAWDY dla nazw): pełna lista składników piernika z **proporcjami**. Pełni trzy role: (a) **jest pulą nazw** (wszystkie nazwy, z których gracz wybiera, są tutaj — nigdzie indziej); (b) mówi, czego się spodziewać; (c) **rozstrzyga przypadki nierozróżnialne zmysłami** — proporcja „więcej mąki żytniej niż pszennej" → cięższy słoiczek to żytnia. **Słoiki zawierają tylko CZĘŚĆ składników z przepisu** (gracz musi rozpoznać które są obecne).
 4. **Karta rozpiski**: gracze wpisują mapowanie litera→nazwa i oddają MG.
 5. **Sprawdzenie u MG**: binarne (wyszło / nie wyszło). Przy „nie wyszło" MG **nie mówi które** — tylko „smak nie ten" → presja na ponowne badanie, nie zgadywanie.
 6. **Nagroda**: pierniki + koperta (klucz/fragment do finału — patrz „Klucz do finału").
@@ -96,7 +96,7 @@ Loop u MG (rola „piekarza"): MG bierze kartę → „idzie upiec" → **źle**
 - N słoiczków nieprzezroczystych, oznaczonych literami (najlepiej **jednakowych** zewnętrznie, by waga/dźwięk były jedynym sygnałem).
 - Składniki: kanon 1454 (tabela wyżej); przyprawy **w całości** tam, gdzie chcesz kanału „dźwięk".
 - **Przepis** (karta) z proporcjami — rekwizyt funkcyjny, nie ozdoba (bramkuje dwie mąki).
-- Komplet kartoników z nazwami (więcej niż słoiczków).
+- Karta przepisu pełni rolę puli nazw (osobnych kartoników z nazwami NIE ma — usunięte 2026-06-03).
 - Karta rozpiski do wypełnienia.
 - **Pierniki** jako nagroda (kup gotowe).
 - Koperta z kluczem/fragmentem do finału.
@@ -110,7 +110,7 @@ Loop u MG (rola „piekarza"): MG bierze kartę → „idzie upiec" → **źle**
 
 ## Otwarte pytania
 
-1. ~~Ile słoiczków, ile nazw~~ ROZSTRZYGNIĘTE [2026-06-02, Oskar]: **7 słojów (A–G) + 10 nazw** (7 prawdziwych: cynamon, mąka żytnia, mąka pszenna, goździki, imbir, miód, **kardamon** + 3 dystraktory: nutmeg, pepper, buckwheat flour).
+1. ~~Ile słoiczków, ile nazw~~ ROZSTRZYGNIĘTE [2026-06-02, Oskar]: **7 słojów (A–G) + 10 nazw** (= wszystkie składniki przepisu). 7 w słoikach: cynamon, mąka żytnia, mąka pszenna, goździki, imbir, miód, **kardamon**; 3 nazwy bez słoja: nutmeg, pepper, candied orange peel. Pula nazw = karta przepisu (źródło prawdy), nie osobne kartoniki.
 2. ~~Które kanały~~ ROZSTRZYGNIĘTE [2026-05-31]: **słuch + węch + ważenie w dłoni**; bez smaku, bez otwierania słoików.
 3. ~~Wariant dwóch mąk~~ ROZSTRZYGNIĘTE [2026-05-31]: **(I) rye-dominant** (więcej żytniej = cięższy słoiczek).
 4. **Strategia dystraktorów** — draft: **miks** (myląco-zmysłowe + 1 kanoniczna-nieobecna + 1 anachroniczna). Do potwierdzenia.
@@ -182,55 +182,48 @@ Pointy nie trzeba porzucać — trzeba **świadomie wybrać** framing (zgodnie z
 
 ### Zestaw słoiczków — SPEC AKTYWNA [2026-06-02, Oskar]: 7 słojów (A–G)
 
-> **7 poprawnych** (cynamon, mąka żytnia, mąka pszenna, goździki, imbir, miód, **kardamon**) + **3 dystraktory** (gałka muszkatołowa, pieprz, gryka). **Kardamon = słój G**, w słoiku **mielony/sypki** (cichy, milczący pył jak cynamon/imbir), woń eukaliptusowo-cytrusowa; rozróżniany **zapachem** (od cynamonu słodkiego i imbiru ostrego). Goździki w całości (słój D). Oznaczenie słojów: **litery A–G** (do podmiany na kształty słoików, jeśli Oskar dostarczy).
+> **7 słojów** (zawartość = 7 z listy przepisu): cynamon, imbir, goździki, kardamon, mąka żytnia, mąka pszenna, miód. **Pozostałe nazwy z przepisu** (gałka muszkatołowa, pieprz, kandyzowana skórka pomarańczy) są **na liście, ale NIE w słoikach** — gracz odrzuca je zmysłami (brak pasującego słoja). Mapowanie litera→słój **[Oskar 2026-06-03]** poniżej (litery przemieszane, nie alfabetyczne). Kardamon **mielony/sypki** (cichy); goździki **w całości** (jedyny grzechot wśród prawdziwych).
 
 | Słój | Zawartość (klucz MG) | Forma (pod kanały) | Sygnały rozpoznawcze | Oś, która identyfikuje |
 |---|---|---|---|---|
-| A | **mąka żytnia** | **pełniej napełniony — najcięższy proszek** | bezwonna, cisza, **wyraźnie ciężka** | **ciężar + przepis** (żyta 3× więcej → cięższy słój = żytnia) |
-| B | **mąka pszenna** | mniej napełniony (lżejszy) | bezwonna, cisza, lżejsza | **ciężar + przepis** (lżejsza z dwóch mąk) |
-| C | **cynamon** | mielony | cisza/szelest pyłu, mocny słodko-korzenny zapach | **zapach** (słodko-korzenny) |
+| A | **mąka pszenna** | mniej napełniony (lżejszy) | bezwonna, cisza, lżejsza | **ciężar + przepis** (lżejsza z dwóch mąk) |
+| B | **kardamon** | **mielony / sypki** | milczący pył, woń eukaliptusowo-cytrusowa | **zapach** (eukaliptus/cytrus — vs cynamon słodki, vs imbir ostry) |
+| C | **imbir** | mielony | bezgłośny pył, zapach ostro-korzenny | **zapach** (ostry, „gryzący") |
 | D | **goździki** | **całe pąki** | **grzechot twardych pąków**, bardzo mocny zapach | **słuch (grzechot) + zapach** (goździkowa woń) |
-| E | **imbir** | mielony | bezgłośny pył, zapach ostro-korzenny | **zapach** (ostry, „gryzący") |
-| F | **miód** | **szczelnie zamknięty (płyn!)** | **chlupot**, słodko-woskowy zapach, ciężki | **słuch (chlupot) + zapach + ciężar** — najłatwiejszy |
-| G | **kardamon** | **mielony / sypki** | milczący pył, woń eukaliptusowo-cytrusowa | **zapach** (eukaliptus/cytrus — vs cynamon słodki, vs imbir ostry) |
+| E | **miód** | **szczelnie zamknięty (płyn!)** | **chlupot**, słodko-woskowy zapach, ciężki | **słuch (chlupot) + zapach + ciężar** — najłatwiejszy |
+| F | **mąka żytnia** | **pełniej napełniony — najcięższy proszek** | bezwonna, cisza, **wyraźnie ciężka** | **ciężar + przepis** (żyta 3× więcej → cięższy słój = żytnia) |
+| G | **cynamon** | mielony | cisza/szelest pyłu, mocny słodko-korzenny zapach | **zapach** (słodko-korzenny vs orzechowa gałka) |
 
-> Domknięcie sensoryczne: **słuch** daje rozłączne sygnały — **grzechot** (D goździki, całe pąki) i **chlupot** (F miód, jedyny płyn); reszta to milczący pył (C cynamon, E imbir, **G kardamon mielony**, A/B mąki). Uwaga: fałszywa nazwa *pepper* (ziarna) też by grzechotała — to **pułapka na grzechoczący słój D** (wśród „rattly" prawdziwe są tylko goździki), rozsądza **zapach**. **Zapach** izoluje trójkę korzenną C/E/G i ją rozdziela (cynamon słodko-korzenny ↔ imbir ostry ↔ kardamon eukaliptusowo-cytrusowy). **Ciężar** rozdziela bezwonną parę mąk A/B — ale rozstrzyga ją dopiero **przepis** (żyto:pszenica = 3:1). Bez przepisu A vs B to rzut monetą — dlatego przepis jest **rekwizytem player-facing**, nie przypisem.
+> Domknięcie sensoryczne: **słuch** daje rozłączne sygnały — **grzechot** (D goździki, całe pąki) i **chlupot** (E miód, jedyny płyn); reszta to milczący pył (B kardamon mielony, C imbir, G cynamon, A/F mąki). Uwaga: nazwa *pepper* (ziarna) by grzechotała — to **pułapka na grzechoczący słój D** (wśród „rattly" prawdziwe są tylko goździki), rozsądza **zapach**. **Zapach** izoluje trójkę korzenną B/C/G i ją rozdziela (cynamon słodko-korzenny ↔ imbir ostry ↔ kardamon eukaliptusowo-cytrusowy) oraz odrzuca *nutmeg* (orzechowa, myli z cynamonem — ale brak słoja). **Ciężar** rozdziela bezwonną parę mąk A/F — ale rozstrzyga ją dopiero **przepis** (żyto:pszenica = 3:1, cięższy = F żytnia). Bez przepisu A vs F to rzut monetą — dlatego przepis jest **rekwizytem player-facing**, nie przypisem.
 
 ### Karta przepisu — REKWIZYT PLAYER-FACING (EN, #70), funkcyjny nie ozdobny
 
-> ⚠ **Bez tej karty zagadka się nie domyka.** Sam ciężar daje tylko „cięższy/lżejszy"; mapowanie *cięższy → żytnia* istnieje **wyłącznie** przez proporcję z przepisu. Oskarowe „jednej mąki 2–3× więcej" TO jest właśnie ta proporcja — musi trafić do graczy jako rekwizyt.
+> ⚠ **Bez tej karty zagadka się nie domyka.** Po pierwsze: sam ciężar daje tylko „cięższy/lżejszy"; mapowanie *cięższy → żytnia* istnieje **wyłącznie** przez proporcję rye : wheat z przepisu. Po drugie: **przepis jest pulą nazw** — wszystkie nazwy, z których gracz wybiera, są na nim (nie ma osobnych kartoników; rozpiska też ich nie powtarza).
 
-> 🟡 **PENDING: finalny przepis dostarcza Piotr** (osobna kartka). Poniższy blok = placeholder spójny z aktualnym zestawem słojów; zostanie zastąpiony wersją Piotra. **Wymóg gatingu, który wersja Piotra musi spełnić:** 4 prawdziwe korzenie (cinnamon, cloves, ginger, **cardamom**) MUSZĄ być w przepisie; dystraktory (nutmeg, pepper, buckwheat) MUSZĄ być poza listą; proporcja mąk rye : wheat = 3 : 1.
+> **Model [Oskar 2026-06-03]: przepis = pełna lista składników piernika = ŹRÓDŁO PRAWDY dla nazw.** Słoiki zawierają **tylko część** tych składników; reszta to nazwy bez słoja, które gracz odrzuca zmysłami (brak pasującego słoja). Treść zadania (koperta) **wprost to zaznacza** („not all of these stand in the jars"). Nazwy żyją **tylko tutaj** — nigdzie indziej się ich nie wylicza jako osobnej listy.
 
 ```
 THE RULE FOR TORUŃ PIERNIK
 
-  Rye flour ......... three measures   (the body of the dough)
-  Wheat flour ....... one measure      (for a smoother crumb)
-  Honey ............. as much as the dough will take
-  Pounded spices .... cinnamon, cloves, ginger, cardamom — and no other root.
+  Rye flour ............ three measures   (the body of the dough)
+  Wheat flour .......... one measure      (for a smoother crumb)
+  Honey ................ as much as the dough will take
+  Pounded spices ....... cinnamon, ginger, cloves, cardamom, nutmeg, pepper
+  Candied orange peel .. a little, for brightness
 ```
 
-Przepis robi dwie rzeczy: (a) **rye 3 : wheat 1** → „czego w cieście więcej, tego w słoju ciężej" rozstrzyga A vs B; (b) **zamyka listę składników** (4 korzenie: `cinnamon, cloves, ginger, cardamom` + 2 mąki + miód; `and no other root`) → nazwy spoza niej (nutmeg, pepper, buckwheat flour) gracz odrzuca przez czytanie przepisu. *Świadomy efekt:* znajomość/uważne czytanie przepisu = przejście ukrytego testu „jesteś swój".
+Przepis robi trzy rzeczy: (a) **rye 3 : wheat 1** → „czego w cieście więcej, tego w słoju ciężej" rozstrzyga parę mąk A vs F; (b) **jest pulą wszystkich nazw** (gracz wybiera spośród składników przepisu, nazw więcej niż słojów); (c) **mówi, czego się spodziewać** — ale NIE które są w słoikach (to gracz rozpoznaje zmysłami). *Świadomy efekt:* znajomość/uważne czytanie przepisu = przejście ukrytego testu „jesteś swój".
 > **Karta bez nazwiska:** nagłówek = `THE RULE FOR TORUŃ PIERNIK` (NIE „Master Bogumił's") — bo **ta sama fizyczna karta obsługuje Z5 (mieszczanie) i Z9 (krzyżacy)**; podpis toruńskiego piekarza w ręku krzyżaków byłby sprzeczny. Bezimienna „reguła" wzmacnia easter egg: to nie czyjś prywatny przepis, lecz ta sama znana reguła „po obu stronach".
-> **⚠ Kardamon (cardamom) MUSI być w przepisie:** kardamon = prawdziwy słój G; gdyby go w przepisie brakło, recipe-gating („nie ma w przepisie → fake") błędnie odrzucałby go jak dystraktor. Lista korzeni w przepisie = **wszystkie 4 prawdziwe przyprawy** (cinnamon, cloves, ginger, cardamom). Dystraktory (nutmeg, pepper, buckwheat) zostają poza listą — gałka też jest w palecie wiki, ale nie w TYM przepisie (dobry dystraktor „kanoniczny, lecz nieobecny").
-> Wariant trudniejszy (opcja): przepis podaje tylko proporcje mąk + „spices, as the craft requires" (bez nazw) → pełna identyfikacja zmysłowa, dystraktory odrzucane wyłącznie węchem. Domyślnie zostaje wersja z nazwami (łagodniejsza, mocniej spina motyw „znaj przepis").
+> **Lista (10 nazw) = wszystkie składniki przepisu.** 7 jest w słoikach (cinnamon, ginger, cloves, cardamom, rye flour, wheat flour, honey), 3 nie (nutmeg, pepper, candied orange peel). Wszystkie 3 są **autentycznymi** składnikami piernika (wiki) — odrzuca je nie „brak w przepisie", lecz **brak słoja** (zmysły). Łatwo dodać „kilka więcej" (migdały, skórka cytrynowa) jako kolejne nazwy-bez-słoja, jeśli Oskar zechce trudniej.
 
-### Lista etykiet — PLAYER-FACING (EN, #70): 10 nazw = 5 prawdziwych + 5 dystraktorów
+### Karta rozpiski — PLAYER-FACING (EN), do wypełnienia (A–G)
 
-Gracze mają **przed sobą wszystkie 10 nazw** (kartoniki/lista) — nazw jest więcej niż słojów (7 słojów, 10 nazw → 3 zbędne), więc nie da się „każda po kolei". Kolejność na liście pomieszana (nie grupować prawdziwych/fałszywych):
-
-```
-buckwheat flour   ·   cinnamon   ·   honey   ·   cloves   ·   nutmeg
-ginger   ·   wheat flour   ·   cardamom   ·   rye flour   ·   pepper
-```
-
-### Karta rozpiski — PLAYER-FACING (EN), do wypełnienia (A–F)
+Rozpiska jest **pusta** (same kreski A–G) — pulę nazw gracz czerpie z **karty przepisu** (nie powtarzamy listy na rozpisce).
 
 ```
 THE BAKER MUST KNOW WHAT IS IN EACH JAR.
-Write a name beside each letter. There are more names than jars —
-not every name belongs. Do not open the jars.
+The names are all on his rule. There are more names than jars —
+not every ingredient stands here tonight. Do not open the jars.
 
   Jar A: ____________________
   Jar B: ____________________
@@ -241,23 +234,19 @@ not every name belongs. Do not open the jars.
   Jar G: ____________________
 ```
 
-> Klucz MG (NIE dla graczy): **A** rye flour · **B** wheat flour · **C** cinnamon · **D** cloves · **E** ginger · **F** honey · **G** cardamom. (Litery przydzielone roboczo — przy produkcji wymieszać.)
+> Klucz MG (NIE dla graczy) **[Oskar 2026-06-03]**: **A** wheat flour · **B** cardamom · **C** ginger · **D** cloves · **E** honey · **F** rye flour · **G** cinnamon. Produkcja: słój **F** napełnić **najpełniej** (najcięższy = żytnia); **A** lżej (pszenna). Goździki (D) **w całości** (grzechot); kardamon (B) **mielony**; miód (E) **szczelnie** (płyn).
 
-### Dystraktory (nazwy bez słoika) — 3, każdy z osią, która go pokonuje
+### Dystraktory (nazwy z przepisu bez słoika) — 3, każdy z osią, która go pokonuje
 
-| Nazwa-pułapka | Myli z (poprawnym) | Oś, która ją pokonuje | Czemu myli (i czemu okresowo OK) |
+| Nazwa-pułapka | Myli z (słój) | Oś, która ją pokonuje | Czemu myli |
 |---|---|---|---|
-| **nutmeg** (gałka muszkatołowa) | cinnamon (C) | **zapach** + przepis | woń orzechowo-korzenna, ciepło-brązowa jak cynamon → **pułapka węchu na cynamon**; jako cała bryłka dałaby pojedynczy głuchy stuk. W palecie wiki, ale nie w TYM przepisie → recipe-gated. Stary Świat ✓ |
-| **pepper** (pieprz) | cloves (D) | **zapach** (+ przepis) | **pułapka słuchu**: ziarna pieprzu grzechoczą jak całe goździki → dźwięk NIE rozróżnia, dopiero zapach (ostry vs goździkowy). Stary Świat ✓ |
-| **buckwheat flour** (mąka gryczana) | rye flour (A) | **tylko przepis** | bezwonny pył jak każda mąka — zmysły nie odrzucą; pokonuje wyłącznie przepis (żyto+pszenica, nie gryka). Gryka w Toruniu od XIII w. (wiki) ✓ |
+| **nutmeg** (gałka muszkatołowa) | cinnamon (G) | **zapach** (brak słoja) | woń orzechowo-korzenna, ciepło-brązowa jak cynamon → **pułapka węchu na cynamon**; żaden słój nie pachnie gałką. Stary Świat ✓ |
+| **pepper** (pieprz) | cloves (D) | **zapach** (brak słoja) | **pułapka słuchu**: ziarna pieprzu grzechoczą jak całe goździki → ale to słój goździków pachnie goździkowo; pieprz nie ma słoja. Stary Świat ✓ |
+| **candied orange peel** (kandyzowana skórka pomarańczy) | — (najłatwiejszy) | **zmysły** (brak słoja) | wyrazista cytrusowa woń, lepkie paski — oczywiście nieobecna wśród proszków/płynu. Autentyczna w piernikach (wiki) ✓ |
 
-> **Bilans:** 2 dystraktory przyprawowe (pokonywane **węchem**) + 1 mączny (pokonywany **wyłącznie przepisem**). Wszystkie 3 są dodatkowo **recipe-gated** (żadnego nie ma w przepisie), więc przepis jest wspólnym backstopem.
-> **Opcja podmiany:** chcesz dystraktor mączny zamienić na sensoryczny → **coriander** (kolendra — Stary Świat ✓, nasiona grzechoczą jak pieprz/goździki, nuta cytrusowo-korzenna → pułapka słuchu, pokonywany **węchem**). Wynik: 3 sensoryczne, 0 mącznych.
-> **Anachronizm-smaczek (opcja, NIE w domyślnej trójce):** by nagrodzić znawców historii — podmień jeden na **paprika** lub **allspice** (oba Nowy Świat, niemożliwe 1454; uwaga: stary draft mylnie traktował „ziele angielskie/allspice" jako tylko „niekanoniczne" — to anachronizm jak papryka). Odrzucalne węchem/kolorem i datą; nie może być wymagane (gracz nie musi znać dat, by wygrać zmysłami).
+> **Bilans:** wszystkie 3 odrzucane **zmysłami** (brak pasującego słoja) — nie „brakiem w przepisie" (są w nim, bo to pełna lista). nutmeg/pepper = pułapki węchu/słuchu; skórka = łatwy odrzut. Para mąk A/F rozstrzygana **ciężarem + przepisem** (rye 3 : wheat 1).
 
-→ 7 słojów + 7 prawdziwych nazw + 3 dystraktory = **10 kartoników z nazwami**.
-
-> **Koperty fizyczne**: zmontowane w `envelopes/miasto-4-Z5.md` i `envelopes/krzyzacy-4-Z9.md` (meta: kiedy wręczyć/nie, co MG mówi, rekwizyty). Teksty niżej są ich źródłem.
+> **Koperty fizyczne**: zmontowane w `envelopes/miasto-5-Z5.md` i `envelopes/krzyzacy-4-Z9.md` (meta: kiedy wręczyć/nie, co MG mówi, rekwizyty). Teksty niżej są ich źródłem.
 
 ### Koperta Z5 — mieszczanie / Tajna Rada (draft)
 

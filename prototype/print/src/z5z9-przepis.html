@@ -4,9 +4,12 @@
 <meta charset="UTF-8">
 <title>The Rule for Toruń Piernik — recipe card (Z5 / Z9)</title>
 <!-- Shared station prop (one card serves BOTH Z5 mieszczanie and Z9 krzyżacy). Source: puzzles/zagadka-sensoryczna.md §Karta przepisu.
-     NAMELESS by design (line 213): a Toruń baker's name in Krzyżak hands would break the cross-faction easter egg.
-     Function, not ornament: (a) rye 3 : wheat 1 lets weight disambiguate the two flours; (b) the closed spice list
-     (cinnamon, cloves, ginger, nutmeg — and no other root) recipe-gates the distractors (cardamom, pepper, buckwheat).
+     NAMELESS by design: a Toruń baker's name in Krzyżak hands would break the cross-faction easter egg.
+     MODEL [Oskar 2026-06-03]: this recipe is the SOURCE OF TRUTH for all ingredient names — it IS the word-bank
+     (no separate label cards; the answer card no longer repeats the list). The 7 jars hold ONLY SOME of these;
+     three names (nutmeg, pepper, candied orange peel) are listed here but have NO jar — rejected by the senses
+     (no matching jar), not by absence from the recipe. Function: (a) rye 3 : wheat 1 lets weight disambiguate
+     the two flours; (b) full name pool. Brief tells players "more names than jars".
      Edge-stamp ON (parchment.css .edge-stamp + __STAMP__ injected by render.ps1 per destination: m05-<kolor> Z5 / k04-<kolor> Z9).
      Style: parchment.css + scoped recipe layout below. -->
 <link rel="stylesheet" href="parchment.css">
@@ -41,7 +44,15 @@
 
   .recipe-spices dt{ margin-bottom:3px; }
   .recipe-spices .roots{ font-style:normal; color:var(--ink); font-size:14.5pt; }
-  .recipe-spices .closing{ font-variant:small-caps; letter-spacing:.05em; color:var(--ink); }
+
+  .recipe-foot{
+    margin:28px auto 0; max-width:74%; text-align:center;
+    font-style:italic; color:var(--ink-soft); font-size:12.5pt; line-height:1.5;
+  }
+  .recipe-foot::before{
+    content:''; display:block; height:8px; width:46%; margin:0 auto 14px;
+    background:var(--pen-rule) center/100% 8px no-repeat;
+  }
 </style>
 </head>
 <body>
@@ -67,9 +78,15 @@
       </div>
       <div class="recipe-spices">
         <dt>Pounded spices</dt>
-        <dd><span class="roots">cinnamon, cloves, ginger, nutmeg</span> — <span class="closing">and no other root.</span></dd>
+        <dd><span class="roots">cinnamon, ginger, cloves, cardamom, nutmeg, pepper</span></dd>
+      </div>
+      <div>
+        <dt>Candied orange peel</dt>
+        <dd>a little, for brightness</dd>
       </div>
     </dl>
+
+    <p class="recipe-foot">Every piernik holds these — but not every jar before you does.</p>
 
   </div>
 </body>

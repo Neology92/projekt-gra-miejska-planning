@@ -4,11 +4,11 @@
 <meta charset="UTF-8">
 <title>The Baker's Card — answer card (Z5 / Z9)</title>
 <!-- Shared station prop, ONE PER GROUP (consumable — players write on it). Source: puzzles/zagadka-sensoryczna.md §Karta rozpiski.
-     Ships BLANK. The correct A–G mapping lives ONLY on the GM key (mg-Z5Z9-klucz). Seven jars A–G (active 7-jar spec, line 183).
-     SELF-CONTAINED list of candidate names printed here (the word-bank) — replaces the deleted cut-out labels (z5z9-etykiety,
-     removed 2026-06-03, Oskar): no cutting, no sticking. Players read the list and write a name beside each letter on paper.
-     10 names = 7 true (rye flour, wheat flour, honey, cinnamon, cloves, ginger, nutmeg) + 3 distractors (cardamom, pepper,
-     buckwheat flour); shuffled (true/false NOT grouped). The recipe card (z5z9-przepis) gates the distractors.
+     Ships BLANK (just the A–G lines). The correct A–G mapping lives ONLY on the GM key (mg-Z5Z9-klucz). Seven jars A–G.
+     MODEL [Oskar 2026-06-03]: the candidate-name pool lives on the RECIPE card (z5z9-przepis) — the recipe IS the word-bank
+     (source of truth for all names). The answer card NO LONGER repeats the list (no duplicate listing elsewhere).
+     Players read the recipe, then write a name beside each letter here. 7 jars hold only SOME of the recipe's ingredients;
+     3 names (nutmeg, pepper, candied orange peel) have no jar — rejected by the senses.
      Edge-stamp ON (parchment.css .edge-stamp + __STAMP__ injected by render.ps1 per destination: m05-<kolor> Z5 / k04-<kolor> Z9). -->
 <link rel="stylesheet" href="parchment.css">
 <style>
@@ -67,23 +67,7 @@
   <div class="sheet answer">
 
     <h1 class="answer-title">The baker must know what is in each jar</h1>
-    <p class="answer-intro">Write a name beside each letter. There are more names than jars — not every name belongs. Do not open the jars.</p>
-
-    <div class="wordbank">
-      <p class="wordbank-head">The names the apprentice handed him — pick from these:</p>
-      <ul class="wordbank-list">
-        <li>buckwheat flour</li>
-        <li>cinnamon</li>
-        <li>honey</li>
-        <li>cloves</li>
-        <li>nutmeg</li>
-        <li>ginger</li>
-        <li>wheat flour</li>
-        <li>cardamom</li>
-        <li>rye flour</li>
-        <li>pepper</li>
-      </ul>
-    </div>
+    <p class="answer-intro">The names are all on his rule — pick from there. There are more names than jars: not every ingredient stands here tonight, so some names will have no jar. Do not open the jars.</p>
 
     <ol class="jars">
       <li><span class="jar">Jar A</span><span class="blank"></span></li>
