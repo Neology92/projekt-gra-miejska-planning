@@ -153,6 +153,11 @@ const OPTIONAL = {
     label: 'Z10',
     title: 'The beasts on the wall',
     prop: { what: 'the leaf of eight beasts (lettered A–H)', from: 'the Game Master', where: 'read it against the painted house on the Broad Street (Szeroka 22)' },
+    // glif Biedronki = L03 z tools/map-gen/map-data.js §Z1_LANDMARKS (biedronka: koło + 2 kropki)
+    mapGlyph: '<circle cx="16" cy="16" r="12" fill="none" stroke="#2a1f0e" stroke-width="2.4"/>'
+      + '<line x1="16" y1="4" x2="16" y2="28" stroke="#2a1f0e" stroke-width="2.4" stroke-linecap="round"/>'
+      + '<circle cx="10.5" cy="13" r="1.8" fill="#2a1f0e"/><circle cx="21.5" cy="13" r="1.8" fill="#2a1f0e"/>',
+    mapGlyphCaption: 'This mark on your map is the painted house (“Biedronka”, Szeroka 22). Go there.',
     scene: [
       { reg: 'narration', html: 'The stolen hour is yours and the enemy’s nest is behind you. Now a brother’s name is put into your hands, and a thing he left half-finished — work for one of the Order’s own.' },
       { reg: 'narration', html: 'They send you down the Broad Street. What you catch on the way does not sit easy: that the Komtur himself sued for terms with the townsmen weeks ago, and the Grand Master forbade it; that the bishops are turning their faces away; that the Order keeps salt and copper and amber in its fist and lets no man trade but through the brothers’ hand. None of them know whose letters you carry tonight.' },
