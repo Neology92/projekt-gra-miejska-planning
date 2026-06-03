@@ -57,32 +57,22 @@
   .intro-content ul { padding-left: 18px; margin: 0 0 8px; }
   .intro-content strong { color: var(--text); }
   .intro-content em { color: var(--text); font-style: italic; }
-  /* group picker */
-  .group-picker-wrap {
-    max-width: 1100px; margin: 18px auto 0; padding: 0 16px;
+  /* color-groups — poziomy scroll z podgrupami kolorystycznymi */
+  .color-groups-row {
+    display: flex; gap: 8px; overflow-x: auto; padding-bottom: 6px;
+    scrollbar-width: thin; scrollbar-color: var(--border) transparent;
   }
-  .group-picker-label {
-    font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: .5px; margin-bottom: 8px;
+  .color-group { flex: none; min-width: 130px; max-width: 155px; }
+  .color-group-hdr {
+    display: flex; align-items: center; gap: 5px; margin-bottom: 7px;
+    font-size: 11px; white-space: nowrap;
   }
-  .group-picker {
-    display: flex; gap: 8px; flex-wrap: wrap;
+  .cdot {
+    width: 11px; height: 11px; border-radius: 50%; flex: none;
+    border: 1px solid rgba(255,255,255,.22);
   }
-  .group-chip {
-    border: 2px solid var(--border); background: var(--surface); color: var(--text);
-    cursor: pointer; font-size: 13px; font-weight: 700; padding: 8px 12px;
-    border-radius: 999px; line-height: 1; transition: border-color .12s, background .12s;
-    position: relative;
-  }
-  .group-chip:hover { border-color: var(--gcolor, var(--accent)); }
-  .group-chip.active {
-    border-color: var(--gcolor, var(--accent));
-    background: color-mix(in srgb, var(--gcolor, var(--accent)) 18%, var(--surface));
-  }
-  .group-chip .dot {
-    display: inline-block; width: 10px; height: 10px; border-radius: 50%;
-    background: var(--gcolor, #888); margin-right: 5px; vertical-align: middle;
-    border: 1px solid rgba(255,255,255,.25);
-  }
+  .cgid { font-weight: 700; color: var(--text); }
+  .ckol { color: var(--muted); font-weight: 400; }
   /* etapy */
   main#etapy {
     max-width: 1100px; margin: 20px auto 60px; padding: 0 16px;
@@ -204,7 +194,7 @@
     <a href="../" class="back-link">← Galeria</a>
     <div>
       <h1>Toruń <span class="yr">1454</span> · Review</h1>
-      <div class="sub">Przygoda dla Piotra — wybierz grupę</div>
+      <div class="sub">Przygoda dla Piotra — wszystkie ścieżki rozłożone</div>
     </div>
   </div>
 </div>
@@ -257,13 +247,6 @@
 </div>
 </details>
 
-<div class="group-picker-wrap">
-  <div class="group-picker-label">Wybierz grupę:</div>
-  <div class="group-picker" id="group-picker">
-    <!-- generowane przez JS -->
-  </div>
-</div>
-
 <main id="etapy">
   <!-- generowane przez JS -->
 </main>
@@ -288,23 +271,8 @@ const BADGE_HTML = {
   'fork-frakcja-grupa': '<span class="badge badge-fork-g">FORK · per grupa</span>',
 };
 
-// --- Group picker ---
-let activeGroup = localStorage.getItem('review-group') || 'G1';
-const picker = document.getElementById('group-picker');
-for (const [gid, g] of Object.entries(DATA.groups)) {
-  const btn = document.createElement('button');
-  btn.className = 'group-chip' + (gid === activeGroup ? ' active' : '');
-  btn.dataset.group = gid;
-  btn.style.setProperty('--gcolor', g.hex);
-  btn.innerHTML = '<span class="dot"></span>' + gid + ' ' + g.kolor;
-  btn.addEventListener('click', () => {
-    activeGroup = gid;
-    localStorage.setItem('review-group', gid);
-    document.querySelectorAll('.group-chip').forEach(b => b.classList.toggle('active', b.dataset.group === gid));
-    renderEtapy();
-  });
-  picker.appendChild(btn);
-}
+const TR_GROUPS = ['G1','G2','G3','G4','G5'];
+const KZ_GROUPS = ['G6','G7','G8','G9','G10'];
 
 // --- PDF thumbnails ---
 const THUMB_W = 220;
@@ -456,48 +424,57 @@ function renderEtapy() {
       section.appendChild(det);
     }
 
-    // Pliki
-    const files = etap.filesPerGroup[activeGroup] || [];
-    if (etap.typ === 'fork-frakcja') {
-      // Pokaż obie frakcje obok siebie
+    // Pliki — zawsze pokazuj wszystkie warianty kolorystyczne
+    if (etap.typ === 'fork-frakcja' || etap.typ === 'fork-frakcja-grupa') {
       const wrap = document.createElement('div'); wrap.className = 'fork-wrap';
-
       const trDiv = document.createElement('div'); trDiv.className = 'fork-tr';
       const trLbl = document.createElement('div'); trLbl.className = 'fork-label'; trLbl.textContent = 'Tor TR — mieszczanie (G1–G5)';
       trDiv.appendChild(trLbl);
-      // TR files = pliki dla jednej z grup TR (np. G1)
-      const trFiles = etap.filesPerGroup['G1'] || [];
-      trDiv.appendChild(makePlikGrid(trFiles));
-
+      trDiv.appendChild(makeColorGroupsRow(TR_GROUPS, etap));
       const kzDiv = document.createElement('div'); kzDiv.className = 'fork-kz';
       const kzLbl = document.createElement('div'); kzLbl.className = 'fork-label'; kzLbl.textContent = 'Tor KZ — krzyżacy (G6–G10)';
       kzDiv.appendChild(kzLbl);
-      const kzFiles = etap.filesPerGroup['G6'] || [];
-      kzDiv.appendChild(makePlikGrid(kzFiles));
-
+      kzDiv.appendChild(makeColorGroupsRow(KZ_GROUPS, etap));
       wrap.appendChild(trDiv); wrap.appendChild(kzDiv);
       section.appendChild(wrap);
-    } else if (etap.typ === 'fork-frakcja-grupa') {
-      // Pokaż tylko pliki wybranej grupy
-      const label = document.createElement('div');
-      label.style.cssText = 'font-size:12px;color:var(--muted);margin-bottom:8px;';
-      const zagLabel = { Z4:'Z4 kalimba', Z5:'Z5 piernik sensoryczny', Z6:'Z6 herby hanzeatyckie', Z8:'Z8 melodia zakonu', Z9:'Z9 piernik sensoryczny', Z10:'Z10 polichromie Biedronki' };
-      label.textContent = activeGroup + ': ' + (zagLabel[g.opcjonalna] || g.opcjonalna);
-      section.appendChild(label);
-      section.appendChild(makePlikGrid(files));
+    } else if (etap.typ === 'wspolny-warianty') {
+      // Wszystkie 10 kolorów obok siebie
+      section.appendChild(makeColorGroupsRow([...TR_GROUPS, ...KZ_GROUPS], etap));
     } else {
-      // wspolny lub wspolny-warianty
-      if (etap.typ === 'wspolny-warianty') {
-        const label = document.createElement('div');
-        label.style.cssText = 'font-size:12px;color:var(--muted);margin-bottom:8px;';
-        label.textContent = 'Pokazuję: ' + activeGroup + ' (' + g.kolor + ')';
-        section.appendChild(label);
-      }
-      section.appendChild(makePlikGrid(files));
+      // wspolny — pliki identyczne dla wszystkich; G1 jako reprezentatywny
+      section.appendChild(makePlikGrid(etap.filesPerGroup['G1'] || []));
     }
 
     main.appendChild(section);
   }
+}
+
+// Poziomy rząd podgrup kolorystycznych (każda = nagłówek z kropką + stos kart)
+function makeColorGroupsRow(groupIds, etap) {
+  const row = document.createElement('div');
+  row.className = 'color-groups-row';
+  for (const gid of groupIds) {
+    const g = DATA.groups[gid];
+    const col = document.createElement('div');
+    col.className = 'color-group';
+    const hdr = document.createElement('div');
+    hdr.className = 'color-group-hdr';
+    hdr.innerHTML =
+      '<span class="cdot" style="background:' + esc(g.hex) + '"></span>' +
+      '<span class="cgid">' + esc(gid) + '</span>' +
+      '<span class="ckol">' + esc(g.kolor) + '</span>';
+    col.appendChild(hdr);
+    const files = etap.filesPerGroup[gid] || [];
+    for (const f of files) col.appendChild(makeFileCard(f));
+    if (files.length === 0) {
+      const empty = document.createElement('p');
+      empty.className = 'etap-empty';
+      empty.textContent = '—';
+      col.appendChild(empty);
+    }
+    row.appendChild(col);
+  }
+  return row;
 }
 
 renderEtapy();
