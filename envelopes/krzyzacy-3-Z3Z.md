@@ -5,7 +5,7 @@
 > **Handed over by:** Komtur Albrecht (Zosia) — handler toru KZ, end of Faza 2A (see `materials/actors/albrecht-actor-card-draft.md §PART TWO`). Handed **with the Recognition Table (Tabela 1)**, in silence (meta, like dealing a card).
 > **Voice:** Albrecht's written order = **roman** (words of the world — the handler's order, like Jordan's K3); scene framing around it = *italic*, 2nd person „you" (inside the couriers' heads). *(Wzorzec = `miasto-3-Z3`; konwencja — `mechanics/koperty-mg.md`.)*
 > **Typography:** narration = *italic*; Albrecht's order (title + body + „— A.") = roman.
-> **Contents of physical envelope:** this note. *(Recognition Table / Tabela 1 = separate printed prop, handed alongside. Meal token / coupon — see PLANNING NOTES §Kupon.)*
+> **Contents of physical envelope:** this note **+ both Order tables (Tabela 1 recognition grid + Tabela 2 tabula recta), enclosed inside** [decyzja 2026-06-03: all paper aids travel inside envelopes; actors hand only the sealed envelope]. *(Meal token / coupon — see PLANNING NOTES §Kupon.)*
 > **Canon:** lustro `envelopes/miasto-3-Z3` (TR). Mechanika: `puzzles/zamek-krzyzacki-lista.md §Z3Z`; klucz → `puzzles/z11-szyfr-spec.md` (Tabela 1: kolor szaty × chochla).
 
 ---
@@ -15,7 +15,7 @@
 - **Frakcja:** **krzyzacy** (Zakon). **Obowiązkowa** dla wszystkich 5 grup KZ (rdzeń toru, jak Z3 dla TR).
 - **Pozycja (nr otwierania):** 3.
 - **ETAP Z3Z = jedna koperta** (w przeciwieństwie do dwukopertowego Z3 TR). Brak twistu „to kradzież" → brak odpowiednika `miasto-4-Z3b`. Cover = sam task (rozpoznaj człowieka + zdobądź prowiant); nic nie jest ukryte przed graczem poza tym, że obserwacja zasila finałowy szyfr (Z11).
-- **Wkładki fizyczne:** ta notatka. *(Tabela 1 = osobny rekwizyt, wręcza Albrecht razem z tą kopertą. Kupon na posiłek — patrz §Kupon.)*
+- **Wkładki fizyczne:** ta notatka **+ Tabela 1 + Tabela 2 (włożone do koperty)** [2026-06-03: pomoce papierowe w kopertach, nie z ręki aktora]. *(Kupon na posiłek — patrz §Kupon.)*
 - **Kiedy wręczyć:** Albrecht (Zosia) po Z2, jako handler KZ (`albrecht-actor-card §STEP K3`).
 - **Kiedy NIE wręczać:** przed spotkaniem z Albrechtem; grupom mieszczan (mają `miasto-3-Z3`).
 - **Dokąd odsyła:** do **Piccolo** (siedziba TR, gdzie urzęduje Jordan/Piotr = cel infiltracji) → po obserwacji grupa wraca do MG z „opisem człowieka" (kolor+atrybut) → MG wydaje opcjonalną (Z8/Z9/Z10).

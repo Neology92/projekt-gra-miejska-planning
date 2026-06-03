@@ -236,7 +236,7 @@ Po tym jak grupa ukradnie listę i wyjdzie:
 ║  1. Podchodzą, twierdzą że służą Zakonowi → weryfikuj        ║
 ║  2. Duma i pogarda: muszą ZASŁUŻYĆ na zaufanie Zakonu        ║
 ║  3. Wyznacz zadanie: infiltruj wrogą siedzibę (Piccolo)      ║
-║  4. Wręcz K3-K + Tabelę Rozpoznawczą (Tabela 1) — milcząco  ║
+║  4. Wręcz kopertę K3-K (Tab.1 + Tab.2 W ŚRODKU) — milcząco  ║
 ║  5. Odpraw ich. Listu NIE bierzesz teraz.                    ║
 ╠══════════════════════════════════════════════════════════════╣
 ║  ONI ZACHOWUJĄ LIST. Oddanie jest przy murach wieczorem      ║
@@ -258,7 +258,7 @@ Twoją bramką jest **duma.** Jesteś legalną władzą; motłoch jest poniżej 
 ### Trzy twoje zadania (handler KZ)
 1. **Bądź dumnym panem, nie wdzięcznym sojusznikiem.** Oni ci służą; ty nie dziękujesz. Pogarda, która *testuje*, nie ciepłota.
 2. **Wyznacz zadanie (Z3Z).** Wyślij ich na infiltrację siedziby mieszczan — Piccolo, kuchni kucharza Jordana — żeby ukraść zaopatrzenie wroga, dowiedzieć się o **godzinie** powstania i *uważnie obejrzeć samego kucharza.*
-3. **Uzbrój ich w klucz Zakonu.** Wręcz **Tabelę Rozpoznawczą** (Tabela 1) — szyfr Zakonu kolorów i żetonów — którego będą potrzebować przed nastaniem nocy. Wręcz razem z K3-K, **w milczeniu** (gest meta, jak rozdanie karty).
+3. **Uzbrój ich w klucz Zakonu.** Obie tabele (Tabela 1 Rozpoznawcza + Tabela 2 tabula recta) — szyfr Zakonu — **są w środku koperty K3-K**. Wręczasz tylko kopertę, **w milczeniu** (gest meta, jak rozdanie karty); nie podajesz tabel osobno [zasada: treści w kopertach].
 
 > Nie zbierasz ich listu. Dyspozycja zostaje przy nich. Czy kiedykolwiek trafi w twoje ręce, decyduje się przy murach dziś wieczór (finał) — nie teraz.
 
@@ -273,7 +273,7 @@ Grupka podchodzi twierdząc, że coś niesie dla Zakonu albo że mu służy. Prz
 Sprawdź dwie rzeczy zanim dasz im cokolwiek:
 
 - **Kolor opaski** — tylko pięć powyżej to twoi. Zły kolor → *"I think you have mistaken your master. The Order does not know you."* (zasygnalizuj Oskarowi).
-- **Hasło dnia** — N., ich zaginiony łącznik, ustalił hasło na dziś; prawdziwy człowiek sprawy Zakonu poda je. Udowadniają to **wymieniając, co nosiłeś przez miasto dziś rano: pieczęć Komtura.** *(Proponowane hasło — z dedukcji KZ Z2 w `envelopes/krzyzacy-2-Z2`; do akceptacji Oskara, może się zmienić.)* Brak hasła → naciśnij raz; jeśli nadal nic, odpraw.
+- **Hasło dnia** — N., ich zaginiony łącznik, ustalił hasło na dziś; prawdziwy człowiek sprawy Zakonu poda je. Udowadniają to **wymieniając, co nosiłeś przez miasto dziś rano: pieczęć Komtura.** *(Hasło ZATWIERDZONE [2026-06-03, Oskar] — z dedukcji KZ Z2, `envelopes/krzyzacy-2-Z2`.)* Brak hasła → naciśnij raz; jeśli nadal nic, odpraw.
 
 Jeśli oba sprawdzone, pozwól przebłysnąć odrobinie ponurej satysfakcji:
 
@@ -301,10 +301,10 @@ Potem wyznacz zadanie (Z3Z) własnymi słowami:
 
 Trzy rzeczy płynnie po sobie:
 
-1. **Wręcz kopertę K3-K** pasującą do ich koloru — **w milczeniu.** Wystarczy płaskie zdanie: *"Everything you need is in here."* Nie tłumacz, nie omawiaj zawartości, nie daj się wciągnąć w rozmowę o niej (gest meta, poza fikcją — jak rozdanie karty).
-2. **Wręcz Tabelę Rozpoznawczą** (Tabela 1) — siatkę Zakonu kolorów i żetonów. W fikcji ujmij ją jako tajemnicę Zakonu:
-   > *"And this. The Order knows its own by signs the rabble cannot read. You will need it before the night is out. Guard it — lose it and you are no one to me."*
-3. **Odpraw ich:**
+1. **Wręcz kopertę K3-K** pasującą do ich koloru — **w milczeniu.** **Obie tabele Zakonu (Tabela 1 Rozpoznawcza + Tabela 2 tabula recta) są W ŚRODKU tej koperty** [ROZSTRZYGNIĘTE 2026-06-03, Oskar: treści tylko w kopertach — nie wręczasz luźnych kartek]. Wystarczy płaskie zdanie z naciskiem na wagę zawartości:
+   > *"Everything you need is in here. The Order knows its own by signs the rabble cannot read — guard what you find within. Lose it and you are no one to me."*
+   Nie tłumacz, nie omawiaj zawartości, nie daj się wciągnąć w rozmowę o niej (gest meta, poza fikcją — jak rozdanie karty).
+2. **Odpraw ich:**
    > *"Now go. Come to the walls tonight, when the eighth bell sounds — if you have proven worth the coming."*
 
 Dyspozycja pozostaje przy nich. **Nigdy nie bierzesz tu ich listu.**
@@ -337,7 +337,7 @@ Grasz Albrechta dla **obu** frakcji, w odwrotnych framingach. Zasady praktyczne:
 - **~5–10 min na grupę KZ** (weryfikacja + zadanie + wręczenie). Oskar pilnuje kolejki.
 - **Oskar przeplata grupy TR i KZ** tak, żebyś nigdy nie prowadziła sceny kradzieży (CZĘŚĆ PIERWSZA) i sceny handlera (CZĘŚĆ DRUGA) jednocześnie — widziałyby sprzeczne wersje ciebie.
 - **Kostium jest taki sam** dla obu. Lokalizacja może być to samo miejsce na zewnątrz murów, albo dwa pobliskie punkty — uzgodnij z Oskarem w dniu gry.
-- **Tabela Rozpoznawcza (Tabela 1)** to drukowany rekwizyt — miej stos, jeden na grupę KZ, posortowane wg koloru (jak koperty K3-K).
+- **Tabele (Tabela 1 + Tabela 2)** są **wewnątrz kopert K3-K** (zasada: treści w kopertach) — NIE trzymasz osobnego stosu tabel. Pilnuj tylko stosu kopert K3-K posortowanych wg koloru; tabele są już w nich włożone.
 - ⚠ **Otwarte (zweryfikuj z Zosią na próbie):** czy jeden aktor utrzyma dwa przeciwstawne framingi przez całe popołudnie. Zaznaczone **symetrycznie z Piotrem/Jordanem**, który też jest dwurolowy (handler → TR w Piccolo / cel infiltracji → KZ w Z3Z). Patrz `lore/meta-kartki/krzyzacy-3-Z3Z.md §SPORNE` i `concept/05-tor-krzyzakow.md §REWIZJA`.
 
 ---

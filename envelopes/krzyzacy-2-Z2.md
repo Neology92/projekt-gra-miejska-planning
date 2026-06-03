@@ -35,9 +35,9 @@
 
 ---
 
-## THE PUZZLE — Z2 (PROPOZYCJA — zatwierdź/podmień)
+## THE PUZZLE — Z2
 
-> ⚠ **PROPOZYCJA agenta [2026-06-03], routing = Opcja A** (osobna zagadka kierująca do Albrechta). **Rdzeń zagadki = Twój** — to draft do akceptacji/podmiany (jak po stronie TR zagadkę dał Oskar, agent othemował). Logika **zwalidowana: rozwiązanie jednoznaczne** (dowód niżej, PLANNING NOTES). Glify = `⟨mark⟩` (zależne od mapy). Player-facing tekst gotowy do druku po Twoim „ok".
+> ✅ **ZATWIERDZONE [2026-06-03, Oskar]:** zagadka logiczna 3×3 + parol = **„the Komtur's seal"** (wariant „zostaw pieczęć"). Routing = Opcja A (osobna zagadka → Albrecht). Logika zwalidowana (jednoznaczna, dowód w PLANNING NOTES). Glify = `⟨mark⟩` (zależne od mapy). **Player-facing tekst gotowy do renderu.**
 
 **The morning's men**
 
@@ -89,7 +89,7 @@ Go carefully. — N.
 
 **Cargo (co kurier KZ niesie):** ten sam **zapieczętowany list** noszony całą grę; domyślny adresat = Albrecht; **wolny wybór** dostawy w finale (Bażyński/Albrecht, `concept/04`). Albrecht-handler **NIE bierze listu** przy K2/Z3Z — dostawa dopiero pod murami 20:30 (`albrecht-actor-card §PART TWO STEP K4`).
 
-**Hasło dnia / parol [PROPOZYCJA 2026-06-03]:** parol = **„the Komtur's own seal"** — gracz dedukuje z zagadki, że Albrecht (cel jawny ze slipu) był „by the castle" i niósł **pieczęć**; staje przed Albrechtem i nazywa, co niósł. Mechanika lustrzana do TR („tell him what he bought" = miecz). ⚠ **Mniej kontrintuicyjny niż miecz-kucharza** (pieczęć komtura = oczywista) i **bez payoffu w finale** (TR-owy miecz wraca u Bażyńskiego). Jeśli chcesz parol z zaskoczeniem/klamrą — podmień „tell" Albrechta w zagadce (przelicz tylko ten wiersz). Zsynchronizować z `albrecht-actor-card §STEP K1` (`⟨PAROLE TBD⟩` → „the Komtur's seal").
+**Hasło dnia / parol [ZATWIERDZONE 2026-06-03, Oskar — „zostaw pieczęć"]:** parol = **„the Komtur's own seal"** — gracz dedukuje z zagadki, że Albrecht (cel jawny ze slipu) był „by the castle" i niósł **pieczęć**; staje przed Albrechtem i nazywa, co niósł. Mechanika lustrzana do TR („tell him what he bought" = miecz). Oskar świadomie przyjął wariant prosty (bez klamry finałowej jak miecz TR) — priorytet: szybkie odblokowanie renderu. Zsynchronizować z `albrecht-actor-card §STEP K1` (`⟨PAROLE TBD⟩` → „the Komtur's seal").
 
 **§Routing — ROZSTRZYGNIĘTE [Oskar 2026-06-03]: Opcja A** (osobna zagadka kierująca do Albrechta; NIE redirect slipem). Zagadka wyżej = propozycja agenta na wzór TR.
 - **Dowód jednoznaczności** (3 ludzie × 3 posty × 3 przedmioty): Clue 1 → Heinrich=Gate+keys. Clue 3 → Konrad≠castle, więc z {chapel, castle} Konrad=chapel; Albrecht=castle. Clue 2 → chapel niesie dispatch, więc Konrad=dispatch. Albrechtowi zostaje **seal**. Jedyne rozwiązanie. ✓

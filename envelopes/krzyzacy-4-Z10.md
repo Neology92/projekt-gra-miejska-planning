@@ -20,7 +20,7 @@ Frakcja: **krzyzacy** (Zakon) · Pozycja na ścieżce (nr): **4** · Zadanie: **
 - **Miejsce:** „Biedronka z polichromiami" — kamienica **Szeroka 22** z odsłoniętymi średniowiecznymi malowidłami (wiki pkt #9; dostępna z zewnątrz 24/7). ⚠ Kolizja przestrzenna z Z6 (TR na tej samej ulicy) — `puzzles/herby-aleja.md §Kolizja`.
 - **Mechanika:** grupa dostaje leaf z 8 bestiami (A–H). Idzie pod Biedronkę, ogląda malowidła, wskazuje, **które z ośmiu są faktycznie na ścianie** = **A, B, E** (pozostałe pięć to wiarygodne dystraktory bestiariuszowe, nieobecne na tej kamienicy). Trzy poprawne = „parol godności" raportowany MG.
 - **Dokąd odsyła:** grupa raportuje trzy litery (A, B, E) MG → MG sprawdza wg klucza i wydaje **szyfrogram Z11** (do finału, ten sam wymienialny co Z8/Z9). Konkretny punkt/godzina: TBD.
-- **Klucz MG:** **A, B, E** (autorski; do spięcia w `mg-Z…-klucz` przy renderze — patrz `puzzles/polichromie-biedronka.md §Klucz`). NIE na egzemplarzu gracza.
+- **Klucz MG:** **A, B, E** [POTWIERDZONE 2026-06-03, Oskar — „ufamy researchowi", bez wizji lokalnej; do spięcia w `mg-Z…-klucz` przy renderze — patrz `puzzles/polichromie-biedronka.md §Klucz`]. NIE na egzemplarzu gracza. ⚠ Ryzyko przyjęte: gdyby stan ściany Szeroka 22 odbiegał od researchu, klucz wymaga korekty — opcjonalny spot-check w dniu gry, nie blokuje renderu.
 - **Canon:** `puzzles/polichromie-biedronka.md`. Lustro: `miasto-5-Z6`. Meta-kartka: `lore/meta-kartki/krzyzacy-4-Z10.md` (pending).
 
 ## Zawartość (co fizycznie w kopercie)

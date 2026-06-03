@@ -10,8 +10,8 @@
 
 - **Frakcja:** **krzyzacy** (Zakon). Lustro funkcjonalne `miasto-6-Z7`, ale inny finał (BRAK twistu tożsamości — Albrecht jawny; brama = dowód godności).
 - **Pozycja (nr otwierania):** 5 (finał krzyżaków; tor KZ = 5 pozycji). Zadanie = **Z11** (szyfr finałowy).
-- **Wkładki / co gracz ma już przy sobie:** Tabela 1 (od Albrechta, K3-K), Tabela 2 (tabula recta), **szyfrogram Z11** (`UEFNEJ, UEGFEJ TJI WEUPEJ!` — przechwycona dyspozycja, otrzymana **po opcjonalnej Z8/9/10, pozycja 4** — przedostatnia koperta), zapieczętowany list (noszony od pozycji 1).
-- **W tej kopercie:** **tylko ten brief.** Szyfrogram **NIE** tutaj — gracz dostał go po opcjonalnej (pozycja 4, wymienialny; kanon `puzzles/z11-szyfr-spec.md §6`). Ta koperta spina elementy: każe odszyfrować to, co już niesie.
+- **Wkładki / co gracz ma już przy sobie:** Tabela 1 + Tabela 2 (**z koperty Z3Z** — `krzyzacy-3-Z3Z`, włożone tam, wręczone przez Albrechta), **szyfrogram Z11** (`UEFNEJ, UEGFEJ TJI WEUPEJ!` — przechwycona dyspozycja, **w kopercie opcjonalnej Z8/9/10, pozycja 4**), zapieczętowany list (noszony od pozycji 1).
+- **W tej kopercie:** **tylko ten brief.** Wszystkie pomoce papierowe gracz już niesie (tabele z Z3Z, szyfrogram z opcjonalnej — zasada „treści w kopertach", `koperty-mg.md §2b`). Ta koperta spina elementy: każe odszyfrować to, co już niesie.
 - **Kiedy wręczyć:** MG wręcza, gdy grupa kończy tor 2B (Z3Z + opcjonalna, z której ma już szyfrogram) i zbiera się do finału.
 - **Dokąd odsyła:** ruiny Przedzamcza, ósme bicie (20:30) — wybór strony (Albrecht / Bażyński), oddanie listu. **Brama Albrechta = wypowiedzenie motta Zakonu** (odszyfrowane z Z11).
 - **Canon:** `concept/04-faza-3-final.md`, `puzzles/z11-szyfr-spec.md §4/§5`.
@@ -50,5 +50,5 @@
 - **BRAK twistu tożsamości** [decyzja 2026-05-29]: finał KZ nie ujawnia „Jordan=Bażyński" jako rewelacji dla siebie — Albrecht jawny od początku. Brama = godność (motto), nie wiedza tajna.
 - **Ósme bicie / Przedzamcze / nie Tuba Dei** — jak `miasto-6-Z7` (anachronizm dzwonu).
 - **Interpunkcja szyfrogramu [Oskar 2026-06-03]:** pokazany **z przecinkiem i wykrzyknikiem** w tych samych pozycjach co motto (`UEFNEJ, … WEUPEJ!`) — lokuje słowa i lustruje urządzenie z Z7 (interpunkcja jako kotwica). Interpunkcja przechodzi 1:1 (nie szyfrowana). Walidacja round-trip w `cipher-data.js` operuje na samych literach + spacjach. (Dane: `materials/props/z11-tabula-recta-draft.md`.)
-- **⚠ Dystrybucja Tabeli 2 (otwarte):** gdzie gracz dostaje Tabelę 2 (z Tabelą 1 od Albrechta, czy w finale) — `puzzles/z11-szyfr-spec.md §6/§8`, `otwarte-pytania #27b`. (Szyfrogram = rozstrzygnięte: po opcjonalnej, pozycja 4 — patrz nota „Prowenancja szyfrogramu" wyżej.)
+- **Dystrybucja Tabeli 2 [ROZSTRZYGNIĘTE 2026-06-03, Oskar]:** Albrecht wręcza **obie tabele razem** (Tabela 1 + Tabela 2) przy Z3Z, jako handler KZ. Gracz nosi je przez całą drugą połowę gry; finał (ta koperta) nie dokłada żadnego rekwizytu poza briefem. Upraszcza montaż finału (mniej kopert do wydania). Zsynchronizować: `albrecht-actor-card §PART TWO STEP K3` (dodać Tabelę 2 do wręczanego kompletu), `z11-szyfr-spec.md §6/§8`. (Szyfrogram = osobno: po opcjonalnej, pozycja 4 — patrz nota „Prowenancja szyfrogramu" wyżej.)
 - **Status:** placeholder w manifescie (`envelopes/README.md`) → podniesiony do **draft** [2026-06-03].

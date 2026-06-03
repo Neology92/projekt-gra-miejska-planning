@@ -48,6 +48,15 @@ Każda koperta zawiera **5 elementów**:
 - **Komponuje się z dwoma rejestrami (niżej), nie zastępuje ich.** Scena = narracja z głów (kursywa) + ewentualne słowa świata (roman: napis, zapis, cytat NPC).
 - **Opcjonalne zagadki (Z4/Z5/Z6) = sceny przechwycenia krzyżackiego listu** — każda inną drogą; po rozwiązaniu MG wydaje przechwycony list (K8/Z7). To fabularny powód, czemu opcjonalna „daje szyfrogram". Patrz `concept/03-faza-2b-asynchroniczne.md`, `concept/04-faza-3-final.md`.
 
+### Zasada nadrzędna #2b: wszystkie treści/pomoce papierowe są W KOPERTACH [decyzja Oskara 2026-06-03]
+
+**Każda pomoc, tabela, szyfr, mapa, deszyfrownik, pergamin, szyfrogram — jest fizycznie WŁOŻONA do koperty** (razem z briefem i resztą informacji danego etapu). **Aktorzy i MG nie wręczają luźnych kartek z ręki** — przekazują tylko **koperty** (i fizyczne rekwizyty). Jedyne, co krąży poza kopertami, to **przedmioty-rekwizyty**: kalimba, słoiczki sensoryczne, miecz, ew. kostiumowe atrybuty.
+
+- **Konsekwencja — Tabela 1 + Tabela 2 (Z11):** obie idą **w kopercie `krzyzacy-3-Z3Z`** (komplet kurierski KZ). Albrecht wręcza tę kopertę; tabele są w środku, nie podawane osobnym gestem.
+- **Konsekwencja — szyfrogram Z11:** włożony do **koperty opcjonalnej** (`krzyzacy-4-Z8/Z9/Z10`). MG nie wydaje go luzem „po rozwiązaniu" — gracz znajduje go w kopercie opcjonalnej (bezużyteczny bez klucza, więc wczesne posiadanie nie psuje). Opcjonalna nadal bramkuje finał: bez niej brak koperty → brak szyfrogramu.
+- **Konsekwencja — mapa + deszyfrownik Z1, pergamin Z3:** w odpowiednich kopertach (startowa, Z3) — już zgodne.
+- **Wzorzec realizacyjny:** koperta może zawierać kilka kartek (multi-insert) — brief + rekwizyt papierowy. Aktor/MG = tylko nośnik koperty (meta-gest, jak rozdanie karty).
+
 ### Konwencja głosu — dwa rejestry [decyzja Oskara 2026-06-01]
 
 Koperta łączy **dwa rejestry**, rozróżniane **typograficznie**:
