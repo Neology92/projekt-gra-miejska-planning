@@ -507,7 +507,15 @@ function logicPuzzle(step, data) {
   const wrap = el('div', 'solve');
   wrap.innerHTML = `<hr class="rule"><h3>${p.lead}</h3><p class="msg">${p.intro}</p>`;
   wrap.appendChild(el('p', 'msg', `<strong>The three:</strong> ${p.people.join(' · ')}`));
-  wrap.appendChild(el('p', 'msg', `<strong>${p.placeLabel}:</strong> ${p.places.join(' · ')}`));
+  if (p.products) {
+    // places carry "what is made there" — needed to read the clues (envelope miasto-2-Z2)
+    wrap.appendChild(el('p', 'msg', `<strong>Where they work, and what is made there:</strong>`));
+    const ul = el('ul', 'brief-list');
+    p.places.forEach((pl) => ul.appendChild(el('li', null, `${pl} — ${p.products[pl]}`)));
+    wrap.appendChild(ul);
+  } else {
+    wrap.appendChild(el('p', 'msg', `<strong>${p.placeLabel}:</strong> ${p.places.join(' · ')}`));
+  }
   wrap.appendChild(el('p', 'msg', `<strong>${p.itemLabel}:</strong> ${p.items.join(' · ')}`));
   const ol = el('ol', 'brief-list');
   p.clues.forEach((c) => ol.appendChild(el('li', null, c)));

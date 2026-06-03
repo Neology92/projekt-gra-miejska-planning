@@ -33,6 +33,14 @@ const Z2_DATA = {
       itemLabel: 'Bought',
       people: ['Kordian', 'Lambert', 'Jordan'],
       places: ['The Old Mill', 'Piccolo', 'The Smithy'],
+      // what is made/sold at each place — load-bearing for the deduction
+      // (clue 1 → a food place; clue 2 → the sword came from the smith; clue 3 → the miller).
+      // Source: envelopes/miasto-2-Z2.md (the puzzle block lists these to the player).
+      products: {
+        'The Old Mill': 'bread',
+        'Piccolo': 'hot food (a kitchen — ladled out)',
+        'The Smithy': 'ironwork',
+      },
       items: ['food', 'a sword', 'cloth'],
       clues: [
         'Lambert could have eaten at his own place, yet he went to buy his food elsewhere.',
