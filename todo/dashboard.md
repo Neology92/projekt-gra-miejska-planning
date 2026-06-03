@@ -125,6 +125,8 @@ Szczegóły: mechanics/koperty-mg.md §ZAŁOŻENIA PRZED RENDEREM · prototype/p
 
 **Cel:** produkcja na realną rozgrywkę. Wszystko z prototypu **× skala + drugi tor + dywersyfikacja**.
 
+> 🆕 **Kierunek hybrydowy [2026-06-03, Oskar, #77]:** briefy → apka online za kodami dostępu; druk tylko rekwizyty (+ kalimba fizyczna, melodia-wzorzec online). Spec podziału + łańcuch kodów (MG/aktor/rozwiązanie-poprzedniej) → `mechanics/hybryda-online.md`. **Budowa apki = osobna faza** (poza tym dokumentem).
+
 ## Struktura podwójnego toru
 
 ```
