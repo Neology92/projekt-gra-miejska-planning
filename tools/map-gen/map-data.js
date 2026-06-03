@@ -131,5 +131,5 @@ const Z1_LANDMARKS = {
 
 // Tile URL — CARTO Voyager (no labels): legible streets/blocks/water for field
 // navigation, still name-free (no spoilers). light_nolabels was too pale to read.
-const TILE_URL = 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}{r}.png';
+const TILE_URL = 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png';
 const TILE_ATTR = '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> · © <a href="https://carto.com/attributions">CARTO</a>';
