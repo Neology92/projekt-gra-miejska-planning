@@ -164,6 +164,12 @@ em{ font-style:italic; } strong{ font-weight:400; color:var(--rubrum); }
   padding:12px 14px; margin:18px 0 0; }
 .mg-label{ font-family:var(--mono); font-size:.7rem; letter-spacing:.06em; color:var(--rubrum); display:block; margin-bottom:4px; }
 
+/* --- meta-drogowskaz (WAYFINDING) — orientacja u góry etapu: przechodniość + kiedy do MG --- */
+.wayfinding{ border-left:3px solid rgba(60,46,28,.45); border-radius:4px; background:rgba(60,46,28,.05);
+  padding:10px 13px; margin:10px 0 16px; font-size:.9rem; line-height:1.5; }
+.wayfinding .way-label{ font-family:var(--mono); font-size:.68rem; letter-spacing:.08em; text-transform:uppercase;
+  color:rgba(60,46,28,.75); display:block; margin-bottom:3px; }
+
 /* --- glif celu na mapie (reveal Z2) --- */
 .map-mark{ margin:14px auto; padding:14px; max-width:200px; background:var(--tile);
   border:1px solid rgba(60,46,28,.4); border-radius:10px; }

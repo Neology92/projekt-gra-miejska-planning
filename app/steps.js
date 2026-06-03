@@ -102,3 +102,26 @@ const STEPS = {
 };
 
 const STEP_ORDER = ['z1', 'z2', 'z3', 'opt', 'fin'];
+
+/* ----------------------------------------------------------------------------
+   WAYFINDING — meta-drogowskaz per etap (rejestr „ramki meta-logistycznej",
+   mechanics/koperty-mg.md §Trzeci rejestr). Widoczny OD RAZU na każdej
+   podstronie (nie dopiero po rozwiązaniu): mówi graczowi (a) że etap jest
+   przechodni i jak się go kończy, (b) KIEDY trzeba iść do Mistrza Gry (MG).
+   Rejestr meta — NIE część świata 1454. Player-facing = EN.
+
+   Styki z MG wg kanonu (koperty-mg §"Kandydaci: Z1→raport, Z3→lista, Z4→kod,
+   Z7→odpowiedź finałowa"):
+     z1  — apka sama sprawdza łańcuch; MG tylko gdy brak rekwizytu ze startera
+     z2  — w całości w apce → potem dojście do celu na mapie (handler, nie MG)
+     z3  — scena aktora → raport u MG (Rynek) po kolejną kopertę
+     opt — rekwizyt OD MG → odpowiedź z powrotem DO MG (Rynek)
+     fin — odszyfruj kluczem w ręku → scena finałowa na żywo (Przedzamcze)
+   ---------------------------------------------------------------------------- */
+const WAYFINDING = {
+  z1: 'You can clear this step here: name your four marks in the right order and the app carries you onward — no Game Master visit needed to pass. You do need your <strong>map</strong>, <strong>cipher card</strong> and the <strong>sealed letter</strong> (from the Game Master’s starting pack). Missing one? Find the Game Master at the Rynek Staromiejski before you go on.',
+  z2: 'You can solve this here — <strong>no Game Master needed for this step</strong>. When the three errands fall into place, the app points you to one mark on your map: go there in person and make contact. Stuck? The Game Master is at the Rynek Staromiejski.',
+  z3: 'This part is played out face to face. Do what is asked, then <strong>bring what you gain to the Game Master at the Rynek Staromiejski</strong> — your next envelope is waiting there.',
+  opt: 'The <strong>Game Master gives you the prop</strong> for this task. Solve it here, then <strong>carry your answer back to the Game Master at the Rynek Staromiejski</strong> to receive what was waiting on it. (Without this step there is no finale — it is your way through.)',
+  fin: 'Read the cipher here — the key is already in your hand (from the Game Master). Once you have it, <strong>carry the sealed letter to Przedzamcze for the ninth bell (9 PM)</strong>: the last scene is played live. This is the end of the trail — every path reaches it.',
+};

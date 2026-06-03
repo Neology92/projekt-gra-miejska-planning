@@ -76,6 +76,7 @@ function showStage(id) {
   s.appendChild(groupChip(group));
   const tagLabel = step.type === 'optional' ? OPTIONAL[GROUP_OPTIONAL[group]].label : step.label;
   s.appendChild(el('span', 'stage-tag', tagLabel));
+  if (WAYFINDING[id]) s.appendChild(wayfindingNote(WAYFINDING[id]));
 
   if (step.type === 'finale') {
     /* Z7 / Z11 — finałowy szyfr */
@@ -168,6 +169,14 @@ function actorBrief(s, data, step) {
 function mgNote(text) {
   const d = el('div', 'mg-note');
   d.innerHTML = `<span class="mg-label">↪ Game Master</span> ${text}`;
+  return d;
+}
+
+/* meta-drogowskaz (WAYFINDING) — widoczny od razu na każdej podstronie:
+   etap jest przechodni + kiedy iść do MG. Rejestr meta, nie część fikcji. */
+function wayfindingNote(html) {
+  const d = el('div', 'wayfinding');
+  d.innerHTML = `<span class="way-label">⌖ Where this leads</span> ${html}`;
   return d;
 }
 
