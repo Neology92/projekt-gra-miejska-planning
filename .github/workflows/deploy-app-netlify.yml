@@ -2,9 +2,15 @@ name: Deploy aplikacja gry → Netlify (osobna strona)
 
 # OSOBNA strona Netlify dla aplikacji gry hybrydowej (app/), niezależna od
 # galerii materiałów (public/ → torun-1454-materialy). Push na master dotykający
-# app/** → znajdź stronę „torun-1454-gra" (utwórz, jeśli nie istnieje) i wyślij app/.
-# Reużywa istniejącego sekretu NETLIFY_AUTH_TOKEN (ten sam zespół). Site-ID nie
-# jest poufne — rozwiązywane w locie z API, więc nie trzeba nowego sekretu.
+# app/** → deploy app/ na stronę „torun-1454-gra".
+#
+# Idempotentny i odporny:
+#  - cel deployu = STABILNY UUID strony (rename nie zmienia UUID → brak tworzenia
+#    nowych losowych stron przy kolejnych pushach),
+#  - jednorazowy bootstrap: pierwsza strona powstała z losową nazwą
+#    (lucent-brioche-236d86) — przy pierwszym przebiegu zmieniamy jej nazwę na
+#    torun-1454-gra; potem znajdujemy ją już po nazwie.
+# Reużywa istniejącego sekretu NETLIFY_AUTH_TOKEN (ten sam zespół).
 
 on:
   push:
@@ -17,6 +23,7 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
 
@@ -24,22 +31,25 @@ jobs:
         with:
           node-version: '22'
 
-      - name: Znajdź lub utwórz stronę + wyślij app/
+      - name: Rozwiąż UUID strony (rename bootstrapu) + wyślij app/
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
         run: |
           set -euo pipefail
           SITE_NAME=torun-1454-gra
+          BOOTSTRAP_SLUG=lucent-brioche-236d86   # losowa nazwa z 1. deployu (jednorazowo)
           CLI="npx --yes netlify-cli@26"
 
-          echo "Szukam istniejącej strony $SITE_NAME…"
-          SITE_ID=$($CLI api listSites --data '{}' \
+          echo "Szukam strony po docelowej nazwie $SITE_NAME…"
+          ID=$($CLI api listSites --data '{}' \
             | jq -r ".[] | select(.name==\"$SITE_NAME\") | .id" | head -1 || true)
 
-          if [ -z "${SITE_ID:-}" ] || [ "$SITE_ID" = "null" ]; then
-            echo "Brak — tworzę stronę $SITE_NAME…"
-            SITE_ID=$($CLI api createSite --data "{\"name\":\"$SITE_NAME\"}" | jq -r .id)
+          if [ -z "${ID:-}" ] || [ "$ID" = "null" ]; then
+            echo "Nie ma jeszcze $SITE_NAME — biorę UUID bootstrapu i zmieniam nazwę…"
+            ID=$($CLI api getSite --data "{\"site_id\":\"$BOOTSTRAP_SLUG\"}" | jq -r .id)
+            $CLI api updateSite --data "{\"site_id\":\"$ID\",\"name\":\"$SITE_NAME\"}" || true
           fi
-          echo "Site ID: $SITE_ID"
+          echo "Site UUID: $ID"
 
-          $CLI deploy --prod --dir app --site "$SITE_ID" --message "CI ${{ github.sha }}"
+          # deploy po UUID (stabilny mimo zmiany nazwy); --no-build pomija build galerii
+          $CLI deploy --prod --dir app --site "$ID" --no-build --message "CI ${{ github.sha }}"
