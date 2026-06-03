@@ -39,20 +39,24 @@ function stepForCode(input) {
   return STEP_ORDER.find((id) => norm(STEPS[id].code) === n) || null;
 }
 
-/* ---------- routing ---------- */
-function pathToId(pathname) {
-  const seg = pathname.replace(/^\/+|\/+$/g, '').toLowerCase();
+/* ---------- routing (HASH) ----------
+   Hash-based: każdy etap = #/zN. Serwer zawsze oddaje „/" (prawdziwy index.html),
+   więc ODŚWIEŻENIE/deep-link/bookmark działa bez żadnego rewrite po stronie
+   Netlify (path-routing wymagał SPA-fallbacku, który na tym deployu nie działał). */
+function pathToId() {
+  const seg = (location.hash || '').replace(/^#\/?/, '').replace(/\/+$/, '').toLowerCase();
   return STEPS[seg] ? seg : '';   // '' = landing
 }
 function navigate(path) {
-  history.pushState({}, '', path);
-  render();
+  const target = '#' + path;       // path np. '/z1' lub '/'
+  if (location.hash === target) render();   // ten sam hash nie odpali hashchange
+  else location.hash = target;              // zmiana hash → hashchange → render
 }
-window.addEventListener('popstate', render);
+window.addEventListener('hashchange', render);
 
 /* ---------- render główny ---------- */
 function render() {
-  const id = pathToId(location.pathname);
+  const id = pathToId();
   ROOT.innerHTML = '';
 
   if (!id) return renderLanding();
