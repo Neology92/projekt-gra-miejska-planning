@@ -241,7 +241,7 @@ Szczegóły: mechanics/koperty-mg.md §ZAŁOŻENIA PRZED RENDEREM · prototype/p
 
 ```
 WCIĄŻ OTWARTE (nieblokujące):
-#1  Tytuł gry — finalny wybór z dwóch: „Krzyżacy vs Toruń" / „Mieszczanie vs Krzyżacy"
+#1  Tytuł gry — ROZSTRZYGNIĘTE [2026-06-03]: „Gra Miejska"
 #24 Rename „Aleja Gmerków"→„Aleja Herbów" (poprawność faktograficzna; design Z6 = Piotr, w toku)
 #27b Klucz 2B→finał — ROZSTRZYGNIĘTE [2026-06-03]: brak osobnego klucza/itemu; odpowiedź do MG → koperta finałowa (Z7/Z11); wymienialność 1:1
 ```

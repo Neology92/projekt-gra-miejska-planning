@@ -6,7 +6,7 @@ Pytania pogrupowane wg pliku, w którym są dyskutowane szerzej.
 
 ## STRATEGICZNE (wpływają na wszystko - najpierw rozstrzygnij te)
 
-1. **Tytuł gry** — AKTUALIZACJA [2026-06-03, Oskar]: tytuł roboczy zawężony do dwóch wariantów — **„Krzyżacy vs Toruń"** lub **„Mieszczanie vs Krzyżacy"**. Finalny wybór jednego z dwóch — wciąż otwarty (nie blokuje produkcji).
+1. **Tytuł gry** — ROZSTRZYGNIĘTE [2026-06-03, Oskar]: **„Gra Miejska"**.
 2. **Skala** — ROZSTRZYGNIĘTE [2026-05-29]: **10 grup × 4 osoby (~40 osób), podział 5+5** (5 TR + 5 krzyżackich); ostateczna liczba ustalana **w dniu gry**. Jordan (1 aktor) obsługuje oba tory — wymaga rozłożenia grup w czasie. Produkcja skalowana do 10 grup.
 3. **Data rozgrywki** — ROZSTRZYGNIĘTE [2026-06-03, Oskar]: gra odbywa się **dzisiaj (2026-06-03)**. Deadline planowania = dziś; cały stos drukowany na miejscu (patrz #59).
 4. **Klasy — kiedy się ujawniają** — ROZSTRZYGNIĘTE [2026-05-29]: **po Z2** (gracz poznaje stronę odbiorcy listu); plotki F1 sygnalizują spór Zakon vs TR; spotkanie Albrechta/Jordana domyka (Jordan wciąż incognito; Albrecht żąda dowodu godności → F2B = weryfikacja). Patrz `mechanics/grupy-i-klasy.md`.
