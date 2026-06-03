@@ -27,7 +27,7 @@ Symbole: `✅` zrobione · `🟡` częściowe/draft · `⬜` do zrobienia · `�
 | Materiał (plik) | Frakcja | Zadanie | Adresat | Plan | Draft | Render (public/) | Review |
 |---|---|---|---|:--:|:--:|:--:|:--:|
 | `wspolne-1-Z1.md` | wspólne | Z1 | gracz EN | ✅ | ✅ | ✅ `wspolne-1-Z1.pdf` | ⬜ |
-| `miasto-2-Z2.md` | TR | Z2 | gracz EN | ✅ | 🟡 glify=placeholder | ✅ `miasto-2-Z2.pdf` (nieaktualny — przed glifami) | ⬜ |
+| `miasto-2-Z2.md` | TR | Z2 | gracz EN | ✅ | ✅ glify wstawione [06-03] | 🟡 `miasto-2-Z2.pdf` do re-renderu (po glifach) | ⬜ |
 | `miasto-3-Z3.md` | TR | Z3 | gracz EN | ✅ | ✅ | ✅ `miasto-3-Z3.pdf` | ⬜ |
 | `miasto-4-Z3b.md` | TR | Z3 (2. koperta) | gracz EN | ✅ | ✅ | ✅ `miasto-4-Z3b.pdf` | ⬜ |
 | `miasto-5-Z4.md` | TR | Z4 (opc. A) | gracz EN | ✅ | 🟡 v2 | ✅ `miasto-5-Z4.pdf` | ⬜ |
@@ -119,18 +119,18 @@ Symbole: `✅` zrobione · `🟡` częściowe/draft · `⬜` do zrobienia · `�
 - [ ] **Ramka MG podaje GDZIE czeka MG** — dziś wszystkie ramki mają placeholder lokalizacji („is waiting there", bez miejsca). Uzupełnić po ustaleniu punktów MG w `mg-runsheet.md`. *(cross-cutting — patrz sekcja na końcu)*
 - [ ] **Rejestry głosu** zgodne z `mechanics/koperty-mg.md`: kursywa=głowa (2. os. „you"), roman=słowa świata, ramka=meta MG.
 - [ ] **Stempel** `__STAMP__` w źródle HTML (nie hardkod); render `-Color` podmienia.
-- [ ] **Nazwa miasta** spójna z decyzją Toruń/Thorn *(otwarte — patrz koniec)*.
+- [ ] **Nazwa miasta** = wyłącznie „Toruń" (reguła C4; zamiana wdrożona 06-03).
 
 ### `wspolne-1-Z1.md`
 - [ ] **Glif startowy** w tekście (`△`) zgadza się z realnym **pierwszym glifem łańcucha danej grupy** na mapie (różny per grupa — `puzzles/z1-10-sciezek.md`). Dziś placeholder.
 - [ ] **„exactly four steps"** zgadza się z realną długością łańcucha (4 kroki — Wariant A).
 - [ ] W kopercie fizycznie są: mapa + deszyfrownik (per kolor) + zapieczętowany list + opaska koloru.
 - [ ] Groźba „with their hands" — ton zatwierdzony (krótki, medievalny).
-- [ ] **Pieczęć/„messenger" przy pierwszym zadaniu** — prośba Oskara (do doprecyzowania, patrz koniec).
+- [x] **Graficzna pieczęć zlecenia** — DODANA [06-03] do `wspolne-1-Z1.html` (nieznany sygil, B/W-safe, koniec arkusza 1). ⚠ do oceny wizualnej po re-renderze.
 
 ### `miasto-2-Z2.md` ⚠ najwięcej do sprawdzenia
 - [ ] **Zagadka logiczna ma JEDNOZNACZNE rozwiązanie** (Jordan=Piccolo=miecz). Re-weryfikacja po każdej zmianie nazw/atrybutów (`puzzles/droga-do-jordana.md`).
-- [ ] **Trzy znaki miejsc wpisane** (dziś `⟨mark⟩` placeholder): glif Piccolo = **≡ trzy poziome linie** (musi być identyczny jak L01 na mapie); Młyn + Kuźnia = dwa znaki **spoza alfabetu mapy** (dystraktory). *(propozycja gotowa — patrz rozmowa)*
+- [x] **Trzy znaki miejsc wpisane** [06-03]: Piccolo = **≡** (L01, te same współrzędne); Młyn = **✚**, Kuźnia = **⊥** (dystraktory spoza alfabetu mapy). `.md` + `miasto-2-Z2.html` (inline-SVG). ⚠ do re-renderu.
 - [ ] **Instrukcja nawigacyjna**: „tylko jeden z tych znaków jest na twojej mapie — tam idziesz" — obecna (jest, linia 54).
 - [ ] **Brak ramki MG = celowe** (gracz idzie do Jordana, nie do MG) — ale ciągłość do następnego etapu jasna (przez slip R. + skrypt Jordana).
 - [ ] **Hasło dnia** („kupił dziś rano miecz") spięte 1:1 ze skryptem Jordana (`jordan-actor-script`).
@@ -188,7 +188,7 @@ Symbole: `✅` zrobione · `🟡` częściowe/draft · `⬜` do zrobienia · `�
 
 ### Pergamin — lista TR (`pergamin-lista-tr-draft.md`)
 - [ ] Wpis #1 oznaczony jako „chairman" (klucz do finałowego splice'u).
-- [ ] „Komtur of Thorn" — tytulatura autentyczna (uwaga przy decyzji Toruń/Thorn).
+- [x] „Komtur of Toruń" — zamienione z „Thorn" [06-03].
 - [ ] Stylizacja okresowa; brak anachronizmów; brak nazw miast spoza Torunia.
 
 ### Szyfrogram Z7 (`z7-szyfrogram-draft.md`)
@@ -247,7 +247,7 @@ Symbole: `✅` zrobione · `🟡` częściowe/draft · `⬜` do zrobienia · `�
 ## Czeki cross-cutting (dotyczą wielu plików — jedna decyzja, wiele edycji)
 
 - [ ] **Lokalizacja MG w ramkach** — uzupełnić „bring it to the Game Master at [miejsce]" we wszystkich kopertach z ramką MG po ustaleniu punktów w `mg-runsheet`.
-- [ ] **Toruń / Thorn** — ujednolicić wg decyzji Oskara *(uwaga: pliki EN dziś używają wyłącznie „Thorn", PL wyłącznie „Toruń" — nie ma mieszania; „Komtur of Thorn" to autentyczna tytulatura — patrz auto-checki + rozmowa)*.
+- [x] **Toruń / Thorn** — ROZSTRZYGNIĘTE + WDROŻONE [06-03]: **wyłącznie „Toruń"**, nigdy „Thorn". Zamiana zrobiona w plikach źródłowych; grep `Thorn`=0. Stała reguła C4 w `wydruk-auto-checki.md`. ⚠ dotknięte PDF do re-renderu.
 - [ ] **Period-theming imion** — „Kordian" (XIX w.) i inne anachroniczne imiona do podmiany na zgodne z XV w.
 - [ ] **Stempel** — przy renderze każdej karty gracza podać `-Color <kolor grupy>`; dokumenty MG bez stempla.
 - [ ] **Re-render po edycjach** — pliki z `🟡`/zmienioną treścią (zwł. `miasto-2-Z2` po wstawieniu glifów) wymagają ponownego renderu do `public/`.

@@ -50,6 +50,7 @@
 | C1 | Tekst gracza = EN (narracja 2. os. „you") | `CLAUDE.md`, `mechanics/koperty-mg.md` | przegląd sekcji `## TEXT` / `## MAIN NOTE` w `envelopes/*.md` | EN, 2. os. |
 | C2 | Aktorzy/MG = PL (wyjątek: cytaty treści zagadek/odpowiedzi = EN) | `CLAUDE.md` | `rg -i "Language: English" materials/actors materials/ops` | docelowo 0 (dług EN→PL) |
 | C3 | Nazwy własne toruńskie zawsze w oryginale | `CLAUDE.md` | wzrok | — |
+| C4 | Nazwa miasta = **wyłącznie „Toruń"**, NIGDY „Thorn" (decyzja 2026-06-03) | rozmowa Oskar 2026-06-03 | `rg "Thorn" envelopes materials prototype/print/src --glob '!**/_backup-clean/**' --glob '!**/variants/**'` | **0 trafień** |
 
 ---
 
@@ -65,14 +66,14 @@
 | **A9** Plaintext Z7 | ✅ PASS | `HANS VON BAYSEN IS JORDAN THE COOK` w `z7-szyfrogram-draft.md`. Odwrócona/dłuższa wersja **tylko w backupach** (`z7-szyfr-spec §0`, oznaczone „deep-archive"). Reveal „Jordan is Hans von Baysen" w `miasto-6-Z7` = narracja finału (poprawne, nie ciphertext). |
 | **A10** MARIENBURG | ✅ PASS | Obecne w `cipher-data.js`, `z11-tabula-recta-draft.md`, `z11-szyfr-spec.md`, `krzyzacy-5-Z11.md`. |
 | **A12** 20:00 | ✅ PASS | Zero „20:00" w `envelopes/`/`props`. Finał = „eighth bell" / 20:30 wszędzie. |
-| **Toruń/Thorn** | ⚠ UWAGA (do decyzji) | Pliki gracza EN używają **wyłącznie „Thorn"** (6 plików), PL **wyłącznie „Toruń"** — **brak mieszania**, brak gołego „Torun" (bez ogonka). Format „Toruń (Thorn)" nigdzie nie istnieje. „Komtur of Thorn" = autentyczna tytulatura. → reguła do ustalenia z Oskarem przed jakąkolwiek zmianą (premisa „jest pomieszane" nie potwierdziła się). |
+| **Toruń/Thorn** | ✅ ROZSTRZYGNIĘTE + WDROŻONE [2026-06-03] | Decyzja Oskara: **wyłącznie „Toruń", nigdy „Thorn"** (player-facing EN i MG). Zamiana wykonana (`Thorn→Toruń`) w: `z7-szyfrogram`, `pergamin`, `miasto-06a/04b/6-Z7.html`, `mg-runsheet`, `miasto-6-Z7.md`, `krzyzacy-5-Z11.md`. Grep `Thorn` w produkcji = **0**. Nowa stała reguła → **C4** niżej. |
 | **B1** nazwy kopert | ✅ PASS | Wszystkie `envelopes/*.md` zgodne z `[frakcja]-[nr]-[Zx]`. |
 
 ### Wnioski z uruchomienia → sugestie
 
 1. **Brak realnych FAIL-i** w sprawdzonych regułach faktograficznych. Kanon trzyma się w plikach gracza.
 2. **Reguły „zakazany string" wymagają zawężenia do sekcji tekstu gracza** — inaczej notatki planistyczne (które *cytują regułę*) wyglądają jak naruszenie. Rekomendacja: w skrypcie ciąć plik do bloku między `## TEXT`/`## MAIN NOTE`/`## Gotowy tekst` a `## PLANNING`/`## Notatki`/`## Rewizja`.
-3. **Toruń/Thorn** — to nie jest błąd do auto-naprawy; to decyzja stylistyczna (patrz `wydruk-inwentarz.md` cross-cutting + rozmowa).
+3. **Toruń/Thorn** — ROZSTRZYGNIĘTE 2026-06-03: wyłącznie „Toruń". Zamiana wdrożona, reguła **C4** stała (grep `Thorn`=0). Pozostaje **re-render** dotkniętych PDF-ów.
 4. **Reguły jeszcze nie uruchomione maszynowo** (A7, A8, A11, B3–B6, C-*): warto domknąć w skrypcie przy następnym przejściu — szczególnie **B3/B4 (stempel)** i **B5 (RENDER-BLOCK)** jako tanie bramki przed drukiem.
 
 ---
