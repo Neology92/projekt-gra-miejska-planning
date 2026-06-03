@@ -1,34 +1,34 @@
-# GM Quick Hints — per puzzle
+# Szybkie Podpowiedzi MG — per zagadka
 
-> **Language:** English (GM-facing).
-> **Use:** pull this out the moment a group phones in stuck. Each box is self-contained — no need to re-read the puzzle spec. Give hints in order (H1 → H2 → H3 → EMERGENCY); skip levels only if there is no time.
-> **When to hint:** Z1 / Z3 → after the group has been at that stage for >10 min with no progress. Z4 / Z7 → after a second wrong attempt.
+> **Język:** polski (dla MG).
+> **Zastosowanie:** wyciągnij natychmiast gdy grupa dzwoni zablokowana. Każda ramka jest samodzielna — nie trzeba ponownie czytać specyfikacji zagadki. Dawaj podpowiedzi w kolejności (H1 → H2 → H3 → AWARYJNA); pomijaj poziomy tylko jeśli nie ma czasu.
+> **Kiedy podpowiadać:** Z1 / Z3 → po tym jak grupa jest na tym etapie >10 min bez postępu. Z4 / Z7 → po drugiej błędnej próbie.
 
 ---
 
 ```
 ╔══════════════════════════════════════════════════════════════╗
-║  Z1 — SYMBOL TRAIL                                          ║
+║  Z1 — SZLAK SYMBOLI                                          ║
 ╠══════════════════════════════════════════════════════════════╣
-║  ANSWER: group-specific — see their card or master board    ║
-║  What they must do: match image on cipher card → spot in    ║
-║  field → read the next symbol → repeat 4 times             ║
+║  ODPOWIEDŹ: specyficzna dla grupy — patrz karta lub tablica ║
+║  Co muszą zrobić: dopasuj obraz na karcie → miejsce w       ║
+║  terenie → odczytaj kolejny symbol → powtórz 4 razy        ║
 ╠══════════════════════════════════════════════════════════════╣
-║  H1 (gentle):                                               ║
+║  H1 (łagodna):                                              ║
 ║    "Match the image on your card to what you physically     ║
 ║    see — it's something actually there, not something       ║
 ║    you'd need to know. Look closely."                       ║
 ╠──────────────────────────────────────────────────────────────╣
-║  H2 (medium):                                               ║
-║    "You're looking for [describe the kind of object from    ║
-║    the icon — e.g. an animal / a number / a tool / a        ║
-║    building feature]. That image is on your card."          ║
+║  H2 (średnia):                                              ║
+║    "You're looking for [opisz typ obiektu z ikony —         ║
+║    np. zwierzę / liczba / narzędzie / element budynku].     ║
+║    That image is on your card."                             ║
 ╠──────────────────────────────────────────────────────────────╣
-║  H3 (direct):                                               ║
-║    Name the location directly. Time matters more than       ║
-║    the puzzle at this point.                                ║
+║  H3 (bezpośrednia):                                         ║
+║    Podaj nazwę lokalizacji wprost. Czas jest ważniejszy     ║
+║    niż zagadka na tym etapie.                               ║
 ╠──────────────────────────────────────────────────────────────╣
-║  STUCK ON WRONG LOOP:                                       ║
+║  ZABLOKOWANA NA ZŁEJ PĘTLI:                                  ║
 ║    "You've visited 4 places — does the last one say         ║
 ║    KONIEC (END)? If not, you're on the wrong path.          ║
 ║    Go back to the very first symbol on your K1 envelope     ║
@@ -40,22 +40,22 @@
 
 ```
 ╔══════════════════════════════════════════════════════════════╗
-║  Z2 — MORNING ERRANDS (logic puzzle from K2)               ║
+║  Z2 — PORANNE ZAKUPY (zagadka logiczna z K2)                ║
 ╠══════════════════════════════════════════════════════════════╣
-║  ANSWER: Jordan → Piccolo (the hot-food place)              ║
-║  Supporting: he bought a sword there                        ║
-║  (Lambert → Old Mill / bread; Kordian → Smithy / cloth)    ║
+║  ODPOWIEDŹ: Jordan → Piccolo (miejsce z gorącym jedzeniem)  ║
+║  Wsparcie: kupił tam miecz                                  ║
+║  (Lambert → Stary Młyn / chleb; Kordian → Kowalnia / tkan.)║
 ╠══════════════════════════════════════════════════════════════╣
-║  H1 (gentle):                                               ║
+║  H1 (łagodna):                                              ║
 ║    "Clue 2 tells you something about Jordan directly.       ║
 ║    Start there."                                            ║
 ╠──────────────────────────────────────────────────────────────╣
-║  H2 (medium):                                               ║
+║  H2 (średnia):                                              ║
 ║    "Lambert bought food outside his own place — so he       ║
 ║    can't work at the food place. That rules one out         ║
 ║    for him. Work from there."                               ║
 ╠──────────────────────────────────────────────────────────────╣
-║  H3 (direct):                                               ║
+║  H3 (bezpośrednia):                                         ║
 ║    "Jordan works at Piccolo. Go there and ask for him       ║
 ║    by name."                                                ║
 ╚══════════════════════════════════════════════════════════════╝
@@ -65,30 +65,30 @@
 
 ```
 ╔══════════════════════════════════════════════════════════════╗
-║  Z3 — CASTLE / THEFT  [Zosia/Albrecht runs this]           ║
+║  Z3 — ZAMEK / KRADZIEŻ  [prowadzi Zosia/Albrecht]           ║
 ╠══════════════════════════════════════════════════════════════╣
-║  WHAT GROUP MUST DO: read K-Z3b (from Albrecht), then      ║
-║  steal the parchment (pergamin) while Albrecht's back is   ║
-║  turned on his patrol. Bring the parchment to MG.          ║
-║  NOTE: theft is MANDATORY — every group must succeed.      ║
-║  Zosia is briefed to help if they fail 3+ times.           ║
+║  CO MUSI ZROBIĆ GRUPA: przeczytać K-Z3b (od Albrechta),    ║
+║  potem ukraść pergamin gdy Albrecht jest odwrócony plecami  ║
+║  podczas patrolu. Przynieść pergamin do MG.                 ║
+║  UWAGA: kradzież OBOWIĄZKOWA — każda grupa musi odnieść    ║
+║  sukces. Zosia jest zbriefowana żeby pomóc przy 3+ próbach. ║
 ╠══════════════════════════════════════════════════════════════╣
-║  H1 (if group is passive — phone Zosia, not group):         ║
-║    Signal Zosia to slow her patrol / lengthen Phase A.      ║
+║  H1 (jeśli grupa bierna — dzwoń do Zosi, nie do grupy):    ║
+║    Zasygnalizuj Zosi żeby zwolniła patrol / wydłużyła Fazę A║
 ╠──────────────────────────────────────────────────────────────╣
-║  H2 (if group phones YOU confused):                         ║
+║  H2 (jeśli grupa dzwoni do CIEBIE zdezorientowana):        ║
 ║    "Re-read the envelope you received from the commander.   ║
 ║    The instructions are there."                             ║
 ╠──────────────────────────────────────────────────────────────╣
-║  H3 (direct — phone group):                                 ║
+║  H3 (bezpośrednia — dzwoń do grupy):                        ║
 ║    "You need the parchment he was reading from. He sets     ║
 ║    it down and walks away — wait until his back is          ║
 ║    turned, then take it. He won't see you."                 ║
 ╠──────────────────────────────────────────────────────────────╣
-║  EMERGENCY (Zosia unavailable):                             ║
-║    Hand group the pergamin directly:                        ║
+║  AWARYJNA (Zosia niedostępna):                              ║
+║    Wręcz grupie pergamin bezpośrednio:                      ║
 ║    "A contact managed to get this from inside."             ║
-║    Skip actor scene; Z4 continues normally.                 ║
+║    Pomiń scenę aktora; Z4 kontynuuje normalnie.             ║
 ╚══════════════════════════════════════════════════════════════╝
 ```
 
@@ -98,27 +98,27 @@
 ╔══════════════════════════════════════════════════════════════╗
 ║  Z4 — KALIMBA                                               ║
 ╠══════════════════════════════════════════════════════════════╣
-║  ANSWER: 621454  (six digits, exact order)                  ║
-║  How it works: listen to melody → play it back on           ║
-║  the instrument → write each note number → report.         ║
-║  Do NOT confirm partial codes. 6 digits or nothing.        ║
+║  ODPOWIEDŹ: 621454  (sześć cyfr, dokładna kolejność)        ║
+║  Jak działa: słuchaj melodii → zagraj ją z powrotem na      ║
+║  instrumencie → zapisz numer każdej nuty → raportuj.       ║
+║  NIE potwierdzaj kodów częściowych. 6 cyfr albo nic.       ║
 ╠══════════════════════════════════════════════════════════════╣
-║  H1 (gentle):                                               ║
+║  H1 (łagodna):                                              ║
 ║    "Play it slower than you think. One note at a time,      ║
 ║    write the number before you move to the next."           ║
 ╠──────────────────────────────────────────────────────────────╣
-║  H2 (replay):                                               ║
-║    Replay the melody more slowly.                           ║
+║  H2 (odtworzenie):                                          ║
+║    Odtwórz melodię wolniej.                                 ║
 ║    "Count as you go — don't try to remember it all          ║
 ║    at the end."                                             ║
 ╠──────────────────────────────────────────────────────────────╣
-║  H3 (count nudge):                                          ║
+║  H3 (naprowadzenie na liczbę nut):                          ║
 ║    "You have exactly six notes. You're close — make sure    ║
-║    you haven't missed one." (Do NOT give any digit.)        ║
+║    you haven't missed one." (NIE podawaj żadnej cyfry.)     ║
 ╠──────────────────────────────────────────────────────────────╣
-║  EMERGENCY (< 30 min to 20:30):                             ║
+║  AWARYJNA (< 30 min do 20:30):                              ║
 ║    "A contact passed on the boatman's code: 6, 2, 1, 4,    ║
-║    5, 4." Hand K8 directly.                                 ║
+║    5, 4." Wręcz K8 bezpośrednio.                            ║
 ╚══════════════════════════════════════════════════════════════╝
 ```
 
@@ -126,52 +126,52 @@
 
 ```
 ╔══════════════════════════════════════════════════════════════╗
-║  Z7 — CEZAR CIPHER                                          ║
+║  Z7 — SZYFR CEZARA                                          ║
 ╠══════════════════════════════════════════════════════════════╣
-║  ANSWER: HANS VON BAYSEN IS JORDAN THE COOK                 ║
-║  Accept: group says "Hans von Baysen" — the full phrase     ║
-║  can be paraphrased.                                        ║
-║  Method: compare motto header on K8 (szyfrogram) with       ║
-║  motto header on the pergamin (Z3 names list) — same font,  ║
-║  same punctuation → count the letter shift = 7 backward.   ║
+║  ODPOWIEDŹ: HANS VON BAYSEN IS JORDAN THE COOK              ║
+║  Akceptuj: grupa mówi "Hans von Baysen" — pełna fraza       ║
+║  może być sparafrazowana.                                   ║
+║  Metoda: porównaj nagłówek motto K8 (szyfrogram) z          ║
+║  nagłówkiem motto pergaminu (lista Z3) — ten sam font,      ║
+║  ta sama interpunkcja → policz przesunięcie = 7 wstecz.    ║
 ╠══════════════════════════════════════════════════════════════╣
-║  H1 (gentle):                                               ║
+║  H1 (łagodna):                                              ║
 ║    "Look at the very top of that letter. You've seen that   ║
 ║    script before today — somewhere you've already been."    ║
 ╠──────────────────────────────────────────────────────────────╣
-║  H2 (medium):                                               ║
+║  H2 (średnia):                                              ║
 ║    "Compare the heading of the cipher letter with the       ║
 ║    heading of the names list you stole. Same font, same     ║
 ║    punctuation. Count how many steps each letter moved —    ║
 ║    it's the same shift every time."                         ║
 ╠──────────────────────────────────────────────────────────────╣
-║  H3 (key only — < 30 min to 20:30):                         ║
+║  H3 (tylko klucz — < 30 min do 20:30):                      ║
 ║    "The shift is 7 — every letter moved 7 steps forward.   ║
 ║    Apply that backwards to the ciphertext."                 ║
 ╠──────────────────────────────────────────────────────────────╣
-║  EMERGENCY (full answer — group will miss finale):          ║
+║  AWARYJNA (pełna odpowiedź — grupa ominie finał):           ║
 ║    "It reads: HANS VON BAYSEN IS JORDAN THE COOK.           ║
 ║    Who does that make Jordan?"                              ║
 ╠──────────────────────────────────────────────────────────────╣
-║  IF DECODED BUT TWIST DIDN'T LAND (group seems unmoved):   ║
-║    Ask: "Who were you sent to deliver that letter to,       ║
-║    from the very start?" (→ the chairman, from K2)          ║
-║    Then: "Look at the top of the names list — what does it  ║
+║  JEŚLI ODSZYFROWANE ALE TWIST NIE DOTARŁ:                   ║
+║    Zapytaj: "Who were you sent to deliver that letter to,   ║
+║    from the very start?" (→ przewodniczący, z K2)           ║
+║    Potem: "Look at the top of the names list — what does it ║
 ║    say beside the first name?" (→ "they call him chairman") ║
-║    Let them connect: chairman = Hans von Baysen = the cook. ║
-║    Don't spell it out. Just ask the two questions.          ║
+║    Niech sami połączą: przewodniczący = Baysen = kucharz.  ║
+║    Nie wyjaśniaj. Tylko zadaj oba pytania.                  ║
 ╚══════════════════════════════════════════════════════════════╝
 ```
 
 ---
 
-## Emergency protocols — at a glance
+## Protokoły awaryjne — jednym rzutem
 
-| Situation | Action |
+| Sytuacja | Działanie |
 |---|---|
-| Group very late (> 40 min behind) | Skip Z4: give code directly ("6, 2, 1, 4, 5, 4"). Jump to Z7 hint H3 / H4. |
-| Piotr (Jordan) unavailable | Z2 still works. Group deduces Piccolo, goes there. MG dead-drop K3: *"He was here earlier, left this for you."* |
-| Zosia (Albrecht) unavailable | Skip castle scene. MG hands pergamin: *"A contact managed to get this."* Zosia still needed at finale (20:30). |
-| Group loses sealed letter | 1 spare in MG bag. *"A contact found it — it wasn't far."* If no spare: folded slip works; what matters is which side they walk to. |
-| Group refuses Z7 | Frame urgency: *"You need what's in that letter before you go. The names list has the key."* If won't engage: hand KF without Z7. |
-| Tie at finale | See `concept/04-faza-3-final.md §Remis`. Fallback: improvised standoff, Oskar delivers historical epilogue. |
+| Grupa bardzo spóźniona (> 40 min) | Pomiń Z4: podaj kod bezpośrednio ("6, 2, 1, 4, 5, 4"). Przejdź do H3 / H4 Z7. |
+| Piotr (Jordan) niedostępny | Z2 nadal działa. Grupa dedukcuje Piccolo, idzie tam. MG dead-drop K3: *"He was here earlier, left this for you."* |
+| Zosia (Albrecht) niedostępna | Pomiń scenę zamkową. MG wręcza pergamin: *"A contact managed to get this."* Zosia nadal potrzebna na finale (20:30). |
+| Grupa gubi zapieczętowany list | 1 zapasowy w torbie MG. *"A contact found it — it wasn't far."* Brak zapasowego: złożona karteczka działa; liczy się strona, do której podchodzą. |
+| Grupa odmawia Z7 | Zaznacz pilność: *"You need what's in that letter before you go. The names list has the key."* Jeśli nie chcą: wręcz KF bez Z7. |
+| Remis w finale | Patrz `concept/04-faza-3-final.md §Remis`. Fallback: improwizowany pat, Oskar wygłasza epilog historyczny. |

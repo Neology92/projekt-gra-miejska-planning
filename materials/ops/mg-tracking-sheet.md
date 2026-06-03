@@ -33,49 +33,49 @@ K1 → [Z1: symbol trail] → report to MG → K2
 
 ---
 
-## ANSWER KEYS
+## KLUCZE ODPOWIEDZI
 
-### Z1 — Symbol Trail
-Correct sequence: **[fill in from z1-szlak-spec before game day — 4 location names in order]**
+### Z1 — Szlak Symboli
+Poprawna sekwencja: **[uzupełnij z z1-szlak-spec przed dniem gry — 4 nazwy lokalizacji w kolejności]**
 
-Verify: all 4 in correct order.
-If one is wrong: *"One of those doesn't match the mark. Go back to the last mark you're certain of."*
-If completely off: send them back to start (△) — do not give names.
+Sprawdź: wszystkie 4 w poprawnej kolejności.
+Jeśli jedna jest zła: *"One of those doesn't match the mark. Go back to the last mark you're certain of."*
+Jeśli zupełnie nie to: odeślij do startu (△) — nie podawaj nazw.
 
 ---
 
-### Z2 — Morning Errands
-Full solution:
-- Jordan → Piccolo (hot food) — bought a sword (parol)
-- Lambert → Old Mill (bread) — bought food
-- Kordian → Smithy (ironwork) — bought cloth
+### Z2 — Poranne Zakupy
+Pełne rozwiązanie:
+- Jordan → Piccolo (gorące jedzenie) — kupił miecz (parol)
+- Lambert → Stary Młyn (chleb) — kupił jedzenie
+- Kordian → Kowalnia (wyroby żelazne) — kupił tkaninę
 
-Accept if group correctly says Jordan = Piccolo. They don't need to have solved the whole table.
+Akceptuj jeśli grupa poprawnie mówi Jordan = Piccolo. Nie musi rozwiązać całej tabeli.
 
 ---
 
 ### Z4 — Kalimba
-Code: **6 · 2 · 1 · 4 · 5 · 4** = **621454**
+Kod: **6 · 2 · 1 · 4 · 5 · 4** = **621454**
 
-Accept full 6-digit sequence only. Do not confirm partial codes.
-If wrong: *"Are you sure those are the right notes, in the right order? Try once more."* Replay melody.
-If stuck: see hint ladder in mg-runsheet.md.
-
----
-
-### Z7 — Cezar Cipher
-Plaintext: **HANS VON BAYSEN IS JORDAN THE COOK**
-Shift: +7
-Discovery method: compare motto header on this szyfrogram with the motto header on the pergamin (Z3 names list). Same font, same punctuation — count the letter shift.
-
-Accept if group delivers: **HANS VON BAYSEN** (core). The "IS JORDAN THE COOK" part can be paraphrased — what matters is the tying of Baysen to Jordan.
-If stuck: see hint ladder in mg-runsheet.md.
+Akceptuj tylko pełną 6-cyfrową sekwencję. Nie potwierdzaj kodów częściowych.
+Jeśli źle: *"Are you sure those are the right notes, in the right order? Try once more."* Odtwórz melodię.
+Jeśli zablokowana: patrz drabinka podpowiedzi w mg-runsheet.md.
 
 ---
 
-## GROUP TRACKING
+### Z7 — Szyfr Cezara
+Jawny tekst: **HANS VON BAYSEN IS JORDAN THE COOK**
+Przesunięcie: +7
+Metoda odkrycia: porównaj nagłówek motto na szyfrgramie z nagłówkiem motto na pergaminie (lista imion Z3). Ten sam font, ta sama interpunkcja — policz przesunięcie liter.
 
-| Group ID (wristband color) | Current stage | Time | Notes |
+Akceptuj jeśli grupa podaje: **HANS VON BAYSEN** (rdzeń). Część „IS JORDAN THE COOK" może być sparafrazowana — liczy się powiązanie Baysena z Jordanem.
+Jeśli zablokowana: patrz drabinka podpowiedzi w mg-runsheet.md.
+
+---
+
+## ŚLEDZENIE GRUP
+
+| ID grupy (kolor opaski) | Bieżący etap | Godzina | Uwagi |
 |---------------------------|--------------|------|-------|
 | | | | |
 | | | | |
@@ -83,26 +83,26 @@ If stuck: see hint ladder in mg-runsheet.md.
 
 ---
 
-## PROP CHECKLIST (pack before game day)
+## CHECKLISTA REKWIZYTÓW (spakuj przed dniem gry)
 
-**MG bag:**
-- [ ] K1 envelopes (1 per group)
-- [ ] Sealed letter props (1 per group — group carries all day; 1 spare)
-- [ ] Z1 maps (1 per group)
-- [ ] Z1 cipher sheets (1 per group)
-- [ ] K2 envelopes (main note + intermediary slip, 1 set per group)
-- [ ] K-Z4 envelopes (1 per group)
-- [ ] Kalimba (1–2 instruments, groups rotate)
-- [ ] K8 envelopes = Z7 szyfrogram (1 per group)
-- [ ] KF envelopes (1 per group)
-- [ ] Tracking sheet (this document, printed)
-- [ ] Phone (with kalimba melody recording as backup)
+**Torba MG:**
+- [ ] Koperty K1 (1 na grupę)
+- [ ] Rekwizyty zapieczętowanego listu (1 na grupę — grupa nosi cały dzień; 1 zapasowy)
+- [ ] Mapy Z1 (1 na grupę)
+- [ ] Karty deszyfrujące Z1 (1 na grupę)
+- [ ] Koperty K2 (nota główna + slip pośredni, 1 komplet na grupę)
+- [ ] Koperty K-Z4 (1 na grupę)
+- [ ] Kalimba (1–2 instrumenty, grupy rotują)
+- [ ] Koperty K8 = szyfrogram Z7 (1 na grupę)
+- [ ] Koperty KF (1 na grupę)
+- [ ] Tracking sheet (ten dokument, wydrukowany)
+- [ ] Telefon (z nagraniem melodii kalimby jako backup)
 
-**With actors:**
-- [ ] K3 envelopes → Piotr (Jordan hands these at Piccolo scene end)
-- [ ] K-Z3b envelopes → Zosia (Albrecht hands these during castle scene)
-- [ ] Z3 pergamin props = names list (Zosia gives these during castle scene, or MG gives separately — confirm with Oskar)
+**U aktorów:**
+- [ ] Koperty K3 → Piotr (Jordan wręcza na koniec sceny w Piccolo)
+- [ ] Koperty K-Z3b → Zosia (Albrecht wręcza podczas sceny zamkowej)
+- [ ] Rekwizyty pergaminu Z3 = lista imion (Zosia wręcza podczas sceny zamkowej, albo MG wręcza osobno — potwierdź z Oskarem)
 
-**Finale:**
-- ~~Bell prop~~ DROPPED [#49, 2026-06-03] — no sound prop; "eighth toll" is a spoken narrative time-marker only
-- [ ] Actors take their own sides at Przedzamcze (Piotr/Bażyński + Zosia/Albrecht). Groups hand letters **directly to the chosen actor** (Wariant B — no boxes, no left/right table). Each actor counts their own stack just before the scene [#50].
+**Finał:**
+- ~~Rekwizyt dzwonu~~ PORZUCONY [#49, 2026-06-03] — bez rekwizytu dźwiękowego; „ósmy dzwon" to tylko słowny narracyjny znacznik czasu
+- [ ] Aktorzy zajmują swoje strony na Przedzamczu (Piotr/Bażyński + Zosia/Albrecht). Grupy wręczają listy **bezpośrednio wybranemu aktorowi** (Wariant B — bez skrzynek, bez stołu lewa/prawa). Każdy aktor liczy swój stos tuż przed sceną [#50].

@@ -1,11 +1,11 @@
-# GM Group Cards — all 10 groups
+# Karty Grup MG — wszystkie 10 grup
 
-> **Language:** English (GM-facing).
-> **Print tip:** one card per group — cut at the `═══` lines (or print each `## G#` section on a separate page). Laminate if possible; write with dry-erase marker.
-> **Classes are fixed** — no fill-in needed on game day. TR = G1–G5 (Red/Orange/Yellow/Green/Cyan). KZ = G6–G10 (Blue/Purple/White/Brown/Black). Canon: `CLAUDE.md §Kanoniczny przydział grup`.
-> **Prototype scope:** G1 (Red, TR, Z4) is the only fully developed path. Other TR groups (Z5/Z6) and all KZ groups (Z3Z etc.) are marked `[MVP TBD]`.
-> **Z1 answers:** from `puzzles/z1-10-sciezek.md` v3.2. Canon source for any discrepancy.
-> **Envelopes after Z1:** TR groups → K2 (TR version). KZ groups → K2-K (KZ version). Prepare two separate stacks.
+> **Język:** polski (dla MG).
+> **Wskazówka druku:** jedna karta na grupę — tnij na liniach `═══` (lub drukuj każdą sekcję `## G#` na osobnej stronie). Laminuj jeśli możliwe; pisz markerem do suchościeralnego.
+> **Klasy są stałe** — żadnych uzupełnień w dniu gry. TR = G1–G5 (czerwony/pomarańczowy/żółty/zielony/turkusowy). KZ = G6–G10 (niebieski/fioletowy/biały/brązowy/czarny). Kanon: `CLAUDE.md §Kanoniczny przydział grup`.
+> **Zakres prototypu:** G1 (czerwony, TR, Z4) to jedyna w pełni rozwinięta ścieżka. Pozostałe grupy TR (Z5/Z6) i wszystkie grupy KZ (Z3Z itp.) są oznaczone `[MVP TBD]`.
+> **Odpowiedzi Z1:** z `puzzles/z1-10-sciezek.md` v3.2. Kanoniczne źródło przy rozbieżnościach.
+> **Koperty po Z1:** grupy TR → K2 (wersja TR). Grupy KZ → K2-K (wersja KZ). Przygotuj dwa osobne stosy.
 
 ---
 ---
@@ -14,48 +14,48 @@
 
 ```
 ══════════════════════════════════════════════════════════
- G1 · RED            CLASS: TR — Tajna Rada (Mieszczanie)
- Z1 PATH (chain):    N01 → N02 → N06 → C04
- Z1 ANSWER:          Piernikarka → Przekupka → Baj Pomorski → Ratusz
- F2B:                Z3 (castle, mandatory) + Z4 kalimba (optional)
+ G1 · RED            KLASA: TR — Tajna Rada (Mieszczanie)
+ SZLAK Z1 (łańcuch):    N01 → N02 → N06 → C04
+ ODPOWIEDŹ Z1:          Piernikarka → Przekupka → Baj Pomorski → Ratusz
+ F2B:                Z3 (zamek, obowiązkowa) + Z4 kalimba (opcjonalna)
 ══════════════════════════════════════════════════════════
  □ 0 · START
-     Give: K1 + sealed letter prop + Z1 map + G1 cipher card (RED corner)
-     Time: ____:____
+     Wręcz: K1 + rekwizyt zapieczętowanego listu + mapa Z1 + karta deszyfrująca G1 (narożnik CZERWONY)
+     Godzina: ____:____
 
- □ 1 · Z1 REPORT
-     Group brings: 4 locations in order
-     ✓ Piernikarka → Przekupka → Baj Pomorski → Ratusz  →  give K2
-     ✗ wrong  →  "One of those doesn't match. Go back to the last mark
+ □ 1 · RAPORT Z1
+     Grupa przynosi: 4 lokalizacje w kolejności
+     ✓ Piernikarka → Przekupka → Baj Pomorski → Ratusz  →  wręcz K2
+     ✗ błąd  →  "One of those doesn't match. Go back to the last mark
                   you're certain of."
-     K2 given: ____:____
-     [group solves Z2 from K2 → walks to Piccolo (Piotr). NO MG action.]
+     K2 wręczone: ____:____
+     [grupa rozwiązuje Z2 z K2 → idzie do Piccolo (Piotr). BRAK akcji MG.]
 
- □ 2a · Z3 DONE — group returns with pergamin
-     Group brings: stolen parchment (names list)
-     Give: K-Z4 envelope + kalimba
-     ▸ play/start melody recording once ("drifts off the water")
-     K-Z4 + kalimba given: ____:____
+ □ 2a · Z3 UKOŃCZONE — grupa wraca z pergaminem
+     Grupa przynosi: skradziony pergamin (lista imion)
+     Wręcz: kopertę K-Z4 + kalimbę
+     ▸ odtwórz nagranie melodii raz („niesie się po wodzie")
+     K-Z4 + kalimba wręczone: ____:____
 
- □ 2b · Z4 REPORT
-     Group brings: 6-digit code
-     ✓  621454  →  give K8 (Z7 szyfrogram)
-     ✗  wrong   →  "Are you sure those are all the notes, in the right order?"
-                    Replay once. Hints: mg-quick-hints.md §Z4
-     K8 given: ____:____
+ □ 2b · RAPORT Z4
+     Grupa przynosi: 6-cyfrowy kod
+     ✓  621454  →  wręcz K8 (szyfrogram Z7)
+     ✗  błąd   →  "Are you sure those are all the notes, in the right order?"
+                    Odtwórz raz. Podpowiedzi: mg-quick-hints.md §Z4
+     K8 wręczone: ____:____
 
- □ 2c · Z7 REPORT
-     Group brings: deciphered text
-     ✓  HANS VON BAYSEN  (full: "HANS VON BAYSEN IS JORDAN THE COOK")
-       →  "Yes — that's it." Give KF. "Eighth bell. Przedzamcze. Be there."
-     ✗  stuck  →  mg-quick-hints.md §Z7
-     KF given: ____:____
+ □ 2c · RAPORT Z7
+     Grupa przynosi: odszyfrowany tekst
+     ✓  HANS VON BAYSEN  (pełne: "HANS VON BAYSEN IS JORDAN THE COOK")
+       →  "Yes — that's it." Wręcz KF. "Eighth bell. Przedzamcze. Be there."
+     ✗  zablokowana  →  mg-quick-hints.md §Z7
+     KF wręczone: ____:____
 
- □ 3 · FINALE  (20:30, Przedzamcze)
-     □ arrived by 20:30
-     □ letter to: [ ] Bażyński (Piotr, left)  [ ] Albrecht (Zosia, right)
+ □ 3 · FINAŁ  (20:30, Przedzamcze)
+     □ przybyła do 20:30
+     □ list do: [ ] Bażyński (Piotr)  [ ] Albrecht (Zosia)
 
- NOTES: _______________________________________________________
+ UWAGI: _______________________________________________________
 ══════════════════════════════════════════════════════════
 ```
 
@@ -65,39 +65,39 @@
 
 ```
 ══════════════════════════════════════════════════════════
- G2 · ORANGE         CLASS: TR — Tajna Rada (Mieszczanie)
- Z1 PATH (chain):    N06 → N04 → N05 → C01
- Z1 ANSWER:          Baj Pomorski → Apteka Lew → Kościół Jakuba → Kopernik
- F2B:                Z3 (castle, mandatory) + Z5 sensoryczna piernik [MVP TBD]
+ G2 · ORANGE         KLASA: TR — Tajna Rada (Mieszczanie)
+ SZLAK Z1 (łańcuch):    N06 → N04 → N05 → C01
+ ODPOWIEDŹ Z1:          Baj Pomorski → Apteka Lew → Kościół Jakuba → Kopernik
+ F2B:                Z3 (zamek, obowiązkowa) + Z5 sensoryczna piernik [MVP TBD]
 ══════════════════════════════════════════════════════════
  □ 0 · START
-     Give: K1 + sealed letter prop + Z1 map + G2 cipher card (ORANGE corner)
-     Time: ____:____
+     Wręcz: K1 + rekwizyt zapieczętowanego listu + mapa Z1 + karta deszyfrująca G2 (narożnik POMARAŃCZOWY)
+     Godzina: ____:____
 
  □ 1 · Z1 REPORT
-     ✓ Baj Pomorski → Apteka Lew → Kościół Jakuba → Kopernik  →  give K2
+     ✓ Baj Pomorski → Apteka Lew → Kościół Jakuba → Kopernik  →  wręcz K2
      ✗  →  "One of those doesn't match. Go back to the last mark you're certain of."
-     K2 given: ____:____
-     [group → Piccolo (Piotr). NO MG action.]
+     K2 wręczone: ____:____
+     [grupa → Piccolo (Piotr). BRAK akcji MG.]
 
- □ 2a · Z3 DONE — group returns with pergamin
-     Group brings: stolen parchment
-     Give: K-Z5 envelope  [MVP TBD — develop spec before game]
-     K-Z5 given: ____:____
+ □ 2a · Z3 UKOŃCZONE — grupa wraca z pergaminem
+     Grupa przynosi: skradziony pergamin
+     Wręcz: kopertę K-Z5  [MVP TBD — opracuj spec przed grą]
+     K-Z5 wręczone: ____:____
 
- □ 2b · Z5 REPORT  [MVP TBD]
-     Group brings: Z5 answer [to be defined — see puzzles/zagadka-sensoryczna.md]
-     ✓  [answer TBD]  →  give K8 (Z7 szyfrogram)
-     K8 given: ____:____
+ □ 2b · RAPORT Z5  [MVP TBD]
+     Grupa przynosi: odpowiedź Z5 [do zdefiniowania — patrz puzzles/zagadka-sensoryczna.md]
+     ✓  [odpowiedź TBD]  →  wręcz K8 (szyfrogram Z7)
+     K8 wręczone: ____:____
 
- □ 2c · Z7 REPORT
-     ✓  HANS VON BAYSEN  →  give KF + "Eighth bell. Przedzamcze."
-     KF given: ____:____
+ □ 2c · RAPORT Z7
+     ✓  HANS VON BAYSEN  →  wręcz KF + "Eighth bell. Przedzamcze."
+     KF wręczone: ____:____
 
- □ 3 · FINALE  (20:30)
-     □ arrived   □ → [ ] Bażyński   [ ] Albrecht
+ □ 3 · FINAŁ  (20:30)
+     □ przybyła   □ → [ ] Bażyński   [ ] Albrecht
 
- NOTES: _______________________________________________________
+ UWAGI: _______________________________________________________
 ══════════════════════════════════════════════════════════
 ```
 
@@ -107,33 +107,33 @@
 
 ```
 ══════════════════════════════════════════════════════════
- G3 · YELLOW         CLASS: TR — Tajna Rada (Mieszczanie)
- Z1 PATH (chain):    C02 → N01 → C03 → C06
- Z1 ANSWER:          Osiołek → Piernikarka → Filuś → Pod Gwiazdą
- F2B:                Z3 (castle, mandatory) + Z5 sensoryczna piernik [MVP TBD]
+ G3 · YELLOW         KLASA: TR — Tajna Rada (Mieszczanie)
+ SZLAK Z1 (łańcuch):    C02 → N01 → C03 → C06
+ ODPOWIEDŹ Z1:          Osiołek → Piernikarka → Filuś → Pod Gwiazdą
+ F2B:                Z3 (zamek, obowiązkowa) + Z5 sensoryczna piernik [MVP TBD]
 ══════════════════════════════════════════════════════════
  □ 0 · START
-     Give: K1 + sealed letter prop + Z1 map + G3 cipher card (YELLOW corner)
-     Time: ____:____
+     Wręcz: K1 + rekwizyt zapieczętowanego listu + mapa Z1 + karta deszyfrująca G3 (narożnik ŻÓŁTY)
+     Godzina: ____:____
 
  □ 1 · Z1 REPORT
-     ✓ Osiołek → Piernikarka → Filuś → Pod Gwiazdą  →  give K2
-     K2 given: ____:____
+     ✓ Osiołek → Piernikarka → Filuś → Pod Gwiazdą  →  wręcz K2
+     K2 wręczone: ____:____
 
- □ 2a · Z3 DONE — group returns with pergamin
-     Give: K-Z5 + [Z5 props]  [MVP TBD]     K-Z5 given: ____:____
+ □ 2a · Z3 UKOŃCZONE — grupa wraca z pergaminem
+     Wręcz: K-Z5 + [rekwizyty Z5]  [MVP TBD]     K-Z5 wręczone: ____:____
 
- □ 2b · Z5 REPORT  [MVP TBD]
-     ✓  [answer TBD]  →  give K8          K8 given: ____:____
+ □ 2b · RAPORT Z5  [MVP TBD]
+     ✓  [odpowiedź TBD]  →  wręcz K8          K8 wręczone: ____:____
 
- □ 2c · Z7 REPORT
-     ✓  HANS VON BAYSEN  →  give KF + "Eighth bell. Przedzamcze."
-     KF given: ____:____
+ □ 2c · RAPORT Z7
+     ✓  HANS VON BAYSEN  →  wręcz KF + "Eighth bell. Przedzamcze."
+     KF wręczone: ____:____
 
- □ 3 · FINALE (20:30)
-     □ arrived   □ → [ ] Bażyński   [ ] Albrecht
+ □ 3 · FINAŁ (20:30)
+     □ przybyła   □ → [ ] Bażyński   [ ] Albrecht
 
- NOTES: _______________________________________________________
+ UWAGI: _______________________________________________________
 ══════════════════════════════════════════════════════════
 ```
 
@@ -143,35 +143,35 @@
 
 ```
 ══════════════════════════════════════════════════════════
- G4 · GREEN          CLASS: TR — Tajna Rada (Mieszczanie)
- Z1 PATH (chain):    N04 → N06 → C09 → C02
- Z1 ANSWER:          Apteka Lew → Baj Pomorski → Katedra Janów → Osiołek
- F2B:                Z3 (castle, mandatory) + Z6 herby hanzeatyckie [MVP TBD]
- ⚠ long leg N06→C09 (~620 m) — may run ~14–15 min on Z1
+ G4 · GREEN          KLASA: TR — Tajna Rada (Mieszczanie)
+ SZLAK Z1 (łańcuch):    N04 → N06 → C09 → C02
+ ODPOWIEDŹ Z1:          Apteka Lew → Baj Pomorski → Katedra Janów → Osiołek
+ F2B:                Z3 (zamek, obowiązkowa) + Z6 herby hanzeatyckie [MVP TBD]
+ ⚠ długi odcinek N06→C09 (~620 m) — Z1 może zająć ~14–15 min
 ══════════════════════════════════════════════════════════
  □ 0 · START
-     Give: K1 + sealed letter prop + Z1 map + G4 cipher card (GREEN corner)
-     Time: ____:____
+     Wręcz: K1 + rekwizyt zapieczętowanego listu + mapa Z1 + karta deszyfrująca G4 (narożnik ZIELONY)
+     Godzina: ____:____
 
  □ 1 · Z1 REPORT
-     ✓ Apteka Lew → Baj Pomorski → Katedra Janów → Osiołek  →  give K2
-     K2 given: ____:____
+     ✓ Apteka Lew → Baj Pomorski → Katedra Janów → Osiołek  →  wręcz K2
+     K2 wręczone: ____:____
 
- □ 2a · Z3 DONE — group returns with pergamin
-     Give: K-Z6 + [Z6 props: karta z herbami]  [MVP TBD]   K-Z6 given: ____:____
+ □ 2a · Z3 UKOŃCZONE — grupa wraca z pergaminem
+     Wręcz: K-Z6 + [rekwizyty Z6: karta z herbami]  [MVP TBD]   K-Z6 wręczone: ____:____
 
- □ 2b · Z6 REPORT  [MVP TBD]
-     ✓  [3 matching herby from ul. Królowej Jadwigi — answer TBD]  →  give K8
-     K8 given: ____:____
+ □ 2b · RAPORT Z6  [MVP TBD]
+     ✓  [3 pasujące herby z ul. Królowej Jadwigi — odpowiedź TBD]  →  wręcz K8
+     K8 wręczone: ____:____
 
- □ 2c · Z7 REPORT
-     ✓  HANS VON BAYSEN  →  give KF + "Eighth bell. Przedzamcze."
-     KF given: ____:____
+ □ 2c · RAPORT Z7
+     ✓  HANS VON BAYSEN  →  wręcz KF + "Eighth bell. Przedzamcze."
+     KF wręczone: ____:____
 
- □ 3 · FINALE (20:30)
-     □ arrived   □ → [ ] Bażyński   [ ] Albrecht
+ □ 3 · FINAŁ (20:30)
+     □ przybyła   □ → [ ] Bażyński   [ ] Albrecht
 
- NOTES: _______________________________________________________
+ UWAGI: _______________________________________________________
 ══════════════════════════════════════════════════════════
 ```
 
@@ -181,34 +181,34 @@
 
 ```
 ══════════════════════════════════════════════════════════
- G5 · CYAN           CLASS: TR — Tajna Rada (Mieszczanie)
- Z1 PATH (chain):    N05 → C04 → S04 → C07
- Z1 ANSWER:          Kościół Jakuba → Ratusz → Kotwica → Dwór Artusa
- F2B:                Z3 (castle, mandatory) + Z6 herby hanzeatyckie [MVP TBD]
+ G5 · CYAN           KLASA: TR — Tajna Rada (Mieszczanie)
+ SZLAK Z1 (łańcuch):    N05 → C04 → S04 → C07
+ ODPOWIEDŹ Z1:          Kościół Jakuba → Ratusz → Kotwica → Dwór Artusa
+ F2B:                Z3 (zamek, obowiązkowa) + Z6 herby hanzeatyckie [MVP TBD]
 ══════════════════════════════════════════════════════════
  □ 0 · START
-     Give: K1 + sealed letter prop + Z1 map + G5 cipher card (CYAN corner)
-     Time: ____:____
+     Wręcz: K1 + rekwizyt zapieczętowanego listu + mapa Z1 + karta deszyfrująca G5 (narożnik TURKUSOWY)
+     Godzina: ____:____
 
  □ 1 · Z1 REPORT
-     ✓ Kościół Jakuba → Ratusz → Kotwica → Dwór Artusa  →  give K2
-     K2 given: ____:____
+     ✓ Kościół Jakuba → Ratusz → Kotwica → Dwór Artusa  →  wręcz K2
+     K2 wręczone: ____:____
 
- □ 2a · Z3 DONE — group returns with pergamin
-     Give: K-Z6 + [Z6 props]  [MVP TBD]   K-Z6 given: ____:____
+ □ 2a · Z3 UKOŃCZONE — grupa wraca z pergaminem
+     Wręcz: K-Z6 + [rekwizyty Z6]  [MVP TBD]   K-Z6 wręczone: ____:____
 
- □ 2b · Z6 REPORT  [MVP TBD]
-     ✓  [3 matching herby — answer TBD]  →  give K8
-     K8 given: ____:____
+ □ 2b · RAPORT Z6  [MVP TBD]
+     ✓  [3 pasujące herby — odpowiedź TBD]  →  wręcz K8
+     K8 wręczone: ____:____
 
- □ 2c · Z7 REPORT
-     ✓  HANS VON BAYSEN  →  give KF + "Eighth bell. Przedzamcze."
-     KF given: ____:____
+ □ 2c · RAPORT Z7
+     ✓  HANS VON BAYSEN  →  wręcz KF + "Eighth bell. Przedzamcze."
+     KF wręczone: ____:____
 
- □ 3 · FINALE (20:30)
-     □ arrived   □ → [ ] Bażyński   [ ] Albrecht
+ □ 3 · FINAŁ (20:30)
+     □ przybyła   □ → [ ] Bażyński   [ ] Albrecht
 
- NOTES: _______________________________________________________
+ UWAGI: _______________________________________________________
 ══════════════════════════════════════════════════════════
 ```
 
@@ -218,41 +218,41 @@
 
 ```
 ══════════════════════════════════════════════════════════
- G6 · BLUE           CLASS: KZ — Krzyżacy
- Z1 PATH (chain):    S02 → C08 → C04 → C06
- Z1 ANSWER:          Brama Klasztorna → Kościół NMP → Ratusz → Pod Gwiazdą
- F2B:                Z3Z (Piccolo, mandatory) + Z8 melodia zakonu [MVP TBD]
- ⚠ starts deep SW (Brama Klasztorna, ~750 m from Rynek Nowomiejski)
+ G6 · BLUE           KLASA: KZ — Krzyżacy
+ SZLAK Z1 (łańcuch):    S02 → C08 → C04 → C06
+ ODPOWIEDŹ Z1:          Brama Klasztorna → Kościół NMP → Ratusz → Pod Gwiazdą
+ F2B:                Z3Z (Piccolo, obowiązkowa) + Z8 melodia zakonu [MVP TBD]
+ ⚠ start głęboko na SW (Brama Klasztorna, ~750 m od Rynku Nowomiejskiego)
 ══════════════════════════════════════════════════════════
  □ 0 · START
-     Give: K1 + sealed letter prop + Z1 map + G6 cipher card (BLUE corner)
-     Time: ____:____
+     Wręcz: K1 + rekwizyt zapieczętowanego listu + mapa Z1 + karta deszyfrująca G6 (narożnik NIEBIESKI)
+     Godzina: ____:____
 
  □ 1 · Z1 REPORT
-     ✓ Brama Klasztorna → Kościół NMP → Ratusz → Pod Gwiazdą  →  give K2-K (KZ version)
+     ✓ Brama Klasztorna → Kościół NMP → Ratusz → Pod Gwiazdą  →  wręcz K2-K (wersja KZ)
      ✗  →  "One of those doesn't match. Go back to the last mark you're certain of."
-     K2-K given: ____:____
-     [group solves Z2-K → goes to Piccolo (Jordan/Piotr). Jordan runs Z3Z. NO MG action.]
+     K2-K wręczone: ____:____
+     [grupa rozwiązuje Z2-K → idzie do Piccolo (Jordan/Piotr). Jordan prowadzi Z3Z. BRAK akcji MG.]
 
- □ 2a · Z3Z DONE  [MVP TBD]
-     Group brings: [Z3Z output — to be defined, see concept/05]
-     Give: K-Z8 + kalimba  [MVP TBD]       K-Z8 given: ____:____
+ □ 2a · Z3Z UKOŃCZONE  [MVP TBD]
+     Grupa przynosi: [wynik Z3Z — do zdefiniowania, patrz concept/05]
+     Wręcz: K-Z8 + kalimba  [MVP TBD]       K-Z8 wręczone: ____:____
 
- □ 2b · Z8 REPORT  [MVP TBD]
-     Group brings: 6-digit code [melody, KZ variant — answer TBD]
-     ✓  [code TBD]  →  give K8-K (Z11 cipher)
-     K8-K given: ____:____
+ □ 2b · RAPORT Z8  [MVP TBD]
+     Grupa przynosi: 6-cyfrowy kod [melodia, wariant KZ — odpowiedź TBD]
+     ✓  [kod TBD]  →  wręcz K8-K (szyfr Z11)
+     K8-K wręczone: ____:____
 
- □ 2c · Z11 REPORT  [MVP TBD]
-     Group brings: deciphered text [KZ version — no Jordan=Bażyński twist]
-     ✓  [answer TBD]  →  give KF-K
-     KF-K given: ____:____
+ □ 2c · RAPORT Z11  [MVP TBD]
+     Grupa przynosi: odszyfrowany tekst [wersja KZ — bez twista Jordan=Bażyński]
+     ✓  [odpowiedź TBD]  →  wręcz KF-K
+     KF-K wręczone: ____:____
 
- □ 3 · FINALE  (20:30, Przedzamcze)
-     □ arrived by 20:30
-     □ letter to: [ ] Bażyński (Piotr, left)  [ ] Albrecht (Zosia, right)
+ □ 3 · FINAŁ  (20:30, Przedzamcze)
+     □ przybyła do 20:30
+     □ list do: [ ] Bażyński (Piotr)  [ ] Albrecht (Zosia)
 
- NOTES: _______________________________________________________
+ UWAGI: _______________________________________________________
 ══════════════════════════════════════════════════════════
 ```
 
@@ -262,33 +262,33 @@
 
 ```
 ══════════════════════════════════════════════════════════
- G7 · PURPLE         CLASS: KZ — Krzyżacy
- Z1 PATH (chain):    S01 → C09 → C06 → C07
- Z1 ANSWER:          Brama Mostowa → Katedra Janów → Pod Gwiazdą → Dwór Artusa
- F2B:                Z3Z (Piccolo, mandatory) + Z8 melodia zakonu [MVP TBD]
- ⚠ starts deep S (Brama Mostowa)
+ G7 · PURPLE         KLASA: KZ — Krzyżacy
+ SZLAK Z1 (łańcuch):    S01 → C09 → C06 → C07
+ ODPOWIEDŹ Z1:          Brama Mostowa → Katedra Janów → Pod Gwiazdą → Dwór Artusa
+ F2B:                Z3Z (Piccolo, obowiązkowa) + Z8 melodia zakonu [MVP TBD]
+ ⚠ start głęboko na S (Brama Mostowa)
 ══════════════════════════════════════════════════════════
  □ 0 · START
-     Give: K1 + sealed letter prop + Z1 map + G7 cipher card (PURPLE corner)
-     Time: ____:____
+     Wręcz: K1 + rekwizyt zapieczętowanego listu + mapa Z1 + karta deszyfrująca G7 (narożnik FIOLETOWY)
+     Godzina: ____:____
 
  □ 1 · Z1 REPORT
-     ✓ Brama Mostowa → Katedra Janów → Pod Gwiazdą → Dwór Artusa  →  give K2-K
-     K2-K given: ____:____
+     ✓ Brama Mostowa → Katedra Janów → Pod Gwiazdą → Dwór Artusa  →  wręcz K2-K
+     K2-K wręczone: ____:____
 
- □ 2a · Z3Z DONE  [MVP TBD]
-     Give: K-Z8 + kalimba  [MVP TBD]       K-Z8 given: ____:____
+ □ 2a · Z3Z UKOŃCZONE  [MVP TBD]
+     Wręcz: K-Z8 + kalimba  [MVP TBD]       K-Z8 wręczone: ____:____
 
- □ 2b · Z8 REPORT  [MVP TBD]
-     ✓  [code TBD]  →  give K8-K           K8-K given: ____:____
+ □ 2b · RAPORT Z8  [MVP TBD]
+     ✓  [kod TBD]  →  wręcz K8-K           K8-K wręczone: ____:____
 
- □ 2c · Z11 REPORT  [MVP TBD]
-     ✓  [answer TBD]  →  give KF-K         KF-K given: ____:____
+ □ 2c · RAPORT Z11  [MVP TBD]
+     ✓  [odpowiedź TBD]  →  wręcz KF-K         KF-K wręczone: ____:____
 
- □ 3 · FINALE (20:30)
-     □ arrived   □ → [ ] Bażyński   [ ] Albrecht
+ □ 3 · FINAŁ (20:30)
+     □ przybyła   □ → [ ] Bażyński   [ ] Albrecht
 
- NOTES: _______________________________________________________
+ UWAGI: _______________________________________________________
 ══════════════════════════════════════════════════════════
 ```
 
@@ -298,33 +298,33 @@
 
 ```
 ══════════════════════════════════════════════════════════
- G8 · WHITE          CLASS: KZ — Krzyżacy
- Z1 PATH (chain):    C09 → C01 → N01 → C06
- Z1 ANSWER:          Katedra Janów → Kopernik → Piernikarka → Pod Gwiazdą
- F2B:                Z3Z (Piccolo, mandatory) + Z9 sensoryczna piernik [MVP TBD]
- ⚠ starts deep SE (Katedra Janów)
+ G8 · WHITE          KLASA: KZ — Krzyżacy
+ SZLAK Z1 (łańcuch):    C09 → C01 → N01 → C06
+ ODPOWIEDŹ Z1:          Katedra Janów → Kopernik → Piernikarka → Pod Gwiazdą
+ F2B:                Z3Z (Piccolo, obowiązkowa) + Z9 sensoryczna piernik [MVP TBD]
+ ⚠ start głęboko na SE (Katedra Janów)
 ══════════════════════════════════════════════════════════
  □ 0 · START
-     Give: K1 + sealed letter prop + Z1 map + G8 cipher card (WHITE corner)
-     Time: ____:____
+     Wręcz: K1 + rekwizyt zapieczętowanego listu + mapa Z1 + karta deszyfrująca G8 (narożnik BIAŁY)
+     Godzina: ____:____
 
  □ 1 · Z1 REPORT
-     ✓ Katedra Janów → Kopernik → Piernikarka → Pod Gwiazdą  →  give K2-K
-     K2-K given: ____:____
+     ✓ Katedra Janów → Kopernik → Piernikarka → Pod Gwiazdą  →  wręcz K2-K
+     K2-K wręczone: ____:____
 
- □ 2a · Z3Z DONE  [MVP TBD]
-     Give: K-Z9 + [sensoryczne props]  [MVP TBD]   K-Z9 given: ____:____
+ □ 2a · Z3Z UKOŃCZONE  [MVP TBD]
+     Wręcz: K-Z9 + [rekwizyty sensoryczne]  [MVP TBD]   K-Z9 wręczone: ____:____
 
- □ 2b · Z9 REPORT  [MVP TBD]
-     ✓  [answer TBD]  →  give K8-K           K8-K given: ____:____
+ □ 2b · RAPORT Z9  [MVP TBD]
+     ✓  [odpowiedź TBD]  →  wręcz K8-K           K8-K wręczone: ____:____
 
- □ 2c · Z11 REPORT  [MVP TBD]
-     ✓  [answer TBD]  →  give KF-K           KF-K given: ____:____
+ □ 2c · RAPORT Z11  [MVP TBD]
+     ✓  [odpowiedź TBD]  →  wręcz KF-K           KF-K wręczone: ____:____
 
- □ 3 · FINALE (20:30)
-     □ arrived   □ → [ ] Bażyński   [ ] Albrecht
+ □ 3 · FINAŁ (20:30)
+     □ przybyła   □ → [ ] Bażyński   [ ] Albrecht
 
- NOTES: _______________________________________________________
+ UWAGI: _______________________________________________________
 ══════════════════════════════════════════════════════════
 ```
 
@@ -334,33 +334,33 @@
 
 ```
 ══════════════════════════════════════════════════════════
- G9 · BROWN          CLASS: KZ — Krzyżacy
- Z1 PATH (chain):    N02 → C06 → S02 → C07
- Z1 ANSWER:          Przekupka → Pod Gwiazdą → Brama Klasztorna → Dwór Artusa
- F2B:                Z3Z (Piccolo, mandatory) + Z10 polichromie Biedronka [MVP TBD]
+ G9 · BROWN          KLASA: KZ — Krzyżacy
+ SZLAK Z1 (łańcuch):    N02 → C06 → S02 → C07
+ ODPOWIEDŹ Z1:          Przekupka → Pod Gwiazdą → Brama Klasztorna → Dwór Artusa
+ F2B:                Z3Z (Piccolo, obowiązkowa) + Z10 polichromie Biedronka [MVP TBD]
 ══════════════════════════════════════════════════════════
  □ 0 · START
-     Give: K1 + sealed letter prop + Z1 map + G9 cipher card (BROWN corner)
-     Time: ____:____
+     Wręcz: K1 + rekwizyt zapieczętowanego listu + mapa Z1 + karta deszyfrująca G9 (narożnik BRĄZOWY)
+     Godzina: ____:____
 
  □ 1 · Z1 REPORT
-     ✓ Przekupka → Pod Gwiazdą → Brama Klasztorna → Dwór Artusa  →  give K2-K
-     K2-K given: ____:____
+     ✓ Przekupka → Pod Gwiazdą → Brama Klasztorna → Dwór Artusa  →  wręcz K2-K
+     K2-K wręczone: ____:____
 
- □ 2a · Z3Z DONE  [MVP TBD]
-     Give: K-Z10 + [Bestiariusz Krzyżowca prop]  [MVP TBD]   K-Z10 given: ____:____
+ □ 2a · Z3Z UKOŃCZONE  [MVP TBD]
+     Wręcz: K-Z10 + [rekwizyt Bestiariusz Krzyżowca]  [MVP TBD]   K-Z10 wręczone: ____:____
 
- □ 2b · Z10 REPORT  [MVP TBD]
-     ✓  [3 correct monsters from Biedronka polichromie — answer TBD]  →  give K8-K
-     K8-K given: ____:____
+ □ 2b · RAPORT Z10  [MVP TBD]
+     ✓  [3 poprawne potwory z polichromii Biedronki — odpowiedź TBD]  →  wręcz K8-K
+     K8-K wręczone: ____:____
 
- □ 2c · Z11 REPORT  [MVP TBD]
-     ✓  [answer TBD]  →  give KF-K           KF-K given: ____:____
+ □ 2c · RAPORT Z11  [MVP TBD]
+     ✓  [odpowiedź TBD]  →  wręcz KF-K           KF-K wręczone: ____:____
 
- □ 3 · FINALE (20:30)
-     □ arrived   □ → [ ] Bażyński   [ ] Albrecht
+ □ 3 · FINAŁ (20:30)
+     □ przybyła   □ → [ ] Bażyński   [ ] Albrecht
 
- NOTES: _______________________________________________________
+ UWAGI: _______________________________________________________
 ══════════════════════════════════════════════════════════
 ```
 
@@ -370,53 +370,53 @@
 
 ```
 ══════════════════════════════════════════════════════════
- G10 · BLACK         CLASS: KZ — Krzyżacy
- Z1 PATH (chain):    C03 → C07 → N04 → C08
- Z1 ANSWER:          Filuś → Dwór Artusa → Apteka Lew → Kościół NMP
- F2B:                Z3Z (Piccolo, mandatory) + Z10 polichromie Biedronka [MVP TBD]
- ⚠ starts deep NW (Filuś / Łuk Cezara area, ~700 m from Rynek Nowomiejski)
+ G10 · BLACK         KLASA: KZ — Krzyżacy
+ SZLAK Z1 (łańcuch):    C03 → C07 → N04 → C08
+ ODPOWIEDŹ Z1:          Filuś → Dwór Artusa → Apteka Lew → Kościół NMP
+ F2B:                Z3Z (Piccolo, obowiązkowa) + Z10 polichromie Biedronka [MVP TBD]
+ ⚠ start głęboko na NW (obszar Filuś / Łuk Cezara, ~700 m od Rynku Nowomiejskiego)
 ══════════════════════════════════════════════════════════
  □ 0 · START
-     Give: K1 + sealed letter prop + Z1 map + G10 cipher card (BLACK corner)
-     Time: ____:____
+     Wręcz: K1 + rekwizyt zapieczętowanego listu + mapa Z1 + karta deszyfrująca G10 (narożnik CZARNY)
+     Godzina: ____:____
 
  □ 1 · Z1 REPORT
-     ✓ Filuś → Dwór Artusa → Apteka Lew → Kościół NMP  →  give K2-K
-     K2-K given: ____:____
+     ✓ Filuś → Dwór Artusa → Apteka Lew → Kościół NMP  →  wręcz K2-K
+     K2-K wręczone: ____:____
 
- □ 2a · Z3Z DONE  [MVP TBD]
-     Give: K-Z10 + [Bestiariusz prop]  [MVP TBD]   K-Z10 given: ____:____
+ □ 2a · Z3Z UKOŃCZONE  [MVP TBD]
+     Wręcz: K-Z10 + [rekwizyt Bestiariusz]  [MVP TBD]   K-Z10 wręczone: ____:____
 
- □ 2b · Z10 REPORT  [MVP TBD]
-     ✓  [answer TBD]  →  give K8-K           K8-K given: ____:____
+ □ 2b · RAPORT Z10  [MVP TBD]
+     ✓  [odpowiedź TBD]  →  wręcz K8-K           K8-K wręczone: ____:____
 
- □ 2c · Z11 REPORT  [MVP TBD]
-     ✓  [answer TBD]  →  give KF-K           KF-K given: ____:____
+ □ 2c · RAPORT Z11  [MVP TBD]
+     ✓  [odpowiedź TBD]  →  wręcz KF-K           KF-K wręczone: ____:____
 
- □ 3 · FINALE (20:30)
-     □ arrived   □ → [ ] Bażyński   [ ] Albrecht
+ □ 3 · FINAŁ (20:30)
+     □ przybyła   □ → [ ] Bażyński   [ ] Albrecht
 
- NOTES: _______________________________________________________
+ UWAGI: _______________________________________________________
 ══════════════════════════════════════════════════════════
 ```
 
 ---
 
-## Key — envelope stacks to prepare
+## Klucz — stosy kopert do przygotowania
 
-| Envelope | Qty | Who gets it | When |
+| Koperta | Ilość | Kto dostaje | Kiedy |
 |---|---|---|---|
-| K1 | 10 (×2 if spare) | all groups | start |
-| K2 (TR) | 5 | G1 Red / G2 Orange / G3 Yellow / G4 Green / G5 Cyan | after Z1 |
-| K2-K (KZ) | 5 | G6 Blue / G7 Purple / G8 White / G9 Brown / G10 Black | after Z1 |
-| K-Z4 + kalimba | 1 | G1 Red | after Z3 done |
-| K-Z5 | 2 | G2 Orange / G3 Yellow | after Z3 done [MVP TBD] |
-| K-Z6 | 2 | G4 Green / G5 Cyan | after Z3 done [MVP TBD] |
-| K-Z8 + kalimba | 2 | G6 Blue / G7 Purple | after Z3Z done [MVP TBD] |
-| K-Z9 | 1 | G8 White | after Z3Z done [MVP TBD] |
-| K-Z10 | 2 | G9 Brown / G10 Black | after Z3Z done [MVP TBD] |
-| K8 / K8-K | 10 | all groups | after optional puzzle |
-| KF / KF-K | 10 | all groups | after Z7/Z11 |
+| K1 | 10 (×2 jeśli zapasowe) | wszystkie grupy | start |
+| K2 (TR) | 5 | G1 czerwony / G2 pomarańczowy / G3 żółty / G4 zielony / G5 turkusowy | po Z1 |
+| K2-K (KZ) | 5 | G6 niebieski / G7 fioletowy / G8 biały / G9 brązowy / G10 czarny | po Z1 |
+| K-Z4 + kalimba | 1 | G1 czerwony | po ukończeniu Z3 |
+| K-Z5 | 2 | G2 pomarańczowy / G3 żółty | po ukończeniu Z3 [MVP TBD] |
+| K-Z6 | 2 | G4 zielony / G5 turkusowy | po ukończeniu Z3 [MVP TBD] |
+| K-Z8 + kalimba | 2 | G6 niebieski / G7 fioletowy | po ukończeniu Z3Z [MVP TBD] |
+| K-Z9 | 1 | G8 biały | po ukończeniu Z3Z [MVP TBD] |
+| K-Z10 | 2 | G9 brązowy / G10 czarny | po ukończeniu Z3Z [MVP TBD] |
+| K8 / K8-K | 10 | wszystkie grupy | po opcjonalnej zagadce |
+| KF / KF-K | 10 | wszystkie grupy | po Z7/Z11 |
 
-> Props with actors: K3 envelopes → Piotr (Jordan, one per TR group). K-Z3b → Zosia (Albrecht, one per TR group).
-> Z2 and the Piccolo/Jordan scene run **without MG** for all groups.
+> Rekwizyty u aktorów: koperty K3 → Piotr (Jordan, jedna na grupę TR). K-Z3b → Zosia (Albrecht, jedna na grupę TR).
+> Z2 i scena Piccolo/Jordan przebiegają **bez MG** dla wszystkich grup.
