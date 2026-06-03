@@ -371,7 +371,6 @@ function makePlikGrid(files) {
 function renderEtapy() {
   const main = document.getElementById('etapy');
   main.innerHTML = '';
-  const g = DATA.groups[activeGroup];
 
   for (const etap of DATA.etapy) {
     const done = localStorage.getItem('review-etap-' + etap.id) === '1';
