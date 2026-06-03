@@ -2,7 +2,7 @@
 
 > **Language:** English (player-facing). Planning notes in Polish below.
 > **Status:** draft [2026-06-02, v2 — rewizja WPROWADZONA] — awaiting Oskar's review.
-> ⚠ **Glify miejsc = `⟨mark⟩` placeholder** — jedyna część niefinalna. Realny glif Piccolo + 2 zmyślone (Młyn, Kuźnia) dobiera się przy generowaniu mapy Z1 (`#66`, `puzzles/droga-do-jordana.md §D`). Reszta tekstu (scena-odkrycie, plotki, zagadka, slip R., hasło) = finalna.
+> ✅ **Glify miejsc dobrane [2026-06-03]:** Piccolo = **≡** (trzy poziome kreski — realny glif **L01** z mapy gracza, `tools/map-gen/map-data.js`, te same współrzędne y=11/16/21); Młyn = **✚** i Kuźnia = **⊥** = **dystraktory** (proste figury liniowe **spoza** alfabetu mapy — gracz sprawdza, że ich na mapie NIE ma, więc zostaje tylko Piccolo). HTML renderu (`prototype/print/src/miasto-2-Z2.html`) rysuje je jako inline-SVG w stylu mapy (stroke `#2a1f0e`), żeby Piccolo wizualnie zgrał się z mapą. ⚠ **PDF do re-renderu** (`public/miasto-2-Z2.pdf` jest sprzed glifów). Reszta tekstu (scena-odkrycie, plotki, zagadka, slip R., hasło) = finalna.
 > **Zmiana zakupu:** „horseshoe" → „a ladle" → **„a sword"** (miecz) [2026-06-02]; Kuźnia „ironwork". Jordan kupuje miecz → to zarazem **hasło dnia** („what he bought this morning") i broń, która wraca w finale (`concept/04-faza-3-final.md`). Rozwiązanie logiczne bez zmian (izomorfizm — miecz = ironwork z Kuźni). Patrz baner „ZMIANA ATRYBUTU" w `puzzles/droga-do-jordana.md`.
 > **Contents of physical envelope:** main note (this) + intermediary's note (separate slip).
 > **Triggers:** MG hands this to group after they correctly report 4 locations in order.
@@ -39,9 +39,9 @@
 Three people went into town this morning, and each bought one thing. Work out who bought what — and where each of them works.
 
 *Where they work, what is made there — and the mark each place bears on your map:*
-- The Old Mill — bread — ⟨mark⟩
-- Piccolo — hot food *(a kitchen — ladled out)* — ⟨mark⟩
-- The Smithy — ironwork — ⟨mark⟩
+- The Old Mill — bread — ✚
+- Piccolo — hot food *(a kitchen — ladled out)* — ≡
+- The Smithy — ironwork — ⊥
 
 *The three:* Kordian · Lambert · Jordan
 *What each one bought:* food · a sword · cloth
@@ -109,7 +109,7 @@ Go carefully. — R.
 
 ## REWIZJA [2026-06-02] — ✅ WPROWADZONA (rationale zachowane do review)
 
-> Tekst wyżej (v2) realizuje poniższe punkty A–F. Zostawione jako uzasadnienie decyzji. Jedyny otwarty element: **glify (`⟨mark⟩`)** — zależne od mapy Z1. Re-render → `public/` po akceptacji.
+> Tekst wyżej (v2) realizuje poniższe punkty A–F. Zostawione jako uzasadnienie decyzji. ✅ **Glify dobrane [2026-06-03]** (Piccolo=≡, Młyn=✚, Kuźnia=⊥) — patrz banner u góry. Zostaje tylko **re-render** → `public/` po reorganizacji folderu.
 > Była **największa przebudowa** ze wszystkich kopert (zmiana statusu na scenę + warstwa glifów).
 
 ### A. Rama przestaje być głosem zleceniodawcy → SCENA-ODKRYCIE (2. osoba)
