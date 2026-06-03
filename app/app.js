@@ -329,10 +329,19 @@ function selectHtml(kind, who, label, opts) {
     + `</select></label>`;
 }
 
+/* HTML reveal Z2 — gracz ma na mapie tylko zakodowane glify → pokazujemy glif celu
+   (z tools/map-gen/map-data.js), żeby mógł go odnaleźć na wydruku. */
+function z2RevealHTML(data) {
+  const r = data.reveal;
+  return `<p class="msg">${r.head}</p>`
+    + `<div class="map-mark"><svg viewBox="0 0 32 32" width="80" height="80" aria-label="map mark">${r.glyph}</svg>`
+    + `<div class="map-mark-cap">${r.glyphCaption}</div></div>`
+    + `<p class="msg">${r.body}</p>`;
+}
+
 function z2RevealPanel(data) {
   const d = el('div', 'done', `<hr class="rule"><div class="seal small">✔</div>
-    <p class="msg">${data.reveal.head}</p>
-    <p class="msg">${data.reveal.body}</p>
+    ${z2RevealHTML(data)}
     <button class="btn" id="cont2">Continue to Z3 →</button>`);
   const b = d.querySelector('#cont2'); if (b) b.onclick = () => showStage('z3');
   return d;
@@ -342,9 +351,7 @@ function showSuccessZ2(data) {
   clear();
   const d = el('section', 'screen done');
   d.innerHTML = `<div class="seal">✔</div><h2>The pieces fit</h2>
-    <p class="msg">${data.reveal.head}</p>
-    <p class="msg">${data.reveal.body}</p>
-    <p class="muted small">Find them — they carry your way onward.</p>
+    ${z2RevealHTML(data)}
     <button id="cont" class="btn">Continue to Z3 →</button>`;
   APP.appendChild(d);
   d.querySelector('#cont').onclick = () => showStage('z3');

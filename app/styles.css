@@ -163,3 +163,9 @@ em{ font-style:italic; } strong{ font-weight:400; color:var(--rubrum); }
 .mg-note{ border:1px dashed rgba(60,46,28,.5); border-radius:8px; background:rgba(138,45,32,.05);
   padding:12px 14px; margin:18px 0 0; }
 .mg-label{ font-family:var(--mono); font-size:.7rem; letter-spacing:.06em; color:var(--rubrum); display:block; margin-bottom:4px; }
+
+/* --- glif celu na mapie (reveal Z2) --- */
+.map-mark{ margin:14px auto; padding:14px; max-width:200px; background:var(--tile);
+  border:1px solid rgba(60,46,28,.4); border-radius:10px; }
+.map-mark svg{ display:block; margin:0 auto; }
+.map-mark-cap{ margin-top:8px; font-size:.95rem; color:var(--ink); }
