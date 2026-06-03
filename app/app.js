@@ -77,7 +77,10 @@ function showStage(id) {
   const tagLabel = step.type === 'optional' ? OPTIONAL[GROUP_OPTIONAL[group]].label : step.label;
   s.appendChild(el('span', 'stage-tag', tagLabel));
 
-  if (step.type === 'optional') {
+  if (step.type === 'finale') {
+    /* Z7 / Z11 — finałowy szyfr */
+    finaleStage(s, FINALE[faction]);
+  } else if (step.type === 'optional') {
     /* Z4–Z10 — opcjonalna zagadka per grupa */
     optionalStage(s, OPTIONAL[GROUP_OPTIONAL[group]], step);
   } else if (step.type === 'actor-brief') {
@@ -305,10 +308,64 @@ function showOptSuccess(opt) {
   const d = el('section', 'screen done');
   d.innerHTML = `<div class="seal">✔</div><h2>Done as asked</h2>
     ${mgNoteHTML(opt.mg)}
-    <p class="muted small">This is the boundary of the proof-of-concept — the finale (Z7 / Z11, the cipher) is the next phase.</p>
-    <button id="back" class="btn ghost">Back to start</button>`;
+    <p class="msg">In return, the Game Master puts a coded scrap into your hand — what was waiting on your answer.</p>
+    <button id="cont" class="btn">Continue to the finale →</button>`;
   APP.appendChild(d);
-  d.querySelector('#back').onclick = () => { localStorage.setItem(LS, JSON.stringify({ solved: {} })); showGroupSelect(); };
+  d.querySelector('#cont').onclick = () => showStage('fin');
+}
+
+/* ===================== FINAŁ (Z7 / Z11) ===================== */
+function finaleStage(s, data) {
+  s.appendChild(el('h2', 'stage-title', data.title));
+  s.appendChild(propFrame(data.prop));
+
+  if (isSolved('fin')) { finaleReveal(s, data); return; }
+
+  s.appendChild(briefBody(data.intro));
+
+  // szyfrogram (przechwycona dyspozycja) — monospace
+  const c = el('div', 'cipher');
+  if (data.cipher.header) {
+    c.appendChild(el('div', 'cipher-label', 'The motto, at its head'));
+    c.appendChild(el('div', 'cipher-line', data.cipher.header));
+    c.appendChild(el('div', 'cipher-label', 'The message'));
+  }
+  c.appendChild(el('div', 'cipher-line', data.cipher.body));
+  s.appendChild(c);
+
+  const w = el('div', 'solve');
+  w.appendChild(el('p', 'msg', data.prompt));
+  const inp = el('input'); inp.type = 'text'; inp.className = 'plain-input';
+  inp.placeholder = 'THE DECODED MESSAGE'; inp.autocomplete = 'off'; inp.autocapitalize = 'characters';
+  w.appendChild(inp);
+  const btn = el('button', 'btn', 'Read it'); w.appendChild(btn);
+  const fb = el('p', 'feedback'); w.appendChild(fb);
+  const submit = () => {
+    const v = (inp.value || '').toUpperCase().replace(/[^A-Z]/g, '');
+    if (v === data.answer) { markSolved('fin'); showFinaleReveal(data); }
+    else { fb.textContent = 'That comes out as nonsense. Check your shift — or the row you read.'; fb.className = 'feedback err'; }
+  };
+  btn.onclick = submit;
+  inp.addEventListener('keydown', (e) => { if (e.key === 'Enter') submit(); });
+  s.appendChild(w);
+}
+
+function finaleReveal(s, data) {
+  s.appendChild(briefBody(data.reveal));
+  s.appendChild(mgNote(data.endNote));
+}
+
+function showFinaleReveal(data) {
+  clear();
+  const d = el('section', 'screen step');
+  d.appendChild(el('div', 'seal', '✔'));
+  d.appendChild(briefBody(data.reveal));
+  d.appendChild(mgNote(data.endNote));
+  const back = el('button', 'btn ghost', 'Play again');
+  back.style.marginTop = '22px';
+  back.onclick = () => { localStorage.setItem(LS, JSON.stringify({ solved: {} })); showGroupSelect(); };
+  d.appendChild(back);
+  APP.appendChild(d);
 }
 
 function groupChip(group) {
