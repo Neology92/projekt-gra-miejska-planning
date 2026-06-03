@@ -37,7 +37,7 @@ Każda pozycja w miarę możliwości **cytuje wiki**: `(wiki: nazwa-strony.js)` 
 | `krzyzacy-4-Z8.md` | poz. 4 Zakon | Z8 melodia zakonu | lustro Z4 (ta sama kalimba/kod) |
 | `miasto-5-Z5.md` | poz. 5 TR | Z5 sensoryczna piernik | pierniki, cechy, kontr-perspektywa piekarza |
 | `krzyzacy-4-Z9.md` | poz. 4 Zakon | Z9 sensoryczna | lustro Z5 |
-| `miasto-5-Z6.md` | poz. 5 TR | Z6 herby Aleji Gmerków | gmerki, Hanza, patrycjat |
+| `miasto-5-Z6.md` | poz. 5 TR | Z6 herby Aleji Herbów (ul. Szeroka) | Hanza, herby miejskie, patrycjat |
 | `krzyzacy-4-Z10.md` | poz. 4 Zakon | Z10 polichromie | polichromie, bestiariusz |
 | `miasto-6-Z7.md` | poz. 6 TR | Z7 finał — szyfr | twist Jordan=Bażyński, szyfr Cezara, dzwon |
 | `krzyzacy-5-Z11.md` | poz. 5 Zakon | Z11 finał — szyfr | lustro Z7 od strony Zakonu |

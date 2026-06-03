@@ -37,7 +37,7 @@
 
 ## D. Otwarte decyzje (twórcze / Piotra)
 
-- **Z6 herby** — projekt zagadki **w gestii Piotra** (w toku). Niezależnie: rename „Aleja Gmerków"→„Aleja Herbów" (poprawność faktograficzna).
+- **Z6 herby** — projekt zagadki **w gestii Piotra** (w toku). Rename „Aleja Gmerków"→„Aleja Herbów" — ZROBIONE [2026-06-03].
 - **Z11 detale** — styl symboli (gmerki robocze / heraldyka / astro) + gdzie wydać Tabelę 2. *(Parol = motto zakonu, rozstrzygnięte.)*
 - **Albrecht parol KZ** (weryfikacja w PART TWO) — ⟨TBD⟩.
 - **Klucz 2B→finał** (#27b) — czeka na doprecyzowanie pytania.

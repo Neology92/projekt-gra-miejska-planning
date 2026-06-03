@@ -187,8 +187,8 @@ Szczegóły: mechanics/koperty-mg.md §ZAŁOŻENIA PRZED RENDEREM · prototype/p
 🟡 Różne trasy Z1 per grupa ..... macierz v3.2 (10 łańcuchów) + mapa wspólna + deszyfrowniki 10 (public/decoders/) GOTOWE; zostaje dry-run R3 w terenie
 ⬜ Miejscówki zadań KZ na mapie . PO ustaleniu ścieżek krzyżaków → nanieść POI zadań KZ na mapę do druku.
                                  Nowe: „Biedronka" (Z10 polichromie). Piccolo (Z3Z) już jest. Z8 (kalimba)/Z9
-                                 (piernik) = rekwizyt wydawany przez MG, bez POI. [poboczne TR: Aleja Gmerków/ul.
-                                 Królowej Jadwigi dla Z6 też brak na mapie]. Edycja: tools/map-gen/map-data.js
+                                 (piernik) = rekwizyt wydawany przez MG, bez POI. [poboczne TR: Aleja Herbów (ul. Szeroka)
+                                 dla Z6 też brak na mapie]. Edycja: tools/map-gen/map-data.js
 ⬜ Tabele przydziału zestawów ... A/B/C × 2 tory (patrz concept/03 — model 5+5)
 ⬜ Mechanika klucza 2B→finał .... dla wszystkich par zagadek (wymienialność 1:1)
 ```
@@ -242,7 +242,7 @@ Szczegóły: mechanics/koperty-mg.md §ZAŁOŻENIA PRZED RENDEREM · prototype/p
 ```
 WCIĄŻ OTWARTE (nieblokujące):
 #1  Tytuł gry — ROZSTRZYGNIĘTE [2026-06-03]: „Gra Miejska"
-#24 Rename „Aleja Gmerków"→„Aleja Herbów" (poprawność faktograficzna; design Z6 = Piotr, w toku)
+#24 Rename „Aleja Gmerków"→„Aleja Herbów" — ROZSTRZYGNIĘTE [2026-06-03]: wszystkie pliki planistyczne zaktualizowane.
 #27b Klucz 2B→finał — ROZSTRZYGNIĘTE [2026-06-03]: brak osobnego klucza/itemu; odpowiedź do MG → koperta finałowa (Z7/Z11); wymienialność 1:1
 ```
 

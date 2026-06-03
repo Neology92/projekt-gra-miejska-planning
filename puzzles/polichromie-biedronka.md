@@ -11,8 +11,8 @@
 
 ## Numeracja: **Z10** (tor krzyżaków, opcjonalna, 2 grupy)
 
-- Lustro **Z6** (herby hanzeatyckie, ul. Królowej Jadwigi, tor mieszczan). Patrz `concept/03-faza-2b-asynchroniczne.md`, `puzzles/herby-aleja.md`.
-- Tylko dla krzyżaków (TR ma w tym miejscu Z6 — herby na Aleji Gmerków, inne miejsce).
+- Lustro **Z6** (herby hanzeatyckie, ul. Szeroka, tor mieszczan). Patrz `concept/03-faza-2b-asynchroniczne.md`, `puzzles/herby-aleja.md`.
+- Tylko dla krzyżaków (TR ma w tym miejscu Z6 — herby na Aleji Herbów, ul. Szeroka, inne miejsce).
 - Output: **wymienialny „klucz" do finału Z11** (przez MG) + weryfikacja „godności" dla Zakonu.
 - Mechanika weryfikacji — `concept/03-faza-2b-asynchroniczne.md`.
 

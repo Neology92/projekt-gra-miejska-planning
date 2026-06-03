@@ -38,12 +38,12 @@ Reguły dla **każdej** trasy (per grupa). Każda nowa trasa musi je spełniać.
 4. **Koniec łańcucha = Rynek Staromiejski**, bo tam **kręci się MG** (przyjmuje raport Z1, wydaje K2). Przystanek 4 powinien być na/przy Rynku Staromiejskim. **Piccolo NIE wlicza się do budżetu Z1** — dojście do Jordana jest częścią Z2/F2A (już po K2).
 5. **Tempo do kalkulacji:** ~80 m/min (spacer z rozglądaniem) + narzut na zakręty ~1,3×. Stąd: ~3 min ≈ ~240 m w terenie; **12 min ≈ ~900-960 m** całego łańcucha (5 legów).
 6. **Bez dużych zawrotek** — łańcuch ma płynąć w jedną stronę / zwartą pętlą; żadnych powrotów przez ten sam punkt (inaczej budżet pęka).
-7. **Omijać miejsca zarezerwowane** pod inne zagadki: Biedronka/polichromie (Z10), herby/Aleja Gmerków (Z6), zamek/Gdanisko (Z3/finał); Fontanna Flisaka tylko jako dystraktor (motyw Z4).
+7. **Omijać miejsca zarezerwowane** pod inne zagadki: Biedronka/polichromie (Z10), herby/Aleja Herbów (Z6), zamek/Gdanisko (Z3/finał); Fontanna Flisaka tylko jako dystraktor (motyw Z4).
 8. **Dyspersja:** różne grupy = różne łańcuchy (różny pierwszy glif / inne przystanki), by się nie tłoczyły.
 
 ## Trasa prototypu (tor TR, 4 kroki) — Wariant A [decyzja Oskara 2026-06-02]
 
-> **Zmiana [2026-06-02]:** wyrównanie legów przez przesunięcie środkowego przystanku na obrzeże Rynku (SW). **Pod Gwiazdą wypada z łańcucha → przechodzi do dystraktorów; Krzywa Wieża wchodzi do łańcucha.** Cel: równiejsze legi bez łamania reguły „dokładnie 4 kroki" i bez wchodzenia w Aleję Gmerków (rezerwa Z6, środek osi między rynkami). Stary wariant (Pod Gwiazdą zamiast Krzywej Wieży) → **backup niżej**.
+> **Zmiana [2026-06-02]:** wyrównanie legów przez przesunięcie środkowego przystanku na obrzeże Rynku (SW). **Pod Gwiazdą wypada z łańcucha → przechodzi do dystraktorów; Krzywa Wieża wchodzi do łańcucha.** Cel: równiejsze legi bez łamania reguły „dokładnie 4 kroki" i bez wchodzenia w Aleję Herbów (rezerwa Z6, środek osi między rynkami). Stary wariant (Pod Gwiazdą zamiast Krzywej Wieży) → **backup niżej**.
 
 Jednokierunkowy sweep **Nowe Miasto → Rynek Staromiejski**, kończący tam, gdzie **kręci się MG** (przyjmuje raport Z1, wydaje K2). Wszystkie punkty 24/7 z ulicy. Dystanse orientacyjne — zweryfikuj w terenie (dry-run).
 
@@ -98,7 +98,7 @@ To **fragment koperty K1 dotyczący szlaku** (pierwszy glif + zasada łańcucha 
 
 ## Dobór miejsc - pełna pula kandydatów z wiki
 
-Z listy 45 miejsc (`przewodnik-miejsc-gry.js`); świadomie **omijamy** miejsca zarezerwowane pod inne zagadki: Biedronka/polichromie (Z10), herby/Aleja Gmerków (Z6), zamek/Gdanisko (Z3/finał). Fontanna Flisaka tylko jako dystraktor (motyw flisaka wykorzysta Z4).
+Z listy 45 miejsc (`przewodnik-miejsc-gry.js`); świadomie **omijamy** miejsca zarezerwowane pod inne zagadki: Biedronka/polichromie (Z10), herby/Aleja Herbów (Z6), zamek/Gdanisko (Z3/finał). Fontanna Flisaka tylko jako dystraktor (motyw flisaka wykorzysta Z4).
 
 | Miejsce | Cecha do rozpoznania |
 |---------|---------------------|

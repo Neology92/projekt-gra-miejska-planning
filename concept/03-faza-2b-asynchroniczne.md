@@ -51,7 +51,7 @@ Mechaniki w większości do rozpisania (kreatywka Oskara). Tu zarys + rekwizyt +
 ### Tor mieszczan
 - **Z4 — melodia flisaka** — rekwizyt: **kalimba** (odtworzenie/rozpoznanie melodii). Patrz `puzzles/kalimba.md`.
 - **Z5 — sensoryczna z piernikiem** — rekwizyt: **pomoce sensoryczne** (zapach/smak/dotyk piernika). Opcjonalne tło do koperty: Związek Pruski wbrew rzemieślnikom / kontr-perspektywa piekarza (seed inwersji moralnej — patrz `lore/fakty-vs-fabula.md`).
-- **Z6 — herby hanzeatyckie** — ul. Królowej Jadwigi (Aleja Gmerków Hanzeatyckich). Karta z 8 herbami/miastami → idź na aleję → znajdź 3, które faktycznie są w bruku/na latarniach → te 3 = klucz. Reszta to dystraktory (wiarygodne miasta Hanzy nieobecne na tej alei). Analogia mechaniczna: Z6 : herby = Z10 : polichromie. Patrz `puzzles/herby-aleja.md`.
+- **Z6 — herby hanzeatyckie** — ul. Szerokiej / Królowej Jadwigi (Aleja Herbów). Karta z 8 herbami/miastami → idź na aleję → znajdź 3, które faktycznie są w bruku/na latarniach → te 3 = klucz. Reszta to dystraktory (wiarygodne miasta Hanzy nieobecne na tej alei). Analogia mechaniczna: Z6 : herby = Z10 : polichromie. Patrz `puzzles/herby-aleja.md`.
 
 ### Tor krzyżaków (lustra)
 - **Z8 — melodia zakonu** — rekwizyt: **kalimba** (lustro Z4).
@@ -95,4 +95,4 @@ Faza 2B = etap obserwacji czy kurierzy są godni zaufania.
 2. Co dokładnie jest „kluczem" wyjściowym z każdej zagadki (item fizyczny / hasło / fragment szyfru)? Czy wszystkie wymienialne 1:1?
 3. Mechanika „podebrania listy" Albrechtowi (Z3) — fizyczna vs abstrakcyjna; co jeśli grupa zostanie złapana?
 4. Czas trwania 2B na grupę (~60-90 min?).
-5. **Z6 = herby hanzeatyckie** na Aleji Gmerków (ul. Królowej Jadwigi) — wymaga wizyty i spisu herbów w bruku/na latarniach. Patrz `puzzles/herby-aleja.md`.
+5. **Z6 = herby hanzeatyckie** na Aleji Herbów (ul. Szeroka) — wymaga wizyty i spisu herbów w bruku. Patrz `puzzles/herby-aleja.md`.

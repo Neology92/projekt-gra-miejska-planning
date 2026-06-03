@@ -132,7 +132,7 @@ Dystraktory (5/ścieżka, zamknięta pętla rozłączna z łańcuchem) — dobie
 ## 6. WYKLUCZONE z puli Z1 (rezerwacje innych zagadek)
 
 - **Biedronka z polichromiami** (Szeroka 22) → **Z10**; godziny sklepu.
-- **Aleja gmerków / herby hanzeatyckie** (Kr. Jadwigi) → **Z6**.
+- **Aleja Herbów / herby hanzeatyckie** (ul. Szeroka / Kr. Jadwigi) → **Z6**.
 - **Zamek krzyżacki, Gdanisko, młyn zamkowy, tama, pomnik smoka, Hit Casino** (Przedzamcze) → **Z3 / finał**.
 - **Pizzeria Piccolo** (Prosta 20) → **F2A / Jordan** (cel Z2, nie Z1).
 - **Kępa Bazarowa** (za Wisłą) → poza obszarem pieszym Z1.
