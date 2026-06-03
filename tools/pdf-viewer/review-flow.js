@@ -41,7 +41,7 @@ export const ETAPY = [
       'Deszyfrownik: 4 właściwe + 5 dystraktorów, kolor grupy widoczny',
       'Koperta opisuje scenę (kursywa 2. os. "you"), nie list od nadawcy',
     ],
-    // Podpowiedzi player-facing (EN) — draft do akceptacji Oskara. Drabinka 1→3 (delikatna → dosadna).
+    // Podpowiedzi player-facing (EN). Drabinka 1→3 (delikatna → dosadna).
     hints: [
       { label: null, tiers: [
         'The symbols on the map only tell you WHERE to stand — not what you will find there. Go to the starting glyph (the triangle), then look around for a real-world detail that matches one of the little pictures on your decoder.',
@@ -75,7 +75,7 @@ export const ETAPY = [
       'Pośrednik "N." (nie "R.") — spójność z torem KZ',
       'Jeden glif realny (Albrecht) + dwa dystraktory',
     ],
-    // Podpowiedzi player-facing (EN) — draft do akceptacji Oskara.
+    // Podpowiedzi player-facing (EN).
     hints: [
       { label: 'Tor TR — mieszczanie (Jordan / Piccolo)', tiers: [
         'Three people each bought something in town this morning. Start with the one purchase that none of the three workplaces actually makes — it came from outside, and it pins down who really sold it.',
@@ -106,7 +106,7 @@ export const ETAPY = [
       'KZ: cel = obserwacja (kolor szaty + chochla); godzina buntu = 21:00',
       'KZ: Tabela 1 do Z11 — Brown×Ladle = klucz centralny; Albrecht wręcza po Z3Z',
     ],
-    // Podpowiedzi player-facing (EN) — draft do akceptacji Oskara.
+    // Podpowiedzi player-facing (EN).
     hints: [
       { label: 'Tor TR — mieszczanie (kradzież listy)', tiers: [
         'You are posing as informers eager to win the Order\'s favour. Do NOT let on that you are with the Secret Council — flatter the commander and let him do the talking.',
@@ -141,7 +141,7 @@ export const ETAPY = [
       'Grafiki Biedronki (u Piotra, poza repo) — potwierdzić; Bestiariusz Krzyżowca A/B/E — Z10',
       'Ramka MG obecna w każdej zagadce — gracz wraca do MG z kodem/wynikiem',
     ],
-    // Podpowiedzi player-facing (EN) — draft do akceptacji Oskara. Per typ zagadki opcjonalnej.
+    // Podpowiedzi player-facing (EN). Per typ zagadki opcjonalnej.
     hints: [
       { label: 'Z4 / Z8 — kalimba (melodia)', tiers: [
         'This is just a melody, not a cipher — there is no wheel or code table here. Listen to the tune and play it back on the instrument by ear. The first note is marked for you.',
@@ -190,7 +190,7 @@ export const ETAPY = [
       'Tabula recta: klucz MARIENBURG; round-trip parolu PASS — Z11',
       '"Dziewiąte bicie" = 21:00; NIE "Tuba Dei"; miejsce = Przedzamcze',
     ],
-    // Podpowiedzi player-facing (EN) — draft do akceptacji Oskara. Nie zdradzają finałowego twistu/parolu.
+    // Podpowiedzi player-facing (EN). Nie zdradzają finałowego twistu/parolu.
     hints: [
       { label: 'Z7 — mieszczanie (szyfr Cezara)', tiers: [
         'Lay the list you stole from the castle beside the intercepted letter. Both carry the same motto in the same script across the top — one plain, one scrambled.',

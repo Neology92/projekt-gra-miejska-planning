@@ -542,7 +542,7 @@ function makeHintGroup(grp) {
 function makeHintsBox(hints) {
   const box = document.createElement('div'); box.className = 'hints-box';
   const title = document.createElement('div'); title.className = 'hints-title';
-  title.textContent = 'Podpowiedzi dla graczy (EN · draft)';
+  title.textContent = 'Podpowiedzi dla graczy (EN)';
   box.appendChild(title);
   for (const grp of hints) box.appendChild(makeHintGroup(grp));
   return box;
