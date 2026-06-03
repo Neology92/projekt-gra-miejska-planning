@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Gospoda Pod Modrym Fartuchem">
+  <title>Pod Modrym Fartuchem — fartuch (N03)</title>
+  <!-- szelka na szyję -->
+  <path d="M26 11 Q32 5 38 11" fill="none" stroke="#6e4824" stroke-width="2.4" stroke-linecap="round"/>
+  <!-- troki w pasie -->
+  <path d="M25 26 Q15 27 9 33" fill="none" stroke="#8a6516" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M39 26 Q49 27 55 33" fill="none" stroke="#8a6516" stroke-width="2.4" stroke-linecap="round"/>
+  <!-- korpus: śliniak + wcięta talia + rozkloszowana spódnica -->
+  <path d="M26 11 L38 11 L39 25 L49 30 L50 53 Q32 59 14 53 L15 30 L25 25 Z"
+        fill="#a86c38" stroke="#6e4824" stroke-width="2.6" stroke-linejoin="round"/>
+  <!-- linia pasa -->
+  <path d="M25 26 L39 26" fill="none" stroke="#6e4824" stroke-width="2.2" stroke-linecap="round"/>
+  <!-- kieszeń -->
+  <path d="M24 37 L40 37 L40 47 L24 47 Z" fill="none" stroke="#fdf3e3" stroke-width="2.2" stroke-linejoin="round"/>
+  <path d="M32 37 L32 47" fill="none" stroke="#fdf3e3" stroke-width="2" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,13 @@
+{
+  "name": "Toruń 1454 — Gra Miejska",
+  "short_name": "Toruń 1454",
+  "description": "Hybrid field game — story briefs behind access codes.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#1c1712",
+  "theme_color": "#1c1712",
+  "lang": "en",
+  "icons": []
+}

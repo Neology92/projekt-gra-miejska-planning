@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Lew złoty — Apteka Pod Złotym Lwem">
+  <title>Lew złoty (Apteka Pod Złotym Lwem)</title>
+  <!-- grzywa: 8-ramienna korona (outer r=25, inner r=17) -->
+  <path d="M32 7 L39 16 L50 14 L48 26 L57 32 L48 38 L50 50 L39 48 L32 57 L26 48 L14 50 L16 39 L7 32 L16 26 L14 14 L26 16 Z"
+        fill="#a86c38" stroke="#6e4824" stroke-width="2.4" stroke-linejoin="round"/>
+  <!-- głowa: kształt tarczowy (szeroki w połowie, węższy u góry i dołu) -->
+  <path d="M22 24 Q32 20 42 24 L44 38 Q32 48 20 38 Z"
+        fill="#efe0b8" stroke="#6e4824" stroke-width="2.4" stroke-linejoin="round"/>
+  <!-- brwi zmarszczone — opadające ku środkowi -->
+  <path d="M23 30 L29 28" stroke="#6e4824" stroke-width="2.6" stroke-linecap="round"/>
+  <path d="M41 30 L35 28" stroke="#6e4824" stroke-width="2.6" stroke-linecap="round"/>
+  <!-- oczy migdałowe -->
+  <path d="M23 33 Q26 30 29 33 Q26 36 23 33 Z" fill="#5c4310"/>
+  <path d="M35 33 Q38 30 41 33 Q38 36 35 33 Z" fill="#5c4310"/>
+  <!-- nos: mostek + nozdrza -->
+  <path d="M30 37 L34 37" stroke="#6e4824" stroke-width="2.2" stroke-linecap="round"/>
+  <circle cx="29.5" cy="39" r="1.6" fill="#5c4310"/>
+  <circle cx="34.5" cy="39" r="1.6" fill="#5c4310"/>
+  <!-- pysk otwarty (heraldyczny) -->
+  <path d="M25 42 Q32 50 39 42 Z" fill="#5c4310" stroke="#6e4824" stroke-width="2.2" stroke-linejoin="round"/>
+  <!-- kły (dwa jasne trójkąty) -->
+  <path d="M28 42 L30 47 M34 47 L36 42" stroke="#efe0b8" stroke-width="2.0" stroke-linecap="round"/>
+</svg>

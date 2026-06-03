@@ -1,0 +1,22 @@
+# Netlify — OSOBNA strona (własna domena) dla aplikacji gry hybrydowej.
+# Statyczny katalog, bez builda. Publish = ten katalog (app/).
+# Niezależne od strony materiałów (torun-1454-materialy) i jej workflowu.
+
+[build]
+  publish = "."
+
+# SPA fallback (dubluje _redirects — pewność niezależnie od metody deployu).
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Fonty / ikony — długie cache (immutable assety).
+[[headers]]
+  for = "/fonts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+[[headers]]
+  for = "/icons/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"

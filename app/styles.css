@@ -1,0 +1,114 @@
+/* ============================================================================
+   styles.css — Toruń 1454 hybrid app. Mobile-first. Paleta + krój z
+   prototype/print/src/parchment.css (spójność z drukiem), layout ekranowy.
+   ============================================================================ */
+
+@font-face{ font-family:"IM Fell English"; font-style:normal; font-weight:400; font-display:swap;
+  src:url(/fonts/IMFellEnglish-Regular.woff2) format("woff2"); }
+@font-face{ font-family:"IM Fell English"; font-style:italic; font-weight:400; font-display:swap;
+  src:url(/fonts/IMFellEnglish-Italic.woff2) format("woff2"); }
+
+:root{
+  --ink:#16110c; --ink-soft:#3b3024;
+  --parch:#f1ead9; --tile:#fbf6e9;
+  --backdrop:#1c1712; --rubrum:#8a2d20;
+  --ok:#3f6b3a; --err:#8a2d20;
+  --prose:"IM Fell English", Georgia, serif;
+  --mono:"Cascadia Code","Consolas","Courier New",monospace;
+}
+
+*{ box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+html,body{ margin:0; }
+body{
+  font-family:var(--prose); color:var(--ink); background:var(--backdrop);
+  line-height:1.5; font-size:18px; min-height:100dvh;
+  display:flex; justify-content:center;
+}
+.sheet{
+  width:100%; max-width:540px; min-height:100dvh; padding:24px 22px 56px;
+  background:var(--parch);
+  background-image:
+    radial-gradient(120% 90% at 50% 0%, transparent 60%, rgba(82,66,42,.10) 100%),
+    radial-gradient(80% 60% at 18% 14%, rgba(120,104,74,.05), transparent 60%);
+  box-shadow:0 0 40px rgba(0,0,0,.5);
+}
+
+/* typo */
+h1,h2,h3{ font-weight:400; margin:0 0 .4em; }
+.muted{ color:var(--ink-soft); }
+.small{ font-size:.9rem; }
+.dateline{ font-style:italic; color:var(--ink-soft); text-align:center; margin:.6em 0; }
+.head{ font-size:1.25rem; color:var(--rubrum); margin:.85em 0 .3em; }
+.narration{ font-style:italic; color:var(--ink-soft); }
+.msg{ margin:.55em 0; }
+.rule{ border:0; border-top:1px solid rgba(60,46,28,.4); margin:1.1em 12%; }
+ol.brief-list{ margin:.4em 0 .4em 1.2em; padding:0; }
+ol.brief-list li{ margin:.3em 0; }
+em{ font-style:italic; } strong{ font-weight:400; color:var(--rubrum); }
+
+.screen{ animation:fade .3s ease; }
+@keyframes fade{ from{opacity:0; transform:translateY(6px);} to{opacity:1; transform:none;} }
+
+/* nagłówek etapu */
+.stage-tag{ display:inline-block; font-family:var(--mono); font-size:.72rem; letter-spacing:.12em;
+  text-transform:uppercase; color:#fff; background:var(--rubrum); padding:3px 9px; border-radius:3px; margin-bottom:10px; }
+.stage-title{ font-size:1.7rem; border-bottom:1px solid rgba(60,46,28,.3); padding-bottom:.25em; }
+
+/* brama kodu */
+.gate{ text-align:center; padding-top:7vh; }
+.crest{ font-size:2.6rem; color:var(--rubrum); margin-bottom:.1em; }
+.gate h1{ font-size:1.6rem; }
+.code-input{ font-family:var(--mono); font-size:1.2rem; text-align:center; letter-spacing:.06em;
+  width:100%; max-width:300px; padding:12px; margin:14px auto 10px; display:block;
+  border:1px solid rgba(60,46,28,.45); border-radius:6px; background:var(--tile); color:var(--ink); }
+
+/* przyciski */
+.btn{ font-family:var(--prose); font-size:1.1rem; cursor:pointer; display:block; width:100%;
+  max-width:320px; margin:10px auto 0; padding:12px 20px; border:0; border-radius:6px;
+  background:var(--rubrum); color:#fff; }
+.btn:active{ transform:translateY(1px); }
+.btn:disabled{ opacity:.4; cursor:default; }
+.btn.ghost{ background:transparent; color:var(--rubrum); border:1px solid var(--rubrum); }
+
+.feedback{ min-height:1.4em; margin-top:10px; font-style:italic; text-align:center; }
+.feedback.err{ color:var(--err); } .feedback.ok{ color:var(--ok); }
+
+/* ramka rekwizytu */
+.prop-frame{ border:1px dashed var(--rubrum); border-radius:8px; background:rgba(138,45,32,.06);
+  padding:12px 14px; margin:18px 0; }
+.prop-frame .ph{ font-family:var(--mono); font-size:.7rem; letter-spacing:.12em; text-transform:uppercase;
+  color:var(--rubrum); display:block; margin-bottom:6px; }
+.prop-frame ul{ margin:0; padding-left:1.1em; } .prop-frame li{ margin:.15em 0; }
+
+/* zagadka symboli */
+.solve h3{ color:var(--rubrum); font-size:1.2rem; }
+.seq{ display:flex; flex-wrap:wrap; gap:8px; align-items:center; min-height:48px;
+  padding:8px 10px; margin:6px 0 12px; border:1px solid rgba(60,46,28,.3); border-radius:8px; background:rgba(0,0,0,.02); }
+.chip{ position:relative; width:40px; height:40px; }
+.chip img{ width:100%; height:100%; object-fit:contain; }
+.chip i{ position:absolute; right:-4px; top:-6px; font-style:normal; font-family:var(--mono); font-size:.65rem;
+  background:var(--rubrum); color:#fff; width:16px; height:16px; line-height:16px; text-align:center; border-radius:50%; }
+
+.grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin:4px 0 14px; }
+.tile{ position:relative; aspect-ratio:1/1; background:var(--tile); border:1px solid rgba(60,46,28,.35);
+  border-radius:10px; cursor:pointer; padding:10px; transition:border-color .15s, transform .05s; }
+.tile img{ width:100%; height:100%; object-fit:contain; pointer-events:none; }
+.tile:active{ transform:scale(.97); }
+.tile.on{ border-color:var(--rubrum); border-width:2px; background:#f6ecdd; }
+.tile .badge{ position:absolute; right:6px; top:6px; font-family:var(--mono); font-size:.8rem;
+  width:22px; height:22px; line-height:22px; text-align:center; border-radius:50%;
+  background:var(--rubrum); color:#fff; opacity:0; }
+.tile.on .badge{ opacity:1; }
+
+.actions{ display:flex; flex-direction:column; }
+
+/* ekran sukcesu / done */
+.done{ text-align:center; }
+.done.screen{ padding-top:5vh; }
+.seal{ font-size:3rem; color:var(--ok); } .seal.small{ font-size:1.6rem; }
+.nextcode{ font-family:var(--mono); font-size:1.5rem; letter-spacing:.08em; background:var(--tile);
+  border:1px solid rgba(60,46,28,.4); border-radius:8px; padding:12px 18px; display:inline-block; margin:8px 0 4px; color:var(--rubrum); }
+
+/* nota demo */
+.demo-note{ font-family:var(--mono); font-size:.66rem; letter-spacing:.03em; color:#9c8e6e;
+  background:rgba(0,0,0,.035); border-left:3px solid #b9aa86; padding:6px 9px; margin:14px 0 0; border-radius:0 4px 4px 0; line-height:1.45; }

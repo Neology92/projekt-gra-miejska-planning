@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Trąbka herolda — Michał Archanioł grający na trąbce, Łuk Cezara">
+  <title>Trąbka herolda (Łuk Cezara)</title>
+  <!-- ustnik (lewy koniec) -->
+  <path d="M6 30 L9 30 L9 36 L6 36 Z" fill="#5c4310" stroke="#6e4824" stroke-width="2" stroke-linejoin="round"/>
+  <!-- smukła rura -->
+  <path d="M9 31 L42 31 L42 35 L9 35 Z"
+        fill="#a86c38" stroke="#6e4824" stroke-width="2.4" stroke-linejoin="round"/>
+  <!-- kielich dzwonowy (stopniowe rozszerzenie ku prawej) -->
+  <path d="M42 27 Q50 28 52 23 L58 21 Q56 33 58 45 L52 43 Q50 38 42 39 Z"
+        fill="#a86c38" stroke="#6e4824" stroke-width="2.6" stroke-linejoin="round"/>
+  <!-- obręcz kielicha -->
+  <path d="M53 22 Q51 33 53 44" fill="none" stroke="#fdf3e3" stroke-width="2" stroke-linecap="round"/>
+  <!-- podświetlenie wzdłuż rury -->
+  <path d="M12 33 L40 33" fill="none" stroke="#c08a52" stroke-width="2" stroke-linecap="round"/>
+  <!-- chorągiewka herolda zwisająca z rury -->
+  <path d="M24 35 L24 52 L31 47 L38 52 L38 35 Z"
+        fill="#efe0b8" stroke="#6e4824" stroke-width="2.2" stroke-linejoin="round"/>
+  <!-- ornament chorągiewki -->
+  <path d="M28 40 L34 40 M28 44 L34 44" stroke="#8a6516" stroke-width="1.8" stroke-linecap="round"/>
+</svg>

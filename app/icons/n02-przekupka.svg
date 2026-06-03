@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Gęś — pomnik Przekupki">
+  <title>Gęś (Przekupka)</title>
+  <!-- ciało: owal -->
+  <path d="M14 40 Q14 28 30 28 Q46 28 50 38 Q52 46 42 50 L20 50 Q12 48 14 40 Z"
+        fill="#a86c38" stroke="#6e4824" stroke-width="2.6" stroke-linejoin="round"/>
+  <!-- skrzydło: łuk na ciele -->
+  <path d="M26 34 Q36 34 44 42" fill="none" stroke="#6e4824" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M27 39 Q35 39 41 44" fill="none" stroke="#c08a52" stroke-width="2" stroke-linecap="round"/>
+  <!-- ogon -->
+  <path d="M50 38 L58 34 L52 42 Z" fill="#a86c38" stroke="#6e4824" stroke-width="2.2" stroke-linejoin="round"/>
+  <!-- szyja wygięta w S + głowa -->
+  <path d="M20 50 Q15 38 18 26 Q20 16 28 14"
+        fill="none" stroke="#6e4824" stroke-width="2.6" stroke-linecap="round"/>
+  <path d="M19 48 Q15 38 18 27 Q20 18 27 15"
+        fill="none" stroke="#a86c38" stroke-width="5" stroke-linecap="round"/>
+  <!-- głowa -->
+  <circle cx="28" cy="15" r="5.5" fill="#efe0b8" stroke="#6e4824" stroke-width="2.4"/>
+  <!-- oko -->
+  <circle cx="27" cy="14" r="1.5" fill="#5c4310"/>
+  <!-- dziób -->
+  <path d="M23 15 L15 16 L23 19 Z" fill="#c08a52" stroke="#6e4824" stroke-width="2" stroke-linejoin="round"/>
+  <!-- nogi -->
+  <path d="M28 50 L28 56 M24 56 L32 56" stroke="#6e4824" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M38 50 L38 56 M34 56 L42 56" stroke="#6e4824" stroke-width="2.2" stroke-linecap="round"/>
+</svg>
