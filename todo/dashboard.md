@@ -205,12 +205,14 @@ Szczegóły: mechanics/koperty-mg.md §ZAŁOŻENIA PRZED RENDEREM · prototype/p
 ### 🌐 Lokalizacja językowa — aktorzy/MG = PL (decyzja #70)
 
 ```
-⬜ Tłumaczenie EN→PL ............ drafty materials/actors/ (jordan, albrecht) + materials/ops/
-                                 (mg-runsheet, mg-tracking, mg-group-cards, mg-master-board,
-                                 mg-quick-hints, shopping-list) — zweryfikowane [2026-06-02]: nadal EN
-                                 (nagłówki „Language: English"); przełożyć na PL.
-                                 Wyjątek: cytaty treści zagadek / odpowiedzi gracza zostają EN.
+✅ Tłumaczenie EN→PL ............ ZROBIONE [2026-06-03]: materials/actors/ (jordan, albrecht) +
+                                 materials/ops/ (mg-runsheet, mg-tracking, mg-group-cards,
+                                 mg-master-board, mg-quick-hints, shopping-list) przełożone na PL.
+                                 Wyjątek zachowany: cytaty treści zagadek / odpowiedzi gracza =
+                                 EN (kody, parole, ciphertext, kwestie aktorów do graczy).
                                  materials/props/ (pergamin, szyfrogram) = EN (gracz) — bez zmian.
+                                 ⚠ Do weryfikacji ręcznej: ramki ASCII (║) mogą być nierówne (PL ≠ EN
+                                 długość); koperty-kody-lista.html/.pdf = artefakty pochodne, niegen.
 ⬜ Skalowanie ops/actors ........ zweryfikowane [2026-06-02]: mg-runsheet/shopping-list nadal w zakresie
                                  „prototype only — single TR path". MVP: rozszerzyć na OBA tory + 10 grup
                                  (tracking/master-board/group-cards × 10; runsheet z fazą KZ). Idzie w parze
