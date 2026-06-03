@@ -14,52 +14,17 @@ Dlaczego osobny katalog: żeby planowanie gry nie zaśmiecało wiki (ta ma być 
 
 **Konwencja wiki**: fakty (kolor `--rubrum`, czerwień) oddzielone od legend (`--legenda`, fiolet) i kwestii spornych (`--disputed`, żółć). Linki wewnętrzne `#/<slug>`.
 
-### Mapa plików w wiki (`B:/Dev/projekt_gra-miejska/src/pages/`)
+### Najważniejsze pliki w wiki (`B:/Dev/projekt_gra-miejska/src/pages/`)
 
-**Postacie historyczne**:
-- `jan-bazynski.js`, `tileman-vom-wege.js` — przywódcy buntu
-- `albrecht-kalb.js` — komtur toruński (przeciwnik)
-- `ludwig-erlichshausen.js` — Wielki Mistrz krzyżacki
-- `henryk-plauen.js`, `mikolaj-rynska.js`, `kopernik-senior.js` — kontekst
+Pełna treść jest w wiki — **czytaj ją tam, zamiast streszczać tutaj** (lista plików rozjeżdża się z repo siostrzanym). Punkty startowe:
 
-**Wydarzenia**:
-- `bunt-1454.js` — główne wydarzenie
-- `akt-wypowiedzenia.js`, `akt-inkorporacji.js` — dokumenty
-- `grunwald-1410.js`, `wojna-13letnia.js`, `bitwa-chojnice.js`, `bitwa-swiecino.js`, `bitwa-zalew.js` — bitwy
-- `wyrok-wiedenski.js`, `proces-wiedenski.js`, `nieszawa-konflikt.js`, `kryzys-1430-1440.js` — kontekst polityczny
-- `i-pokoj-torunski.js`, `ii-pokoj-torunski.js` — traktaty pokojowe
+- **`przewodnik-miejsc-gry.js`** — 45 miejsc gry z „haczykami" (detale do zagadek). Czytaj **najpierw** przy nowym miejscu.
+- **`scenariusze-questow.js`** — 10 gotowych wątków questowych, oś czasu 3-8 II 1454 (duża pomoc przy zagadkach).
+- **Postacie kluczowe**: `jan-bazynski.js`, `tileman-vom-wege.js` (przywódcy buntu), `albrecht-kalb.js` (komtur), `ludwig-erlichshausen.js` (Wielki Mistrz), `legenda-jordan.js` (Jordan z chochlą — F2A), `tajna-rada.js` (lista członków — Z3).
+- **Kontekst kulturowy**: `karnawal-1454.js` (**gra dzieje się w karnawale**), `kuchnia-pierniki.js`, `donosiciele-1454.js` (autentyczne nazwiska szpiegów).
+- **Anachronizmy** (uwaga przy stylizacji): `fontanna-flisaka.js` (1914), pomnik Kopernika (1853), `aniol-jonasz.js`.
 
-**Instytucje**:
-- `tajna-rada.js` (lista członków — dla Z3), `zwiazek-pruski.js`, `zwiazek-jaszczurczy.js`
-- `bractwo-jerzego.js`, `patrycjat-torunski.js`, `cechy-rzemieslnicze.js`
-
-**Miejsca w Toruniu** (czytaj **najpierw** `przewodnik-miejsc-gry.js` — lista 45 punktów z dostępnością):
-- `ratusz-staromiejski.js`, `dwor-artusa.js`, `dwor-bractwa-jerzego.js`
-- `zamek-krzyzacki.js`, `gdanisko.js` — finał gry
-- `kosciol-mariacki.js`, `kosciol-jakuba.js`, `katedra-janow.js` — świątynie
-- `krzywa-wieza.js`, `kamienica-pod-gwiazda.js`, `kamienica-modry-fartuch.js`, `dom-kopernika.js`
-- `brama-mostowa.js`, `brama-zeglarska.js`, `brama-klasztorna.js`, `baszty-podmurna.js`
-- `aleja-gmerkow.js`, `bulwar-filadelfijski.js`
-
-**Życie codzienne / kontekst kulturowy**:
-- `karnawal-1454.js` — **kluczowe**, gra dzieje się w czasie karnawału
-- `kuchnia-pierniki.js` — dla F2A (posiłek u Jordana)
-- `zycie-religijne.js`, `kobiety-torun.js`, `handel-hanza.js`
-- `cytaty-korespondencji.js`, `donosiciele-1454.js` (autentyczne nazwiska szpiegów Zakonu)
-
-**Legendy** (oddzielone od faktów):
-- `legenda-jordan.js` — **kluczowe dla F2A** (Jordan z chochlą)
-- `legenda-krzywa-wieza.js`, `legenda-flisak.js`
-
-**Anachronizmy** (oznaczone osobno — uwaga przy stylizacji):
-- `fontanna-flisaka.js` (1914), `fontanna-cosmopolis.js`, `pomnik-kopernika` (1853), `aniol-jonasz.js`
-
-**Scenariusze do adaptacji**:
-- `scenariusze-questow.js` — **10 gotowych wątków questowych z osią czasu 3-8 II 1454** (duża pomoc przy projektowaniu zagadek)
-- `przewodnik-miejsc-gry.js` — 45 miejsc z "haczykami" (charakterystycznymi detalami do zagadek)
-
-**Źródła naukowe**:
-- `gsta-berlin.js`, `archiwum-torun.js`, `dlugosz.js`, `historiografia.js`
+Reszta (wydarzenia, bitwy, instytucje, źródła naukowe) → `src/pages/*.js` — nazwy plików mówią same za siebie.
 
 ## Tablica Whimsical (źródło wizualne)
 
@@ -153,7 +118,8 @@ Te punkty są **niezmienne** i mają pokrycie w wiki:
 ## Workflow
 
 - **Każda większa zmiana** w tym repo → commit (`feat:`, `fix:`, `docs:`, `chore:`).
-- **Nie deployujemy** tego projektu — to czysto planistyczny katalog. Wiki ma osobny deploy do Netlify.
+- **TWARDA ZASADA — commit ⇒ push.** Po każdym commicie **od razu `git push`** (bez pytania). Stage'uj **tylko własne pliki** (jawnie, nie `git add -A`/`-u` — Oskar ma równoległy WIP).
+- **Deploy galerii materiałów = automatyczny.** `public/` jest publikowane na **https://torun-1454-materialy.netlify.app** przez GitHub Actions (`.github/workflows/deploy-netlify.yml`). Push na `master` dotykający `public/`, `tools/pdf-viewer/` lub `netlify.toml` → automatyczny `netlify deploy --prod`. Commit ruszający **tylko** pliki planistyczne (.md) **nie** deployuje — i tak ma być. **Galeria (`public/index.html`) jest auto-generowana** z zawartości `public/` przez `tools/pdf-viewer/build.mjs` (build command Netlify) — **nie edytuj `index.html` ręcznie**, zmieniaj generator. Pliki .md planning **nie** trafiają na stronę.
 - **Plany dalekosiężne** w `todo/roadmap.md`, decyzje czekające na input — w `todo/otwarte-pytania.md`.
 - **Generowane artefakty wizualne** (obrazki, PDF-y, wydruki, mocki HTML mapy/kart/kopert) → podfolder **`prototype/`** (dla milestone'u prototypu pojedynczej ścieżki). **Od fazy MVP działamy w roocie — bez osobnego `mvp/`** (był pusty, usunięty; patrz `todo/otwarte-pytania.md` #69). Pliki planistyczne (.md) zostają w `concept/`, `puzzles/`, `mechanics/` itd.
 - **Ostateczne pliki do druku** → folder **`public/`** w korzeniu repo (wersjonowany). Jedno miejsce na gotowe deliverable dla graczy — koperty (`prototype/print/render.ps1`), mapy (`tools/map-gen/render-map.ps1`), deszyfrowniki (`tools/z1-decoder/render-decoder.ps1`), inne rendery. Struktura: `public/maps/`, `public/decoders/`, `public/` (koperty PDF). Źródła renderów zostają w `prototype/print/src/`, `tools/map-gen/`, `tools/z1-decoder/`; `public/` trzyma tylko wynik.
