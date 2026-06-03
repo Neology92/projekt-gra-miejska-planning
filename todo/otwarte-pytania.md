@@ -40,7 +40,7 @@ Pytania pogrupowane wg pliku, w którym są dyskutowane szerzej.
 26. **Z10 / Polichromie Biedronka** - jakie konkretne potwory, treść „Bestiariusza Krzyżowca" (wymaga researchu osobistego).
 27. **Kalimba: używamy?** — ROZSTRZYGNIĘTE [2026-05-29]: **tak** — Z4 (melodia flisaka) + Z8 (melodia zakonu). Decyzja o instrumencie (anachronizm) — patrz `lore/fakty-vs-fabula.md`, `puzzles/kalimba.md`.
 27a. **„Opowieść skazanego" (bonus)** — mechanika trójkątnych puzzli (dwustronne), treść dwóch wersji informacji; niski priorytet.
-27b. **Mechanika „klucza" 2B→finał** — czy klucz to item fizyczny / hasło / fragment szyfru? Czy wszystkie wymienialne 1:1?
+27b. **Mechanika „klucza" 2B→finał** — ROZSTRZYGNIĘTE [2026-06-03, Oskar]: **brak osobnego klucza/itemu/hasła.** Wszystkie opcjonalne (Z4/Z5/Z6 → TR; Z8/Z9/Z10 → KZ) kończą się identycznie mechanicznie: gracz podaje odpowiedź do MG → MG wydaje kopertę finałową (Z7 dla TR / Z11 dla KZ). Koperta jest samodzielna — nie wymaga tokenu z zagadki opcjonalnej. Różnice między opcjonalnymi = wyłącznie fabularne/rekwizytowe; flow MG identyczny we wszystkich przypadkach. Wymienialność 1:1 = tak.
 
 ## NPCs i aktorzy
 
