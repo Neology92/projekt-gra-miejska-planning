@@ -90,7 +90,7 @@ em{ font-style:italic; } strong{ font-weight:400; color:var(--rubrum); }
   background:var(--rubrum); color:#fff; width:16px; height:16px; line-height:16px; text-align:center; border-radius:50%; }
 
 .grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin:4px 0 14px; }
-.tile{ position:relative; aspect-ratio:1/1; background:var(--tile); border:1px solid rgba(60,46,28,.35);
+.tile{ position:relative; aspect-ratio:1/1; min-height:76px; background:var(--tile); border:1px solid rgba(60,46,28,.35);
   border-radius:10px; cursor:pointer; padding:10px; transition:border-color .15s, transform .05s; }
 .tile img{ width:100%; height:100%; object-fit:contain; pointer-events:none; }
 .tile:active{ transform:scale(.97); }
@@ -100,7 +100,10 @@ em{ font-style:italic; } strong{ font-weight:400; color:var(--rubrum); }
   background:var(--rubrum); color:#fff; opacity:0; }
 .tile.on .badge{ opacity:1; }
 
-.actions{ display:flex; flex-direction:column; }
+/* przyciski zagadki — pełna szerokość, równo z siatką symboli (bez flex+auto-margin,
+   który rozjeżdżał Confirm/Clear) */
+.actions{ display:grid; grid-template-columns:1fr; gap:10px; margin-top:10px; }
+.actions .btn{ width:100%; max-width:none; margin:0; }
 
 /* ekran sukcesu / done */
 .done{ text-align:center; }
