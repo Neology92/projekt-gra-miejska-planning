@@ -53,9 +53,10 @@ const STAGE_Z1 = {
     { reg: 'msg', html: 'Know this: whoever reads that letter, loses it, or puts it in the wrong hands will answer for it. Not with coin. <em>With their hands.</em> You are warned once. You will not be warned again.' },
     { reg: 'rule' },
     { reg: 'head', html: 'Your road begins here.' },
-    { reg: 'msg', html: 'You hold a <em>map</em> of marks and a <em>cipher sheet</em>.' },
+    { reg: 'msg', html: 'Enclosed: a <em>map</em> of marks and a <em>cipher sheet</em>.' },
     { reg: 'msg', html: 'Each mark on the map tells you only <em>where</em> to go — never what you will find. That you must see for yourselves.' },
     { reg: 'msg', html: '<strong>Begin at △.</strong> Find it on the map and go.' },
+    { reg: 'msg', html: 'At each mark:' },
     { reg: 'list', items: [
       'Look for a <em>detail</em> that matches one of the pictures on your cipher sheet.',
       'That picture points you to the <em>next mark</em>. Go there. Do it again.',
@@ -63,6 +64,9 @@ const STAGE_Z1 = {
     ] },
     { reg: 'msg', html: 'Your chain is <strong>exactly four steps</strong> long, and it ends where you are to make contact.' },
     { reg: 'msg', html: 'Beware false trails: if you find yourselves going in circles, or returning to a mark you have already named, you have strayed — go back to the last mark you were sure of.' },
+    { reg: 'narration', html: 'Tell no one.' },
+    { reg: 'rule' },
+    { reg: 'narration', html: 'So: a letter you cannot read, a road you must find for yourselves, and a plain promise of what failure costs. Whoever wants this carried does not mean for you to enjoy the carrying. The first mark is waiting on the map. You start walking.' },
   ],
 
   // Ramka fail-safe rekwizytu (spec §C, wiersz Z1). EN (player-facing).
@@ -77,7 +81,7 @@ const STAGE_Z1 = {
   exit: {
     type: 'PREV',
     kind: 'sequence',
-    prompt: 'Name the four places of your chain, in the order you found them.',
+    prompt: 'Your four places, in the order you found them.',
     steps: [
       { canonical: 'Pomnik Piernikarki',            aliases: ['piernikarka', 'pomnik piernikarki', 'gingerbread woman', 'gingerbread maker'] },
       { canonical: 'Gospoda Pod Modrym Fartuchem',  aliases: ['modry fartuch', 'pod modrym fartuchem', 'gospoda pod modrym fartuchem', 'blue apron'] },
@@ -91,13 +95,13 @@ const STAGE_Z1 = {
   metaCard: {
     title: 'From the author',
     locked: true, // odblokowuje się po rozwiązaniu etapu (spec §D: kartka N @ etap N+1)
-    body: 'Almost nothing on your trail was really there in 1454. The corner you just stood on remembers a different city. — placeholder; final text is Oskar’s (see lore/meta-kartki/).',
+    body: 'Almost nothing on your trail was really there in 1454. The corner you just stood on remembers a different city. (Placeholder — final author’s note to come.)',
   },
 
   // Co następuje po ukończeniu (dla POC tylko informacyjnie — kolejny etap = Z2).
   next: {
     id: 'Z2',
-    note: 'Z2 unlocks. In the field your road forks here into the two factions (Mieszczanie / Krzyżacy).',
+    note: 'Your road runs on from here, to the one who must receive the letter.',
   },
 };
 

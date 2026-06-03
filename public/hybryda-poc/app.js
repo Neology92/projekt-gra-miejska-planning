@@ -66,7 +66,7 @@ function initGate(){
 
 /* ===================== BRIEF + RAMKA REKWIZYTU ===================== */
 function renderBrief(){
-  document.getElementById('brief-tag').textContent = STAGE.id + ' · ' + STAGE.faction;
+  document.getElementById('brief-tag').textContent = STAGE.id;
   document.getElementById('brief-title').textContent = STAGE.title;
 
   // narracja
