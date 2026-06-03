@@ -287,7 +287,7 @@ Do **not** warm to them. They may expect thanks, or to simply hand over their di
 
 Then set the task (Z3Z), in your own words:
 
-> There is a cook in this town. Jordan. Keeps a kitchen at Piccolo. It is no kitchen — it is where the traitors' Council does its whispering. Go there. Take what feeds them — their supplies — and deny it to them. Learn the **hour** they mean to move tonight. And mark the cook himself well: **what he wears, what he carries.** The Order will know its enemy by sight.
+> There is a cook in this town. Jordan. Keeps a kitchen at Piccolo. It is no kitchen — it is where the traitors' Council does its whispering. Go there **as one of their own** — pass for the Council's couriers, and the cook will feed you like a friend. Eat at his board; take what feeds them and deny it to them. And mark the cook himself well: **what he wears, what he carries.** The Order will know its enemy by sight.
 
 > *Why "mark what he wears, what he carries": this seeds the two Z3Z observations the group needs for the finale cipher — Jordan's **brown robe** and his **ladle** (→ Recognition Table / Z11). Say it as a commander's thoroughness, not a riddle.*
 
