@@ -110,7 +110,7 @@ Loop u MG (rola „piekarza"): MG bierze kartę → „idzie upiec" → **źle**
 
 ## Otwarte pytania
 
-1. ~~Ile słoiczków, ile nazw~~ ROZSTRZYGNIĘTE [2026-06-02, Oskar]: **7 słojów (A–G) + 10 nazw** (7 prawdziwych: cynamon, mąka żytnia, mąka pszenna, goździki, imbir, miód, **gałka muszkatołowa** + 3 dystraktory: cardamom, pepper, buckwheat flour). Etapy pośrednie (5-słojowy bez miodu; 6-słojowy bez 7. przyprawy; G chwilowo kardamon → zamieniony na gałkę) — w `git log`.
+1. ~~Ile słoiczków, ile nazw~~ ROZSTRZYGNIĘTE [2026-06-02, Oskar]: **7 słojów (A–G) + 10 nazw** (7 prawdziwych: cynamon, mąka żytnia, mąka pszenna, goździki, imbir, miód, **kardamon** + 3 dystraktory: nutmeg, pepper, buckwheat flour).
 2. ~~Które kanały~~ ROZSTRZYGNIĘTE [2026-05-31]: **słuch + węch + ważenie w dłoni**; bez smaku, bez otwierania słoików.
 3. ~~Wariant dwóch mąk~~ ROZSTRZYGNIĘTE [2026-05-31]: **(I) rye-dominant** (więcej żytniej = cięższy słoiczek).
 4. **Strategia dystraktorów** — draft: **miks** (myląco-zmysłowe + 1 kanoniczna-nieobecna + 1 anachroniczna). Do potwierdzenia.
@@ -182,7 +182,7 @@ Pointy nie trzeba porzucać — trzeba **świadomie wybrać** framing (zgodnie z
 
 ### Zestaw słoiczków — SPEC AKTYWNA [2026-06-02, Oskar]: 7 słojów (A–G)
 
-> **Ewolucja 7→5→6→7 (G: kardamon→gałka).** Finalnie: **7 poprawnych** (cynamon, mąka żytnia, mąka pszenna, goździki, imbir, miód, **gałka muszkatołowa**) + **3 dystraktory**. **Gałka jako 7. słój** [Oskar 2026-06-02 — zamiana kardamonu na gałkę] — cała bryłka (pojedynczy głuchy stuk przy potrząśnięciu), woń orzechowo-korzenna; rozróżniana **zapachem** od cynamonu (obie ciepło-brązowe). Goździki prawdziwe od początku (słój D). **Kardamon, pieprz, gryka** zostają *nazwami-dystraktorami* (kardamon: chwilowo prawdziwy → znów dystraktor). Oznaczenie słojów: **litery A–G** (do podmiany na kształty słoików, jeśli Oskar dostarczy).
+> **7 poprawnych** (cynamon, mąka żytnia, mąka pszenna, goździki, imbir, miód, **kardamon**) + **3 dystraktory** (gałka muszkatołowa, pieprz, gryka). **Kardamon = słój G**, w słoiku **mielony/sypki** (cichy, milczący pył jak cynamon/imbir), woń eukaliptusowo-cytrusowa; rozróżniany **zapachem** (od cynamonu słodkiego i imbiru ostrego). Goździki w całości (słój D). Oznaczenie słojów: **litery A–G** (do podmiany na kształty słoików, jeśli Oskar dostarczy).
 
 | Słój | Zawartość (klucz MG) | Forma (pod kanały) | Sygnały rozpoznawcze | Oś, która identyfikuje |
 |---|---|---|---|---|
@@ -192,13 +192,15 @@ Pointy nie trzeba porzucać — trzeba **świadomie wybrać** framing (zgodnie z
 | D | **goździki** | **całe pąki** | **grzechot twardych pąków**, bardzo mocny zapach | **słuch (grzechot) + zapach** (goździkowa woń) |
 | E | **imbir** | mielony | bezgłośny pył, zapach ostro-korzenny | **zapach** (ostry, „gryzący") |
 | F | **miód** | **szczelnie zamknięty (płyn!)** | **chlupot**, słodko-woskowy zapach, ciężki | **słuch (chlupot) + zapach + ciężar** — najłatwiejszy |
-| G | **gałka muszkatołowa** | **cała bryłka (1 twarda)** | **pojedynczy głuchy stuk**, woń orzechowo-korzenna | **zapach** (vs cynamon: orzechowa vs słodka) **+ słuch** (stuk ≠ grzechot/cisza) |
+| G | **kardamon** | **mielony / sypki** | milczący pył, woń eukaliptusowo-cytrusowa | **zapach** (eukaliptus/cytrus — vs cynamon słodki, vs imbir ostry) |
 
-> Domknięcie sensoryczne: **słuch/sypkość** daje rozłączne sygnały — **grzechot** (D goździki, całe pąki), **pojedynczy głuchy stuk** (G gałka, jedna bryłka), **chlupot** (F miód, jedyny płyn); reszta to milczący pył (C cynamon, E imbir, A/B mąki). Uwaga: fałszywe nazwy *pepper* i *cardamom* też by grzechotały — to **pułapki na grzechoczący słój D** (wśród „rattly" prawdziwe są tylko goździki), rozsądza **zapach**. **Zapach** izoluje C/E i rozdziela parę **cynamon↔gałka** (obie ciepło-brązowe: słodko-korzenna vs orzechowa). **Ciężar** rozdziela bezwonną parę mąk A/B — ale rozstrzyga ją dopiero **przepis** (żyto:pszenica = 3:1). Bez przepisu A vs B to rzut monetą — dlatego przepis jest **rekwizytem player-facing**, nie przypisem.
+> Domknięcie sensoryczne: **słuch** daje rozłączne sygnały — **grzechot** (D goździki, całe pąki) i **chlupot** (F miód, jedyny płyn); reszta to milczący pył (C cynamon, E imbir, **G kardamon mielony**, A/B mąki). Uwaga: fałszywa nazwa *pepper* (ziarna) też by grzechotała — to **pułapka na grzechoczący słój D** (wśród „rattly" prawdziwe są tylko goździki), rozsądza **zapach**. **Zapach** izoluje trójkę korzenną C/E/G i ją rozdziela (cynamon słodko-korzenny ↔ imbir ostry ↔ kardamon eukaliptusowo-cytrusowy). **Ciężar** rozdziela bezwonną parę mąk A/B — ale rozstrzyga ją dopiero **przepis** (żyto:pszenica = 3:1). Bez przepisu A vs B to rzut monetą — dlatego przepis jest **rekwizytem player-facing**, nie przypisem.
 
 ### Karta przepisu — REKWIZYT PLAYER-FACING (EN, #70), funkcyjny nie ozdobny
 
 > ⚠ **Bez tej karty zagadka się nie domyka.** Sam ciężar daje tylko „cięższy/lżejszy"; mapowanie *cięższy → żytnia* istnieje **wyłącznie** przez proporcję z przepisu. Oskarowe „jednej mąki 2–3× więcej" TO jest właśnie ta proporcja — musi trafić do graczy jako rekwizyt.
+
+> 🟡 **PENDING: finalny przepis dostarcza Piotr** (osobna kartka). Poniższy blok = placeholder spójny z aktualnym zestawem słojów; zostanie zastąpiony wersją Piotra. **Wymóg gatingu, który wersja Piotra musi spełnić:** 4 prawdziwe korzenie (cinnamon, cloves, ginger, **cardamom**) MUSZĄ być w przepisie; dystraktory (nutmeg, pepper, buckwheat) MUSZĄ być poza listą; proporcja mąk rye : wheat = 3 : 1.
 
 ```
 THE RULE FOR TORUŃ PIERNIK
@@ -206,12 +208,12 @@ THE RULE FOR TORUŃ PIERNIK
   Rye flour ......... three measures   (the body of the dough)
   Wheat flour ....... one measure      (for a smoother crumb)
   Honey ............. as much as the dough will take
-  Pounded spices .... cinnamon, cloves, ginger, nutmeg — and no other root.
+  Pounded spices .... cinnamon, cloves, ginger, cardamom — and no other root.
 ```
 
-Przepis robi dwie rzeczy: (a) **rye 3 : wheat 1** → „czego w cieście więcej, tego w słoju ciężej" rozstrzyga A vs B; (b) **zamyka listę składników** (4 korzenie: `cinnamon, cloves, ginger, nutmeg` + 2 mąki + miód; `and no other root`) → nazwy spoza niej (cardamom, pepper, buckwheat flour) gracz odrzuca przez czytanie przepisu. *Świadomy efekt:* znajomość/uważne czytanie przepisu = przejście ukrytego testu „jesteś swój".
-> **Karta bez nazwiska [poprawka 2026-06-02, advisor]:** nagłówek = `THE RULE FOR TORUŃ PIERNIK` (NIE „Master Bogumił's") — bo **ta sama fizyczna karta obsługuje Z5 (mieszczanie) i Z9 (krzyżacy)**; podpis toruńskiego piekarza w ręku krzyżaków byłby sprzeczny. Bezimienna „reguła" wzmacnia easter egg: to nie czyjś prywatny przepis, lecz ta sama znana reguła „po obu stronach".
-> **⚠ Gałka (nutmeg) MUSI być w przepisie:** gałka = prawdziwy słój G; gdyby jej w przepisie brakło, recipe-gating („nie ma w przepisie → fake") błędnie odrzucałby ją jak dystraktor. Lista korzeni w przepisie = **wszystkie 4 prawdziwe przyprawy** (cinnamon, cloves, ginger, nutmeg). Wiki potwierdza gałkę w palecie piernika (linia 74). Dystraktory (cardamom, pepper, buckwheat) zostają poza listą — kardamon też jest w palecie wiki, ale nie w TYM przepisie (dobry dystraktor „kanoniczny, lecz nieobecny").
+Przepis robi dwie rzeczy: (a) **rye 3 : wheat 1** → „czego w cieście więcej, tego w słoju ciężej" rozstrzyga A vs B; (b) **zamyka listę składników** (4 korzenie: `cinnamon, cloves, ginger, cardamom` + 2 mąki + miód; `and no other root`) → nazwy spoza niej (nutmeg, pepper, buckwheat flour) gracz odrzuca przez czytanie przepisu. *Świadomy efekt:* znajomość/uważne czytanie przepisu = przejście ukrytego testu „jesteś swój".
+> **Karta bez nazwiska:** nagłówek = `THE RULE FOR TORUŃ PIERNIK` (NIE „Master Bogumił's") — bo **ta sama fizyczna karta obsługuje Z5 (mieszczanie) i Z9 (krzyżacy)**; podpis toruńskiego piekarza w ręku krzyżaków byłby sprzeczny. Bezimienna „reguła" wzmacnia easter egg: to nie czyjś prywatny przepis, lecz ta sama znana reguła „po obu stronach".
+> **⚠ Kardamon (cardamom) MUSI być w przepisie:** kardamon = prawdziwy słój G; gdyby go w przepisie brakło, recipe-gating („nie ma w przepisie → fake") błędnie odrzucałby go jak dystraktor. Lista korzeni w przepisie = **wszystkie 4 prawdziwe przyprawy** (cinnamon, cloves, ginger, cardamom). Dystraktory (nutmeg, pepper, buckwheat) zostają poza listą — gałka też jest w palecie wiki, ale nie w TYM przepisie (dobry dystraktor „kanoniczny, lecz nieobecny").
 > Wariant trudniejszy (opcja): przepis podaje tylko proporcje mąk + „spices, as the craft requires" (bez nazw) → pełna identyfikacja zmysłowa, dystraktory odrzucane wyłącznie węchem. Domyślnie zostaje wersja z nazwami (łagodniejsza, mocniej spina motyw „znaj przepis").
 
 ### Lista etykiet — PLAYER-FACING (EN, #70): 10 nazw = 5 prawdziwych + 5 dystraktorów
@@ -239,13 +241,13 @@ not every name belongs. Do not open the jars.
   Jar G: ____________________
 ```
 
-> Klucz MG (NIE dla graczy): **A** rye flour · **B** wheat flour · **C** cinnamon · **D** cloves · **E** ginger · **F** honey · **G** nutmeg. (Litery przydzielone roboczo — przy produkcji wymieszać.)
+> Klucz MG (NIE dla graczy): **A** rye flour · **B** wheat flour · **C** cinnamon · **D** cloves · **E** ginger · **F** honey · **G** cardamom. (Litery przydzielone roboczo — przy produkcji wymieszać.)
 
 ### Dystraktory (nazwy bez słoika) — 3, każdy z osią, która go pokonuje
 
 | Nazwa-pułapka | Myli z (poprawnym) | Oś, która ją pokonuje | Czemu myli (i czemu okresowo OK) |
 |---|---|---|---|
-| **cardamom** (kardamon) | cloves (D) / ginger (E) | **zapach** + przepis | strąki grzechoczą jak całe goździki → **pułapka słuchu na słój D**; woń eukaliptusowo-cytrusowa myli też z imbirem. W palecie wiki, ale nie w TYM przepisie → recipe-gated. Stary Świat ✓ |
+| **nutmeg** (gałka muszkatołowa) | cinnamon (C) | **zapach** + przepis | woń orzechowo-korzenna, ciepło-brązowa jak cynamon → **pułapka węchu na cynamon**; jako cała bryłka dałaby pojedynczy głuchy stuk. W palecie wiki, ale nie w TYM przepisie → recipe-gated. Stary Świat ✓ |
 | **pepper** (pieprz) | cloves (D) | **zapach** (+ przepis) | **pułapka słuchu**: ziarna pieprzu grzechoczą jak całe goździki → dźwięk NIE rozróżnia, dopiero zapach (ostry vs goździkowy). Stary Świat ✓ |
 | **buckwheat flour** (mąka gryczana) | rye flour (A) | **tylko przepis** | bezwonny pył jak każda mąka — zmysły nie odrzucą; pokonuje wyłącznie przepis (żyto+pszenica, nie gryka). Gryka w Toruniu od XIII w. (wiki) ✓ |
 
