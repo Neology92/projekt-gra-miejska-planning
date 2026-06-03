@@ -51,7 +51,7 @@ function showGroupSelect() {
     b.type = 'button'; b.dataset.n = n;
     b.innerHTML = `<span class="dot" style="background:${m.hex}"></span><b>${n}</b><span class="cname">${m.name}</span>`;
     b.onclick = () => {
-      chosen = n;
+      chosen = n; lastPickedGroup = n;
       grid.querySelectorAll('.group-swatch').forEach((x) => x.classList.toggle('on', x.dataset.n == String(n)));
       g.querySelector('#go').disabled = false;
     };
@@ -67,58 +67,38 @@ function showGroupSelect() {
 }
 
 /* ===================== TEST PATH (ukryty skip — tylko dla autora) =====================
-   Mały, blady „UAM" na samym dole bramy startowej. Tap → odsłania panel skoku do
-   dowolnej grupy i etapu (Z1/Z2/Z3/F2B), z opcją „pokaż jako rozwiązany". Nie jest
-   częścią fabuły — służy wyłącznie szybszemu testowaniu. */
+   Mały, blady „UAM" na samym dole każdego ekranu. Tap → przeskok do KOLEJNEGO
+   etapu w ramach bieżącej ścieżki (STEP_ORDER), z zaliczeniem obecnego. Na ekranie
+   startu wchodzi w pierwszy etap (Z1) dla podświetlonej grupy (lub grupy 1). Nie
+   jest częścią fabuły — służy wyłącznie szybszemu testowaniu. */
+let lastPickedGroup = null;
+
 function testFooter() {
   const wrap = el('div', 'uam-wrap');
   const tag = el('p', 'uam-foot', 'UAM');
-  const panel = el('div', 'testpath'); panel.hidden = true;
-  buildTestPath(panel);
-  tag.onclick = () => {
-    panel.hidden = !panel.hidden;
-    if (!panel.hidden && panel.scrollIntoView) panel.scrollIntoView({ behavior: 'smooth' });
-  };
+  tag.title = 'skip to next step';
+  tag.onclick = skipToNext;
   wrap.appendChild(tag);
-  wrap.appendChild(panel);
   return wrap;
 }
 
-function buildTestPath(panel) {
-  panel.appendChild(el('div', 'tp-title', 'Test path — skip to any step'));
+function skipToNext() {
+  const s = st();
+  const group = s.group || lastPickedGroup || 1;
+  const idx = s.stage ? STEP_ORDER.indexOf(s.stage) : -1;
 
-  const cur = st().group || 1;
-  const row = el('label', 'tp-row', '<span>Group</span>');
-  const sel = el('select');
-  for (let n = 1; n <= 10; n++) {
-    const m = GROUP_META[n];
-    const o = el('option', null, `${n} · ${m.name} (${m.faction})`);
-    o.value = n; if (n == cur) o.selected = true;
-    sel.appendChild(o);
+  if (idx < 0) {                                  // ekran startu → wejdź w pierwszy etap
+    setSt({ group, stage: STEP_ORDER[0] });
+    return showStage(STEP_ORDER[0]);
   }
-  row.appendChild(sel);
-  panel.appendChild(row);
-
-  const check = el('label', 'tp-check');
-  const cb = el('input'); cb.type = 'checkbox';
-  check.appendChild(cb);
-  check.appendChild(el('span', null, 'show step as already solved'));
-  panel.appendChild(check);
-
-  const steps = el('div', 'tp-steps');
-  STEP_ORDER.forEach((id) => {
-    const b = el('button', 'tp-btn', STEPS[id].label || id);
-    b.type = 'button';
-    b.onclick = () => {
-      const group = parseInt(sel.value, 10) || 1;
-      const solved = {};
-      if (cb.checked) solved[id] = true;
-      try { localStorage.setItem(LS, JSON.stringify({ group, stage: id, solved })); } catch (e) {}
-      showStage(id);
-    };
-    steps.appendChild(b);
-  });
-  panel.appendChild(steps);
+  markSolved(s.stage);                            // zalicz obecny, żeby stan był spójny
+  const next = STEP_ORDER[idx + 1];
+  if (!next) {                                    // koniec ścieżki → wróć do wyboru grupy
+    try { localStorage.setItem(LS, JSON.stringify({ solved: {} })); } catch (e) {}
+    return showGroupSelect();
+  }
+  setSt({ group, stage: next });
+  showStage(next);
 }
 
 /* ===================== EKRAN: ETAP ===================== */
@@ -169,6 +149,7 @@ function showStage(id) {
   back.onclick = () => { localStorage.setItem(LS, JSON.stringify({ solved: {} })); showGroupSelect(); };
   s.appendChild(back);
 
+  s.appendChild(testFooter());
   APP.appendChild(s);
 }
 

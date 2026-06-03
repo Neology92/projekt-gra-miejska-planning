@@ -34,7 +34,7 @@ python3 -m http.server 8000   # → http://localhost:8000
 
 ## 🔧 Test path (ukryty skip dla autora)
 
-Na **samym dole ekranu wyboru grupy** jest blady, drobny napis **`UAM`** (mono, prawie niewidoczny). **Tap → odsłania panel „Test path"**: wybór grupy (1–10) + przyciski skoku do dowolnego etapu (`Z1` / `Z2` / `Z3` / `F2B`) i checkbox **„show step as already solved"** (od razu pokazuje panel cleared/reveal zamiast zagadki). Służy **tylko testowaniu** — nie jest częścią fabuły, gracz go nie zauważy. Kod: `testFooter()` / `buildTestPath()` w `app.js`, style `.uam-foot` / `.testpath` w `styles.css`.
+Na **samym dole każdego ekranu** jest blady, drobny napis **`UAM`** (mono, prawie niewidoczny). **Tap = przeskok do KOLEJNEGO etapu** w ramach bieżącej ścieżki (`Z1 → Z2 → Z3 → F2B`) — obecny etap jest po cichu zaliczany. Na ekranie startu UAM wchodzi w pierwszy etap (`Z1`) dla **podświetlonej grupy** (a jeśli żadnej nie tknięto — grupy 1); po `F2B` wraca do wyboru grupy. Służy **tylko testowaniu** — nie jest częścią fabuły, gracz go nie zauważy. Kod: `testFooter()` / `skipToNext()` w `app.js`, styl `.uam-foot` w `styles.css`.
 
 ## Architektura / jak dołożyć etap
 
