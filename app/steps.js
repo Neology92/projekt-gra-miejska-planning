@@ -69,9 +69,32 @@ const STEPS = {
       where: 'keep it on you — it is handed over only at the finale',
     },
     puzzle: { type: 'logic' },   // dane per frakcja z Z2_DATA
+    next: null,                  // dalej tylko grupy z opcjonalną Z10 (patrz optionalStepFor)
+  },
+
+  /* --- Z10 — opcjonalna F2B (tor KZ, grupy 9/10): polichromie „Biedronka". --- */
+  /* --- Karta „Bestiariusz Krzyżowca" (8 bestii A–H) → wskaż obecne na ścianie
+         (Szeroka 22). Treść (scena/roman/zagadka/reveal) = Z10_DATA (z10-data.js).
+         Bramka = zbiór liter (A/B/E). Terminal = granica POC (finał Z11 poza apką). --- */
+  z10: {
+    id: 'z10',
+    label: 'Z10',
+    prop: {
+      what: 'the Bestiary leaf — eight beasts in roundels, lettered A–H',
+      from: 'handed to you by the Game Master after Piccolo',
+      where: 'read it against the painted house on the Broad Street (Szeroka 22)',
+    },
+    puzzle: { type: 'beast-select' },   // dane z Z10_DATA
     next: null,
+    terminal: true,
   },
 
 };
 
-const STEP_ORDER = ['z1', 'z2'];
+const STEP_ORDER = ['z1', 'z2', 'z10'];
+
+/* Grupy, które po Z2 idą dalej do opcjonalnej Z10 (KZ zestaw C: G9 brązowy, G10 czarny).
+   Pozostałe opcjonalne KZ (Z8/Z9) są poza POC → ich Z2 zostaje terminalne. */
+function optionalStepFor(group) {
+  return (group === 9 || group === 10) ? 'z10' : null;
+}

@@ -2,7 +2,7 @@
 
 > 🌐 **LIVE:** **https://torun-1454-gra.netlify.app** (osobna strona Netlify, projekt `torun-1454-gra`).
 > **Co to:** samodzielna aplikacja webowa realizująca warstwę fabularną gry online za kodami dostępu (`mechanics/hybryda-online.md`, #77). **Osobna strona Netlify** (własna domena), niezależna od galerii materiałów (`public/` → `torun-1454-materialy`).
-> **Stan:** POC dwóch etapów — **Z1 (pełna zagadka)** + **Z2 (checkpoint, granica POC)**.
+> **Stan:** POC — **Z1 (pełna zagadka)** + **Z2 (zagadka logiczna, rozjazd TR/KZ)** + **Z10 (opcjonalna, tor KZ — tylko grupy 9/10: polichromie „Biedronka", granica POC)**.
 > **Język:** gracz = EN. Komentarze/README = PL (warstwa planistyczna).
 
 ## Co realizuje (na życzenie Oskara)
@@ -29,7 +29,8 @@ python3 -m http.server 8000   # → http://localhost:8000
 
 - **Kody dostępu** (`START-1454`, `RAVEN-2613`) = placeholdery; finalny format + per-grupowość (10 grup ≠ wspólny kod) = otwarte (spec §D).
 - **Z1 = ścieżka G1.** Pozostałe 9 grup mają własne łańcuchy/karty (`puzzles/z1-10-sciezek.md`). Apka ładuje na razie tylko G1 (`z1-data.js`).
-- **Z2** = checkpoint fabularny (granica POC). Pełna zagadka Z2 + rozwidlenie frakcji = kolejna faza.
+- **Z2** = zagadka logiczna (3 osoby × {miejsce, przedmiot}), rozjazd treści TR/KZ (`z2-data.js`). Terminal dla grup bez opcjonalnej Z10 w apce.
+- **Z10** (`z10-data.js`, typ bramki `beast-select`) = opcjonalna F2B toru KZ, **tylko grupy 9 (brązowy) i 10 (czarny)** — po Z2 prowadzi `optionalStepFor`. Karta „Bestiariusz Krzyżowca" (8 bestii A–H) → wskaż **zbiór** bestii obecnych na ścianie Biedronki (Szeroka 22); bramka = `A/B/E` (kolejność bez znaczenia). **Granica POC** (finał Z11 poza apką). ⚠ Klucz A/B/E = research autorski, niezweryfikowany on-site (`puzzles/polichromie-biedronka.md §Klucz`) — wbudowany świadomie na życzenie Oskara [2026-06-03]. Pozostałe opcjonalne KZ (Z8/Z9) oraz TR (Z4/Z5/Z6) wciąż poza apką.
 - Ikony PWA puste w manifeście.
 
 ## Architektura / jak dołożyć etap

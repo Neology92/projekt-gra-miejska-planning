@@ -100,6 +100,12 @@ em{ font-style:italic; } strong{ font-weight:400; color:var(--rubrum); }
   background:var(--rubrum); color:#fff; opacity:0; }
 .tile.on .badge{ opacity:1; }
 
+/* litery bestii (Z10) — siatka liter zamiast ikon */
+.grid.letters{ grid-template-columns:repeat(4,1fr); }
+.tile.letter{ display:flex; align-items:center; justify-content:center; }
+.tile.letter .lt{ font-family:var(--prose); font-size:1.6rem; line-height:1; color:#2a1f0e; }
+.tile.letter.on .lt{ color:var(--rubrum); }
+
 /* przyciski zagadki — pełna szerokość, równo z siatką symboli (bez flex+auto-margin,
    który rozjeżdżał Confirm/Clear) */
 .actions{ display:grid; grid-template-columns:1fr; gap:10px; margin-top:10px; }

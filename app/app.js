@@ -83,8 +83,17 @@ function showStage(id) {
     s.appendChild(propFrame(step.prop));
     s.appendChild(briefBody(data.scene));
     s.appendChild(slipBlock(data));
-    if (isSolved(id)) s.appendChild(z2RevealPanel(data));
+    if (isSolved(id)) s.appendChild(z2RevealPanel(data, group));
     else s.appendChild(logicPuzzle(step, data));
+  } else if (step.puzzle && step.puzzle.type === 'beast-select') {
+    /* Z10 — polichromie „Biedronka" (opcjonalna, tor KZ) */
+    const data = Z10_DATA;
+    s.appendChild(el('h2', 'stage-title', data.title));
+    s.appendChild(propFrame(step.prop));
+    s.appendChild(briefBody(data.scene));
+    s.appendChild(noteBlock(data));
+    if (isSolved(id)) s.appendChild(z10RevealPanel(data));
+    else s.appendChild(beastPuzzle(step, data));
   } else {
     /* Z1 — symbol-sequence */
     s.appendChild(el('h2', 'stage-title', step.title));
@@ -112,6 +121,14 @@ function slipBlock(data) {
   const d = el('div', 'slip');
   d.innerHTML = `<div class="slip-label">A scrap of paper — left for you</div>`
     + data.slip.map((p) => `<p class="msg">${p}</p>`).join('');
+  return d;
+}
+
+/* roman brata (Z10) — pisany dokument, ten sam motyw wizualny co slip */
+function noteBlock(data) {
+  const d = el('div', 'slip');
+  d.innerHTML = `<div class="slip-label">${data.noteLabel}</div>`
+    + data.note.map((p) => `<p class="msg">${p}</p>`).join('');
   return d;
 }
 
@@ -240,6 +257,79 @@ function terminalPanel(step, group) {
     <p class="msg">This is the boundary of the proof-of-concept.</p>`);
 }
 
+/* ===================== ZAGADKA: bestie na ścianie (Z10) ===================== */
+/* Wybór ZBIORU liter (kolejność bez znaczenia). Poprawnie = dokładnie answer (A/B/E). */
+function beastPuzzle(step, data) {
+  const p = data.puzzle;
+  const wrap = el('div', 'solve');
+  wrap.innerHTML = `<hr class="rule"><h3>${p.lead}</h3><p class="msg">${p.intro}</p>`;
+
+  const grid = el('div', 'grid letters');
+  p.letters.forEach((L) => {
+    const t = el('button', 'tile letter');
+    t.type = 'button'; t.dataset.l = L;
+    t.innerHTML = `<span class="lt">${L}</span><span class="badge">✓</span>`;
+    grid.appendChild(t);
+  });
+  wrap.appendChild(grid);
+
+  const actions = el('div', 'actions');
+  actions.innerHTML = `<button id="confirm" class="btn" disabled>Bring back their names</button>
+                       <button id="clearpick" class="btn ghost">Clear</button>`;
+  wrap.appendChild(actions);
+
+  const fb = el('p', 'feedback'); wrap.appendChild(fb);
+  wrap.appendChild(el('p', 'demo-note', 'Match the leaf in your hand against the painted wall. Mark only the beasts that truly stand on it — no more, no fewer.'));
+
+  let picked = [];
+  const confirmBtn = actions.querySelector('#confirm');
+
+  function paint() {
+    grid.querySelectorAll('.tile').forEach((t) => {
+      t.classList.toggle('on', picked.indexOf(t.dataset.l) >= 0);
+    });
+    confirmBtn.disabled = picked.length === 0;
+    fb.textContent = ''; fb.className = 'feedback';
+  }
+
+  grid.addEventListener('click', (e) => {
+    const t = e.target.closest('.tile'); if (!t) return;
+    const L = t.dataset.l;
+    const at = picked.indexOf(L);
+    if (at >= 0) picked.splice(at, 1); else picked.push(L);
+    paint();
+  });
+  actions.querySelector('#clearpick').onclick = () => { picked = []; paint(); };
+  confirmBtn.onclick = () => {
+    const want = p.answer.slice().sort().join('');
+    const got = picked.slice().sort().join('');
+    if (got === want) { setSt({ solved: { [step.id]: true } }); showSuccessZ10(data); }
+    else { fb.textContent = 'A townsman’s eye, not a brother’s. Some of these never stood on that wall — or you have missed one. Read it again.'; fb.className = 'feedback err'; }
+  };
+
+  paint();
+  return wrap;
+}
+
+function z10RevealPanel(data) {
+  return el('div', 'done', `<hr class="rule"><div class="seal small">✔</div>
+    <p class="msg">${data.reveal.head}</p>
+    <p class="msg">${data.reveal.body}</p>
+    <p class="muted small">(Boundary of the proof-of-concept — the finale lives off the app.)</p>`);
+}
+
+function showSuccessZ10(data) {
+  clear();
+  const d = el('section', 'screen done');
+  d.innerHTML = `<div class="seal">✔</div><h2>Known for a brother</h2>
+    <p class="msg">${data.reveal.head}</p>
+    <p class="msg">${data.reveal.body}</p>
+    <p class="muted small">(Boundary of the proof-of-concept — the finale lives off the app.)</p>
+    <button id="back" class="btn ghost">Back to start</button>`;
+  APP.appendChild(d);
+  d.querySelector('#back').onclick = () => { localStorage.setItem(LS, JSON.stringify({ solved: {} })); showGroupSelect(); };
+}
+
 /* ===================== ZAGADKA: dedukcja logiczna (Z2) ===================== */
 function logicPuzzle(step, data) {
   const p = data.puzzle;
@@ -275,7 +365,7 @@ function logicPuzzle(step, data) {
       const it = form.querySelector('select[data-kind="item"][data-who="' + person + '"]').value;
       if (pl !== p.solution[person].place || it !== p.solution[person].item) ok = false;
     });
-    if (ok) { setSt({ solved: { [step.id]: true } }); showSuccessZ2(data); }
+    if (ok) { setSt({ solved: { [step.id]: true } }); showSuccessZ2(data, st().group); }
     else { fb.textContent = 'That doesn’t hold together. Re-read the three things you overheard.'; fb.className = 'feedback err'; }
   };
   return wrap;
@@ -288,22 +378,33 @@ function selectHtml(kind, who, label, opts) {
     + `</select></label>`;
 }
 
-function z2RevealPanel(data) {
-  return el('div', 'done', `<hr class="rule"><div class="seal small">✔</div>
+function z2RevealPanel(data, group) {
+  const opt = optionalStepFor(group);
+  const d = el('div', 'done');
+  d.innerHTML = `<hr class="rule"><div class="seal small">✔</div>
     <p class="msg">${data.reveal.head}</p>
     <p class="msg">${data.reveal.body}</p>
-    <p class="muted small">Go find them — they carry your way onward. (Boundary of the proof-of-concept.)</p>`);
+    ${opt
+      ? `<button class="btn" id="cont2">Continue to ${STEPS[opt].label} →</button>`
+      : `<p class="muted small">Go find them — they carry your way onward. (Boundary of the proof-of-concept.)</p>`}`;
+  if (opt) { const b = d.querySelector('#cont2'); if (b) b.onclick = () => showStage(opt); }
+  return d;
 }
 
-function showSuccessZ2(data) {
+function showSuccessZ2(data, group) {
   clear();
+  const opt = optionalStepFor(group);
   const d = el('section', 'screen done');
   d.innerHTML = `<div class="seal">✔</div><h2>The pieces fit</h2>
     <p class="msg">${data.reveal.head}</p>
     <p class="msg">${data.reveal.body}</p>
-    <p class="muted small">Go find them — they carry your way onward. (Boundary of the proof-of-concept.)</p>
+    ${opt
+      ? `<p class="muted small">You named your man and his word — but there is more asked of the Order’s own.</p>
+         <button id="cont" class="btn">Continue to ${STEPS[opt].label} →</button>`
+      : `<p class="muted small">Go find them — they carry your way onward. (Boundary of the proof-of-concept.)</p>`}
     <button id="back" class="btn ghost">Back to start</button>`;
   APP.appendChild(d);
+  if (opt) d.querySelector('#cont').onclick = () => showStage(opt);
   d.querySelector('#back').onclick = () => { localStorage.setItem(LS, JSON.stringify({ solved: {} })); showGroupSelect(); };
 }
 

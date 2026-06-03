@@ -162,7 +162,7 @@ Szczegóły: mechanics/koperty-mg.md §ZAŁOŻENIA PRZED RENDEREM · prototype/p
 🟡 Z8 — melodia zakonu .......... draft v2 [2026-06-03]: kalimba, kod 621454, klimat zakonny + doubt-beat. Zostaje: review Oskara + HTML render  [envelopes/krzyzacy-4-Z8.md]
                                  ⚠ BRAK HTML → BRAK PDF (G6 niebieski + G7 fioletowy)
 🟡 Z9 — sensoryczna piernik ..... brief v3 [2026-06-03]: dwa kanały krytyki Zakonu; rekwizyty wyrenderowane [2026-06-02] (public/krzyzacy-bialy-4-Z9.pdf + z5z9-* + mg-Z5Z9-klucz). ⚠ tekst zmieniony po renderze → re-render po review. Zostaje: review Oskara  [envelopes/krzyzacy-4-Z9.md]
-🟡 Z10 — polichromie Biedronka .. draft v1 [2026-06-03]: leaf 8 bestii A–H, klucz A/B/E; doubt-beat. Zostaje: review Oskara + spot-check A/B/E in loco + HTML render  [envelopes/krzyzacy-4-Z10.md]
+🟡 Z10 — polichromie Biedronka .. draft v1 [2026-06-03]: leaf 8 bestii A–H, klucz A/B/E; doubt-beat. + W APCE ONLINE [2026-06-03]: etap z10 (bramka beast-select=A/B/E) dla G9/G10 po Z2 [app/z10-data.js]. Zostaje: review Oskara + spot-check A/B/E in loco + HTML render  [envelopes/krzyzacy-4-Z10.md]
                                  ⚠ BRAK HTML → BRAK PDF (G9 brązowy + G10 czarny)
 🟡 Z11 — finał krzyżaków ........ koperta gracza draft [2026-06-03]: brama = motto Zakonu (odszyfrowane przez tabelę 1 + tabula recta), wolny wybór dostawy, BRAK twistu. Zostaje: review Oskara + HTML render  [envelopes/krzyzacy-5-Z11.md]
                                  ⚠ BRAK HTML → BRAK PDF (5 kolorów KZ do wyrenderowania)
