@@ -123,6 +123,8 @@ Pytania pogrupowane wg pliku, w którym są dyskutowane szerzej.
 
 75. **Z10 KZ — klucz A/B/E (spot-check)** — ROZSTRZYGNIĘTE [2026-06-03, Oskar]: **ufamy researchowi A/B/E** — render bez wizji lokalnej. Ryzyko przyjęte; opcjonalny spot-check Szeroka 22 w dniu gry nie blokuje renderu. Zsynchronizowane: `envelopes/krzyzacy-4-Z10.md`.
 
+77. **KZ — jak trafiają do Piccolo (symbol nawigacyjny)** — ROZSTRZYGNIĘTE [2026-06-03, Oskar]: rozkaz Albrechta **K3-K niesie symbol Piccolo** = glif mapy **≡** (L01). Luka: TR uczą się „≡ = Piccolo" rozwiązując **swoje** Z2 (porównanie glifów z mapą), ale KZ tej zagadki nie robią — ich Z2 prowadzi do **Albrechta** (glif zamku), nie do Piccolo. Glif ≡ jest always-on landmark na **wszystkich 10 mapach** (mapa = wspólny Z1), więc KZ mieli Piccolo na mapie, brakowało tylko **klucza, który znak to jest**. Handler (Albrecht) podaje go wprost w treści rozkazu — spójne z bramą KZ *społeczną*, nie *epistemiczną* (nawigacja nie jest tu zagadką). Zsynchronizowane: `envelopes/krzyzacy-3-Z3Z.md` (treść rozkazu + §Symbol Piccolo), `prototype/print/src/krzyzacy-3-Z3Z.html` (inline-SVG ≡), `materials/actors/albrecht-actor-card-draft.md §STEP K2`, `concept/05`, `puzzles/zamek-krzyzacki-lista.md §Z3Z`. ⚠ `public/krzyzacy-*-3-Z3Z.pdf` do re-renderu.
+
 ---
 
 ## Sugestia kolejności rozstrzygania

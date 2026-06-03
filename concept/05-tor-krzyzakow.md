@@ -20,7 +20,8 @@
 Numeracja kanoniczna — patrz `puzzles/00-master-list.md` i `concept/03-faza-2b-asynchroniczne.md`.
 
 - **Do Z2 identycznie** z torem TR (szlak symboli Z1 → „kto kłamie?" Z2 → Piccolo).
-- **Rozdział po Z2.** Kurierzy KZ trafiają do **Albrechta (Zosia)**, który wręcza **Z3Z — infiltrację Piccolo** (siedziby TR): kradzież zaopatrzenia (kupony na obiad → zjeść), wyciągnięcie **godziny buntu (21:00)** od Jordana, obserwacja Jordana (brązowa szata + chochla → dane do Z11). Lustro Z3 (mieszczanie infiltrują zamek Albrechta). Jordan/Piotr = **cel** infiltracji KZ (nie ich handler — patrz REWIZJA wyżej).
+- **Rozdział po Z2.** Kurierzy KZ trafiają do **Albrechta (Zosia)**, który wręcza **Z3Z — infiltrację Piccolo** (siedziby TR): kradzież zaopatrzenia (kupony na obiad → zjeść), obserwacja Jordana (brązowa szata + chochla → dane do Z11). Godzina buntu (21:00) = ambient + od Albrechta (nie wyciągana od Jordana — `envelopes/krzyzacy-3-Z3Z.md` PLANNING NOTES). Lustro Z3 (mieszczanie infiltrują zamek Albrechta). Jordan/Piotr = **cel** infiltracji KZ (nie ich handler — patrz REWIZJA wyżej).
+  - **Symbol Piccolo (nawigacja):** rozkaz Albrechta (K3-K) **podaje KZ glif mapy ≡ (L01)** jako wskazówkę, gdzie jest Piccolo. KZ nie odkrywają go zagadką Z2 jak TR (ich Z2 prowadzi do Albrechta), więc handler wręcza symbol wprost. Patrz `envelopes/krzyzacy-3-Z3Z.md §Symbol Piccolo`.
 - **Zagadki opcjonalne (lustra TR):**
   - **Z8 — melodia zakonu** (kalimba) ← lustro Z4 (melodia flisaka).
   - **Z9 — sensoryczna z piernikiem** ← lustro Z5.

@@ -84,6 +84,7 @@ Grupa dowiaduje się, że Zakon ma **listę nazwisk Tajnej Rady**. Wnioski:
 Lustro Z3 dla toru krzyżaków (obowiązkowa, wszystkie 5 grup krzyżackich).
 
 - **Handler [REWIZJA 2026-06-02]:** po Z2 kurierzy KZ trafiają do **Albrechta (Zosia)** — to **on** wręcza zadanie Z3Z + **Tabelę 1** (rekwizyt do finału Z11). Nie Jordan. Patrz `concept/05-tor-krzyzakow.md §REWIZJA`.
+- **Nawigacja do Piccolo [dopisane 2026-06-03]:** rozkaz Albrechta (K3-K) **niesie symbol Piccolo** = glif mapy **≡** (L01). KZ nie rozwiązują Z2-pod-Piccolo (ich Z2 prowadzi do zamku/Albrechta), więc **nie odkrywają** glifu jak TR — Albrecht podaje go wprost. Glif jest na **wszystkich 10 mapach** (always-on landmark; mapa = wspólny Z1), brakowało tylko klucza „≡ = Piccolo". Patrz `envelopes/krzyzacy-3-Z3Z.md §Symbol Piccolo`.
 - **Miejsce infiltracji**: Piccolo (siedziba TR, gdzie urzęduje Jordan/Piotr — **cel**, nie sojusznik KZ).
 - **Zadania [MODEL ROZSTRZYGNIĘTY 2026-06-03, Oskar]:**
   - **(1) GŁÓWNY — OBSERWACJA:** zaobserwować Jordana — **barwa szaty (brązowa) + atrybut (chochla)** → dwie dane do Tabeli 1 (klucz Z11). **To jest bramka Z3Z.** Cover dla gracza: „Zakon musi *rozpoznać/potwierdzić* tego człowieka — zapamiętaj jego znaki" (gracz nie wie, że zasila szyfr; reguła ogólna „kolor + jedna rzecz", bez nazywania brąz/chochla).

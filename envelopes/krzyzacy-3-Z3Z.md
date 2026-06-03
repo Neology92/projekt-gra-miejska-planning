@@ -19,6 +19,7 @@
 - **Kiedy wręczyć:** Albrecht (Zosia) po Z2, jako handler KZ (`albrecht-actor-card §STEP K3`).
 - **Kiedy NIE wręczać:** przed spotkaniem z Albrechtem; grupom mieszczan (mają `miasto-3-Z3`).
 - **Dokąd odsyła:** do **Piccolo** (siedziba TR, gdzie urzęduje Jordan/Piotr = cel infiltracji) → po obserwacji grupa wraca do MG z „opisem człowieka" (kolor+atrybut) → MG wydaje opcjonalną (Z8/Z9/Z10).
+- **Nawigacja do Piccolo [dopisane 2026-06-03]:** rozkaz Albrechta **wręcza KZ symbol Piccolo** = glif mapowy **≡** (L01, `tools/map-gen/map-data.js`). KZ nie przechodzą Z2-pod-Piccolo (ich Z2 prowadzi do Albrechta — `krzyzacy-2-Z2`), więc **nie odkrywają glifu ≡ sami** jak TR; dlatego Albrecht podaje go wprost w treści rozkazu („three strokes laid flat — ≡"). Glif jest always-on landmark na **wszystkich 10 mapach** (mapa = wspólny Z1), więc KZ go mają na swojej mapie — brakowało tylko **klucza „≡ = Piccolo"**. Druk: glif renderowany inline-SVG w stylu mapy (jak `prototype/print/src/miasto-2-Z2.html`).
 - **Canon:** lustro `miasto-3-Z3`; `puzzles/zamek-krzyzacki-lista.md §Z3Z`; `puzzles/z11-szyfr-spec.md`.
 
 ## TEXT — K3-K (player reads this)
@@ -34,6 +35,8 @@
 You would serve the Order? Here is how you earn the right.
 
 There is a cook in this town. **Jordan.** He keeps a place they call **Piccolo** — and it is no kitchen. It is the traitors' own nest, where their Secret Council is fed and sheltered and lays its plans.
+
+You carry a map of this city, and one door upon it wears a mark the others do not: **three strokes laid flat, one upon another — ≡.** That is his kitchen. **Go to it, and to no other.**
 
 Tonight you walk in as one of *them.* The Council's couriers come and go from that kitchen all night, and the carnival lends you a face for free — **pass yourself as the Council's own, and the cook will take you for friends.** He feeds his people without a second thought. Let him feed you.
 
@@ -69,6 +72,8 @@ Eat, take his measure, and slip back into the dark. Do not be a face he remember
 
 **Sender = Albrecht (roman order, „— A.") [lustro miasto-3-Z3]:** K3-K to **pisany rozkaz handlera** (wyjątek senderless, jak K3 Jordana). Głos = pyszny komtur (`albrecht-actor-card`). Albrecht wręcza milcząco (meta); treść = jego rozkaz. Inicjał „— A." spójny z „— J."/„— R."/„— N.".
 
+**Symbol Piccolo = nawigacja [dopisane 2026-06-03, na prośbę Oskara]:** rozkaz Albrechta zawiera teraz glif **≡** (L01) jako wskazówkę „gdzie jest Piccolo". **Dlaczego potrzebne:** TR poznają, że ≡ = Piccolo, rozwiązując **swoje** Z2 (porównanie 3 glifów z mapą → tylko ≡ jest na mapie, `envelopes/miasto-2-Z2 §D`, `puzzles/droga-do-jordana.md §D`). KZ tej zagadki **nie robią** — ich Z2 (`krzyzacy-2-Z2`) kieruje ich do **Albrechta** (glif zamku), nie do Piccolo. Bez tego dopisku KZ dostawali rozkaz „infiltruj Piccolo", mając Piccolo na mapie (always-on landmark), ale **bez klucza, który znak to Piccolo** → ślepa nawigacja. Albrecht — handler, który „deals in signs" (otwarcie italic: „his grid of colours and signs") — podaje glif wprost. Spójne z bramą KZ = *społeczną*, nie *epistemiczną* (cel jawny, brak twistu; `concept/05`): nawigacja **nie jest** tu zagadką, więc wręczenie symbolu wprost jest właściwe (inaczej niż „odkrycie" u TR). ⚠ Wymóg druku: glif w stylu mapy (inline-SVG ≡, wzór `miasto-2-Z2.html`). PDF do re-renderu (patrz §Do zaktualizowania).
+
 **Single-envelope (brak Z3b-odpowiednika):** Z3 TR potrzebował 2. koperty, bo prawdziwy cel (kradzież) był ukryty za zwiadem → olśnienie. Z3Z **nie ukrywa celu** (rozpoznaj + zjedz podane wprost) → jedna koperta. Jeśli kiedyś dojdzie twist — dopisać, ale teraz zbędne.
 
 **Spięcie z Z11 [twarda zależność]:** obserwacja musi dać **brąz (szata)** + **chochla** — dokładnie współrzędne Tabeli 1 (`z11-szyfr-spec.md §2`). Wymóg kostiumu Piotra: szata jednoznacznie brązowa + chochla zawsze widoczna (oflagowane w `z11-spec §7` — kolizja z opaską G9 brąz). Order kieruje uwagę na „colour + one thing" → gracz zapamięta brąz+chochlę.
@@ -84,6 +89,8 @@ Eat, take his measure, and slip back into the dark. Do not be a face he remember
 - `puzzles/zamek-krzyzacki-lista.md §Z3Z` + Otwarte #5: „wyciągnięcie godziny 21:00 od Jordana" → ZDEZAKTUALIZOWANE (godzina = ambient + od Albrechta; główny klucz = obserwacja). Zaktualizować.
 - `lore/meta-kartki/krzyzacy-3-Z3Z.md`: tabela „Cel kradzieży = kupony + godzina buntu" → uściślić (główny = obserwacja kolor+atrybut; jedzenie = łup; godzina = ambient). Otwarte pytania pkt 1 („jak Jordan przecieka godzinę") = bezprzedmiotowe.
 - `concept/05 §Struktura`: opis Z3Z („wyciągnięcie godziny od Jordana") → zsynchronizować.
+- **`public/krzyzacy-*-3-Z3Z.pdf` (5 kolorów) → RE-RENDER** po dodaniu glifu ≡ do `prototype/print/src/krzyzacy-3-Z3Z.html`. Render = `prototype/print/render.ps1` (Win+Chrome; nie na tym agencie). Glif inline-SVG dodany do HTML — patrz tam.
+- `materials/actors/albrecht-actor-card-draft.md §STEP K2`: dopisana wzmianka, że rozkaz (K3-K) niesie symbol mapy Piccolo (≡) — handler nie musi nic dodatkowo wręczać.
 
 ## Źródła
 

@@ -293,6 +293,8 @@ Potem wyznacz zadanie (Z3Z) własnymi słowami:
 
 > *Dlaczego „zaznacz co nosi, co trzyma": to zasiewa dwie obserwacje Z3Z, których grupa potrzebuje do szyfru finałowego — **brązowa szata** Jordana i jego **chochla** (→ Tabela Rozpoznawcza / Z11). Mów to jak drobiazgowość dowódcy, nie zagadkę.*
 
+> **Gdzie jest Piccolo — nie tłumacz tego z głowy [dopisane 2026-06-03].** KZ **nie wiedzą sami**, który znak na mapie to Piccolo (tę zagadkę robią tylko grupy miejskie). **Symbol Piccolo (glif mapy ≡) jest wprost w rozkazie K3-K**, który im wręczasz — pisany rozkaz mówi „one door wears a mark the others do not… ≡". Nie musisz nic dorysowywać ani dopowiadać; wszystko jest w kopercie. Najwyżej, jeśli grupa się gubi, możesz rzucić w postaci: *„The mark is in your orders. Find it on your map and go."*
+
 > *Ton: to test równie dobrze co zadanie. Spodziewasz się, że zawiodą. Niech poczują, że muszą udowodnić ci, że mylisz się.*
 
 ---
