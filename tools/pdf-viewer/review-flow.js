@@ -41,6 +41,14 @@ export const ETAPY = [
       'Deszyfrownik: 4 właściwe + 5 dystraktorów, kolor grupy widoczny',
       'Koperta opisuje scenę (kursywa 2. os. "you"), nie list od nadawcy',
     ],
+    // Podpowiedzi player-facing (EN) — draft do akceptacji Oskara. Drabinka 1→3 (delikatna → dosadna).
+    hints: [
+      { label: null, tiers: [
+        'The symbols on the map only tell you WHERE to stand — not what you will find there. Go to the starting glyph (the triangle), then look around for a real-world detail that matches one of the little pictures on your decoder.',
+        'Each detail you spot matches a picture on the decoder, and that picture points you to the NEXT glyph on the map. Follow the chain one stop at a time, writing each place into the legend as you recognise it.',
+        'Your chain is exactly four stops long and ends where our man is waiting. If you start going in circles, or come back to a glyph you have already visited, you have taken a false trail — return to the last glyph you were sure of.',
+      ] },
+    ],
     plikiPerKolor: [
       'wspolne-{kolor}-1-Z1.pdf',
       'wspolne-{kolor}-1-Z1-mapa.pdf',
@@ -67,6 +75,19 @@ export const ETAPY = [
       'Pośrednik "N." (nie "R.") — spójność z torem KZ',
       'Jeden glif realny (Albrecht) + dwa dystraktory',
     ],
+    // Podpowiedzi player-facing (EN) — draft do akceptacji Oskara.
+    hints: [
+      { label: 'Tor TR — mieszczanie (Jordan / Piccolo)', tiers: [
+        'Three people each bought something in town this morning. Start with the one purchase that none of the three workplaces actually makes — it came from outside, and it pins down who really sold it.',
+        'Once you know who bought what and where each of them works, you have a glyph for all three. Only ONE of those glyphs actually appears on your map — that is where you go.',
+        'At the place, do not judge by appearances. Greet your contact by name and tell him what he bought this morning. The obvious guess for a cook is wrong on purpose — only the right deduction opens the door.',
+      ] },
+      { label: 'Tor KZ — krzyżacy (Albrecht)', tiers: [
+        'The same kind of puzzle: three people, three purchases. Begin with the single item that is not made at any of the three workplaces.',
+        'Work out who works where, then check your three glyphs against the map — only one is really there. Follow it to your contact.',
+        'Your contact serves the commander; address him with the right title (he is no "chairman of any council"). Use the password exactly as your handler gave it to you.',
+      ] },
+    ],
     plikiPerFrakcja: {
       miasto: ['miasto-{kolor}-2-Z2.pdf', 'miasto-{kolor}-2-Z2-slip.pdf'],
       krzyzacy: ['krzyzacy-{kolor}-2-Z2.pdf'],
@@ -84,6 +105,19 @@ export const ETAPY = [
       'TR: klucz do Z7 = motto HELFEN HEILEN UND WEHREN (zaszyfrowane +7 w szyfrgramie)',
       'KZ: cel = obserwacja (kolor szaty + chochla); godzina buntu = 21:00',
       'KZ: Tabela 1 do Z11 — Brown×Ladle = klucz centralny; Albrecht wręcza po Z3Z',
+    ],
+    // Podpowiedzi player-facing (EN) — draft do akceptacji Oskara.
+    hints: [
+      { label: 'Tor TR — mieszczanie (kradzież listy)', tiers: [
+        'You are posing as informers eager to win the Order\'s favour. Do NOT let on that you are with the Secret Council — flatter the commander and let him do the talking.',
+        'A commander who loves a good denunciation will bring out his own list of names to check it against. That parchment is the real prize. Read your second envelope once you have seen it.',
+        'Watch how the commander moves — he turns away on a regular, repeating pattern. Wait for the moment his eyes leave the list, then take it. There is always another window; never rush a bad one.',
+      ] },
+      { label: 'Tor KZ — krzyżacy (infiltracja Piccolo)', tiers: [
+        'Your task at Piccolo is to WATCH, not to act. The Order wants to be certain of this man — fix his marks in your memory.',
+        'Two things about him matter: a colour he is wearing and a thing he carries in his hand. Note them both exactly — you will need them at the very end of the game.',
+        'The "theft of supplies" is simpler than it sounds: use your coupon and take the enemy\'s meal. The hour of the rising will reach you from your own handler, not from this man.',
+      ] },
     ],
     plikiPerFrakcja: {
       miasto: [
@@ -106,6 +140,29 @@ export const ETAPY = [
       'Karta herbów hanzeatyckich (grafiki u Piotra) — potwierdzić zanim renderować — Z6',
       'Grafiki Biedronki (u Piotra, poza repo) — potwierdzić; Bestiariusz Krzyżowca A/B/E — Z10',
       'Ramka MG obecna w każdej zagadce — gracz wraca do MG z kodem/wynikiem',
+    ],
+    // Podpowiedzi player-facing (EN) — draft do akceptacji Oskara. Per typ zagadki opcjonalnej.
+    hints: [
+      { label: 'Z4 / Z8 — kalimba (melodia)', tiers: [
+        'This is just a melody, not a cipher — there is no wheel or code table here. Listen to the tune and play it back on the instrument by ear. The first note is marked for you.',
+        'Every tine of the instrument carries a number. As you play the right notes in order, read off the number under each one.',
+        'Write the numbers down in the order you played them. That string of digits is your whole answer — hand it to the Game Master.',
+      ] },
+      { label: 'Z5 / Z9 — pierniki (sensoryczna)', tiers: [
+        'Do not open the jars — smell them, shake them, weigh them in your hand. The recipe is your list of possible names, and not every name has a jar.',
+        'Whole spices rattle, powders stay silent, honey sloshes. Place the obvious ones first using sound and smell.',
+        'Two jars look and smell the same — those are the two flours. The recipe tells you which flour it uses MORE of, so the heavier jar must be that one.',
+      ] },
+      { label: 'Z6 — herby hanzeatyckie', tiers: [
+        'The shields you need are all set into the paving of ul. Szeroka — walk it and look down. Each messenger was sent to an ally whose arms RESEMBLE his own city\'s.',
+        'Pair each city that answered (Hamburg, Cologne, and Lübeck — twice) with the Prussian sender whose shield looks most like it. Toruń\'s three-towered castle, for instance, matches Hamburg.',
+        'Four of the five senders find a look-alike partner. The one Prussian shield that matches none of them is the messenger who never arrived — name that city.',
+      ] },
+      { label: 'Z10 — polichromie (Biedronka)', tiers: [
+        'Take your Bestiary card to the painted house on ul. Szeroka and study the medieval murals on its wall.',
+        'Only some of the eight beasts on your card are really painted there — the rest are decoys. Compare each medallion against the wall.',
+        'Find the three beasts that genuinely appear on the façade and report their three letters.',
+      ] },
     ],
     plikiPerGrupa: {
       G1:  ['miasto-czerwony-5-Z4.pdf',      'miasto-czerwony-5-Z4-audio.mp3'],
@@ -132,6 +189,19 @@ export const ETAPY = [
       'Brak koła/rekwizytu — czysty Cezar; shift odkrywany przez porównanie',
       'Tabula recta: klucz MARIENBURG; round-trip parolu PASS — Z11',
       '"Dziewiąte bicie" = 21:00; NIE "Tuba Dei"; miejsce = Przedzamcze',
+    ],
+    // Podpowiedzi player-facing (EN) — draft do akceptacji Oskara. Nie zdradzają finałowego twistu/parolu.
+    hints: [
+      { label: 'Z7 — mieszczanie (szyfr Cezara)', tiers: [
+        'Lay the list you stole from the castle beside the intercepted letter. Both carry the same motto in the same script across the top — one plain, one scrambled.',
+        'Line the two mottos up letter for letter: the comma and the exclamation mark sit in the same places. Compare the first letters to see how far the alphabet has shifted — every letter moves by that same amount.',
+        'Once you know the shift, walk each letter of the message back by it (the alphabet wraps around: before A comes Z). The sentence will tell you who your contact in Piccolo truly is.',
+      ] },
+      { label: 'Z11 — krzyżacy (dwie tabele)', tiers: [
+        'Your key comes from the man you watched at Piccolo: a colour he wore and a thing he held. Cross that row with that column on Table 1 to get a single symbol.',
+        'Find that symbol\'s row on Table 2 (the large grid). To decode a letter, locate the ciphertext letter INSIDE that row and read the letter printed at the top of its column.',
+        'If the message comes out as gibberish, you took the wrong cell on Table 1 — recheck the colour and the object. The correct row spells a phrase you must speak aloud to the commander.',
+      ] },
     ],
     plikiPerFrakcja: {
       miasto: ['miasto-{kolor}-6-Z7.pdf', 'miasto-{kolor}-06a-Z7-list.pdf'],

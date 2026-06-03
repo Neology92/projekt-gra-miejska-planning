@@ -97,6 +97,7 @@ const htmlData = {
     opis: e.opis,
     doSprawdzenia: e.doSprawdzenia,
     doSprawdzeniaKZ: e.doSprawdzeniaKZ || null,
+    hints: e.hints || null,
     filesPerGroup: e.filesPerGroup,
   })),
 };
@@ -280,6 +281,38 @@ const html = `<!doctype html>
   .sprawdzenia[open] summary::before { content: "▼ "; }
   .sprawdzenia ul { margin: 8px 0 0; padding-left: 18px; }
   .sprawdzenia li { font-size: 13px; color: var(--muted); margin-bottom: 4px; }
+  /* podpowiedzi „show a hint" (player-facing EN) */
+  .hints-box {
+    background: color-mix(in srgb, var(--accent) 9%, var(--surface-2));
+    border: 1px solid color-mix(in srgb, var(--accent) 38%, var(--border));
+    border-radius: 10px; padding: 12px 14px; margin-bottom: 14px;
+  }
+  .hints-title {
+    font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .4px;
+    color: var(--accent); margin-bottom: 10px;
+  }
+  .hint-group { margin-bottom: 12px; }
+  .hint-group:last-child { margin-bottom: 0; }
+  .hint-group-label {
+    font-size: 12px; font-weight: 700; color: var(--text); margin-bottom: 6px;
+  }
+  .hint-tiers { display: flex; flex-direction: column; gap: 6px; margin-bottom: 8px; }
+  .hint-tier {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 8px;
+    padding: 8px 11px; font-size: 13px; color: var(--text); line-height: 1.5;
+  }
+  .hint-cap {
+    display: inline-block; font-size: 10px; font-weight: 800; letter-spacing: .5px;
+    text-transform: uppercase; color: var(--accent); margin-right: 7px; vertical-align: 1px;
+  }
+  .hint-txt { color: var(--muted); }
+  .hint-btn {
+    appearance: none; cursor: pointer; font: inherit; font-size: 13px; font-weight: 600;
+    color: var(--bg); background: var(--accent); border: none; border-radius: 8px;
+    padding: 7px 14px; transition: filter .12s;
+  }
+  .hint-btn:hover { filter: brightness(1.08); }
+  .hint-btn:disabled { cursor: default; background: var(--surface); color: var(--muted); border: 1px solid var(--border); }
   /* fork layout */
   .fork-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
   @media (max-width: 700px) { .fork-wrap { grid-template-columns: 1fr; } }
@@ -475,6 +508,46 @@ function makeFileCard(f) {
   return card;
 }
 
+// --- Podpowiedzi „show a hint" (player-facing) ---
+// Progresywne odsłanianie: pierwszy klik = Hint 1, kolejne = następne poziomy.
+// Tekst tylko przez textContent (bez innerHTML) → bezpieczne wobec danych z JSON.
+function makeHintGroup(grp) {
+  const wrap = document.createElement('div'); wrap.className = 'hint-group';
+  if (grp.label) {
+    const lbl = document.createElement('div'); lbl.className = 'hint-group-label'; lbl.textContent = grp.label;
+    wrap.appendChild(lbl);
+  }
+  const revealed = document.createElement('div'); revealed.className = 'hint-tiers';
+  wrap.appendChild(revealed);
+  const tiers = grp.tiers || [];
+  let shown = 0;
+  const btn = document.createElement('button'); btn.type = 'button'; btn.className = 'hint-btn';
+  function refresh() {
+    if (shown >= tiers.length) { btn.textContent = tiers.length ? 'No more hints' : 'No hints'; btn.disabled = true; }
+    else btn.textContent = shown === 0 ? 'Show a hint' : ('Show next hint (' + (shown + 1) + '/' + tiers.length + ')');
+  }
+  btn.addEventListener('click', () => {
+    if (shown >= tiers.length) return;
+    const t = document.createElement('div'); t.className = 'hint-tier';
+    const cap = document.createElement('span'); cap.className = 'hint-cap'; cap.textContent = 'Hint ' + (shown + 1);
+    const txt = document.createElement('span'); txt.className = 'hint-txt'; txt.textContent = tiers[shown];
+    t.appendChild(cap); t.appendChild(txt); revealed.appendChild(t);
+    shown++; refresh();
+  });
+  refresh();
+  wrap.appendChild(btn);
+  return wrap;
+}
+
+function makeHintsBox(hints) {
+  const box = document.createElement('div'); box.className = 'hints-box';
+  const title = document.createElement('div'); title.className = 'hints-title';
+  title.textContent = 'Podpowiedzi dla graczy (EN · draft)';
+  box.appendChild(title);
+  for (const grp of hints) box.appendChild(makeHintGroup(grp));
+  return box;
+}
+
 function makePlikGrid(files) {
   if (!files || files.length === 0) {
     const d = document.createElement('p'); d.className = 'etap-empty'; d.textContent = '— brak plików dla tego etapu —';
@@ -539,6 +612,11 @@ function renderEtapy() {
       }
       det.appendChild(ul);
       section.appendChild(det);
+    }
+
+    // Podpowiedzi „show a hint" — tylko etapy-zagadki je mają (E1–E5)
+    if (Array.isArray(etap.hints) && etap.hints.length > 0) {
+      section.appendChild(makeHintsBox(etap.hints));
     }
 
     // Pliki — zawsze pokazuj wszystkie warianty kolorystyczne
