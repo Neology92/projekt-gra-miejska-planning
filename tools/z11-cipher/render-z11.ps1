@@ -1,8 +1,10 @@
-# render-z11.ps1 — headless Chrome: PDF renders of Z11 cipher tables.
+# render-z11.ps1 — headless Chrome: PDF renders of Z11 cipher tables (per KZ group colour).
 #
-# Produces:
-#   public/z11-tabela-1-symbole.pdf    (Table 1 — symbol lookup, A4 portrait)
-#   public/z11-tabela-2-tabula-recta.pdf  (Table 2 — tabula recta, A4 landscape)
+# Produces, for each KZ colour (G6-G10 = niebieski fioletowy bialy brazowy czarny):
+#   public/krzyzacy-<kolor>-5-Z11-tabela-symbole.pdf      (Table 1 — symbol lookup, A4 portrait)
+#   public/krzyzacy-<kolor>-5-Z11-tabela-recta.pdf        (Table 2 — tabula recta, A4 landscape)
+# The tables are shared content (each group reads its own row); the per-colour copies differ only by
+# the edge-stamp (k05-<kolor>) + filename. Name canon: envelopes/README.md §Systematyka nazw.
 #
 # Pre-render gate: node cipher-data.js validates round-trip, permutations, no decoy collision.
 # Render is aborted if validation fails.
@@ -41,15 +43,28 @@ if (-not $browser) { throw 'No Chrome/Edge found. Install Chrome or Edge.' }
 Write-Host "Browser: $browser`n"
 
 # --- Render function (same poll pattern as render-decoder.ps1) ---
+# Injects the edge-stamp: copies the HTML to a temp sibling (keeps relative <script> paths working),
+# substitutes __STAMP__ -> $Stamp, renders that, then deletes the temp.
 function Render-Page {
   param(
     [string]$HtmlFile,
     [string]$PdfOut,
-    [string]$Label
+    [string]$Label,
+    [string]$Stamp
   )
 
   $htmlPath = Join-Path $here $HtmlFile
-  $uri      = ([System.Uri]$htmlPath).AbsoluteUri
+  $renderPath = $htmlPath
+  $tmp = $null
+  if ($Stamp) {
+    $html = Get-Content -Raw -LiteralPath $htmlPath
+    if ($html -match '__STAMP__') {
+      $tmp = Join-Path $here (".stamped-$Stamp-$HtmlFile")
+      ($html -replace '__STAMP__', $Stamp) | Set-Content -NoNewline -LiteralPath $tmp -Encoding UTF8
+      $renderPath = $tmp
+    }
+  }
+  $uri = ([System.Uri]$renderPath).AbsoluteUri
 
   Write-Host "  Rendering $Label..." -NoNewline
   if (Test-Path $PdfOut) { Remove-Item $PdfOut -Force -ErrorAction SilentlyContinue }
@@ -78,36 +93,38 @@ function Render-Page {
     $last = $len
   } until ((Get-Date) -gt $deadline)
 
-  if ((Test-Path $PdfOut) -and ((Get-Item $PdfOut).Length -gt 0)) {
-    Write-Host (" {0,7:N0} bytes  →  $PdfOut" -f (Get-Item $PdfOut).Length) -ForegroundColor Green
-    return $true
+  $ok = (Test-Path $PdfOut) -and ((Get-Item $PdfOut).Length -gt 0)
+  if ($ok) {
+    Write-Host (" {0,7:N0} bytes" -f (Get-Item $PdfOut).Length) -ForegroundColor Green
   } else {
     Write-Host " FAILED (zero bytes or missing)" -ForegroundColor Red
-    return $false
   }
+  if ($tmp -and (Test-Path $tmp)) { Remove-Item -LiteralPath $tmp -Force -ErrorAction SilentlyContinue }
+  return $ok
 }
 
-# --- Render both tables ---
-$ok1 = Render-Page `
-  -HtmlFile 'tabela-1.html' `
-  -PdfOut   (Join-Path $outDir 'z11-tabela-1-symbole.pdf') `
-  -Label    'Table 1 (symbol lookup, A4 portrait)'
-
-$ok2 = Render-Page `
-  -HtmlFile 'tabela-2.html' `
-  -PdfOut   (Join-Path $outDir 'z11-tabela-2-tabula-recta.pdf') `
-  -Label    'Table 2 (tabula recta, A4 landscape)'
+# --- Render both tables, once per KZ group colour (Z11 = krzyzacy envelope 5 = finał) ---
+$KZ_COLORS = @('niebieski','fioletowy','bialy','brazowy','czarny')   # G6-G10
+$fail = 0
+foreach ($color in $KZ_COLORS) {
+  Write-Host "Group colour: $color" -ForegroundColor Cyan
+  $ok1 = Render-Page `
+    -HtmlFile 'tabela-1.html' `
+    -PdfOut   (Join-Path $outDir "krzyzacy-$color-5-Z11-tabela-symbole.pdf") `
+    -Label    "  tabela-symbole ($color)" `
+    -Stamp    "k05-$color"
+  $ok2 = Render-Page `
+    -HtmlFile 'tabela-2.html' `
+    -PdfOut   (Join-Path $outDir "krzyzacy-$color-5-Z11-tabela-recta.pdf") `
+    -Label    "  tabela-recta   ($color)" `
+    -Stamp    "k05-$color"
+  if (-not ($ok1 -and $ok2)) { $fail++ }
+}
 
 # --- Summary ---
-Write-Host "`n--- Summary ---"
-$s1 = if ($ok1) { "OK" } else { "FAILED" }
-$s2 = if ($ok2) { "OK" } else { "FAILED" }
-Write-Host "Table 1: $s1"
-Write-Host "Table 2: $s2"
 Write-Host "`nOutput dir: $outDir"
-
-if (-not ($ok1 -and $ok2)) {
-  Write-Host "`nOne or more renders failed." -ForegroundColor Red
+if ($fail -gt 0) {
+  Write-Host "`n$fail group(s) had a failed render." -ForegroundColor Red
   exit 1
 }
-Write-Host "`nDone." -ForegroundColor Green
+Write-Host "`nDone ($($KZ_COLORS.Count) groups × 2 tables)." -ForegroundColor Green

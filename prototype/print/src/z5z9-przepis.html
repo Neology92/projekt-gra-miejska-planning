@@ -7,7 +7,8 @@
      NAMELESS by design (line 213): a Toruń baker's name in Krzyżak hands would break the cross-faction easter egg.
      Function, not ornament: (a) rye 3 : wheat 1 lets weight disambiguate the two flours; (b) the closed spice list
      (cinnamon, cloves, ginger, nutmeg — and no other root) recipe-gates the distractors (cardamom, pepper, buckwheat).
-     NO edge-stamp (not color-specific). Style: parchment.css + scoped recipe layout below. -->
+     Edge-stamp ON (parchment.css .edge-stamp + __STAMP__ injected by render.ps1 per destination: m05-<kolor> Z5 / k04-<kolor> Z9).
+     Style: parchment.css + scoped recipe layout below. -->
 <link rel="stylesheet" href="parchment.css">
 <style>
   .sheet.recipe{
@@ -45,6 +46,7 @@
 </head>
 <body>
   <div class="page-bg" aria-hidden="true"></div>
+  <div class="edge-stamp">__STAMP__</div>
   <div class="sheet recipe">
 
     <h1 class="recipe-title">The Rule for Toruń Piernik</h1>

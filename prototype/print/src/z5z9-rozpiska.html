@@ -5,26 +5,51 @@
 <title>The Baker's Card — answer card (Z5 / Z9)</title>
 <!-- Shared station prop, ONE PER GROUP (consumable — players write on it). Source: puzzles/zagadka-sensoryczna.md §Karta rozpiski.
      Ships BLANK. The correct A–G mapping lives ONLY on the GM key (mg-Z5Z9-klucz). Seven jars A–G (active 7-jar spec, line 183).
-     NO edge-stamp (shared, not color-specific). Style: parchment.css + scoped fill-in layout below. -->
+     SELF-CONTAINED list of candidate names printed here (the word-bank) — replaces the deleted cut-out labels (z5z9-etykiety,
+     removed 2026-06-03, Oskar): no cutting, no sticking. Players read the list and write a name beside each letter on paper.
+     10 names = 7 true (rye flour, wheat flour, honey, cinnamon, cloves, ginger, nutmeg) + 3 distractors (cardamom, pepper,
+     buckwheat flour); shuffled (true/false NOT grouped). The recipe card (z5z9-przepis) gates the distractors.
+     Edge-stamp ON (parchment.css .edge-stamp + __STAMP__ injected by render.ps1 per destination: m05-<kolor> Z5 / k04-<kolor> Z9). -->
 <link rel="stylesheet" href="parchment.css">
 <style>
-  .sheet.answer{ padding:32mm 32mm; }
+  .sheet.answer{ padding:26mm 30mm; }
   .answer-title{
     font-variant:small-caps; letter-spacing:.06em;
     font-size:19pt; line-height:1.25; margin:0 0 4px; color:var(--ink); text-align:center;
   }
   .answer-intro{
     font-style:italic; color:var(--ink-soft); font-size:12.5pt; line-height:1.55;
-    text-align:center; max-width:80%; margin:6px auto 26px;
+    text-align:center; max-width:82%; margin:6px auto 18px;
   }
   .answer-intro::after{
-    content:''; display:block; height:8px; width:54%; margin:18px auto 0;
+    content:''; display:block; height:8px; width:54%; margin:16px auto 0;
     background:var(--pen-rule) center/100% 8px no-repeat;
+  }
+  /* Word-bank — the list of candidate names players choose from (was the cut-out labels). */
+  .wordbank{
+    margin:0 auto 22px; max-width:84%;
+    border:1px solid rgba(22,17,12,.30); border-radius:3px;
+    padding:10px 16px 13px;
+  }
+  .wordbank-head{
+    text-align:center; font-style:italic; color:var(--ink-soft);
+    font-size:10.5pt; letter-spacing:.03em; margin:0 0 8px;
+  }
+  ul.wordbank-list{
+    list-style:none; margin:0; padding:0;
+    display:flex; flex-wrap:wrap; justify-content:center; gap:6px 0;
+  }
+  ul.wordbank-list li{
+    font-variant:small-caps; letter-spacing:.05em; color:var(--ink);
+    font-size:13pt; line-height:1.2; white-space:nowrap;
+  }
+  ul.wordbank-list li:not(:last-child)::after{
+    content:'·'; color:var(--ink-soft); margin:0 .55em; font-variant:normal;
   }
   ol.jars{ list-style:none; margin:0 auto; padding:0; max-width:74%; }
   ol.jars li{
     display:flex; align-items:baseline; gap:.8em;
-    margin:0 0 16px; font-size:15pt;
+    margin:0 0 14px; font-size:15pt;
   }
   ol.jars li .jar{
     font-variant:small-caps; letter-spacing:.05em; color:var(--ink);
@@ -38,10 +63,27 @@
 </head>
 <body>
   <div class="page-bg" aria-hidden="true"></div>
+  <div class="edge-stamp">__STAMP__</div>
   <div class="sheet answer">
 
     <h1 class="answer-title">The baker must know what is in each jar</h1>
     <p class="answer-intro">Write a name beside each letter. There are more names than jars — not every name belongs. Do not open the jars.</p>
+
+    <div class="wordbank">
+      <p class="wordbank-head">The names the apprentice handed him — pick from these:</p>
+      <ul class="wordbank-list">
+        <li>buckwheat flour</li>
+        <li>cinnamon</li>
+        <li>honey</li>
+        <li>cloves</li>
+        <li>nutmeg</li>
+        <li>ginger</li>
+        <li>wheat flour</li>
+        <li>cardamom</li>
+        <li>rye flour</li>
+        <li>pepper</li>
+      </ul>
+    </div>
 
     <ol class="jars">
       <li><span class="jar">Jar A</span><span class="blank"></span></li>

@@ -68,6 +68,9 @@
 </head>
 <body>
 <div class="group-tag" id="group-tag"></div>
+<!-- Edge-stamp (production sort mark): the decoder is the Z1 insert → wspolne, envelope 1 → w01-<kolor>.
+     Rendered from the group's ASCII colour below; styling = parchment.css .edge-stamp. -->
+<div class="edge-stamp" id="edge-stamp"></div>
 <div class="sheet decoder" id="sheet"></div>
 <div id="err"></div>
 
@@ -163,6 +166,8 @@
                + 0.114 * parseInt(h.slice(4,6),16)) / 255;
     const ink = lum > 0.6 ? '#16110c' : '#ffffff';
     tag.innerHTML = '<span class="group-tag-label" style="color:' + ink + '">' + col.pl + '</span>';
+    // Edge-stamp: w01-<ascii colour> (wspolne, envelope 1) — faint vertical sort mark, ASCII to match filenames.
+    document.getElementById('edge-stamp').textContent = 'w01-' + (col.ascii || col.pl);
   }
 })();
 </script>

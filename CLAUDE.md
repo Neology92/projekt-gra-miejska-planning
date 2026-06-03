@@ -54,7 +54,7 @@ projekt_gra-miejska-planning/
 │   └── props/         ← rekwizyty player-facing — EN (pergamin Z3, szyfrogram Z7)
 ├── prototype/         ← artefakty + generatory ścieżki prototypu: print/, icons/, meta-cards/, podglądy HTML
 ├── tools/             ← generatory: map-gen/ (mapa), z1-decoder/ (deszyfrowniki)
-├── public/            ← GOTOWE pliki do druku (wynik renderów): koperty PDF, maps/, decoders/
+├── public/            ← GOTOWE pliki do druku (płaski; nazwy [frakcja]-[kolor]-[nr]-[Zx][-typ]) + _INSTRUKCJA-DRUKU.md
 ├── resources/         ← materiały źródłowe (zdjęcia, zrzuty referencyjne)
 └── todo/              ← dashboard (status) · roadmap (kolejność faz) · otwarte-pytania (decyzje) · archive/
 ```
@@ -122,7 +122,14 @@ Te punkty są **niezmienne** i mają pokrycie w wiki:
 - **Deploy galerii materiałów = automatyczny.** `public/` jest publikowane na **https://torun-1454-materialy.netlify.app** przez GitHub Actions (`.github/workflows/deploy-netlify.yml`). Push na `master` dotykający `public/`, `tools/pdf-viewer/` lub `netlify.toml` → automatyczny `netlify deploy --prod`. Commit ruszający **tylko** pliki planistyczne (.md) **nie** deployuje — i tak ma być. **Galeria (`public/index.html`) jest auto-generowana** z zawartości `public/` przez `tools/pdf-viewer/build.mjs` (build command Netlify) — **nie edytuj `index.html` ręcznie**, zmieniaj generator. Pliki .md planning **nie** trafiają na stronę.
 - **Plany dalekosiężne** w `todo/roadmap.md`, decyzje czekające na input — w `todo/otwarte-pytania.md`.
 - **Generowane artefakty wizualne** (obrazki, PDF-y, wydruki, mocki HTML mapy/kart/kopert) → podfolder **`prototype/`** (dla milestone'u prototypu pojedynczej ścieżki). **Od fazy MVP działamy w roocie — bez osobnego `mvp/`** (był pusty, usunięty; patrz `todo/otwarte-pytania.md` #69). Pliki planistyczne (.md) zostają w `concept/`, `puzzles/`, `mechanics/` itd.
-- **Ostateczne pliki do druku** → folder **`public/`** w korzeniu repo (wersjonowany). Jedno miejsce na gotowe deliverable dla graczy — koperty (`prototype/print/render.ps1`), mapy (`tools/map-gen/render-map.ps1`), deszyfrowniki (`tools/z1-decoder/render-decoder.ps1`), inne rendery. Struktura: `public/maps/`, `public/decoders/`, `public/` (koperty PDF). Źródła renderów zostają w `prototype/print/src/`, `tools/map-gen/`, `tools/z1-decoder/`; `public/` trzyma tylko wynik.
+- **Ostateczne pliki do druku** → folder **`public/`** w korzeniu repo (wersjonowany, **płaski** — bez podfolderów `maps/`/`decoders/`). Jedno miejsce na gotowe deliverable. Źródła renderów zostają w `prototype/print/src/`, `tools/map-gen/`, `tools/z1-decoder/`, `tools/z11-cipher/`; `public/` trzyma tylko wynik.
+- **🔑 KONWENCJA NAZW `public/` (ROZSTRZYGNIĘTE [2026-06-03], obowiązuje KAŻDY plik trafiający do `public/`).** Kanon: `envelopes/README.md §Systematyka nazw`. W skrócie:
+  - **Plik gracza = `[frakcja]-[kolor]-[nr][slot]-[Zx][-typ]`**, np. `miasto-zolty-3-Z3.pdf`, `wspolne-czerwony-1-Z1-mapa.pdf`, `krzyzacy-bialy-4-Z9-rozpiska.pdf`. **Osobny plik per grupa** (1 plik ↔ 1 fizyczna koperta) — generator pętli po kolorach frakcji. Źródło autorskie (`.md`/`.html`) zostaje **jedno** per logiczna koperta; mnożymy tylko output PDF.
+  - **Prefiks = adresat (zamknięty słownik, rozdziela po samej nazwie):** `wspolne-` · `miasto-` · `krzyzacy-` (gracz) · `mg-` (Mistrz Gry) · `aktor-jordan-` · `aktor-albrecht-` (aktorzy).
+  - **kolor = ASCII bez diakrytyków:** `czerwony pomaranczowy zolty zielony turkusowy` (TR) · `niebieski fioletowy bialy brazowy czarny` (KZ).
+  - **Stempel:** każdy plik **gracza** nosi na prawym brzegu pionowy, blady, drobny stempel `[litera-frakcji][NN]-[kolor]` (np. `m03-zolty`) — render-time. Pliki `mg-`/`aktor-` bez stempla.
+  - **Opisowy `-typ` na końcu** (po pełnym kodzie) OK i wskazany: `mapa` `deszyfrownik` `slip` `pergamin` `list` `przepis` `rozpiska` `tabela-symbole` `tabela-recta` `audio`.
+  - **Analiza druku (co kolorem / co B&W)** → `public/_INSTRUKCJA-DRUKU.md`.
 - **`tools/`** trzyma generatory artefaktów. Mogą być **puzzle-agnostyczne** (silnik `map-gen`) lub **specyficzne dla zagadki** (`z1-decoder`); narzędzie generujące idzie do `tools/`, nie do `puzzles/` (te zostają planistyczne .md). Współdzielenie danych między narzędziami = import (np. `z1-decoder` czyta glify z `map-gen/map-data.js`), nie kopia.
 - **Język planowania**: polska robocza — pliki .md, decyzje, notatki, komentarze agenta.
 - **Język materiałów — dwa adresaty** (ROZSTRZYGNIĘTE [2026-06-02], #70):

@@ -1,22 +1,25 @@
-# render-map.ps1 — headless Chrome: PNG + PDF (A4 landscape) for a navigation map.
-# Renders the single shared navigation map (all glyphs visible) used by all groups.
+# render-map.ps1 — headless Chrome: the shared navigation map, one PRINT PDF per group.
+#
+# The map is ONE shared image (all glyphs visible, same for every group). We screenshot it ONCE
+# (expensive: Leaflet + CDN tiles), then stamp it per group cheaply at the PNG→PDF step.
+#
+# Output (flat public/, name canon = envelopes/README.md §Systematyka nazw):
+#   public/wspolne-<kolor>-1-Z1-mapa.pdf   × 10 groups   (player; edge-stamp w01-<kolor>)
+#   public/mg-Z1-mapa.pdf + mg-Z1-mapa.png                (MG filled key; no colour, no stamp)
 #
 # Usage:
-#   pwsh -File render-map.ps1                       # clean style → public/maps/map.png + .pdf
+#   pwsh -File render-map.ps1                 # clean style
 #   pwsh -File render-map.ps1 -Style parchment
-#   pwsh -File render-map.ps1 -Compare              # clean + parchment side-by-side
 #
 # Requirements: network (Leaflet CDN + CARTO tiles). One-time pre-game render.
-# Output: ../../public/maps/map.png + map.pdf
 
 param(
-  [string]$Style  = 'clean',  # clean | parchment
-  [switch]$Compare            # render both styles for aesthetics check
+  [string]$Style = 'clean'   # clean | parchment
 )
 
 $ErrorActionPreference = 'Stop'
 $here   = $PSScriptRoot
-$outDir = Join-Path (Resolve-Path (Join-Path $here '..\..')) 'public\maps'
+$outDir = Join-Path (Resolve-Path (Join-Path $here '..\..')) 'public'
 if (-not (Test-Path $outDir)) { New-Item -ItemType Directory -Path $outDir | Out-Null }
 
 # --- Locate Chrome or Edge ---
@@ -32,160 +35,132 @@ if (-not $browser) { throw 'No Chrome/Edge found.' }
 Write-Host "Browser: $browser"
 
 # --- Layout constants ---
-# A4 landscape at ~100 dpi: 297mm/25.4 * 100 = 1169.3 ≈ 1170 px wide
-# With --force-device-scale-factor=3: output is 3510×2484 ≈ 300 dpi
-$W   = 1170
-$H   = 828
-$DSF = 3            # --force-device-scale-factor
+# A4 landscape at ~100 dpi: 1170×828 px. --force-device-scale-factor=3 → ~300 dpi capture.
+$W = 1170; $H = 828; $DSF = 3
+$MarginW = 60; $MarginH = 160          # oversize window so the viewport exceeds the sheet (no clip)
+$WinW = $W + $MarginW; $WinH = $H + $MarginH
+$CropW = $W * $DSF; $CropH = $H * $DSF
 
-# Headless Chrome reserves ~16px width + ~95px height of the window for
-# decoration/scrollbar, so the layout VIEWPORT is smaller than --window-size
-# while the screenshot still captures the full outer window. Result: the bottom
-# 95px of the sheet was being CLIPPED and replaced by a page-bg strip, and a
-# thin strip appeared on the right. Fix: render into an OVERSIZED window so the
-# viewport comfortably exceeds the sheet (full render, no clip), then crop the
-# PNG back to the exact sheet box (W×H × DSF) at the top-left.
-$MarginW = 60      # window padding beyond sheet width  (> ~16 decoration)
-$MarginH = 160     # window padding beyond sheet height (> ~95 decoration)
-$WinW = $W + $MarginW
-$WinH = $H + $MarginH
-$CropW = $W * $DSF
-$CropH = $H * $DSF
+# All ASCII colours (map is wspolne Z1 → every group). Source: envelopes/README.md.
+$ALL_COLORS = @('czerwony','pomaranczowy','zolty','zielony','turkusowy',
+                'niebieski','fioletowy','bialy','brazowy','czarny')
 
-# --- Render function ---
-function Render-Map {
-  param([string]$StyleName, [string]$KeyMode = 'blank')   # KeyMode: blank (player) | filled (MG)
+# --- Phase 1: screenshot the map to $PngOut, then crop to the exact sheet box ---
+function Capture-MapPng {
+  param([string]$KeyMode, [string]$PngOut)   # KeyMode: blank (player) | filled (MG)
 
   $htmlPath = Join-Path $here 'map.html'
-  $styleSuffix = if ($StyleName -ne 'clean') { "-$StyleName" } else { '' }
-  $keySuffix   = if ($KeyMode -eq 'filled') { '-mg' } else { '' }
-  $suffix   = "$styleSuffix$keySuffix"
-  $uri    = ([System.Uri]$htmlPath).AbsoluteUri + "?style=$StyleName&group=all&key=$KeyMode"
-  $pngOut = Join-Path $outDir "map$suffix.png"
-  $pdfOut = Join-Path $outDir "map$suffix.pdf"
+  $uri = ([System.Uri]$htmlPath).AbsoluteUri + "?style=$Style&group=all&key=$KeyMode"
 
-  Write-Host "  Rendering ($StyleName/$KeyMode)..." -NoNewline
+  Write-Host "  Capturing map ($KeyMode)..." -NoNewline
+  if (Test-Path $PngOut) { Remove-Item $PngOut -Force -ErrorAction SilentlyContinue }
 
-  if (Test-Path $pngOut) { Remove-Item $pngOut -Force -ErrorAction SilentlyContinue }
-
-  # Phase 1: screenshot PNG. Fallback for tile load: 10s timeout baked into map.html.
-  # NOTE: do NOT add --user-data-dir — a fresh profile breaks --screenshot on
-  # Chrome 147. The screenshot child flushes asynchronously, so we POLL for the
-  # file to appear & stabilise rather than trusting an immediate Test-Path.
+  # NO --user-data-dir (breaks --screenshot on Chrome 147). Poll for async flush.
   $args1 = @(
-    '--headless'
-    '--no-sandbox'
-    '--disable-gpu'
-    '--disable-web-security'            # allows file:// → CDN fetch
-    "--force-device-scale-factor=$DSF"
-    "--window-size=$WinW,$WinH"
-    "--hide-scrollbars"
-    "--screenshot=$pngOut"
-    '--run-all-compositor-stages-before-draw'
-    $uri
+    '--headless','--no-sandbox','--disable-gpu','--disable-web-security'
+    "--force-device-scale-factor=$DSF","--window-size=$WinW,$WinH","--hide-scrollbars"
+    "--screenshot=$PngOut",'--run-all-compositor-stages-before-draw',$uri
   )
   & $browser @args1 2>$null
 
-  # Wait for async screenshot flush (size must stabilise), up to 25s.
-  $deadline = (Get-Date).AddSeconds(25)
-  $lastLen  = -1
+  $deadline = (Get-Date).AddSeconds(25); $lastLen = -1
   do {
     Start-Sleep -Milliseconds 400
-    $len = if (Test-Path $pngOut) { (Get-Item $pngOut).Length } else { 0 }
+    $len = if (Test-Path $PngOut) { (Get-Item $PngOut).Length } else { 0 }
     if ($len -gt 0 -and $len -eq $lastLen) { break }
     $lastLen = $len
   } until ((Get-Date) -gt $deadline)
 
-  $pngOk = (Test-Path $pngOut) -and ((Get-Item $pngOut).Length -gt 0)
-
-  if (-not $pngOk) {
-    Write-Host " PNG FAILED" -ForegroundColor Red
-    return
+  if (-not ((Test-Path $PngOut) -and ((Get-Item $PngOut).Length -gt 0))) {
+    Write-Host " FAILED" -ForegroundColor Red; return $false
   }
 
-  # Crop the oversized capture down to the exact sheet box (top-left corner).
-  # The sheet has margin:0 and fixed W×H, so at DSF it always occupies the
-  # top-left CropW×CropH; everything beyond is decoration page-bg → discard.
+  # Crop oversized capture to the exact top-left sheet box.
   try {
     Add-Type -AssemblyName System.Drawing
-    $src = New-Object System.Drawing.Bitmap($pngOut)
-    if ($src.Width -lt $CropW -or $src.Height -lt $CropH) {
-      $src.Dispose()
-      Write-Host (" CROP SKIP (capture {0}x{1} < {2}x{3})" -f $src.Width,$src.Height,$CropW,$CropH) -ForegroundColor Yellow
-    } else {
+    $srcImg = New-Object System.Drawing.Bitmap($PngOut)
+    if ($srcImg.Width -ge $CropW -and $srcImg.Height -ge $CropH) {
       $dst  = New-Object System.Drawing.Bitmap($CropW, $CropH)
       $g    = [System.Drawing.Graphics]::FromImage($dst)
       $rect = New-Object System.Drawing.Rectangle(0, 0, $CropW, $CropH)
-      $g.DrawImage($src, $rect, $rect, [System.Drawing.GraphicsUnit]::Pixel)
-      $g.Dispose(); $src.Dispose()
-      $dst.Save($pngOut, [System.Drawing.Imaging.ImageFormat]::Png)
-      $dst.Dispose()
-    }
-  } catch {
-    Write-Host " CROP ERROR: $($_.Exception.Message)" -ForegroundColor Yellow
-  }
+      $g.DrawImage($srcImg, $rect, $rect, [System.Drawing.GraphicsUnit]::Pixel)
+      $g.Dispose(); $srcImg.Dispose()
+      $dst.Save($PngOut, [System.Drawing.Imaging.ImageFormat]::Png); $dst.Dispose()
+    } else { $srcImg.Dispose() }
+  } catch { Write-Host " CROP ERROR: $($_.Exception.Message)" -ForegroundColor Yellow }
 
-  $pngKb = [math]::Round((Get-Item $pngOut).Length / 1KB)
+  Write-Host (" {0,6} KB" -f [math]::Round((Get-Item $PngOut).Length / 1KB)) -ForegroundColor Green
+  return $true
+}
 
-  # Phase 2: PNG → PDF A4 landscape via minimal HTML wrapper
+# --- Phase 2: PNG → PDF (A4 landscape), with optional faint vertical edge-stamp ---
+# The PNG is embedded as a base64 data: URI (NOT a file:// <img>) — Chrome 147 headless blocks
+# file:// subresources from a file:// document, which silently kills the print. data: needs no file access.
+function Png-To-Pdf {
+  param([string]$PngPath, [string]$PdfOut, [string]$Stamp)
+
+  $b64    = [System.Convert]::ToBase64String([System.IO.File]::ReadAllBytes($PngPath))
+  $pngUri = "data:image/png;base64,$b64"
+  $stampHtml = if ($Stamp) {
+    "<div style=""position:fixed;right:3.5mm;bottom:14mm;writing-mode:vertical-rl;text-orientation:mixed;" +
+    "font-family:'Courier New',monospace;font-size:5.5pt;letter-spacing:.18em;color:#16110c;opacity:.34;" +
+    "-webkit-print-color-adjust:exact;print-color-adjust:exact"">$Stamp</div>"
+  } else { '' }
+
   $wrapperHtml = @"
-<!DOCTYPE html><html><head><style>
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>
 @page{size:297mm 210mm;margin:0}
 html,body{margin:0;padding:0;width:297mm;height:210mm;overflow:hidden}
 img{display:block;width:297mm;height:210mm;object-fit:fill}
-</style></head><body><img src="$pngOut"/></body></html>
+</style></head><body><img src="$pngUri"/>$stampHtml</body></html>
 "@
-  $wrapperPath = Join-Path $env:TEMP "map-wrap$suffix.html"
+  $wrapperPath = Join-Path $env:TEMP ("map-wrap-" + [System.IO.Path]::GetFileNameWithoutExtension($PdfOut) + ".html")
   Set-Content -Path $wrapperPath -Value $wrapperHtml -Encoding UTF8
 
-  if (Test-Path $pdfOut) { Remove-Item $pdfOut -Force -ErrorAction SilentlyContinue }
-  $args2 = @(
-    '--headless'
-    '--no-sandbox'
-    '--disable-gpu'
-    "--print-to-pdf=$pdfOut"
-    '--no-pdf-header-footer'
-    ([System.Uri]$wrapperPath).AbsoluteUri
-  )
+  if (Test-Path $PdfOut) { Remove-Item $PdfOut -Force -ErrorAction SilentlyContinue }
+  # NB: use the INTERPOLATED "--print-to-pdf=$PdfOut" form — the concat form ('--print-to-pdf=' + $PdfOut)
+  # passes wrong through PowerShell native-arg splatting and Chrome writes no file (silent FAILED).
+  $args2 = @('--headless','--no-sandbox','--disable-gpu',"--print-to-pdf=$PdfOut",
+             '--no-pdf-header-footer', ([System.Uri]$wrapperPath).AbsoluteUri)
   & $browser @args2 2>$null
 
-  $deadline2 = (Get-Date).AddSeconds(20)
-  $lastPdf   = -1
+  $deadline = (Get-Date).AddSeconds(20); $last = -1
   do {
     Start-Sleep -Milliseconds 400
-    $plen = if (Test-Path $pdfOut) { (Get-Item $pdfOut).Length } else { 0 }
-    if ($plen -gt 0 -and $plen -eq $lastPdf) { break }
-    $lastPdf = $plen
-  } until ((Get-Date) -gt $deadline2)
-
+    $plen = if (Test-Path $PdfOut) { (Get-Item $PdfOut).Length } else { 0 }
+    if ($plen -gt 0 -and $plen -eq $last) { break }
+    $last = $plen
+  } until ((Get-Date) -gt $deadline)
   Remove-Item $wrapperPath -ErrorAction SilentlyContinue
 
-  $pdfOk = (Test-Path $pdfOut) -and ((Get-Item $pdfOut).Length -gt 0)
-  $pdfKb = if ($pdfOk) { [math]::Round((Get-Item $pdfOut).Length / 1KB) } else { 0 }
-
-  $pngLabel = "{0,6} KB" -f $pngKb
-  $pdfLabel = if ($pdfOk) { "{0,6} KB" -f $pdfKb } else { "  FAILED" }
-  Write-Host " PNG $pngLabel  PDF $pdfLabel" -ForegroundColor $(if ($pdfOk) { 'Green' } else { 'Yellow' })
+  if ((Test-Path $PdfOut) -and ((Get-Item $PdfOut).Length -gt 0)) {
+    Write-Host ("    {0,-38} {1,6} KB" -f (Split-Path $PdfOut -Leaf), [math]::Round((Get-Item $PdfOut).Length / 1KB)) -ForegroundColor Green
+    return $true
+  }
+  Write-Host ("    {0,-38} FAILED" -f (Split-Path $PdfOut -Leaf)) -ForegroundColor Red
+  return $false
 }
 
 # --- Main ---
-# Each style produces TWO sheets that stay in sync: player (blank fill-in KEY)
-# and MG (filled KEY = symbol→place reference). Output: map.* + map-mg.*
-$styles = if ($Compare) { @('clean','parchment') } else { @($Style) }
+Write-Host "`nMap Render (style=$Style)`n"
 
-Write-Host "`nMap Render — $($styles.Count * 2) job(s) (player + MG)`n"
-foreach ($s in $styles) {
-  Render-Map -StyleName $s -KeyMode 'blank'
-  Render-Map -StyleName $s -KeyMode 'filled'
+# Player map: capture once → 10 stamped PDFs.
+$playerPng = Join-Path $env:TEMP 'map-player-tmp.png'
+if (Capture-MapPng -KeyMode 'blank' -PngOut $playerPng) {
+  Write-Host "  Player PDFs (per group):"
+  foreach ($color in $ALL_COLORS) {
+    Png-To-Pdf -PngPath $playerPng -PdfOut (Join-Path $outDir "wspolne-$color-1-Z1-mapa.pdf") -Stamp "w01-$color" | Out-Null
+  }
+  Remove-Item $playerPng -Force -ErrorAction SilentlyContinue
+}
+
+# MG map: capture (filled key) → keep PNG + one unstamped PDF.
+$mgPng = Join-Path $outDir 'mg-Z1-mapa.png'
+if (Capture-MapPng -KeyMode 'filled' -PngOut $mgPng) {
+  Write-Host "  MG PDF:"
+  Png-To-Pdf -PngPath $mgPng -PdfOut (Join-Path $outDir 'mg-Z1-mapa.pdf') -Stamp '' | Out-Null
 }
 
 Write-Host "`nDone. Output: $outDir"
-Write-Host ""
-Write-Host "NEXT STEPS:"
-Write-Host "  1. Open public/maps/map.png (player, blank KEY) at 100% zoom — check:"
-Write-Host "     - building edges sharp (not pixelated)"
-Write-Host "     - all glyphs visible + matching rows in the KEY"
-Write-Host "     - Rynek inset (right rail) shows the Old-Town cluster, pins separated"
-Write-Host "  2. Open public/maps/map-mg.png (MG, filled KEY) — every glyph has its place name."
-Write-Host "  3. Open the .pdf files at 300% — no blur on raster"
-Write-Host "  4. If tiles are grey/missing: re-run (CDN timeout on first run)"
+Write-Host "  Player: wspolne-<kolor>-1-Z1-mapa.pdf  ×$($ALL_COLORS.Count)"
+Write-Host "  MG:     mg-Z1-mapa.pdf + mg-Z1-mapa.png"

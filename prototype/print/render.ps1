@@ -3,43 +3,36 @@
 #        pwsh -File render.ps1 -Force     (override the staleness guard, see below)
 # Requires Chrome or Edge (Windows 11 ships Edge). Honors @media print + @page A4.
 #
+# ── PER-GROUP OUTPUT (canon 2026-06-03, Oskar) ────────────────────────────────
+# public/ holds ONE PDF per (document × group colour): [frakcja]-[kolor]-[nr][slot]-[Zx][-typ].pdf
+# One HTML source → N renders (looped over the faction's colours), each with its own edge-stamp.
+# A shared brief (e.g. miasto-3-Z3) therefore emits 5 byte-near-identical PDFs (5 TR groups),
+# differing only by the faint stamp + the colour in the filename. Deliberate: 1 file ↔ 1 envelope,
+# zero ambiguity at packing time. Source .html stays single (NOT split per colour).
+# Canon: envelopes/README.md §Systematyka nazw. Colour budget for print: public/_INSTRUKCJA-DRUKU.md.
+#
 # ── STALENESS GUARD (read before rendering) ───────────────────────────────────
 # The player-facing PROSE is authored in markdown DRAFTS, not in these HTML files.
 # The HTML in ./src is a hand-ported render layer; nothing auto-syncs draft -> HTML.
 # Each ./src HTML that still holds OLD prose carries a `RENDER-BLOCK` marker line.
 # This script scans for that marker and ABORTS before launching the browser, so a
 # render can never silently emit a stale PDF. To clear a block: port the current
-# draft prose into the HTML, then delete that file's RENDER-BLOCK line. Re-add the
-# marker whenever you later revise a draft's prose but haven't re-ported it yet.
-# `-Force` proceeds anyway (prints a loud banner + the list) — use only knowingly.
-#
-# ── DRAFT HOME (assumption, pending a separate move) ──────────────────────────
-# Canonical envelope drafts are moving from  prototype/*-envelope-draft.md
-#                                       to   puzzles/envelopes/  (Z-numbered names).
-# That move is performed by a separate agent. This script does NOT resolve draft
-# paths (the guard keys off the in-HTML marker, which survives the move), so the
-# rename cannot break it. After the move, treat puzzles/envelopes/ as the source
-# of truth when porting prose. See prototype/print/README.md and
-# mechanics/koperty-mg.md (pinned assumptions block).
+# draft prose into the HTML, then delete that file's RENDER-BLOCK line.
+# `-Force` proceeds anyway (prints a loud banner) — use only knowingly.
 # ──────────────────────────────────────────────────────────────────────────────
 
 param(
-  [switch]$Force,
-  # Team color for the per-prop edge-stamp (Polish name). Prototype default = czerwony (G1).
-  # MVP: assemble-prototype-bundle.ps1 derives this from -Decoder Gn via the color table.
-  [string]$Color = 'czerwony'
+  [switch]$Force
 )
 
 $ErrorActionPreference = 'Stop'
 $here = $PSScriptRoot
 $src  = Join-Path $here 'src'
 
-# Final print-ready PDFs go to the repo-root `public/` folder (single home for
-# deliverables to print, across prototype -> MVP). Created on demand.
+# Final print-ready PDFs go to the repo-root `public/` folder (FLAT — no subfolders).
 $repoRoot = (Resolve-Path (Join-Path $here '..\..')).Path
 $outDir   = Join-Path $repoRoot 'public'
-$outDirMG = Join-Path $outDir 'prototyp-druk\mg-i-aktorzy'
-New-Item -ItemType Directory -Force -Path $outDir, $outDirMG | Out-Null
+New-Item -ItemType Directory -Force -Path $outDir | Out-Null
 
 # Locate a Chromium-based browser.
 $candidates = @(
@@ -53,63 +46,49 @@ $browser = $candidates | Where-Object { Test-Path $_ } | Select-Object -First 1
 if (-not $browser) { throw "No Chrome/Edge found." }
 Write-Host "Browser: $browser"
 
-# source file -> output pdf
-# Names follow the canonical key [frakcja]-[NN][slot]-[Zx][-typ] (see envelopes/README.md §Systematyka nazw).
-# Loose props now carry their envelope position: pergamin = 04b (loot of Z3 stage), cipher list = 06a
-# (Z7 finale stage, handed BEFORE the finale note 06b). The MG key is excluded from the player stamp.
-$jobs = @{
-  'miasto-04b-Z3-pergamin.html' = 'miasto-04b-Z3-pergamin.pdf'
-  'miasto-06a-Z7-list.html'     = 'miasto-06a-Z7-list.pdf'
-  'mg-Z3Z7-klucz.html'          = 'mg-Z3Z7-klucz.pdf'
-  # Envelope render layer — names match envelopes/<frakcja>-<poz>-<zadanie>.md (canon).
-  'wspolne-1-Z1.html'         = 'wspolne-1-Z1.pdf'
-  'miasto-2-Z2.html'          = 'miasto-2-Z2.pdf'
-  'miasto-2-Z2-slip.html'     = 'miasto-2-Z2-slip.pdf'
-  'miasto-3-Z3.html'          = 'miasto-3-Z3.pdf'
-  'miasto-4-Z3b.html'         = 'miasto-4-Z3b.pdf'
-  'miasto-5-Z4.html'          = 'miasto-5-Z4.pdf'
-  'miasto-6-Z7.html'          = 'miasto-6-Z7.pdf'
-  # Sensory puzzle Z5 (mieszczanie) / Z9 (krzyżacy) — IDENTYCZNA zagadka, 1 zestaw słojów.
-  # Two faction briefs (stamped) + three SHARED station props + one GM key (all unstamped — not color-specific).
-  'miasto-5-Z5.html'          = 'miasto-5-Z5.pdf'
-  'krzyzacy-4-Z9.html'        = 'krzyzacy-4-Z9.pdf'
-  'z5z9-przepis.html'         = 'z5z9-przepis.pdf'
-  'z5z9-etykiety.html'        = 'z5z9-etykiety.pdf'
-  'z5z9-rozpiska.html'        = 'z5z9-rozpiska.pdf'
-  'mg-Z5Z9-klucz.html'        = 'mg-Z5Z9-klucz.pdf'
+# Canonical ASCII colour sets (G1-G5 = TR, G6-G10 = KZ). Source of truth: envelopes/README.md.
+$TR_COLORS  = @('czerwony','pomaranczowy','zolty','zielony','turkusowy')
+$KZ_COLORS  = @('niebieski','fioletowy','bialy','brazowy','czarny')
+$ALL_COLORS = $TR_COLORS + $KZ_COLORS
+
+# ── PLAYER jobs ───────────────────────────────────────────────────────────────
+# Src   = HTML in ./src ; Name = output template ({c} -> colour) ; Stamp = edge-stamp prefix
+# ([faction letter][NN]) ; Colors = which groups get this card.
+# Output -> public/<Name with {c}>.pdf , stamp = "<Stamp>-<colour>".
+$playerJobs = @(
+  @{ Src='wspolne-1-Z1.html';           Name='wspolne-{c}-1-Z1';            Stamp='w01'; Colors=$ALL_COLORS }
+  @{ Src='miasto-2-Z2.html';            Name='miasto-{c}-2-Z2';             Stamp='m02'; Colors=$TR_COLORS }
+  @{ Src='miasto-2-Z2-slip.html';       Name='miasto-{c}-2-Z2-slip';        Stamp='m02'; Colors=$TR_COLORS }
+  @{ Src='miasto-3-Z3.html';            Name='miasto-{c}-3-Z3';             Stamp='m03'; Colors=$TR_COLORS }
+  @{ Src='miasto-4-Z3b.html';           Name='miasto-{c}-4-Z3b';            Stamp='m04'; Colors=$TR_COLORS }
+  @{ Src='miasto-04b-Z3-pergamin.html'; Name='miasto-{c}-04b-Z3-pergamin';  Stamp='m04'; Colors=$TR_COLORS }
+  @{ Src='miasto-5-Z4.html';            Name='miasto-{c}-5-Z4';             Stamp='m05'; Colors=@('czerwony') }            # opt A: G1
+  @{ Src='miasto-5-Z5.html';            Name='miasto-{c}-5-Z5';             Stamp='m05'; Colors=@('pomaranczowy','zolty') } # opt B: G2,G3
+  @{ Src='miasto-6-Z7.html';            Name='miasto-{c}-6-Z7';             Stamp='m06'; Colors=$TR_COLORS }
+  @{ Src='miasto-06a-Z7-list.html';     Name='miasto-{c}-06a-Z7-list';      Stamp='m06'; Colors=$TR_COLORS }
+  @{ Src='krzyzacy-4-Z9.html';          Name='krzyzacy-{c}-4-Z9';           Stamp='k04'; Colors=@('bialy') }                # opt: G8
+  # Shared piernik station props — ONE source serves BOTH Z5 (TR G2,G3) and Z9 (KZ G8) -> two destinations.
+  @{ Src='z5z9-przepis.html';           Name='miasto-{c}-5-Z5-przepis';     Stamp='m05'; Colors=@('pomaranczowy','zolty') }
+  @{ Src='z5z9-przepis.html';           Name='krzyzacy-{c}-4-Z9-przepis';   Stamp='k04'; Colors=@('bialy') }
+  @{ Src='z5z9-rozpiska.html';          Name='miasto-{c}-5-Z5-rozpiska';    Stamp='m05'; Colors=@('pomaranczowy','zolty') }
+  @{ Src='z5z9-rozpiska.html';          Name='krzyzacy-{c}-4-Z9-rozpiska';  Stamp='k04'; Colors=@('bialy') }
+)
+
+# ── MG / ACTOR jobs ───────────────────────────────────────────────────────────
+# No colour, no stamp (not player-facing). Audience prefix in the name (mg- / aktor-). -> public/ root.
+$mgJobs = [ordered]@{
+  'mg-Z3Z7-klucz.html'      = 'mg-Z3Z7-klucz.pdf'
+  'mg-Z5Z9-klucz.html'      = 'mg-Z5Z9-klucz.pdf'
+  'mg-group-cards.html'     = 'mg-karty-grup.pdf'
+  'mg-master-board.html'    = 'mg-tablica-statusow.pdf'
+  'mg-quick-hints.html'     = 'mg-szybkie-podpowiedzi.pdf'
+  'jordan-quick-ref.html'   = 'aktor-jordan-quick-ref.pdf'
+  'albrecht-quick-ref.html' = 'aktor-albrecht-quick-ref.pdf'
 }
 
-# MG operational + actor materials → public/prototyp-druk/mg-i-aktorzy/
-# No stamp injection (these are GM/actor-facing, not player-facing).
-$jobsMG = @{
-  'mg-group-cards.html'   = 'prototyp-druk\mg-i-aktorzy\mg-karty-grup.pdf'
-  'mg-master-board.html'  = 'prototyp-druk\mg-i-aktorzy\mg-tablica-statusow.pdf'
-  'mg-quick-hints.html'   = 'prototyp-druk\mg-i-aktorzy\mg-szybkie-podpowiedzi.pdf'
-  'jordan-quick-ref.html' = 'prototyp-druk\mg-i-aktorzy\jordan-quick-ref.pdf'
-  'albrecht-quick-ref.html' = 'prototyp-druk\mg-i-aktorzy\albrecht-quick-ref.pdf'
-}
-
-# Edge-stamp prefix per source (faction letter + 2-digit envelope nr). The color suffix is the -Color
-# run param. Each player HTML carries a "__STAMP__" placeholder; we replace it with "<prefix>-<color>"
-# in a temp copy before printing. Sources NOT listed here (mg-Z3Z7-klucz = GM-only) render unstamped.
-$stampPrefix = @{
-  'wspolne-1-Z1.html'           = 'w01'
-  'miasto-2-Z2.html'            = 'm02'
-  'miasto-2-Z2-slip.html'       = 'm02'
-  'miasto-3-Z3.html'            = 'm03'
-  'miasto-4-Z3b.html'           = 'm04'
-  'miasto-04b-Z3-pergamin.html' = 'm04'
-  'miasto-5-Z4.html'            = 'm05'
-  'miasto-5-Z5.html'            = 'm05'
-  'miasto-06a-Z7-list.html'     = 'm06'
-  'miasto-6-Z7.html'            = 'm06'
-  # Krzyżacy faction = letter 'k' (first non-TR player prop). Z9 = pozycja 4 → k04.
-  # Shared props (z5z9-*) + GM key carry NO prefix → render unstamped (no __STAMP__ in their HTML).
-  'krzyzacy-4-Z9.html'          = 'k04'
-}
-
-# ── Staleness guard: refuse to render any source still carrying a RENDER-BLOCK marker.
-$blocked = foreach ($in in $jobs.Keys) {
+# ── Staleness guard: refuse to render any player source still carrying a RENDER-BLOCK marker.
+$uniqueSrc = $playerJobs.Src | Select-Object -Unique
+$blocked = foreach ($in in $uniqueSrc) {
   $inPath = Join-Path $src $in
   if (-not (Test-Path $inPath)) { continue }
   $marker = Select-String -Path $inPath -SimpleMatch -Pattern 'RENDER-BLOCK' -List
@@ -136,58 +115,63 @@ if ($blocked) {
   Write-Host ''
 }
 
-$tempFiles = @()
-foreach ($in in $jobs.Keys) {
-  $inPath  = Join-Path $src $in
-  $outPath = Join-Path $outDir $jobs[$in]
+function Invoke-ChromePdf {
+  param([string]$Uri, [string]$OutPath)
+  # --no-sandbox: Chrome's own sandbox is blocked in restricted shells.
+  # NO --user-data-dir on purpose (Chrome 147 headless hangs on a fresh profile's sync registration).
+  & $browser --headless --no-sandbox --disable-gpu --no-pdf-header-footer `
+    --print-to-pdf="$OutPath" $Uri | Out-Null
+}
 
-  # Stamp injection: if this source has a prefix + still holds the __STAMP__ placeholder, render a
-  # temp copy with "<prefix>-<color>" substituted. Keeps the source files color-agnostic (one set of
-  # HTML, N colors at render time). Sources without a prefix (GM key) render straight from $inPath.
-  $renderPath = $inPath
-  if ($stampPrefix.ContainsKey($in)) {
-    $html = Get-Content -Raw -LiteralPath $inPath
+# ── Render player jobs (per colour, stamp-injected) ───────────────────────────
+$tempFiles = @()
+$nPlayer = 0
+Write-Host ''
+Write-Host 'Rendering player cards (per group colour)...' -ForegroundColor Cyan
+foreach ($job in $playerJobs) {
+  $inPath = Join-Path $src $job.Src
+  if (-not (Test-Path $inPath)) { Write-Warning "MISSING source: $($job.Src)"; continue }
+  $html = Get-Content -Raw -LiteralPath $inPath
+  foreach ($color in $job.Colors) {
+    $outName = $job.Name -replace '\{c\}', $color
+    $outPath = Join-Path $outDir ($outName + '.pdf')
+    $renderPath = $inPath
     if ($html -match '__STAMP__') {
-      $stamp = "{0}-{1}" -f $stampPrefix[$in], $Color
-      $tmp = Join-Path $src (".stamped-{0}" -f $in)
+      $stamp = "{0}-{1}" -f $job.Stamp, $color
+      $tmp = Join-Path $src (".stamped-{0}-{1}" -f $color, $job.Src)
       ($html -replace '__STAMP__', $stamp) | Set-Content -NoNewline -LiteralPath $tmp -Encoding UTF8
       $renderPath = $tmp
       $tempFiles += $tmp
+    } else {
+      Write-Warning "no __STAMP__ in $($job.Src) -> $outName rendered unstamped"
+    }
+    Invoke-ChromePdf -Uri ([System.Uri]$renderPath).AbsoluteUri -OutPath $outPath
+    if (Test-Path $outPath) {
+      $nPlayer++
+      "{0,-34} -> {1,8:N0} bytes" -f ($outName + '.pdf'), (Get-Item $outPath).Length
+    } else {
+      Write-Warning "FAILED: $outName.pdf"
     }
   }
-
-  $uri = ([System.Uri]$renderPath).AbsoluteUri
-  # --no-sandbox: Chrome's own sandbox is blocked in restricted/sandboxed shells.
-  # NO --user-data-dir on purpose: headless then uses an ephemeral throwaway profile
-  #   and exits cleanly after writing the PDF. A custom user-data-dir triggers the
-  #   fresh profile's GCM/sync registration, which keeps the process alive (hang).
-  & $browser --headless --no-sandbox --disable-gpu --no-pdf-header-footer `
-    --print-to-pdf="$outPath" $uri | Out-Null
-  if (Test-Path $outPath) {
-    "{0,-30} -> {1,8:N0} bytes" -f $jobs[$in], (Get-Item $outPath).Length
-  } else {
-    Write-Warning "FAILED: $($jobs[$in])"
-  }
 }
-
-# Clean up temp stamped copies (leave the source HTML pristine with the __STAMP__ placeholder).
 foreach ($t in $tempFiles) { if (Test-Path $t) { Remove-Item -LiteralPath $t -Force } }
 
-# Render MG operational + actor materials (no stamp, no staleness guard — these are authored directly in HTML).
+# ── Render MG / actor materials (no stamp) ────────────────────────────────────
 Write-Host ''
-Write-Host 'Rendering MG/actor materials...' -ForegroundColor Cyan
-foreach ($in in $jobsMG.Keys) {
-  $inPath  = Join-Path $src $in
+Write-Host 'Rendering MG / actor materials...' -ForegroundColor Cyan
+$nMg = 0
+foreach ($in in $mgJobs.Keys) {
+  $inPath = Join-Path $src $in
   if (-not (Test-Path $inPath)) { Write-Warning "MISSING source: $in"; continue }
-  $outPath = Join-Path $outDir $jobsMG[$in]
-  $uri = ([System.Uri]$inPath).AbsoluteUri
-  & $browser --headless --no-sandbox --disable-gpu --no-pdf-header-footer `
-    --print-to-pdf="$outPath" $uri | Out-Null
+  $outPath = Join-Path $outDir $mgJobs[$in]
+  Invoke-ChromePdf -Uri ([System.Uri]$inPath).AbsoluteUri -OutPath $outPath
   if (Test-Path $outPath) {
-    "{0,-40} -> {1,8:N0} bytes" -f $jobsMG[$in], (Get-Item $outPath).Length
+    $nMg++
+    "{0,-34} -> {1,8:N0} bytes" -f $mgJobs[$in], (Get-Item $outPath).Length
   } else {
-    Write-Warning "FAILED: $($jobsMG[$in])"
+    Write-Warning "FAILED: $($mgJobs[$in])"
   }
 }
 
-Write-Host "Done."
+Write-Host ''
+Write-Host ("Done. {0} player PDF(s) + {1} MG/actor PDF(s) -> {2}" -f $nPlayer, $nMg, $outDir) -ForegroundColor Green

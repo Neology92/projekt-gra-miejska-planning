@@ -5,7 +5,8 @@
 #   pwsh -File render-decoder.ps1                 # all groups G1..G10
 #   pwsh -File render-decoder.ps1 -Group G1       # one group (prototype / review)
 #
-# Output: ../../public/decoders/decoder-G1.pdf … decoder-G10.pdf
+# Output: ../../public/wspolne-<kolor>-1-Z1-deszyfrownik.pdf  (Z1 insert, one per group; flat public/)
+# Name canon: envelopes/README.md §Systematyka nazw. The decoder self-stamps (w01-<kolor>) from its group colour.
 # Data: glyphs + edges from ../map-gen/map-data.js (Z1_GROUPS order = edges; do not reorder there).
 
 param(
@@ -14,8 +15,14 @@ param(
 
 $ErrorActionPreference = 'Stop'
 $here   = $PSScriptRoot
-$outDir = Join-Path (Resolve-Path (Join-Path $here '..\..')) 'public\decoders'
+$outDir = Join-Path (Resolve-Path (Join-Path $here '..\..')) 'public'
 if (-not (Test-Path $outDir)) { New-Item -ItemType Directory -Path $outDir | Out-Null }
+
+# G -> ASCII colour token for the filename (matches group-colors.js .ascii / envelopes/README.md).
+$COLOR = @{
+  G1='czerwony'; G2='pomaranczowy'; G3='zolty'; G4='zielony'; G5='turkusowy'
+  G6='niebieski'; G7='fioletowy'; G8='bialy'; G9='brazowy'; G10='czarny'
+}
 
 # --- Locate Chrome or Edge (same probe as render-map.ps1) ---
 $candidates = @(
@@ -36,7 +43,9 @@ function Render-Decoder {
 
   $htmlPath = Join-Path $here 'decoder.html'
   $uri      = ([System.Uri]$htmlPath).AbsoluteUri + "?group=$G"
-  $pdfOut   = Join-Path $outDir "decoder-$G.pdf"
+  $color    = $COLOR[$G]
+  if (-not $color) { Write-Host "  SKIP $G (no colour mapping)" -ForegroundColor Yellow; return }
+  $pdfOut   = Join-Path $outDir "wspolne-$color-1-Z1-deszyfrownik.pdf"
 
   Write-Host "  Rendering $G..." -NoNewline
   if (Test-Path $pdfOut) { Remove-Item $pdfOut -Force -ErrorAction SilentlyContinue }

@@ -5,15 +5,17 @@
 // Uruchamiany lokalnie przed `netlify deploy` ORAZ jako build command na Netlify
 // (patrz netlify.toml). Brak zależności npm — czysty Node.
 //
-// Konwencja kategoryzacji wynika z nazw plików:
-//   mg-* / */mg-tylko/* / *klucz* / *sprawdzenie*  -> sekcja MG (spoilery)
-//   decoder-*                                       -> deszyfrowniki G1-G10
-//   maps/ , map*                                    -> mapy
-//   z11-*                                           -> tabele Z11 (finał KZ)
-//   *.mp3 / *.wav                                   -> audio
-//   prototyp-druk/gracz/*                           -> prototyp (druk gracza)
-//   wspolne-*                                       -> start (wszyscy)
-//   miasto-*                                        -> koperty (tor miasta)
+// Konwencja kategoryzacji = PREFIKS-ADRESAT + token typu w nazwie (envelopes/README.md §Systematyka nazw):
+//   archive/*                                  -> archiwum (zamrożone, pomijane w ZIP)
+//   mg-* / *klucz* / *sprawdzenie*             -> MG (spoilery)
+//   aktor-*                                    -> aktorzy (spoilery)
+//   *-deszyfrownik*                            -> deszyfrowniki (per grupa)
+//   *z11* / *-tabela-*                         -> tabele Z11 (finał KZ)
+//   *mapa* / map*                              -> mapy
+//   *.mp3 / *.wav                              -> audio
+//   wspolne-*                                  -> start (wszyscy, Z1)
+//   miasto-*                                   -> koperty tor miasta (TR)
+//   krzyzacy-*                                 -> koperty tor krzyżacki (KZ)
 
 import fs from 'node:fs';
 import path from 'node:path';
@@ -27,31 +29,36 @@ const SKIP_NAMES = new Set(['index.html', 'files.json']);
 
 // --- definicje sekcji (kolejność = kolejność na stronie) -------------------
 const SECTIONS = [
-  { id: 'start',     label: 'Start — wszyscy',          hint: 'Wspólny punkt wyjścia (Z1).',                  spoiler: false },
-  { id: 'koperty',   label: 'Koperty — tor miasta',     hint: 'Główny ciąg kopert i rekwizytów gracza.',      spoiler: false },
-  { id: 'decoders',  label: 'Deszyfrowniki G1–G10',     hint: 'Karta deszyfrująca per grupa.',                spoiler: false },
-  { id: 'maps',      label: 'Mapy',                     hint: 'Mapa terenu gry.',                             spoiler: false },
-  { id: 'z11',       label: 'Z11 — tabele (finał KZ)',  hint: 'Tabela symboli + tabula recta.',               spoiler: false },
-  { id: 'prototyp',  label: 'Prototyp do druku — gracz', hint: 'Zestaw druków testowej ścieżki.',             spoiler: false },
-  { id: 'audio',     label: 'Audio',                    hint: 'Ścieżki dźwiękowe.',                           spoiler: false },
-  { id: 'inne',      label: 'Inne',                     hint: 'Pozostałe pliki.',                             spoiler: false },
-  { id: 'archive',   label: '🗄 Archiwum',               hint: 'Stare/zarchiwizowane wersje. Pomijane w paczkach ZIP („Pobierz wszystko" / „Do druku").', spoiler: false },
-  { id: 'mg',        label: '🔒 MG / spoilery',          hint: 'Klucze odpowiedzi i materiały tylko dla Mistrza Gry. NIE pokazuj graczom.', spoiler: true },
+  { id: 'start',     label: 'Start — wszyscy',             hint: 'Wspólny punkt wyjścia (Z1) — brief, mapa, deszyfrownik per grupa.', spoiler: false },
+  { id: 'koperty',   label: 'Koperty — tor miasta (TR)',   hint: 'Ciąg kopert i rekwizytów Tajnej Rady (G1–G5).', spoiler: false },
+  { id: 'krzyzacy',  label: 'Koperty — tor krzyżacki (KZ)', hint: 'Ciąg kopert i rekwizytów Zakonu (G6–G10).',     spoiler: false },
+  { id: 'decoders',  label: 'Deszyfrowniki',               hint: 'Karta deszyfrująca Z1 per grupa.',              spoiler: false },
+  { id: 'maps',      label: 'Mapy',                        hint: 'Mapa terenu gry (per grupa do druku).',         spoiler: false },
+  { id: 'z11',       label: 'Z11 — tabele (finał KZ)',     hint: 'Tabela symboli + tabula recta, per grupa.',     spoiler: false },
+  { id: 'audio',     label: 'Audio',                       hint: 'Ścieżki dźwiękowe.',                            spoiler: false },
+  { id: 'inne',      label: 'Inne',                        hint: 'Pozostałe pliki.',                              spoiler: false },
+  { id: 'archive',   label: '🗄 Archiwum',                  hint: 'Stare/zarchiwizowane wersje. Pomijane w paczkach ZIP („Pobierz wszystko" / „Do druku").', spoiler: false },
+  { id: 'aktorzy',   label: '🔒 Aktorzy (Jordan / Albrecht)', hint: 'Ściągawki dla aktorów. Spoilery — nie pokazuj graczom.', spoiler: true },
+  { id: 'mg',        label: '🔒 MG / spoilery',             hint: 'Klucze odpowiedzi i materiały tylko dla Mistrza Gry. NIE pokazuj graczom.', spoiler: true },
 ];
 
 function categorize(rel) {
   const lower = rel.toLowerCase().replace(/\\/g, '/');
   const base = path.basename(lower);
-  // archive/ ma pierwszeństwo — stare pliki nie mogą wyciekać do prototyp/mg/inne
+  // archive/ ma pierwszeństwo — stare pliki nie mogą wyciekać do innych sekcji
   if (lower.startsWith('archive/')) return 'archive';
+  // adresaci-spoilery (prefiks nazwy)
+  if (base.startsWith('aktor-')) return 'aktorzy';
   if (base.startsWith('mg-') || lower.includes('/mg-tylko/') || base.includes('klucz') || base.includes('sprawdzenie')) return 'mg';
-  if (lower.includes('decoder')) return 'decoders';
-  if (lower.startsWith('maps/') || base.startsWith('map.') || base.startsWith('map-')) return 'maps';
-  if (base.startsWith('z11')) return 'z11';
+  // typ (token w nazwie) — przed prefiksem frakcji, bo z11/mapa/deszyfrownik mają prefiks gracza
+  if (base.includes('deszyfrownik')) return 'decoders';
+  if (base.includes('z11') || base.includes('-tabela-')) return 'z11';
+  if (base.includes('mapa') || base.startsWith('map.') || base.startsWith('map-')) return 'maps';
   if (/\.(mp3|wav|m4a)$/.test(lower)) return 'audio';
-  if (lower.includes('prototyp-druk/gracz/')) return 'prototyp';
+  // frakcja gracza (prefiks)
   if (base.startsWith('wspolne')) return 'start';
   if (base.startsWith('miasto')) return 'koperty';
+  if (base.startsWith('krzyzacy')) return 'krzyzacy';
   return 'inne';
 }
 
