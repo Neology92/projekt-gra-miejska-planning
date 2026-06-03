@@ -6,7 +6,19 @@
 > **Location:** Piccolo (ul. Prosta 20, Toruń)
 > **When:** Faza 2A — groups arrive after solving Z2
 
+> ## TWO ROLES — read this first [2026-06-03]
+> You, Piotr, play **Jordan for BOTH factions**, in two opposite scenes:
+> - **PART ONE — TR groups (your allies):** the town's couriers find you, prove themselves (name + the sword), and you trust them — feed them, brief them, hand them K3. (Everything from QUICK REFERENCE down to PLANNING NOTES.)
+> - **PART TWO — KZ groups (you are their target):** the Order's couriers come *pretending to be Council people* to infiltrate you. You play the genial, unsuspecting cook — feed them, let them get a good look at you — but give them **no** K3. (New section, just before PLANNING NOTES.)
+>
+> Same cook, same ladle. Which scene you run depends on the group's **wristband colour**:
+> **TR = Red / Orange / Yellow / Green / Cyan** → PART ONE (allies).
+> **KZ = Blue / Purple / White / Brown / Black** → PART TWO (infiltrators — play fooled).
+> **Oskar (MG) staggers the two queues so a TR group and a KZ group are never with you at once.**
+
 ---
+
+## PART ONE — TR GROUPS · your couriers
 
 ## QUICK REFERENCE (actor cheat sheet — print separately if needed)
 
@@ -136,6 +148,60 @@ That's it. They leave.
 
 **Group asks too many questions about who you are:**
 > *"I'm just the man with the ladle. Now — do you want what I have or not?"*
+
+---
+
+# PART TWO — KZ GROUPS · you are the target (Z3Z)
+
+> Your **second role** [added 2026-06-03]. The Order's couriers (KZ) come to Piccolo **pretending to be the Council's own people** — they are infiltrating you (their puzzle: Z3Z). You **know better**, but you play the warm, unsuspecting cook. The whole point is that **they succeed**: they must leave having seen you well and eaten at your board. Same costume, same ladle as PART ONE. **Oskar staggers the queues so this never overlaps a real TR group.**
+
+## QUICK REFERENCE — KZ TARGET
+
+```
+╔══════════════════════════════════════════════════════════════╗
+║  JORDAN / PIOTR — KZ TARGET QUICK REF                       ║
+╠══════════════════════════════════════════════════════════════╣
+║  THE KZ GROUPS (the OTHER five colours = infiltrators):     ║
+║  □ Blue (G6)  □ Purple (G7)  □ White (G8)                   ║
+║  □ Brown (G9)  □ Black (G10)                                 ║
+╠══════════════════════════════════════════════════════════════╣
+║  WHAT THEY MUST LEAVE WITH (let them get it):               ║
+║  ▸ A good look at YOU: your BROWN robe + your LADLE          ║
+║    (never hide them — that is what they came for)           ║
+║  ▸ A meal: hand them the coupon / feed them at the board    ║
+╠══════════════════════════════════════════════════════════════╣
+║  DO NOT:                                                    ║
+║  ✗ give them K3 (that is for verified TR only)             ║
+║  ✗ expose them / break their cover — play fooled            ║
+╠══════════════════════════════════════════════════════════════╣
+║  DONE CHECKLIST (fed + got their look, sent off, no K3):    ║
+║  □ Blue   □ Purple   □ White   □ Brown   □ Black             ║
+╚══════════════════════════════════════════════════════════════╝
+```
+
+## WHO THEY ARE (and how you know)
+
+A group comes in claiming to be of the Council — couriers, friends, hungry people sent your way. But their **wristband is one of the other five colours** (Blue/Purple/White/Brown/Black), not your TR five. That is how you know: **these are the Order's infiltrators, posing as ours.** (If unsure, Oskar will signal which group is which.)
+
+You do **not** unmask them. You play the genial cook who takes them for friends. The game *wants* them to pull off their little infiltration — so make it easy.
+
+## WHAT TO DO
+
+1. **Welcome them as Council folk.** Warm, busy, unbothered. Don't run the name+sword check on them — you're "fooled." *"Sit, sit — you look half-frozen. There's a bowl for our own tonight."*
+2. **Feed them — hand over the coupon / meal.** This is *their* errand (they were sent to take the Council's provisions). Give it freely. *"Eat. No one goes hungry under this roof tonight."*
+3. **Let them look at you.** They came to *mark you* — your **brown robe** and your **ladle**. **Never hide them.** Move about, ladle the pot, let them get a long, clear look. Don't point at them, don't perform them — just be the cook, plainly, in good light.
+4. **Give them NO K3.** The real mission is for verified TR only. If they fish for "the next step," deflect: *"Next step? Eat your supper. That's the only step I've got for strangers."*
+5. **Send them off fed.** *"Go on with you — and stay warm."*
+
+> **The hour (eighth bell):** if it slips into your chatter, no harm — they already have it from their own master, and both sides know it. Don't make a point of it; it is atmosphere, not their task.
+
+## IF SOMETHING GOES WRONG (KZ)
+
+- **They push hard for a mission / K3:** *"You've got the wrong cook for that. I feed people. That's all."* Signal Oskar if they won't let go.
+- **They overplay / try to provoke you:** stay the easy host; don't bite. Oskar steps in if needed.
+- **They never look at you properly (might miss robe/ladle):** give them a reason to — bring the bowl yourself, linger, ladle in plain sight. They must leave able to say what you wore and what you held.
+
+> ⚠ **Dwurolowość [do weryfikacji na próbie]:** Ty (Piotr) jesteś jednocześnie sojusznikiem TR i celem KZ — symetrycznie do Zosi/Albrechta (cel TR / handler KZ). Czy jeden aktor utrzyma oba framingi przez popołudnie — `lore/meta-kartki/krzyzacy-3-Z3Z.md §SPORNE`, `concept/05 §REWIZJA`.
 
 ---
 

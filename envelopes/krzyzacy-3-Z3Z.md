@@ -25,7 +25,7 @@
 
 ---
 
-*Out of the Komtur's sight, his grid of colours and signs folded away in your bag, his order in your hand. Back into the carnival — and somewhere across the masked, roaring city, a cook's kitchen that is not a kitchen at all.*
+*Out of the Komtur's sight, his grid of colours and signs folded away in your bag, his order in your hand. Back into the carnival — and all the way across the masked, roaring city the same talk keeps catching at you, none of it kind to the master you now serve. That the Komtur himself wanted to come to terms with the townsmen, and Marienburg forbade it — that even he thinks the cause half-lost. That the Grand Master has sat silent in his castle for weeks and answered no letter, as if he had washed his hands of this place. That even the bishops are turning — the Pomesanian one sheltered the rebels' own Union under his roof, once. You push it all down. Somewhere across this din there is a cook's kitchen that is not a kitchen at all, and a part for you to play in it.*
 
 ---
 
@@ -33,26 +33,26 @@
 
 You would serve the Order? Here is how you earn the right.
 
-There is a cook in this town. **Jordan.** He keeps a place they call **Piccolo** — and it is no kitchen. It is the traitors' own nest, where their Secret Council is fed and sheltered and does its whispering. The Order has long wanted eyes inside it.
+There is a cook in this town. **Jordan.** He keeps a place they call **Piccolo** — and it is no kitchen. It is the traitors' own nest, where their Secret Council is fed and sheltered and lays its plans.
 
-Tonight you are those eyes. The carnival lends you a face for free — you are no one: hungry folk drifting in off the cold streets, looking for a warm bowl and a bench. Half the city is doing the same. Be of that half.
+Tonight you walk in as one of *them.* The Council's couriers come and go from that kitchen all night, and the carnival lends you a face for free — **pass yourself as the Council's own, and the cook will take you for friends.** He feeds his people without a second thought. Let him feed you.
 
-**Your task is to know the man.** Not his words — his *person.* Get close, take your time, and mark what no idle stranger would trouble to mark: **the colour he wears, and the one thing never out of his hand.** Fix them in your memory and carry them back to me. By such marks the Order knows its enemy — and will know him again, wherever he runs. Bring me the man, drawn in those two strokes.
+**Your task is to know the man.** Not his words — his *person.* Sit at his board, take what he puts in your hand, and while you eat at his hearth, watch him close. Mark what no friend would trouble to mark: **the colour he wears, and the one thing never out of his hand.** Fix them in your memory and carry them back to me — by such marks the Order knows its enemy, and will know him again, wherever he runs. Bring me the man, drawn in those two strokes.
 
-And while you sit at their board — **eat.** The castle bars its gates against the siege to come, and the Order's men must be fed; what fills traitors' bellies may as well fill ours. Take the token that buys a place at their table, and spend it to the last. Every bowl you empty at their hearth is one the Council will not. Call it the night's first small theft.
+And let the meal be no waste. The castle bars its gates against the siege to come, and the Order's men must be fed; what fills traitors' bellies may as well fill ours. **Take the token he hands you and spend it to the last** — every bowl you empty at their hearth is one the Council will not. Let the traitors feed the Order's own, and never know whom they fed.
 
-Do not be remembered. You are hungry strangers, nothing more. Take your fill, take his measure, and drift back out into the dark.
+Eat, take his measure, and slip back into the dark. Do not be a face he remembers.
 
 — A.
 
 ---
 
-*Hungry strangers, then. You can be that. A warm room, a careful look at the man with the ladle, a bowl of someone else's supper — and back out before anyone wonders who you were.*
+*One of the Council's people, then — for an hour, over a borrowed supper, with a careful eye on the man with the ladle. Eat their bread, learn his face, and be gone before anyone wonders whose side you came in on.*
 
 ---
 
 > **↪ TO THE GAME MASTER** — *game instruction, not part of the world*
-> Bring the cook back to the Game Master in two strokes — **the colour he wears and the thing he carries.** With those, and the Order's table-token spent, you have done what was asked; what comes next is waiting there.
+> Bring the cook back to the Game Master in two strokes — **the colour he wears and the thing he carries.** With those — and the cook's own meal-token spent at his board — you have done what was asked; what comes next is waiting there.
 
 ---
 
@@ -65,7 +65,7 @@ Do not be remembered. You are hungry strangers, nothing more. Take your fill, ta
 - **Godzina 20:30 = AMBIENT, nie bramka [Oskar 2026-06-03].** Jordan o niej mówi swoim ludziom TR — KZ mogą ją usłyszeć w tle (ładny obraz: obie strony znają godzinę), ale **nie muszą jej „wyciągać"**. KZ dostają 20:30 od **Albrechta** (handler, `albrecht-actor-card §STEP K3` — „come at the eighth bell"). Z3Z jej nie gatekeeper'uje. *(Wcześniejsze „wyciągnięcie godziny od Jordana" z meta-kartki/zamek-lista = ZDEZAKTUALIZOWANE — patrz §Do zaktualizowania.)*
 - **Loop/reset = trywialny [Oskar 2026-06-03].** 5 grup KZ infiltruje Piccolo niezależnie; każda osobno zdobywa swój klucz (kolor+atrybut) przez obserwację. **Brak maszynerii patrolu/resetu** (inaczej niż kradzież listy w Z3 — bo tu nie ma fizycznego pojedynczego łupu do podebrania, tylko obserwacja + zjedzenie). Piotr lekki: jest sobą (kucharz przy palenisku, obsługuje swoich TR), KZ go obserwują z boku.
 
-**§Kupon — DO DOPRECYZOWANIA [flaga dla Oskara]:** jedyny rekwizyt „kradzieży" = **kupon na posiłek** (Oskar: „rekwizyt nie będzie oprócz kuponu… jak go dostaną, to będzie trochę takie, że dokonali kradzieży"). Otwarte: (a) kto wręcza kupon — MG razem z K3-K, czy „leży" w Piccolo do podebrania? (b) mechanika realizacji — wymieniają u MG/Piccolo na realny poczęstunek? Zależne od tego, czy Piccolo serwuje (jak opcjonalny posiłek u Jordana, `jordan-actor-script`). Roboczo: **MG wręcza kupon z K3-K; realizacja = zjedzenie przy Piccolo/u MG**. Domknąć przy ops/rekwizytach.
+**§Kupon — ROZSTRZYGNIĘTE [Oskar 2026-06-03]:** kupon wręcza **JORDAN — wszystkim** (karmi „swoich"). Mechanika cover: **grupa KZ udaje ludzi Tajnej Rady** → Jordan, biorąc ich za swoich, daje kupon/posiłek jak każdej grupie. Samo zdobycie kuponu = „dokonali kradzieży zaopatrzenia" (zjedli prowiant wroga, podszywając się). Symetria z Z3 (TR udają donosicieli u Albrechta ↔ KZ udają TR u Jordana). ⚠ **Konsekwencja obsadowa:** Piotr musi **grać nabranego** — wpuścić grupy KZ mimo ich koloru opaski (KZ = Blue/Purple/White/Brown/Black, NIE z 5 kolorów TR), nakarmić, dać się obejrzeć (szata+chochla), ale **NIE** dawać im K3 (to tylko dla zweryfikowanych TR). Rola dopisana → `materials/actors/jordan-actor-script-draft.md §PART TWO (cel infiltracji KZ)`. Realizacja kuponu = poczęstunek przy Piccolo (jeśli serwuje) / u MG — domknąć przy ops.
 
 **Sender = Albrecht (roman order, „— A.") [lustro miasto-3-Z3]:** K3-K to **pisany rozkaz handlera** (wyjątek senderless, jak K3 Jordana). Głos = pyszny komtur (`albrecht-actor-card`). Albrecht wręcza milcząco (meta); treść = jego rozkaz. Inicjał „— A." spójny z „— J."/„— R."/„— N.".
 
@@ -75,7 +75,7 @@ Do not be remembered. You are hungry strangers, nothing more. Take your fill, ta
 
 **Klamra masek [A2, jak K3 TR]:** „the carnival lends you a face for free… half the city is doing the same" — przebranie (głodni obcy) naturalne dzięki karnawałowi. Pokrycie: `karnawal-1454.js`.
 
-**Plotki:** wg `plotki §Przypisanie` K-Z3Z = Pula B mocniejsze (B7, B8, B9). **Nie wplotłem ich w v1** — order jest krótki/zadaniowy. Do decyzji: dorzucić 1-2 (np. B7 „komtur sam chciał się układać", B8 „Erlichshausen milczy") w italic-scene, czy trzymać czysto? (TR K3 też niósł plotki A2/A3/A5 — symetria sugeruje dorzucić). Flaga do review.
+**Plotki [WPLECIONE 2026-06-03, decyzja Oskara „dorzuć"]:** Pula B mocniejsze (`plotki §Przypisanie` K-Z3Z) wplecione w opener italic (mowa zależna, jak K2-K): **B7** (komtur sam chciał się układać, Malbork zakazał), **B8** (Erlichshausen milczy/porzucił), **B9** (biskupi się odwracają — pomezański gościł Związek). Krytyka **Zakonu** (strona KZ) → inwersja moralna, zasila wolny wybór w finale. Pokrycie: `albrecht-kalb.js`, `donosiciele-1454.js`, `zwiazek-pruski.js`.
 
 **Dwa rejestry:** scena (wyjście od Albrechta, powrót w karnawał, postanowienie) = *kursywa*; rozkaz Albrechta (tytuł + treść + „— A.") = roman.
 
