@@ -72,6 +72,55 @@ const STEPS = {
     next: null,                  // dalej tylko grupy z opcjonalną Z10 (patrz optionalStepFor)
   },
 
+  /* --- Z4/Z6/Z5 (TR) i Z8/Z9 (KZ) — opcjonalne F2B, po Z2. Treść = *_DATA
+         (optional-data.js); typy bramek: code-entry / pick-one / assign.
+         Wszystkie terminalne = granica POC (finał Z7/Z11 poza apką). --- */
+  z4: {
+    id: 'z4', label: 'Z4',
+    prop: {
+      what: 'a small iron-tongue instrument, its tongues marked with numbers',
+      from: 'the Game Master, after you brought in the stolen list',
+      where: 'the tune is played to you — play it back, note for note',
+    },
+    puzzle: { type: 'code-entry' }, next: null, terminal: true,
+  },
+  z5: {
+    id: 'z5', label: 'Z5',
+    prop: {
+      what: 'seven sealed jars lettered A–G, and Master Bogumił’s recipe',
+      from: 'the Game Master sends you to the baker',
+      where: 'at the baker’s bench — take their measure, but do not open them',
+    },
+    puzzle: { type: 'assign' }, next: null, terminal: true,
+  },
+  z6: {
+    id: 'z6', label: 'Z6',
+    prop: {
+      what: 'a Council dispatch naming five envoys and the four cities that answered',
+      from: 'the Game Master, from the Council’s own table',
+      where: 'read it against the arms set in the cobbles of Szeroka street',
+    },
+    puzzle: { type: 'pick-one' }, next: null, terminal: true,
+  },
+  z8: {
+    id: 'z8', label: 'Z8',
+    prop: {
+      what: 'a small iron-tongue instrument, its tongues marked with numbers',
+      from: 'the Game Master, after Piccolo',
+      where: 'the tune is played to you — play it back, note for note',
+    },
+    puzzle: { type: 'code-entry' }, next: null, terminal: true,
+  },
+  z9: {
+    id: 'z9', label: 'Z9',
+    prop: {
+      what: 'seven sealed jars lettered A–G, and the brother-cook’s recipe',
+      from: 'the Game Master sends you to the kitchen brother',
+      where: 'at the cook’s board — take their measure, but do not open them',
+    },
+    puzzle: { type: 'assign' }, next: null, terminal: true,
+  },
+
   /* --- Z10 — opcjonalna F2B (tor KZ, grupy 9/10): polichromie „Biedronka". --- */
   /* --- Karta „Bestiariusz Krzyżowca" (8 bestii A–H) → wskaż obecne na ścianie
          (Szeroka 22). Treść (scena/roman/zagadka/reveal) = Z10_DATA (z10-data.js).
@@ -91,10 +140,16 @@ const STEPS = {
 
 };
 
-const STEP_ORDER = ['z1', 'z2', 'z10'];
+const STEP_ORDER = ['z1', 'z2', 'z4', 'z5', 'z6', 'z8', 'z9', 'z10'];
 
-/* Grupy, które po Z2 idą dalej do opcjonalnej Z10 (KZ zestaw C: G9 brązowy, G10 czarny).
-   Pozostałe opcjonalne KZ (Z8/Z9) są poza POC → ich Z2 zostaje terminalne. */
+/* Po Z2 każda grupa idzie do swojej OPCJONALNEJ zagadki F2B (kanon: CLAUDE.md
+   §Kanoniczny przydział grup / materials/ops/koperty-kody-lista.md):
+     TR: G1->Z4 · G2/G3->Z5 · G4/G5->Z6 ；  KZ: G6/G7->Z8 · G8->Z9 · G9/G10->Z10.
+   W apce pomijamy sceny aktorów (Z3/Z3Z/Z3b) — jak dotąd POC. */
+const OPTIONAL_BY_GROUP = {
+  1: 'z4', 2: 'z5', 3: 'z5', 4: 'z6', 5: 'z6',
+  6: 'z8', 7: 'z8', 8: 'z9', 9: 'z10', 10: 'z10',
+};
 function optionalStepFor(group) {
-  return (group === 9 || group === 10) ? 'z10' : null;
+  return OPTIONAL_BY_GROUP[group] || null;
 }

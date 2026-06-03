@@ -48,7 +48,7 @@
 ✅ poz.2 Z2 — po Z1 ........... draft gotowy (Z2 Einsteina: Jordan/Piccolo/miecz; zakup-parol=miecz [06-02]; plotki Puli A; slip R.)  [envelopes/miasto-2-Z2.md]
 ✅ poz.3 Z3 — od Jordana ...... draft gotowy (brief F2B + Z3 zwiad; Z3b osobno)         [envelopes/miasto-3-Z3.md]
 ✅ poz.4 Z3b — kradzież ....... draft gotowy (2. koperta etapu Z3; narracja + cytat Albrechta)  [envelopes/miasto-4-Z3b.md]
-🟡 poz.5 Z4 — melodia/kalimba . draft v2 (SCENA: martwy flisak=R. nad Wisłą, melodia=kod; instrument zatwierdzony) + doubt-beat/rozterka [2026-06-03]  [envelopes/miasto-5-Z4.md]
+🟡 poz.5 Z4 — melodia/kalimba . draft v2 (SCENA: martwy flisak=R. nad Wisłą, melodia=kod; instrument zatwierdzony) + doubt-beat/rozterka [2026-06-03]  [envelopes/miasto-5-Z4.md] · + W APCE [2026-06-03]: etap z4 bramka code-entry=621454 (G1)
 ✅ 06a Z7 finałowy szyfr ...... szyfrogram + rama narracyjna v2 + ramka MG; wyrenderowany + stempel  [materials/props/z7-szyfrogram-draft.md · src/miasto-06a-Z7-list.html]
 🟡 poz.6 Z7 — finał .......... draft gotowy (Przedzamcze, ósme bicie, list nieotwarty, maski spadają) + przejście do Albrechta KUSZĄCE [2026-06-03]: kotwica spotkania (Z3) + kuszenie racją + beat motta (Oskar, „jak")  [envelopes/miasto-6-Z7.md]
 ```
@@ -159,9 +159,9 @@ Szczegóły: mechanics/koperty-mg.md §ZAŁOŻENIA PRZED RENDEREM · prototype/p
 🟡 Skrypt Albrechta (Zosia) F2A . handler KZ DOPISANY [2026-06-03] jako PART TWO karty  [materials/actors/albrecht-actor-card-draft.md PART TWO]
 🟡 Z3Z — infiltracja Piccolo .... draft v2 [2026-06-03]: obserwacja (kolor+chochla→Z11), cover=udawanie TR, kupon, plotki B7/B8/B9. Jednokopertowe. Zostaje: review Oskara + HTML render  [envelopes/krzyzacy-3-Z3Z.md]
                                  ⚠ BRAK HTML → BRAK PDF (5 kolorów KZ do wyrenderowania)
-🟡 Z8 — melodia zakonu .......... draft v2 [2026-06-03]: kalimba, kod 621454, klimat zakonny + doubt-beat. Zostaje: review Oskara + HTML render  [envelopes/krzyzacy-4-Z8.md]
+🟡 Z8 — melodia zakonu .......... draft v2 [2026-06-03]: kalimba, kod 621454, klimat zakonny + doubt-beat. Zostaje: review Oskara + HTML render  [envelopes/krzyzacy-4-Z8.md] · + W APCE [2026-06-03]: etap z8 bramka code-entry=621454 (G6/G7)
                                  ⚠ BRAK HTML → BRAK PDF (G6 niebieski + G7 fioletowy)
-🟡 Z9 — sensoryczna piernik ..... brief v3 [2026-06-03]: dwa kanały krytyki Zakonu; rekwizyty wyrenderowane [2026-06-02] (public/krzyzacy-bialy-4-Z9.pdf + z5z9-* + mg-Z5Z9-klucz). ⚠ tekst zmieniony po renderze → re-render po review. Zostaje: review Oskara  [envelopes/krzyzacy-4-Z9.md]
+🟡 Z9 — sensoryczna piernik ..... brief v3 [2026-06-03]: dwa kanały krytyki Zakonu; rekwizyty wyrenderowane [2026-06-02] (public/krzyzacy-bialy-4-Z9.pdf + z5z9-* + mg-Z5Z9-klucz). ⚠ tekst zmieniony po renderze → re-render po review. + W APCE [2026-06-03]: etap z9 bramka assign rozpiska A–G (G8). Zostaje: review Oskara  [envelopes/krzyzacy-4-Z9.md]
 🟡 Z10 — polichromie Biedronka .. draft v1 [2026-06-03]: leaf 8 bestii A–H, klucz A/B/E; doubt-beat. + W APCE ONLINE [2026-06-03]: etap z10 (bramka beast-select=A/B/E) dla G9/G10 po Z2 [app/z10-data.js]. Zostaje: review Oskara + spot-check A/B/E in loco + HTML render  [envelopes/krzyzacy-4-Z10.md]
                                  ⚠ BRAK HTML → BRAK PDF (G9 brązowy + G10 czarny)
 🟡 Z11 — finał krzyżaków ........ koperta gracza draft [2026-06-03]: brama = motto Zakonu (odszyfrowane przez tabelę 1 + tabula recta), wolny wybór dostawy, BRAK twistu. Zostaje: review Oskara + HTML render  [envelopes/krzyzacy-5-Z11.md]
@@ -176,13 +176,14 @@ Szczegóły: mechanics/koperty-mg.md §ZAŁOŻENIA PRZED RENDEREM · prototype/p
 ```
 🟡 Z5 — sensoryczna z piernikiem  spec+draft gotowe; brief + 3 wspólne rekwizyty (przepis/etykiety/rozpiska) + klucz MG wyrenderowane [2026-06-02]
                                  (public/miasto-5-Z5.pdf · z5z9-przepis/etykiety/rozpiska.pdf · mg-Z5Z9-klucz.pdf — 1 zestaw słojów obsługuje Z5+Z9);
-                                 zostaje: review Oskara + klucz finału (#9)
+                                 + W APCE [2026-06-03]: etap z5 bramka assign rozpiska A–G (G2/G3); zostaje: review Oskara + klucz finału (#9)
 🟡 Z6 — herby hanzeatyckie ...... mechanika Piotra + koperta gracza draft v1 [2026-06-03]: dopasowanie
                                  nadawca↔odbiorca (5 posłów Związku Pruskiego → 4 dotarły: Hamburg/Kolonia/Lubeka×2;
                                  nadawca bez pary = nie dotarło). KLUCZ = Chełmno ✅. Reguła wprost, kanał A (A4 herby/
                                  turnieje) + doubt-beat; lokalizacja = ul. Szeroka; nazwy gracza = z bruku (PL). Zostaje:
                                  review Oskara + spot-check tarcz in loco + karta-rekwizyt do produkcji
                                  [envelopes/miasto-5-Z6.md · puzzles/herby-aleja.md]
+                                 + W APCE [2026-06-03]: etap z6 bramka pick-one=Chełmno (G4/G5)
 ```
 
 ### 🟨 Dywersyfikacja (10 grup)

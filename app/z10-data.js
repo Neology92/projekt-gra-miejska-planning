@@ -12,6 +12,7 @@
 
 const Z10_DATA = {
   title: 'The beasts on the wall',
+  successTitle: 'Known for a brother',
 
   // narracja drogi pod kamienicę (skrót verbatim z koperty — sekcja TEXT)
   scene: [

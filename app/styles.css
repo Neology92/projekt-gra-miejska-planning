@@ -106,6 +106,14 @@ em{ font-style:italic; } strong{ font-weight:400; color:var(--rubrum); }
 .tile.letter .lt{ font-family:var(--prose); font-size:1.6rem; line-height:1; color:#2a1f0e; }
 .tile.letter.on .lt{ color:var(--rubrum); }
 
+/* lista pojedynczego wyboru (Z6 — miasto bez pary) */
+.pick-list{ display:flex; flex-direction:column; gap:8px; margin:6px 0 14px; }
+.pick-opt{ font-family:var(--prose); font-size:1.05rem; text-align:left; padding:11px 14px;
+  background:var(--tile); border:1px solid rgba(60,46,28,.35); border-radius:9px; cursor:pointer;
+  color:#2a1f0e; transition:border-color .15s, background .15s; }
+.pick-opt:active{ transform:scale(.99); }
+.pick-opt.on{ border-color:var(--rubrum); border-width:2px; background:#f6ecdd; color:var(--rubrum); }
+
 /* przyciski zagadki — pełna szerokość, równo z siatką symboli (bez flex+auto-margin,
    który rozjeżdżał Confirm/Clear) */
 .actions{ display:grid; grid-template-columns:1fr; gap:10px; margin-top:10px; }
