@@ -38,6 +38,8 @@
 
 *A boatman, face-down in the mud — while the great men whose errands he ran sleep warm behind their walls tonight. The letter was never his. The cause was never his. He only carried. Carrying is what killed him. That is how it goes for small men caught in the schemes of large ones — they do the carrying, and they do the dying, and the men who gain by it never learn their names.*
 
+*And the thought you keep pushing down all night rises again, here by the cold water: these are the men you serve. The letter in your bag is their errand, the same errand R. ran until the river took him. A rising of great men — and the likes of you carry it on your backs. Whose cause is this, in truth, and are they the ones in the right? You push it down. It does not go far.*
+
 *They found something on him, the watermen — a small instrument, the kind a river man keeps for the long hours on the water; and folded with it, a scrap in his hand. The same hand as the note he left you. Not a message, this time. A tune, set down note by note, and beneath it his last words:*
 
 > They took the dispatch off me. I could not keep it — so I hid it where only our own would think to look. Play my tune true and you will have the number that opens the way to it. Play it as I played it to the river, note for note.
@@ -51,7 +53,7 @@
 ---
 
 > **↪ TO THE GAME MASTER** — *game instruction, not part of the world*
-> Bring the six numbers to the Game Master. What R. hid will be given to you in return.
+> Bring the six numbers to the Game Master, who keeps to the Rynek Staromiejski (the Old Town market square). What R. hid will be given to you in return.
 
 ---
 
@@ -66,6 +68,7 @@
 - **Melodia METAFIZYCZNA [decyzja Oskara 2026-06-02, wariant A]:** w fikcji melodia jest „już w powietrzu" — niesiona znad wody, bez grajka (R. martwy), „as if the river had kept his music for him". Abstrakcyjna, nie ma fizycznego źródła. Mechanicznie: MG odtwarza nagranie/gra, gdy grupa oddaje raport — ale fikcja ramuje to jako echo znad Wisły, nie „MG gra". Info dla MG: `materials/ops/mg-runsheet.md §Z4`.
 - **Spięcie z Fontanną Flisaka [wariant A — META, 2026-06-02]:** w tekście nawiązanie do legendy flisaka („the old tale… a raftsman whose playing once drew the whole town's plague of frogs… under the Vistula", `legenda-flisak.js`) — melodia jako mit znad wody. **Fontanna NIE pojawia się w fikcji** (anachronizm 1914) — most do niej (figura grajka + 8 żab przy Ratuszu, dziś) idzie przez **kartkę autorską po grze** (`lore/meta-kartki-autorskie.md`). Instrument legendy = skrzypce; NIE akcentujemy — melodia jest ponad instrumentem (R. grał na swoim lamellofonie).
 - **Gorzki akcent — inwersja moralna [decyzja Oskara 2026-06-02, p. 1.1 analizy]:** „while the great men whose errands he ran sleep warm behind their walls… small men caught in the schemes of large ones — they do the carrying, and they do the dying." R. (mały człowiek) zginął za grę wielkich (TR/narada). Nośnik filaru „TR=źli" na ścieżce prototypu (Z4), bo Z5 nie jest testowana. Mechanizm uniwersalny per tor (tor krzyżacki → analogiczna gorycz wobec Zakonu).
+- **Doubt-beat / rozterka [DODANE 2026-06-03, Oskar — `plotki-i-pogloski.md §Łuk`]:** nowy akapit po gorzkim „great men" — kurier **sam nazywa** zwątpienie („*these are the men you serve… whose cause is this, and are they the ones in the right? You push it down. It does not go far.*"). To **kanał B** łuku pogłoski→rozterki→przejście: gorycz Z4 (kanał A, już była) dojrzewa w żywy niepokój kuriera. Nie rozstrzyga — zasila finałowy wybór (Z7). Klamra „poznałeś też tamtą stronę" (Albrecht z Z3) zbierze tu paliwo.
 - **Lokalizacja OPISOWA [decyzja Oskara 2026-06-02, p. 1.2]:** scena jest **czysto narracyjna** — grupa NIE idzie fizycznie nad Wisłę, MG tam nie stoi. Koperta opisuje zdarzenie („word comes to us of the river"), gracze je czytają/wyobrażają. Brak punktu terenowego.
 - **Nośnik znaleziska:** instrument wręcza fizycznie MG (meta, jak rozdanie karty — wzorzec K-Z3b). W fikcji „znaleziono go przy R.". Scrap z melodią = część koperty (roman).
 - **Dwa rejestry:** narracja z głów = *kursywa*; pisane słowa R. (scrap) = roman.

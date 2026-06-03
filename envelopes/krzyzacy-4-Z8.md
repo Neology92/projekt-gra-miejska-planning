@@ -1,7 +1,7 @@
 # Koperta `krzyzacy-4-Z8` — The Order's Own Music (draft)
 
 Frakcja: **krzyzacy** (Zakon) · Pozycja na ścieżce (nr): **4** · Zadanie: **Z8** (melodia zakonu — lustro Z4).
-Źródło treści: `puzzles/kalimba.md`. Status: **draft [2026-06-02, v1 — EN + klimat zakonny + senderless scene + iron-tongue generic + konwencja głosu]** — awaiting Oskar's review.
+Źródło treści: `puzzles/kalimba.md`. Status: **draft [2026-06-03, v2 — TONE FLAG rozstrzygnięty ku krytyce Zakonu + doubt-beat (Pula B)]** — awaiting Oskar's review.
 
 > **Language:** English (player-facing, #70). Planning notes in Polish below.
 > **Voice:** senderless scene — narrator **from inside the couriers' heads**, 2nd person „you" (#67); the brother's written words = roman (words of the world — a scrap in a cloister-trained hand, #47), not live speech; MG instruction = separate boxed frame. *(Wzorzec = `miasto-5-Z4`; konwencja — `mechanics/koperty-mg.md`.)*
@@ -40,6 +40,8 @@ Frakcja: **krzyzacy** (Zakon) · Pozycja na ścieżce (nr): **4** · Zadanie: **
 
 *He was nobody much: a lay brother who kept the house's books and its psalter, the kind of man the great commanders never learn the name of — sent out with a thing to keep when keeping it grew dangerous, and left to keep it alone. The towns rose, the gates closed, and he went down in the dark with the Order's secret still on him and no one at his back. They left him where he fell. The Order forgets nothing, they say. It forgot him by morning.*
 
+*And the doubt you have carried since the gates shut stirs again, looking at what is left of him. This is a master that taxes its own merchants to the bone, milks the towns it swears to shelter, begged the Emperor in Vienna for nothing and changed less — and still it spends men like this one in the dark, for secrets, and learns not a single name. The brothers were a thousand once; they are barely three hundred now. You push the thought down. It does not go far. Whose errand is this, in truth — and were they ever the ones in the right?*
+
 *What the watch turned up on his body, they could make nothing of: a small instrument of iron tongues, the sort kept for the long offices and the colder hours; and folded against it, a scrap in a careful, cloister-trained hand — the same hand that had copied the house's psalter a hundred times over. Not a prayer, this time. A tune, set down note by note, and beneath it a line meant for one of his own:*
 
 > What the Order keeps, the Order does not leave in the open. I have set it where no townsman's hand would think to reach — behind our own music, the way we have always kept what is ours. Play the tune true, brother, note for note as it is sung in our house, and the number that unseals it is yours. Only our own know this melody. Only our own will pass.
@@ -53,7 +55,7 @@ Frakcja: **krzyzacy** (Zakon) · Pozycja na ścieżce (nr): **4** · Zadanie: **
 ---
 
 > **↪ TO THE GAME MASTER** — *game instruction, not part of the world*
-> Bring the six numbers to the Game Master. What the brother sealed away will be given to you in return — and with it, your next orders.
+> Bring the six numbers to the Game Master, who keeps to the Rynek Staromiejski (the Old Town market square). What the brother sealed away will be given to you in return — and with it, your next orders.
 
 ---
 
@@ -66,7 +68,8 @@ Frakcja: **krzyzacy** (Zakon) · Pozycja na ścieżce (nr): **4** · Zadanie: **
 - **Inwarianta [kanon]:** kod `621454` = **wyłącznie bramka MG**; w fikcji nikt nie „czyta daty". Znaczenie 6.2.1454 = data buntu = **data własnej klęski Zakonu** → dramatyczna ironia **niewidoczna dla gracza w grze**, meta-reveal po grze (meta-kartka Z8, `kalimba.md`).
 - **Melodia metafizyczna [wariant A, jak Z4]:** w fikcji melodia „już w powietrzu" — niesiona z kamieni kaplicy, bez śpiewaka (brat martwy), „as if the house had kept his music for him". Mechanicznie: MG odtwarza nagranie/gra przy oddaniu raportu; fikcja ramuje to jako echo z domu zakonnego, nie „MG gra". Info dla MG: `materials/ops/mg-runsheet.md §Z8` (do dodania przy skalowaniu ops).
 - **Klamra karnawału = osłona [B1, jak Z4]:** „the whole city is piping and drumming… drowning the bells" → granie melodii nie wzbudza podejrzeń + atmosfera. Pokrycie: `karnawal-1454.js`. „drowning the bells" dorzuca kontrast: muzyka miasta zagłusza dzwony Zakonu (subtelny obraz przewagi buntu).
-- **Gorycz wobec Zakonu — inwersja moralna [mechanizm uniwersalny per tor, meta-kartka Z4/Z8]:** „the great commanders never learn the name of… left to keep it alone… It forgot him by morning." Lustro goryczy Z4 („great men… small men do the carrying and the dying") przełożone na Zakon: mały brat zginął za sekret wielkich, którzy go porzucili. ⚠ **TONE FLAG do review Oskara:** Z9 (zatwierdzony głos KZ) = duma + lojalność, bez krytyki Zakonu. Tu wprowadzam *cień* krytyki (porzucony brat) — spójny z meta-kartką (mechanizm uniwersalny), ale **mocniejszy niż Z9**. Do decyzji: zostawić gorzki akcent (jak Z4) czy stonować ku lojalności (jak Z9)?
+- **Gorycz wobec Zakonu — inwersja moralna [mechanizm uniwersalny per tor, meta-kartka Z4/Z8]:** „the great commanders never learn the name of… left to keep it alone… It forgot him by morning." Lustro goryczy Z4 („great men… small men do the carrying and the dying") przełożone na Zakon: mały brat zginął za sekret wielkich, którzy go porzucili.
+- **TONE FLAG → ROZSTRZYGNIĘTY ku krytyce [Oskar 2026-06-03, `plotki-i-pogloski.md §Łuk`]:** Oskar chce, by kurierzy KZ czuli, że służą **niewłaściwej** stronie (Z8–Z10 = dużo krytyki Zakonu). Wcześniejsze pytanie „zostawić gorzki akcent czy stonować ku Z9?" → **zostawić i wzmocnić.** Konflikt z dumnym Z9 znika dzięki **dwóm kanałom** (`plotki-i-pogloski.md`): dumny *zleceniodawca* (brat-kucharz Z9) + krytyczny *podsłuch/zwątpienie kuriera* (Z8/Z9). Tu, w Z8, scena znaleziska sama niesie gorycz (porzucony brat) — wzmacniam ją **doubt-beatem**: nowy akapit po „It forgot him by morning" splata **Pulę B** (B1 cło/faworyzowanie, B5 Wiedeń bez skutku, B6 1000→300) z **nazwaniem rozterki** („*whose errand is this… were they ever the ones in the right?*"). Kanał B (zwątpienie) zostawia ciężar w graczu, nie rozstrzyga. Tag F3 → finał Z11.
 - **Test „swój pozna" [klamra z Z9]:** „Only our own know this melody. Only our own will pass." — echo Z9 („any man of ours knows these roots by heart"). Wspólny motyw KZ: znajomość wewnętrznego kodu = dowód przynależności. Wzmacnia bramę godności (duma Albrechta, `concept/05`).
 - **BRAK szyfru tutaj.** Mechanika: usłysz → zagraj → spisz liczby → podaj. Koło/tabula recta/klucz = finał (Z11). Patrz `kalimba.md §Kiedy w grze`.
 - **Spoiler-gate:** brief nie zdradza pozycji 5 (Z11) ani finału — hak generyczny; realny klucz TBD (`z11-szyfr-spec.md §8`).

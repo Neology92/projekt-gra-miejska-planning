@@ -36,14 +36,14 @@ Frakcja: **miasto** (Tajna Rada) · Pozycja na ścieżce (nr): **5** · Zadanie:
 > And one thing more, while I've the quill. Big orders tonight, while the great men feast and nurse their grievance with the castle. Let it come to war — and it will — and see who pays. The lords keep their walls and their tolls; I lose my custom, the honey doubles, the roads close on my spice. A rising of rich men, and bakers and fishwives foot the bill. Rich stay rich, poor stay poor, and I'm the last sober head in a town gone to dancing.
 > — Master Bogumił
 
-*You carry letters tonight for the very men he means. There is no one here to say it to. You set the note down and take up the first jar.*
+*You carry letters tonight for the very men he means — a rising of rich men, he calls it, and you are its hands. There is no one here to say it to, and no one to tell you he is wrong. The doubt sits in you like a stone: whose cause is this, and are they the ones in the right? You set the note down and take up the first jar.*
 
 *Seven jars, and no two alike — if your senses are keen enough to part them. Trust what they tell you, and set the right name to each letter on his card. Some of the names he was handed belong to no piernik at all; for those, his recipe is your guide.*
 
 ---
 
 > **↪ TO THE GAME MASTER** — *game instruction, not part of the world*
-> Bring the filled card to the Game Master. If the pierniki come out right, you'll have your pay — and a sealed letter telling you what to do next.
+> Bring the filled card to the Game Master, who keeps to the Rynek Staromiejski (the Old Town market square). If the pierniki come out right, you'll have your pay — and a sealed letter telling you what to do next.
 
 ---
 
@@ -53,6 +53,7 @@ Frakcja: **miasto** (Tajna Rada) · Pozycja na ścieżce (nr): **5** · Zadanie:
 - **Pokrycie w wiki (użyte):** bunt = interes nie ideały (`nieszawa-konflikt.js`: likwidacja Nieszawy + prawo składu = zysk wielkich kupców); Rada = patrycjat, ceny ustala Rada nie cech (`cechy-rzemieslnicze.js`); wojna 13-letnia jako koszt małych — drożyzna, blokady handlu, „bunt panów, a płaci go piekarz i przekupka" (plotka A6, `handel-hanza.js`). Honey/korzenie z Hanzy drożeją/blokują się w wojnie — plauzyjne (oznaczone jako lęk piekarza, nie cytat).
 - **⚠️ NIUANS — krytyczny:** cechy **masowo poparły** bunt (`cechy-rzemieslnicze.js`: ludwisarze przy działach, rzeźnicy oddziały, sukiennicy kredyt). Bogumił to **mniejszościowy, gorzki głos** — „ostatni trzeźwy w mieście, co poszło w tany", nie „rzemiosło przeciw buntowi". Framing utrzymany („a town gone to dancing").
 - **Tarcie z kurierami [intencja]:** narracja z głów kurierów TR rejestruje dyskomfort — niosą listy dla ludzi, których piekarz gani („You carry letters tonight for the very men he means"). Świadomie nie rozwijane; gracz sam waży.
+- **Doubt-beat / rozterka [DODANE 2026-06-03, Oskar — `plotki-i-pogloski.md §Łuk`]:** wcześniejsze „świadomie nie rozwijane" → teraz **nazwane** jednym zdaniem: „*the doubt sits in you like a stone: whose cause is this, and are they the ones in the right?*". To kanał B łuku — głos piekarza (kanał A) dojrzewa w żywy niepokój kuriera, bez rozstrzygania. Zasila finał (Z7). Lekki touch, nie monolog (zgodnie z „gracz sam waży").
 - **Prawda, nie fałszywy trop [konwencja `feedback_narracja-listow-prawda`]:** sceptycyzm Bogumiła jest **ugruntowany faktem** (bunt napędzany interesem kupiectwa) — list mówi prawdę, nie zwodzi.
 - **Karnawał [pokrycie `karnawal-1454.js`]:** „feast-orders", „a town gone to dancing", „drums" — gra dzieje się w karnawale; duże zamówienia + muzyka/tłum jako tło. Spójne z całą grą.
 - **Mechanika w narracji — celowo OGÓLNA [Oskar 2026-06-02]:** brief NIE wylicza kanałów ani nie rozwiązuje pary mąk — gracz ma sam dojść. **Usunięte podpowiadacze:** „weigh in the hand / shake for rattle-pour-slosh / scentless dust / heavier in the jar". Zostaje ogólne „take their measure however you can" + „trust what they tell you" + „do not open" (zasada) + „recipe is your guide" (na dystraktory). Para mąk: proporcja rye:wheat 3:1 żyje **wyłącznie na karcie przepisu** (player-prop) — gracz sam kojarzy cięższy→żyto, koperta tego nie zdradza. Spec/kanały → `zagadka-sensoryczna.md`.
