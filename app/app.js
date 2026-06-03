@@ -429,6 +429,7 @@ function symbolPuzzle(step, data) {
 
   const actions = el('div', 'actions');
   actions.innerHTML = `<button id="confirm" class="btn" disabled>Confirm the chain</button>
+                       <button id="hint" class="btn ghost">Reveal the first three</button>
                        <button id="clearpick" class="btn ghost">Clear</button>`;
   wrap.appendChild(actions);
 
@@ -460,6 +461,16 @@ function symbolPuzzle(step, data) {
     paint();
   });
   actions.querySelector('#clearpick').onclick = () => { picked = []; paint(); };
+
+  // Podpowiedź: wstawia pierwsze 3 poprawne symbole w kolejności (zostaje znalezienie 4.).
+  // Przyspiesza przejście Z1 przez grupy — wskazuje, które są pierwsze 3 poprawne.
+  actions.querySelector('#hint').onclick = () => {
+    picked = data.chain.slice(0, Math.min(3, max));
+    paint();
+    fb.textContent = 'The first three marks are placed in order — find the fourth and confirm.';
+    fb.className = 'feedback';
+  };
+
   confirmBtn.onclick = () => {
     const ok = picked.length === max && picked.every((c, i) => c === data.chain[i]);
     if (ok) { setSt({ solved: { [step.id]: true } }); showSuccess(step); }

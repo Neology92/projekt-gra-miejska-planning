@@ -25,6 +25,8 @@ python3 -m http.server 8000   # → http://localhost:8000
 
 **Przejście demo:** kod `START-1454` → czytasz brief Z1 → w siatce stuknij **piernik · gęś · szafa · wieża** (w tej kolejności) → „Confirm" → apka pokazuje kod Z2 (`RAVEN-2613`) → „Continue".
 
+**Podpowiedź Z1** (przyspieszenie przez grupy): przycisk **„Reveal the first three"** wstawia pierwsze 3 poprawne symbole w kolejności — grupie zostaje znalezienie 4. i potwierdzenie. Działa per grupa (czyta łańcuch z `z1-data.js §Z1_GROUPS`).
+
 ## ⚠ DEMO / stub (NIE kanon ostateczny)
 
 - **Kody dostępu** (`START-1454`, `RAVEN-2613`) = placeholdery; finalny format + per-grupowość (10 grup ≠ wspólny kod) = otwarte (spec §D).
