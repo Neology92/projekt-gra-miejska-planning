@@ -71,7 +71,7 @@
 
 - **Funkcja:** nazwać graczowi 5 nadawców + 4 potwierdzenia (Hamburg/Kolonia/Lubeka×2) + regułę podobieństwa. Może nieść drobne rysunki herbów (pomoc), ale realne parowanie dzieje się przy bruku.
 - **Styl:** pergamin/dispatch Rady, A5, nazwy w gotyku.
-- ⚠ **Most nazw EN↔bruk:** koperta (player-facing EN) używa form okresowych/hanzeatyckich (Danzig/Königsberg/… lub formy rozpoznawalne); **tabliczki w bruku są po polsku** (Gdańsk, Królewiec, Elbląg, Chełmno, Toruń, Lubeka, Kolonia, Hamburg). Karta/MG muszą **zmostkować** nazwy (np. karta pokazuje obie formy), żeby gracz znalazł właściwe kamienie. Do dopięcia przy produkcji rekwizytu.
+- ✅ **Nazwy = formy z bruku [decyzja Oskara 2026-06-03]:** materiały gracza używają nazw **tak jak na bruku** (formy Piotra): **Gdańsk, Królewiec, Elbląg, Chełmno, Toruń** / **Hamburg, Kolonia, Lubeka**. Koperta (mimo EN) niesie te polskie nazwy własne — gracz dopasowuje wprost do tabliczek, brak mostu EN↔PL. (Odrzucono formy hanzeatyckie Danzig/Königsberg/… by uniknąć gapu nazwa↔kamień.)
 
 ## Co weryfikuje?
 
@@ -89,7 +89,7 @@
 2. ✅ **Który odcinek?** — ROZSTRZYGNIĘTE: **Szeroka** (wymuszone doborem miast; wszystkie 8 są w bruku Szerokiej).
 3. ✅ **Które herby faktycznie są?** — ustalone researchem (lista 22 Szeroka w §Research); zostaje spot-check (ubytki płyt, czytelność).
 4. **Karta** — same nazwy czy rysunki herbów? Rysunki autentyczniejsze (i pomagają parować), ale wymagają nakładu graficznego.
-5. **Most nazw EN↔bruk** (patrz §Karta-rekwizyt) — jak pokazać nazwy, by gracz EN znalazł polskie tabliczki.
+5. ✅ **Most nazw EN↔bruk** — ROZSTRZYGNIĘTE [Oskar 2026-06-03]: materiały gracza używają nazw z bruku (polskich); brak mostu (patrz §Karta-rekwizyt).
 6. 🔒 **Kolizja przestrzenna z Z10** — Z6 (TR) i Z10 (KZ, Biedronka = Szeroka 22) na tej samej ulicy. Różne frakcje/czas → prawdopodobnie OK, ale do świadomej decyzji Oskara.
 
 ## Co autor może zrobić sam vs gdzie pomocy
