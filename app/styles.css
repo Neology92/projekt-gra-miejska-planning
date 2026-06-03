@@ -177,13 +177,3 @@ em{ font-style:italic; } strong{ font-weight:400; color:var(--rubrum); }
   background:var(--tile); color:var(--ink); }
 .pick:active{ transform:scale(.97); }
 .pick.on{ border-color:var(--rubrum); border-width:2px; background:#f6ecdd; color:var(--rubrum); }
-
-/* --- finał: szyfrogram (monospace) + pole odpowiedzi --- */
-.cipher{ border:1px solid rgba(60,46,28,.45); border-radius:8px; background:rgba(0,0,0,.03);
-  padding:14px 16px; margin:16px 0; }
-.cipher-label{ font-family:var(--mono); font-size:.62rem; letter-spacing:.1em; text-transform:uppercase;
-  color:var(--rubrum); margin:6px 0 3px; }
-.cipher-line{ font-family:var(--mono); font-size:1.15rem; letter-spacing:.12em; color:var(--ink);
-  word-spacing:.3em; line-height:1.7; }
-.plain-input{ font-family:var(--mono); font-size:1.05rem; letter-spacing:.04em; width:100%;
-  padding:11px 12px; margin:8px 0; border:1px solid rgba(60,46,28,.4); border-radius:6px; background:var(--tile); color:var(--ink); }
