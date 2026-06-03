@@ -2,7 +2,7 @@
 
 > **Cel:** zweryfikować w terenie to, czego nie da się rozstrzygnąć zza biurka — **wypatrzalność detali `⚠`** i **realne czasy nóg granicznych**. Wynik domyka ścieżki G2/G4/G10 (reszta 7 jest stabilna). Niosisz ze sobą **draft mapy per ścieżka** (gdy będą gotowe) — sprawdzasz na miejscu „czy ten detal widać i czy ta noga ma sens".
 >
-> **Pomiar:** licznik kroków / GPS (metry) + stoper (czas marszu). Baseline planu = **~80 m/min**. **Pora dnia Z1:** wczesny etap gry — *potwierdź, w jakich godzinach grupy będą tu chodzić* (finał 20:30 wg pamięci, ale Z1 jest na początku; godziny otwarcia aptek/sklepów to realne ryzyko — patrz P1.1).
+> **Pomiar:** licznik kroków / GPS (metry) + stoper (czas marszu). Baseline planu = **~80 m/min**. **Pora dnia Z1:** wczesny etap gry — *potwierdź, w jakich godzinach grupy będą tu chodzić* (finał 21:00 wg pamięci, ale Z1 jest na początku; godziny otwarcia aptek/sklepów to realne ryzyko — patrz P1.1).
 >
 > **Zasada zapisu:** dla każdego detalu zaznacz `WIDAĆ / NIE WIDAĆ / WARUNKOWO`; dla każdej nogi zapisz **zmierzone metry + czas marszu**. Nie podmieniaj ścieżek w terenie — zapisz pomiar, decyzję o swapie podejmiemy z danymi.
 

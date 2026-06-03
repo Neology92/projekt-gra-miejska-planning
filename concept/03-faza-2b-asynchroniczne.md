@@ -40,7 +40,7 @@ Rozdział torów następuje **zaraz po Z2**. Każda klasa infiltruje siedzibę s
 
 ### Z3Z (krzyżacy) — Infiltracja Piccolo (siedziby TR)
 - Lustrzany analog Z3: krzyżacy infiltrują **Piccolo** (siedziba TR, gdzie urzęduje Jordan/Piotr).
-- Zadania: ukraść „zaopatrzenie" (w praktyce: odebrać kupony na obiad i je zjeść), **wyciągnąć od Jordana godzinę buntu (20:30)**, ew. ukraść rekwizyt (koło deszyfrujące? — do decyzji).
+- Zadania: ukraść „zaopatrzenie" (w praktyce: odebrać kupony na obiad i je zjeść), **wyciągnąć od Jordana godzinę buntu (21:00)**, ew. ukraść rekwizyt (koło deszyfrujące? — do decyzji).
 - Output: **klucz do finału Z11** + godzina finału.
 - **Uwaga obsadowa**: ten sam Jordan/Piotr obsługuje oba tory; różnica to **framing w kopercie** (sojusznik ↔ cel infiltracji), nie osobny aktor.
 

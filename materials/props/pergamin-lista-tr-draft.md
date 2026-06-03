@@ -28,7 +28,7 @@
 4. **Johann Huxer** — of the old burgomaster house. *Was among the founders, fourteen years past.*
 5. **Hermann Rusop** — of the old burgomaster house. *The same.*
 6. **Gabriel von Baysen** — *brother to the chairman. Bound to the league.*
-7. **— von Hutten** — *given name not known to us. Seen entering after the eighth bell.*
+7. **— von Hutten** — *given name not known to us. Seen entering after the ninth bell.*
 8. **A Watzenrode** — *which of the house, uncertain.*
 9. **— von Datteln** — *reported by one friend only; not yet confirmed.*
 10. **— von Allen** — *of the house at the square. Presence doubtful.*

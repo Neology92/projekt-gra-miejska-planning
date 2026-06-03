@@ -44,7 +44,7 @@ UEFNEJ, UEGFEJ TJI WEUPEJ!
 
 **Round-trip check (decode S11):** UEFNEJ → `HELFEN`; UEGFEJ → `HEILEN`; TJI → `UND`; WEUPEJ → `WEHREN`. ✓ = `HELFEN HEILEN UND WEHREN` (validation `cipher-data.js` PASS).
 
-> Spoken to Albrecht at the finale (Przedzamcze, 20:30), the motto unlocks delivering the letter to him — for both factions. KZ groups get it by decoding Z11; TR defectors read it off the stolen list (Z3). **Punctuation (comma/!) is shown on the prop** in the same positions as the motto — it anchors the words (same device as Z7) and passes through 1:1 (not enciphered); validation round-trip uses letters + word spaces.
+> Spoken to Albrecht at the finale (Przedzamcze, 21:00), the motto unlocks delivering the letter to him — for both factions. KZ groups get it by decoding Z11; TR defectors read it off the stolen list (Z3). **Punctuation (comma/!) is shown on the prop** in the same positions as the motto — it anchors the words (same device as Z7) and passes through 1:1 (not enciphered); validation round-trip uses letters + word spaces.
 
 > ⚠ **Zmiana parolu:** wpisz nowy plaintext, zakoduj literę po literze przez „Encode map" wyżej → nowy ciphertext. Wiersz S11 (MARIENBURG) i pozostałe 15 wierszy bez zmian.
 

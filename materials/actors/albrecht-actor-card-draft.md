@@ -62,7 +62,7 @@
 ║  LISTA UKOŃCZENIA (zaznacz gdy grupa ukradnie listę i wyjdzie)║
 ║  □ czerwony   □ pomarańczowy   □ żółty   □ zielony   □ turk. ║
 ╠══════════════════════════════════════════════════════════════╣
-║  FINAŁ: potrzebna też na Przedzamczu o 20:30.                ║
+║  FINAŁ: potrzebna też na Przedzamczu o 21:00.                ║
 ╚══════════════════════════════════════════════════════════════╝
 ```
 
@@ -240,7 +240,7 @@ Po tym jak grupa ukradnie listę i wyjdzie:
 ║  5. Odpraw ich. Listu NIE bierzesz teraz.                    ║
 ╠══════════════════════════════════════════════════════════════╣
 ║  ONI ZACHOWUJĄ LIST. Oddanie jest przy murach wieczorem      ║
-║  (20:30), wolny wybór — nigdy tutaj.                         ║
+║  (21:00), wolny wybór — nigdy tutaj.                         ║
 ╠══════════════════════════════════════════════════════════════╣
 ║  LISTA UKOŃCZENIA:                                            ║
 ║  □ niebieski   □ fioletowy   □ biały   □ brązowy   □ czarny  ║
@@ -305,7 +305,7 @@ Trzy rzeczy płynnie po sobie:
    > *"Everything you need is in here. The Order knows its own by signs the rabble cannot read — guard what you find within. Lose it and you are no one to me."*
    Nie tłumacz, nie omawiaj zawartości, nie daj się wciągnąć w rozmowę o niej (gest meta, poza fikcją — jak rozdanie karty).
 2. **Odpraw ich:**
-   > *"Now go. Come to the walls tonight, when the eighth bell sounds — if you have proven worth the coming."*
+   > *"Now go. Come to the walls tonight, when the ninth bell sounds — if you have proven worth the coming."*
 
 Dyspozycja pozostaje przy nich. **Nigdy nie bierzesz tu ich listu.**
 
@@ -344,7 +344,7 @@ Grasz Albrechta dla **obu** frakcji, w odwrotnych framingach. Zasady praktyczne:
 
 ## CZĘŚĆ TRZECIA — FINAŁ · brama oddania (OBU frakcji) [2026-06-03]
 
-> O **Przedzamczu, ósmy dzwon (20:30)**, grupy się zbierają. Stoisz po **swojej** stronie; Bażyński (Piotr) po swojej. Każda grupa wybiera, w czyją rękę trafia jej zapieczętowany list. **Tu wreszcie możesz przyjąć list — albo odmówić.**
+> O **Przedzamczu, dziewiąty dzwon (21:00)**, grupy się zbierają. Stoisz po **swojej** stronie; Bażyński (Piotr) po swojej. Każda grupa wybiera, w czyją rękę trafia jej zapieczętowany list. **Tu wreszcie możesz przyjąć list — albo odmówić.**
 
 **Nie bierzesz ŻADNEGO listu bez sprawdzenia. Bramką jest hasło Zakonu.**
 

@@ -81,7 +81,7 @@ To jest **cała** lista do wyprodukowania dla jednej ścieżki. ~20 pozycji.
 - [ ] **K-Z3 — infiltracja zamku:** brief + zagadka + „co po rozwiązaniu" (kontakt z listą nazwisk).
 - [ ] **K-Z4 — melodia/kalimba:** brief + zagadka + output (kod → klucz).
 - [ ] **K8 — Z7 finałowy szyfr:** brief + szyfr + ujawnienie kierunku (komu oddać list).
-- [ ] **KF — finał:** instrukcje (gdzie, 20:30/8. bicie dzwonu, jak fizycznie dostarczyć list).
+- [ ] **KF — finał:** instrukcje (gdzie, 21:00/8. bicie dzwonu, jak fizycznie dostarczyć list).
 
 ### B. Rekwizyty drukowane (8)
 - [ ] **List zapieczętowany** — treść (rekwizyt, który grupa nosi całą grę).
@@ -94,7 +94,7 @@ To jest **cała** lista do wyprodukowania dla jednej ścieżki. ~20 pozycji.
 - [ ] **Mechanika dostarczenia = osobiste przekazanie aktorowi** (Bażyński/Piotr i Albrecht/Zosia przy stole finałowym; gracz wręcza list wybranej stronie). Mock testowy: list na prawą (Bażyński) / lewą (Albrecht) stronę stołu.
 
 ### C. Skrypty/karty aktorów (2)
-- [ ] **Skrypt Jordana (Piotr):** dialog F2A (info o buncie + godzina 20:30) + treść testu zaufania Z2b + wręczenie K3.
+- [ ] **Skrypt Jordana (Piotr):** dialog F2A (info o buncie + godzina 21:00) + treść testu zaufania Z2b + wręczenie K3.
 - [ ] **Karta gry Albrechta (Zosia) — Z3:** choreografia „okna na kradzież listy" (telegrafowane obroty: najpierw ciało, potem głowa → gracze mają czas na reakcję) + reakcje gdy grupa złapana / gdy się uda + jak trzyma listę „luźno".
 
 ### D. Dokumenty operacyjne MG (3)
@@ -124,7 +124,7 @@ Zadania zgłoszone przez Oskara po domknięciu rdzenia Z3↔Z7. Każde z funkcj�
 | 1A | **Mikro-decyzje odblokowujące** | ✅ Rozstrzygnięte [2026-05-31]: lokal = **Piccolo** (realny, NE od Rynku, serwuje posiłki); identyfikator grupy = **kolor** (10 kolorów — patrz `mechanics/grupy-i-klasy.md`; przydział losowy, nie zdradza klasy); dostarczenie listu = **osobiste przekazanie aktorowi** (mock testowy: list na stół, prawa = Bażyński / lewa = Albrecht); groźba = narracyjna; niedostarczenie = brak głosu | spis decyzji w plikach | ~10 min | ~10 min |
 | 1B | **Z1 szlak symboli (rdzeń)** | Ile kroków (rekom. 5); wybór 5 miejsc z mojej listy 45; „kreatywne" mapowanie obiekt→symbol (czemu Kopernik→astrolabium) | tabela trasy + mapa (funkcjonalna) + szyfrownik + start w K1 + wzorzec „odpowiedzi" dla MG | ~1–1,5 h | ~1,5 h |
 | 1C | **K1 + K2 (F1)** | Ton groźby; które plotki z Puli A (3–5); forma „trzech rzeczy" w Z2 (system, nie tekst) | docelowe teksty K1, K2, list-rekwizyt, wiadomość pośrednika, Z2 | ~1 h | ~1,5 h |
-| 1D | **Z2b test Jordana + skrypt F2A** | Wybór formy testu (1–5 z `test-jordana.md`) + intencja (co sprawdza); zarys dialogu Jordana | treść testu + skrypt aktora (Piotr): dialog, bunt, 20:30, wręczenie K3 | ~45 min | ~1 h |
+| 1D | **Z2b test Jordana + skrypt F2A** | Wybór formy testu (1–5 z `test-jordana.md`) + intencja (co sprawdza); zarys dialogu Jordana | treść testu + skrypt aktora (Piotr): dialog, bunt, 21:00, wręczenie K3 | ~45 min | ~1 h |
 
 **Dzień 1 — Twój czas ≈ 3–3,5 h skupionej pracy** (reszta to moja produkcja między Twoimi sesjami).
 

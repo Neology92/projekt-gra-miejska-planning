@@ -11,7 +11,7 @@ Znaleźć kucharza Jordana, dowiedzieć się od niego co tak naprawdę dzieje si
 - **Reset narracyjny**: po szoku że pośrednika nie ma, gracze dostają nowy kierunek.
 - **Pogłębienie immersji**: realna postać NPC + posiłek (zmysłowe doświadczenie).
 - **Test zaufania**: Jordan nie ufa kurierom — sprawdza ich, zanim cokolwiek przekaże. Daje to **drugi powód** dlaczego graczy spotykają zagadki w fazie 2B (= weryfikacja).
-- **Forshadowing finału**: gracze dowiadują się że jest bunt + dowiadują się o godzinie finału (20:30 = ósme bicie dzwonu).
+- **Forshadowing finału**: gracze dowiadują się że jest bunt + dowiadują się o godzinie finału (21:00 = dziewiąte bicie dzwonu).
 - **Plot twist w grze** (Jordan = Bażyński) — *nie ujawnia się tu*, dopiero w fazie 3.
 
 ## Zagadka 2 — Droga do Jordana
@@ -32,7 +32,7 @@ Skrypt szkicowy (do rozpisania przez Oskara):
 1. **Posiłek** — Jordan wydaje graczom prosty posiłek (kawałek chleba, kiełbasy, piwo? — coś zgodnego z karczmą z XV w., realistyczna wskazówka kuchni). Patrz wiki `kuchnia-pierniki.js` i `karnawal-1454.js`.
 2. **Dialog wstępny** — Jordan nie ufa, dopytuje skąd są, kto ich przysłał, co mają przekazać.
 3. **Informacja o buncie wprost**: Jordan mówi że w mieście wisi w powietrzu konfrontacja z Zakonem. Wymienia konkrety: blokada bram zamkowych, redakcja Absagebriefu, plany na wieczór 6 lutego.
-4. **Godzina finału**: "Pod zamkiem, gdy zegar wybije ósmą — wszystko się rozstrzygnie."
+4. **Godzina finału**: "Pod zamkiem, gdy zegar wybije dziewiątą — wszystko się rozstrzygnie."
 5. **Test zaufania** (zagadka w spotkaniu): Jordan zadaje pytanie/zagadkę żeby sprawdzić czy są godni zaufania. Treść do wymyślenia.
 6. **Pożegnanie**: Jordan wręcza **kopertę z fazą 2B** — listę 4 zagadek (z których 2 obowiązkowe, 2 opcjonalne).
 

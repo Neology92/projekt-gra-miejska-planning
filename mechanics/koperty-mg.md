@@ -117,7 +117,7 @@ Dwa fakty, które muszą być **wykonane zanim ktokolwiek zrobi pass renderując
 - **K3** - od Jordana w F2A, zawiera 4 zagadki F2B.
 - **K4-7** - jedna na każdą zagadkę F2B (zagadki 3, 4, 5, 6).
 - **K8** - zagadka 7 (finałowa).
-- **KF** - finał, instrukcje finałowe (gdzie iść o 20:30, jak dostarczyć list).
+- **KF** - finał, instrukcje finałowe (gdzie iść o 21:00, jak dostarczyć list).
 
 ### Wygląd kopert
 

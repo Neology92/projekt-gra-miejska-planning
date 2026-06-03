@@ -116,7 +116,7 @@
 ║    "You have exactly six notes. You're close — make sure    ║
 ║    you haven't missed one." (NIE podawaj żadnej cyfry.)     ║
 ╠──────────────────────────────────────────────────────────────╣
-║  AWARYJNA (< 30 min do 20:30):                              ║
+║  AWARYJNA (< 30 min do 21:00):                              ║
 ║    "A contact passed on the boatman's code: 6, 2, 1, 4,    ║
 ║    5, 4." Wręcz K8 bezpośrednio.                            ║
 ╚══════════════════════════════════════════════════════════════╝
@@ -145,7 +145,7 @@
 ║    punctuation. Count how many steps each letter moved —    ║
 ║    it's the same shift every time."                         ║
 ╠──────────────────────────────────────────────────────────────╣
-║  H3 (tylko klucz — < 30 min do 20:30):                      ║
+║  H3 (tylko klucz — < 30 min do 21:00):                      ║
 ║    "The shift is 7 — every letter moved 7 steps forward.   ║
 ║    Apply that backwards to the ciphertext."                 ║
 ╠──────────────────────────────────────────────────────────────╣
@@ -171,7 +171,7 @@
 |---|---|
 | Grupa bardzo spóźniona (> 40 min) | Pomiń Z4: podaj kod bezpośrednio ("6, 2, 1, 4, 5, 4"). Przejdź do H3 / H4 Z7. |
 | Piotr (Jordan) niedostępny | Z2 nadal działa. Grupa dedukcuje Piccolo, idzie tam. MG dead-drop K3: *"He was here earlier, left this for you."* |
-| Zosia (Albrecht) niedostępna | Pomiń scenę zamkową. MG wręcza pergamin: *"A contact managed to get this."* Zosia nadal potrzebna na finale (20:30). |
+| Zosia (Albrecht) niedostępna | Pomiń scenę zamkową. MG wręcza pergamin: *"A contact managed to get this."* Zosia nadal potrzebna na finale (21:00). |
 | Grupa gubi zapieczętowany list | 1 zapasowy w torbie MG. *"A contact found it — it wasn't far."* Brak zapasowego: złożona karteczka działa; liczy się strona, do której podchodzą. |
 | Grupa odmawia Z7 | Zaznacz pilność: *"You need what's in that letter before you go. The names list has the key."* Jeśli nie chcą: wręcz KF bez Z7. |
 | Remis w finale | Patrz `concept/04-faza-3-final.md §Remis`. Fallback: improwizowany pat, Oskar wygłasza epilog historyczny. |

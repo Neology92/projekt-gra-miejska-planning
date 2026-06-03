@@ -17,7 +17,7 @@ Brak finalnej decyzji. Nawiązuje do wiki *Acta Thoruniensia 1454*. Propozycje d
   - **Tajna Rada (TR)** — pracują (nieświadomie) dla mieszczan
   - **Krzyżacy** — pracują (nieświadomie) dla Zakonu
 - Połowa grup do każdej klasy. Na początku **wszyscy myślą że są tym samym** — kurierami przekazującymi list do "pośrednika".
-- **Czas rozgrywki**: ~kilka godzin (do doprecyzowania). Finał o **20:30** — ósmym biciu dzwonu.
+- **Czas rozgrywki**: ~kilka godzin (do doprecyzowania). Finał o **21:00** — dziewiątym biciu dzwonu.
 
 ### Obsada — twarde ograniczenie produkcyjne
 
@@ -73,7 +73,7 @@ Szczegóły: `concept/03-faza-2b-asynchroniczne.md`.
   - **Bażyński (TR)** lub
   - **Komtur Albrecht (Krzyżacy)**
 - Zliczenie listów dostarczonych do każdej strony = przewaga.
-- **Finał o 20:30** (8. bicie dzwonu) pod ruinami zamku krzyżackiego: scenka aktorska Bażyński vs Albrecht, z wynikiem zależnym od zliczenia.
+- **Finał o 21:00** (8. bicie dzwonu) pod ruinami zamku krzyżackiego: scenka aktorska Bażyński vs Albrecht, z wynikiem zależnym od zliczenia.
 
 Szczegóły: `concept/04-faza-3-final.md`.
 

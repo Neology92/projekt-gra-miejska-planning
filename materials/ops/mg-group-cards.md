@@ -47,12 +47,12 @@
  □ 2c · RAPORT Z7
      Grupa przynosi: odszyfrowany tekst
      ✓  HANS VON BAYSEN  (pełne: "HANS VON BAYSEN IS JORDAN THE COOK")
-       →  "Yes — that's it." Wręcz KF. "Eighth bell. Przedzamcze. Be there."
+       →  "Yes — that's it." Wręcz KF. "Ninth bell. Przedzamcze. Be there."
      ✗  zablokowana  →  mg-quick-hints.md §Z7
      KF wręczone: ____:____
 
- □ 3 · FINAŁ  (20:30, Przedzamcze)
-     □ przybyła do 20:30
+ □ 3 · FINAŁ  (21:00, Przedzamcze)
+     □ przybyła do 21:00
      □ list do: [ ] Bażyński (Piotr)  [ ] Albrecht (Zosia)
 
  UWAGI: _______________________________________________________
@@ -91,10 +91,10 @@
      K8 wręczone: ____:____
 
  □ 2c · RAPORT Z7
-     ✓  HANS VON BAYSEN  →  wręcz KF + "Eighth bell. Przedzamcze."
+     ✓  HANS VON BAYSEN  →  wręcz KF + "Ninth bell. Przedzamcze."
      KF wręczone: ____:____
 
- □ 3 · FINAŁ  (20:30)
+ □ 3 · FINAŁ  (21:00)
      □ przybyła   □ → [ ] Bażyński   [ ] Albrecht
 
  UWAGI: _______________________________________________________
@@ -127,10 +127,10 @@
      ✓  [odpowiedź TBD]  →  wręcz K8          K8 wręczone: ____:____
 
  □ 2c · RAPORT Z7
-     ✓  HANS VON BAYSEN  →  wręcz KF + "Eighth bell. Przedzamcze."
+     ✓  HANS VON BAYSEN  →  wręcz KF + "Ninth bell. Przedzamcze."
      KF wręczone: ____:____
 
- □ 3 · FINAŁ (20:30)
+ □ 3 · FINAŁ (21:00)
      □ przybyła   □ → [ ] Bażyński   [ ] Albrecht
 
  UWAGI: _______________________________________________________
@@ -165,10 +165,10 @@
      K8 wręczone: ____:____
 
  □ 2c · RAPORT Z7
-     ✓  HANS VON BAYSEN  →  wręcz KF + "Eighth bell. Przedzamcze."
+     ✓  HANS VON BAYSEN  →  wręcz KF + "Ninth bell. Przedzamcze."
      KF wręczone: ____:____
 
- □ 3 · FINAŁ (20:30)
+ □ 3 · FINAŁ (21:00)
      □ przybyła   □ → [ ] Bażyński   [ ] Albrecht
 
  UWAGI: _______________________________________________________
@@ -202,10 +202,10 @@
      K8 wręczone: ____:____
 
  □ 2c · RAPORT Z7
-     ✓  HANS VON BAYSEN  →  wręcz KF + "Eighth bell. Przedzamcze."
+     ✓  HANS VON BAYSEN  →  wręcz KF + "Ninth bell. Przedzamcze."
      KF wręczone: ____:____
 
- □ 3 · FINAŁ (20:30)
+ □ 3 · FINAŁ (21:00)
      □ przybyła   □ → [ ] Bażyński   [ ] Albrecht
 
  UWAGI: _______________________________________________________
@@ -248,8 +248,8 @@
      ✓  [odpowiedź TBD]  →  wręcz KF-K
      KF-K wręczone: ____:____
 
- □ 3 · FINAŁ  (20:30, Przedzamcze)
-     □ przybyła do 20:30
+ □ 3 · FINAŁ  (21:00, Przedzamcze)
+     □ przybyła do 21:00
      □ list do: [ ] Bażyński (Piotr)  [ ] Albrecht (Zosia)
 
  UWAGI: _______________________________________________________
@@ -285,7 +285,7 @@
  □ 2c · RAPORT Z11  [MVP TBD]
      ✓  [odpowiedź TBD]  →  wręcz KF-K         KF-K wręczone: ____:____
 
- □ 3 · FINAŁ (20:30)
+ □ 3 · FINAŁ (21:00)
      □ przybyła   □ → [ ] Bażyński   [ ] Albrecht
 
  UWAGI: _______________________________________________________
@@ -321,7 +321,7 @@
  □ 2c · RAPORT Z11  [MVP TBD]
      ✓  [odpowiedź TBD]  →  wręcz KF-K           KF-K wręczone: ____:____
 
- □ 3 · FINAŁ (20:30)
+ □ 3 · FINAŁ (21:00)
      □ przybyła   □ → [ ] Bażyński   [ ] Albrecht
 
  UWAGI: _______________________________________________________
@@ -357,7 +357,7 @@
  □ 2c · RAPORT Z11  [MVP TBD]
      ✓  [odpowiedź TBD]  →  wręcz KF-K           KF-K wręczone: ____:____
 
- □ 3 · FINAŁ (20:30)
+ □ 3 · FINAŁ (21:00)
      □ przybyła   □ → [ ] Bażyński   [ ] Albrecht
 
  UWAGI: _______________________________________________________
@@ -393,7 +393,7 @@
  □ 2c · RAPORT Z11  [MVP TBD]
      ✓  [odpowiedź TBD]  →  wręcz KF-K           KF-K wręczone: ____:____
 
- □ 3 · FINAŁ (20:30)
+ □ 3 · FINAŁ (21:00)
      □ przybyła   □ → [ ] Bażyński   [ ] Albrecht
 
  UWAGI: _______________________________________________________

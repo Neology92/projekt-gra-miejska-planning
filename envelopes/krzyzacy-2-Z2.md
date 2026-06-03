@@ -31,7 +31,7 @@
 
 *You had heard the city all the way here. Saint Dorothy's crowds parting for carts the carters swear are loaded with fireworks "for the feast" — yet the crates ride low and heavy, and the men beside them are not laughing. And under the masks the same talk keeps surfacing, again and again, if you let yourselves listen — and none of it kind to the Order whose business you carry. That the brothers lay their pound-toll on the city's own merchants and let their own kind off light; a lord who fleeces the very people he keeps. That salt and copper and amber all sit in the Order's fist, and a man who would trade must pay the brothers first for the right. That of a thousand knights there are three hundred left, if that — a garrison of a handful rattling about that great castle, a lord who can scarcely hold the town he claims. And, from an old soldier who spat as you passed: that the Grand Master sits in Marienburg and has not answered a letter in weeks — that the Order's own head has left this city to shift for itself.*
 
-*The dispatch is still heavy in the bag, and it still has to reach the right hands before the eighth bell. With N. gone, the way is yours to find. You unfold his scrap — and beside it the packet has left you something to work from: three people sent into town this morning, and the errands they ran.*
+*The dispatch is still heavy in the bag, and it still has to reach the right hands before the ninth bell. With N. gone, the way is yours to find. You unfold his scrap — and beside it the packet has left you something to work from: three people sent into town this morning, and the errands they ran.*
 
 ---
 
@@ -87,7 +87,7 @@ Go carefully. — N.
    - **Funkcja inwersji moralnej:** kurierzy KZ słyszą krytykę **własnej (jeszcze nieujawnionej) strony** — zwątpienie „ląduje retroaktywnie" po Z2 (`plotki §Plotki ODWRÓCONE`). B6+B8 dodatkowo sieją „Zakon słaby/porzucony" → zasila ambiwalencję i **wolny wybór** w finale (grupa KZ może oddać list Bażyńskiemu).
    - ⚠ **Tension z notą balansową** `plotki §K1 i K2 = zero Pul A/B`: tabela przypisania (nowsza, 2026-06-02) jawnie daje K2-K Pulę B; idę za tabelą (jak realny `miasto-2-Z2`, który też użył Puli A wbrew tej nocie). Do ewentualnej rewizji, jeśli Oskar woli K2 czysto neutralne.
 
-**Cargo (co kurier KZ niesie):** ten sam **zapieczętowany list** noszony całą grę; domyślny adresat = Albrecht; **wolny wybór** dostawy w finale (Bażyński/Albrecht, `concept/04`). Albrecht-handler **NIE bierze listu** przy K2/Z3Z — dostawa dopiero pod murami 20:30 (`albrecht-actor-card §PART TWO STEP K4`).
+**Cargo (co kurier KZ niesie):** ten sam **zapieczętowany list** noszony całą grę; domyślny adresat = Albrecht; **wolny wybór** dostawy w finale (Bażyński/Albrecht, `concept/04`). Albrecht-handler **NIE bierze listu** przy K2/Z3Z — dostawa dopiero pod murami 21:00 (`albrecht-actor-card §PART TWO STEP K4`).
 
 **Hasło dnia / parol [ZATWIERDZONE 2026-06-03, Oskar — „zostaw pieczęć"]:** parol = **„the Komtur's own seal"** — gracz dedukuje z zagadki, że Albrecht (cel jawny ze slipu) był „by the castle" i niósł **pieczęć**; staje przed Albrechtem i nazywa, co niósł. Mechanika lustrzana do TR („tell him what he bought" = miecz). Oskar świadomie przyjął wariant prosty (bez klamry finałowej jak miecz TR) — priorytet: szybkie odblokowanie renderu. Zsynchronizować z `albrecht-actor-card §STEP K1` (`⟨PAROLE TBD⟩` → „the Komtur's seal").
 
@@ -110,7 +110,7 @@ Go carefully. — N.
 | `envelopes/miasto-2-Z2.md` | wzór struktury (lustro TR): scena-odkrycie, slip, zagadka, glify, dwa rejestry |
 | `lore/plotki-i-pogloski.md` | Pula B (B1/B2/B6/B8), zasada plotek odwróconych, §Przypisanie K2-K |
 | `concept/05-tor-krzyzakow.md` | routing KZ → Albrecht, twist=BRAK, brama godności |
-| `concept/04-faza-3-final.md` | cargo (list), wolny wybór dostawy, finał 20:30 |
+| `concept/04-faza-3-final.md` | cargo (list), wolny wybór dostawy, finał 21:00 |
 | `materials/actors/albrecht-actor-card-draft.md` §PART TWO | handler KZ: weryfikacja (parol), zadanie Z3Z, Tabela 1, nie bierze listu |
 | `wiki: donosiciele-1454.js` | „Herrn Nicolaus" / siatka wywiadu Zakonu (podstawa inicjału N.) |
 | `wiki: akt-inkorporacji.js, kryzys-1430-1440.js, albrecht-kalb.js` | fakt-podstawy plotek B1/B2/B6/B8 |

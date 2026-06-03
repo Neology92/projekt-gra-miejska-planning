@@ -49,7 +49,7 @@ Karty deszyfrujące renderuje `tools/z1-decoder/` → output do `public/decoders
 | **Rekwizyt zapieczętowanego listu** (niesiony przez grupę cały dzień) | Wręczenie K1 → wszystkie etapy | 2–3 | 2 + 1 zapas | Patrz sekcja „zrób" poniżej; albo kup gotowe postarzane zwoje |
 | **Opaski / kolorowe opaski na rękę** (ID grupy) | Cały dzień | 2 kolory (np. G1 + G2) | 2 kolory minimum | Kolorowe opaski materiałowe lub silikonowe; ~2–5 PLN/szt. Sklepy papiernicze / Allegro. 4–6 na grupę jeśli wieloosobowa |
 | **Drumla / kalimba** | Z4 | 1 | 1–2 (grupy rotują) | „Jaw harp", „jews harp", „drumla". Sklepy z muzyką dawną, Allegro, etsy. ~20–60 PLN. Ćwicz przed dniem gry — melodia musi być powtarzalna |
-| ~~**Dzwonek ręczny** (finał, 8 uderzeń)~~ | Finał KF | — | — | **PORZUCONE [2026-06-03, Oskar #49]: brak dedykowanego rekwizytu dźwiękowego.** „Ósmy dzwon" zostaje wyłącznie *narracyjnym* znacznikiem czasu (aktor/MG podaje godzinę w scenie finałowej). NIE kupuj dzwonka ani nie nagrywaj. |
+| ~~**Dzwonek ręczny** (finał, 8 uderzeń)~~ | Finał KF | — | — | **PORZUCONE [2026-06-03, Oskar #49]: brak dedykowanego rekwizytu dźwiękowego.** „Dziewiąty dzwon" zostaje wyłącznie *narracyjnym* znacznikiem czasu (aktor/MG podaje godzinę w scenie finałowej). NIE kupuj dzwonka ani nie nagrywaj. |
 | **Chochla** (rekwizyt Jordan/Piotr) | F2A (scena Jordana) | 1 | 1 | Przykrywka kucharza (NIE hasło — rozpoznanie to imię + parol „kupiłeś miecz"). Drewniana lub metalowa; sklep kuchenny. Pasująca do epoki. ~10–20 PLN |
 | **Miecz** (rekwizyt Jordan→Bażyński) | Finał KF (scena Bażyńskiego) | 1 | 1 | „Poranny zakup" Jordana z Z2 = parol, a potem broń Bażyńskiego w konfrontacji finałowej (callback). Schowany podczas F2A. Teatralny/piankowy lub tępy dekoracyjny; pasujący do epoki. Allegro/rekwizyty teatralne. ~30–80 PLN |
 | **Stos kopii pergaminu Z3** (Albrecht/Zosia) | Scena kradzieży Z3 | 4–6 wydrukowanych | 6–8 wydrukowanych | Już policzone w sekcji druku powyżej — Zosia potrzebuje torby lub teczki na zapasy |
@@ -103,7 +103,7 @@ Karty deszyfrujące renderuje `tools/z1-decoder/` → output do `public/decoders
 | Opaski | 2 kolory, ~6 opasek/kolor | 10 kolorów, 4–6 opasek/kolor = ~50–60 razem | Każda z 10 grup potrzebuje odrębnego koloru |
 | Drumle | 1–2 | 3–4 (rotacja przez 10 grup) | Więcej drumli → mniejszy wąskie gardło przy Z4 |
 | Zapieczętowane listy | 2–3 | 10–12 | Jeden na grupę (tylko ścieżka TR) |
-| ~~Dzwonek ręczny~~ | — | — | PORZUCONE [2026-06-03 #49] — ósmy dzwon tylko narracyjny, bez rekwizytu dźwiękowego |
+| ~~Dzwonek ręczny~~ | — | — | PORZUCONE [2026-06-03 #49] — dziewiąty dzwon tylko narracyjny, bez rekwizytu dźwiękowego |
 | Zestaw pieczętujący woskiem | 1 | 2–3 | Szybkość pieczętowania listów |
 | Stos pergaminów Z3 | ~6 | ~40 | Zosia + ewentualnie drugi Albrecht dla 10 grup |
 | Przenośna powierzchnia (Albrecht) | 1 | 1 | To samo ustawienie, więcej grup rotuje |

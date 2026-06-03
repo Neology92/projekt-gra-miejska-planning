@@ -29,7 +29,7 @@
 | A9 | Plaintext Z7 = `HANS VON BAYSEN IS JORDAN THE COOK` (28 liter) | `puzzles/z7-szyfr-spec.md` | `rg "HANS VON BAYSEN IS JORDAN THE COOK"` | obecne; odwrócona wersja tylko w backup |
 | A10 | Klucz Z11 tabula recta = **MARIENBURG** | `puzzles/z11-szyfr-spec.md` | `rg "MARIENBURG" tools/z11-cipher materials/props/z11-tabula-recta-draft.md` | obecne jako klucz |
 | A11 | Klucz Z11 = **Brown × Ladle → S11** (centralny) | `puzzles/z11-szyfr-spec.md` | `rg -i "brown.*ladle\|ladle.*brown\|S11" tools/z11-cipher puzzles/z11-szyfr-spec.md` | wskazuje S11 |
-| A12 | Finał obu torów = **20:30** (nie 20:00) | `puzzles/kalimba.md`, `concept/04` | `rg "20:00" envelopes materials/props` | 0 trafień |
+| A12 | Finał obu torów = **21:00** (nie 20:00) | `puzzles/kalimba.md`, `concept/04` | `rg "20:00" envelopes materials/props` | 0 trafień |
 | A13 | Jordan = postać LEGENDARNA / w grze pseudonim Bażyńskiego — nie „historyczny fakt" | `CLAUDE.md`, `lore/fakty-vs-fabula.md` | `rg -i "jordan.*historical\|historical.*jordan" envelopes materials/props` | 0 trafień |
 
 ## Reguły — konwencje nazw i montaż
@@ -61,11 +61,11 @@
 | # | Wynik | Szczegóły |
 |---|---|---|
 | **A2** Obrzyński | ✅ PASS | „Obrzyński" tylko w `CLAUDE.md` (instrukcja), `lore/fakty-vs-fabula.md` (nota „błąd poprawiony"), `todo/archive/`. **Zero w tekście gracza.** |
-| **A5** Tuba Dei | ✅ PASS (z uwagą) | 3 trafienia w `envelopes/` (`wspolne-1-Z1`, `miasto-6-Z7`, `krzyzacy-5-Z11`) — **wszystkie w notatkach planistycznych** „Nie nazywamy Tuba Dei". Tekst gracza: „eighth bell". False-positive naiwnego grepa. |
+| **A5** Tuba Dei | ✅ PASS (z uwagą) | 3 trafienia w `envelopes/` (`wspolne-1-Z1`, `miasto-6-Z7`, `krzyzacy-5-Z11`) — **wszystkie w notatkach planistycznych** „Nie nazywamy Tuba Dei". Tekst gracza: „ninth bell". False-positive naiwnego grepa. |
 | **A6** Kod 621454 | ✅ PASS | Obecny w `miasto-5-Z4`, `krzyzacy-4-Z8`, `kalimba.md` + dokumentach MG. Spójny. |
 | **A9** Plaintext Z7 | ✅ PASS | `HANS VON BAYSEN IS JORDAN THE COOK` w `z7-szyfrogram-draft.md`. Odwrócona/dłuższa wersja **tylko w backupach** (`z7-szyfr-spec §0`, oznaczone „deep-archive"). Reveal „Jordan is Hans von Baysen" w `miasto-6-Z7` = narracja finału (poprawne, nie ciphertext). |
 | **A10** MARIENBURG | ✅ PASS | Obecne w `cipher-data.js`, `z11-tabula-recta-draft.md`, `z11-szyfr-spec.md`, `krzyzacy-5-Z11.md`. |
-| **A12** 20:00 | ✅ PASS | Zero „20:00" w `envelopes/`/`props`. Finał = „eighth bell" / 20:30 wszędzie. |
+| **A12** 20:00 | ✅ PASS | Zero „20:00" w `envelopes/`/`props`. Finał = „ninth bell" / 21:00 wszędzie. |
 | **Toruń/Thorn** | ✅ ROZSTRZYGNIĘTE + WDROŻONE [2026-06-03] | Decyzja Oskara: **wyłącznie „Toruń", nigdy „Thorn"** (player-facing EN i MG). Zamiana wykonana (`Thorn→Toruń`) w: `z7-szyfrogram`, `pergamin`, `miasto-06a/04b/6-Z7.html`, `mg-runsheet`, `miasto-6-Z7.md`, `krzyzacy-5-Z11.md`. Grep `Thorn` w produkcji = **0**. Nowa stała reguła → **C4** niżej. |
 | **B1** nazwy kopert | ✅ PASS | Wszystkie `envelopes/*.md` zgodne z `[frakcja]-[nr]-[Zx]`. |
 

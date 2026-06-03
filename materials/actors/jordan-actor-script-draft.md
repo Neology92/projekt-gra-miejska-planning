@@ -106,7 +106,7 @@ Przekaż te punkty własnymi słowami — nie musisz mówić ich dosłownie. Lic
 > Something is about to break. The Teutonic Knights have held this city long enough, and the people who matter have decided that tonight is the night. The wheels have been turning for weeks — quietly, carefully. Tonight they stop being quiet.
 
 **O czasie:**
-> The eighth bell. That is when it happens. Be at the castle before it strikes.
+> The ninth bell. That is when it happens. Be at the castle before it strikes.
 
 **O ich roli:**
 > That letter you're carrying — it needs to reach the right hands before the bell. But first, you need to prove you can be trusted with it.
@@ -193,7 +193,7 @@ Przychodzi grupa podająca się za ludzi Rady — kurierów, przyjaciół, głod
 4. **Nie dawaj im K3.** Prawdziwa misja jest tylko dla zweryfikowanych TR. Jeśli szukają „następnego kroku", zbywaj: *"Next step? Eat your supper. That's the only step I've got for strangers."*
 5. **Odprowadź ich nakarmione.** *"Go on with you — and stay warm."*
 
-> **Godzina (ósmy dzwon):** jeśli wpadnie w rozmowę — nie szkodzi. Mają ją od własnego mistrza i obie strony ją znają. Nie rób z tego punktu; to atmosfera, nie ich zadanie.
+> **Godzina (dziewiąty dzwon):** jeśli wpadnie w rozmowę — nie szkodzi. Mają ją od własnego mistrza i obie strony ją znają. Nie rób z tego punktu; to atmosfera, nie ich zadanie.
 
 ## JEŚLI COŚ PÓJDZIE NIE TAK (KZ)
 
@@ -225,5 +225,5 @@ Przychodzi grupa podająca się za ludzi Rady — kurierów, przyjaciół, głod
 
 > **Klamra miecza [2026-06-02, decyzja Oskara]:** parol „kupiłeś dziś rano miecz" to zasiew. Miecz, który Jordan-kucharz „kupił rano", jest tą samą bronią, którą **Bażyński (= Jordan) walczy w finałowej scence** pod zamkiem (`concept/04-faza-3-final.md`). Piotr w finale gra Bażyńskiego z mieczem — callback nagradzający graczy, którzy rozwiązali Z2. W Piccolo miecza NIE pokazuje (przykrywka + zaskoczenie w finale).
 
-**Finał — liczenie listów [#50, 2026-06-03]:** o 20:30 na Przedzamczu grasz **Bażyńskiego** po swojej stronie (Albrecht/Zosia po swojej). Grupy oddają zapieczętowane listy fizycznie — w twoją rękę lub do Albrechta (wolny wybór, Wariant B). **Tuż przed scenką przeliczasz swój stos** odebranych listów; Albrecht liczy swój. Większy stos = wynik (1 grupa = 1 list). Grupy, które nie oddały nikomu, nie liczą się — neutralnie, bez kary [#15]. „Ósmy dzwon" = wyłącznie znacznik czasu wypowiadany w scenie, bez rekwizytu dźwiękowego [#49].
+**Finał — liczenie listów [#50, 2026-06-03]:** o 21:00 na Przedzamczu grasz **Bażyńskiego** po swojej stronie (Albrecht/Zosia po swojej). Grupy oddają zapieczętowane listy fizycznie — w twoją rękę lub do Albrechta (wolny wybór, Wariant B). **Tuż przed scenką przeliczasz swój stos** odebranych listów; Albrecht liczy swój. Większy stos = wynik (1 grupa = 1 list). Grupy, które nie oddały nikomu, nie liczą się — neutralnie, bez kary [#15]. „Dziewiąty dzwon" = wyłącznie znacznik czasu wypowiadany w scenie, bez rekwizytu dźwiękowego [#49].
 2. **Drobna flaga — STEP 4 „Don't open it out here" (linia ~76):** to wypowiedź NPC w świecie (ostrożny kucharz), nie meta-logistyka — więc *prawdopodobnie OK*. Ale leży blisko wycinanego „do not open it in front of him / open once clear" (K3, Zasada #3). ⚠ przy ujednolicaniu zważyć, czy zostawić, czy przykryć opisem; **nie tnę automatycznie** — do decyzji Oskara.
