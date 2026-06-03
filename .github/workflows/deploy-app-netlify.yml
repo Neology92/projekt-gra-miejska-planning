@@ -37,19 +37,22 @@ jobs:
         run: |
           set -euo pipefail
           SITE_NAME=torun-1454-gra
-          BOOTSTRAP_SLUG=lucent-brioche-236d86   # losowa nazwa z 1. deployu (jednorazowo)
+          BOOTSTRAP=lucent-brioche-236d86   # losowa nazwa z 1. deployu (przed renamem)
           CLI="npx --yes netlify-cli@26"
 
-          echo "Szukam strony po docelowej nazwie $SITE_NAME…"
+          # UUID jest stabilny mimo zmiany nazwy → szukamy po nazwie docelowej LUB
+          # bootstrapowej (getSite po slug zwraca 404; listSites jest wiarygodne).
+          echo "Szukam strony ($SITE_NAME / $BOOTSTRAP) w listSites…"
           ID=$($CLI api listSites --data '{}' \
-            | jq -r ".[] | select(.name==\"$SITE_NAME\") | .id" | head -1 || true)
+            | jq -r ".[] | select(.name==\"$SITE_NAME\" or .name==\"$BOOTSTRAP\") | .id" | head -1 || true)
 
           if [ -z "${ID:-}" ] || [ "$ID" = "null" ]; then
-            echo "Nie ma jeszcze $SITE_NAME — biorę UUID bootstrapu i zmieniam nazwę…"
-            ID=$($CLI api getSite --data "{\"site_id\":\"$BOOTSTRAP_SLUG\"}" | jq -r .id)
-            $CLI api updateSite --data "{\"site_id\":\"$ID\",\"name\":\"$SITE_NAME\"}" || true
+            echo "::error::Nie znaleziono strony ($SITE_NAME / $BOOTSTRAP)."; exit 1
           fi
           echo "Site UUID: $ID"
 
-          # deploy po UUID (stabilny mimo zmiany nazwy); --no-build pomija build galerii
+          # ustaw docelową nazwę (idempotentnie; best-effort — gdyby API ignorowało)
+          $CLI api updateSite --data "{\"site_id\":\"$ID\",\"name\":\"$SITE_NAME\"}" || echo "rename pominięty"
+
+          # deploy po UUID (stabilny mimo nazwy); --no-build pomija build galerii
           $CLI deploy --prod --dir app --site "$ID" --no-build --message "CI ${{ github.sha }}"
