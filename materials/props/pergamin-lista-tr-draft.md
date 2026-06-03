@@ -16,7 +16,7 @@
 
 **HELFEN, HEILEN UND WEHREN!**
 
-**By the hand of the Komtur of Thorn — for the eyes of the Order alone.**
+**By the hand of the Komtur of Toruń — for the eyes of the Order alone.**
 
 **Those who gather in secret against us. Names gathered from faithful friends within the walls.**
 

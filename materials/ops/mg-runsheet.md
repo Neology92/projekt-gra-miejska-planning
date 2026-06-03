@@ -101,7 +101,7 @@ When group reports the solution (HANS VON BAYSEN IS JORDAN THE COOK, or equivale
 5. Short epilogue (2–3 minutes): what happened historically. Suggested beats:
    - Castle surrendered 7–8 February 1454.
    - The 13-Year War followed (1454–1466).
-   - Second Peace of Thorn: 1466 — Prussia returned to Polish Crown.
+   - Second Peace of Toruń: 1466 — Prussia returned to Polish Crown.
    - *"You were in the city when this started."*
 
 ---
