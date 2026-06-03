@@ -258,18 +258,19 @@ WCIĄŻ OTWARTE (nieblokujące):
 
 ```
 PROTOTYP   ████████████████████  ZAMKNIĘTY [2026-06-02] — wszystko wyrenderowane; review przesunięty do MVP (decyzja Oskara)
-MVP treść  ████████████████░░░░  ~80%   (wszystkie koperty TR + KZ mają drafty; brak review KZ + Z6)
-MVP rendery████████░░░░░░░░░░░░  ~40%   (TR prawie pełne; KZ: 5 kopert bez HTML → bez PDF; mapa brak PDF)
+MVP treść  ████████████████░░░░  ~80%   (wszystkie koperty TR + KZ mają drafty; czeka review Oskara)
+MVP rendery████████████████████  100%   ✅ GOTOWE [2026-06-03] — TR + KZ + mapy + wszystkie HTML-e wyrenderowane
 MVP całość █████░░░░░░░░░░░░░░░  ~25%   (review + rendery + ops-skalowanie + produkcja przed nami)
 ```
 
-> **Wąskie gardło [2026-06-03]:** nie treść, a **rendery** — 5 plików HTML (K2-K, Z3Z, Z8, Z10, Z11 KZ) + mapa PDF + Z6 HTML do zbudowania po review Oskara.
+> **Wąskie gardło [2026-06-03]:** **review Oskara** (treści kopert KZ/Z6) → publikacja → ops-skalowanie (runsheet/tracking na 10 grup).
 
 ## 🎯 Następny krok krytyczny
 
 ```
 ✅ MVP Phase A — decyzje strategiczne ROZSTRZYGNIĘTE [2026-06-03]
-✅ MVP Phase B — treść tor KZ + opcjonalne TR — NAPISANE [2026-06-03] (czeka na review Oskara)
-► MVP Phase C — review Oskara → 5 HTML-renderów KZ + mapa PDF + Z6 HTML → public/
-► MVP (równolegle) — ops-skalowanie (runsheet/tracking na oba tory + 10 grup) + scenka finałowa (Oskar)
+✅ MVP Phase B — treść tor KZ + opcjonalne TR — NAPISANE [2026-06-03]
+✅ MVP Phase C — HTML-rendery + mapa — GOTOWE [2026-06-03] (wszystkie PDF-y w public/)
+► MVP Phase D — review Oskara (treści kopert KZ/Z6) → publikacja (usunąć spoilery z galerii)
+► MVP Phase E (równolegle) — ops-skalowanie (runsheet/tracking na oba tory + 10 grup) + scenka finałowa (Oskar)
 ```
