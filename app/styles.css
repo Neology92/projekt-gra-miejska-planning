@@ -112,3 +112,22 @@ em{ font-style:italic; } strong{ font-weight:400; color:var(--rubrum); }
 /* nota demo */
 .demo-note{ font-family:var(--mono); font-size:.66rem; letter-spacing:.03em; color:#9c8e6e;
   background:rgba(0,0,0,.035); border-left:3px solid #b9aa86; padding:6px 9px; margin:14px 0 0; border-radius:0 4px 4px 0; line-height:1.45; }
+
+/* --- wybór grupy (start) --- */
+.groups{ display:grid; grid-template-columns:repeat(2,1fr); gap:10px; margin:14px 0 4px; }
+.group-swatch{ display:flex; align-items:center; gap:10px; text-align:left;
+  background:var(--tile); border:1px solid rgba(60,46,28,.35); border-radius:10px;
+  padding:11px 12px; cursor:pointer; font-family:var(--prose); color:var(--ink); }
+.group-swatch:active{ transform:scale(.98); }
+.group-swatch.on{ border-color:var(--rubrum); border-width:2px; background:#f6ecdd; }
+.group-swatch b{ font-size:1.15rem; min-width:1.4em; }
+.group-swatch .cname{ color:var(--ink-soft); }
+.group-swatch .dot, .group-chip .dot{ width:18px; height:18px; border-radius:50%;
+  display:inline-block; border:1px solid rgba(0,0,0,.35); box-shadow:0 0 0 1px rgba(255,255,255,.4) inset; flex:none; }
+
+/* --- chip grupy na etapie --- */
+.group-chip{ display:inline-flex; align-items:center; gap:7px; font-family:var(--mono);
+  font-size:.72rem; letter-spacing:.04em; color:var(--ink-soft);
+  background:rgba(0,0,0,.04); border:1px solid rgba(60,46,28,.25); border-radius:20px;
+  padding:4px 10px 4px 7px; margin-bottom:10px; }
+.group-chip .dot{ width:14px; height:14px; }

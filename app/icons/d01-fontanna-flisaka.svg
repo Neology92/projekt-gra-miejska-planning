@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Fontanna Flisaka">
+  <title>Fontanna Flisaka — flisak grający na skrzypcach (D01)</title>
+  <!-- nogi -->
+  <line x1="31" y1="45" x2="30" y2="55" stroke="#6e4824" stroke-width="3" stroke-linecap="round"/>
+  <line x1="37" y1="45" x2="38" y2="55" stroke="#6e4824" stroke-width="3" stroke-linecap="round"/>
+  <!-- stopy -->
+  <line x1="27" y1="55" x2="32" y2="55" stroke="#6e4824" stroke-width="2.4" stroke-linecap="round"/>
+  <line x1="36" y1="55" x2="41" y2="55" stroke="#6e4824" stroke-width="2.4" stroke-linecap="round"/>
+  <!-- === FLISAK === -->
+  <!-- tułów (kaftan) -->
+  <path d="M28 24 L40 24 L42 45 L26 45 Z" fill="#a86c38" stroke="#6e4824" stroke-width="2.6" stroke-linejoin="round"/>
+  <!-- podświetlenie kaftana -->
+  <path d="M30 27 Q28 35 29 43" fill="none" stroke="#c08a52" stroke-width="2.2" stroke-linecap="round"/>
+  <!-- pas -->
+  <line x1="27" y1="38" x2="41" y2="38" stroke="#6e4824" stroke-width="2.2" stroke-linecap="round"/>
+  <!-- lewa ręka: podtrzymuje gryf -->
+  <path d="M29 25 Q22 26 18 28" fill="none" stroke="#6e4824" stroke-width="2.6" stroke-linecap="round"/>
+  <!-- prawa ręka: prowadzi smyczek -->
+  <path d="M40 26 Q45 33 44 40" fill="none" stroke="#6e4824" stroke-width="2.6" stroke-linecap="round"/>
+  <!-- głowa -->
+  <circle cx="34" cy="16" r="4.8" fill="#efe0b8" stroke="#6e4824" stroke-width="2.2"/>
+  <!-- kapelusz: rondo + denko -->
+  <ellipse cx="34" cy="10" rx="12" ry="3.2" fill="#a86c38" stroke="#6e4824" stroke-width="2.4"/>
+  <path d="M28 10 Q29 3 34 3 Q39 3 40 10 Z" fill="#a86c38" stroke="#6e4824" stroke-width="2.4" stroke-linejoin="round"/>
+  <!-- === SKRZYPCE (pod brodą, gryf w lewo) === -->
+  <!-- dolny rezonator (przy brodzie) -->
+  <ellipse cx="29" cy="26" rx="5" ry="6" fill="#efe0b8" stroke="#6e4824" stroke-width="2.2"/>
+  <!-- górny rezonator -->
+  <ellipse cx="22" cy="28" rx="4" ry="5" fill="#efe0b8" stroke="#6e4824" stroke-width="2.2"/>
+  <!-- gryf -->
+  <line x1="19" y1="29" x2="10" y2="31" stroke="#5c4310" stroke-width="2.6" stroke-linecap="round"/>
+  <!-- ślimak -->
+  <circle cx="9" cy="31" r="1.9" fill="none" stroke="#5c4310" stroke-width="2"/>
+  <!-- struny -->
+  <line x1="32" y1="24" x2="18" y2="29" stroke="#8a6516" stroke-width="1.2"/>
+  <!-- === SMYCZEK (ukośny, krzyżuje struny) === -->
+  <line x1="30" y1="19" x2="44" y2="41" stroke="#5c4310" stroke-width="2.2" stroke-linecap="round"/>
+</svg>

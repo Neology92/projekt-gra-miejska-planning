@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Brama Klasztorna z kaszownikiem — S02">
+  <title>Brama z kaszownikiem (Brama Klasztorna, S02)</title>
+  <!-- dach: niski trapez na szczycie -->
+  <path d="M14 14 L50 14 L46 7 L18 7 Z"
+        fill="#8a6516" stroke="#6e4824" stroke-width="2.4" stroke-linejoin="round"/>
+  <!-- korpus bramy: prostokąt (prawie kwadrat) -->
+  <path d="M12 57 L12 14 L52 14 L52 57 Z"
+        fill="#a86c38" stroke="#6e4824" stroke-width="2.6" stroke-linejoin="round"/>
+  <!-- baza gruntu -->
+  <path d="M8 57 L56 57" fill="none" stroke="#6e4824" stroke-width="2.6" stroke-linecap="round"/>
+  <!-- prześwit przejazdu — dwa łuki gotyckie (szpic ogiwowy) -->
+  <path d="M21 57 C21 45 26 32 32 29 C38 32 43 45 43 57 Z"
+        fill="#5c4310" stroke="#6e4824" stroke-width="2.4" stroke-linejoin="round"/>
+  <!-- kaszownik: machikuła z otworami nad przejazdem -->
+  <path d="M15 22 L49 22 L49 28 L15 28 Z"
+        fill="#efe0b8" stroke="#6e4824" stroke-width="2.4" stroke-linejoin="round"/>
+  <!-- 5 wąskich otworów kaszownika -->
+  <g fill="#5c4310">
+    <rect x="18.5" y="23.5" width="2.5" height="3.5" rx="1"/>
+    <rect x="23.5" y="23.5" width="2.5" height="3.5" rx="1"/>
+    <rect x="28.5" y="23.5" width="2.5" height="3.5" rx="1"/>
+    <rect x="33.5" y="23.5" width="2.5" height="3.5" rx="1"/>
+    <rect x="38.5" y="23.5" width="2.5" height="3.5" rx="1"/>
+  </g>
+  <!-- archiwolta — jasny obrys wewnętrzny łuku -->
+  <path d="M25 57 C25 46 29 35 32 33 C35 35 39 46 39 57"
+        fill="none" stroke="#c08a52" stroke-width="2.0" stroke-linejoin="round"/>
+</svg>

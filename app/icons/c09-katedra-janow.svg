@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Zegar z jedną wskazówką godzinową — Digitus Dei, katedra św. Janów">
+  <title>Zegar bez kwadransa (jedna wskazówka)</title>
+  <!-- tarcza -->
+  <circle cx="32" cy="32" r="26" fill="#efe0b8" stroke="#8a6516" stroke-width="2.6"/>
+  <!-- pierścień graduacji godzinowej -->
+  <circle cx="32" cy="32" r="21" fill="none" stroke="#8a6516" stroke-width="3" stroke-dasharray="0.1 5.4" stroke-linecap="round"/>
+  <!-- JEDNA wskazówka godzinowa -->
+  <line x1="32" y1="32" x2="44" y2="18" stroke="#5c4310" stroke-width="3.2" stroke-linecap="round"/>
+  <!-- oś środkowa -->
+  <circle cx="32" cy="32" r="2.6" fill="#5c4310"/>
+</svg>

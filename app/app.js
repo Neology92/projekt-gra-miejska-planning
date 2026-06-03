@@ -1,11 +1,8 @@
 /* ============================================================================
-   app.js — NAJBANALNIEJSZY model (bez routingu URL, bez Service Workera).
-   Jedna strona; ekrany przełączane przez podmianę zawartości #app. Stan w
-   localStorage → odświeżenie wraca na właściwy ekran. Render wołany WPROST
-   (żadnych hashchange/popstate/pushState — to były źródła blank-screenów).
-
-   Przepływ:  landing (kod) → etap (brief + zagadka) → sukces (kod następnego)
-              → następny etap …  Kod etapu = wejście + recovery (z landingu).
+   app.js — model najprostszy z możliwych: bez routingu URL, bez Service Workera.
+   START = wybór NUMERU GRUPY (1-10); dalej flow danej grupy (Z1 = jej deszyfrownik).
+   Ekrany przez podmianę #app; stan (grupa+etap+solved) w localStorage → odświeżenie
+   wraca na właściwy ekran. Render wołany wprost.
    ============================================================================ */
 
 const LS = 'torun1454';
@@ -22,14 +19,6 @@ function setSt(patch) {
 }
 function isSolved(id) { return !!(st().solved || {})[id]; }
 
-/* ---------- kody ---------- */
-const norm = (s) => (s || '').toUpperCase().replace(/[^A-Z0-9]/g, '');
-function codeToStage(input) {
-  const n = norm(input);
-  if (!n) return null;
-  return STEP_ORDER.find((id) => norm(STEPS[id].code) === n) || null;
-}
-
 /* ---------- helpers DOM ---------- */
 function el(tag, cls, html) {
   const e = document.createElement(tag);
@@ -37,63 +26,81 @@ function el(tag, cls, html) {
   if (html != null) e.innerHTML = html;
   return e;
 }
-function clear() { APP.innerHTML = ''; window.scrollTo(0, 0); }
+function clear() { APP.innerHTML = ''; try { window.scrollTo(0, 0); } catch (e) {} }
+const factionName = (f) => (f === 'KZ' ? 'Krzyżacy (Teutonic Order)' : 'Mieszczanie (Townsmen)');
 
-/* ============================ EKRAN: LANDING ============================ */
-function showLanding() {
+/* ===================== EKRAN: WYBÓR GRUPY ===================== */
+function showGroupSelect() {
   clear();
   const g = el('section', 'screen gate');
   g.innerHTML = `
     <div class="crest">⚜</div>
     <h1>Toruń, 1454</h1>
-    <p class="muted">A sealed errand. Enter the code the Game Master gave you to begin.</p>
-    <input id="code" class="code-input" type="text" inputmode="text"
-           autocomplete="off" autocapitalize="characters" placeholder="ACCESS CODE">
-    <button id="go" class="btn">Begin</button>
-    <p id="fb" class="feedback"></p>
-    <p class="demo-note">DEMO — GM code: <b>START-1454</b>. Each stage also has its own code (shown when you clear the previous one) — type it here to jump back if needed.</p>`;
+    <p class="muted">Choose your group. Your number and colour are on your wristband.</p>
+    <div class="groups" id="groups"></div>
+    <button id="go" class="btn" disabled>Begin</button>
+    <p class="demo-note">Each group walks its own trail (its own cipher card). Pick the one the Game Master gave you.</p>`;
   APP.appendChild(g);
 
-  const input = g.querySelector('#code');
-  const fb = g.querySelector('#fb');
-  const submit = () => {
-    const stage = codeToStage(input.value);
-    if (stage) { setSt({ stage }); showStage(stage); }
-    else { fb.textContent = 'That code opens nothing here. Ask the Game Master.'; fb.className = 'feedback err'; }
+  const grid = g.querySelector('#groups');
+  let chosen = null;
+  for (let n = 1; n <= 10; n++) {
+    const m = GROUP_META[n];
+    const b = el('button', 'group-swatch');
+    b.type = 'button'; b.dataset.n = n;
+    b.innerHTML = `<span class="dot" style="background:${m.hex}"></span><b>${n}</b><span class="cname">${m.name}</span>`;
+    b.onclick = () => {
+      chosen = n;
+      grid.querySelectorAll('.group-swatch').forEach((x) => x.classList.toggle('on', x.dataset.n == String(n)));
+      g.querySelector('#go').disabled = false;
+    };
+    grid.appendChild(b);
+  }
+  g.querySelector('#go').onclick = () => {
+    if (!chosen) return;
+    setSt({ group: chosen, stage: 'z1' });
+    showStage('z1');
   };
-  g.querySelector('#go').onclick = submit;
-  input.addEventListener('keydown', (e) => { if (e.key === 'Enter') submit(); });
-  try { input.focus(); } catch (e) {}
 }
 
-/* ============================ EKRAN: ETAP ============================ */
+/* ===================== EKRAN: ETAP ===================== */
 function showStage(id) {
   const step = STEPS[id];
-  if (!step) return showLanding();
+  const group = st().group;
+  if (!step || !group) return showGroupSelect();
   setSt({ stage: id });
   clear();
 
   const s = el('section', 'screen step');
+  s.appendChild(groupChip(group));
   s.appendChild(el('span', 'stage-tag', step.label));
   s.appendChild(el('h2', 'stage-title', step.title));
   s.appendChild(propFrame(step.prop));
   s.appendChild(briefBody(step.brief));
 
   if (step.puzzle && step.puzzle.type === 'symbol-sequence' && !isSolved(id)) {
-    s.appendChild(symbolPuzzle(step));
+    const data = z1PuzzleFor(group);
+    s.appendChild(symbolPuzzle(step, data));
   } else if (step.puzzle && isSolved(id)) {
     s.appendChild(clearedPanel(step));
   } else if (step.terminal) {
-    s.appendChild(terminalPanel(step));
+    s.appendChild(terminalPanel(step, group));
   }
 
-  // zawsze: drobny link powrotu do startu (na wypadek pomyłki)
-  const back = el('button', 'btn ghost', 'Start over');
+  const back = el('button', 'btn ghost', 'Start over (change group)');
   back.style.marginTop = '22px';
-  back.onclick = () => { setSt({ stage: null }); showLanding(); };
+  back.onclick = () => { setSt({ group: null, stage: null, solved: {} }); localStorage.setItem(LS, JSON.stringify({ solved: {} })); showGroupSelect(); };
   s.appendChild(back);
 
   APP.appendChild(s);
+}
+
+function groupChip(group) {
+  const m = GROUP_META[group];
+  const dark = ['#FFFFFF', '#FFE119', '#42D4F4'].indexOf(m.hex) >= 0;  // jasne tła → ciemny tekst
+  const d = el('div', 'group-chip');
+  d.innerHTML = `<span class="dot" style="background:${m.hex}"></span> Group ${group} · ${m.name}`;
+  return d;
 }
 
 function propFrame(prop) {
@@ -123,8 +130,7 @@ function briefBody(blocks) {
 }
 
 /* ===================== ZAGADKA: wybór symboli w kolejności ===================== */
-function symbolPuzzle(step) {
-  const data = step.puzzle.data;
+function symbolPuzzle(step, data) {
   const max = data.chain.length;
   const wrap = el('div', 'solve');
   wrap.innerHTML = `<hr class="rule"><h3>Report your chain</h3><p class="msg">${step.puzzle.prompt}</p>`;
@@ -146,8 +152,7 @@ function symbolPuzzle(step) {
   wrap.appendChild(actions);
 
   const fb = el('p', 'feedback'); wrap.appendChild(fb);
-  wrap.appendChild(el('p', 'demo-note',
-    'Same 9 symbols as your printed G1 cipher card. Tap the four you found, in order.'));
+  wrap.appendChild(el('p', 'demo-note', 'Same symbols as your printed cipher card. Tap the four you found, in order.'));
 
   let picked = [];
   const confirmBtn = actions.querySelector('#confirm');
@@ -184,7 +189,7 @@ function symbolPuzzle(step) {
   return wrap;
 }
 
-/* ===================== EKRAN: SUKCES (kod następnego etapu) ===================== */
+/* ===================== EKRAN: SUKCES ===================== */
 function showSuccess(step) {
   const next = step.next ? STEPS[step.next] : null;
   clear();
@@ -193,38 +198,32 @@ function showSuccess(step) {
     <div class="seal">✔</div>
     <h2>The chain holds</h2>
     <p class="narration">You named your four marks in order. Your contact awaits.</p>
-    ${next ? `
-      <p class="msg">Next stage unlocked. <strong>Write this code down:</strong></p>
-      <div class="nextcode">${next.code}</div>
-      <p class="muted small">If the app closes, reopen and type this code to come back here.</p>
-      <button id="cont" class="btn">Continue to ${next.label} →</button>` : ''}`;
+    ${next ? `<button id="cont" class="btn">Continue to ${next.label} →</button>` : ''}`;
   APP.appendChild(d);
-  if (next) d.querySelector('#cont').onclick = () => { setSt({ stage: next.id }); showStage(next.id); };
+  if (next) d.querySelector('#cont').onclick = () => showStage(next.id);
 }
 
-/* panel etapu już rozwiązanego (po powrocie) */
 function clearedPanel(step) {
   const next = step.next ? STEPS[step.next] : null;
   const d = el('div', 'done');
   d.innerHTML = `<hr class="rule"><div class="seal small">✔</div>
     <p class="msg">You already cleared this stage.</p>
-    ${next ? `<div class="nextcode">${next.code}</div>
-      <button class="btn" id="cont2">Continue to ${next.label} →</button>` : ''}`;
-  if (next) { const b = d.querySelector('#cont2'); if (b) b.onclick = () => { setSt({ stage: next.id }); showStage(next.id); }; }
+    ${next ? `<button class="btn" id="cont2">Continue to ${next.label} →</button>` : ''}`;
+  if (next) { const b = d.querySelector('#cont2'); if (b) b.onclick = () => showStage(next.id); }
   return d;
 }
 
-/* panel terminalny (granica POC) */
-function terminalPanel(step) {
+function terminalPanel(step, group) {
+  const fac = factionName(GROUP_META[group].faction);
   return el('div', 'done', `<hr class="rule">
-    <p class="msg">This is the boundary of the proof-of-concept. The full Z2 puzzle
-    (and the fork into the two factions) is the next phase.</p>
-    <p class="muted small">Recovery code for this stage: <b>${step.code}</b></p>`);
+    <p class="msg">From here your road runs with the <strong>${fac}</strong>.</p>
+    <p class="msg">This is the boundary of the proof-of-concept — the full Z2 puzzle and the
+    rest of your group’s flow are the next phase.</p>`);
 }
 
-/* ============================ START ============================ */
+/* ===================== START ===================== */
 (function () {
   const s = st();
-  if (s.stage && STEPS[s.stage]) showStage(s.stage);
-  else showLanding();
+  if (s.group && s.stage && STEPS[s.stage]) showStage(s.stage);
+  else showGroupSelect();
 })();

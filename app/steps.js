@@ -1,32 +1,24 @@
 /* ============================================================================
-   steps.js — rejestr etapów gry (warstwa fabularna online wg
-   mechanics/hybryda-online.md). Każdy etap = osobna podstrona (refresh-safe),
-   z własnym KODEM DOSTĘPU (wejście + recovery, gdy apka padnie / storage zniknie).
+   steps.js — etapy gry (warstwa fabularna online, mechanics/hybryda-online.md).
+   Wejście = NUMER GRUPY (1-10) na starcie; dalej flow danej grupy. Bez routingu
+   URL, bez kodów dostępu. Stan (grupa + etap + solved) w localStorage.
 
    Schemat etapu:
-     id        — slug w URL ('z1' → /z1)
-     label     — kod zagadki na ekranie
-     enterType — 'MG' | 'AKTOR' | 'PREV' (typ z łańcucha kodów, spec §B)
-     code      — kod dostępu do TEGO etapu (gate + recovery). Format = otwarte (#D).
-     title     — nagłówek
-     brief[]   — bloki narracji (verbatim z renderu/draftu; spec: treść briefów
-                 bez przepisywania, zmienia się tylko nośnik koperta→podstrona)
-     prop      — ramka „PROP AT THIS STAGE" (spec §C): what/from/where
-     puzzle    — null | { type:'symbol-sequence', data } — bramka PREV w apce
-     next      — id następnego etapu (po rozwiązaniu) | null
-     terminal  — true dla granicy POC
-
-   Player-facing = EN. Nazwy własne toruńskie w oryginale. Kody DEMO — patrz #D.
+     id, label, title
+     brief[]   — bloki narracji (verbatim z renderu; treść briefów bez przepisywania)
+     prop      — ramka „PROP AT THIS STAGE": what/from/where
+     puzzle    — null | { type:'symbol-sequence', prompt } — dane Z1 budowane per
+                 grupa w app.js (z1PuzzleFor)
+     next, terminal
+   Player-facing = EN. Nazwy własne toruńskie w oryginale.
    ============================================================================ */
 
 const STEPS = {
 
-  /* --- Z1 — szlak symboli (wspólna, ukrywa frakcję). Wejście = kod MG. --- */
+  /* --- Z1 — szlak symboli (wspólny brief; deszyfrownik per grupa). --- */
   z1: {
     id: 'z1',
     label: 'Z1',
-    enterType: 'MG',
-    code: 'START-1454',        // ⚠ DEMO kod-MG (pakiet startowy). Format = #D.
     title: 'The road begins',
 
     brief: [
@@ -60,22 +52,14 @@ const STEPS = {
       where: 'handed to you in the starting pack',
     },
 
-    // Bramka PREV: wybór 4 symboli (detali) w kolejności — apka waliduje.
-    puzzle: {
-      type: 'symbol-sequence',
-      prompt: 'Tap the four details you found, in the order you found them.',
-      data: Z1_G1,
-    },
-
+    puzzle: { type: 'symbol-sequence', prompt: 'Tap the four details you found, in the order you found them.' },
     next: 'z2',
   },
 
-  /* --- Z2 — checkpoint: kontakt odnaleziony. Granica POC (zagadka Z2 = dalej). --- */
+  /* --- Z2 — checkpoint: kontakt odnaleziony (granica POC). --- */
   z2: {
     id: 'z2',
     label: 'Z2',
-    enterType: 'PREV',
-    code: 'RAVEN-2613',        // ⚠ DEMO recovery-code odsłaniany po Z1. Format = #D.
     title: 'You reached your contact',
 
     brief: [
@@ -93,7 +77,7 @@ const STEPS = {
 
     puzzle: null,
     next: null,
-    terminal: true,   // POC kończy się tu; Z2 jako pełna zagadka = kolejna faza
+    terminal: true,
   },
 
 };
