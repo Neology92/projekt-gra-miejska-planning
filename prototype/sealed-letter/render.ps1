@@ -12,7 +12,12 @@
 # OVERSIZED window (no clip) and crop back to the exact sheet box (same trick as tools/map-gen/render-map.ps1).
 # Back page is captured by hiding the first sheet in a temp copy. NO --user-data-dir (breaks --screenshot on Chrome 147).
 
-param([switch]$PdfOnly)
+param(
+  [switch]$PdfOnly,
+  # Promote the chosen variant to public/ under the canonical name (position 1, faction-common).
+  # e.g.  pwsh -File render.ps1 -Publish v1   ->   public/wspolne-1-Z1-list.pdf
+  [ValidateSet('v1','v2','v3')][string]$Publish
+)
 
 $ErrorActionPreference = 'Stop'
 $here = $PSScriptRoot
@@ -73,6 +78,23 @@ function Shot($uri, $png) {
     "--window-size=$WinW,$WinH" --hide-scrollbars --run-all-compositor-stages-before-draw `
     "--screenshot=$png" $uri 2>$null
   if (Wait-File $png 25) { Crop-TopLeft $png; return $true } else { return $false }
+}
+
+# --- Publish the chosen variant to public/ (canonical name) and stop. ---
+if ($Publish) {
+  $pubMap = @{ v1 = 'v1-mute.html'; v2 = 'v2-sigil.html'; v3 = 'v3-redirected.html' }
+  $inPath   = Join-Path $here $pubMap[$Publish]
+  $repoRoot = (Resolve-Path (Join-Path $here '..\..')).Path
+  $pubOut   = Join-Path $repoRoot 'public\wspolne-1-Z1-list.pdf'
+  if (Test-Path $pubOut) { Remove-Item $pubOut -Force -ErrorAction SilentlyContinue }
+  & $browser --headless --no-sandbox --disable-gpu --no-pdf-header-footer --print-to-pdf="$pubOut" ([System.Uri]$inPath).AbsoluteUri 2>$null
+  if (Wait-File $pubOut 20) {
+    $bytes = [System.IO.File]::ReadAllText($pubOut, [System.Text.Encoding]::Latin1)
+    $pages = ([regex]::Matches($bytes, '/Type\s*/Page(?![sR])')).Count
+    Write-Host ("PUBLISHED {0} ({1}) -> public/wspolne-1-Z1-list.pdf  {2:N0} bytes, {3} pages" -f $Publish, $pubMap[$Publish], (Get-Item $pubOut).Length, $pages) -ForegroundColor Green
+    if ($pages -ne 2) { Write-Warning "Expected exactly 2 pages (faces + seals) for clean duplex — got $pages." }
+  } else { Write-Warning "PUBLISH FAILED: $pubOut" }
+  return
 }
 
 foreach ($in in $variants.Keys) {

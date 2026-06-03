@@ -56,9 +56,9 @@
 ## B. Rekwizyty drukowane (8)
 
 ```
-🟡 List zapieczętowany ........ GRAFIKA gotowa: lico (adres) + pieczęć lakowa, dwustronna, A6 4-up na A4, druk duplex → 10 kopii.
-                                3 warianty draft czekają na WYBÓR Oskara: v1-mute (brak adresata) / v2-sigil (adresat=znak) /
-                                v3-redirected (adresat skreślony — niesie najwięcej narracji). Po wyborze → public/wspolne-1-Z1-list.pdf  [prototype/sealed-letter/]
+✅ List zapieczętowany ........ WYBRANO V1-mute (brak adresata) [2026-06-03] → public/wspolne-1-Z1-list.pdf (2 str.; druk duplex, A6 4-up → wytnij 10).
+                                Lico (adres EN) + pieczęć lakowa; faction-neutral. Warianty backup zostają: prototype/sealed-letter/ (v2-sigil/v3-redirected).
+                                Regen: render.ps1 -Publish v1
 🟡 Wiadomość pośrednika ....... jest w drafcie poz.2 Z2 (slip „— R.") — do wydzielenia  [envelopes/miasto-2-Z2.md]
 🟡 Mapa Torunia z glifami ..... mock funkcjonalny istnieje                              [prototype/mapa-z1-podglad.html]
 ✅ Deszyfrownik (karty) ....... generator tools/z1-decoder/ (derywuje z Z1_GROUPS); 10 PDF public/decoders/ per kolor grupy; walidacja PASS  [tools/z1-decoder/README.md]
