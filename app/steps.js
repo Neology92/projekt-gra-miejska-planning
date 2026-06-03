@@ -86,9 +86,19 @@ const STEPS = {
     id: 'opt',
     label: 'F2B',
     type: 'optional',
+    next: 'fin',
+  },
+
+  /* --- Finał (Z7 mieszczanie / Z11 krzyżacy) — szyfr. Treść = FINALE[frakcja]
+         (finale-data.js). Apka = brief + szyfrogram + walidacja odszyfrowanego
+         tekstu; klucz fizyczny w ręku gracza. Po nim KF = scena na żywo. --- */
+  fin: {
+    id: 'fin',
+    label: 'Finale',
+    type: 'finale',
     next: null,
   },
 
 };
 
-const STEP_ORDER = ['z1', 'z2', 'z3', 'opt'];
+const STEP_ORDER = ['z1', 'z2', 'z3', 'opt', 'fin'];
