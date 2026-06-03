@@ -48,7 +48,7 @@ const STAGE_Z1 = {
     { reg: 'rule' },
     { reg: 'dateline', html: 'Toruń, the 6th of February, the Year of Our Lord 1454' },
     { reg: 'head', html: 'Messengers,' },
-    { reg: 'msg', html: 'The sealed letter enclosed with this note is not yours to read. Carry it. Protect it. Deliver it before the eighth bell strikes tonight.' },
+    { reg: 'msg', html: 'The sealed letter enclosed with this note is not yours to read. Carry it. Protect it. Deliver it before the ninth bell strikes tonight.' },
     { reg: 'msg', html: 'You were paid to do a simple thing. The city has made it complicated. Your contact is not where he was meant to be, and you will have to find your own way to the one who must receive this.' },
     { reg: 'msg', html: 'Know this: whoever reads that letter, loses it, or puts it in the wrong hands will answer for it. Not with coin. <em>With their hands.</em> You are warned once. You will not be warned again.' },
     { reg: 'rule' },

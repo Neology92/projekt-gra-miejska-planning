@@ -51,7 +51,7 @@ Typ kodu odblokowującego kolejny krok online:
 | Z3 → Z3b | Albrecht (Zosia) | — (brak lustra Z3b) | **AKTOR** | pergamin (łup kradzieży) |
 | Z3b / Z3Z → opcjonalna | MG wręcza prop | jw. | **MG** | Z4/Z8: **kalimba** · Z5/Z9: przepis+przyprawy+słoje · Z6: karta herbów · Z10: arkusz polichromii |
 | opcjonalna → finał (Z7/Z11) | apka waliduje odpowiedź | jw. | **PREV** | — (klucz już w ręku: pergamin TR / tabele KZ) |
-| finał → dostawa (KF) | apka waliduje Z7 | apka waliduje Z11 | **PREV** | — (fizyczne oddanie listu aktorowi, 20:30) |
+| finał → dostawa (KF) | apka waliduje Z7 | apka waliduje Z11 | **PREV** | — (fizyczne oddanie listu aktorowi, 21:00) |
 
 **Przydział opcjonalnych (CLAUDE.md) → wszystkie = kod-MG** (każda wręcza fizyczny rekwizyt):
 G1 Z4 (kalimba) · G2,G3 Z5 (piernik) · G4,G5 Z6 (herby) · G6,G7 Z8 (kalimba) · G8 Z9 (piernik) · G9,G10 Z10 (polichromie). Melodia-wzorzec jest online, ale gracz sięga po nią dopiero po wejściu na podstronę odblokowaną kodem-MG.
@@ -109,5 +109,5 @@ Wyprowadzenie per etap (z kolumny „Rekwizyt" tabeli B):
 ## Co zostaje bez zmian
 
 - Treść briefów, rekwizytów, kluczy — bez przepisywania (tylko nośnik się zmienia: koperta → podstrona).
-- Finał fizyczny: oddanie zapieczętowanego listu aktorowi o 20:30, liczenie listów przez Jordana/Albrechta (#50).
+- Finał fizyczny: oddanie zapieczętowanego listu aktorowi o 21:00, liczenie listów przez Jordana/Albrechta (#50).
 - Przydział grup, kolory, asymetria torów (TR 6 / KZ 5 pozycji) — `envelopes/README.md`.
