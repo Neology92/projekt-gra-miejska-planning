@@ -173,7 +173,12 @@ Szczegóły: mechanics/koperty-mg.md §ZAŁOŻENIA PRZED RENDEREM · prototype/p
 🟡 Z5 — sensoryczna z piernikiem  spec+draft gotowe; brief + 3 wspólne rekwizyty (przepis/etykiety/rozpiska) + klucz MG wyrenderowane [2026-06-02]
                                  (public/miasto-5-Z5.pdf · z5z9-przepis/etykiety/rozpiska.pdf · mg-Z5Z9-klucz.pdf — 1 zestaw słojów obsługuje Z5+Z9);
                                  zostaje: review Oskara + klucz finału (#9)
-🔄 Z6 — herby hanzeatyckie ...... Piotr przygotowuje zagadkę; szczegóły TBD [2026-06-02]
+🟡 Z6 — herby hanzeatyckie ...... mechanika Piotra ZAPISANA + koperta gracza draft v1 [2026-06-03]: dopasowanie
+                                 nadawca↔odbiorca (5 posłów Związku Pruskiego → 4 dotarły: Hamburg/Kolonia/Lubeka×2;
+                                 nadawca bez pary = nie dotarło); reguła wprost, kanał A (A4 herby/turnieje) + doubt-beat;
+                                 lokalizacja ROZSTRZYGNIĘTA = ul. Szeroka. Zostaje: ⚠ Piotr potwierdza KLUCZ (które
+                                 miasto „nie dotarło") + review Oskara + spot-check tarcz + karta-rekwizyt (most nazw EN↔bruk)
+                                 [envelopes/miasto-5-Z6.md · puzzles/herby-aleja.md]
 ```
 
 ### 🟨 Dywersyfikacja (10 grup)

@@ -194,7 +194,7 @@ Projekt (Pule A/B + tabela) jest **kompletny**. Luka jest w **realizacji i symet
 | `miasto-2-Z2` | ✅ A3/A5/A6/A7/A8 | — (za wcześnie) | — |
 | `miasto-5-Z4` | ✅ inwersja „wielcy/mali" | ✅ DODANE 2026-06-03 | — |
 | `miasto-5-Z5` | ✅ piekarz-sceptyk | ✅ DODANE 2026-06-03 | — |
-| `miasto-5-Z6` | seed | seed | — |
+| `miasto-5-Z6` | ✅ DODANE 2026-06-03 (podsłuch A4/A2/A5) | ✅ DODANE 2026-06-03 | — |
 | `miasto-6-Z7` (finał) | echo wcześniejszych | ✅ w finale | ✅ **mocne** DODANE 2026-06-03 |
 | `krzyzacy-4-Z8` | ✅ wzmocnione 2026-06-03 | ✅ DODANE 2026-06-03 | — |
 | `krzyzacy-4-Z9` | ✅ DODANE 2026-06-03 (podsłuch B1/B5/B6) | ✅ DODANE 2026-06-03 | — |

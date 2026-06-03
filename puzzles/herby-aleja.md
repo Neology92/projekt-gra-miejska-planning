@@ -1,10 +1,10 @@
 # Zagadka herbów hanzeatyckich — Z6
 
-**Status**: szkicowe. Mechanika jasna. **Lokalizacja + lista miast zweryfikowane researchem [2026-06-02]** — patrz §Research lokalizacji. Zostaje decyzja Oskara: który odcinek gracze przechodzą i które 3 miasta = obecne vs 5 dystraktorów.
+**Status**: **mechanika ROZSTRZYGNIĘTA [2026-06-03] — autorstwa Piotra** (dopasowanie herbów nadawca↔odbiorca + dedukcja „kto nie dotarł"; zastępuje wcześniejszą „znajdź 3 z 8 obecnych in loco"). Koperta gracza wyrenderowana tekstowo → `envelopes/miasto-5-Z6.md` (draft EN). **Lokalizacja + lista miast zweryfikowane researchem [2026-06-02]** — patrz §Research lokalizacji. **Zostaje:** (a) **Piotr potwierdza klucz** — które miasto pruskie = „nie dotarło" (patrz §Klucz MG); (b) spot-check herbów in loco; (c) decyzja Z6↔Z10 kolizja przestrzenna.
 
 ## Numeracja: **Z6** (tor mieszczan, opcjonalna, 2 grupy)
 
-- Lustro **Z10** (polichromie w Biedronce, tor krzyżaków). Patrz `concept/03-faza-2b-asynchroniczne.md`, `puzzles/00-master-list.md`.
+- **Lustro Z10 w ROLI, nie w mechanice.** Z10 (polichromie/Bestiariusz, KZ) i Z6 dają ten sam *typ outputu* — **wymienialny klucz do finału** (Z7 dla TR) przez MG — i obie żyją na ul. Szerokiej. Ale **mechanika jest inna**: Z10 = „karta-z-ośmioma → znajdź, które są obecne in loco"; Z6 (wersja Piotra) = „dopasuj odbiorców do nadawców po podobieństwie herbu → wyklucz tego bez pary". ⚠ Pliki `krzyzacy-4-Z10.md` i stary opis tu nazywały to „tą samą mechaniką" — to już nieaktualne (do decyzji Oskara, czy zostawić Z10 jako jest). Patrz `concept/03-faza-2b-asynchroniczne.md`, `puzzles/00-master-list.md`.
 - Zastępuje poprzedni placeholder „anioły" na tym slocie.
 - Output: **wymienialny „klucz" do finału Z7** (przez MG).
 
@@ -37,51 +37,62 @@
 
 > Źródła: OpenStreetMap (Overpass — geometria ulic, way 26839787/960726736 Szeroka, 34584518/960726737 Kr. Jadwigi); toruntour.pl/4615 i turystyka.torun.pl/art/210 (Aleja Herbów — listy miast, daty); turystyka.torun.pl/art/280 (Aleja Gmerków — Żeglarska, 25 gmerków). Współrzędne spójne z manifestem `B:\Dev\projekt_gra-miejska\tools\places-manifest.json`.
 
-## Mechanika
+## Mechanika [wersja Piotra — kanoniczna 2026-06-03]
 
-1. Grupa dostaje **kartę z 8 herbami / nazwami miast hanzeatyckich**.
-2. Idzie na **aleję herbów** (decyzja Oskara — który odcinek: Szeroka, Królowej Jadwigi, albo oba; patrz §Research), przeszukuje bruk i latarnie.
-3. **3 z 8 są faktycznie obecne w bruku** — pozostałe 5 to wiarygodne miasta hanzeatyckie **nieobecne na wybranym odcinku** (dystraktory).
-4. Znalezione 3 = odpowiedź / klucz do finału.
+> **Treść źródłowa (wiadomość Piotra, 2026-06-03):** *„Przedstawiciele kupców z ważnych miast Związku Pruskiego — Gdańska, Królewca, Elbląga, Chełmna i Torunia — wysłali poselstwa do zaprzyjaźnionych miast o wsparcie ich w organizacji buntu. Tak się złożyło, że miasta, do których dotarły wiadomości, mają herby podobne do miast-nadawców. Poselstwa trafiły do Hamburga, Kolonii i aż 2 do Lubeki. Z którego miasta wysłana wiadomość nie dotarła?"* + *„Odległości między tymi herbami to dobre kilka metrów — więc nie chcę bardzo utrudniać."*
 
-> **Decyzja projektowa (Oskar):** pole herbów to realnie ~30 miast na dwóch ulicach (22 Szeroka + 8 Kr. Jadwigi). To zmienia dobór dystraktorów — „obecne" jest dużym zbiorem, więc 5 dystraktorów muszą być miastami hanzeatyckimi **spoza** tej ~30. Najczystsze wyjście: **ograniczyć zadanie do jednego odcinka** (np. tylko 8 herbów Królowej Jadwigi — wtedy „3 obecne" wybiera się z tych 8, a 5 dystraktorów z miast nieobecnych tam), żeby zbiór obecnych był domknięty i sprawdzalny.
+**Typ zadania: dopasowanie + eliminacja (NIE „znajdź obecne").** Wszystkie potrzebne herby SĄ w bruku — gracz nie szuka obecnych/nieobecnych, tylko **paruje** odbiorców z nadawcami po podobieństwie herbu i wskazuje nadawcę bez pary.
 
-Analogia z Z10 (polichromie): zamiast odszukać sylwetki bestii na malowidłach, szukasz tarcz herbowych w terenie. Weryfikacja przez fizyczną obecność in loco.
+1. **5 nadawców** (miasta Związku Pruskiego): **Gdańsk, Królewiec, Elbląg, Chełmno, Toruń**.
+2. **4 poselstwa dotarły** — do miast: **Hamburg, Kolonia, Lubeka, Lubeka** (Lubeka 2×).
+3. **Reguła** (podana graczowi WPROST — Piotr chce łatwo): każdy poseł trafił do miasta-sojusznika o herbie **podobnym** do herbu swojego miasta. Gracz dopasowuje każde z 4 miast-odbiorców do nadawcy o zbliżonym herbie.
+4. **Odpowiedź = ten 1 nadawca, którego herb nie przypomina żadnego z {Hamburg, Kolonia, Lubeka}** — jego poselstwo „nie dotarło".
 
-## Uzasadnienie fabularne (do spięcia przez autora)
+**Realizacja terenowa:** wszystkie 8 miast (5 pruskich + Hamburg + Kolonia + Lubeka) leżą w bruku **ul. Szerokiej** (patrz §Research — lista 22 herbów). Gracze chodzą po deptaku, oglądają tarcze, parują wizualnie. To **rozstrzyga dawne otwarte pytanie „który odcinek"** → **Szeroka** (wymuszona przez dobór miast; Królowej Jadwigi NIE zawiera tych miast).
 
-- Tajna Rada szuka miast-sojuszników Związku Pruskiego wśród partnerów hanzeatyckich Torunia.
-- „Które z tych miast mają swoich przedstawicieli w mieście na czas karnawału?" → kurierzy sprawdzają ślady przy Dworze Artusa (aleja to dosłownie przeniesione emblematy z Dworu Artusa).
-- Konkretne spięcie z fabułą: **Oskar decyduje**.
+> **Trudność celowo niska** (życzenie Piotra). Brief modeluje zadanie jednym gotowym dopasowaniem (Toruń↔Hamburg, patrz §Klucz), żeby gracz złapał regułę; reszta to kilka kroków po bruku.
 
-## Treści do dobrania
+## Klucz MG — ⚠ PIOTR POTWIERDZA
 
-- **Lista faktycznych miast** — ✅ ustalona researchem (patrz §Research). Zostaje tylko weryfikacja w terenie, czy wszystkie nadal są (remonty, ubytki płyt). Haczyk wiki „ile herbów na latarniach, ile w bruku" — dobre pytanie rozgrzewkowe.
-- **Lista 8 miast na karcie** = 3 obecne + 5 dystraktorów. Teraz, gdy znamy zbiór obecnych:
-  - jeśli odcinek = **Królowej Jadwigi** (8 herbów): obecne dobierasz z {Kraków, Lwów, Dorpat, Ryga, Londyn, Bergen, Brugia, Nowogród}; dystraktory = miasta hanzeatyckie spoza tej ósemki (np. Lubeka, Hamburg, Brema, Stralsund — które są na Szerokiej, ale NIE na Kr. Jadwigi → fabularnie spójne).
-  - jeśli odcinek = **Szeroka** (22 herby): zbiór obecnych jest duży → trudniej o wiarygodne dystraktory; rozważ węższą kartę.
-  - **uwaga na dystraktory:** nie używaj jako „nieobecnego" miasta, które realnie JEST na drugim odcinku — gracz może je znaleźć i zaliczyć błędnie.
-- **Karta** — styl: pergamin, wydruk A5, herby jako rysunki lub same nazwy w gotyku, bez podpisów (gracze muszą sami zmatchować).
+> **Agent NIE rekonstruuje pełnego klucza z pamięci** (ryzyko cichego błędu w herbach → zepsuta zagadka). Klucz zna **Piotr** (autor mechaniki). Poniżej tylko to, co pewne + struktura do potwierdzenia.
+
+- **Pewne (podręcznikowe podobieństwo): Toruń ↔ Hamburg** — oba to **biały/czerwony zamek z trzema wieżami** (Toruń: czerwona brama z 3 wieżami na srebrze; Hamburg: biały zamek z 3 wieżami na czerwieni). Użyte jako przykład w briefie.
+- **Struktura klucza (z tekstu Piotra, weryfikowalna):** 1 nadawca→Hamburg, 1→Kolonia, 2→Lubeka, **1 bez pary = odpowiedź**.
+- **Do potwierdzenia przez Piotra:** które miasto pruskie paruje z Kolonią, które dwa z Lubeką → i tym samym **które jest „nie dotarło"**. (Hipotezy heraldyczne agenta — np. korona Kolonii ↔ Królewiec/Gdańsk, czerwono-białe krzyże ↔ Lubeka — celowo **nie** zapisuję jako klucza, bo zależą od faktycznych tarcz w bruku.)
+- Klucz NIE trafia na egzemplarz gracza; mieszka tu + do osadzenia w `mg-*-klucz` przy renderze rekwizytów.
+
+## Uzasadnienie fabularne [wdrożone w `miasto-5-Z6.md`]
+
+- **Tajna Rada rozesłała 5 posłów** do hanzeatyckich sojuszników Związku Pruskiego z prośbą o wsparcie buntu. **Czterech odpowiedziało** (z Hamburga, Kolonii, dwukrotnie z Lubeki); **piąty poseł zamilkł na drodze** — Rada nie wie, którą z pięciu dróg „połknęła".
+- **Czemu herby:** stary obyczaj bractwa kupieckiego — miasto wita miasto **po herbie**; posła wysyłano do „siostrzanej tarczy" podobnej do własnej. By ustalić, który z naszych posłów zaginął, kurier paruje herby miast-odbiorców (które odpowiedziały) z ich pruskimi „siostrami" w bruku Szerokiej; pruskie miasto bez pary = utracony poseł. → naturalny powód, by „czytać bruk".
+- **Pokrycie wiki:** Hanza + sojusze handlowe Torunia (`handel-hanza.js`), Związek Pruski i miasta-sygnatariusze (`zwiazek-pruski.js`), emblematy z Dworu Artusa (`aleja-gmerkow.js`). Patrz meta-kartka `lore/meta-kartki/miasto-5-Z6.md`.
+
+## Karta-rekwizyt (do produkcji)
+
+- **Funkcja:** nazwać graczowi 5 nadawców + 4 potwierdzenia (Hamburg/Kolonia/Lubeka×2) + regułę podobieństwa. Może nieść drobne rysunki herbów (pomoc), ale realne parowanie dzieje się przy bruku.
+- **Styl:** pergamin/dispatch Rady, A5, nazwy w gotyku.
+- ⚠ **Most nazw EN↔bruk:** koperta (player-facing EN) używa form okresowych/hanzeatyckich (Danzig/Königsberg/… lub formy rozpoznawalne); **tabliczki w bruku są po polsku** (Gdańsk, Królewiec, Elbląg, Chełmno, Toruń, Lubeka, Kolonia, Hamburg). Karta/MG muszą **zmostkować** nazwy (np. karta pokazuje obie formy), żeby gracz znalazł właściwe kamienie. Do dopięcia przy produkcji rekwizytu.
 
 ## Co weryfikuje?
 
-- Mieszczanie: wiedzą o hanzeatyckich sojuszach Torunia (wiarygodność kurierskia / lojalność).
-- Zagadka nie jest filtrem klas — dostępna tylko dla mieszczan (krzyżacy mają polichromie Z10), ale mechanika nie ujawnia żadnej tajemnicy klasowej.
+- Mieszczanie: znajomość hanzeatyckich sojuszy Torunia (wiarygodność kurierska).
+- **Nie jest twardym filtrem klas** — mechanika rozwiązywalna przez każdego (czyta bruk, paruje herby); dostępna tylko mieszczanom (krzyżacy mają Z10), ale nie ujawnia tajemnicy klasowej.
 
 ## Konsekwencja po rozwiązaniu
 
-- Grupa raportuje 3 znalezione herby do MG / kontaktu Tajnej Rady.
-- Otrzymuje **klucz wymienialny do finału Z7**.
+- Grupa raportuje MG **nazwę miasta-nadawcy, którego poselstwo nie dotarło**.
+- MG sprawdza wg klucza i wydaje **wymienialny klucz/szyfrogram do finału Z7** (ten sam co Z4/Z5).
 
 ## Otwarte pytania
 
-1. ✅ **Które herby faktycznie są?** — ustalone researchem (22 Szeroka + 8 Kr. Jadwigi, listy w §Research). Zostaje tylko spot-check w terenie (ubytki).
-2. 🔒 **Który odcinek gracze przechodzą?** (Szeroka / Królowej Jadwigi / oba) — DECYZJA OSKARA; determinuje zbiór „obecnych" i dobór dystraktorów oraz pin na mapie. **To główne otwarte pytanie Z6.**
-3. **Karta** — same nazwy miast czy rysunki herbów? Rysunki autentyczniejsze, ale wymagają nakładu graficznego.
-4. **Herby (bruk) vs latarnie** — w bruku są herby miast; na latarniach herby rodów patrycjuszy + znaki cechowe (inny zbiór). Można zrobić warstwę („w bruku, nie na latarni"), ale uważaj, by nie mylić graczy.
-5. Czy potrzebujemy crosscheck-dokumentu (jak Bestiariusz Krzyżowca w Z10), czy samo fizyczne znalezienie wystarczy jako weryfikacja?
+1. ⚠ **Klucz: które miasto „nie dotarło"?** — **PIOTR POTWIERDZA** (patrz §Klucz MG). Główne otwarte pytanie Z6.
+2. ✅ **Który odcinek?** — ROZSTRZYGNIĘTE: **Szeroka** (wymuszone doborem miast; wszystkie 8 są w bruku Szerokiej).
+3. ✅ **Które herby faktycznie są?** — ustalone researchem (lista 22 Szeroka w §Research); zostaje spot-check (ubytki płyt, czytelność).
+4. **Karta** — same nazwy czy rysunki herbów? Rysunki autentyczniejsze (i pomagają parować), ale wymagają nakładu graficznego.
+5. **Most nazw EN↔bruk** (patrz §Karta-rekwizyt) — jak pokazać nazwy, by gracz EN znalazł polskie tabliczki.
+6. 🔒 **Kolizja przestrzenna z Z10** — Z6 (TR) i Z10 (KZ, Biedronka = Szeroka 22) na tej samej ulicy. Różne frakcje/czas → prawdopodobnie OK, ale do świadomej decyzji Oskara.
 
 ## Co autor może zrobić sam vs gdzie pomocy
 
-- **Sam**: wizyta na ul. Królowej Jadwigi, spis herbów w bruku i na latarniach, zdjęcia.
-- **Z pomocą agenta**: identyfikacja herbów (który herb = które miasto), dobór 5 dystraktorów (historyczne miasta hanzeatyckie, wiarygodne, nieobecne na aleji), projekt karty.
+- **Piotr**: potwierdzić klucz (parowania + miasto „nie dotarło") — zna intencję; spot-check tarcz w bruku Szerokiej.
+- **Z pomocą agenta**: redakcja karty-rekwizytu, most nazw EN↔bruk, dobór plotek/atmosfery (zrobione w kopercie), warianty stylistyczne.

@@ -8,7 +8,7 @@ Frakcja: **krzyzacy** (Zakon) · Pozycja na ścieżce (nr): **4** · Zadanie: **
 > **Typography:** narration = *italic (light)* = inside the head; the brother's leaf = roman.
 > **Trigger:** MG hands to group after **Z3Z** (infiltracja Piccolo). This is the optional Z10 brief (KZ set C; 2 grupy — G9 brązowy, G10 czarny).
 > **Props handed with it (meta, like dealing a card):** the bestiary leaf — **„Bestiariusz Krzyżowca"**, eight beasts in roundels lettered A–H (`puzzles/krzyzacy-4-Z10-bestiariusz.jpeg`). No answer key on the player's copy.
-> ⚠ **Lustro Z6** (herby hanzeatyckie, TR): ta sama mechanika „karta-z-ośmioma → znajdź obecne in loco". Tu: bestie zamiast herbów, ściana zamiast bruku.
+> ⚠ **Lustro Z6** (herby hanzeatyckie, TR) — **tylko w ROLI** (wymienialny klucz finałowy + ta sama ulica, Szeroka). **Mechanika się rozeszła [2026-06-03]:** Z10 = „karta-z-ośmioma → znajdź obecne in loco" (bestie/ściana); Z6 (wersja Piotra) = „dopasuj odbiorców do nadawców po herbie → wyklucz bez pary". Z10 **zostaje bez zmian**; dawne „ta sama mechanika" już nieaktualne (patrz `envelopes/miasto-5-Z6.md`, `puzzles/herby-aleja.md`).
 
 ## Meta — montaż
 

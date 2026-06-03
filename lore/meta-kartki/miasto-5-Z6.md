@@ -1,7 +1,9 @@
-# Kartka autorska — Herby hanzeatyckie / Aleja Gmerków (Z6)
-> meta-dodatek „od autora" · draft 2026-06-02
+# Kartka autorska — Herby hanzeatyckie / Aleja Herbów (Z6)
+> meta-dodatek „od autora" · draft 2026-06-02 · zaktualizowano 2026-06-03 (mechanika Piotra + korekta lokalizacji)
 
-**Koperta:** Z6 · **Zadanie:** Znajdź herby miast-partnerów Hanzy na Aleji Gmerków · **Tor:** Mieszczanie (tor M)
+**Koperta:** Z6 · **Zadanie:** Dopasuj herby miast-odbiorców do nadawców na **Aleji Herbów (ul. Szeroka)** i wskaż poselstwo, które nie dotarło · **Tor:** Mieszczanie (tor M)
+
+> ⚠ **Korekta nazwy [2026-06-02]:** miejsce to **Aleja Herbów Miast Hanzeatyckich** (herby w bruku **ul. Szerokiej**), **nie** „Aleja Gmerków" (to inna ulica — Żeglarska, 25 gmerków kupieckich, bez herbów miast). Wcześniejszy nagłówek zlepiał oba — poprawione. Szczegóły: `puzzles/herby-aleja.md §Miejsce/§Research`.
 
 ---
 
@@ -33,10 +35,9 @@ Aleja Gmerków (ul. Królowej Jadwigi) to **współczesna instalacja** wzorowana
 
 ## FABUŁA / WYMYSŁ AUTORA
 
-- Fabuła Z6: **Tajna Rada szuka miast-sojuszników Związku Pruskiego wśród partnerów hanzeatyckich** — „Które z tych miast mają swoich przedstawicieli w mieście na czas karnawału?" (z planu puzzli `herby-aleja.md`).
-- Kurierzy mieszczańscy sprawdzają ślady przy „Dworze Artusa" (aleja to dosłownie przeniesione emblematy z Dworu Artusa — fabuła trafnie to reinterpretuje).
-- Karta z 8 herbami/miastami (3 obecne na aleji + 5 dystraktorów) — mechanika gry, nie historia.
-- Wybór konkretnych 3 herbów jako „klucza do Z7" — decyzja autora, nie fakt historyczny.
+- Fabuła Z6 [mechanika Piotra, 2026-06-03]: **Tajna Rada rozesłała 5 posłów** do hanzeatyckich sojuszników Związku Pruskiego (z Gdańska, Królewca, Elbląga, Chełmna, Torunia) z prośbą o wsparcie buntu. **Czterech odpowiedziało** (Hamburg, Kolonia, 2× Lubeka); **piąty poseł zaginął**. Kurier ustala który — parując herby miast-odbiorców z „siostrzanymi" herbami pruskich nadawców w bruku Szerokiej; nadawca bez pary = utracone poselstwo.
+- **Obyczaj „miasto wita miasto po herbie"** (poseł do siostrzanej tarczy) — wymysł fabularny spajający zagadkę z realnymi emblematami z Dworu Artusa (aleja to dosłownie przeniesione emblematy — fabuła trafnie to reinterpretuje).
+- Parowanie herbów po podobieństwie + wybór miasta „nie dotarło" jako klucza do Z7 — **mechanika gry / decyzja autora (Piotr)**, nie fakt historyczny. (To, że Hanza i sojusze handlowe Torunia istniały — czysty fakt; konkretne poselstwa 1454 do tych miast — fikcja gry.)
 
 ---
 

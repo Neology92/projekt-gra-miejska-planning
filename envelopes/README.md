@@ -161,7 +161,7 @@ Legenda: **draft** (pełny tekst EN + meta) · **placeholder** (tylko wiersz, tr
 | `miasto-4-Z3b.md` | draft (migr. z `prototype/kZ3b`) | `puzzles/zamek-krzyzacki-lista.md` (Z3 pkt 3–4) |
 | `miasto-5-Z4.md` | draft (migr. z `prototype/kZ4`) | `puzzles/kalimba.md` |
 | `miasto-5-Z5.md` | draft | `puzzles/zagadka-sensoryczna.md` |
-| `miasto-5-Z6.md` | placeholder | `puzzles/herby-aleja.md` |
+| `miasto-5-Z6.md` | draft [2026-06-03] | `puzzles/herby-aleja.md` (mechanika Piotra: dopasowanie herbów + eliminacja) |
 | `miasto-6-Z7.md` | draft (migr. z `prototype/kF`) | `concept/04-faza-3-final.md`, `z7-szyfr-spec.md` |
 | `krzyzacy-2-Z2.md` | pending | — |
 | `krzyzacy-3-Z3Z.md` | placeholder | `zamek-krzyzacki-lista.md §Z3Z` |
