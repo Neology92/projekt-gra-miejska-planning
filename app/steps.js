@@ -1,14 +1,20 @@
 /* ============================================================================
    steps.js — etapy gry (warstwa fabularna online, mechanics/hybryda-online.md).
    Wejście = NUMER GRUPY (1-10) na starcie; dalej flow danej grupy. Bez routingu
-   URL, bez kodów dostępu. Stan (grupa + etap + solved) w localStorage.
+   URL i bez kodów dostępu/recovery (wejście per grupa). Uwaga: to NIE wyklucza
+   bramek-kodów WEWNĄTRZ etapu — Z3 ma bramkę `code` (gracz wpisuje liczbę
+   wyciągniętą od aktora). Stan (grupa + etap + solved) w localStorage.
 
    Schemat etapu:
      id, label, title
      brief[]   — bloki narracji (verbatim z renderu; treść briefów bez przepisywania)
-     prop      — ramka „PROP AT THIS STAGE": what/from/where
-     puzzle    — null | { type:'symbol-sequence', prompt } — dane Z1 budowane per
-                 grupa w app.js (z1PuzzleFor)
+     prop      — (opcjonalne) ramka „PROP AT THIS STAGE": what/from/where
+     puzzle    — null
+                 | { type:'symbol-sequence', prompt }  (Z1; dane per grupa, z1PuzzleFor)
+                 | { type:'code', answer, heading, prompt, placeholder?, note?, errMsg? }
+                   (Z3; gracz wpisuje liczbę wyciągniętą od aktora — np. `30` od Albrechta)
+     success   — (opcjonalne) { seal?, title, text } — ekran po rozwiązaniu (override Z1)
+     fork      — (opcjonalne) { TR:<id|null>, KZ:<id|null> } — rozejście wg frakcji (Z2)
      next, terminal
    Player-facing = EN. Nazwy własne toruńskie w oryginale.
    ============================================================================ */
@@ -76,10 +82,68 @@ const STEPS = {
     },
 
     puzzle: null,
+    fork: { TR: 'z3', KZ: null },   // TR → infiltracja zamku (Z3); KZ → Z3Z (next phase)
+  },
+
+  /* --- Z3 — infiltracja zamku: zwiad u Albrechta + BRAMKA KODU (liczba załogi). ---
+     Kod = liczba obrońców wyciągnięta z komtura w rozmowie (aktor) = `30`
+     (historyczne ~30 braci; karta `materials/actors/albrecht-actor-card-draft.md §STEP 1B`).
+     Po wpisaniu apka odsłania rozkaz kradzieży (z3b = dawne K-Z3b). --- */
+  z3: {
+    id: 'z3',
+    label: 'Z3',
+    title: 'Before the castle walls',
+
+    brief: [
+      { reg: 'narration', html: 'You found him in the open, before the castle walls, exactly as Jordan said you would — the Komtur Albrecht, pacing as if the whole city were already his.' },
+      { reg: 'narration', html: 'You wore another face and played the eager informer, and his pride did the rest. He even drew out the Order’s own list of names — to “check” your tale against it — and let it fall, boasting, how few men it takes to hold a town of weavers and fishwives.' },
+      { reg: 'rule' },
+      { reg: 'head', html: 'One thing he let slip.' },
+      { reg: 'msg', html: 'He named the strength of the castle aloud — too proud to think it a secret. The Council needs that number before the night is out.' },
+    ],
+
+    puzzle: {
+      type: 'code',
+      answer: '30',
+      heading: 'The number he let slip',
+      prompt: 'How many men did the Komtur boast hold the castle? Enter the number he spoke.',
+      placeholder: 'a number',
+      note: 'It is a number he said out loud while boasting. Didn’t catch it? Go back and let his pride run on.',
+      errMsg: 'That is not what he said. Flatter him again — and this time, count.',
+    },
+
+    success: {
+      seal: '✔',
+      title: 'His pride betrays him',
+      text: 'The number is yours — and it is a small one. The Order’s wall is far thinner than its banners. Now you understand what you really saw at his side.',
+    },
+
+    next: 'z3b',
+  },
+
+  /* --- Z3b — rozkaz kradzieży (odsłaniany po kodzie 30). Treść = `envelopes/miasto-4-Z3b.md`.
+     Olśnienie „to była lista — ukradnij ją"; model patrolu na karcie Albrechta. --- */
+  z3b: {
+    id: 'z3b',
+    label: 'Z3',
+    title: 'So that is the list',
+
+    brief: [
+      { reg: 'narration', html: 'So that is the list.' },
+      { reg: 'narration', html: 'You saw it the moment he drew it out — that strip of parchment he keeps at his side, names inked down one beneath another. “The Order forgets nothing,” he said, almost laughing, holding it up like a man showing off his gold. He has no idea what he is showing you.' },
+      { reg: 'narration', html: 'Those are the names of the Secret Council — every soul the Order has bought out of your own walls, set down and marked. <em>That</em> is what you should have come here for. Not words. That.' },
+      { reg: 'narration', html: 'And now he has set it down — laid it on the ledge at his side and stepped off to walk his little circuit, pointing out his walls, gazing off to boast. He will not hand it over; but he does not truly guard it either. A man that proud never watches his own table. Each time his round carries him away and his back is to it, the parchment lies there with no eyes on it.' },
+      { reg: 'narration', html: 'You could take it. Only while he is turned — never while he is looking, or he will have you by the wrist, and then you are thieves caught at the Order’s own wall with no one to call. But on the turn, when he drifts off along his path…' },
+      { reg: 'narration', html: 'Watch him. He walks it the same way each time. Wait for the turn. Lift it clean. Then walk — do not run, not until you must.' },
+      { reg: 'narration', html: 'Carry those names away with you. Everything after tonight turns on them.' },
+      { reg: 'rule' },
+      { reg: 'msg', html: '<strong>↪ To the Game Master:</strong> once the list is in your hands, bring it to the Game Master at the Rynek Staromiejski (the Old Town market square). What comes next is waiting there.' },
+    ],
+
+    puzzle: null,
     next: null,
-    terminal: true,
   },
 
 };
 
-const STEP_ORDER = ['z1', 'z2'];
+const STEP_ORDER = ['z1', 'z2', 'z3', 'z3b'];

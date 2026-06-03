@@ -75,14 +75,19 @@ function showStage(id) {
   s.appendChild(groupChip(group));
   s.appendChild(el('span', 'stage-tag', step.label));
   s.appendChild(el('h2', 'stage-title', step.title));
-  s.appendChild(propFrame(step.prop));
+  if (step.prop) s.appendChild(propFrame(step.prop));
   s.appendChild(briefBody(step.brief));
 
-  if (step.puzzle && step.puzzle.type === 'symbol-sequence' && !isSolved(id)) {
-    const data = z1PuzzleFor(group);
-    s.appendChild(symbolPuzzle(step, data));
+  if (step.puzzle && !isSolved(id)) {
+    if (step.puzzle.type === 'symbol-sequence') {
+      s.appendChild(symbolPuzzle(step, z1PuzzleFor(group)));
+    } else if (step.puzzle.type === 'code') {
+      s.appendChild(codePuzzle(step));
+    }
   } else if (step.puzzle && isSolved(id)) {
     s.appendChild(clearedPanel(step));
+  } else if (step.fork) {
+    s.appendChild(forkPanel(step, group));
   } else if (step.terminal) {
     s.appendChild(terminalPanel(step, group));
   }
@@ -189,15 +194,58 @@ function symbolPuzzle(step, data) {
   return wrap;
 }
 
+/* ===================== BRAMKA: kod liczbowy (liczba wyciągnięta od aktora) ===================== */
+function codePuzzle(step) {
+  const p = step.puzzle;
+  const wrap = el('div', 'solve');
+  wrap.innerHTML = `<hr class="rule"><h3>${p.heading || 'Enter the code'}</h3><p class="msg">${p.prompt}</p>`;
+
+  const input = el('input', 'code-input');
+  input.type = 'text';
+  input.setAttribute('inputmode', 'numeric');
+  input.setAttribute('autocomplete', 'off');
+  input.setAttribute('aria-label', p.heading || 'code');
+  if (p.placeholder) input.placeholder = p.placeholder;
+  wrap.appendChild(input);
+
+  const go = el('button', 'btn', 'Confirm');
+  go.id = 'codego'; go.disabled = true;
+  wrap.appendChild(go);
+
+  const fb = el('p', 'feedback'); wrap.appendChild(fb);
+  if (p.note) wrap.appendChild(el('p', 'demo-note', p.note));
+
+  const norm = (v) => String(v == null ? '' : v).trim().replace(/\s+/g, '').toLowerCase();
+  function refresh() {
+    go.disabled = norm(input.value).length === 0;
+    fb.textContent = ''; fb.className = 'feedback';
+  }
+  input.addEventListener('input', refresh);
+  input.addEventListener('keydown', (e) => { if (e.key === 'Enter' && !go.disabled) { e.preventDefault(); go.click(); } });
+  go.onclick = () => {
+    if (norm(input.value) === norm(p.answer)) {
+      setSt({ solved: { [step.id]: true } });
+      showSuccess(step);
+    } else {
+      fb.textContent = p.errMsg || 'That is not the number. Try again.';
+      fb.className = 'feedback err';
+    }
+  };
+
+  refresh();
+  return wrap;
+}
+
 /* ===================== EKRAN: SUKCES ===================== */
 function showSuccess(step) {
   const next = step.next ? STEPS[step.next] : null;
+  const sc = step.success || { seal: '✔', title: 'The chain holds', text: 'You named your four marks in order. Your contact awaits.' };
   clear();
   const d = el('section', 'screen done');
   d.innerHTML = `
-    <div class="seal">✔</div>
-    <h2>The chain holds</h2>
-    <p class="narration">You named your four marks in order. Your contact awaits.</p>
+    <div class="seal">${sc.seal || '✔'}</div>
+    <h2>${sc.title}</h2>
+    <p class="narration">${sc.text}</p>
     ${next ? `<button id="cont" class="btn">Continue to ${next.label} →</button>` : ''}`;
   APP.appendChild(d);
   if (next) d.querySelector('#cont').onclick = () => showStage(next.id);
@@ -219,6 +267,24 @@ function terminalPanel(step, group) {
     <p class="msg">From here your road runs with the <strong>${fac}</strong>.</p>
     <p class="msg">This is the boundary of the proof-of-concept — the full Z2 puzzle and the
     rest of your group’s flow are the next phase.</p>`);
+}
+
+/* rozejście wg frakcji (Z2): TR → dalej (Z3); KZ → granica POC (Z3Z = next phase) */
+function forkPanel(step, group) {
+  const fac = GROUP_META[group].faction;
+  const nextId = step.fork ? step.fork[fac] : null;
+  const d = el('div', 'done');
+  if (nextId && STEPS[nextId]) {
+    d.innerHTML = `<hr class="rule"><p class="msg">From here your road runs with the <strong>${factionName(fac)}</strong>.</p>`;
+    const b = el('button', 'btn', `Continue to ${STEPS[nextId].label} →`);
+    b.onclick = () => showStage(nextId);
+    d.appendChild(b);
+  } else {
+    d.innerHTML = `<hr class="rule">
+      <p class="msg">From here your road runs with the <strong>${factionName(fac)}</strong>.</p>
+      <p class="msg">This is the boundary of the proof-of-concept — the rest of your group’s flow is the next phase.</p>`;
+  }
+  return d;
 }
 
 /* ===================== START ===================== */

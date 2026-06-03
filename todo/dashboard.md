@@ -48,7 +48,7 @@
 ✅ poz.1 Z1 — startowa ......... draft gotowy (groźba „ucięcia rąk" + segment Z1)        [envelopes/wspolne-1-Z1.md]
 ✅ poz.2 Z2 — po Z1 ........... draft gotowy (Z2 Einsteina: Jordan/Piccolo/miecz; zakup-parol=miecz [06-02]; plotki Puli A; slip R.)  [envelopes/miasto-2-Z2.md]
 ✅ poz.3 Z3 — od Jordana ...... draft gotowy (brief F2B + Z3 zwiad) + BRAMA LICZBOWA: zwiad = wyciągnąć liczbę załogi "30" → gracz wpisuje do APKI (Z3b odsłania apka, nie koperta) [2026-06-03]  [envelopes/miasto-3-Z3.md]
-🟡 poz.4 Z3b — kradzież ....... treść gotowa, ale NOŚNIK ZMIENIONY [2026-06-03]: nie koperta — brief APKI po kodzie "30" (do zbudowania w app/, #77)  [envelopes/miasto-4-Z3b.md]
+✅ poz.4 Z3b — kradzież ....... NOŚNIK = APKA [2026-06-03]: nie koperta — brief apki po kodzie "30"; etap z3/z3b ZBUDOWANY w app/ (test headless OK, #77)  [envelopes/miasto-4-Z3b.md · app/steps.js]
 🟡 poz.5 Z4 — melodia/kalimba . draft v2 (SCENA: martwy flisak=R. nad Wisłą, melodia=kod; instrument zatwierdzony) + doubt-beat/rozterka [2026-06-03]  [envelopes/miasto-5-Z4.md]
 ✅ 06a Z7 finałowy szyfr ...... szyfrogram + rama narracyjna v2 + ramka MG; wyrenderowany + stempel  [materials/props/z7-szyfrogram-draft.md · src/miasto-06a-Z7-list.html]
 🟡 poz.6 Z7 — finał .......... draft gotowy (Przedzamcze, ósme bicie, list nieotwarty, maski spadają) + przejście do Albrechta KUSZĄCE [2026-06-03]: kotwica spotkania (Z3) + kuszenie racją + beat motta (Oskar, „jak")  [envelopes/miasto-6-Z7.md]
