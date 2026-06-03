@@ -1,6 +1,6 @@
 # Zagadka herbów hanzeatyckich — Z6
 
-**Status**: **mechanika ROZSTRZYGNIĘTA [2026-06-03] — autorstwa Piotra** (dopasowanie herbów nadawca↔odbiorca + dedukcja „kto nie dotarł"; zastępuje wcześniejszą „znajdź 3 z 8 obecnych in loco"). Koperta gracza wyrenderowana tekstowo → `envelopes/miasto-5-Z6.md` (draft EN). **Lokalizacja + lista miast zweryfikowane researchem [2026-06-02]** — patrz §Research lokalizacji. **Zostaje:** (a) **Piotr potwierdza klucz** — które miasto pruskie = „nie dotarło" (patrz §Klucz MG); (b) spot-check herbów in loco; (c) decyzja Z6↔Z10 kolizja przestrzenna.
+**Status**: **mechanika + klucz ROZSTRZYGNIĘTE [2026-06-03]** (mechanika Piotra: dopasowanie herbów nadawca↔odbiorca + dedukcja „kto nie dotarł"; **odpowiedź = Chełmno**). Koperta gracza → `envelopes/miasto-5-Z6.md` (draft EN, nazwy z bruku). **Lokalizacja + lista miast zweryfikowane researchem [2026-06-02]** — patrz §Research lokalizacji. **Zostaje:** (a) review Oskara koperty; (b) spot-check herbów in loco (czytelność tarcz); (c) decyzja Z6↔Z10 kolizja przestrzenna; (d) karta-rekwizyt do produkcji.
 
 ## Numeracja: **Z6** (tor mieszczan, opcjonalna, 2 grupy)
 
@@ -52,13 +52,13 @@
 
 > **Trudność celowo niska** (życzenie Piotra). Brief modeluje zadanie jednym gotowym dopasowaniem (Toruń↔Hamburg, patrz §Klucz), żeby gracz złapał regułę; reszta to kilka kroków po bruku.
 
-## Klucz MG — ⚠ PIOTR POTWIERDZA
+## Klucz MG — ✅ ROZSTRZYGNIĘTY
 
-> **Agent NIE rekonstruuje pełnego klucza z pamięci** (ryzyko cichego błędu w herbach → zepsuta zagadka). Klucz zna **Piotr** (autor mechaniki). Poniżej tylko to, co pewne + struktura do potwierdzenia.
+> **Odpowiedź = CHEŁMNO** [Oskar/Piotr, 2026-06-03]. Poselstwo z **Chełmna** nie dotarło — herb Chełmna nie przypomina żadnego z {Hamburg, Kolonia, Lubeka}.
 
-- **Pewne (podręcznikowe podobieństwo): Toruń ↔ Hamburg** — oba to **biały/czerwony zamek z trzema wieżami** (Toruń: czerwona brama z 3 wieżami na srebrze; Hamburg: biały zamek z 3 wieżami na czerwieni). Użyte jako przykład w briefie.
-- **Struktura klucza (z tekstu Piotra, weryfikowalna):** 1 nadawca→Hamburg, 1→Kolonia, 2→Lubeka, **1 bez pary = odpowiedź**.
-- **Do potwierdzenia przez Piotra:** które miasto pruskie paruje z Kolonią, które dwa z Lubeką → i tym samym **które jest „nie dotarło"**. (Hipotezy heraldyczne agenta — np. korona Kolonii ↔ Królewiec/Gdańsk, czerwono-białe krzyże ↔ Lubeka — celowo **nie** zapisuję jako klucza, bo zależą od faktycznych tarcz w bruku.)
+- **Klucz dla MG:** grupa raportuje miasto-nadawcę bez pary. **Poprawna odpowiedź = Chełmno.** MG zalicza tylko „Chełmno".
+- **Struktura parowań:** Toruń↔Hamburg (zamek z 3 wieżami — pewne, użyte w briefie jako przykład); pozostała trójka {Gdańsk, Królewiec, Elbląg} paruje z {Kolonia, Lubeka, Lubeka}; **Chełmno bez pary = odpowiedź**.
+- **Do hintów (opcjonalnie):** dokładne przypisanie Gdańsk/Królewiec/Elbląg → Kolonia/Lubeka×2 zna Piotr; do grania nie jest potrzebne (MG sprawdza tylko końcową odpowiedź = Chełmno). Jeśli MG chce drabinkę hintów, dopytać Piotra o pełne parowania.
 - Klucz NIE trafia na egzemplarz gracza; mieszka tu + do osadzenia w `mg-*-klucz` przy renderze rekwizytów.
 
 ## Uzasadnienie fabularne [wdrożone w `miasto-5-Z6.md`]
@@ -85,7 +85,7 @@
 
 ## Otwarte pytania
 
-1. ⚠ **Klucz: które miasto „nie dotarło"?** — **PIOTR POTWIERDZA** (patrz §Klucz MG). Główne otwarte pytanie Z6.
+1. ✅ **Klucz: które miasto „nie dotarło"?** — ROZSTRZYGNIĘTE [Oskar/Piotr 2026-06-03]: **Chełmno** (patrz §Klucz MG).
 2. ✅ **Który odcinek?** — ROZSTRZYGNIĘTE: **Szeroka** (wymuszone doborem miast; wszystkie 8 są w bruku Szerokiej).
 3. ✅ **Które herby faktycznie są?** — ustalone researchem (lista 22 Szeroka w §Research); zostaje spot-check (ubytki płyt, czytelność).
 4. **Karta** — same nazwy czy rysunki herbów? Rysunki autentyczniejsze (i pomagają parować), ale wymagają nakładu graficznego.
