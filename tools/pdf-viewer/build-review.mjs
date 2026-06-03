@@ -137,6 +137,16 @@ const INTRO_HTML = `
 <h2>Jak zreviewować</h2>
 <p>Wybierz grupę chipem (zacznij od G1=Czerwony = prototypowa ścieżka TR). Przejdź etapy 0–7. Per etap: PDF-y otwierają się w nowej karcie. Zaznacz checkbox po review etapu. Uwagi zapisuj osobno i prześlij Oskarowi.</p>
 <p>⚠ KZ (G6–G10): wiele plików brakuje (szare kafle „do wygenerowania") — tor KZ jest częściowo szkieletem.</p>
+
+<h2>🖨 Druk: kolor czy B&W?</h2>
+<p>Per każdy materiał zaznacz w uwagach: <strong>kolor</strong> (wyraźnie zyska) / <strong>B&W</strong> (wystarczy) / <strong>nie wiem</strong>. Sugestia startowa — oceń czy się zgadzasz:</p>
+<ul>
+  <li><strong>List z pieczęcią (E0)</strong> — proponuję <em>kolor</em>: pieczęć lakowa + stylistyka manuskryptu, gracze noszą go przez całą grę.</li>
+  <li><strong>Mapa Z1</strong> — glify monochromatyczne, ale kolor grupy na deszyfrownik-u ułatwia identyfikację.</li>
+  <li><strong>Koperty / pergamin Z3</strong> — oceń czy ciepły ton grafiki wymaga koloru czy B&W działa równie dobrze.</li>
+  <li><strong>Szyfrogram Z7 / tabele Z11</strong> — prawdopodobnie B&W, ale oceń kontrast typograficzny.</li>
+</ul>
+<p><em>Zasada kciuka:</em> jeśli gracz trzyma materiał w ręku dłużej niż ~10 sekund → rozważ kolor.</p>
 `;
 
 // 6. Generuj HTML
