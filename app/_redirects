@@ -1,0 +1,2 @@
+# SPA fallback — każda ścieżka (/z1, /z2, …) serwuje index.html (routing kliencki).
+/*    /index.html    200

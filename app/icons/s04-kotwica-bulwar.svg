@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Kotwica — Bulwar Filadelfijski">
+  <title>Kotwica (Bulwar Filadelfijski)</title>
+  <!-- ucho -->
+  <circle cx="32" cy="11" r="4" fill="none" stroke="#6e4824" stroke-width="3"/>
+  <!-- trzon -->
+  <line x1="32" y1="15" x2="32" y2="52" stroke="#6e4824" stroke-width="3" stroke-linecap="round"/>
+  <!-- poprzeczka -->
+  <line x1="22" y1="22" x2="42" y2="22" stroke="#6e4824" stroke-width="3" stroke-linecap="round"/>
+  <!-- ramiona -->
+  <path d="M32 52 Q18 50 14 38" fill="none" stroke="#6e4824" stroke-width="3" stroke-linecap="round"/>
+  <path d="M32 52 Q46 50 50 38" fill="none" stroke="#6e4824" stroke-width="3" stroke-linecap="round"/>
+  <!-- groty -->
+  <path d="M14 38 L9 40 L15 45 Z" fill="#a86c38" stroke="#6e4824" stroke-width="2.2" stroke-linejoin="round"/>
+  <path d="M50 38 L55 40 L49 45 Z" fill="#a86c38" stroke="#6e4824" stroke-width="2.2" stroke-linejoin="round"/>
+</svg>
