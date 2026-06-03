@@ -60,7 +60,7 @@
                                 Lico (adres EN) + pieczęć lakowa; faction-neutral. Warianty backup zostają: prototype/sealed-letter/ (v2-sigil/v3-redirected).
                                 Regen: render.ps1 -Publish v1
 🟡 Wiadomość pośrednika ....... jest w drafcie poz.2 Z2 (slip „— R.") — do wydzielenia  [envelopes/miasto-2-Z2.md]
-🟡 Mapa Torunia z glifami ..... mock funkcjonalny istnieje                              [prototype/mapa-z1-podglad.html]
+🟡 Mapa Torunia z glifami ..... HTML istnieje w tools/map-gen/map.html; ⚠ BRAK PDF w public/ — render-map.ps1 do odpalenia; brakuje POI KZ (Biedronka Z10 + Aleja Herbów Z6) w map-data.js
 ✅ Deszyfrownik (karty) ....... generator tools/z1-decoder/ (derywuje z Z1_GROUPS); 10 PDF public/decoders/ per kolor grupy; walidacja PASS  [tools/z1-decoder/README.md]
 🟡 Pergamin z listą nazwisk TR  research gotowy + draft (EN); klucz=Decyzja#1  [materials/props/pergamin-lista-tr-draft.md · puzzles/z3-lista-tr-spec.md]
 ✅ Zapis melodii Z4 + pręciki . nagranie gotowe; pręciki oznaczone liczbowo (C:1, D:2, …); kod 621454
@@ -151,20 +151,24 @@ Szczegóły: mechanics/koperty-mg.md §ZAŁOŻENIA PRZED RENDEREM · prototype/p
 
 ### 🟦 Drugi tor (krzyżacki) — lustro
 
-> ⚠ **ŚCIEŻKA KRYTYCZNA TREŚCI MVP.** Tor KZ istnieje dziś tylko jako **meta-kartki** (`lore/meta-kartki/krzyzacy-*`) i wyrenderowane tabele Z11 + koperta/PDF Z9. **Brak kopert gracza:** Z3Z, Z8, Z10, Z11-list, K2-K, KF-KZ. To największa pojedyncza luka treści — mechanika = Oskar, draft koperty = agent po decyzji.
+> **STAN [2026-06-03]:** Treść kopert KZ ISTNIEJE — wszystkie drafty napisane. **Realna luka = brak renderów HTML → PDF** (5 kopert bez pliku HTML w `prototype/print/src/`). Kolejność: review Oskara → HTML → render → public/.
 
 ```
-🟡 K2-K (wersja krzyżacka) ...... draft v2 [2026-06-03]: rama (N. + Pula B) + zagadka Z2 (propozycja, routing A rozstrzygnięty; logika jednoznaczna; parol „Komtur's seal"). Cel Albrecht JAWNY (twist=BRAK). Zostaje: review Oskara (zatwierdź/podmień zagadkę+parol) + glify ⟨mark⟩ (mapa)  [envelopes/krzyzacy-2-Z2.md]
-🟡 Skrypt Albrechta (Zosia) F2A . handler KZ DOPISANY [2026-06-03] jako PART TWO karty: weryfikacja (kolor+parol⟨TBD⟩) + duma/żądanie dowodu + zadanie Z3Z (obserwuj Jordana: szata+chochla) + wręczenie K3-K + Tabeli 1; NIE bierze listu (finał). Dwurolowość Zosi (TR cel / KZ handler) oflagowana  [materials/actors/albrecht-actor-card-draft.md PART TWO]
-🟡 Z3Z — infiltracja Piccolo .... koperta gracza draft v2 [2026-06-03]: GŁÓWNE=obserwacja (kolor szaty+chochla→klucz Z11), cover=UDAWANIE TR (Jordan karmi „swoich" → wręcza kupon = łup; fabuła oblężenia), godzina 20:30=ambient (od Albrechta). Plotki B7/B8/B9 wplecione. Jednokopertowe (rozkaz Albrechta „— A."); Jordan gra nabranego (skrypt PART TWO). Zostaje: review + realizacja kuponu (ops)  [envelopes/krzyzacy-3-Z3Z.md]
-🟡 Z8 — melodia zakonu .......... koperta gracza draft v2 [2026-06-03]: lustro Z4 (kalimba, kod 621454), klimat zakonny + zapomniany brat; TONE FLAG ROZSTRZYGNIĘTY ku krytyce Zakonu + doubt-beat (Pula B) [Oskar]  [envelopes/krzyzacy-4-Z8.md]. Zostaje: review Oskara + klucz finału Z11
-🟡 Z9 — sensoryczna piernik ..... lustro Z5; brief v3 [2026-06-03]: DWA KANAŁY krytyki Zakonu (podsłuch Pula B + rozterka kuriera; kucharz nadal dumny); rekwizyty wyrenderowane [2026-06-02] (public/krzyzacy-4-Z9.pdf + z5z9-* + mg-Z5Z9-klucz). ⚠ tekst zmieniony po renderze → re-render po review. Zostaje: review Oskara + klucz finału (#9)
-🟡 Z10 — polichromie Biedronka .. koperta gracza draft [2026-06-03]: leaf 8 bestii A–H, klucz A/B/E, lustro Z6; kanał A (Pula B B7/B9/B2) + doubt-beat; karta-rekwizyt = krzyzacy-4-Z10-bestiariusz.jpeg  [envelopes/krzyzacy-4-Z10.md]. Zostaje: review Oskara + spot-check A/B/E in loco + render per grupa (brązowy/czarny) + klucz MG + klucz finału Z11
-🟡 Z11 — finał krzyżaków ........ mechanika dwóch tabel [2026-06-02]: symbol-klucz (kolor szaty×chochla) → tabula recta → parol; spec+dane gotowe  [puzzles/z11-szyfr-spec.md]
-✅ Tabela 1 (lookup) KZ ......... 4×4 wyrenderowana (kolory EN × rysunki: piernik/miecz/chochla/świeca → gmerki; klucz centralny)  [public/z11-tabela-1-symbole.pdf · tools/z11-cipher/]
-✅ Tabela 2 (tabula recta) KZ ... 16 wierszy × A–Z wyrenderowana (A4 landscape; klucz=MARIENBURG; walidacja PASS)  [public/z11-tabela-2-tabula-recta.pdf]
-   ⬜ Otwarte do Z11: parol finalny · styl symboli (gmerki robocze) · gdzie wydać Tabelę 2 (spec §8)
-⬜ KF — wariant krzyżacki ....... dostawa listu stronie Zakonu
+🟡 K2-K (wersja krzyżacka) ...... draft v2 [2026-06-03]: rama (N. + Pula B) + zagadka Z2 (routing A; parol „Komtur's seal"). Cel Albrecht JAWNY. Zostaje: review Oskara + glify ⟨mark⟩ + HTML render  [envelopes/krzyzacy-2-Z2.md]
+                                 ⚠ BRAK HTML → BRAK PDF (5 kolorów KZ do wyrenderowania)
+🟡 Skrypt Albrechta (Zosia) F2A . handler KZ DOPISANY [2026-06-03] jako PART TWO karty  [materials/actors/albrecht-actor-card-draft.md PART TWO]
+🟡 Z3Z — infiltracja Piccolo .... draft v2 [2026-06-03]: obserwacja (kolor+chochla→Z11), cover=udawanie TR, kupon, plotki B7/B8/B9. Jednokopertowe. Zostaje: review Oskara + HTML render  [envelopes/krzyzacy-3-Z3Z.md]
+                                 ⚠ BRAK HTML → BRAK PDF (5 kolorów KZ do wyrenderowania)
+🟡 Z8 — melodia zakonu .......... draft v2 [2026-06-03]: kalimba, kod 621454, klimat zakonny + doubt-beat. Zostaje: review Oskara + HTML render  [envelopes/krzyzacy-4-Z8.md]
+                                 ⚠ BRAK HTML → BRAK PDF (G6 niebieski + G7 fioletowy)
+🟡 Z9 — sensoryczna piernik ..... brief v3 [2026-06-03]: dwa kanały krytyki Zakonu; rekwizyty wyrenderowane [2026-06-02] (public/krzyzacy-bialy-4-Z9.pdf + z5z9-* + mg-Z5Z9-klucz). ⚠ tekst zmieniony po renderze → re-render po review. Zostaje: review Oskara  [envelopes/krzyzacy-4-Z9.md]
+🟡 Z10 — polichromie Biedronka .. draft v1 [2026-06-03]: leaf 8 bestii A–H, klucz A/B/E; doubt-beat. Zostaje: review Oskara + spot-check A/B/E in loco + HTML render  [envelopes/krzyzacy-4-Z10.md]
+                                 ⚠ BRAK HTML → BRAK PDF (G9 brązowy + G10 czarny)
+🟡 Z11 — finał krzyżaków ........ koperta gracza draft [2026-06-03]: brama = motto Zakonu (odszyfrowane przez tabelę 1 + tabula recta), wolny wybór dostawy, BRAK twistu. Zostaje: review Oskara + HTML render  [envelopes/krzyzacy-5-Z11.md]
+                                 ⚠ BRAK HTML → BRAK PDF (5 kolorów KZ do wyrenderowania)
+✅ Tabela 1 (lookup) KZ ......... wyrenderowana × 5 kolorów KZ  [public/krzyzacy-*-5-Z11-tabela-symbole.pdf · tools/z11-cipher/]
+✅ Tabela 2 (tabula recta) KZ ... wyrenderowana × 5 kolorów KZ  [public/krzyzacy-*-5-Z11-tabela-recta.pdf]
+   ⬜ Otwarte do Z11: styl symboli (gmerki robocze) · dystrybucja Tabeli 2 (spec §8)
 ```
 
 ### 🟩 Pozostałe opcjonalne TR
@@ -190,7 +194,7 @@ Szczegóły: mechanics/koperty-mg.md §ZAŁOŻENIA PRZED RENDEREM · prototype/p
                                  (piernik) = rekwizyt wydawany przez MG, bez POI. [poboczne TR: Aleja Herbów (ul. Szeroka)
                                  dla Z6 też brak na mapie]. Edycja: tools/map-gen/map-data.js
 ⬜ Tabele przydziału zestawów ... A/B/C × 2 tory (patrz concept/03 — model 5+5)
-⬜ Mechanika klucza 2B→finał .... dla wszystkich par zagadek (wymienialność 1:1)
+✅ Mechanika klucza 2B→finał .... ROZSTRZYGNIĘTE [2026-06-03, Oskar]: odpowiedź do MG → koperta finałowa; wymienialność 1:1 (#27b)
 ```
 
 ### 🟧 Produkcja ilościowa
@@ -254,13 +258,18 @@ WCIĄŻ OTWARTE (nieblokujące):
 
 ```
 PROTOTYP   ████████████████████  ZAMKNIĘTY [2026-06-02] — wszystko wyrenderowane; review przesunięty do MVP (decyzja Oskara)
-MVP        ██░░░░░░░░░░░░░░░░░░  ~10%   (architektura ustalona; produkcja, drugi tor, skalowanie przed nami; Z1 terrain R3 czeka)
+MVP treść  ████████████████░░░░  ~80%   (wszystkie koperty TR + KZ mają drafty; brak review KZ + Z6)
+MVP rendery████████░░░░░░░░░░░░  ~40%   (TR prawie pełne; KZ: 5 kopert bez HTML → bez PDF; mapa brak PDF)
+MVP całość █████░░░░░░░░░░░░░░░  ~25%   (review + rendery + ops-skalowanie + produkcja przed nami)
 ```
+
+> **Wąskie gardło [2026-06-03]:** nie treść, a **rendery** — 5 plików HTML (K2-K, Z3Z, Z8, Z10, Z11 KZ) + mapa PDF + Z6 HTML do zbudowania po review Oskara.
 
 ## 🎯 Następny krok krytyczny
 
 ```
-✅ MVP Phase A — 4 strategiczne pytania ROZSTRZYGNIĘTE [2026-06-03] (data=dziś, mapa+szyfrownik, brak dostawy, budżet)
-► MVP Phase B — treści tor krzyżacki (Z3Z, Z8–Z11) + opcjonalne zagadki TR (Z5, Z6)
-► MVP (równolegle) — review stosu (koperty + skrypty) → `todo/review-piotr.md` przekazane Piotrowi
+✅ MVP Phase A — decyzje strategiczne ROZSTRZYGNIĘTE [2026-06-03]
+✅ MVP Phase B — treść tor KZ + opcjonalne TR — NAPISANE [2026-06-03] (czeka na review Oskara)
+► MVP Phase C — review Oskara → 5 HTML-renderów KZ + mapa PDF + Z6 HTML → public/
+► MVP (równolegle) — ops-skalowanie (runsheet/tracking na oba tory + 10 grup) + scenka finałowa (Oskar)
 ```
