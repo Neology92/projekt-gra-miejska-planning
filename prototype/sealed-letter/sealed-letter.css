@@ -1,0 +1,143 @@
+/* sealed-letter.css — the SEALED DISPATCH the couriers carry (contents of envelope K1, "forbidden to read").
+   This is the physical letter-prop carried the whole game — NOT the K1 instruction note (that is public/wspolne-1-Z1.pdf).
+
+   CANON — faction-neutral by design (concept/01-faza-1-kurierzy: in Phase 1 nobody yet knows there are two
+   classes). The letter is deliberately IDENTICAL for all 10 groups and must leak NO faction tell:
+     · seal device = an unknown house-mark (a "gmerk"), NOT a coat of arms, NOT the Order's cross, NOT a crown/eagle;
+     · city named "Toruń" (the K1 spelling), never the German "Thorn";
+     · the bleed-through behind the address is illegible — no words that could code a side.
+   Player-facing → English exterior (the CONTENTS stay sealed; a sealed letter still has a readable address face).
+
+   FORMAT — A6 cards, 4-up on A4, ALL CELLS IDENTICAL. Two consequences:
+     1. duplex-print-safe: because every cell is the same, the back sheet needs NO mirror math — any back cell
+        aligns with any front cell whatever way the printer flips (long-/short-edge). Centre the seal + keep
+        critical marks off the mid-lines so a few-mm duplex drift never clips them.
+     2. it is also the canon: one identical letter for all 10 groups.
+   Print the 2-page PDF (page 1 = address faces, page 2 = seals) DUPLEX → 1 sheet = 4 letters. 3 sheets → 12 → cut 10.
+
+   Wax tone is swapped per version by a .wax-* class on <html>. Built to be cut, and optionally folded once. */
+
+/* ===================== Font (shared with the manuscript props) ===================== */
+@font-face{font-family:"IM Fell English";font-style:normal;font-weight:400;font-display:swap;src:url(../print/src/fonts/IMFellEnglish-Regular.woff2) format("woff2");}
+@font-face{font-family:"IM Fell English";font-style:italic;font-weight:400;font-display:swap;src:url(../print/src/fonts/IMFellEnglish-Italic.woff2) format("woff2");}
+
+:root{
+  --ink:#1b1208;
+  --ink-soft:#443322;
+  --prose:"IM Fell English", Georgia, serif;
+  --parch:#efe6d0;
+
+  /* wax palette (default = oxblood; overridden by .wax-* on <html>) */
+  --wax-hi:#c4583f;   /* lit upper-left of the dome */
+  --wax-mid:#94291d;  /* body */
+  --wax-lo:#5e150c;   /* lower/edge */
+  --wax-edge:#3a0c06; /* outermost rim shadow */
+  --wax-deep:#280803; /* device shadow bevel */
+
+  /* textures (grayscale, tiling) — reused verbatim from print/src/parchment.css (proven seamless) */
+  --tex-grain:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)' opacity='0.05'/%3E%3C/svg%3E");
+  --tex-fiber:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='f' x='0' y='0' width='300' height='300' filterUnits='userSpaceOnUse'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.010 0.050' numOctaves='3' seed='7' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23f)' opacity='0.09'/%3E%3C/svg%3E");
+  --tex-relief:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='r' x='0' y='0' width='300' height='300' filterUnits='userSpaceOnUse'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.05' numOctaves='3' seed='7' stitchTiles='stitch' result='n'/%3E%3CfeDiffuseLighting in='n' surfaceScale='2.6' diffuseConstant='1.05' lighting-color='%23ffffff' result='l'%3E%3CfeDistantLight azimuth='235' elevation='58'/%3E%3C/feDiffuseLighting%3E%3CfeColorMatrix in='l' type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23r)' opacity='0.16'/%3E%3C/svg%3E");
+
+  /* a single irregular penned stroke (used for the divider rule + the illegible bleed-through) */
+  --pen-rule:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 8' preserveAspectRatio='none'%3E%3Cpath d='M2,4.4 C45,3.2 80,5.4 118,4.2 C150,3.2 175,5 198,4.1' fill='none' stroke='%2316110c' stroke-width='1.3' stroke-linecap='round'/%3E%3C/svg%3E");
+}
+
+/* wax palettes per version (kept distinct but all plainly "sealing wax", no faction colour coding) */
+.wax-oxblood  { --wax-hi:#c4583f; --wax-mid:#94291d; --wax-lo:#5e150c; --wax-edge:#3a0c06; --wax-deep:#280803; }
+.wax-crimson  { --wax-hi:#a23a40; --wax-mid:#6f1d25; --wax-lo:#410e15; --wax-edge:#26070d; --wax-deep:#180509; }
+.wax-vermilion{ --wax-hi:#d06845; --wax-mid:#a8341d; --wax-lo:#6c1a0b; --wax-edge:#431005; --wax-deep:#2e0a03; }
+
+/* ===================== Page + sheet grid ===================== */
+@page{ size:A4; margin:0; }
+*{ box-sizing:border-box; }
+html,body{ margin:0; }
+body{
+  background:#fff; color:var(--ink); font-family:var(--prose);
+  -webkit-print-color-adjust:exact; print-color-adjust:exact;
+}
+
+.sheet{
+  position:relative;
+  width:210mm; height:297mm;
+  display:grid;
+  grid-template-columns:105mm 105mm;
+  grid-template-rows:148.5mm 148.5mm;
+  overflow:hidden;
+  page-break-after:always;
+}
+.sheet:last-child{ page-break-after:auto; }
+
+/* faint cut guides on the four mid-lines (cards butt edge-to-edge → one straight cut each way yields 4) */
+.cuts{ position:absolute; inset:0; z-index:6; pointer-events:none; }
+.cut-v{ position:absolute; top:0; bottom:0; left:50%; width:0; border-left:.25mm dashed rgba(40,30,15,.30); }
+.cut-h{ position:absolute; left:0; right:0; top:50%; height:0; border-top:.25mm dashed rgba(40,30,15,.30); }
+
+/* ===================== Card ===================== */
+.card{
+  position:relative; overflow:hidden;
+  width:105mm; height:148.5mm;
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  text-align:center;
+}
+/* parchment fill (per card so each is independent) */
+.card::before{
+  content:''; position:absolute; inset:0; z-index:0;
+  background-color:var(--parch);
+  background-image:
+    radial-gradient(122% 118% at 50% 45%, transparent 50%, rgba(74,58,34,.13) 85%, rgba(58,44,26,.23) 100%),
+    var(--tex-relief), var(--tex-fiber), var(--tex-grain);
+  background-repeat:no-repeat, repeat, repeat, repeat;
+  background-size:auto, 300px 300px, 300px 300px, 160px 160px;
+  background-blend-mode:normal, multiply, normal, normal;
+}
+
+/* fold creases — present on BOTH sides so the flat card reads as a once-folded packet
+   (vertical centre crease + two horizontal "letter-fold" thirds; each = a thin shadow + a hair of highlight). */
+.creases{
+  position:absolute; inset:0; z-index:1; pointer-events:none;
+  background-image:
+    linear-gradient(90deg, transparent calc(50% - .9mm), rgba(38,24,10,.17) 50%, rgba(255,250,238,.38) calc(50% + .45mm), transparent calc(50% + 1.4mm)),
+    linear-gradient(0deg,  transparent calc(33.333% - .9mm), rgba(38,24,10,.14) 33.333%, rgba(255,250,238,.30) calc(33.333% + .45mm), transparent calc(33.333% + 1.4mm)),
+    linear-gradient(0deg,  transparent calc(66.666% - .9mm), rgba(38,24,10,.14) 66.666%, rgba(255,250,238,.30) calc(66.666% + .45mm), transparent calc(66.666% + 1.4mm));
+  background-repeat:no-repeat;
+}
+.creases.strong{ opacity:1; }
+.card.front .creases{ opacity:.55; }  /* address face = subtler creases (text sits on top) */
+
+/* illegible writing bleeding through from the sealed inside (decorative, wordless → no faction tell) */
+.bleed{
+  position:absolute; inset:20mm 16mm 22mm; z-index:1; opacity:.07; pointer-events:none;
+  background:var(--pen-rule); background-repeat:repeat-y; background-size:100% 5.4mm;
+  transform:rotate(-.4deg);
+}
+
+/* ===================== Front: the address face ===================== */
+.face{ position:relative; z-index:3; width:100%; padding:0 13mm; display:flex; flex-direction:column; align-items:center; }
+.urgency{ font-variant:small-caps; letter-spacing:.24em; font-size:10.5pt; color:var(--ink-soft); }
+.pen{ width:42%; height:7px; margin:2.6mm auto 0; background:var(--pen-rule) center/100% 7px no-repeat; opacity:.65; }
+
+.addr{ margin-top:6.5mm; }
+.addr-label{ font-variant:small-caps; letter-spacing:.2em; font-size:9.5pt; color:var(--ink-soft); }
+.addr-sigil{ width:16mm; height:auto; display:block; margin:1.8mm auto 0; }
+.scribble{ width:46mm; height:auto; display:block; margin:1.2mm auto .5mm; }
+.redirect{ font-style:italic; font-size:10.5pt; color:var(--ink-soft); }
+
+.endorse{ font-variant:small-caps; letter-spacing:.05em; font-size:22pt; line-height:1.02; margin-top:6.5mm; }
+.endorse-sub{ font-style:italic; color:var(--ink-soft); font-size:12.5pt; margin-top:1.4mm; }
+.secret{ font-variant:small-caps; letter-spacing:.2em; font-size:10.5pt; margin-top:6mm; color:var(--ink); }
+.docket{ font-style:italic; color:var(--ink-soft); font-size:9.6pt; line-height:1.5; margin-top:7mm; }
+
+/* ===================== Back: the seal ===================== */
+.seal-wrap{ position:relative; z-index:3; }
+.seal-svg{
+  width:50mm; height:auto; display:block;
+  filter:drop-shadow(.55mm .9mm .7mm rgba(28,10,5,.40));  /* lifts the wax off the paper */
+}
+/* a faint thumb-smudge of wax beside the seal — atmospheric, neutral */
+.smudge{
+  position:absolute; z-index:2; width:24mm; height:15mm; border-radius:50%;
+  left:50%; top:50%; transform:translate(-46mm,18mm) rotate(-14deg);
+  background:radial-gradient(ellipse at 50% 50%, rgba(60,18,10,.13), transparent 68%);
+  filter:blur(.5mm); pointer-events:none;
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" class="wax-vermilion">
+<head>
+<meta charset="UTF-8">
+<title>Sealed dispatch — V3 (addressee struck out / redirected)</title>
+<!-- V3 = REDIRECTED: an addressee written then STRUCK OUT, with a note "not where he was named" — echoes K1's
+     "your contact is not where he was meant to be." Carries the MOST narrative (touches the K2 beat: the contact is gone).
+     ⚠ The struck "name" is an illegible penned scribble, NOT real letters → it encodes the EVENT, not a named person,
+     and stays faction-neutral. Wax: vermilion. Device: house-mark C. Pick this only if Oskar wants the face to foreshadow. -->
+<link rel="stylesheet" href="sealed-letter.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <radialGradient id="dome" cx="40%" cy="33%" r="76%">
+    <stop offset="0%"   style="stop-color:var(--wax-hi)"/>
+    <stop offset="40%"  style="stop-color:var(--wax-mid)"/>
+    <stop offset="82%"  style="stop-color:var(--wax-lo)"/>
+    <stop offset="100%" style="stop-color:var(--wax-edge)"/>
+  </radialGradient>
+  <radialGradient id="spec" cx="50%" cy="50%" r="50%">
+    <stop offset="0%"   stop-color="#fff" stop-opacity="0.55"/>
+    <stop offset="55%"  stop-color="#fff" stop-opacity="0.10"/>
+    <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+  </radialGradient>
+  <filter id="wobble" x="-16%" y="-16%" width="132%" height="138%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.042" numOctaves="2" seed="14" result="n"/>
+    <feDisplacementMap in="SourceGraphic" in2="n" scale="8" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+  <!-- device C = a spiral coil: an abstract, mysterious seal-device, non-figurative, codes no side. -->
+  <g id="dev" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="6">
+    <path d="M110,108 C110,101 119,101 119,109 C119,121 103,121 103,106 C103,88 124,88 124,111 C124,137 96,137 96,104 C96,74 134,74 134,113"/>
+  </g>
+  <symbol id="seal" viewBox="0 0 220 250">
+    <g filter="url(#wobble)">
+      <path d="M96,176 Q99,214 110,238 Q121,214 124,176 Z" fill="url(#dome)"/>
+      <circle cx="110" cy="108" r="84" fill="url(#dome)"/>
+      <circle cx="110" cy="108" r="84" fill="none" style="stroke:var(--wax-edge)" stroke-width="3" opacity="0.5"/>
+      <circle cx="110" cy="108" r="67" fill="none" style="stroke:var(--wax-lo)" stroke-width="1.5" opacity="0.35"/>
+    </g>
+    <ellipse cx="86" cy="78" rx="27" ry="16" fill="url(#spec)" opacity="0.42" transform="rotate(-20 86 78)"/>
+    <g stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+      <use href="#dev" transform="translate(-1.4,-1.7)" style="stroke:var(--wax-hi)"  opacity="0.7"/>
+      <use href="#dev" transform="translate(1.3,1.6)"   style="stroke:var(--wax-deep)" opacity="0.8"/>
+      <use href="#dev"                                   style="stroke:var(--wax-mid)"/>
+    </g>
+  </symbol>
+</defs></svg>
+
+<!-- ============ PAGE 1 — address faces ============ -->
+<section class="sheet">
+  <div class="card front">
+    <div class="creases"></div><div class="bleed"></div>
+    <div class="face">
+      <div class="urgency">Cito · cito · cito</div>
+      <div class="pen"></div>
+      <div class="addr">
+        <div class="addr-label">To —</div>
+        <svg class="scribble" viewBox="0 0 200 44" aria-hidden="true">
+          <path d="M11,30 C8,13 23,11 22,28 C22,34 29,33 32,26 C35,19 42,20 42,29 C42,40 35,43 39,43 C45,43 47,30 52,27 C57,24 65,25 65,32 C65,38 73,37 76,28 C79,20 88,21 88,30 C88,36 96,35 99,28 C103,20 113,21 113,31 C113,42 106,44 110,44 C117,44 119,30 125,27 C131,24 141,25 141,33 C141,39 150,38 154,29 C158,21 170,22 184,29" fill="none" stroke="var(--ink-soft)" stroke-width="2.6" stroke-linecap="round"/>
+          <path d="M9,22 L188,31" fill="none" stroke="var(--ink)" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+        <div class="redirect">— not where he was named —</div>
+      </div>
+      <div class="endorse">Into his hands</div>
+      <div class="endorse-sub">— and into no other's —</div>
+      <div class="secret">Under seal · read by none</div>
+      <div class="docket">Toruń, the sixth day of February 1454<br>to be carried before the eighth bell</div>
+    </div>
+  </div>
+  <div class="card front">
+    <div class="creases"></div><div class="bleed"></div>
+    <div class="face">
+      <div class="urgency">Cito · cito · cito</div>
+      <div class="pen"></div>
+      <div class="addr">
+        <div class="addr-label">To —</div>
+        <svg class="scribble" viewBox="0 0 200 44" aria-hidden="true">
+          <path d="M11,30 C8,13 23,11 22,28 C22,34 29,33 32,26 C35,19 42,20 42,29 C42,40 35,43 39,43 C45,43 47,30 52,27 C57,24 65,25 65,32 C65,38 73,37 76,28 C79,20 88,21 88,30 C88,36 96,35 99,28 C103,20 113,21 113,31 C113,42 106,44 110,44 C117,44 119,30 125,27 C131,24 141,25 141,33 C141,39 150,38 154,29 C158,21 170,22 184,29" fill="none" stroke="var(--ink-soft)" stroke-width="2.6" stroke-linecap="round"/>
+          <path d="M9,22 L188,31" fill="none" stroke="var(--ink)" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+        <div class="redirect">— not where he was named —</div>
+      </div>
+      <div class="endorse">Into his hands</div>
+      <div class="endorse-sub">— and into no other's —</div>
+      <div class="secret">Under seal · read by none</div>
+      <div class="docket">Toruń, the sixth day of February 1454<br>to be carried before the eighth bell</div>
+    </div>
+  </div>
+  <div class="card front">
+    <div class="creases"></div><div class="bleed"></div>
+    <div class="face">
+      <div class="urgency">Cito · cito · cito</div>
+      <div class="pen"></div>
+      <div class="addr">
+        <div class="addr-label">To —</div>
+        <svg class="scribble" viewBox="0 0 200 44" aria-hidden="true">
+          <path d="M11,30 C8,13 23,11 22,28 C22,34 29,33 32,26 C35,19 42,20 42,29 C42,40 35,43 39,43 C45,43 47,30 52,27 C57,24 65,25 65,32 C65,38 73,37 76,28 C79,20 88,21 88,30 C88,36 96,35 99,28 C103,20 113,21 113,31 C113,42 106,44 110,44 C117,44 119,30 125,27 C131,24 141,25 141,33 C141,39 150,38 154,29 C158,21 170,22 184,29" fill="none" stroke="var(--ink-soft)" stroke-width="2.6" stroke-linecap="round"/>
+          <path d="M9,22 L188,31" fill="none" stroke="var(--ink)" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+        <div class="redirect">— not where he was named —</div>
+      </div>
+      <div class="endorse">Into his hands</div>
+      <div class="endorse-sub">— and into no other's —</div>
+      <div class="secret">Under seal · read by none</div>
+      <div class="docket">Toruń, the sixth day of February 1454<br>to be carried before the eighth bell</div>
+    </div>
+  </div>
+  <div class="card front">
+    <div class="creases"></div><div class="bleed"></div>
+    <div class="face">
+      <div class="urgency">Cito · cito · cito</div>
+      <div class="pen"></div>
+      <div class="addr">
+        <div class="addr-label">To —</div>
+        <svg class="scribble" viewBox="0 0 200 44" aria-hidden="true">
+          <path d="M11,30 C8,13 23,11 22,28 C22,34 29,33 32,26 C35,19 42,20 42,29 C42,40 35,43 39,43 C45,43 47,30 52,27 C57,24 65,25 65,32 C65,38 73,37 76,28 C79,20 88,21 88,30 C88,36 96,35 99,28 C103,20 113,21 113,31 C113,42 106,44 110,44 C117,44 119,30 125,27 C131,24 141,25 141,33 C141,39 150,38 154,29 C158,21 170,22 184,29" fill="none" stroke="var(--ink-soft)" stroke-width="2.6" stroke-linecap="round"/>
+          <path d="M9,22 L188,31" fill="none" stroke="var(--ink)" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+        <div class="redirect">— not where he was named —</div>
+      </div>
+      <div class="endorse">Into his hands</div>
+      <div class="endorse-sub">— and into no other's —</div>
+      <div class="secret">Under seal · read by none</div>
+      <div class="docket">Toruń, the sixth day of February 1454<br>to be carried before the eighth bell</div>
+    </div>
+  </div>
+  <div class="cuts"><span class="cut-v"></span><span class="cut-h"></span></div>
+</section>
+
+<!-- ============ PAGE 2 — seals ============ -->
+<section class="sheet">
+  <div class="card back"><div class="creases strong"></div><div class="smudge"></div><div class="seal-wrap"><svg class="seal-svg" viewBox="0 0 220 250" aria-hidden="true"><use href="#seal"/></svg></div></div>
+  <div class="card back"><div class="creases strong"></div><div class="smudge"></div><div class="seal-wrap"><svg class="seal-svg" viewBox="0 0 220 250" aria-hidden="true"><use href="#seal"/></svg></div></div>
+  <div class="card back"><div class="creases strong"></div><div class="smudge"></div><div class="seal-wrap"><svg class="seal-svg" viewBox="0 0 220 250" aria-hidden="true"><use href="#seal"/></svg></div></div>
+  <div class="card back"><div class="creases strong"></div><div class="smudge"></div><div class="seal-wrap"><svg class="seal-svg" viewBox="0 0 220 250" aria-hidden="true"><use href="#seal"/></svg></div></div>
+  <div class="cuts"><span class="cut-v"></span><span class="cut-h"></span></div>
+</section>
+
+</body>
+</html>

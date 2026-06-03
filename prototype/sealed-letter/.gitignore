@@ -1,0 +1,6 @@
+# Rendered outputs — regenerable via render.ps1 (heavy: ~11 MB per PDF). Kept out of git.
+# The variant Oskar picks gets re-rendered to public/wspolne-1-Z1-list.pdf and tracked there.
+sealed-letter-v*.pdf
+preview/
+.qa-back-*
+.stamped-*
