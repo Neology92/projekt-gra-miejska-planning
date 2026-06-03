@@ -10,9 +10,9 @@
 
 - **Frakcja:** **krzyzacy** (Zakon). Lustro funkcjonalne `miasto-6-Z7`, ale inny finał (BRAK twistu tożsamości — Albrecht jawny; brama = dowód godności).
 - **Pozycja (nr otwierania):** 5 (finał krzyżaków; tor KZ = 5 pozycji). Zadanie = **Z11** (szyfr finałowy).
-- **Wkładki / co gracz ma już przy sobie:** Tabela 1 (od Albrechta, K3-K), Tabela 2 (tabula recta), zapieczętowany list (noszony od pozycji 1).
-- **W tej kopercie:** ten brief + **szyfrogram Z11** (`UEFNEJ, UEGFEJ TJI WEUPEJ!`).
-- **Kiedy wręczyć:** MG wręcza, gdy grupa kończy tor 2B (Z3Z + opcjonalna) i zbiera się do finału.
+- **Wkładki / co gracz ma już przy sobie:** Tabela 1 (od Albrechta, K3-K), Tabela 2 (tabula recta), **szyfrogram Z11** (`UEFNEJ, UEGFEJ TJI WEUPEJ!` — przechwycona dyspozycja, otrzymana **po opcjonalnej Z8/9/10, pozycja 4** — przedostatnia koperta), zapieczętowany list (noszony od pozycji 1).
+- **W tej kopercie:** **tylko ten brief.** Szyfrogram **NIE** tutaj — gracz dostał go po opcjonalnej (pozycja 4, wymienialny; kanon `puzzles/z11-szyfr-spec.md §6`). Ta koperta spina elementy: każe odszyfrować to, co już niesie.
+- **Kiedy wręczyć:** MG wręcza, gdy grupa kończy tor 2B (Z3Z + opcjonalna, z której ma już szyfrogram) i zbiera się do finału.
 - **Dokąd odsyła:** ruiny Przedzamcza, ósme bicie (20:30) — wybór strony (Albrecht / Bażyński), oddanie listu. **Brama Albrechta = wypowiedzenie motta Zakonu** (odszyfrowane z Z11).
 - **Canon:** `concept/04-faza-3-final.md`, `puzzles/z11-szyfr-spec.md §4/§5`.
 
@@ -20,7 +20,7 @@
 
 ## TEXT — KF krzyzacy (player reads this)
 
-> **Rejestr:** SCENA, 2. os. „you", *kursywa* (głos z głów) + przechwycona wiadomość roman + ramka MG. Brak twistu — to nie odkrycie tożsamości, lecz ostatni dowód godności przed komturem.
+> **Rejestr:** SCENA, 2. os. „you", *kursywa* (głos z głów). Szyfrogram (przechwycona dyspozycja) gracz już ma — z opcjonalnej (pozycja 4); ta koperta każe go odszyfrować, nie podaje go. Brak twistu — to nie odkrycie tożsamości, lecz ostatni dowód godności przed komturem.
 
 ---
 
@@ -28,9 +28,7 @@
 
 *You did what was asked. You walked into the rebels' nest, sat at their cook's table, marked the man and the hour. Now one thing remains: to prove, to the Komtur's own face, that you are the Order's and no one else's.*
 
-*The Order does not take a courier on trust. Among the papers a coded line was set down — the watchword every true son of the Order can draw out, and no stranger can. Read your sign, find its row, and let the marks give up their word:*
-
-> `UEFNEJ, UEGFEJ TJI WEUPEJ!`
+*The Order does not take a courier on trust. You already carry the proof, if you can read it: that coded line you came away with — a scrap of the Order's own dispatch, the watchword folded into it that every true son of the Order can draw out and no stranger can. Read your sign, find its row in the table, and let the marks give up their word.*
 
 *The word you read is the Order's own. Carry it to the walls.*
 
@@ -46,6 +44,7 @@
 
 - **Brama dostawy = motto [decyzja Oskara 2026-06-03]:** odszyfrowany Z11 = motto Zakonu `HELFEN, HEILEN UND WEHREN!`. Wypowiedzenie go Albrechtowi przy Przedzamczu **odblokowuje oddanie mu listu**. Bez motta komtur odprawia. Mechanika aktora: `materials/actors/albrecht-actor-card-draft.md §FINALE`. Symetria z torem TR: to samo motto jest tam KLUCZEM do Z7 (a tu WYNIKIEM).
 - **Szyfrogram = motto, nie „parol wymyślony":** `puzzles/z11-szyfr-spec.md §2`. Ciphertext liczony wierszem S11 (MARIENBURG), round-trip ✓ (`tools/z11-cipher/cipher-data.js`).
+- **Prowenancja szyfrogramu [Oskar 2026-06-03]:** szyfrogram wydaje MG **po opcjonalnej Z8/9/10 (pozycja 4 — przedostatnia koperta), wymienialny** — NIE w tej finałowej kopercie. To przywraca kanon „szyfrogram z opcjonalnej" i sprawia, że opcjonalna realnie bramkuje finał (bez niej brak szyfrogramu). Ta koperta tylko spina: każe odszyfrować to, co grupa już niesie. Patrz `puzzles/z11-szyfr-spec.md §6`, `envelopes/krzyzacy-4-Z8/Z9/Z10`.
 - **Po co odszyfrowywać własne motto:** brama = dowód, nie wiedza — większość graczy nie zna niemieckiego motta z głowy; deszyfracja je ujawnia i dowodzi, że grupa złożyła klucz (była u Jordana → symbol → tabula recta). Patrz spec §2.
 - **Wolny wybór (jak TR):** mogą oddać list **Bażyńskiemu** (zmiana strony) zamiast Albrechtowi — `concept/04`. Tekst nie ocenia wyboru.
 - **BRAK twistu tożsamości** [decyzja 2026-05-29]: finał KZ nie ujawnia „Jordan=Bażyński" jako rewelacji dla siebie — Albrecht jawny od początku. Brama = godność (motto), nie wiedza tajna.

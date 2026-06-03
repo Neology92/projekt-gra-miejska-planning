@@ -83,7 +83,7 @@ UEFNEJ, UEGFEJ TJI WEUPEJ!
 ## 3. MECHANIKA GRACZA (krok po kroku)
 
 1. **Po Z2** kurierzy KZ trafiają do **Albrechta** (Zosia — handler toru KZ), który wręcza im zadanie infiltracji Piccolo + **Tabelę 1** (K3-K). **W Piccolo** grupa obserwuje **Jordana** (cel infiltracji): barwę szaty (brązowa) + atrybut (chochla), wyciąga godzinę buntu (20:30). Patrz §6.
-2. **W finale** grupa ma **szyfrogram** (w finałowej kopercie KZ `krzyzacy-5-Z11.md`) i **Tabelę 2**.
+2. **Po opcjonalnej (Z8/9/10, pozycja 4)** MG wydaje grupie **szyfrogram** (wymienialny). W finale grupa ma więc szyfrogram + **Tabelę 2** i je składa.
 3. **Tabela 1:** przecina wiersz `Brown` z kolumną `Ladle` → odczytuje **symbol-klucz**.
 4. **Tabela 2:** odnajduje **wiersz oznaczony tym symbolem**.
 5. **Deszyfruje** szyfrogram literą po literze (cell→column-header) → odczytuje **parol**.
@@ -119,8 +119,8 @@ UEFNEJ, UEGFEJ TJI WEUPEJ!
 | Element | Skąd gracz go ma | Status |
 |---|---|---|
 | **Tabela 1** (lookup) | **Albrecht (Zosia) wręcza w K3-K po Z2** — handler toru KZ; grupa niesie ją do Piccolo, gdzie obserwuje Jordana (kolor szaty + chochla) | kanon [2026-06-02] |
-| **Szyfrogram Z11** (`UEFNEJ, UEGFEJ TJI WEUPEJ!`) | w **finałowej kopercie KZ** (`envelopes/krzyzacy-5-Z11.md`) — ostatnia koperta od MG | [2026-06-03] |
-| **Tabela 2** (tabula recta) | **DO WYBRANIA**: (a) razem z Tabelą 1 w K3-K, albo (b) dopiero w finale (z szyfrogramem) | OTWARTE [2026-06-02] — patrz §8 |
+| **Szyfrogram Z11** (`UEFNEJ, UEGFEJ TJI WEUPEJ!`) | **MG wydaje po opcjonalnej Z8/9/10 (pozycja 4 — przedostatnia koperta), wymienialny** [Oskar 2026-06-03] — gracz niesie go do finału. **NIE** w finałowej kopercie. | kanon |
+| **Tabela 2** (tabula recta) | **DO WYBRANIA**: (a) razem z Tabelą 1 w K3-K, albo (b) dopiero w finale | OTWARTE [2026-06-02] — patrz §8 |
 
 > **Brama dostawy w finale [2026-06-03]:** przy Przedzamczu (20:30) Albrecht przyjmie list **tylko od grupy, która wypowie motto** `HELFEN, HEILEN UND WEHREN!`. KZ zdobywa je z Z11 (deszyfracja); TR-dezerter odczytuje z wykradzionej listy. Bez motta — komtur odprawia. Scenariusz Albrechta: `materials/actors/albrecht-actor-card-draft.md §FINALE`. Wzmianki w kopertach finałowych: KZ `envelopes/krzyzacy-5-Z11.md`, TR `envelopes/miasto-6-Z7.md`.
 
