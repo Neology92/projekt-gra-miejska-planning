@@ -564,3 +564,6 @@ requestAnimationFrame(() => pdfQueue.forEach((el) => io.observe(el)));
 fs.writeFileSync(path.join(PUBLIC_DIR, 'index.html'), html, 'utf8');
 console.log(`[pdf-viewer] index.html: ${total} plików, ${grouped.length} sekcji`);
 for (const g of grouped) console.log(`  - ${g.label}: ${g.items.length}`);
+
+// Generuj też podstronę /review/
+await import('./build-review.mjs');
