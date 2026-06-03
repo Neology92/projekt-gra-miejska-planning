@@ -103,6 +103,15 @@ const htmlData = {
 
 const dataJson = JSON.stringify(htmlData);
 
+// 4b. Statyczna mapa notaPiotra per etap-id — wstrzykiwana do HTML jako stała,
+//     NIE przez JSON → eliminuje ryzyko XSS z niezaufanego wejścia.
+//     Źródłem jest review-flow.js (plik autorski w repo), nie dane zewnętrzne.
+const NOTA_HTML_MAP = {};
+for (const etap of ETAPY) {
+  if (etap.notaPiotra) NOTA_HTML_MAP[etap.id] = etap.notaPiotra;
+}
+const notaHtmlMapJson = JSON.stringify(NOTA_HTML_MAP);
+
 // 5. Intro HTML — zaufana stała (statyczna treść autorska, nie dane zewnętrzne)
 const INTRO_HTML = `
 <h2>O czym jest gra</h2>
@@ -327,6 +336,19 @@ const html = `<!doctype html>
   .audio-card .card-meta { padding: 0; flex: 1; min-width: 0; }
   .audio-card .nm { font-size: 12px; margin-bottom: 4px; }
   .audio-card audio { width: 100%; max-width: 260px; }
+  /* nota piotra */
+  .nota-piotra {
+    background: #1a2230; border: 1.5px solid #2a4a6a; border-radius: 10px;
+    padding: 14px 18px; margin-bottom: 14px;
+  }
+  .nota-piotra h3 { font-size: 13px; color: #7ec8e3; font-weight: 700; margin: 0 0 10px; letter-spacing: .3px; }
+  .nota-piotra p { font-size: 13px; color: var(--muted); margin: 0 0 8px; line-height: 1.55; }
+  .nota-piotra p:last-child { margin-bottom: 0; }
+  .nota-piotra strong { color: var(--text); }
+  .nota-piotra em { color: #c8d8e8; font-style: italic; }
+  .nota-piotra ul { padding-left: 18px; margin: 6px 0 8px; }
+  .nota-piotra li { font-size: 13px; color: var(--muted); margin-bottom: 4px; }
+  .nota-piotra .warn-inline { color: #e38080; font-weight: 700; }
   /* etap vuoto */
   .etap-empty { color: #555; font-size: 13px; padding: 8px 0; }
   footer {
@@ -371,6 +393,9 @@ const html = `<!doctype html>
 
 <script type="module">
 const DATA = ${dataJson};
+// Trusted static HTML per etap-id — wstrzyknięte z pliku autorskiego build-time,
+// nie z JSON/inputu użytkownika. Używaj tylko innerHTML z tej mapy.
+const NOTA_HTML = ${notaHtmlMapJson};
 
 function esc(s){ return String(s).replace(/[&<>"]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
 
@@ -524,6 +549,13 @@ function renderEtapy() {
     // Opis
     const opis = document.createElement('p'); opis.className = 'etap-opis'; opis.textContent = etap.opis;
     section.appendChild(opis);
+
+    // Nota Piotra — trusted static HTML z NOTA_HTML (wstrzyknięte build-time z repo, nie JSON input)
+    if (NOTA_HTML[etap.id]) {
+      const nota = document.createElement('div'); nota.className = 'nota-piotra';
+      nota.innerHTML = NOTA_HTML[etap.id];
+      section.appendChild(nota);
+    }
 
     // Do sprawdzenia
     const checks = etap.doSprawdzenia || [];

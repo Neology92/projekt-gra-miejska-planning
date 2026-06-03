@@ -174,7 +174,45 @@ export const ETAPY = [
     nr: 8,
     tytul: 'Kartki autorskie — zakres do decyzji',
     typ: 'wspolny',
-    opis: 'Kartki od autora: każda rozdziela FAKT / LEGENDA / FABUŁA / ANACHRONIZM / CIEKAWOSTKI dla danej koperty. Przeznaczenie (kiedy gracz je dostaje? czy w ogóle?) = decyzja Oskara po tym review. Trzy karty zawierają spoilery — zaznaczone poniżej.',
+    opis: 'Każda koperta w grze ma swoją kartkę autorską, która rozdziela: co w tej zagadce jest prawdziwą historią, co legendą, co wymysłem Oskara, a co świadomym anachronizmem. Piotr: przejrzyj PDFy i odpowiedz na pytania poniżej — szczególnie jedno jest pilne (spoilery).',
+    notaPiotra: `
+<h3>Czym są te kartki i po co Oskar je chce?</h3>
+<p>
+  Gra toczy się w prawdziwym Toruniu, wśród autentycznych miejsc i z postaciami historycznymi.
+  Ale żeby gra działała, Oskar musiał trochę naginać historię — łączyć legendy z faktami,
+  używać nowożytnych pomników jako punktów orientacyjnych, wymyślać sceny, które nigdy się nie wydarzyły.
+  Te kartki to <strong>komentarz autora</strong>: dla każdej koperty wyjaśniają, co jest prawdziwą historią,
+  co legendą z XIX wieku, co wymysłem Oskara na potrzeby fabuły, a co świadomym anachronizmem
+  (czyli czymś, co w 1454 roku nie istniało, ale jest użyte w grze bo po prostu tam stoi i wygląda fajnie).
+</p>
+<p>
+  Pomyśl o tym jak o <em>komentarzu reżysera na DVD</em> — „ta scena jest z dokumentów historycznych,
+  tamtą wymyśliłem, a ten pomnik jest z 2011 roku ale pasował do trasy".
+</p>
+<p>
+  <strong>Kiedy gracz by to dostał?</strong> Oskar jeszcze nie zdecydował. Opcje to:
+  razem z kopertą (przed rozwiązaniem), po rozwiązaniu danej zagadki, albo na samym końcu jako debrief.
+  Mogą też w ogóle nie wejść do gry — stąd to review.
+</p>
+
+<h3>Dlaczego Oskar chce twojej opinii?</h3>
+<p>
+  Po pierwsze: <strong>czy to w ogóle ma sens jako format?</strong>
+  Oskar nie jest pewien, czy gracze chcieliby to czytać. Może to za dużo tekstu, może psuje flow,
+  może jest super — ale chce drugiego zdania od kogoś, kto widzi grę z zewnątrz.
+</p>
+<p>
+  Po drugie, i to jest pilne: <strong>trzy kartki zawierają spoilery</strong>.
+  Mają informacje, które ujawniają rzeczy, które gracz powinien odkryć dopiero w finale.
+  Oskar chce wiedzieć, które to są i czy wywalić spoilerowe fragmenty, czy przesunąć te kartki na koniec.
+  Zaznaczył je w liście "Do sprawdzenia" poniżej — <span class="warn-inline">⚠ pozycje oznaczone ostrzeżeniem</span>.
+</p>
+<p>
+  Po trzecie: <strong>czy kartki nie są za długie?</strong>
+  Kilka z nich to 2–3 strony A4. Może warto zostawić tylko część
+  (np. wyciąć sekcję "Ciekawostki" i "Źródła wiki" z drukowanej wersji, zostawić tylko FAKT/LEGENDA/FABUŁA)?
+  Twoja intuicja jest tu wartościowa.
+</p>`,
     doSprawdzenia: [
       '─── PYTANIE GŁÓWNE ────────────────────────────────────────',
       'Czy kartki wchodzą do gry? (Opcje: przed otwarciem koperty / po rozwiązaniu / debrief po grze / nigdy)',
