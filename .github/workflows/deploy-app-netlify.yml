@@ -51,8 +51,10 @@ jobs:
           fi
           echo "Site UUID: $ID"
 
-          # ustaw docelową nazwę (idempotentnie; best-effort — gdyby API ignorowało)
-          $CLI api updateSite --data "{\"site_id\":\"$ID\",\"name\":\"$SITE_NAME\"}" || echo "rename pominięty"
+          # ustaw docelową nazwę (idempotentnie; best-effort). UWAGA: netlify CLI `api`
+          # oczekuje treści żądania pod kluczem "body" (name na top-level jest ignorowane).
+          $CLI api updateSite --data "{\"site_id\":\"$ID\",\"body\":{\"name\":\"$SITE_NAME\"}}" \
+            || echo "rename pominięty"
 
           # deploy po UUID (stabilny mimo nazwy); --no-build pomija build galerii
           $CLI deploy --prod --dir app --site "$ID" --no-build --message "CI ${{ github.sha }}"
