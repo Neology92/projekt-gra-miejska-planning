@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1c1712">
+<title>Toruń 1454 — Z1</title>
+<!-- POC hybrydy online (mechanics/hybryda-online.md). Player-facing = EN.
+     Jeden etap (Z1): kod MG → brief → ramka rekwizytu → walidacja PREV → meta-card + Z2. -->
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="sheet">
+
+  <!-- ===================== EKRAN 1: BRAMA KODU ===================== -->
+  <section id="screen-gate" class="screen active">
+    <div class="gate">
+      <div class="crest">⚜</div>
+      <h1>Toruń, 1454</h1>
+      <p>A sealed errand. Enter the code the Game Master gave you to begin.</p>
+      <input id="gate-code" class="code-input" type="text" inputmode="text"
+             autocomplete="off" autocapitalize="characters" placeholder="ACCESS CODE">
+      <button id="gate-go" class="act" style="max-width:280px;margin:14px auto 0;">Begin</button>
+      <p id="gate-feedback" class="feedback"></p>
+      <p class="demo-note">DEMO: kod-MG = <b>START-1454</b> (format kodów = otwarta decyzja, spec §D).</p>
+    </div>
+  </section>
+
+  <!-- ===================== EKRAN 2: BRIEF ===================== -->
+  <section id="screen-brief" class="screen">
+    <span id="brief-tag" class="stage-tag">Z1</span>
+    <h2 id="brief-title" class="stage-title">The road begins</h2>
+
+    <!-- ramka „PROP AT THIS STAGE" (spec §C) -->
+    <div class="prop-frame">
+      <span class="ph">Prop at this stage</span>
+      <div id="prop-body"></div>
+    </div>
+
+    <!-- narracja briefu (migracja z koperty) -->
+    <div id="brief-body"></div>
+
+    <!-- walidacja wyjścia (PREV) -->
+    <div class="solve">
+      <hr class="rule">
+      <h3>Report your chain</h3>
+      <p id="solve-prompt" class="msg"></p>
+      <div id="solve-fields"></div>
+      <button id="solve-check" class="act">Confirm the chain</button>
+      <p id="solve-feedback" class="feedback"></p>
+      <p class="demo-note">DEMO trasa = EX-1 (puzzles/z1-sciezki-wzorcowe.md): Piernikarka · Modry Fartuch · Filuś · Pod Gwiazdą. Akceptuje PL i EN.</p>
+    </div>
+
+    <!-- meta-card (bramkowana spoilerowo, §D) -->
+    <div id="meta-card" class="meta-card locked">
+      <p id="meta-lock-note" class="lock-note">🔒 A note from the author — opens once you finish this stage.</p>
+      <h3 id="meta-title">From the author</h3>
+      <p id="meta-body" class="body narration"></p>
+    </div>
+  </section>
+
+  <!-- ===================== EKRAN 3: UKOŃCZENIE ===================== -->
+  <section id="screen-done" class="screen">
+    <div class="done">
+      <div class="seal">✔</div>
+      <h2>The chain holds</h2>
+      <p class="narration">You named your four marks in order. Your contact awaits.</p>
+      <p id="done-next" class="msg"></p>
+      <p class="demo-note">PREV: apka odblokowała następny krok bez udziału MG (spec §B). Następny etap (Z2) = poza zakresem tego POC.</p>
+      <button id="reset" class="act ghost">Reset demo</button>
+    </div>
+  </section>
+
+</div>
+
+<script src="stage-data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
