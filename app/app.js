@@ -306,8 +306,11 @@ function optChooseMany(opt) {
 }
 
 function optClearedPanel(opt) {
-  return el('div', 'done', `<hr class="rule"><div class="seal small">✔</div>
-    <p class="msg">You already cleared this task.</p>${mgNoteHTML(opt.mg)}`);
+  const d = el('div', 'done', `<hr class="rule"><div class="seal small">✔</div>
+    <p class="msg">You already cleared this task.</p>${mgNoteHTML(opt.mg)}
+    <button class="btn" id="cont2">Continue to the finale →</button>`);
+  const b = d.querySelector('#cont2'); if (b) b.onclick = () => showStage('fin');
+  return d;
 }
 function mgNoteHTML(text) { return `<div class="mg-note"><span class="mg-label">↪ Game Master</span> ${text}</div>`; }
 
