@@ -1,6 +1,6 @@
 # Roadmap - co dalej w jakiej kolejności
 
-**Cel**: doprowadzić grę do stanu gotowości do rozegrania. Nie wiemy jeszcze na kiedy - data rozgrywki TBD.
+**Cel**: doprowadzić grę do stanu gotowości do rozegrania. **Data rozgrywki = DZISIAJ (2026-06-03)** [#3, Oskar] — druk na miejscu.
 
 > **Rola pliku (decyzja #69c):** roadmap trzyma **WYŁĄCZNIE kolejność i zakres faz A–E**. Status (co gotowe / w toku) → `todo/dashboard.md`. Listy poniżej to **zakres** fazy, nie checklisty stanu — nie zaznaczamy tu postępu.
 
@@ -10,7 +10,7 @@
 
 Zamknięte i pozwalające ruszyć: 1 MG = Oskar · 10 grup × 4 (5+5) · obsada (Piotr/Zosia/Oskar) · pełna symetria torów · klasy ujawniane po Z2 · finał = prosta zliczanka (1 grupa = 1 głos) · lokal Jordana = Piccolo.
 
-Wciąż otwarte i strategiczne: **#3 data rozgrywki** (deadline) · **#6 mapa+szyfrownik wspólne czy per klasa** · **#15 co gdy grupa nie dostarczy** · **#59 budżet**.
+Strategiczne ROZSTRZYGNIĘTE [2026-06-03]: **#3 data = dziś** · **#6 mapa wspólna + deszyfrownik per drużyna** · **#15 brak dostawy = neutralnie, bez kary** · **#59 budżet = druk domowy** · **#50 zliczanie = aktorzy liczą** · **#36 MG mobilny wokół Rynku** · **#49 dzwon = tylko narracyjnie**. Wciąż otwarty (nieblokujący): **#1 tytuł** (2 warianty).
 
 **Decyzje zapisuj** w `otwarte-pytania.md` jako „**temat** — ROZSTRZYGNIĘTE [data]: ..." (bez przekreśleń).
 
@@ -102,8 +102,8 @@ Kolejność prac na zagadkach (priorytetowa):
 - **Rekwizyt miecza** Jordana (zakup Z2 = parol; broń finału Bażyńskiego — `concept/04`)
 - **Pergamin z listą TR** (Z3 - jeden)
 - **Kostiumy 2 aktorów** (Jordan/Piotr — chochla; Albrecht/Zosia — płaszcz + krzyż)
-- **Dzwon / nagranie** na finał
-- **Pudełka / NPCs do zliczania głosów**
+- ~~**Dzwon / nagranie** na finał~~ — DROPPED [#49]: bez rekwizytu, „ósme bicie" tylko narracyjnie
+- ~~**Pudełka / NPCs do zliczania głosów**~~ — [#50]: bez pudełek; aktorzy (Jordan/Albrecht) liczą odebrane listy przed scenką
 
 ## Faza D - testy (TY + 4-6 znajomych, ~2-3h)
 

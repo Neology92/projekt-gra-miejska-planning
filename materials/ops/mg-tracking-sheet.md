@@ -1,12 +1,12 @@
-# GM Tracking Sheet — Prototype (TR path)
+# Tracking Sheet MG — Prototyp (ścieżka TR)
 
-> **Language:** English (GM-facing).
-> **Scope:** prototype only — single TR path. Print one copy per group, or use one master copy and track by group ID.
-> **Use:** fill in group ID and timestamps as groups report. Verify answers against the key column before handing next envelope.
+> **Język:** polski (dla MG).
+> **Zakres:** tylko prototyp — jedna ścieżka TR. Wydrukuj jeden egzemplarz na grupę albo jeden zbiorczy i śledź po ID grupy.
+> **Zastosowanie:** wpisuj ID grupy i godziny gdy grupy raportują. Sprawdzaj odpowiedzi w kolumnie klucza przed wręczeniem kolejnej koperty.
 
 ---
 
-## FLOW STRIP
+## PASEK PRZEPŁYWU
 
 ```
 K1 → [Z1: symbol trail] → report to MG → K2
@@ -19,17 +19,17 @@ K1 → [Z1: symbol trail] → report to MG → K2
 
 ---
 
-## STAGE TABLE
+## TABELA ETAPÓW
 
-| # | Stage | What group brings to MG | Correct answer / key | What MG gives back | Notes |
+| # | Etap | Co grupa przynosi do MG | Poprawna odpowiedź / klucz | Co MG oddaje | Uwagi |
 |---|-------|------------------------|----------------------|--------------------|-------|
-| 0 | Start | — | — | K1 + sealed letter prop + Z1 map + cipher sheet | All groups at same time |
-| 1 | Z1 | 4 location names in order | [fill in from z1-szlak-spec before game day] | K2 (main note + slip) | Verify ORDER, not just locations |
-| 2 | Z2 | "Jordan works at Piccolo" | Jordan → Piccolo | Send group to Piccolo (Piotr) | No envelope handed here — group walks to Piccolo |
-| 3 | Z3 + K-Z3b | Group has pergamin (names list) | Group holding the prop | — | Piotr hands K3; Zosia hands K-Z3b; MG not involved in Z3 scene |
-| 4 | Z4 (kalimba) | Code: six numbers | **621454** | K8 = Z7 szyfrogram | Play melody for group first; they listen then play back |
-| 5 | Z7 (cipher) | Deciphered message | **HANS VON BAYSEN IS JORDAN THE COOK** | KF | Cezar +7; key = compare motto headers |
-| 6 | Finale | Group arrives at Przedzamcze, 20:30 | — | — | Count letter side (left = Bażyński / right = Albrecht), start theatre scene |
+| 0 | Start | — | — | K1 + rekwizyt zapieczętowanego listu + mapa Z1 + karta deszyfrująca | Wszystkie grupy w tym samym czasie |
+| 1 | Z1 | 4 nazwy lokalizacji w kolejności | [uzupełnij z z1-szlak-spec przed dniem gry] | K2 (nota główna + slip) | Sprawdzaj KOLEJNOŚĆ, nie tylko lokalizacje |
+| 2 | Z2 | „Jordan pracuje w Piccolo" | Jordan → Piccolo | Odeślij grupę do Piccolo (Piotr) | Tu nie wręcza się koperty — grupa idzie do Piccolo pieszo |
+| 3 | Z3 + K-Z3b | Grupa ma pergamin (lista imion) | Grupa trzyma rekwizyt | — | Piotr wręcza K3; Zosia wręcza K-Z3b; MG nie jest zaangażowany w scenę Z3 |
+| 4 | Z4 (kalimba) | Kod: sześć cyfr | **621454** | K8 = szyfrogram Z7 | Najpierw odtwórz melodię dla grupy; słuchają potem grają sami |
+| 5 | Z7 (szyfr) | Odszyfrowana wiadomość | **HANS VON BAYSEN IS JORDAN THE COOK** | KF | Cezar +7; klucz = porównaj nagłówki motto |
+| 6 | Finał | Grupa przybywa na Przedzamcze, 20:30 | — | — | Każdy aktor przyjmuje listy wręczone bezpośrednio jemu; aktorzy liczą swoje stosy przed sceną [#50]; uruchom scenę teatralną |
 
 ---
 
@@ -104,5 +104,5 @@ If stuck: see hint ladder in mg-runsheet.md.
 - [ ] Z3 pergamin props = names list (Zosia gives these during castle scene, or MG gives separately — confirm with Oskar)
 
 **Finale:**
-- [ ] Bell prop (hand bell or phone recording, 8 strikes)
-- [ ] Table arrangement: two sides (left = Bażyński, right = Albrecht)
+- ~~Bell prop~~ DROPPED [#49, 2026-06-03] — no sound prop; "eighth toll" is a spoken narrative time-marker only
+- [ ] Actors take their own sides at Przedzamcze (Piotr/Bażyński + Zosia/Albrecht). Groups hand letters **directly to the chosen actor** (Wariant B — no boxes, no left/right table). Each actor counts their own stack just before the scene [#50].

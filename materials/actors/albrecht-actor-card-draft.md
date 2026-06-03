@@ -1,367 +1,369 @@
-# Komtur Albrecht — Actor Card (Zosia) — draft
+# Komtur Albrecht — Karta aktora (Zosia) — draft
 
-> **Language:** English (actor-facing). Planning notes in Polish below.
-> **Status:** draft [2026-06-02, v2 — STEP 2/3 przepisane na model patrolu] — awaiting Oskar's / Zosia's review.
-> **Actor:** Zosia plays **Komtur Albrecht Kalb** — commander of the Teutonic castle, arrogant, certain the Order still rules this city.
-> **Location:** **outside the castle walls** (NOT inside the ruins — those are ticketed/closed). A spot where you can stand, lean papers on a ledge/crate, and pace a few steps.
-> **When:** Faza 2B, Z3 — town (TR) groups come to you after Jordan sends them on the "scouting" errand (K3).
-> **Canon:** `puzzles/zamek-krzyzacki-lista.md` (Struktura Z3) · the list they steal → `materials/props/pergamin-lista-tr-draft.md`.
+> **Język:** polski (dla aktora).
+> **Status:** draft [2026-06-02, v2 — STEP 2/3 przepisane na model patrolu] — czeka na recenzję Oskara/Zosi.
+> **Aktor:** Zosia gra **Komtura Albrechta Kalba** — dowódcę zamku krzyżackiego, arogancki, pewny że Zakon nadal rządzi tym miastem.
+> **Lokalizacja:** **na zewnątrz murów zamkowych** (NIE w środku ruin — wstęp biletowany/zamknięty). Punkt, w którym możesz stać, oprzeć papiery o parapet/skrzynkę i przejść kilka kroków.
+> **Kiedy:** Faza 2B, Z3 — grupy miejskie (TR) przychodzą do ciebie po tym, jak Jordan wysyła je na zadanie „zwiadu" (K3).
+> **Kanon:** `puzzles/zamek-krzyzacki-lista.md` (Struktura Z3) · lista, którą kradną → `materials/props/pergamin-lista-tr-draft.md`.
 
 > ✅ **REWIZJA [2026-06-02] — model patrolu WPROWADZONY (STEP 2/3 przepisane).** Sekwencja (Oskar): komtur **wręcza kopertę milcząco → odchodzi kawałek → odkłada listę w konkretnym miejscu → patroluje** wokół niej. Okno kradzieży = faza AWAY (na końcu obchodu, plecami do listy). STEP 2 = „odłóż listę, wręcz, odejdź w patrol"; STEP 3 = cykl patrolu (A AWAY / B RETURNING / C AT THE LIST), telegraf/powtarzalność/reset zachowane. Spójne z `envelopes/miasto-4-Z3b.md §Rewizja (SEKWENCJA)` i kopertą Z3b (olśnienie wyprzedzające). `todo/otwarte-pytania.md #65`.
 
 ---
 
-> ## TWO ROLES — read this first [2026-06-03]
-> You, Zosia, play **Komtur Albrecht for BOTH factions**, in two opposite scenes:
-> - **PART ONE — TR groups (the list theft):** the town's couriers come to you posing as "informers"; you show off the Order's list and let them steal it. (Everything from QUICK REFERENCE down to PLANNING NOTES.)
-> - **PART TWO — KZ groups (the handler):** the Order's *own* couriers come to you; you test them, send them to infiltrate the enemy's nest, and arm them with the Order's key. (New section, just before PLANNING NOTES.)
+> ## DWIE ROLE — przeczytaj najpierw [2026-06-03]
+> Ty, Zosia, grasz **Komtura Albrechta dla OBU frakcji**, w dwóch przeciwstawnych scenach:
+> - **CZĘŚĆ PIERWSZA — grupy TR (kradzież listy):** miejscy kurierzy przychodzą do ciebie podając się za „donosicieli"; pokazujesz listę Zakonu i pozwalasz ją sobie ukraść. (Wszystko od ŚCIĄGAWKI do NOTATEK PLANISTYCZNYCH.)
+> - **CZĘŚĆ DRUGA — grupy KZ (handler):** własni kurierzy Zakonu przychodzą do ciebie; testujesz ich, wysyłasz na infiltrację wrogiego gniazda i uzbrajaś ich w klucz Zakonu. (Nowa sekcja, tuż przed NOTATKAMI PLANISTYCZNYMI.)
 >
-> Same costume, same Komtur — opposite framing. Which scene you run depends on the group's **wristband colour**:
-> **TR = Red / Orange / Yellow / Green / Cyan** → PART ONE (they rob you).
-> **KZ = Blue / Purple / White / Brown / Black** → PART TWO (they serve you).
-> **Oskar (MG) staggers the two queues so a TR group and a KZ group are never with you at once** (they would see contradictory scenes).
+> Ten sam kostium, ten sam Komtur — odwrócony framing. Którą scenę grasz, zależy od **koloru opaski** grupy:
+> **TR = czerwony / pomarańczowy / żółty / zielony / turkusowy** → CZĘŚĆ PIERWSZA (kradną cię).
+> **KZ = niebieski / fioletowy / biały / brązowy / czarny** → CZĘŚĆ DRUGA (służą ci).
+> **Oskar (MG) przeplata obie kolejki tak, żeby nigdy nie miałaś jednocześnie grupy TR i KZ** (widziałyby sprzeczne sceny).
 
 ---
 
-## PART ONE — TR GROUPS · the list theft
+## CZĘŚĆ PIERWSZA — GRUPY TR · kradzież listy
 
-## QUICK REFERENCE (actor cheat sheet — print separately if needed)
+## ŚCIĄGAWKA (cheat sheet aktora — wydrukuj osobno jeśli potrzeba)
 
 ```
 ╔══════════════════════════════════════════════════════════════╗
-║  ALBRECHT / ZOSIA — QUICK REF                               ║
+║  ALBRECHT / ZOSIA — ŚCIĄGAWKA                                ║
 ╠══════════════════════════════════════════════════════════════╣
-║  YOUR 5 TR GROUPS (fixed — same as Jordan's list):          ║
-║  □ Red (G1)   □ Orange (G2)   □ Yellow (G3)                 ║
-║  □ Green (G4)   □ Cyan (G5)                                  ║
+║  TWOJE 5 GRUP TR (stałe — ta sama lista co u Jordana):       ║
+║  □ czerwony (G1)   □ pomarańczowy (G2)   □ żółty (G3)        ║
+║  □ zielony (G4)    □ turkusowy (G5)                           ║
 ╠══════════════════════════════════════════════════════════════╣
-║  SCENE SEQUENCE (every group, every time):                  ║
-║  1. They approach → you receive them as informers           ║
-║  2. You pull out the list (showing off) → set it down       ║
-║  3. Hand K-Z3b silently → step off into patrol              ║
-║  4. Patrol cycle until they steal (see below)               ║
-║  5. Reset: fresh parchment from bag → ready for next group  ║
+║  SEKWENCJA SCENY (każda grupa, za każdym razem):             ║
+║  1. Podchodzą → przyjmujesz ich jako donosicieli             ║
+║  2. Wyciągasz listę (popisujesz się) → odkładasz ją          ║
+║  3. Wręczasz K-Z3b milcząco → schodzisz w patrol            ║
+║  4. Cykl patrolu dopóki nie ukradną (patrz niżej)            ║
+║  5. Reset: nowy pergamin z torby → gotowa na kolejną grupę   ║
 ╠══════════════════════════════════════════════════════════════╣
-║  PATROL CYCLE (~30–40 s per loop):                          ║
-║  A  AWAY  — step to far end, BACK TO LIST → STEAL NOW       ║
-║  B  RETURN — amble back, telegraph the turn → risky         ║
-║  C  AT LIST — stand at list, eye them → DO NOT steal        ║
-║  Always telegraph clearly. Repeat until they grab it.      ║
+║  CYKL PATROLU (~30–40 s na pętlę):                           ║
+║  A  AWAY  — schodzisz na dalszy koniec, PLECAMI DO LISTY     ║
+║             → KRADNIJ TERAZ                                   ║
+║  B  RETURN — wracasz powoli, telegrafuj obrót → ryzykowne    ║
+║  C  AT LIST — stoisz przy liście, patrzysz na nich → NIE KR. ║
+║  Zawsze telegrafuj wyraźnie. Powtarzaj dopóki nie ukradną.  ║
 ╠══════════════════════════════════════════════════════════════╣
-║  IF PASSIVE (not realising they should steal):              ║
-║  In character: "Well? Was there something else? My list     ║
-║  and I are very busy." (draw eye to parchment)             ║
-║  If still stuck: signal Oskar (MG).                        ║
+║  JEŚLI SĄ BIERNI (nie wiedzą, że mają kraść):                ║
+║  W postaci: "Well? Was there something else? My list         ║
+║  and I are very busy." (zwróć wzrok na pergamin)             ║
+║  Jeśli dalej stój: zasygnalizuj Oskarowi (MG).              ║
 ╠══════════════════════════════════════════════════════════════╣
-║  IF CAUGHT (reaching during B or C):                        ║
-║  "Hands off, gutter-rat!" → reset parchment → resume.      ║
-║  They always get another try. Never end the scene on a catch║
+║  JEŚLI ZŁAPANI (sięgają podczas B lub C):                    ║
+║  "Hands off, gutter-rat!" → reset pergaminu → wznawiasz.    ║
+║  Zawsze dostają kolejną szansę. Nigdy nie kończ sceny na     ║
+║  złapaniu.                                                    ║
 ╠══════════════════════════════════════════════════════════════╣
-║  DONE CHECKLIST (tick when group steals list and leaves):   ║
-║  □ Red    □ Orange    □ Yellow    □ Green    □ Cyan          ║
+║  LISTA UKOŃCZENIA (zaznacz gdy grupa ukradnie listę i wyjdzie)║
+║  □ czerwony   □ pomarańczowy   □ żółty   □ zielony   □ turk. ║
 ╠══════════════════════════════════════════════════════════════╣
-║  FINALE: also needed at Przedzamcze at 20:30.              ║
+║  FINAŁ: potrzebna też na Przedzamczu o 20:30.                ║
 ╚══════════════════════════════════════════════════════════════╝
 ```
 
 ---
 
-## WHO YOU ARE (context — read this first)
+## KIM JESTEŚ (kontekst — przeczytaj najpierw)
 
-You are **Komtur Albrecht**, the Order's commander. You hold this city by right and by force, and you do not believe the rabble will dare anything. You are **proud, a little bored, and contemptuous** of townsfolk. You enjoy being flattered.
+Jesteś **Komturem Albrechtem**, dowódcą Zakonu. Trzymasz to miasto siłą i prawem, i nie wierzysz, że motłoch odważy się na cokolwiek. Jesteś **dumny, nieco znudzony i pogardliwy** wobec mieszczan. Lubisz być pochlebiany.
 
-You carry the Order's **intelligence list** — names of the Secret Council, gathered from paid informers inside the walls. You are not afraid to be seen with it; you think no one would dare take it.
+Nosisz **listę wywiadowczą** Zakonu — imiona Tajnej Rady, zebrane od płatnych informatorów w murach. Nie boisz się, że cię z nią zobaczą; sądzisz, że nikt nie odważy się jej zabrać.
 
-**The players will approach you pretending to be informers** — townsfolk who claim to know who is plotting against the Order and want to curry favour. **You take the bait.** You are happy to hear denunciations — that is how the Order works. When they hint they know names, you **pull out your list to check or add a name** — this is what puts the parchment in plain view.
+**Gracze podejdą do ciebie udając donosicieli** — mieszczan, którzy twierdzą, że wiedzą, kto spiskuje przeciw Zakonowi, i chcą zaskarbić sobie przychylność. **Łapiesz haczyk.** Chętnie słuchasz donosów — tak działa Zakon. Gdy sugerują, że znają imiona, **wyciągasz listę, żeby „sprawdzić lub dopisać" nazwisko** — to jest moment, gdy pergamin pojawia się na widoku.
 
-### Your three jobs (the WHY behind everything below)
-1. **Sell the enemy.** Be the proud Teutonic commander — the players should feel they are talking to power.
-2. **Expose the list.** Take it out *on your own initiative* (checking a denunciation) and set it down where they can see it. This is the whole reason the scene exists.
-3. **Give them a fair, repeatable window to steal it** — then reset and do it again for the next group. You are the obstacle, but a *beatable, patient* one. **Every group must succeed.**
+### Trzy twoje zadania (DLACZEGO reszta poniżej jest taka, jaka jest)
+1. **Sprzedaj wroga.** Bądź dumnym komturem — gracze powinni czuć, że rozmawiają z władzą.
+2. **Eksponuj listę.** Wyciągnij ją *z własnej inicjatywy* (sprawdzasz donos) i połóż tam, gdzie ją widać. To jest cały sens tej sceny.
+3. **Daj im rzetelne, powtarzalne okno na kradzież** — a potem resetuj i rób to samo dla kolejnej grupy. Jesteś przeszkodą, ale *pokonaną, cierpliwą*. **Każda grupa musi odnieść sukces.**
 
-> You are NOT testing them with a riddle. There is no "right answer" to the conversation. The conversation is the cover; **the theft is the real task.** Your job is to make the theft *tense but achievable*.
-
----
-
-## BEFORE GROUPS ARRIVE — props & setup
-
-- [ ] **Costume:** a dark mantle + cross (suggestive of the Order — final costume TBD, pyt. #33).
-- [ ] **A stack of list parchments** (identical copies — one stolen per group; you reset between groups). Keep spares hidden in a bag/satchel.
-- [ ] **One list parchment placed at a fixed spot** — a ledge, low wall, crate, or fold-out table **you will keep walking past** (see STAGE GEOMETRY in STEP 3), reachable by someone while your back is turned.
-- [ ] **K-Z3b envelopes**, sorted by group colour (the "you saw the list — steal it" order you hand them).
-- [ ] Agreed signal method with Oskar (MG) for pacing groups / asking for help.
-
-Stand where you have **room to walk a few steps away from the list and back** — the theft window depends on you being able to put your back to it and return, clearly and repeatably.
+> Nie sprawdzasz ich zagadką. Nie ma „właściwej odpowiedzi" na rozmowę. Rozmowa jest przykrywką; **kradzież jest prawdziwym zadaniem.** Twoja rola: sprawić, żeby kradzież była *napięta, ale wykonalna*.
 
 ---
 
-## STEP 1 — THEY APPROACH (the informer cover)
+## ZANIM PRZYJDĄ GRUPY — rekwizyty i ustawienie
 
-A group comes up, playing townsfolk with "information." Receive them **with contempt that warms into interest**:
+- [ ] **Kostium:** ciemny płaszcz + krzyż (sugestywny dla Zakonu — ostateczny kostium do ustalenia, pyt. #33).
+- [ ] **Stos pergaminów z listą** (identyczne kopie — jedna skradziona na grupę; resetujesz między grupami). Trzymaj zapasy w torbie/teczce.
+- [ ] **Jeden pergamin z listą położony w stałym miejscu** — na parapecie, niskim murku, skrzynce lub składanym stole **obok którego będziesz chodzić** (patrz GEOMETRIA SCENY w STEP 3), w zasięgu osoby gdy odwrócisz plecy.
+- [ ] **Koperty K-Z3b**, posortowane wg koloru grupy (rozkaz „widziałeś listę — ukradnij ją", który im wręczasz).
+- [ ] Uzgodniony z Oskarem (MG) sposób sygnalizowania przy dopasowywaniu tempa grup / proszeniu o pomoc.
+
+Stań w miejscu, w którym masz **miejsce, żeby przejść kilka kroków od listy i z powrotem** — okno na kradzież zależy od tego, że możesz wyraźnie odwrócić się i wrócić.
+
+---
+
+## STEP 1 — PODCHODZĄ (przykrywka donosiciela)
+
+Grupka podchodzi, udając mieszczan z „informacjami". Przyjmij ich **pogardą, która ciepłeje w zainteresowanie**:
 
 > *"You. What do you want? …Information, is it? Everyone in this city suddenly has information."*
 
-Let them talk. They will hint they know who plots against the Order. **Encourage it — you feed on denunciations:**
+Pozwól im mówić. Będą sugerować, że wiedzą, kto spiskuje przeciw Zakonowi. **Zachęcaj — żywisz się donosami:**
 
 > *"Names. You have names. Good. Loyal subjects are so rare these days."*
 
-**KEY BEAT — expose the list (do this yourself):** when they offer a name, **take out your list to 'check or add' it.** This is the moment the parchment appears.
+**KLUCZOWY BEAT — eksponuj listę (zrób to sam):** gdy podają imię, **wyciągnij listę, żeby „sprawdzić lub dopisać" je.** To jest moment, gdy pergamin się pojawia.
 
 > *"Let me see if your traitor is already known to us… ah, we keep a careful list. The Order forgets nothing."*
 
-Read a name or two aloud (flatter your own thoroughness), then **set the parchment down on your surface** — you are done with it for now. Keep talking. The list is now in the open, beside you.
+Przeczytaj głośno jedno lub dwa imiona (pochwal swoją skrupulatność), a potem **połóż pergamin na swojej powierzchni** — skończyłeś go przeglądać. Mów dalej. Lista jest teraz na widoku, obok ciebie.
 
-> *Tone: you are showing off. You WANT them to see how much the Order knows. Pride is the trap.*
-
----
-
-## STEP 2 — SET THE LIST DOWN, HAND OVER K-Z3b, WALK OFF
-
-After a short, mocking exchange, do three things in smooth succession:
-
-1. **Set the list down** at your chosen spot — a ledge, low wall, crate, or fold-out table, a fixed place you will keep walking past. Do it naturally; you are simply done consulting it for now.
-2. **Hand them the K-Z3b envelope** matching their colour — **in silence.** A flat line as you turn away is enough: *"Enough. We are done here."* Do not explain it, do not react to it, do not let them pull you into talk about it.
-3. **Step off and begin your patrol** (STEP 3). Do **not** stand guard over the list, and do **not** chase the group away — you simply walk your circuit, bored and certain no one would dare.
-
-> **Why you hand it, then walk:** the envelope flips their task from "scout" to "steal," and your patrol is what opens the window. Handing-and-leaving is the sequence Oskar wants — *wręcz i odejdź* — but "leaving" means **a few steps into your circuit, not gone.** The list stays in plain view and within your patrol; the theft happens while your back is turned on the walk. The hand-over is a **meta gesture, outside the fiction** (like dealing a card) — in-world you give them nothing, you never "see" the envelope's contents. Stay the bored, superior commander.
+> *Ton: popisujesz się. CHCESZ, żeby widzieli, ile Zakon wie. Duma jest pułapką.*
 
 ---
 
-## STEP 3 — THE PATROL (the core — choreography)
+## STEP 2 — ODŁÓŻ LISTĘ, WRĘCZ K-Z3b, ODEJDŹ
 
-The list is down at its fixed spot and you have stepped off. Now **walk a predictable circuit past it** so the group can time a grab. Make it **readable** — telegraph every move.
+Po krótkim, szyderczym dialogu wykonaj trzy rzeczy płynnie po sobie:
 
-### STAGE GEOMETRY — set this up the same way every time
+1. **Połóż listę** w wybranym miejscu — parapecie, niskim murku, skrzynce lub składanym stole, stałe miejsce obok którego będziesz wielokrotnie przechodzić. Rób to naturalnie; po prostu skończyłeś ją przeglądać.
+2. **Wręcz im kopertę K-Z3b** pasującą do ich koloru — **w milczeniu.** Wystarczy płaskie zdanie gdy odwracasz się: *"Enough. We are done here."* Nie tłumacz, nie reaguj na nią, nie daj się wciągnąć w rozmowę o niej.
+3. **Odejdź i zacznij patrol** (STEP 3). **Nie** stój nad listą i **nie** przepędzaj grupy — po prostu wykonujesz swój obchód, znudzony i pewny, że nikt by się nie ośmielił.
 
-The steal only works if the path is fixed. Lock it in:
+> **Dlaczego wręczasz, a potem odchodzisz:** koperta odwraca ich zadanie ze „zwiadowcy" w „złodzieja", a twój patrol otwiera okno. Wręcz i odejdź to sekwencja, której chce Oskar — *wręcz i odejdź* — ale „odejście" oznacza **kilka kroków w obchód, nie zniknięcie.** Lista zostaje na widoku i w zasięgu twojego patrolu; kradzież dzieje się gdy odwrócisz plecy w trakcie obchodu. Wręczenie to **gest meta, poza fikcją** (jak rozdanie karty) — w fikcyjnym świecie nie dajesz im nic, nigdy „nie widzisz" zawartości koperty. Zostań znudzonym, wywyższonym komturem.
 
-- **The list sits at a fixed spot** — the ledge/crate you set it on. It does not move.
-- **You walk a short circuit:** a few steps away from the list (toward the walls, to point and boast), then back to it, then off again. **Same path every loop.**
-- **The OPEN window = you are at the far end of the circuit, back turned**, gazing at the walls and boasting. For a few seconds the list is behind you, unwatched.
-- **The CLOSED point = you are back beside the list** — pausing at it, touching it, eyeing the group.
-- **Players steal while you are at the far end, your back to them and to the list.**
+---
+
+## STEP 3 — PATROL (sedno — choreografia)
+
+Lista leży w stałym miejscu, a ty ruszyłeś. Teraz **chodź przewidywalnym obwodem obok niej**, żeby grupa mogła wyczuć moment kradzieży. Bądź **czytelna** — telegrafuj każdy ruch.
+
+### GEOMETRIA SCENY — ustaw tak samo za każdym razem
+
+Kradzież działa tylko jeśli ścieżka jest stała. Zafiksuj ją:
+
+- **Lista leży w stałym miejscu** — parapet/skrzynka, na którą ją położyłeś. Nie przesuwa się.
+- **Chodzisz krótkim obwodem obok niej:** kilka kroków od listy (w stronę murów, żeby wskazywać i chwalić się), potem z powrotem do niej, potem znów w drugą stronę. **Ta sama trasa w każdej pętli.**
+- **Okno OTWARTE = jesteś na dalszym końcu obwodu, plecami do obserwacji**, wpatrzona w mury i chwaląca się. Przez kilka sekund lista jest za tobą, niestrzeżona.
+- **Punkt ZAMKNIĘTY = jesteś z powrotem przy liście** — zatrzymujesz się przy niej, dotykasz, zerkasz na grupę.
+- **Gracze kradną gdy jesteś na dalekim końcu, plecami do nich i do listy.**
 
 ```
-   LIST ▢ (fixed)                         [ CASTLE WALLS ]
+   LISTA ▢ (stała)                          [ MURY ZAMKOWE ]
         │                                        ▲
-        │   ◄── C: you pause here, AT the list    │
-        │        (facing it — do NOT steal)       │  A: you walk to the far end,
-        └─────────────────────────────────────────┘     BACK TURNED, point & boast
-                  your circuit  ──────────────►          → list unwatched: STEAL NOW
-                    [ players linger near the list, off to one side ]
+        │   ◄── C: zatrzymujesz się PRZY liście  │
+        │        (w jej stronę — NIE KRADNIJ)    │  A: idziesz na dalszy koniec,
+        └─────────────────────────────────────────┘     PLECAMI DO LISTY, wskazujesz
+                  twój obwód  ──────────────►           → lista niestrzeżona: KRADNIJ
+                    [ gracze trzymają się obok listy, nieco z boku ]
 ```
 
-> The window opens with **distance and a turned back**, not a turned head. If you loiter by the list, it never opens — **keep walking the circuit.**
+> Okno otwiera **odległość i odwrócone plecy**, nie odwrócona głowa. Jeśli kręcisz się przy liście, okno się nie otwiera — **trzymaj się obwodu.**
 
-### The cycle (repeat continuously, ~30–40 s per loop)
+### Cykl (powtarzaj ciągle, ~30–40 s na pętlę)
 
-| Phase | ~Time | What you do | Window |
+| Faza | ~Czas | Co robisz | Okno |
 |---|---|---|---|
-| **A — AWAY** | 10–15 s | **Step off clearly** (telegraph!) to the far end of your circuit, **back to the list**, point toward the walls and boast about the Order's strength. The list is behind you; you cannot see it. | **STEAL NOW (while you are away)** |
-| **B — RETURNING** | 3–5 s | Turn and **amble back** toward the list — telegraph the return coming. | grab = risky |
-| **C — AT THE LIST** | ~10 s | Stand at the list, tidy or touch it, glance at the players. Anyone reaching now is caught. | do NOT steal |
+| **A — AWAY** | 10–15 s | **Wyraźnie odchodzisz** (telegrafuj!) na dalszy koniec obwodu, **plecami do listy**, wskazujesz na mury i chwalisz się siłą Zakonu. Lista jest za tobą; nie widzisz jej. | **KRADNIJ TERAZ (gdy jesteś AWAY)** |
+| **B — RETURNING** | 3–5 s | Obracasz się i **powoli wracasz** w stronę listy — telegrafuj nadchodzący powrót. | złapanie = ryzykowne |
+| **C — AT THE LIST** | ~10 s | Stoisz przy liście, układasz ją lub dotykasz, zerkasz na graczy. Ktokolwiek sięga teraz — złapany. | NIE KRADNIJ |
 
-Then step off again to Phase A. **Always telegraph** (a clear step-off away, a clear amble back) so players can read when the window opens and shuts. The window is **repeatable** — never a single one-shot chance.
+Potem ruszaj znów w fazę A. **Zawsze telegrafuj** (wyraźne odejście, wyraźny powolny powrót), żeby gracze mogli odczytać, kiedy okno się otwiera i zamyka. Okno jest **powtarzalne** — nigdy nie jest jednorazową szansą.
 
-> **Why telegraphed & repeatable:** stealing is **mandatory** — every group needs the list (its header carries the cipher key for the finale). The drama is in the *moment of the grab*, not in whether they succeed. Give them as many fair tries as they need.
-
----
-
-## STEP 4 — REACTIONS
-
-**If they grab during Phase A (success):**
-- **Don't notice.** Keep boasting, finish your circuit, "discover" the list gone a beat later — or not at all. Let them get away. They will run; let them.
-- A small delayed reaction is fine for flavour: *"…now where did I— "* (too late).
-
-**If they reach during Phase B/C (caught):**
-- Snap at them, sharp but not game-ending: *"Hands off, gutter-rat! That is the Order's business, not yours."*
-- Push the hand away, re-set the parchment, **resume the cycle.** The window will come around again. **Never** confiscate the chance — they get to try again.
-- If a group keeps getting caught (3+ tries), **slow your cycle / lengthen Phase A** to help them through. Oskar (MG) may assist.
-
-**If a group is too passive / doesn't realise they should steal:**
-- Nudge in character: *"Well? Was there something else? My list and I are very busy."* (draw their eye to the parchment).
-- If still stuck, Oskar steps in.
+> **Dlaczego telegrafowane i powtarzalne:** kradzież jest **obowiązkowa** — każda grupa musi mieć listę (jej nagłówek zawiera klucz szyfrowy do finału). Drama jest *w momencie kradzieży*, nie w tym, czy im się uda. Daj im tyle rzetelnych szans, ile potrzebują.
 
 ---
 
-## STEP 5 — RESET (between groups)
+## STEP 4 — REAKCJE
 
-After a group steals the list and leaves:
-- Discreetly take a **fresh parchment** from your bag and **place it on the surface again.**
-- You are ready for the next group. (The "stolen" copy is gone with them as their prop.)
+**Jeśli kradną w fazie A (sukces):**
+- **Nie zauważaj.** Chwal się dalej, skończ obwód, „odkryj" zniknięcie listy chwilę później — albo wcale. Niech uciekają; pozwól im.
+- Mała opóźniona reakcja jest OK dla smaku: *"…now where did I— "* (za późno).
 
-> This is the **loop**: each group experiences a clean theft of "the only list." They never know others did the same.
+**Jeśli sięgają w fazie B/C (złapani):**
+- Przytknij im krótko, bez kończenia gry: *"Hands off, gutter-rat! That is the Order's business, not yours."*
+- Odpychasz rękę, resetujesz pergamin, **wznawiasz cykl.** Okno wróci. **Nigdy** nie odbieraj szansy — dostają kolejną próbę.
+- Jeśli grupa ciągle jest łapana (3+ próby), **zwolnij cykl / wydłuż fazę A**, żeby im pomóc. Oskar (MG) może asystować.
 
----
-
-## TIMING & LOGISTICS
-
-- Keep each group to **~5–10 minutes** (cover chat + a few theft attempts). Oskar paces the queue.
-- Stay in your spot **outside the walls** — groups are told to find you there. Don't wander far.
-- If two groups arrive together: Oskar staggers them. Don't run the theft window for two groups at once (they'd see each other succeed).
-
----
-
-## IF SOMETHING GOES WRONG
-
-- **Group tries to openly snatch / wrestle the list:** stay in character, block once, remind them subtlety is the point (*"You think you can just take from the Order in daylight? Wait. Watch."*) — then run the cycle so they learn the rhythm.
-- **Group gets aggressive or breaks character:** you are a proud commander; you don't break. Oskar intervenes if needed.
-- **Group asks who you really are / about the game:** *"I am the Komtur. That is all you need to know."*
+**Jeśli grupa jest zbyt bierna / nie rozumie, że ma kraść:**
+- Naprowadź w postaci: *"Well? Was there something else? My list and I are very busy."* (zwróć ich wzrok na pergamin).
+- Jeśli nadal stają w miejscu, Oskar wkracza.
 
 ---
 
-# PART TWO — KZ GROUPS · the handler
+## STEP 5 — RESET (między grupami)
 
-> Your **second role** [added 2026-06-03, REWIZJA]. To the **town (TR)** groups you are the enemy whose list they steal (PART ONE). To the **Order's (KZ)** groups you are their **handler** — the proud Komtur who tests them, sends them into the enemy's nest, and gives them the Order's recognition key. Same costume, same Komtur; opposite scene. **Oskar staggers the queues so the two never overlap.**
+Po tym jak grupa ukradnie listę i wyjdzie:
+- Dyskretnie weź **nowy pergamin** z torby i **połóż go z powrotem na powierzchni.**
+- Jesteś gotowa na kolejną grupę. („Skradziona" kopia wychodzi z nimi jako ich rekwizyt.)
 
-## QUICK REFERENCE — KZ HANDLER
+> To jest **pętla**: każda grupa przeżywa czystą kradzież „jedynej listy". Nigdy nie wiedzą, że inne zrobiły to samo.
+
+---
+
+## CZAS I LOGISTYKA
+
+- Trzymaj każdą grupę do **~5–10 minut** (dialog donosiciela + kilka prób kradzieży). Oskar pilnuje kolejki.
+- Zostań na swoim miejscu **na zewnątrz murów** — grupy mają cię tam znaleźć. Nie odchodź daleko.
+- Jeśli dwie grupy przychodzą razem: Oskar je rozdziela. Nie prowadź okna kradzieży dla dwóch grup jednocześnie (widziałyby, jak nawzajem odnoszą sukces).
+
+---
+
+## JEŚLI COŚ PÓJDZIE NIE TAK
+
+- **Grupa próbuje otwarcie wyrwać / siłować się o listę:** zostań w postaci, zablokuj raz, przypomnij im, że dyskrecja jest istotą (*"You think you can just take from the Order in daylight? Wait. Watch."*) — potem uruchom cykl, żeby nauczyły się rytmu.
+- **Grupa zachowuje się agresywnie lub wychodzi z postaci:** jesteś dumnym komturem; nie przerywasz. Oskar wkracza w razie potrzeby.
+- **Grupa pyta, kim naprawdę jesteś / o grę:** *"I am the Komtur. That is all you need to know."*
+
+---
+
+# CZĘŚĆ DRUGA — GRUPY KZ · handler
+
+> Twoja **druga rola** [dodana 2026-06-03, REWIZJA]. Dla grup **miejskich (TR)** jesteś wrogiem, którego listę kradną (CZĘŚĆ PIERWSZA). Dla grup **Zakonu (KZ)** jesteś ich **handlerem** — dumnym Komturem, który ich testuje, wysyła w wrogą siedzibę i daje im klucz rozpoznania Zakonu. Ten sam kostium, ten sam Komtur; odwrócona scena. **Oskar przeplata kolejki tak, żeby dwie nigdy się nie nałożyły.**
+
+## ŚCIĄGAWKA — HANDLER KZ
 
 ```
 ╔══════════════════════════════════════════════════════════════╗
-║  ALBRECHT / ZOSIA — KZ HANDLER QUICK REF                    ║
+║  ALBRECHT / ZOSIA — ŚCIĄGAWKA HANDLER KZ                     ║
 ╠══════════════════════════════════════════════════════════════╣
-║  YOUR 5 KZ GROUPS (fixed):                                  ║
-║  □ Blue (G6)   □ Purple (G7)   □ White (G8)                 ║
-║  □ Brown (G9)   □ Black (G10)                                ║
+║  TWOJE 5 GRUP KZ (stałe):                                    ║
+║  □ niebieski (G6)   □ fioletowy (G7)   □ biały (G8)          ║
+║  □ brązowy (G9)     □ czarny (G10)                            ║
 ╠══════════════════════════════════════════════════════════════╣
-║  VERIFY ON ARRIVAL:                                         ║
-║  ✓ Right wristband colour (above) + the day's word          ║
-║    (the day's word = what you bore this morning:            ║
-║     "the Komtur's seal" — proposed, pending Oskar)         ║
-║  ✗ Wrong colour / no word → "The Order does not know you." ║
+║  WERYFIKACJA PRZY WEJŚCIU:                                    ║
+║  ✓ Właściwy kolor opaski (powyżej) + hasło dnia               ║
+║    (hasło dnia = co nosiłeś dziś rano:                        ║
+║     "pieczęć Komtura" — propozycja, do akceptacji Oskara)    ║
+║  ✗ Zły kolor / brak hasła → "The Order does not know you."   ║
 ╠══════════════════════════════════════════════════════════════╣
-║  SCENE SEQUENCE (every group, every time):                  ║
-║  1. They approach, claim to serve the Order → verify        ║
-║  2. Pride & contempt: they must EARN the Order's trust      ║
-║  3. Set the task: infiltrate the enemy's nest (Piccolo)     ║
-║  4. Hand K3-K + Recognition Table (Tabela 1) — in silence   ║
-║  5. Dismiss them. You do NOT take their letter now.         ║
+║  SEKWENCJA SCENY (każda grupa, za każdym razem):             ║
+║  1. Podchodzą, twierdzą że służą Zakonowi → weryfikuj        ║
+║  2. Duma i pogarda: muszą ZASŁUŻYĆ na zaufanie Zakonu        ║
+║  3. Wyznacz zadanie: infiltruj wrogą siedzibę (Piccolo)      ║
+║  4. Wręcz K3-K + Tabelę Rozpoznawczą (Tabela 1) — milcząco  ║
+║  5. Odpraw ich. Listu NIE bierzesz teraz.                    ║
 ╠══════════════════════════════════════════════════════════════╣
-║  THEY KEEP THE LETTER. Delivery is at the walls tonight     ║
-║  (20:30), free choice — never here.                         ║
+║  ONI ZACHOWUJĄ LIST. Oddanie jest przy murach wieczorem      ║
+║  (20:30), wolny wybór — nigdy tutaj.                         ║
 ╠══════════════════════════════════════════════════════════════╣
-║  DONE CHECKLIST:                                            ║
-║  □ Blue   □ Purple   □ White   □ Brown   □ Black             ║
+║  LISTA UKOŃCZENIA:                                            ║
+║  □ niebieski   □ fioletowy   □ biały   □ brązowy   □ czarny  ║
 ╚══════════════════════════════════════════════════════════════╝
 ```
 
 ---
 
-## WHO YOU ARE (to the KZ groups)
+## KIM JESTEŚ (dla grup KZ)
 
-Same proud Komtur — but these are people who come *claiming to serve the Order.* You do not embrace them. The Order is not desperate (let them think so), and you trust no one on sight. They carry a dispatch they say must reach you; their go-between has vanished. Good — go-betweens are weak links. But **you will not simply take what they carry. First they prove they are worth the Order's trust.**
+Ten sam dumny Komtur — ale ci to ludzie, którzy przychodzą *twierdząc, że służą Zakonowi.* Nie obejmujesz ich. Zakon nie jest zdesperowany (niechaj tak myślą), i nikomu nie ufasz na pierwszy rzut oka. Niosą dyspozycję, która — jak mówią — musi do ciebie dotrzeć; ich łącznik zniknął. Dobrze — łącznicy są słabym ogniwem. Ale **nie wezmiesz po prostu tego, co niosą. Najpierw muszą udowodnić, że są warci zaufania Zakonu.**
 
-Your gate is **pride.** You are the legitimate power here; the rabble are beneath you; and anyone who would serve the Order earns it by doing the Order's dangerous work — going into the enemy's own nest and bringing back what the Order needs.
+Twoją bramką jest **duma.** Jesteś legalną władzą; motłoch jest poniżej ciebie; i każdy, kto chciałby służyć Zakonowi, musi na to zasłużyć wykonując niebezpieczną robotę Zakonu — wchodząc w samo gniazdo wrogów i przynosząc to, czego Zakon potrzebuje.
 
-### Your three jobs (KZ handler)
-1. **Be the proud master, not a grateful ally.** They serve you; you do not thank them. Contempt that *tests*, not warmth.
-2. **Set the task (Z3Z).** Send them to infiltrate the townsmen's nest — Piccolo, the cook Jordan's kitchen — to steal the enemy's supplies, learn the **hour** of the rising, and *watch the cook himself closely.*
-3. **Arm them with the Order's key.** Hand the **Recognition Table** (Tabela 1) — the Order's cipher of colours and tokens — that they will need before the night is out. Hand it with K3-K, **in silence** (meta gesture, like dealing a card).
+### Trzy twoje zadania (handler KZ)
+1. **Bądź dumnym panem, nie wdzięcznym sojusznikiem.** Oni ci służą; ty nie dziękujesz. Pogarda, która *testuje*, nie ciepłota.
+2. **Wyznacz zadanie (Z3Z).** Wyślij ich na infiltrację siedziby mieszczan — Piccolo, kuchni kucharza Jordana — żeby ukraść zaopatrzenie wroga, dowiedzieć się o **godzinie** powstania i *uważnie obejrzeć samego kucharza.*
+3. **Uzbrój ich w klucz Zakonu.** Wręcz **Tabelę Rozpoznawczą** (Tabela 1) — szyfr Zakonu kolorów i żetonów — którego będą potrzebować przed nastaniem nocy. Wręcz razem z K3-K, **w milczeniu** (gest meta, jak rozdanie karty).
 
-> You are NOT collecting their letter. The dispatch stays with them. Whether it ever reaches your hand is decided at the walls tonight (the finale) — not now.
+> Nie zbierasz ich listu. Dyspozycja zostaje przy nich. Czy kiedykolwiek trafi w twoje ręce, decyduje się przy murach dziś wieczór (finał) — nie teraz.
 
 ---
 
-## STEP K1 — THEY APPROACH (verify)
+## STEP K1 — PODCHODZĄ (weryfikacja)
 
-A group comes up claiming to carry something for the Order, or to serve it. Receive them with **cold suspicion** — the Order does not trust strangers:
+Grupka podchodzi twierdząc, że coś niesie dla Zakonu albo że mu służy. Przyjmij ich **z chłodną podejrzliwością** — Zakon nie ufa nieznajomym:
 
 > *"You. You come to the Komtur of the Order. State your business — and be quick about it."*
 
-Verify two things before you give them anything:
+Sprawdź dwie rzeczy zanim dasz im cokolwiek:
 
-- **Wristband colour** — only the five above are yours. Wrong colour → *"I think you have mistaken your master. The Order does not know you."* (signal Oskar).
-- **The day's word** — N., their vanished go-between, set a word for today; a true man of the Order's cause will give it. They prove it by **naming what you bore through the town this morning: the Komtur's seal.** *(Proposed parol — from the KZ Z2 deduction in `envelopes/krzyzacy-2-Z2`; pending Oskar's sign-off, may change.)* No word → press them once; if still nothing, send them off.
+- **Kolor opaski** — tylko pięć powyżej to twoi. Zły kolor → *"I think you have mistaken your master. The Order does not know you."* (zasygnalizuj Oskarowi).
+- **Hasło dnia** — N., ich zaginiony łącznik, ustalił hasło na dziś; prawdziwy człowiek sprawy Zakonu poda je. Udowadniają to **wymieniając, co nosiłeś przez miasto dziś rano: pieczęć Komtura.** *(Proponowane hasło — z dedukcji KZ Z2 w `envelopes/krzyzacy-2-Z2`; do akceptacji Oskara, może się zmienić.)* Brak hasła → naciśnij raz; jeśli nadal nic, odpraw.
 
-If both check out, let a little grim satisfaction show:
+Jeśli oba sprawdzone, pozwól przebłysnąć odrobinie ponurej satysfakcji:
 
 > *"…So. Sent to me, and the carrier already gone to ground. Of course he is."*
 
 ---
 
-## STEP K2 — PRIDE & THE TASK
+## STEP K2 — DUMA I ZADANIE
 
-Do **not** warm to them. They may expect thanks, or to simply hand over their dispatch and be done. Deny them both:
+**Nie** ocieplaj się w stosunku do nich. Mogą oczekiwać podziękowań, albo po prostu wręczyć dyspozycję i skończyć. Odmów im obu:
 
 > *"You think you carry something, and so the Order owes you? The Order owes no one. If you would serve — if you would have me so much as look at what you carry — you will earn it first."*
 
-Then set the task (Z3Z), in your own words:
+Potem wyznacz zadanie (Z3Z) własnymi słowami:
 
 > There is a cook in this town. Jordan. Keeps a kitchen at Piccolo. It is no kitchen — it is where the traitors' Council does its whispering. Go there **as one of their own** — pass for the Council's couriers, and the cook will feed you like a friend. Eat at his board; take what feeds them and deny it to them. And mark the cook himself well: **what he wears, what he carries.** The Order will know its enemy by sight.
 
-> *Why "mark what he wears, what he carries": this seeds the two Z3Z observations the group needs for the finale cipher — Jordan's **brown robe** and his **ladle** (→ Recognition Table / Z11). Say it as a commander's thoroughness, not a riddle.*
+> *Dlaczego „zaznacz co nosi, co trzyma": to zasiewa dwie obserwacje Z3Z, których grupa potrzebuje do szyfru finałowego — **brązowa szata** Jordana i jego **chochla** (→ Tabela Rozpoznawcza / Z11). Mów to jak drobiazgowość dowódcy, nie zagadkę.*
 
-> *Tone: this is a test as much as a task. You expect them to fail. Let them feel they must prove you wrong.*
+> *Ton: to test równie dobrze co zadanie. Spodziewasz się, że zawiodą. Niech poczują, że muszą udowodnić ci, że mylisz się.*
 
 ---
 
-## STEP K3 — HAND OVER K3-K + RECOGNITION TABLE, DISMISS
+## STEP K3 — WRĘCZ K3-K + TABELĘ ROZPOZNAWCZĄ, ODPRAW
 
-Three things in smooth succession:
+Trzy rzeczy płynnie po sobie:
 
-1. **Hand the K3-K envelope** matching their colour — **in silence.** A flat line is enough: *"Everything you need is in here."* Do not explain it, do not discuss its contents, do not let them pull you into talk about it (meta gesture, outside the fiction — like dealing a card).
-2. **Hand the Recognition Table** (Tabela 1) — the Order's grid of colours and tokens. In-world, frame it as the Order's secret:
+1. **Wręcz kopertę K3-K** pasującą do ich koloru — **w milczeniu.** Wystarczy płaskie zdanie: *"Everything you need is in here."* Nie tłumacz, nie omawiaj zawartości, nie daj się wciągnąć w rozmowę o niej (gest meta, poza fikcją — jak rozdanie karty).
+2. **Wręcz Tabelę Rozpoznawczą** (Tabela 1) — siatkę Zakonu kolorów i żetonów. W fikcji ujmij ją jako tajemnicę Zakonu:
    > *"And this. The Order knows its own by signs the rabble cannot read. You will need it before the night is out. Guard it — lose it and you are no one to me."*
-3. **Dismiss them:**
+3. **Odpraw ich:**
    > *"Now go. Come to the walls tonight, when the eighth bell sounds — if you have proven worth the coming."*
 
-You keep the dispatch out of it. **You never take their letter here.**
+Dyspozycja pozostaje przy nich. **Nigdy nie bierzesz tu ich listu.**
 
 ---
 
-## STEP K4 — REACTIONS (KZ)
+## STEP K4 — REAKCJE (KZ)
 
-**If they try to hand you the letter now:**
-- Refuse, proud. *"Did I ask for it? You hand the Order nothing until you have shown you are the Order's. Tonight. At the walls. Not before."*
+**Jeśli próbują ci teraz wręczyć list:**
+- Odmów, z dumą. *"Did I ask for it? You hand the Order nothing until you have shown you are the Order's. Tonight. At the walls. Not before."*
 
-**If they push to know more about the task:**
-- *"It is all in there. The Order does not hold hands."* (point to K3-K).
+**Jeśli naciskają, żeby dowiedzieć się więcej o zadaniu:**
+- *"It is all in there. The Order does not hold hands."* (wskaż na K3-K).
 
-**If they ask who the cook really is / about the game:**
-- *"A traitor with a ladle. That is all you need to know."* **Do NOT hint that Jordan is anyone but a cook** — you do not know it, and it must not leak (the finale twist is the town's, not yours).
+**Jeśli pytają, kim kucharz naprawdę jest / o grę:**
+- *"A traitor with a ladle. That is all you need to know."* **Nie sugeruj, że Jordan to ktokolwiek poza kucharzem** — nie wiesz o tym, i nie może to wyciec (twist finału należy do mieszczan, nie do ciebie).
 
-**If a group is passive / unsure what to do:**
-- *"Well? The night will not wait. Go."* If still stuck, signal Oskar (MG).
+**Jeśli grupa jest bierna / nie wie co robić:**
+- *"Well? The night will not wait. Go."* Jeśli nadal stoją, zasygnalizuj Oskarowi (MG).
 
-**If they get aggressive or break character:**
-- You are a proud commander; you do not break. *"You forget yourself."* Oskar intervenes if needed.
-
----
-
-## TIMING & THE TWO ROLES (read with Oskar)
-
-You play Albrecht for **both** factions, in opposite framings. Practical rules:
-
-- **~5–10 min per KZ group** (verify + task + hand-over). Oskar paces the queue.
-- **Oskar staggers TR and KZ groups** so you are never running a theft scene (PART ONE) and a handler scene (PART TWO) at the same time — they would see contradictory versions of you.
-- **Costume is the same** for both. Location can be the same spot outside the walls, or two nearby spots — agree with Oskar on the day.
-- **The Recognition Table (Tabela 1)** is a printed prop — have a stack, one per KZ group, sorted by colour (like the K3-K envelopes).
-- ⚠ **Open (verify with Zosia at rehearsal):** whether one actor can sustain two opposite framings across the afternoon. Flagged **symmetric with Piotr/Jordan**, who is also dual-role (handler → TR at Piccolo / infiltration *target* → KZ in Z3Z). See `lore/meta-kartki/krzyzacy-3-Z3Z.md §SPORNE` and `concept/05-tor-krzyzakow.md §REWIZJA`.
+**Jeśli zachowują się agresywnie lub wychodzą z postaci:**
+- Jesteś dumnym komturem; nie przerywasz. *"You forget yourself."* Oskar wkracza w razie potrzeby.
 
 ---
 
-## PART THREE — FINALE · the delivery gate (BOTH factions) [2026-06-03]
+## CZAS I DWIE ROLE (przeczytaj z Oskarem)
 
-> At **Przedzamcze, the eighth bell (20:30)**, the groups gather. You stand on **your** side; Bażyński (Piotr) on his. Each group chooses into whose hand its sealed letter goes. **This is where you finally take a letter — or refuse it.**
+Grasz Albrechta dla **obu** frakcji, w odwrotnych framingach. Zasady praktyczne:
 
-**You take NO letter on trust. The gate is the Order's watchword.**
+- **~5–10 min na grupę KZ** (weryfikacja + zadanie + wręczenie). Oskar pilnuje kolejki.
+- **Oskar przeplata grupy TR i KZ** tak, żebyś nigdy nie prowadziła sceny kradzieży (CZĘŚĆ PIERWSZA) i sceny handlera (CZĘŚĆ DRUGA) jednocześnie — widziałyby sprzeczne wersje ciebie.
+- **Kostium jest taki sam** dla obu. Lokalizacja może być to samo miejsce na zewnątrz murów, albo dwa pobliskie punkty — uzgodnij z Oskarem w dniu gry.
+- **Tabela Rozpoznawcza (Tabela 1)** to drukowany rekwizyt — miej stos, jeden na grupę KZ, posortowane wg koloru (jak koperty K3-K).
+- ⚠ **Otwarte (zweryfikuj z Zosią na próbie):** czy jeden aktor utrzyma dwa przeciwstawne framingi przez całe popołudnie. Zaznaczone **symetrycznie z Piotrem/Jordanem**, który też jest dwurolowy (handler → TR w Piccolo / cel infiltracji → KZ w Z3Z). Patrz `lore/meta-kartki/krzyzacy-3-Z3Z.md §SPORNE` i `concept/05-tor-krzyzakow.md §REWIZJA`.
 
-When a group comes to give *you* the letter:
+---
 
-1. **Demand the word — first, before your hand moves.**
+## CZĘŚĆ TRZECIA — FINAŁ · brama oddania (OBU frakcji) [2026-06-03]
+
+> O **Przedzamczu, ósmy dzwon (20:30)**, grupy się zbierają. Stoisz po **swojej** stronie; Bażyński (Piotr) po swojej. Każda grupa wybiera, w czyją rękę trafia jej zapieczętowany list. **Tu wreszcie możesz przyjąć list — albo odmówić.**
+
+**Nie bierzesz ŻADNEGO listu bez sprawdzenia. Bramką jest hasło Zakonu.**
+
+Gdy grupa przychodzi oddać ci list:
+
+1. **Zażądaj hasła — najpierw, zanim twoja ręka się ruszy.**
    > *"Before the Order's hand closes on anything — the watchword. Speak it."*
-2. **Correct = the Order's motto `HELFEN, HEILEN UND WEHREN!`** Accept any reasonable form — they may read it haltingly or in pieces; accept the sense. → **Take the letter.**
+2. **Poprawne = motto Zakonu `HELFEN, HEILEN UND WEHREN!`** Akceptuj każdą rozsądną formę — mogą czytać je z trudem lub we fragmentach; akceptuj sens. → **Weź list.**
    > *"Helfen, Heilen, Wehren. Good. You are the Order's. Give it here."*
-   The letter counts for the Order (Oskar tallies the side).
-3. **Wrong word / no word → refuse. Do NOT take the letter.**
+   Bierzesz list do **swojego stosu** — to głos dla Zakonu. **Tuż przed scenką finałową przeliczasz swój stos** [#50, 2026-06-03]: wiesz dokładnie, ile listów masz. Bażyński (Piotr) liczy swój. Większy stos = wynik. Grupa, która nie oddała nikomu, po prostu nie wchodzi do żadnego stosu — neutralnie, bez kary [#15].
+3. **Złe hasło / brak hasła → odmów. NIE bierz listu.**
    > *"No word, no welcome. The Order does not take paper from strangers. Take it to the other man, if you dare."*
-   They may turn to Bażyński instead — their free choice.
+   Mogą się odwrócić do Bażyńskiego — ich wolny wybór.
 
-**Where the word comes from (you don't say this — just know it):**
-- **KZ groups** decoded it tonight (their finale cipher Z11 yields the motto).
-- **TR groups who switch to you** can read it off the **list they stole from you** — its header carries the same motto. Either way, only someone who did the work can speak it.
+**Skąd pochodzi hasło (nie mówisz tego — po prostu wiedz):**
+- **Grupy KZ** odszyfrują je dziś wieczorem (ich szyfr finałowy Z11 daje motto).
+- **Grupy TR, które przechodzą do ciebie** mogą je odczytać z **listy, którą od ciebie ukradły** — jej nagłówek zawiera to samo motto. W obu przypadkach wypowiedzieć je może tylko ktoś, kto odrobił pracę domową.
 
-> *Tone: the same proud Komtur. The watchword is not a courtesy — it is the Order proving who belongs to it. You would sooner refuse a letter than take it from a mouth that cannot say the words.*
+> *Ton: ten sam dumny Komtur. Hasło to nie grzeczność — to Zakon udowadniający, kto do niego należy. Wolałbyś odmówić przyjęcia listu, niż wziąć go od ust, które nie znają tych słów.*
 
 > **Logistyka (MG):** brama działa **per grupa** w momencie wręczenia. Grupa, która wybrała Twoją stronę bez motta → odpraw (mogą iść do Bażyńskiego albo odejść; liczy się strona odbioru, `concept/04`). Sporne przypadki rozstrzyga Oskar.
 
@@ -373,7 +375,7 @@ When a group comes to give *you* the letter:
 
 **Rola Albrechta = dwie role [REWIZJA 2026-06-02/03, `concept/05 §REWIZJA`].** ~~Zosia obsługuje TYLKO tor TR Z3~~ — nieaktualne. Zosia gra Albrechta dla **OBU** torów: (1) **cel kradzieży** dla TR (PART ONE — lista), (2) **handler** dla KZ (PART TWO — wręcza zadanie Z3Z + Tabelę 1, żąda dowodu godności). Symetrycznie do Piotra/Jordana (handler→TR / cel→KZ). Brama KZ = **duma Albrechta** (jawny komtur żąda, by udowodnić wartość przed przyjęciem listu) — `concept/05`, `puzzles/z11-szyfr-spec.md §5`. **Logistyka dnia:** MG przeplata kolejki TR/KZ (nigdy obie naraz). ⚠ Dwurolowość jednego aktora = otwarte do weryfikacji na próbie (flaga symetryczna z Piotrem, `krzyzacy-3-Z3Z §SPORNE`).
 
-**Dlaczego Albrecht sam wyciąga listę (wariant A — donosiciele):** to domyka uzasadnienie fabularne (`zasada-uzasadnienie-fabularne`) — lista jest na widoku, bo komtur **chce** pochwalić się wiedzą Zakonu przed „donosicielami". Bez tego lista „leżąca przypadkiem" byłaby naciągana. Pokrycie: `donosiciele-1454.js`.
+**Dlaczego Albrecht sam wyciąga listę (wariant A — donosiciele):** to domyka uzasadnienie fabularne (`zasada-uzasadnienie-fabularne`) — lista jest na widoku, bo komtur **chce** pochwalić się wiedzą Zakonu przed „donosicielami". Bez tego lista „leżąca przypadkowo" byłaby naciągana. Pokrycie: `donosiciele-1454.js`.
 
 **Choreografia = sedno (życzenie Oskara 2026-06-01):** bardzo konkretny, telegrafowany, powtarzalny cykl. Kluczowe zasady projektowe: (1) okno OTWARTE = ciało+głowa odwrócone, lista poza wzrokiem; (2) okno ZAMKNIĘTE = patrzy wprost na listę; (3) zawsze telegrafuj obrót; (4) nigdy jednostrzałowo; (5) złapanie = reset, nie eliminacja; (6) reset/loop egzemplarza między grupami. Patrz `zamek-krzyzacki-lista.md` „Struktura Z3" pkt 4.
 

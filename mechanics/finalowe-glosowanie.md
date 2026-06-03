@@ -8,7 +8,8 @@ W finale (F3) zliczamy: ile listów trafiło do **Bażyńskiego** (przez Jordana
 
 - **Liczenie: PROSTE — 1 grupa = 1 głos.** Bez mnożników. Uzasadnienie: jeden MG (Oskar) + ~11 grup w oknie finałowym → ważone liczenie na żywo jest nierealne. Liczymy fizyczne listy.
 - **Krzyżacy: WOLNY WYBÓR.** Każda grupa — TR i krzyżacka — może dostarczyć list dowolnej stronie (Bażyński albo Albrecht). Spójne z decyzją o pełnej symetrii torów. Klasa zmienia tylko narrację („co jest zdradą"), nie mechanikę zliczania. Wynik = czysto: liczba listów u Bażyńskiego vs u Albrechta.
-- Wciąż otwarte: mechanika fizyczna (A/B/C) i „co jeśli nie dostarczą" (1/2/3) — patrz niżej.
+- **Mechanika fizyczna: Wariant B** [2026-06-02] — aktorzy odbierają listy fizycznie. **Liczenie: Jordan i Albrecht liczą odebrane listy tuż przed finałową sceną** [2026-06-03, Oskar].
+- **Niedostarczony list: nie liczony, neutralnie, bez kary** [2026-06-03, Oskar] — patrz niżej.
 
 ## Podstawowa wersja (prosta)
 
@@ -51,13 +52,15 @@ W finale (F3) zliczamy: ile listów trafiło do **Bażyńskiego** (przez Jordana
 
 **ROZSTRZYGNIĘTE [2026-06-02]: Wariant B** — aktorzy (Piotr/Bażyński + Zosia/Albrecht) odbierają listy fizycznie przy Przedzamczu o 20:30. Wybór fabularny — gracze sami decydują komu wręczyć. Nie ma pudełek, nie ma QR.
 
+**Liczenie [2026-06-03, Oskar]:** **Jordan i Albrecht liczą fizycznie odebrane listy tuż przed rozpoczęciem finałowej scenki** — każdy wie, ile ma. Wynik = porównanie obu stosów na żywo. Bez osobnego licznika MG.
+
 ## Co jeśli grupa nie dostarczy?
 
 - **Wariant 1**: nie liczy się głos. Grupa "ginie w drodze".
 - **Wariant 2**: domyślnie zalicza się do "nikomu" = neutralny głos.
 - **Wariant 3**: domyślnie do **strony przeciwnej do klasy** ("grupa zdradziła"). Brutalne.
 
-**Sugestia: 1** - najmniej karzące.
+**ROZSTRZYGNIĘTE [2026-06-03, Oskar]: nie liczony, neutralnie, bez kary** (efektywnie wariant 1/2 — różnica zanika, bo nic do żadnego stosu nie trafia). NIE wariant 3. Mechanicznie wymuszone przez sposób liczenia: aktorzy liczą tylko to, co fizycznie odebrali, więc brak dostawy po prostu wypada z wyniku.
 
 ## Komunikacja wyniku
 
@@ -70,7 +73,7 @@ W finale (F3) zliczamy: ile listów trafiło do **Bażyńskiego** (przez Jordana
 
 1. ~~Prosta czy ważona~~ ROZSTRZYGNIĘTE [2026-05-29]: **prosta, 1 grupa = 1 głos**.
 2. ~~Mechanika fizyczna (A/B/C)~~ ROZSTRZYGNIĘTE [2026-06-02]: **Wariant B** — aktorzy odbierają fizycznie.
-3. **Co jeśli niedostarczyli** (warianty 1/2/3)? — wciąż otwarte (sugestia: wariant 1).
+3. ~~Co jeśli niedostarczyli~~ ROZSTRZYGNIĘTE [2026-06-03]: **nie liczony, neutralnie, bez kary**.
 4. ~~Czy krzyżacy zobowiązani~~ ROZSTRZYGNIĘTE [2026-05-29]: **wolny wybór** — mogą dostarczyć dowolnej stronie.
 5. **Remis** - co wtedy? Trzeci wariant scenki? Improwizacja? — wciąż otwarte.
 

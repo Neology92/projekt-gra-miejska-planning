@@ -49,7 +49,7 @@ Decoder cards render via `tools/z1-decoder/` → output to `public/decoders/`.
 | **Sealed letter prop** (carried by group all day) | K1 hand-off → all stages | 2–3 | 2 + 1 spare | See "make" section below; or buy pre-aged scroll props |
 | **Wristbands / colored arm bands** (group ID) | All day | 2 colors (e.g., G1 + G2) | 2 colors minimum | Colored fabric wristbands or silicone event bands; ~2–5 PLN each. Craft stores / allegro. 4–6 per group if multi-player |
 | **Jaw harp / drumla / kalimba** | Z4 | 1 | 1–2 (groups rotate) | "Jaw harp," "jews harp," "drumla." Medieval music shops, Allegro, etsy. ~20–60 PLN. Practice before game day — melody must be reproducible |
-| **Hand bell** (finale, 8 strikes) | KF finale | 1 | 1 | A small brass hand bell, NOT Tuba Dei (anachronism). Church supply shops, Allegro, antique markets. ~20–50 PLN. Alternative: phone recording of a single bell struck 8 times |
+| ~~**Hand bell** (finale, 8 strikes)~~ | KF finale | — | — | **DROPPED [2026-06-03, Oskar #49]: no dedicated sound prop.** The "eighth toll" stays as a *narrative* time-marker only (the actor/MG names the hour in the finale scene). Do NOT buy a bell or make a recording. |
 | **Ladle** (Jordan/Piotr prop) | F2A (Jordan scene) | 1 | 1 | Cook's cover prop (NOT the password — recognition is by name + parol "bought a sword"). Wooden or metal; kitchen store. Period-plausible. ~10–20 PLN |
 | **Sword** (Jordan→Bażyński prop) | KF finale (Bażyński scene) | 1 | 1 | Jordan's "morning purchase" from Z2 = parol, then Bażyński's weapon in the finale confrontation (callback). Hidden during F2A. Theatrical/foam or blunt decorative sword; period-plausible. Allegro/theatrical props. ~30–80 PLN |
 | **Stack of Z3 parchment copies** (Albrecht/Zosia) | Z3 theft scene | 4–6 printed | 6–8 printed | Already counted in print section above — Zosia needs a satchel or folder to hold spares |
@@ -103,7 +103,7 @@ Decoder cards render via `tools/z1-decoder/` → output to `public/decoders/`.
 | Wristbands | 2 colors, ~6 bands/color | 10 colors, 4–6 bands/color = ~50–60 total | Each of 10 groups needs a distinct color |
 | Jaw harps | 1–2 | 3–4 (rotation across 10 groups) | More harps → less bottleneck at Z4 |
 | Sealed letters | 2–3 | 10–12 | One per group (TR path only) |
-| Hand bell | 1 | 1–2 | One is enough; second as backup |
+| ~~Hand bell~~ | — | — | DROPPED [2026-06-03 #49] — eighth toll is narrative-only, no sound prop |
 | Wax seal kit | 1 | 2–3 | Speed of sealing letters |
 | Z3 parchment stack | ~6 | ~40 | Zosia + possible second Albrecht for 10 groups |
 | Portable surface (Albrecht) | 1 | 1 | Same setup, more groups cycling through |

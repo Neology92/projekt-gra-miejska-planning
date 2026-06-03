@@ -220,24 +220,30 @@ Szczegóły: mechanics/koperty-mg.md §ZAŁOŻENIA PRZED RENDEREM · prototype/p
 ### 🟥 Logistyka dnia gry
 
 ```
-⬜ Harmonogram fal grup ......... rozłożenie 10 grup w czasie (Jordan/Piotr = wąskie gardło)
-⬜ Formularz zapisów ............ sposób rejestracji graczy (#39)
-⬜ Komunikacja awaryjna ......... SMS/telefon/aplikacja (#41)
-⬜ Lokalizacje MG w fazach ...... gdzie stoi MG w F1/2A/2B/3 (#36)
-⬜ Dźwięk dzwonu finału ......... rekwizyt 8. bicia (nie Tuba Dei — anachronizm) (#49)
-⬜ Scenka aktorska finału ....... Bażyński vs Albrecht, warianty wg wyniku
-⬜ Mechanika zliczania głosów ... pudełka / NPC / cyfrowo (#50)
+✅ Harmonogram fal grup ......... [#] bez formalnego harmonogramu — Oskar zarządza kolejką na żywo (mała grupa)
+✅ Formularz zapisów ............ [#39] bez znaczenia — gra dla znajomych, brak rejestracji
+✅ Komunikacja awaryjna ......... [#41] bez znaczenia — MG mobilny na Rynku
+✅ Lokalizacje MG w fazach ...... [#36] MG mobilny wokół Rynku Staromiejskiego (F1–F3); finał=Przedzamcze
+✅ Dźwięk dzwonu finału ......... [#49] bez rekwizytu — „ósme bicie" tylko narracyjnie (znacznik czasu)
+⬜ Scenka aktorska finału ....... Bażyński vs Albrecht, warianty wg wyniku (treść = Oskar)
+✅ Mechanika zliczania głosów ... [#50] Jordan i Albrecht liczą odebrane listy tuż przed scenką (Wariant B)
 ```
 
-## 🔒 Decyzje strategiczne otwarte (MVP)
+## ✅ Decyzje strategiczne — ROZSTRZYGNIĘTE [2026-06-03, Oskar]
 
 ```
-#1  Tytuł gry
-#3  Data rozgrywki (deadline planowania)
-#6  Mapa + szyfrownik — wspólne czy osobne per klasa
-#15 Co jeśli grupa nie dostarczy listu (warianty 1/2/3)
-#59 Budżet (rekwizyty/druk/aktorzy)
-#51-55 Naginki: Piccolo / kalimba / Tuba Dei / alt-history zakończenie
+#3  Data rozgrywki ......... DZISIAJ (2026-06-03); druk na miejscu
+#6  Mapa + szyfrownik ...... mapa WSPÓLNA (identyczna dla wszystkich); deszyfrownik PER DRUŻYNA (10 różnych, nie per frakcja)
+#15 Brak dostawy listu ..... nie liczony, neutralnie, bez kary (nie wariant 3)
+#59 Budżet ................. druk domowy w dniu gry; brak osobnej produkcji; aktorzy=znajomi
+#51-55 Naginki ............. pokryte kanonem (Piccolo tak / kalimba tak / Tuba Dei nie / zakończenie=hybryda #16)
+```
+
+```
+WCIĄŻ OTWARTE (nieblokujące):
+#1  Tytuł gry — finalny wybór z dwóch: „Krzyżacy vs Toruń" / „Mieszczanie vs Krzyżacy"
+#24 Rename „Aleja Gmerków"→„Aleja Herbów" (poprawność faktograficzna; design Z6 = Piotr, w toku)
+#27b Klucz 2B→finał — czeka na doprecyzowanie pytania (patrz otwarte-pytania)
 ```
 
 ---
@@ -252,7 +258,7 @@ MVP        ██░░░░░░░░░░░░░░░░░░  ~10%   
 ## 🎯 Następny krok krytyczny
 
 ```
-► MVP Phase A — rozstrzygnąć 4 strategiczne pytania (#3 data, #6 mapa+szyfrownik, #15 brak dostawy, #59 budżet)
+✅ MVP Phase A — 4 strategiczne pytania ROZSTRZYGNIĘTE [2026-06-03] (data=dziś, mapa+szyfrownik, brak dostawy, budżet)
 ► MVP Phase B — treści tor krzyżacki (Z3Z, Z8–Z11) + opcjonalne zagadki TR (Z5, Z6)
-► MVP (równolegle) — review stosu prototypu (koperty + skrypty aktorów) wchodzi tu, nie blokuje startu Fazy A
+► MVP (równolegle) — review stosu (koperty + skrypty) → `todo/review-piotr.md` przekazane Piotrowi
 ```

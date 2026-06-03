@@ -1,181 +1,181 @@
-# GM Runsheet — Prototype (TR path)
+# Runsheet MG — Prototyp (ścieżka TR)
 
-> **Language:** English (GM-facing).
-> **Scope:** prototype only — single TR path, one group test run. For answer keys and prop checklist, see `materials/ops/mg-tracking-sheet.md`.
-
----
-
-## PRE-GAME (1–2 hours before start)
-
-- [ ] Print and cut all envelopes. Seal with wax or tape.
-- [ ] Confirm kalimba: starting note marked, unused keys covered.
-- [ ] Load kalimba melody on phone as backup (record yourself playing it).
-- [ ] Prepare sealed letter props (folded paper with wax seal, 1 per group + 1 spare).
-- [ ] Pack GM bag — sorted by stage, per tracking sheet checklist.
-- [ ] Brief Piotr (Jordan): `materials/actors/jordan-actor-script-draft.md`. Confirm he has ladle prop and K3 envelopes.
-- [ ] Brief Zosia (Albrecht): `materials/actors/albrecht-actor-card-draft.md`. Confirm she has K-Z3b envelopes and pergamin props.
-- [ ] Confirm start location. Set up any fixed drop points if using them.
+> **Język:** polski (dla MG).
+> **Zakres:** tylko prototyp — jedna ścieżka TR, jeden testowy przebieg z grupą. Klucze odpowiedzi i checklista rekwizytów → `materials/ops/mg-tracking-sheet.md`.
 
 ---
 
-## PHASE GUIDE
+## PRZED GRĄ (1–2 godziny przed startem)
 
-### START → K1 (game begins)
-
-**Your position:** start point.
-**Action:** hand each group K1 + sealed letter prop + Z1 map + cipher sheet.
-**What you say:** nothing required — K1 is self-explanatory. If needed: *"Open this, read carefully, and follow the instructions."*
-
-After handing out, move toward your Phase 1 waiting position.
-
----
-
-### PHASE 1 — Symbol Trail (Z1)
-
-**Your position:** fixed point, accessible (Old Town area recommended — central to Z1 trail).
-**Expected group return time:** ~20–30 min after start.
-
-When group returns:
-1. Listen to their 4-location sequence.
-2. Check against key (tracking sheet). Correct? → hand K2.
-3. Incorrect? → *"One of those doesn't match. Go back to the last mark you're certain of."*
-
-After K2 handed, group goes to solve Z2 independently (logic puzzle from the envelope). When they have Jordan = Piccolo, they walk to Piotr themselves. No MG action needed for Z2 or the Piccolo scene.
-
-**Use this gap (Piccolo scene):** move toward your Phase 2B position near the castle.
+- [ ] Wydrukuj i potnij wszystkie koperty. Zapieczętuj woskiem lub taśmą.
+- [ ] Sprawdź kalimbę: zaznaczona nuta startowa, nieużywane klawisze zaklejone.
+- [ ] Wgraj nagranie melodii kalimby na telefon jako backup (nagraj siebie grającego).
+- [ ] Przygotuj rekwizyty zapieczętowanego listu (złożony papier z pieczęcią woskową, 1 na grupę + 1 zapasowy).
+- [ ] Spakuj torbę MG — posortowane wg etapu, zgodnie z checklistą w tracking sheet.
+- [ ] Zbriefuj Piotra (Jordan): `materials/actors/jordan-actor-script-draft.md`. Potwierdź, że ma rekwizyt chochli i koperty K3.
+- [ ] Zbriefuj Zosię (Albrecht): `materials/actors/albrecht-actor-card-draft.md`. Potwierdź, że ma koperty K-Z3b i rekwizyty pergaminu.
+- [ ] Potwierdź lokalizację startu. Ustaw ewentualne stałe punkty odbioru.
 
 ---
 
-### PHASE 2A — Jordan at Piccolo (Z2 → Jordan scene)
+## PRZEWODNIK PO FAZACH
 
-**Your position:** in transit toward castle area.
-**Piotr runs this entirely.** He hands K3 at STEP 4 of his script.
+### START → K1 (gra się zaczyna)
 
-No MG action during Phase 2A.
+**Twoja pozycja:** punkt startu.
+**Działanie:** każdej grupie wręcz K1 + rekwizyt zapieczętowanego listu + mapa Z1 + karta deszyfrująca.
+**Co mówisz:** nic wymaganego — K1 jest samo w sobie zrozumiałe. W razie potrzeby: *"Open this, read carefully, and follow the instructions."*
 
----
-
-### PHASE 2B — Castle + Kalimba (Z3 + Z4)
-
-**Your position:** fixed pickup point near castle ruins (or the ruins themselves — confirm exact spot before game day).
-
-**Z3 (castle scene with Albrecht):**
-Zosia runs the entire castle scene. She hands K-Z3b during the scene. Group exits with the pergamin (names list).
-
-No MG action for Z3.
-
-**Z4 (kalimba — after Z3):**
-Group comes to your position after the castle scene.
-1. Hand K-Z4 + kalimba.
-2. Give them a moment to read the envelope.
-3. Play the recording of the melody once, low and a little distant if you can. *(In-fiction the tune "drifts in off the water" — you are not performing it; you're just the means by which they hear it. Keep yourself out of it: start the recording, let it play, stay quiet.)*
-4. They listen, then play it back themselves on the instrument, writing numbers.
-5. They give you the code. Check: **621454**. Correct → hand K8 (Z7 szyfrogram).
-
-If wrong: *"Are you sure those are all the notes, in the right order?"* Replay melody once. See hint ladder below.
+Po wręczeniu przejdź na swoją pozycję oczekiwania Fazy 1.
 
 ---
 
-### PHASE 3 — Cipher (Z7) → KF
+### FAZA 1 — Szlak Symboli (Z1)
 
-**Your position:** same fixed point, or move to a central spot near the finale location.
-**Expected:** group needs ~15–20 min to work through Z7.
+**Twoja pozycja:** mobilna wokół **Rynku Staromiejskiego** — patrz decyzja #36. NIE obejmujesz stałych posterunków per faza; krążysz wokół Rynku przez całą grę, a grupy same cię tam szukają. Centralny punkt dla szlaku Z1.
+**Spodziewany czas powrotu grupy:** ~20–30 minut od startu.
 
-Group works on Z7 from K8. They should have the pergamin (Z3 names list) — that is the key source (motto header). They do not need anything from you until they have an answer.
+Gdy grupa wraca:
+1. Wysłuchaj sekwencji 4 lokalizacji.
+2. Sprawdź w kluczu (tracking sheet). Poprawnie? → wręcz K2.
+3. Niepoprawnie? → *"One of those doesn't match. Go back to the last mark you're certain of."*
 
-When group reports the solution (HANS VON BAYSEN IS JORDAN THE COOK, or equivalent):
-- Confirm: *"Yes — that's it."*
-- Hand KF.
-- Remind if needed: *"The eighth bell. Przedzamcze. Be there."*
+Po wręczeniu K2 grupa idzie samodzielnie rozwiązywać Z2 (logiczne z koperty). Gdy mają Jordan = Piccolo, idą do Piotra sami. Żadna akcja MG nie jest potrzebna dla Z2 ani sceny w Piccolo.
+
+**Wykorzystaj ten czas (scena w Piccolo):** pozostań mobilny wokół Rynku Staromiejskiego. NIE przenosisz się na zamek — Zosia prowadzi scenę zamkową (Z3); grupy wracają do ciebie przy Rynku na Z4.
 
 ---
 
-### FINALE — 20:30, Castle Ruins
+### FAZA 2A — Jordan w Piccolo (Z2 → scena z Jordanem)
 
-**Your position:** Przedzamcze (castle ruins, near Gdanisko).
+**Twoja pozycja:** mobilna wokół Rynku Staromiejskiego.
+**Piotr prowadzi to w całości.** Wręcza K3 w STEP 4 swojego skryptu.
 
-1. All groups arrive. When it is time: 8 bell strikes (hand bell or recording).
-2. Groups walk to a side and place the letter (left = Bażyński / Piotr, right = Albrecht / Zosia).
-3. Count letters per side.
-4. Announce result. Run theatre scene (Piotr and Zosia — variants in `concept/04-faza-3-final.md`).
-5. Short epilogue (2–3 minutes): what happened historically. Suggested beats:
-   - Castle surrendered 7–8 February 1454.
-   - The 13-Year War followed (1454–1466).
-   - Second Peace of Toruń: 1466 — Prussia returned to Polish Crown.
+Żadna akcja MG w trakcie Fazy 2A.
+
+---
+
+### FAZA 2B — Zamek + Kalimba (Z3 + Z4)
+
+**Twoja pozycja:** mobilna wokół Rynku Staromiejskiego (#36). Grupy wracają do ciebie przy Rynku na Z4 *po* scenie zamkowej (Z3) — NIE czekasz przy zamku. Zosia obsługuje zamek samodzielnie.
+
+**Z3 (scena zamkowa z Albrechtem):**
+Zosia prowadzi całą scenę zamkową. Wręcza K-Z3b w trakcie sceny. Grupa wychodzi z pergaminem (lista imion).
+
+Żadna akcja MG dla Z3.
+
+**Z4 (kalimba — po Z3):**
+Grupa przychodzi na twoją pozycję po scenie zamkowej.
+1. Wręcz K-Z4 + kalimbę.
+2. Daj im chwilę, żeby przeczytali kopertę.
+3. Odtwórz nagranie melodii raz, cicho i jakby z oddali, jeśli możesz. *(W fikcji melodia „niesie się po wodzie" — nie wykonujesz jej; jesteś tylko środkiem, przez który ją słyszą. Wyłącz się: włącz nagranie, pozwól mu grać, zostań cicho.)*
+4. Słuchają, potem sami grają na instrumencie, zapisując cyfry.
+5. Podają ci kod. Sprawdź: **621454**. Poprawnie → wręcz K8 (szyfrogram Z7).
+
+Jeśli źle: *"Are you sure those are all the notes, in the right order?"* Odtwórz melodię raz. Patrz drabinka podpowiedzi poniżej.
+
+---
+
+### FAZA 3 — Szyfr (Z7) → KF
+
+**Twoja pozycja:** mobilna wokół Rynku Staromiejskiego; przejdź na Przedzamcze tylko na sam finał (20:30).
+**Szacowany czas:** grupa potrzebuje ~15–20 minut na przejście przez Z7.
+
+Grupa pracuje nad Z7 z K8. Powinna mieć pergamin (lista imion Z3) — to jest źródło klucza (nagłówek z mottem). Niczego od ciebie nie potrzebują dopóki nie mają odpowiedzi.
+
+Gdy grupa raportuje rozwiązanie (HANS VON BAYSEN IS JORDAN THE COOK lub ekwiwalent):
+- Potwierdź: *"Yes — that's it."*
+- Wręcz KF.
+- Przypomnij jeśli trzeba: *"The eighth bell. Przedzamcze. Be there."*
+
+---
+
+### FINAŁ — 20:30, Ruiny Zamku
+
+**Twoja pozycja:** Przedzamcze (ruiny zamku, w pobliżu Gdaniska).
+
+1. Wszystkie grupy przybywają na 20:30. „Ósmy dzwon" jest wyrażony **narracyjnie** — aktor lub ty mówisz godzinę na głos. **Bez rekwizytu dzwonu, bez nagrania** (#49); to tylko słowny znacznik czasu.
+2. Każda grupa wręcza swój zapieczętowany list **bezpośrednio aktorowi wybranej strony** — Piotr/Bażyński lub Zosia/Albrecht (Wariant B; bez skrzynek, bez układu lewa/prawa).
+3. **Tuż przed sceną Jordan i Albrecht liczą listy, które otrzymali** (#50) — każde z nich zna swój wynik. Grupa, która nie oddała listu żadnej stronie, po prostu nie jest liczona: **neutralna, bez kary** (#15).
+4. Ogłoś wynik. Uruchom scenę teatralną (Piotr i Zosia — warianty w `concept/04-faza-3-final.md`).
+5. Krótki epilog (2–3 minuty): co wydarzyło się historycznie. Proponowane wątki:
+   - Zamek kapitulował 7–8 lutego 1454.
+   - Nastąpiła Wojna Trzynastoletnia (1454–1466).
+   - Drugi Pokój Toruński: 1466 — Prusy wróciły do Korony Polskiej.
    - *"You were in the city when this started."*
 
 ---
 
-## HINT LADDERS
+## DRABINKI PODPOWIEDZI
 
-### Z1 — Symbol Trail
+### Z1 — Szlak Symboli
 
-*(Use only if group returns after >10 min clearly stuck)*
+*(Używaj tylko jeśli grupa wraca po >10 min wyraźnie zablokowana)*
 
-1. **Gentle:** *"Make sure you're matching the detail on site to the cipher sheet. Look closely — it's something physically there, not something you'd need to know."*
-2. **Medium:** *"You're looking for a [type of detail — e.g. animal / number / tool / plant]. That's on the cipher sheet too."*
-3. **Direct:** Point to the correct next location by name. Time matters more than puzzle at this stage.
+1. **Łagodna:** *"Make sure you're matching the detail on site to the cipher sheet. Look closely — it's something physically there, not something you'd need to know."*
+2. **Średnia:** *"You're looking for a [opisz typ obiektu z ikony — np. zwierzę / liczba / narzędzie / element budynku]. That's on the cipher sheet too."*
+3. **Bezpośrednia:** Wskaż nazwę kolejnej lokalizacji wprost. Czas jest ważniejszy niż zagadka na tym etapie.
 
 ---
 
-### Z2 — Morning Errands
+### Z2 — Poranne Zakupy
 
-*(Use if group can't solve the logic after ~10 min)*
+*(Użyj jeśli grupa nie może rozwiązać logiki po ~10 min)*
 
-1. **Gentle:** *"Clue 2 tells you something about Jordan directly. Start there."*
-2. **Medium:** *"Clue 1: Lambert bought food outside his own place — so he can't work in the food place. That eliminates one option for him."*
-3. **Direct:** *"Jordan works at Piccolo. Go there and ask for him by name."*
+1. **Łagodna:** *"Clue 2 tells you something about Jordan directly. Start there."*
+2. **Średnia:** *"Clue 1: Lambert bought food outside his own place — so he can't work in the food place. That eliminates one option for him."*
+3. **Bezpośrednia:** *"Jordan works at Piccolo. Go there and ask for him by name."*
 
 ---
 
 ### Z4 — Kalimba
 
-*(Use if group plays wrongly or can't count notes)*
+*(Użyj jeśli grupa gra źle lub nie może policzyć nut)*
 
-1. **Gentle:** *"Play it slower than you think. One note at a time, write the number before you move to the next."*
-2. **Medium (replay):** Replay the melody more slowly. *"Count as you go — don't try to remember it all at the end."*
-3. **Direct:** *"You have six notes. You're close — make sure you haven't missed one."* *(Do NOT give the code outright. If they give 5 digits instead of 6, ask: "Is that all the notes?")*
-
----
-
-### Z7 — Cezar Cipher
-
-*(Use if group has K8 but can't find the key)*
-
-1. **Gentle:** *"Look at the very top of the letter. You've seen that script before today — somewhere you've already been."*
-2. **Medium:** *"Compare the heading of this letter with the heading of the names list. Same font, same punctuation. Count how many steps each letter has moved — it's the same shift every time."*
-3. **Direct (key only):** *"The shift is 7 — every letter has moved 7 steps forward. Apply that backwards to the ciphertext."* *(Only if < 30 min to 20:30)*
-4. **Emergency (full answer):** *"It reads: HANS VON BAYSEN IS JORDAN THE COOK. Who does that make Jordan?"* *(Only if group will miss the finale without this)*
-
-**If they DECODED it but seem unmoved (don't feel the twist):** the meaning is split across three threads they must connect themselves — nudge, don't spell out. Ask: *"Who were you sent to deliver that letter to, from the very start?"* (→ the chairman, from K2). Then: *"Look at the top of the names list you took — what does it say beside the first name?"* (→ "they call him chairman"). Let them join it: the chairman = Hans von Baysen = the cook who fed you. *(This is the §1.5 splice safety net — only if the decode landed flat.)*
+1. **Łagodna:** *"Play it slower than you think. One note at a time, write the number before you move to the next."*
+2. **Średnia (odtworzenie):** Odtwórz melodię wolniej. *"Count as you go — don't try to remember it all at the end."*
+3. **Bezpośrednia:** *"You have six notes. You're close — make sure you haven't missed one."* *(NIE podawaj kodu wprost. Jeśli podają 5 cyfr zamiast 6, zapytaj: "Is that all the notes?")*
 
 ---
 
-## EMERGENCY PROTOCOLS
+### Z7 — Szyfr Cezara
 
-**Group is running very late (> 40 min behind schedule):**
-- Skip Z4 puzzle: tell group *"A contact passed on the boatman's code — 6, 2, 1, 4, 5, 4."* Hand K8 directly.
-- Compress Z7: jump immediately to hint ladder step 3 or 4.
-- All groups need to reach Przedzamcze by 20:15 at the latest.
+*(Użyj jeśli grupa ma K8, ale nie może znaleźć klucza)*
 
-**Piotr (Jordan) unavailable:**
-- Z2 still works: group deduces Jordan = Piccolo, goes there, Piotr isn't there.
-- MG improvises: *"He was here earlier, left something for you."* Hand K3 as a dead drop.
-- Zosia (Albrecht) scene is independent — runs normally.
+1. **Łagodna:** *"Look at the very top of the letter. You've seen that script before today — somewhere you've already been."*
+2. **Średnia:** *"Compare the heading of this letter with the heading of the names list. Same font, same punctuation. Count how many steps each letter has moved — it's the same shift every time."*
+3. **Bezpośrednia (tylko klucz):** *"The shift is 7 — every letter has moved 7 steps forward. Apply that backwards to the ciphertext."* *(Tylko jeśli < 30 min do 20:30)*
+4. **Awaryjna (pełna odpowiedź):** *"It reads: HANS VON BAYSEN IS JORDAN THE COOK. Who does that make Jordan?"* *(Tylko jeśli grupa ominie finał bez tej podpowiedzi)*
 
-**Zosia (Albrecht) unavailable:**
-- Z3 scene can't run as designed.
-- Emergency option: MG hands group the pergamin directly and says *"One of our contacts managed to get this from inside."* Group gets the list without the actor scene. Z4 continues normally.
-- Albrecht appearance at finale is still possible (Zosia just needs to be at Przedzamcze at 20:30).
+**Jeśli ODSZYFROWANE, ale twist nie dotarł (wydają się nieporuszeni):** znaczenie jest rozsiane w trzech wątkach, które muszą sami połączyć — naprowadzaj, nie wyjaśniaj. Zapytaj: *"Who were you sent to deliver that letter to, from the very start?"* (→ przewodniczący, z K2). Potem: *"Look at the top of the names list you took — what does it say beside the first name?"* (→ "they call him chairman"). Niech sami to połączą: przewodniczący = Hans von Baysen = kucharz, który ich karmił. *(To jest zabezpieczenie sekcji §1.5 — użyj tylko jeśli odszyfrowanie wylądowało płasko.)*
 
-**Group loses sealed letter prop:**
-- MG has 1 spare. Hand it: *"A contact found this — it wasn't far."*
-- No spare: the prop is flavor, not required for the puzzle chain. Group can deliver a folded slip of paper at finale — what matters is the side they walk to.
+---
 
-**Group refuses to decode Z7 or wants to skip straight to finale:**
-- Frame it as urgent: *"You need what's in that letter before you go. There's a hint in the header — look at the names list you already have."*
-- If they truly won't engage: hand KF without Z7 answer. They arrive at finale without knowing the twist. That is a valid outcome — less satisfying, but the finale still runs.
+## PROTOKOŁY AWARYJNE
 
-**Remis at finale (equal letters both sides):**
-- Currently unresolved — see `concept/04-faza-3-final.md §Remis`.
-- Suggested fallback: Piotr and Zosia improvise a standoff, no clear victor. Oskar delivers brief meta-commentary: *"History will decide. Look it up."*
+**Grupa bardzo się spóźnia (> 40 min za harmonogramem):**
+- Pomiń zagadkę Z4: powiedz grupie *"A contact passed on the boatman's code — 6, 2, 1, 4, 5, 4."* Wręcz K8 bezpośrednio.
+- Skróć Z7: od razu przejdź do kroku 3 lub 4 drabinki podpowiedzi.
+- Wszystkie grupy muszą dotrzeć na Przedzamcze do 20:15 najpóźniej.
+
+**Piotr (Jordan) niedostępny:**
+- Z2 nadal działa: grupa dedukcuje Jordan = Piccolo, idzie tam, Piotra nie ma.
+- MG improwizuje: *"He was here earlier, left something for you."* Wręcz K3 jako dead drop.
+- Scena Zosi (Albrecht) jest niezależna — działa normalnie.
+
+**Zosia (Albrecht) niedostępna:**
+- Scena Z3 nie może przebiec zgodnie z planem.
+- Opcja awaryjna: MG wręcza grupie pergamin bezpośrednio i mówi *"One of our contacts managed to get this from inside."* Grupa dostaje listę bez sceny aktorskiej. Z4 kontynuuje normalnie.
+- Pojawienie się Albrechta w finale jest nadal możliwe (Zosia potrzebuje być tylko na Przedzamczu o 20:30).
+
+**Grupa gubi rekwizyt zapieczętowanego listu:**
+- MG ma 1 zapasowy. Wręcz: *"A contact found this — it wasn't far."*
+- Brak zapasowego: rekwizyt jest dla smaku, nie jest wymagany do łańcucha zagadek. Grupa może oddać złożoną karteczkę w finale — liczy się strona, do której podchodzą.
+
+**Grupa odmawia rozwiązania Z7 lub chce przejść bezpośrednio do finału:**
+- Zaznacz pilność: *"You need what's in that letter before you go. There's a hint in the header — look at the names list you already have."*
+- Jeśli naprawdę nie chcą: wręcz KF bez odpowiedzi Z7. Docierają do finału nie znając twista. To jest dopuszczalny wynik — mniej satysfakcjonujący, ale finał nadal przebiega.
+
+**Remis w finale (równa liczba listów po obu stronach):**
+- Nierozstrzygnięte — patrz `concept/04-faza-3-final.md §Remis`.
+- Sugerowany fallback: Piotr i Zosia improwizują pat, brak wyraźnego zwycięzcy. Oskar wygłasza krótki komentarz meta: *"History will decide. Look it up."*
